@@ -1,0 +1,118 @@
+{
+  "name": "lattice-ui-kit",
+  "version": "0.0.0",
+  "homepage": "https://github.com/openlattice/lattice-ui-kit",
+  "description": "OpenLattice UI Kit for React",
+  "author": {
+    "name": "OpenLattice, Inc.",
+    "email": "support@openlattice.com",
+    "url": "https://openlattice.com"
+  },
+  "contributors": [
+    {
+      "name": "Hristo Oskov",
+      "email": "hristo@openlattice.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openlattice/lattice-ui-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/openlattice/lattice-ui-kit/issues"
+  },
+  "license": "GPL-3.0",
+  "main": "build/lattice-ui-kit.js",
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.0",
+    "babel-loader": "^7.1.0",
+    "babel-plugin-styled-components": "^1.2.0",
+    "babel-plugin-transform-class-properties": "^6.24.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.0",
+    "better-npm-run": "0.1.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-flowtype": "^2.39.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.6.0",
+    "eslint-plugin-jsx-a11y": "^6.0.0",
+    "eslint-plugin-react": "^7.4.0",
+    "file-loader": "^1.1.11",
+    "flow-bin": "^0.66.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^22.0.6",
+    "moment": "^2.20.0",
+    "npm-run-all": "^4.0.0",
+    "raw-loader": "^0.5.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "rimraf": "^2.6.0",
+    "stylelint": "^9.1.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.0.0",
+    "webpack": "^4.8.0",
+    "webpack-cli": "^2.1.0",
+    "webpack-dev-server": "^3.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "scripts": {
+    "build": "better-npm-run build",
+    "build:dev": "better-npm-run build:dev",
+    "build:min": "better-npm-run build:min",
+    "clean": "rimraf build/*",
+    "flow": "flow check",
+    "lib": "better-npm-run webpack-dev-server",
+    "lint": "eslint --config .eslintrc src",
+    "release:major": "npm version major -m \"releasing v%s\" && npm publish",
+    "release:minor": "npm version minor -m \"releasing v%s\" && npm publish",
+    "release:patch": "npm version patch -m \"releasing v%s\" && npm publish",
+    "preversion": "npm-run-all lint test",
+    "version": "npm-run-all clean --parallel build build:min && git add -A package.json build/",
+    "postversion": "git push && git push --tags",
+    "test": "jest --config config/jest/jest.config.js",
+    "test:watch": "jest --config config/jest/jest.config.js --watch"
+  },
+  "betterScripts": {
+    "build": {
+      "command": "webpack --config config/webpack/webpack.config.babel.js",
+      "env": {
+        "BUILD": "production",
+        "MINIMIZE": "false",
+        "TARGET_ENV": "web"
+      }
+    },
+    "build:dev": {
+      "command": "webpack --config config/webpack/webpack.config.babel.js",
+      "env": {
+        "BUILD": "development",
+        "MINIMIZE": "false",
+        "TARGET_ENV": "web"
+      }
+    },
+    "build:min": {
+      "command": "webpack --config config/webpack/webpack.config.babel.js",
+      "env": {
+        "BUILD": "production",
+        "MINIMIZE": "true",
+        "TARGET_ENV": "web"
+      }
+    }
+  }
+}
