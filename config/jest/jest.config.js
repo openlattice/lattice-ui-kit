@@ -3,12 +3,14 @@ const PACKAGE = require('../../package.json');
 module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
-    '**/src/index.js'
+    '**/src/index.js',
+    '**/src/**/*.js'
   ],
   coveragePathIgnorePatterns: [
     '<rootDir>/build/',
     '<rootDir>/config/',
-    '<rootDir>/flow-typed/'
+    '<rootDir>/flow-typed/',
+    '<rootDir>/.*/stories/.*'
   ],
   coverageDirectory: '<rootDir>/coverage',
   globals: {
@@ -18,6 +20,10 @@ module.exports = {
     __PACKAGE__: PACKAGE.name,
     __VERSION__: PACKAGE.version
   },
+  modulePathIgnorePatterns: [
+    '<rootDir>/build/',
+    '<rootDir>/flow-typed/'
+  ],
   rootDir: '../..',
   setupFiles: [
     '<rootDir>/config/jest/enzyme.config.js'
