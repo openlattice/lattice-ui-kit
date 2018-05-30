@@ -2,9 +2,9 @@
  * @flow
  */
 
-import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
+import { Component } from 'react';
 import type { Node } from 'react';
 
 let portalOuterContainer :HTMLDivElement;
@@ -19,7 +19,7 @@ type Props = {
  * https://github.com/segmentio/evergreen/blob/master/src/portal/src/Portal.js
  * https://bitbucket.org/atlassian/atlaskit-mk-2/src/master/packages/core/layer-manager
  */
-export default class Portal extends React.Component<Props> {
+export default class Portal extends Component<Props> {
 
   static propTypes = {
     children: PropTypes.node.isRequired
