@@ -4,16 +4,24 @@
 
 import styled from 'styled-components';
 import type { ReactComponentStyled } from 'styled-components';
+import { color, themeGet, complexStyle } from 'styled-system';
+import theme from '../../../../theme/theme';
 
 // border-top + border-bottom + padding-top + padding-bottom + line-height = 40px
+
+export const buttonStyle = complexStyle({
+  prop: 'buttonStyle',
+  key: 'buttons'
+});
+
 const StyledButton :ReactComponentStyled<*> = styled.button`
-  background-color: #fff;
+  background-color: ${themeGet('colors.grey', 'black')};
   border-color: #c5d5e5;
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
-  color: #135;
-  cursor: pointer;
+  color: ${props => props.theme.color};
+  cursor: default;
   font-size: 14px;
   line-height: 18px;
   outline: none;
@@ -31,6 +39,13 @@ const StyledButton :ReactComponentStyled<*> = styled.button`
     color: #a3acb5;
     cursor: not-allowed;
   }
+
+  ${color};
+  ${buttonStyle};
 `;
+
+StyledButton.defaultProps = {
+  theme
+};
 
 export default StyledButton;
