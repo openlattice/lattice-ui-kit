@@ -1,3 +1,5 @@
+// example theme
+
 const primary = '#7332ff';
 const secondary = '#e4d8ff';
 const grey = '#f0f0f7';
