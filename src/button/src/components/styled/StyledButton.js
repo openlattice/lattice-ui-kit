@@ -14,14 +14,20 @@ export const buttonStyle = complexStyle({
   key: 'buttons'
 });
 
+export const colorStyles = complexStyle({
+  prop: 'colors',
+  key: 'colorStyles',
+});
+
+// Apply complexStyles utils last to properly override
 const StyledButton :ReactComponentStyled<*> = styled.button`
-  background-color: ${themeGet('colors.grey', 'black')};
+  background-color: ${themeGet('colors.grey', 'grey')};
   border-color: #c5d5e5;
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
-  color: ${props => props.theme.color};
-  cursor: default;
+  color: 'black';
+  cursor: pointer;
   font-size: 14px;
   line-height: 18px;
   outline: none;
@@ -29,6 +35,7 @@ const StyledButton :ReactComponentStyled<*> = styled.button`
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
 
   &:hover {
     border-color: #95aabf;
@@ -42,6 +49,7 @@ const StyledButton :ReactComponentStyled<*> = styled.button`
 
   ${color};
   ${buttonStyle};
+  ${colorStyles};
 `;
 
 StyledButton.defaultProps = {
