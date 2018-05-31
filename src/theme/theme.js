@@ -1,3 +1,6 @@
+const primary = '#7332ff'
+const secondary = '#e4d8ff'
+
 const theme = {
   textStyles: {
     caps: {
@@ -18,10 +21,11 @@ const theme = {
   buttons: {
     primary: {
       color: 'white',
-      backgroundColor: 'blue',
-      '&:hover': {
-        backgroundColor: 'black',
-      }
+      backgroundColor: primary,
+    },
+    secondary: {
+      color: primary,
+      backgroundColor: secondary
     }
   }
 }
