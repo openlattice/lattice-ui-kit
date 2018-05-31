@@ -28,6 +28,10 @@
     "styled-components": "^3.2.6"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^4.0.0-alpha.4",
+    "@storybook/addon-options": "^4.0.0-alpha.4",
+    "@storybook/addons": "^4.0.0-alpha.4",
+    "@storybook/react": "^4.0.0-alpha.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.0",
@@ -86,6 +90,7 @@
     "preversion": "npm-run-all lint test",
     "version": "npm-run-all clean --parallel build build:min && git add -A package.json build/",
     "postversion": "git push && git push --tags",
+    "storybook": "start-storybook -p 9009 -c config/storybook",
     "test": "jest --config config/jest/jest.config.js",
     "test:watch": "jest --config config/jest/jest.config.js --watch"
   },
