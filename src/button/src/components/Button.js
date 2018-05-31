@@ -23,7 +23,7 @@ export default class Button extends Component<Props, State> {
   render() {
 
     return (
-      <StyledButton onClick={this.props.onClick}>{ this.props.children }</StyledButton>
+      <StyledButton {...this.props} onClick={this.props.onClick}>{ this.props.children }</StyledButton>
     );
   }
 }
