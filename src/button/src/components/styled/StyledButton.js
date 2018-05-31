@@ -42,8 +42,7 @@ const StyledButton :ReactComponentStyled<*> = styled.button`
   }
 
   &:disabled {
-    border-color: #d9e3ec;
-    color: #a3acb5;
+    opacity: 0.5;
     cursor: not-allowed;
   }
 
