@@ -124,7 +124,14 @@
       }
     ],
     "react/jsx-indent-props": ["error", 4],
+    "react/jsx-one-expression-per-line": "warn",
     "react/prefer-stateless-function": "warn",
+    "react/require-default-props": [
+      "error",
+      {
+        "forbidDefaultForRequired": false,
+      }
+    ],
     "react/sort-comp": "off"
   }
 }
