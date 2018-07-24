@@ -1,1 +1,4 @@
-export { default } from './src/components/Select';
+export {
+  StyledSelect as Select,
+  StyledCreatable as Creatable
+} from './src/components/Select';
