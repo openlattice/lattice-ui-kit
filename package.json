@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^4.0.0-alpha.4",
+    "@storybook/addon-jest": "^3.4.8",
     "@storybook/addon-options": "^4.0.0-alpha.4",
     "@storybook/addon-storysource": "^3.4.8",
     "@storybook/addons": "^4.0.0-alpha.4",
@@ -80,22 +81,23 @@
     "react-dom": "^16.0.0"
   },
   "scripts": {
-    "build": "better-npm-run build",
     "build:dev": "better-npm-run build:dev",
     "build:min": "better-npm-run build:min",
+    "build": "better-npm-run build",
     "clean": "rimraf build/*",
     "flow": "flow check",
     "lib": "better-npm-run webpack-dev-server",
     "lint": "eslint --config .eslintrc src",
+    "postversion": "git push && git push --tags",
+    "preversion": "npm-run-all lint test",
     "release:major": "npm version major -m \"releasing v%s\" && npm publish",
     "release:minor": "npm version minor -m \"releasing v%s\" && npm publish",
     "release:patch": "npm version patch -m \"releasing v%s\" && npm publish",
-    "preversion": "npm-run-all lint test",
-    "version": "npm-run-all clean --parallel build build:min && git add -A package.json build/",
-    "postversion": "git push && git push --tags",
     "storybook": "start-storybook -p 9009 -c config/storybook",
+    "test:generate-output": "jest --json --outputFile=jest-test-results.json",
+    "test:watch": "jest --config config/jest/jest.config.js --watch",
     "test": "jest --config config/jest/jest.config.js",
-    "test:watch": "jest --config config/jest/jest.config.js --watch"
+    "version": "npm-run-all clean --parallel build build:min && git add -A package.json build/"
   },
   "betterScripts": {
     "build": {

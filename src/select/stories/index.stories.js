@@ -14,16 +14,15 @@ storiesOf('Select', module)
           onChange={action('Single select changed')}
           />
     </div>
+  ))
+  .add('Multiple Select', () => (
+    <div>
+      <h1>Select Multiple</h1>
+      <Select
+          options={stateOptions}
+          onChange={action('Multiple selection changed')}
+          isMulti
+          />
+    </div>
   ));
 
-storiesOf('Select', module)
-.add('Multiple Select', () => (
-  <div>
-    <h1>Select Multiple</h1>
-    <Select
-        options={stateOptions}
-        onChange={action('Multiple selection changed')}
-        isMulti
-        />
-  </div>
-));
