@@ -1,4 +1,4 @@
 export {
-  StyledSelect as Select,
-  StyledCreatable as Creatable
+  StyledCreatable as Creatable,
+  StyledSelect as Select
 } from './src/components/Select';
