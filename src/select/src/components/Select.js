@@ -3,14 +3,10 @@ import styled from 'styled-components';
 import Select from 'react-select';
 import { selectStyles } from './styled/StyledSelect';
 
-const StyledSelect = styled(Select)`
+const StyledSelect = styled(Select).attrs({
+  classNamePrefix: 'lattice-select'
+})`
   ${selectStyles}
 `;
 
-const LatticeSelect = (props) => (
-  <StyledSelect
-      classNamePrefix="lattice-select"
-      {...props} />
-);
-
-export default LatticeSelect;
+export default StyledSelect;
