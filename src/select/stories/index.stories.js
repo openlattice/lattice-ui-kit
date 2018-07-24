@@ -5,20 +5,25 @@ import { action } from '@storybook/addon-actions';
 import Select from '../../select';
 import { stateOptions } from './storyConsts';
 
-
 storiesOf('Select', module)
-  .add('with text', () => (
+  .add('Single Select', () => (
     <div>
       <h1>Select</h1>
       <Select
           options={stateOptions}
-          onChange={action()}
-          />
-          <h1>Select Multiple</h1>
-      <Select
-          options={stateOptions}
-          onChange={action()}
-          isMulti
+          onChange={action('Single select changed')}
           />
     </div>
   ));
+
+storiesOf('Select', module)
+.add('Multiple Select', () => (
+  <div>
+    <h1>Select Multiple</h1>
+    <Select
+        options={stateOptions}
+        onChange={action('Multiple selection changed')}
+        isMulti
+        />
+  </div>
+));
