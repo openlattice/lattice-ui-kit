@@ -14,5 +14,11 @@ storiesOf('Select', module)
           options={stateOptions}
           onChange={action()}
           />
+          <h1>Select Multiple</h1>
+      <Select
+          options={stateOptions}
+          onChange={action()}
+          isMulti
+          />
     </div>
   ));
