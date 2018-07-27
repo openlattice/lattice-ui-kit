@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select render matches snapshot 1`] = `
+.c0 .lattice-select__control {
+  min-height: 44px;
+  border-radius: 3px;
+  background-color: #f9f9fd;
+  border: solid 1px #dcdce7;
+  margin-top: 10px;
+  box-shadow: 0 0 0 0px;
+}
+
+.c0 .lattice-select__control:hover {
+  background-color: #f0f0f7;
+  border: solid 1px #dcdce7;
+}
+
+.c0 .lattice-select__control.lattice-select__control--is-focused {
+  border: solid 1px #6124e2;
+  box-shadow: 0 0 0 0px;
+  background-color: #fff;
+}
+
+.c0 .lattice-select__option {
+  color: #555e6f;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.c0 .lattice-select__option:active {
+  background-color: #e4d8ff;
+}
+
+.c0 .lattice-select__option--is-focused {
+  background-color: #f0f0f7;
+}
+
+.c0 .lattice-select__option--is-selected {
+  background-color: #e6e6f7;
+  color: #6124e2;
+}
+
+.c0 .lattice-select__single-value {
+  color: #2e2e34;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.c0 .lattice-select__indicator-separator {
+  display: none;
+}
+
+<StateManager
+  className="c0"
+  classNamePrefix="lattice-select"
+  defaultInputValue=""
+  defaultMenuIsOpen={false}
+  defaultValue={null}
+/>
+`;
