@@ -22,5 +22,6 @@ module.exports = {
   setupFiles: [
     '<rootDir>/config/jest/enzyme.config.js'
   ],
-  testEnvironment: '<rootDir>/config/jest/jsdom.config.js'
+  testEnvironment: '<rootDir>/config/jest/jsdom.config.js',
+  testURL: 'http://localhost/'
 };
