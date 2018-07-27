@@ -96,7 +96,7 @@
     "release:minor": "npm version minor -m \"releasing v%s\" && npm publish",
     "release:patch": "npm version patch -m \"releasing v%s\" && npm publish",
     "storybook": "start-storybook -p 9009 -c config/storybook",
-    "test:generate-output": "jest --json --outputFile=jest-test-results.json",
+    "test:generate-output": "jest --json --config config/jest/jest.config.js --outputFile=.jest-test-results.json || true",
     "test:watch": "jest --config config/jest/jest.config.js --watch",
     "test": "jest --config config/jest/jest.config.js",
     "version": "npm-run-all clean --parallel build build:min && git add -A package.json build/"
