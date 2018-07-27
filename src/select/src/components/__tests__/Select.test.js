@@ -7,7 +7,7 @@ import Select from '../Select';
 describe('Select', () => {
 
   it('render matches snapshot', () => {
-    const tree = shallow(<Select />)
+    const tree = shallow(<Select />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 
