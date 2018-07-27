@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Select from 'react-select';
+import Creatable from 'react-select/lib/Creatable';
 import selectStyles from './styled/selectStyles';
 
-export default styled(Select).attrs({
+export default styled(Creatable).attrs({
   classNamePrefix: 'lattice-select'
 })`
   ${selectStyles}

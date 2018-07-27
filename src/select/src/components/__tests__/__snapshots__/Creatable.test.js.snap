@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Select render matches snapshot 1`] = `
+exports[`Creatable render matches snapshot 1`] = `
 .c0 .lattice-select__control {
   min-height: 44px;
   border-radius: 3px;
