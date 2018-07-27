@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-export const selectStyles = css`
+export default css`
   .lattice-select__control {
     min-height: 44px;
     border-radius: 3px;
