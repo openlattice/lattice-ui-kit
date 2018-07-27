@@ -24,13 +24,11 @@ describe('Select', () => {
     expect(wrapper.instance().attrs.classNamePrefix).toEqual('lattice-select');
   });
 
-  it('should show controlled value', () => {
-    const wrapper = mount(
-      <Select
-          options={OPTIONS}
-          value={OPTIONS[0]} />
-    );
-    expect(wrapper.find('Control').text()).toBe('0');
+  it('clicking should toggle menu', () => {
+    const wrapper = mount(<Select />);
+    expect(wrapper.find('Menu').exists()).toBeFalsy();
+    wrapper.find('div.lattice-select__dropdown-indicator').simulate('mouseDown', { button: 0 });
+    expect(wrapper.find('Menu').exists()).toBeTruthy();
   });
 
   it('single > should show controlled value', () => {
