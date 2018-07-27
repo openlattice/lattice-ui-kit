@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import { Select, Creatable } from '../../select';
+import { Select, Creatable } from '../index';
 import { stateOptions } from './storyConsts';
 
 storiesOf('Select', module)
