@@ -2,6 +2,10 @@ import { css } from 'styled-components';
 
 export default css`
   .lattice-select__control {
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
     min-height: 44px;
     border-radius: 3px;
     background-color: #f9f9fd;
@@ -22,6 +26,7 @@ export default css`
   }
 
   .lattice-select__option {
+    font-family: 'Open Sans', Arial, sans-serif;
     color: #555e6f;
     font-size: 14px;
     line-height: 19px;
