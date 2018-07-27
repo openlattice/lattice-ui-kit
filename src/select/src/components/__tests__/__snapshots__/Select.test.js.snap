@@ -1,15 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select render matches snapshot 1`] = `
-.c0 .lattice-select__control {
-  min-height: 44px;
-  border-radius: 3px;
-  background-color: #f9f9fd;
-  border: solid 1px #dcdce7;
-  margin-top: 10px;
-  box-shadow: 0 0 0 0px;
-}
-
 .c0 .lattice-select__control:hover {
   background-color: #f0f0f7;
   border: solid 1px #dcdce7;
@@ -22,6 +13,7 @@ exports[`Select render matches snapshot 1`] = `
 }
 
 .c0 .lattice-select__option {
+  font-family: 'Open Sans',Arial,sans-serif;
   color: #555e6f;
   font-size: 14px;
   line-height: 19px;
