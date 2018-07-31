@@ -3,7 +3,7 @@ const PACKAGE = require('../../package.json');
 module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
-    '**/src/index.js'
+    '**/src/**/*.{js}'
   ],
   coveragePathIgnorePatterns: [
     '<rootDir>/build/',

@@ -2,15 +2,8 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import 'jest-styled-components';
-import Select from '../Select';
-
-const OPTIONS = [
-  { label: '0', value: 'zero' },
-  { label: '1', value: 'one' },
-  { label: '2', value: 'two' },
-  { label: '3', value: 'three' },
-  { label: '4', value: 'four' },
-];
+import Select from './Select';
+import { LATTICE_SELECT, OPTIONS } from './consts';
 
 describe('Select', () => {
 
@@ -21,7 +14,7 @@ describe('Select', () => {
 
   it('attrs classNamePrefix is set to "lattice-select"', () => {
     const wrapper = mount(<Select />);
-    expect(wrapper.instance().attrs.classNamePrefix).toEqual('lattice-select');
+    expect(wrapper.instance().attrs.classNamePrefix).toEqual(LATTICE_SELECT);
   });
 
   it('clicking should toggle menu', () => {

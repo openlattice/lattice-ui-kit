@@ -1,9 +1,8 @@
 import { css } from 'styled-components';
+import { LATTICE_SELECT } from '../consts';
 
 export default css`
-  .lattice-select__control {
-    @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
-    font-family: 'Open Sans', Arial, sans-serif;
+  .${LATTICE_SELECT}__control {
     font-size: 14px;
     line-height: 19px;
     min-height: 44px;
@@ -19,14 +18,13 @@ export default css`
     }
   }
 
-  .lattice-select__control.lattice-select__control--is-focused {
+  .${LATTICE_SELECT}__control.${LATTICE_SELECT}__control--is-focused {
     border: solid 1px #6124e2;
     box-shadow: 0 0 0 0px;
     background-color: #fff;
   }
 
-  .lattice-select__option {
-    font-family: 'Open Sans', Arial, sans-serif;
+  .${LATTICE_SELECT}__option {
     color: #555e6f;
     font-size: 14px;
     line-height: 19px;
@@ -36,22 +34,22 @@ export default css`
     }
   }
 
-  .lattice-select__option--is-focused {
+  .${LATTICE_SELECT}__option--is-focused {
     background-color: #f0f0f7;
   }
 
-  .lattice-select__option--is-selected {
+  .${LATTICE_SELECT}__option--is-selected {
     background-color: #e6e6f7;
     color: #6124e2;
   }
 
-  .lattice-select__single-value {
+  .${LATTICE_SELECT}__single-value {
     color: #2e2e34;
     font-size: 14px;
     line-height: 19px;
   }
 
-  .lattice-select__indicator-separator {
+  .${LATTICE_SELECT}__indicator-separator {
     display: none;
   }
 `;
