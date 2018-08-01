@@ -3,7 +3,7 @@ const PACKAGE = require('../../package.json');
 module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
-    '**/src/index.js'
+    '**/src/**/*.{js}'
   ],
   coveragePathIgnorePatterns: [
     '<rootDir>/build/',
@@ -22,5 +22,6 @@ module.exports = {
   setupFiles: [
     '<rootDir>/config/jest/enzyme.config.js'
   ],
-  testEnvironment: '<rootDir>/config/jest/jsdom.config.js'
+  testEnvironment: '<rootDir>/config/jest/jsdom.config.js',
+  testURL: 'http://localhost/'
 };
