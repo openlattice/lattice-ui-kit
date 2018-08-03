@@ -22,8 +22,12 @@ export default class Button extends Component<Props, State> {
 
   render() {
 
+    const { children, onClick } = this.props;
+
     return (
-      <StyledButton onClick={this.props.onClick}>{ this.props.children }</StyledButton>
+      <StyledButton onClick={onClick}>
+        { children }
+      </StyledButton>
     );
   }
 }
