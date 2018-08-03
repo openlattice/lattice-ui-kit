@@ -4,13 +4,13 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     '**/src/index.js',
-    '**/src/**/*.js'
+    '**/src/**/*.js',
   ],
   coveragePathIgnorePatterns: [
     '<rootDir>/build/',
     '<rootDir>/config/',
     '<rootDir>/flow-typed/',
-    '<rootDir>/.*/stories/.*'
+    '<rootDir>/.*/stories/.*',
   ],
   coverageDirectory: '<rootDir>/coverage',
   globals: {
@@ -18,15 +18,16 @@ module.exports = {
     __ENV_PROD__: false,
     __ENV_TEST__: true,
     __PACKAGE__: PACKAGE.name,
-    __VERSION__: PACKAGE.version
+    __VERSION__: PACKAGE.version,
   },
   modulePathIgnorePatterns: [
     '<rootDir>/build/',
-    '<rootDir>/flow-typed/'
+    '<rootDir>/flow-typed/',
   ],
   rootDir: '../..',
   setupFiles: [
-    '<rootDir>/config/jest/enzyme.config.js'
+    '<rootDir>/config/jest/enzyme.config.js',
   ],
-  testEnvironment: '<rootDir>/config/jest/jsdom.config.js'
+  testEnvironment: '<rootDir>/config/jest/jsdom.config.js',
+  testURL: 'http://localhost/',
 };
