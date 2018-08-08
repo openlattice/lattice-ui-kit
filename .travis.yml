@@ -16,6 +16,10 @@ cache:
   directories:
     - node_modules
 
+before_install:
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
+  - npm config set @fortawesome:registry https://npm.fontawesome.com/$FA_TOKEN
+
 before_script:
   - npm run lint
 
