@@ -3,18 +3,19 @@
  */
 
 import React, { Component } from 'react';
+import type { Node } from 'react';
+
 import PropTypes from 'prop-types';
-// import type { Node } from 'react';
+import isFunction from 'lodash/isFunction';
 
 import Portal from '../../../portal';
-
 import FixedTransparentBackground from './styled/FixedTransparentBackground';
-import OverlayInnerContainer from './styled/OverlayInnerContainer';
-import OverlayOuterContainer from './styled/OverlayOuterContainer';
+import { OverlayInnerContainer, OverlayOuterContainer } from './styled/StyledOverlayComponents';
 
 type Props = {
   children :Node;
   isVisible :boolean;
+  onClick ? :() => void;
 };
 
 type State = {
@@ -30,11 +31,12 @@ export default class Overlay extends Component<Props, State> {
 
   static propTypes = {
     children: PropTypes.node.isRequired,
-    isVisible: PropTypes.bool
+    isVisible: PropTypes.bool.isRequired,
+    onClick: PropTypes.func,
   }
 
   static defaultProps = {
-    isVisible: false
+    onClick: undefined,
   }
 
   constructor(props :Props) {
@@ -42,7 +44,7 @@ export default class Overlay extends Component<Props, State> {
     super(props);
 
     this.state = {
-      isVisible: props.isVisible
+      isVisible: props.isVisible,
     };
   }
 
@@ -50,6 +52,9 @@ export default class Overlay extends Component<Props, State> {
 
     if (nextProps.isVisible) {
       this.setState({ isVisible: true });
+    }
+    else if (!nextProps.isVisible) {
+      this.setState({ isVisible: false });
     }
   }
 
@@ -59,23 +64,34 @@ export default class Overlay extends Component<Props, State> {
 
   handleOnClick = (event :SyntheticEvent<HTMLElement>) => {
 
+    const { onClick } = this.props;
+
     if (event.target === event.currentTarget) {
-      this.close();
+      if (isFunction(onClick)) {
+        onClick();
+      }
+      else {
+        event.preventDefault();
+        this.close();
+      }
     }
   }
 
   render() {
 
-    if (!this.state.isVisible) {
+    const { children } = this.props;
+    const { isVisible } = this.state;
+
+    if (!isVisible) {
       return null;
     }
 
     return (
       <Portal>
         <OverlayOuterContainer>
-          <FixedTransparentBackground onClick={this.handleOnClick} />
-          <OverlayInnerContainer>
-            { this.props.children }
+          <FixedTransparentBackground />
+          <OverlayInnerContainer onClick={this.handleOnClick}>
+            { children }
           </OverlayInnerContainer>
         </OverlayOuterContainer>
       </Portal>

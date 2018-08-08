@@ -3,9 +3,10 @@
  */
 
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
 import { Component } from 'react';
 import type { Node } from 'react';
+
+import PropTypes from 'prop-types';
 
 let portalOuterContainer :HTMLDivElement;
 
@@ -57,6 +58,7 @@ export default class Portal extends Component<Props> {
 
   render() {
 
+    const { children } = this.props;
     return ReactDOM.createPortal(this.props.children, this.portalInnerContainer);
   }
 }

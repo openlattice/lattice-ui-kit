@@ -89,7 +89,8 @@
       {
         "devDependencies": [
           "config/**",
-          "**/*.test.js"
+          "**/*.test.js",
+          "**/*.stories.js"
         ]
       }
     ],
