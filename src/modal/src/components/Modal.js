@@ -87,7 +87,6 @@ export default class Modal extends Component<Props> {
 
   handleOnClickOverlay = (event :SyntheticEvent<HTMLElement>) => {
 
-    console.log('overlay click')
     if (event.target === event.currentTarget) {
       this.close();
     }

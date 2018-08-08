@@ -9,28 +9,21 @@ import type { Node } from 'react';
 import { BodySection } from './styled/StyledModalComponents';
 
 type Props = {
-  children ? :Node;
+  children :Node;
 };
 
 export default class ModalBody extends Component<Props> {
 
   static propTypes = {
-    children: PropTypes.node,
-  }
-
-  static defaultProps = {
-    children: null
-  }
-
-  constructor(props :Props) {
-    super(props);
+    children: PropTypes.node.isRequired,
   }
 
   render() {
 
+    const { children } = this.props;
     return (
       <BodySection>
-        { this.props.children }
+        { children }
       </BodySection>
     );
   }
