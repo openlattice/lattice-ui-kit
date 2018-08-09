@@ -8,7 +8,7 @@ import Button from './Button';
 import DefaultButton from './styled/DefaultButton';
 import PrimaryButton from './styled/PrimaryButton';
 import SecondaryButton from './styled/SecondaryButton';
-import { genRandomString, nope } from '../../../utils/testing/MockUtils';
+import { nope } from '../../../utils/testing/MockUtils';
 
 const DEFAULT_BTN_TXT = 'DEFAULT_BUTTON';
 const PRIMARY_BTN_TXT = 'PRIMARY_BUTTON';
@@ -18,105 +18,62 @@ describe('button', () => {
 
   describe('mode="default"', () => {
 
+    const basicBtn1 = mount(
+      <Button onClick={nope}>
+        { DEFAULT_BTN_TXT }
+      </Button>
+    );
+    const basicBtn2 = mount(
+      <Button mode="default" onClick={nope}>
+        { DEFAULT_BTN_TXT }
+      </Button>
+    );
+
     test('should match snapshot', () => {
-      const wrapper1 = mount(
-        <Button onClick={nope}>
-          { DEFAULT_BTN_TXT }
-        </Button>
-      );
-      const wrapper2 = mount(
-        <Button mode="default" onClick={nope}>
-          { DEFAULT_BTN_TXT }
-        </Button>
-      );
-      expect(toJson(wrapper1)).toMatchSnapshot();
-      expect(toJson(wrapper2)).toMatchSnapshot();
+      expect(toJson(basicBtn1)).toMatchSnapshot();
+      expect(toJson(basicBtn2)).toMatchSnapshot();
     });
 
     test('should render DefaultButton component', () => {
-      const wrapper1 = shallow(
-        <Button onClick={nope}>
-          { genRandomString() }
-        </Button>
-      );
-      const wrapper2 = shallow(
-        <Button mode="default" onClick={nope}>
-          { genRandomString() }
-        </Button>
-      );
-      expect(wrapper1.type()).toEqual(DefaultButton);
-      expect(wrapper2.type()).toEqual(DefaultButton);
-      expect(wrapper1.find(DefaultButton)).toHaveLength(1);
-      expect(wrapper2.find(DefaultButton)).toHaveLength(1);
+      expect(basicBtn1.find(DefaultButton)).toHaveLength(1);
+      expect(basicBtn2.find(DefaultButton)).toHaveLength(1);
     });
 
     test('should render a button element', () => {
-      const wrapper1 = shallow(
-        <Button onClick={nope}>
-          { genRandomString() }
-        </Button>
-      );
-      const wrapper2 = shallow(
-        <Button mode="default" onClick={nope}>
-          { genRandomString() }
-        </Button>
-      );
-      expect(wrapper1.dive().type()).toEqual('button');
-      expect(wrapper2.dive().type()).toEqual('button');
-      expect(wrapper1.dive().find('button')).toHaveLength(1);
-      expect(wrapper2.dive().find('button')).toHaveLength(1);
+      expect(basicBtn1.find('button')).toHaveLength(1);
+      expect(basicBtn2.find('button')).toHaveLength(1);
     });
 
     test('should render the correct text', () => {
-      const text = genRandomString();
-      const wrapper1 = shallow(
-        <Button onClick={nope}>
-          { text }
-        </Button>
-      );
-      const wrapper2 = shallow(
-        <Button mode="default" onClick={nope}>
-          { text }
-        </Button>
-      );
-      expect(wrapper1.dive().text()).toEqual(text);
-      expect(wrapper2.dive().text()).toEqual(text);
+      expect(basicBtn1.text()).toEqual(DEFAULT_BTN_TXT);
+      expect(basicBtn2.text()).toEqual(DEFAULT_BTN_TXT);
     });
 
     describe('disabled', () => {
 
+      const disabledBtn1 = mount(
+        <Button disabled onClick={nope}>
+          { DEFAULT_BTN_TXT }
+        </Button>
+      );
+      const disabledBtn2 = mount(
+        <Button disabled mode="default" onClick={nope}>
+          { DEFAULT_BTN_TXT }
+        </Button>
+      );
+
       test('should set "disabled" attribute to true', () => {
-        const wrapper1 = shallow(
-          <Button disabled onClick={nope}>
-            { genRandomString() }
-          </Button>
-        );
-        const wrapper2 = shallow(
-          <Button disabled mode="default" onClick={nope}>
-            { genRandomString() }
-          </Button>
-        );
-        expect(wrapper1.prop('disabled')).toEqual(true);
-        expect(wrapper2.prop('disabled')).toEqual(true);
-        expect(wrapper1.dive().find('button').get(0).props.disabled).toEqual(true);
-        expect(wrapper2.dive().find('button').get(0).props.disabled).toEqual(true);
+        expect(disabledBtn1.prop('disabled')).toEqual(true);
+        expect(disabledBtn2.prop('disabled')).toEqual(true);
+        expect(disabledBtn1.find('button').get(0).props.disabled).toEqual(true);
+        expect(disabledBtn2.find('button').get(0).props.disabled).toEqual(true);
       });
 
       test('should set "disabled" attribute to false', () => {
-        const wrapper1 = shallow(
-          <Button onClick={nope}>
-            { genRandomString() }
-          </Button>
-        );
-        const wrapper2 = shallow(
-          <Button mode="default" onClick={nope}>
-            { genRandomString() }
-          </Button>
-        );
-        expect(wrapper1.prop('disabled')).toEqual(false);
-        expect(wrapper2.prop('disabled')).toEqual(false);
-        expect(wrapper1.dive().find('button').get(0).props.disabled).toEqual(false);
-        expect(wrapper2.dive().find('button').get(0).props.disabled).toEqual(false);
+        expect(basicBtn1.prop('disabled')).toEqual(false);
+        expect(basicBtn2.prop('disabled')).toEqual(false);
+        expect(basicBtn1.find('button').get(0).props.disabled).toEqual(false);
+        expect(basicBtn2.find('button').get(0).props.disabled).toEqual(false);
       });
 
     });
@@ -126,18 +83,18 @@ describe('button', () => {
       test('should invoke onClick handler', () => {
         const mockOnClick1 = jest.fn();
         const mockOnClick2 = jest.fn();
-        const wrapper1 = shallow(
+        const btn1 = shallow(
           <Button onClick={mockOnClick1}>
-            { genRandomString() }
+            { DEFAULT_BTN_TXT }
           </Button>
         );
-        const wrapper2 = shallow(
+        const btn2 = shallow(
           <Button mode="default" onClick={mockOnClick2}>
-            { genRandomString() }
+            { DEFAULT_BTN_TXT }
           </Button>
         );
-        wrapper1.simulate('click');
-        wrapper2.simulate('click');
+        btn1.simulate('click');
+        btn2.simulate('click');
         expect(mockOnClick1).toHaveBeenCalledTimes(1);
         expect(mockOnClick2).toHaveBeenCalledTimes(1);
       });
@@ -148,65 +105,44 @@ describe('button', () => {
 
   describe('mode="primary"', () => {
 
+    const basicBtn = mount(
+      <Button mode="primary" onClick={nope}>
+        { PRIMARY_BTN_TXT }
+      </Button>
+    );
+
     test('should match snapshot', () => {
-      const wrapper = mount(
-        <Button mode="primary" onClick={nope}>
-          { PRIMARY_BTN_TXT }
-        </Button>
-      );
-      expect(toJson(wrapper)).toMatchSnapshot();
+      expect(toJson(basicBtn)).toMatchSnapshot();
     });
 
     test('should render PrimaryButton component', () => {
-      const wrapper = shallow(
-        <Button mode="primary" onClick={nope}>
-          { genRandomString() }
-        </Button>
-      );
-      expect(wrapper.type()).toEqual(PrimaryButton);
-      expect(wrapper.find(PrimaryButton)).toHaveLength(1);
+      expect(basicBtn.find(PrimaryButton)).toHaveLength(1);
     });
 
     test('should render a button element', () => {
-      const wrapper = shallow(
-        <Button mode="primary" onClick={nope}>
-          { genRandomString() }
-        </Button>
-      );
-      expect(wrapper.dive().type()).toEqual('button');
-      expect(wrapper.dive().find('button')).toHaveLength(1);
+      expect(basicBtn.find('button')).toHaveLength(1);
     });
 
     test('should render the correct text', () => {
-      const text = genRandomString();
-      const wrapper = shallow(
-        <Button mode="primary" onClick={nope}>
-          { text }
-        </Button>
-      );
-      expect(wrapper.dive().text()).toEqual(text);
+      expect(basicBtn.text()).toEqual(PRIMARY_BTN_TXT);
     });
 
     describe('disabled', () => {
 
+      const disabledBtn = mount(
+        <Button disabled mode="primary" onClick={nope}>
+          { DEFAULT_BTN_TXT }
+        </Button>
+      );
+
       test('should set "disabled" attribute to true', () => {
-        const wrapper = shallow(
-          <Button disabled mode="primary" onClick={nope}>
-            { genRandomString() }
-          </Button>
-        );
-        expect(wrapper.prop('disabled')).toEqual(true);
-        expect(wrapper.dive().find('button').get(0).props.disabled).toEqual(true);
+        expect(disabledBtn.prop('disabled')).toEqual(true);
+        expect(disabledBtn.find('button').get(0).props.disabled).toEqual(true);
       });
 
       test('should set "disabled" attribute to false', () => {
-        const wrapper = shallow(
-          <Button mode="primary" onClick={nope}>
-            { genRandomString() }
-          </Button>
-        );
-        expect(wrapper.prop('disabled')).toEqual(false);
-        expect(wrapper.dive().find('button').get(0).props.disabled).toEqual(false);
+        expect(basicBtn.prop('disabled')).toEqual(false);
+        expect(basicBtn.find('button').get(0).props.disabled).toEqual(false);
       });
 
     });
@@ -214,14 +150,13 @@ describe('button', () => {
     describe('onClick()', () => {
 
       test('should invoke onClick handler', () => {
-
         const mockOnClick = jest.fn();
-        const wrapper = mount(
+        const btn = mount(
           <Button mode="primary" onClick={mockOnClick}>
-            { genRandomString() }
+            { PRIMARY_BTN_TXT }
           </Button>
         );
-        wrapper.simulate('click');
+        btn.simulate('click');
         expect(mockOnClick).toHaveBeenCalledTimes(1);
       });
 
@@ -231,65 +166,44 @@ describe('button', () => {
 
   describe('mode="secondary"', () => {
 
+    const basicBtn = mount(
+      <Button mode="secondary" onClick={nope}>
+        { SECONDARY_BTN_TXT }
+      </Button>
+    );
+
     test('should match snapshot', () => {
-      const wrapper = mount(
-        <Button mode="secondary" onClick={nope}>
-          { SECONDARY_BTN_TXT }
-        </Button>
-      );
-      expect(toJson(wrapper)).toMatchSnapshot();
+      expect(toJson(basicBtn)).toMatchSnapshot();
     });
 
     test('should render SecondaryButton component', () => {
-      const wrapper = shallow(
-        <Button mode="secondary" onClick={nope}>
-          { genRandomString() }
-        </Button>
-      );
-      expect(wrapper.type()).toEqual(SecondaryButton);
-      expect(wrapper.find(SecondaryButton)).toHaveLength(1);
+      expect(basicBtn.find(SecondaryButton)).toHaveLength(1);
     });
 
     test('should render a button element', () => {
-      const wrapper = shallow(
-        <Button mode="secondary" onClick={nope}>
-          { genRandomString() }
-        </Button>
-      );
-      expect(wrapper.dive().type()).toEqual('button');
-      expect(wrapper.dive().find('button')).toHaveLength(1);
+      expect(basicBtn.find('button')).toHaveLength(1);
     });
 
     test('should render the correct text', () => {
-      const text = genRandomString();
-      const wrapper = shallow(
-        <Button mode="secondary" onClick={nope}>
-          { text }
-        </Button>
-      );
-      expect(wrapper.dive().text()).toEqual(text);
+      expect(basicBtn.text()).toEqual(SECONDARY_BTN_TXT);
     });
 
     describe('disabled', () => {
 
+      const disabledBtn = mount(
+        <Button disabled mode="secondary" onClick={nope}>
+          { SECONDARY_BTN_TXT }
+        </Button>
+      );
+
       test('should set "disabled" attribute to true', () => {
-        const wrapper = shallow(
-          <Button disabled mode="secondary" onClick={nope}>
-            { genRandomString() }
-          </Button>
-        );
-        expect(wrapper.prop('disabled')).toEqual(true);
-        expect(wrapper.dive().find('button').get(0).props.disabled).toEqual(true);
+        expect(disabledBtn.prop('disabled')).toEqual(true);
+        expect(disabledBtn.find('button').get(0).props.disabled).toEqual(true);
       });
 
       test('should set "disabled" attribute to false', () => {
-        const wrapper = shallow(
-          <Button mode="secondary" onClick={nope}>
-            { genRandomString() }
-          </Button>
-        );
-        expect(wrapper.prop('disabled')).toEqual(false);
-        expect(wrapper.dive().find('button').get(0).props.disabled).toEqual(false);
+        expect(basicBtn.prop('disabled')).toEqual(false);
+        expect(basicBtn.find('button').get(0).props.disabled).toEqual(false);
       });
 
     });
@@ -297,14 +211,13 @@ describe('button', () => {
     describe('onClick()', () => {
 
       test('should invoke onClick handler', () => {
-
         const mockOnClick = jest.fn();
-        const wrapper = mount(
+        const btn = mount(
           <Button mode="secondary" onClick={mockOnClick}>
-            { genRandomString() }
+            { SECONDARY_BTN_TXT }
           </Button>
         );
-        wrapper.simulate('click');
+        btn.simulate('click');
         expect(mockOnClick).toHaveBeenCalledTimes(1);
       });
 
