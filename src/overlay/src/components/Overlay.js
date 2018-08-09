@@ -24,8 +24,8 @@ type State = {
 
 /*
  * Inspiration:
+ * https://atlaskit.atlassian.com/packages/core/blanket
  * https://github.com/segmentio/evergreen/blob/master/src/overlay/src/Overlay.js
- * https://bitbucket.org/atlassian/atlaskit-mk-2/src/master/packages/core/blanket
  */
 export default class Overlay extends Component<Props, State> {
 

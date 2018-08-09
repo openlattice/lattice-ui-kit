@@ -14,7 +14,7 @@ const DEFAULT_BTN_TXT = 'DEFAULT_BUTTON';
 const PRIMARY_BTN_TXT = 'PRIMARY_BUTTON';
 const SECONDARY_BTN_TXT = 'SECONDARY_BUTTON';
 
-describe('Button', () => {
+describe('button', () => {
 
   describe('mode="default"', () => {
 

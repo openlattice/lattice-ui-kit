@@ -17,8 +17,9 @@ type Props = {
 /*
  * Inspiration:
  * https://reactjs.org/docs/portals.html
+ * https://atlaskit.atlassian.com/packages/core/portal
+ * https://atlaskit.atlassian.com/packages/core/layer-manager
  * https://github.com/segmentio/evergreen/blob/master/src/portal/src/Portal.js
- * https://bitbucket.org/atlassian/atlaskit-mk-2/src/master/packages/core/layer-manager
  */
 export default class Portal extends Component<Props> {
 

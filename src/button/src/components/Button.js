@@ -26,6 +26,11 @@ type Props = {
 
 type State = {};
 
+/*
+ * Inspiration:
+ * https://atlaskit.atlassian.com/packages/core/button
+ * https://evergreen.surge.sh/components/buttons
+ */
 export default class Button extends Component<Props, State> {
 
   static propTypes = {

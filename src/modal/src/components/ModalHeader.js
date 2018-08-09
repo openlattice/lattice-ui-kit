@@ -52,7 +52,7 @@ export default class ModalHeader extends Component<Props> {
   static propTypes = {
     onClickClose: PropTypes.func,
     textTitle: PropTypes.string,
-    withHeader: PropTypes.oneOfType([PropTypes.node, PropTypes.bool]),
+    withHeader: PropTypes.oneOfType([PropTypes.bool, PropTypes.func, PropTypes.node]),
   }
 
   static defaultProps = {

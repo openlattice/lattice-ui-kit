@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button mode="default" should match snapshot 1`] = `
+exports[`button mode="default" should match snapshot 1`] = `
 .c0 {
   background-color: #f0f0f7;
   border-color: #f0f0f7;
@@ -62,7 +62,7 @@ exports[`Button mode="default" should match snapshot 1`] = `
 </Button>
 `;
 
-exports[`Button mode="default" should match snapshot 2`] = `
+exports[`button mode="default" should match snapshot 2`] = `
 .c0 {
   background-color: #f0f0f7;
   border-color: #f0f0f7;
@@ -124,7 +124,7 @@ exports[`Button mode="default" should match snapshot 2`] = `
 </Button>
 `;
 
-exports[`Button mode="primary" should match snapshot 1`] = `
+exports[`button mode="primary" should match snapshot 1`] = `
 .c0 {
   background-color: #6124e2;
   border-color: #6124e2;
@@ -189,7 +189,7 @@ exports[`Button mode="primary" should match snapshot 1`] = `
 </Button>
 `;
 
-exports[`Button mode="secondary" should match snapshot 1`] = `
+exports[`button mode="secondary" should match snapshot 1`] = `
 .c0 {
   background-color: #e4d8ff;
   border-color: #e4d8ff;

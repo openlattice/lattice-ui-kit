@@ -32,6 +32,11 @@ type Props = {
   withHeader ? :ComponentType<*> | boolean;
 };
 
+/*
+ * Inspiration:
+ * https://atlaskit.atlassian.com/packages/core/modal-dialog
+ * https://evergreen.surge.sh/components/dialog
+ */
 export default class Modal extends Component<Props> {
 
   static propTypes = {
@@ -46,8 +51,8 @@ export default class Modal extends Component<Props> {
     textPrimary: PropTypes.string,
     textSecondary: PropTypes.string,
     textTitle: PropTypes.string,
-    withFooter: PropTypes.oneOfType([PropTypes.node, PropTypes.bool]),
-    withHeader: PropTypes.oneOfType([PropTypes.node, PropTypes.bool]),
+    withFooter: PropTypes.oneOfType([PropTypes.bool, PropTypes.func, PropTypes.node]),
+    withHeader: PropTypes.oneOfType([PropTypes.bool, PropTypes.func, PropTypes.node]),
   }
 
   static defaultProps = {
@@ -142,38 +147,70 @@ export default class Modal extends Component<Props> {
     }
   }
 
+  renderHeaderComponent = () => {
+
+    const {
+      textTitle,
+      withHeader,
+    } = this.props;
+
+    if (withHeader === false) {
+      return null;
+    }
+
+    return (
+      <ModalHeader
+          onClickClose={this.close}
+          textTitle={textTitle}
+          withHeader={withHeader} />
+    );
+  }
+
+  renderFooterComponent = () => {
+
+    const {
+      shouldStretchButtons,
+      textPrimary,
+      textSecondary,
+      withFooter,
+    } = this.props;
+
+    if (withFooter === false || (!textPrimary && !textSecondary)) {
+      return null;
+    }
+
+    return (
+      <ModalFooter
+          onClickPrimary={this.handleOnClickPrimary}
+          onClickSecondary={this.handleOnClickSecondary}
+          shouldStretchButtons={shouldStretchButtons}
+          textPrimary={textPrimary}
+          textSecondary={textSecondary}
+          withFooter={withFooter} />
+    );
+  }
+
   render() {
 
     const {
       children,
       isVisible,
       shouldBeCentered,
-      shouldStretchButtons,
-      textPrimary,
-      textSecondary,
-      textTitle,
-      withFooter,
-      withHeader,
     } = this.props;
+
+    if (!isVisible) {
+      return null;
+    }
 
     return (
       <Overlay isVisible={isVisible}>
         <ModalOuterContainer center={shouldBeCentered} onClick={this.handleOnClickOverlay}>
           <ModalInnerContainer>
-            <ModalHeader
-                onClickClose={this.close}
-                textTitle={textTitle}
-                withHeader={withHeader} />
+            { this.renderHeaderComponent() }
             <ModalBody>
               { children }
             </ModalBody>
-            <ModalFooter
-                onClickPrimary={this.handleOnClickPrimary}
-                onClickSecondary={this.handleOnClickSecondary}
-                shouldStretchButtons={shouldStretchButtons}
-                textPrimary={textPrimary}
-                textSecondary={textSecondary}
-                withFooter={withFooter} />
+            { this.renderFooterComponent() }
           </ModalInnerContainer>
         </ModalOuterContainer>
       </Overlay>

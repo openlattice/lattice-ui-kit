@@ -52,7 +52,7 @@ export default class ModalFooter extends Component<Props> {
     shouldStretchButtons: PropTypes.bool,
     textPrimary: PropTypes.string,
     textSecondary: PropTypes.string,
-    withFooter: PropTypes.oneOfType([PropTypes.node, PropTypes.bool]),
+    withFooter: PropTypes.oneOfType([PropTypes.bool, PropTypes.func, PropTypes.node]),
   }
 
   static defaultProps = {
