@@ -21,19 +21,7 @@ describe('overlay', () => {
     </Overlay>
   );
 
-  const sVisibleOverlay = shallow(
-    <Overlay isVisible onClick={nope}>
-      { MOCK_CHILD }
-    </Overlay>
-  );
-
   const mHiddenOverlay = mount(
-    <Overlay isVisible={false} onClick={nope}>
-      { MOCK_CHILD }
-    </Overlay>
-  );
-
-  const sHiddenOverlay = shallow(
     <Overlay isVisible={false} onClick={nope}>
       { MOCK_CHILD }
     </Overlay>
