@@ -208,7 +208,6 @@ export default class Modal extends Component<Props> {
       children,
       isVisible,
       shouldBeCentered,
-      shouldCloseOnOutsideClick,
     } = this.props;
 
     if (!isVisible) {
@@ -216,12 +215,9 @@ export default class Modal extends Component<Props> {
     }
 
     return (
-      <Overlay
-          isVisible={isVisible}
-          onClose={this.handleOnClickOverlay}
-          shouldCloseOnClick={shouldCloseOnOutsideClick}>
-        <ModalOuterContainer center={shouldBeCentered} onClick={this.handleOnClickOutside}>
-          <ModalInnerContainer>
+      <Overlay isVisible={isVisible} onClose={this.handleOnClickOverlay}>
+        <ModalOuterContainer onClick={this.handleOnClickOutside}>
+          <ModalInnerContainer center={shouldBeCentered}>
             { this.renderHeaderComponent() }
             <ModalBody>
               { children }

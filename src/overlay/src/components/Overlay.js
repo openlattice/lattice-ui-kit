@@ -9,7 +9,6 @@ import PropTypes from 'prop-types';
 import isFunction from 'lodash/isFunction';
 
 import Portal from '../../../portal';
-import FixedTransparentBackground from './styled/FixedTransparentBackground';
 import { OverlayInnerContainer, OverlayOuterContainer } from './styled/StyledOverlayComponents';
 
 type Props = {
@@ -92,7 +91,6 @@ export default class Overlay extends Component<Props, State> {
     return (
       <Portal>
         <OverlayOuterContainer>
-          <FixedTransparentBackground />
           <OverlayInnerContainer onClick={this.handleOnClick}>
             { children }
           </OverlayInnerContainer>
