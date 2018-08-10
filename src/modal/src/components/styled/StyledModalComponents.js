@@ -40,14 +40,20 @@ export const ModalInnerContainer :ReactComponentStyled<*> = styled.div`
   margin-top: ${({ center }) => (center ? 0 : VIEWPORT_PADDING)}px;
   max-height: calc(100vh - ${VIEWPORT_PADDING * 2}px);
   max-width: calc(100vw - ${VIEWPORT_PADDING * 2}px);
+  min-height: 200px; /* = 2 * 100px, where 100px is the "min-height" of ModalSection */
+  min-width: 300px;
   overflow: scroll;
   position: relative;
 `;
 
+/*
+ * "min-height" 40px + "padding" 30px = 100px of total height
+ */
 export const ModalSection :ReactComponentStyled<*> = styled.div`
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
+  min-height: 40px;
   overflow: scroll;
   padding: ${DEFAULT_PADDING}px;
   position: relative;

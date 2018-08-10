@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 import type { Node } from 'react';
 
 import PropTypes from 'prop-types';
+import ScrollLock from 'react-scrolllock';
 import isFunction from 'lodash/isFunction';
 
 import Portal from '../../../portal';
@@ -95,6 +96,7 @@ export default class Overlay extends Component<Props, State> {
             { children }
           </OverlayInnerContainer>
         </OverlayOuterContainer>
+        <ScrollLock />
       </Portal>
     );
   }
