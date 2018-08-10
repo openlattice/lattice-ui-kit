@@ -5,6 +5,7 @@ import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
 
 import Overlay from './Overlay';
+import { OverlayInnerContainer } from './styled/StyledOverlayComponents';
 import { nope } from '../../../utils/testing/MockUtils';
 
 const MOCK_CHILD = (
@@ -86,19 +87,6 @@ describe('overlay', () => {
         expect(mHiddenOverlay.prop('isVisible')).toEqual(false);
       });
 
-      test('should toggle visibility', () => {
-        const wrapper = mount(
-          <Overlay isVisible={false}>
-            { MOCK_CHILD }
-          </Overlay>
-        );
-        expect(wrapper.prop('isVisible')).toEqual(false);
-        wrapper.setProps({ isVisible: true });
-        expect(wrapper.prop('isVisible')).toEqual(true);
-        wrapper.setProps({ isVisible: false });
-        expect(wrapper.prop('isVisible')).toEqual(false);
-      });
-
     });
 
     describe('onClose', () => {
@@ -156,16 +144,19 @@ describe('overlay', () => {
         expect(mHiddenOverlay.state().isVisible).toEqual(false);
       });
 
-      test('should update when props change', () => {
-        const wrapper = shallow(
+      test('should toggle visibility', () => {
+        const wrapper = mount(
           <Overlay isVisible={false}>
             { MOCK_CHILD }
           </Overlay>
         );
+        expect(wrapper.prop('isVisible')).toEqual(false);
         expect(wrapper.state().isVisible).toEqual(false);
         wrapper.setProps({ isVisible: true });
+        expect(wrapper.prop('isVisible')).toEqual(true);
         expect(wrapper.state().isVisible).toEqual(true);
         wrapper.setProps({ isVisible: false });
+        expect(wrapper.prop('isVisible')).toEqual(false);
         expect(wrapper.state().isVisible).toEqual(false);
       });
 
@@ -176,7 +167,7 @@ describe('overlay', () => {
           </Overlay>
         );
         expect(wrapper.state().isVisible).toEqual(true);
-        wrapper.find('div').last().simulate('click');
+        wrapper.find(OverlayInnerContainer).simulate('click');
         expect(wrapper.state().isVisible).toEqual(false);
       });
 

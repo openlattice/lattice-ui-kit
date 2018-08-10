@@ -19,17 +19,8 @@ exports[`modal snapshots should match snapshot when isVisible="false" 1`] = `
 `;
 
 exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
-.c1 {
-  background-color: rgba(8,0,25,0.3);
-  bottom: 0;
-  display: block;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-}
-
 .c0 {
+  background-color: rgba(8,0,25,0.3);
   bottom: 0;
   display: block;
   left: 0;
@@ -39,13 +30,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   z-index: 1000;
 }
 
-.c2 {
+.c1 {
+  display: block;
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.c3 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -60,20 +52,18 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  height: calc(100vh - 60px);
+  height: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  top: 30px;
-  width: calc(100vw - 60px);
+  width: 100%;
 }
 
-.c4 {
+.c3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0 2px 8px -2px #555e6f;
@@ -87,13 +77,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-height: calc(100vh - 60px);
-  max-width: calc(100vw - 60px);
+  margin-top: 0px;
+  max-height: calc(100vh - 240px);
+  max-width: calc(100vw - 240px);
   overflow: scroll;
   position: relative;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -109,11 +100,11 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   position: relative;
 }
 
-.c9 {
+.c8 {
   padding: 0 30px;
 }
 
-.c10 {
+.c9 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -123,7 +114,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   flex-direction: row-reverse;
 }
 
-.c5 {
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -137,7 +128,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   justify-content: space-between;
 }
 
-.c14 {
+.c13 {
   background-color: #f0f0f7;
   border-color: #f0f0f7;
   border-radius: 4px;
@@ -155,14 +146,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   white-space: nowrap;
 }
 
-.c14:hover {
+.c13:hover {
   background-color: #dcdce7;
   border-color: #dcdce7;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c14:active {
+.c13:active {
   background-color: #b6bbc7;
   border-color: #b6bbc7;
   color: #ffffff;
@@ -170,13 +161,13 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-decoration: none;
 }
 
-.c14:disabled {
+.c13:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c12 {
+.c11 {
   background-color: #6124e2;
   border-color: #6124e2;
   border-radius: 4px;
@@ -194,7 +185,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   white-space: nowrap;
 }
 
-.c12:hover {
+.c11:hover {
   background-color: #8045ff;
   border-color: #8045ff;
   cursor: pointer;
@@ -202,14 +193,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-decoration: none;
 }
 
-.c12:active {
+.c11:active {
   background-color: #361876;
   border-color: #361876;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c12:disabled {
+.c11:disabled {
   background-color: #f0f0f7;
   border-color: #f0f0f7;
   color: #b6bbc7;
@@ -218,20 +209,20 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-decoration: none;
 }
 
-.c11 {
+.c10 {
   margin: 0 0 0 20px;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c13 {
+.c12 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c7 {
+.c6 {
   color: #555e6f;
   font-size: 18px;
   font-weight: normal;
@@ -241,7 +232,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   white-space: nowrap;
 }
 
-.c8 {
+.c7 {
   background: none;
   border: none;
   cursor: pointer;
@@ -278,29 +269,25 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
         <div
           className="c0"
         >
-          <FixedTransparentBackground>
-            <div
-              className="c1"
-            />
-          </FixedTransparentBackground>
           <StyledOverlayComponents__OverlayInnerContainer
             onClick={[Function]}
           >
             <div
-              className="c2"
+              className="c1"
               onClick={[Function]}
             >
               <StyledModalComponents__ModalOuterContainer
-                center={true}
                 onClick={[Function]}
               >
                 <div
-                  className="c3"
+                  className="c2"
                   onClick={[Function]}
                 >
-                  <StyledModalComponents__ModalInnerContainer>
+                  <StyledModalComponents__ModalInnerContainer
+                    center={true}
+                  >
                     <div
-                      className="c4"
+                      className="c3"
                     >
                       <ModalHeader
                         onClickClose={[Function]}
@@ -309,14 +296,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                       >
                         <StyledModalComponents__HeaderSection>
                           <StyledModalComponents__ModalSection
-                            className="c5"
+                            className="c4"
                           >
                             <div
-                              className="c5 c6"
+                              className="c4 c5"
                             >
                               <ModalHeader__ModalTitle>
                                 <h1
-                                  className="c7"
+                                  className="c6"
                                 >
                                   Title
                                 </h1>
@@ -325,7 +312,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                 onClick={[Function]}
                               >
                                 <button
-                                  className="c8"
+                                  className="c7"
                                   onClick={[Function]}
                                 >
                                   <FontAwesomeIcon
@@ -383,10 +370,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                       <ModalBody>
                         <StyledModalComponents__BodySection>
                           <StyledModalComponents__ModalSection
-                            className="c9"
+                            className="c8"
                           >
                             <div
-                              className="c9 c6"
+                              className="c8 c5"
                             >
                               <span>
                                 hello
@@ -405,10 +392,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                       >
                         <StyledModalComponents__FooterSection>
                           <StyledModalComponents__ModalSection
-                            className="c10"
+                            className="c9"
                           >
                             <div
-                              className="c10 c6"
+                              className="c9 c5"
                             >
                               <ModalFooter__PrimaryButton
                                 isLonely={false}
@@ -416,7 +403,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                 stretch={false}
                               >
                                 <Button
-                                  className="c11"
+                                  className="c10"
                                   disabled={false}
                                   isLonely={false}
                                   mode="primary"
@@ -424,12 +411,12 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                   stretch={false}
                                 >
                                   <PrimaryButton
-                                    className="c11"
+                                    className="c10"
                                     disabled={false}
                                     onClick={[Function]}
                                   >
                                     <button
-                                      className="c11 c12"
+                                      className="c10 c11"
                                       disabled={false}
                                       onClick={[Function]}
                                     >
@@ -443,19 +430,19 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                 stretch={false}
                               >
                                 <Button
-                                  className="c13"
+                                  className="c12"
                                   disabled={false}
                                   mode="default"
                                   onClick={[Function]}
                                   stretch={false}
                                 >
                                   <DefaultButton
-                                    className="c13"
+                                    className="c12"
                                     disabled={false}
                                     onClick={[Function]}
                                   >
                                     <button
-                                      className="c13 c14"
+                                      className="c12 c13"
                                       disabled={false}
                                       onClick={[Function]}
                                     >
