@@ -3,18 +3,20 @@
  */
 
 import React, { Component } from 'react';
+import type { Node } from 'react';
+
 import PropTypes from 'prop-types';
-// import type { Node } from 'react';
+import isFunction from 'lodash/isFunction';
 
 import Portal from '../../../portal';
-
 import FixedTransparentBackground from './styled/FixedTransparentBackground';
-import OverlayInnerContainer from './styled/OverlayInnerContainer';
-import OverlayOuterContainer from './styled/OverlayOuterContainer';
+import { OverlayInnerContainer, OverlayOuterContainer } from './styled/StyledOverlayComponents';
 
 type Props = {
   children :Node;
   isVisible :boolean;
+  onClose ? :() => void;
+  shouldCloseOnClick ? :boolean;
 };
 
 type State = {
@@ -23,18 +25,21 @@ type State = {
 
 /*
  * Inspiration:
+ * https://atlaskit.atlassian.com/packages/core/blanket
  * https://github.com/segmentio/evergreen/blob/master/src/overlay/src/Overlay.js
- * https://bitbucket.org/atlassian/atlaskit-mk-2/src/master/packages/core/blanket
  */
 export default class Overlay extends Component<Props, State> {
 
   static propTypes = {
     children: PropTypes.node.isRequired,
-    isVisible: PropTypes.bool
+    isVisible: PropTypes.bool.isRequired,
+    onClose: PropTypes.func,
+    shouldCloseOnClick: PropTypes.bool,
   }
 
   static defaultProps = {
-    isVisible: false
+    onClose: undefined,
+    shouldCloseOnClick: true,
   }
 
   constructor(props :Props) {
@@ -42,7 +47,7 @@ export default class Overlay extends Component<Props, State> {
     super(props);
 
     this.state = {
-      isVisible: props.isVisible
+      isVisible: props.isVisible,
     };
   }
 
@@ -51,31 +56,45 @@ export default class Overlay extends Component<Props, State> {
     if (nextProps.isVisible) {
       this.setState({ isVisible: true });
     }
+    else if (!nextProps.isVisible) {
+      this.setState({ isVisible: false });
+    }
   }
 
   close = () => {
+
     this.setState({ isVisible: false });
+
+    const { onClose } = this.props;
+    if (onClose && isFunction(onClose)) {
+      onClose();
+    }
   }
 
   handleOnClick = (event :SyntheticEvent<HTMLElement>) => {
 
-    if (event.target === event.currentTarget) {
+    const { shouldCloseOnClick } = this.props;
+    if (event.target === event.currentTarget && shouldCloseOnClick) {
+      event.preventDefault();
       this.close();
     }
   }
 
   render() {
 
-    if (!this.state.isVisible) {
+    const { children } = this.props;
+    const { isVisible } = this.state;
+
+    if (!isVisible) {
       return null;
     }
 
     return (
       <Portal>
         <OverlayOuterContainer>
-          <FixedTransparentBackground onClick={this.handleOnClick} />
-          <OverlayInnerContainer>
-            { this.props.children }
+          <FixedTransparentBackground />
+          <OverlayInnerContainer onClick={this.handleOnClick}>
+            { children }
           </OverlayInnerContainer>
         </OverlayOuterContainer>
       </Portal>
