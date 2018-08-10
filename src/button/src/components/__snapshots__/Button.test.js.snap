@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button mode="default" should match snapshot 1`] = `
+.c0 {
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  color: #8e929b;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.c0:hover {
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:active {
+  background-color: #b6bbc7;
+  border-color: #b6bbc7;
+  color: #ffffff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<Button
+  className=""
+  disabled={false}
+  mode="default"
+  onClick={[Function]}
+>
+  <DefaultButton
+    className=""
+    disabled={false}
+    onClick={[Function]}
+  >
+    <button
+      className="c0"
+      disabled={false}
+      onClick={[Function]}
+    >
+      DEFAULT_BUTTON
+    </button>
+  </DefaultButton>
+</Button>
+`;
+
+exports[`button mode="default" should match snapshot 2`] = `
+.c0 {
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  color: #8e929b;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.c0:hover {
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:active {
+  background-color: #b6bbc7;
+  border-color: #b6bbc7;
+  color: #ffffff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<Button
+  className=""
+  disabled={false}
+  mode="default"
+  onClick={[Function]}
+>
+  <DefaultButton
+    className=""
+    disabled={false}
+    onClick={[Function]}
+  >
+    <button
+      className="c0"
+      disabled={false}
+      onClick={[Function]}
+    >
+      DEFAULT_BUTTON
+    </button>
+  </DefaultButton>
+</Button>
+`;
+
+exports[`button mode="primary" should match snapshot 1`] = `
+.c0 {
+  background-color: #6124e2;
+  border-color: #6124e2;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.c0:hover {
+  background-color: #8045ff;
+  border-color: #8045ff;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:active {
+  background-color: #361876;
+  border-color: #361876;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<Button
+  className=""
+  disabled={false}
+  mode="primary"
+  onClick={[Function]}
+>
+  <PrimaryButton
+    className=""
+    disabled={false}
+    onClick={[Function]}
+  >
+    <button
+      className="c0"
+      disabled={false}
+      onClick={[Function]}
+    >
+      PRIMARY_BUTTON
+    </button>
+  </PrimaryButton>
+</Button>
+`;
+
+exports[`button mode="secondary" should match snapshot 1`] = `
+.c0 {
+  background-color: #e4d8ff;
+  border-color: #e4d8ff;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  color: #6124e2;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.c0:hover {
+  background-color: #d0bbff;
+  border-color: #d0bbff;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:active {
+  background-color: #b898ff;
+  border-color: #b898ff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #8e929b;
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<Button
+  className=""
+  disabled={false}
+  mode="secondary"
+  onClick={[Function]}
+>
+  <SecondaryButton
+    className=""
+    disabled={false}
+    onClick={[Function]}
+  >
+    <button
+      className="c0"
+      disabled={false}
+      onClick={[Function]}
+    >
+      SECONDARY_BUTTON
+    </button>
+  </SecondaryButton>
+</Button>
+`;

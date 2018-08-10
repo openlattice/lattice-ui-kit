@@ -6,9 +6,11 @@
 declare var __VERSION__ :string;
 const version :string = __VERSION__;
 
+export { Creatable, Select } from './select';
 export { version };
 export { default as Button } from './button';
-export { Creatable, Select } from './select';
+export { default as Overlay } from './overlay';
+export { default as Portal } from './portal';
 export default {
   version
 };
