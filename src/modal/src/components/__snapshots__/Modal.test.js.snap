@@ -80,6 +80,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   margin-top: 0px;
   max-height: calc(100vh - 240px);
   max-width: calc(100vw - 240px);
+  min-height: 200px;
+  min-width: 300px;
   overflow: scroll;
   position: relative;
 }
@@ -95,6 +97,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  min-height: 40px;
   overflow: scroll;
   padding: 30px;
   position: relative;
@@ -463,6 +466,21 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
           </StyledOverlayComponents__OverlayInnerContainer>
         </div>
       </StyledOverlayComponents__OverlayOuterContainer>
+      <TouchProvider>
+        <ScrollLock
+          accountForScrollbars={true}
+        >
+          <Sheet
+            styles="body {
+      box-sizing: border-box !important;
+      overflow: hidden !important;
+      position: relative !important;
+      
+      padding-right: 1024px !important;
+    }"
+          />
+        </ScrollLock>
+      </TouchProvider>
     </Portal>
   </Overlay>
 </Modal>
