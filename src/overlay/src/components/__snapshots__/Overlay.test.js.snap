@@ -51,6 +51,21 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
         </StyledOverlayComponents__OverlayInnerContainer>
       </div>
     </StyledOverlayComponents__OverlayOuterContainer>
+    <TouchProvider>
+      <ScrollLock
+        accountForScrollbars={true}
+      >
+        <Sheet
+          styles="body {
+      box-sizing: border-box !important;
+      overflow: hidden !important;
+      position: relative !important;
+      
+      padding-right: 1024px !important;
+    }"
+        />
+      </ScrollLock>
+    </TouchProvider>
   </Portal>
 </Overlay>
 `;
