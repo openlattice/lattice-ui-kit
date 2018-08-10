@@ -137,7 +137,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   justify-content: space-between;
 }
 
-.c12 {
+.c14 {
   background-color: #f0f0f7;
   border-color: #f0f0f7;
   border-radius: 4px;
@@ -155,14 +155,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   white-space: nowrap;
 }
 
-.c12:hover {
+.c14:hover {
   background-color: #dcdce7;
   border-color: #dcdce7;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c12:active {
+.c14:active {
   background-color: #b6bbc7;
   border-color: #b6bbc7;
   color: #ffffff;
@@ -170,7 +170,49 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-decoration: none;
 }
 
+.c14:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c12 {
+  background-color: #6124e2;
+  border-color: #6124e2;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.c12:hover {
+  background-color: #8045ff;
+  border-color: #8045ff;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c12:active {
+  background-color: #361876;
+  border-color: #361876;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 .c12:disabled {
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -377,12 +419,11 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                   className="c11"
                                   disabled={false}
                                   isLonely={false}
-                                  mode="default"
+                                  mode="primary"
                                   onClick={[Function]}
                                   stretch={false}
-                                  type="primary"
                                 >
-                                  <DefaultButton
+                                  <PrimaryButton
                                     className="c11"
                                     disabled={false}
                                     onClick={[Function]}
@@ -394,7 +435,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                     >
                                       Confirm
                                     </button>
-                                  </DefaultButton>
+                                  </PrimaryButton>
                                 </Button>
                               </ModalFooter__PrimaryButton>
                               <ModalFooter__SecondaryButton
@@ -407,7 +448,6 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                   mode="default"
                                   onClick={[Function]}
                                   stretch={false}
-                                  type="default"
                                 >
                                   <DefaultButton
                                     className="c13"
@@ -415,7 +455,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                     onClick={[Function]}
                                   >
                                     <button
-                                      className="c13 c12"
+                                      className="c13 c14"
                                       disabled={false}
                                       onClick={[Function]}
                                     >

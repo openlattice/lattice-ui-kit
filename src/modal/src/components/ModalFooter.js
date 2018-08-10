@@ -16,14 +16,14 @@ export const DEFAULT_TEXT_PRIMARY_ACTION :'Confirm' = 'Confirm';
 export const DEFAULT_TEXT_SECONDARY_ACTION :'Cancel' = 'Cancel';
 
 const PrimaryButton = styled(Button).attrs({
-  type: 'primary'
+  mode: 'primary'
 })`
   margin: ${({ isLonely }) => (isLonely ? 0 : '0 0 0 20px')};
   flex: ${({ stretch }) => (stretch ? 1 : 'none')};
 `;
 
 const SecondaryButton = styled(Button).attrs({
-  type: 'default'
+  mode: 'default'
 })`
   flex: ${({ stretch }) => (stretch ? 1 : 'none')};
 `;
