@@ -103,7 +103,7 @@
   },
   "betterScripts": {
     "build": {
-      "command": "webpack --config config/webpack/webpack.config.babel.js",
+      "command": "webpack --config config/webpack/webpack.config.base.js",
       "env": {
         "BUILD": "production",
         "MINIMIZE": "false",
@@ -111,7 +111,7 @@
       }
     },
     "build:dev": {
-      "command": "webpack --config config/webpack/webpack.config.babel.js",
+      "command": "webpack --config config/webpack/webpack.config.base.js",
       "env": {
         "BUILD": "development",
         "MINIMIZE": "false",
@@ -119,7 +119,7 @@
       }
     },
     "build:min": {
-      "command": "webpack --config config/webpack/webpack.config.babel.js",
+      "command": "webpack --config config/webpack/webpack.config.base.js",
       "env": {
         "BUILD": "production",
         "MINIMIZE": "true",
