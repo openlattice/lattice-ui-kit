@@ -10,6 +10,7 @@ module.exports = {
     '<rootDir>/build/',
     '<rootDir>/config/',
     '<rootDir>/flow-typed/',
+    '<rootDir>/src/utils/testing/.*',
     '<rootDir>/.*/stories/.*',
   ],
   coverageDirectory: '<rootDir>/coverage',

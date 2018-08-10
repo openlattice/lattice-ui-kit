@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`overlay snapshots should match snapshot when isVisible="false" 1`] = `
+<Overlay
+  isVisible={false}
+  onClick={[Function]}
+/>
+`;
+
+exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
+.c1 {
+  background-color: rgba(8,0,25,0.3);
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.c0 {
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.c2 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+<Overlay
+  isVisible={true}
+  onClick={[Function]}
+>
+  <Portal>
+    <StyledOverlayComponents__OverlayOuterContainer>
+      <div
+        className="c0"
+      >
+        <FixedTransparentBackground>
+          <div
+            className="c1"
+          />
+        </FixedTransparentBackground>
+        <StyledOverlayComponents__OverlayInnerContainer
+          onClick={[Function]}
+        >
+          <div
+            className="c2"
+            onClick={[Function]}
+          >
+            <span>
+              hello
+            </span>
+          </div>
+        </StyledOverlayComponents__OverlayInnerContainer>
+      </div>
+    </StyledOverlayComponents__OverlayOuterContainer>
+  </Portal>
+</Overlay>
+`;
