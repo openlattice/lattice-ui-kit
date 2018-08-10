@@ -7,6 +7,8 @@ import { mount, shallow } from 'enzyme';
 import Modal from './Modal';
 import ModalFooter from './ModalFooter';
 import ModalHeader from './ModalHeader';
+import { ModalOuterContainer } from './styled/StyledModalComponents';
+import { OverlayInnerContainer } from '../../../overlay/src/components/styled/StyledOverlayComponents';
 import { nope } from '../../../utils/testing/MockUtils';
 
 const CANCEL_TXT = 'Cancel';
@@ -213,25 +215,75 @@ describe('modal', () => {
 
     describe('shouldCloseOnEscape', () => {
 
-      test('should close modal when shouldCloseOnEscape="true"', () => {
+      test('should close modal when true', () => {
         const mockOnClose = jest.fn();
-        shallow(
+        const modal = shallow(
           <Modal isVisible onClose={mockOnClose} shouldCloseOnEscape>
             { MOCK_CHILD }
           </Modal>
         );
         mockAddEventListenerMap.keydown({ key: 'Escape', code: 'Escape' });
+        expect(modal.instance().escapeKeyIsPressed).toEqual(true);
+        mockAddEventListenerMap.keyup({ key: 'Escape', code: 'Escape' });
+        expect(modal.instance().escapeKeyIsPressed).toEqual(false);
         expect(mockOnClose).toHaveBeenCalledTimes(1);
       });
 
-      test('should not close modal when shouldCloseOnEscape="false"', () => {
+      test('should not close modal when false', () => {
         const mockOnClose = jest.fn();
-        shallow(
+        const modal = shallow(
           <Modal isVisible onClose={mockOnClose} shouldCloseOnEscape={false}>
             { MOCK_CHILD }
           </Modal>
         );
         mockAddEventListenerMap.keydown({ key: 'Escape', code: 'Escape' });
+        expect(modal.instance().escapeKeyIsPressed).toEqual(true);
+        mockAddEventListenerMap.keyup({ key: 'Escape', code: 'Escape' });
+        expect(modal.instance().escapeKeyIsPressed).toEqual(false);
+        expect(mockOnClose).toHaveBeenCalledTimes(0);
+      });
+
+      test('should not close modal when another key is pressed', () => {
+        const mockOnClose = jest.fn();
+        const modal = shallow(
+          <Modal isVisible onClose={mockOnClose} shouldCloseOnEscape>
+            { MOCK_CHILD }
+          </Modal>
+        );
+        mockAddEventListenerMap.keydown({ key: 'A', code: 'A' });
+        expect(modal.instance().escapeKeyIsPressed).toEqual(false);
+        mockAddEventListenerMap.keyup({ key: 'A', code: 'A' });
+        expect(modal.instance().escapeKeyIsPressed).toEqual(false);
+        expect(mockOnClose).toHaveBeenCalledTimes(0);
+      });
+
+    });
+
+    describe('shouldCloseOnOutsideClick', () => {
+
+      test('should close modal when true', () => {
+        const mockOnClose = jest.fn();
+        const modal = mount(
+          <Modal isVisible onClose={mockOnClose} shouldCloseOnOutsideClick>
+            { MOCK_CHILD }
+          </Modal>
+        );
+        modal.find(ModalOuterContainer).simulate('click');
+        expect(mockOnClose).toHaveBeenCalledTimes(1);
+        modal.find(OverlayInnerContainer).simulate('click');
+        expect(mockOnClose).toHaveBeenCalledTimes(2);
+      });
+
+      test('should not close modal when false', () => {
+        const mockOnClose = jest.fn();
+        const modal = mount(
+          <Modal isVisible onClose={mockOnClose} shouldCloseOnOutsideClick={false}>
+            { MOCK_CHILD }
+          </Modal>
+        );
+        modal.find(ModalOuterContainer).simulate('click');
+        expect(mockOnClose).toHaveBeenCalledTimes(0);
+        modal.find(OverlayInnerContainer).simulate('click');
         expect(mockOnClose).toHaveBeenCalledTimes(0);
       });
 

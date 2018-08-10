@@ -8,6 +8,7 @@ exports[`modal snapshots should match snapshot when isVisible="false" 1`] = `
   onClose={[Function]}
   shouldBeCentered={true}
   shouldCloseOnEscape={true}
+  shouldCloseOnOutsideClick={true}
   shouldStretchButtons={false}
   textPrimary="Confirm"
   textSecondary="Cancel"
@@ -217,6 +218,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   onClose={[Function]}
   shouldBeCentered={true}
   shouldCloseOnEscape={true}
+  shouldCloseOnOutsideClick={true}
   shouldStretchButtons={false}
   textPrimary="Confirm"
   textSecondary="Cancel"
@@ -226,6 +228,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 >
   <Overlay
     isVisible={true}
+    onClose={[Function]}
+    shouldCloseOnClick={true}
   >
     <Portal>
       <StyledOverlayComponents__OverlayOuterContainer>

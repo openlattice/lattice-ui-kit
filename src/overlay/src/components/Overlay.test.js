@@ -16,13 +16,13 @@ const MOCK_CHILD = (
 describe('overlay', () => {
 
   const mVisibleOverlay = mount(
-    <Overlay isVisible onClick={nope}>
+    <Overlay isVisible onClose={nope}>
       { MOCK_CHILD }
     </Overlay>
   );
 
   const mHiddenOverlay = mount(
-    <Overlay isVisible={false} onClick={nope}>
+    <Overlay isVisible={false} onClose={nope}>
       { MOCK_CHILD }
     </Overlay>
   );
@@ -63,7 +63,7 @@ describe('overlay', () => {
           </div>
         );
         const wrapper = shallow(
-          <Overlay isVisible onClose={nope}>
+          <Overlay isVisible>
             { children }
           </Overlay>
         );
@@ -88,7 +88,7 @@ describe('overlay', () => {
 
       test('should toggle visibility', () => {
         const wrapper = mount(
-          <Overlay isVisible={false} onClose={nope}>
+          <Overlay isVisible={false}>
             { MOCK_CHILD }
           </Overlay>
         );
@@ -101,17 +101,43 @@ describe('overlay', () => {
 
     });
 
-    describe('onClick', () => {
+    describe('onClose', () => {
 
       test('should invoke onClick handler when clicking on the overlay', () => {
         const mockOnClick = jest.fn();
         const wrapper = mount(
-          <Overlay isVisible onClick={mockOnClick}>
+          <Overlay isVisible onClose={mockOnClick}>
             { MOCK_CHILD }
           </Overlay>
         );
         wrapper.find('div').last().simulate('click');
         expect(mockOnClick).toHaveBeenCalledTimes(1);
+      });
+
+    });
+
+    describe('shouldCloseOnClick', () => {
+
+      test('should close when set to true', () => {
+        const overlay = mount(
+          <Overlay isVisible shouldCloseOnClick>
+            { MOCK_CHILD }
+          </Overlay>
+        );
+        overlay.find('div').last().simulate('click');
+        expect(overlay.children()).toHaveLength(0);
+        expect(overlay.html()).toBeNull();
+      });
+
+      test('should not close when set to false', () => {
+        const overlay = mount(
+          <Overlay isVisible shouldCloseOnClick={false}>
+            { MOCK_CHILD }
+          </Overlay>
+        );
+        overlay.find('div').last().simulate('click');
+        expect(overlay.children()).toHaveLength(1);
+        expect(overlay.html()).not.toBeNull();
       });
 
     });
@@ -123,26 +149,16 @@ describe('overlay', () => {
     describe('isVisible', () => {
 
       test('should be set to true', () => {
-        const wrapper = shallow(
-          <Overlay isVisible onClose={nope}>
-            { MOCK_CHILD }
-          </Overlay>
-        );
-        expect(wrapper.state().isVisible).toEqual(true);
+        expect(mVisibleOverlay.state().isVisible).toEqual(true);
       });
 
       test('should be set to false', () => {
-        const wrapper = shallow(
-          <Overlay isVisible={false} onClose={nope}>
-            { MOCK_CHILD }
-          </Overlay>
-        );
-        expect(wrapper.state().isVisible).toEqual(false);
+        expect(mHiddenOverlay.state().isVisible).toEqual(false);
       });
 
       test('should update when props change', () => {
         const wrapper = shallow(
-          <Overlay isVisible={false} onClose={nope}>
+          <Overlay isVisible={false}>
             { MOCK_CHILD }
           </Overlay>
         );

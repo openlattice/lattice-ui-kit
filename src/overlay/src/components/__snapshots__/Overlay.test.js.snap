@@ -3,7 +3,8 @@
 exports[`overlay snapshots should match snapshot when isVisible="false" 1`] = `
 <Overlay
   isVisible={false}
-  onClick={[Function]}
+  onClose={[Function]}
+  shouldCloseOnClick={true}
 />
 `;
 
@@ -36,7 +37,8 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
 
 <Overlay
   isVisible={true}
-  onClick={[Function]}
+  onClose={[Function]}
+  shouldCloseOnClick={true}
 >
   <Portal>
     <StyledOverlayComponents__OverlayOuterContainer>

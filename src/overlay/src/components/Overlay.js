@@ -15,7 +15,8 @@ import { OverlayInnerContainer, OverlayOuterContainer } from './styled/StyledOve
 type Props = {
   children :Node;
   isVisible :boolean;
-  onClick ? :() => void;
+  onClose ? :() => void;
+  shouldCloseOnClick ? :boolean;
 };
 
 type State = {
@@ -32,11 +33,13 @@ export default class Overlay extends Component<Props, State> {
   static propTypes = {
     children: PropTypes.node.isRequired,
     isVisible: PropTypes.bool.isRequired,
-    onClick: PropTypes.func,
+    onClose: PropTypes.func,
+    shouldCloseOnClick: PropTypes.bool,
   }
 
   static defaultProps = {
-    onClick: undefined,
+    onClose: undefined,
+    shouldCloseOnClick: true,
   }
 
   constructor(props :Props) {
@@ -59,21 +62,21 @@ export default class Overlay extends Component<Props, State> {
   }
 
   close = () => {
+
     this.setState({ isVisible: false });
+
+    const { onClose } = this.props;
+    if (onClose && isFunction(onClose)) {
+      onClose();
+    }
   }
 
   handleOnClick = (event :SyntheticEvent<HTMLElement>) => {
 
-    const { onClick } = this.props;
-
-    if (event.target === event.currentTarget) {
-      if (isFunction(onClick)) {
-        onClick();
-      }
-      else {
-        event.preventDefault();
-        this.close();
-      }
+    const { shouldCloseOnClick } = this.props;
+    if (event.target === event.currentTarget && shouldCloseOnClick) {
+      event.preventDefault();
+      this.close();
     }
   }
 

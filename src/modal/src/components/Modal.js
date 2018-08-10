@@ -24,6 +24,7 @@ type Props = {
   onClose :() => void;
   shouldBeCentered ? :boolean;
   shouldCloseOnEscape ? :boolean;
+  shouldCloseOnOutsideClick ? :boolean;
   shouldStretchButtons ? :boolean;
   textPrimary ? :string;
   textSecondary ? :string;
@@ -47,6 +48,7 @@ export default class Modal extends Component<Props> {
     onClose: PropTypes.func.isRequired,
     shouldBeCentered: PropTypes.bool,
     shouldCloseOnEscape: PropTypes.bool,
+    shouldCloseOnOutsideClick: PropTypes.bool,
     shouldStretchButtons: PropTypes.bool,
     textPrimary: PropTypes.string,
     textSecondary: PropTypes.string,
@@ -60,6 +62,7 @@ export default class Modal extends Component<Props> {
     onClickSecondary: undefined,
     shouldBeCentered: true,
     shouldCloseOnEscape: true,
+    shouldCloseOnOutsideClick: true,
     shouldStretchButtons: false,
     textPrimary: '',
     textSecondary: '',
@@ -90,9 +93,18 @@ export default class Modal extends Component<Props> {
     }
   }
 
-  handleOnClickOverlay = (event :SyntheticEvent<HTMLElement>) => {
+  handleOnClickOutside = (event :SyntheticEvent<HTMLElement>) => {
 
-    if (event.target === event.currentTarget) {
+    const { shouldCloseOnOutsideClick } = this.props;
+    if (event.target === event.currentTarget && shouldCloseOnOutsideClick) {
+      this.close();
+    }
+  }
+
+  handleOnClickOverlay = () => {
+
+    const { shouldCloseOnOutsideClick } = this.props;
+    if (shouldCloseOnOutsideClick) {
       this.close();
     }
   }
@@ -196,6 +208,7 @@ export default class Modal extends Component<Props> {
       children,
       isVisible,
       shouldBeCentered,
+      shouldCloseOnOutsideClick,
     } = this.props;
 
     if (!isVisible) {
@@ -203,8 +216,11 @@ export default class Modal extends Component<Props> {
     }
 
     return (
-      <Overlay isVisible={isVisible}>
-        <ModalOuterContainer center={shouldBeCentered} onClick={this.handleOnClickOverlay}>
+      <Overlay
+          isVisible={isVisible}
+          onClose={this.handleOnClickOverlay}
+          shouldCloseOnClick={shouldCloseOnOutsideClick}>
+        <ModalOuterContainer center={shouldBeCentered} onClick={this.handleOnClickOutside}>
           <ModalInnerContainer>
             { this.renderHeaderComponent() }
             <ModalBody>
