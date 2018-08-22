@@ -30,7 +30,7 @@
     "@fortawesome/pro-solid-svg-icons": "^5.2.0",
     "@fortawesome/react-fontawesome": "^0.1.0",
     "lodash": "^4.17.10",
-    "polished": "^1.9.2",
+    "polished": "^2.0.1",
     "prop-types": "^15.6.2",
     "react-scrolllock": "^3.0.1",
     "react-select": "^2.0.0"
