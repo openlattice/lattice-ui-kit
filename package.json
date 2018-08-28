@@ -38,7 +38,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.0",
+    "babel-eslint": "^9.0.0",
     "babel-loader": "^7.1.0",
     "babel-plugin-styled-components": "^1.2.0",
     "babel-plugin-transform-class-properties": "^6.24.0",
