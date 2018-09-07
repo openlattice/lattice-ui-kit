@@ -12,5 +12,5 @@
 #   https://github.com/facebook/flow/blob/master/lib/streams.js
 #
 [ignore]
-.*/build/.*
+./build/.*
 .*/node_modules/.*
