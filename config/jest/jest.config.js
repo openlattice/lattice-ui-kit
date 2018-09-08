@@ -6,6 +6,7 @@ module.exports = {
     '**/src/index.js',
     '**/src/**/*.js',
   ],
+  coverageDirectory: '<rootDir>/coverage',
   coveragePathIgnorePatterns: [
     '<rootDir>/build/',
     '<rootDir>/config/',
@@ -13,11 +14,9 @@ module.exports = {
     '<rootDir>/src/utils/testing/.*',
     '<rootDir>/.*/stories/.*',
   ],
-  coverageDirectory: '<rootDir>/coverage',
   globals: {
     __ENV_DEV__: false,
     __ENV_PROD__: false,
-    __ENV_TEST__: true,
     __PACKAGE__: PACKAGE.name,
     __VERSION__: PACKAGE.version,
   },
@@ -29,6 +28,10 @@ module.exports = {
   setupFiles: [
     '<rootDir>/config/jest/enzyme.config.js',
   ],
+  setupTestFrameworkScriptFile: '<rootDir>/config/jest/test.config.js',
   testEnvironment: '<rootDir>/config/jest/jsdom.config.js',
-  testURL: 'http://localhost/',
+  testURL: 'http://localhost',
+  transform: {
+    '^.+\\.jsx?$': '<rootDir>/config/jest/babelJestTransformer.js',
+  },
 };
