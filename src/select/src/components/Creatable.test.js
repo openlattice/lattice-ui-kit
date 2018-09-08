@@ -1,7 +1,6 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import 'jest-styled-components';
 import Creatable from './Creatable';
 import { LATTICE_SELECT, OPTIONS } from './consts';
 
