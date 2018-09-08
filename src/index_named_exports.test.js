@@ -17,7 +17,6 @@ describe('lattice-ui-kit named exports', () => {
   EXPECTED_OBJ_EXPORTS.forEach((component) => {
     test(`should export "${component}"`, () => {
       expect(LatticeUIKit).toHaveProperty(component);
-      expect(LatticeUIKit[component].name).toEqual(component);
       expect(LatticeUIKit[component]).toBeInstanceOf(Function);
     });
   });
