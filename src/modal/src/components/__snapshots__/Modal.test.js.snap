@@ -345,6 +345,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                     size="lg"
                                     spin={false}
                                     symbol={false}
+                                    title=""
                                     transform={null}
                                   >
                                     <svg
