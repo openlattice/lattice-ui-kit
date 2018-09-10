@@ -1,0 +1,488 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`modal snapshots should match snapshot when isVisible="false" 1`] = `
+<Modal
+  isVisible={false}
+  onClickPrimary={[Function]}
+  onClickSecondary={[Function]}
+  onClose={[Function]}
+  shouldBeCentered={true}
+  shouldCloseOnEscape={true}
+  shouldCloseOnOutsideClick={true}
+  shouldStretchButtons={false}
+  textPrimary="Confirm"
+  textSecondary="Cancel"
+  textTitle="Title"
+  withFooter={true}
+  withHeader={true}
+/>
+`;
+
+exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
+.c0 {
+  background-color: rgba(8,0,25,0.3);
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.c1 {
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px -2px #555e6f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 0px;
+  max-height: calc(100vh - 240px);
+  max-width: calc(100vw - 240px);
+  min-height: 200px;
+  min-width: 300px;
+  overflow: scroll;
+  position: relative;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 40px;
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
+}
+
+.c8 {
+  padding: 0 30px;
+}
+
+.c9 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c13 {
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  color: #8e929b;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.c13:hover {
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c13:active {
+  background-color: #b6bbc7;
+  border-color: #b6bbc7;
+  color: #ffffff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c13:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c11 {
+  background-color: #6124e2;
+  border-color: #6124e2;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.c11:hover {
+  background-color: #8045ff;
+  border-color: #8045ff;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c11:active {
+  background-color: #361876;
+  border-color: #361876;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c11:disabled {
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10 {
+  margin: 0 0 0 20px;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c12 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c6 {
+  color: #555e6f;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 30px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c7 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  height: 32px;
+  margin: 0 0 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 32px;
+}
+
+<Modal
+  isVisible={true}
+  onClickPrimary={[Function]}
+  onClickSecondary={[Function]}
+  onClose={[Function]}
+  shouldBeCentered={true}
+  shouldCloseOnEscape={true}
+  shouldCloseOnOutsideClick={true}
+  shouldStretchButtons={false}
+  textPrimary="Confirm"
+  textSecondary="Cancel"
+  textTitle="Title"
+  withFooter={true}
+  withHeader={true}
+>
+  <Overlay
+    isVisible={true}
+    onClose={[Function]}
+    shouldCloseOnClick={true}
+  >
+    <Portal>
+      <StyledOverlayComponents__OverlayOuterContainer>
+        <div
+          className="c0"
+        >
+          <StyledOverlayComponents__OverlayInnerContainer
+            onClick={[Function]}
+          >
+            <div
+              className="c1"
+              onClick={[Function]}
+            >
+              <StyledModalComponents__ModalOuterContainer
+                onClick={[Function]}
+              >
+                <div
+                  className="c2"
+                  onClick={[Function]}
+                >
+                  <StyledModalComponents__ModalInnerContainer
+                    center={true}
+                  >
+                    <div
+                      className="c3"
+                    >
+                      <ModalHeader
+                        onClickClose={[Function]}
+                        textTitle="Title"
+                        withHeader={true}
+                      >
+                        <StyledModalComponents__HeaderSection>
+                          <StyledModalComponents__ModalSection
+                            className="c4"
+                          >
+                            <div
+                              className="c4 c5"
+                            >
+                              <ModalHeader__ModalTitle>
+                                <h1
+                                  className="c6"
+                                >
+                                  Title
+                                </h1>
+                              </ModalHeader__ModalTitle>
+                              <ModalHeader__CloseButtonWrapper
+                                onClick={[Function]}
+                              >
+                                <button
+                                  className="c7"
+                                  onClick={[Function]}
+                                >
+                                  <FontAwesomeIcon
+                                    border={false}
+                                    className=""
+                                    fixedWidth={false}
+                                    flip={null}
+                                    icon={
+                                      Object {
+                                        "icon": Array [
+                                          320,
+                                          512,
+                                          Array [],
+                                          "f00d",
+                                          "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                                        ],
+                                        "iconName": "times",
+                                        "prefix": "fal",
+                                      }
+                                    }
+                                    inverse={false}
+                                    listItem={false}
+                                    mask={null}
+                                    pull={null}
+                                    pulse={false}
+                                    rotation={null}
+                                    size="lg"
+                                    spin={false}
+                                    symbol={false}
+                                    title=""
+                                    transform={null}
+                                  >
+                                    <svg
+                                      aria-hidden="true"
+                                      className="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                      data-icon="times"
+                                      data-prefix="fal"
+                                      role="img"
+                                      style={Object {}}
+                                      viewBox="0 0 320 512"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                        fill="currentColor"
+                                        style={Object {}}
+                                      />
+                                    </svg>
+                                  </FontAwesomeIcon>
+                                </button>
+                              </ModalHeader__CloseButtonWrapper>
+                            </div>
+                          </StyledModalComponents__ModalSection>
+                        </StyledModalComponents__HeaderSection>
+                      </ModalHeader>
+                      <ModalBody>
+                        <StyledModalComponents__BodySection>
+                          <StyledModalComponents__ModalSection
+                            className="c8"
+                          >
+                            <div
+                              className="c8 c5"
+                            >
+                              <span>
+                                hello
+                              </span>
+                            </div>
+                          </StyledModalComponents__ModalSection>
+                        </StyledModalComponents__BodySection>
+                      </ModalBody>
+                      <ModalFooter
+                        onClickPrimary={[Function]}
+                        onClickSecondary={[Function]}
+                        shouldStretchButtons={false}
+                        textPrimary="Confirm"
+                        textSecondary="Cancel"
+                        withFooter={true}
+                      >
+                        <StyledModalComponents__FooterSection>
+                          <StyledModalComponents__ModalSection
+                            className="c9"
+                          >
+                            <div
+                              className="c9 c5"
+                            >
+                              <ModalFooter__PrimaryButton
+                                isLonely={false}
+                                onClick={[Function]}
+                                stretch={false}
+                              >
+                                <Button
+                                  className="c10"
+                                  disabled={false}
+                                  isLonely={false}
+                                  mode="primary"
+                                  onClick={[Function]}
+                                  stretch={false}
+                                >
+                                  <PrimaryButton
+                                    className="c10"
+                                    disabled={false}
+                                    onClick={[Function]}
+                                  >
+                                    <button
+                                      className="c10 c11"
+                                      disabled={false}
+                                      onClick={[Function]}
+                                    >
+                                      Confirm
+                                    </button>
+                                  </PrimaryButton>
+                                </Button>
+                              </ModalFooter__PrimaryButton>
+                              <ModalFooter__SecondaryButton
+                                onClick={[Function]}
+                                stretch={false}
+                              >
+                                <Button
+                                  className="c12"
+                                  disabled={false}
+                                  mode="default"
+                                  onClick={[Function]}
+                                  stretch={false}
+                                >
+                                  <DefaultButton
+                                    className="c12"
+                                    disabled={false}
+                                    onClick={[Function]}
+                                  >
+                                    <button
+                                      className="c12 c13"
+                                      disabled={false}
+                                      onClick={[Function]}
+                                    >
+                                      Cancel
+                                    </button>
+                                  </DefaultButton>
+                                </Button>
+                              </ModalFooter__SecondaryButton>
+                            </div>
+                          </StyledModalComponents__ModalSection>
+                        </StyledModalComponents__FooterSection>
+                      </ModalFooter>
+                    </div>
+                  </StyledModalComponents__ModalInnerContainer>
+                </div>
+              </StyledModalComponents__ModalOuterContainer>
+            </div>
+          </StyledOverlayComponents__OverlayInnerContainer>
+        </div>
+      </StyledOverlayComponents__OverlayOuterContainer>
+      <TouchProvider>
+        <ScrollLock
+          accountForScrollbars={true}
+        >
+          <Sheet
+            styles="body {
+      box-sizing: border-box !important;
+      overflow: hidden !important;
+      position: relative !important;
+      
+      padding-right: 1024px !important;
+    }"
+          />
+        </ScrollLock>
+      </TouchProvider>
+    </Portal>
+  </Overlay>
+</Modal>
+`;

@@ -1,0 +1,16 @@
+#
+# Flow comes bundled with these definitions (https://github.com/facebook/flow/tree/master/lib):
+#   https://github.com/facebook/flow/blob/master/lib/bom.js
+#   https://github.com/facebook/flow/blob/master/lib/core.js
+#   https://github.com/facebook/flow/blob/master/lib/cssom.js
+#   https://github.com/facebook/flow/blob/master/lib/dom.js
+#   https://github.com/facebook/flow/blob/master/lib/indexeddb.js
+#   https://github.com/facebook/flow/blob/master/lib/node.js
+#   https://github.com/facebook/flow/blob/master/lib/react-dom.js
+#   https://github.com/facebook/flow/blob/master/lib/react.js
+#   https://github.com/facebook/flow/blob/master/lib/serviceworkers.js
+#   https://github.com/facebook/flow/blob/master/lib/streams.js
+#
+[ignore]
+./build/.*
+.*/node_modules/.*

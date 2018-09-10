@@ -1,0 +1,139 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "flowtype",
+    "jest",
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    },
+    "import/resolver": {
+      "webpack": {
+        "config": "config/webpack/webpack.config.js"
+      }
+    }
+  },
+  "rules": {
+    "arrow-body-style": ["warn", "as-needed"],
+    "brace-style": ["error", "stroustrup"],
+    "comma-dangle": ["error", "only-multiline"],
+    "function-paren-newline": ["error", "consistent"],
+    "indent": [
+      "error",
+      2,
+      {
+        "FunctionDeclaration": {
+          "body": 1,
+          "parameters": 1
+        },
+        "FunctionExpression": {
+          "body": 1,
+          "parameters": 1
+        },
+        "SwitchCase": 1,
+        "ignoredNodes": ["JSXAttribute"]
+      }
+    ],
+    "lines-between-class-members": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "tabWidth": 2,
+        "ignoreUrls": true,
+        "ignoreComments": false
+      }
+    ],
+    "new-cap": [
+      "error",
+      {
+        "capIsNewExceptions": [
+          "Axios",
+          "Immutable.List",
+          "Immutable.OrderedList",
+          "Immutable.Map",
+          "Immutable.OrderedMap",
+          "Immutable.Set",
+          "Immutable.OrderedSet",
+          "List",
+          "OrderedList",
+          "Map",
+          "OrderedMap",
+          "Set",
+          "OrderedSet",
+          "SortableContainer",
+          "SortableElement"
+        ]
+      }
+    ],
+    "padded-blocks": "off",
+    "prefer-destructuring": "warn",
+    "space-before-function-paren": ["error", "never"],
+
+    "flowtype/define-flow-type": "error",
+    "flowtype/space-after-type-colon": ["error", "never"],
+    "flowtype/space-before-type-colon": ["error", "always"],
+    "flowtype/no-types-missing-file-annotation": "warn",
+
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "config/**",
+          "**/*.test.js",
+          "**/*.stories.js"
+        ]
+      }
+    ],
+    "import/order": [
+      "warn",
+      {
+        "groups": ["builtin", "external", "internal", ["parent", "sibling"], "index"]
+      }
+    ],
+    "import/prefer-default-export": "warn",
+
+    "jest/no-disabled-tests": "error",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+
+    "jsx-a11y/href-no-hash": "off",
+
+    "react/forbid-prop-types": "warn",
+    "react/jsx-closing-bracket-location": [
+      "error",
+      {
+        "selfClosing": "after-props",
+        "nonEmpty": "after-props"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/jsx-indent-props": ["error", 4],
+    "react/jsx-one-expression-per-line": "warn",
+    "react/prefer-stateless-function": "warn",
+    "react/require-default-props": [
+      "error",
+      {
+        "forbidDefaultForRequired": false,
+      }
+    ],
+    "react/sort-comp": "off"
+  }
+}
