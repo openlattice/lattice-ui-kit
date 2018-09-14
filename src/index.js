@@ -12,7 +12,7 @@ export {
   Colors,
   version,
 };
-
+export { DatePicker, TimePicker } from './datetime';
 export { Creatable, Select } from './select';
 export { default as Button } from './button';
 export { default as Modal } from './modal';

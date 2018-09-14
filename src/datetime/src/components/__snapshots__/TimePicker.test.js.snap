@@ -1,10 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Creatable render matches snapshot 1`] = `
-<StateManager
-  defaultInputValue=""
-  defaultMenuIsOpen={false}
-  defaultValue={null}
+exports[`TimePicker render matches snapshot 1`] = `
+<ForwardRef
   styles={
     Object {
       "clearIndicator": [Function],

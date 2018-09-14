@@ -14,7 +14,7 @@ describe('Creatable', () => {
   it('clicking should toggle menu', () => {
     const wrapper = mount(<Creatable />);
     expect(wrapper.find('Menu').exists()).toBeFalsy();
-    wrapper.find('div.lattice-select__dropdown-indicator').simulate('mouseDown', { button: 0 });
+    wrapper.find('DropdownIndicator').simulate('mouseDown', { button: 0 });
     expect(wrapper.find('Menu').exists()).toBeTruthy();
   });
 
