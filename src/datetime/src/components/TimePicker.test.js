@@ -11,10 +11,10 @@ describe('TimePicker', () => {
   });
 
   it('clicking should toggle menu', () => {
-    const wrapper = mount(<TimePicker />);
-    expect(wrapper.find('Menu').exists()).toBeFalsy();
-    wrapper.find('DropdownIndicator').simulate('mouseDown', { button: 0 });
-    expect(wrapper.find('Menu').exists()).toBeTruthy();
+    const wrapper = shallow(<TimePicker />);
+    expect(wrapper.dive().find('Menu').exists()).toBeFalsy();
+    wrapper.dive().find('DropdownIndicator').simulate('mouseDown', { button: 0 });
+    expect(wrapper.dive().find('Menu').exists()).toBeTruthy();
   });
 
 });

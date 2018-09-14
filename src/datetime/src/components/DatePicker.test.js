@@ -1,7 +1,8 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import DatePicker from './DatePicker';
+import { DatePicker } from '@atlaskit/datetime-picker';
+// import DatePicker from './DatePicker';
 
 describe('DatePicker', () => {
 

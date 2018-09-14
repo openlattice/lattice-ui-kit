@@ -1,20 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DatePicker render matches snapshot 1`] = `
-<ForwardRef
-  styles={
+<AnalyticsContext
+  data={
     Object {
-      "clearIndicator": [Function],
-      "container": [Function],
-      "control": [Function],
-      "dropdownIndicator": [Function],
-      "indicatorSeparator": [Function],
-      "indicatorsContainer": [Function],
-      "menu": [Function],
-      "menuPortal": [Function],
-      "option": [Function],
-      "singleValue": [Function],
+      "componentName": "datePicker",
+      "packageName": "@atlaskit/datetime-picker",
+      "packageVersion": "6.3.9",
     }
   }
-/>
+>
+  <ForwardRef />
+</AnalyticsContext>
 `;
