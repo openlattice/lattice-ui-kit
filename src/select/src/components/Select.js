@@ -1,4 +1,5 @@
 import Select from 'react-select';
-import withEmotionStyles from '../../../components/withEmotionStyles';
+import withProps from '../../../components/withProps';
+import emotionStyles from '../../../components/emotionStyles';
 
-export default withEmotionStyles(Select);
+export default withProps(Select, { styles: emotionStyles });

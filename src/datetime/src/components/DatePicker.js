@@ -1,4 +1,11 @@
 import { DatePicker } from '@atlaskit/datetime-picker';
-import withEmotionStyles from '../../../components/withEmotionStyles';
+import withProps from '../../../components/withProps';
+import emotionStyles from '../../../components/emotionStyles';
 
-export default withEmotionStyles(DatePicker);
+const props = {
+  selectProps: {
+    styles: emotionStyles
+  }
+};
+
+export default withProps(DatePicker, props);
