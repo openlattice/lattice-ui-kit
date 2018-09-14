@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Select from './Select';
-import { LATTICE_SELECT, OPTIONS } from './constants';
+import { OPTIONS } from './constants';
 
 describe('Select', () => {
 
@@ -11,15 +11,10 @@ describe('Select', () => {
     expect(toJson(tree)).toMatchSnapshot();
   });
 
-  it('attrs classNamePrefix is set to "lattice-select"', () => {
-    const wrapper = mount(<Select />);
-    expect(wrapper.instance().attrs.classNamePrefix).toEqual(LATTICE_SELECT);
-  });
-
   it('clicking should toggle menu', () => {
     const wrapper = mount(<Select />);
     expect(wrapper.find('Menu').exists()).toBeFalsy();
-    wrapper.find('div.lattice-select__dropdown-indicator').simulate('mouseDown', { button: 0 });
+    wrapper.find('DropdownIndicator').simulate('mouseDown', { button: 0 });
     expect(wrapper.find('Menu').exists()).toBeTruthy();
   });
 
