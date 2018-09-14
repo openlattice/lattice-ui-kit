@@ -105,32 +105,19 @@
     "styled-components": "~3.4.0"
   },
   "scripts": {
-<<<<<<< HEAD
-    "build:dev": "better-npm-run build:dev",
-    "build:min": "better-npm-run build:min",
-    "build": "better-npm-run build",
-=======
     "build": "webpack --config config/webpack/webpack.config.js --env.production",
     "build:dev": "webpack --config config/webpack/webpack.config.js --env.development",
->>>>>>> 3e727c1292501d340ed011f8025b2521792d7922
     "clean": "rimraf build/*",
     "flow": "flow check",
     "lib": "webpack-dev-server --config config/webpack/webpack.config.js --env.development --port 9000 --content-base build/",
     "lint": "eslint --config .eslintrc src",
-    "postversion": "git push && git push --tags",
-    "preversion": "npm-run-all lint test",
     "release:major": "npm version major -m \"releasing v%s\" && npm publish",
     "release:minor": "npm version minor -m \"releasing v%s\" && npm publish",
     "release:patch": "npm version patch -m \"releasing v%s\" && npm publish",
-<<<<<<< HEAD
-    "storybook": "start-storybook -p 9009 -c config/storybook",
-    "test:generate-output": "jest --json --config config/jest/jest.config.js --outputFile=.jest-test-results.json || true",
-    "test:watch": "jest --config config/jest/jest.config.js --watch",
-=======
     "preversion": "npm-run-all lint test",
     "version": "npm-run-all clean build && git add -A package.json build/",
     "postversion": "git push && git push --tags",
->>>>>>> 3e727c1292501d340ed011f8025b2521792d7922
+    "storybook": "start-storybook -p 9009 -c config/storybook",
     "test": "jest --config config/jest/jest.config.js",
     "test:watch": "jest --config config/jest/jest.config.js --watch --coverage=false"
   }
