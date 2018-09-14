@@ -2,18 +2,13 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Select from './Select';
-import { LATTICE_SELECT, OPTIONS } from './constants';
+import { OPTIONS } from './constants';
 
 describe('Select', () => {
 
   it('render matches snapshot', () => {
     const tree = shallow(<Select />);
     expect(toJson(tree)).toMatchSnapshot();
-  });
-
-  it('attrs classNamePrefix is set to "lattice-select"', () => {
-    const wrapper = mount(<Select />);
-    expect(wrapper.instance().attrs.classNamePrefix).toEqual(LATTICE_SELECT);
   });
 
   it('clicking should toggle menu', () => {
