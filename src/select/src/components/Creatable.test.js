@@ -2,18 +2,13 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Creatable from './Creatable';
-import { LATTICE_SELECT, OPTIONS } from './consts';
+import { OPTIONS } from './constants';
 
 describe('Creatable', () => {
 
   it('render matches snapshot', () => {
     const tree = shallow(<Creatable />);
     expect(toJson(tree)).toMatchSnapshot();
-  });
-
-  it('attrs classNamePrefix is set to "lattice-select"', () => {
-    const wrapper = mount(<Creatable />);
-    expect(wrapper.instance().attrs.classNamePrefix).toEqual(LATTICE_SELECT);
   });
 
   it('clicking should toggle menu', () => {
