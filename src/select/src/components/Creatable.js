@@ -1,4 +1,5 @@
 import Creatable from 'react-select/lib/Creatable';
-import withEmotionStyles from '../../../components/withEmotionStyles';
+import withProps from '../../../components/withProps';
+import emotionStyles from '../../../components/emotionStyles';
 
-export default withEmotionStyles(Creatable);
+export default withProps(Creatable, { styles: emotionStyles });
