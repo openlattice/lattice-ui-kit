@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimePicker render matches snapshot 1`] = `
+<ForwardRef
+  styles={
+    Object {
+      "clearIndicator": [Function],
+      "container": [Function],
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "indicatorSeparator": [Function],
+      "indicatorsContainer": [Function],
+      "menu": [Function],
+      "menuPortal": [Function],
+      "option": [Function],
+      "singleValue": [Function],
+    }
+  }
+/>
+`;
