@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Creatable from './Creatable';
-import { LATTICE_SELECT, OPTIONS } from './consts';
+import { LATTICE_SELECT, OPTIONS } from './constants';
 
 describe('Creatable', () => {
 

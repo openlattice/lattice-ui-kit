@@ -1,10 +1,4 @@
-import styled from 'styled-components';
 import Select from 'react-select';
-import selectStyles from './styled/selectStyles';
-import { LATTICE_SELECT } from './consts';
+import withEmotionStyles from '../../../components/withEmotionStyles';
 
-export default styled(Select).attrs({
-  classNamePrefix: LATTICE_SELECT
-})`
-  ${selectStyles}
-`;
+export default withEmotionStyles(Select);
