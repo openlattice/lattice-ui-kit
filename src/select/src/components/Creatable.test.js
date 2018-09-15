@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import Creatable from './Creatable';
+import Creatable, { props } from './Creatable';
 import { OPTIONS } from './constants';
 
 describe('Creatable', () => {
@@ -9,6 +9,12 @@ describe('Creatable', () => {
   it('render matches snapshot', () => {
     const tree = shallow(<Creatable />);
     expect(toJson(tree)).toMatchSnapshot();
+  });
+
+  it('internal Creatable should have selectProps', () => {
+    const wrapper = mount(<Creatable />);
+    const creatableProps = wrapper.find('Creatable').props();
+    expect(creatableProps.selectProps).toEqual(props.selectProps);
   });
 
   it('clicking should toggle menu', () => {
