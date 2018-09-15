@@ -2,18 +2,20 @@
 
 exports[`DatePicker render matches snapshot 1`] = `
 <ForwardRef
-  styles={
+  selectProps={
     Object {
-      "clearIndicator": [Function],
-      "container": [Function],
-      "control": [Function],
-      "dropdownIndicator": [Function],
-      "indicatorSeparator": [Function],
-      "indicatorsContainer": [Function],
-      "menu": [Function],
-      "menuPortal": [Function],
-      "option": [Function],
-      "singleValue": [Function],
+      "styles": Object {
+        "clearIndicator": [Function],
+        "container": [Function],
+        "control": [Function],
+        "dropdownIndicator": [Function],
+        "indicatorSeparator": [Function],
+        "indicatorsContainer": [Function],
+        "menu": [Function],
+        "menuPortal": [Function],
+        "option": [Function],
+        "singleValue": [Function],
+      },
     }
   }
 />

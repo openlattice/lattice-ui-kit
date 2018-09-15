@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import DatePicker from './DatePicker';
+import DatePicker, { props } from './DatePicker';
 
 describe('DatePicker', () => {
 
@@ -10,11 +10,15 @@ describe('DatePicker', () => {
     expect(toJson(tree)).toMatchSnapshot();
   });
 
-  it('clicking should toggle menu', () => {
+  it('should render internal DatePicker', () => {
     const wrapper = mount(<DatePicker />);
-    expect(wrapper.find('Menu').exists()).toBeFalsy();
-    wrapper.find('DropdownIndicator').simulate('mouseDown', { button: 0 });
-    expect(wrapper.find('Menu').exists()).toBeTruthy();
+    expect(wrapper.find('DatePicker').exists()).toBeTruthy();
+  });
+
+  it('internal DatePicker should have selectProps', () => {
+    const wrapper = mount(<DatePicker />);
+    const datePickerProps = wrapper.find('DatePicker').props();
+    expect(datePickerProps.selectProps).toEqual(props.selectProps);
   });
 
 });
