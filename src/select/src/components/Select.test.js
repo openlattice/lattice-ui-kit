@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import Select from './Select';
+import Select, { props } from './Select';
 import { OPTIONS } from './constants';
 
 describe('Select', () => {
@@ -9,6 +9,12 @@ describe('Select', () => {
   it('render matches snapshot', () => {
     const tree = shallow(<Select />);
     expect(toJson(tree)).toMatchSnapshot();
+  });
+
+  it('internal Select should have selectProps', () => {
+    const wrapper = mount(<Select />);
+    const selectProps = wrapper.find('Select').props();
+    expect(selectProps.selectProps).toEqual(props.selectProps);
   });
 
   it('clicking should toggle menu', () => {
