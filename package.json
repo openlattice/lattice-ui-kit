@@ -103,8 +103,9 @@
     "release:minor": "npm version minor -m \"releasing v%s\" && npm publish",
     "release:patch": "npm version patch -m \"releasing v%s\" && npm publish",
     "preversion": "npm-run-all lint test",
+    "version": "npm-run-all clean build && git add -A package.json build/",
     "postversion": "git push && git push --tags",
     "test": "jest --config config/jest/jest.config.js",
-    "version": "npm-run-all clean build && git add -A package.json build/"
+    "test:watch": "jest --config config/jest/jest.config.js --watch --coverage=false"
   }
 }
