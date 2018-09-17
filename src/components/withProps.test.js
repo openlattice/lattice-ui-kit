@@ -13,7 +13,7 @@ class WrappedComponent extends Component {
 
 const testProps = {
   open: 'lattice',
-  data: 'loom'
+  foo: 'bar'
 };
 
 describe('withProps', () => {

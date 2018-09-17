@@ -2,7 +2,7 @@
 
 exports[`withProps render matches snapshot 1`] = `
 <WrappedComponent
-  data="loom"
+  foo="bar"
   open="lattice"
 />
 `;
