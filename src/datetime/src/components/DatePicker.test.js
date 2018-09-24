@@ -1,12 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-<<<<<<< HEAD
-import { DatePicker } from '@atlaskit/datetime-picker';
-// import DatePicker from './DatePicker';
-=======
 import DatePicker, { props } from './DatePicker';
->>>>>>> feature/emotion-date-time
 
 describe('DatePicker', () => {
 
