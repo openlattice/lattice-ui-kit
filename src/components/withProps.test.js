@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
+import { mount, shallow } from 'enzyme';
 import withProps from './withProps';
 
 class WrappedComponent extends Component {
@@ -13,17 +13,17 @@ class WrappedComponent extends Component {
 
 const testProps = {
   open: 'lattice',
-  data: 'loom'
+  foo: 'bar'
 };
 
 describe('withProps', () => {
-  it('render matches snapshot', () => {
+  test('render matches snapshot', () => {
     const ComponentWithProps = withProps(WrappedComponent, testProps);
-    const wrapper = shallow(<ComponentWithProps />);
+    const wrapper = mount(<ComponentWithProps />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
-  it('returns LatticeWrapper', () => {
+  test('returns LatticeWrapper', () => {
     const ComponentWithProps = withProps(WrappedComponent, testProps);
     const wrapper = mount(<ComponentWithProps />);
     expect(
@@ -31,7 +31,7 @@ describe('withProps', () => {
     ).toBeTruthy();
   });
 
-  it('attaches props to WrappedComponent', () => {
+  test('attaches props to WrappedComponent', () => {
     const ComponentWithProps = withProps(WrappedComponent, testProps);
     const wrapper = shallow(<ComponentWithProps />);
     expect(
@@ -39,11 +39,19 @@ describe('withProps', () => {
     ).toEqual(testProps);
   });
 
-  it('includes outer props', () => {
+  test('includes outer props', () => {
     const ComponentWithProps = withProps(WrappedComponent, testProps);
     const wrapper = shallow(<ComponentWithProps outer="included" />);
     expect(
       wrapper.prop('outer')
     ).toEqual('included');
+  });
+
+  test('outer props override hocProps', () => {
+    const ComponentWithProps = withProps(WrappedComponent, testProps);
+    const wrapper = shallow(<ComponentWithProps open="source" />);
+    expect(
+      wrapper.prop('open')
+    ).toEqual('source');
   });
 });

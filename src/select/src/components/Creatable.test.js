@@ -1,30 +1,30 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Creatable, { props } from './Creatable';
 import { OPTIONS } from './constants';
 
 describe('Creatable', () => {
 
-  it('render matches snapshot', () => {
-    const tree = shallow(<Creatable />);
+  test('render matches snapshot', () => {
+    const tree = mount(<Creatable />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 
-  it('internal Creatable should have selectProps', () => {
+  test('internal Creatable should have selectProps', () => {
     const wrapper = mount(<Creatable />);
     const creatableProps = wrapper.find('Creatable').props();
     expect(creatableProps.selectProps).toEqual(props.selectProps);
   });
 
-  it('clicking should toggle menu', () => {
+  test('clicking should toggle menu', () => {
     const wrapper = mount(<Creatable />);
     expect(wrapper.find('Menu').exists()).toBeFalsy();
     wrapper.find('DropdownIndicator').simulate('mouseDown', { button: 0 });
     expect(wrapper.find('Menu').exists()).toBeTruthy();
   });
 
-  it('single > should show controlled value', () => {
+  test('single > should show controlled value', () => {
     const wrapper = mount(
       <Creatable
           options={OPTIONS}
@@ -35,7 +35,7 @@ describe('Creatable', () => {
     expect(actualValue).toEqual(expectedValue);
   });
 
-  it('multi > should show controlled value', () => {
+  test('multi > should show controlled value', () => {
     const wrapper = mount(
       <Creatable
           isMulti

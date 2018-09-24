@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 <<<<<<< HEAD
 import { DatePicker } from '@atlaskit/datetime-picker';
@@ -10,17 +10,17 @@ import DatePicker, { props } from './DatePicker';
 
 describe('DatePicker', () => {
 
-  it('render matches snapshot', () => {
-    const tree = shallow(<DatePicker />);
+  test('render matches snapshot', () => {
+    const tree = mount(<DatePicker />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 
-  it('should render internal DatePicker', () => {
+  test('should render internal DatePicker', () => {
     const wrapper = mount(<DatePicker />);
     expect(wrapper.find('DatePicker').exists()).toBeTruthy();
   });
 
-  it('internal DatePicker should have selectProps', () => {
+  test('internal DatePicker should have selectProps', () => {
     const wrapper = mount(<DatePicker />);
     const datePickerProps = wrapper.find('DatePicker').props();
     expect(datePickerProps.selectProps).toEqual(props.selectProps);

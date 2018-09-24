@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-const withProps = (WrappedComponent, outerProps) => {
+const withProps = (WrappedComponent, hocProps) => {
   class LatticeWrapper extends Component {
     render() {
       return (
         <WrappedComponent
-          {...outerProps}
+          {...hocProps}
           {...this.props} />
       );
     }
