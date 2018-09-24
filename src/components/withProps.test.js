@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
+import { mount, shallow } from 'enzyme';
 import withProps from './withProps';
 
 class WrappedComponent extends Component {
@@ -19,7 +19,7 @@ const testProps = {
 describe('withProps', () => {
   test('render matches snapshot', () => {
     const ComponentWithProps = withProps(WrappedComponent, testProps);
-    const wrapper = shallow(<ComponentWithProps />);
+    const wrapper = mount(<ComponentWithProps />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 

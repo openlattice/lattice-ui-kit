@@ -1,12 +1,12 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import DatePicker, { props } from './DatePicker';
 
 describe('DatePicker', () => {
 
   test('render matches snapshot', () => {
-    const tree = shallow(<DatePicker />);
+    const tree = mount(<DatePicker />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 

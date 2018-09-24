@@ -1,12 +1,12 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import TimePicker, { props } from './TimePicker';
 
 describe('TimePicker', () => {
 
   test('render matches snapshot', () => {
-    const tree = shallow(<TimePicker />);
+    const tree = mount(<TimePicker />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 

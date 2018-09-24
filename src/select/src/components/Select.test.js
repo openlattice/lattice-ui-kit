@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Select, { props } from './Select';
 import { OPTIONS } from './constants';
@@ -7,7 +7,7 @@ import { OPTIONS } from './constants';
 describe('Select', () => {
 
   test('render matches snapshot', () => {
-    const tree = shallow(<Select />);
+    const tree = mount(<Select />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Creatable, { props } from './Creatable';
 import { OPTIONS } from './constants';
@@ -7,7 +7,7 @@ import { OPTIONS } from './constants';
 describe('Creatable', () => {
 
   test('render matches snapshot', () => {
-    const tree = shallow(<Creatable />);
+    const tree = mount(<Creatable />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 
