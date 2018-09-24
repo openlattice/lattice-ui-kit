@@ -1,10 +1,10 @@
 import { TimePicker } from '@atlaskit/datetime-picker';
 import withProps from '../../../components/withProps';
-import emotionStyles from '../../../components/emotionStyles';
+import selectStyles from '../../../style/selectStyles';
 
 export const props = {
   selectProps: {
-    styles: emotionStyles
+    styles: selectStyles
   }
 };
 

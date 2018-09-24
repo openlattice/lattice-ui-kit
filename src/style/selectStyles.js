@@ -1,6 +1,6 @@
 import { NEUTRALS, PURPLES } from '../colors/src/Colors';
 
-const emotionStyles = {
+const selectStyles = {
   container: (base, state) => {
     const { isDisabled } = state;
     return {
@@ -73,4 +73,4 @@ const emotionStyles = {
   },
 };
 
-export default emotionStyles;
+export default selectStyles;

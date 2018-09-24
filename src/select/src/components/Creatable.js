@@ -1,9 +1,9 @@
 import Creatable from 'react-select/lib/Creatable';
 import withProps from '../../../components/withProps';
-import emotionStyles from '../../../components/emotionStyles';
+import selectStyles from '../../../style/selectStyles';
 
 export const props = {
-  styles: emotionStyles
+  styles: selectStyles
 };
 
 export default withProps(Creatable, props);
