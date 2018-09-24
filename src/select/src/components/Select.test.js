@@ -6,25 +6,25 @@ import { OPTIONS } from './constants';
 
 describe('Select', () => {
 
-  it('render matches snapshot', () => {
+  test('render matches snapshot', () => {
     const tree = shallow(<Select />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 
-  it('internal Select should have selectProps', () => {
+  test('internal Select should have selectProps', () => {
     const wrapper = mount(<Select />);
     const selectProps = wrapper.find('Select').props();
     expect(selectProps.selectProps).toEqual(props.selectProps);
   });
 
-  it('clicking should toggle menu', () => {
+  test('clicking should toggle menu', () => {
     const wrapper = mount(<Select />);
     expect(wrapper.find('Menu').exists()).toBeFalsy();
     wrapper.find('DropdownIndicator').simulate('mouseDown', { button: 0 });
     expect(wrapper.find('Menu').exists()).toBeTruthy();
   });
 
-  it('single > should show controlled value', () => {
+  test('single > should show controlled value', () => {
     const wrapper = mount(
       <Select
           options={OPTIONS}
@@ -35,7 +35,7 @@ describe('Select', () => {
     expect(actualValue).toEqual(expectedValue);
   });
 
-  it('multi > should show controlled value', () => {
+  test('multi > should show controlled value', () => {
     const wrapper = mount(
       <Select
           isMulti

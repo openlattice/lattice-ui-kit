@@ -17,13 +17,13 @@ const testProps = {
 };
 
 describe('withProps', () => {
-  it('render matches snapshot', () => {
+  test('render matches snapshot', () => {
     const ComponentWithProps = withProps(WrappedComponent, testProps);
     const wrapper = shallow(<ComponentWithProps />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
-  it('returns LatticeWrapper', () => {
+  test('returns LatticeWrapper', () => {
     const ComponentWithProps = withProps(WrappedComponent, testProps);
     const wrapper = mount(<ComponentWithProps />);
     expect(
@@ -31,7 +31,7 @@ describe('withProps', () => {
     ).toBeTruthy();
   });
 
-  it('attaches props to WrappedComponent', () => {
+  test('attaches props to WrappedComponent', () => {
     const ComponentWithProps = withProps(WrappedComponent, testProps);
     const wrapper = shallow(<ComponentWithProps />);
     expect(
@@ -39,7 +39,7 @@ describe('withProps', () => {
     ).toEqual(testProps);
   });
 
-  it('includes outer props', () => {
+  test('includes outer props', () => {
     const ComponentWithProps = withProps(WrappedComponent, testProps);
     const wrapper = shallow(<ComponentWithProps outer="included" />);
     expect(
