@@ -46,4 +46,12 @@ describe('withProps', () => {
       wrapper.prop('outer')
     ).toEqual('included');
   });
+
+  test('outer props override hocProps', () => {
+    const ComponentWithProps = withProps(WrappedComponent, testProps);
+    const wrapper = shallow(<ComponentWithProps open="source" />);
+    expect(
+      wrapper.prop('open')
+    ).toEqual('source');
+  });
 });
