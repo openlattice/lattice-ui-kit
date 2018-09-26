@@ -69,7 +69,8 @@ module.exports = (env) => {
       ],
     },
     optimization: {
-      minimize: !!env.production,
+      // minimize: !!env.production,
+      minimize: false,
     },
     output: {
       library: LIB_NAMESPACE,
