@@ -92,8 +92,8 @@
     "styled-components": "~3.4.0"
   },
   "scripts": {
-    "build": "webpack --config config/webpack/webpack.config.js --env.production",
     "build:dev": "webpack --config config/webpack/webpack.config.js --env.development",
+    "build:prod": "webpack --config config/webpack/webpack.config.js --env.production",
     "clean": "rimraf build/*",
     "flow": "flow check",
     "lib": "webpack-dev-server --config config/webpack/webpack.config.js --env.development --port 9000 --content-base build/",
@@ -102,7 +102,7 @@
     "release:minor": "npm version minor -m \"releasing v%s\" && npm publish",
     "release:patch": "npm version patch -m \"releasing v%s\" && npm publish",
     "preversion": "npm-run-all lint test",
-    "version": "npm-run-all clean build && git add -A package.json build/",
+    "version": "npm-run-all clean build:prod && git add -A package.json build/",
     "postversion": "git push && git push --tags",
     "test": "jest --config config/jest/jest.config.js",
     "test:watch": "jest --config config/jest/jest.config.js --watch --coverage=false"
