@@ -60,7 +60,6 @@ module.exports = (env) => {
   return {
     bail: true,
     entry: [
-      '@babel/polyfill', // TODO: figure out if this is necessary
       LIB_PATHS.ABS.ENTRY,
     ],
     mode: env.production ? ENV_PROD : ENV_DEV,
