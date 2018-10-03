@@ -1,6 +1,6 @@
 {
   "name": "lattice-ui-kit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/openlattice/lattice-ui-kit",
   "description": "OpenLattice UI Kit for React",
   "author": {
@@ -48,10 +48,10 @@
     "@babel/register": "^7.0.0",
     "@babel/runtime": "^7.0.0",
     "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^9.0.0",
+    "babel-eslint": "^10.0.0",
     "babel-jest": "^23.4.2",
     "babel-loader": "^8.0.0",
-    "babel-plugin-styled-components": "~1.7.0",
+    "babel-plugin-styled-components": "~1.8.0",
     "enzyme": "~3.6.0",
     "enzyme-adapter-react-16": "1.2.0",
     "enzyme-to-json": "~3.3.4",
@@ -92,8 +92,8 @@
     "styled-components": "~3.4.0"
   },
   "scripts": {
-    "build": "webpack --config config/webpack/webpack.config.js --env.production",
     "build:dev": "webpack --config config/webpack/webpack.config.js --env.development",
+    "build:prod": "webpack --config config/webpack/webpack.config.js --env.production",
     "clean": "rimraf build/*",
     "flow": "flow check",
     "lib": "webpack-dev-server --config config/webpack/webpack.config.js --env.development --port 9000 --content-base build/",
@@ -102,7 +102,7 @@
     "release:minor": "npm version minor -m \"releasing v%s\" && npm publish",
     "release:patch": "npm version patch -m \"releasing v%s\" && npm publish",
     "preversion": "npm-run-all lint test",
-    "version": "npm-run-all clean build && git add -A package.json build/",
+    "version": "npm-run-all clean build:prod && git add -A package.json build/",
     "postversion": "git push && git push --tags",
     "test": "jest --config config/jest/jest.config.js",
     "test:watch": "jest --config config/jest/jest.config.js --watch --coverage=false"
