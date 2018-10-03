@@ -16,6 +16,7 @@ const ModalTitle = styled.h1`
   color: #555e6f;
   font-size: 18px;
   font-weight: normal;
+  line-height: normal;
   margin: 0 30px 0 0;
   overflow: hidden;
   text-overflow: ellipsis;
