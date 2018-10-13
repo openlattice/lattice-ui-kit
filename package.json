@@ -59,7 +59,7 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-import-resolver-webpack": "^0.10.0",
     "eslint-loader": "^2.1.0",
-    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-flowtype": "^3.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^21.22.0",
     "eslint-plugin-jsx-a11y": "^6.1.0",
