@@ -8,6 +8,7 @@ const ROOT = path.resolve(__dirname, '../..');
 
 module.exports = {
   ABS: {
+    ROOT,
     BUILD: path.resolve(ROOT, BUILD),
     ENTRY: path.resolve(ROOT, `${SOURCE}/index.js`),
     NODE: path.resolve(ROOT, NODE),

@@ -8,13 +8,12 @@ import type { Node, ComponentType } from 'react';
 import PropTypes from 'prop-types';
 import isFunction from 'lodash/isFunction';
 
-import Overlay from '../../../overlay';
 import ModalBody from './ModalBody';
 import ModalFooter from './ModalFooter';
 import ModalHeader from './ModalHeader';
+import Overlay from '../../../overlay';
+import KeyCodes from '../../../utils/constants/KeyCodes';
 import { ModalOuterContainer, ModalInnerContainer } from './styled/StyledModalComponents';
-
-const ESC_KEY_CODE :'Escape' = 'Escape';
 
 type Props = {
   children :Node;
@@ -136,12 +135,12 @@ export default class Modal extends Component<Props> {
       return;
     }
 
-    if (event.key === ESC_KEY_CODE) {
+    if (event.key === KeyCodes.ESCAPE) {
       this.escapeKeyIsPressed = true;
     }
 
     switch (event.key) {
-      case ESC_KEY_CODE: {
+      case KeyCodes.ESCAPE: {
         if (shouldCloseOnEscape === true) {
           this.close();
         }
@@ -154,7 +153,7 @@ export default class Modal extends Component<Props> {
 
   handleOnKeyUp = (event :KeyboardEvent) => {
 
-    if (event.key === ESC_KEY_CODE) {
+    if (event.key === KeyCodes.ESCAPE) {
       this.escapeKeyIsPressed = false;
     }
   }
