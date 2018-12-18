@@ -45,16 +45,19 @@ exports[`button mode="default" should match snapshot 1`] = `
   disabled={false}
   mode="default"
   onClick={[Function]}
+  type="button"
 >
   <DefaultButton
     className=""
     disabled={false}
     onClick={[Function]}
+    type="button"
   >
     <button
       className="c0"
       disabled={false}
       onClick={[Function]}
+      type="button"
     >
       DEFAULT_BUTTON
     </button>
@@ -107,16 +110,19 @@ exports[`button mode="default" should match snapshot 2`] = `
   disabled={false}
   mode="default"
   onClick={[Function]}
+  type="button"
 >
   <DefaultButton
     className=""
     disabled={false}
     onClick={[Function]}
+    type="button"
   >
     <button
       className="c0"
       disabled={false}
       onClick={[Function]}
+      type="button"
     >
       DEFAULT_BUTTON
     </button>
@@ -172,16 +178,19 @@ exports[`button mode="primary" should match snapshot 1`] = `
   disabled={false}
   mode="primary"
   onClick={[Function]}
+  type="button"
 >
   <PrimaryButton
     className=""
     disabled={false}
     onClick={[Function]}
+    type="button"
   >
     <button
       className="c0"
       disabled={false}
       onClick={[Function]}
+      type="button"
     >
       PRIMARY_BUTTON
     </button>
@@ -237,16 +246,19 @@ exports[`button mode="secondary" should match snapshot 1`] = `
   disabled={false}
   mode="secondary"
   onClick={[Function]}
+  type="button"
 >
   <SecondaryButton
     className=""
     disabled={false}
     onClick={[Function]}
+    type="button"
   >
     <button
       className="c0"
       disabled={false}
       onClick={[Function]}
+      type="button"
     >
       SECONDARY_BUTTON
     </button>
