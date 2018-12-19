@@ -413,16 +413,19 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                   mode="primary"
                                   onClick={[Function]}
                                   stretch={false}
+                                  type="button"
                                 >
                                   <PrimaryButton
                                     className="c10"
                                     disabled={false}
                                     onClick={[Function]}
+                                    type="button"
                                   >
                                     <button
                                       className="c10 c11"
                                       disabled={false}
                                       onClick={[Function]}
+                                      type="button"
                                     >
                                       Confirm
                                     </button>
@@ -439,16 +442,19 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                   mode="default"
                                   onClick={[Function]}
                                   stretch={false}
+                                  type="button"
                                 >
                                   <DefaultButton
                                     className="c12"
                                     disabled={false}
                                     onClick={[Function]}
+                                    type="button"
                                   >
                                     <button
                                       className="c12 c13"
                                       disabled={false}
                                       onClick={[Function]}
+                                      type="button"
                                     >
                                       Cancel
                                     </button>
