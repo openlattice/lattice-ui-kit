@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.2.0
+ * lattice-ui-kit - v0.2.1
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -22446,7 +22446,7 @@ var ModalOuterContainer = external_amd_styled_components_commonjs_styled_compone
 var ModalInnerContainer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
   displayName: "StyledModalComponents__ModalInnerContainer",
   componentId: "sc-1r1r1yf-1"
-})(["align-self:", ";background-color:", ";border-radius:4px;box-shadow:0 2px 8px -2px ", ";display:flex;flex:0 0 auto;flex-direction:column;margin-top:", "px;max-height:calc(100vh - ", "px);max-width:calc(100vw - ", "px);min-height:200px;min-width:300px;overflow:scroll;position:relative;"], function (_ref) {
+})(["align-self:", ";background-color:", ";border-radius:4px;box-shadow:0 2px 8px -2px ", ";display:flex;flex:0 0 auto;flex-direction:column;margin-top:", "px;max-height:calc(100vh - ", "px);max-width:calc(100vw - ", "px);min-height:200px;min-width:300px;position:relative;"], function (_ref) {
   var center = _ref.center;
   return center ? 'center' : 'flex-start';
 }, WHITE, NEUTRALS[0], function (_ref2) {
@@ -22460,11 +22460,11 @@ var ModalInnerContainer = external_amd_styled_components_commonjs_styled_compone
 var ModalSection = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
   displayName: "StyledModalComponents__ModalSection",
   componentId: "sc-1r1r1yf-2"
-})(["display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;overflow:scroll;padding:", "px;position:relative;"], DEFAULT_PADDING);
+})(["display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:", "px;position:relative;"], DEFAULT_PADDING);
 var BodySection = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(ModalSection).withConfig({
   displayName: "StyledModalComponents__BodySection",
   componentId: "sc-1r1r1yf-3"
-})(["padding:0 ", "px;"], DEFAULT_PADDING);
+})(["flex:1 1 auto;overflow-x:hidden;overflow-y:auto;padding:0 ", "px;"], DEFAULT_PADDING);
 var FooterSection = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(ModalSection).withConfig({
   displayName: "StyledModalComponents__FooterSection",
   componentId: "sc-1r1r1yf-4"
@@ -31888,7 +31888,7 @@ defineProperty_default()(Modal_Modal, "defaultProps", {
 /* concated harmony reexport Portal */__webpack_require__.d(__webpack_exports__, "Portal", function() { return Portal_Portal; });
  // injected by Webpack.DefinePlugin
 
-var version = "v0.2.0";
+var version = "v0.2.1";
 
 
 
