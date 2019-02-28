@@ -3,12 +3,11 @@
  */
 
 import styled from 'styled-components';
-import type { ReactComponentStyled } from 'styled-components';
 
 import { OVERLAY_BG } from '../../../../colors';
 
 // TODO: centralize z-index layering
-export const OverlayOuterContainer :ReactComponentStyled<*> = styled.div`
+export const OverlayOuterContainer = styled.div`
   background-color: ${OVERLAY_BG};
   bottom: 0;
   display: block;
@@ -19,7 +18,7 @@ export const OverlayOuterContainer :ReactComponentStyled<*> = styled.div`
   z-index: 1000;
 `;
 
-export const OverlayInnerContainer :ReactComponentStyled<*> = styled.div`
+export const OverlayInnerContainer = styled.div`
   display: block;
   height: 100%;
   position: absolute;
