@@ -2,7 +2,7 @@
  * @flow
  */
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import type { ReactComponentStyled } from 'styled-components';
 
 import { NEUTRALS, WHITE } from '../../../../colors';
@@ -10,14 +10,59 @@ import { NEUTRALS, WHITE } from '../../../../colors';
 const DEFAULT_PADDING :number = 30;
 const VIEWPORT_PADDING :number = 120;
 
+const getOuterContainerHeight = ({ viewportScrolling }) => {
+
+  if (viewportScrolling) {
+    return css`
+      height: auto;
+      min-height: 100%;
+    `;
+  }
+
+  return css`
+    height: 100%;
+    min-height: 100%;
+  `;
+};
+
+const getInnerContainerMargin = ({ center, viewportScrolling }) => {
+
+  if (viewportScrolling) {
+    return css`
+      margin: ${VIEWPORT_PADDING}px 0;
+    `;
+  }
+
+  if (!center) {
+    return css`
+      margin-top: ${VIEWPORT_PADDING}px;
+    `;
+  }
+
+  return css`
+    margin: 0;
+  `;
+};
+
+const getInnerContainerMaxHeight = ({ viewportScrolling }) => {
+
+  if (!viewportScrolling) {
+    return css`
+      max-height: calc(100vh - ${VIEWPORT_PADDING * 2}px);
+    `;
+  }
+
+  return '';
+};
+
 export const ModalOuterContainer :ReactComponentStyled<*> = styled.div`
   align-items: center;
   display: flex;
   flex: 0 0 auto;
   flex-direction: row;
-  height: 100%;
   justify-content: center;
   width: 100%;
+  ${getOuterContainerHeight}
 `;
 
 /*
@@ -29,6 +74,7 @@ export const ModalOuterContainer :ReactComponentStyled<*> = styled.div`
  *   - horizontal positioning is controlled by the parent container with flexbox, center by default
  *   - vertical positioning uses "margin-top", set to the desired viewport padding, half of what is subtracted
  */
+
 export const ModalInnerContainer :ReactComponentStyled<*> = styled.div`
   align-self: ${({ center }) => (center ? 'center' : 'flex-start')};
   background-color: ${WHITE};
@@ -37,12 +83,12 @@ export const ModalInnerContainer :ReactComponentStyled<*> = styled.div`
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  margin-top: ${({ center }) => (center ? 0 : VIEWPORT_PADDING)}px;
-  max-height: calc(100vh - ${VIEWPORT_PADDING * 2}px);
   max-width: calc(100vw - ${VIEWPORT_PADDING * 2}px);
   min-height: 200px; /* = 2 * 100px, where 100px is the "min-height" of ModalSection */
   min-width: 300px;
   position: relative;
+  ${getInnerContainerMargin}
+  ${getInnerContainerMaxHeight}
 `;
 
 /*

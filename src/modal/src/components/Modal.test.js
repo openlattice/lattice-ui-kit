@@ -5,7 +5,7 @@ import { mount, shallow } from 'enzyme';
 import Modal from './Modal';
 import ModalFooter from './ModalFooter';
 import ModalHeader from './ModalHeader';
-import { ModalOuterContainer } from './styled/StyledModalComponents';
+import { ModalInnerContainer, ModalOuterContainer } from './styled/StyledModalComponents';
 import { OverlayInnerContainer } from '../../../overlay/src/components/styled/StyledOverlayComponents';
 import { nope } from '../../../utils/testing/MockUtils';
 
@@ -340,6 +340,78 @@ describe('modal', () => {
           </Modal>
         );
         expect(wrapper.find('h1').first().text()).toEqual(TITLE_TXT);
+      });
+
+    });
+
+    describe('viewportScrolling', () => {
+
+      describe('viewportScrolling=false', () => {
+
+        test('should apply correct css for modal scrolling', () => {
+
+          const modal = mount(
+            <Modal isVisible onClose={nope}>
+              { MOCK_CHILD }
+            </Modal>
+          );
+
+          const overlayInnerContainer = modal.find(OverlayInnerContainer);
+          expect(overlayInnerContainer).toHaveStyleRule('overflow-y', 'visible');
+
+          const modalOuterContainer = modal.find(ModalOuterContainer);
+          expect(modalOuterContainer).toHaveStyleRule('height', '100%');
+          expect(modalOuterContainer).toHaveStyleRule('min-height', '100%');
+
+          const modalInnerContainer = modal.find(ModalInnerContainer);
+          expect(modalInnerContainer).toHaveStyleRule('max-height', 'calc(100vh - 240px)');
+          expect(modalInnerContainer).toHaveStyleRule('margin', '0');
+        });
+
+        test('should pass "isScrollable=false" to the overlay component', () => {
+          const modal = mount(
+            <Modal isVisible onClose={nope}>
+              { MOCK_CHILD }
+            </Modal>
+          );
+          const overlayInnerContainer = modal.find(OverlayInnerContainer);
+          expect(overlayInnerContainer.prop('isScrollable')).toEqual(false);
+        });
+
+      });
+
+      describe('viewportScrolling=true', () => {
+
+        test('should apply correct css for viewport scrolling', () => {
+
+          const modal = mount(
+            <Modal isVisible onClose={nope} viewportScrolling>
+              { MOCK_CHILD }
+            </Modal>
+          );
+
+          const overlayInnerContainer = modal.find(OverlayInnerContainer);
+          expect(overlayInnerContainer).toHaveStyleRule('overflow-y', 'scroll');
+
+          const modalOuterContainer = modal.find(ModalOuterContainer);
+          expect(modalOuterContainer).toHaveStyleRule('height', 'auto');
+          expect(modalOuterContainer).toHaveStyleRule('min-height', '100%');
+
+          const modalInnerContainer = modal.find(ModalInnerContainer);
+          expect(modalInnerContainer).not.toHaveStyleRule('max-height');
+          expect(modalInnerContainer).toHaveStyleRule('margin', '120px 0');
+        });
+
+        test('should pass "isScrollable=true" to the overlay component', () => {
+          const modal = mount(
+            <Modal isVisible onClose={nope} viewportScrolling>
+              { MOCK_CHILD }
+            </Modal>
+          );
+          const overlayInnerContainer = modal.find(OverlayInnerContainer);
+          expect(overlayInnerContainer.prop('isScrollable')).toEqual(true);
+        });
+
       });
 
     });
