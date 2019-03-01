@@ -82,7 +82,7 @@
 
     "flowtype/define-flow-type": "error",
     "flowtype/space-after-type-colon": ["error", "never"],
-    "flowtype/space-before-type-colon": ["error", "always"],
+    "flowtype/space-before-type-colon": "off",
     "flowtype/no-types-missing-file-annotation": "warn",
 
     "import/no-extraneous-dependencies": [
