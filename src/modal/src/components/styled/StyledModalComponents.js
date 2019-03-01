@@ -3,7 +3,6 @@
  */
 
 import styled, { css } from 'styled-components';
-import type { ReactComponentStyled } from 'styled-components';
 
 import { NEUTRALS, WHITE } from '../../../../colors';
 
@@ -55,7 +54,7 @@ const getInnerContainerMaxHeight = ({ viewportScrolling }) => {
   return '';
 };
 
-export const ModalOuterContainer :ReactComponentStyled<*> = styled.div`
+export const ModalOuterContainer = styled.div`
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -74,8 +73,7 @@ export const ModalOuterContainer :ReactComponentStyled<*> = styled.div`
  *   - horizontal positioning is controlled by the parent container with flexbox, center by default
  *   - vertical positioning uses "margin-top", set to the desired viewport padding, half of what is subtracted
  */
-
-export const ModalInnerContainer :ReactComponentStyled<*> = styled.div`
+export const ModalInnerContainer = styled.div`
   align-self: ${({ center }) => (center ? 'center' : 'flex-start')};
   background-color: ${WHITE};
   border-radius: 4px;
@@ -94,7 +92,7 @@ export const ModalInnerContainer :ReactComponentStyled<*> = styled.div`
 /*
  * "min-height" 40px + "padding" 30px = 100px of total height
  */
-export const ModalSection :ReactComponentStyled<*> = styled.div`
+export const ModalSection = styled.div`
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
@@ -104,19 +102,19 @@ export const ModalSection :ReactComponentStyled<*> = styled.div`
   position: relative;
 `;
 
-export const BodySection :ReactComponentStyled<*> = styled(ModalSection)`
+export const BodySection = styled(ModalSection)`
   flex: 1 1 auto;
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0 ${DEFAULT_PADDING}px;
 `;
 
-export const FooterSection :ReactComponentStyled<*> = styled(ModalSection)`
+export const FooterSection = styled(ModalSection)`
   align-items: center;
   flex-direction: row-reverse;
 `;
 
-export const HeaderSection :ReactComponentStyled<*> = styled(ModalSection)`
+export const HeaderSection = styled(ModalSection)`
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
