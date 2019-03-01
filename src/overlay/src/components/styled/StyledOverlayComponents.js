@@ -22,5 +22,6 @@ export const OverlayInnerContainer = styled.div`
   display: block;
   height: 100%;
   position: absolute;
+  overflow-y: ${({ isScrollable }) => (isScrollable ? 'scroll' : 'visible')};
   width: 100%;
 `;
