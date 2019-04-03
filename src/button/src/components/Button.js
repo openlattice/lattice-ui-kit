@@ -22,6 +22,7 @@ type Props = {
   disabled ? :boolean;
   mode ? :ButtonMode;
   onClick :() => void;
+  type ? :string;
 };
 
 type State = {};
@@ -39,12 +40,14 @@ export default class Button extends Component<Props, State> {
     disabled: PropTypes.bool,
     mode: PropTypes.string,
     onClick: PropTypes.func.isRequired,
+    type: PropTypes.string,
   }
 
   static defaultProps = {
     className: '',
     disabled: false,
     mode: 'default',
+    type: 'button',
   }
 
   render() {
@@ -55,24 +58,25 @@ export default class Button extends Component<Props, State> {
       disabled,
       mode,
       onClick,
+      type,
     } = this.props;
 
     switch (mode) {
       case 'primary':
         return (
-          <PrimaryButton className={className} disabled={disabled} onClick={onClick}>
+          <PrimaryButton className={className} disabled={disabled} onClick={onClick} type={type}>
             { children }
           </PrimaryButton>
         );
       case 'secondary':
         return (
-          <SecondaryButton className={className} disabled={disabled} onClick={onClick}>
+          <SecondaryButton className={className} disabled={disabled} onClick={onClick} type={type}>
             { children }
           </SecondaryButton>
         );
       default:
         return (
-          <DefaultButton className={className} disabled={disabled} onClick={onClick}>
+          <DefaultButton className={className} disabled={disabled} onClick={onClick} type={type}>
             { children }
           </DefaultButton>
         );

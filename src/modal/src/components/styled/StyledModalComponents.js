@@ -2,22 +2,66 @@
  * @flow
  */
 
-import styled from 'styled-components';
-import type { ReactComponentStyled } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { NEUTRALS, WHITE } from '../../../../colors';
 
 const DEFAULT_PADDING :number = 30;
 const VIEWPORT_PADDING :number = 120;
 
-export const ModalOuterContainer :ReactComponentStyled<*> = styled.div`
+const getOuterContainerHeight = ({ viewportScrolling }) => {
+
+  if (viewportScrolling) {
+    return css`
+      height: auto;
+      min-height: 100%;
+    `;
+  }
+
+  return css`
+    height: 100%;
+    min-height: 100%;
+  `;
+};
+
+const getInnerContainerMargin = ({ center, viewportScrolling }) => {
+
+  if (viewportScrolling) {
+    return css`
+      margin: ${VIEWPORT_PADDING}px 0;
+    `;
+  }
+
+  if (!center) {
+    return css`
+      margin-top: ${VIEWPORT_PADDING}px;
+    `;
+  }
+
+  return css`
+    margin: 0;
+  `;
+};
+
+const getInnerContainerMaxHeight = ({ viewportScrolling }) => {
+
+  if (!viewportScrolling) {
+    return css`
+      max-height: calc(100vh - ${VIEWPORT_PADDING * 2}px);
+    `;
+  }
+
+  return '';
+};
+
+export const ModalOuterContainer = styled.div`
   align-items: center;
   display: flex;
   flex: 0 0 auto;
   flex-direction: row;
-  height: 100%;
   justify-content: center;
   width: 100%;
+  ${getOuterContainerHeight}
 `;
 
 /*
@@ -29,7 +73,7 @@ export const ModalOuterContainer :ReactComponentStyled<*> = styled.div`
  *   - horizontal positioning is controlled by the parent container with flexbox, center by default
  *   - vertical positioning uses "margin-top", set to the desired viewport padding, half of what is subtracted
  */
-export const ModalInnerContainer :ReactComponentStyled<*> = styled.div`
+export const ModalInnerContainer = styled.div`
   align-self: ${({ center }) => (center ? 'center' : 'flex-start')};
   background-color: ${WHITE};
   border-radius: 4px;
@@ -37,38 +81,40 @@ export const ModalInnerContainer :ReactComponentStyled<*> = styled.div`
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  margin-top: ${({ center }) => (center ? 0 : VIEWPORT_PADDING)}px;
-  max-height: calc(100vh - ${VIEWPORT_PADDING * 2}px);
   max-width: calc(100vw - ${VIEWPORT_PADDING * 2}px);
   min-height: 200px; /* = 2 * 100px, where 100px is the "min-height" of ModalSection */
   min-width: 300px;
-  overflow: scroll;
   position: relative;
+  ${getInnerContainerMargin}
+  ${getInnerContainerMaxHeight}
 `;
 
 /*
  * "min-height" 40px + "padding" 30px = 100px of total height
  */
-export const ModalSection :ReactComponentStyled<*> = styled.div`
+export const ModalSection = styled.div`
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   min-height: 40px;
-  overflow: scroll;
+  /* overflow: scroll; */
   padding: ${DEFAULT_PADDING}px;
   position: relative;
 `;
 
-export const BodySection :ReactComponentStyled<*> = styled(ModalSection)`
+export const BodySection = styled(ModalSection)`
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   padding: 0 ${DEFAULT_PADDING}px;
 `;
 
-export const FooterSection :ReactComponentStyled<*> = styled(ModalSection)`
+export const FooterSection = styled(ModalSection)`
   align-items: center;
   flex-direction: row-reverse;
 `;
 
-export const HeaderSection :ReactComponentStyled<*> = styled(ModalSection)`
+export const HeaderSection = styled(ModalSection)`
   align-items: center;
   flex-direction: row;
   justify-content: space-between;

@@ -60,9 +60,15 @@ module.exports = (env) => {
   return {
     bail: true,
     entry: [
-      '@babel/polyfill', // TODO: figure out if this is necessary
       LIB_PATHS.ABS.ENTRY,
     ],
+    externals: {
+      'styled-components': {
+        amd: 'styled-components',
+        commonjs: 'styled-components',
+        commonjs2: 'styled-components',
+      },
+    },
     mode: env.production ? ENV_PROD : ENV_DEV,
     module: {
       rules: [
@@ -70,7 +76,8 @@ module.exports = (env) => {
       ],
     },
     optimization: {
-      minimize: !!env.production,
+      // minimize: !!env.production,
+      minimize: false,
     },
     output: {
       library: LIB_NAMESPACE,
@@ -91,7 +98,7 @@ module.exports = (env) => {
       modules: [
         LIB_PATHS.ABS.SOURCE,
         LIB_PATHS.ABS.NODE,
-      ]
+      ],
     },
     target: 'web',
   };
