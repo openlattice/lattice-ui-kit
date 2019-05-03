@@ -29,9 +29,6 @@ exports[`Select render matches snapshot 1`] = `
       closeMenuOnSelect={true}
       components={Object {}}
       controlShouldRenderValue={true}
-      defaultInputValue=""
-      defaultMenuIsOpen={false}
-      defaultValue={null}
       escapeClearsValue={false}
       filterOption={[Function]}
       formatGroupLabel={[Function]}
@@ -108,9 +105,6 @@ exports[`Select render matches snapshot 1`] = `
             "closeMenuOnSelect": true,
             "components": Object {},
             "controlShouldRenderValue": true,
-            "defaultInputValue": "",
-            "defaultMenuIsOpen": false,
-            "defaultValue": null,
             "escapeClearsValue": false,
             "filterOption": [Function],
             "formatGroupLabel": [Function],
@@ -160,9 +154,38 @@ exports[`Select render matches snapshot 1`] = `
           }
         }
         setValue={[Function]}
+        theme={
+          Object {
+            "borderRadius": 4,
+            "colors": Object {
+              "danger": "#DE350B",
+              "dangerLight": "#FFBDAD",
+              "neutral0": "hsl(0, 0%, 100%)",
+              "neutral10": "hsl(0, 0%, 90%)",
+              "neutral20": "hsl(0, 0%, 80%)",
+              "neutral30": "hsl(0, 0%, 70%)",
+              "neutral40": "hsl(0, 0%, 60%)",
+              "neutral5": "hsl(0, 0%, 95%)",
+              "neutral50": "hsl(0, 0%, 50%)",
+              "neutral60": "hsl(0, 0%, 40%)",
+              "neutral70": "hsl(0, 0%, 30%)",
+              "neutral80": "hsl(0, 0%, 20%)",
+              "neutral90": "hsl(0, 0%, 10%)",
+              "primary": "#2684FF",
+              "primary25": "#DEEBFF",
+              "primary50": "#B2D4FF",
+              "primary75": "#4C9AFF",
+            },
+            "spacing": Object {
+              "baseUnit": 4,
+              "controlHeight": 38,
+              "menuGutter": 8,
+            },
+          }
+        }
       >
         <div
-          className="css-1p480ut"
+          className="css-hj9vq6-container"
           onKeyDown={[Function]}
         >
           <Control
@@ -182,6 +205,7 @@ exports[`Select render matches snapshot 1`] = `
             isFocused={false}
             isMulti={false}
             isRtl={false}
+            menuIsOpen={false}
             options={Array []}
             selectOption={[Function]}
             selectProps={
@@ -193,9 +217,6 @@ exports[`Select render matches snapshot 1`] = `
                 "closeMenuOnSelect": true,
                 "components": Object {},
                 "controlShouldRenderValue": true,
-                "defaultInputValue": "",
-                "defaultMenuIsOpen": false,
-                "defaultValue": null,
                 "escapeClearsValue": false,
                 "filterOption": [Function],
                 "formatGroupLabel": [Function],
@@ -245,9 +266,38 @@ exports[`Select render matches snapshot 1`] = `
               }
             }
             setValue={[Function]}
+            theme={
+              Object {
+                "borderRadius": 4,
+                "colors": Object {
+                  "danger": "#DE350B",
+                  "dangerLight": "#FFBDAD",
+                  "neutral0": "hsl(0, 0%, 100%)",
+                  "neutral10": "hsl(0, 0%, 90%)",
+                  "neutral20": "hsl(0, 0%, 80%)",
+                  "neutral30": "hsl(0, 0%, 70%)",
+                  "neutral40": "hsl(0, 0%, 60%)",
+                  "neutral5": "hsl(0, 0%, 95%)",
+                  "neutral50": "hsl(0, 0%, 50%)",
+                  "neutral60": "hsl(0, 0%, 40%)",
+                  "neutral70": "hsl(0, 0%, 30%)",
+                  "neutral80": "hsl(0, 0%, 20%)",
+                  "neutral90": "hsl(0, 0%, 10%)",
+                  "primary": "#2684FF",
+                  "primary25": "#DEEBFF",
+                  "primary50": "#B2D4FF",
+                  "primary75": "#4C9AFF",
+                },
+                "spacing": Object {
+                  "baseUnit": 4,
+                  "controlHeight": 38,
+                  "menuGutter": 8,
+                },
+              }
+            }
           >
             <div
-              className="css-6o2l1z"
+              className="css-14ntcys-control"
               onMouseDown={[Function]}
               onTouchEnd={[Function]}
             >
@@ -271,9 +321,6 @@ exports[`Select render matches snapshot 1`] = `
                     "closeMenuOnSelect": true,
                     "components": Object {},
                     "controlShouldRenderValue": true,
-                    "defaultInputValue": "",
-                    "defaultMenuIsOpen": false,
-                    "defaultValue": null,
                     "escapeClearsValue": false,
                     "filterOption": [Function],
                     "formatGroupLabel": [Function],
@@ -323,9 +370,38 @@ exports[`Select render matches snapshot 1`] = `
                   }
                 }
                 setValue={[Function]}
+                theme={
+                  Object {
+                    "borderRadius": 4,
+                    "colors": Object {
+                      "danger": "#DE350B",
+                      "dangerLight": "#FFBDAD",
+                      "neutral0": "hsl(0, 0%, 100%)",
+                      "neutral10": "hsl(0, 0%, 90%)",
+                      "neutral20": "hsl(0, 0%, 80%)",
+                      "neutral30": "hsl(0, 0%, 70%)",
+                      "neutral40": "hsl(0, 0%, 60%)",
+                      "neutral5": "hsl(0, 0%, 95%)",
+                      "neutral50": "hsl(0, 0%, 50%)",
+                      "neutral60": "hsl(0, 0%, 40%)",
+                      "neutral70": "hsl(0, 0%, 30%)",
+                      "neutral80": "hsl(0, 0%, 20%)",
+                      "neutral90": "hsl(0, 0%, 10%)",
+                      "primary": "#2684FF",
+                      "primary25": "#DEEBFF",
+                      "primary50": "#B2D4FF",
+                      "primary75": "#4C9AFF",
+                    },
+                    "spacing": Object {
+                      "baseUnit": 4,
+                      "controlHeight": 38,
+                      "menuGutter": 8,
+                    },
+                  }
+                }
               >
                 <div
-                  className="css-1rtrksz"
+                  className="css-1hwfws3"
                 >
                   <Placeholder
                     clearValue={[Function]}
@@ -334,6 +410,7 @@ exports[`Select render matches snapshot 1`] = `
                     getValue={[Function]}
                     hasValue={false}
                     isDisabled={false}
+                    isFocused={false}
                     isMulti={false}
                     isRtl={false}
                     key="placeholder"
@@ -348,9 +425,6 @@ exports[`Select render matches snapshot 1`] = `
                         "closeMenuOnSelect": true,
                         "components": Object {},
                         "controlShouldRenderValue": true,
-                        "defaultInputValue": "",
-                        "defaultMenuIsOpen": false,
-                        "defaultValue": null,
                         "escapeClearsValue": false,
                         "filterOption": [Function],
                         "formatGroupLabel": [Function],
@@ -400,9 +474,38 @@ exports[`Select render matches snapshot 1`] = `
                       }
                     }
                     setValue={[Function]}
+                    theme={
+                      Object {
+                        "borderRadius": 4,
+                        "colors": Object {
+                          "danger": "#DE350B",
+                          "dangerLight": "#FFBDAD",
+                          "neutral0": "hsl(0, 0%, 100%)",
+                          "neutral10": "hsl(0, 0%, 90%)",
+                          "neutral20": "hsl(0, 0%, 80%)",
+                          "neutral30": "hsl(0, 0%, 70%)",
+                          "neutral40": "hsl(0, 0%, 60%)",
+                          "neutral5": "hsl(0, 0%, 95%)",
+                          "neutral50": "hsl(0, 0%, 50%)",
+                          "neutral60": "hsl(0, 0%, 40%)",
+                          "neutral70": "hsl(0, 0%, 30%)",
+                          "neutral80": "hsl(0, 0%, 20%)",
+                          "neutral90": "hsl(0, 0%, 10%)",
+                          "primary": "#2684FF",
+                          "primary25": "#DEEBFF",
+                          "primary50": "#B2D4FF",
+                          "primary75": "#4C9AFF",
+                        },
+                        "spacing": Object {
+                          "baseUnit": 4,
+                          "controlHeight": 38,
+                          "menuGutter": 8,
+                        },
+                      }
+                    }
                   >
                     <div
-                      className="css-1492t68"
+                      className="css-151xaom-placeholder"
                     >
                       Select...
                     </div>
@@ -421,13 +524,99 @@ exports[`Select render matches snapshot 1`] = `
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
+                    selectProps={
+                      Object {
+                        "backspaceRemovesValue": true,
+                        "blurInputOnSelect": true,
+                        "captureMenuScroll": false,
+                        "closeMenuOnScroll": false,
+                        "closeMenuOnSelect": true,
+                        "components": Object {},
+                        "controlShouldRenderValue": true,
+                        "escapeClearsValue": false,
+                        "filterOption": [Function],
+                        "formatGroupLabel": [Function],
+                        "getOptionLabel": [Function],
+                        "getOptionValue": [Function],
+                        "inputValue": "",
+                        "isDisabled": false,
+                        "isLoading": false,
+                        "isMulti": false,
+                        "isOptionDisabled": [Function],
+                        "isRtl": false,
+                        "isSearchable": true,
+                        "loadingMessage": [Function],
+                        "maxMenuHeight": 300,
+                        "menuIsOpen": false,
+                        "menuPlacement": "bottom",
+                        "menuPosition": "absolute",
+                        "menuShouldBlockScroll": false,
+                        "menuShouldScrollIntoView": true,
+                        "minMenuHeight": 140,
+                        "noOptionsMessage": [Function],
+                        "onChange": [Function],
+                        "onInputChange": [Function],
+                        "onMenuClose": [Function],
+                        "onMenuOpen": [Function],
+                        "openMenuOnClick": true,
+                        "openMenuOnFocus": false,
+                        "options": Array [],
+                        "pageSize": 5,
+                        "placeholder": "Select...",
+                        "screenReaderStatus": [Function],
+                        "styles": Object {
+                          "clearIndicator": [Function],
+                          "container": [Function],
+                          "control": [Function],
+                          "dropdownIndicator": [Function],
+                          "indicatorSeparator": [Function],
+                          "indicatorsContainer": [Function],
+                          "menu": [Function],
+                          "menuPortal": [Function],
+                          "option": [Function],
+                          "singleValue": [Function],
+                        },
+                        "tabIndex": "0",
+                        "tabSelectsValue": true,
+                        "value": null,
+                      }
+                    }
                     spellCheck="false"
                     tabIndex="0"
+                    theme={
+                      Object {
+                        "borderRadius": 4,
+                        "colors": Object {
+                          "danger": "#DE350B",
+                          "dangerLight": "#FFBDAD",
+                          "neutral0": "hsl(0, 0%, 100%)",
+                          "neutral10": "hsl(0, 0%, 90%)",
+                          "neutral20": "hsl(0, 0%, 80%)",
+                          "neutral30": "hsl(0, 0%, 70%)",
+                          "neutral40": "hsl(0, 0%, 60%)",
+                          "neutral5": "hsl(0, 0%, 95%)",
+                          "neutral50": "hsl(0, 0%, 50%)",
+                          "neutral60": "hsl(0, 0%, 40%)",
+                          "neutral70": "hsl(0, 0%, 30%)",
+                          "neutral80": "hsl(0, 0%, 20%)",
+                          "neutral90": "hsl(0, 0%, 10%)",
+                          "primary": "#2684FF",
+                          "primary25": "#DEEBFF",
+                          "primary50": "#B2D4FF",
+                          "primary75": "#4C9AFF",
+                        },
+                        "spacing": Object {
+                          "baseUnit": 4,
+                          "controlHeight": 38,
+                          "menuGutter": 8,
+                        },
+                      }
+                    }
                     type="text"
                     value=""
                   >
                     <div
-                      className="css-rsyb7x"
+                      className="css-1g6gooi"
                     >
                       <AutosizeInput
                         aria-autocomplete="list"
@@ -445,6 +634,7 @@ exports[`Select render matches snapshot 1`] = `
                             "border": 0,
                             "color": "inherit",
                             "fontSize": "inherit",
+                            "label": "input",
                             "opacity": 1,
                             "outline": 0,
                             "padding": 0,
@@ -485,6 +675,7 @@ exports[`Select render matches snapshot 1`] = `
                                 "boxSizing": "content-box",
                                 "color": "inherit",
                                 "fontSize": "inherit",
+                                "label": "input",
                                 "opacity": 1,
                                 "outline": 0,
                                 "padding": 0,
@@ -534,9 +725,6 @@ exports[`Select render matches snapshot 1`] = `
                     "closeMenuOnSelect": true,
                     "components": Object {},
                     "controlShouldRenderValue": true,
-                    "defaultInputValue": "",
-                    "defaultMenuIsOpen": false,
-                    "defaultValue": null,
                     "escapeClearsValue": false,
                     "filterOption": [Function],
                     "formatGroupLabel": [Function],
@@ -586,6 +774,35 @@ exports[`Select render matches snapshot 1`] = `
                   }
                 }
                 setValue={[Function]}
+                theme={
+                  Object {
+                    "borderRadius": 4,
+                    "colors": Object {
+                      "danger": "#DE350B",
+                      "dangerLight": "#FFBDAD",
+                      "neutral0": "hsl(0, 0%, 100%)",
+                      "neutral10": "hsl(0, 0%, 90%)",
+                      "neutral20": "hsl(0, 0%, 80%)",
+                      "neutral30": "hsl(0, 0%, 70%)",
+                      "neutral40": "hsl(0, 0%, 60%)",
+                      "neutral5": "hsl(0, 0%, 95%)",
+                      "neutral50": "hsl(0, 0%, 50%)",
+                      "neutral60": "hsl(0, 0%, 40%)",
+                      "neutral70": "hsl(0, 0%, 30%)",
+                      "neutral80": "hsl(0, 0%, 20%)",
+                      "neutral90": "hsl(0, 0%, 10%)",
+                      "primary": "#2684FF",
+                      "primary25": "#DEEBFF",
+                      "primary50": "#B2D4FF",
+                      "primary75": "#4C9AFF",
+                    },
+                    "spacing": Object {
+                      "baseUnit": 4,
+                      "controlHeight": 38,
+                      "menuGutter": 8,
+                    },
+                  }
+                }
               >
                 <div
                   className="css-t3xrk7"
@@ -611,9 +828,6 @@ exports[`Select render matches snapshot 1`] = `
                         "closeMenuOnSelect": true,
                         "components": Object {},
                         "controlShouldRenderValue": true,
-                        "defaultInputValue": "",
-                        "defaultMenuIsOpen": false,
-                        "defaultValue": null,
                         "escapeClearsValue": false,
                         "filterOption": [Function],
                         "formatGroupLabel": [Function],
@@ -663,6 +877,35 @@ exports[`Select render matches snapshot 1`] = `
                       }
                     }
                     setValue={[Function]}
+                    theme={
+                      Object {
+                        "borderRadius": 4,
+                        "colors": Object {
+                          "danger": "#DE350B",
+                          "dangerLight": "#FFBDAD",
+                          "neutral0": "hsl(0, 0%, 100%)",
+                          "neutral10": "hsl(0, 0%, 90%)",
+                          "neutral20": "hsl(0, 0%, 80%)",
+                          "neutral30": "hsl(0, 0%, 70%)",
+                          "neutral40": "hsl(0, 0%, 60%)",
+                          "neutral5": "hsl(0, 0%, 95%)",
+                          "neutral50": "hsl(0, 0%, 50%)",
+                          "neutral60": "hsl(0, 0%, 40%)",
+                          "neutral70": "hsl(0, 0%, 30%)",
+                          "neutral80": "hsl(0, 0%, 20%)",
+                          "neutral90": "hsl(0, 0%, 10%)",
+                          "primary": "#2684FF",
+                          "primary25": "#DEEBFF",
+                          "primary50": "#B2D4FF",
+                          "primary75": "#4C9AFF",
+                        },
+                        "spacing": Object {
+                          "baseUnit": 4,
+                          "controlHeight": 38,
+                          "menuGutter": 8,
+                        },
+                      }
+                    }
                   >
                     <span
                       className="css-1hyfx7x"
@@ -696,9 +939,6 @@ exports[`Select render matches snapshot 1`] = `
                         "closeMenuOnSelect": true,
                         "components": Object {},
                         "controlShouldRenderValue": true,
-                        "defaultInputValue": "",
-                        "defaultMenuIsOpen": false,
-                        "defaultValue": null,
                         "escapeClearsValue": false,
                         "filterOption": [Function],
                         "formatGroupLabel": [Function],
@@ -748,10 +988,39 @@ exports[`Select render matches snapshot 1`] = `
                       }
                     }
                     setValue={[Function]}
+                    theme={
+                      Object {
+                        "borderRadius": 4,
+                        "colors": Object {
+                          "danger": "#DE350B",
+                          "dangerLight": "#FFBDAD",
+                          "neutral0": "hsl(0, 0%, 100%)",
+                          "neutral10": "hsl(0, 0%, 90%)",
+                          "neutral20": "hsl(0, 0%, 80%)",
+                          "neutral30": "hsl(0, 0%, 70%)",
+                          "neutral40": "hsl(0, 0%, 60%)",
+                          "neutral5": "hsl(0, 0%, 95%)",
+                          "neutral50": "hsl(0, 0%, 50%)",
+                          "neutral60": "hsl(0, 0%, 40%)",
+                          "neutral70": "hsl(0, 0%, 30%)",
+                          "neutral80": "hsl(0, 0%, 20%)",
+                          "neutral90": "hsl(0, 0%, 10%)",
+                          "primary": "#2684FF",
+                          "primary25": "#DEEBFF",
+                          "primary50": "#B2D4FF",
+                          "primary75": "#4C9AFF",
+                        },
+                        "spacing": Object {
+                          "baseUnit": 4,
+                          "controlHeight": 38,
+                          "menuGutter": 8,
+                        },
+                      }
+                    }
                   >
                     <div
                       aria-hidden="true"
-                      className="css-1hmkhdy"
+                      className="css-b9nxts-indicatorContainer"
                       onMouseDown={[Function]}
                       onTouchEnd={[Function]}
                     >

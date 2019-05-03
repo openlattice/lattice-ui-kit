@@ -529,6 +529,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                           class="svg-inline--fa fa-times fa-w-10 fa-lg "
                           data-icon="times"
                           data-prefix="fal"
+                          focusable="false"
                           role="img"
                           viewBox="0 0 320 512"
                           xmlns="http://www.w3.org/2000/svg"
@@ -653,6 +654,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                         className="svg-inline--fa fa-times fa-w-10 fa-lg "
                                         data-icon="times"
                                         data-prefix="fal"
+                                        focusable="false"
                                         role="img"
                                         style={Object {}}
                                         viewBox="0 0 320 512"
