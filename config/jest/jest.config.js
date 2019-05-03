@@ -36,4 +36,7 @@ module.exports = {
   transform: {
     '^.+\\.jsx?$': '<rootDir>/config/jest/babelJestTransformer.js',
   },
+  transformIgnorePatterns: [
+    '/node_modules/(?!(@atlaskit)/)'
+  ]
 };
