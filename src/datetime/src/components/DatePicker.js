@@ -8,6 +8,4 @@ export const props = {
   }
 };
 
-const LatticeDatePicker = withProps(DatePicker, props);
-
-export default LatticeDatePicker;
+export default withProps(DatePicker, props);
