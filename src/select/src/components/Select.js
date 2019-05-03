@@ -1,10 +1,9 @@
-import styled from 'styled-components';
 import Select from 'react-select';
-import selectStyles from './styled/selectStyles';
-import { LATTICE_SELECT } from './consts';
+import withProps from '../../../components/withProps';
+import selectStyles from '../../../style/selectStyles';
 
-export default styled(Select).attrs({
-  classNamePrefix: LATTICE_SELECT
-})`
-  ${selectStyles}
-`;
+export const props = {
+  styles: selectStyles
+};
+
+export default withProps(Select, props);
