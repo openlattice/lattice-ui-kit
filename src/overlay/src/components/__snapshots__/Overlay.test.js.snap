@@ -2,6 +2,7 @@
 
 exports[`overlay snapshots should match snapshot when isVisible="false" 1`] = `
 <Overlay
+  isScrollable={false}
   isVisible={false}
   onClose={[Function]}
   shouldCloseOnClick={true}
@@ -24,10 +25,12 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
   display: block;
   height: 100%;
   position: absolute;
+  overflow-y: visible;
   width: 100%;
 }
 
 <Overlay
+  isScrollable={false}
   isVisible={true}
   onClose={[Function]}
   shouldCloseOnClick={true}
@@ -38,6 +41,7 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
         className="c0"
       >
         <StyledOverlayComponents__OverlayInnerContainer
+          isScrollable={false}
           onClick={[Function]}
         >
           <div

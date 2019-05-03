@@ -15,16 +15,14 @@ import { FooterSection } from './styled/StyledModalComponents';
 export const DEFAULT_TEXT_PRIMARY_ACTION :'Confirm' = 'Confirm';
 export const DEFAULT_TEXT_SECONDARY_ACTION :'Cancel' = 'Cancel';
 
-const PrimaryButton = styled(Button).attrs({
-  mode: 'primary'
-})`
+// TODO: ":any" is a temporary fix
+const PrimaryButton :any = styled(Button).attrs({ mode: 'primary' })`
   margin: ${({ isLonely }) => (isLonely ? 0 : '0 0 0 20px')};
   flex: ${({ stretch }) => (stretch ? 1 : 'none')};
 `;
 
-const SecondaryButton = styled(Button).attrs({
-  mode: 'default'
-})`
+// TODO: ":any" is a temporary fix
+const SecondaryButton :any = styled(Button).attrs({ mode: 'default' })`
   flex: ${({ stretch }) => (stretch ? 1 : 'none')};
 `;
 
