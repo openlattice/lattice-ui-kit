@@ -8,8 +8,18 @@ describe('CardSegment', () => {
 
   describe('snapshots', () => {
 
-    test('Without Children', () => {
+    test('Without child', () => {
       const wrapper = mount(<CardSegment />);
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('with > 1 child', () => {
+      const wrapper = mount((
+        <CardSegment>
+          <div>child 1</div>
+          <div>child 2</div>
+        </CardSegment>
+      ));
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
