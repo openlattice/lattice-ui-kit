@@ -88,7 +88,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   max-height: calc(100vh - 240px);
 }
 
-.c5 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -102,9 +102,6 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   min-height: 40px;
   padding: 30px;
   position: relative;
-}
-
-.c8 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -113,7 +110,20 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   padding: 0 30px;
 }
 
-.c9 {
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 40px;
+  padding: 30px;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -124,6 +134,19 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 40px;
+  padding: 30px;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -137,7 +160,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   justify-content: space-between;
 }
 
-.c13 {
+.c12 {
   background-color: #f0f0f7;
   border-color: #f0f0f7;
   border-radius: 4px;
@@ -155,14 +178,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   white-space: nowrap;
 }
 
-.c13:hover {
+.c12:hover {
   background-color: #dcdce7;
   border-color: #dcdce7;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c13:active {
+.c12:active {
   background-color: #b6bbc7;
   border-color: #b6bbc7;
   color: #ffffff;
@@ -170,13 +193,13 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-decoration: none;
 }
 
-.c13:disabled {
+.c12:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c11 {
+.c10 {
   background-color: #6124e2;
   border-color: #6124e2;
   border-radius: 4px;
@@ -194,7 +217,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   white-space: nowrap;
 }
 
-.c11:hover {
+.c10:hover {
   background-color: #8045ff;
   border-color: #8045ff;
   cursor: pointer;
@@ -202,14 +225,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-decoration: none;
 }
 
-.c11:active {
+.c10:active {
   background-color: #361876;
   border-color: #361876;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c11:disabled {
+.c10:disabled {
   background-color: #f0f0f7;
   border-color: #f0f0f7;
   color: #b6bbc7;
@@ -218,20 +241,20 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-decoration: none;
 }
 
-.c10 {
+.c9 {
   margin: 0 0 0 20px;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c12 {
+.c11 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c6 {
+.c5 {
   color: #555e6f;
   font-size: 18px;
   font-weight: normal;
@@ -241,7 +264,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   white-space: nowrap;
 }
 
-.c7 {
+.c6 {
   background: none;
   border: none;
   cursor: pointer;
@@ -276,229 +299,1007 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
     shouldCloseOnClick={true}
   >
     <Portal>
-      <StyledOverlayComponents__OverlayOuterContainer>
-        <div
-          className="c0"
-        >
-          <StyledOverlayComponents__OverlayInnerContainer
-            isScrollable={false}
-            onClick={[Function]}
+      <Portal
+        containerInfo={
+          .c0 {
+  background-color: rgba(8,0,25,0.3);
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.c1 {
+  display: block;
+  height: 100%;
+  position: absolute;
+  overflow-y: visible;
+  width: 100%;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.c3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px -2px #555e6f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: calc(100vw - 240px);
+  min-height: 200px;
+  min-width: 300px;
+  position: relative;
+  margin: 0;
+  max-height: calc(100vh - 240px);
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 40px;
+  padding: 30px;
+  position: relative;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0 30px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 40px;
+  padding: 30px;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 40px;
+  padding: 30px;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c12 {
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  color: #8e929b;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.c12:hover {
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c12:active {
+  background-color: #b6bbc7;
+  border-color: #b6bbc7;
+  color: #ffffff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c12:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10 {
+  background-color: #6124e2;
+  border-color: #6124e2;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.c10:hover {
+  background-color: #8045ff;
+  border-color: #8045ff;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10:active {
+  background-color: #361876;
+  border-color: #361876;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10:disabled {
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9 {
+  margin: 0 0 0 20px;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c11 {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c5 {
+  color: #555e6f;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 30px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c6 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  height: 32px;
+  margin: 0 0 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 32px;
+}
+
+<div
+            lattice-portal-inner-container=""
           >
             <div
-              className="c1"
-              onClick={[Function]}
+              class="c0"
             >
-              <StyledModalComponents__ModalOuterContainer
-                onClick={[Function]}
-                viewportScrolling={false}
+              <div
+                class="c1"
               >
                 <div
-                  className="c2"
-                  onClick={[Function]}
+                  class="c2"
                 >
-                  <StyledModalComponents__ModalInnerContainer
-                    center={true}
-                    viewportScrolling={false}
+                  <div
+                    class="c3"
                   >
                     <div
-                      className="c3"
+                      class="c4"
                     >
-                      <ModalHeader
-                        onClickClose={[Function]}
-                        textTitle="Title"
-                        withHeader={true}
+                      <h1
+                        class="c5"
                       >
-                        <StyledModalComponents__HeaderSection>
-                          <StyledModalComponents__ModalSection
-                            className="c4"
-                          >
-                            <div
-                              className="c4 c5"
-                            >
-                              <ModalHeader__ModalTitle>
-                                <h1
-                                  className="c6"
-                                >
-                                  Title
-                                </h1>
-                              </ModalHeader__ModalTitle>
-                              <ModalHeader__CloseButtonWrapper
-                                onClick={[Function]}
-                              >
-                                <button
-                                  className="c7"
-                                  onClick={[Function]}
-                                >
-                                  <FontAwesomeIcon
-                                    border={false}
-                                    className=""
-                                    fixedWidth={false}
-                                    flip={null}
-                                    icon={
-                                      Object {
-                                        "icon": Array [
-                                          320,
-                                          512,
-                                          Array [],
-                                          "f00d",
-                                          "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
-                                        ],
-                                        "iconName": "times",
-                                        "prefix": "fal",
-                                      }
-                                    }
-                                    inverse={false}
-                                    listItem={false}
-                                    mask={null}
-                                    pull={null}
-                                    pulse={false}
-                                    rotation={null}
-                                    size="lg"
-                                    spin={false}
-                                    symbol={false}
-                                    transform={null}
-                                  >
-                                    <svg
-                                      aria-hidden="true"
-                                      className="svg-inline--fa fa-times fa-w-10 fa-lg "
-                                      data-icon="times"
-                                      data-prefix="fal"
-                                      focusable="false"
-                                      role="img"
-                                      style={Object {}}
-                                      viewBox="0 0 320 512"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
-                                        fill="currentColor"
-                                        style={Object {}}
-                                      />
-                                    </svg>
-                                  </FontAwesomeIcon>
-                                </button>
-                              </ModalHeader__CloseButtonWrapper>
-                            </div>
-                          </StyledModalComponents__ModalSection>
-                        </StyledModalComponents__HeaderSection>
-                      </ModalHeader>
-                      <ModalBody>
-                        <StyledModalComponents__BodySection>
-                          <StyledModalComponents__ModalSection
-                            className="c8"
-                          >
-                            <div
-                              className="c8 c5"
-                            >
-                              <span>
-                                hello
-                              </span>
-                            </div>
-                          </StyledModalComponents__ModalSection>
-                        </StyledModalComponents__BodySection>
-                      </ModalBody>
-                      <ModalFooter
-                        onClickPrimary={[Function]}
-                        onClickSecondary={[Function]}
-                        shouldStretchButtons={false}
-                        textPrimary="Confirm"
-                        textSecondary="Cancel"
-                        withFooter={true}
+                        Title
+                      </h1>
+                      <button
+                        class="c6"
                       >
-                        <StyledModalComponents__FooterSection>
-                          <StyledModalComponents__ModalSection
-                            className="c9"
-                          >
-                            <div
-                              className="c9 c5"
-                            >
-                              <ModalFooter__PrimaryButton
-                                isLonely={false}
-                                onClick={[Function]}
-                                stretch={false}
-                              >
-                                <Button
-                                  className="c10"
-                                  disabled={false}
-                                  isLonely={false}
-                                  mode="primary"
-                                  onClick={[Function]}
-                                  stretch={false}
-                                  type="button"
-                                >
-                                  <PrimaryButton
-                                    className="c10"
-                                    disabled={false}
-                                    onClick={[Function]}
-                                    type="button"
-                                  >
-                                    <button
-                                      className="c10 c11"
-                                      disabled={false}
-                                      onClick={[Function]}
-                                      type="button"
-                                    >
-                                      Confirm
-                                    </button>
-                                  </PrimaryButton>
-                                </Button>
-                              </ModalFooter__PrimaryButton>
-                              <ModalFooter__SecondaryButton
-                                onClick={[Function]}
-                                stretch={false}
-                              >
-                                <Button
-                                  className="c12"
-                                  disabled={false}
-                                  mode="default"
-                                  onClick={[Function]}
-                                  stretch={false}
-                                  type="button"
-                                >
-                                  <DefaultButton
-                                    className="c12"
-                                    disabled={false}
-                                    onClick={[Function]}
-                                    type="button"
-                                  >
-                                    <button
-                                      className="c12 c13"
-                                      disabled={false}
-                                      onClick={[Function]}
-                                      type="button"
-                                    >
-                                      Cancel
-                                    </button>
-                                  </DefaultButton>
-                                </Button>
-                              </ModalFooter__SecondaryButton>
-                            </div>
-                          </StyledModalComponents__ModalSection>
-                        </StyledModalComponents__FooterSection>
-                      </ModalFooter>
+                        <svg
+                          aria-hidden="true"
+                          class="svg-inline--fa fa-times fa-w-10 fa-lg "
+                          data-icon="times"
+                          data-prefix="fal"
+                          focusable="false"
+                          role="img"
+                          viewBox="0 0 320 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </button>
                     </div>
-                  </StyledModalComponents__ModalInnerContainer>
+                    <div
+                      class="c7"
+                    >
+                      <span>
+                        hello
+                      </span>
+                    </div>
+                    <div
+                      class="c8"
+                    >
+                      <button
+                        class="c9 c10"
+                        type="button"
+                      >
+                        Confirm
+                      </button>
+                      <button
+                        class="c11 c12"
+                        type="button"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </StyledModalComponents__ModalOuterContainer>
+              </div>
             </div>
-          </StyledOverlayComponents__OverlayInnerContainer>
-        </div>
-      </StyledOverlayComponents__OverlayOuterContainer>
-      <TouchProvider>
-        <ScrollLock
+          </div>
+        }
+      >
+        <StyledOverlayComponents__OverlayOuterContainer>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
+                  "isStatic": true,
+                  "lastClassName": "c0",
+                  "rules": Array [
+                    "background-color:",
+                    "rgba(8,0,25,0.3)",
+                    ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
+                  ],
+                },
+                "displayName": "StyledOverlayComponents__OverlayOuterContainer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c0"
+            >
+              <StyledOverlayComponents__OverlayInnerContainer
+                isScrollable={false}
+                onClick={[Function]}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
+                        "isStatic": false,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "display:block;height:100%;position:absolute;overflow-y:",
+                          [Function],
+                          ";width:100%;",
+                        ],
+                      },
+                      "displayName": "StyledOverlayComponents__OverlayInnerContainer",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  isScrollable={false}
+                  onClick={[Function]}
+                >
+                  <div
+                    className="c1"
+                    onClick={[Function]}
+                  >
+                    <StyledModalComponents__ModalOuterContainer
+                      onClick={[Function]}
+                      viewportScrolling={false}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "StyledModalComponents__ModalOuterContainer-sc-1r1r1yf-0",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;",
+                                [Function],
+                              ],
+                            },
+                            "displayName": "StyledModalComponents__ModalOuterContainer",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "StyledModalComponents__ModalOuterContainer-sc-1r1r1yf-0",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        onClick={[Function]}
+                        viewportScrolling={false}
+                      >
+                        <div
+                          className="c2"
+                          onClick={[Function]}
+                        >
+                          <StyledModalComponents__ModalInnerContainer
+                            center={true}
+                            viewportScrolling={false}
+                          >
+                            <StyledComponent
+                              center={true}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "StyledModalComponents__ModalInnerContainer-sc-1r1r1yf-1",
+                                    "isStatic": false,
+                                    "lastClassName": "c3",
+                                    "rules": Array [
+                                      "align-self:",
+                                      [Function],
+                                      ";background-color:",
+                                      "#ffffff",
+                                      ";border-radius:4px;box-shadow:0 2px 8px -2px ",
+                                      "#555e6f",
+                                      ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
+                                      "240",
+                                      "px);min-height:200px;min-width:300px;position:relative;",
+                                      [Function],
+                                      " ",
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "StyledModalComponents__ModalInnerContainer",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "StyledModalComponents__ModalInnerContainer-sc-1r1r1yf-1",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              viewportScrolling={false}
+                            >
+                              <div
+                                className="c3"
+                              >
+                                <ModalHeader
+                                  onClickClose={[Function]}
+                                  textTitle="Title"
+                                  withHeader={true}
+                                >
+                                  <StyledModalComponents__HeaderSection>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "StyledModalComponents__HeaderSection-sc-1r1r1yf-5",
+                                            "isStatic": true,
+                                            "lastClassName": "c4",
+                                            "rules": Array [
+                                              "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
+                                              "30",
+                                              "px;position:relative;",
+                                              "align-items:center;flex-direction:row;justify-content:space-between;",
+                                            ],
+                                          },
+                                          "displayName": "StyledModalComponents__HeaderSection",
+                                          "foldedComponentIds": Array [
+                                            "StyledModalComponents__ModalSection-sc-1r1r1yf-2",
+                                          ],
+                                          "render": [Function],
+                                          "styledComponentId": "StyledModalComponents__HeaderSection-sc-1r1r1yf-5",
+                                          "target": "div",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <div
+                                        className="c4"
+                                      >
+                                        <ModalHeader__ModalTitle>
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "ModalHeader__ModalTitle-sc-1rdyrep-0",
+                                                  "isStatic": true,
+                                                  "lastClassName": "c5",
+                                                  "rules": Array [
+                                                    "color:#555e6f;font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                                                  ],
+                                                },
+                                                "displayName": "ModalHeader__ModalTitle",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "ModalHeader__ModalTitle-sc-1rdyrep-0",
+                                                "target": "h1",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                          >
+                                            <h1
+                                              className="c5"
+                                            >
+                                              Title
+                                            </h1>
+                                          </StyledComponent>
+                                        </ModalHeader__ModalTitle>
+                                        <ModalHeader__CloseButtonWrapper
+                                          onClick={[Function]}
+                                        >
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "ModalHeader__CloseButtonWrapper-sc-1rdyrep-1",
+                                                  "isStatic": true,
+                                                  "lastClassName": "c6",
+                                                  "rules": Array [
+                                                    "background:none;border:none;cursor:pointer;font-size:12px;height:32px;margin:0 0 0 auto;padding:0;text-align:center;width:32px;",
+                                                  ],
+                                                },
+                                                "displayName": "ModalHeader__CloseButtonWrapper",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "ModalHeader__CloseButtonWrapper-sc-1rdyrep-1",
+                                                "target": "button",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            onClick={[Function]}
+                                          >
+                                            <button
+                                              className="c6"
+                                              onClick={[Function]}
+                                            >
+                                              <FontAwesomeIcon
+                                                border={false}
+                                                className=""
+                                                fixedWidth={false}
+                                                flip={null}
+                                                icon={
+                                                  Object {
+                                                    "icon": Array [
+                                                      320,
+                                                      512,
+                                                      Array [],
+                                                      "f00d",
+                                                      "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                                                    ],
+                                                    "iconName": "times",
+                                                    "prefix": "fal",
+                                                  }
+                                                }
+                                                inverse={false}
+                                                listItem={false}
+                                                mask={null}
+                                                pull={null}
+                                                pulse={false}
+                                                rotation={null}
+                                                size="lg"
+                                                spin={false}
+                                                symbol={false}
+                                                title=""
+                                                transform={null}
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                                  data-icon="times"
+                                                  data-prefix="fal"
+                                                  focusable="false"
+                                                  role="img"
+                                                  style={Object {}}
+                                                  viewBox="0 0 320 512"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                                    fill="currentColor"
+                                                    style={Object {}}
+                                                  />
+                                                </svg>
+                                              </FontAwesomeIcon>
+                                            </button>
+                                          </StyledComponent>
+                                        </ModalHeader__CloseButtonWrapper>
+                                      </div>
+                                    </StyledComponent>
+                                  </StyledModalComponents__HeaderSection>
+                                </ModalHeader>
+                                <ModalBody>
+                                  <StyledModalComponents__BodySection>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "StyledModalComponents__BodySection-sc-1r1r1yf-3",
+                                            "isStatic": true,
+                                            "lastClassName": "c7",
+                                            "rules": Array [
+                                              "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
+                                              "30",
+                                              "px;position:relative;",
+                                              "flex:1 1 auto;overflow-x:hidden;overflow-y:auto;padding:0 ",
+                                              "30",
+                                              "px;",
+                                            ],
+                                          },
+                                          "displayName": "StyledModalComponents__BodySection",
+                                          "foldedComponentIds": Array [
+                                            "StyledModalComponents__ModalSection-sc-1r1r1yf-2",
+                                          ],
+                                          "render": [Function],
+                                          "styledComponentId": "StyledModalComponents__BodySection-sc-1r1r1yf-3",
+                                          "target": "div",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <div
+                                        className="c7"
+                                      >
+                                        <span>
+                                          hello
+                                        </span>
+                                      </div>
+                                    </StyledComponent>
+                                  </StyledModalComponents__BodySection>
+                                </ModalBody>
+                                <ModalFooter
+                                  onClickPrimary={[Function]}
+                                  onClickSecondary={[Function]}
+                                  shouldStretchButtons={false}
+                                  textPrimary="Confirm"
+                                  textSecondary="Cancel"
+                                  withFooter={true}
+                                >
+                                  <StyledModalComponents__FooterSection>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
+                                            "isStatic": true,
+                                            "lastClassName": "c8",
+                                            "rules": Array [
+                                              "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
+                                              "30",
+                                              "px;position:relative;",
+                                              "align-items:center;flex-direction:row-reverse;",
+                                            ],
+                                          },
+                                          "displayName": "StyledModalComponents__FooterSection",
+                                          "foldedComponentIds": Array [
+                                            "StyledModalComponents__ModalSection-sc-1r1r1yf-2",
+                                          ],
+                                          "render": [Function],
+                                          "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
+                                          "target": "div",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <div
+                                        className="c8"
+                                      >
+                                        <ModalFooter__PrimaryButton
+                                          isLonely={false}
+                                          onClick={[Function]}
+                                          stretch={false}
+                                        >
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [
+                                                  Object {
+                                                    "mode": "primary",
+                                                  },
+                                                ],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c9",
+                                                  "rules": Array [
+                                                    "margin:",
+                                                    [Function],
+                                                    ";flex:",
+                                                    [Function],
+                                                    ";",
+                                                  ],
+                                                },
+                                                "displayName": "ModalFooter__PrimaryButton",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
+                                                "target": [Function],
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            isLonely={false}
+                                            onClick={[Function]}
+                                            stretch={false}
+                                          >
+                                            <Button
+                                              className="c9"
+                                              disabled={false}
+                                              isLonely={false}
+                                              mode="primary"
+                                              onClick={[Function]}
+                                              stretch={false}
+                                              type="button"
+                                            >
+                                              <PrimaryButton
+                                                className="c9"
+                                                disabled={false}
+                                                onClick={[Function]}
+                                                type="button"
+                                              >
+                                                <StyledComponent
+                                                  className="c9"
+                                                  disabled={false}
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "PrimaryButton-sc-1t8zuv9-0",
+                                                        "isStatic": true,
+                                                        "lastClassName": "c10",
+                                                        "rules": Array [
+                                                          "background-color:",
+                                                          "#6124e2",
+                                                          ";border-color:",
+                                                          "#6124e2",
+                                                          ";border-radius:4px;border-style:solid;border-width:1px;color:",
+                                                          "#ffffff",
+                                                          ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+                                                          " ",
+                                                          "&:hover{background-color:",
+                                                          "#8045ff",
+                                                          ";border-color:",
+                                                          "#8045ff",
+                                                          ";cursor:pointer;text-decoration:none;}",
+                                                          " ",
+                                                          "&:active{background-color:",
+                                                          "#361876",
+                                                          ";border-color:",
+                                                          "#361876",
+                                                          ";text-decoration:none;}",
+                                                          " ",
+                                                          "&:disabled{background-color:",
+                                                          "#f0f0f7",
+                                                          ";border-color:",
+                                                          "#f0f0f7",
+                                                          ";color:",
+                                                          "#b6bbc7",
+                                                          ";cursor:not-allowed;text-decoration:none;}",
+                                                        ],
+                                                      },
+                                                      "displayName": "PrimaryButton",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "PrimaryButton-sc-1t8zuv9-0",
+                                                      "target": "button",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                  onClick={[Function]}
+                                                  type="button"
+                                                >
+                                                  <button
+                                                    className="c9 c10"
+                                                    disabled={false}
+                                                    onClick={[Function]}
+                                                    type="button"
+                                                  >
+                                                    Confirm
+                                                  </button>
+                                                </StyledComponent>
+                                              </PrimaryButton>
+                                            </Button>
+                                          </StyledComponent>
+                                        </ModalFooter__PrimaryButton>
+                                        <ModalFooter__SecondaryButton
+                                          onClick={[Function]}
+                                          stretch={false}
+                                        >
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [
+                                                  Object {
+                                                    "mode": "default",
+                                                  },
+                                                ],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c11",
+                                                  "rules": Array [
+                                                    "flex:",
+                                                    [Function],
+                                                    ";",
+                                                  ],
+                                                },
+                                                "displayName": "ModalFooter__SecondaryButton",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
+                                                "target": [Function],
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            onClick={[Function]}
+                                            stretch={false}
+                                          >
+                                            <Button
+                                              className="c11"
+                                              disabled={false}
+                                              mode="default"
+                                              onClick={[Function]}
+                                              stretch={false}
+                                              type="button"
+                                            >
+                                              <DefaultButton
+                                                className="c11"
+                                                disabled={false}
+                                                onClick={[Function]}
+                                                type="button"
+                                              >
+                                                <StyledComponent
+                                                  className="c11"
+                                                  disabled={false}
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "DefaultButton-sc-2dhy0g-0",
+                                                        "isStatic": true,
+                                                        "lastClassName": "c12",
+                                                        "rules": Array [
+                                                          "background-color:",
+                                                          "#f0f0f7",
+                                                          ";border-color:",
+                                                          "#f0f0f7",
+                                                          ";border-radius:4px;border-style:solid;border-width:1px;color:",
+                                                          "#8e929b",
+                                                          ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+                                                          " ",
+                                                          "&:hover{background-color:",
+                                                          "#dcdce7",
+                                                          ";border-color:",
+                                                          "#dcdce7",
+                                                          ";text-decoration:none;}",
+                                                          " ",
+                                                          "&:active{background-color:",
+                                                          "#b6bbc7",
+                                                          ";border-color:",
+                                                          "#b6bbc7",
+                                                          ";color:",
+                                                          "#ffffff",
+                                                          ";text-decoration:none;}",
+                                                          " ",
+                                                          "&:disabled{cursor:not-allowed;text-decoration:none;}",
+                                                        ],
+                                                      },
+                                                      "displayName": "DefaultButton",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "DefaultButton-sc-2dhy0g-0",
+                                                      "target": "button",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                  onClick={[Function]}
+                                                  type="button"
+                                                >
+                                                  <button
+                                                    className="c11 c12"
+                                                    disabled={false}
+                                                    onClick={[Function]}
+                                                    type="button"
+                                                  >
+                                                    Cancel
+                                                  </button>
+                                                </StyledComponent>
+                                              </DefaultButton>
+                                            </Button>
+                                          </StyledComponent>
+                                        </ModalFooter__SecondaryButton>
+                                      </div>
+                                    </StyledComponent>
+                                  </StyledModalComponents__FooterSection>
+                                </ModalFooter>
+                              </div>
+                            </StyledComponent>
+                          </StyledModalComponents__ModalInnerContainer>
+                        </div>
+                      </StyledComponent>
+                    </StyledModalComponents__ModalOuterContainer>
+                  </div>
+                </StyledComponent>
+              </StyledOverlayComponents__OverlayInnerContainer>
+            </div>
+          </StyledComponent>
+        </StyledOverlayComponents__OverlayOuterContainer>
+        <LockToggle
           accountForScrollbars={true}
+          isActive={true}
         >
-          <Sheet
-            styles="body {
-      box-sizing: border-box !important;
-      overflow: hidden !important;
-      position: relative !important;
-      
-      padding-right: 1024px !important;
-    }"
-          />
-        </ScrollLock>
-      </TouchProvider>
+          <SheetProvider
+            accountForScrollbars={true}
+            isActive={true}
+          >
+            <TouchProvider
+              accountForScrollbars={true}
+              isActive={true}
+            >
+              <ScrollLock
+                accountForScrollbars={true}
+                isActive={true}
+              />
+            </TouchProvider>
+          </SheetProvider>
+        </LockToggle>
+      </Portal>
     </Portal>
   </Overlay>
 </Modal>

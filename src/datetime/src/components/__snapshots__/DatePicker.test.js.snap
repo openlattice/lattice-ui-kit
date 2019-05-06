@@ -221,7 +221,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                 calendarDisabled={Array []}
                 calendarRef={[Function]}
                 calendarValue=""
-                calendarView="2019-05-03"
+                calendarView="2019-05-06"
                 closeMenuOnSelect={true}
                 components={
                   Object {
@@ -347,7 +347,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                     calendarDisabled={Array []}
                     calendarRef={[Function]}
                     calendarValue=""
-                    calendarView="2019-05-03"
+                    calendarView="2019-05-06"
                     closeMenuOnSelect={true}
                     components={
                       Object {
@@ -465,7 +465,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                         calendarDisabled={Array []}
                         calendarRef={[Function]}
                         calendarValue=""
-                        calendarView="2019-05-03"
+                        calendarView="2019-05-06"
                         closeMenuOnSelect={true}
                         components={
                           Object {
@@ -587,7 +587,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                           calendarDisabled={Array []}
                           calendarRef={[Function]}
                           calendarValue=""
-                          calendarView="2019-05-03"
+                          calendarView="2019-05-06"
                           closeMenuOnSelect={true}
                           components={
                             Object {
@@ -741,7 +741,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                             calendarDisabled={Array []}
                             calendarRef={[Function]}
                             calendarValue=""
-                            calendarView="2019-05-03"
+                            calendarView="2019-05-06"
                             captureMenuScroll={false}
                             closeMenuOnScroll={false}
                             closeMenuOnSelect={true}
@@ -938,7 +938,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                   "calendarDisabled": Array [],
                                   "calendarRef": [Function],
                                   "calendarValue": "",
-                                  "calendarView": "2019-05-03",
+                                  "calendarView": "2019-05-06",
                                   "captureMenuScroll": false,
                                   "closeMenuOnScroll": false,
                                   "closeMenuOnSelect": true,
@@ -1169,7 +1169,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                       "calendarDisabled": Array [],
                                       "calendarRef": [Function],
                                       "calendarValue": "",
-                                      "calendarView": "2019-05-03",
+                                      "calendarView": "2019-05-06",
                                       "captureMenuScroll": false,
                                       "closeMenuOnScroll": false,
                                       "closeMenuOnSelect": true,
@@ -1392,7 +1392,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                           "calendarDisabled": Array [],
                                           "calendarRef": [Function],
                                           "calendarValue": "",
-                                          "calendarView": "2019-05-03",
+                                          "calendarView": "2019-05-06",
                                           "captureMenuScroll": false,
                                           "closeMenuOnScroll": false,
                                           "closeMenuOnSelect": true,
@@ -1612,7 +1612,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                             "calendarDisabled": Array [],
                                             "calendarRef": [Function],
                                             "calendarValue": "",
-                                            "calendarView": "2019-05-03",
+                                            "calendarView": "2019-05-06",
                                             "captureMenuScroll": false,
                                             "closeMenuOnScroll": false,
                                             "closeMenuOnSelect": true,
@@ -1830,7 +1830,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                               "calendarDisabled": Array [],
                                               "calendarRef": [Function],
                                               "calendarValue": "",
-                                              "calendarView": "2019-05-03",
+                                              "calendarView": "2019-05-06",
                                               "captureMenuScroll": false,
                                               "closeMenuOnScroll": false,
                                               "closeMenuOnSelect": true,
@@ -2055,7 +2055,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                                   "calendarDisabled": Array [],
                                                   "calendarRef": [Function],
                                                   "calendarValue": "",
-                                                  "calendarView": "2019-05-03",
+                                                  "calendarView": "2019-05-06",
                                                   "captureMenuScroll": false,
                                                   "closeMenuOnScroll": false,
                                                   "closeMenuOnSelect": true,
@@ -2278,7 +2278,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                                     "calendarDisabled": Array [],
                                                     "calendarRef": [Function],
                                                     "calendarValue": "",
-                                                    "calendarView": "2019-05-03",
+                                                    "calendarView": "2019-05-06",
                                                     "captureMenuScroll": false,
                                                     "closeMenuOnScroll": false,
                                                     "closeMenuOnSelect": true,
@@ -2520,7 +2520,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                                         "calendarDisabled": Array [],
                                                         "calendarRef": [Function],
                                                         "calendarValue": "",
-                                                        "calendarView": "2019-05-03",
+                                                        "calendarView": "2019-05-06",
                                                         "captureMenuScroll": false,
                                                         "closeMenuOnScroll": false,
                                                         "closeMenuOnSelect": true,
@@ -2759,7 +2759,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                                   "calendarDisabled": Array [],
                                                   "calendarRef": [Function],
                                                   "calendarValue": "",
-                                                  "calendarView": "2019-05-03",
+                                                  "calendarView": "2019-05-06",
                                                   "captureMenuScroll": false,
                                                   "closeMenuOnScroll": false,
                                                   "closeMenuOnSelect": true,
@@ -2983,7 +2983,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                                     "calendarDisabled": Array [],
                                                     "calendarRef": [Function],
                                                     "calendarValue": "",
-                                                    "calendarView": "2019-05-03",
+                                                    "calendarView": "2019-05-06",
                                                     "captureMenuScroll": false,
                                                     "closeMenuOnScroll": false,
                                                     "closeMenuOnSelect": true,
@@ -3297,7 +3297,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                           "calendarDisabled": Array [],
                                           "calendarRef": [Function],
                                           "calendarValue": "",
-                                          "calendarView": "2019-05-03",
+                                          "calendarView": "2019-05-06",
                                           "captureMenuScroll": false,
                                           "closeMenuOnScroll": false,
                                           "closeMenuOnSelect": true,
@@ -3526,7 +3526,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                               "calendarDisabled": Array [],
                                               "calendarRef": [Function],
                                               "calendarValue": "",
-                                              "calendarView": "2019-05-03",
+                                              "calendarView": "2019-05-06",
                                               "captureMenuScroll": false,
                                               "closeMenuOnScroll": false,
                                               "closeMenuOnSelect": true,

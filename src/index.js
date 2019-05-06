@@ -14,6 +14,7 @@ export {
 };
 export { DatePicker, TimePicker } from './datetime';
 export { Creatable, Select } from './select';
+export { Card, CardSegment } from './layout';
 export { default as Button } from './button';
 export { default as Modal } from './modal';
 export { default as Overlay } from './overlay';

@@ -5,6 +5,8 @@ import * as LatticeUIKit from './index';
 
 const EXPECTED_OBJ_EXPORTS = Set([
   'Button',
+  'Card',
+  'CardSegment',
   'Colors',
   'Creatable',
   'DatePicker',
@@ -12,7 +14,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Overlay',
   'Portal',
   'Select',
-  'TimePicker'
+  'TimePicker',
 ]);
 
 describe('lattice-ui-kit named exports', () => {
