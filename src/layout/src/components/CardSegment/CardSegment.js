@@ -1,6 +1,7 @@
 // @flow
-
+import React from 'react';
 import styled, { css } from 'styled-components';
+import type { ChildrenArray, Element } from 'react';
 
 type ComputedSegmentProps = {
   bgColor :string;
@@ -52,8 +53,12 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
   return styles;
 };
 
-const getHeaderComputedStyles = ({ children }) => {
-  if (children && children.length > 1) {
+type ComputedHeaderProps = {
+  children :ChildrenArray<any> | Element<any>;
+};
+
+const getHeaderComputedStyles = ({ children } :ComputedHeaderProps) => {
+  if (React.Children.count(children) > 1) {
     return css`
       margin: 0 0 30px 0;
     `;
