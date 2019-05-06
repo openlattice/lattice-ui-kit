@@ -2,12 +2,20 @@
 
 import styled, { css } from 'styled-components';
 
-const getSegmentComputedStyles = ({
-  bgColor,
-  onClick,
-  padding,
-  vertical,
-}) => {
+type ComputedSegmentProps = {
+  bgColor :string;
+  onClick :() => void;
+  padding :'sm' | 'md';
+  vertical :boolean;
+};
+
+const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
+  const {
+    bgColor,
+    onClick,
+    padding,
+    vertical,
+  } = props;
 
   let backgroundColor = 'transparent';
   if (bgColor) {
@@ -32,7 +40,7 @@ const getSegmentComputedStyles = ({
     flexDirection = 'column';
   }
 
-  return css`
+  const styles = css`
     background-color: ${backgroundColor};
     flex-direction: ${flexDirection};
     padding: ${finalPadding};
@@ -40,6 +48,8 @@ const getSegmentComputedStyles = ({
       cursor: ${cursor}
     }
   `;
+
+  return styles;
 };
 
 const getHeaderComputedStyles = ({ children }) => {
@@ -95,3 +105,7 @@ const CardSegment = styled.div`
 `;
 
 export default CardSegment;
+export {
+  getHeaderComputedStyles,
+  getSegmentComputedStyles,
+};
