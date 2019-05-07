@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import Input from '..';
+import Label from '../../label';
 import { Card, CardSegment } from '../../layout';
 
 storiesOf('Input', module)
@@ -17,18 +18,17 @@ storiesOf('Input', module)
             flex: '0 1 100%',
             flexDirection: 'column'
           }}>
-            <label htmlFor="story-stateless">
-              Stateless
-              <Input type="text" id="story-stateless" />
-            </label>
-            <label htmlFor="story-disabled">
-              Disabled
-              <Input type="text" id="story-disabled" disabled />
-            </label>
-            <label htmlFor="story-placeholder">
-              Placeholder
-              <Input id="story-placeholder" placeholder="OpenLattice" />
-            </label>
+            <Label htmlFor="story-stateless">Stateless</Label>
+            <Input type="text" id="story-stateless" />
+
+            <Label htmlFor="story-disabled">Disabled</Label>
+            <Input type="text" id="story-disabled" disabled />
+
+            <Label htmlFor="story-placeholder">Placeholder</Label>
+            <Input id="story-placeholder" placeholder="OpenLattice" />
+
+            <Label htmlFor="story-defaultvalue">Default value</Label>
+            <Input id="story-defaultvalue" defaultValue="OpenLattice" />
           </form>
         </CardSegment>
       </Card>

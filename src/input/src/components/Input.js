@@ -15,6 +15,7 @@ const Input = styled.input`
   padding: ${props => (props.icon ? '0px 32px 0px 10px' : '0px 10px')};
   text-overflow: ellipsis;
   width: 100%;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 
   :hover {
     background-color: #f0f0f7;
