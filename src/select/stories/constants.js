@@ -1,4 +1,4 @@
-export const stateOptions = [
+const stateOptions = [
   { value: 'AL', label: 'Alabama' },
   { value: 'AK', label: 'Alaska' },
   { value: 'AS', label: 'American Samoa' },
@@ -59,3 +59,8 @@ export const stateOptions = [
   { value: 'WI', label: 'Wisconsin' },
   { value: 'WY', label: 'Wyoming' },
 ];
+
+export {
+  // eslint-disable-next-line import/prefer-default-export
+  stateOptions
+};
