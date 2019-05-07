@@ -29,6 +29,9 @@ storiesOf('Input', module)
 
             <Label htmlFor="story-defaultvalue">Default value</Label>
             <Input id="story-defaultvalue" defaultValue="OpenLattice" />
+
+            <Label htmlFor="story-invalid">Invalid value</Label>
+            <Input invalid id="story-invalid" defaultValue="ecittaLnepO" />
           </form>
         </CardSegment>
       </Card>

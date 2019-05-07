@@ -1,14 +1,15 @@
 import styled from 'styled-components';
+import { NEUTRALS, PURPLES, RED_1 } from '../../../colors';
 
 const Input = styled.input`
   display: flex;
   flex: 0 1 auto;
   box-sizing: border-box;
-  background: #f9f9fd url(${props => (props.icon ? props.icon : null)}) no-repeat center right 10px;
+  background: ${NEUTRALS[8]} url(${props => (props.icon ? props.icon : null)}) no-repeat center right 10px;
   border-radius: 3px;
-  border: solid 1px #dcdce7;
+  border: solid 1px ${props => (props.invalid ? RED_1 : NEUTRALS[4])};
   box-shadow: 0;
-  color: #2e2e34;
+  color: ${NEUTRALS[0]};
   font-size: 14px;
   height: 39px;
   line-height: 19px;
@@ -18,19 +19,18 @@ const Input = styled.input`
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 
   :hover {
-    background-color: #f0f0f7;
-    border: solid 1px #dcdce7;
+    background-color: ${NEUTRALS[6]};
   }
 
   :focus {
-    border: solid 1px #6124e2;
+    border: solid 1px ${PURPLES[1]};
     background-color: white;
     outline: none;
   }
 
   :disabled {
-    background-color: #f9f9fd;
-    color: #8e929b;
+    background-color: ${NEUTRALS[8]};
+    color: ${NEUTRALS[1]};
     cursor: not-allowed;
   }
 `;
