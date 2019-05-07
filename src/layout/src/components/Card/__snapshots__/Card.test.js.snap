@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card snapshots With child divs 1`] = `
+.c0 {
+  background-color: #ffffff;
+  border: 1px solid #dcdce7;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.c0 > div {
+  border-bottom: 1px solid #dcdce7;
+}
+
+.c0 > div:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.c0 > div:last-child {
+  border-bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+<Card>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Card-sc-3vnjrr-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "background-color:",
+            "#ffffff",
+            ";border:1px solid ",
+            "#dcdce7",
+            ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > div{border-bottom:1px solid ",
+            "#dcdce7",
+            ";}& > div:first-child{border-radius:5px 5px 0 0;}& > div:last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+          ],
+        },
+        "displayName": "Card",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Card-sc-3vnjrr-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0"
+    >
+      <div>
+        1
+      </div>
+      <div>
+        2
+      </div>
+      <div>
+        3
+      </div>
+    </div>
+  </StyledComponent>
+</Card>
+`;
+
+exports[`Card snapshots Without Children 1`] = `
+.c0 {
+  background-color: #ffffff;
+  border: 1px solid #dcdce7;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.c0 > div {
+  border-bottom: 1px solid #dcdce7;
+}
+
+.c0 > div:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.c0 > div:last-child {
+  border-bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+<Card>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Card-sc-3vnjrr-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "background-color:",
+            "#ffffff",
+            ";border:1px solid ",
+            "#dcdce7",
+            ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > div{border-bottom:1px solid ",
+            "#dcdce7",
+            ";}& > div:first-child{border-radius:5px 5px 0 0;}& > div:last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+          ],
+        },
+        "displayName": "Card",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Card-sc-3vnjrr-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0"
+    />
+  </StyledComponent>
+</Card>
+`;
