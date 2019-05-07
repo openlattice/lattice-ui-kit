@@ -35,7 +35,6 @@ describe('Input', () => {
   });
 
   describe('render icon', () => {
-    
   });
 
 });

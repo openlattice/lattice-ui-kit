@@ -9,7 +9,7 @@ const Input = styled.input`
   box-shadow: 0 0 0 0;
   color: #2e2e34;
   font-size: 14px;
-  height: 39px;
+  height: 44px;
   line-height: 19px;
   padding: ${props => (props.icon ? '12px 32px 12px 10px' : '12px 10px')};
   text-overflow: ellipsis;

@@ -1,3 +1,3 @@
-import Index from './src/components/Input';
+import Input from './src/components/Input';
 
-export default Index;
+export default Input;
