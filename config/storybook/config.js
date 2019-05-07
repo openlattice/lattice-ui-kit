@@ -1,13 +1,31 @@
-import { configure, addDecorator } from '@storybook/react';
-import { withTests } from '@storybook/addon-jest';
-import results from '../../.jest-test-results.json';
-// automatically import all files ending in *.stories.js
+import React from 'react';
+import styled from 'styled-components';
+import { configure, addDecorator, addParameters } from '@storybook/react';
 
-// addDecorator(
-//   withTests({
-//     results
-//   })
-// );
+import storybookTheme from './storybookTheme';
+import { NEUTRALS } from '../../src/colors';
+
+const StoryWrapper = styled.div`
+  color: ${NEUTRALS[0]};
+  font-family: "Open Sans", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.35;
+`;
+
+addDecorator(storyFn => (
+  <StoryWrapper>
+    {storyFn()}
+  </StoryWrapper>
+));
+
+addParameters({
+  options: {
+    theme: storybookTheme
+  },
+});
 
 const req = require.context('../../src/', true, /\.stories\.js$/);
 
