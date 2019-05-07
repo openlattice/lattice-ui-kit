@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardSegment snapshots Without child 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  position: relative;
+  background-color: transparent;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.c0:hover {
+  cursor: auto;
+}
+
+.c0 > header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+.c0 > header > h1 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0;
+}
+
+.c0 > header > h2 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0;
+}
+
+.c0 > header > h3 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0;
+}
+
+.c0 button {
+  margin: 0 0 0 10px;
+}
+
+<CardSegment>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "CardSegment-sc-44tqm2-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "display:flex;flex:1 0 auto;position:relative;",
+            [Function],
+            " & > header{display:flex;flex:1 0 auto;flex-direction:row;justify-content:space-between;",
+            [Function],
+            " & > h1{font-size:18px;font-weight:normal;line-height:normal;margin:0;}& > h2{font-size:16px;font-weight:normal;line-height:normal;margin:0;}& > h3{font-size:14px;font-weight:normal;line-height:normal;margin:0;}}& button{margin:0 0 0 10px;}",
+          ],
+        },
+        "displayName": "CardSegment",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "CardSegment-sc-44tqm2-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0"
+    />
+  </StyledComponent>
+</CardSegment>
+`;
+
+exports[`CardSegment snapshots with > 1 child 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  position: relative;
+  background-color: transparent;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.c0:hover {
+  cursor: auto;
+}
+
+.c0 > header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 0 30px 0;
+}
+
+.c0 > header > h1 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0;
+}
+
+.c0 > header > h2 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0;
+}
+
+.c0 > header > h3 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0;
+}
+
+.c0 button {
+  margin: 0 0 0 10px;
+}
+
+<CardSegment>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "CardSegment-sc-44tqm2-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "display:flex;flex:1 0 auto;position:relative;",
+            [Function],
+            " & > header{display:flex;flex:1 0 auto;flex-direction:row;justify-content:space-between;",
+            [Function],
+            " & > h1{font-size:18px;font-weight:normal;line-height:normal;margin:0;}& > h2{font-size:16px;font-weight:normal;line-height:normal;margin:0;}& > h3{font-size:14px;font-weight:normal;line-height:normal;margin:0;}}& button{margin:0 0 0 10px;}",
+          ],
+        },
+        "displayName": "CardSegment",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "CardSegment-sc-44tqm2-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0"
+    >
+      <div>
+        child 1
+      </div>
+      <div>
+        child 2
+      </div>
+    </div>
+  </StyledComponent>
+</CardSegment>
+`;
