@@ -3,15 +3,19 @@ import React, { Component } from 'react';
 import { Map } from 'immutable';
 
 import InputGrid from './styled/InputGrid';
+import Title from './styled/Title';
 import Input from '../../../../input';
 import Label from '../../../../label';
 import Button from '../../../../button';
 import DatePicker from '../../../../datetime/src/components/DatePicker';
 import { Card, CardSegment } from '../../../../layout';
+
 import type { SearchFieldDefinition } from '../../types';
 
 type Props = {
   searchFields :SearchFieldDefinition[];
+  title :string;
+  onSearch :() => void;
 };
 
 type State = {
@@ -19,6 +23,24 @@ type State = {
 };
 
 class Search extends Component<Props, State> {
+
+  static defaultProps = {
+    searchFields: [
+      {
+        id: 'firstname',
+        label: 'First Name'
+      },
+      {
+        id: 'lastname',
+        label: 'Last Name'
+      },
+      {
+        id: 'dob',
+        label: 'Date of Birth',
+        type: 'date'
+      },
+    ]
+  }
 
   state = {
     searchFieldValues: Map()
@@ -29,12 +51,15 @@ class Search extends Component<Props, State> {
   }
 
   handleOnClickSearchButton = (e :SyntheticEvent<HTMLButtonElement>) => {
-    console.log(e);
+    const { onSearch } = this.props;
+    if (typeof onSearch === 'function') {
+      onSearch();
+    }
   }
 
   renderSearchFieldsSegment = () => {
 
-    const { searchFields } = this.props;
+    const { searchFields, title } = this.props;
     const { searchFieldValues } = this.state;
 
     const searchFieldComponents = searchFields.map((field :SearchFieldDefinition) => {
@@ -51,8 +76,8 @@ class Search extends Component<Props, State> {
       }
 
       return (
-        <div>
-          <Label key={field.id} htmlFor={field.id}>
+        <div key={`luk-search-${field.id}`}>
+          <Label htmlFor={field.id}>
             {field.label}
           </Label>
           {fieldComponent}
@@ -62,6 +87,7 @@ class Search extends Component<Props, State> {
 
     return (
       <CardSegment vertical>
+        { title && <Title>{title}</Title> }
         <InputGrid>
           {searchFieldComponents}
           <Button mode="primary" onClick={this.handleOnClickSearchButton}>Search</Button>
@@ -73,10 +99,10 @@ class Search extends Component<Props, State> {
   render() {
     return (
       <Card>
+        { this.renderSearchFieldsSegment() }
         <CardSegment padding="md">
           Filters
         </CardSegment>
-        { this.renderSearchFieldsSegment() }
       </Card>
     );
   }
