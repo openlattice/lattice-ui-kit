@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label snapshots should match snapshot 1`] = `
+.c0 {
+  color: #555e6f;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 19px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+<Label>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Label-sc-130fyca-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "color:",
+            "#555e6f",
+            ";font-size:14px;font-stretch:normal;font-style:normal;font-weight:normal;letter-spacing:normal;line-height:19px;margin-top:10px;margin-bottom:5px;",
+          ],
+        },
+        "displayName": "Label",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Label-sc-130fyca-0",
+        "target": "label",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <label
+      className="c0"
+    />
+  </StyledComponent>
+</Label>
+`;

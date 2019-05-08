@@ -1,12 +1,13 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Input from './Input';
+import { RED_1 } from '../../../colors';
 
 describe('Input', () => {
 
   test('render matches snapshot', () => {
-    const wrapper = shallow(<Input />);
+    const wrapper = mount(<Input />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
@@ -34,7 +35,13 @@ describe('Input', () => {
 
   });
 
-  describe('render icon', () => {
+  describe('Computed styles', () => {
+
+    test('invalid', () => {
+      const wrapper = mount(<Input invalid />);
+      expect(wrapper).toHaveStyleRule('border', `1px solid ${RED_1}`);
+    });
+
   });
 
 });
