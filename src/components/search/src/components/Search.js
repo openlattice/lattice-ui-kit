@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import { Card, CardSegment, CardStack } from '../../../../layout';
+import { Card, CardSegment } from '../../../../layout';
 
 type Props = {
 
