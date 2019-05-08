@@ -1,5 +1,7 @@
+// @flow
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 
 import Input from '..';
 import Label from '../../label';
@@ -9,7 +11,7 @@ storiesOf('Input', module)
   .add('Stateless', () => (
     <div>
       <h1>
-        Input (Stateless)
+        Input
       </h1>
       <Card>
         <CardSegment>
@@ -32,6 +34,13 @@ storiesOf('Input', module)
 
             <Label htmlFor="story-invalid">Invalid value</Label>
             <Input invalid id="story-invalid" defaultValue="ecittaLnepO" />
+
+            <Label htmlFor="story-eventhandlers">Event handlers (see Actions tab)</Label>
+            <Input
+                id="story-eventhandlers"
+                onChange={action('onChange')}
+                onBlur={action('onBlur')}
+                onFocus={action('onFocus')} />
           </form>
         </CardSegment>
       </Card>

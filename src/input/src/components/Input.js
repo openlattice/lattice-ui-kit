@@ -1,21 +1,23 @@
+// @flow
+
 import styled from 'styled-components';
+
 import { NEUTRALS, PURPLES, RED_1 } from '../../../colors';
 
 const Input = styled.input`
   display: flex;
   flex: 0 1 auto;
   box-sizing: border-box;
-  background: ${NEUTRALS[8]} url(${props => (props.icon ? props.icon : null)}) no-repeat center right 10px;
   border-radius: 3px;
-  border: solid 1px ${props => (props.invalid ? RED_1 : NEUTRALS[4])};
   box-shadow: 0;
   color: ${NEUTRALS[0]};
   font-size: 14px;
   height: 39px;
   line-height: 19px;
-  padding: ${props => (props.icon ? '0px 32px 0px 10px' : '0px 10px')};
   text-overflow: ellipsis;
   width: 100%;
+  border: 1px solid ${props => (props.invalid ? RED_1 : NEUTRALS[4])};
+  padding: ${props => (props.invalid ? '0px 10px' : '12px 32px 12px 10px')}
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 
   :hover {
