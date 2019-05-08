@@ -17,8 +17,7 @@ const selectStyles = {
       borderRadius: '3px',
       boxShadow: 'none',
       fontSize: '14px',
-      marginTop: '10px',
-      minHeight: '44px',
+      minHeight: '40px',
       pointerEvents: isDisabled ? 'none' : 'auto',
       ':hover': {
         backgroundColor: isFocused ? 'white' : NEUTRALS[6],

@@ -103,10 +103,6 @@ const CardSegment = styled.div`
       margin: 0;
     }
   }
-
-  & button {
-    margin: 0 0 0 10px;
-  }
 `;
 
 export default CardSegment;

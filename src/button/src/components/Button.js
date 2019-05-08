@@ -21,7 +21,7 @@ type Props = {
   className ? :string;
   disabled ? :boolean;
   mode ? :ButtonMode;
-  onClick :() => void;
+  onClick :(e :SyntheticEvent<HTMLButtonElement>) => void;
   type ? :string;
 };
 
