@@ -1,0 +1,309 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search snapshots should match snapshot 1`] = `
+.c1 {
+  background-color: #ffffff;
+  border: 1px solid #dcdce7;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.c1 > div {
+  border-bottom: 1px solid #dcdce7;
+}
+
+.c1 > div:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.c1 > div:last-child {
+  border-bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  position: relative;
+  background-color: transparent;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.c2:hover {
+  cursor: auto;
+}
+
+.c2 > header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+.c2 > header > h1 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0;
+}
+
+.c2 > header > h2 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0;
+}
+
+.c2 > header > h3 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0;
+}
+
+.c2 button {
+  margin: 0 0 0 10px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.c0 > div {
+  margin: 10px 0;
+}
+
+.c0 > div:first-child {
+  margin-top: 0;
+}
+
+.c0 > div:last-child {
+  margin-bottom: 0;
+}
+
+<Search>
+  <CardStack>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "CardStack-sc-1vtkaja-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:flex;flex-direction:column;position:relative;& > div{margin:10px 0;}& > div:first-child{margin-top:0;}& > div:last-child{margin-bottom:0;}",
+            ],
+          },
+          "displayName": "CardStack",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "CardStack-sc-1vtkaja-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <Card>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Card-sc-3vnjrr-0",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "background-color:",
+                    "#ffffff",
+                    ";border:1px solid ",
+                    "#dcdce7",
+                    ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > div{border-bottom:1px solid ",
+                    "#dcdce7",
+                    ";}& > div:first-child{border-radius:5px 5px 0 0;}& > div:last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+                  ],
+                },
+                "displayName": "Card",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Card-sc-3vnjrr-0",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              <CardSegment>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "CardSegment-sc-44tqm2-0",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "display:flex;flex:1 0 auto;position:relative;",
+                          [Function],
+                          " & > header{display:flex;flex:1 0 auto;flex-direction:row;justify-content:space-between;",
+                          [Function],
+                          " & > h1{font-size:18px;font-weight:normal;line-height:normal;margin:0;}& > h2{font-size:16px;font-weight:normal;line-height:normal;margin:0;}& > h3{font-size:14px;font-weight:normal;line-height:normal;margin:0;}}& button{margin:0 0 0 10px;}",
+                        ],
+                      },
+                      "displayName": "CardSegment",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "CardSegment-sc-44tqm2-0",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="c2"
+                  >
+                    top
+                  </div>
+                </StyledComponent>
+              </CardSegment>
+              <CardSegment>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "CardSegment-sc-44tqm2-0",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "display:flex;flex:1 0 auto;position:relative;",
+                          [Function],
+                          " & > header{display:flex;flex:1 0 auto;flex-direction:row;justify-content:space-between;",
+                          [Function],
+                          " & > h1{font-size:18px;font-weight:normal;line-height:normal;margin:0;}& > h2{font-size:16px;font-weight:normal;line-height:normal;margin:0;}& > h3{font-size:14px;font-weight:normal;line-height:normal;margin:0;}}& button{margin:0 0 0 10px;}",
+                        ],
+                      },
+                      "displayName": "CardSegment",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "CardSegment-sc-44tqm2-0",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="c2"
+                  >
+                    bottom
+                  </div>
+                </StyledComponent>
+              </CardSegment>
+            </div>
+          </StyledComponent>
+        </Card>
+        <Card>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Card-sc-3vnjrr-0",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "background-color:",
+                    "#ffffff",
+                    ";border:1px solid ",
+                    "#dcdce7",
+                    ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > div{border-bottom:1px solid ",
+                    "#dcdce7",
+                    ";}& > div:first-child{border-radius:5px 5px 0 0;}& > div:last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+                  ],
+                },
+                "displayName": "Card",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Card-sc-3vnjrr-0",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              blank
+            </div>
+          </StyledComponent>
+        </Card>
+      </div>
+    </StyledComponent>
+  </CardStack>
+</Search>
+`;
