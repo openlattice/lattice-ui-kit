@@ -10,10 +10,14 @@ const selectStyles = {
     };
   },
   control: (base, state) => {
-    const { isFocused, isDisabled } = state;
+    const { isFocused, isDisabled, selectProps } = state;
+    const { borderless } = selectProps;
+    const defaultBorder = borderless ? 'none' : `solid 1px ${NEUTRALS[4]}`;
+    const defaultBackgroundColor = borderless ? 'transparent' : NEUTRALS[8];
+
     const style = {
-      backgroundColor: isFocused ? 'white' : NEUTRALS[8],
-      border: isFocused ? `solid 1px ${PURPLES[1]}` : `solid 1px ${NEUTRALS[4]}`,
+      backgroundColor: isFocused ? 'white' : defaultBackgroundColor,
+      border: (isFocused && !borderless) ? `solid 1px ${PURPLES[1]}` : defaultBorder,
       borderRadius: '3px',
       boxShadow: 'none',
       fontSize: '14px',
@@ -22,7 +26,7 @@ const selectStyles = {
       pointerEvents: isDisabled ? 'none' : 'auto',
       ':hover': {
         backgroundColor: isFocused ? 'white' : NEUTRALS[6],
-        border: isFocused ? `solid 1px ${PURPLES[1]}` : `solid 1px ${NEUTRALS[4]}`,
+        border: (isFocused && !borderless) ? `solid 1px ${PURPLES[1]}` : defaultBorder,
       },
     };
     return { ...base, ...style };
