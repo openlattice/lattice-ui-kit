@@ -13,7 +13,7 @@ const Input = styled.input`
   color: ${NEUTRALS[0]};
   font-size: 14px;
   height: 39px;
-  line-height: 19px;
+  line-height: inherit;
   text-overflow: ellipsis;
   width: 100%;
   border: 1px solid ${props => (props.invalid ? RED_1 : NEUTRALS[4])};

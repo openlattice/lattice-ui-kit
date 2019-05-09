@@ -16,7 +16,7 @@ const defaultStyle = css`
   color: ${NEUTRALS[1]};
   cursor: pointer;
   font-size: 14px;
-  line-height: 18px;
+  line-height: inherit;
   outline: none;
   padding: 10px 20px;
   text-align: center;

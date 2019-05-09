@@ -85,21 +85,21 @@ const CardSegment = styled.div`
     & > h1 {
       font-size: 18px;
       font-weight: normal;
-      line-height: normal;
+      line-height: inherit;
       margin: 0;
     }
 
     & > h2 {
       font-size: 16px;
       font-weight: normal;
-      line-height: normal;
+      line-height: inherit;
       margin: 0;
     }
 
     & > h3 {
       font-size: 14px;
       font-weight: normal;
-      line-height: normal;
+      line-height: inherit;
       margin: 0;
     }
   }
