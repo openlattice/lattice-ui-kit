@@ -37,10 +37,10 @@ class OverlayExample extends Component {
 }
 
 storiesOf('Overlay', module)
-  .add('Basic Overlay', () => (
+  .add('basic', () => (
     <OverlayExample />
   ))
-  .add('Overlay with children', () => (
+  .add('children', () => (
     <OverlayExample>
       <h1>Hello World</h1>
       <button type="button">testing</button>
