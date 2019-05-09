@@ -2,6 +2,7 @@
 
 exports[`overlay snapshots should match snapshot when isVisible="false" 1`] = `
 <Overlay
+  isScrollable={false}
   isVisible={false}
   onClose={[Function]}
   shouldCloseOnClick={true}
@@ -24,48 +25,152 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
   display: block;
   height: 100%;
   position: absolute;
+  overflow-y: visible;
   width: 100%;
 }
 
 <Overlay
+  isScrollable={false}
   isVisible={true}
   onClose={[Function]}
   shouldCloseOnClick={true}
 >
   <Portal>
-    <StyledOverlayComponents__OverlayOuterContainer>
-      <div
-        className="c0"
-      >
-        <StyledOverlayComponents__OverlayInnerContainer
-          onClick={[Function]}
+    <Portal
+      containerInfo={
+        .c0 {
+  background-color: rgba(8,0,25,0.3);
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.c1 {
+  display: block;
+  height: 100%;
+  position: absolute;
+  overflow-y: visible;
+  width: 100%;
+}
+
+<div
+          lattice-portal-inner-container=""
         >
           <div
-            className="c1"
-            onClick={[Function]}
+            class="c0"
           >
-            <span>
-              hello
-            </span>
+            <div
+              class="c1"
+            >
+              <span>
+                hello
+              </span>
+            </div>
           </div>
-        </StyledOverlayComponents__OverlayInnerContainer>
-      </div>
-    </StyledOverlayComponents__OverlayOuterContainer>
-    <TouchProvider>
-      <ScrollLock
+        </div>
+      }
+    >
+      <StyledOverlayComponents__OverlayOuterContainer>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
+                "isStatic": true,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "background-color:",
+                  "rgba(8,0,25,0.3)",
+                  ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
+                ],
+              },
+              "displayName": "StyledOverlayComponents__OverlayOuterContainer",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c0"
+          >
+            <StyledOverlayComponents__OverlayInnerContainer
+              isScrollable={false}
+              onClick={[Function]}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "display:block;height:100%;position:absolute;overflow-y:",
+                        [Function],
+                        ";width:100%;",
+                      ],
+                    },
+                    "displayName": "StyledOverlayComponents__OverlayInnerContainer",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isScrollable={false}
+                onClick={[Function]}
+              >
+                <div
+                  className="c1"
+                  onClick={[Function]}
+                >
+                  <span>
+                    hello
+                  </span>
+                </div>
+              </StyledComponent>
+            </StyledOverlayComponents__OverlayInnerContainer>
+          </div>
+        </StyledComponent>
+      </StyledOverlayComponents__OverlayOuterContainer>
+      <LockToggle
         accountForScrollbars={true}
+        isActive={true}
       >
-        <Sheet
-          styles="body {
-      box-sizing: border-box !important;
-      overflow: hidden !important;
-      position: relative !important;
-      
-      padding-right: 1024px !important;
-    }"
-        />
-      </ScrollLock>
-    </TouchProvider>
+        <SheetProvider
+          accountForScrollbars={true}
+          isActive={true}
+        >
+          <TouchProvider
+            accountForScrollbars={true}
+            isActive={true}
+          >
+            <ScrollLock
+              accountForScrollbars={true}
+              isActive={true}
+            />
+          </TouchProvider>
+        </SheetProvider>
+      </LockToggle>
+    </Portal>
   </Portal>
 </Overlay>
 `;

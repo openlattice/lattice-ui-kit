@@ -1,10 +1,9 @@
-import styled from 'styled-components';
 import Creatable from 'react-select/lib/Creatable';
-import selectStyles from './styled/selectStyles';
-import { LATTICE_SELECT } from './consts';
+import withProps from '../../../components/withProps';
+import selectStyles from '../../../style/selectStyles';
 
-export default styled(Creatable).attrs({
-  classNamePrefix: LATTICE_SELECT
-})`
-  ${selectStyles}
-`;
+export const props = {
+  styles: selectStyles
+};
+
+export default withProps(Creatable, props);

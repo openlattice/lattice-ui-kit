@@ -53,14 +53,66 @@ exports[`button mode="default" should match snapshot 1`] = `
     onClick={[Function]}
     type="button"
   >
-    <button
-      className="c0"
+    <StyledComponent
+      className=""
       disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "DefaultButton-sc-2dhy0g-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              "#f0f0f7",
+              ";border-color:",
+              "#f0f0f7",
+              ";border-radius:4px;border-style:solid;border-width:1px;color:",
+              "#8e929b",
+              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+              " ",
+              "&:hover{background-color:",
+              "#dcdce7",
+              ";border-color:",
+              "#dcdce7",
+              ";text-decoration:none;}",
+              " ",
+              "&:active{background-color:",
+              "#b6bbc7",
+              ";border-color:",
+              "#b6bbc7",
+              ";color:",
+              "#ffffff",
+              ";text-decoration:none;}",
+              " ",
+              "&:disabled{cursor:not-allowed;text-decoration:none;}",
+            ],
+          },
+          "displayName": "DefaultButton",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "DefaultButton-sc-2dhy0g-0",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       onClick={[Function]}
       type="button"
     >
-      DEFAULT_BUTTON
-    </button>
+      <button
+        className="c0"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        DEFAULT_BUTTON
+      </button>
+    </StyledComponent>
   </DefaultButton>
 </Button>
 `;
@@ -118,14 +170,66 @@ exports[`button mode="default" should match snapshot 2`] = `
     onClick={[Function]}
     type="button"
   >
-    <button
-      className="c0"
+    <StyledComponent
+      className=""
       disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "DefaultButton-sc-2dhy0g-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              "#f0f0f7",
+              ";border-color:",
+              "#f0f0f7",
+              ";border-radius:4px;border-style:solid;border-width:1px;color:",
+              "#8e929b",
+              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+              " ",
+              "&:hover{background-color:",
+              "#dcdce7",
+              ";border-color:",
+              "#dcdce7",
+              ";text-decoration:none;}",
+              " ",
+              "&:active{background-color:",
+              "#b6bbc7",
+              ";border-color:",
+              "#b6bbc7",
+              ";color:",
+              "#ffffff",
+              ";text-decoration:none;}",
+              " ",
+              "&:disabled{cursor:not-allowed;text-decoration:none;}",
+            ],
+          },
+          "displayName": "DefaultButton",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "DefaultButton-sc-2dhy0g-0",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       onClick={[Function]}
       type="button"
     >
-      DEFAULT_BUTTON
-    </button>
+      <button
+        className="c0"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        DEFAULT_BUTTON
+      </button>
+    </StyledComponent>
   </DefaultButton>
 </Button>
 `;
@@ -186,14 +290,70 @@ exports[`button mode="primary" should match snapshot 1`] = `
     onClick={[Function]}
     type="button"
   >
-    <button
-      className="c0"
+    <StyledComponent
+      className=""
       disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "PrimaryButton-sc-1t8zuv9-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              "#6124e2",
+              ";border-color:",
+              "#6124e2",
+              ";border-radius:4px;border-style:solid;border-width:1px;color:",
+              "#ffffff",
+              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+              " ",
+              "&:hover{background-color:",
+              "#8045ff",
+              ";border-color:",
+              "#8045ff",
+              ";cursor:pointer;text-decoration:none;}",
+              " ",
+              "&:active{background-color:",
+              "#361876",
+              ";border-color:",
+              "#361876",
+              ";text-decoration:none;}",
+              " ",
+              "&:disabled{background-color:",
+              "#f0f0f7",
+              ";border-color:",
+              "#f0f0f7",
+              ";color:",
+              "#b6bbc7",
+              ";cursor:not-allowed;text-decoration:none;}",
+            ],
+          },
+          "displayName": "PrimaryButton",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "PrimaryButton-sc-1t8zuv9-0",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       onClick={[Function]}
       type="button"
     >
-      PRIMARY_BUTTON
-    </button>
+      <button
+        className="c0"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        PRIMARY_BUTTON
+      </button>
+    </StyledComponent>
   </PrimaryButton>
 </Button>
 `;
@@ -254,14 +414,70 @@ exports[`button mode="secondary" should match snapshot 1`] = `
     onClick={[Function]}
     type="button"
   >
-    <button
-      className="c0"
+    <StyledComponent
+      className=""
       disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "SecondaryButton-s3wp95-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              "#e4d8ff",
+              ";border-color:",
+              "#e4d8ff",
+              ";border-radius:4px;border-style:solid;border-width:1px;color:",
+              "#6124e2",
+              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+              " ",
+              "&:hover{background-color:",
+              "#d0bbff",
+              ";border-color:",
+              "#d0bbff",
+              ";cursor:pointer;text-decoration:none;}",
+              " ",
+              "&:active{background-color:",
+              "#b898ff",
+              ";border-color:",
+              "#b898ff",
+              ";text-decoration:none;}",
+              " ",
+              "&:disabled{background-color:",
+              "#dcdce7",
+              ";border-color:",
+              "#dcdce7",
+              ";color:",
+              "#8e929b",
+              ";cursor:not-allowed;text-decoration:none;}",
+            ],
+          },
+          "displayName": "SecondaryButton",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "SecondaryButton-s3wp95-0",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       onClick={[Function]}
       type="button"
     >
-      SECONDARY_BUTTON
-    </button>
+      <button
+        className="c0"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        SECONDARY_BUTTON
+      </button>
+    </StyledComponent>
   </SecondaryButton>
 </Button>
 `;

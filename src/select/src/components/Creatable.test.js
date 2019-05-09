@@ -1,29 +1,30 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import Creatable from './Creatable';
-import { LATTICE_SELECT, OPTIONS } from './consts';
+import Creatable, { props } from './Creatable';
+import { OPTIONS } from './constants';
 
 describe('Creatable', () => {
 
-  it('render matches snapshot', () => {
-    const tree = shallow(<Creatable />);
+  test('render matches snapshot', () => {
+    const tree = mount(<Creatable />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 
-  it('attrs classNamePrefix is set to "lattice-select"', () => {
+  test('internal Creatable should have selectProps', () => {
     const wrapper = mount(<Creatable />);
-    expect(wrapper.instance().attrs.classNamePrefix).toEqual(LATTICE_SELECT);
+    const creatableProps = wrapper.find('Creatable').props();
+    expect(creatableProps.selectProps).toEqual(props.selectProps);
   });
 
-  it('clicking should toggle menu', () => {
+  test('clicking should toggle menu', () => {
     const wrapper = mount(<Creatable />);
     expect(wrapper.find('Menu').exists()).toBeFalsy();
-    wrapper.find('div.lattice-select__dropdown-indicator').simulate('mouseDown', { button: 0 });
+    wrapper.find('DropdownIndicator').simulate('mouseDown', { button: 0 });
     expect(wrapper.find('Menu').exists()).toBeTruthy();
   });
 
-  it('single > should show controlled value', () => {
+  test('single > should show controlled value', () => {
     const wrapper = mount(
       <Creatable
           options={OPTIONS}
@@ -34,7 +35,7 @@ describe('Creatable', () => {
     expect(actualValue).toEqual(expectedValue);
   });
 
-  it('multi > should show controlled value', () => {
+  test('multi > should show controlled value', () => {
     const wrapper = mount(
       <Creatable
           isMulti

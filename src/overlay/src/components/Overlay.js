@@ -14,6 +14,7 @@ import { OverlayInnerContainer, OverlayOuterContainer } from './styled/StyledOve
 
 type Props = {
   children :Node;
+  isScrollable ?:boolean;
   isVisible :boolean;
   onClose ? :() => void;
   shouldCloseOnClick ? :boolean;
@@ -32,12 +33,14 @@ export default class Overlay extends Component<Props, State> {
 
   static propTypes = {
     children: PropTypes.node.isRequired,
+    isScrollable: PropTypes.bool,
     isVisible: PropTypes.bool.isRequired,
     onClose: PropTypes.func,
     shouldCloseOnClick: PropTypes.bool,
   }
 
   static defaultProps = {
+    isScrollable: false,
     onClose: undefined,
     shouldCloseOnClick: true,
   }
@@ -82,7 +85,7 @@ export default class Overlay extends Component<Props, State> {
 
   render() {
 
-    const { children } = this.props;
+    const { children, isScrollable } = this.props;
     const { isVisible } = this.state;
 
     if (!isVisible) {
@@ -92,7 +95,7 @@ export default class Overlay extends Component<Props, State> {
     return (
       <Portal>
         <OverlayOuterContainer>
-          <OverlayInnerContainer onClick={this.handleOnClick}>
+          <OverlayInnerContainer isScrollable={isScrollable} onClick={this.handleOnClick}>
             { children }
           </OverlayInnerContainer>
         </OverlayOuterContainer>

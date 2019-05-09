@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatePicker render matches snapshot 1`] = `
+<WithAnalyticsContext(WithAnalyticsEvents(DatePicker))
+  selectProps={
+    Object {
+      "styles": Object {
+        "clearIndicator": [Function],
+        "container": [Function],
+        "control": [Function],
+        "dropdownIndicator": [Function],
+        "indicatorSeparator": [Function],
+        "indicatorsContainer": [Function],
+        "menu": [Function],
+        "menuPortal": [Function],
+        "option": [Function],
+        "singleValue": [Function],
+      },
+    }
+  }
+/>
+`;

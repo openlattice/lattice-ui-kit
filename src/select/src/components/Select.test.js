@@ -1,29 +1,30 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import Select from './Select';
-import { LATTICE_SELECT, OPTIONS } from './consts';
+import Select, { props } from './Select';
+import { OPTIONS } from './constants';
 
 describe('Select', () => {
 
-  it('render matches snapshot', () => {
-    const tree = shallow(<Select />);
+  test('render matches snapshot', () => {
+    const tree = mount(<Select />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 
-  it('attrs classNamePrefix is set to "lattice-select"', () => {
+  test('internal Select should have selectProps', () => {
     const wrapper = mount(<Select />);
-    expect(wrapper.instance().attrs.classNamePrefix).toEqual(LATTICE_SELECT);
+    const selectProps = wrapper.find('Select').props();
+    expect(selectProps.selectProps).toEqual(props.selectProps);
   });
 
-  it('clicking should toggle menu', () => {
+  test('clicking should toggle menu', () => {
     const wrapper = mount(<Select />);
     expect(wrapper.find('Menu').exists()).toBeFalsy();
-    wrapper.find('div.lattice-select__dropdown-indicator').simulate('mouseDown', { button: 0 });
+    wrapper.find('DropdownIndicator').simulate('mouseDown', { button: 0 });
     expect(wrapper.find('Menu').exists()).toBeTruthy();
   });
 
-  it('single > should show controlled value', () => {
+  test('single > should show controlled value', () => {
     const wrapper = mount(
       <Select
           options={OPTIONS}
@@ -34,7 +35,7 @@ describe('Select', () => {
     expect(actualValue).toEqual(expectedValue);
   });
 
-  it('multi > should show controlled value', () => {
+  test('multi > should show controlled value', () => {
     const wrapper = mount(
       <Select
           isMulti

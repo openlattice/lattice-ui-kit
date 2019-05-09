@@ -5,12 +5,16 @@ import * as LatticeUIKit from './index';
 
 const EXPECTED_OBJ_EXPORTS = Set([
   'Button',
-  'Creatable',
+  'Card',
+  'CardSegment',
   'Colors',
+  'Creatable',
+  'DatePicker',
   'Modal',
   'Overlay',
   'Portal',
   'Select',
+  'TimePicker',
 ]);
 
 describe('lattice-ui-kit named exports', () => {
