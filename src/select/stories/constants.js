@@ -1,3 +1,8 @@
+// @flow
+
+// eslint-disable-next-line max-len
+const REACT_SELECT_USAGE :string = 'Select and Creatable components are simple wrappers that pass OpenLattice styling to their respective react-select components. All props provided to these wrappers are passed through allowing full use of react-select functionality.';
+
 const stateOptions = [
   { value: 'AL', label: 'Alabama' },
   { value: 'AK', label: 'Alaska' },
@@ -61,6 +66,6 @@ const stateOptions = [
 ];
 
 export {
-  // eslint-disable-next-line import/prefer-default-export
+  REACT_SELECT_USAGE,
   stateOptions
 };
