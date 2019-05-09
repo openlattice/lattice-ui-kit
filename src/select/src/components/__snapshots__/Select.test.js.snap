@@ -298,7 +298,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
             }
           >
             <div
-              className="css-14ntcys-control"
+              className="css-1fvvhxi-control"
               onMouseDown={[Function]}
               onTouchEnd={[Function]}
             >

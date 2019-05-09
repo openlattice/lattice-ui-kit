@@ -22,7 +22,7 @@ const selectStyles = {
       boxShadow: 'none',
       fontSize: '14px',
       marginTop: '10px',
-      minHeight: '44px',
+      minHeight: '39px',
       pointerEvents: isDisabled ? 'none' : 'auto',
       ':hover': {
         backgroundColor: isFocused ? 'white' : NEUTRALS[6],
