@@ -12,7 +12,7 @@ describe('Search', () => {
   describe('snapshots', () => {
 
     test('should match snapshot', () => {
-      const wrapper = mount(<Search />);
+      const wrapper = shallow(<Search />);
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
