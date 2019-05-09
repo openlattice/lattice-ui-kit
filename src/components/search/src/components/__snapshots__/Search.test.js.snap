@@ -6,7 +6,9 @@ exports[`Search snapshots should match snapshot 1`] = `
     vertical={true}
   >
     <form>
-      <InputGrid>
+      <InputGrid
+        columns={4}
+      >
         <div
           key="luk-search-key-firstname"
         >
@@ -16,6 +18,7 @@ exports[`Search snapshots should match snapshot 1`] = `
             First Name
           </Label>
           <Input
+            id="luk-search-firstname"
             name="firstname"
             onChange={[Function]}
             value=""
@@ -30,6 +33,7 @@ exports[`Search snapshots should match snapshot 1`] = `
             Last Name
           </Label>
           <Input
+            id="luk-search-lastname"
             name="lastname"
             onChange={[Function]}
             value=""
@@ -44,6 +48,7 @@ exports[`Search snapshots should match snapshot 1`] = `
             Date of Birth
           </Label>
           <LatticeWrapper
+            id="luk-search-dob"
             name="dob"
             onChange={[Function]}
             value=""
@@ -60,11 +65,6 @@ exports[`Search snapshots should match snapshot 1`] = `
         </Button>
       </InputGrid>
     </form>
-  </CardSegment>
-  <CardSegment
-    padding="md"
-  >
-    Filters
   </CardSegment>
 </Card>
 `;

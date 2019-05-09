@@ -4,16 +4,19 @@ import { Map } from 'immutable';
 
 import InputGrid from './styled/InputGrid';
 import Title from './styled/Title';
+import LabelWrapper from './styled/LabelWrapper';
 import Input from '../../../../input';
 import Label from '../../../../label';
 import Button from '../../../../button';
 import DatePicker from '../../../../datetime/src/components/DatePicker';
+import { Select } from '../../../../select';
 import { Card, CardSegment } from '../../../../layout';
 
-import type { SearchFieldDefinition } from '../../types';
+import type { SearchFieldDefinition, FilterFieldDefinition } from '../../types';
 
 type Props = {
   searchFields ? :SearchFieldDefinition[];
+  filterFields ? :FilterFieldDefinition[];
   title :string;
   onSearch :() => void;
 };
@@ -39,7 +42,8 @@ class Search extends Component<Props, State> {
         label: 'Date of Birth',
         type: 'date'
       },
-    ]
+    ],
+    filterFields: [],
   }
 
   constructor(props :Props) {
@@ -82,6 +86,10 @@ class Search extends Component<Props, State> {
     }
   }
 
+  handleOnChangeFilter = () => {
+
+  }
+
   renderSearchFieldsSegment = () => {
 
     const { searchFields, title } = this.props;
@@ -92,6 +100,7 @@ class Search extends Component<Props, State> {
 
       let fieldComponent = (
         <Input
+            id={`luk-search-${field.id}`}
             name={field.id}
             onChange={this.handleOnChangeInput}
             value={searchFieldValues.get(field.id)} />
@@ -101,6 +110,7 @@ class Search extends Component<Props, State> {
       if (field.type === 'date') {
         fieldComponent = (
           <DatePicker
+              id={`luk-search-${field.id}`}
               name={field.id}
               onChange={this.getOnChangeDate(field.id)}
               value={searchFieldValues.get(field.id)} />
@@ -121,7 +131,8 @@ class Search extends Component<Props, State> {
       <CardSegment vertical>
         { title && <Title>{title}</Title> }
         <form>
-          <InputGrid>
+          {/* $FlowFixMe optional not recognizing defaultProps */}
+          <InputGrid columns={searchFields.length + 1}>
             {searchFieldComponents}
             <Button
                 type="submit"
@@ -135,13 +146,47 @@ class Search extends Component<Props, State> {
     );
   }
 
+  renderFiltersSegment = () => {
+
+    const { filterFields } = this.props;
+    if (Array.isArray(filterFields) && filterFields.length) {
+      const filterFieldComponents = filterFields.map((filter :FilterFieldDefinition) => {
+        const options = filter.value.map(v => ({ ...filter, label: v, value: v }));
+        return (
+          <LabelWrapper key={`luk-filter-key-${filter.id}`}>
+            <Label
+                bold
+                key={filter.id}
+                htmlFor={`luk-filter-${filter.id}`}>
+              {filter.label}
+            </Label>
+            <Select
+                inputId={`luk-filter-${filter.id}`}
+                borderless
+                defaultValue={options[0]}
+                onChange={this.handleOnChangeFilter}
+                options={options} />
+          </LabelWrapper>
+        );
+      });
+
+      return (
+        <CardSegment padding="md">
+          <InputGrid columns={filterFields.length}>
+            {filterFieldComponents}
+          </InputGrid>
+        </CardSegment>
+      );
+    }
+
+    return null;
+  }
+
   render() {
     return (
       <Card>
         { this.renderSearchFieldsSegment() }
-        <CardSegment padding="md">
-          Filters
-        </CardSegment>
+        { this.renderFiltersSegment() }
       </Card>
     );
   }

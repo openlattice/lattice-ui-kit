@@ -56,12 +56,23 @@ describe('Search', () => {
   });
 
   describe('onSearch()', () => {
+    test('should call handleOnClickSearchButton', () => {
+      const wrapper = mount(<Search />);
+      const instance = wrapper.instance();
+      const handleOnClickSearchButtonSpy = jest.spyOn(instance, 'handleOnClickSearchButton');
+
+      instance.forceUpdate();
+      wrapper.find('Button').simulate('click');
+
+      expect(handleOnClickSearchButtonSpy).toHaveBeenCalledTimes(1);
+    });
+
     test('should invoke onSearch', () => {
       const mockOnSearch = jest.fn();
       const wrapper = mount(<Search onSearch={mockOnSearch} />);
       const instance = wrapper.instance();
-
       const handleOnClickSearchButtonSpy = jest.spyOn(instance, 'handleOnClickSearchButton');
+
       instance.forceUpdate();
       wrapper.find('Button').simulate('click');
 
@@ -69,15 +80,6 @@ describe('Search', () => {
       expect(mockOnSearch).toHaveBeenCalledTimes(1);
     });
 
-    test('should call handleOnClickSearchButton', () => {
-      const wrapper = mount(<Search onSearch="not function" />);
-      const instance = wrapper.instance();
-      const handleOnClickSearchButtonSpy = jest.spyOn(instance, 'handleOnClickSearchButton');
-
-      instance.forceUpdate();
-      wrapper.find('Button').simulate('click');
-      expect(handleOnClickSearchButtonSpy).toHaveBeenCalledTimes(1);
-    });
   });
 
   describe('searchFieldValues', () => {

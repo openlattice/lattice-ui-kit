@@ -4,10 +4,48 @@ import { action } from '@storybook/addon-actions';
 
 import Search from '../src/components/Search';
 
+const filterFields = [
+  {
+    filter: (searchResult, filter) => {
+      if (filter.value === 'All') return true;
+      return searchResult.getIn([filter.id, 0]) === filter.value;
+    },
+    id: 'report-type',
+    label: 'Report type',
+    value: ['All', 'Crisis Template', 'Follow-up'],
+  },
+  {
+    filter: (searchResult, filter) => {
+      if (filter.value === 'All') return true;
+      return searchResult.getIn([filter.id, 0]) === filter.value;
+    },
+    id: 'badges',
+    label: 'Badges',
+    value: ['Officer Safety', 'Substance use'],
+  },
+  {
+    filter: (searchResult, filter) => {
+      if (filter.value === 'All') return true;
+      return searchResult.getIn([filter.id, 0]) === filter.value;
+    },
+    id: 'submitter',
+    label: 'Submitter',
+    value: ['solomon@openlattice.com'],
+  },
+];
+
 storiesOf('Search', module)
-  .add('Search fields', () => (
+  .add('Default Search fields', () => (
     <>
       <h1>Search Fields</h1>
       <Search onSearch={action('search clicked')} />
+    </>
+  ))
+  .add('Search fields with filter', () => (
+    <>
+      <h1>Search Fields</h1>
+      <Search
+          filterFields={filterFields}
+          onSearch={action('search clicked')} />
     </>
   ));
