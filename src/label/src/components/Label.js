@@ -7,9 +7,8 @@ const Label = styled.label`
   font-size: 14px;
   font-stretch: normal;
   font-style: normal;
-  font-weight: normal;
+  font-weight: ${props => (props.bold ? 'bold' : 'normal')};
   letter-spacing: normal;
-  line-height: 19px;
   margin: 5px 0;
 `;
 

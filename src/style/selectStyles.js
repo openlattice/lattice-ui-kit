@@ -6,7 +6,8 @@ const selectStyles = {
     return {
       ...base,
       cursor: isDisabled ? 'not-allowed' : 'default',
-      pointerEvents: 'auto'
+      pointerEvents: 'auto',
+      width: '100%'
     };
   },
   control: (base, state) => {

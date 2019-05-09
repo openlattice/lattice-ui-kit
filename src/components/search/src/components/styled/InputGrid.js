@@ -6,6 +6,7 @@ const getGridTemplateColumns = ({ columns = 4 }) => css`
 
 const InputGrid = styled.div`
   display: grid;
+  flex: 1 1 100%;
   grid-gap: 20px 30px;
   align-items: flex-end;
   ${getGridTemplateColumns}
