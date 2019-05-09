@@ -6,48 +6,64 @@ import { OPTIONS } from './constants';
 
 describe('Select', () => {
 
-  test('render matches snapshot', () => {
-    const tree = mount(<Select />);
-    expect(toJson(tree)).toMatchSnapshot();
+  describe('snapshot', () => {
+
+    test('render matches snapshot', () => {
+      const tree = mount(<Select />);
+      expect(toJson(tree)).toMatchSnapshot();
+    });
+
   });
 
-  test('internal Select should have selectProps', () => {
-    const wrapper = mount(<Select />);
-    const selectProps = wrapper.find('Select').props();
-    expect(selectProps.selectProps).toEqual(props.selectProps);
+  describe('props', () => {
+
+    test('internal Select should have selectProps', () => {
+      const wrapper = mount(<Select />);
+      const selectProps = wrapper.find('Select').props();
+      expect(selectProps.selectProps).toEqual(props.selectProps);
+    });
+
   });
 
-  test('clicking should toggle menu', () => {
-    const wrapper = mount(<Select />);
-    expect(wrapper.find('Menu').exists()).toBeFalsy();
-    wrapper.find('DropdownIndicator').simulate('mouseDown', { button: 0 });
-    expect(wrapper.find('Menu').exists()).toBeTruthy();
+  describe('data', () => {
+
+    test('single > should show controlled value', () => {
+      const wrapper = mount(
+        <Select
+            options={OPTIONS}
+            value={OPTIONS[0]} />
+      );
+      const actualValue = wrapper.find('Control').get(0).props.getValue();
+      const expectedValue = [OPTIONS[0]];
+      expect(actualValue).toEqual(expectedValue);
+    });
+  
+    test('multi > should show controlled value', () => {
+      const wrapper = mount(
+        <Select
+            isMulti
+            options={OPTIONS}
+            value={[OPTIONS[0], OPTIONS[1]]} />
+      );
+      const actualValue = wrapper.find('Control').get(0).props.getValue();
+      const expectedValue = [
+        OPTIONS[0],
+        OPTIONS[1]
+      ];
+      expect(actualValue).toEqual(expectedValue);
+    });
+
   });
 
-  test('single > should show controlled value', () => {
-    const wrapper = mount(
-      <Select
-          options={OPTIONS}
-          value={OPTIONS[0]} />
-    );
-    const actualValue = wrapper.find('Control').get(0).props.getValue();
-    const expectedValue = [OPTIONS[0]];
-    expect(actualValue).toEqual(expectedValue);
-  });
+  describe('style', () => {
 
-  test('multi > should show controlled value', () => {
-    const wrapper = mount(
-      <Select
-          isMulti
-          options={OPTIONS}
-          value={[OPTIONS[0], OPTIONS[1]]} />
-    );
-    const actualValue = wrapper.find('Control').get(0).props.getValue();
-    const expectedValue = [
-      OPTIONS[0],
-      OPTIONS[1]
-    ];
-    expect(actualValue).toEqual(expectedValue);
+    test('clicking should toggle menu', () => {
+      const wrapper = mount(<Select />);
+      expect(wrapper.find('Menu').exists()).toBeFalsy();
+      wrapper.find('DropdownIndicator').simulate('mouseDown', { button: 0 });
+      expect(wrapper.find('Menu').exists()).toBeTruthy();
+    });
+
   });
 
 });
