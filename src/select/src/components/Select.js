@@ -3,7 +3,8 @@ import withProps from '../../../components/withProps';
 import selectStyles from '../../../style/selectStyles';
 
 export const props = {
-  styles: selectStyles
+  styles: selectStyles,
+  menuPlacement: 'auto'
 };
 
 export default withProps(Select, props);
