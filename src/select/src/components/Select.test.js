@@ -37,7 +37,7 @@ describe('Select', () => {
       const expectedValue = [OPTIONS[0]];
       expect(actualValue).toEqual(expectedValue);
     });
-  
+
     test('multi > should show controlled value', () => {
       const wrapper = mount(
         <Select
