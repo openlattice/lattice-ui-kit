@@ -1,8 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import styled from 'styled-components';
 
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
 
 import Button from '../../button';
 import Modal from '..';
@@ -25,9 +23,11 @@ class ModalExample extends Component {
   }
 
   render() {
-    return this.props.children({
+    const { children } = this.props;
+    const { isVisible } = this.state;
+    return children({
+      isVisible,
       hide: this.hide,
-      isVisible: this.state.isVisible,
       show: this.show,
     });
   }
@@ -188,7 +188,7 @@ storiesOf('Modal', module)
                 </a>
               </Modal>
               <Button onClick={show}>
-                Show Modal - don't hide on outside click
+                Show Modal - don&apos;t hide on outside click
               </Button>
             </Fragment>
           )

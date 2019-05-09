@@ -1,11 +1,9 @@
 import React, { Component, Fragment } from 'react';
-import styled from 'styled-components';
 
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
 
 import Button from '../../button';
-import Overlay from '../../overlay';
+import Overlay from '..';
 
 class OverlayExample extends Component {
 
@@ -25,10 +23,12 @@ class OverlayExample extends Component {
   }
 
   render() {
+    const { children } = this.props;
+    const { isVisible } = this.state;
     return (
       <Fragment>
-        <Overlay isVisible={this.state.isVisible}>
-          { this.props.children }
+        <Overlay isVisible={isVisible}>
+          { children }
         </Overlay>
         <Button onClick={this.show}>Show Overlay</Button>
       </Fragment>
@@ -43,6 +43,6 @@ storiesOf('Overlay', module)
   .add('Overlay with children', () => (
     <OverlayExample>
       <h1>Hello World</h1>
-      <button>testing</button>
+      <button type="button">testing</button>
     </OverlayExample>
   ));
