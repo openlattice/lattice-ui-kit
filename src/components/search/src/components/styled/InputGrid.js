@@ -11,6 +11,4 @@ const InputGrid = styled.div`
   ${getGridTemplateColumns}
 `;
 
-InputGrid.displayName = 'InputGrid';
-
 export default InputGrid;
