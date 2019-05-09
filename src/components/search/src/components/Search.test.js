@@ -19,23 +19,38 @@ describe('Search', () => {
   });
 
   describe('render', () => {
-    let wrapper;
 
-    beforeEach(() => {
-      wrapper = mount(<Search />);
+    describe('render defaults', () => {
+      let wrapper;
+
+      beforeEach(() => {
+        wrapper = shallow(<Search />);
+      });
+
+      test('render Card', () => {
+        expect(wrapper.find(Card)).toHaveLength(1);
+      });
+
+      test('default search fields', () => {
+        expect(wrapper.find(Input)).toHaveLength(2);
+        expect(wrapper.find(DatePicker)).toHaveLength(1);
+      });
+
+      test('search button', () => {
+        expect(wrapper.find('Button')).toHaveLength(1);
+      });
     });
 
-    test('render Card', () => {
-      expect(wrapper.find(Card)).toHaveLength(1);
-    });
+    describe('render with props', () => {
+      test('should render provided title', () => {
+        const wrapper = shallow(<Search title="Title" />);
+        expect(wrapper.find('Title').text()).toEqual('Title');
+      });
 
-    test('default search fields', () => {
-      expect(wrapper.find(Input)).toHaveLength(2);
-      expect(wrapper.find(DatePicker)).toHaveLength(1);
-    });
-
-    test('search button', () => {
-      expect(wrapper.find('button')).toHaveLength(1);
+      test('should not render undefined title', () => {
+        const wrapper = shallow(<Search />);
+        expect(wrapper.find('Title')).toHaveLength(0);
+      });
     });
 
   });
@@ -44,8 +59,24 @@ describe('Search', () => {
     test('should invoke onSearch', () => {
       const mockOnSearch = jest.fn();
       const wrapper = mount(<Search onSearch={mockOnSearch} />);
-      wrapper.find('button').simulate('click');
+      const instance = wrapper.instance();
+
+      const handleOnClickSearchButtonSpy = jest.spyOn(instance, 'handleOnClickSearchButton');
+      instance.forceUpdate();
+      wrapper.find('Button').simulate('click');
+
+      expect(handleOnClickSearchButtonSpy).toHaveBeenCalledTimes(1);
       expect(mockOnSearch).toHaveBeenCalledTimes(1);
+    });
+
+    test('should call handleOnClickSearchButton', () => {
+      const wrapper = mount(<Search onSearch="not function" />);
+      const instance = wrapper.instance();
+      const handleOnClickSearchButtonSpy = jest.spyOn(instance, 'handleOnClickSearchButton');
+
+      instance.forceUpdate();
+      wrapper.find('Button').simulate('click');
+      expect(handleOnClickSearchButtonSpy).toHaveBeenCalledTimes(1);
     });
   });
 
@@ -60,6 +91,24 @@ describe('Search', () => {
       const changeValue = 'OpenLattice';
       const initialSearchFieldValues = wrapper.state('searchFieldValues');
       const expectedSearchFieldValues = initialSearchFieldValues.set('firstname', changeValue);
+
+      firstNameInput.simulate('change', { currentTarget: { value: changeValue, name: 'firstname' } });
+
+      const actualSearchFieldValues = wrapper.state('searchFieldValues');
+      expect(actualSearchFieldValues).toStrictEqual(expectedSearchFieldValues);
+
+    });
+
+    test('delete input', () => {
+      const wrapper = shallow(<Search />);
+      const firstNameInput = wrapper.find('Input[name="firstname"]');
+
+      expect(firstNameInput).toHaveLength(1);
+      expect(firstNameInput.type()).toEqual(Input);
+
+      const changeValue = undefined;
+      const initialSearchFieldValues = wrapper.state('searchFieldValues');
+      const expectedSearchFieldValues = initialSearchFieldValues.set('firstname', '');
 
       firstNameInput.simulate('change', { currentTarget: { value: changeValue, name: 'firstname' } });
 
