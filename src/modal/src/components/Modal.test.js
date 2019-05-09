@@ -255,6 +255,22 @@ describe('modal', () => {
         expect(mockOnClose).toHaveBeenCalledTimes(0);
       });
 
+      test('should not call close() multiple times if the escape key is already pressed', () => {
+        const mockOnClose = jest.fn();
+        const modal = shallow(
+          <Modal isVisible onClose={mockOnClose} shouldCloseOnEscape>
+            { MOCK_CHILD }
+          </Modal>
+        );
+        mockAddEventListenerMap.keydown({ key: 'Escape', code: 'Escape' });
+        expect(modal.instance().escapeKeyIsPressed).toEqual(true);
+        mockAddEventListenerMap.keydown({ key: 'Enter', code: 'Enter' });
+        expect(modal.instance().escapeKeyIsPressed).toEqual(true);
+        mockAddEventListenerMap.keydown({ key: 'Escape', code: 'Escape' });
+        expect(modal.instance().escapeKeyIsPressed).toEqual(true);
+        expect(mockOnClose).toHaveBeenCalledTimes(1);
+      });
+
     });
 
     describe('shouldCloseOnOutsideClick', () => {
