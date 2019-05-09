@@ -10,7 +10,7 @@ const Label = styled.label`
   font-weight: normal;
   letter-spacing: normal;
   line-height: 19px;
-  margin-bottom: 10px;
+  margin: 5px 0;
 `;
 
 export default Label;

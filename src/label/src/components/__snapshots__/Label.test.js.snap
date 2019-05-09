@@ -13,7 +13,7 @@ exports[`Label snapshots should match snapshot 1`] = `
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   line-height: 19px;
-  margin-bottom: 10px;
+  margin: 5px 0;
 }
 
 <Label>
@@ -29,7 +29,7 @@ exports[`Label snapshots should match snapshot 1`] = `
           "rules": Array [
             "display:inline-block;color:",
             "#555e6f",
-            ";font-size:14px;font-stretch:normal;font-style:normal;font-weight:normal;letter-spacing:normal;line-height:19px;margin-bottom:10px;",
+            ";font-size:14px;font-stretch:normal;font-style:normal;font-weight:normal;letter-spacing:normal;line-height:19px;margin:5px 0;",
           ],
         },
         "displayName": "Label",
