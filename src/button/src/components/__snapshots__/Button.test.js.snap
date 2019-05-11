@@ -10,7 +10,7 @@ exports[`button mode="default" should match snapshot 1`] = `
   color: #8e929b;
   cursor: pointer;
   font-size: 14px;
-  line-height: 18px;
+  line-height: inherit;
   outline: none;
   padding: 10px 20px;
   text-align: center;
@@ -71,7 +71,7 @@ exports[`button mode="default" should match snapshot 1`] = `
               "#f0f0f7",
               ";border-radius:4px;border-style:solid;border-width:1px;color:",
               "#8e929b",
-              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+              ";cursor:pointer;font-size:14px;line-height:inherit;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
               " ",
               "&:hover{background-color:",
               "#dcdce7",
@@ -127,7 +127,7 @@ exports[`button mode="default" should match snapshot 2`] = `
   color: #8e929b;
   cursor: pointer;
   font-size: 14px;
-  line-height: 18px;
+  line-height: inherit;
   outline: none;
   padding: 10px 20px;
   text-align: center;
@@ -188,7 +188,7 @@ exports[`button mode="default" should match snapshot 2`] = `
               "#f0f0f7",
               ";border-radius:4px;border-style:solid;border-width:1px;color:",
               "#8e929b",
-              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+              ";cursor:pointer;font-size:14px;line-height:inherit;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
               " ",
               "&:hover{background-color:",
               "#dcdce7",
@@ -236,15 +236,15 @@ exports[`button mode="default" should match snapshot 2`] = `
 
 exports[`button mode="primary" should match snapshot 1`] = `
 .c0 {
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #8045ff;
+  border-color: #8045ff;
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
   color: #ffffff;
   cursor: pointer;
   font-size: 14px;
-  line-height: 18px;
+  line-height: inherit;
   outline: none;
   padding: 10px 20px;
   text-align: center;
@@ -254,8 +254,8 @@ exports[`button mode="primary" should match snapshot 1`] = `
 }
 
 .c0:hover {
-  background-color: #8045ff;
-  border-color: #8045ff;
+  background-color: #6124e2;
+  border-color: #6124e2;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -303,17 +303,17 @@ exports[`button mode="primary" should match snapshot 1`] = `
             "lastClassName": "c0",
             "rules": Array [
               "background-color:",
-              "#6124e2",
+              "#8045ff",
               ";border-color:",
-              "#6124e2",
+              "#8045ff",
               ";border-radius:4px;border-style:solid;border-width:1px;color:",
               "#ffffff",
-              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+              ";cursor:pointer;font-size:14px;line-height:inherit;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
               " ",
               "&:hover{background-color:",
-              "#8045ff",
+              "#6124e2",
               ";border-color:",
-              "#8045ff",
+              "#6124e2",
               ";cursor:pointer;text-decoration:none;}",
               " ",
               "&:active{background-color:",
@@ -368,7 +368,7 @@ exports[`button mode="secondary" should match snapshot 1`] = `
   color: #6124e2;
   cursor: pointer;
   font-size: 14px;
-  line-height: 18px;
+  line-height: inherit;
   outline: none;
   padding: 10px 20px;
   text-align: center;
@@ -432,7 +432,7 @@ exports[`button mode="secondary" should match snapshot 1`] = `
               "#e4d8ff",
               ";border-radius:4px;border-style:solid;border-width:1px;color:",
               "#6124e2",
-              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+              ";cursor:pointer;font-size:14px;line-height:inherit;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
               " ",
               "&:hover{background-color:",
               "#d0bbff",

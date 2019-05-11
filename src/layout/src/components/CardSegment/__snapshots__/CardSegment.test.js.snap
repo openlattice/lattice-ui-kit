@@ -46,21 +46,21 @@ exports[`CardSegment snapshots Without child 1`] = `
 .c0 > header > h1 {
   font-size: 18px;
   font-weight: normal;
-  line-height: normal;
+  line-height: inherit;
   margin: 0;
 }
 
 .c0 > header > h2 {
   font-size: 16px;
   font-weight: normal;
-  line-height: normal;
+  line-height: inherit;
   margin: 0;
 }
 
 .c0 > header > h3 {
   font-size: 14px;
   font-weight: normal;
-  line-height: normal;
+  line-height: inherit;
   margin: 0;
 }
 
@@ -83,7 +83,7 @@ exports[`CardSegment snapshots Without child 1`] = `
             [Function],
             " & > header{display:flex;flex:1 0 auto;flex-direction:row;justify-content:space-between;",
             [Function],
-            " & > h1{font-size:18px;font-weight:normal;line-height:normal;margin:0;}& > h2{font-size:16px;font-weight:normal;line-height:normal;margin:0;}& > h3{font-size:14px;font-weight:normal;line-height:normal;margin:0;}}& button{margin:0 0 0 10px;}",
+            " & > h1{font-size:18px;font-weight:normal;line-height:inherit;margin:0;}& > h2{font-size:16px;font-weight:normal;line-height:inherit;margin:0;}& > h3{font-size:14px;font-weight:normal;line-height:inherit;margin:0;}}& button{margin:0 0 0 10px;}",
           ],
         },
         "displayName": "CardSegment",
@@ -147,21 +147,21 @@ exports[`CardSegment snapshots with > 1 child 1`] = `
 .c0 > header > h1 {
   font-size: 18px;
   font-weight: normal;
-  line-height: normal;
+  line-height: inherit;
   margin: 0;
 }
 
 .c0 > header > h2 {
   font-size: 16px;
   font-weight: normal;
-  line-height: normal;
+  line-height: inherit;
   margin: 0;
 }
 
 .c0 > header > h3 {
   font-size: 14px;
   font-weight: normal;
-  line-height: normal;
+  line-height: inherit;
   margin: 0;
 }
 
@@ -184,7 +184,7 @@ exports[`CardSegment snapshots with > 1 child 1`] = `
             [Function],
             " & > header{display:flex;flex:1 0 auto;flex-direction:row;justify-content:space-between;",
             [Function],
-            " & > h1{font-size:18px;font-weight:normal;line-height:normal;margin:0;}& > h2{font-size:16px;font-weight:normal;line-height:normal;margin:0;}& > h3{font-size:14px;font-weight:normal;line-height:normal;margin:0;}}& button{margin:0 0 0 10px;}",
+            " & > h1{font-size:18px;font-weight:normal;line-height:inherit;margin:0;}& > h2{font-size:16px;font-weight:normal;line-height:inherit;margin:0;}& > h3{font-size:14px;font-weight:normal;line-height:inherit;margin:0;}}& button{margin:0 0 0 10px;}",
           ],
         },
         "displayName": "CardSegment",
