@@ -4,12 +4,13 @@ import { action } from '@storybook/addon-actions';
 
 import Checkbox from '..';
 import { Card, CardSegment } from '../../layout';
+import CheckboxController from './components/CheckboxController';
 
 storiesOf('Checkbox', module)
-  .add('Stateless', () => (
+  .add('Uncontrolled', () => (
     <div>
       <h1>
-        Checkbox
+        Uncontrolled Checkbox
       </h1>
       <Card>
         <CardSegment>
@@ -24,7 +25,7 @@ storiesOf('Checkbox', module)
 
             <Checkbox id="story-disabled" label="Disabled" disabled />
 
-            <Checkbox id="story-disabledchecked" label="Disabled (checked)" disabled checked />
+            <Checkbox id="story-disabledchecked" label="Disabled (checked)" disabled defaultChecked />
 
             <Checkbox
                 id="story-eventhandlers"
@@ -37,4 +38,7 @@ storiesOf('Checkbox', module)
         </CardSegment>
       </Card>
     </div>
+  ))
+  .add('Controlled', () => (
+    <CheckboxController action={action} />
   ));
