@@ -5,17 +5,17 @@ import styled from 'styled-components';
 import { NEUTRALS, PURPLES, RED_1 } from '../../../colors';
 
 const Input = styled.input`
-  display: flex;
-  flex: 0 1 auto;
   background-color: ${NEUTRALS[8]}
   border-radius: 3px;
   border: 1px solid ${props => (props.invalid ? RED_1 : NEUTRALS[4])};
   box-shadow: 0;
   box-sizing: border-box;
   color: ${NEUTRALS[0]};
+  display: flex;
+  flex: 0 1 auto;
   font-size: 14px;
   height: 40px;
-  line-height: 19px;
+  line-height: inherit;
   padding: 12px 10px;
   text-overflow: ellipsis;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
