@@ -9,7 +9,7 @@ type Props = {
 }
 
 type State = {
-  checkboxesChecked :Map;
+  checkboxesChecked :Object;
 };
 
 class CheckboxController extends Component<Props, State> {
