@@ -39,13 +39,18 @@ class Checkbox extends Component<Props, State> {
     };
   }
 
-  onChange = (e :SyntheticInputEvent<HTMLInputElement>) => {
+  // Use prop 'checked' over state 'isChecked' if available
+  getIsChecked = () => {
+    const { checked } = this.props;
+    const { isChecked } = this.state;
+    return checked !== undefined ? checked : isChecked;
+  }
+
+  handleChange = (e :SyntheticInputEvent<HTMLInputElement>) => {
     const { disabled, onChange } = this.props;
     e.persist();
     if (!disabled) {
-      if (e.currentTarget.checked !== undefined) {
-        this.setState({ isChecked: e.currentTarget.checked });
-      }
+      this.setState({ isChecked: e.target.checked });
       if (onChange) {
         onChange(e);
       }
@@ -60,13 +65,14 @@ class Checkbox extends Component<Props, State> {
       onChange,
       ...rest
     } = this.props;
-    const { isChecked } = this.state;
+    const isChecked = this.getIsChecked();
+
     return (
       <CheckboxLabel>
         {label}
         <CheckboxInput
             checked={isChecked}
-            onChange={this.onChange}
+            onChange={this.handleChange}
             {...rest} />
         <CheckboxIndicator checked={isChecked} />
       </CheckboxLabel>
