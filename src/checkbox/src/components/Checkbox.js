@@ -35,6 +35,7 @@ class Checkbox extends Component<Props, State> {
     this.state = {
       isChecked: (checked !== undefined)
         ? checked
+        // $FlowFixMe optional prop provided by defaultProps
         : defaultChecked,
     };
   }
