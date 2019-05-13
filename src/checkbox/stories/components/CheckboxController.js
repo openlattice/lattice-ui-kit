@@ -27,7 +27,7 @@ class CheckboxController extends Component<Props, State> {
   handleChange = (e :SyntheticEvent<HTMLInputElement>) => {
     const { action } = this.props;
     const { checkboxesChecked } = this.state;
-    const { name, checked } = e.target;
+    const { name, checked } = e.currentTarget;
     this.setState({
       checkboxesChecked: {
         ...checkboxesChecked,
