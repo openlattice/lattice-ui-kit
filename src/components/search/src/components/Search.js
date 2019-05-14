@@ -9,7 +9,7 @@ import Input from '../../../../input';
 import Label from '../../../../label';
 import Button from '../../../../button';
 import DatePicker from '../../../../datetime/src/components/DatePicker';
-import { CheckboxSelect, Select } from '../../../../select';
+import { CheckboxSelect } from '../../../../select';
 import { Card, CardSegment } from '../../../../layout';
 
 import type { SearchFieldDefinition, FilterFieldDefinition } from '../../types';
