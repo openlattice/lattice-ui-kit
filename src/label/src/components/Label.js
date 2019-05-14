@@ -8,7 +8,6 @@ const Label = styled.label`
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
-  line-height: inherit;
   margin-top: 10px;
   margin-bottom: 5px;
 `;

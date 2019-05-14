@@ -169,7 +169,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   color: #8e929b;
   cursor: pointer;
   font-size: 14px;
-  line-height: inherit;
+  line-height: 18px;
   outline: none;
   padding: 10px 20px;
   text-align: center;
@@ -208,7 +208,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   color: #ffffff;
   cursor: pointer;
   font-size: 14px;
-  line-height: inherit;
+  line-height: 18px;
   outline: none;
   padding: 10px 20px;
   text-align: center;
@@ -450,7 +450,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   color: #8e929b;
   cursor: pointer;
   font-size: 14px;
-  line-height: inherit;
+  line-height: 18px;
   outline: none;
   padding: 10px 20px;
   text-align: center;
@@ -489,7 +489,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   color: #ffffff;
   cursor: pointer;
   font-size: 14px;
-  line-height: inherit;
+  line-height: 18px;
   outline: none;
   padding: 10px 20px;
   text-align: center;
@@ -1099,7 +1099,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           "#8045ff",
                                                           ";border-radius:4px;border-style:solid;border-width:1px;color:",
                                                           "#ffffff",
-                                                          ";cursor:pointer;font-size:14px;line-height:inherit;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+                                                          ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
                                                           " ",
                                                           "&:hover{background-color:",
                                                           "#6124e2",
@@ -1218,7 +1218,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           "#f0f0f7",
                                                           ";border-radius:4px;border-style:solid;border-width:1px;color:",
                                                           "#8e929b",
-                                                          ";cursor:pointer;font-size:14px;line-height:inherit;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+                                                          ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
                                                           " ",
                                                           "&:hover{background-color:",
                                                           "#dcdce7",
