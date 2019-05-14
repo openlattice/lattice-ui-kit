@@ -9,7 +9,7 @@ import Input from '../../../../input';
 import Label from '../../../../label';
 import Button from '../../../../button';
 import DatePicker from '../../../../datetime/src/components/DatePicker';
-import { Select } from '../../../../select';
+import { CheckboxSelect, Select } from '../../../../select';
 import { Card, CardSegment } from '../../../../layout';
 
 import type { SearchFieldDefinition, FilterFieldDefinition } from '../../types';
@@ -151,7 +151,7 @@ class Search extends Component<Props, State> {
     const { filterFields } = this.props;
     if (Array.isArray(filterFields) && filterFields.length) {
       const filterFieldComponents = filterFields.map((filter :FilterFieldDefinition) => {
-        const options = filter.value.map(v => ({ ...filter, label: v, value: v }));
+        const options = filter.options.map(v => ({ label: v, value: v }));
         return (
           <LabelWrapper key={`luk-filter-key-${filter.id}`}>
             <Label
@@ -160,10 +160,10 @@ class Search extends Component<Props, State> {
                 htmlFor={`luk-filter-${filter.id}`}>
               {filter.label}
             </Label>
-            <Select
+            <CheckboxSelect
                 inputId={`luk-filter-${filter.id}`}
                 borderless
-                defaultValue={options[0]}
+                isMulti
                 onChange={this.handleOnChangeFilter}
                 options={options} />
           </LabelWrapper>

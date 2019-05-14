@@ -12,5 +12,5 @@ export type FilterFieldDefinition = {|
   filter :(searchResult :Map, filter :FilterFieldDefinition) => boolean;
   id :string;
   label :string;
-  value :string[];
+  options :string[];
 |};

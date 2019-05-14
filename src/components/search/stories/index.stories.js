@@ -12,7 +12,7 @@ const filterFields = [
     },
     id: 'report-type',
     label: 'Report type',
-    value: ['All', 'Crisis Template', 'Follow-up'],
+    options: ['Crisis Template', 'Follow-up'],
   },
   {
     filter: (searchResult, filter) => {
@@ -21,7 +21,7 @@ const filterFields = [
     },
     id: 'badges',
     label: 'Badges',
-    value: ['Officer Safety', 'Substance use'],
+    options: ['Officer Safety', 'Substance use'],
   },
   {
     filter: (searchResult, filter) => {
@@ -30,7 +30,7 @@ const filterFields = [
     },
     id: 'submitter',
     label: 'Submitter',
-    value: ['solomon@openlattice.com'],
+    options: ['solomon@openlattice.com', 'smitty@werbenjagermanjensen.com', 'smitty@werbenjag1ermanjensen.com', 'smitty@werbenjage2rmanjensen.com', 'smitty@werbenjagermanje3nsen.com', 'smitty@werbenjagerma4njensen.com'],
   },
 ];
 

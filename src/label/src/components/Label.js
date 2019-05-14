@@ -9,7 +9,7 @@ const Label = styled.label`
   font-style: normal;
   font-weight: ${props => (props.bold ? 'bold' : 'normal')};
   letter-spacing: normal;
-  margin: 5px 0;
+  margin: 5px 5px 5px 0;
 `;
 
 export default Label;
