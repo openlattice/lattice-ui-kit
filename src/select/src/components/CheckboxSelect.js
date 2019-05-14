@@ -1,4 +1,6 @@
+// @flow
 import React from 'react';
+import type { Ref } from 'react';
 import Select from 'react-select';
 
 import withProps from '../../../components/withProps';
@@ -6,7 +8,15 @@ import selectStyles from '../../../style/selectStyles';
 import Checkbox from '../../../checkbox';
 import { NEUTRALS } from '../../../colors';
 
-const Option = (props) => {
+type OptionProps = {
+  innerProps :Object;
+  innerRef :Ref<any>;
+  isFocused :boolean;
+  isSelected :boolean;
+  label :string;
+}
+
+const Option = (props :OptionProps) => {
   const {
     innerProps,
     innerRef,
