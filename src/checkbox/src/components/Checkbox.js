@@ -10,6 +10,7 @@ type Props = {
   name ? :string;
   checked ? :boolean;
   defaultChecked ? :boolean;
+  readOnly ? :boolean;
 }
 
 type State = {
@@ -25,6 +26,7 @@ class Checkbox extends Component<Props, State> {
     label: undefined,
     name: undefined,
     onChange: undefined,
+    readOnly: undefined,
     value: undefined,
   };
 
@@ -48,9 +50,9 @@ class Checkbox extends Component<Props, State> {
   }
 
   handleChange = (e :SyntheticInputEvent<HTMLInputElement>) => {
-    const { disabled, onChange } = this.props;
+    const { disabled, onChange, readOnly } = this.props;
     e.persist();
-    if (!disabled) {
+    if (!(disabled || readOnly)) {
       this.setState({ isChecked: e.target.checked });
       if (onChange) {
         onChange(e);
@@ -64,12 +66,12 @@ class Checkbox extends Component<Props, State> {
       defaultChecked,
       label,
       onChange,
+      readOnly,
       ...rest
     } = this.props;
     const isChecked = this.getIsChecked();
-
     return (
-      <CheckboxLabel>
+      <CheckboxLabel readOnly={readOnly}>
         {label}
         <CheckboxInput
             checked={isChecked}

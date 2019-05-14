@@ -21,7 +21,9 @@ storiesOf('Checkbox', module)
           }}>
             <Checkbox id="story-default" label="Default" />
 
-            <Checkbox id="story-defaultchecked" label="Default (checked)" defaultChecked />
+            <Checkbox id="story-defaultchecked" label="defaultChecked" defaultChecked />
+
+            <Checkbox id="story-defaultcheckedreadonly" label="defaultChecked readOnly" defaultChecked readOnly />
 
             <Checkbox id="story-disabled" label="Disabled" disabled />
 

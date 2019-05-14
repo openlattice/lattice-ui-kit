@@ -4,13 +4,14 @@ import { NEUTRALS, PURPLES } from '../../../../colors';
 
 const CheckboxLabel = styled.label`
   display: inline-block;
-  position: relative;
   color: ${NEUTRALS[0]};
   font-size: 14px;
   font-weight: normal;
   margin: 10px 0;
   min-height: 20px;
   padding: 0 10px 0 30px;
+  pointer-events: ${props => (props.readOnly ? 'none' : 'auto')};
+  position: relative;
   vertical-align: middle;
 `;
 
