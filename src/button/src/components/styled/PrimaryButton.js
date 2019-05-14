@@ -11,7 +11,7 @@ const primaryStyle = css`
   color: ${WHITE};
   cursor: pointer;
   font-size: 14px;
-  line-height: inherit;
+  line-height: 18px;
   outline: none;
   padding: 10px 20px;
   text-align: center;

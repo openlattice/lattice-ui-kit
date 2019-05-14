@@ -14,9 +14,8 @@ const Input = styled.input`
   display: flex;
   flex: 0 1 auto;
   font-size: 14px;
-  height: 40px;
-  line-height: inherit;
-  padding: 12px 10px;
+  line-height: 18px;
+  padding: 10px 10px;
   text-overflow: ellipsis;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   width: 100%;

@@ -9,7 +9,6 @@ const Label = styled.label`
   font-style: normal;
   font-weight: ${props => (props.bold ? 'bold' : 'normal')};
   letter-spacing: normal;
-  line-height: inherit;
   margin: 5px 0;
 `;
 
