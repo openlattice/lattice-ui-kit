@@ -3,7 +3,7 @@ import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import Checkbox from './Checkbox';
-import { CheckboxIndicator, CheckboxInput, CheckboxLabel } from './styled';
+import { CheckboxIndicator, CheckboxInput } from './styled';
 
 import { PURPLES, NEUTRALS } from '../../../colors';
 
