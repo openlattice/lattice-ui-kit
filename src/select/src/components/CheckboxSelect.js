@@ -4,30 +4,25 @@ import Select from 'react-select';
 import withProps from '../../../components/withProps';
 import selectStyles from '../../../style/selectStyles';
 import Checkbox from '../../../checkbox';
-import { PURPLES } from '../../../colors';
+import { NEUTRALS } from '../../../colors';
 
 const Option = (props) => {
   const {
-    getStyles,
-    isSelected,
     innerProps,
     innerRef,
-    label
+    isFocused,
+    isSelected,
+    label,
   } = props;
 
   const style = {
-    ...getStyles('option', props),
-    padding: '0 12px',
-    ':active': {
-      backgroundColor: PURPLES[5]
-    }
+    padding: '0 10px',
+    backgroundColor: isFocused ? NEUTRALS[6] : 'white'
   };
-
-  console.log(props);
 
   return (
     <div ref={innerRef} {...innerProps} style={style}>
-      <Checkbox checked={isSelected} label={label} />
+      <Checkbox checked={isSelected} label={label} readOnly />
     </div>
   );
 };
