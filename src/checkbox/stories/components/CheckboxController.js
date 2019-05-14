@@ -18,6 +18,7 @@ class CheckboxController extends Component<Props, State> {
     checkboxesChecked: {
       default: false,
       checked: true,
+      checkedReadOnly: true,
       disabled: false,
       disabledChecked: true,
       event: false
@@ -63,12 +64,20 @@ class CheckboxController extends Component<Props, State> {
 
               <Checkbox
                   id="story-checked"
-                  label="Default
-                  (checked)"
+                  label="Checked"
                   name="checked"
                   checked={checkboxesChecked.checked}
                   onChange={this.handleChange}
                   value="checked" />
+
+              <Checkbox
+                  id="story-checkedreadonly"
+                  label="Checked readOnly"
+                  name="checkedReadOnly"
+                  readOnly
+                  checked={checkboxesChecked.checkedReadOnly}
+                  onChange={this.handleChange}
+                  value="checkedReadOnly" />
 
               <Checkbox
                   id="story-disabled"
