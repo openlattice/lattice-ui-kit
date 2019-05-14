@@ -7,6 +7,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Button',
   'Card',
   'CardSegment',
+  'Checkbox',
   'Colors',
   'Creatable',
   'DatePicker',
