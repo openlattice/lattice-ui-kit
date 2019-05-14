@@ -3,13 +3,14 @@
 exports[`Checkbox render matches snapshot 1`] = `
 .c0 {
   display: inline-block;
-  position: relative;
   color: #555e6f;
   font-size: 14px;
   font-weight: normal;
   margin: 10px 0;
   min-height: 20px;
   padding: 0 10px 0 30px;
+  pointer-events: auto;
+  position: relative;
   vertical-align: middle;
 }
 
@@ -69,12 +70,14 @@ exports[`Checkbox render matches snapshot 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "styled__CheckboxLabel-sc-22ovv7-0",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "display:inline-block;position:relative;color:",
+              "display:inline-block;color:",
               "#555e6f",
-              ";font-size:14px;font-weight:normal;margin:10px 0;min-height:20px;padding:0 10px 0 30px;vertical-align:middle;",
+              ";font-size:14px;font-weight:normal;margin:10px 0;min-height:20px;padding:0 10px 0 30px;pointer-events:",
+              [Function],
+              ";position:relative;vertical-align:middle;",
             ],
           },
           "displayName": "styled__CheckboxLabel",

@@ -3,7 +3,7 @@ import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import Checkbox from './Checkbox';
-import { CheckboxIndicator, CheckboxInput } from './styled';
+import { CheckboxIndicator, CheckboxInput, CheckboxLabel } from './styled';
 
 import { PURPLES, NEUTRALS } from '../../../colors';
 
@@ -29,7 +29,7 @@ describe('Checkbox', () => {
   });
 
   test('indicator styles should change appropriately', () => {
-    const wrapper = mount(<Checkbox defaultChecked />);
+    const wrapper = mount(<Checkbox />);
     const checkboxInput = wrapper.find(CheckboxInput);
 
     // focus/hover
@@ -105,6 +105,12 @@ describe('Checkbox', () => {
       wrapper.find(CheckboxInput).simulate('change', { target: { checked: true } });
       expect(wrapper.state().isChecked).toEqual(false);
     });
+
+    test('should not toggle isChecked when readOnly', () => {
+      const wrapper = mount(<Checkbox readOnly />);
+      wrapper.find(CheckboxInput).simulate('change', { target: { checked: true } });
+      expect(wrapper.state().isChecked).toEqual(false);
+    });
   });
 
   describe('Stateless <Checkbox checked />', () => {
@@ -136,6 +142,14 @@ describe('Checkbox', () => {
     test('should not call onChange when disabled', () => {
       const mockOnChange = jest.fn();
       const wrapper = mount(<Checkbox checked={false} onChange={mockOnChange} disabled />);
+
+      wrapper.find(CheckboxInput).simulate('change');
+      expect(mockOnChange).toHaveBeenCalledTimes(0);
+    });
+
+    test('should not call onChange when readOnly', () => {
+      const mockOnChange = jest.fn();
+      const wrapper = mount(<Checkbox checked={false} onChange={mockOnChange} readOnly />);
 
       wrapper.find(CheckboxInput).simulate('change');
       expect(mockOnChange).toHaveBeenCalledTimes(0);
