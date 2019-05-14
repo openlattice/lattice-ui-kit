@@ -12,12 +12,11 @@ const Input = styled.input`
   box-shadow: 0;
   color: ${NEUTRALS[0]};
   font-size: 14px;
-  height: 39px;
-  line-height: 19px;
+  line-height: 18px;
   text-overflow: ellipsis;
   width: 100%;
   border: 1px solid ${props => (props.invalid ? RED_1 : NEUTRALS[4])};
-  padding: 12px 10px;
+  padding: 10px 10px;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 
   :hover {
