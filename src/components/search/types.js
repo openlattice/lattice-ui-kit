@@ -1,5 +1,6 @@
 // @flow
 import type { Map } from 'immutable';
+import type { ReactSelectValue } from '../../select/types';
 
 export type SearchFieldDefinition = {|
   id :string;
@@ -9,7 +10,7 @@ export type SearchFieldDefinition = {|
 |};
 
 export type FilterFieldDefinition = {|
-  filter :(searchResult :Map, filter :FilterFieldDefinition) => boolean;
+  filterCallback :(searchResult :Map, selectedValues ? :ReactSelectValue) => boolean;
   id :string;
   label :string;
   options :string[];

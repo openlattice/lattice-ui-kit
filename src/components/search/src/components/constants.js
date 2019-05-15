@@ -1,26 +1,29 @@
 const mockFilterFields = [
   {
-    filter: (searchResult, filter) => {
-      if (filter.value === 'All') return true;
-      return searchResult.getIn([filter.id, 0]) === filter.value;
+    filterCallback: (searchResult, filter) => {
+      // if (filter.value === 'All') return true;
+      // return searchResult.getIn([filter.id, 0]) === filter.value;
+      return true;
     },
     id: 'report-type',
     label: 'Report type',
     options: ['Crisis Template', 'Follow-up'],
   },
   {
-    filter: (searchResult, filter) => {
-      if (filter.value === 'All') return true;
-      return searchResult.getIn([filter.id, 0]) === filter.value;
+    filterCallback: (searchResult, filter) => {
+      // if (filter.value === 'All') return true;
+      // return searchResult.getIn([filter.id, 0]) === filter.value;
+      return true;
     },
     id: 'badges',
     label: 'Badges',
     options: ['Officer Safety', 'Substance use'],
   },
   {
-    filter: (searchResult, filter) => {
-      if (filter.value === 'All') return true;
-      return searchResult.getIn([filter.id, 0]) === filter.value;
+    filterCallback: (searchResult, filter) => {
+      // if (filter.value === 'All') return true;
+      // return searchResult.getIn([filter.id, 0]) === filter.value;
+      return true;
     },
     id: 'submitter',
     label: 'Submitter',

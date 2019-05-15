@@ -1,6 +1,6 @@
 // @flow
-import React, { Component } from 'react';
-import { Map } from 'immutable';
+import * as React from 'react';
+import { Map, List } from 'immutable';
 
 import InputGrid from './styled/InputGrid';
 import Title from './styled/Title';
@@ -13,19 +13,23 @@ import { CheckboxSelect } from '../../../../select';
 import { Card, CardSegment } from '../../../../layout';
 
 import type { SearchFieldDefinition, FilterFieldDefinition } from '../../types';
+import type { ReactSelectEvent, ReactSelectValue } from '../../../../select/types';
 
 type Props = {
-  searchFields ? :SearchFieldDefinition[];
   filterFields ? :FilterFieldDefinition[];
-  title :string;
   onSearch :() => void;
+  searchFields ? :SearchFieldDefinition[];
+  searchResults ? :List<Map>;
+  title :string;
+  resultsComponent ? :React.ElementType;
 };
 
 type State = {
   searchFieldValues :Map;
+  filterFieldValues :Map;
 };
 
-class Search extends Component<Props, State> {
+class Search extends React.Component<Props, State> {
 
   static defaultProps = {
     searchFields: [
@@ -44,6 +48,8 @@ class Search extends Component<Props, State> {
       },
     ],
     filterFields: [],
+    searchResults: List(),
+    resultsComponent: () => (<div>results</div>)
   }
 
   constructor(props :Props) {
@@ -55,12 +61,9 @@ class Search extends Component<Props, State> {
     });
 
     this.state = {
-      searchFieldValues
+      searchFieldValues,
+      filterFieldValues: Map()
     };
-  }
-
-  state = {
-    searchFieldValues: Map()
   }
 
   handleOnChangeInput = (e :SyntheticEvent<HTMLInputElement>) => {
@@ -86,8 +89,45 @@ class Search extends Component<Props, State> {
     }
   }
 
-  handleOnChangeFilter = () => {
+  handleOnChangeFilter = (value ? :ReactSelectValue, event :ReactSelectEvent) => {
+    const { filterFieldValues } = this.state;
+    const { name } = event;
+    this.setState({
+      filterFieldValues: filterFieldValues.set(name, value)
+    });
+  }
 
+  renderFilteredSearchResults = () :React.ElementType => {
+    const { filterFields, searchResults, resultsComponent: ResultsComponent } = this.props;
+    const { filterFieldValues } = this.state;
+
+    let filteredResults = List();
+    if (searchResults && List.isList(searchResults)) {
+
+      filteredResults = searchResults.filter((searchResult :Map) => (
+        // accumulate matchAllFilters from all filterFieldValue keys where
+        filterFieldValues.reduce((matchAllFilters :boolean, selectedValue :ReactSelectValue, fieldName :string) => {
+
+          let filterFieldDef :?FilterFieldDefinition;
+          if (filterFields && filterFields.length) {
+            filterFieldDef = filterFields.find(
+              (definition :FilterFieldDefinition) => (definition.id === fieldName)
+            );
+          }
+
+          // there is matching filterFieldDef
+          if (filterFieldDef) {
+            // whose filterCallback yields truthy when provided the searchResult and selectedValue(s)
+            return matchAllFilters && filterFieldDef.filterCallback(searchResult, selectedValue);
+          }
+
+          return matchAllFilters;
+        }, true)
+      ));
+
+    }
+
+    return <ResultsComponent results={filteredResults} />;
   }
 
   renderSearchFieldsSegment = () => {
@@ -161,6 +201,7 @@ class Search extends Component<Props, State> {
               {filter.label}
             </Label>
             <CheckboxSelect
+                name={filter.id}
                 inputId={`luk-filter-${filter.id}`}
                 borderless
                 placeholder="Add filter"
@@ -187,6 +228,7 @@ class Search extends Component<Props, State> {
       <Card>
         { this.renderSearchFieldsSegment() }
         { this.renderFiltersSegment() }
+        { this.renderFilteredSearchResults() }
       </Card>
     );
   }
