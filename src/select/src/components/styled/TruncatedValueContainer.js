@@ -14,7 +14,7 @@ type Props = {
   children :React.ChildrenArray<any> | React.Element<any>
 };
 
-class ValueContainer extends React.Component<Props> {
+class TruncatedValueContainer extends React.Component<Props> {
 
   renderChildren = () => {
     const { children } = this.props;
@@ -25,7 +25,7 @@ class ValueContainer extends React.Component<Props> {
         1,
         newChildren.length - 2,
         <CountIndicator key="count-indicator">
-          {`+${newChildren.length - 2} Filter`}
+          {`+${newChildren.length - 2} more`}
         </CountIndicator>
       );
       return newChildren;
@@ -42,11 +42,10 @@ class ValueContainer extends React.Component<Props> {
     };
     return (
       <div style={style}>
-        
         { this.renderChildren() }
       </div>
     );
   }
 }
 
-export default ValueContainer;
+export default TruncatedValueContainer;

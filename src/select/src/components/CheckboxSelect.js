@@ -10,12 +10,11 @@ export const props = {
   styles: selectStyles,
   menuPlacement: 'auto',
   components: {
-    Option,
+    Option
   },
   isMulti: true,
   hideSelectedOptions: false,
   closeMenuOnSelect: false,
-  // controlShouldRenderValue: false,
 };
 
 export default withProps(Select, props);

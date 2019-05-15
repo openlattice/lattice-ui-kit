@@ -4,8 +4,10 @@ import { mount, shallow } from 'enzyme';
 
 import Search from './Search';
 import Input from '../../../../input';
+import { CheckboxSelect } from '../../../../select';
 import { Card } from '../../../../layout';
 import { DatePicker } from '../../../../datetime';
+import { mockFilterFields } from './constants';
 
 describe('Search', () => {
 
@@ -50,6 +52,11 @@ describe('Search', () => {
       test('should not render undefined title', () => {
         const wrapper = shallow(<Search />);
         expect(wrapper.find('Title')).toHaveLength(0);
+      });
+
+      test('should render provided filterFields', () => {
+        const wrapper = shallow(<Search filterFields={mockFilterFields} />);
+        expect(wrapper.find(CheckboxSelect)).toHaveLength(3);
       });
     });
 

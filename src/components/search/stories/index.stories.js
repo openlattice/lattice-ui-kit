@@ -3,36 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import Search from '../src/components/Search';
-
-const filterFields = [
-  {
-    filter: (searchResult, filter) => {
-      if (filter.value === 'All') return true;
-      return searchResult.getIn([filter.id, 0]) === filter.value;
-    },
-    id: 'report-type',
-    label: 'Report type',
-    options: ['Crisis Template', 'Follow-up'],
-  },
-  {
-    filter: (searchResult, filter) => {
-      if (filter.value === 'All') return true;
-      return searchResult.getIn([filter.id, 0]) === filter.value;
-    },
-    id: 'badges',
-    label: 'Badges',
-    options: ['Officer Safety', 'Substance use'],
-  },
-  {
-    filter: (searchResult, filter) => {
-      if (filter.value === 'All') return true;
-      return searchResult.getIn([filter.id, 0]) === filter.value;
-    },
-    id: 'submitter',
-    label: 'Submitter',
-    options: ['solomon@openlattice.com', 'smitty@werbenjagermanjensen.com', 'smitty@werbenjag1ermanjensen.com', 'smitty@werbenjage2rmanjensen.com', 'smitty@werbenjagermanje3nsen.com', 'smitty@werbenjagerma4njensen.com'],
-  },
-];
+import { mockFilterFields } from '../src/components/constants';
 
 storiesOf('Search', module)
   .add('Default Search fields', () => (
@@ -45,7 +16,8 @@ storiesOf('Search', module)
     <>
       <h1>Search Fields</h1>
       <Search
-          filterFields={filterFields}
+          title="Search"
+          filterFields={mockFilterFields}
           onSearch={action('search clicked')} />
     </>
   ));

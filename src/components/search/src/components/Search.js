@@ -132,7 +132,7 @@ class Search extends Component<Props, State> {
         { title && <Title>{title}</Title> }
         <form>
           {/* $FlowFixMe optional not recognizing defaultProps */}
-          <InputGrid columns={searchFields.length + 1}>
+          <InputGrid columns={searchFields.length + 1} align="flex-end">
             {searchFieldComponents}
             <Button
                 type="submit"
@@ -163,7 +163,7 @@ class Search extends Component<Props, State> {
             <CheckboxSelect
                 inputId={`luk-filter-${filter.id}`}
                 borderless
-                isMulti
+                placeholder="Add filter"
                 onChange={this.handleOnChangeFilter}
                 options={options} />
           </LabelWrapper>
@@ -171,8 +171,8 @@ class Search extends Component<Props, State> {
       });
 
       return (
-        <CardSegment padding="md">
-          <InputGrid columns={filterFields.length}>
+        <CardSegment vertical padding="sm">
+          <InputGrid columns={filterFields.length} align="flex-start">
             {filterFieldComponents}
           </InputGrid>
         </CardSegment>
