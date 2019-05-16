@@ -10,7 +10,7 @@ import type { ResultProps } from './Result';
 type Props = {
   results :List<Map>;
   resultLabels ? :Map;
-  resultComponent ? :React.ComponentType<ResultProps>
+  resultComponent ? :React.ComponentType<ResultProps>;
 };
 
 class SearchResults extends React.Component<Props> {
@@ -26,17 +26,23 @@ class SearchResults extends React.Component<Props> {
       dob: 'DOB',
       identifier: 'Identifier',
     }),
-    resultComponent: Result
+    resultComponent: Result,
   }
 
   renderResults = () :React.Node => {
-    const { results, resultLabels, resultComponent: ResultComponent } = this.props;
+    const {
+      resultComponent: ResultComponent,
+      resultLabels,
+      results,
+      ...rest
+    } = this.props;
     if (List.isList(results) && results.count() && ResultComponent) {
       return results.map((result :Map, index :number) => (
         <ResultComponent
             key={index.toString()}
             result={result}
-            resultLabels={resultLabels} />
+            resultLabels={resultLabels}
+            {...rest} />
       ));
     }
 

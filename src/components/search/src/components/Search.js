@@ -19,7 +19,8 @@ import type { ReactSelectEvent, ReactSelectValue } from '../../../../select/type
 type Props = {
   fetchState :any;
   filterFields ? :FilterFieldDefinition[];
-  onSearch :() => void;
+  onSearch :(searchFieldValues :Map) => void;
+  resultLabels :Map;
   searchFields ? :SearchFieldDefinition[];
   searchResults ? :List<Map>;
   searchResultsComponent ? :React.ComponentType<SearchResultsProps>;
@@ -86,8 +87,9 @@ class Search extends React.Component<Props, State> {
   handleOnClickSearchButton = (e :SyntheticEvent<HTMLButtonElement>) => {
     e.preventDefault();
     const { onSearch } = this.props;
+    const { searchFieldValues } = this.state;
     if (typeof onSearch === 'function') {
-      onSearch();
+      onSearch(searchFieldValues);
     }
   }
 

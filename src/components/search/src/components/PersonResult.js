@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { List, Map } from 'immutable';
 
 import Label from '../../../../label';
@@ -10,8 +10,12 @@ import { Card } from '../../../../layout';
 const ResultGrid = styled.div`
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: ${props => props.columns && css`repeat(${props.columns}, minmax(80px, 1fr))`};
+  grid-template-columns: minmax(80px, 2fr) minmax(80px, 2fr) minmax(80px, 2fr) 1fr 1fr;
   grid-gap: 20px 30px;
+
+  > div:last-child {
+    grid-column: 3 / -1;
+  }
 `;
 
 const ResultWrapper = styled.div`
@@ -25,6 +29,12 @@ const ResultDetails = styled.div`
   flex: 1;
 `;
 
+// const Picture = styled.div`
+//   height: 100px;
+//   width: 100px;
+//   background-color: grey;
+// `;
+
 const Truncated = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
@@ -34,15 +44,13 @@ const Truncated = styled.div`
 type Props = {
   result ? :Map;
   resultLabels ? :Map;
-  resultColumns ? :number;
 }
 
 class Result extends Component<Props> {
 
   static defaultProps = {
     result: List(),
-    resultLabels: Map(),
-    resultColumns: 4,
+    resultLabels: Map()
   }
 
   transformResultToDetailsList = (result :Map) => {
@@ -64,14 +72,14 @@ class Result extends Component<Props> {
   }
 
   render() {
-    const { result, resultColumns } = this.props;
+    const { result } = this.props;
     const details :List<Map> = this.transformResultToDetailsList(result);
 
     return (
       <Card>
         <ResultWrapper>
           <ResultDetails>
-            <ResultGrid columns={resultColumns}>
+            <ResultGrid>
               { details
                 && details.map((detail :Map, index :number) => (
                   <div key={index.toString()}>

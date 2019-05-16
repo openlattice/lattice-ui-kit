@@ -1,4 +1,5 @@
 import React from 'react';
+import { Map } from 'immutable';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
@@ -23,7 +24,13 @@ storiesOf('Search', module)
           title="Search"
           filterFields={mockFilterFields}
           onSearch={action('search clicked')}
-          searchResults={mockSearchResultsForReports} />
+          searchResults={mockSearchResultsForReports}
+          resultLabels={Map({
+            reportType: 'Report type',
+            badges: 'Badges',
+            submitter: 'Submitter'
+          })}
+          resultColumns={3} />
     </>
   ))
   .add('Search fields with results', () => (
