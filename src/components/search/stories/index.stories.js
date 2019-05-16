@@ -22,7 +22,8 @@ storiesOf('Search', module)
       <Search
           title="Search"
           filterFields={mockFilterFields}
-          onSearch={action('search clicked')} />
+          onSearch={action('search clicked')}
+          searchResults={mockSearchResultsForReports} />
     </>
   ))
   .add('Search fields with results', () => (

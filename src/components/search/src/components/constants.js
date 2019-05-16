@@ -70,133 +70,37 @@ const mockSearchResultsForReports = List([
   }),
 ]);
 
-const mockSearchResultsForPeople = fromJS([
-  [
-    {
-      value: 'Werbenjagermanjensen',
-      label: 'Last name',
-      key: 'lastName',
-    },
-    {
-      value: 'Smitty',
-      label: 'First name',
-      key: 'firstName',
-    },
-    {
-      value: '',
-      label: 'Middle name',
-      key: 'middleName',
-    },
-    {
-      value: 'M',
-      label: 'Sex',
-      key: 'sex',
-    },
-    {
-      value: 'M',
-      label: 'Gender',
-      key: 'gender',
-    },
-    {
-      value: 'Fish',
-      label: 'Ethnicity',
-      key: 'ethnicity',
-    },
-    {
-      value: '02/22/2002',
-      label: 'DOB',
-      key: 'dob',
-    },
-    {
-      value: '365ba027-0c71-47d1-a5f4-61346ed96d8c',
-      label: 'Identifier',
-      key: 'identifier',
-    },
-  ],
-  [
-    {
-      value: 'Thornton',
-      label: 'Last name',
-      key: 'lastName',
-    },
-    {
-      value: 'Cameron',
-      label: 'First name',
-      key: 'firstName',
-    },
-    {
-      value: 'Orville',
-      label: 'Middle name',
-      key: 'middleName',
-    },
-    {
-      value: 'M',
-      label: 'Sex',
-      key: 'sex',
-    },
-    {
-      value: 'M',
-      label: 'Gender',
-      key: 'gender',
-    },
-    {
-      value: 'Black / African American',
-      label: 'Ethnicity',
-      key: 'ethnicity',
-    },
-    {
-      value: '01/05/1982',
-      label: 'DOB',
-      key: 'dob',
-    },
-    {
-      value: '565ba027-0c71-47d1-a5f4-61346ed96d8c',
-      label: 'Identifier',
-      key: 'identifier',
-    },
-  ],
-  [
-    {
-      value: 'Gerner',
-      label: 'Last name',
-      key: 'lastName',
-    },
-    {
-      value: 'Timothy',
-      label: 'First name',
-      key: 'firstName',
-    },
-    {
-      value: 'Pernell',
-      label: 'Middle name',
-      key: 'middleName',
-    },
-    {
-      value: 'M',
-      label: 'Sex',
-      key: 'sex',
-    },
-    {
-      value: 'M',
-      label: 'Gender',
-      key: 'gender',
-    },
-    {
-      value: 'Native Hawaiian or Other Pacific Islander',
-      label: 'Ethnicity',
-      key: 'ethnicity',
-    },
-    {
-      value: '10/02/1991',
-      label: 'DOB',
-      key: 'dob',
-    },
-    {
-      value: '465ba027-0c71-47d1-a5f4-61346ed96d8c',
-      label: 'Identifier',
-      key: 'identifier',
-    },
-  ]
+const mockSearchResultsForPeople = List([
+  Map({
+    lastName: 'Werbenjagermanjensen',
+    firstName: 'Smitty',
+    middleName: '',
+    sex: 'M',
+    gender: 'M',
+    ethnicity: 'Fish',
+    dob: '02/22/2002',
+    identifier: '365ba027-0c71-47d1-a5f4-61346ed96d8c',
+  }),
+  Map({
+    lastName: 'Thornton',
+    firstName: 'Cameron',
+    middleName: 'Orville',
+    sex: 'M',
+    gender: 'M',
+    ethnicity: 'Black / African American',
+    dob: '01/05/1982',
+    identifier: '465ba027-0c71-47d1-a5f4-61346ed96d8c',
+  }),
+  Map({
+    lastName: 'Gerner',
+    firstName: 'Timothy',
+    middleName: 'Pernell',
+    sex: 'M',
+    gender: 'M',
+    ethnicity: 'Native Hawaiian or Other Pacific Islander',
+    dob: '10/02/1991',
+    identifier: '565ba027-0c71-47d1-a5f4-61346ed96d8c',
+  })
 ]);
 
 export {

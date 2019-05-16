@@ -1,21 +1,55 @@
 // @flow
 
 import React, { Component } from 'react';
-import { List } from 'immutable';
+import { List, Map } from 'immutable';
 
 import ResultCard from './ResultCard';
 import { Card, CardStack } from '../../../../layout';
 
 type Props = {
-  results :List<List>;
-  fetchState :any;
+  results :List<Map>;
+  resultLabels ? :Map;
 };
 
 class SearchResultsContainer extends Component<Props> {
+
+  static defaultProps = {
+    resultLabels: Map({
+      lastName: 'Last name',
+      firstName: 'First name',
+      middleName: 'Middle name',
+      sex: 'Sex',
+      gender: 'Gender',
+      ethnicity: 'Ethnicity',
+      dob: 'DOB',
+      identifier: 'Identifier',
+    })
+  }
+
+  transformResultToDetailsObject = (result :Map) => {
+    const { resultLabels } = this.props;
+    const labels = result.map((value :any, key :string) => {
+      let label = key;
+
+      if (resultLabels && Map.isMap(resultLabels)) {
+        label = resultLabels.get(key, key);
+      }
+
+      return Map({
+        label,
+        value,
+        key
+      });
+    });
+    return labels.toList();
+  }
+
   renderResults = () => {
     const { results } = this.props;
     if (List.isList(results) && results.count()) {
-      return results.map((result :List, index :number) => <ResultCard key={index.toString()} result={result} />);
+      return results.map((result :Map, index :number) => (
+        <ResultCard key={index.toString()} result={this.transformResultToDetailsObject(result)} />
+      ));
     }
 
     return <Card>no results</Card>;

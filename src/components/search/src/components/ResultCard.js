@@ -52,16 +52,17 @@ const ResultCard = ({ result } :Props) => {
         <Picture />
         <ResultDetails>
           <ResultGrid>
-            { List.isList(result) && result.map((detail :Map, index :number) => (
-              <div key={index.toString()}>
-                <Label bold>
-                  {detail.get('label', '')}
-                </Label>
-                <Truncated>
-                  {detail.get('value', '')}
-                </Truncated>
-              </div>
-            ))
+            { result
+              && result.map((detail :Map, index :number) => (
+                <div key={index.toString()}>
+                  <Label bold>
+                    {detail.get('label', '')}
+                  </Label>
+                  <Truncated>
+                    {detail.get('value', '')}
+                  </Truncated>
+                </div>
+              ))
             }
           </ResultGrid>
         </ResultDetails>
