@@ -3,7 +3,11 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import Search from '../src/components/Search';
-import { mockFilterFields } from '../src/components/constants';
+import {
+  mockFilterFields,
+  mockSearchResultsForPeople,
+  mockSearchResultsForReports
+} from '../src/components/constants';
 
 storiesOf('Search', module)
   .add('Default Search fields', () => (
@@ -19,5 +23,15 @@ storiesOf('Search', module)
           title="Search"
           filterFields={mockFilterFields}
           onSearch={action('search clicked')} />
+    </>
+  ))
+  .add('Search fields with results', () => (
+    <>
+      <h1>Search Fields</h1>
+      <Search
+          title="Search"
+          // filterFields={mockFilterFields}
+          onSearch={action('search clicked')}
+          searchResults={mockSearchResultsForPeople} />
     </>
   ));

@@ -2,16 +2,17 @@
 import * as React from 'react';
 import { Map, List } from 'immutable';
 
+import SearchResultsContainer from './SearchResultsContainer';
 import InputGrid from './styled/InputGrid';
 import Title from './styled/Title';
-import LabelWrapper from './styled/LabelWrapper';
 import Input from '../../../../input';
 import Label from '../../../../label';
 import Button from '../../../../button';
 import DatePicker from '../../../../datetime/src/components/DatePicker';
 import { CheckboxSelect } from '../../../../select';
-import { Card, CardSegment } from '../../../../layout';
+import { Card, CardSegment, CardStack } from '../../../../layout';
 
+import type { SearchResultsProps } from './SearchResultsContainer';
 import type { SearchFieldDefinition, FilterFieldDefinition } from '../../types';
 import type { ReactSelectEvent, ReactSelectValue } from '../../../../select/types';
 
@@ -21,7 +22,8 @@ type Props = {
   searchFields ? :SearchFieldDefinition[];
   searchResults ? :List<Map>;
   title :string;
-  resultsComponent ? :React.ElementType;
+  resultsComponent ? :React.Element<any>;
+  fetchState :any;
 };
 
 type State = {
@@ -49,7 +51,7 @@ class Search extends React.Component<Props, State> {
     ],
     filterFields: [],
     searchResults: List(),
-    resultsComponent: () => (<div>results</div>)
+    resultsComponent: SearchResultsContainer
   }
 
   constructor(props :Props) {
@@ -97,8 +99,13 @@ class Search extends React.Component<Props, State> {
     });
   }
 
-  renderFilteredSearchResults = () :React.ElementType => {
-    const { filterFields, searchResults, resultsComponent: ResultsComponent } = this.props;
+  renderFilteredSearchResults = () :React.Element<React.ElementType<SearchResultsProps>> => {
+    const {
+      fetchState,
+      filterFields,
+      resultsComponent: ResultsComponent,
+      searchResults,
+    } = this.props;
     const { filterFieldValues } = this.state;
 
     let filteredResults = List();
@@ -127,7 +134,7 @@ class Search extends React.Component<Props, State> {
 
     }
 
-    return <ResultsComponent results={filteredResults} />;
+    return <ResultsComponent results={filteredResults} fetchState={fetchState} />;
   }
 
   renderSearchFieldsSegment = () => {
@@ -193,7 +200,7 @@ class Search extends React.Component<Props, State> {
       const filterFieldComponents = filterFields.map((filter :FilterFieldDefinition) => {
         const options = filter.options.map(v => ({ label: v, value: v }));
         return (
-          <LabelWrapper key={`luk-filter-key-${filter.id}`}>
+          <div key={`luk-filter-key-${filter.id}`}>
             <Label
                 bold
                 key={filter.id}
@@ -207,7 +214,7 @@ class Search extends React.Component<Props, State> {
                 placeholder="Add filter"
                 onChange={this.handleOnChangeFilter}
                 options={options} />
-          </LabelWrapper>
+          </div>
         );
       });
 
@@ -225,11 +232,13 @@ class Search extends React.Component<Props, State> {
 
   render() {
     return (
-      <Card>
-        { this.renderSearchFieldsSegment() }
-        { this.renderFiltersSegment() }
+      <CardStack>
+        <Card>
+          { this.renderSearchFieldsSegment() }
+          { this.renderFiltersSegment() }
+        </Card>
         { this.renderFilteredSearchResults() }
-      </Card>
+      </CardStack>
     );
   }
 }
