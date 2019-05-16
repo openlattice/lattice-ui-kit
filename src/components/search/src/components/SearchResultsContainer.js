@@ -9,6 +9,7 @@ import { Card, CardStack } from '../../../../layout';
 type Props = {
   results :List<Map>;
   resultLabels ? :Map;
+  resultComponent :any;
 };
 
 class SearchResultsContainer extends Component<Props> {
@@ -45,10 +46,10 @@ class SearchResultsContainer extends Component<Props> {
   }
 
   renderResults = () => {
-    const { results } = this.props;
+    const { results, resultLabels } = this.props;
     if (List.isList(results) && results.count()) {
       return results.map((result :Map, index :number) => (
-        <ResultCard key={index.toString()} result={this.transformResultToDetailsObject(result)} />
+        <ResultCard key={index.toString()} result={result} resultLabels={resultLabels} />
       ));
     }
 

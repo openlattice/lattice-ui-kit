@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import { List, Map } from 'immutable';
 
@@ -10,12 +10,13 @@ import { Card } from '../../../../layout';
 const ResultGrid = styled.div`
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: minmax(80px, 2fr) minmax(80px, 2fr) minmax(80px, 2fr) 1fr 1fr
+  grid-template-columns: repeat(4, minmax(80px, 1fr));
+  /* minmax(80px, 2fr) minmax(80px, 2fr) minmax(80px, 2fr) 1fr 1fr */
   grid-gap: 20px 30px;
 
-  > div:last-child {
+  /* > div:last-child {
     grid-column: 3 / -1;
-  }
+  } */
 `;
 
 const ResultWrapper = styled.div`
@@ -42,37 +43,62 @@ const Truncated = styled.div`
 `;
 
 type Props = {
-  result ? :List<Map>;
+  result ? :Map;
+  resultLabels ? :Map;
 }
 
-const ResultCard = ({ result } :Props) => {
-  return (
-    <Card>
-      <ResultWrapper>
-        <Picture />
-        <ResultDetails>
-          <ResultGrid>
-            { result
-              && result.map((detail :Map, index :number) => (
-                <div key={index.toString()}>
-                  <Label bold>
-                    {detail.get('label', '')}
-                  </Label>
-                  <Truncated>
-                    {detail.get('value', '')}
-                  </Truncated>
-                </div>
-              ))
-            }
-          </ResultGrid>
-        </ResultDetails>
-      </ResultWrapper>
-    </Card>
-  );
-};
+class ResultCard extends Component<Props> {
 
-ResultCard.defaultProps = {
-  result: List()
-};
+  static defaultProps = {
+    result: List(),
+    resultLabels: Map()
+  }
+
+  transformResultToDetailsList = (result :Map) => {
+    const { resultLabels } = this.props;
+    const labels = result.map((value :any, key :string) => {
+      let label = key;
+
+      if (resultLabels && Map.isMap(resultLabels)) {
+        label = resultLabels.get(key, key);
+      }
+
+      return Map({
+        label,
+        value,
+        key
+      });
+    });
+    return labels.toList();
+  }
+
+  render() {
+    const { result } = this.props;
+    const details :List<Map> = this.transformResultToDetailsList(result);
+
+    return (
+      <Card>
+        <ResultWrapper>
+          <ResultDetails>
+            <ResultGrid>
+              { details
+                && details.map((detail :Map, index :number) => (
+                  <div key={index.toString()}>
+                    <Label bold>
+                      {detail.get('label', '')}
+                    </Label>
+                    <Truncated>
+                      {detail.get('value', '')}
+                    </Truncated>
+                  </div>
+                ))
+              }
+            </ResultGrid>
+          </ResultDetails>
+        </ResultWrapper>
+      </Card>
+    );
+  }
+}
 
 export default ResultCard;

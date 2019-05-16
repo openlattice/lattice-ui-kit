@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { Map, List } from 'immutable';
 
-import SearchResultsContainer from './SearchResultsContainer';
+import DefaultSearchResultsContainer from './SearchResultsContainer';
 import InputGrid from './styled/InputGrid';
 import Title from './styled/Title';
 import Input from '../../../../input';
@@ -22,7 +22,7 @@ type Props = {
   searchFields ? :SearchFieldDefinition[];
   searchResults ? :List<Map>;
   title :string;
-  resultsComponent ? :React.Element<any>;
+  searchResultsContainer ? :React.Element<any>;
   fetchState :any;
 };
 
@@ -51,7 +51,7 @@ class Search extends React.Component<Props, State> {
     ],
     filterFields: [],
     searchResults: List(),
-    resultsComponent: SearchResultsContainer
+    searchResultsContainer: DefaultSearchResultsContainer
   }
 
   constructor(props :Props) {
@@ -103,7 +103,7 @@ class Search extends React.Component<Props, State> {
     const {
       fetchState,
       filterFields,
-      resultsComponent: ResultsComponent,
+      searchResultsContainer: SearchResultsContainer,
       searchResults,
     } = this.props;
     const { filterFieldValues } = this.state;
@@ -134,7 +134,7 @@ class Search extends React.Component<Props, State> {
 
     }
 
-    return <ResultsComponent results={filteredResults} fetchState={fetchState} />;
+    return <SearchResultsContainer results={filteredResults} fetchState={fetchState} />;
   }
 
   renderSearchFieldsSegment = () => {

@@ -47,7 +47,9 @@ const mockSearchResultsForReports = List([
   Map({
     reportType: 'Follow-up',
     badges: ['Officer Safety', 'Substance use'],
-    submitter: 'squidward@bubblebowl.com'
+    submitter: 'squidward@bubblebowl.com',
+    something: 'squidward@bubblebowl.com',
+    else: 'squidward@bubblebowl.com'
   }),
   Map({
     reportType: 'Crisis Template',
@@ -89,7 +91,7 @@ const mockSearchResultsForPeople = List([
     gender: 'M',
     ethnicity: 'Black / African American',
     dob: '01/05/1982',
-    identifier: '465ba027-0c71-47d1-a5f4-61346ed96d8c',
+    identifier: '565ba027-0c71-47d1-a5f4-61346ed96d8c',
   }),
   Map({
     lastName: 'Gerner',
@@ -99,7 +101,7 @@ const mockSearchResultsForPeople = List([
     gender: 'M',
     ethnicity: 'Native Hawaiian or Other Pacific Islander',
     dob: '10/02/1991',
-    identifier: '565ba027-0c71-47d1-a5f4-61346ed96d8c',
+    identifier: '465ba027-0c71-47d1-a5f4-61346ed96d8c',
   })
 ]);
 
