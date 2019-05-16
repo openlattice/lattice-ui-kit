@@ -48,8 +48,6 @@ const mockSearchResultsForReports = List([
     reportType: 'Follow-up',
     badges: ['Officer Safety', 'Substance use'],
     submitter: 'squidward@bubblebowl.com',
-    something: 'squidward@bubblebowl.com',
-    else: 'squidward@bubblebowl.com'
   }),
   Map({
     reportType: 'Crisis Template',
