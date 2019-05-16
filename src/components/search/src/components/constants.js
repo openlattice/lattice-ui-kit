@@ -1,10 +1,18 @@
-import { List, Map, fromJS } from 'immutable';
+// @flow
+import { List, Map } from 'immutable';
+import intersection from 'lodash/intersection';
 
+// TODO: Create class for filterDefinition
 const mockFilterFields = [
   {
-    filterCallback: (searchResult, filter) => {
-      // if (filter.value === 'All') return true;
-      // return searchResult.getIn([filter.id, 0]) === filter.value;
+    filterCallback: (searchResult :Map, selectedOptions :Object[]) => {
+      const selectedValues = selectedOptions.map(option => option.value);
+      const searchResultValue = searchResult.get('reportType');
+
+      if (selectedValues.length) {
+        return selectedValues.includes(searchResultValue);
+      }
+
       return true;
     },
     id: 'reportType',
@@ -12,9 +20,14 @@ const mockFilterFields = [
     options: ['Crisis Template', 'Follow-up'],
   },
   {
-    filterCallback: (searchResult, filter) => {
-      // if (filter.value === 'All') return true;
-      // return searchResult.getIn([filter.id, 0]) === filter.value;
+    filterCallback: (searchResult :Map, selectedOptions :Object[]) => {
+      const selectedValues = selectedOptions.map(option => option.value);
+      const searchResultValue :any[] = searchResult.get('badges', []);
+
+      if (selectedValues.length) {
+        return intersection(searchResultValue, selectedValues).length > 0;
+      }
+
       return true;
     },
     id: 'badges',
@@ -22,9 +35,14 @@ const mockFilterFields = [
     options: ['Officer Safety', 'Substance use'],
   },
   {
-    filterCallback: (searchResult, filter) => {
-      // if (filter.value === 'All') return true;
-      // return searchResult.getIn([filter.id, 0]) === filter.value;
+    filterCallback: (searchResult :Map, selectedOptions :Object[]) => {
+      const selectedValues = selectedOptions.map(option => option.value);
+      const searchResultValue = searchResult.get('submitter');
+
+      if (selectedValues.length) {
+        return selectedValues.includes(searchResultValue);
+      }
+
       return true;
     },
     id: 'submitter',

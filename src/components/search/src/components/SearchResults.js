@@ -9,7 +9,7 @@ import { Card, CardStack } from '../../../../layout';
 type Props = {
   results :List<Map>;
   resultLabels ? :Map;
-  resultComponent :any;
+  resultComponent ? :any;
 };
 
 class SearchResultsContainer extends Component<Props> {
@@ -24,7 +24,8 @@ class SearchResultsContainer extends Component<Props> {
       ethnicity: 'Ethnicity',
       dob: 'DOB',
       identifier: 'Identifier',
-    })
+    }),
+    resultComponent: ResultCard
   }
 
   transformResultToDetailsObject = (result :Map) => {
@@ -46,10 +47,13 @@ class SearchResultsContainer extends Component<Props> {
   }
 
   renderResults = () => {
-    const { results, resultLabels } = this.props;
+    const { results, resultLabels, resultComponent: ResultComponent } = this.props;
     if (List.isList(results) && results.count()) {
       return results.map((result :Map, index :number) => (
-        <ResultCard key={index.toString()} result={result} resultLabels={resultLabels} />
+        <ResultComponent
+            key={index.toString()}
+            result={result}
+            resultLabels={resultLabels} />
       ));
     }
 
