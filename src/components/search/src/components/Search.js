@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { Map, List } from 'immutable';
 
-import DefaultSearchResultsContainer from './SearchResultsContainer';
+import DefaultSearchResultsContainer from './SearchResults';
 import InputGrid from './styled/InputGrid';
 import Title from './styled/Title';
 import Input from '../../../../input';
@@ -12,7 +12,7 @@ import DatePicker from '../../../../datetime/src/components/DatePicker';
 import { CheckboxSelect } from '../../../../select';
 import { Card, CardSegment, CardStack } from '../../../../layout';
 
-import type { SearchResultsProps } from './SearchResultsContainer';
+import type { SearchResultsProps } from './SearchResults';
 import type { SearchFieldDefinition, FilterFieldDefinition } from '../../types';
 import type { ReactSelectEvent, ReactSelectValue } from '../../../../select/types';
 

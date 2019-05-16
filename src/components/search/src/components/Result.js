@@ -30,11 +30,11 @@ const ResultDetails = styled.div`
   flex: 1;
 `;
 
-const Picture = styled.div`
-  height: 100px;
-  width: 100px;
-  background-color: grey;
-`;
+// const Picture = styled.div`
+//   height: 100px;
+//   width: 100px;
+//   background-color: grey;
+// `;
 
 const Truncated = styled.div`
   overflow: hidden;

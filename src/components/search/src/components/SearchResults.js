@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { List, Map } from 'immutable';
 
-import ResultCard from './ResultCard';
+import ResultCard from './Result';
 import { Card, CardStack } from '../../../../layout';
 
 type Props = {
