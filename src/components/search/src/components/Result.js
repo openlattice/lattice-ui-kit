@@ -47,7 +47,7 @@ type Props = {
   resultLabels ? :Map;
 }
 
-class ResultCard extends Component<Props> {
+class Result extends Component<Props> {
 
   static defaultProps = {
     result: List(),
@@ -101,4 +101,5 @@ class ResultCard extends Component<Props> {
   }
 }
 
-export default ResultCard;
+export default Result;
+export type { Props as ResultProps };

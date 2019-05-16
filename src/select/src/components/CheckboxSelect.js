@@ -2,7 +2,7 @@
 import Select from 'react-select';
 
 import Option from './styled/Option';
-import TruncatedValueContainer from './styled/TruncatedValueContainer';
+// import TruncatedValueContainer from './styled/TruncatedValueContainer';
 
 import withProps from '../../../components/withProps';
 import selectStyles from '../../../style/selectStyles';
@@ -12,7 +12,7 @@ export const props = {
   menuPlacement: 'auto',
   components: {
     Option,
-    ValueContainer: TruncatedValueContainer
+    // ValueContainer: TruncatedValueContainer
   },
   isMulti: true,
   hideSelectedOptions: false,

@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { Map, List } from 'immutable';
 
-import DefaultSearchResultsContainer from './SearchResults';
+import DefaultSearchResults from './SearchResults';
 import InputGrid from './styled/InputGrid';
 import Title from './styled/Title';
 import Input from '../../../../input';
@@ -17,13 +17,13 @@ import type { SearchFieldDefinition, FilterFieldDefinition } from '../../types';
 import type { ReactSelectEvent, ReactSelectValue } from '../../../../select/types';
 
 type Props = {
+  fetchState :any;
   filterFields ? :FilterFieldDefinition[];
   onSearch :() => void;
   searchFields ? :SearchFieldDefinition[];
   searchResults ? :List<Map>;
+  searchResultsComponent ? :React.ComponentType<SearchResultsProps>;
   title :string;
-  searchResultsContainer ? :React.Element<any>;
-  fetchState :any;
 };
 
 type State = {
@@ -51,7 +51,7 @@ class Search extends React.Component<Props, State> {
     ],
     filterFields: [],
     searchResults: List(),
-    searchResultsContainer: DefaultSearchResultsContainer
+    searchResultsComponent: DefaultSearchResults
   }
 
   constructor(props :Props) {
@@ -99,12 +99,15 @@ class Search extends React.Component<Props, State> {
     });
   }
 
-  renderFilteredSearchResults = () :React.Element<React.ElementType<SearchResultsProps>> => {
+  renderFilteredSearchResults = () :React.Node => {
     const {
-      fetchState,
       filterFields,
-      searchResultsContainer: SearchResultsContainer,
+      onSearch,
+      searchFields,
       searchResults,
+      searchResultsComponent: SearchResults,
+      title,
+      ...rest
     } = this.props;
     const { filterFieldValues } = this.state;
 
@@ -134,7 +137,15 @@ class Search extends React.Component<Props, State> {
 
     }
 
-    return <SearchResultsContainer results={filteredResults} fetchState={fetchState} />;
+    if (SearchResults) {
+      return (
+        <SearchResults
+            results={filteredResults}
+            {...rest} />
+      );
+    }
+
+    return null;
   }
 
   renderSearchFieldsSegment = () => {

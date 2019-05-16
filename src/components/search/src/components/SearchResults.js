@@ -1,18 +1,19 @@
 // @flow
 
-import React, { Component } from 'react';
+import * as React from 'react';
 import { List, Map } from 'immutable';
 
-import ResultCard from './Result';
+import Result from './Result';
 import { Card, CardStack } from '../../../../layout';
+import type { ResultProps } from './Result';
 
 type Props = {
   results :List<Map>;
   resultLabels ? :Map;
-  resultComponent ? :any;
+  resultComponent ? :React.ComponentType<ResultProps>
 };
 
-class SearchResultsContainer extends Component<Props> {
+class SearchResults extends React.Component<Props> {
 
   static defaultProps = {
     resultLabels: Map({
@@ -25,30 +26,12 @@ class SearchResultsContainer extends Component<Props> {
       dob: 'DOB',
       identifier: 'Identifier',
     }),
-    resultComponent: ResultCard
+    resultComponent: Result
   }
 
-  transformResultToDetailsObject = (result :Map) => {
-    const { resultLabels } = this.props;
-    const labels = result.map((value :any, key :string) => {
-      let label = key;
-
-      if (resultLabels && Map.isMap(resultLabels)) {
-        label = resultLabels.get(key, key);
-      }
-
-      return Map({
-        label,
-        value,
-        key
-      });
-    });
-    return labels.toList();
-  }
-
-  renderResults = () => {
+  renderResults = () :React.Node => {
     const { results, resultLabels, resultComponent: ResultComponent } = this.props;
-    if (List.isList(results) && results.count()) {
+    if (List.isList(results) && results.count() && ResultComponent) {
       return results.map((result :Map, index :number) => (
         <ResultComponent
             key={index.toString()}
@@ -69,7 +52,7 @@ class SearchResultsContainer extends Component<Props> {
   }
 }
 
-export default SearchResultsContainer;
+export default SearchResults;
 export type {
   Props as SearchResultsProps
 };
