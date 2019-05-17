@@ -2,25 +2,27 @@
 import * as React from 'react';
 import { Map, List } from 'immutable';
 
+import DefaultResultComponent from './Result';
 import DefaultSearchResults from './SearchResults';
-import InputGrid from './styled/InputGrid';
-import Title from './styled/Title';
+import Button from '../../../../button';
 import Input from '../../../../input';
 import Label from '../../../../label';
-import Button from '../../../../button';
 import DatePicker from '../../../../datetime/src/components/DatePicker';
+import { InputGrid, Title } from './styled/StyledSearchComponents';
 import { CheckboxSelect } from '../../../../select';
 import { Card, CardSegment, CardStack } from '../../../../layout';
 
 import type { SearchResultsProps } from './SearchResults';
+import type { ResultProps } from './Result';
 import type { SearchFieldDefinition, FilterFieldDefinition } from '../../types';
 import type { ReactSelectEvent, ReactSelectValue } from '../../../../select/types';
 
 type Props = {
+  className ? :string;
   fetchState :any;
   filterFields ? :FilterFieldDefinition[];
   onSearch :(searchFieldValues :Map) => void;
-  resultLabels :Map;
+  resultComponent ? :React.ComponentType<ResultProps>;
   searchFields ? :SearchFieldDefinition[];
   searchResults ? :List<Map>;
   searchResultsComponent ? :React.ComponentType<SearchResultsProps>;
@@ -35,6 +37,9 @@ type State = {
 class Search extends React.Component<Props, State> {
 
   static defaultProps = {
+    className: undefined,
+    filterFields: [],
+    resultComponent: DefaultResultComponent,
     searchFields: [
       {
         id: 'firstname',
@@ -50,9 +55,8 @@ class Search extends React.Component<Props, State> {
         type: 'date'
       },
     ],
-    filterFields: [],
     searchResults: List(),
-    searchResultsComponent: DefaultSearchResults
+    searchResultsComponent: DefaultSearchResults,
   }
 
   constructor(props :Props) {
@@ -104,12 +108,10 @@ class Search extends React.Component<Props, State> {
   renderFilteredSearchResults = () :React.Node => {
     const {
       filterFields,
-      onSearch,
-      searchFields,
       searchResults,
-      searchResultsComponent: SearchResults,
-      title,
-      ...rest
+      searchResultsComponent: SearchResultsComponent,
+      fetchState,
+      resultComponent,
     } = this.props;
     const { filterFieldValues } = this.state;
 
@@ -139,11 +141,12 @@ class Search extends React.Component<Props, State> {
 
     }
 
-    if (SearchResults) {
+    if (SearchResultsComponent) {
       return (
-        <SearchResults
+        <SearchResultsComponent
             results={filteredResults}
-            {...rest} />
+            fetchState={fetchState}
+            resultComponent={resultComponent} />
       );
     }
 
@@ -244,8 +247,9 @@ class Search extends React.Component<Props, State> {
   }
 
   render() {
+    const { className } = this.props;
     return (
-      <CardStack>
+      <CardStack className={className}>
         <Card>
           { this.renderSearchFieldsSegment() }
           { this.renderFiltersSegment() }

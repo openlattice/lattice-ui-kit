@@ -1,71 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search snapshots should match snapshot 1`] = `
-<Card>
-  <CardSegment
-    vertical={true}
-  >
-    <form>
-      <InputGrid
-        align="flex-end"
-        columns={4}
-      >
-        <div
-          key="luk-search-key-firstname"
+<CardStack>
+  <Card>
+    <CardSegment
+      vertical={true}
+    >
+      <form>
+        <StyledSearchComponents__InputGrid
+          align="flex-end"
+          columns={4}
         >
-          <Label
-            htmlFor="luk-search-firstname"
+          <div
+            key="luk-search-key-firstname"
           >
-            First Name
-          </Label>
-          <Input
-            id="luk-search-firstname"
-            name="firstname"
-            onChange={[Function]}
-            value=""
-          />
-        </div>
-        <div
-          key="luk-search-key-lastname"
-        >
-          <Label
-            htmlFor="luk-search-lastname"
+            <Label
+              htmlFor="luk-search-firstname"
+            >
+              First Name
+            </Label>
+            <Input
+              id="luk-search-firstname"
+              name="firstname"
+              onChange={[Function]}
+              value=""
+            />
+          </div>
+          <div
+            key="luk-search-key-lastname"
           >
-            Last Name
-          </Label>
-          <Input
-            id="luk-search-lastname"
-            name="lastname"
-            onChange={[Function]}
-            value=""
-          />
-        </div>
-        <div
-          key="luk-search-key-dob"
-        >
-          <Label
-            htmlFor="luk-search-dob"
+            <Label
+              htmlFor="luk-search-lastname"
+            >
+              Last Name
+            </Label>
+            <Input
+              id="luk-search-lastname"
+              name="lastname"
+              onChange={[Function]}
+              value=""
+            />
+          </div>
+          <div
+            key="luk-search-key-dob"
           >
-            Date of Birth
-          </Label>
-          <LatticeWrapper
-            id="luk-search-dob"
-            name="dob"
-            onChange={[Function]}
-            value=""
-          />
-        </div>
-        <Button
-          className=""
-          disabled={false}
-          mode="primary"
-          onClick={[Function]}
-          type="submit"
-        >
-          Search
-        </Button>
-      </InputGrid>
-    </form>
-  </CardSegment>
-</Card>
+            <Label
+              htmlFor="luk-search-dob"
+            >
+              Date of Birth
+            </Label>
+            <LatticeWrapper
+              id="luk-search-dob"
+              name="dob"
+              onChange={[Function]}
+              value=""
+            />
+          </div>
+          <Button
+            className=""
+            disabled={false}
+            mode="primary"
+            onClick={[Function]}
+            type="submit"
+          >
+            Search
+          </Button>
+        </StyledSearchComponents__InputGrid>
+      </form>
+    </CardSegment>
+  </Card>
+  <SearchResults
+    resultComponent={[Function]}
+    resultLabels={
+      Immutable.Map {
+        "lastName": "Last name",
+        "firstName": "First name",
+        "middleName": "Middle name",
+        "sex": "Sex",
+        "gender": "Gender",
+        "ethnicity": "Ethnicity",
+        "dob": "DOB",
+        "identifier": "Identifier",
+      }
+    }
+    results={Immutable.List []}
+  />
+</CardStack>
 `;

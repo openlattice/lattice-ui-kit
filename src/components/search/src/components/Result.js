@@ -1,51 +1,35 @@
 // @flow
 
-import React, { Component } from 'react';
-import styled, { css } from 'styled-components';
+import * as React from 'react';
 import { List, Map } from 'immutable';
 
 import Label from '../../../../label';
 import { Card } from '../../../../layout';
-
-const ResultGrid = styled.div`
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: ${props => props.columns && css`repeat(${props.columns}, minmax(80px, 1fr))`};
-  grid-gap: 20px 30px;
-`;
-
-const ResultWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-`;
-
-const ResultDetails = styled.div`
-  padding: 10px 30px;
-  flex: 1;
-`;
-
-const Truncated = styled.div`
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-`;
+import {
+  ResultGrid,
+  ResultWrapper,
+  ResultDetails,
+  Truncated
+} from './styled/StyledResultComponents';
 
 type Props = {
+  className ? :string;
   result ? :Map;
-  resultLabels ? :Map;
   resultColumns ? :number;
+  resultLabels ? :Map;
 }
 
-class Result extends Component<Props> {
+class Result extends React.Component<Props> {
 
   static defaultProps = {
-    result: List(),
-    resultLabels: Map(),
+    className: undefined,
+    result: Map(),
     resultColumns: 4,
+    resultLabels: Map()
   }
 
   transformResultToDetailsList = (result :Map) => {
+
     const { resultLabels } = this.props;
     const labels = result.map((value :any, key :string) => {
       let label = key;
@@ -55,20 +39,24 @@ class Result extends Component<Props> {
       }
 
       return Map({
+        key,
         label,
         value,
-        key
       });
     });
     return labels.toList();
   }
 
   render() {
-    const { result, resultColumns } = this.props;
+    const {
+      className,
+      result,
+      resultColumns
+    } = this.props;
     const details :List<Map> = this.transformResultToDetailsList(result);
 
     return (
-      <Card>
+      <Card className={className}>
         <ResultWrapper>
           <ResultDetails>
             <ResultGrid columns={resultColumns}>

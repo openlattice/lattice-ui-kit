@@ -6,39 +6,19 @@ import { List, Map } from 'immutable';
 
 import Label from '../../../../label';
 import { Card } from '../../../../layout';
+import {
+  ResultGrid,
+  ResultWrapper,
+  ResultDetails,
+  Truncated
+} from './styled/StyledResultComponents';
 
-const ResultGrid = styled.div`
-  display: grid;
-  grid-auto-flow: row;
+const StyledResultGrid = styled(ResultGrid)`
   grid-template-columns: minmax(80px, 2fr) minmax(80px, 2fr) minmax(80px, 2fr) 1fr 1fr;
-  grid-gap: 20px 30px;
 
   > div:last-child {
     grid-column: 3 / -1;
   }
-`;
-
-const ResultWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-`;
-
-const ResultDetails = styled.div`
-  padding: 10px 30px;
-  flex: 1;
-`;
-
-// const Picture = styled.div`
-//   height: 100px;
-//   width: 100px;
-//   background-color: grey;
-// `;
-
-const Truncated = styled.div`
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 `;
 
 type Props = {
@@ -46,7 +26,7 @@ type Props = {
   resultLabels ? :Map;
 }
 
-class Result extends Component<Props> {
+class PersonResult extends Component<Props> {
 
   static defaultProps = {
     result: List(),
@@ -79,7 +59,7 @@ class Result extends Component<Props> {
       <Card>
         <ResultWrapper>
           <ResultDetails>
-            <ResultGrid>
+            <StyledResultGrid>
               { details
                 && details.map((detail :Map, index :number) => (
                   <div key={index.toString()}>
@@ -92,7 +72,7 @@ class Result extends Component<Props> {
                   </div>
                 ))
               }
-            </ResultGrid>
+            </StyledResultGrid>
           </ResultDetails>
         </ResultWrapper>
       </Card>
@@ -100,5 +80,5 @@ class Result extends Component<Props> {
   }
 }
 
-export default Result;
+export default PersonResult;
 export type { Props as ResultProps };

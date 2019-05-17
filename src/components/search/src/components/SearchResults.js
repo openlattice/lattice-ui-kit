@@ -11,11 +11,13 @@ type Props = {
   results :List<Map>;
   resultLabels ? :Map;
   resultComponent ? :React.ComponentType<ResultProps>;
+  className ? :string;
 };
 
 class SearchResults extends React.Component<Props> {
 
   static defaultProps = {
+    className: undefined,
     resultLabels: Map({
       lastName: 'Last name',
       firstName: 'First name',
@@ -34,15 +36,13 @@ class SearchResults extends React.Component<Props> {
       resultComponent: ResultComponent,
       resultLabels,
       results,
-      ...rest
     } = this.props;
     if (List.isList(results) && results.count() && ResultComponent) {
       return results.map((result :Map, index :number) => (
         <ResultComponent
             key={index.toString()}
             result={result}
-            resultLabels={resultLabels}
-            {...rest} />
+            resultLabels={resultLabels} />
       ));
     }
 
@@ -50,8 +50,9 @@ class SearchResults extends React.Component<Props> {
   }
 
   render() {
+    const { className } = this.props;
     return (
-      <CardStack>
+      <CardStack className={className}>
         { this.renderResults() }
       </CardStack>
     );
