@@ -263,3 +263,4 @@ class Search extends Component<Props, State> {
 }
 
 export default Search;
+export type { Props as SearchProps };

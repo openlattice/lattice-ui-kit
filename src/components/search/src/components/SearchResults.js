@@ -60,6 +60,4 @@ class SearchResults extends React.Component<Props> {
 }
 
 export default SearchResults;
-export type {
-  Props as SearchResultsProps
-};
+export type { Props as SearchResultsProps };
