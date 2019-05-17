@@ -1,8 +1,7 @@
 // @flow
 import Select from 'react-select';
 
-import Option from './styled/Option';
-// import TruncatedValueContainer from './styled/TruncatedValueContainer';
+import Option from './styled/CheckboxOption';
 
 import withProps from '../../../components/withProps';
 import selectStyles from '../../../style/selectStyles';
@@ -11,8 +10,7 @@ export const props = {
   styles: selectStyles,
   menuPlacement: 'auto',
   components: {
-    Option,
-    // ValueContainer: TruncatedValueContainer
+    Option
   },
   isMulti: true,
   hideSelectedOptions: false,
