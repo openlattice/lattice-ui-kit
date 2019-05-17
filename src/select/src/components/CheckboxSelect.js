@@ -19,4 +19,7 @@ export const props = {
   closeMenuOnSelect: false,
 };
 
-export default withProps(Select, props);
+const CheckboxSelect = withProps(Select, props);
+CheckboxSelect.displayName = 'CheckboxSelect';
+
+export default CheckboxSelect;
