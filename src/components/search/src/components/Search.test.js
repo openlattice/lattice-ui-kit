@@ -1,14 +1,22 @@
 import React from 'react';
 import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
+import { Map, List } from 'immutable';
 
 import Search from './Search';
+import SearchResults from './SearchResults';
+import PersonResult from './PersonResult';
+import Result from './Result';
 import Input from '../../../../input';
 import { Title } from './styled/StyledSearchComponents';
 import { CheckboxSelect } from '../../../../select';
 import { Card } from '../../../../layout';
 import { DatePicker } from '../../../../datetime';
-import { mockFilterFields } from './constants';
+import {
+  mockFilterFields,
+  mockSearchResultsForPeople,
+  mockSearchResultsForReports
+} from './constants';
 
 describe('Search', () => {
 
@@ -42,6 +50,11 @@ describe('Search', () => {
       test('search button', () => {
         expect(wrapper.find('Button')).toHaveLength(1);
       });
+
+      test('default SearchResults', () => {
+        expect(wrapper.find(SearchResults)).toHaveLength(1);
+      });
+
     });
 
     describe('render with props', () => {
@@ -59,33 +72,29 @@ describe('Search', () => {
         const wrapper = shallow(<Search filterFields={mockFilterFields} />);
         expect(wrapper.find(CheckboxSelect)).toHaveLength(3);
       });
-    });
 
-  });
+      test('should render custom SearchResultComponent', () => {
+        const customComponent = props => <div {...props} />;
+        customComponent.displayName = 'CustomComponent';
+        const wrapper = shallow(<Search searchResultsComponent={customComponent} />);
 
-  describe('onSearch()', () => {
-    test('should call handleOnClickSearchButton', () => {
-      const wrapper = mount(<Search />);
-      const instance = wrapper.instance();
-      const handleOnClickSearchButtonSpy = jest.spyOn(instance, 'handleOnClickSearchButton');
+        expect(wrapper.find('CustomComponent')).toHaveLength(1);
+      });
 
-      instance.forceUpdate();
-      wrapper.find('Button').simulate('click');
+      test('should render custom ResultComponents', () => {
+        const wrapper = mount(
+          <Search
+              searchResults={mockSearchResultsForPeople}
+              resultComponent={PersonResult} />
+        );
+        expect(wrapper.find(PersonResult)).toHaveLength(3);
+      });
 
-      expect(handleOnClickSearchButtonSpy).toHaveBeenCalledTimes(1);
-    });
+      test('should render default Result when provided searchResults', () => {
+        const wrapper = mount(<Search searchResults={mockSearchResultsForPeople} />);
+        expect(wrapper.find(Result)).toHaveLength(3);
+      });
 
-    test('should invoke onSearch', () => {
-      const mockOnSearch = jest.fn();
-      const wrapper = mount(<Search onSearch={mockOnSearch} />);
-      const instance = wrapper.instance();
-      const handleOnClickSearchButtonSpy = jest.spyOn(instance, 'handleOnClickSearchButton');
-
-      instance.forceUpdate();
-      wrapper.find('Button').simulate('click');
-
-      expect(handleOnClickSearchButtonSpy).toHaveBeenCalledTimes(1);
-      expect(mockOnSearch).toHaveBeenCalledTimes(1);
     });
 
   });
@@ -144,6 +153,131 @@ describe('Search', () => {
       expect(actualSearchFieldValues).toStrictEqual(expectedSearchFieldValues);
 
     });
+  });
+
+  describe('filterfieldValues', () => {
+    test('handleOnChangeFilter should change filterFieldValues', () => {
+      const wrapper = shallow(<Search filterFields={mockFilterFields} />);
+      const instance = wrapper.instance();
+
+      const changeValue = [{
+        label: 'Crisis Template',
+        value: 'Crisis Template'
+      }];
+      const changeEvent = { name: 'reportType' };
+
+      const initialFilterFieldValues = wrapper.state('filterFieldValues');
+      const expectedFilterFieldValues = initialFilterFieldValues.set('reportType', changeValue);
+      instance.handleOnChangeFilter(changeValue, changeEvent);
+
+      const actualFilterFieldValues = wrapper.state('filterFieldValues');
+      expect(actualFilterFieldValues).toStrictEqual(expectedFilterFieldValues);
+    });
+  });
+
+  describe('renderFilteredSearchResults', () => {
+    test('should return null with falsy SearchResultsComponent', () => {
+      const wrapper = shallow(<Search searchResultsComponent={false} />);
+      const instance = wrapper.instance();
+      expect(instance.renderFilteredSearchResults()).toEqual(null);
+    });
+
+    test('should filter results', () => {
+      const wrapper = shallow(
+        <Search
+            filterFields={mockFilterFields}
+            searchResults={mockSearchResultsForReports} />
+      );
+      const instance = wrapper.instance();
+
+      let changeValue = [{
+        value: 'Crisis Template'
+      }];
+      let changeEvent = { name: 'reportType' };
+      // apply one filter
+      instance.handleOnChangeFilter(changeValue, changeEvent);
+
+      let filteredResults = wrapper.find(SearchResults).props().results;
+      expect(List.isList(filteredResults)).toEqual(true);
+      expect(filteredResults.count()).toEqual(3);
+
+      changeValue = [{
+        value: 'smitty@werbenjagermanjensen.com'
+      }];
+      changeEvent = {
+        name: 'submitter'
+      };
+      // apply second filter
+      instance.handleOnChangeFilter(changeValue, changeEvent);
+      filteredResults = wrapper.find(SearchResults).props().results;
+      expect(filteredResults.count()).toEqual(1);
+      expect(filteredResults.first()).toEqual(mockSearchResultsForReports.get(2));
+
+    });
+
+    test('should return all results if no filter applied', () => {
+      const wrapper = shallow(
+        <Search
+            filterFields={mockFilterFields}
+            searchResults={mockSearchResultsForReports} />
+      );
+      const filteredResults = wrapper.find(SearchResults).props().results;
+      expect(filteredResults).toEqual(mockSearchResultsForReports);
+    });
+
+    test('should not filter for non-matching filter definition', () => {
+      const wrapper = shallow(
+        <Search
+            filterFields={mockFilterFields}
+            searchResults={mockSearchResultsForReports} />
+      );
+      const instance = wrapper.instance();
+
+      const changeValue = [{
+        value: 'Crisis Template'
+      }];
+      const changeEvent = { name: 'BaDFiLtErDefiNiTioN' };
+      instance.handleOnChangeFilter(changeValue, changeEvent);
+
+      const filteredResults = wrapper.find(SearchResults).props().results;
+      expect(filteredResults).toEqual(mockSearchResultsForReports);
+    });
+  });
+
+  describe('onSearch()', () => {
+    test('should call handleOnClickSearchButton', () => {
+      const wrapper = mount(<Search />);
+      const instance = wrapper.instance();
+      const handleOnClickSearchButtonSpy = jest.spyOn(instance, 'handleOnClickSearchButton');
+
+      instance.forceUpdate();
+      wrapper.find('Button').simulate('click');
+
+      expect(handleOnClickSearchButtonSpy).toHaveBeenCalledTimes(1);
+    });
+
+    test('should invoke onSearch with searchFieldValues', () => {
+      const mockOnSearch = jest.fn();
+      const wrapper = mount(<Search onSearch={mockOnSearch} />);
+
+      const searchFieldValues = Map({
+        firstname: 'Smitty',
+        lastname: 'Werbenjagermanjensen',
+        dob: '2002-02-22'
+      });
+
+      wrapper.setState({ searchFieldValues });
+      const instance = wrapper.instance();
+      const handleOnClickSearchButtonSpy = jest.spyOn(instance, 'handleOnClickSearchButton');
+
+      instance.forceUpdate();
+      wrapper.find('Button').simulate('click');
+
+      expect(handleOnClickSearchButtonSpy).toHaveBeenCalledTimes(1);
+      expect(mockOnSearch).toHaveBeenCalledTimes(1);
+      expect(mockOnSearch.mock.calls[0][0]).toEqual(searchFieldValues);
+    });
+
   });
 
 });
