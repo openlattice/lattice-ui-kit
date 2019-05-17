@@ -1,5 +1,5 @@
 // @flow
-import React, { Component, isValidElement, createElement } from 'react';
+import React, { Component } from 'react';
 import isFunction from 'lodash/isFunction';
 import { Map, List } from 'immutable';
 import type { ComponentType, Node } from 'react';
