@@ -17,10 +17,13 @@ describe('Select', () => {
 
   describe('props', () => {
 
-    test('internal Select should have selectProps', () => {
+    test('internal Select should receive preset props', () => {
       const wrapper = mount(<Select />);
       const selectProps = wrapper.find('Select').props();
-      expect(selectProps.selectProps).toEqual(props.selectProps);
+
+      Object.keys(props).forEach((key) => {
+        expect(selectProps[key]).toEqual(props[key]);
+      });
     });
 
   });

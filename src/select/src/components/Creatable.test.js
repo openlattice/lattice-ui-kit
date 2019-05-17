@@ -11,10 +11,13 @@ describe('Creatable', () => {
     expect(toJson(tree)).toMatchSnapshot();
   });
 
-  test('internal Creatable should have selectProps', () => {
+  test('internal Select should receive preset props', () => {
     const wrapper = mount(<Creatable />);
-    const creatableProps = wrapper.find('Creatable').props();
-    expect(creatableProps.selectProps).toEqual(props.selectProps);
+    const selectProps = wrapper.find('Select').props();
+
+    Object.keys(props).forEach((key) => {
+      expect(selectProps[key]).toEqual(props[key]);
+    });
   });
 
   test('clicking should toggle menu', () => {
