@@ -1,6 +1,8 @@
 // @flow
-import * as React from 'react';
+import React, { Component, isValidElement, createElement } from 'react';
+import isFunction from 'lodash/isFunction';
 import { Map, List } from 'immutable';
+import type { ComponentType, Node } from 'react';
 
 import DefaultResultComponent from './Result';
 import DefaultSearchResults from './SearchResults';
@@ -22,10 +24,10 @@ type Props = {
   fetchState :any;
   filterFields ? :FilterFieldDefinition[];
   onSearch :(searchFieldValues :Map) => void;
-  resultComponent ? :React.ComponentType<ResultProps>;
+  resultComponent ? :ComponentType<ResultProps>;
   searchFields ? :SearchFieldDefinition[];
   searchResults ? :List<Map>;
-  searchResultsComponent ? :React.ComponentType<SearchResultsProps>;
+  searchResultsComponent ? :ComponentType<SearchResultsProps>;
   title :string;
 };
 
@@ -34,7 +36,7 @@ type State = {
   filterFieldValues :Map;
 };
 
-class Search extends React.Component<Props, State> {
+class Search extends Component<Props, State> {
 
   static defaultProps = {
     className: undefined,
@@ -92,7 +94,7 @@ class Search extends React.Component<Props, State> {
     e.preventDefault();
     const { onSearch } = this.props;
     const { searchFieldValues } = this.state;
-    if (typeof onSearch === 'function') {
+    if (isFunction(onSearch)) {
       onSearch(searchFieldValues);
     }
   }
@@ -105,7 +107,7 @@ class Search extends React.Component<Props, State> {
     });
   }
 
-  renderFilteredSearchResults = () :React.Node => {
+  renderFilteredSearchResults = () :Node => {
     const {
       filterFields,
       searchResults,
@@ -225,7 +227,7 @@ class Search extends React.Component<Props, State> {
             </Label>
             <CheckboxSelect
                 name={filter.id}
-                inputId={`luk-filter-${filter.id}`}
+                id={`luk-filter-${filter.id}`}
                 borderless
                 placeholder="Add filter"
                 onChange={this.handleOnChangeFilter}
