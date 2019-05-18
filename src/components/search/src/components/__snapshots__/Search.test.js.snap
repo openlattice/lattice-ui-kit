@@ -71,18 +71,7 @@ exports[`Search snapshots should match snapshot 1`] = `
   </Card>
   <SearchResults
     resultComponent={[Function]}
-    resultLabels={
-      Immutable.Map {
-        "lastName": "Last name",
-        "firstName": "First name",
-        "middleName": "Middle name",
-        "sex": "Sex",
-        "gender": "Gender",
-        "ethnicity": "Ethnicity",
-        "dob": "DOB",
-        "identifier": "Identifier",
-      }
-    }
+    resultLabels={Immutable.Map {}}
     results={Immutable.List []}
   />
 </CardStack>

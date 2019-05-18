@@ -1,6 +1,7 @@
 // @flow
 
 import * as React from 'react';
+import isFunction from 'lodash/isFunction';
 import { List, Map } from 'immutable';
 
 import Label from '../../../../label';
@@ -17,15 +18,17 @@ type Props = {
   result ? :Map;
   resultColumns ? :number;
   resultLabels ? :Map;
+  onClick ? :(result :Map) => void;
 }
 
 class Result extends React.Component<Props> {
 
   static defaultProps = {
     className: undefined,
+    onClick: undefined,
     result: Map(),
     resultColumns: 4,
-    resultLabels: Map()
+    resultLabels: Map(),
   }
 
   transformResultToDetailsList = (result :Map) => {
@@ -47,6 +50,13 @@ class Result extends React.Component<Props> {
     return labels.toList();
   }
 
+  handleClick = () => {
+    const { onClick, result } = this.props;
+    if (isFunction(onClick)) {
+      onClick(result);
+    }
+  }
+
   render() {
     const {
       className,
@@ -56,7 +66,7 @@ class Result extends React.Component<Props> {
     const details :List<Map> = this.transformResultToDetailsList(result);
 
     return (
-      <Card className={className}>
+      <Card className={className} onClick={this.handleClick}>
         <ResultWrapper>
           <ResultDetails>
             <ResultGrid columns={resultColumns}>

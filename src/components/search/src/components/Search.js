@@ -23,8 +23,10 @@ type Props = {
   className ? :string;
   fetchState :any;
   filterFields ? :FilterFieldDefinition[];
+  onResultClick ? :(result :Map) => void;
   onSearch :(searchFieldValues :Map) => void;
   resultComponent ? :ComponentType<ResultProps>;
+  resultLabels ? :Map;
   searchFields ? :SearchFieldDefinition[];
   searchResults ? :List<Map>;
   searchResultsComponent ? :ComponentType<SearchResultsProps>;
@@ -41,7 +43,9 @@ class Search extends Component<Props, State> {
   static defaultProps = {
     className: undefined,
     filterFields: [],
+    onResultClick: undefined,
     resultComponent: DefaultResultComponent,
+    resultLabels: Map(),
     searchFields: [
       {
         id: 'firstname',
@@ -109,11 +113,13 @@ class Search extends Component<Props, State> {
 
   renderFilteredSearchResults = () :Node => {
     const {
+      fetchState,
       filterFields,
+      onResultClick,
+      resultComponent,
+      resultLabels,
       searchResults,
       searchResultsComponent: SearchResultsComponent,
-      fetchState,
-      resultComponent,
     } = this.props;
     const { filterFieldValues } = this.state;
 
@@ -146,9 +152,11 @@ class Search extends Component<Props, State> {
     if (SearchResultsComponent) {
       return (
         <SearchResultsComponent
-            results={filteredResults}
             fetchState={fetchState}
-            resultComponent={resultComponent} />
+            onResultClick={onResultClick}
+            resultComponent={resultComponent}
+            resultLabels={resultLabels}
+            results={filteredResults} />
       );
     }
 

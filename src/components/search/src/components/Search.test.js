@@ -280,4 +280,19 @@ describe('Search', () => {
 
   });
 
+  describe('onResultClick', () => {
+    test('should call onResultClick with result', () => {
+      const mockOnResultClick = jest.fn();
+      const wrapper = mount(<Search onResultClick={mockOnResultClick} searchResults={mockSearchResultsForPeople} />);
+
+      const resultWrapper = wrapper.find('Result').first();
+      expect(resultWrapper).toHaveLength(1);
+
+      resultWrapper.simulate('click');
+      expect(mockOnResultClick).toHaveBeenCalledTimes(1);
+      expect(mockOnResultClick.mock.calls[0][0]).toEqual(mockSearchResultsForPeople.first());
+    });
+
+  });
+
 });

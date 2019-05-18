@@ -12,27 +12,21 @@ type Props = {
   resultLabels ? :Map;
   resultComponent ? :React.ComponentType<ResultProps>;
   className ? :string;
+  onResultClick ? :(result :Map) => void;
 };
 
 class SearchResults extends React.Component<Props> {
 
   static defaultProps = {
     className: undefined,
-    resultLabels: Map({
-      lastName: 'Last name',
-      firstName: 'First name',
-      middleName: 'Middle name',
-      sex: 'Sex',
-      gender: 'Gender',
-      ethnicity: 'Ethnicity',
-      dob: 'DOB',
-      identifier: 'Identifier',
-    }),
+    onResultClick: undefined,
     resultComponent: Result,
+    resultLabels: Map(),
   }
 
   renderResults = () :React.Node => {
     const {
+      onResultClick,
       resultComponent: ResultComponent,
       resultLabels,
       results,
@@ -41,6 +35,7 @@ class SearchResults extends React.Component<Props> {
       return results.map((result :Map, index :number) => (
         <ResultComponent
             key={index.toString()}
+            onClick={onResultClick}
             result={result}
             resultLabels={resultLabels} />
       ));

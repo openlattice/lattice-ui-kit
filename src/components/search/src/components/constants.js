@@ -121,8 +121,20 @@ const mockSearchResultsForPeople = List([
   })
 ]);
 
+const mockResultLabels = Map({
+  lastName: 'Last name',
+  firstName: 'First name',
+  middleName: 'Middle name',
+  sex: 'Sex',
+  gender: 'Gender',
+  ethnicity: 'Ethnicity',
+  dob: 'DOB',
+  identifier: 'Identifier',
+});
+
 export {
   mockFilterFields,
+  mockResultLabels,
+  mockSearchResultsForPeople,
   mockSearchResultsForReports,
-  mockSearchResultsForPeople
 };

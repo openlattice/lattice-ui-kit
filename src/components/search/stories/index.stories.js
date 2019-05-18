@@ -4,12 +4,13 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import Search from '../src/components/Search';
-import PersonResult from '../src/components/PersonResult';
+import Result from '../src/components/Result';
 import SearchResults from '../src/components/SearchResults';
 import {
   mockFilterFields,
+  mockResultLabels,
   mockSearchResultsForPeople,
-  mockSearchResultsForReports
+  mockSearchResultsForReports,
 } from '../src/components/constants';
 
 storiesOf('Search', module)
@@ -51,7 +52,7 @@ storiesOf('Search', module)
           title="Search"
           onSearch={action('search clicked')}
           searchResults={mockSearchResultsForPeople}
-          searchResultsComponent={props => <SearchResults {...props} resultLabels={Map({ lastName: 'Banana' })} />} />
+          searchResultsComponent={props => <SearchResults {...props} resultLabels={mockResultLabels} />} />
     </>
   ))
   .add('Search with custom resultComponent', () => (
@@ -61,6 +62,6 @@ storiesOf('Search', module)
           title="Search"
           onSearch={action('search clicked')}
           searchResults={mockSearchResultsForPeople}
-          resultComponent={PersonResult} />
+          resultComponent={props => <Result {...props} onClick={result => console.log(result)} />} />
     </>
   ));
