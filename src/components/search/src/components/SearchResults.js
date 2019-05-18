@@ -4,7 +4,8 @@ import * as React from 'react';
 import { List, Map } from 'immutable';
 
 import Result from './Result';
-import { Card, CardStack } from '../../../../layout';
+import { CardStack } from '../../../../layout';
+import NotFound from './NotFound';
 import type { ResultProps } from './Result';
 
 type Props = {
@@ -41,7 +42,7 @@ class SearchResults extends React.Component<Props> {
       ));
     }
 
-    return <Card>no results</Card>;
+    return <NotFound caption="No results found" />;
   }
 
   render() {
