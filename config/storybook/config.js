@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { configure, addDecorator, addParameters } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 
 import storybookTheme from './storybookTheme';
 import { NEUTRALS } from '../../src/colors';
@@ -35,6 +36,8 @@ const AppContentInnerWrapper = styled.div`
   max-width: 1020px;
   padding: 30px;
 `;
+
+addDecorator(withInfo);
 
 addDecorator(storyFn => (
   <StoryWrapper>
