@@ -1,7 +1,3 @@
-import Spinner from './src/components/Spinner';
-import Rotate from './src/components/Rotate';
+// @flow
 
-export {
-  Spinner,
-  Rotate
-};
+export { default } from './src/components/Spinner';

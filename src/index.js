@@ -19,6 +19,7 @@ export { default as Label } from './label';
 export { default as Modal } from './modal';
 export { default as Overlay } from './overlay';
 export { default as Portal } from './portal';
+export { default as Spinner } from './spinner';
 export { DatePicker, TimePicker } from './datetime';
 export { Card, CardSegment, CardStack } from './layout';
 export { Creatable, Select, CheckboxSelect } from './select';
