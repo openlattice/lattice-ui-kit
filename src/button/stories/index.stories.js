@@ -15,6 +15,12 @@ const ButtonRow = styled.div`
   }
 `;
 
+const ButtonGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-gap: 30px;
+`;
+
 storiesOf('Button', module)
   .add('with text', () => (
     <Card>
@@ -41,6 +47,14 @@ storiesOf('Button', module)
           <Button mode="primary" isLoading onClick={action('button clicked')}>Primary</Button>
           <Button mode="secondary" isLoading onClick={action('button clicked')}>Secondary</Button>
         </ButtonRow>
+      </CardSegment>
+      <CardSegment vertical>
+        <h1>Truncate</h1>
+        <ButtonGrid>
+          <Button onClick={action('button clicked')}>DefaultDefaultDefaultDefaultDefaultDefault</Button>
+          <Button mode="primary" onClick={action('button clicked')}>PrimaryPrimaryPrimaryPrimaryPrimaryPrimary</Button>
+          <Button mode="secondary" onClick={action('button clicked')}>SecondarySecondarySecondarySecondarySecondary</Button>
+        </ButtonGrid>
       </CardSegment>
     </Card>
   ));

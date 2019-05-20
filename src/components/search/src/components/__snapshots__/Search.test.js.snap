@@ -59,6 +59,7 @@ exports[`Search snapshots should match snapshot 1`] = `
           <Button
             className=""
             disabled={false}
+            isLoading={false}
             mode="primary"
             onClick={[Function]}
             type="submit"

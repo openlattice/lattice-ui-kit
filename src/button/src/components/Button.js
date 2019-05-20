@@ -2,11 +2,12 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React from 'react';
 import type { Node } from 'react';
 
-import PropTypes from 'prop-types';
-
+import ContentWrapper from './styled/ContentWrapper';
+import Content from './styled/Content';
+import ButtonSpinner from './styled/ButtonSpinner';
 import DefaultButton from './styled/DefaultButton';
 import PrimaryButton from './styled/PrimaryButton';
 import SecondaryButton from './styled/SecondaryButton';
@@ -20,66 +21,58 @@ type Props = {
   children :Node;
   className ? :string;
   disabled ? :boolean;
+  isLoading ? :boolean;
   mode ? :ButtonMode;
   onClick :(e :SyntheticEvent<HTMLButtonElement>) => void;
   type ? :string;
 };
-
-type State = {};
 
 /*
  * Inspiration:
  * https://atlaskit.atlassian.com/packages/core/button
  * https://evergreen.surge.sh/components/buttons
  */
-export default class Button extends Component<Props, State> {
+const Button = (props :Props) => {
 
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-    className: PropTypes.string,
-    disabled: PropTypes.bool,
-    mode: PropTypes.string,
-    onClick: PropTypes.func.isRequired,
-    type: PropTypes.string,
+  const {
+    children,
+    disabled,
+    isLoading,
+    mode,
+    ...rest
+  } = props;
+
+  let ButtonComponent;
+
+  switch (mode) {
+    case 'primary':
+      ButtonComponent = PrimaryButton;
+      break;
+    case 'secondary':
+      ButtonComponent = SecondaryButton;
+      break;
+    default:
+      ButtonComponent = DefaultButton;
   }
 
-  static defaultProps = {
-    className: '',
-    disabled: false,
-    mode: 'default',
-    type: 'button',
-  }
+  return (
+    <ButtonComponent {...rest} disabled={isLoading || disabled}>
+      <ContentWrapper>
+        { isLoading && <ButtonSpinner /> }
+        <Content isLoading={isLoading}>
+          {children}
+        </Content>
+      </ContentWrapper>
+    </ButtonComponent>
+  );
+};
 
-  render() {
+Button.defaultProps = {
+  className: '',
+  disabled: false,
+  isLoading: false,
+  mode: 'default',
+  type: 'button',
+};
 
-    const {
-      children,
-      className,
-      disabled,
-      mode,
-      onClick,
-      type,
-    } = this.props;
-
-    switch (mode) {
-      case 'primary':
-        return (
-          <PrimaryButton className={className} disabled={disabled} onClick={onClick} type={type}>
-            { children }
-          </PrimaryButton>
-        );
-      case 'secondary':
-        return (
-          <SecondaryButton className={className} disabled={disabled} onClick={onClick} type={type}>
-            { children }
-          </SecondaryButton>
-        );
-      default:
-        return (
-          <DefaultButton className={className} disabled={disabled} onClick={onClick} type={type}>
-            { children }
-          </DefaultButton>
-        );
-    }
-  }
-}
+export default Button;

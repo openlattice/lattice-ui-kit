@@ -160,7 +160,36 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   justify-content: space-between;
 }
 
+.c11 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-width: 14px;
+}
+
 .c12 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.c14 {
   background-color: #f0f0f7;
   border-color: #f0f0f7;
   border-radius: 4px;
@@ -178,14 +207,15 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   white-space: nowrap;
 }
 
-.c12:hover {
+.c14:hover {
   background-color: #dcdce7;
   border-color: #dcdce7;
+  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c12:active {
+.c14:active {
   background-color: #b6bbc7;
   border-color: #b6bbc7;
   color: #ffffff;
@@ -193,7 +223,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-decoration: none;
 }
 
-.c12:disabled {
+.c14:disabled {
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -248,7 +281,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   flex: none;
 }
 
-.c11 {
+.c13 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -441,7 +474,36 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   justify-content: space-between;
 }
 
+.c11 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-width: 14px;
+}
+
 .c12 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.c14 {
   background-color: #f0f0f7;
   border-color: #f0f0f7;
   border-radius: 4px;
@@ -459,14 +521,15 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   white-space: nowrap;
 }
 
-.c12:hover {
+.c14:hover {
   background-color: #dcdce7;
   border-color: #dcdce7;
+  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c12:active {
+.c14:active {
   background-color: #b6bbc7;
   border-color: #b6bbc7;
   color: #ffffff;
@@ -474,7 +537,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-decoration: none;
 }
 
-.c12:disabled {
+.c14:disabled {
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -529,7 +595,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   flex: none;
 }
 
-.c11 {
+.c13 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -614,13 +680,29 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                         class="c9 c10"
                         type="button"
                       >
-                        Confirm
+                        <span
+                          class="c11"
+                        >
+                          <span
+                            class="c12"
+                          >
+                            Confirm
+                          </span>
+                        </span>
                       </button>
                       <button
-                        class="c11 c12"
+                        class="c13 c14"
                         type="button"
                       >
-                        Cancel
+                        <span
+                          class="c11"
+                        >
+                          <span
+                            class="c12"
+                          >
+                            Cancel
+                          </span>
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -1069,6 +1151,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                             <Button
                                               className="c9"
                                               disabled={false}
+                                              isLoading={false}
                                               isLonely={false}
                                               mode="primary"
                                               onClick={[Function]}
@@ -1078,7 +1161,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               <PrimaryButton
                                                 className="c9"
                                                 disabled={false}
+                                                isLonely={false}
                                                 onClick={[Function]}
+                                                stretch={false}
                                                 type="button"
                                               >
                                                 <StyledComponent
@@ -1133,7 +1218,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                     }
                                                   }
                                                   forwardedRef={null}
+                                                  isLonely={false}
                                                   onClick={[Function]}
+                                                  stretch={false}
                                                   type="button"
                                                 >
                                                   <button
@@ -1142,7 +1229,76 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                     onClick={[Function]}
                                                     type="button"
                                                   >
-                                                    Confirm
+                                                    <ContentWrapper>
+                                                      <StyledComponent
+                                                        forwardedComponent={
+                                                          Object {
+                                                            "$$typeof": Symbol(react.forward_ref),
+                                                            "attrs": Array [],
+                                                            "componentStyle": ComponentStyle {
+                                                              "componentId": "ContentWrapper-sc-36hfub-0",
+                                                              "isStatic": true,
+                                                              "lastClassName": "c11",
+                                                              "rules": Array [
+                                                                "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
+                                                              ],
+                                                            },
+                                                            "displayName": "ContentWrapper",
+                                                            "foldedComponentIds": Array [],
+                                                            "render": [Function],
+                                                            "styledComponentId": "ContentWrapper-sc-36hfub-0",
+                                                            "target": "span",
+                                                            "toString": [Function],
+                                                            "warnTooManyClasses": [Function],
+                                                            "withComponent": [Function],
+                                                          }
+                                                        }
+                                                        forwardedRef={null}
+                                                      >
+                                                        <span
+                                                          className="c11"
+                                                        >
+                                                          <Content
+                                                            isLoading={false}
+                                                          >
+                                                            <StyledComponent
+                                                              forwardedComponent={
+                                                                Object {
+                                                                  "$$typeof": Symbol(react.forward_ref),
+                                                                  "attrs": Array [],
+                                                                  "componentStyle": ComponentStyle {
+                                                                    "componentId": "Content-sc-18psqsj-0",
+                                                                    "isStatic": false,
+                                                                    "lastClassName": "c12",
+                                                                    "rules": Array [
+                                                                      "flex:1 1 auto;opacity:",
+                                                                      [Function],
+                                                                      ";overflow:hidden;text-overflow:ellipsis;transition:opacity 0.3s;white-space:nowrap;",
+                                                                    ],
+                                                                  },
+                                                                  "displayName": "Content",
+                                                                  "foldedComponentIds": Array [],
+                                                                  "render": [Function],
+                                                                  "styledComponentId": "Content-sc-18psqsj-0",
+                                                                  "target": "span",
+                                                                  "toString": [Function],
+                                                                  "warnTooManyClasses": [Function],
+                                                                  "withComponent": [Function],
+                                                                }
+                                                              }
+                                                              forwardedRef={null}
+                                                              isLoading={false}
+                                                            >
+                                                              <span
+                                                                className="c12"
+                                                              >
+                                                                Confirm
+                                                              </span>
+                                                            </StyledComponent>
+                                                          </Content>
+                                                        </span>
+                                                      </StyledComponent>
+                                                    </ContentWrapper>
                                                   </button>
                                                 </StyledComponent>
                                               </PrimaryButton>
@@ -1165,7 +1321,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                                                   "isStatic": false,
-                                                  "lastClassName": "c11",
+                                                  "lastClassName": "c13",
                                                   "rules": Array [
                                                     "flex:",
                                                     [Function],
@@ -1187,21 +1343,23 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                             stretch={false}
                                           >
                                             <Button
-                                              className="c11"
+                                              className="c13"
                                               disabled={false}
+                                              isLoading={false}
                                               mode="default"
                                               onClick={[Function]}
                                               stretch={false}
                                               type="button"
                                             >
                                               <DefaultButton
-                                                className="c11"
+                                                className="c13"
                                                 disabled={false}
                                                 onClick={[Function]}
+                                                stretch={false}
                                                 type="button"
                                               >
                                                 <StyledComponent
-                                                  className="c11"
+                                                  className="c13"
                                                   disabled={false}
                                                   forwardedComponent={
                                                     Object {
@@ -1210,7 +1368,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                       "componentStyle": ComponentStyle {
                                                         "componentId": "DefaultButton-sc-2dhy0g-0",
                                                         "isStatic": true,
-                                                        "lastClassName": "c12",
+                                                        "lastClassName": "c14",
                                                         "rules": Array [
                                                           "background-color:",
                                                           "#f0f0f7",
@@ -1224,7 +1382,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           "#dcdce7",
                                                           ";border-color:",
                                                           "#dcdce7",
-                                                          ";text-decoration:none;}",
+                                                          ";cursor:pointer;text-decoration:none;}",
                                                           " ",
                                                           "&:active{background-color:",
                                                           "#b6bbc7",
@@ -1234,7 +1392,13 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           "#ffffff",
                                                           ";text-decoration:none;}",
                                                           " ",
-                                                          "&:disabled{cursor:not-allowed;text-decoration:none;}",
+                                                          "&:disabled{background-color:",
+                                                          "#f0f0f7",
+                                                          ";border-color:",
+                                                          "#f0f0f7",
+                                                          ";color:",
+                                                          "#b6bbc7",
+                                                          ";cursor:not-allowed;text-decoration:none;}",
                                                         ],
                                                       },
                                                       "displayName": "DefaultButton",
@@ -1249,15 +1413,85 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                   }
                                                   forwardedRef={null}
                                                   onClick={[Function]}
+                                                  stretch={false}
                                                   type="button"
                                                 >
                                                   <button
-                                                    className="c11 c12"
+                                                    className="c13 c14"
                                                     disabled={false}
                                                     onClick={[Function]}
                                                     type="button"
                                                   >
-                                                    Cancel
+                                                    <ContentWrapper>
+                                                      <StyledComponent
+                                                        forwardedComponent={
+                                                          Object {
+                                                            "$$typeof": Symbol(react.forward_ref),
+                                                            "attrs": Array [],
+                                                            "componentStyle": ComponentStyle {
+                                                              "componentId": "ContentWrapper-sc-36hfub-0",
+                                                              "isStatic": true,
+                                                              "lastClassName": "c11",
+                                                              "rules": Array [
+                                                                "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
+                                                              ],
+                                                            },
+                                                            "displayName": "ContentWrapper",
+                                                            "foldedComponentIds": Array [],
+                                                            "render": [Function],
+                                                            "styledComponentId": "ContentWrapper-sc-36hfub-0",
+                                                            "target": "span",
+                                                            "toString": [Function],
+                                                            "warnTooManyClasses": [Function],
+                                                            "withComponent": [Function],
+                                                          }
+                                                        }
+                                                        forwardedRef={null}
+                                                      >
+                                                        <span
+                                                          className="c11"
+                                                        >
+                                                          <Content
+                                                            isLoading={false}
+                                                          >
+                                                            <StyledComponent
+                                                              forwardedComponent={
+                                                                Object {
+                                                                  "$$typeof": Symbol(react.forward_ref),
+                                                                  "attrs": Array [],
+                                                                  "componentStyle": ComponentStyle {
+                                                                    "componentId": "Content-sc-18psqsj-0",
+                                                                    "isStatic": false,
+                                                                    "lastClassName": "c12",
+                                                                    "rules": Array [
+                                                                      "flex:1 1 auto;opacity:",
+                                                                      [Function],
+                                                                      ";overflow:hidden;text-overflow:ellipsis;transition:opacity 0.3s;white-space:nowrap;",
+                                                                    ],
+                                                                  },
+                                                                  "displayName": "Content",
+                                                                  "foldedComponentIds": Array [],
+                                                                  "render": [Function],
+                                                                  "styledComponentId": "Content-sc-18psqsj-0",
+                                                                  "target": "span",
+                                                                  "toString": [Function],
+                                                                  "warnTooManyClasses": [Function],
+                                                                  "withComponent": [Function],
+                                                                }
+                                                              }
+                                                              forwardedRef={null}
+                                                              isLoading={false}
+                                                            >
+                                                              <span
+                                                                className="c12"
+                                                              >
+                                                                Cancel
+                                                              </span>
+                                                            </StyledComponent>
+                                                          </Content>
+                                                        </span>
+                                                      </StyledComponent>
+                                                    </ContentWrapper>
                                                   </button>
                                                 </StyledComponent>
                                               </DefaultButton>
