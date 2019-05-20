@@ -639,7 +639,7 @@ exports[`button mode="primary" should match snapshot 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "Content-sc-18psqsj-0",
                         "isStatic": false,
-                        "lastClassName": "c2",
+                        "lastClassName": "cfHlHz",
                         "rules": Array [
                           "flex:1 1 auto;opacity:",
                           [Function],
