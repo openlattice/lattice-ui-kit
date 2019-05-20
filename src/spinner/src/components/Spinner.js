@@ -31,9 +31,11 @@ const Spinner = (props :Props) => {
   return (
     <Rotate className={styledClassName} duration={duration}>
       <FontAwesomeIcon
+          id="spinner-circle"
           color={bottomColor}
           icon={faCircle} />
       <FontAwesomeIcon
+          id="spinner-third"
           color={topColor}
           icon={faSpinnerThird} />
     </Rotate>

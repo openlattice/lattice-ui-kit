@@ -23,6 +23,7 @@ exports[`Spinner snapshot 1`] = `
         "prefix": "fal",
       }
     }
+    id="spinner-circle"
     inverse={false}
     listItem={false}
     mask={null}
@@ -54,6 +55,7 @@ exports[`Spinner snapshot 1`] = `
         "prefix": "fal",
       }
     }
+    id="spinner-third"
     inverse={false}
     listItem={false}
     mask={null}
