@@ -7,10 +7,15 @@ import Rotate from './styled/Rotate';
 import { NEUTRALS } from '../../../colors';
 
 type Props = {
+  /** color of spinner circle */
   bottomColor ? :string;
+  /** React component className */
   className ? :string;
+  /** animation duration */
   duration ? :string;
+  /** FontAwesomeIcon size */
   size ? :string;
+  /** color of spinner-third */
   topColor ? :string;
 };
 
@@ -46,7 +51,7 @@ const Spinner = (props :Props) => {
 Spinner.defaultProps = {
   bottomColor: NEUTRALS[3],
   className: undefined,
-  duration: undefined,
+  duration: '0.75s',
   size: '1x',
   topColor: NEUTRALS[0],
 };
