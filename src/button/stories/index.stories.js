@@ -53,7 +53,11 @@ storiesOf('Button', module)
         <ButtonGrid>
           <Button onClick={action('button clicked')}>DefaultDefaultDefaultDefaultDefaultDefault</Button>
           <Button mode="primary" onClick={action('button clicked')}>PrimaryPrimaryPrimaryPrimaryPrimaryPrimary</Button>
-          <Button mode="secondary" onClick={action('button clicked')}>SecondarySecondarySecondarySecondarySecondary</Button>
+          <Button
+              mode="secondary"
+              onClick={action('button clicked')}>
+            SecondarySecondarySecondarySecondarySecondary
+          </Button>
         </ButtonGrid>
       </CardSegment>
     </Card>
