@@ -3,6 +3,7 @@
 exports[`Spinner snapshot 1`] = `
 <Rotate
   className="fa-layers fa-fw fa-1x"
+  duration="0.75s"
 >
   <FontAwesomeIcon
     border={false}
