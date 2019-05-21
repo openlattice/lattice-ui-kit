@@ -3,6 +3,7 @@ import { Map } from 'immutable';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
+import SearchContainer from './components/SearchContainer';
 import Search from '../src/components/Search';
 import Result from '../src/components/Result';
 import SearchResults from '../src/components/SearchResults';
@@ -63,5 +64,11 @@ storiesOf('Search', module)
           onSearch={action('search clicked')}
           searchResults={mockSearchResultsForPeople}
           resultComponent={props => <Result {...props} onClick={result => console.log(result)} />} />
+    </>
+  ))
+  .add('Search Container', () => (
+    <>
+      <h1>Search Fields</h1>
+      <SearchContainer />
     </>
   ));
