@@ -35,15 +35,6 @@ class SearchContainer extends Component<Props, State> {
     }, 2000);
   }
 
-  renderNoResults = () => {
-    const { fetchState, results } = this.state;
-    if (fetchState === 'SUCCESS' && !results.count()) {
-      return <NotFound caption="No results found" />;
-    }
-
-    return null;
-  }
-
   render() {
     const { fetchState, results } = this.state;
     return (
@@ -61,12 +52,16 @@ class SearchContainer extends Component<Props, State> {
                 type: 'date'
               }
             ]}
+            resultLabels={{
+              reportType: 'Report type',
+              badges: 'Badges',
+              submitter: 'Submitter'
+            }}
             filterFields={mockFilterFields}
             isLoading={fetchState === 'PENDING'}
             onSearch={this.handleOnSearch}
             searchResults={results}
             title="Fake Report Search" />
-        { this.renderNoResults() }
       </>
     );
   }

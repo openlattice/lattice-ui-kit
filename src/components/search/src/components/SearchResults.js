@@ -3,8 +3,10 @@
 import * as React from 'react';
 import { List, Map } from 'immutable';
 
+import NotFound from './NotFound';
 import Result from './Result';
 import { CardStack } from '../../../../layout';
+
 import type { ResultProps } from './Result';
 
 type Props = {
@@ -41,7 +43,7 @@ class SearchResults extends React.Component<Props> {
       ));
     }
 
-    return null;
+    return <NotFound caption="No results" />;
   }
 
   render() {
