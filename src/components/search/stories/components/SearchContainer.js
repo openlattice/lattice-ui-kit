@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { List, Map } from 'immutable';
 
 import { Search } from '../..';
-import NotFound from '../../src/components/NotFound';
 import { mockSearchResultsForReports, mockFilterFields } from '../../src/components/constants';
 
 type Props = {
