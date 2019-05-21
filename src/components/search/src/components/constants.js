@@ -1,9 +1,10 @@
 // @flow
 import { List, Map } from 'immutable';
 import intersection from 'lodash/intersection';
+import type { FilterFieldDefinition } from '../../types';
 
 // TODO: Create class for filterDefinition
-const mockFilterFields = [
+const mockFilterFields :FilterFieldDefinition[] = [
   {
     filterCallback: (searchResult :Map, selectedOptions :Object[]) => {
       const selectedValues = selectedOptions.map(option => option.value);
