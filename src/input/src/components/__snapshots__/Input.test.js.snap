@@ -2,7 +2,8 @@
 
 exports[`Input render matches snapshot 1`] = `
 .c0 {
-  background-color: #f9f9fd border-radius:3px;
+  background-color: #f9f9fd;
+  border-radius: 3px;
   border: 1px solid #dcdce7;
   box-shadow: 0;
   box-sizing: border-box;
@@ -52,7 +53,7 @@ exports[`Input render matches snapshot 1`] = `
           "rules": Array [
             "background-color:",
             "#f9f9fd",
-            " border-radius:3px;border:1px solid ",
+            ";border-radius:3px;border:1px solid ",
             [Function],
             ";box-shadow:0;box-sizing:border-box;color:",
             "#555e6f",

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { NEUTRALS, PURPLES, RED_1 } from '../../../colors';
 
 const Input = styled.input`
-  background-color: ${NEUTRALS[8]}
+  background-color: ${NEUTRALS[8]};
   border-radius: 3px;
   border: 1px solid ${props => (props.invalid ? RED_1 : NEUTRALS[4])};
   box-shadow: 0;
