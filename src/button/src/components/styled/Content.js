@@ -6,7 +6,6 @@ const Content = styled.span`
   opacity: ${props => (props.isLoading ? 0 : 1)};
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: opacity 0.3s;
   white-space: nowrap;
 `;
 
