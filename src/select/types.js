@@ -1,6 +1,6 @@
 // @flow
 
-type ReactSelectValue = Object | Object[] | null;
+type ReactSelectValue = Object | Object[];
 
 type ReactSelectAction =
   | "select-option"

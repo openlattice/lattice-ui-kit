@@ -10,7 +10,7 @@ export type SearchFieldDefinition = {|
 |};
 
 export type FilterFieldDefinition = {|
-  filterCallback :(searchResult :Map, selectedValues ? :ReactSelectValue) => boolean;
+  filterCallback :(searchResult :Map, selectedValues :ReactSelectValue) => boolean;
   id :string;
   label :string;
   options :string[];
