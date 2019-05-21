@@ -21,7 +21,7 @@ import type { ReactSelectEvent, ReactSelectValue } from '../../../../select/type
 
 type Props = {
   className ? :string;
-  fetchState :any;
+  isLoading :any;
   filterFields ? :FilterFieldDefinition[];
   onResultClick ? :(result :Map) => void;
   onSearch :(searchFieldValues :Map) => void;
@@ -113,7 +113,7 @@ class Search extends Component<Props, State> {
 
   renderFilteredSearchResults = () :Node => {
     const {
-      fetchState,
+      isLoading,
       filterFields,
       onResultClick,
       resultComponent,
@@ -152,7 +152,7 @@ class Search extends Component<Props, State> {
     if (SearchResultsComponent) {
       return (
         <SearchResultsComponent
-            fetchState={fetchState}
+            isLoading={isLoading}
             onResultClick={onResultClick}
             resultComponent={resultComponent}
             resultLabels={resultLabels}
@@ -165,7 +165,7 @@ class Search extends Component<Props, State> {
 
   renderSearchFieldsSegment = () => {
 
-    const { searchFields, title } = this.props;
+    const { searchFields, title, isLoading } = this.props;
     const { searchFieldValues } = this.state;
 
     // $FlowFixMe optional not recognizing defaultProps
@@ -209,6 +209,7 @@ class Search extends Component<Props, State> {
             {searchFieldComponents}
             <Button
                 type="submit"
+                isLoading={isLoading}
                 mode="primary"
                 onClick={this.handleOnClickSearchButton}>
               Search
