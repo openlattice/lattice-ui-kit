@@ -25,8 +25,6 @@ exports[`button mode="default" should match snapshot 1`] = `
   opacity: 1;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
   white-space: nowrap;
 }
 
@@ -194,7 +192,7 @@ exports[`button mode="default" should match snapshot 1`] = `
                         "rules": Array [
                           "flex:1 1 auto;opacity:",
                           [Function],
-                          ";overflow:hidden;text-overflow:ellipsis;transition:opacity 0.3s;white-space:nowrap;",
+                          ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                         ],
                       },
                       "displayName": "Content",
@@ -251,8 +249,6 @@ exports[`button mode="default" should match snapshot 2`] = `
   opacity: 1;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
   white-space: nowrap;
 }
 
@@ -420,7 +416,7 @@ exports[`button mode="default" should match snapshot 2`] = `
                         "rules": Array [
                           "flex:1 1 auto;opacity:",
                           [Function],
-                          ";overflow:hidden;text-overflow:ellipsis;transition:opacity 0.3s;white-space:nowrap;",
+                          ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                         ],
                       },
                       "displayName": "Content",
@@ -477,8 +473,6 @@ exports[`button mode="primary" should match snapshot 1`] = `
   opacity: 1;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
   white-space: nowrap;
 }
 
@@ -639,11 +633,11 @@ exports[`button mode="primary" should match snapshot 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "Content-sc-18psqsj-0",
                         "isStatic": false,
-                        "lastClassName": "cfHlHz",
+                        "lastClassName": "iDvfiU",
                         "rules": Array [
                           "flex:1 1 auto;opacity:",
                           [Function],
-                          ";overflow:hidden;text-overflow:ellipsis;transition:opacity 0.3s;white-space:nowrap;",
+                          ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                         ],
                       },
                       "displayName": "Content",
@@ -700,8 +694,6 @@ exports[`button mode="secondary" should match snapshot 1`] = `
   opacity: 1;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
   white-space: nowrap;
 }
 
@@ -866,7 +858,7 @@ exports[`button mode="secondary" should match snapshot 1`] = `
                         "rules": Array [
                           "flex:1 1 auto;opacity:",
                           [Function],
-                          ";overflow:hidden;text-overflow:ellipsis;transition:opacity 0.3s;white-space:nowrap;",
+                          ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                         ],
                       },
                       "displayName": "Content",

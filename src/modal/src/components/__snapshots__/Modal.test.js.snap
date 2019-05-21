@@ -184,8 +184,6 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   opacity: 1;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
   white-space: nowrap;
 }
 
@@ -498,8 +496,6 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   opacity: 1;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
   white-space: nowrap;
 }
 
@@ -1273,7 +1269,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                     "rules": Array [
                                                                       "flex:1 1 auto;opacity:",
                                                                       [Function],
-                                                                      ";overflow:hidden;text-overflow:ellipsis;transition:opacity 0.3s;white-space:nowrap;",
+                                                                      ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                     ],
                                                                   },
                                                                   "displayName": "Content",
@@ -1466,7 +1462,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                     "rules": Array [
                                                                       "flex:1 1 auto;opacity:",
                                                                       [Function],
-                                                                      ";overflow:hidden;text-overflow:ellipsis;transition:opacity 0.3s;white-space:nowrap;",
+                                                                      ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                     ],
                                                                   },
                                                                   "displayName": "Content",
