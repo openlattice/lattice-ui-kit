@@ -5,7 +5,6 @@ import { List, Map } from 'immutable';
 
 import Result from './Result';
 import { CardStack } from '../../../../layout';
-import NotFound from './NotFound';
 import type { ResultProps } from './Result';
 
 type Props = {
@@ -42,7 +41,7 @@ class SearchResults extends React.Component<Props> {
       ));
     }
 
-    return <NotFound caption="No results found" />;
+    return null;
   }
 
   render() {
