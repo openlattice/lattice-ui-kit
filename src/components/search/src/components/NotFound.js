@@ -5,17 +5,17 @@ import { faSearchMinus } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const FigureWrapper = styled.figure`
-  text-align: center;
   margin: 30px auto;
+  text-align: center;
 
   figcaption {
-    margin: 20px auto;
-    line-height: 22px;
-    width: 100%;
+    color: #8e929b;
     font-size: 16px;
     font-weight: 600;
+    line-height: 22px;
+    margin: 20px auto;
     text-align: center;
-    color: #8e929b;
+    width: 100%;
   }
 `;
 
