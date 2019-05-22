@@ -1,9 +1,9 @@
 // @flow
 
-type ReactSelectOption = {
-  value :string;
+type ReactSelectOption = {|
   label :string;
-};
+  value :string;
+|};
 
 type ReactSelectValue = ReactSelectOption | ReactSelectOption[];
 
