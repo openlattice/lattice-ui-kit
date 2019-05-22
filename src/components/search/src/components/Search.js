@@ -17,7 +17,7 @@ import { Card, CardSegment, CardStack } from '../../../../layout';
 import type { SearchResultsProps } from './SearchResults';
 import type { ResultProps } from './Result';
 import type { SearchFieldDefinition, FilterFieldDefinition } from '../../types';
-import type { ReactSelectEvent, ReactSelectValue } from '../../../../select/types';
+import type { ReactSelectEvent, ReactSelectOption, ReactSelectValue } from '../../../../select/types';
 
 type Props = {
   className ? :string;
@@ -225,7 +225,7 @@ class Search extends Component<Props, State> {
     const { filterFields } = this.props;
     if (Array.isArray(filterFields) && filterFields.length) {
       const filterFieldComponents = filterFields.map((filter :FilterFieldDefinition) => {
-        const options = filter.options.map(v => ({ label: v, value: v }));
+        const options :ReactSelectOption[] = filter.options.map(v => ({ label: v, value: v }));
         return (
           <div key={`luk-filter-key-${filter.id}`}>
             <Label

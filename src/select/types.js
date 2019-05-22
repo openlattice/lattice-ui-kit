@@ -1,6 +1,11 @@
 // @flow
 
-type ReactSelectValue = Object | Object[];
+type ReactSelectOption = {
+  value :string;
+  label :string;
+};
+
+type ReactSelectValue = ReactSelectOption | ReactSelectOption[];
 
 type ReactSelectAction =
   | "select-option"
@@ -17,7 +22,8 @@ type ReactSelectEvent = {
 };
 
 export type {
-  ReactSelectValue,
   ReactSelectAction,
   ReactSelectEvent,
+  ReactSelectOption,
+  ReactSelectValue,
 };
