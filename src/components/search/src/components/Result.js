@@ -15,7 +15,7 @@ import {
 
 type Props = {
   className ? :string;
-  result ? :Map;
+  result :Map;
   resultColumns ? :number;
   resultLabels ? :Map;
   onClick ? :(result :Map) => void;
@@ -26,14 +26,13 @@ class Result extends Component<Props> {
   static defaultProps = {
     className: undefined,
     onClick: undefined,
-    result: Map(),
     resultColumns: 4,
     resultLabels: Map(),
   }
 
-  transformResultToDetailsList = (result :Map) => {
+  transformResultToDetailsList = () => {
 
-    const { resultLabels } = this.props;
+    const { result, resultLabels } = this.props;
     const labels = result.map((value :any, key :string) => {
       let label = key;
 
@@ -60,10 +59,9 @@ class Result extends Component<Props> {
   render() {
     const {
       className,
-      result,
       resultColumns
     } = this.props;
-    const details :List<Map> = this.transformResultToDetailsList(result);
+    const details :List<Map> = this.transformResultToDetailsList();
 
     return (
       <Card className={className} onClick={this.handleClick}>
