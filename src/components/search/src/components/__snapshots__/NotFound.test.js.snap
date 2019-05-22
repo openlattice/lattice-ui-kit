@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NotFound should match snapshot 1`] = `
-<NotFound__FigureWrapper>
+<FigureWrapper>
   <FontAwesomeIcon
     border={false}
     className=""
@@ -33,5 +33,5 @@ exports[`NotFound should match snapshot 1`] = `
     transform={null}
   />
   <figcaption />
-</NotFound__FigureWrapper>
+</FigureWrapper>
 `;

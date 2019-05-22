@@ -8,8 +8,6 @@ import SearchResults from './SearchResults';
 import PersonResult from './PersonResult';
 import Result from './Result';
 import Input from '../../../../input';
-import { Title } from './styled/StyledSearchComponents';
-import { CheckboxSelect } from '../../../../select';
 import { Card } from '../../../../layout';
 import { DatePicker } from '../../../../datetime';
 import {
@@ -60,17 +58,17 @@ describe('Search', () => {
     describe('render with props', () => {
       test('should render provided title', () => {
         const wrapper = shallow(<Search title="Title" />);
-        expect(wrapper.find(Title).text()).toEqual('Title');
+        expect(wrapper.find('Title').text()).toEqual('Title');
       });
 
       test('should not render undefined title', () => {
         const wrapper = shallow(<Search />);
-        expect(wrapper.find(Title)).toHaveLength(0);
+        expect(wrapper.find('Title')).toHaveLength(0);
       });
 
       test('should render provided filterFields', () => {
         const wrapper = shallow(<Search filterFields={mockFilterFields} />);
-        expect(wrapper.find(CheckboxSelect)).toHaveLength(3);
+        expect(wrapper.find('CheckboxSelect')).toHaveLength(3);
       });
 
       test('should render custom SearchResultComponent', () => {

@@ -708,14 +708,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
           </div>
         }
       >
-        <StyledOverlayComponents__OverlayOuterContainer>
+        <OverlayOuterContainer>
           <StyledComponent
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
+                  "componentId": "OverlayOuterContainer-ol4tzw-0",
                   "isStatic": true,
                   "lastClassName": "c0",
                   "rules": Array [
@@ -724,10 +724,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                     ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
                   ],
                 },
-                "displayName": "StyledOverlayComponents__OverlayOuterContainer",
+                "displayName": "OverlayOuterContainer",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
+                "styledComponentId": "OverlayOuterContainer-ol4tzw-0",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -739,7 +739,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
             <div
               className="c0"
             >
-              <StyledOverlayComponents__OverlayInnerContainer
+              <OverlayInnerContainer
                 isScrollable={false}
                 onClick={[Function]}
               >
@@ -749,7 +749,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
+                        "componentId": "OverlayInnerContainer-ol4tzw-1",
                         "isStatic": false,
                         "lastClassName": "c1",
                         "rules": Array [
@@ -758,10 +758,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                           ";width:100%;",
                         ],
                       },
-                      "displayName": "StyledOverlayComponents__OverlayInnerContainer",
+                      "displayName": "OverlayInnerContainer",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
+                      "styledComponentId": "OverlayInnerContainer-ol4tzw-1",
                       "target": "div",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -776,7 +776,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                     className="c1"
                     onClick={[Function]}
                   >
-                    <StyledModalComponents__ModalOuterContainer
+                    <ModalOuterContainer
                       onClick={[Function]}
                       viewportScrolling={false}
                     >
@@ -786,7 +786,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "StyledModalComponents__ModalOuterContainer-sc-1r1r1yf-0",
+                              "componentId": "ModalOuterContainer-sc-1r1r1yf-0",
                               "isStatic": false,
                               "lastClassName": "c2",
                               "rules": Array [
@@ -794,10 +794,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                 [Function],
                               ],
                             },
-                            "displayName": "StyledModalComponents__ModalOuterContainer",
+                            "displayName": "ModalOuterContainer",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "StyledModalComponents__ModalOuterContainer-sc-1r1r1yf-0",
+                            "styledComponentId": "ModalOuterContainer-sc-1r1r1yf-0",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -812,7 +812,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                           className="c2"
                           onClick={[Function]}
                         >
-                          <StyledModalComponents__ModalInnerContainer
+                          <ModalInnerContainer
                             center={true}
                             viewportScrolling={false}
                           >
@@ -823,7 +823,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "StyledModalComponents__ModalInnerContainer-sc-1r1r1yf-1",
+                                    "componentId": "ModalInnerContainer-sc-1r1r1yf-1",
                                     "isStatic": false,
                                     "lastClassName": "c3",
                                     "rules": Array [
@@ -841,10 +841,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                       [Function],
                                     ],
                                   },
-                                  "displayName": "StyledModalComponents__ModalInnerContainer",
+                                  "displayName": "ModalInnerContainer",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "StyledModalComponents__ModalInnerContainer-sc-1r1r1yf-1",
+                                  "styledComponentId": "ModalInnerContainer-sc-1r1r1yf-1",
                                   "target": "div",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -862,14 +862,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                   textTitle="Title"
                                   withHeader={true}
                                 >
-                                  <StyledModalComponents__HeaderSection>
+                                  <HeaderSection>
                                     <StyledComponent
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
-                                            "componentId": "StyledModalComponents__HeaderSection-sc-1r1r1yf-5",
+                                            "componentId": "HeaderSection-sc-1r1r1yf-5",
                                             "isStatic": true,
                                             "lastClassName": "c4",
                                             "rules": Array [
@@ -879,12 +879,12 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               "align-items:center;flex-direction:row;justify-content:space-between;",
                                             ],
                                           },
-                                          "displayName": "StyledModalComponents__HeaderSection",
+                                          "displayName": "HeaderSection",
                                           "foldedComponentIds": Array [
-                                            "StyledModalComponents__ModalSection-sc-1r1r1yf-2",
+                                            "ModalSection-sc-1r1r1yf-2",
                                           ],
                                           "render": [Function],
-                                          "styledComponentId": "StyledModalComponents__HeaderSection-sc-1r1r1yf-5",
+                                          "styledComponentId": "HeaderSection-sc-1r1r1yf-5",
                                           "target": "div",
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
@@ -896,24 +896,24 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                       <div
                                         className="c4"
                                       >
-                                        <ModalHeader__ModalTitle>
+                                        <ModalTitle>
                                           <StyledComponent
                                             forwardedComponent={
                                               Object {
                                                 "$$typeof": Symbol(react.forward_ref),
                                                 "attrs": Array [],
                                                 "componentStyle": ComponentStyle {
-                                                  "componentId": "ModalHeader__ModalTitle-sc-1rdyrep-0",
+                                                  "componentId": "ModalTitle-sc-1rdyrep-0",
                                                   "isStatic": true,
                                                   "lastClassName": "c5",
                                                   "rules": Array [
                                                     "color:#555e6f;font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                   ],
                                                 },
-                                                "displayName": "ModalHeader__ModalTitle",
+                                                "displayName": "ModalTitle",
                                                 "foldedComponentIds": Array [],
                                                 "render": [Function],
-                                                "styledComponentId": "ModalHeader__ModalTitle-sc-1rdyrep-0",
+                                                "styledComponentId": "ModalTitle-sc-1rdyrep-0",
                                                 "target": "h1",
                                                 "toString": [Function],
                                                 "warnTooManyClasses": [Function],
@@ -928,8 +928,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               Title
                                             </h1>
                                           </StyledComponent>
-                                        </ModalHeader__ModalTitle>
-                                        <ModalHeader__CloseButtonWrapper
+                                        </ModalTitle>
+                                        <CloseButtonWrapper
                                           onClick={[Function]}
                                         >
                                           <StyledComponent
@@ -938,17 +938,17 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 "$$typeof": Symbol(react.forward_ref),
                                                 "attrs": Array [],
                                                 "componentStyle": ComponentStyle {
-                                                  "componentId": "ModalHeader__CloseButtonWrapper-sc-1rdyrep-1",
+                                                  "componentId": "CloseButtonWrapper-sc-1rdyrep-1",
                                                   "isStatic": true,
                                                   "lastClassName": "c6",
                                                   "rules": Array [
                                                     "background:none;border:none;cursor:pointer;font-size:12px;height:32px;margin:0 0 0 auto;padding:0;text-align:center;width:32px;",
                                                   ],
                                                 },
-                                                "displayName": "ModalHeader__CloseButtonWrapper",
+                                                "displayName": "CloseButtonWrapper",
                                                 "foldedComponentIds": Array [],
                                                 "render": [Function],
-                                                "styledComponentId": "ModalHeader__CloseButtonWrapper-sc-1rdyrep-1",
+                                                "styledComponentId": "CloseButtonWrapper-sc-1rdyrep-1",
                                                 "target": "button",
                                                 "toString": [Function],
                                                 "warnTooManyClasses": [Function],
@@ -1012,20 +1012,20 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               </FontAwesomeIcon>
                                             </button>
                                           </StyledComponent>
-                                        </ModalHeader__CloseButtonWrapper>
+                                        </CloseButtonWrapper>
                                       </div>
                                     </StyledComponent>
-                                  </StyledModalComponents__HeaderSection>
+                                  </HeaderSection>
                                 </ModalHeader>
                                 <ModalBody>
-                                  <StyledModalComponents__BodySection>
+                                  <BodySection>
                                     <StyledComponent
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
-                                            "componentId": "StyledModalComponents__BodySection-sc-1r1r1yf-3",
+                                            "componentId": "BodySection-sc-1r1r1yf-3",
                                             "isStatic": true,
                                             "lastClassName": "c7",
                                             "rules": Array [
@@ -1037,12 +1037,12 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               "px;",
                                             ],
                                           },
-                                          "displayName": "StyledModalComponents__BodySection",
+                                          "displayName": "BodySection",
                                           "foldedComponentIds": Array [
-                                            "StyledModalComponents__ModalSection-sc-1r1r1yf-2",
+                                            "ModalSection-sc-1r1r1yf-2",
                                           ],
                                           "render": [Function],
-                                          "styledComponentId": "StyledModalComponents__BodySection-sc-1r1r1yf-3",
+                                          "styledComponentId": "BodySection-sc-1r1r1yf-3",
                                           "target": "div",
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
@@ -1059,7 +1059,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                         </span>
                                       </div>
                                     </StyledComponent>
-                                  </StyledModalComponents__BodySection>
+                                  </BodySection>
                                 </ModalBody>
                                 <ModalFooter
                                   onClickPrimary={[Function]}
@@ -1069,14 +1069,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                   textSecondary="Cancel"
                                   withFooter={true}
                                 >
-                                  <StyledModalComponents__FooterSection>
+                                  <FooterSection>
                                     <StyledComponent
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
-                                            "componentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
+                                            "componentId": "FooterSection-sc-1r1r1yf-4",
                                             "isStatic": true,
                                             "lastClassName": "c8",
                                             "rules": Array [
@@ -1086,12 +1086,12 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               "align-items:center;flex-direction:row-reverse;",
                                             ],
                                           },
-                                          "displayName": "StyledModalComponents__FooterSection",
+                                          "displayName": "FooterSection",
                                           "foldedComponentIds": Array [
-                                            "StyledModalComponents__ModalSection-sc-1r1r1yf-2",
+                                            "ModalSection-sc-1r1r1yf-2",
                                           ],
                                           "render": [Function],
-                                          "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
+                                          "styledComponentId": "FooterSection-sc-1r1r1yf-4",
                                           "target": "div",
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
@@ -1103,7 +1103,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                       <div
                                         className="c8"
                                       >
-                                        <ModalFooter__PrimaryButton
+                                        <PrimaryButton
                                           isLonely={false}
                                           onClick={[Function]}
                                           stretch={false}
@@ -1118,7 +1118,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                   },
                                                 ],
                                                 "componentStyle": ComponentStyle {
-                                                  "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
+                                                  "componentId": "PrimaryButton-sc-1a1to5t-0",
                                                   "isStatic": false,
                                                   "lastClassName": "c9",
                                                   "rules": Array [
@@ -1129,10 +1129,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                     ";",
                                                   ],
                                                 },
-                                                "displayName": "ModalFooter__PrimaryButton",
+                                                "displayName": "PrimaryButton",
                                                 "foldedComponentIds": Array [],
                                                 "render": [Function],
-                                                "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
+                                                "styledComponentId": "PrimaryButton-sc-1a1to5t-0",
                                                 "target": [Function],
                                                 "toString": [Function],
                                                 "warnTooManyClasses": [Function],
@@ -1300,8 +1300,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               </PrimaryButton>
                                             </Button>
                                           </StyledComponent>
-                                        </ModalFooter__PrimaryButton>
-                                        <ModalFooter__SecondaryButton
+                                        </PrimaryButton>
+                                        <SecondaryButton
                                           onClick={[Function]}
                                           stretch={false}
                                         >
@@ -1315,7 +1315,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                   },
                                                 ],
                                                 "componentStyle": ComponentStyle {
-                                                  "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
+                                                  "componentId": "SecondaryButton-sc-1a1to5t-1",
                                                   "isStatic": false,
                                                   "lastClassName": "c13",
                                                   "rules": Array [
@@ -1324,10 +1324,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                     ";",
                                                   ],
                                                 },
-                                                "displayName": "ModalFooter__SecondaryButton",
+                                                "displayName": "SecondaryButton",
                                                 "foldedComponentIds": Array [],
                                                 "render": [Function],
-                                                "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
+                                                "styledComponentId": "SecondaryButton-sc-1a1to5t-1",
                                                 "target": [Function],
                                                 "toString": [Function],
                                                 "warnTooManyClasses": [Function],
@@ -1493,23 +1493,23 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               </DefaultButton>
                                             </Button>
                                           </StyledComponent>
-                                        </ModalFooter__SecondaryButton>
+                                        </SecondaryButton>
                                       </div>
                                     </StyledComponent>
-                                  </StyledModalComponents__FooterSection>
+                                  </FooterSection>
                                 </ModalFooter>
                               </div>
                             </StyledComponent>
-                          </StyledModalComponents__ModalInnerContainer>
+                          </ModalInnerContainer>
                         </div>
                       </StyledComponent>
-                    </StyledModalComponents__ModalOuterContainer>
+                    </ModalOuterContainer>
                   </div>
                 </StyledComponent>
-              </StyledOverlayComponents__OverlayInnerContainer>
+              </OverlayInnerContainer>
             </div>
           </StyledComponent>
-        </StyledOverlayComponents__OverlayOuterContainer>
+        </OverlayOuterContainer>
         <LockToggle
           accountForScrollbars={true}
           isActive={true}

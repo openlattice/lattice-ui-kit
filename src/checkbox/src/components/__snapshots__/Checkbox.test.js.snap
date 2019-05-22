@@ -62,14 +62,14 @@ exports[`Checkbox render matches snapshot 1`] = `
   defaultChecked={false}
   disabled={false}
 >
-  <styled__CheckboxLabel>
+  <CheckboxLabel>
     <StyledComponent
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "styled__CheckboxLabel-sc-22ovv7-0",
+            "componentId": "CheckboxLabel-sc-22ovv7-0",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -80,10 +80,10 @@ exports[`Checkbox render matches snapshot 1`] = `
               ";position:relative;vertical-align:middle;",
             ],
           },
-          "displayName": "styled__CheckboxLabel",
+          "displayName": "CheckboxLabel",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "styled__CheckboxLabel-sc-22ovv7-0",
+          "styledComponentId": "CheckboxLabel-sc-22ovv7-0",
           "target": "label",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -95,7 +95,7 @@ exports[`Checkbox render matches snapshot 1`] = `
       <label
         className="c0"
       >
-        <styled__CheckboxInput
+        <CheckboxInput
           checked={false}
           disabled={false}
           onChange={[Function]}
@@ -112,7 +112,7 @@ exports[`Checkbox render matches snapshot 1`] = `
                   },
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "styled__CheckboxInput-sc-22ovv7-2",
+                  "componentId": "CheckboxInput-sc-22ovv7-2",
                   "isStatic": true,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -143,10 +143,10 @@ exports[`Checkbox render matches snapshot 1`] = `
                     ";}",
                   ],
                 },
-                "displayName": "styled__CheckboxInput",
+                "displayName": "CheckboxInput",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "styled__CheckboxInput-sc-22ovv7-2",
+                "styledComponentId": "CheckboxInput-sc-22ovv7-2",
                 "target": "input",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -164,8 +164,8 @@ exports[`Checkbox render matches snapshot 1`] = `
               type="checkbox"
             />
           </StyledComponent>
-        </styled__CheckboxInput>
-        <styled__CheckboxIndicator
+        </CheckboxInput>
+        <CheckboxIndicator
           checked={false}
         >
           <StyledComponent
@@ -186,7 +186,7 @@ exports[`Checkbox render matches snapshot 1`] = `
                     "}}",
                   ],
                 },
-                "displayName": "styled__CheckboxIndicator",
+                "displayName": "CheckboxIndicator",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "c2",
@@ -203,9 +203,9 @@ exports[`Checkbox render matches snapshot 1`] = `
               className="c2 c3"
             />
           </StyledComponent>
-        </styled__CheckboxIndicator>
+        </CheckboxIndicator>
       </label>
     </StyledComponent>
-  </styled__CheckboxLabel>
+  </CheckboxLabel>
 </Checkbox>
 `;
