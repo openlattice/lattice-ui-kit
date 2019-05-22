@@ -1,17 +1,21 @@
 // @flow
 import { List, Map } from 'immutable';
 import intersection from 'lodash/intersection';
+import isArray from 'lodash/isArray';
 import type { FilterFieldDefinition } from '../../types';
+import type { ReactSelectValue } from '../../../../select/types';
 
 // TODO: Create class for filterDefinition
 const mockFilterFields :FilterFieldDefinition[] = [
   {
-    filterCallback: (searchResult :Map, selectedOptions :Object[]) => {
-      const selectedValues = selectedOptions.map(option => option.value);
-      const searchResultValue = searchResult.get('reportType');
+    filterCallback: (searchResult :Map, filterValues :ReactSelectValue) => {
+      if (isArray(filterValues)) {
+        const values = filterValues.map(option => option.value);
+        const searchResultValue = searchResult.get('reportType');
 
-      if (selectedValues.length) {
-        return selectedValues.includes(searchResultValue);
+        if (values.length) {
+          return values.includes(searchResultValue);
+        }
       }
 
       return true;
@@ -21,12 +25,14 @@ const mockFilterFields :FilterFieldDefinition[] = [
     options: ['Crisis Template', 'Follow-up'],
   },
   {
-    filterCallback: (searchResult :Map, selectedOptions :Object[]) => {
-      const selectedValues = selectedOptions.map(option => option.value);
-      const searchResultValue :any[] = searchResult.get('badges', []);
+    filterCallback: (searchResult :Map, filterValues :ReactSelectValue) => {
+      if (isArray(filterValues)) {
+        const values = filterValues.map(option => option.value);
+        const searchResultValue :any[] = searchResult.get('badges', []);
 
-      if (selectedValues.length) {
-        return intersection(searchResultValue, selectedValues).length > 0;
+        if (values.length) {
+          return intersection(searchResultValue, values).length > 0;
+        }
       }
 
       return true;
@@ -36,12 +42,14 @@ const mockFilterFields :FilterFieldDefinition[] = [
     options: ['Officer Safety', 'Substance use'],
   },
   {
-    filterCallback: (searchResult :Map, selectedOptions :Object[]) => {
-      const selectedValues = selectedOptions.map(option => option.value);
-      const searchResultValue = searchResult.get('submitter');
+    filterCallback: (searchResult :Map, filterValues :ReactSelectValue) => {
+      if (isArray(filterValues)) {
+        const values = filterValues.map(option => option.value);
+        const searchResultValue = searchResult.get('submitter');
 
-      if (selectedValues.length) {
-        return selectedValues.includes(searchResultValue);
+        if (values.length) {
+          return values.includes(searchResultValue);
+        }
       }
 
       return true;
