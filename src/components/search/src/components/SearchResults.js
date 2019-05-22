@@ -1,6 +1,7 @@
 // @flow
 
-import * as React from 'react';
+import React, { Component } from 'react';
+import type { ComponentType, Node } from 'react';
 import { List, Map } from 'immutable';
 
 import NotFound from './NotFound';
@@ -12,12 +13,12 @@ import type { ResultProps } from './Result';
 type Props = {
   results :List<Map>;
   resultLabels ? :Map;
-  resultComponent ? :React.ComponentType<ResultProps>;
+  resultComponent ? :ComponentType<ResultProps>;
   className ? :string;
   onResultClick ? :(result :Map) => void;
 };
 
-class SearchResults extends React.Component<Props> {
+class SearchResults extends Component<Props> {
 
   static defaultProps = {
     className: undefined,
@@ -26,7 +27,7 @@ class SearchResults extends React.Component<Props> {
     resultLabels: Map(),
   }
 
-  renderResults = () :React.Node => {
+  renderResults = () :Node => {
     const {
       onResultClick,
       resultComponent: ResultComponent,

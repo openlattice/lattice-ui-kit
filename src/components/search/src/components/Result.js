@@ -1,6 +1,6 @@
 // @flow
 
-import * as React from 'react';
+import React, { Component } from 'react';
 import isFunction from 'lodash/isFunction';
 import { List, Map } from 'immutable';
 
@@ -21,7 +21,7 @@ type Props = {
   onClick ? :(result :Map) => void;
 }
 
-class Result extends React.Component<Props> {
+class Result extends Component<Props> {
 
   static defaultProps = {
     className: undefined,
