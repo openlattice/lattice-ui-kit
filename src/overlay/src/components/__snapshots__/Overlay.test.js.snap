@@ -74,14 +74,14 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
         </div>
       }
     >
-      <OverlayOuterContainer>
+      <StyledOverlayComponents__OverlayOuterContainer>
         <StyledComponent
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "OverlayOuterContainer-ol4tzw-0",
+                "componentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -90,10 +90,10 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
                   ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
                 ],
               },
-              "displayName": "OverlayOuterContainer",
+              "displayName": "StyledOverlayComponents__OverlayOuterContainer",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "OverlayOuterContainer-ol4tzw-0",
+              "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -105,7 +105,7 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
           <div
             className="c0"
           >
-            <OverlayInnerContainer
+            <StyledOverlayComponents__OverlayInnerContainer
               isScrollable={false}
               onClick={[Function]}
             >
@@ -115,7 +115,7 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "OverlayInnerContainer-ol4tzw-1",
+                      "componentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
                       "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -124,10 +124,10 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
                         ";width:100%;",
                       ],
                     },
-                    "displayName": "OverlayInnerContainer",
+                    "displayName": "StyledOverlayComponents__OverlayInnerContainer",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "OverlayInnerContainer-ol4tzw-1",
+                    "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -147,10 +147,10 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
                   </span>
                 </div>
               </StyledComponent>
-            </OverlayInnerContainer>
+            </StyledOverlayComponents__OverlayInnerContainer>
           </div>
         </StyledComponent>
-      </OverlayOuterContainer>
+      </StyledOverlayComponents__OverlayOuterContainer>
       <LockToggle
         accountForScrollbars={true}
         isActive={true}

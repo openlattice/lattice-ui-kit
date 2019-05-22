@@ -7,6 +7,7 @@ import Search from './Search';
 import SearchResults from './SearchResults';
 import PersonResult from './PersonResult';
 import Result from './Result';
+import { Title } from './styled/StyledSearchComponents';
 import Input from '../../../../input';
 import { Card } from '../../../../layout';
 import { DatePicker } from '../../../../datetime';
@@ -58,12 +59,12 @@ describe('Search', () => {
     describe('render with props', () => {
       test('should render provided title', () => {
         const wrapper = shallow(<Search title="Title" />);
-        expect(wrapper.find('Title').text()).toEqual('Title');
+        expect(wrapper.find(Title).text()).toEqual('Title');
       });
 
       test('should not render undefined title', () => {
         const wrapper = shallow(<Search />);
-        expect(wrapper.find('Title')).toHaveLength(0);
+        expect(wrapper.find(Title)).toHaveLength(0);
       });
 
       test('should render provided filterFields', () => {

@@ -7,7 +7,7 @@ exports[`Search snapshots should match snapshot 1`] = `
       vertical={true}
     >
       <form>
-        <InputGrid
+        <StyledSearchComponents__InputGrid
           align="flex-end"
           columns={4}
         >
@@ -66,7 +66,7 @@ exports[`Search snapshots should match snapshot 1`] = `
           >
             Search
           </Button>
-        </InputGrid>
+        </StyledSearchComponents__InputGrid>
       </form>
     </CardSegment>
   </Card>
