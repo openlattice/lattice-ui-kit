@@ -34,7 +34,8 @@ const AppContentInnerWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   max-width: 1020px;
-  padding: 30px;
+  width: 100%;
+  margin: 30px;
 `;
 
 addDecorator(withInfo);
