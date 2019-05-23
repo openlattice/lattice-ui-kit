@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox render matches snapshot 1`] = `
+.c0 {
+  display: inline-block;
+  color: #555e6f;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 10px 0;
+  min-height: 20px;
+  padding: 0 10px 0 30px;
+  pointer-events: auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6f7;
+  border-radius: 3px;
+}
+
+.c3:after {
+  display: none;
+}
+
+.c1 {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  vertical-align: middle;
+}
+
+.c1:hover + .c2,
+.c1:focus + .c2 {
+  background: #8e929b;
+}
+
+.c1:checked + .c2 {
+  background: #8045ff;
+}
+
+.c1:checked:hover + .c2,
+.c1:checked:focus + .c2 {
+  background: #6124e2;
+}
+
+.c1:disabled + .c2 {
+  background: #e6e6f7;
+  cursor: not-allowed;
+}
+
+.c1:checked:disabled + .c2 {
+  background: #b6bbc7;
+}
+
+<Checkbox
+  defaultChecked={false}
+  disabled={false}
+>
+  <styled__CheckboxLabel>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styled__CheckboxLabel-sc-22ovv7-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;color:",
+              "#555e6f",
+              ";font-size:14px;font-weight:normal;margin:10px 0;min-height:20px;padding:0 10px 0 30px;pointer-events:",
+              [Function],
+              ";position:relative;vertical-align:middle;",
+            ],
+          },
+          "displayName": "styled__CheckboxLabel",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styled__CheckboxLabel-sc-22ovv7-0",
+          "target": "label",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <label
+        className="c0"
+      >
+        <styled__CheckboxInput
+          checked={false}
+          disabled={false}
+          onChange={[Function]}
+        >
+          <StyledComponent
+            checked={false}
+            disabled={false}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [
+                  Object {
+                    "type": "checkbox",
+                  },
+                ],
+                "componentStyle": ComponentStyle {
+                  "componentId": "styled__CheckboxInput-sc-22ovv7-2",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "position:absolute;z-index:-1;opacity:0;vertical-align:middle;:hover + ",
+                    ".c2",
+                    ",:focus + ",
+                    ".c2",
+                    "{background:",
+                    "#8e929b",
+                    ";}:checked + ",
+                    ".c2",
+                    "{background:",
+                    "#8045ff",
+                    ";}:checked:hover + ",
+                    ".c2",
+                    ",:checked:focus + ",
+                    ".c2",
+                    "{background:",
+                    "#6124e2",
+                    ";}:disabled + ",
+                    ".c2",
+                    "{background:",
+                    "#e6e6f7",
+                    ";cursor:not-allowed;}:checked:disabled + ",
+                    ".c2",
+                    "{background:",
+                    "#b6bbc7",
+                    ";}",
+                  ],
+                },
+                "displayName": "styled__CheckboxInput",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "styled__CheckboxInput-sc-22ovv7-2",
+                "target": "input",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onChange={[Function]}
+          >
+            <input
+              checked={false}
+              className="c1"
+              disabled={false}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </StyledComponent>
+        </styled__CheckboxInput>
+        <styled__CheckboxIndicator
+          checked={false}
+        >
+          <StyledComponent
+            checked={false}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "c2",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "position:absolute;top:0;left:0;height:20px;width:20px;background:",
+                    "#e6e6f7",
+                    ";border-radius:3px;:after{",
+                    [Function],
+                    "}}",
+                  ],
+                },
+                "displayName": "styled__CheckboxIndicator",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "c2",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              checked={false}
+              className="c2 c3"
+            />
+          </StyledComponent>
+        </styled__CheckboxIndicator>
+      </label>
+    </StyledComponent>
+  </styled__CheckboxLabel>
+</Checkbox>
+`;

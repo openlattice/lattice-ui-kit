@@ -28,10 +28,15 @@ module.exports = {
   setupFiles: [
     '<rootDir>/config/jest/enzyme.config.js',
   ],
-  setupTestFrameworkScriptFile: '<rootDir>/config/jest/test.config.js',
+  setupFilesAfterEnv: [
+    '<rootDir>/config/jest/test.config.js',
+  ],
   testEnvironment: '<rootDir>/config/jest/jsdom.config.js',
   testURL: 'http://localhost',
   transform: {
     '^.+\\.jsx?$': '<rootDir>/config/jest/babelJestTransformer.js',
   },
+  transformIgnorePatterns: [
+    '/node_modules/(?!(@atlaskit)/)'
+  ]
 };

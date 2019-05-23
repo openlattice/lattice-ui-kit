@@ -47,6 +47,18 @@ describe('button', () => {
       expect(basicBtn2.text()).toEqual(DEFAULT_BTN_TXT);
     });
 
+    describe('isLoading', () => {
+      test('should render loading spinner', () => {
+        const wrapper = mount(<Button isLoading />);
+        expect(wrapper.find('Spinner')).toHaveLength(1);
+      });
+
+      test('should set content opacity to 0', () => {
+        const wrapper = mount(<Button isLoading />);
+        expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
+      });
+    });
+
     describe('disabled', () => {
 
       const disabledBtn1 = mount(
@@ -125,6 +137,18 @@ describe('button', () => {
       expect(basicBtn.text()).toEqual(PRIMARY_BTN_TXT);
     });
 
+    describe('isLoading', () => {
+      test('should render loading spinner', () => {
+        const wrapper = mount(<Button mode="primary" isLoading />);
+        expect(wrapper.find('Spinner')).toHaveLength(1);
+      });
+
+      test('should set content opacity to 0', () => {
+        const wrapper = mount(<Button mode="primary" isLoading />);
+        expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
+      });
+    });
+
     describe('disabled', () => {
 
       const disabledBtn = mount(
@@ -184,6 +208,18 @@ describe('button', () => {
 
     test('should render the correct text', () => {
       expect(basicBtn.text()).toEqual(SECONDARY_BTN_TXT);
+    });
+
+    describe('isLoading', () => {
+      test('should render loading spinner', () => {
+        const wrapper = mount(<Button mode="secondary" isLoading />);
+        expect(wrapper.find('Spinner')).toHaveLength(1);
+      });
+
+      test('should set content opacity to 0', () => {
+        const wrapper = mount(<Button mode="secondary" isLoading />);
+        expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
+      });
     });
 
     describe('disabled', () => {

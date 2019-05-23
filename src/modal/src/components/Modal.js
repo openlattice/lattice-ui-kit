@@ -19,18 +19,19 @@ const ESC_KEY_CODE :'Escape' = 'Escape';
 type Props = {
   children :Node;
   isVisible :boolean;
-  onClickPrimary ? :() => void;
-  onClickSecondary ? :() => void;
+  onClickPrimary ?:() => void;
+  onClickSecondary ?:() => void;
   onClose :() => void;
-  shouldBeCentered ? :boolean;
-  shouldCloseOnEscape ? :boolean;
-  shouldCloseOnOutsideClick ? :boolean;
-  shouldStretchButtons ? :boolean;
-  textPrimary ? :string;
-  textSecondary ? :string;
-  textTitle ? :string;
-  withFooter ? :ComponentType<*> | boolean;
-  withHeader ? :ComponentType<*> | boolean;
+  shouldBeCentered ?:boolean;
+  shouldCloseOnEscape ?:boolean;
+  shouldCloseOnOutsideClick ?:boolean;
+  shouldStretchButtons ?:boolean;
+  textPrimary ?:string;
+  textSecondary ?:string;
+  textTitle ?:string;
+  viewportScrolling ?:boolean;
+  withFooter ?:ComponentType<*> | boolean;
+  withHeader ?:ComponentType<*> | boolean;
 };
 
 /*
@@ -53,6 +54,7 @@ export default class Modal extends Component<Props> {
     textPrimary: PropTypes.string,
     textSecondary: PropTypes.string,
     textTitle: PropTypes.string,
+    viewportScrolling: PropTypes.bool,
     withFooter: PropTypes.oneOfType([PropTypes.bool, PropTypes.func, PropTypes.node]),
     withHeader: PropTypes.oneOfType([PropTypes.bool, PropTypes.func, PropTypes.node]),
   }
@@ -67,6 +69,7 @@ export default class Modal extends Component<Props> {
     textPrimary: '',
     textSecondary: '',
     textTitle: '',
+    viewportScrolling: false,
     withFooter: true,
     withHeader: true,
   }
@@ -208,6 +211,7 @@ export default class Modal extends Component<Props> {
       children,
       isVisible,
       shouldBeCentered,
+      viewportScrolling,
     } = this.props;
 
     if (!isVisible) {
@@ -215,9 +219,9 @@ export default class Modal extends Component<Props> {
     }
 
     return (
-      <Overlay isVisible={isVisible} onClose={this.handleOnClickOverlay}>
-        <ModalOuterContainer onClick={this.handleOnClickOutside}>
-          <ModalInnerContainer center={shouldBeCentered}>
+      <Overlay isScrollable={viewportScrolling} isVisible={isVisible} onClose={this.handleOnClickOverlay}>
+        <ModalOuterContainer onClick={this.handleOnClickOutside} viewportScrolling={viewportScrolling}>
+          <ModalInnerContainer center={shouldBeCentered} viewportScrolling={viewportScrolling}>
             { this.renderHeaderComponent() }
             <ModalBody>
               { children }

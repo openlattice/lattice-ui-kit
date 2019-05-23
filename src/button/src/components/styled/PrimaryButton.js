@@ -3,8 +3,8 @@ import styled, { css } from 'styled-components';
 import { NEUTRALS, PURPLES, WHITE } from '../../../../colors';
 
 const primaryStyle = css`
-  background-color: ${PURPLES[1]};
-  border-color: ${PURPLES[1]};
+  background-color: ${PURPLES[2]};
+  border-color: ${PURPLES[2]};
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
@@ -21,8 +21,8 @@ const primaryStyle = css`
 
 const primaryHover = css`
   &:hover {
-    background-color: ${PURPLES[2]};
-    border-color: ${PURPLES[2]};
+    background-color: ${PURPLES[1]};
+    border-color: ${PURPLES[1]};
     cursor: pointer;
     text-decoration: none;
   }

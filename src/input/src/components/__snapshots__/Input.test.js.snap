@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input render matches snapshot 1`] = `
+.c0 {
+  background-color: #f9f9fd;
+  border-radius: 3px;
+  border: 1px solid #dcdce7;
+  box-shadow: 0;
+  box-sizing: border-box;
+  color: #555e6f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 10px;
+  text-overflow: ellipsis;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+  width: 100%;
+}
+
+.c0:hover {
+  background-color: #f0f0f7;
+}
+
+.c0:focus {
+  border: solid 1px #6124e2;
+  background-color: white;
+  outline: none;
+}
+
+.c0:disabled {
+  background-color: #f9f9fd;
+  color: #8e929b;
+  cursor: not-allowed;
+}
+
+<Input>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Input-sc-4g0udv-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "background-color:",
+            "#f9f9fd",
+            ";border-radius:3px;border:1px solid ",
+            [Function],
+            ";box-shadow:0;box-sizing:border-box;color:",
+            "#555e6f",
+            ";display:flex;flex:0 1 auto;font-size:14px;line-height:18px;padding:10px 10px;text-overflow:ellipsis;transition:background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;width:100%;:hover{background-color:",
+            "#f0f0f7",
+            ";}:focus{border:solid 1px ",
+            "#6124e2",
+            ";background-color:white;outline:none;}:disabled{background-color:",
+            "#f9f9fd",
+            ";color:",
+            "#8e929b",
+            ";cursor:not-allowed;}",
+          ],
+        },
+        "displayName": "Input",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Input-sc-4g0udv-0",
+        "target": "input",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <input
+      className="c0"
+    />
+  </StyledComponent>
+</Input>
+`;

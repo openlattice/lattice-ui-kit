@@ -38,9 +38,9 @@ const secondaryActive = css`
 
 const secondaryDisabled = css`
   &:disabled {
-    background-color: ${NEUTRALS[4]};
-    border-color: ${NEUTRALS[4]};
-    color: ${NEUTRALS[1]};
+    background-color: ${NEUTRALS[6]};
+    border-color: ${NEUTRALS[6]};
+    color: ${NEUTRALS[2]};
     cursor: not-allowed;
     text-decoration: none;
   }

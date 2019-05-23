@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withProps render matches snapshot 1`] = `
+<LatticeWrapper>
+  <WrappedComponent
+    foo="bar"
+    open="lattice"
+  >
+    <div>
+      test
+    </div>
+  </WrappedComponent>
+</LatticeWrapper>
+`;

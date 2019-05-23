@@ -3,7 +3,6 @@
  */
 
 import styled, { css } from 'styled-components';
-import type { ReactComponentStyled } from 'styled-components';
 
 import { NEUTRALS, WHITE } from '../../../../colors';
 
@@ -29,6 +28,7 @@ const defaultHover = css`
   &:hover {
     background-color: ${NEUTRALS[4]};
     border-color: ${NEUTRALS[4]};
+    cursor: pointer;
     text-decoration: none;
   }
 `;
@@ -44,12 +44,15 @@ const defaultActive = css`
 
 const defaultDisabled = css`
   &:disabled {
+    background-color: ${NEUTRALS[6]};
+    border-color: ${NEUTRALS[6]};
+    color: ${NEUTRALS[2]};
     cursor: not-allowed;
     text-decoration: none;
   }
 `;
 
-const DefaultButton :ReactComponentStyled<*> = styled.button`
+const DefaultButton = styled.button`
   ${defaultStyle}
   ${defaultHover}
   ${defaultActive}
