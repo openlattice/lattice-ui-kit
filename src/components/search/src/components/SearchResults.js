@@ -38,7 +38,7 @@ class SearchResults extends Component<Props> {
       return results.map((result :Map, index :number) => (
         <ResultComponent
             key={index.toString()}
-            onClick={onResultClick}
+            onResultClick={onResultClick}
             result={result}
             resultLabels={resultLabels} />
       ));

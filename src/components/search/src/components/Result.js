@@ -18,14 +18,14 @@ type Props = {
   result :Map;
   resultColumns ? :number;
   resultLabels ? :Map;
-  onClick ? :(result :Map) => void;
+  onResultClick ? :(result :Map) => void;
 }
 
 class Result extends Component<Props> {
 
   static defaultProps = {
     className: undefined,
-    onClick: undefined,
+    onResultClick: undefined,
     resultColumns: 4,
     resultLabels: Map(),
   }
@@ -50,9 +50,9 @@ class Result extends Component<Props> {
   }
 
   handleClick = () => {
-    const { onClick, result } = this.props;
-    if (isFunction(onClick)) {
-      onClick(result);
+    const { onResultClick, result } = this.props;
+    if (isFunction(onResultClick)) {
+      onResultClick(result);
     }
   }
 
