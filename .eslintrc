@@ -132,7 +132,7 @@
     "react/require-default-props": [
       "error",
       {
-        "forbidDefaultForRequired": false,
+        "forbidDefaultForRequired": false
       }
     ],
     "react/sort-comp": "off"

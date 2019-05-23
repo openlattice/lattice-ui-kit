@@ -2,6 +2,12 @@
 
 exports[`Input render matches snapshot 1`] = `
 .c0 {
+  background-color: #f9f9fd;
+  border-radius: 3px;
+  border: 1px solid #dcdce7;
+  box-shadow: 0;
+  box-sizing: border-box;
+  color: #555e6f;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9,18 +15,13 @@ exports[`Input render matches snapshot 1`] = `
   -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  box-sizing: border-box;
-  border-radius: 3px;
-  box-shadow: 0;
-  color: #555e6f;
   font-size: 14px;
   line-height: 18px;
-  text-overflow: ellipsis;
-  width: 100%;
-  border: 1px solid #dcdce7;
   padding: 10px 10px;
+  text-overflow: ellipsis;
   -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+  width: 100%;
 }
 
 .c0:hover {
@@ -50,11 +51,13 @@ exports[`Input render matches snapshot 1`] = `
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
-            "display:flex;flex:0 1 auto;box-sizing:border-box;border-radius:3px;box-shadow:0;color:",
-            "#555e6f",
-            ";font-size:14px;line-height:18px;text-overflow:ellipsis;width:100%;border:1px solid ",
+            "background-color:",
+            "#f9f9fd",
+            ";border-radius:3px;border:1px solid ",
             [Function],
-            ";padding:10px 10px;transition:background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;:hover{background-color:",
+            ";box-shadow:0;box-sizing:border-box;color:",
+            "#555e6f",
+            ";display:flex;flex:0 1 auto;font-size:14px;line-height:18px;padding:10px 10px;text-overflow:ellipsis;transition:background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;width:100%;:hover{background-color:",
             "#f0f0f7",
             ";}:focus{border:solid 1px ",
             "#6124e2",

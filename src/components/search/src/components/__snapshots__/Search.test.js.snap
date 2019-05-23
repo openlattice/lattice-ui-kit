@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search snapshots should match snapshot 1`] = `
+<CardStack>
+  <Card>
+    <CardSegment
+      vertical={true}
+    >
+      <form>
+        <StyledSearchComponents__InputGrid
+          align="flex-end"
+          columns={4}
+        >
+          <div
+            key="luk-search-key-firstname"
+          >
+            <Label
+              htmlFor="luk-search-firstname"
+            >
+              First Name
+            </Label>
+            <Input
+              id="luk-search-firstname"
+              name="firstname"
+              onChange={[Function]}
+              value=""
+            />
+          </div>
+          <div
+            key="luk-search-key-lastname"
+          >
+            <Label
+              htmlFor="luk-search-lastname"
+            >
+              Last Name
+            </Label>
+            <Input
+              id="luk-search-lastname"
+              name="lastname"
+              onChange={[Function]}
+              value=""
+            />
+          </div>
+          <div
+            key="luk-search-key-dob"
+          >
+            <Label
+              htmlFor="luk-search-dob"
+            >
+              Date of Birth
+            </Label>
+            <LatticeWrapper
+              id="luk-search-dob"
+              name="dob"
+              onChange={[Function]}
+              value=""
+            />
+          </div>
+          <Button
+            disabled={false}
+            isLoading={false}
+            mode="primary"
+            onClick={[Function]}
+            type="submit"
+          >
+            Search
+          </Button>
+        </StyledSearchComponents__InputGrid>
+      </form>
+    </CardSegment>
+  </Card>
+  <SearchResults
+    resultComponent={[Function]}
+    resultLabels={Immutable.Map {}}
+    results={Immutable.List []}
+  />
+</CardStack>
+`;

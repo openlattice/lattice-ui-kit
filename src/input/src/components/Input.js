@@ -5,19 +5,20 @@ import styled from 'styled-components';
 import { NEUTRALS, PURPLES, RED_1 } from '../../../colors';
 
 const Input = styled.input`
+  background-color: ${NEUTRALS[8]};
+  border-radius: 3px;
+  border: 1px solid ${props => (props.invalid ? RED_1 : NEUTRALS[4])};
+  box-shadow: 0;
+  box-sizing: border-box;
+  color: ${NEUTRALS[0]};
   display: flex;
   flex: 0 1 auto;
-  box-sizing: border-box;
-  border-radius: 3px;
-  box-shadow: 0;
-  color: ${NEUTRALS[0]};
   font-size: 14px;
   line-height: 18px;
-  text-overflow: ellipsis;
-  width: 100%;
-  border: 1px solid ${props => (props.invalid ? RED_1 : NEUTRALS[4])};
   padding: 10px 10px;
+  text-overflow: ellipsis;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  width: 100%;
 
   :hover {
     background-color: ${NEUTRALS[6]};

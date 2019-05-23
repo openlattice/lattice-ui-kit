@@ -6,7 +6,8 @@ const selectStyles = {
     return {
       ...base,
       cursor: isDisabled ? 'not-allowed' : 'default',
-      pointerEvents: 'auto'
+      pointerEvents: 'auto',
+      width: '100%'
     };
   },
   control: (base, state) => {
@@ -21,8 +22,7 @@ const selectStyles = {
       borderRadius: '3px',
       boxShadow: 'none',
       fontSize: '14px',
-      marginTop: '10px',
-      minHeight: '39px',
+      minHeight: '40px',
       pointerEvents: isDisabled ? 'none' : 'auto',
       ':hover': {
         backgroundColor: isFocused ? 'white' : NEUTRALS[6],

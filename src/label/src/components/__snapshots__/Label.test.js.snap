@@ -3,6 +3,7 @@
 exports[`Label snapshots should match snapshot 1`] = `
 .c0 {
   color: #555e6f;
+  display: inline-block;
   font-size: 14px;
   font-stretch: normal;
   font-style: normal;
@@ -11,8 +12,7 @@ exports[`Label snapshots should match snapshot 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin: 5px 5px 5px 0;
 }
 
 <Label>
@@ -23,12 +23,15 @@ exports[`Label snapshots should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Label-sc-130fyca-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "color:",
             "#555e6f",
-            ";font-size:14px;font-stretch:normal;font-style:normal;font-weight:normal;letter-spacing:normal;margin-top:10px;margin-bottom:5px;",
+            ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
+            [Function],
+            ";letter-spacing:normal;margin:5px 5px 5px 0;",
+            [Function],
           ],
         },
         "displayName": "Label",

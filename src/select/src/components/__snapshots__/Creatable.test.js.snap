@@ -223,7 +223,7 @@ exports[`Creatable render matches snapshot 1`] = `
           }
         >
           <div
-            className="css-hj9vq6-container"
+            className="css-3s23b0-container"
             onKeyDown={[Function]}
           >
             <Control
@@ -340,7 +340,7 @@ exports[`Creatable render matches snapshot 1`] = `
               }
             >
               <div
-                className="css-1fvvhxi-control"
+                className="css-moep9d-control"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
               >

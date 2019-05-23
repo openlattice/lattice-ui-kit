@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import { Select, Creatable } from '../index';
+import { Select, Creatable, CheckboxSelect } from '../index';
 import { stateOptions, REACT_SELECT_USAGE } from './constants';
 
 storiesOf('Select', module)
@@ -47,6 +47,14 @@ storiesOf('Select', module)
           isMulti
           options={stateOptions}
           onChange={action('Borderless changed')} />
+    </>
+  ))
+  .add('Checkbox Select', () => (
+    <>
+      <h1>Checkbox Select</h1>
+      <CheckboxSelect
+          options={stateOptions}
+          onChange={action('CheckboxSelect changed')} />
     </>
   ))
   .add('Appearances', () => (
