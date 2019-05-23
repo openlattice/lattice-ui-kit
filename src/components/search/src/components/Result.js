@@ -7,9 +7,9 @@ import { List, Map } from 'immutable';
 import Label from '../../../../label';
 import { Card } from '../../../../layout';
 import {
+  ResultDetails,
   ResultGrid,
   ResultWrapper,
-  ResultDetails,
   Truncated
 } from './styled/StyledResultComponents';
 

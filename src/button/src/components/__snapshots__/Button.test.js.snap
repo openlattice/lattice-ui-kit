@@ -72,7 +72,6 @@ exports[`button mode="default" should match snapshot 1`] = `
 }
 
 <Button
-  className=""
   disabled={false}
   isLoading={false}
   mode="default"
@@ -80,13 +79,11 @@ exports[`button mode="default" should match snapshot 1`] = `
   type="button"
 >
   <DefaultButton
-    className=""
     disabled={false}
     onClick={[Function]}
     type="button"
   >
     <StyledComponent
-      className=""
       disabled={false}
       forwardedComponent={
         Object {
@@ -296,7 +293,6 @@ exports[`button mode="default" should match snapshot 2`] = `
 }
 
 <Button
-  className=""
   disabled={false}
   isLoading={false}
   mode="default"
@@ -304,13 +300,11 @@ exports[`button mode="default" should match snapshot 2`] = `
   type="button"
 >
   <DefaultButton
-    className=""
     disabled={false}
     onClick={[Function]}
     type="button"
   >
     <StyledComponent
-      className=""
       disabled={false}
       forwardedComponent={
         Object {
@@ -519,7 +513,6 @@ exports[`button mode="primary" should match snapshot 1`] = `
 }
 
 <Button
-  className=""
   disabled={false}
   isLoading={false}
   mode="primary"
@@ -527,13 +520,11 @@ exports[`button mode="primary" should match snapshot 1`] = `
   type="button"
 >
   <PrimaryButton
-    className=""
     disabled={false}
     onClick={[Function]}
     type="button"
   >
     <StyledComponent
-      className=""
       disabled={false}
       forwardedComponent={
         Object {
@@ -740,7 +731,6 @@ exports[`button mode="secondary" should match snapshot 1`] = `
 }
 
 <Button
-  className=""
   disabled={false}
   isLoading={false}
   mode="secondary"
@@ -748,13 +738,11 @@ exports[`button mode="secondary" should match snapshot 1`] = `
   type="button"
 >
   <SecondaryButton
-    className=""
     disabled={false}
     onClick={[Function]}
     type="button"
   >
     <StyledComponent
-      className=""
       disabled={false}
       forwardedComponent={
         Object {

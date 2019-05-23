@@ -68,7 +68,7 @@ const Button = (props :Props) => {
 };
 
 Button.defaultProps = {
-  className: '',
+  className: undefined,
   disabled: false,
   isLoading: false,
   mode: 'default',

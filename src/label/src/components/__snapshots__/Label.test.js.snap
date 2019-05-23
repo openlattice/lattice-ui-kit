@@ -31,6 +31,7 @@ exports[`Label snapshots should match snapshot 1`] = `
             ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
             [Function],
             ";letter-spacing:normal;margin:5px 5px 5px 0;",
+            [Function],
           ],
         },
         "displayName": "Label",
