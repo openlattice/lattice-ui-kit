@@ -39,7 +39,7 @@ exports[`Card snapshots With child divs 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Card-sc-3vnjrr-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "background-color:",
@@ -49,6 +49,8 @@ exports[`Card snapshots With child divs 1`] = `
             ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > div{border-bottom:1px solid ",
             "#dcdce7",
             ";}& > div:first-child{border-radius:5px 5px 0 0;}& > div:last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+            [Function],
+            ";",
           ],
         },
         "displayName": "Card",
@@ -119,7 +121,7 @@ exports[`Card snapshots Without Children 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Card-sc-3vnjrr-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "background-color:",
@@ -129,6 +131,8 @@ exports[`Card snapshots Without Children 1`] = `
             ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > div{border-bottom:1px solid ",
             "#dcdce7",
             ";}& > div:first-child{border-radius:5px 5px 0 0;}& > div:last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+            [Function],
+            ";",
           ],
         },
         "displayName": "Card",
