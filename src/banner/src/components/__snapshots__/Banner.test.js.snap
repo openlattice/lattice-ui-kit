@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner snapshot should match snapshot when closed 1`] = `
+.c0 {
+  background-color: #555e6f;
+  color: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.25s ease-in-out;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 900px;
+  padding: 10px;
+  min-width: 0;
+}
+
+<Banner
+  isOpen={false}
+  maxHeight="60px"
+  mode="default"
+>
+  <StyledBannerComponents__Container
+    isOpen={false}
+    maxHeight="60px"
+    mode="default"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledBannerComponents__Container-sc-88s6ku-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              [Function],
+              ";color:",
+              [Function],
+              ";max-height:",
+              [Function],
+              ";overflow:hidden;transition:max-height 0.25s ease-in-out;",
+            ],
+          },
+          "displayName": "StyledBannerComponents__Container",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledBannerComponents__Container-sc-88s6ku-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isOpen={false}
+      maxHeight="60px"
+      mode="default"
+    >
+      <div
+        className="c0"
+        mode="default"
+      >
+        <StyledBannerComponents__Content>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "StyledBannerComponents__Content-sc-88s6ku-1",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "align-items:center;display:flex;justify-content:center;margin:auto;max-width:900px;padding:10px;min-width:0;",
+                  ],
+                },
+                "displayName": "StyledBannerComponents__Content",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "StyledBannerComponents__Content-sc-88s6ku-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            />
+          </StyledComponent>
+        </StyledBannerComponents__Content>
+      </div>
+    </StyledComponent>
+  </StyledBannerComponents__Container>
+</Banner>
+`;
+
+exports[`Banner snapshot should match snapshot when open 1`] = `
+.c0 {
+  background-color: #555e6f;
+  color: #ffffff;
+  max-height: 60px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.25s ease-in-out;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 900px;
+  padding: 10px;
+  min-width: 0;
+}
+
+<Banner
+  isOpen={true}
+  maxHeight="60px"
+  mode="default"
+>
+  <StyledBannerComponents__Container
+    isOpen={true}
+    maxHeight="60px"
+    mode="default"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledBannerComponents__Container-sc-88s6ku-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              [Function],
+              ";color:",
+              [Function],
+              ";max-height:",
+              [Function],
+              ";overflow:hidden;transition:max-height 0.25s ease-in-out;",
+            ],
+          },
+          "displayName": "StyledBannerComponents__Container",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledBannerComponents__Container-sc-88s6ku-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isOpen={true}
+      maxHeight="60px"
+      mode="default"
+    >
+      <div
+        className="c0"
+        mode="default"
+      >
+        <StyledBannerComponents__Content>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "StyledBannerComponents__Content-sc-88s6ku-1",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "align-items:center;display:flex;justify-content:center;margin:auto;max-width:900px;padding:10px;min-width:0;",
+                  ],
+                },
+                "displayName": "StyledBannerComponents__Content",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "StyledBannerComponents__Content-sc-88s6ku-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            />
+          </StyledComponent>
+        </StyledBannerComponents__Content>
+      </div>
+    </StyledComponent>
+  </StyledBannerComponents__Container>
+</Banner>
+`;
