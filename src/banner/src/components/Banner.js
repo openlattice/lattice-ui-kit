@@ -10,19 +10,19 @@ const DEFAULT_BANNER_HEIGHT = '60px';
 
 type Props = {
   children ? :Node;
-  maxHeight ? :string;
   icon ? :Node;
   isOpen ? :boolean;
+  maxHeight ? :string;
   mode ? :'default' | 'danger' | 'success' | 'warning';
 }
 
 class Banner extends Component<Props> {
 
   static defaultProps = {
-    maxHeight: DEFAULT_BANNER_HEIGHT,
     children: undefined,
     icon: undefined,
     isOpen: false,
+    maxHeight: DEFAULT_BANNER_HEIGHT,
     mode: 'default'
   };
 
@@ -54,17 +54,17 @@ class Banner extends Component<Props> {
 
   render() {
     const {
-      maxHeight,
       children,
       isOpen,
+      maxHeight,
       mode
     } = this.props;
 
     return (
       <Container
+          isOpen={isOpen}
           maxHeight={maxHeight}
-          mode={mode}
-          isOpen={isOpen}>
+          mode={mode}>
         <Content>
           { this.renderIcon() }
           { children }
