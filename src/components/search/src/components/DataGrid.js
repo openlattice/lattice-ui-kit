@@ -5,16 +5,18 @@ import { ResultGrid, Truncated } from './styled/StyledResultComponents';
 import Label from '../../../../label';
 
 type Props = {
+  classNames ? :string;
+  columns ? :number;
   data :Map;
   labelMap ? :Map;
-  columns ? :number;
 };
 
 class DataGrid extends Component<Props> {
 
   static defaultProps = {
+    classNames: undefined,
+    columns: 4,
     labelMap: Map(),
-    columns: 4
   }
 
   transformDataToDetailsList = () => {
@@ -36,11 +38,11 @@ class DataGrid extends Component<Props> {
   }
 
   render() {
-    const { columns } = this.props;
+    const { classNames, columns } = this.props;
     const details = this.transformDataToDetailsList();
 
     return (
-      <ResultGrid columns={columns}>
+      <ResultGrid classNames={classNames} columns={columns}>
         { details
           && details.map((detail :Map, index :number) => (
             <div key={index.toString()}>
