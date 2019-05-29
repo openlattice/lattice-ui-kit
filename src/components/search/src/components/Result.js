@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import isFunction from 'lodash/isFunction';
 import { Map } from 'immutable';
 
-import ResultData from './ResultData';
+import DataGrid from './DataGrid';
 import { Card } from '../../../../layout';
 import {
   ResultDetails,
@@ -47,10 +47,10 @@ class Result extends Component<Props> {
       <Card className={className} onClick={this.handleClick}>
         <ResultWrapper>
           <ResultDetails>
-            <ResultData
-                resultColumns={resultColumns}
-                result={result}
-                resultLabels={resultLabels} />
+            <DataGrid
+                columns={resultColumns}
+                data={result}
+                labelMap={resultLabels} />
           </ResultDetails>
         </ResultWrapper>
       </Card>

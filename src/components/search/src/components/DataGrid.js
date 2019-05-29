@@ -5,25 +5,25 @@ import { ResultGrid, Truncated } from './styled/StyledResultComponents';
 import Label from '../../../../label';
 
 type Props = {
-  result :Map;
-  resultLabels ? :Map;
-  resultColumns ? :number;
+  data :Map;
+  labelMap ? :Map;
+  columns ? :number;
 };
 
-class ResultData extends Component<Props> {
+class DataGrid extends Component<Props> {
 
   static defaultProps = {
-    resultLabels: Map(),
-    resultColumns: 4
+    labelMap: Map(),
+    columns: 4
   }
 
-  transformResultToDetailsList = () => {
-    const { result, resultLabels } = this.props;
-    const labels = result.map((value :any, key :string) => {
+  transformDataToDetailsList = () => {
+    const { data, labelMap } = this.props;
+    const detail = data.map((value :any, key :string) => {
       let label = key;
 
-      if (resultLabels && Map.isMap(resultLabels)) {
-        label = resultLabels.get(key, key);
+      if (labelMap && Map.isMap(labelMap)) {
+        label = labelMap.get(key, key);
       }
 
       return Map({
@@ -32,15 +32,15 @@ class ResultData extends Component<Props> {
         value,
       });
     });
-    return labels.toList();
+    return detail.toList();
   }
 
   render() {
-    const { resultColumns } = this.props;
-    const details = this.transformResultToDetailsList();
+    const { columns } = this.props;
+    const details = this.transformDataToDetailsList();
 
     return (
-      <ResultGrid columns={resultColumns}>
+      <ResultGrid columns={columns}>
         { details
           && details.map((detail :Map, index :number) => (
             <div key={index.toString()}>
@@ -58,4 +58,4 @@ class ResultData extends Component<Props> {
   }
 }
 
-export default ResultData;
+export default DataGrid;

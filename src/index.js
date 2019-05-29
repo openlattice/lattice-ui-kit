@@ -28,7 +28,7 @@ export {
   Search,
   SearchResults,
   Result,
-  ResultData,
+  DataGrid,
   PersonResult
 } from './components/search';
 export default {
