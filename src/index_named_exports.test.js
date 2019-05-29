@@ -20,6 +20,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'PersonResult',
   'Portal',
   'Result',
+  'ResultData',
   'Search',
   'SearchResults',
   'Select',

@@ -28,6 +28,7 @@ export {
   Search,
   SearchResults,
   Result,
+  ResultData,
   PersonResult
 } from './components/search';
 export default {
