@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/openlattice/lattice-ui-kit/issues"
   },
-  "license": "GPL-3.0",
+  "license": "Apache-2.0",
   "main": "build/lattice-ui-kit.js",
   "dependencies": {
     "@atlaskit/datetime-picker": "8.0.0",

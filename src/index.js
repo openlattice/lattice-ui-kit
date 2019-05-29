@@ -13,6 +13,7 @@ export {
   version,
 };
 export { default as Button } from './button';
+export { default as Banner } from './banner';
 export { default as Checkbox } from './checkbox';
 export { default as Input } from './checkbox';
 export { default as Label } from './label';
