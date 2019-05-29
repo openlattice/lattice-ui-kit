@@ -17,7 +17,7 @@ class DataGrid extends Component<Props> {
   static defaultProps = {
     classNames: undefined,
     columns: 4,
-    emptyString: '',
+    emptyString: '---',
     labelMap: undefined,
   }
 
