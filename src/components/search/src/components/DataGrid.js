@@ -9,6 +9,7 @@ type Props = {
   columns ? :number;
   data :Map;
   labelMap ? :Map;
+  emptyString ? :string;
 };
 
 class DataGrid extends Component<Props> {
@@ -16,17 +17,18 @@ class DataGrid extends Component<Props> {
   static defaultProps = {
     classNames: undefined,
     columns: 4,
+    emptyString: '',
     labelMap: undefined,
   }
 
   transformDataToDetailsList = () => {
-    const { data, labelMap } = this.props;
+    const { data, emptyString, labelMap } = this.props;
 
     let details;
     if (labelMap && Map.isMap(labelMap)) {
       details = labelMap.map((label :string, key :string) => Map({
         label,
-        value: data.get(key, ''),
+        value: data.get(key, emptyString),
         key
       }));
     }
@@ -50,7 +52,7 @@ class DataGrid extends Component<Props> {
         { details
           && details.map((detail :Map, index :number) => (
             <div key={index.toString()}>
-              <Label bold>
+              <Label subtle>
                 {detail.get('label', '')}
               </Label>
               <Truncated>
