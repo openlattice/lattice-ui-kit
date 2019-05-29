@@ -71,7 +71,6 @@ exports[`Search snapshots should match snapshot 1`] = `
   </Card>
   <SearchResults
     resultComponent={[Function]}
-    resultLabels={Immutable.Map {}}
     results={Immutable.List []}
   />
 </CardStack>
