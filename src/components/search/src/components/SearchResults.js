@@ -24,7 +24,7 @@ class SearchResults extends Component<Props> {
     className: undefined,
     onResultClick: undefined,
     resultComponent: Result,
-    resultLabels: Map(),
+    resultLabels: undefined,
   }
 
   renderResults = () :Node => {

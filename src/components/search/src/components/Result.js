@@ -25,7 +25,7 @@ class Result extends Component<Props> {
     className: undefined,
     onClick: undefined,
     resultColumns: 4,
-    resultLabels: Map(),
+    resultLabels: undefined,
   }
 
   handleClick = () => {

@@ -45,7 +45,7 @@ class Search extends Component<Props, State> {
     filterFields: [],
     onResultClick: undefined,
     resultComponent: DefaultResultComponent,
-    resultLabels: Map(),
+    resultLabels: undefined,
     searchFields: [
       {
         id: 'firstname',

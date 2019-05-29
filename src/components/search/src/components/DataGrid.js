@@ -16,25 +16,29 @@ class DataGrid extends Component<Props> {
   static defaultProps = {
     classNames: undefined,
     columns: 4,
-    labelMap: Map(),
+    labelMap: undefined,
   }
 
   transformDataToDetailsList = () => {
     const { data, labelMap } = this.props;
-    const detail = data.map((value :any, key :string) => {
-      let label = key;
 
-      if (labelMap && Map.isMap(labelMap)) {
-        label = labelMap.get(key, key);
-      }
-
-      return Map({
-        key,
+    let details;
+    if (labelMap && Map.isMap(labelMap)) {
+      details = labelMap.map((label :string, key :string) => Map({
         label,
+        value: data.get(key, ''),
+        key
+      }));
+    }
+    else {
+      details = data.map((value :any, key :string) => Map({
+        label: key,
         value,
-      });
-    });
-    return detail.toList();
+        key
+      }));
+    }
+
+    return details.toList();
   }
 
   render() {
