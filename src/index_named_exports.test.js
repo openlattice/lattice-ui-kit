@@ -12,6 +12,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'CheckboxSelect',
   'Colors',
   'Creatable',
+  'DataGrid',
   'DatePicker',
   'Input',
   'Label',
