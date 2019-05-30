@@ -2,15 +2,13 @@
 
 import React, { Component } from 'react';
 import isFunction from 'lodash/isFunction';
-import { List, Map } from 'immutable';
+import { Map } from 'immutable';
 
-import Label from '../../../../label';
+import DataGrid from './DataGrid';
 import { Card } from '../../../../layout';
 import {
   ResultDetails,
-  ResultGrid,
   ResultWrapper,
-  Truncated
 } from './styled/StyledResultComponents';
 
 type Props = {
@@ -27,26 +25,7 @@ class Result extends Component<Props> {
     className: undefined,
     onClick: undefined,
     resultColumns: 4,
-    resultLabels: Map(),
-  }
-
-  transformResultToDetailsList = () => {
-
-    const { result, resultLabels } = this.props;
-    const labels = result.map((value :any, key :string) => {
-      let label = key;
-
-      if (resultLabels && Map.isMap(resultLabels)) {
-        label = resultLabels.get(key, key);
-      }
-
-      return Map({
-        key,
-        label,
-        value,
-      });
-    });
-    return labels.toList();
+    resultLabels: undefined,
   }
 
   handleClick = () => {
@@ -59,28 +38,19 @@ class Result extends Component<Props> {
   render() {
     const {
       className,
-      resultColumns
+      result,
+      resultColumns,
+      resultLabels,
     } = this.props;
-    const details :List<Map> = this.transformResultToDetailsList();
 
     return (
       <Card className={className} onClick={this.handleClick}>
         <ResultWrapper>
           <ResultDetails>
-            <ResultGrid columns={resultColumns}>
-              { details
-                && details.map((detail :Map, index :number) => (
-                  <div key={index.toString()}>
-                    <Label bold>
-                      {detail.get('label', '')}
-                    </Label>
-                    <Truncated>
-                      {detail.get('value', '')}
-                    </Truncated>
-                  </div>
-                ))
-              }
-            </ResultGrid>
+            <DataGrid
+                columns={resultColumns}
+                data={result}
+                labelMap={resultLabels} />
           </ResultDetails>
         </ResultWrapper>
       </Card>
