@@ -105,6 +105,15 @@ describe('Banner', () => {
 
     });
 
+    describe('sticky', () => {
+      test('should apply sticky position', () => {
+        const wrapper = mount(<Banner sticky />);
+        expect(wrapper.find(Container)).toHaveStyleRule('position', 'sticky');
+        expect(wrapper.find(Container)).toHaveStyleRule('top', '0');
+        expect(wrapper.find(Container)).toHaveStyleRule('z-index', '500');
+      });
+    });
+
   });
 
 });
