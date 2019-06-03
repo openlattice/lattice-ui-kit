@@ -70,6 +70,9 @@ exports[`Search snapshots should match snapshot 1`] = `
     </CardSegment>
   </Card>
   <SearchResults
+    hasSearched={false}
+    isLoading={false}
+    noResults={[Function]}
     resultComponent={[Function]}
     results={Immutable.List []}
   />
