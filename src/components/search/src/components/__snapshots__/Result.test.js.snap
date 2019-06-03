@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result snapshots should match snapshot 1`] = `
+.c3 {
+  display: grid;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  grid-gap: 20px 30px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.c2 {
+  padding: 10px 30px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c0 {
+  background-color: #ffffff;
+  border: 1px solid #dcdce7;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.c0 > div {
+  border-bottom: 1px solid #dcdce7;
+}
+
+.c0 > div:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.c0 > div:last-child {
+  border-bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.c0:hover {
+  box-shadow: 0 2px 8px -2px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.c0:hover * {
+  cursor: inherit;
+  pointer-events: auto;
+}
+
+.c0:active {
+  box-shadow: none;
+}
+
+<Result
+  result={Immutable.Map {}}
+  resultColumns={4}
+>
+  <Card
+    onClick={[Function]}
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Card-sc-3vnjrr-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              "#ffffff",
+              ";border:1px solid ",
+              "#dcdce7",
+              ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > div{border-bottom:1px solid ",
+              "#dcdce7",
+              ";}& > div:first-child{border-radius:5px 5px 0 0;}& > div:last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+              [Function],
+              ";",
+            ],
+          },
+          "displayName": "Card",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Card-sc-3vnjrr-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      onClick={[Function]}
+    >
+      <div
+        className="c0"
+        onClick={[Function]}
+      >
+        <StyledResultComponents__ResultWrapper>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "StyledResultComponents__ResultWrapper-drevdl-1",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "display:flex;flex-direction:row;padding:10px;",
+                  ],
+                },
+                "displayName": "StyledResultComponents__ResultWrapper",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "StyledResultComponents__ResultWrapper-drevdl-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              <StyledResultComponents__ResultDetails>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "StyledResultComponents__ResultDetails-drevdl-2",
+                        "isStatic": true,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "padding:10px 30px;flex:1;",
+                        ],
+                      },
+                      "displayName": "StyledResultComponents__ResultDetails",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "StyledResultComponents__ResultDetails-drevdl-2",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="c2"
+                  >
+                    <DataGrid
+                      columns={4}
+                      data={Immutable.Map {}}
+                      emptyString="---"
+                    >
+                      <StyledResultComponents__ResultGrid
+                        columns={4}
+                      >
+                        <StyledComponent
+                          columns={4}
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "StyledResultComponents__ResultGrid-drevdl-0",
+                                "isStatic": false,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display:grid;flex:1;grid-auto-flow:row;grid-template-columns:",
+                                  [Function],
+                                  ";grid-gap:20px 30px;",
+                                ],
+                              },
+                              "displayName": "StyledResultComponents__ResultGrid",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "StyledResultComponents__ResultGrid-drevdl-0",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="c3"
+                          >
+                            <Component />
+                          </div>
+                        </StyledComponent>
+                      </StyledResultComponents__ResultGrid>
+                    </DataGrid>
+                  </div>
+                </StyledComponent>
+              </StyledResultComponents__ResultDetails>
+            </div>
+          </StyledComponent>
+        </StyledResultComponents__ResultWrapper>
+      </div>
+    </StyledComponent>
+  </Card>
+</Result>
+`;
