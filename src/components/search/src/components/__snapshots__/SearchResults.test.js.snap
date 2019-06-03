@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResults snapshots should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.c0 > div {
+  margin: 10px 0;
+}
+
+.c0 > div:first-child {
+  margin-top: 0;
+}
+
+.c0 > div:last-child {
+  margin-bottom: 0;
+}
+
+<SearchResults
+  hasSearched={false}
+  isLoading={false}
+  noResults={[Function]}
+  resultComponent={[Function]}
+>
+  <CardStack>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "CardStack-sc-1vtkaja-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:flex;flex-direction:column;position:relative;& > div{margin:10px 0;}& > div:first-child{margin-top:0;}& > div:last-child{margin-bottom:0;}",
+            ],
+          },
+          "displayName": "CardStack",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "CardStack-sc-1vtkaja-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      />
+    </StyledComponent>
+  </CardStack>
+</SearchResults>
+`;
