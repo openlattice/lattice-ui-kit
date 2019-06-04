@@ -6,22 +6,29 @@ import { List, Map } from 'immutable';
 
 import NotFound from './NotFound';
 import Result from './Result';
+import Spinner from '../../../../spinner';
 import { CardStack } from '../../../../layout';
 
 import type { ResultProps } from './Result';
 
 type Props = {
-  results :List<Map>;
-  resultLabels ? :Map;
-  resultComponent ? :ComponentType<ResultProps>;
   className ? :string;
+  hasSearched ? :boolean;
+  isLoading ? :boolean;
+  noResults ? :ComponentType<any>;
   onResultClick ? :(result :Map) => void;
+  resultComponent ? :ComponentType<ResultProps>;
+  resultLabels ? :Map;
+  results :List<Map>;
 };
 
 class SearchResults extends Component<Props> {
 
   static defaultProps = {
     className: undefined,
+    hasSearched: false,
+    isLoading: false,
+    noResults: () => (<NotFound caption="No results" />),
     onResultClick: undefined,
     resultComponent: Result,
     resultLabels: undefined,
@@ -29,11 +36,17 @@ class SearchResults extends Component<Props> {
 
   renderResults = () :Node => {
     const {
+      hasSearched,
+      isLoading,
+      noResults: NoResults,
       onResultClick,
       resultComponent: ResultComponent,
       resultLabels,
       results,
     } = this.props;
+
+    if (isLoading) return <Spinner size="2x" />;
+
     if (List.isList(results) && results.count() && ResultComponent) {
       return results.map((result :Map, index :number) => (
         <ResultComponent
@@ -44,7 +57,11 @@ class SearchResults extends Component<Props> {
       ));
     }
 
-    return <NotFound caption="No results" />;
+    if (hasSearched && NoResults) {
+      return <NoResults />;
+    }
+
+    return null;
   }
 
   render() {

@@ -9,6 +9,8 @@ import { NEUTRALS } from '../../../colors';
 type Props = {
   /** color of spinner circle */
   bottomColor ? :string;
+  /** set align-self to center or flex-start */
+  centered ? :boolean;
   /** React component className */
   className ? :string;
   /** animation duration */
@@ -22,6 +24,7 @@ type Props = {
 const Spinner = (props :Props) => {
   const {
     bottomColor,
+    centered,
     className,
     duration,
     size,
@@ -34,7 +37,7 @@ const Spinner = (props :Props) => {
   const styledClassName = className ? `${defaultClassName} ${className}` : defaultClassName;
 
   return (
-    <Rotate className={styledClassName} duration={duration}>
+    <Rotate className={styledClassName} duration={duration} centered={centered}>
       <FontAwesomeIcon
           id="spinner-circle"
           color={bottomColor}
@@ -50,8 +53,9 @@ const Spinner = (props :Props) => {
 
 Spinner.defaultProps = {
   bottomColor: NEUTRALS[3],
+  centered: true,
   className: undefined,
-  duration: '0.75s',
+  duration: undefined,
   size: '1x',
   topColor: NEUTRALS[0],
 };

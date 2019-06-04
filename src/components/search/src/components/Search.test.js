@@ -160,8 +160,8 @@ describe('Search', () => {
       const instance = wrapper.instance();
 
       const changeValue = [{
-        label: 'Crisis Template',
-        value: 'Crisis Template'
+        label: 'Report #1',
+        value: 'Report #1'
       }];
       const changeEvent = { name: 'reportType' };
 
@@ -181,6 +181,37 @@ describe('Search', () => {
       expect(instance.renderFilteredSearchResults()).toEqual(null);
     });
 
+    test('should not filter results if invalid searchResults', () => {
+      const wrapper = shallow(
+        <Search
+            searchResults={false} />
+      );
+
+      const filteredResults = wrapper.find(SearchResults).props().results;
+      expect(List.isList(filteredResults)).toEqual(true);
+      expect(filteredResults.count()).toEqual(0);
+    });
+
+    test('should not filter results if invalid filterFields', () => {
+      const wrapper = shallow(
+        <Search
+            searchResults={mockSearchResultsForReports}
+            filterFields={false} />
+      );
+      const instance = wrapper.instance();
+
+      const changeValue = [{
+        label: 'Report #1',
+        value: 'Report #1'
+      }];
+      const changeEvent = { name: 'reportType' };
+      instance.handleOnChangeFilter(changeValue, changeEvent);
+
+      const filteredResults = wrapper.find(SearchResults).props().results;
+      expect(List.isList(filteredResults)).toEqual(true);
+      expect(filteredResults).toEqual(mockSearchResultsForReports);
+    });
+
     test('should filter results', () => {
       const wrapper = shallow(
         <Search
@@ -190,7 +221,7 @@ describe('Search', () => {
       const instance = wrapper.instance();
 
       let changeValue = [{
-        value: 'Crisis Template'
+        value: 'Report #1'
       }];
       let changeEvent = { name: 'reportType' };
       // apply one filter
@@ -233,7 +264,7 @@ describe('Search', () => {
       const instance = wrapper.instance();
 
       const changeValue = [{
-        value: 'Crisis Template'
+        value: 'Report #1'
       }];
       const changeEvent = { name: 'BaDFiLtErDefiNiTioN' };
       instance.handleOnChangeFilter(changeValue, changeEvent);
@@ -281,6 +312,18 @@ describe('Search', () => {
 
   describe('onResultClick', () => {
     test('should call onResultClick with result', () => {
+      const mockOnResultClick = jest.fn();
+      const wrapper = mount(<Search onResultClick={mockOnResultClick} searchResults={mockSearchResultsForPeople} />);
+
+      const resultWrapper = wrapper.find('Result').first();
+      expect(resultWrapper).toHaveLength(1);
+
+      resultWrapper.simulate('click');
+      expect(mockOnResultClick).toHaveBeenCalledTimes(1);
+      expect(mockOnResultClick.mock.calls[0][0]).toEqual(mockSearchResultsForPeople.first());
+    });
+
+    test('should not call onResultClick if onClick is not a function', () => {
       const mockOnResultClick = jest.fn();
       const wrapper = mount(<Search onResultClick={mockOnResultClick} searchResults={mockSearchResultsForPeople} />);
 

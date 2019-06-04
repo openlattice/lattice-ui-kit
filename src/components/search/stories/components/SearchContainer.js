@@ -57,6 +57,7 @@ class SearchContainer extends Component<Props, State> {
               submitter: 'Submitter'
             }}
             filterFields={mockFilterFields}
+            hasSearched={fetchState !== 'STANDBY'}
             isLoading={fetchState === 'PENDING'}
             onSearch={this.handleOnSearch}
             searchResults={results}

@@ -7,7 +7,7 @@ type InputGridProps = {
 }
 
 const getGridTemplateColumns = ({ columns = 4 } :InputGridProps) => css`
-  grid-template-columns: repeat(${columns}, minmax(100px, 1fr));
+  grid-template-columns: repeat(${columns}, minmax(0, 1fr));
 `;
 
 const getAlignItems = ({ align } :InputGridProps) => css`
