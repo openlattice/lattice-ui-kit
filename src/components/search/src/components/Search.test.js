@@ -160,8 +160,8 @@ describe('Search', () => {
       const instance = wrapper.instance();
 
       const changeValue = [{
-        label: 'Crisis Template',
-        value: 'Crisis Template'
+        label: 'Report #1',
+        value: 'Report #1'
       }];
       const changeEvent = { name: 'reportType' };
 
@@ -201,8 +201,8 @@ describe('Search', () => {
       const instance = wrapper.instance();
 
       const changeValue = [{
-        label: 'Crisis Template',
-        value: 'Crisis Template'
+        label: 'Report #1',
+        value: 'Report #1'
       }];
       const changeEvent = { name: 'reportType' };
       instance.handleOnChangeFilter(changeValue, changeEvent);
@@ -221,7 +221,7 @@ describe('Search', () => {
       const instance = wrapper.instance();
 
       let changeValue = [{
-        value: 'Crisis Template'
+        value: 'Report #1'
       }];
       let changeEvent = { name: 'reportType' };
       // apply one filter
@@ -264,7 +264,7 @@ describe('Search', () => {
       const instance = wrapper.instance();
 
       const changeValue = [{
-        value: 'Crisis Template'
+        value: 'Report #1'
       }];
       const changeEvent = { name: 'BaDFiLtErDefiNiTioN' };
       instance.handleOnChangeFilter(changeValue, changeEvent);

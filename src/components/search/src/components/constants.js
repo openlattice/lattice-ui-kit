@@ -22,7 +22,7 @@ const mockFilterFields :FilterFieldDefinition[] = [
     },
     id: 'reportType',
     label: 'Report type',
-    options: ['Crisis Template', 'Follow-up'],
+    options: ['Report #1', 'Report #2'],
   },
   {
     filterCallback: (searchResult :Map, filterValues :ReactSelectValue) => {
@@ -39,7 +39,7 @@ const mockFilterFields :FilterFieldDefinition[] = [
     },
     id: 'badges',
     label: 'Badges',
-    options: ['Officer Safety', 'Substance use'],
+    options: ['Badge #1', 'Badge #2'],
   },
   {
     filterCallback: (searchResult :Map, filterValues :ReactSelectValue) => {
@@ -67,32 +67,32 @@ const mockFilterFields :FilterFieldDefinition[] = [
 
 const mockSearchResultsForReports = List([
   Map({
-    reportType: 'Crisis Template',
-    badges: ['Officer Safety'],
+    reportType: 'Report #1',
+    badges: ['Badge #1'],
     submitter: 'squidward@bubblebowl.com'
   }),
   Map({
-    reportType: 'Follow-up',
-    badges: ['Officer Safety', 'Substance use'],
+    reportType: 'Report #2',
+    badges: ['Badge #1', 'Badge #2'],
     submitter: 'squidward@bubblebowl.com',
   }),
   Map({
-    reportType: 'Crisis Template',
-    badges: ['Officer Safety', 'Substance use'],
+    reportType: 'Report #1',
+    badges: ['Badge #1', 'Badge #2'],
     submitter: 'smitty@werbenjagermanjensen.com'
   }),
   Map({
-    reportType: 'Follow-up',
-    badges: ['Substance use'],
+    reportType: 'Report #2',
+    badges: ['Badge #2'],
     submitter: 'wumbology@thestudyofwumbo.com'
   }),
   Map({
-    reportType: 'Crisis Template',
-    badges: ['Officer Safety', 'Substance use'],
+    reportType: 'Report #1',
+    badges: ['Badge #1', 'Badge #2'],
     submitter: 'enigma@innermachinations.com'
   }),
   Map({
-    reportType: 'Follow-up',
+    reportType: 'Report #2',
     submitter: 'enigma@innermachinations.com'
   }),
 ]);
