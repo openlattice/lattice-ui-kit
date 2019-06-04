@@ -5,7 +5,7 @@ import { faSearchMinus } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const FigureWrapper = styled.figure`
-  margin: 30px auto;
+  margin: 10px auto;
   text-align: center;
 
   figcaption {
@@ -13,7 +13,7 @@ const FigureWrapper = styled.figure`
     font-size: 16px;
     font-weight: 600;
     line-height: 22px;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
     width: 100%;
   }

@@ -21,6 +21,7 @@ import type { ReactSelectEvent, ReactSelectOption, ReactSelectValue } from '../.
 
 type Props = {
   className ? :string;
+  hasSearched ? :boolean;
   isLoading :any;
   filterFields ? :FilterFieldDefinition[];
   onResultClick ? :(result :Map) => void;
@@ -43,6 +44,7 @@ class Search extends Component<Props, State> {
   static defaultProps = {
     className: undefined,
     filterFields: [],
+    hasSearched: false,
     onResultClick: undefined,
     resultComponent: DefaultResultComponent,
     resultLabels: undefined,
@@ -113,6 +115,7 @@ class Search extends Component<Props, State> {
 
   renderFilteredSearchResults = () :Node => {
     const {
+      hasSearched,
       isLoading,
       filterFields,
       onResultClick,
@@ -152,6 +155,7 @@ class Search extends Component<Props, State> {
     if (SearchResultsComponent) {
       return (
         <SearchResultsComponent
+            hasSearched={hasSearched}
             isLoading={isLoading}
             onResultClick={onResultClick}
             resultComponent={resultComponent}

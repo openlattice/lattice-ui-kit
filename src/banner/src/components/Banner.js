@@ -14,6 +14,7 @@ type Props = {
   isOpen ? :boolean;
   maxHeight ? :string;
   mode ? :'default' | 'danger' | 'success' | 'warning';
+  sticky :boolean;
 }
 
 class Banner extends Component<Props> {
@@ -57,14 +58,16 @@ class Banner extends Component<Props> {
       children,
       isOpen,
       maxHeight,
-      mode
+      mode,
+      sticky
     } = this.props;
 
     return (
       <Container
           isOpen={isOpen}
           maxHeight={maxHeight}
-          mode={mode}>
+          mode={mode}
+          sticky={sticky}>
         <Content>
           { this.renderIcon() }
           { children }
