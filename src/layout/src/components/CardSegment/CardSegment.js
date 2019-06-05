@@ -20,7 +20,7 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
 
   let backgroundColor = 'transparent';
   if (bgColor) {
-    backgroundColor = `#${bgColor}`;
+    backgroundColor = `${bgColor}`;
   }
 
   let cursor = 'auto';
