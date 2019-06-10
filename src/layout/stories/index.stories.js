@@ -7,7 +7,7 @@ import {
   CardSegment,
   CardStack
 } from '../index';
-import { PURPLES, WHITE } from '../../colors';
+import { PURPLES } from '../../colors';
 
 storiesOf('Layout', module)
   .add('Card', () => (
