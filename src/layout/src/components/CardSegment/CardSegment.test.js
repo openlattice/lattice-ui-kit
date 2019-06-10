@@ -35,7 +35,7 @@ describe('CardSegment', () => {
     describe('Computed styles', () => {
 
       test('bgColor', () => {
-        const wrapper = mount(<CardSegment bgColor="ffffff" />);
+        const wrapper = mount(<CardSegment bgColor="#ffffff" />);
         expect(wrapper).toHaveStyleRule('background-color', '#ffffff');
       });
 
