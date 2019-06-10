@@ -31,9 +31,10 @@ exports[`button mode="default" should match snapshot 1`] = `
 .c0 {
   background-color: #f0f0f7;
   border-color: #f0f0f7;
-  border-radius: 4px;
+  border-radius: 3px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
+  box-sizing: border-box;
   color: #8e929b;
   cursor: pointer;
   font-size: 14px;
@@ -43,6 +44,8 @@ exports[`button mode="default" should match snapshot 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
   white-space: nowrap;
 }
 
@@ -60,6 +63,10 @@ exports[`button mode="default" should match snapshot 1`] = `
   color: #ffffff;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c0:focus-visible {
+  box-shadow: #b6bbc7 0 0 0 2px;
 }
 
 .c0:disabled {
@@ -98,9 +105,9 @@ exports[`button mode="default" should match snapshot 1`] = `
               "#f0f0f7",
               ";border-color:",
               "#f0f0f7",
-              ";border-radius:4px;border-style:solid;border-width:1px;color:",
+              ";border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;color:",
               "#8e929b",
-              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:box-shadow 0.2s ease-in-out;white-space:nowrap;",
               " ",
               "&:hover{background-color:",
               "#dcdce7",
@@ -115,6 +122,10 @@ exports[`button mode="default" should match snapshot 1`] = `
               ";color:",
               "#ffffff",
               ";text-decoration:none;}",
+              " ",
+              "&:focus-visible{box-shadow:",
+              "#b6bbc7",
+              " 0 0 0 2px;}",
               " ",
               "&:disabled{background-color:",
               "#f0f0f7",
@@ -252,9 +263,10 @@ exports[`button mode="default" should match snapshot 2`] = `
 .c0 {
   background-color: #f0f0f7;
   border-color: #f0f0f7;
-  border-radius: 4px;
+  border-radius: 3px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
+  box-sizing: border-box;
   color: #8e929b;
   cursor: pointer;
   font-size: 14px;
@@ -264,6 +276,8 @@ exports[`button mode="default" should match snapshot 2`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
   white-space: nowrap;
 }
 
@@ -281,6 +295,10 @@ exports[`button mode="default" should match snapshot 2`] = `
   color: #ffffff;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c0:focus-visible {
+  box-shadow: #b6bbc7 0 0 0 2px;
 }
 
 .c0:disabled {
@@ -319,9 +337,9 @@ exports[`button mode="default" should match snapshot 2`] = `
               "#f0f0f7",
               ";border-color:",
               "#f0f0f7",
-              ";border-radius:4px;border-style:solid;border-width:1px;color:",
+              ";border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;color:",
               "#8e929b",
-              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:box-shadow 0.2s ease-in-out;white-space:nowrap;",
               " ",
               "&:hover{background-color:",
               "#dcdce7",
@@ -336,6 +354,10 @@ exports[`button mode="default" should match snapshot 2`] = `
               ";color:",
               "#ffffff",
               ";text-decoration:none;}",
+              " ",
+              "&:focus-visible{box-shadow:",
+              "#b6bbc7",
+              " 0 0 0 2px;}",
               " ",
               "&:disabled{background-color:",
               "#f0f0f7",
@@ -473,9 +495,10 @@ exports[`button mode="primary" should match snapshot 1`] = `
 .c0 {
   background-color: #8045ff;
   border-color: #8045ff;
-  border-radius: 4px;
+  border-radius: 3px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
+  box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
   font-size: 14px;
@@ -485,6 +508,8 @@ exports[`button mode="primary" should match snapshot 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
   white-space: nowrap;
 }
 
@@ -510,6 +535,10 @@ exports[`button mode="primary" should match snapshot 1`] = `
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c0:focus-visible {
+  box-shadow: #361876 0 0 0 2px;
 }
 
 <Button
@@ -539,9 +568,9 @@ exports[`button mode="primary" should match snapshot 1`] = `
               "#8045ff",
               ";border-color:",
               "#8045ff",
-              ";border-radius:4px;border-style:solid;border-width:1px;color:",
+              ";border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;color:",
               "#ffffff",
-              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:box-shadow 0.2s ease-in-out;white-space:nowrap;",
               " ",
               "&:hover{background-color:",
               "#6124e2",
@@ -562,6 +591,10 @@ exports[`button mode="primary" should match snapshot 1`] = `
               ";color:",
               "#b6bbc7",
               ";cursor:not-allowed;text-decoration:none;}",
+              " ",
+              ":focus-visible{box-shadow:",
+              "#361876",
+              " 0 0 0 2px;}",
             ],
           },
           "displayName": "PrimaryButton",
@@ -691,9 +724,10 @@ exports[`button mode="secondary" should match snapshot 1`] = `
 .c0 {
   background-color: #e4d8ff;
   border-color: #e4d8ff;
-  border-radius: 4px;
+  border-radius: 3px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
+  box-sizing: border-box;
   color: #6124e2;
   cursor: pointer;
   font-size: 14px;
@@ -703,6 +737,8 @@ exports[`button mode="secondary" should match snapshot 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
   white-space: nowrap;
 }
 
@@ -719,6 +755,10 @@ exports[`button mode="secondary" should match snapshot 1`] = `
   border-color: #b898ff;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c0:focus-visible {
+  box-shadow: #b898ff 0 0 0 2px;
 }
 
 .c0:disabled {
@@ -757,9 +797,9 @@ exports[`button mode="secondary" should match snapshot 1`] = `
               "#e4d8ff",
               ";border-color:",
               "#e4d8ff",
-              ";border-radius:4px;border-style:solid;border-width:1px;color:",
+              ";border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;color:",
               "#6124e2",
-              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;white-space:nowrap;",
+              ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:box-shadow 0.2s ease-in-out;white-space:nowrap;",
               " ",
               "&:hover{background-color:",
               "#d0bbff",
@@ -772,6 +812,10 @@ exports[`button mode="secondary" should match snapshot 1`] = `
               ";border-color:",
               "#b898ff",
               ";text-decoration:none;}",
+              " ",
+              "&:focus-visible{box-shadow:",
+              "#b898ff",
+              " 0 0 0 2px;}",
               " ",
               "&:disabled{background-color:",
               "#f0f0f7",
