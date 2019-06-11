@@ -320,7 +320,7 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
               }
             >
               <div
-                className="css-moep9d-control"
+                className="css-4p5zk1-control"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
               >
