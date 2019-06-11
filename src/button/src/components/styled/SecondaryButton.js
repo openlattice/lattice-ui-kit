@@ -5,9 +5,10 @@ import { NEUTRALS, PURPLES } from '../../../../colors';
 const secondaryStyle = css`
   background-color: ${PURPLES[5]};
   border-color: ${PURPLES[5]};
-  border-radius: 4px;
+  border-radius: 3px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
+  box-sizing: border-box;
   color: ${PURPLES[1]};
   cursor: pointer;
   font-size: 14px;
@@ -16,6 +17,7 @@ const secondaryStyle = css`
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
   white-space: nowrap;
 `;
 
@@ -46,10 +48,17 @@ const secondaryDisabled = css`
   }
 `;
 
+const secondaryFocus = css`
+  &:focus-visible {
+    box-shadow: ${PURPLES[3]} 0 0 0 2px;
+  }
+`;
+
 const SecondaryButton = styled.button`
   ${secondaryStyle}
   ${secondaryHover}
   ${secondaryActive}
+  ${secondaryFocus}
   ${secondaryDisabled}
 `;
 
