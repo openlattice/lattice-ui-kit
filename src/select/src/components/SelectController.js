@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import isFunction from 'lodash/isFunction';
+import type { Node } from 'react';
 import type { ReactSelectValue, ReactSelectEvent } from '../../types';
 
 type Props = {
