@@ -30,6 +30,21 @@ storiesOf('Select', module)
           isMulti />
     </>
   ))
+  .add('useRawValues', () => (
+    <>
+      <h1>Select</h1>
+      <Select
+          useRawValues
+          options={stateOptions}
+          onChange={action('Single select changed')} />
+      <h1>Multiple Select</h1>
+      <Select
+          useRawValues
+          options={stateOptions}
+          onChange={action('Multiple selection changed')}
+          isMulti />
+    </>
+  ))
   .add('Creatable Select', () => (
     <>
       <h1>Creatable Select</h1>

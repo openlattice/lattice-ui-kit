@@ -57,6 +57,17 @@ describe('Select', () => {
       expect(actualValue).toEqual(expectedValue);
     });
 
+    // test('useRawValue should override onChange behavior', () => {
+    //   const mockOnChange = jest.fn();
+    //   const wrapper = mount(<Select useRawValue options={OPTIONS} onChange={mockOnChange} />);
+    //   const selectProps = wrapper.find(ReactSelect).props();
+    //   console.log(selectProps);
+    //   const instance = wrapper.instance();
+    //   console.log(instance);
+    //   expect(selectProps.onChange).toEqual(instance.handleChangeRawValues);
+
+    // });
+
   });
 
   describe('style', () => {

@@ -1,22 +1,25 @@
 // @flow
 import React, { Component } from 'react';
-import type { ReactSelectValue } from '../../types';
+import isFunction from 'lodash/isFunction';
+import type { ReactSelectValue, ReactSelectEvent } from '../../types';
 
 type Props = {
   options :any;
   useRawValues :boolean;
   render :(onChange :Function, rawValues :any) => Node;
-  onChange :(value :any) => void;
+  onChange :(value :any, event :ReactSelectEvent) => void;
   isMulti :boolean;
   value :any;
 }
 
 class SelectController extends Component<Props> {
 
-  handleChangeRawValues = (selectedOption :ReactSelectValue) => {
+  handleChangeRawValues = (selectedOption :ReactSelectValue, event :ReactSelectEvent) => {
     const { onChange } = this.props;
     const rawValue = this.getValue(selectedOption);
-    onChange(rawValue);
+    if (isFunction(onChange)) {
+      onChange(rawValue, event);
+    }
   }
 
   getValue = (selectedOption :ReactSelectValue) :any => {
@@ -32,16 +35,19 @@ class SelectController extends Component<Props> {
 
   getOptionsFromRawValue = () => {
     const { isMulti, options, value } = this.props;
-    const optionsByValue = options.map((acc, option) => {
-      acc[option.value] = option;
-      return acc;
-    }, {});
-    if (isMulti && Array.isArray(value)) {
-      return value.map(v => this.getOption(v, optionsByValue));
+    if (Array.isArray(options)) {
+      const optionsByValue = options.reduce((acc, option) => {
+        acc[option.value] = option;
+        return acc;
+      }, {});
+      if (isMulti && Array.isArray(value)) {
+        return value.map(v => this.getOption(v, optionsByValue));
+      }
+      if (value !== undefined && value !== null) {
+        return this.getOption(value, optionsByValue);
+      }
     }
-    if (value !== undefined || value !== null) {
-      return this.getOption(value, optionsByValue);
-    }
+
     return undefined;
   }
 
@@ -55,15 +61,33 @@ class SelectController extends Component<Props> {
     };
   }
 
+  renderWithOverrides = () => {
+    const {
+      onChange,
+      render,
+      useRawValues,
+      value,
+      ...rest
+    } = this.props;
+
+    const overrideProps :Object = {
+      ...rest, onChange: this.handleChangeRawValues
+    };
+
+    if (value !== undefined && value !== null) {
+      overrideProps.value = this.getOptionsFromRawValue();
+    }
+
+    return render(overrideProps);
+  }
+
   render() {
     const { useRawValues, render, ...rest } = this.props;
-
-    // override onChange and value if useRawValues is truthy
     return (
       <>
         {
           useRawValues
-            ? render({ ...rest, onChange: this.handleChangeRawValues, value: this.getOptionsFromRawValue() })
+            ? this.renderWithOverrides()
             : render({ ...rest })
         }
       </>
