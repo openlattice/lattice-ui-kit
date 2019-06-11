@@ -1,6 +1,7 @@
 // @flow
 
 import styled, { css } from 'styled-components';
+import CardSegment from '../CardSegment/CardSegment';
 import * as Colors from '../../../../colors';
 
 const { NEUTRALS, WHITE } = Colors;
@@ -40,15 +41,15 @@ const Card = styled.div`
   flex-direction: column;
   position: relative;
 
-  & > div {
+  & > ${CardSegment} {
     border-bottom: 1px solid ${NEUTRALS[4]};
   }
 
-  & > div:first-child {
+  & > ${CardSegment}:first-child {
     border-radius: 5px 5px 0 0;
   }
 
-  & > div:last-child {
+  & > ${CardSegment}:last-child {
     border-bottom: 0;
     border-radius: 0 0 5px 5px;
   }
