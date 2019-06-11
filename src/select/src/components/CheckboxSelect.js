@@ -1,12 +1,11 @@
-// @flow
-import Select from 'react-select';
+import React from 'react';
+import ReactSelect from 'react-select';
 
 import Option from './styled/CheckboxOption';
-
-import withProps from '../../../components/withProps';
+import SelectController from './SelectController';
 import selectStyles from '../../../style/selectStyles';
 
-export const props = {
+export const defaultProps = {
   styles: selectStyles,
   menuPlacement: 'auto',
   components: {
@@ -17,7 +16,10 @@ export const props = {
   closeMenuOnSelect: false,
 };
 
-const CheckboxSelect = withProps(Select, props);
-CheckboxSelect.displayName = 'CheckboxSelect';
+const CheckboxSelect = props => (
+  <SelectController
+      {...props} // eslint-disable-line indent
+      render={(selectProps => <ReactSelect {...defaultProps} {...selectProps} />)} />
+);
 
 export default CheckboxSelect;

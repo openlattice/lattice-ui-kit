@@ -1,10 +1,17 @@
-import Select from 'react-select';
-import withProps from '../../../components/withProps';
+import React from 'react';
+import ReactSelect from 'react-select';
+import SelectController from './SelectController';
 import selectStyles from '../../../style/selectStyles';
 
-export const props = {
+export const defaultProps = {
   styles: selectStyles,
   menuPlacement: 'auto'
 };
 
-export default withProps(Select, props);
+const Select = props => (
+  <SelectController
+      {...props} // eslint-disable-line indent
+      render={(selectProps => <ReactSelect {...defaultProps} {...selectProps} />)} />
+);
+
+export default Select;

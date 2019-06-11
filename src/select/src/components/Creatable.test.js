@@ -1,7 +1,8 @@
 import React from 'react';
+import ReactSelectCreatable from 'react-select/lib/Creatable';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import Creatable, { props } from './Creatable';
+import Creatable, { defaultProps } from './Creatable';
 import { OPTIONS } from './constants';
 
 describe('Creatable', () => {
@@ -13,10 +14,10 @@ describe('Creatable', () => {
 
   test('internal Select should receive preset props', () => {
     const wrapper = mount(<Creatable />);
-    const selectProps = wrapper.find('Select').props();
+    const selectProps = wrapper.find(ReactSelectCreatable).props();
 
-    Object.keys(props).forEach((key) => {
-      expect(selectProps[key]).toEqual(props[key]);
+    Object.keys(defaultProps).forEach((key) => {
+      expect(selectProps[key]).toEqual(defaultProps[key]);
     });
   });
 

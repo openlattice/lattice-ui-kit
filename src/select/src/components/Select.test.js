@@ -1,7 +1,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import Select, { props } from './Select';
+import ReactSelect from 'react-select';
+import Select, { defaultProps } from './Select';
 import { OPTIONS } from './constants';
 
 describe('Select', () => {
@@ -19,10 +20,10 @@ describe('Select', () => {
 
     test('internal Select should receive preset props', () => {
       const wrapper = mount(<Select />);
-      const selectProps = wrapper.find('Select').props();
+      const selectProps = wrapper.find(ReactSelect).props();
 
-      Object.keys(props).forEach((key) => {
-        expect(selectProps[key]).toEqual(props[key]);
+      Object.keys(defaultProps).forEach((key) => {
+        expect(selectProps[key]).toEqual(defaultProps[key]);
       });
     });
 

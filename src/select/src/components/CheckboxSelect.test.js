@@ -1,7 +1,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import CheckboxSelect, { props } from './CheckboxSelect';
+import ReactSelect from 'react-select';
+import CheckboxSelect, { defaultProps } from './CheckboxSelect';
 import Checkbox from '../../../checkbox';
 import { OPTIONS } from './constants';
 
@@ -18,18 +19,12 @@ describe('CheckboxSelect', () => {
 
   describe('props', () => {
 
-    test('internal Select should have selectProps', () => {
-      const wrapper = mount(<CheckboxSelect />);
-      const selectProps = wrapper.find('Select').props();
-      expect(selectProps.selectProps).toEqual(props.selectProps);
-    });
-
     test('internal Select should receive preset props', () => {
       const wrapper = mount(<CheckboxSelect />);
-      const selectProps = wrapper.find('Select').props();
+      const selectProps = wrapper.find(ReactSelect).props();
 
-      Object.keys(props).forEach((key) => {
-        expect(selectProps[key]).toEqual(props[key]);
+      Object.keys(defaultProps).forEach((key) => {
+        expect(selectProps[key]).toEqual(defaultProps[key]);
       });
     });
 
