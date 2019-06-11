@@ -1,9 +1,17 @@
-import Creatable from 'react-select/lib/Creatable';
-import withProps from '../../../components/withProps';
+import React from 'react';
+import ReactSelectCreatable from 'react-select/lib/Creatable';
+import SelectController from './SelectController';
 import selectStyles from '../../../style/selectStyles';
 
-export const props = {
-  styles: selectStyles
+export const defaultProps = {
+  styles: selectStyles,
+  menuPlacement: 'auto'
 };
 
-export default withProps(Creatable, props);
+const Creatable = props => (
+  <SelectController
+      {...props} // eslint-disable-line indent
+      render={(selectProps => <ReactSelectCreatable {...defaultProps} {...selectProps} />)} />
+);
+
+export default Creatable;
