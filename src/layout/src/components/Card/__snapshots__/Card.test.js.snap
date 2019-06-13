@@ -18,15 +18,15 @@ exports[`Card snapshots With child divs 1`] = `
   position: relative;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-bottom: 1px solid #dcdce7;
 }
 
-.c0 > div:first-child {
+.c0 > .c1:first-child {
   border-radius: 5px 5px 0 0;
 }
 
-.c0 > div:last-child {
+.c0 > .c1:last-child {
   border-bottom: 0;
   border-radius: 0 0 5px 5px;
 }
@@ -46,9 +46,15 @@ exports[`Card snapshots With child divs 1`] = `
             "#ffffff",
             ";border:1px solid ",
             "#dcdce7",
-            ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > div{border-bottom:1px solid ",
+            ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ",
+            ".c1",
+            "{border-bottom:1px solid ",
             "#dcdce7",
-            ";}& > div:first-child{border-radius:5px 5px 0 0;}& > div:last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+            ";}& > ",
+            ".c1",
+            ":first-child{border-radius:5px 5px 0 0;}& > ",
+            ".c1",
+            ":last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
             [Function],
             ";",
           ],
@@ -100,15 +106,15 @@ exports[`Card snapshots Without Children 1`] = `
   position: relative;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-bottom: 1px solid #dcdce7;
 }
 
-.c0 > div:first-child {
+.c0 > .c1:first-child {
   border-radius: 5px 5px 0 0;
 }
 
-.c0 > div:last-child {
+.c0 > .c1:last-child {
   border-bottom: 0;
   border-radius: 0 0 5px 5px;
 }
@@ -128,9 +134,15 @@ exports[`Card snapshots Without Children 1`] = `
             "#ffffff",
             ";border:1px solid ",
             "#dcdce7",
-            ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > div{border-bottom:1px solid ",
+            ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ",
+            ".c1",
+            "{border-bottom:1px solid ",
             "#dcdce7",
-            ";}& > div:first-child{border-radius:5px 5px 0 0;}& > div:last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+            ";}& > ",
+            ".c1",
+            ":first-child{border-radius:5px 5px 0 0;}& > ",
+            ".c1",
+            ":last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
             [Function],
             ";",
           ],

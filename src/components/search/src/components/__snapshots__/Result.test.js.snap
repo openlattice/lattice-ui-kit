@@ -46,15 +46,15 @@ exports[`Result snapshots should match snapshot 1`] = `
   position: relative;
 }
 
-.c0 > div {
+.c0 > .c4 {
   border-bottom: 1px solid #dcdce7;
 }
 
-.c0 > div:first-child {
+.c0 > .c4:first-child {
   border-radius: 5px 5px 0 0;
 }
 
-.c0 > div:last-child {
+.c0 > .c4:last-child {
   border-bottom: 0;
   border-radius: 0 0 5px 5px;
 }
@@ -94,9 +94,15 @@ exports[`Result snapshots should match snapshot 1`] = `
               "#ffffff",
               ";border:1px solid ",
               "#dcdce7",
-              ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > div{border-bottom:1px solid ",
+              ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ",
+              ".c4",
+              "{border-bottom:1px solid ",
               "#dcdce7",
-              ";}& > div:first-child{border-radius:5px 5px 0 0;}& > div:last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+              ";}& > ",
+              ".c4",
+              ":first-child{border-radius:5px 5px 0 0;}& > ",
+              ".c4",
+              ":last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
               [Function],
               ";",
             ],

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select snapshot render matches snapshot 1`] = `
+<Fragment>
+  <StateManager
+    defaultInputValue=""
+    defaultMenuIsOpen={false}
+    defaultValue={null}
+  />
+</Fragment>
+`;

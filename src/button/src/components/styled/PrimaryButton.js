@@ -5,9 +5,10 @@ import { NEUTRALS, PURPLES, WHITE } from '../../../../colors';
 const primaryStyle = css`
   background-color: ${PURPLES[2]};
   border-color: ${PURPLES[2]};
-  border-radius: 4px;
+  border-radius: 3px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
+  box-sizing: border-box;
   color: ${WHITE};
   cursor: pointer;
   font-size: 14px;
@@ -16,6 +17,7 @@ const primaryStyle = css`
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
   white-space: nowrap;
 `;
 
@@ -46,11 +48,18 @@ const primaryDisabled = css`
   }
 `;
 
+const primaryFocus = css`
+  :focus-visible {
+    box-shadow: ${PURPLES[0]} 0 0 0 2px;
+  }
+`;
+
 const PrimaryButton = styled.button`
   ${primaryStyle}
   ${primaryHover}
   ${primaryActive}
   ${primaryDisabled}
+  ${primaryFocus}
 `;
 
 export default PrimaryButton;

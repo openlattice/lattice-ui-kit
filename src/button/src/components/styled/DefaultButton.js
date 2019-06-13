@@ -10,9 +10,10 @@ import { NEUTRALS, WHITE } from '../../../../colors';
 const defaultStyle = css`
   background-color: ${NEUTRALS[6]};
   border-color: ${NEUTRALS[6]};
-  border-radius: 4px;
+  border-radius: 3px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
+  box-sizing: border-box;
   color: ${NEUTRALS[1]};
   cursor: pointer;
   font-size: 14px;
@@ -21,6 +22,7 @@ const defaultStyle = css`
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
   white-space: nowrap;
 `;
 
@@ -52,10 +54,17 @@ const defaultDisabled = css`
   }
 `;
 
+const defaultFocus = css`
+  &:focus-visible {
+    box-shadow: ${NEUTRALS[2]} 0 0 0 2px;
+  }
+`;
+
 const DefaultButton = styled.button`
   ${defaultStyle}
   ${defaultHover}
   ${defaultActive}
+  ${defaultFocus}
   ${defaultDisabled}
 `;
 
