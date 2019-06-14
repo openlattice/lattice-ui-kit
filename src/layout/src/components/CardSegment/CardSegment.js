@@ -84,19 +84,16 @@ const CardSegment = styled.div`
 
     & > h1 {
       font-size: 18px;
-      font-weight: normal;
       margin: 0;
     }
 
     & > h2 {
       font-size: 16px;
-      font-weight: normal;
       margin: 0;
     }
 
     & > h3 {
       font-size: 14px;
-      font-weight: normal;
       margin: 0;
     }
   }
