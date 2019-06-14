@@ -28,9 +28,9 @@ const getFontColor = getStyleVariation('mode', {
   warning: NEUTRALS[0],
 });
 
-const CardHeader = styled(CardSegment).attrs({
+const CardHeader = styled(CardSegment).attrs(() => ({
   as: 'header'
-})`
+}))`
   background-color: ${backgroundColor};
   color: ${getFontColor};
   align-items: baseline;
