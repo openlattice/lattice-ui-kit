@@ -81,21 +81,6 @@ const CardSegment = styled.div`
     flex-direction: row;
     justify-content: space-between;
     ${getHeaderComputedStyles}
-
-    & > h1 {
-      font-size: 18px;
-      margin: 0;
-    }
-
-    & > h2 {
-      font-size: 16px;
-      margin: 0;
-    }
-
-    & > h3 {
-      font-size: 14px;
-      margin: 0;
-    }
   }
 `;
 
