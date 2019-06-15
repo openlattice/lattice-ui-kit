@@ -31,10 +31,11 @@ export {
 export { Creatable, Select, CheckboxSelect } from './select';
 export {
   Search,
-  SearchResults,
-  Result,
   DataGrid,
-  PersonResult
+  IconSplash,
+  PersonResult,
+  Result,
+  SearchResults,
 } from './components/search';
 export default {
   version

@@ -10,7 +10,7 @@ import {
   mockSearchResultsForPeople,
 } from './constants';
 import Spinner from '../../../../spinner';
-import NotFound from './NotFound';
+import IconSplash from './IconSplash';
 
 describe('SearchResults', () => {
 
@@ -44,7 +44,7 @@ describe('SearchResults', () => {
 
     test('should render default noResult when hasSearched and results are empty', () => {
       const wrapper = mount(<SearchResults hasSearched results={List()} />);
-      expect(wrapper.find(NotFound)).toHaveLength(1);
+      expect(wrapper.find(IconSplash)).toHaveLength(1);
     });
 
     test('should render custom noResult when hasSearched and results are empty', () => {

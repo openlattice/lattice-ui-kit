@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NotFound should match snapshot 1`] = `
-<NotFound__FigureWrapper>
+exports[`IconSplash should match snapshot 1`] = `
+<IconSplash__FigureWrapper>
   <FontAwesomeIcon
     border={false}
     className=""
-    fixedWidth={false}
+    fixedWidth={true}
     flip={null}
     icon={
       Object {
@@ -33,5 +33,5 @@ exports[`NotFound should match snapshot 1`] = `
     transform={null}
   />
   <figcaption />
-</NotFound__FigureWrapper>
+</IconSplash__FigureWrapper>
 `;

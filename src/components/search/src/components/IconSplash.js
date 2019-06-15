@@ -1,8 +1,8 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import { faSearchMinus } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 const FigureWrapper = styled.figure`
   margin: 10px auto;
@@ -13,7 +13,7 @@ const FigureWrapper = styled.figure`
     font-size: 16px;
     font-weight: 600;
     line-height: 22px;
-    margin: 10px auto;
+    margin: 10px auto 0 auto;
     text-align: center;
     width: 100%;
   }
@@ -21,19 +21,20 @@ const FigureWrapper = styled.figure`
 
 type Props = {
   caption ? :string;
+  icon :IconDefinition;
   size ? :string;
 }
 
-const NotFound = ({ caption, size } :Props) => (
+const IconSplash = ({ caption, icon, size } :Props) => (
   <FigureWrapper>
-    <FontAwesomeIcon icon={faSearchMinus} size={size} />
+    <FontAwesomeIcon icon={icon} size={size} fixedWidth />
     <figcaption>{caption}</figcaption>
   </FigureWrapper>
 );
 
-NotFound.defaultProps = {
+IconSplash.defaultProps = {
   caption: '',
   size: '5x'
 };
 
-export default NotFound;
+export default IconSplash;

@@ -15,6 +15,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Creatable',
   'DataGrid',
   'DatePicker',
+  'IconSplash',
   'Input',
   'Label',
   'Modal',

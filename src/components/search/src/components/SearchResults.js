@@ -3,8 +3,9 @@
 import React, { Component } from 'react';
 import type { ComponentType, Node } from 'react';
 import { List, Map } from 'immutable';
+import { faSearchMinus } from '@fortawesome/pro-regular-svg-icons';
 
-import NotFound from './NotFound';
+import IconSplash from './IconSplash';
 import Result from './Result';
 import Spinner from '../../../../spinner';
 import { CardStack } from '../../../../layout';
@@ -28,7 +29,7 @@ class SearchResults extends Component<Props> {
     className: undefined,
     hasSearched: false,
     isLoading: false,
-    noResults: () => (<NotFound caption="No results" />),
+    noResults: () => (<IconSplash icon={faSearchMinus} caption="No results" />),
     onResultClick: undefined,
     resultComponent: Result,
     resultLabels: undefined,

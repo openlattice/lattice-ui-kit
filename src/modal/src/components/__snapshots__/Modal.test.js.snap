@@ -1141,9 +1141,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               Object {
                                                 "$$typeof": Symbol(react.forward_ref),
                                                 "attrs": Array [
-                                                  Object {
-                                                    "mode": "primary",
-                                                  },
+                                                  [Function],
                                                 ],
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
@@ -1342,9 +1340,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               Object {
                                                 "$$typeof": Symbol(react.forward_ref),
                                                 "attrs": Array [
-                                                  Object {
-                                                    "mode": "default",
-                                                  },
+                                                  [Function],
                                                 ],
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
