@@ -1,8 +1,8 @@
 // @flow
 
-const getStyleVariation = (prop :string, values :Object, defaultValue ? :any) => {
+const getStyleVariation = (prop :string, values :Object) => {
   return (props :Object) :any => {
-    return props[prop] ? values[props[prop]] : defaultValue;
+    return props[prop] && values[props[prop]];
   };
 };
 
