@@ -1,8 +1,9 @@
 // @flow
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import type { ComponentType } from 'react';
 
 const FigureWrapper = styled.figure`
   margin: 10px auto;
@@ -20,26 +21,42 @@ const FigureWrapper = styled.figure`
 `;
 
 type Props = {
+  /** Caption that renders underneath the icon */
   caption ? :string;
-  icon ? :IconDefinition;
+  /** Either a FontAwesome IconDefinition or a render prop */
+  icon ? :IconDefinition | ComponentType<any>;
+  /** size string that is passed to the FontAwesomeIcon or icon render prop */
   size ? :string;
 }
 
-const IconSplash = ({ caption, icon, size } :Props) => (
-  <FigureWrapper>
-    {
-      icon
-        ? <FontAwesomeIcon icon={icon} size={size} fixedWidth />
-        : null
-    }
-    <figcaption>{caption}</figcaption>
-  </FigureWrapper>
-);
+class IconSplash extends Component<Props> {
+  static defaultProps = {
+    caption: '',
+    icon: undefined,
+    size: '5x'
+  };
 
-IconSplash.defaultProps = {
-  caption: '',
-  icon: undefined,
-  size: '5x'
-};
+  renderIcon = () => {
+    const { icon, size } = this.props;
+    if (icon) {
+      if (typeof icon === 'function') {
+        return icon(size);
+      }
+
+      return <FontAwesomeIcon icon={icon} size={size} fixedWidth />;
+    }
+    return null;
+  }
+
+  render() {
+    const { caption } = this.props;
+    return (
+      <FigureWrapper>
+        { this.renderIcon() }
+        <figcaption>{caption}</figcaption>
+      </FigureWrapper>
+    );
+  }
+}
 
 export default IconSplash;

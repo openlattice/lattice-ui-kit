@@ -1,18 +1,28 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { faFingerprint } from '@fortawesome/pro-light-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFingerprint, faDiceD20 } from '@fortawesome/pro-light-svg-icons';
 
 import IconSplash from '../src/components/IconSplash';
-import { Card, CardSegment, CardStack } from '../../../layout';
+import { Card, CardSegment } from '../../../layout';
 
 
 storiesOf('Icon Splash', module)
-  .add('custom icon', () => (
-    <CardStack>
-      <Card>
-        <CardSegment>
-          <IconSplash icon={faFingerprint} caption="Keep your finger on the sensor a little longer" size="3x" />
-        </CardSegment>
-      </Card>
-    </CardStack>
+  .add('FontAwesome IconDefinition', () => (
+    <Card>
+      <CardSegment>
+        <IconSplash icon={faFingerprint} caption="Keep your finger on the sensor a little longer" size="3x" />
+      </CardSegment>
+    </Card>
+  ))
+  .add('icon render prop', () => (
+    <Card>
+      <CardSegment>
+        <IconSplash
+            icon={size => (
+              <FontAwesomeIcon icon={faDiceD20} size={size} fixedWidth spin />
+            )}
+            caption="Rolling the dice..." />
+      </CardSegment>
+    </Card>
   ));

@@ -12,9 +12,20 @@ describe('IconSplash', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
-  test('should render provided icon', () => {
+  test('should not render icon if undefined', () => {
+    const wrapper = shallow(<IconSplash />);
+    expect(wrapper.find(FontAwesomeIcon)).toHaveLength(0);
+  });
+
+  test('should render provided FontAwesome IconDefinition', () => {
     const wrapper = shallow(<IconSplash icon={faSearchMinus} />);
     expect(wrapper.find(FontAwesomeIcon).props().icon).toEqual(faSearchMinus);
+  });
+
+  test('should invoke icon render prop', () => {
+    const iconMock = jest.fn();
+    shallow(<IconSplash icon={iconMock} />);
+    expect(iconMock).toHaveBeenCalledWith('5x');
   });
 
   test('should render caption', () => {
