@@ -30,6 +30,7 @@ storiesOf('Button', module)
           <Button onClick={action('button clicked')}>Default</Button>
           <Button mode="primary" onClick={action('button clicked')}>Primary</Button>
           <Button mode="secondary" onClick={action('button clicked')}>Secondary</Button>
+          <Button mode="subtle" onClick={action('button clicked')}>Subtle</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
@@ -38,6 +39,7 @@ storiesOf('Button', module)
           <Button disabled onClick={action('button clicked')}>Default</Button>
           <Button mode="primary" disabled onClick={action('button clicked')}>Primary</Button>
           <Button mode="secondary" disabled onClick={action('button clicked')}>Secondary</Button>
+          <Button mode="subtle" disabled onClick={action('button clicked')}>Subtle</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
@@ -46,6 +48,7 @@ storiesOf('Button', module)
           <Button isLoading onClick={action('button clicked')}>Default</Button>
           <Button mode="primary" isLoading onClick={action('button clicked')}>Primary</Button>
           <Button mode="secondary" isLoading onClick={action('button clicked')}>Secondary</Button>
+          <Button mode="subtle" isLoading onClick={action('button clicked')}>Subtle</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
