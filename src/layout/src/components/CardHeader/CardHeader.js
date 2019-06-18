@@ -31,6 +31,7 @@ const getFontColor = getStyleVariation('mode', {
 const CardHeader = styled(CardSegment).attrs(() => ({
   as: 'header'
 }))`
+  flex: 0;
   background-color: ${backgroundColor};
   color: ${getFontColor};
   align-items: baseline;
