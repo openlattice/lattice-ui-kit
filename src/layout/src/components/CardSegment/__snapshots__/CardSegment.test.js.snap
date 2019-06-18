@@ -21,28 +21,6 @@ exports[`CardSegment snapshots Without child 1`] = `
   cursor: auto;
 }
 
-.c0 > header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0;
-}
-
 <CardSegment>
   <StyledComponent
     forwardedComponent={
@@ -56,9 +34,6 @@ exports[`CardSegment snapshots Without child 1`] = `
           "rules": Array [
             "display:flex;flex:1 0 auto;position:relative;",
             [Function],
-            " & > header{display:flex;flex:1 0 auto;flex-direction:row;justify-content:space-between;",
-            [Function],
-            "}",
           ],
         },
         "displayName": "CardSegment",
@@ -101,24 +76,6 @@ exports[`CardSegment snapshots with > 1 child 1`] = `
   cursor: auto;
 }
 
-.c0 > header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0 0 30px 0;
-}
-
 <CardSegment>
   <StyledComponent
     forwardedComponent={
@@ -132,9 +89,6 @@ exports[`CardSegment snapshots with > 1 child 1`] = `
           "rules": Array [
             "display:flex;flex:1 0 auto;position:relative;",
             [Function],
-            " & > header{display:flex;flex:1 0 auto;flex-direction:row;justify-content:space-between;",
-            [Function],
-            "}",
           ],
         },
         "displayName": "CardSegment",
