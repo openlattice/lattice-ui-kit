@@ -31,10 +31,11 @@ const getFontColor = getStyleVariation('mode', {
 const CardHeader = styled(CardSegment).attrs(() => ({
   as: 'header'
 }))`
-  flex: 0;
+  align-items: baseline;
   background-color: ${backgroundColor};
   color: ${getFontColor};
-  align-items: baseline;
+  flex: 0;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 `;
 
 export default CardHeader;
