@@ -3,14 +3,13 @@ import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
 
 import Button from './Button';
-import DefaultButton from './styled/DefaultButton';
-import PrimaryButton from './styled/PrimaryButton';
-import SecondaryButton from './styled/SecondaryButton';
+import StyledButton from './styled/StyledButton';
 import { nope } from '../../../utils/testing/MockUtils';
 
 const DEFAULT_BTN_TXT = 'DEFAULT_BUTTON';
 const PRIMARY_BTN_TXT = 'PRIMARY_BUTTON';
 const SECONDARY_BTN_TXT = 'SECONDARY_BUTTON';
+const SUBTLE_BTN_TXT = 'SUBTLE_BUTTON';
 
 describe('button', () => {
 
@@ -32,9 +31,9 @@ describe('button', () => {
       expect(toJson(basicBtn2)).toMatchSnapshot();
     });
 
-    test('should render DefaultButton component', () => {
-      expect(basicBtn1.find(DefaultButton)).toHaveLength(1);
-      expect(basicBtn2.find(DefaultButton)).toHaveLength(1);
+    test('should render StyledButton component', () => {
+      expect(basicBtn1.find(StyledButton)).toHaveLength(1);
+      expect(basicBtn2.find(StyledButton)).toHaveLength(1);
     });
 
     test('should render a button element', () => {
@@ -125,8 +124,8 @@ describe('button', () => {
       expect(toJson(basicBtn)).toMatchSnapshot();
     });
 
-    test('should render PrimaryButton component', () => {
-      expect(basicBtn.find(PrimaryButton)).toHaveLength(1);
+    test('should render StyledButton component', () => {
+      expect(basicBtn.find(StyledButton)).toHaveLength(1);
     });
 
     test('should render a button element', () => {
@@ -198,8 +197,8 @@ describe('button', () => {
       expect(toJson(basicBtn)).toMatchSnapshot();
     });
 
-    test('should render SecondaryButton component', () => {
-      expect(basicBtn.find(SecondaryButton)).toHaveLength(1);
+    test('should render StyledButton component', () => {
+      expect(basicBtn.find(StyledButton)).toHaveLength(1);
     });
 
     test('should render a button element', () => {
@@ -249,6 +248,79 @@ describe('button', () => {
         const btn = mount(
           <Button mode="secondary" onClick={mockOnClick}>
             { SECONDARY_BTN_TXT }
+          </Button>
+        );
+        btn.simulate('click');
+        expect(mockOnClick).toHaveBeenCalledTimes(1);
+      });
+
+    });
+
+  });
+
+  describe('mode="subtle"', () => {
+
+    const basicBtn = mount(
+      <Button mode="subtle" onClick={nope}>
+        { SUBTLE_BTN_TXT }
+      </Button>
+    );
+
+    test('should match snapshot', () => {
+      expect(toJson(basicBtn)).toMatchSnapshot();
+    });
+
+    test('should render StyledButton component', () => {
+      expect(basicBtn.find(StyledButton)).toHaveLength(1);
+    });
+
+    test('should render a button element', () => {
+      expect(basicBtn.find('button')).toHaveLength(1);
+    });
+
+    test('should render the correct text', () => {
+      expect(basicBtn.text()).toEqual(SUBTLE_BTN_TXT);
+    });
+
+    describe('isLoading', () => {
+      test('should render loading spinner', () => {
+        const wrapper = mount(<Button mode="subtle" isLoading />);
+        expect(wrapper.find('Spinner')).toHaveLength(1);
+      });
+
+      test('should set content opacity to 0', () => {
+        const wrapper = mount(<Button mode="subtle" isLoading />);
+        expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
+      });
+    });
+
+    describe('disabled', () => {
+
+      const disabledBtn = mount(
+        <Button disabled mode="subtle" onClick={nope}>
+          { SUBTLE_BTN_TXT }
+        </Button>
+      );
+
+      test('should set "disabled" attribute to true', () => {
+        expect(disabledBtn.prop('disabled')).toEqual(true);
+        expect(disabledBtn.find('button').get(0).props.disabled).toEqual(true);
+      });
+
+      test('should set "disabled" attribute to false', () => {
+        expect(basicBtn.prop('disabled')).toEqual(false);
+        expect(basicBtn.find('button').get(0).props.disabled).toEqual(false);
+      });
+
+    });
+
+    describe('onClick()', () => {
+
+      test('should invoke onClick handler', () => {
+        const mockOnClick = jest.fn();
+        const btn = mount(
+          <Button mode="subtle" onClick={mockOnClick}>
+            { SUBTLE_BTN_TXT }
           </Button>
         );
         btn.simulate('click');
