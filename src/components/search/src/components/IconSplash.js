@@ -21,19 +21,24 @@ const FigureWrapper = styled.figure`
 
 type Props = {
   caption ? :string;
-  icon :IconDefinition;
+  icon ? :IconDefinition;
   size ? :string;
 }
 
 const IconSplash = ({ caption, icon, size } :Props) => (
   <FigureWrapper>
-    <FontAwesomeIcon icon={icon} size={size} fixedWidth />
+    {
+      icon
+        ? <FontAwesomeIcon icon={icon} size={size} fixedWidth />
+        : null
+    }
     <figcaption>{caption}</figcaption>
   </FigureWrapper>
 );
 
 IconSplash.defaultProps = {
   caption: '',
+  icon: undefined,
   size: '5x'
 };
 
