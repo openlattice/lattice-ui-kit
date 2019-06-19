@@ -27,7 +27,7 @@ class Banner extends Component<Props> {
     icon: undefined,
     isOpen: false,
     maxHeight: DEFAULT_BANNER_HEIGHT,
-    mode: 'default'
+    mode: undefined,
   };
 
   renderIcon = () => {
