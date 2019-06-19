@@ -5,16 +5,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import type { ComponentType } from 'react';
 
+import { NEUTRALS } from '../../../../colors';
+
 const FigureWrapper = styled.figure`
   margin: 10px auto;
   text-align: center;
 
   figcaption {
-    color: #8e929b;
+    color: ${NEUTRALS[1]};
     font-size: 16px;
     font-weight: 600;
     line-height: 22px;
-    margin: 10px auto 0 auto;
+    margin: 0 auto;
     text-align: center;
     width: 100%;
   }
