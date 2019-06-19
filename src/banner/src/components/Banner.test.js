@@ -7,7 +7,7 @@ import {
   faNarwhal,
   faTimesOctagon
 } from '@fortawesome/pro-solid-svg-icons';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 
 import Banner from './Banner';
 import { Container } from './styled/StyledBannerComponents';
@@ -71,14 +71,31 @@ describe('Banner', () => {
     });
 
     describe('icon', () => {
+
+      test('should render FontAwesome IconDefinition', () => {
+        const wrapper = shallow(<Banner icon={faNarwhal} />);
+        expect(wrapper.find(FontAwesomeIcon).props().icon).toEqual(faNarwhal);
+      });
+
+      test('fontawesome icon definition should override mode icon', () => {
+        const wrapper = mount(<Banner mode="warning" icon={faNarwhal} />);
+        expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faNarwhal);
+      });
+
+      test('should invoke icon render prop', () => {
+        const iconMock = jest.fn();
+        shallow(<Banner icon={iconMock} />);
+        expect(iconMock).toHaveBeenCalledTimes(1);
+      });
+
       test('should render custom icon', () => {
-        const customIcon = <FontAwesomeIcon icon={faNarwhal} />;
+        const customIcon = () => <FontAwesomeIcon icon={faNarwhal} />;
         const wrapper = mount(<Banner icon={customIcon} />);
         expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faNarwhal);
       });
 
       test('custom icon should override mode icon', () => {
-        const customIcon = <FontAwesomeIcon icon={faNarwhal} />;
+        const customIcon = () => <FontAwesomeIcon icon={faNarwhal} />;
         const wrapper = mount(<Banner mode="warning" icon={customIcon} />);
         expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faNarwhal);
       });
