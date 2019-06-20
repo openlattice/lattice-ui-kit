@@ -226,18 +226,28 @@ describe('Search', () => {
       let changeEvent = { name: 'reportType' };
       // apply one filter
       instance.handleOnChangeFilter(changeValue, changeEvent);
-
       let filteredResults = wrapper.find(SearchResults).props().results;
       expect(List.isList(filteredResults)).toEqual(true);
       expect(filteredResults.count()).toEqual(3);
 
       changeValue = [{
+        label: 'Badge #2',
+        value: 'Badge #2'
+      }];
+      changeEvent = { name: 'badges' };
+
+      // apply second filter
+      instance.handleOnChangeFilter(changeValue, changeEvent);
+      filteredResults = wrapper.find(SearchResults).props().results;
+      expect(List.isList(filteredResults)).toEqual(true);
+      expect(filteredResults.count()).toEqual(2);
+
+      changeValue = [{
         value: 'smitty@werbenjagermanjensen.com'
       }];
-      changeEvent = {
-        name: 'submitter'
-      };
-      // apply second filter
+      changeEvent = { name: 'submitter' };
+
+      // apply third filter
       instance.handleOnChangeFilter(changeValue, changeEvent);
       filteredResults = wrapper.find(SearchResults).props().results;
       expect(filteredResults.count()).toEqual(1);
