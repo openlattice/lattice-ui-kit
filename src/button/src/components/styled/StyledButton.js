@@ -7,7 +7,7 @@ import {
   defaultFocus,
   defaultHover,
   defaultStyle,
-} from './DefaultButton';
+} from './DefaultButtonStyles';
 
 import {
   secondaryActive,
@@ -15,7 +15,7 @@ import {
   secondaryFocus,
   secondaryHover,
   secondaryStyle,
-} from './SecondaryButton';
+} from './SecondaryButtonStyles';
 
 import {
   primaryActive,
@@ -23,7 +23,7 @@ import {
   primaryFocus,
   primaryHover,
   primaryStyle,
-} from './PrimaryButton';
+} from './PrimaryButtonStyles';
 
 import {
   subtleActive,
@@ -31,7 +31,7 @@ import {
   subtleFocus,
   subtleHover,
   subtleStyle,
-} from './SubtleButton';
+} from './SubtleButtonStyles';
 
 const baseButtonVariation = getStyleVariation('mode', {
   default: defaultStyle,
