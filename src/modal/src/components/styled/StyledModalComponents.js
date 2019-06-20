@@ -54,6 +54,20 @@ const getInnerContainerMaxHeight = ({ viewportScrolling }) => {
   return '';
 };
 
+const getScrollBehavior = ({ viewportScrolling }) => {
+  if (viewportScrolling) {
+    return css`
+      overflow-x: visible;
+      overflow-y: visible;
+    `;
+  }
+
+  return css`
+    overflow-x: hidden;
+    overflow-y: auto;
+  `;
+};
+
 export const ModalOuterContainer = styled.div`
   align-items: center;
   display: flex;
@@ -104,9 +118,8 @@ export const ModalSection = styled.div`
 
 export const BodySection = styled(ModalSection)`
   flex: 1 1 auto;
-  overflow-x: hidden;
-  overflow-y: auto;
   padding: 0 ${DEFAULT_PADDING}px;
+  ${getScrollBehavior}
 `;
 
 export const FooterSection = styled(ModalSection)`
