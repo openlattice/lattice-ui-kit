@@ -68,7 +68,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   background-color: #ffffff;
-  border-radius: 4px;
+  border-radius: 3px;
   box-shadow: 0 2px 8px -2px #555e6f;
   display: -webkit-box;
   display: -webkit-flex;
@@ -394,7 +394,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   background-color: #ffffff;
-  border-radius: 4px;
+  border-radius: 3px;
   box-shadow: 0 2px 8px -2px #555e6f;
   display: -webkit-box;
   display: -webkit-flex;
@@ -859,7 +859,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                       [Function],
                                       ";background-color:",
                                       "#ffffff",
-                                      ";border-radius:4px;box-shadow:0 2px 8px -2px ",
+                                      ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                       "#555e6f",
                                       ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
                                       "240",
