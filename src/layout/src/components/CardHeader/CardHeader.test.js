@@ -1,6 +1,6 @@
 import React from 'react';
 import toJson from 'enzyme-to-json';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
 import CardHeader from './CardHeader';
 import {
