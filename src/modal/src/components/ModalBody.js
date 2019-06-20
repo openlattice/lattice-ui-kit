@@ -2,7 +2,7 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import type { Node } from 'react';
 
@@ -10,21 +10,25 @@ import { BodySection } from './styled/StyledModalComponents';
 
 type Props = {
   children :Node;
+  viewportScrolling ? :boolean;
 };
 
-export default class ModalBody extends Component<Props> {
+const ModalBody = (props :Props) => {
+  const { children, viewportScrolling } = props;
+  return (
+    <BodySection viewportScrolling={viewportScrolling}>
+      { children }
+    </BodySection>
+  );
+};
 
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-  }
+ModalBody.propTypes = {
+  children: PropTypes.node.isRequired,
+  viewportScrolling: PropTypes.bool
+};
 
-  render() {
+ModalBody.defaultProps = {
+  viewportScrolling: false
+};
 
-    const { children } = this.props;
-    return (
-      <BodySection>
-        { children }
-      </BodySection>
-    );
-  }
-}
+export default ModalBody;
