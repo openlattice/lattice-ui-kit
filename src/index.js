@@ -3,6 +3,7 @@
  */
 
 import * as Colors from './colors';
+import * as StyleUtils from './utils/StyleUtils';
 
 // injected by Webpack.DefinePlugin
 declare var __VERSION__ :string;
@@ -10,6 +11,7 @@ const version :string = __VERSION__;
 
 export {
   Colors,
+  StyleUtils,
   version,
 };
 export { default as Button } from './button';
@@ -37,6 +39,7 @@ export {
   Result,
   SearchResults,
 } from './components/search';
+
 export default {
   version
 };
