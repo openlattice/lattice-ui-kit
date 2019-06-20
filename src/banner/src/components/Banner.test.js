@@ -38,7 +38,7 @@ describe('Banner', () => {
   describe('props', () => {
     describe('mode', () => {
       test('should render default mode', () => {
-        const wrapper = mount(<Banner />);
+        const wrapper = mount(<Banner mode="default" />);
         expect(wrapper.prop('mode')).toEqual('default');
         expect(wrapper.find(Container)).toHaveStyleRule('background-color', NEUTRALS[0]);
         expect(wrapper.find(Container)).toHaveStyleRule('color', WHITE);
