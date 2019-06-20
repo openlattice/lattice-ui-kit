@@ -105,9 +105,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  padding: 0 30px;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: 0 30px;
 }
 
 .c8 {
@@ -431,9 +431,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  padding: 0 30px;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: 0 30px;
 }
 
 .c8 {
@@ -1047,8 +1047,12 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                     </StyledComponent>
                                   </StyledModalComponents__HeaderSection>
                                 </ModalHeader>
-                                <ModalBody>
-                                  <StyledModalComponents__BodySection>
+                                <ModalBody
+                                  viewportScrolling={false}
+                                >
+                                  <StyledModalComponents__BodySection
+                                    viewportScrolling={false}
+                                  >
                                     <StyledComponent
                                       forwardedComponent={
                                         Object {
@@ -1056,15 +1060,16 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
                                             "componentId": "StyledModalComponents__BodySection-sc-1r1r1yf-3",
-                                            "isStatic": true,
+                                            "isStatic": false,
                                             "lastClassName": "c7",
                                             "rules": Array [
                                               "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                               "30",
                                               "px;position:relative;",
-                                              "flex:1 1 auto;overflow-x:hidden;overflow-y:auto;padding:0 ",
+                                              "flex:1 1 auto;padding:0 ",
                                               "30",
                                               "px;",
+                                              [Function],
                                             ],
                                           },
                                           "displayName": "StyledModalComponents__BodySection",
@@ -1080,6 +1085,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                         }
                                       }
                                       forwardedRef={null}
+                                      viewportScrolling={false}
                                     >
                                       <div
                                         className="c7"

@@ -223,7 +223,7 @@ export default class Modal extends Component<Props> {
         <ModalOuterContainer onClick={this.handleOnClickOutside} viewportScrolling={viewportScrolling}>
           <ModalInnerContainer center={shouldBeCentered} viewportScrolling={viewportScrolling}>
             { this.renderHeaderComponent() }
-            <ModalBody>
+            <ModalBody viewportScrolling={viewportScrolling}>
               { children }
             </ModalBody>
             { this.renderFooterComponent() }
