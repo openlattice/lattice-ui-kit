@@ -8,9 +8,7 @@ import type { Node } from 'react';
 import ContentWrapper from './styled/ContentWrapper';
 import Content from './styled/Content';
 import ButtonSpinner from './styled/ButtonSpinner';
-import DefaultButton from './styled/DefaultButton';
-import PrimaryButton from './styled/PrimaryButton';
-import SecondaryButton from './styled/SecondaryButton';
+import StyledButton from './styled/StyledButton';
 
 type ButtonMode =
   | 'default'
@@ -38,32 +36,18 @@ const Button = (props :Props) => {
     children,
     disabled,
     isLoading,
-    mode,
     ...rest
   } = props;
 
-  let ButtonComponent;
-
-  switch (mode) {
-    case 'primary':
-      ButtonComponent = PrimaryButton;
-      break;
-    case 'secondary':
-      ButtonComponent = SecondaryButton;
-      break;
-    default:
-      ButtonComponent = DefaultButton;
-  }
-
   return (
-    <ButtonComponent {...rest} disabled={isLoading || disabled}>
+    <StyledButton {...rest} disabled={isLoading || disabled}>
       <ContentWrapper>
         { isLoading && <ButtonSpinner /> }
         <Content isLoading={isLoading}>
           {children}
         </Content>
       </ContentWrapper>
-    </ButtonComponent>
+    </StyledButton>
   );
 };
 
