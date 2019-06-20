@@ -2,8 +2,6 @@
 
 exports[`Banner snapshot should match snapshot when closed 1`] = `
 .c0 {
-  background-color: #555e6f;
-  color: #ffffff;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.25s ease-in-out;
@@ -32,12 +30,10 @@ exports[`Banner snapshot should match snapshot when closed 1`] = `
 <Banner
   isOpen={false}
   maxHeight="60px"
-  mode="default"
 >
   <StyledBannerComponents__Container
     isOpen={false}
     maxHeight="60px"
-    mode="default"
   >
     <StyledComponent
       forwardedComponent={
@@ -72,11 +68,9 @@ exports[`Banner snapshot should match snapshot when closed 1`] = `
       forwardedRef={null}
       isOpen={false}
       maxHeight="60px"
-      mode="default"
     >
       <div
         className="c0"
-        mode="default"
       >
         <StyledBannerComponents__Content>
           <StyledComponent
@@ -117,8 +111,6 @@ exports[`Banner snapshot should match snapshot when closed 1`] = `
 
 exports[`Banner snapshot should match snapshot when open 1`] = `
 .c0 {
-  background-color: #555e6f;
-  color: #ffffff;
   max-height: 60px;
   overflow: hidden;
   -webkit-transition: max-height 0.25s ease-in-out;
@@ -147,12 +139,10 @@ exports[`Banner snapshot should match snapshot when open 1`] = `
 <Banner
   isOpen={true}
   maxHeight="60px"
-  mode="default"
 >
   <StyledBannerComponents__Container
     isOpen={true}
     maxHeight="60px"
-    mode="default"
   >
     <StyledComponent
       forwardedComponent={
@@ -187,11 +177,9 @@ exports[`Banner snapshot should match snapshot when open 1`] = `
       forwardedRef={null}
       isOpen={true}
       maxHeight="60px"
-      mode="default"
     >
       <div
         className="c0"
-        mode="default"
       >
         <StyledBannerComponents__Content>
           <StyledComponent

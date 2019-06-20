@@ -107,13 +107,11 @@ exports[`Checkbox render matches snapshot 1`] = `
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [
-                  Object {
-                    "type": "checkbox",
-                  },
+                  [Function],
                 ],
                 "componentStyle": ComponentStyle {
                   "componentId": "styled__CheckboxInput-sc-22ovv7-2",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
                     "position:absolute;z-index:-1;opacity:0;vertical-align:middle;:hover + ",

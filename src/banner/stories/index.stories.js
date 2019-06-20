@@ -84,7 +84,7 @@ storiesOf('Banner', module)
       <Banner isOpen mode="danger">This is an error</Banner>
       <Banner isOpen mode="warning">This is a warning</Banner>
       <Banner isOpen mode="success">This is a success</Banner>
-      <Banner isOpen icon={<FontAwesomeIcon icon={faNarwhal} fixedWidth />}>This is a custom icon</Banner>
+      <Banner isOpen icon={() => <FontAwesomeIcon icon={faNarwhal} fixedWidth />}>This is a custom icon</Banner>
       <br />
       <Container>
         <Banner isOpen sticky>This is a sticky banner. Scroll down to observe</Banner>

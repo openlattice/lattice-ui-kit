@@ -1,8 +1,11 @@
 // @flow
 import React, { Component } from 'react';
-import type { Node } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faExclamationTriangle, faTimesOctagon } from '@fortawesome/pro-solid-svg-icons';
+
+import type { IconDefinition } from '@fortawesome/react-fontawesome';
+import type { ComponentType } from 'react';
+
 import { Container, Content, IconWrapper } from './styled/StyledBannerComponents';
 import { getStyleVariation } from '../../../utils/StyleUtils';
 
@@ -10,7 +13,7 @@ const DEFAULT_BANNER_HEIGHT = '60px';
 
 type Props = {
   children ? :Node;
-  icon ? :Node;
+  icon ? :IconDefinition | ComponentType<any>;
   isOpen ? :boolean;
   maxHeight ? :string;
   mode ? :'default' | 'danger' | 'success' | 'warning';
@@ -24,7 +27,7 @@ class Banner extends Component<Props> {
     icon: undefined,
     isOpen: false,
     maxHeight: DEFAULT_BANNER_HEIGHT,
-    mode: 'default'
+    mode: undefined,
   };
 
   renderIcon = () => {
@@ -37,12 +40,17 @@ class Banner extends Component<Props> {
     })(this.props);
 
     if (icon) {
-      return (
-        <IconWrapper>
-          { icon }
-        </IconWrapper>
-      );
+      if (typeof icon === 'function') {
+        return (
+          <IconWrapper>
+            { icon() }
+          </IconWrapper>
+        );
+      }
+
+      return <FontAwesomeIcon icon={icon} fixedWidth />;
     }
+
     if (modeIcon) {
       return (
         <IconWrapper>

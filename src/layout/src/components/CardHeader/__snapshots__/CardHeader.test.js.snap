@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardSegment snapshots Without child 1`] = `
+exports[`CardHeader snapshots with children 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -15,31 +15,49 @@ exports[`CardSegment snapshots Without child 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   padding: 30px;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
 }
 
 .c0:hover {
   cursor: auto;
 }
 
-<CardSegment>
+<CardHeader>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
+        "attrs": Array [
+          [Function],
+        ],
         "componentStyle": ComponentStyle {
-          "componentId": "CardSegment-sc-44tqm2-0",
+          "componentId": "CardHeader-ez5xes-0",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "display:flex;flex:1 0 auto;position:relative;",
             [Function],
+            "align-items:baseline;background-color:",
+            [Function],
+            ";color:",
+            [Function],
+            ";flex:0;transition:background-color 0.2s ease-in-out,color 0.2s ease-in-out;",
           ],
         },
-        "displayName": "CardSegment",
-        "foldedComponentIds": Array [],
+        "displayName": "CardHeader",
+        "foldedComponentIds": Array [
+          "CardSegment-sc-44tqm2-0",
+        ],
         "render": [Function],
-        "styledComponentId": "CardSegment-sc-44tqm2-0",
+        "styledComponentId": "CardHeader-ez5xes-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -48,14 +66,14 @@ exports[`CardSegment snapshots Without child 1`] = `
     }
     forwardedRef={null}
   >
-    <div
+    <header
       className="c0"
     />
   </StyledComponent>
-</CardSegment>
+</CardHeader>
 `;
 
-exports[`CardSegment snapshots with > 1 child 1`] = `
+exports[`CardHeader snapshots without children 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -70,31 +88,49 @@ exports[`CardSegment snapshots with > 1 child 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   padding: 30px;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
 }
 
 .c0:hover {
   cursor: auto;
 }
 
-<CardSegment>
+<CardHeader>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
+        "attrs": Array [
+          [Function],
+        ],
         "componentStyle": ComponentStyle {
-          "componentId": "CardSegment-sc-44tqm2-0",
+          "componentId": "CardHeader-ez5xes-0",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "display:flex;flex:1 0 auto;position:relative;",
             [Function],
+            "align-items:baseline;background-color:",
+            [Function],
+            ";color:",
+            [Function],
+            ";flex:0;transition:background-color 0.2s ease-in-out,color 0.2s ease-in-out;",
           ],
         },
-        "displayName": "CardSegment",
-        "foldedComponentIds": Array [],
+        "displayName": "CardHeader",
+        "foldedComponentIds": Array [
+          "CardSegment-sc-44tqm2-0",
+        ],
         "render": [Function],
-        "styledComponentId": "CardSegment-sc-44tqm2-0",
+        "styledComponentId": "CardHeader-ez5xes-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -103,16 +139,9 @@ exports[`CardSegment snapshots with > 1 child 1`] = `
     }
     forwardedRef={null}
   >
-    <div
+    <header
       className="c0"
-    >
-      <div>
-        child 1
-      </div>
-      <div>
-        child 2
-      </div>
-    </div>
+    />
   </StyledComponent>
-</CardSegment>
+</CardHeader>
 `;
