@@ -55,9 +55,9 @@ const CheckboxIndicator = styled.div`
   }
 `;
 
-const CheckboxInput = styled.input.attrs({
+const CheckboxInput = styled.input.attrs(() => ({
   type: 'checkbox'
-})`
+}))`
   position: absolute;
   z-index: -1;
   opacity: 0;

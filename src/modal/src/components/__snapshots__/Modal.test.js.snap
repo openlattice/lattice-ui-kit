@@ -68,7 +68,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   background-color: #ffffff;
-  border-radius: 4px;
+  border-radius: 3px;
   box-shadow: 0 2px 8px -2px #555e6f;
   display: -webkit-box;
   display: -webkit-flex;
@@ -187,14 +187,11 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   white-space: nowrap;
 }
 
-.c14 {
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+.c10 {
   border-radius: 3px;
   border-style: solid;
   border-width: 2px;
   box-sizing: border-box;
-  color: #8e929b;
   cursor: pointer;
   font-size: 14px;
   line-height: 18px;
@@ -203,87 +200,90 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: box-shadow 0.2s ease-in-out;
-  transition: box-shadow 0.2s ease-in-out;
+  -webkit-transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
   white-space: nowrap;
-}
-
-.c14:hover {
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c14:active {
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c14:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
-}
-
-.c14:disabled {
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
-  cursor: not-allowed;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c10 {
   background-color: #8045ff;
   border-color: #8045ff;
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 2px;
-  box-sizing: border-box;
   color: #ffffff;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 18px;
-  outline: none;
-  padding: 10px 20px;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: box-shadow 0.2s ease-in-out;
-  transition: box-shadow 0.2s ease-in-out;
-  white-space: nowrap;
 }
 
 .c10:hover {
-  background-color: #6124e2;
-  border-color: #6124e2;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
+  background-color: #6124e2;
+  border-color: #6124e2;
 }
 
 .c10:active {
-  background-color: #361876;
-  border-color: #361876;
   -webkit-text-decoration: none;
   text-decoration: none;
+  background-color: #361876;
+  border-color: #361876;
 }
 
 .c10:disabled {
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
 }
 
 .c10:focus-visible {
   box-shadow: #361876 0 0 0 2px;
+}
+
+.c14 {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  white-space: nowrap;
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #8e929b;
+}
+
+.c14:hover {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+}
+
+.c14:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #b6bbc7;
+  border-color: #b6bbc7;
+  color: #ffffff;
+}
+
+.c14:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
+}
+
+.c14:focus-visible {
+  box-shadow: #b6bbc7 0 0 0 2px;
 }
 
 .c9 {
@@ -394,7 +394,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   background-color: #ffffff;
-  border-radius: 4px;
+  border-radius: 3px;
   box-shadow: 0 2px 8px -2px #555e6f;
   display: -webkit-box;
   display: -webkit-flex;
@@ -513,14 +513,11 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   white-space: nowrap;
 }
 
-.c14 {
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+.c10 {
   border-radius: 3px;
   border-style: solid;
   border-width: 2px;
   box-sizing: border-box;
-  color: #8e929b;
   cursor: pointer;
   font-size: 14px;
   line-height: 18px;
@@ -529,87 +526,90 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: box-shadow 0.2s ease-in-out;
-  transition: box-shadow 0.2s ease-in-out;
+  -webkit-transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
   white-space: nowrap;
-}
-
-.c14:hover {
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c14:active {
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c14:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
-}
-
-.c14:disabled {
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
-  cursor: not-allowed;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c10 {
   background-color: #8045ff;
   border-color: #8045ff;
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 2px;
-  box-sizing: border-box;
   color: #ffffff;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 18px;
-  outline: none;
-  padding: 10px 20px;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: box-shadow 0.2s ease-in-out;
-  transition: box-shadow 0.2s ease-in-out;
-  white-space: nowrap;
 }
 
 .c10:hover {
-  background-color: #6124e2;
-  border-color: #6124e2;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
+  background-color: #6124e2;
+  border-color: #6124e2;
 }
 
 .c10:active {
-  background-color: #361876;
-  border-color: #361876;
   -webkit-text-decoration: none;
   text-decoration: none;
+  background-color: #361876;
+  border-color: #361876;
 }
 
 .c10:disabled {
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
 }
 
 .c10:focus-visible {
   box-shadow: #361876 0 0 0 2px;
+}
+
+.c14 {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  white-space: nowrap;
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #8e929b;
+}
+
+.c14:hover {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+}
+
+.c14:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #b6bbc7;
+  border-color: #b6bbc7;
+  color: #ffffff;
+}
+
+.c14:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
+}
+
+.c14:focus-visible {
+  box-shadow: #b6bbc7 0 0 0 2px;
 }
 
 .c9 {
@@ -702,6 +702,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                     >
                       <button
                         class="c9 c10"
+                        mode="primary"
                         type="button"
                       >
                         <span
@@ -716,6 +717,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                       </button>
                       <button
                         class="c13 c14"
+                        mode="default"
                         type="button"
                       >
                         <span
@@ -859,7 +861,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                       [Function],
                                       ";background-color:",
                                       "#ffffff",
-                                      ";border-radius:4px;box-shadow:0 2px 8px -2px ",
+                                      ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                       "#555e6f",
                                       ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
                                       "240",
@@ -1141,9 +1143,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               Object {
                                                 "$$typeof": Symbol(react.forward_ref),
                                                 "attrs": Array [
-                                                  Object {
-                                                    "mode": "primary",
-                                                  },
+                                                  [Function],
                                                 ],
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
@@ -1182,10 +1182,11 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               stretch={false}
                                               type="button"
                                             >
-                                              <PrimaryButton
+                                              <StyledButton
                                                 className="c9"
                                                 disabled={false}
                                                 isLonely={false}
+                                                mode="primary"
                                                 onClick={[Function]}
                                                 stretch={false}
                                                 type="button"
@@ -1198,47 +1199,27 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                       "$$typeof": Symbol(react.forward_ref),
                                                       "attrs": Array [],
                                                       "componentStyle": ComponentStyle {
-                                                        "componentId": "PrimaryButton-sc-1t8zuv9-0",
-                                                        "isStatic": true,
-                                                        "lastClassName": "c10",
+                                                        "componentId": "StyledButton-sc-1etazn9-0",
+                                                        "isStatic": false,
+                                                        "lastClassName": "c14",
                                                         "rules": Array [
-                                                          "background-color:",
-                                                          "#8045ff",
-                                                          ";border-color:",
-                                                          "#8045ff",
-                                                          ";border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;color:",
-                                                          "#ffffff",
-                                                          ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:box-shadow 0.2s ease-in-out;white-space:nowrap;",
-                                                          " ",
-                                                          "&:hover{background-color:",
-                                                          "#6124e2",
-                                                          ";border-color:",
-                                                          "#6124e2",
-                                                          ";cursor:pointer;text-decoration:none;}",
-                                                          " ",
-                                                          "&:active{background-color:",
-                                                          "#361876",
-                                                          ";border-color:",
-                                                          "#361876",
-                                                          ";text-decoration:none;}",
-                                                          " ",
-                                                          "&:disabled{background-color:",
-                                                          "#f0f0f7",
-                                                          ";border-color:",
-                                                          "#f0f0f7",
-                                                          ";color:",
-                                                          "#b6bbc7",
-                                                          ";cursor:not-allowed;text-decoration:none;}",
-                                                          " ",
-                                                          ":focus-visible{box-shadow:",
-                                                          "#361876",
-                                                          " 0 0 0 2px;}",
+                                                          "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;white-space:nowrap;",
+                                                          [Function],
+                                                          ";:hover{cursor:pointer;text-decoration:none;",
+                                                          [Function],
+                                                          "};:active{text-decoration:none;",
+                                                          [Function],
+                                                          "};:disabled{cursor:not-allowed;text-decoration:none;",
+                                                          [Function],
+                                                          "};:focus-visible{",
+                                                          [Function],
+                                                          "}",
                                                         ],
                                                       },
-                                                      "displayName": "PrimaryButton",
+                                                      "displayName": "StyledButton",
                                                       "foldedComponentIds": Array [],
                                                       "render": [Function],
-                                                      "styledComponentId": "PrimaryButton-sc-1t8zuv9-0",
+                                                      "styledComponentId": "StyledButton-sc-1etazn9-0",
                                                       "target": "button",
                                                       "toString": [Function],
                                                       "warnTooManyClasses": [Function],
@@ -1247,6 +1228,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                   }
                                                   forwardedRef={null}
                                                   isLonely={false}
+                                                  mode="primary"
                                                   onClick={[Function]}
                                                   stretch={false}
                                                   type="button"
@@ -1254,6 +1236,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                   <button
                                                     className="c9 c10"
                                                     disabled={false}
+                                                    mode="primary"
                                                     onClick={[Function]}
                                                     type="button"
                                                   >
@@ -1329,7 +1312,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                     </ContentWrapper>
                                                   </button>
                                                 </StyledComponent>
-                                              </PrimaryButton>
+                                              </StyledButton>
                                             </Button>
                                           </StyledComponent>
                                         </ModalFooter__PrimaryButton>
@@ -1342,9 +1325,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               Object {
                                                 "$$typeof": Symbol(react.forward_ref),
                                                 "attrs": Array [
-                                                  Object {
-                                                    "mode": "default",
-                                                  },
+                                                  [Function],
                                                 ],
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
@@ -1379,9 +1360,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               stretch={false}
                                               type="button"
                                             >
-                                              <DefaultButton
+                                              <StyledButton
                                                 className="c13"
                                                 disabled={false}
+                                                mode="default"
                                                 onClick={[Function]}
                                                 stretch={false}
                                                 type="button"
@@ -1394,49 +1376,27 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                       "$$typeof": Symbol(react.forward_ref),
                                                       "attrs": Array [],
                                                       "componentStyle": ComponentStyle {
-                                                        "componentId": "DefaultButton-sc-2dhy0g-0",
-                                                        "isStatic": true,
+                                                        "componentId": "StyledButton-sc-1etazn9-0",
+                                                        "isStatic": false,
                                                         "lastClassName": "c14",
                                                         "rules": Array [
-                                                          "background-color:",
-                                                          "#f0f0f7",
-                                                          ";border-color:",
-                                                          "#f0f0f7",
-                                                          ";border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;color:",
-                                                          "#8e929b",
-                                                          ";cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:box-shadow 0.2s ease-in-out;white-space:nowrap;",
-                                                          " ",
-                                                          "&:hover{background-color:",
-                                                          "#dcdce7",
-                                                          ";border-color:",
-                                                          "#dcdce7",
-                                                          ";cursor:pointer;text-decoration:none;}",
-                                                          " ",
-                                                          "&:active{background-color:",
-                                                          "#b6bbc7",
-                                                          ";border-color:",
-                                                          "#b6bbc7",
-                                                          ";color:",
-                                                          "#ffffff",
-                                                          ";text-decoration:none;}",
-                                                          " ",
-                                                          "&:focus-visible{box-shadow:",
-                                                          "#b6bbc7",
-                                                          " 0 0 0 2px;}",
-                                                          " ",
-                                                          "&:disabled{background-color:",
-                                                          "#f0f0f7",
-                                                          ";border-color:",
-                                                          "#f0f0f7",
-                                                          ";color:",
-                                                          "#b6bbc7",
-                                                          ";cursor:not-allowed;text-decoration:none;}",
+                                                          "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;white-space:nowrap;",
+                                                          [Function],
+                                                          ";:hover{cursor:pointer;text-decoration:none;",
+                                                          [Function],
+                                                          "};:active{text-decoration:none;",
+                                                          [Function],
+                                                          "};:disabled{cursor:not-allowed;text-decoration:none;",
+                                                          [Function],
+                                                          "};:focus-visible{",
+                                                          [Function],
+                                                          "}",
                                                         ],
                                                       },
-                                                      "displayName": "DefaultButton",
+                                                      "displayName": "StyledButton",
                                                       "foldedComponentIds": Array [],
                                                       "render": [Function],
-                                                      "styledComponentId": "DefaultButton-sc-2dhy0g-0",
+                                                      "styledComponentId": "StyledButton-sc-1etazn9-0",
                                                       "target": "button",
                                                       "toString": [Function],
                                                       "warnTooManyClasses": [Function],
@@ -1444,6 +1404,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                     }
                                                   }
                                                   forwardedRef={null}
+                                                  mode="default"
                                                   onClick={[Function]}
                                                   stretch={false}
                                                   type="button"
@@ -1451,6 +1412,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                   <button
                                                     className="c13 c14"
                                                     disabled={false}
+                                                    mode="default"
                                                     onClick={[Function]}
                                                     type="button"
                                                   >
@@ -1526,7 +1488,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                     </ContentWrapper>
                                                   </button>
                                                 </StyledComponent>
-                                              </DefaultButton>
+                                              </StyledButton>
                                             </Button>
                                           </StyledComponent>
                                         </ModalFooter__SecondaryButton>

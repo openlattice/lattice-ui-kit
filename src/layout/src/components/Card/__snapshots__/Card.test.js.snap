@@ -4,7 +4,7 @@ exports[`Card snapshots With child divs 1`] = `
 .c0 {
   background-color: #ffffff;
   border: 1px solid #dcdce7;
-  border-radius: 5px;
+  border-radius: 3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,12 +23,12 @@ exports[`Card snapshots With child divs 1`] = `
 }
 
 .c0 > .c1:first-child {
-  border-radius: 5px 5px 0 0;
+  border-radius: 3px 3px 0 0;
 }
 
 .c0 > .c1:last-child {
   border-bottom: 0;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 3px 3px;
 }
 
 <Card>
@@ -46,15 +46,15 @@ exports[`Card snapshots With child divs 1`] = `
             "#ffffff",
             ";border:1px solid ",
             "#dcdce7",
-            ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ",
+            ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ",
             ".c1",
             "{border-bottom:1px solid ",
             "#dcdce7",
             ";}& > ",
             ".c1",
-            ":first-child{border-radius:5px 5px 0 0;}& > ",
+            ":first-child{border-radius:3px 3px 0 0;}& > ",
             ".c1",
-            ":last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+            ":last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
             [Function],
             ";",
           ],
@@ -92,7 +92,7 @@ exports[`Card snapshots Without Children 1`] = `
 .c0 {
   background-color: #ffffff;
   border: 1px solid #dcdce7;
-  border-radius: 5px;
+  border-radius: 3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -111,12 +111,12 @@ exports[`Card snapshots Without Children 1`] = `
 }
 
 .c0 > .c1:first-child {
-  border-radius: 5px 5px 0 0;
+  border-radius: 3px 3px 0 0;
 }
 
 .c0 > .c1:last-child {
   border-bottom: 0;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 3px 3px;
 }
 
 <Card>
@@ -134,15 +134,15 @@ exports[`Card snapshots Without Children 1`] = `
             "#ffffff",
             ";border:1px solid ",
             "#dcdce7",
-            ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ",
+            ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ",
             ".c1",
             "{border-bottom:1px solid ",
             "#dcdce7",
             ";}& > ",
             ".c1",
-            ":first-child{border-radius:5px 5px 0 0;}& > ",
+            ":first-child{border-radius:3px 3px 0 0;}& > ",
             ".c1",
-            ":last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+            ":last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
             [Function],
             ";",
           ],

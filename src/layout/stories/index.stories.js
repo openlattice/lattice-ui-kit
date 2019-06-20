@@ -4,6 +4,7 @@ import { action } from '@storybook/addon-actions';
 import Button from '../../button';
 import {
   Card,
+  CardHeader,
   CardSegment,
   CardStack
 } from '../index';
@@ -25,6 +26,31 @@ storiesOf('Layout', module)
       </Card>
     </CardStack>
   ))
+  .add('CardHeader', () => {
+    const modes = [
+      'Mode not specified',
+      'danger',
+      'default',
+      'primary',
+      'secondary',
+      'success',
+      'warning',
+    ];
+    return (
+      <CardStack>
+        { modes.map(mode => (
+          <Card key={mode}>
+            <CardHeader mode={mode} padding="sm">
+              {mode}
+            </CardHeader>
+            <CardSegment>
+              Body
+            </CardSegment>
+          </Card>
+        )) }
+      </CardStack>
+    );
+  })
   .add('CardSegment', () => (
     <CardStack>
       <Card>

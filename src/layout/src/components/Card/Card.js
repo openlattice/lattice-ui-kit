@@ -35,7 +35,7 @@ const getHoverStyles = ({ onClick } :CardProps) => {
 const Card = styled.div`
   background-color: ${WHITE};
   border: 1px solid ${NEUTRALS[4]};
-  border-radius: 5px;
+  border-radius: 3px;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
@@ -46,12 +46,12 @@ const Card = styled.div`
   }
 
   & > ${CardSegment}:first-child {
-    border-radius: 5px 5px 0 0;
+    border-radius: 3px 3px 0 0;
   }
 
   & > ${CardSegment}:last-child {
     border-bottom: 0;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 3px 3px;
   }
 
   ${getHoverStyles};

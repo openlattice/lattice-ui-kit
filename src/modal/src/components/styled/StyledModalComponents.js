@@ -76,7 +76,7 @@ export const ModalOuterContainer = styled.div`
 export const ModalInnerContainer = styled.div`
   align-self: ${({ center }) => (center ? 'center' : 'flex-start')};
   background-color: ${WHITE};
-  border-radius: 4px;
+  border-radius: 3px;
   box-shadow: 0 2px 8px -2px ${NEUTRALS[0]};
   display: flex;
   flex: 0 0 auto;

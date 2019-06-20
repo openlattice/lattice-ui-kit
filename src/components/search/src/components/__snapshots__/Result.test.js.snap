@@ -32,7 +32,7 @@ exports[`Result snapshots should match snapshot 1`] = `
 .c0 {
   background-color: #ffffff;
   border: 1px solid #dcdce7;
-  border-radius: 5px;
+  border-radius: 3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -51,12 +51,12 @@ exports[`Result snapshots should match snapshot 1`] = `
 }
 
 .c0 > .c4:first-child {
-  border-radius: 5px 5px 0 0;
+  border-radius: 3px 3px 0 0;
 }
 
 .c0 > .c4:last-child {
   border-bottom: 0;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 3px 3px;
 }
 
 .c0:hover {
@@ -94,15 +94,15 @@ exports[`Result snapshots should match snapshot 1`] = `
               "#ffffff",
               ";border:1px solid ",
               "#dcdce7",
-              ";border-radius:5px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ",
+              ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ",
               ".c4",
               "{border-bottom:1px solid ",
               "#dcdce7",
               ";}& > ",
               ".c4",
-              ":first-child{border-radius:5px 5px 0 0;}& > ",
+              ":first-child{border-radius:3px 3px 0 0;}& > ",
               ".c4",
-              ":last-child{border-bottom:0;border-radius:0 0 5px 5px;}",
+              ":last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
               [Function],
               ";",
             ],

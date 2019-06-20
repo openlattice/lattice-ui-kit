@@ -7,6 +7,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Banner',
   'Button',
   'Card',
+  'CardHeader',
   'CardSegment',
   'Checkbox',
   'CheckboxSelect',
@@ -14,6 +15,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Creatable',
   'DataGrid',
   'DatePicker',
+  'IconSplash',
   'Input',
   'Label',
   'Modal',
@@ -24,6 +26,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Search',
   'SearchResults',
   'Select',
+  'StyleUtils',
   'TimePicker',
 ]);
 

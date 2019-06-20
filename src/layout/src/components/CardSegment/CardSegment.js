@@ -1,7 +1,5 @@
 // @flow
-import React from 'react';
 import styled, { css } from 'styled-components';
-import type { ChildrenArray, Element } from 'react';
 
 type ComputedSegmentProps = {
   bgColor :string;
@@ -53,57 +51,14 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
   return styles;
 };
 
-type ComputedHeaderProps = {
-  children :ChildrenArray<any> | Element<any>;
-};
-
-const getHeaderComputedStyles = ({ children } :ComputedHeaderProps) => {
-  if (React.Children.count(children) > 1) {
-    return css`
-      margin: 0 0 30px 0;
-    `;
-  }
-  return css`
-    align-items: center;
-    margin: 0;
-  `;
-};
-
 const CardSegment = styled.div`
   display: flex;
   flex: 1 0 auto;
   position: relative;
   ${getSegmentComputedStyles}
-
-  & > header {
-    display: flex;
-    flex: 1 0 auto;
-    flex-direction: row;
-    justify-content: space-between;
-    ${getHeaderComputedStyles}
-
-    & > h1 {
-      font-size: 18px;
-      font-weight: normal;
-      margin: 0;
-    }
-
-    & > h2 {
-      font-size: 16px;
-      font-weight: normal;
-      margin: 0;
-    }
-
-    & > h3 {
-      font-size: 14px;
-      font-weight: normal;
-      margin: 0;
-    }
-  }
 `;
 
 export default CardSegment;
 export {
-  getHeaderComputedStyles,
   getSegmentComputedStyles,
 };
