@@ -35,7 +35,10 @@ storiesOf('Inputs', module)
             <Input id="story-defaultvalue" defaultValue="OpenLattice" />
 
             <Label htmlFor="story-invalid">Invalid value</Label>
-            <Input invalid id="story-invalid" defaultValue="ecittaLnepO" />
+            <Input error id="story-invalid" defaultValue="ecittaLnepO" />
+
+            <Label htmlFor="story-width">width</Label>
+            <Input id="story-width" defaultValue="ecittaLnepO" width="100px" />
 
             <Label htmlFor="story-eventhandlers">Event handlers (see Actions tab)</Label>
             <Input

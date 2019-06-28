@@ -4,7 +4,7 @@ import { NEUTRALS, PURPLES, RED_1 } from '../../../../colors';
 const inputStyles = css`
   background-color: ${NEUTRALS[8]};
   border-radius: 3px;
-  border: 1px solid ${props => (props.invalid ? RED_1 : NEUTRALS[4])};
+  border: 1px solid ${props => (props.error ? RED_1 : NEUTRALS[4])};
   box-shadow: 0;
   box-sizing: border-box;
   color: ${NEUTRALS[0]};
@@ -15,7 +15,7 @@ const inputStyles = css`
   padding: 10px 10px;
   text-overflow: ellipsis;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  width: 100%;
+  width: ${props => (props.width || '100%')};
 
   :hover {
     background-color: ${NEUTRALS[6]};
