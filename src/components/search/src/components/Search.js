@@ -7,7 +7,7 @@ import type { ComponentType, Node } from 'react';
 import DefaultResultComponent from './Result';
 import DefaultSearchResults from './SearchResults';
 import Button from '../../../../button';
-import Input from '../../../../input';
+import { Input } from '../../../../input';
 import Label from '../../../../label';
 import DatePicker from '../../../../datetime/src/components/DatePicker';
 import { InputGrid, Title } from './styled/StyledSearchComponents';

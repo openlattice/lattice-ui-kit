@@ -7,8 +7,8 @@ import Search from './Search';
 import SearchResults from './SearchResults';
 import PersonResult from './PersonResult';
 import Result from './Result';
+import { Input } from '../../../../input';
 import { Title } from './styled/StyledSearchComponents';
-import Input from '../../../../input';
 import { Card } from '../../../../layout';
 import { DatePicker } from '../../../../datetime';
 import {

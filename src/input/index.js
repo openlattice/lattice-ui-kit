@@ -1,3 +1,7 @@
 import Input from './src/components/Input';
+import TextArea from './src/components/TextArea';
 
-export default Input;
+export {
+  Input,
+  TextArea
+};
