@@ -23,10 +23,10 @@ storiesOf('Inputs', module)
         <CardSegment>
           <StyledForm>
             <Label htmlFor="story-stateless">Stateless</Label>
-            <Input type="text" id="story-stateless" />
+            <Input id="story-stateless" />
 
             <Label htmlFor="story-disabled">Disabled</Label>
-            <Input type="text" id="story-disabled" disabled />
+            <Input defaultValue="OpenLattice" id="story-disabled" disabled />
 
             <Label htmlFor="story-placeholder">Placeholder</Label>
             <Input id="story-placeholder" placeholder="OpenLattice" />
@@ -57,10 +57,10 @@ storiesOf('Inputs', module)
         <CardSegment>
           <StyledForm>
             <Label htmlFor="story-stateless">Stateless</Label>
-            <TextArea type="text" id="story-stateless" />
+            <TextArea id="story-stateless" />
 
             <Label htmlFor="story-disabled">Disabled</Label>
-            <TextArea type="text" id="story-disabled" disabled />
+            <TextArea id="story-disabled" defaultValue="OpenLattice" disabled />
 
             <Label htmlFor="story-placeholder">Placeholder</Label>
             <TextArea id="story-placeholder" placeholder="OpenLattice" />
