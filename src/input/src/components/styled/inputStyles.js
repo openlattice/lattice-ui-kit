@@ -4,7 +4,7 @@ import { NEUTRALS, PURPLES, RED_1 } from '../../../../colors';
 const inputStyles = css`
   background-color: ${NEUTRALS[8]};
   border-radius: 3px;
-  border: 1px solid ${props => (props.error ? RED_1 : NEUTRALS[4])};
+  border: 1px solid ${props => (props.invalid ? RED_1 : NEUTRALS[4])};
   box-shadow: 0;
   box-sizing: border-box;
   color: ${NEUTRALS[0]};

@@ -37,8 +37,8 @@ storiesOf('Inputs', module)
             <Label htmlFor="story-invalid">Invalid value</Label>
             <Input error id="story-invalid" defaultValue="ecittaLnepO" />
 
-            <Label htmlFor="story-width">width</Label>
-            <Input id="story-width" defaultValue="ecittaLnepO" width="100px" />
+            <Label htmlFor="story-width">Width</Label>
+            <Input id="story-width" defaultValue="ecittaLnepO" width="200px" />
 
             <Label htmlFor="story-eventhandlers">Event handlers (see Actions tab)</Label>
             <Input
@@ -73,6 +73,9 @@ storiesOf('Inputs', module)
 
             <Label htmlFor="story-invalid">Invalid value</Label>
             <TextArea invalid id="story-invalid" defaultValue="ecittaLnepO" />
+
+            <Label htmlFor="story-width">Width</Label>
+            <TextArea id="story-width" defaultValue="ecittaLnepO" width="200px" />
 
             <Label htmlFor="story-eventhandlers">Event handlers (see Actions tab)</Label>
             <TextArea
