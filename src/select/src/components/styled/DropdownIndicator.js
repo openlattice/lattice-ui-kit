@@ -12,7 +12,7 @@ type Props = ElementConfig<typeof RSDropdownIndicator>;
 
 class DropdownIndicator extends Component<Props> {
 
-  renderIcon = () :Element => {
+  renderIcon = () :Element<any> => {
     const { selectProps: { icon } } = this.props;
 
     if (typeof icon === 'function') {

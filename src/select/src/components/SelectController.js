@@ -41,7 +41,7 @@ class SelectController extends Component<Props> {
     return undefined;
   }
 
-  getOptionsFromRawValue = () :ReactSelectOption[] => {
+  getOptionsFromRawValue = () :ReactSelectOption[] | ReactSelectOption | void => {
     const { isMulti, options, value } = this.props;
     const optionsByValue = options.reduce((acc, option) => {
       acc[option.value] = option;
@@ -57,7 +57,7 @@ class SelectController extends Component<Props> {
     return undefined;
   }
 
-  getOption = (value :any, optionsByValue :Object) => {
+  getOption = (value :any, optionsByValue :Object) :ReactSelectOption => {
     if (optionsByValue[value]) {
       return optionsByValue[value];
     }
