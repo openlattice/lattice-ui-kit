@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import isFunction from 'lodash/isFunction';
-import type { Node } from 'react';
+import type { Node, ComponentType } from 'react';
 import type { IconDefinition } from '@fortawesome/react-fontawesome';
 
 import DropdownIndicator from './styled/DropdownIndicator';
