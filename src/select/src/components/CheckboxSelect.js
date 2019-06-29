@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactSelect from 'react-select';
+import { mergeDeep } from 'immutable';
 
 import Option from './styled/CheckboxOption';
 import SelectController from './SelectController';
@@ -19,7 +20,7 @@ export const defaultProps = {
 const CheckboxSelect = props => (
   <SelectController
       {...props} // eslint-disable-line indent
-      render={(selectProps => <ReactSelect {...defaultProps} {...selectProps} />)} />
+      render={(selectProps => <ReactSelect {...mergeDeep(defaultProps, selectProps)} />)} />
 );
 
 export default CheckboxSelect;
