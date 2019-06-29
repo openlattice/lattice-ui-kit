@@ -2,18 +2,25 @@
 import React, { Component } from 'react';
 import isFunction from 'lodash/isFunction';
 import type { Node } from 'react';
-import type { ReactSelectValue, ReactSelectEvent } from '../../types';
+import type { IconDefinition } from '@fortawesome/react-fontawesome';
+
+import DropdownIndicator from './styled/DropdownIndicator';
+import type { ReactSelectEvent, ReactSelectOption, ReactSelectValue } from '../../types';
 
 type Props = {
-  options :any;
-  useRawValues :boolean;
-  render :(onChange :Function, rawValues :any) => Node;
-  onChange :(value :any, event :ReactSelectEvent) => void;
+  icon ? :IconDefinition | ComponentType<any>;
   isMulti :boolean;
+  onChange :(value :any, event :ReactSelectEvent) => void;
+  options :ReactSelectOption[] | any[];
+  render :(onChange :Function, rawValues :any) => Node;
+  useRawValues :boolean;
   value :any;
 }
 
 class SelectController extends Component<Props> {
+  static defaultProps = {
+    icon: undefined
+  }
 
   handleChangeRawValues = (selectedOption :ReactSelectValue, event :ReactSelectEvent) => {
     const { onChange } = this.props;
@@ -34,19 +41,17 @@ class SelectController extends Component<Props> {
     return undefined;
   }
 
-  getOptionsFromRawValue = () => {
+  getOptionsFromRawValue = () :ReactSelectOption[] => {
     const { isMulti, options, value } = this.props;
-    if (Array.isArray(options)) {
-      const optionsByValue = options.reduce((acc, option) => {
-        acc[option.value] = option;
-        return acc;
-      }, {});
-      if (isMulti && Array.isArray(value)) {
-        return value.map(v => this.getOption(v, optionsByValue));
-      }
-      if (value !== undefined && value !== null) {
-        return this.getOption(value, optionsByValue);
-      }
+    const optionsByValue = options.reduce((acc, option) => {
+      acc[option.value] = option;
+      return acc;
+    }, {});
+    if (isMulti && Array.isArray(value)) {
+      return value.map(v => this.getOption(v, optionsByValue));
+    }
+    if (value !== undefined && value !== null) {
+      return this.getOption(value, optionsByValue);
     }
 
     return undefined;
@@ -62,7 +67,21 @@ class SelectController extends Component<Props> {
     };
   }
 
-  renderWithOverrides = () => {
+  composePropsWithComponents = (props :Object) :Object => {
+    const { icon } = this.props;
+
+    if (icon) {
+      const components = {
+        DropdownIndicator,
+      };
+
+      return { ...props, components };
+    }
+
+    return props;
+  }
+
+  renderWithDataOverrides = () => {
     const {
       onChange,
       render,
@@ -79,17 +98,19 @@ class SelectController extends Component<Props> {
       overrideProps.value = this.getOptionsFromRawValue();
     }
 
-    return render(overrideProps);
+    const composedProps = this.composePropsWithComponents(overrideProps);
+    return render(composedProps);
   }
 
   render() {
     const { useRawValues, render, ...rest } = this.props;
+    const composedProps = this.composePropsWithComponents({ ...rest });
     return (
       <>
         {
           useRawValues
-            ? this.renderWithOverrides()
-            : render({ ...rest })
+            ? this.renderWithDataOverrides()
+            : render(composedProps)
         }
       </>
     );
