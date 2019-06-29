@@ -2,6 +2,9 @@ import React from 'react';
 import ReactSelect from 'react-select';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
+import { faSearch } from '@fortawesome/pro-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import SelectController from './SelectController';
 import { OPTIONS } from './constants';
 
@@ -131,6 +134,20 @@ describe('Select', () => {
   });
 
   describe('handleChangeRawValues', () => {
+    test('handleChangeRawValues should return undefined for invalid onChange', () => {
+      const wrapper = shallow(
+        <SelectController
+            useRawValues
+            render={mockComponent}
+            onChange={false} />
+      );
+      const instance = wrapper.instance();
+      const { handleChangeRawValues } = instance;
+      const mockEvent = { action: 'select-option' };
+      const result = handleChangeRawValues(OPTIONS[0], mockEvent);
+
+      expect(result).toEqual(undefined);
+    });
 
     test('handleChangeRawValues should transform option to value', () => {
       const mockOnChange = jest.fn();
@@ -232,6 +249,37 @@ describe('Select', () => {
       const newOption = getOption('DNE', {});
       expect(newOption).toEqual({ label: 'DNE', value: 'DNE' });
     });
+  });
+
+  describe('icon', () => {
+    test('FontAwesome IconDefinition should render FontAwesomeIcon', () => {
+      const wrapper = mount(
+        <SelectController
+            icon={faSearch}
+            render={mockComponent} />
+      );
+      expect(wrapper.find(FontAwesomeIcon).props().icon).toEqual(faSearch);
+    });
+
+    test('should render custom icon', () => {
+      const customIcon = () => <FontAwesomeIcon icon={faSearch} pulse />;
+      const wrapper = mount(
+        <SelectController
+            icon={customIcon}
+            render={mockComponent} />
+      );
+      expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faSearch);
+    });
+
+    test('invalid icon renders default DropdownIndicator', () => {
+      const wrapper = mount(
+        <SelectController
+            icon={false}
+            render={mockComponent} />
+      );
+      expect(wrapper.find('DropdownIndicator').exists()).toBe(true);
+    });
+
   });
 
 });
