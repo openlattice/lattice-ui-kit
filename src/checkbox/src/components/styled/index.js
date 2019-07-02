@@ -3,8 +3,9 @@ import styled, { css } from 'styled-components';
 import { NEUTRALS, PURPLES } from '../../../../colors';
 
 const CheckboxLabel = styled.label`
-  display: inline-block;
+  align-items: center;
   color: ${NEUTRALS[0]};
+  display: inline-flex;
   font-size: 14px;
   font-weight: normal;
   margin: 10px 0;
@@ -12,7 +13,6 @@ const CheckboxLabel = styled.label`
   padding: 0 10px 0 30px;
   pointer-events: ${props => (props.readOnly ? 'none' : 'auto')};
   position: relative;
-  vertical-align: middle;
 `;
 
 
