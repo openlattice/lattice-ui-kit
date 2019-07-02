@@ -47,7 +47,7 @@ exports[`Input render matches snapshot 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Input-sc-4g0udv-0",
+          "componentId": "Input-ttuish-0",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -57,7 +57,9 @@ exports[`Input render matches snapshot 1`] = `
             [Function],
             ";box-shadow:0;box-sizing:border-box;color:",
             "#555e6f",
-            ";display:flex;flex:0 1 auto;font-size:14px;line-height:18px;padding:10px 10px;text-overflow:ellipsis;transition:background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;width:100%;:hover{background-color:",
+            ";display:flex;flex:0 1 auto;font-size:14px;line-height:18px;padding:10px 10px;text-overflow:ellipsis;transition:background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;width:",
+            [Function],
+            ";:hover{background-color:",
             "#f0f0f7",
             ";}:focus{border:solid 1px ",
             "#6124e2",
@@ -71,7 +73,7 @@ exports[`Input render matches snapshot 1`] = `
         "displayName": "Input",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "Input-sc-4g0udv-0",
+        "styledComponentId": "Input-ttuish-0",
         "target": "input",
         "toString": [Function],
         "warnTooManyClasses": [Function],
