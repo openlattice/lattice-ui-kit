@@ -13,7 +13,7 @@ const StyledForm = styled.form`
   flex-direction: column;
 `;
 
-storiesOf('Inputs', module)
+storiesOf('Text', module)
   .add('Input', () => (
     <div>
       <h1>

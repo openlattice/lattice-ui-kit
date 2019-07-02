@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input render matches snapshot 1`] = `
+exports[`TextArea render matches snapshot 1`] = `
 .c0 {
+  height: 100px;
+  resize: vertical;
   background-color: #f9f9fd;
   border-radius: 3px;
   border: 1px solid #dcdce7;
@@ -40,17 +42,18 @@ exports[`Input render matches snapshot 1`] = `
   cursor: not-allowed;
 }
 
-<Input>
+<TextArea>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Input-sc-4g0udv-0",
+          "componentId": "TextArea-sc-10m8gjf-0",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
+            "height:100px;resize:vertical;",
             "background-color:",
             "#f9f9fd",
             ";border-radius:3px;border:1px solid ",
@@ -70,11 +73,11 @@ exports[`Input render matches snapshot 1`] = `
             ";cursor:not-allowed;}",
           ],
         },
-        "displayName": "Input",
+        "displayName": "TextArea",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "Input-sc-4g0udv-0",
-        "target": "input",
+        "styledComponentId": "TextArea-sc-10m8gjf-0",
+        "target": "textarea",
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
@@ -82,9 +85,9 @@ exports[`Input render matches snapshot 1`] = `
     }
     forwardedRef={null}
   >
-    <input
+    <textarea
       className="c0"
     />
   </StyledComponent>
-</Input>
+</TextArea>
 `;

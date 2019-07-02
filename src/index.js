@@ -23,7 +23,7 @@ export { default as Overlay } from './overlay';
 export { default as Portal } from './portal';
 export { default as Spinner } from './spinner';
 export { DatePicker, TimePicker } from './datetime';
-export { Input, TextArea } from './input';
+export { Input, TextArea } from './text';
 export {
   Card,
   CardHeader,
