@@ -1,9 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faNarwhal } from '@fortawesome/pro-regular-svg-icons';
 
 import { Select, Creatable, CheckboxSelect } from '../index';
 import { stateOptions, REACT_SELECT_USAGE } from './constants';
+
+const customIcon = () => <FontAwesomeIcon icon={faNarwhal} spin />;
 
 storiesOf('Select', module)
   .addDecorator(storyFn => (
@@ -43,6 +47,13 @@ storiesOf('Select', module)
           options={stateOptions}
           onChange={action('Multiple selection changed')}
           isMulti />
+      <h1>Creatable Multiple Input (hideMenu)</h1>
+      <Creatable
+          hideMenu
+          isMulti
+          useRawValues
+          options={stateOptions}
+          onChange={action('Borderless changed')} />
     </>
   ))
   .add('Creatable Select', () => (
@@ -80,5 +91,21 @@ storiesOf('Select', module)
           borderless
           options={stateOptions}
           onChange={action('Borderless changed')} />
+    </>
+  ))
+  .add('custom dropdown indicator', () => (
+    <>
+      <h1>Custom Dropdown Indicator</h1>
+      <h2>FontAwesome IconDefinition</h2>
+      <Select
+          icon={faNarwhal}
+          options={stateOptions}
+          onChange={action('Single select changed')} />
+      <h2>Custom Icon</h2>
+      <Select
+          icon={customIcon}
+          useRawValues
+          options={stateOptions}
+          onChange={action('Single select changed')} />
     </>
   ));
