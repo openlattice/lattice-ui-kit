@@ -34,12 +34,5 @@ describe('Label', () => {
       expect(wrapper.find(Label)).toHaveStyleRule('font-size', '11px');
       expect(wrapper.find(Label)).toHaveStyleRule('text-transform', 'uppercase');
     });
-
-    test('required prop should apply :after content', () => {
-      const wrapper = mount(<Label required>First Name</Label>);
-      expect(wrapper.find(Label)).toHaveStyleRule('content', "'*'", {
-        modifier: ':after'
-      });
-    });
   });
 });
