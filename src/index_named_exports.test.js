@@ -27,6 +27,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'SearchResults',
   'Select',
   'StyleUtils',
+  'TextArea',
   'TimePicker',
 ]);
 
