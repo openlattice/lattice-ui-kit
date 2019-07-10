@@ -8,22 +8,24 @@ exports[`Checkbox render matches snapshot 1`] = `
   left: 0;
   position: absolute;
   top: 0;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
   width: 20px;
 }
 
-input:hover ~ .c2,
-input:focus ~ .c2 {
+input:hover ~ .c2 {
   background-color: #8e929b;
+}
+
+input:focus-visible ~ .c2 {
+  box-shadow: #361876 0 0 0 2px;
 }
 
 input:checked ~ .c2 {
   background-color: #8045ff;
 }
 
-input:checked:hover ~ .c2,
-input:checked:focus ~ .c2 {
+input:checked:hover ~ .c2 {
   background-color: #6124e2;
 }
 
@@ -180,17 +182,21 @@ input:checked ~ .c2:after {
                   "rules": Array [
                     "background-color:",
                     "#e6e6f7",
-                    ";border-radius:3px;height:20px;left:0;position:absolute;top:0;transition:background-color 0.2s ease-in-out;width:20px;input:hover ~ &,input:focus ~ &{background-color:",
+                    ";border-radius:3px;height:20px;left:0;position:absolute;top:0;transition:background-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;width:20px;",
+                    "input:hover ~ &{background-color:",
                     "#8e929b",
-                    ";}input:checked ~ &{background-color:",
+                    ";}input:focus-visible ~ &{box-shadow:",
+                    "#361876",
+                    " 0 0 0 2px;}input:checked ~ &{background-color:",
                     "#8045ff",
-                    ";}input:checked:hover ~ &,input:checked:focus ~ &{background-color:",
+                    ";}input:checked:hover ~ &{background-color:",
                     "#6124e2",
                     ";}input:disabled ~ &{background-color:",
                     "#e6e6f7",
                     ";cursor:not-allowed;}input:checked:disabled ~ &{background-color:",
                     "#b6bbc7",
-                    ";}input:not(:checked) ~ &:after,input:checked ~ &:after{",
+                    ";}",
+                    ";input:not(:checked) ~ &:after,input:checked ~ &:after{",
                     "content:'';border:solid ",
                     "#ffffff",
                     ";border-width:0 2px 2px 0;height:8px;left:8px;position:absolute;top:4px;width:3px;transform:rotate(45deg) scale(1);transition:transform 0.2s ease-in-out,opacity 0.2s ease-in-out;",

@@ -1,7 +1,8 @@
 // @flow
 
 import styled, { css } from 'styled-components';
-import { PURPLES, WHITE, NEUTRALS } from '../../../../colors';
+import { PURPLES, WHITE } from '../../../../colors';
+import choiceIndicatorStyles from './ChoiceIndicatorStyles';
 
 const afterStyles = css`
   content: '';
@@ -22,31 +23,10 @@ const RadioIndicator = styled.div`
   left: 0;
   position: absolute;
   top: 0;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
   width: 20px;
 
-  input:hover ~ &,
-  input:focus ~ & {
-    background-color: ${NEUTRALS[1]};
-  }
-
-  input:checked ~ & {
-    background-color: ${PURPLES[2]};
-  }
-
-  input:checked:hover ~ &,
-  input:checked:focus ~ & {
-    background-color: ${PURPLES[1]};
-  }
-
-  input:disabled ~ & {
-    background-color: ${PURPLES[6]};
-    cursor: not-allowed;
-  }
-
-  input:checked:disabled ~ & {
-    background-color: ${NEUTRALS[2]};
-  }
+  ${choiceIndicatorStyles};
 
   input:not(:checked) ~ &:after,
   input:checked ~ &:after {
