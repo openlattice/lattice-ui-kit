@@ -7,13 +7,15 @@ import {
 } from './styled';
 
 type Props = {
+  checked ? :boolean;
   disabled ? :boolean;
-  onChange ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
-  value ? :any;
   label ? :string;
   name ? :string;
-  checked ? :boolean;
+  onBlur ? :(event :SyntheticFocusEvent<HTMLInputElement>) => void;
+  onChange ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
+  onFocus ? :(event :SyntheticFocusEvent<HTMLInputElement>) => void;
   readOnly ? :boolean;
+  value ? :any;
 };
 
 const Radio = ({
@@ -21,8 +23,10 @@ const Radio = ({
   disabled,
   label,
   name,
-  readOnly,
+  onBlur,
   onChange,
+  onFocus,
+  readOnly,
   value
 } :Props) => (
   <RadioLabel>
@@ -30,9 +34,11 @@ const Radio = ({
     <RadioInput
         checked={checked}
         disabled={disabled}
-        readOnly={readOnly}
         name={name}
+        onBlur={onBlur}
         onChange={onChange}
+        onFocus={onFocus}
+        readOnly={readOnly}
         value={value} />
     <RadioIndicator />
   </RadioLabel>

@@ -33,10 +33,30 @@ storiesOf('Radio', module)
             flexDirection: 'column'
           }}>
             <Label>See Actions tab</Label>
-            <Radio name="group" onChange={action('onChange')} id="story-default" label="Option 1" value="1" />
-            <Radio name="group" onChange={action('onChange')} id="story-checked" label="Option 2" value="2" />
-            <Radio name="group" onChange={action('onChange')} id="story-checkedreadonly" label="Option 3" value="3" />
-            <Radio name="group" onChange={action('onChange')} id="story-disabled" label="Option 4" value="4" />
+            <Radio
+                id="story-default"
+                label="1"
+                name="group"
+                onChange={action('onChange')}
+                value="1" />
+            <Radio
+                id="story-checked"
+                label="2"
+                name="group"
+                onChange={action('onChange')}
+                value="2" />
+            <Radio
+                id="story-checkedreadonly"
+                label="3"
+                name="group"
+                onChange={action('onChange')}
+                value="3" />
+            <Radio
+                id="story-disabled"
+                label="4"
+                name="group"
+                onChange={action('onChange')}
+                value="4" />
           </form>
         </CardSegment>
       </Card>
