@@ -1,4 +1,3 @@
-// @ flow
 import CheckboxIndicator from './CheckboxIndicator';
 import ChoiceLabel from './ChoiceLabel';
 import RadioIndicator from './RadioIndicator';

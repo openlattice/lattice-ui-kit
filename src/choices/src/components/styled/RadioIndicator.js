@@ -1,5 +1,3 @@
-// @flow
-
 import styled, { css } from 'styled-components';
 import { PURPLES, WHITE } from '../../../../colors';
 import choiceIndicatorStyles from './ChoiceIndicatorStyles';
