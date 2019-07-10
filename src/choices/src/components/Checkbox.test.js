@@ -34,31 +34,31 @@ describe('Checkbox', () => {
 
     // focus/hover
     expect(checkboxInput).toHaveStyleRule('background', NEUTRALS[1], {
-      modifier: `:hover + ${CheckboxIndicator}`
+      modifier: ':hover + div'
     });
     expect(checkboxInput).toHaveStyleRule('background', NEUTRALS[1], {
-      modifier: `:focus + ${CheckboxIndicator}`
+      modifier: ':focus + div'
     });
 
     // checked
     expect(checkboxInput).toHaveStyleRule('background', PURPLES[2], {
-      modifier: `:checked + ${CheckboxIndicator}`
+      modifier: ':checked + div'
     });
 
     // checked + focus/hover
     expect(checkboxInput).toHaveStyleRule('background', PURPLES[1], {
-      modifier: `:checked:focus + ${CheckboxIndicator}`
+      modifier: ':checked:focus + div'
     });
     expect(checkboxInput).toHaveStyleRule('background', PURPLES[1], {
-      modifier: `:checked:hover + ${CheckboxIndicator}`
+      modifier: ':checked:hover + div'
     });
 
     // disabled styles
     expect(checkboxInput).toHaveStyleRule('background', PURPLES[6], {
-      modifier: `:disabled + ${CheckboxIndicator}`
+      modifier: ':disabled + div'
     });
     expect(checkboxInput).toHaveStyleRule('background', NEUTRALS[2], {
-      modifier: `:checked:disabled + ${CheckboxIndicator}`
+      modifier: ':checked:disabled + div'
     });
 
   });

@@ -3,7 +3,7 @@ import React from 'react';
 
 import type { Ref } from 'react';
 
-import Checkbox from '../../../../checkbox';
+import { Checkbox } from '../../../../choices';
 import { NEUTRALS } from '../../../../colors';
 
 type OptionProps = {

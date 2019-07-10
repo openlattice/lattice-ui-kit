@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import Checkbox from '..';
+import { Checkbox } from '..';
 import { Card, CardSegment } from '../../layout';
 import CheckboxController from './components/CheckboxController';
 

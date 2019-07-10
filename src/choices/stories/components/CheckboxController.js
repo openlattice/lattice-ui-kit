@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 
-import Checkbox from '../..';
+import { Checkbox } from '../..';
 import { Card, CardSegment } from '../../../layout';
 
 type Props = {

@@ -1,10 +1,10 @@
 // @flow
 import React, { Component } from 'react';
-import { CheckboxIndicator, CheckboxInput, CheckboxLabel } from './styled';
+import { CheckboxIndicator, CheckboxInput, ChoiceLabel } from './styled';
 
 type Props = {
   disabled ? :boolean;
-  onChange ? :(event :SyntheticInputEvent<HTMLInputElement>) => mixed;
+  onChange ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
   value ? :any;
   label ? :string;
   name ? :string;
@@ -71,14 +71,14 @@ class Checkbox extends Component<Props, State> {
     } = this.props;
     const isChecked = this.getIsChecked();
     return (
-      <CheckboxLabel readOnly={readOnly}>
+      <ChoiceLabel readOnly={readOnly}>
         {label}
         <CheckboxInput
             checked={isChecked}
             onChange={this.handleChange}
             {...rest} />
         <CheckboxIndicator checked={isChecked} />
-      </CheckboxLabel>
+      </ChoiceLabel>
     );
   }
 }

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {
   RadioIndicator,
   RadioInput,
-  RadioLabel,
+  ChoiceLabel,
 } from './styled';
 
 type Props = {
@@ -63,7 +63,7 @@ class Radio extends Component<Props, State> {
     } = this.props;
     const isChecked = this.getIsChecked();
     return (
-      <RadioLabel checked={isChecked}>
+      <ChoiceLabel checked={isChecked}>
         <div>{label}</div>
         <RadioInput
             checked={isChecked}
@@ -73,7 +73,7 @@ class Radio extends Component<Props, State> {
             onChange={this.handleChange}
             value={value} />
         <RadioIndicator checked={isChecked} />
-      </RadioLabel>
+      </ChoiceLabel>
     );
   }
 }
