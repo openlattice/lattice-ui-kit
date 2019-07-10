@@ -1,86 +1,65 @@
 // @flow
-import React, { Component } from 'react';
+import React from 'react';
 import { CheckboxIndicator, CheckboxInput, ChoiceLabel } from './styled';
 
 type Props = {
-  disabled ? :boolean;
-  onChange ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
-  value ? :any;
-  label ? :string;
-  name ? :string;
   checked ? :boolean;
   defaultChecked ? :boolean;
+  disabled ? :boolean;
+  id ? :string;
+  label ? :string;
+  name ? :string;
+  onBlur ? :(event :SyntheticFocusEvent<HTMLInputElement>) => void;
+  onChange ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
+  onFocus ? :(event :SyntheticFocusEvent<HTMLInputElement>) => void;
   readOnly ? :boolean;
+  value ? :any;
 }
 
-type State = {
-  isChecked :boolean;
+const Checkbox = ({
+  checked,
+  defaultChecked,
+  disabled,
+  id,
+  label,
+  name,
+  onBlur,
+  onChange,
+  onFocus,
+  readOnly,
+  value,
+  ...rest
+} :Props) => (
+  <ChoiceLabel readOnly={readOnly} htmlFor={id}>
+    {label}
+    <CheckboxInput
+        checked={checked}
+        defaultChecked={defaultChecked}
+        disabled={disabled}
+        id={id}
+        name={name}
+        onBlur={onBlur}
+        onChange={onChange}
+        onFocus={onFocus}
+        readOnly={readOnly}
+        value={value}
+        {...rest} />
+    <CheckboxIndicator />
+  </ChoiceLabel>
+);
+
+Checkbox.defaultProps = {
+  checked: undefined,
+  defaultChecked: false,
+  disabled: false,
+  id: undefined,
+  label: undefined,
+  name: undefined,
+  onBlur: undefined,
+  onChange: undefined,
+  onFocus: undefined,
+  readOnly: undefined,
+  value: undefined,
 };
-
-class Checkbox extends Component<Props, State> {
-
-  static defaultProps = {
-    checked: undefined,
-    defaultChecked: false,
-    disabled: false,
-    label: undefined,
-    name: undefined,
-    onChange: undefined,
-    readOnly: undefined,
-    value: undefined,
-  };
-
-  constructor(props :Props) {
-    super(props);
-
-    const { checked, defaultChecked } = props;
-    this.state = {
-      isChecked: (checked !== undefined)
-        ? checked
-        // $FlowFixMe optional prop provided by defaultProps
-        : defaultChecked,
-    };
-  }
-
-  // Use prop 'checked' over state 'isChecked' if available
-  getIsChecked = () => {
-    const { checked } = this.props;
-    const { isChecked } = this.state;
-    return checked !== undefined ? checked : isChecked;
-  }
-
-  handleChange = (e :SyntheticInputEvent<HTMLInputElement>) => {
-    const { disabled, onChange, readOnly } = this.props;
-    e.persist();
-    if (!(disabled || readOnly)) {
-      this.setState({ isChecked: e.target.checked });
-      if (onChange) {
-        onChange(e);
-      }
-    }
-  };
-
-  render() {
-    const {
-      checked,
-      defaultChecked,
-      label,
-      onChange,
-      readOnly,
-      ...rest
-    } = this.props;
-    const isChecked = this.getIsChecked();
-    return (
-      <ChoiceLabel readOnly={readOnly}>
-        {label}
-        <CheckboxInput
-            checked={isChecked}
-            onChange={this.handleChange}
-            {...rest} />
-        <CheckboxIndicator checked={isChecked} />
-      </ChoiceLabel>
-    );
-  }
-}
 
 export default Checkbox;

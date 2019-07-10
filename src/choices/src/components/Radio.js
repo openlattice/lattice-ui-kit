@@ -1,81 +1,59 @@
 // @flow
-import React, { Component } from 'react';
+import React from 'react';
 import {
+  ChoiceLabel,
   RadioIndicator,
   RadioInput,
-  ChoiceLabel,
 } from './styled';
 
 type Props = {
+  checked ? :boolean;
   disabled ? :boolean;
-  onChange ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
-  value ? :any;
   label ? :string;
   name ? :string;
-  checked ? :boolean;
+  onBlur ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
+  onChange ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
+  onFocus ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
   readOnly ? :boolean;
+  value ? :any;
 };
 
-type State = {
-  isChecked :boolean;
-}
+const Radio = ({
+  checked,
+  disabled,
+  label,
+  name,
+  onBlur,
+  onChange,
+  onFocus,
+  readOnly,
+  value
+} :Props) => (
+  <ChoiceLabel>
+    <div>{label}</div>
+    <RadioInput
+        checked={checked}
+        disabled={disabled}
+        name={name}
+        onBlur={onBlur}
+        onChange={onChange}
+        onFocus={onFocus}
+        readOnly={readOnly}
+        value={value} />
+    <RadioIndicator />
+  </ChoiceLabel>
+);
 
-class Radio extends Component<Props, State> {
-
-  static defaultProps = {
-    checked: undefined,
-    disabled: false,
-    label: undefined,
-    name: undefined,
-    onChange: undefined,
-    readOnly: undefined,
-    value: undefined,
-  };
-
-  state = {
-    isChecked: false
-  };
-
-  getIsChecked = () => {
-    const { checked } = this.props;
-    const { isChecked } = this.state;
-    return checked !== undefined ? checked : isChecked;
-  }
-
-  handleChange = (e :SyntheticInputEvent<HTMLInputElement>) => {
-    const { disabled, onChange, readOnly } = this.props;
-    e.persist();
-    if (!(disabled || readOnly)) {
-      this.setState({ isChecked: e.target.checked });
-      if (onChange) {
-        onChange(e);
-      }
-    }
-  };
-
-  render() {
-    const {
-      disabled,
-      label,
-      name,
-      readOnly,
-      value
-    } = this.props;
-    const isChecked = this.getIsChecked();
-    return (
-      <ChoiceLabel checked={isChecked}>
-        <div>{label}</div>
-        <RadioInput
-            checked={isChecked}
-            disabled={disabled}
-            readOnly={readOnly}
-            name={name}
-            onChange={this.handleChange}
-            value={value} />
-        <RadioIndicator checked={isChecked} />
-      </ChoiceLabel>
-    );
-  }
-}
+Radio.defaultProps = {
+  checked: undefined,
+  disabled: false,
+  label: undefined,
+  name: undefined,
+  onBlur: undefined,
+  onChange: undefined,
+  onFocus: undefined,
+  readOnly: undefined,
+  value: undefined,
+};
 
 export default Radio;
