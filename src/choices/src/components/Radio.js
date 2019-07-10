@@ -1,14 +1,11 @@
 // @flow
 import React from 'react';
-import {
-  ChoiceLabel,
-  RadioIndicator,
-  RadioInput,
-} from './styled';
+import { ChoiceLabel, RadioIndicator, RadioInput } from './styled';
 
 type Props = {
   checked ? :boolean;
   disabled ? :boolean;
+  id ? :string;
   label ? :string;
   name ? :string;
   onBlur ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
@@ -19,27 +16,15 @@ type Props = {
 };
 
 const Radio = ({
-  checked,
-  disabled,
   label,
-  name,
-  onBlur,
-  onChange,
-  onFocus,
-  readOnly,
-  value
+  id,
+  ...rest
 } :Props) => (
-  <ChoiceLabel>
-    <div>{label}</div>
+  <ChoiceLabel htmlFor={id}>
+    {label}
     <RadioInput
-        checked={checked}
-        disabled={disabled}
-        name={name}
-        onBlur={onBlur}
-        onChange={onChange}
-        onFocus={onFocus}
-        readOnly={readOnly}
-        value={value} />
+        id={id}
+        {...rest} />
     <RadioIndicator />
   </ChoiceLabel>
 );
@@ -47,6 +32,7 @@ const Radio = ({
 Radio.defaultProps = {
   checked: undefined,
   disabled: false,
+  id: undefined,
   label: undefined,
   name: undefined,
   onBlur: undefined,

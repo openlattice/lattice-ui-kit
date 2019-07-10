@@ -17,32 +17,14 @@ type Props = {
 }
 
 const Checkbox = ({
-  checked,
-  defaultChecked,
-  disabled,
   id,
   label,
-  name,
-  onBlur,
-  onChange,
-  onFocus,
-  readOnly,
-  value,
   ...rest
 } :Props) => (
-  <ChoiceLabel readOnly={readOnly} htmlFor={id}>
+  <ChoiceLabel htmlFor={id}>
     {label}
     <CheckboxInput
-        checked={checked}
-        defaultChecked={defaultChecked}
-        disabled={disabled}
         id={id}
-        name={name}
-        onBlur={onBlur}
-        onChange={onChange}
-        onFocus={onFocus}
-        readOnly={readOnly}
-        value={value}
         {...rest} />
     <CheckboxIndicator />
   </ChoiceLabel>
@@ -50,7 +32,7 @@ const Checkbox = ({
 
 Checkbox.defaultProps = {
   checked: undefined,
-  defaultChecked: false,
+  defaultChecked: undefined,
   disabled: false,
   id: undefined,
   label: undefined,
