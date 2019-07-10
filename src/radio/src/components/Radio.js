@@ -50,6 +50,8 @@ Radio.defaultProps = {
   label: undefined,
   name: undefined,
   onChange: undefined,
+  onBlur: undefined,
+  onFocus: undefined,
   readOnly: undefined,
   value: undefined,
 };
