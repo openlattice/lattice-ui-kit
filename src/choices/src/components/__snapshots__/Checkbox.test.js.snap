@@ -1,6 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox render matches snapshot 1`] = `
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6f7;
+  border-radius: 3px;
+}
+
+.c2:after {
+  display: none;
+}
+
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -11,27 +25,11 @@ exports[`Checkbox render matches snapshot 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 14px;
-  font-weight: normal;
   margin: 10px 0;
   min-height: 20px;
-  padding: 0 10px 0 30px;
+  padding-left: 30px;
   pointer-events: auto;
   position: relative;
-}
-
-.c3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background: #e6e6f7;
-  border-radius: 3px;
-}
-
-.c3:after {
-  display: none;
 }
 
 .c1 {
@@ -41,26 +39,26 @@ exports[`Checkbox render matches snapshot 1`] = `
   vertical-align: middle;
 }
 
-.c1:hover + .c2,
-.c1:focus + .c2 {
+.c1:hover + div,
+.c1:focus + div {
   background: #8e929b;
 }
 
-.c1:checked + .c2 {
+.c1:checked + div {
   background: #8045ff;
 }
 
-.c1:checked:hover + .c2,
-.c1:checked:focus + .c2 {
+.c1:checked:hover + div,
+.c1:checked:focus + div {
   background: #6124e2;
 }
 
-.c1:disabled + .c2 {
+.c1:disabled + div {
   background: #e6e6f7;
   cursor: not-allowed;
 }
 
-.c1:checked:disabled + .c2 {
+.c1:checked:disabled + div {
   background: #b6bbc7;
 }
 
@@ -68,28 +66,28 @@ exports[`Checkbox render matches snapshot 1`] = `
   defaultChecked={false}
   disabled={false}
 >
-  <styled__CheckboxLabel>
+  <ChoiceLabel>
     <StyledComponent
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "styled__CheckboxLabel-sc-22ovv7-0",
+            "componentId": "ChoiceLabel-sc-11kob9e-0",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "align-items:center;color:",
               "#555e6f",
-              ";display:inline-flex;font-size:14px;font-weight:normal;margin:10px 0;min-height:20px;padding:0 10px 0 30px;pointer-events:",
+              ";display:inline-flex;margin:10px 0;min-height:20px;padding-left:30px;pointer-events:",
               [Function],
               ";position:relative;",
             ],
           },
-          "displayName": "styled__CheckboxLabel",
+          "displayName": "ChoiceLabel",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "styled__CheckboxLabel-sc-22ovv7-0",
+          "styledComponentId": "ChoiceLabel-sc-11kob9e-0",
           "target": "label",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -101,7 +99,7 @@ exports[`Checkbox render matches snapshot 1`] = `
       <label
         className="c0"
       >
-        <styled__CheckboxInput
+        <ChoiceInputs__CheckboxInput
           checked={false}
           disabled={false}
           onChange={[Function]}
@@ -116,41 +114,28 @@ exports[`Checkbox render matches snapshot 1`] = `
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "styled__CheckboxInput-sc-22ovv7-2",
+                  "componentId": "ChoiceInputs__CheckboxInput-sc-1fkg6yx-1",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "position:absolute;z-index:-1;opacity:0;vertical-align:middle;:hover + ",
-                    ".c2",
-                    ",:focus + ",
-                    ".c2",
-                    "{background:",
+                    "position:absolute;z-index:-1;opacity:0;vertical-align:middle;:hover + div,:focus + div{background:",
                     "#8e929b",
-                    ";}:checked + ",
-                    ".c2",
-                    "{background:",
+                    ";}:checked + div{background:",
                     "#8045ff",
-                    ";}:checked:hover + ",
-                    ".c2",
-                    ",:checked:focus + ",
-                    ".c2",
-                    "{background:",
+                    ";}:checked:hover + div,:checked:focus + div{background:",
                     "#6124e2",
-                    ";}:disabled + ",
-                    ".c2",
-                    "{background:",
+                    ";}:disabled + div{background:",
                     "#e6e6f7",
-                    ";cursor:not-allowed;}:checked:disabled + ",
-                    ".c2",
-                    "{background:",
+                    ";cursor:not-allowed;}:checked:disabled + div{background:",
                     "#b6bbc7",
                     ";}",
+                    ";",
                   ],
                 },
-                "displayName": "styled__CheckboxInput",
+                "displayName": "ChoiceInputs__CheckboxInput",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "styled__CheckboxInput-sc-22ovv7-2",
+                "styledComponentId": "ChoiceInputs__CheckboxInput-sc-1fkg6yx-1",
                 "target": "input",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -168,8 +153,8 @@ exports[`Checkbox render matches snapshot 1`] = `
               type="checkbox"
             />
           </StyledComponent>
-        </styled__CheckboxInput>
-        <styled__CheckboxIndicator
+        </ChoiceInputs__CheckboxInput>
+        <CheckboxIndicator
           checked={false}
         >
           <StyledComponent
@@ -179,21 +164,21 @@ exports[`Checkbox render matches snapshot 1`] = `
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "c2",
+                  "componentId": "CheckboxIndicator-sc-16t4mhx-0",
                   "isStatic": false,
-                  "lastClassName": "c3",
+                  "lastClassName": "c2",
                   "rules": Array [
                     "position:absolute;top:0;left:0;height:20px;width:20px;background:",
                     "#e6e6f7",
                     ";border-radius:3px;:after{",
                     [Function],
-                    "}}",
+                    "}",
                   ],
                 },
-                "displayName": "styled__CheckboxIndicator",
+                "displayName": "CheckboxIndicator",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "c2",
+                "styledComponentId": "CheckboxIndicator-sc-16t4mhx-0",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -204,12 +189,12 @@ exports[`Checkbox render matches snapshot 1`] = `
           >
             <div
               checked={false}
-              className="c2 c3"
+              className="c2"
             />
           </StyledComponent>
-        </styled__CheckboxIndicator>
+        </CheckboxIndicator>
       </label>
     </StyledComponent>
-  </styled__CheckboxLabel>
+  </ChoiceLabel>
 </Checkbox>
 `;
