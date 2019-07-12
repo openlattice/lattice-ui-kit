@@ -29,7 +29,7 @@ const StepperWrapper = styled.div`
   flex-direction: row;
   flex: 1 0 auto;
   justify-content: space-around;
-  padding: 20px;
+  padding: 20px 0;
 `;
 
 export {
