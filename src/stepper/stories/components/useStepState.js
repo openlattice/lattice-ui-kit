@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 function useStepState(maxSteps :number, initialStep :number = 0) {
-  const [currentStep, setStep] = useState(initialStep);
+  const [currentStep, setStep] = useState<number>(initialStep);
 
   if (
     (initialStep > maxSteps)
@@ -11,19 +11,19 @@ function useStepState(maxSteps :number, initialStep :number = 0) {
     throw new Error('initialStep exceeds boundaries');
   }
 
-  const next = () => {
-    if (currentStep < maxSteps) {
+  const nextStep = () => {
+    if (currentStep < maxSteps - 1) {
       setStep(currentStep + 1);
     }
   };
 
-  const back = () => {
+  const prevStep = () => {
     if (currentStep > 0) {
       setStep(currentStep - 1);
     }
   };
 
-  return [currentStep, next, back];
+  return [currentStep, setStep, nextStep, prevStep];
 }
 
 export default useStepState;
