@@ -33,4 +33,21 @@ storiesOf('Stepper', module)
         </CardSegment>
       </Card>
     );
+  })
+  .add('Vertical stepper', () => {
+
+    const [currentStep, next, back] = useStepState(steps.length);
+    return (
+      <Card>
+        <CardSegment vertical>
+          <Stepper activeStep={currentStep} vertical>
+            { steps.map(title => <Step>{title}</Step>) }
+          </Stepper>
+          <ButtonGroup>
+            <Button type="button" mode="secondary" disabled={currentStep === 0} onClick={back}>Back</Button>
+            <Button type="button" mode="primary" disabled={currentStep === steps.length} onClick={next}>Next</Button>
+          </ButtonGroup>
+        </CardSegment>
+      </Card>
+    );
   });

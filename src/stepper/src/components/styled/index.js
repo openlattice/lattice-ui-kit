@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { NEUTRALS } from '../../../../colors';
 
 const IconLayer = styled.span`
@@ -6,9 +6,25 @@ const IconLayer = styled.span`
   margin-right: 8px;
 `;
 
+const getDividerOrientationStyles = ({ vertical }) => {
+  if (vertical) {
+    return css`
+      min-height: 20px;
+      border-left: 2px solid ${NEUTRALS[4]};
+       /* step padding + half icon - 1 */
+      margin-left: 19px;
+    `;
+  }
+
+  return css`
+    border-top: 2px solid ${NEUTRALS[4]};
+  `;
+};
+
 const StepDivider = styled.div`
   flex: 1 1 auto;
-  border-top: 1px solid ${NEUTRALS[2]};
+  margin: 8px 0px;
+  ${getDividerOrientationStyles};
 `;
 
 const StepIndex = styled.span`
@@ -23,19 +39,33 @@ const StepWrapper = styled.div`
   padding: 0 8px;
 `;
 
+const getStepperOrientationStyles = ({ vertical }) => {
+  if (vertical) {
+    return css`
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: start;
+    `;
+  }
+
+  return css`
+    flex-direction: row;
+    justify-content: space-around;
+  `;
+};
+
 const StepperWrapper = styled.div`
   align-items: center;
   display: flex;
-  flex-direction: row;
   flex: 1 0 auto;
-  justify-content: space-around;
   padding: 20px 0;
+  ${getStepperOrientationStyles};
 `;
 
 export {
   IconLayer,
   StepDivider,
   StepIndex,
+  StepperWrapper,
   StepWrapper,
-  StepperWrapper
 };

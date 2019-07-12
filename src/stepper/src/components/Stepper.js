@@ -7,9 +7,10 @@ import { StepDivider, StepperWrapper } from './styled';
 type Props = {
   activeStep :number;
   children :ChildrenArray<any>;
+  vertical :boolean;
 };
 
-const Stepper = ({ activeStep = 0, children } :Props) => {
+const Stepper = ({ activeStep = 0, children, vertical } :Props) => {
   const steps = React.Children.toArray(children).map((child, index) => {
 
     const state = {
@@ -20,13 +21,13 @@ const Stepper = ({ activeStep = 0, children } :Props) => {
     };
 
     return [
-      index !== 0 && <StepDivider />,
+      index !== 0 && <StepDivider vertical={vertical} />,
       React.cloneElement(child, state)
     ];
   });
 
   return (
-    <StepperWrapper>
+    <StepperWrapper vertical={vertical}>
       {steps}
     </StepperWrapper>
   );
