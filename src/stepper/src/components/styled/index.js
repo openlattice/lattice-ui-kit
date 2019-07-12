@@ -23,7 +23,6 @@ const getDividerOrientationStyles = ({ vertical }) => {
 
 const StepDivider = styled.div`
   flex: 1 1 auto;
-  margin: 8px 0px;
   ${getDividerOrientationStyles};
 `;
 
@@ -36,7 +35,8 @@ const StepWrapper = styled.div`
   display: flex;
   flex: 0 1 auto;
   align-items: center;
-  padding: 0 8px;
+  padding: 10px;
+  cursor: ${props => props.onClick && 'pointer'};
 `;
 
 const getStepperOrientationStyles = ({ vertical }) => {
@@ -58,7 +58,6 @@ const StepperWrapper = styled.div`
   align-items: center;
   display: flex;
   flex: 1 0 auto;
-  padding: 20px 0;
   ${getStepperOrientationStyles};
 `;
 
