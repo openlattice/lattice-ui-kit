@@ -40,21 +40,21 @@ const AppContentInnerWrapper = styled.div`
 
 addDecorator(withInfo);
 
-addDecorator(storyFn => (
-  <StoryWrapper>
-    <AppContentWrapper>
-      <AppContentInnerWrapper>
-        {storyFn()}
-      </AppContentInnerWrapper>
-    </AppContentWrapper>
-  </StoryWrapper>
-));
-
 addParameters({
   options: {
     theme: storybookTheme
   },
 });
+
+addDecorator(Story => (
+  <StoryWrapper>
+    <AppContentWrapper>
+      <AppContentInnerWrapper>
+        <Story />
+      </AppContentInnerWrapper>
+    </AppContentWrapper>
+  </StoryWrapper>
+));
 
 const req = require.context('../../src/', true, /\.stories\.js$/);
 
