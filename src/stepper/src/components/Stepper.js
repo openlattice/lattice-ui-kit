@@ -7,22 +7,28 @@ import { StepDivider, StepperWrapper } from './styled';
 type Props = {
   activeStep :number;
   children :ChildrenArray<any>;
-  vertical :boolean;
+  sequential ? :boolean;
+  vertical ? :boolean;
 };
 
-const Stepper = ({ activeStep = 0, children, vertical } :Props) => {
+const Stepper = ({
+  activeStep,
+  children,
+  sequential,
+  vertical
+} :Props) => {
   const steps = React.Children.toArray(children).map((child, index) => {
 
     const state = {
       active: activeStep === index,
-      complete: activeStep > index,
-      disabled: activeStep < index,
+      complete: sequential && activeStep > index,
+      disabled: sequential && activeStep < index,
       index,
     };
 
     return [
       index !== 0 && <StepDivider vertical={vertical} />,
-      React.cloneElement(child, state)
+      React.cloneElement(child, { ...state, ...child.props })
     ];
   });
 
@@ -31,6 +37,11 @@ const Stepper = ({ activeStep = 0, children, vertical } :Props) => {
       {steps}
     </StepperWrapper>
   );
+};
+
+Stepper.defaultProps = {
+  vertical: false,
+  sequential: false,
 };
 
 export default Stepper;
