@@ -12,7 +12,7 @@ const getDividerOrientationStyles = ({ vertical }) => {
       min-height: 20px;
       border-left: 2px solid ${NEUTRALS[4]};
        /* step padding + half icon - 1 */
-      margin-left: 19px;
+      margin-left: 21px;
     `;
   }
 
@@ -29,6 +29,10 @@ const StepDivider = styled.div`
 const StepIndex = styled.span`
   font-size: 14px;
   font-weight: bold;
+`;
+
+const StepLabel = styled.span`
+  font-weight: ${props => props.active && '600'};
 `;
 
 const StepWrapper = styled.div`
@@ -63,6 +67,7 @@ const StepperWrapper = styled.div`
 
 export {
   IconLayer,
+  StepLabel,
   StepDivider,
   StepIndex,
   StepperWrapper,
