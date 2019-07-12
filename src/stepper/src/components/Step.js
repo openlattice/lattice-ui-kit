@@ -11,15 +11,17 @@ type Props = {
   active :boolean;
   complete :boolean;
   children :ChildrenArray<any>;
+  onClick ? :(e :SyntheticEvent<HTMLDivElement>) => void;
 };
 
 const Step = ({
   active,
   complete,
   children,
-  index
+  index,
+  onClick
 } :Props) => (
-  <StepWrapper>
+  <StepWrapper onClick={onClick}>
     <StepIcon
         index={index}
         active={active}
@@ -27,5 +29,9 @@ const Step = ({
     {children}
   </StepWrapper>
 );
+
+Step.defaultProps = {
+  onClick: undefined
+};
 
 export default Step;
