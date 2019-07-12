@@ -7,7 +7,8 @@
   "plugins": [
     "flowtype",
     "jest",
-    "react"
+    "react",
+    "react-hooks"
   ],
   "env": {
     "browser": true,
@@ -135,6 +136,8 @@
         "forbidDefaultForRequired": false
       }
     ],
-    "react/sort-comp": "off"
+    "react/sort-comp": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }
