@@ -17,7 +17,7 @@ const Stepper = ({
   sequential,
   vertical
 } :Props) => {
-  const steps = React.Children.toArray(children).map((child, index) => {
+  const steps = React.Children.map(children, (child, index) => {
 
     const state = {
       active: activeStep === index,
