@@ -4,6 +4,7 @@ import { NEUTRALS } from '../../../../colors';
 const IconLayer = styled.span`
   font-size: 24px;
   margin-right: 8px;
+  min-width: 24px;
 `;
 
 const getDividerOrientationStyles = ({ vertical }) => {
@@ -40,6 +41,7 @@ const StepWrapper = styled.div`
   align-items: center;
   padding: 10px;
   cursor: ${props => props.onClick && 'pointer'};
+  max-width: 250px;
 `;
 
 const getStepperOrientationStyles = ({ vertical }) => {
@@ -60,6 +62,7 @@ const getStepperOrientationStyles = ({ vertical }) => {
 const StepperWrapper = styled.div`
   align-items: center;
   display: flex;
+  width: 100%;
   ${getStepperOrientationStyles};
 `;
 
