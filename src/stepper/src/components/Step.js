@@ -7,11 +7,12 @@ import StepIcon from './StepIcon';
 import { StepWrapper, StepLabel } from './styled';
 
 type Props = {
-  index :number;
   active :boolean;
+  children :ChildrenArray<any>;
   complete :boolean;
   disabled ? :boolean;
-  children :ChildrenArray<any>;
+  index :number;
+  onClick :(e :SyntheticEvent<HTMLElement>) => void;
 };
 
 class Step extends Component<Props> {
@@ -65,10 +66,11 @@ class Step extends Component<Props> {
 
   render() {
     const {
-      children
+      children,
+      onClick
     } = this.props;
     return (
-      <StepWrapper>
+      <StepWrapper onClick={onClick}>
         {
           React.isValidElement(children)
             ? this.renderComposed()
