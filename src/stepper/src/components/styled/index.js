@@ -37,7 +37,6 @@ const StepLabel = styled.span`
 
 const StepWrapper = styled.div`
   display: flex;
-  flex: 0 1 auto;
   align-items: center;
   padding: 10px;
   cursor: ${props => props.onClick && 'pointer'};
@@ -61,7 +60,6 @@ const getStepperOrientationStyles = ({ vertical }) => {
 const StepperWrapper = styled.div`
   align-items: center;
   display: flex;
-  flex: 1 0 auto;
   ${getStepperOrientationStyles};
 `;
 
