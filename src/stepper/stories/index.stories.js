@@ -47,11 +47,4 @@ storiesOf('Stepper', module)
     <Stepper activeStep={currentStep} sequential>
       { steps.map((title, index) => <Step key={title} onClick={() => setStep(index)}>{title}</Step>) }
     </Stepper>
-  ))
-  .add('Custom step', ({ currentStep, setStep }) => (
-    <Stepper activeStep={currentStep} sequential>
-      { steps.map((title, index) => (
-        <Step key={title} onClick={() => setStep(index)}>{title}</Step>
-      ))}
-    </Stepper>
   ));
