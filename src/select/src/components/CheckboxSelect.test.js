@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import ReactSelect from 'react-select';
 import CheckboxSelect, { defaultProps } from './CheckboxSelect';
-import Checkbox from '../../../checkbox';
+import { Checkbox } from '../../../choices';
 import { OPTIONS } from './constants';
 
 describe('CheckboxSelect', () => {

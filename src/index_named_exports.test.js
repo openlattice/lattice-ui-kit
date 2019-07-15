@@ -22,6 +22,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Overlay',
   'PersonResult',
   'Portal',
+  'Radio',
   'Result',
   'Search',
   'SearchResults',
