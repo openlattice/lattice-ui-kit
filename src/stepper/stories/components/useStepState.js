@@ -8,7 +8,7 @@ function useStepState(maxSteps :number, initialStep :number = 0) {
     (initialStep > maxSteps)
     || (initialStep < 0)
   ) {
-    throw new Error('initialStep exceeds boundaries');
+    throw new RangeError('initialStep must be between 0 and maxSteps');
   }
 
   const nextStep = () => {
