@@ -12,7 +12,7 @@ const getDividerOrientationStyles = ({ vertical }) => {
     return css`
       min-height: 20px;
       border-left: 2px solid ${NEUTRALS[4]};
-       /* step padding + half icon - 1 */
+      /* step padding + half icon - 1 */
       margin-left: 21px;
     `;
   }
@@ -41,7 +41,6 @@ const StepWrapper = styled.div`
   align-items: center;
   padding: 10px;
   cursor: ${props => props.onClick && 'pointer'};
-  max-width: 250px;
 `;
 
 const getStepperOrientationStyles = ({ vertical }) => {
