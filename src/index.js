@@ -23,6 +23,12 @@ export { default as Portal } from './portal';
 export { default as Spinner } from './spinner';
 export { Checkbox, Radio } from './choices';
 export { DatePicker, TimePicker } from './datetime';
+export {
+  Stepper,
+  StepLabel,
+  StepIcon,
+  Step
+} from './stepper';
 export { Input, TextArea } from './text';
 export {
   Card,
