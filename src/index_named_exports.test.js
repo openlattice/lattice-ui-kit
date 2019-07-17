@@ -22,11 +22,17 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Overlay',
   'PersonResult',
   'Portal',
+  'Radio',
   'Result',
   'Search',
   'SearchResults',
   'Select',
+  'Stepper',
+  'StepLabel',
+  'StepIcon',
+  'Step',
   'StyleUtils',
+  'TextArea',
   'TimePicker',
 ]);
 

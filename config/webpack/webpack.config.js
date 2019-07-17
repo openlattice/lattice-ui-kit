@@ -7,7 +7,7 @@ const LIB_CONFIG = require('../lib/lib.config.js');
 const LIB_PATHS = require('../lib/paths.config.js');
 const PACKAGE = require('../../package.json');
 
-module.exports = (env) => {
+module.exports = (env = {}) => {
 
   /*
    * constants

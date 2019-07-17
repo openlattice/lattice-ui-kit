@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Step should match snapshot 1`] = `
+.c1 {
+  font-size: 24px;
+  margin-right: 8px;
+  min-width: 24px;
+}
+
+.c2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+<Step
+  index={0}
+>
+  <styled__StepWrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styled__StepWrapper-g8vnjr-4",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:flex;align-items:center;padding:10px;cursor:",
+              [Function],
+              ";",
+            ],
+          },
+          "displayName": "styled__StepWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styled__StepWrapper-g8vnjr-4",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <StepIcon
+          index={0}
+        >
+          <styled__IconLayer
+            className="fa-layers"
+          >
+            <StyledComponent
+              className="fa-layers"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "styled__IconLayer-g8vnjr-0",
+                    "isStatic": true,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "font-size:24px;margin-right:8px;min-width:24px;",
+                    ],
+                  },
+                  "displayName": "styled__IconLayer",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "styled__IconLayer-g8vnjr-0",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <span
+                className="fa-layers c1"
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className=""
+                  color="#8e929b"
+                  fixedWidth={false}
+                  flip={null}
+                  icon={
+                    Object {
+                      "icon": Array [
+                        512,
+                        512,
+                        Array [],
+                        "f111",
+                        "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z",
+                      ],
+                      "iconName": "circle",
+                      "prefix": "fas",
+                    }
+                  }
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-circle fa-w-16 "
+                    color="#8e929b"
+                    data-icon="circle"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </FontAwesomeIcon>
+                <styled__StepIndex
+                  className="fa-layers-text fa-inverse"
+                >
+                  <StyledComponent
+                    className="fa-layers-text fa-inverse"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "styled__StepIndex-g8vnjr-2",
+                          "isStatic": true,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "font-size:14px;font-weight:bold;",
+                          ],
+                        },
+                        "displayName": "styled__StepIndex",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "styled__StepIndex-g8vnjr-2",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <span
+                      className="fa-layers-text fa-inverse c2"
+                    >
+                      1
+                    </span>
+                  </StyledComponent>
+                </styled__StepIndex>
+              </span>
+            </StyledComponent>
+          </styled__IconLayer>
+        </StepIcon>
+        <styled__StepLabel>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "styled__StepLabel-g8vnjr-3",
+                  "isStatic": false,
+                  "lastClassName": "imTrDK",
+                  "rules": Array [
+                    "font-weight:",
+                    [Function],
+                    ";",
+                  ],
+                },
+                "displayName": "styled__StepLabel",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "styled__StepLabel-g8vnjr-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className=""
+            >
+              Step 1
+            </span>
+          </StyledComponent>
+        </styled__StepLabel>
+      </div>
+    </StyledComponent>
+  </styled__StepWrapper>
+</Step>
+`;

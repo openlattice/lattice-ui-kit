@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactSelectCreatable from 'react-select/lib/Creatable';
+import ReactSelectCreatable from 'react-select/creatable';
 import { mergeDeep } from 'immutable';
 
 import SelectController from './SelectController';
