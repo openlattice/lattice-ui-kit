@@ -24,8 +24,12 @@ describe('Step', () => {
       const wrapper = mount(<Step index={0} onClick={() => {}}>Step 1</Step>);
       expect(wrapper.find(StepWrapper)).toHaveStyleRule('cursor', 'pointer');
     });
-  });
 
+    test('StepLabel should apply font-weight if active', () => {
+      const wrapper = mount(<Step index={0} active>Step 1</Step>);
+      expect(wrapper.find(StepLabel)).toHaveStyleRule('font-weight', '600');
+    });
+  });
 
   test('render StepIcon and StepLabel', () => {
     const wrapper = shallow(<Step index={0}>Step 1</Step>);
