@@ -2,9 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import { Radio } from '..';
 import { Card, CardSegment } from '../../layout';
 import Label from '../../label';
+import { Radio } from '..';
 
 storiesOf('Radio', module)
   .add('Uncontrolled', () => (
