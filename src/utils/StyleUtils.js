@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 // @flow
 
 const getStyleVariation = (prop :string, values :Object) => {
@@ -7,5 +8,6 @@ const getStyleVariation = (prop :string, values :Object) => {
 };
 
 export {
+  // eslint-disable-next-line import/prefer-default-export
   getStyleVariation
 };

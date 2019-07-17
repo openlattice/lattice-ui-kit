@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import Button from '..';
 import { Card, CardSegment } from '../../layout';
+import Button from '..';
 
 const ButtonRow = styled.div`
   display: flex;
