@@ -75,7 +75,7 @@
     "eslint-plugin-react": "~7.14.0",
     "eslint-plugin-react-hooks": "~1.6.1",
     "file-loader": "~4.1.0",
-    "flow-bin": "~0.102.0",
+    "flow-bin": "~0.103.0",
     "jest": "~24.8.0",
     "jest-styled-components": "~6.3.0",
     "lorem-ipsum": "~2.0.2",
