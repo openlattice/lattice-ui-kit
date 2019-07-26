@@ -34,9 +34,10 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 
 deploy:
-  all_branches: true
   github_token: $GITHUB_TOKEN
   keep_history: true
   local_dir: build/storybook
   provider: pages
   skip_cleanup: true
+  on:
+    all_branches: true
