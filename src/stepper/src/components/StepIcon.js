@@ -8,12 +8,18 @@ import { PURPLES, NEUTRALS, WHITE } from '../../../colors';
 
 type Props = {
   active :boolean;
+  className :string;
   complete :boolean;
   index :number;
 };
 
-const StepIcon = ({ active, complete, index } :Props) => (
-  <IconLayer className="fa-layers">
+const StepIcon = ({
+  active,
+  className,
+  complete,
+  index
+} :Props) => (
+  <IconLayer className={`${className} fa-layers`}>
     <FontAwesomeIcon icon={faCircle} color={(active || complete) ? PURPLES[2] : NEUTRALS[1]} />
     { complete
       ? <FontAwesomeIcon icon={faCheck} color={WHITE} transform="shrink-7" />
