@@ -23,6 +23,7 @@ class ModalExample extends Component {
   }
 
   render() {
+    // eslint-disable-next-line react/prop-types
     const { children } = this.props;
     const { isVisible } = this.state;
     return children({

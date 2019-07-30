@@ -63,7 +63,7 @@ storiesOf('Search', module)
           title="Search"
           onSearch={action('search clicked')}
           searchResults={mockSearchResultsForPeople}
-          resultComponent={props => <Result {...props} onClick={result => console.log(result)} />} />
+          resultComponent={props => <Result {...props} onClick={action('Result clicked')} />} />
     </>
   ))
   .add('Search Container', () => (

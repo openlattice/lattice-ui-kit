@@ -82,7 +82,7 @@ describe('Stepper', () => {
 
       const steps = wrapper.find(Step);
       steps.forEach((step, index) => {
-        expect(step.prop('index')).toBe(index);
+        expect(step.prop('index')).toBe(index + 1);
       });
     });
 

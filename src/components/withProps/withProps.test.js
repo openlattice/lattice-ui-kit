@@ -1,15 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
 import withProps from './withProps';
 
-class WrappedComponent extends Component {
-  render() {
-    return (
-      <div>test</div>
-    );
-  }
-}
+const WrappedComponent = () => <div>test</div>;
 
 const testProps = {
   open: 'lattice',

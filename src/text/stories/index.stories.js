@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-import { Input, TextArea } from '..';
 import Label from '../../label';
 import { Card, CardSegment } from '../../layout';
+import { Input, TextArea } from '..';
 
 const StyledForm = styled.form`
   display: flex;
