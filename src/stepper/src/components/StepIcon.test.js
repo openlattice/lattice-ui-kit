@@ -23,7 +23,7 @@ describe('StepIcon', () => {
 
     test('render index + 1', () => {
       const wrapper = shallow(<StepIcon index={0} />);
-      expect(wrapper.find(StepIndex).text()).toBe('1');
+      expect(wrapper.find(StepIndex).text()).toBe('0');
     });
   });
 

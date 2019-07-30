@@ -3,13 +3,16 @@
 exports[`Step should match snapshot 1`] = `
 .c1 {
   font-size: 24px;
-  margin-right: 8px;
   min-width: 24px;
 }
 
 .c2 {
   font-size: 14px;
   font-weight: bold;
+}
+
+.c3 {
+  margin-left: 8px;
 }
 
 .c0 {
@@ -75,7 +78,7 @@ exports[`Step should match snapshot 1`] = `
                     "isStatic": true,
                     "lastClassName": "c1",
                     "rules": Array [
-                      "font-size:24px;margin-right:8px;min-width:24px;",
+                      "font-size:24px;min-width:24px;",
                     ],
                   },
                   "displayName": "styled__IconLayer",
@@ -175,7 +178,7 @@ exports[`Step should match snapshot 1`] = `
                     <span
                       className="fa-layers-text fa-inverse c2"
                     >
-                      1
+                      0
                     </span>
                   </StyledComponent>
                 </styled__StepIndex>
@@ -192,9 +195,9 @@ exports[`Step should match snapshot 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "styled__StepLabel-g8vnjr-3",
                   "isStatic": false,
-                  "lastClassName": "imTrDK",
+                  "lastClassName": "c3",
                   "rules": Array [
-                    "font-weight:",
+                    "margin-left:8px;font-weight:",
                     [Function],
                     ";",
                   ],
@@ -212,7 +215,7 @@ exports[`Step should match snapshot 1`] = `
             forwardedRef={null}
           >
             <span
-              className=""
+              className="c3"
             >
               Step 1
             </span>

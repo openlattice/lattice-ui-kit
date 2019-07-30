@@ -3,7 +3,6 @@
 exports[`StepIcon complete should match snapshot 1`] = `
 .c0 {
   font-size: 24px;
-  margin-right: 8px;
   min-width: 24px;
 }
 
@@ -25,7 +24,7 @@ exports[`StepIcon complete should match snapshot 1`] = `
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
-              "font-size:24px;margin-right:8px;min-width:24px;",
+              "font-size:24px;min-width:24px;",
             ],
           },
           "displayName": "styled__IconLayer",
