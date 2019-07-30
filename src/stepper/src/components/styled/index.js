@@ -4,7 +4,6 @@ import { NEUTRALS } from '../../../../colors';
 
 const IconLayer = styled.span`
   font-size: 24px;
-  margin-right: 8px;
   min-width: 24px;
 `;
 
@@ -34,6 +33,7 @@ const StepIndex = styled.span`
 `;
 
 const StepLabel = styled.span`
+  margin-left: 8px;
   font-weight: ${props => props.active && '600'};
 `;
 
