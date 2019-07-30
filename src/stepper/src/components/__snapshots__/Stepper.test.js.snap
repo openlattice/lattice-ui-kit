@@ -135,10 +135,10 @@ exports[`Stepper should match snapshot 1`] = `
                   index={1}
                 >
                   <styled__IconLayer
-                    className="fa-layers"
+                    className="undefined fa-layers"
                   >
                     <StyledComponent
-                      className="fa-layers"
+                      className="undefined fa-layers"
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
@@ -164,7 +164,7 @@ exports[`Stepper should match snapshot 1`] = `
                       forwardedRef={null}
                     >
                       <span
-                        className="fa-layers c2"
+                        className="undefined fa-layers c2"
                       >
                         <FontAwesomeIcon
                           border={false}
@@ -379,10 +379,10 @@ exports[`Stepper should match snapshot 1`] = `
                   index={2}
                 >
                   <styled__IconLayer
-                    className="fa-layers"
+                    className="undefined fa-layers"
                   >
                     <StyledComponent
-                      className="fa-layers"
+                      className="undefined fa-layers"
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
@@ -408,7 +408,7 @@ exports[`Stepper should match snapshot 1`] = `
                       forwardedRef={null}
                     >
                       <span
-                        className="fa-layers c2"
+                        className="undefined fa-layers c2"
                       >
                         <FontAwesomeIcon
                           border={false}
@@ -623,10 +623,10 @@ exports[`Stepper should match snapshot 1`] = `
                   index={3}
                 >
                   <styled__IconLayer
-                    className="fa-layers"
+                    className="undefined fa-layers"
                   >
                     <StyledComponent
-                      className="fa-layers"
+                      className="undefined fa-layers"
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
@@ -652,7 +652,7 @@ exports[`Stepper should match snapshot 1`] = `
                       forwardedRef={null}
                     >
                       <span
-                        className="fa-layers c2"
+                        className="undefined fa-layers c2"
                       >
                         <FontAwesomeIcon
                           border={false}

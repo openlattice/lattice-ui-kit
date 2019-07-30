@@ -65,10 +65,10 @@ exports[`Step should match snapshot 1`] = `
           index={0}
         >
           <styled__IconLayer
-            className="fa-layers"
+            className="undefined fa-layers"
           >
             <StyledComponent
-              className="fa-layers"
+              className="undefined fa-layers"
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
@@ -94,7 +94,7 @@ exports[`Step should match snapshot 1`] = `
               forwardedRef={null}
             >
               <span
-                className="fa-layers c1"
+                className="undefined fa-layers c1"
               >
                 <FontAwesomeIcon
                   border={false}
