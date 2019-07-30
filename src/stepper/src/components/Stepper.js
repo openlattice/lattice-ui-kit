@@ -23,7 +23,7 @@ const Stepper = ({
       active: activeStep === index,
       complete: sequential && activeStep > index,
       disabled: sequential && activeStep < index,
-      index,
+      index: index + 1,
     };
 
     return [

@@ -3,11 +3,10 @@
 exports[`Stepper should match snapshot 1`] = `
 .c2 {
   font-size: 24px;
-  margin-right: 8px;
   min-width: 24px;
 }
 
-.c4 {
+.c5 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -17,6 +16,10 @@ exports[`Stepper should match snapshot 1`] = `
 .c3 {
   font-size: 14px;
   font-weight: bold;
+}
+
+.c4 {
+  margin-left: 8px;
 }
 
 .c1 {
@@ -92,7 +95,7 @@ exports[`Stepper should match snapshot 1`] = `
           active={false}
           complete={false}
           disabled={false}
-          index={0}
+          index={1}
           key=".0/.1"
         >
           <styled__StepWrapper>
@@ -129,7 +132,7 @@ exports[`Stepper should match snapshot 1`] = `
                 <StepIcon
                   active={false}
                   complete={false}
-                  index={0}
+                  index={1}
                 >
                   <styled__IconLayer
                     className="fa-layers"
@@ -145,7 +148,7 @@ exports[`Stepper should match snapshot 1`] = `
                             "isStatic": true,
                             "lastClassName": "c2",
                             "rules": Array [
-                              "font-size:24px;margin-right:8px;min-width:24px;",
+                              "font-size:24px;min-width:24px;",
                             ],
                           },
                           "displayName": "styled__IconLayer",
@@ -265,9 +268,9 @@ exports[`Stepper should match snapshot 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "styled__StepLabel-g8vnjr-3",
                           "isStatic": false,
-                          "lastClassName": "imTrDK",
+                          "lastClassName": "c4",
                           "rules": Array [
-                            "font-weight:",
+                            "margin-left:8px;font-weight:",
                             [Function],
                             ";",
                           ],
@@ -285,7 +288,7 @@ exports[`Stepper should match snapshot 1`] = `
                     forwardedRef={null}
                   >
                     <span
-                      className=""
+                      className="c4"
                     >
                       Step 1
                     </span>
@@ -307,7 +310,7 @@ exports[`Stepper should match snapshot 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "styled__StepDivider-g8vnjr-1",
                   "isStatic": false,
-                  "lastClassName": "c4",
+                  "lastClassName": "c5",
                   "rules": Array [
                     "flex:1 1 auto;",
                     [Function],
@@ -328,7 +331,7 @@ exports[`Stepper should match snapshot 1`] = `
             vertical={false}
           >
             <div
-              className="c4"
+              className="c5"
             />
           </StyledComponent>
         </styled__StepDivider>
@@ -336,7 +339,7 @@ exports[`Stepper should match snapshot 1`] = `
           active={false}
           complete={false}
           disabled={false}
-          index={1}
+          index={2}
           key=".1/.1"
         >
           <styled__StepWrapper>
@@ -373,7 +376,7 @@ exports[`Stepper should match snapshot 1`] = `
                 <StepIcon
                   active={false}
                   complete={false}
-                  index={1}
+                  index={2}
                 >
                   <styled__IconLayer
                     className="fa-layers"
@@ -389,7 +392,7 @@ exports[`Stepper should match snapshot 1`] = `
                             "isStatic": true,
                             "lastClassName": "c2",
                             "rules": Array [
-                              "font-size:24px;margin-right:8px;min-width:24px;",
+                              "font-size:24px;min-width:24px;",
                             ],
                           },
                           "displayName": "styled__IconLayer",
@@ -509,9 +512,9 @@ exports[`Stepper should match snapshot 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "styled__StepLabel-g8vnjr-3",
                           "isStatic": false,
-                          "lastClassName": "imTrDK",
+                          "lastClassName": "c4",
                           "rules": Array [
-                            "font-weight:",
+                            "margin-left:8px;font-weight:",
                             [Function],
                             ";",
                           ],
@@ -529,7 +532,7 @@ exports[`Stepper should match snapshot 1`] = `
                     forwardedRef={null}
                   >
                     <span
-                      className=""
+                      className="c4"
                     >
                       Step 2
                     </span>
@@ -551,7 +554,7 @@ exports[`Stepper should match snapshot 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "styled__StepDivider-g8vnjr-1",
                   "isStatic": false,
-                  "lastClassName": "c4",
+                  "lastClassName": "c5",
                   "rules": Array [
                     "flex:1 1 auto;",
                     [Function],
@@ -572,7 +575,7 @@ exports[`Stepper should match snapshot 1`] = `
             vertical={false}
           >
             <div
-              className="c4"
+              className="c5"
             />
           </StyledComponent>
         </styled__StepDivider>
@@ -580,7 +583,7 @@ exports[`Stepper should match snapshot 1`] = `
           active={false}
           complete={false}
           disabled={false}
-          index={2}
+          index={3}
           key=".2/.1"
         >
           <styled__StepWrapper>
@@ -617,7 +620,7 @@ exports[`Stepper should match snapshot 1`] = `
                 <StepIcon
                   active={false}
                   complete={false}
-                  index={2}
+                  index={3}
                 >
                   <styled__IconLayer
                     className="fa-layers"
@@ -633,7 +636,7 @@ exports[`Stepper should match snapshot 1`] = `
                             "isStatic": true,
                             "lastClassName": "c2",
                             "rules": Array [
-                              "font-size:24px;margin-right:8px;min-width:24px;",
+                              "font-size:24px;min-width:24px;",
                             ],
                           },
                           "displayName": "styled__IconLayer",
@@ -753,9 +756,9 @@ exports[`Stepper should match snapshot 1`] = `
                         "componentStyle": ComponentStyle {
                           "componentId": "styled__StepLabel-g8vnjr-3",
                           "isStatic": false,
-                          "lastClassName": "imTrDK",
+                          "lastClassName": "c4",
                           "rules": Array [
-                            "font-weight:",
+                            "margin-left:8px;font-weight:",
                             [Function],
                             ";",
                           ],
@@ -773,7 +776,7 @@ exports[`Stepper should match snapshot 1`] = `
                     forwardedRef={null}
                   >
                     <span
-                      className=""
+                      className="c4"
                     >
                       Step 3
                     </span>
