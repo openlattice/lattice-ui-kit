@@ -29,7 +29,7 @@ export {
   StepIcon,
   Step
 } from './stepper';
-export { Input, TextArea } from './text';
+export { Input, SearchInput, TextArea } from './text';
 export {
   Card,
   CardHeader,
