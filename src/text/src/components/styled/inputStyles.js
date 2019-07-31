@@ -11,8 +11,7 @@ const inputStyles = css`
   display: flex;
   flex: 0 1 auto;
   font-size: 14px;
-  line-height: 18px;
-  padding: 10px 10px;
+  padding: 10px;
   text-overflow: ellipsis;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   width: ${props => (props.width || '100%')};
