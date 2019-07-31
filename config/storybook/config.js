@@ -13,7 +13,7 @@ const StoryWrapper = styled.div`
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
-  line-height: 1.35;
+  line-height: 1.5;
   background-color: ${NEUTRALS[7]};
   height: 100%;
   width: 100%;

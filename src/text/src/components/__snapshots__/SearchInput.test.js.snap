@@ -1,0 +1,260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchInput snapshots should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c2 {
+  background-color: #f9f9fd;
+  border-radius: 3px;
+  border: 1px solid #dcdce7;
+  box-shadow: 0;
+  box-sizing: border-box;
+  color: #555e6f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  font-size: 14px;
+  padding: 10px;
+  text-overflow: ellipsis;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+  width: 100%;
+  color: #555e6f;
+  padding-left: 32px;
+}
+
+.c2:hover {
+  background-color: #f0f0f7;
+}
+
+.c2:focus {
+  border: solid 1px #6124e2;
+  background-color: white;
+  outline: none;
+}
+
+.c2:disabled {
+  background-color: #f9f9fd;
+  color: #8e929b;
+  cursor: not-allowed;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #8e929b;
+}
+
+.c2::-moz-placeholder {
+  color: #8e929b;
+}
+
+.c2:-ms-input-placeholder {
+  color: #8e929b;
+}
+
+.c2::placeholder {
+  color: #8e929b;
+}
+
+.c1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  color: #8e929b;
+  margin-left: 11px;
+  font-size: 14px;
+  line-height: 14px;
+  position: absolute;
+}
+
+<SearchInput
+  disabled={false}
+  placeholder="Search..."
+>
+  <SearchInput__SearchInputWrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "SearchInput__SearchInputWrapper-sc-1bpx0dr-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:flex;position:relative;",
+            ],
+          },
+          "displayName": "SearchInput__SearchInputWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "SearchInput__SearchInputWrapper-sc-1bpx0dr-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <SearchInput__SearchIcon>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "SearchInput__SearchIcon-sc-1bpx0dr-2",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "align-self:center;color:",
+                    "#8e929b",
+                    ";margin-left:11px;font-size:14px;line-height:14px;position:absolute;",
+                  ],
+                },
+                "displayName": "SearchInput__SearchIcon",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "SearchInput__SearchIcon-sc-1bpx0dr-2",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              <FontAwesomeIcon
+                border={false}
+                className=""
+                fixedWidth={false}
+                flip={null}
+                icon={
+                  Object {
+                    "icon": Array [
+                      512,
+                      512,
+                      Array [],
+                      "f002",
+                      "M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z",
+                    ],
+                    "iconName": "search",
+                    "prefix": "far",
+                  }
+                }
+                inverse={false}
+                listItem={false}
+                mask={null}
+                pull={null}
+                pulse={false}
+                rotation={null}
+                size={null}
+                spin={false}
+                symbol={false}
+                title=""
+                transform={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-search fa-w-16 "
+                  data-icon="search"
+                  data-prefix="far"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </FontAwesomeIcon>
+            </div>
+          </StyledComponent>
+        </SearchInput__SearchIcon>
+        <SearchInput__Input
+          disabled={false}
+          placeholder="Search..."
+          type="search"
+        >
+          <StyledComponent
+            disabled={false}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "SearchInput__Input-sc-1bpx0dr-1",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "background-color:",
+                    "#f9f9fd",
+                    ";border-radius:3px;border:1px solid ",
+                    [Function],
+                    ";box-shadow:0;box-sizing:border-box;color:",
+                    "#555e6f",
+                    ";display:flex;flex:0 1 auto;font-size:14px;padding:10px;text-overflow:ellipsis;transition:background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;width:",
+                    [Function],
+                    ";:hover{background-color:",
+                    "#f0f0f7",
+                    ";}:focus{border:solid 1px ",
+                    "#6124e2",
+                    ";background-color:white;outline:none;}:disabled{background-color:",
+                    "#f9f9fd",
+                    ";color:",
+                    "#8e929b",
+                    ";cursor:not-allowed;}",
+                    " color:",
+                    "#555e6f",
+                    ";padding-left:32px;&::placeholder{color:",
+                    "#8e929b",
+                    ";}",
+                  ],
+                },
+                "displayName": "SearchInput__Input",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "SearchInput__Input-sc-1bpx0dr-1",
+                "target": "input",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            placeholder="Search..."
+            type="search"
+          >
+            <input
+              className="c2"
+              disabled={false}
+              placeholder="Search..."
+              type="search"
+            />
+          </StyledComponent>
+        </SearchInput__Input>
+      </div>
+    </StyledComponent>
+  </SearchInput__SearchInputWrapper>
+</SearchInput>
+`;
