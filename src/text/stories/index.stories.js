@@ -35,7 +35,7 @@ storiesOf('Text', module)
             <Input id="story-defaultvalue" defaultValue="OpenLattice" />
 
             <Label htmlFor="story-invalid">Invalid value</Label>
-            <Input error id="story-invalid" defaultValue="ecittaLnepO" />
+            <Input invalid id="story-invalid" defaultValue="ecittaLnepO" />
 
             <Label htmlFor="story-width">Width</Label>
             <Input id="story-width" defaultValue="ecittaLnepO" width="200px" />
