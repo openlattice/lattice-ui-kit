@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import LatticeDatePicker, { props } from './DatePicker';
+import LatticeDatePicker, { defaultProps } from './DatePicker';
 
 describe('DatePicker', () => {
 
@@ -19,7 +19,7 @@ describe('DatePicker', () => {
   test('internal DatePicker should have selectProps', () => {
     const wrapper = mount(<LatticeDatePicker />);
     const datePickerProps = wrapper.find('DatePicker').props();
-    expect(datePickerProps.selectProps).toEqual(props.selectProps);
+    expect(datePickerProps.selectProps).toEqual(defaultProps.selectProps);
   });
 
 });

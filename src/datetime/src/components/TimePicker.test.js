@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import TimePicker, { props } from './TimePicker';
+import TimePicker, { defaultProps } from './TimePicker';
 
 describe('TimePicker', () => {
 
@@ -15,10 +15,10 @@ describe('TimePicker', () => {
     expect(wrapper.find('TimePicker').exists()).toBeTruthy();
   });
 
-  test('internal DatePicker should have selectProps', () => {
+  test('internal TimePicker should have selectProps', () => {
     const wrapper = mount(<TimePicker />);
     const timePickerProps = wrapper.find('TimePicker').props();
-    expect(timePickerProps.selectProps).toEqual(props.selectProps);
+    expect(timePickerProps.selectProps).toEqual(defaultProps.selectProps);
   });
 
 });

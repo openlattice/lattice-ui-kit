@@ -1,33 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TimePicker render matches snapshot 1`] = `
-<AnalyticsContext
-  data={
+<WithAnalyticsContext(WithAnalyticsEvents(TimePicker))
+  selectProps={
     Object {
-      "componentName": "timePicker",
-      "packageName": "@atlaskit/datetime-picker",
-      "packageVersion": "8.0.9",
+      "styles": Object {
+        "clearIndicator": [Function],
+        "container": [Function],
+        "control": [Function],
+        "dropdownIndicator": [Function],
+        "indicatorSeparator": [Function],
+        "indicatorsContainer": [Function],
+        "menu": [Function],
+        "menuPortal": [Function],
+        "option": [Function],
+        "singleValue": [Function],
+      },
     }
   }
->
-  <WithAnalyticsEvents(TimePicker)
-    selectProps={
-      Object {
-        "styles": Object {
-          "clearIndicator": [Function],
-          "container": [Function],
-          "control": [Function],
-          "dropdownIndicator": [Function],
-          "indicatorSeparator": [Function],
-          "indicatorsContainer": [Function],
-          "menu": [Function],
-          "menuPortal": [Function],
-          "option": [Function],
-          "singleValue": [Function],
-        },
-      }
-    }
-    timeIsEditable={true}
-  />
-</AnalyticsContext>
+  timeIsEditable={true}
+/>
 `;

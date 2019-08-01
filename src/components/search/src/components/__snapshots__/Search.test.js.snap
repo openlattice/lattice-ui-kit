@@ -49,28 +49,10 @@ exports[`Search snapshots should match snapshot 1`] = `
             >
               Date of Birth
             </Label>
-            <WithAnalyticsContext(WithAnalyticsEvents(DatePicker))
-              dateFormat="MM/DD/YYYY"
+            <LatticeDatePicker
               id="luk-search-dob"
               name="dob"
               onChange={[Function]}
-              placeholder="MM/DD/YYYY"
-              selectProps={
-                Object {
-                  "styles": Object {
-                    "clearIndicator": [Function],
-                    "container": [Function],
-                    "control": [Function],
-                    "dropdownIndicator": [Function],
-                    "indicatorSeparator": [Function],
-                    "indicatorsContainer": [Function],
-                    "menu": [Function],
-                    "menuPortal": [Function],
-                    "option": [Function],
-                    "singleValue": [Function],
-                  },
-                }
-              }
               value=""
             />
           </div>
