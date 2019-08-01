@@ -1,24 +1,24 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import TimePicker, { props } from './TimePicker';
+import LatticeTimePicker, { defaultProps } from './TimePicker';
 
 describe('TimePicker', () => {
 
   test('render matches snapshot', () => {
-    const tree = shallow(<TimePicker />);
+    const tree = shallow(<LatticeTimePicker />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 
   test('should render internal TimePicker', () => {
-    const wrapper = mount(<TimePicker />);
+    const wrapper = mount(<LatticeTimePicker />);
     expect(wrapper.find('TimePicker').exists()).toBeTruthy();
   });
 
-  test('internal DatePicker should have selectProps', () => {
-    const wrapper = mount(<TimePicker />);
+  test('internal TimePicker should have selectProps', () => {
+    const wrapper = mount(<LatticeTimePicker />);
     const timePickerProps = wrapper.find('TimePicker').props();
-    expect(timePickerProps.selectProps).toEqual(props.selectProps);
+    expect(timePickerProps.selectProps).toEqual(defaultProps.selectProps);
   });
 
 });
