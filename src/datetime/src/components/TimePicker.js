@@ -1,11 +1,11 @@
 import { TimePicker } from '@atlaskit/datetime-picker';
-import withProps from '../../../components/withProps';
 import selectStyles from '../../../style/selectStyles';
 
 export const props = {
-  selectProps: {
-    styles: selectStyles
-  }
+  selectProps: { styles: selectStyles },
+  timeIsEditable: true
 };
 
-export default withProps(TimePicker, props);
+TimePicker.defaultProps = props;
+
+export default TimePicker;
