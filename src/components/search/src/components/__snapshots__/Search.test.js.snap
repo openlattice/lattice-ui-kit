@@ -49,7 +49,7 @@ exports[`Search snapshots should match snapshot 1`] = `
             >
               Date of Birth
             </Label>
-            <LatticeWrapper
+            <LatticeDatePicker
               id="luk-search-dob"
               name="dob"
               onChange={[Function]}

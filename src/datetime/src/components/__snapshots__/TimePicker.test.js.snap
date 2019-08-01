@@ -18,5 +18,6 @@ exports[`TimePicker render matches snapshot 1`] = `
       },
     }
   }
+  timeIsEditable={true}
 />
 `;
