@@ -1,7 +1,3 @@
-/*
- * @flow
- */
-
 import { css } from 'styled-components';
 
 import { NEUTRALS, WHITE } from '../../../../colors';
