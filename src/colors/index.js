@@ -13,6 +13,7 @@ import {
   BLACK,
   BLUE_1,
   BLUE_2,
+  GREENS,
   GREEN_1,
   GREEN_2,
   GREEN_3,
@@ -22,15 +23,17 @@ import {
   OVERLAY_BG,
   PEACH_1,
   PURPLES,
+  REDS,
   RED_1,
-  YELLOW_1,
   WHITE,
+  YELLOW_1,
 } from './src/Colors';
 
 export {
   BLACK,
   BLUE_1,
   BLUE_2,
+  GREENS,
   GREEN_1,
   GREEN_2,
   GREEN_3,
@@ -40,7 +43,8 @@ export {
   OVERLAY_BG,
   PEACH_1,
   PURPLES,
+  REDS,
   RED_1,
-  YELLOW_1,
   WHITE,
+  YELLOW_1,
 };
