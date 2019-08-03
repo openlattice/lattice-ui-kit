@@ -35,7 +35,7 @@ input:hover ~ .c2 {
 }
 
 input:focus-visible ~ .c2 {
-  box-shadow: #361876 0 0 0 2px;
+  box-shadow: #410ab5 0 0 0 2px;
 }
 
 input:checked ~ .c2 {
@@ -182,7 +182,7 @@ input:checked ~ .c2:after {
                     "input:hover ~ &{background-color:",
                     "#8e929b",
                     ";}input:focus-visible ~ &{box-shadow:",
-                    "#361876",
+                    "#410ab5",
                     " 0 0 0 2px;}input:checked ~ &{background-color:",
                     "#8045ff",
                     ";}input:checked:hover ~ &{background-color:",

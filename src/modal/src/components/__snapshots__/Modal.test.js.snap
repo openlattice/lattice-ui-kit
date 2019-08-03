@@ -219,8 +219,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 .c10:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #361876;
-  border-color: #361876;
+  background-color: #410ab5;
+  border-color: #410ab5;
 }
 
 .c10:disabled {
@@ -233,7 +233,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c10:focus-visible {
-  box-shadow: #361876 0 0 0 2px;
+  box-shadow: #410ab5 0 0 0 2px;
 }
 
 .c14 {
@@ -545,8 +545,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 .c10:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #361876;
-  border-color: #361876;
+  background-color: #410ab5;
+  border-color: #410ab5;
 }
 
 .c10:disabled {
@@ -559,7 +559,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c10:focus-visible {
-  box-shadow: #361876 0 0 0 2px;
+  box-shadow: #410ab5 0 0 0 2px;
 }
 
 .c14 {
