@@ -25,13 +25,39 @@ export const NEUTRALS :string[] = [
  */
 
 export const PURPLES :string[] = [
-  '#361876',
+  '#410ab5',
   '#6124e2',
   '#8045ff',
   '#b898ff',
   '#d0bbff',
   '#e4d8ff',
   '#e6e6f7',
+];
+
+/*
+ * greens
+ */
+
+export const GREENS :string[] = [
+  '#d3f0e6',
+  '#ace5d1',
+  '#7cd6b6',
+  '#0aaf77',
+  '#089c6a',
+  '#047750',
+];
+
+/*
+ * reds
+ */
+
+export const REDS :string[] = [
+  '#ffd0cb',
+  '#ffbeb7',
+  '#fb9f95',
+  '#e43424',
+  '#d02010',
+  '#bd0000',
 ];
 
 /*

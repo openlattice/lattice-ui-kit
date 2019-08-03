@@ -426,6 +426,434 @@ exports[`button mode="default" should match snapshot 2`] = `
 </Button>
 `;
 
+exports[`button mode="negative" should match snapshot 1`] = `
+.c1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-width: 14px;
+}
+
+.c2 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c0 {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  white-space: nowrap;
+  background-color: #ffd0cb;
+  border-color: #ffd0cb;
+  color: #e43424;
+}
+
+.c0:hover {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #ffbeb7;
+  border-color: #ffbeb7;
+  color: #d02010;
+}
+
+.c0:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #fb9f95;
+  border-color: #fb9f95;
+  color: #bd0000;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
+}
+
+.c0:focus-visible {
+  box-shadow: #fb9f95 0 0 0 2px;
+}
+
+<Button
+  disabled={false}
+  isLoading={false}
+  mode="negative"
+  onClick={[Function]}
+  type="button"
+>
+  <StyledButton
+    disabled={false}
+    mode="negative"
+    onClick={[Function]}
+    type="button"
+  >
+    <StyledComponent
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledButton-sc-1etazn9-0",
+            "isStatic": false,
+            "lastClassName": "kbsHZg",
+            "rules": Array [
+              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;white-space:nowrap;",
+              [Function],
+              ";:hover{cursor:pointer;text-decoration:none;",
+              [Function],
+              "};:active{text-decoration:none;",
+              [Function],
+              "};:disabled{cursor:not-allowed;text-decoration:none;",
+              [Function],
+              "};:focus-visible{",
+              [Function],
+              "}",
+            ],
+          },
+          "displayName": "StyledButton",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledButton-sc-1etazn9-0",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="negative"
+      onClick={[Function]}
+      type="button"
+    >
+      <button
+        className="c0"
+        disabled={false}
+        mode="negative"
+        onClick={[Function]}
+        type="button"
+      >
+        <ContentWrapper>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "ContentWrapper-sc-36hfub-0",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
+                  ],
+                },
+                "displayName": "ContentWrapper",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "ContentWrapper-sc-36hfub-0",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c1"
+            >
+              <Content
+                isLoading={false}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Content-sc-18psqsj-0",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "flex:1 1 auto;opacity:",
+                          [Function],
+                          ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                        ],
+                      },
+                      "displayName": "Content",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Content-sc-18psqsj-0",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  isLoading={false}
+                >
+                  <span
+                    className="c2"
+                  >
+                    NEGATIVE_BUTTON
+                  </span>
+                </StyledComponent>
+              </Content>
+            </span>
+          </StyledComponent>
+        </ContentWrapper>
+      </button>
+    </StyledComponent>
+  </StyledButton>
+</Button>
+`;
+
+exports[`button mode="positive" should match snapshot 1`] = `
+.c1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-width: 14px;
+}
+
+.c2 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c0 {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  white-space: nowrap;
+  background-color: #d3f0e6;
+  border-color: #d3f0e6;
+  color: #0aaf77;
+}
+
+.c0:hover {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #ace5d1;
+  border-color: #ace5d1;
+  color: #089c6a;
+}
+
+.c0:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #7cd6b6;
+  border-color: #7cd6b6;
+  color: #047750;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
+}
+
+.c0:focus-visible {
+  box-shadow: #7cd6b6 0 0 0 2px;
+}
+
+<Button
+  disabled={false}
+  isLoading={false}
+  mode="positive"
+  onClick={[Function]}
+  type="button"
+>
+  <StyledButton
+    disabled={false}
+    mode="positive"
+    onClick={[Function]}
+    type="button"
+  >
+    <StyledComponent
+      disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledButton-sc-1etazn9-0",
+            "isStatic": false,
+            "lastClassName": "jXikBh",
+            "rules": Array [
+              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;white-space:nowrap;",
+              [Function],
+              ";:hover{cursor:pointer;text-decoration:none;",
+              [Function],
+              "};:active{text-decoration:none;",
+              [Function],
+              "};:disabled{cursor:not-allowed;text-decoration:none;",
+              [Function],
+              "};:focus-visible{",
+              [Function],
+              "}",
+            ],
+          },
+          "displayName": "StyledButton",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledButton-sc-1etazn9-0",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="positive"
+      onClick={[Function]}
+      type="button"
+    >
+      <button
+        className="c0"
+        disabled={false}
+        mode="positive"
+        onClick={[Function]}
+        type="button"
+      >
+        <ContentWrapper>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "ContentWrapper-sc-36hfub-0",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
+                  ],
+                },
+                "displayName": "ContentWrapper",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "ContentWrapper-sc-36hfub-0",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c1"
+            >
+              <Content
+                isLoading={false}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Content-sc-18psqsj-0",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "flex:1 1 auto;opacity:",
+                          [Function],
+                          ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                        ],
+                      },
+                      "displayName": "Content",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Content-sc-18psqsj-0",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  isLoading={false}
+                >
+                  <span
+                    className="c2"
+                  >
+                    POSITIVE_BUTTON
+                  </span>
+                </StyledComponent>
+              </Content>
+            </span>
+          </StyledComponent>
+        </ContentWrapper>
+      </button>
+    </StyledComponent>
+  </StyledButton>
+</Button>
+`;
+
 exports[`button mode="primary" should match snapshot 1`] = `
 .c1 {
   -webkit-align-self: center;
@@ -486,8 +914,8 @@ exports[`button mode="primary" should match snapshot 1`] = `
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #361876;
-  border-color: #361876;
+  background-color: #410ab5;
+  border-color: #410ab5;
 }
 
 .c0:disabled {
@@ -500,7 +928,7 @@ exports[`button mode="primary" should match snapshot 1`] = `
 }
 
 .c0:focus-visible {
-  box-shadow: #361876 0 0 0 2px;
+  box-shadow: #410ab5 0 0 0 2px;
 }
 
 <Button
@@ -737,7 +1165,7 @@ exports[`button mode="secondary" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "hhtkWi",
+            "lastClassName": "lgmoTM",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;white-space:nowrap;",
               [Function],
@@ -949,7 +1377,7 @@ exports[`button mode="subtle" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "jXikBh",
+            "lastClassName": "ejRXdW",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;white-space:nowrap;",
               [Function],
