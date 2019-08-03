@@ -48,6 +48,19 @@ export const GREENS :string[] = [
 ];
 
 /*
+ * reds
+ */
+
+export const REDS :string[] = [
+  '#ffd0cb',
+  '#ffbeb7',
+  '#fb9f95',
+  '#e43424',
+  '#d02010',
+  '#bd0000',
+];
+
+/*
  * specific colors
  */
 

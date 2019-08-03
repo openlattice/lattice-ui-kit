@@ -23,6 +23,7 @@ import {
   OVERLAY_BG,
   PEACH_1,
   PURPLES,
+  REDS,
   RED_1,
   WHITE,
   YELLOW_1,
@@ -42,7 +43,8 @@ export {
   OVERLAY_BG,
   PEACH_1,
   PURPLES,
+  REDS,
   RED_1,
-  YELLOW_1,
   WHITE,
+  YELLOW_1,
 };

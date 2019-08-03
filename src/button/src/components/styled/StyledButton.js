@@ -41,12 +41,21 @@ import {
   positiveStyle,
 } from './PositiveButtonStyles';
 
+import {
+  negativeActive,
+  negativeDisabled,
+  negativeFocus,
+  negativeHover,
+  negativeStyle,
+} from './NegativeButtonStyles';
+
 const baseButtonVariation = getStyleVariation('mode', {
   default: defaultStyle,
   primary: primaryStyle,
   secondary: secondaryStyle,
   subtle: subtleStyle,
   positive: positiveStyle,
+  negative: negativeStyle,
 });
 
 const hoverVariation = getStyleVariation('mode', {
@@ -55,6 +64,7 @@ const hoverVariation = getStyleVariation('mode', {
   secondary: secondaryHover,
   subtle: subtleHover,
   positive: positiveHover,
+  negative: negativeHover,
 });
 
 const activeVariation = getStyleVariation('mode', {
@@ -63,6 +73,7 @@ const activeVariation = getStyleVariation('mode', {
   secondary: secondaryActive,
   subtle: subtleActive,
   positive: positiveActive,
+  negative: negativeActive,
 });
 
 const disabledVariation = getStyleVariation('mode', {
@@ -71,6 +82,7 @@ const disabledVariation = getStyleVariation('mode', {
   secondary: secondaryDisabled,
   subtle: subtleDisabled,
   positive: positiveDisabled,
+  negative: negativeDisabled,
 });
 
 const focusVariation = getStyleVariation('mode', {
@@ -79,6 +91,7 @@ const focusVariation = getStyleVariation('mode', {
   secondary: secondaryFocus,
   subtle: subtleFocus,
   positive: positiveFocus,
+  negative: negativeFocus,
 });
 
 const StyledButton = styled.button`
