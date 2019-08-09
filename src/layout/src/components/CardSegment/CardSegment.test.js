@@ -39,6 +39,12 @@ describe('CardSegment', () => {
         expect(wrapper).toHaveStyleRule('background-color', '#ffffff');
       });
 
+      test('noBleed', () => {
+        const wrapper = mount(<CardSegment noBleed />);
+        expect(wrapper).toHaveStyleRule('margin', '0 30px');
+        expect(wrapper).toHaveStyleRule('padding', '30px 0');
+      });
+
       test('onClick', () => {
         const wrapper = mount(<CardSegment onClick={() => {}} />);
         expect(wrapper).toHaveStyleRule('cursor', 'pointer', {

@@ -54,9 +54,15 @@ storiesOf('Layout', module)
   .add('CardSegment', () => (
     <CardStack>
       <Card>
-        <CardSegment>
-          Basic
-        </CardSegment>
+        <CardSegment>Segment 1</CardSegment>
+        <CardSegment>Segment 2</CardSegment>
+        <CardSegment>Segment 3</CardSegment>
+      </Card>
+
+      <Card>
+        <CardSegment noBleed>Segment 1</CardSegment>
+        <CardSegment noBleed>Segment 2</CardSegment>
+        <CardSegment noBleed>Segment 3</CardSegment>
       </Card>
 
       <Card>

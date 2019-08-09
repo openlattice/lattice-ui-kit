@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 
 type ComputedSegmentProps = {
   bgColor :string;
+  noBleed :number;
   onClick :() => void;
   padding :'sm' | 'md';
   vertical :boolean;
@@ -11,6 +12,7 @@ type ComputedSegmentProps = {
 const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
   const {
     bgColor,
+    noBleed,
     onClick,
     padding,
     vertical,
@@ -26,12 +28,15 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
     cursor = 'pointer';
   }
 
-  let finalPadding = '30px';
+  const finalMargin = noBleed ? '0 30px' : '0';
+  const lrPadding = noBleed ? '0' : '30px';
+
+  let finalPadding = `30px ${lrPadding}`;
   if (padding === 'sm') {
-    finalPadding = '10px 30px';
+    finalPadding = `10px ${lrPadding}`;
   }
   else if (padding === 'md') {
-    finalPadding = '20px 30px';
+    finalPadding = `20px ${lrPadding}`;
   }
 
   let flexDirection = 'row';
@@ -42,6 +47,7 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
   const styles = css`
     background-color: ${backgroundColor};
     flex-direction: ${flexDirection};
+    margin: ${finalMargin};
     padding: ${finalPadding};
     &:hover {
       cursor: ${cursor}
