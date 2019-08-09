@@ -14,7 +14,8 @@ exports[`CardSegment snapshots Without child 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 30px;
+  margin: 0;
+  padding: 30px 30px;
 }
 
 .c0:hover {
@@ -69,7 +70,8 @@ exports[`CardSegment snapshots with > 1 child 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 30px;
+  margin: 0;
+  padding: 30px 30px;
 }
 
 .c0:hover {
