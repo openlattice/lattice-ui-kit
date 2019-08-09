@@ -81,8 +81,8 @@
     "lorem-ipsum": "~2.0.2",
     "npm-run-all": "~4.1.0",
     "raw-loader": "~3.1.0",
-    "react": "~16.8.0",
-    "react-dom": "~16.8.0",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
     "rimraf": "~2.6.0",
     "style-loader": "~1.0.0",
     "styled-components": "~4.3.0",
@@ -99,8 +99,8 @@
     "@babel/polyfill": "~7.4.0",
     "@babel/runtime": "~7.5.0",
     "polished": "~3.4.0",
-    "react": "~16.8.0",
-    "react-dom": "~16.8.0",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
     "styled-components": "~4.3.0"
   },
   "scripts": {
