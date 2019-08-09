@@ -5,12 +5,13 @@ import choiceIndicatorStyles from './ChoiceIndicatorStyles';
 const afterStyles = css`
   content: '';
   border: solid ${WHITE};
+  top: 4px;
+  width: 5px;
   border-width: 0 2px 2px 0;
-  height: 8px;
+  box-sizing: border-box;
+  height: 10px;
   left: 8px;
   position: absolute;
-  top: 4px;
-  width: 3px;
   transform: rotate(45deg) scale(1);
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 `;
