@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 type ComputedSegmentProps = {
   bgColor :string;
-  noBleed :number;
+  noBleed :boolean;
   onClick :() => void;
   padding :'sm' | 'md';
   vertical :boolean;
