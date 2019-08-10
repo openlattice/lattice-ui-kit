@@ -65,7 +65,7 @@
     "enzyme-adapter-react-16": "~1.14.0",
     "enzyme-to-json": "~3.4.0",
     "eslint": "~6.1.0",
-    "eslint-config-airbnb": "~17.1.0",
+    "eslint-config-airbnb": "~18.0.0",
     "eslint-import-resolver-webpack": "~0.11.0",
     "eslint-loader": "~2.2.0",
     "eslint-plugin-flowtype": "~4.0.0",
