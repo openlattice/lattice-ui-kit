@@ -20,6 +20,8 @@ const subtleActive = css`
 
 const subtleDisabled = css`
   color: ${NEUTRALS[2]};
+  background-color: transparent;
+  border-color: transparent;
 `;
 
 const subtleFocus = css`
