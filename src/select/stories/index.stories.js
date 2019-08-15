@@ -10,7 +10,7 @@ import { stateOptions, REACT_SELECT_USAGE } from './constants';
 const customIcon = () => <FontAwesomeIcon icon={faNarwhal} spin />;
 
 storiesOf('Select', module)
-  .addDecorator(storyFn => (
+  .addDecorator((storyFn) => (
     <div>
       <a href="https://react-select.com/home">
         React-Select Documentation

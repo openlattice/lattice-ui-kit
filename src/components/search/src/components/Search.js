@@ -229,7 +229,7 @@ class Search extends Component<Props, State> {
     const { filterFields } = this.props;
     if (Array.isArray(filterFields) && filterFields.length) {
       const filterFieldComponents = filterFields.map((filter :FilterFieldDefinition) => {
-        const options :ReactSelectOption[] = filter.options.map(v => ({ label: v, value: v }));
+        const options :ReactSelectOption[] = filter.options.map((v) => ({ label: v, value: v }));
         return (
           <div key={`luk-filter-key-${filter.id}`}>
             <Label

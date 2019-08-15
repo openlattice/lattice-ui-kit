@@ -17,10 +17,10 @@ export const defaultProps = {
   closeMenuOnSelect: false,
 };
 
-const CheckboxSelect = props => (
+const CheckboxSelect = (props) => (
   <SelectController
       {...props} // eslint-disable-line indent
-      render={(selectProps => <ReactSelect {...mergeDeep(defaultProps, selectProps)} />)} />
+      render={((selectProps) => <ReactSelect {...mergeDeep(defaultProps, selectProps)} />)} />
 );
 
 export default CheckboxSelect;

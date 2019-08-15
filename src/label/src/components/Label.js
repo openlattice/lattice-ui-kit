@@ -39,7 +39,7 @@ const Label = styled.label`
   font-size: 14px;
   font-stretch: normal;
   font-style: normal;
-  font-weight: ${props => (props.bold ? '600' : 'normal')};
+  font-weight: ${(props) => (props.bold ? '600' : 'normal')};
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
   ${getSubtleStyles};

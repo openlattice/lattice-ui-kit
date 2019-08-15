@@ -10,7 +10,7 @@ const mockFilterFields :FilterFieldDefinition[] = [
   {
     filterCallback: (searchResult :Map, filterValues :ReactSelectValue) => {
       if (isArray(filterValues)) {
-        const values = filterValues.map(option => option.value);
+        const values = filterValues.map((option) => option.value);
         const searchResultValue = searchResult.get('reportType');
 
         if (values.length) {
@@ -27,7 +27,7 @@ const mockFilterFields :FilterFieldDefinition[] = [
   {
     filterCallback: (searchResult :Map, filterValues :ReactSelectValue) => {
       if (isArray(filterValues)) {
-        const values = filterValues.map(option => option.value);
+        const values = filterValues.map((option) => option.value);
         const searchResultValue :any[] = searchResult.get('badges', []);
 
         if (values.length) {
@@ -44,7 +44,7 @@ const mockFilterFields :FilterFieldDefinition[] = [
   {
     filterCallback: (searchResult :Map, filterValues :ReactSelectValue) => {
       if (isArray(filterValues)) {
-        const values = filterValues.map(option => option.value);
+        const values = filterValues.map((option) => option.value);
         const searchResultValue = searchResult.get('submitter');
 
         if (values.length) {

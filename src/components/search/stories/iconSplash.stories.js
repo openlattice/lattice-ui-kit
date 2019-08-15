@@ -19,7 +19,7 @@ storiesOf('Icon Splash', module)
     <Card>
       <CardSegment>
         <IconSplash
-            icon={size => (
+            icon={(size) => (
               <FontAwesomeIcon icon={faDiceD20} size={size} fixedWidth spin />
             )}
             caption="Rolling the dice..." />

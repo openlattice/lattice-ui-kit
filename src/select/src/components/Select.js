@@ -10,10 +10,10 @@ export const defaultProps = {
   menuPlacement: 'auto'
 };
 
-const Select = props => (
+const Select = (props) => (
   <SelectController
       {...props} // eslint-disable-line indent
-      render={(selectProps => <ReactSelect {...mergeDeep(defaultProps, selectProps)} />)} />
+      render={((selectProps) => <ReactSelect {...mergeDeep(defaultProps, selectProps)} />)} />
 );
 
 export default Select;

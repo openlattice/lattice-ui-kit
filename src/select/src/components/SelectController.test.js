@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SelectController from './SelectController';
 import { OPTIONS } from './constants';
 
-const mockComponent = (selectProps => <ReactSelect {...selectProps} />);
+const mockComponent = ((selectProps) => <ReactSelect {...selectProps} />);
 
 describe('Select', () => {
 
@@ -190,7 +190,7 @@ describe('Select', () => {
       const selectedOptions = OPTIONS.slice(0, 2);
       handleChangeRawValues(selectedOptions, mockEvent);
 
-      const expectedValue = selectedOptions.map(option => option.value);
+      const expectedValue = selectedOptions.map((option) => option.value);
 
       expect(getValueSpy).toHaveBeenCalledWith(selectedOptions);
       expect(mockOnChange).toHaveBeenCalledWith(expectedValue, mockEvent);

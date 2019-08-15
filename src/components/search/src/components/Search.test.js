@@ -73,7 +73,7 @@ describe('Search', () => {
       });
 
       test('should render custom SearchResultComponent', () => {
-        const customComponent = props => <div {...props} />;
+        const customComponent = (props) => <div {...props} />;
         customComponent.displayName = 'CustomComponent';
         const wrapper = shallow(<Search searchResultsComponent={customComponent} />);
 

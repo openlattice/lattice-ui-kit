@@ -60,8 +60,8 @@ class PersonResult extends Component<Props> {
         <ResultWrapper>
           <ResultDetails>
             <StyledResultGrid>
-              { details
-                && details.map((detail :Map, index :number) => (
+              {
+                details && details.map((detail :Map, index :number) => (
                   <div key={index.toString()}>
                     <Label bold>
                       {detail.get('label', '')}
