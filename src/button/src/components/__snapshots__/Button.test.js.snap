@@ -100,7 +100,7 @@ exports[`button mode="default" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "HTRbW",
+            "lastClassName": "cMLAPg",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;white-space:nowrap;",
               [Function],
@@ -313,7 +313,7 @@ exports[`button mode="default" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "HTRbW",
+            "lastClassName": "cMLAPg",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;white-space:nowrap;",
               [Function],
@@ -1322,8 +1322,8 @@ exports[`button mode="subtle" should match snapshot 1`] = `
   -webkit-transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
   transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
   white-space: nowrap;
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: transparent;
+  border-color: transparent;
   color: #6124e2;
 }
 
@@ -1346,8 +1346,8 @@ exports[`button mode="subtle" should match snapshot 1`] = `
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: transparent;
+  border-color: transparent;
   color: #b6bbc7;
 }
 
