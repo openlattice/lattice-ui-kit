@@ -15,6 +15,7 @@ type Props = {
   value ? :any;
 };
 
+/* eslint-disable react/jsx-props-no-spreading */
 const Radio = ({
   label,
   id,
@@ -28,6 +29,7 @@ const Radio = ({
     <RadioIndicator />
   </ChoiceLabel>
 );
+/* eslint-enable */
 
 Radio.defaultProps = {
   checked: undefined,

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 import { storiesOf } from '@storybook/react';
 
@@ -27,12 +27,12 @@ class OverlayExample extends Component {
     const { children } = this.props;
     const { isVisible } = this.state;
     return (
-      <Fragment>
+      <>
         <Overlay isVisible={isVisible}>
           { children }
         </Overlay>
         <Button onClick={this.show}>Show Overlay</Button>
-      </Fragment>
+      </>
     );
   }
 }

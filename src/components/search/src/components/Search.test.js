@@ -73,7 +73,8 @@ describe('Search', () => {
       });
 
       test('should render custom SearchResultComponent', () => {
-        const customComponent = props => <div {...props} />;
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        const customComponent = (props) => <div {...props} />;
         customComponent.displayName = 'CustomComponent';
         const wrapper = shallow(<Search searchResultsComponent={customComponent} />);
 

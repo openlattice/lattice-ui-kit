@@ -8,7 +8,7 @@ const ChoiceLabel = styled.label`
   margin: 10px 0;
   min-height: 20px;
   padding-left: 30px;
-  pointer-events: ${props => (props.readOnly ? 'none' : 'auto')};
+  pointer-events: ${(props) => (props.readOnly ? 'none' : 'auto')};
   position: relative;
 `;
 

@@ -10,10 +10,12 @@ export const defaultProps = {
   menuPlacement: 'auto'
 };
 
-const Creatable = props => (
+/* eslint-disable react/jsx-props-no-spreading */
+const Creatable = (props) => (
   <SelectController
       {...props} // eslint-disable-line indent
-      render={(selectProps => <ReactSelectCreatable {...mergeDeep(defaultProps, selectProps)} />)} />
+      render={((selectProps) => <ReactSelectCreatable {...mergeDeep(defaultProps, selectProps)} />)} />
 );
+/* eslint-enable */
 
 export default Creatable;

@@ -1,4 +1,7 @@
-// @flow
+/*
+ * @flow
+ */
+
 import React, { Component } from 'react';
 import type { ElementConfig, Element } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -23,11 +26,13 @@ class DropdownIndicator extends Component<Props> {
   }
 
   render() {
+    /* eslint-disable react/jsx-props-no-spreading */
     return (
       <RSDropdownIndicator {...this.props}>
         { this.renderIcon() }
       </RSDropdownIndicator>
     );
+    /* eslint-enable */
   }
 }
 

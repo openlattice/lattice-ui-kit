@@ -23,9 +23,10 @@ const StepIcon = ({
   return (
     <IconLayer className={styledClassName}>
       <FontAwesomeIcon icon={faCircle} color={(active || complete) ? PURPLES[2] : NEUTRALS[1]} />
-      { complete
-        ? <FontAwesomeIcon icon={faCheck} color={WHITE} transform="shrink-7" />
-        : <StepIndex className="fa-layers-text fa-inverse">{index}</StepIndex>
+      {
+        complete
+          ? <FontAwesomeIcon icon={faCheck} color={WHITE} transform="shrink-7" />
+          : <StepIndex className="fa-layers-text fa-inverse">{index}</StepIndex>
       }
     </IconLayer>
   );

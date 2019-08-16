@@ -12,7 +12,9 @@ export const defaultProps = {
 
 const LatticeDatePicker = (props) => {
   const mergedProps = mergeDeep(defaultProps, props);
+  /* eslint-disable react/jsx-props-no-spreading */
   return <DatePicker {...mergedProps} />;
+  /* eslint-enable */
 };
 
 export default LatticeDatePicker;

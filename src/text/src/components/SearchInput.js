@@ -47,6 +47,7 @@ type Props = {
   value ?:any;
 };
 
+/* eslint-disable react/jsx-props-no-spreading */
 const SearchInput = (props :Props) => (
   <SearchInputWrapper>
     <SearchIcon>
@@ -55,6 +56,7 @@ const SearchInput = (props :Props) => (
     <Input {...props} type="search" />
   </SearchInputWrapper>
 );
+/* eslint-enable */
 
 SearchInput.defaultProps = {
   disabled: false,

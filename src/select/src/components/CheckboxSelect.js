@@ -17,10 +17,12 @@ export const defaultProps = {
   closeMenuOnSelect: false,
 };
 
-const CheckboxSelect = props => (
+/* eslint-disable react/jsx-props-no-spreading */
+const CheckboxSelect = (props) => (
   <SelectController
       {...props} // eslint-disable-line indent
-      render={(selectProps => <ReactSelect {...mergeDeep(defaultProps, selectProps)} />)} />
+      render={((selectProps) => <ReactSelect {...mergeDeep(defaultProps, selectProps)} />)} />
 );
+/* eslint-enable */
 
 export default CheckboxSelect;

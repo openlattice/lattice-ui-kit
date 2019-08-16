@@ -10,10 +10,12 @@ export const defaultProps = {
   menuPlacement: 'auto'
 };
 
-const Select = props => (
+/* eslint-disable react/jsx-props-no-spreading */
+const Select = (props) => (
   <SelectController
       {...props} // eslint-disable-line indent
-      render={(selectProps => <ReactSelect {...mergeDeep(defaultProps, selectProps)} />)} />
+      render={((selectProps) => <ReactSelect {...mergeDeep(defaultProps, selectProps)} />)} />
 );
+/* eslint-enable */
 
 export default Select;

@@ -32,7 +32,7 @@ const selectStyles = {
     };
     return { ...base, ...style };
   },
-  menuPortal: base => ({ ...base, zIndex: 550 }),
+  menuPortal: (base) => ({ ...base, zIndex: 550 }),
   menu: (base, state) => {
     const { selectProps } = state;
     const display = (selectProps && selectProps.hideMenu) ? 'none' : 'block';
@@ -64,8 +64,8 @@ const selectStyles = {
     return { ...base, color: isDisabled ? NEUTRALS[1] : 'inherit' };
   },
   indicatorSeparator: () => ({ display: 'none' }),
-  indicatorsContainer: base => ({ ...base, marginRight: '10px', color: NEUTRALS[2] }),
-  clearIndicator: base => ({ ...base, padding: '0', margin: '5px' }),
+  indicatorsContainer: (base) => ({ ...base, marginRight: '10px', color: NEUTRALS[2] }),
+  clearIndicator: (base) => ({ ...base, padding: '0', margin: '5px' }),
   dropdownIndicator: (base, state) => {
     const { selectProps } = state;
     const style = {
