@@ -27,6 +27,7 @@ describe('TextArea', () => {
         pattern: '/.+/',
       };
 
+      // eslint-disable-next-line react/jsx-props-no-spreading
       const wrapper = mount(<TextArea {...nativeProps} />)
         .find('textarea')
         .props();

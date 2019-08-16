@@ -1,4 +1,7 @@
-// @flow
+/*
+ * @flow
+ */
+
 import React from 'react';
 
 import type { Ref } from 'react';
@@ -34,11 +37,13 @@ const Option = (props :OptionProps) => {
     width: '100%'
   };
 
+  /* eslint-disable react/jsx-props-no-spreading */
   return (
     <div ref={innerRef} {...innerProps} style={style}>
       <Checkbox checked={isSelected} label={label} readOnly />
     </div>
   );
+  /* eslint-enable */
 };
 
 export default Option;

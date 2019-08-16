@@ -27,6 +27,7 @@ describe('Input', () => {
         pattern: '/.+/',
       };
 
+      // eslint-disable-next-line react/jsx-props-no-spreading
       const wrapper = mount(<Input {...nativeProps} />)
         .find('input')
         .props();

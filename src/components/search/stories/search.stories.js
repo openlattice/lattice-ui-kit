@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+
 import React from 'react';
 import { Map } from 'immutable';
 import { storiesOf } from '@storybook/react';

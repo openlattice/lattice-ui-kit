@@ -20,6 +20,7 @@ describe('Checkbox', () => {
       form: 'test-form',
     };
 
+    // eslint-disable-next-line react/jsx-props-no-spreading
     const wrapper = mount(<Checkbox {...nativeProps} />)
       .find('input')
       .props();

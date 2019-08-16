@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SelectController from './SelectController';
 import { OPTIONS } from './constants';
 
+// eslint-disable-next-line react/jsx-props-no-spreading
 const mockComponent = ((selectProps) => <ReactSelect {...selectProps} />);
 
 describe('Select', () => {

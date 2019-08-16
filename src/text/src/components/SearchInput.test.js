@@ -41,6 +41,7 @@ describe('SearchInput', () => {
         placeholder: 'test placeholder',
         required: true,
       };
+      // eslint-disable-next-line react/jsx-props-no-spreading
       const wrapper = mount(<SearchInput {...props} />);
       expect(wrapper.find('input').props()).toEqual(expect.objectContaining(props));
     });

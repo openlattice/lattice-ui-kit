@@ -16,6 +16,7 @@ type Props = {
   value ? :any;
 }
 
+/* eslint-disable react/jsx-props-no-spreading */
 const Checkbox = ({
   id,
   label,
@@ -29,6 +30,7 @@ const Checkbox = ({
     <CheckboxIndicator />
   </ChoiceLabel>
 );
+/* eslint-enable */
 
 Checkbox.defaultProps = {
   checked: undefined,

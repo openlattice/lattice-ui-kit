@@ -39,6 +39,7 @@ const Button = (props :Props) => {
     ...rest
   } = props;
 
+  /* eslint-disable react/jsx-props-no-spreading */
   return (
     <StyledButton {...rest} disabled={isLoading || disabled}>
       <ContentWrapper>
@@ -49,6 +50,7 @@ const Button = (props :Props) => {
       </ContentWrapper>
     </StyledButton>
   );
+  /* eslint-enable */
 };
 
 Button.defaultProps = {
