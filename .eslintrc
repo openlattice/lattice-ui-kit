@@ -140,6 +140,6 @@
     ],
     "react/sort-comp": "off",
     "react/state-in-constructor": ["warn", "always"],
-    "react/static-property-placement": ["error", "static public field"],
+    "react/static-property-placement": ["error", "static public field"]
   }
 }
