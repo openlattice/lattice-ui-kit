@@ -34,7 +34,7 @@ const CardHeader = styled(CardSegment).attrs(() => ({
   align-items: baseline;
   background-color: ${backgroundColor};
   color: ${getFontColor};
-  flex: 0;
+  flex: none;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 `;
 

@@ -35,12 +35,12 @@ storiesOf('Stepper', module)
   })
   .add('Horizontal stepper', ({ currentStep }) => (
     <Stepper activeStep={currentStep}>
-      { steps.map(title => <Step key={title}>{title}</Step>) }
+      { steps.map((title) => <Step key={title}>{title}</Step>) }
     </Stepper>
   ))
   .add('Vertical stepper', ({ currentStep }) => (
     <Stepper activeStep={currentStep} vertical>
-      { steps.map(title => <Step key={title}>{title}</Step>) }
+      { steps.map((title) => <Step key={title}>{title}</Step>) }
     </Stepper>
   ))
   .add('Sequential stepper', ({ currentStep, setStep }) => (

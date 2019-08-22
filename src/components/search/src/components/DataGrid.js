@@ -49,8 +49,8 @@ class DataGrid extends Component<Props> {
 
     return (
       <ResultGrid className={className} columns={columns}>
-        { details
-          && details.map((detail :Map, index :number) => (
+        {
+          details && details.map((detail :Map, index :number) => (
             <div key={index.toString()}>
               <Label subtle>
                 {detail.get('label', '')}

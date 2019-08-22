@@ -20,6 +20,7 @@ describe('Radio', () => {
       form: 'test-form',
     };
 
+    // eslint-disable-next-line react/jsx-props-no-spreading
     const wrapper = mount(<Radio {...nativeProps} />)
       .find('input')
       .props();

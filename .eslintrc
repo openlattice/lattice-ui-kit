@@ -113,6 +113,8 @@
     "jsx-a11y/href-no-hash": "off",
 
     "react/forbid-prop-types": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
     "react/jsx-closing-bracket-location": [
       "error",
       {
@@ -137,7 +139,7 @@
       }
     ],
     "react/sort-comp": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react/state-in-constructor": ["warn", "always"],
+    "react/static-property-placement": ["error", "static public field"]
   }
 }

@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+
 import React from 'react';
 import { Map } from 'immutable';
 import { storiesOf } from '@storybook/react';
@@ -53,7 +55,7 @@ storiesOf('Search', module)
           title="Search"
           onSearch={action('search clicked')}
           searchResults={mockSearchResultsForPeople}
-          searchResultsComponent={props => <SearchResults {...props} resultLabels={mockResultLabels} />} />
+          searchResultsComponent={(props) => <SearchResults {...props} resultLabels={mockResultLabels} />} />
     </>
   ))
   .add('Search with custom resultComponent', () => (
@@ -63,7 +65,7 @@ storiesOf('Search', module)
           title="Search"
           onSearch={action('search clicked')}
           searchResults={mockSearchResultsForPeople}
-          resultComponent={props => <Result {...props} onClick={action('Result clicked')} />} />
+          resultComponent={(props) => <Result {...props} onClick={action('Result clicked')} />} />
     </>
   ))
   .add('Search Container', () => (

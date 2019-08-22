@@ -38,7 +38,7 @@ storiesOf('Layout', module)
     ];
     return (
       <CardStack>
-        { modes.map(mode => (
+        { modes.map((mode) => (
           <Card key={mode}>
             <CardHeader mode={mode} padding="sm">
               {mode}

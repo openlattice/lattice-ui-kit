@@ -33,7 +33,7 @@ class SelectController extends Component<Props> {
   getValue = (selectedOption :ReactSelectValue) :any => {
     const { isMulti } = this.props;
     if (isMulti && Array.isArray(selectedOption)) {
-      return selectedOption.map(option => option.value);
+      return selectedOption.map((option) => option.value);
     }
     if (selectedOption && !Array.isArray(selectedOption)) {
       return selectedOption.value;
@@ -48,7 +48,7 @@ class SelectController extends Component<Props> {
       return acc;
     }, {});
     if (isMulti && Array.isArray(value)) {
-      return value.map(v => this.getOption(v, optionsByValue));
+      return value.map((v) => this.getOption(v, optionsByValue));
     }
     if (value !== undefined && value !== null) {
       return this.getOption(value, optionsByValue);

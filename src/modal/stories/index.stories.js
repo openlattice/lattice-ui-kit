@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 import { storiesOf } from '@storybook/react';
 
@@ -39,7 +39,7 @@ storiesOf('Modal', module)
     <ModalExample>
       {
         ({ hide, isVisible, show }) => (
-          <Fragment>
+          <>
             <Modal
                 isVisible={isVisible}
                 onClose={hide}
@@ -54,7 +54,7 @@ storiesOf('Modal', module)
               </a>
             </Modal>
             <Button onClick={show}>Show Modal</Button>
-          </Fragment>
+          </>
         )
       }
     </ModalExample>
@@ -63,7 +63,7 @@ storiesOf('Modal', module)
     <ModalExample>
       {
         ({ hide, isVisible, show }) => (
-          <Fragment>
+          <>
             <Modal
                 isVisible={isVisible}
                 onClose={hide}
@@ -79,7 +79,7 @@ storiesOf('Modal', module)
               </a>
             </Modal>
             <Button onClick={show}>Show Modal</Button>
-          </Fragment>
+          </>
         )
       }
     </ModalExample>
@@ -88,7 +88,7 @@ storiesOf('Modal', module)
     <ModalExample>
       {
         ({ hide, isVisible, show }) => (
-          <Fragment>
+          <>
             <Modal
                 isVisible={isVisible}
                 onClose={hide}
@@ -103,7 +103,7 @@ storiesOf('Modal', module)
               </a>
             </Modal>
             <Button onClick={show}>Show Modal</Button>
-          </Fragment>
+          </>
         )
       }
     </ModalExample>
@@ -112,7 +112,7 @@ storiesOf('Modal', module)
     <ModalExample>
       {
         ({ hide, isVisible, show }) => (
-          <Fragment>
+          <>
             <Modal
                 isVisible={isVisible}
                 onClose={hide}
@@ -127,7 +127,7 @@ storiesOf('Modal', module)
               </a>
             </Modal>
             <Button onClick={show}>Show Modal</Button>
-          </Fragment>
+          </>
         )
       }
     </ModalExample>
@@ -136,7 +136,7 @@ storiesOf('Modal', module)
     <ModalExample>
       {
         ({ hide, isVisible, show }) => (
-          <Fragment>
+          <>
             <Modal
                 isVisible={isVisible}
                 onClose={hide}
@@ -152,7 +152,7 @@ storiesOf('Modal', module)
               </a>
             </Modal>
             <Button onClick={show}>Show Modal</Button>
-          </Fragment>
+          </>
         )
       }
     </ModalExample>
@@ -161,7 +161,7 @@ storiesOf('Modal', module)
     <ModalExample>
       {
         ({ hide, isVisible, show }) => (
-          <Fragment>
+          <>
             <Modal
                 isVisible={isVisible}
                 onClose={hide}
@@ -178,7 +178,7 @@ storiesOf('Modal', module)
               </a>
             </Modal>
             <Button onClick={show}>Show Modal</Button>
-          </Fragment>
+          </>
         )
       }
     </ModalExample>

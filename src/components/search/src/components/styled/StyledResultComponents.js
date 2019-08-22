@@ -5,7 +5,7 @@ const ResultGrid = styled.div`
   display: grid;
   flex: 1;
   grid-auto-flow: row;
-  grid-template-columns: ${props => props.columns && css`repeat(${props.columns}, minmax(0, 1fr))`};
+  grid-template-columns: ${(props) => props.columns && css`repeat(${props.columns}, minmax(0, 1fr))`};
   grid-gap: 20px 30px;
 `;
 

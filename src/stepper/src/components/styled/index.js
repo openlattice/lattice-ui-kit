@@ -34,14 +34,14 @@ const StepIndex = styled.span`
 
 const StepLabel = styled.span`
   margin-left: 8px;
-  font-weight: ${props => props.active && '600'};
+  font-weight: ${(props) => props.active && '600'};
 `;
 
 const StepWrapper = styled.div`
   display: flex;
   align-items: center;
   padding: 10px;
-  cursor: ${props => props.onClick && 'pointer'};
+  cursor: ${(props) => props.onClick && 'pointer'};
 `;
 
 const getStepperOrientationStyles = ({ vertical }) => {
