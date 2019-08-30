@@ -1,6 +1,7 @@
 // @flow
 
 import styled, { css } from 'styled-components';
+
 import {
   GREEN_1,
   NEUTRALS,
@@ -8,6 +9,7 @@ import {
   WHITE,
   YELLOW_1,
 } from '../../../../colors';
+import { duration } from '../../../../style/transitions';
 import { getStyleVariation } from '../../../../utils/StyleUtils';
 
 type ContainerProps = {
@@ -54,7 +56,7 @@ const Container = styled.div`
   color: ${getFontColor};
   max-height: ${getMaxHeight};
   overflow: hidden;
-  transition: max-height 0.25s ease-in-out;
+  transition: max-height ${duration.enteringScreen} ease-in-out;
   ${getPosition}
 `;
 
