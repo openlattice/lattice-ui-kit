@@ -56,7 +56,7 @@ const Container = styled.div`
   color: ${getFontColor};
   max-height: ${getMaxHeight};
   overflow: hidden;
-  transition: max-height ${duration.enteringScreen} ease-in-out;
+  transition: max-height ${duration.enter} ease-in-out;
   ${getPosition}
 `;
 

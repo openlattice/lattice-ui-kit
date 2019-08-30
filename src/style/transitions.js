@@ -1,6 +1,6 @@
 const duration = {
-  enteringScreen: '250ms',
-  leavingScreen: '200ms',
+  enter: '250ms',
+  exit: '200ms',
   standard: '200ms',
   swift: '100ms',
 };
