@@ -26,8 +26,8 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
   font-size: 14px;
   padding: 10px;
   text-overflow: ellipsis;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 200ms ease-in-out,border-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out,border-color 200ms ease-in-out;
   width: 100%;
   color: #555e6f;
   padding-left: 32px;
@@ -213,7 +213,11 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                     [Function],
                     ";box-shadow:0;box-sizing:border-box;color:",
                     "#555e6f",
-                    ";display:flex;flex:0 1 auto;font-size:14px;padding:10px;text-overflow:ellipsis;transition:background-color 0.2s ease-in-out,border-color 0.2s ease-in-out;width:",
+                    ";display:flex;flex:0 1 auto;font-size:14px;padding:10px;text-overflow:ellipsis;transition:background-color ",
+                    "200ms",
+                    " ease-in-out,border-color ",
+                    "200ms",
+                    " ease-in-out;width:",
                     [Function],
                     ";:hover{background-color:",
                     "#f0f0f7",

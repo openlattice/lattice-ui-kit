@@ -23,8 +23,8 @@ exports[`CardHeader snapshots with children 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 200ms ease-in-out,color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out,color 200ms ease-in-out;
 }
 
 .c0:hover {
@@ -50,7 +50,11 @@ exports[`CardHeader snapshots with children 1`] = `
             [Function],
             ";color:",
             [Function],
-            ";flex:none;transition:background-color 0.2s ease-in-out,color 0.2s ease-in-out;",
+            ";flex:none;transition:background-color ",
+            "200ms",
+            " ease-in-out,color ",
+            "200ms",
+            " ease-in-out;",
           ],
         },
         "displayName": "CardHeader",
@@ -97,8 +101,8 @@ exports[`CardHeader snapshots without children 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-transition: background-color 200ms ease-in-out,color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out,color 200ms ease-in-out;
 }
 
 .c0:hover {
@@ -124,7 +128,11 @@ exports[`CardHeader snapshots without children 1`] = `
             [Function],
             ";color:",
             [Function],
-            ";flex:none;transition:background-color 0.2s ease-in-out,color 0.2s ease-in-out;",
+            ";flex:none;transition:background-color ",
+            "200ms",
+            " ease-in-out,color ",
+            "200ms",
+            " ease-in-out;",
           ],
         },
         "displayName": "CardHeader",
