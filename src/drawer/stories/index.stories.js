@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 
 import Drawer from '../src/components/Drawer';
@@ -9,6 +10,11 @@ import {
   CardHeader,
   CardSegment
 } from '../../layout';
+
+const ButtonGroup = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;
 
 const DrawerController = () => {
   const [isLeftOpen, setLeft] = React.useState(false);
@@ -22,14 +28,14 @@ const DrawerController = () => {
         </strong>
       </CardHeader>
       <CardSegment vertical padding="sm">
-        <div>
+        <ButtonGroup>
           <Button onClick={() => setLeft(true)}>
             Left
           </Button>
           <Button onClick={() => setRight(true)}>
             Right
           </Button>
-        </div>
+        </ButtonGroup>
       </CardSegment>
       <Drawer
           side="left"
