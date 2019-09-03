@@ -1,6 +1,7 @@
 // @flow
 
 import styled, { css } from 'styled-components';
+import { WHITE } from '../../../../colors';
 
 type Props = {
   side :'left' | 'right';
@@ -24,7 +25,7 @@ const getPosition = (props :Props) => {
 
 const DrawerCard = styled.div`
   position: fixed;
-  background-color: white;
+  background-color: ${WHITE};
   height: 100%;
   width: 300px;
   top: 0;

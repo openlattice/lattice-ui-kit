@@ -106,4 +106,16 @@ describe('Drawer', () => {
 
   });
 
+  describe('render', () => {
+    test('should render with styles', () => {
+      const wrapper = mount(<Drawer isOpen />);
+
+      const drawerCardWrapper = wrapper.find('DrawerCard');
+      expect(drawerCardWrapper).toHaveStyleRule('position', 'fixed');
+      expect(drawerCardWrapper).toHaveStyleRule('height', '100%');
+      expect(drawerCardWrapper).toHaveStyleRule('z-index', '900');
+
+    });
+  });
+
 });
