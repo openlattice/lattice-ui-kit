@@ -738,7 +738,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
           </div>
         }
       >
-        <StyledOverlayComponents__OverlayOuterContainer>
+        <OverlayOuterContainer>
           <StyledComponent
             forwardedComponent={
               Object {
@@ -754,7 +754,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                     ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
                   ],
                 },
-                "displayName": "StyledOverlayComponents__OverlayOuterContainer",
+                "displayName": "OverlayOuterContainer",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
@@ -769,7 +769,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
             <div
               className="c0"
             >
-              <StyledOverlayComponents__OverlayInnerContainer
+              <OverlayInnerContainer
                 isScrollable={false}
                 onClick={[Function]}
               >
@@ -788,7 +788,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                           ";width:100%;",
                         ],
                       },
-                      "displayName": "StyledOverlayComponents__OverlayInnerContainer",
+                      "displayName": "OverlayInnerContainer",
                       "foldedComponentIds": Array [],
                       "render": [Function],
                       "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
@@ -1522,10 +1522,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                     </StyledModalComponents__ModalOuterContainer>
                   </div>
                 </StyledComponent>
-              </StyledOverlayComponents__OverlayInnerContainer>
+              </OverlayInnerContainer>
             </div>
           </StyledComponent>
-        </StyledOverlayComponents__OverlayOuterContainer>
+        </OverlayOuterContainer>
         <LockToggle
           accountForScrollbars={true}
           isActive={true}

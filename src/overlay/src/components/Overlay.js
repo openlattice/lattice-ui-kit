@@ -13,9 +13,9 @@ import Portal from '../../../portal';
 import { OverlayInnerContainer, OverlayOuterContainer } from './styled/StyledOverlayComponents';
 
 type Props = {
-  children :Node;
+  children ? :Node;
   isScrollable ?:boolean;
-  isVisible :boolean;
+  isVisible ? :boolean;
   onClose ? :() => void;
   shouldCloseOnClick ? :boolean;
 };
@@ -28,15 +28,17 @@ type Props = {
 export default class Overlay extends Component<Props> {
 
   static propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
     isScrollable: PropTypes.bool,
-    isVisible: PropTypes.bool.isRequired,
+    isVisible: PropTypes.bool,
     onClose: PropTypes.func,
     shouldCloseOnClick: PropTypes.bool,
   }
 
   static defaultProps = {
+    children: undefined,
     isScrollable: false,
+    isVisible: false,
     onClose: undefined,
     shouldCloseOnClick: true,
   }

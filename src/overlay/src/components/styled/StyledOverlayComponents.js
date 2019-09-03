@@ -18,6 +18,8 @@ export const OverlayOuterContainer = styled.div`
   z-index: 1000;
 `;
 
+OverlayOuterContainer.displayName = 'OverlayOuterContainer';
+
 export const OverlayInnerContainer = styled.div`
   display: block;
   height: 100%;
@@ -25,3 +27,5 @@ export const OverlayInnerContainer = styled.div`
   overflow-y: ${({ isScrollable }) => (isScrollable ? 'scroll' : 'visible')};
   width: 100%;
 `;
+
+OverlayInnerContainer.displayName = 'OverlayInnerContainer';
