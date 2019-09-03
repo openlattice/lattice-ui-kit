@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+
+import { duration } from '../../../../style/transitions';
 import { getStyleVariation } from '../../../../utils/StyleUtils';
 
 import {
@@ -106,7 +108,9 @@ const StyledButton = styled.button`
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  transition: background-color ${duration.swift} ease-in-out,
+    border-color ${duration.swift} ease-in-out,
+    box-shadow ${duration.swift} ease-in-out;
   white-space: nowrap;
   ${baseButtonVariation};
 

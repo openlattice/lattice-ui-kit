@@ -1,5 +1,7 @@
 import { css } from 'styled-components';
+
 import { NEUTRALS, PURPLES, RED_1 } from '../../../../colors';
+import { duration } from '../../../../style/transitions';
 
 const inputStyles = css`
   background-color: ${NEUTRALS[8]};
@@ -13,7 +15,8 @@ const inputStyles = css`
   font-size: 14px;
   padding: 10px;
   text-overflow: ellipsis;
-  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color ${duration.standard} ease-in-out,
+    border-color ${duration.standard} ease-in-out;
   width: ${(props) => (props.width || '100%')};
 
   :hover {

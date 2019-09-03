@@ -1,6 +1,9 @@
 import styled, { css } from 'styled-components';
-import { PURPLES, WHITE } from '../../../../colors';
+
 import choiceIndicatorStyles from './ChoiceIndicatorStyles';
+import { duration } from '../../../../style/transitions';
+import { PURPLES, WHITE } from '../../../../colors';
+
 
 const afterStyles = css`
   content: '';
@@ -13,7 +16,8 @@ const afterStyles = css`
   top: 4px;
   width: 5px;
   transform: rotate(45deg) scale(1);
-  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: transform ${duration.standard} ease-in-out,
+    opacity ${duration.standard} ease-in-out;
 `;
 
 const CheckboxIndicator = styled.div`
@@ -23,7 +27,8 @@ const CheckboxIndicator = styled.div`
   left: 0;
   position: absolute;
   top: 0;
-  transition: background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  transition: background-color ${duration.swift} ease-in-out,
+    box-shadow ${duration.swift} ease-in-out;
   width: 20px;
 
   ${choiceIndicatorStyles};

@@ -3,7 +3,6 @@ import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
 
 import Overlay from './Overlay';
-import { OverlayInnerContainer } from './styled/StyledOverlayComponents';
 import { nope } from '../../../utils/testing/MockUtils';
 
 const MOCK_CHILD = (
@@ -110,9 +109,11 @@ describe('overlay', () => {
             { MOCK_CHILD }
           </Overlay>
         );
+        const instance = overlay.instance();
+        const closeSpy = jest.spyOn(instance, 'close');
+        instance.forceUpdate();
         overlay.find('div').last().simulate('click');
-        expect(overlay.children()).toHaveLength(0);
-        expect(overlay.html()).toBeNull();
+        expect(closeSpy).toHaveBeenCalledTimes(1);
       });
 
       test('should not close when set to false', () => {
@@ -121,52 +122,12 @@ describe('overlay', () => {
             { MOCK_CHILD }
           </Overlay>
         );
+        const instance = overlay.instance();
+        const closeSpy = jest.spyOn(instance, 'close');
+        instance.forceUpdate();
+
         overlay.find('div').last().simulate('click');
-        expect(overlay.children()).toHaveLength(1);
-        expect(overlay.html()).not.toBeNull();
-      });
-
-    });
-
-  });
-
-  describe('state', () => {
-
-    describe('isVisible', () => {
-
-      test('should be set to true', () => {
-        expect(mVisibleOverlay.state().isVisible).toEqual(true);
-      });
-
-      test('should be set to false', () => {
-        expect(mHiddenOverlay.state().isVisible).toEqual(false);
-      });
-
-      test('should toggle visibility', () => {
-        const wrapper = mount(
-          <Overlay isVisible={false}>
-            { MOCK_CHILD }
-          </Overlay>
-        );
-        expect(wrapper.prop('isVisible')).toEqual(false);
-        expect(wrapper.state().isVisible).toEqual(false);
-        wrapper.setProps({ isVisible: true });
-        expect(wrapper.prop('isVisible')).toEqual(true);
-        expect(wrapper.state().isVisible).toEqual(true);
-        wrapper.setProps({ isVisible: false });
-        expect(wrapper.prop('isVisible')).toEqual(false);
-        expect(wrapper.state().isVisible).toEqual(false);
-      });
-
-      test('should be set to false when closing', () => {
-        const wrapper = mount(
-          <Overlay isVisible>
-            { MOCK_CHILD }
-          </Overlay>
-        );
-        expect(wrapper.state().isVisible).toEqual(true);
-        wrapper.find(OverlayInnerContainer).simulate('click');
-        expect(wrapper.state().isVisible).toEqual(false);
+        expect(closeSpy).toHaveBeenCalledTimes(0);
       });
 
     });
