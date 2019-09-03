@@ -3,7 +3,6 @@ import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
 
 import Overlay from './Overlay';
-import { OverlayInnerContainer } from './styled/StyledOverlayComponents';
 import { nope } from '../../../utils/testing/MockUtils';
 
 const MOCK_CHILD = (
