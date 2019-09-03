@@ -20,16 +20,12 @@ type Props = {
   shouldCloseOnClick ? :boolean;
 };
 
-type State = {
-  isVisible :boolean;
-}
-
 /*
  * Inspiration:
  * https://atlaskit.atlassian.com/packages/core/blanket
  * https://github.com/segmentio/evergreen/blob/master/src/overlay/src/Overlay.js
  */
-export default class Overlay extends Component<Props, State> {
+export default class Overlay extends Component<Props> {
 
   static propTypes = {
     children: PropTypes.node.isRequired,
