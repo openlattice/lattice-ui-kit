@@ -45,28 +45,7 @@ export default class Overlay extends Component<Props, State> {
     shouldCloseOnClick: true,
   }
 
-  constructor(props :Props) {
-
-    super(props);
-
-    this.state = {
-      isVisible: props.isVisible,
-    };
-  }
-
-  componentWillReceiveProps(nextProps :Props) {
-
-    if (nextProps.isVisible) {
-      this.setState({ isVisible: true });
-    }
-    else if (!nextProps.isVisible) {
-      this.setState({ isVisible: false });
-    }
-  }
-
   close = () => {
-
-    this.setState({ isVisible: false });
 
     const { onClose } = this.props;
     if (onClose && isFunction(onClose)) {
@@ -85,8 +64,7 @@ export default class Overlay extends Component<Props, State> {
 
   render() {
 
-    const { children, isScrollable } = this.props;
-    const { isVisible } = this.state;
+    const { isVisible, children, isScrollable } = this.props;
 
     if (!isVisible) {
       return null;
