@@ -13,60 +13,37 @@ import Portal from '../../../portal';
 import { OverlayInnerContainer, OverlayOuterContainer } from './styled/StyledOverlayComponents';
 
 type Props = {
-  children :Node;
+  children ? :Node;
   isScrollable ?:boolean;
-  isVisible :boolean;
+  isVisible ? :boolean;
   onClose ? :() => void;
   shouldCloseOnClick ? :boolean;
 };
-
-type State = {
-  isVisible :boolean;
-}
 
 /*
  * Inspiration:
  * https://atlaskit.atlassian.com/packages/core/blanket
  * https://github.com/segmentio/evergreen/blob/master/src/overlay/src/Overlay.js
  */
-export default class Overlay extends Component<Props, State> {
+export default class Overlay extends Component<Props> {
 
   static propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
     isScrollable: PropTypes.bool,
-    isVisible: PropTypes.bool.isRequired,
+    isVisible: PropTypes.bool,
     onClose: PropTypes.func,
     shouldCloseOnClick: PropTypes.bool,
   }
 
   static defaultProps = {
+    children: undefined,
     isScrollable: false,
+    isVisible: false,
     onClose: undefined,
     shouldCloseOnClick: true,
   }
 
-  constructor(props :Props) {
-
-    super(props);
-
-    this.state = {
-      isVisible: props.isVisible,
-    };
-  }
-
-  componentWillReceiveProps(nextProps :Props) {
-
-    if (nextProps.isVisible) {
-      this.setState({ isVisible: true });
-    }
-    else if (!nextProps.isVisible) {
-      this.setState({ isVisible: false });
-    }
-  }
-
   close = () => {
-
-    this.setState({ isVisible: false });
 
     const { onClose } = this.props;
     if (onClose && isFunction(onClose)) {
@@ -85,8 +62,7 @@ export default class Overlay extends Component<Props, State> {
 
   render() {
 
-    const { children, isScrollable } = this.props;
-    const { isVisible } = this.state;
+    const { isVisible, children, isScrollable } = this.props;
 
     if (!isVisible) {
       return null;

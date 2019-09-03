@@ -200,8 +200,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
-  transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
   white-space: nowrap;
   background-color: #8045ff;
   border-color: #8045ff;
@@ -249,8 +249,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
-  transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
   white-space: nowrap;
   background-color: #f0f0f7;
   border-color: #f0f0f7;
@@ -526,8 +526,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
-  transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
   white-space: nowrap;
   background-color: #8045ff;
   border-color: #8045ff;
@@ -575,8 +575,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
-  transition: background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;
+  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
   white-space: nowrap;
   background-color: #f0f0f7;
   border-color: #f0f0f7;
@@ -738,7 +738,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
           </div>
         }
       >
-        <StyledOverlayComponents__OverlayOuterContainer>
+        <OverlayOuterContainer>
           <StyledComponent
             forwardedComponent={
               Object {
@@ -754,7 +754,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                     ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
                   ],
                 },
-                "displayName": "StyledOverlayComponents__OverlayOuterContainer",
+                "displayName": "OverlayOuterContainer",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
@@ -769,7 +769,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
             <div
               className="c0"
             >
-              <StyledOverlayComponents__OverlayInnerContainer
+              <OverlayInnerContainer
                 isScrollable={false}
                 onClick={[Function]}
               >
@@ -788,7 +788,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                           ";width:100%;",
                         ],
                       },
-                      "displayName": "StyledOverlayComponents__OverlayInnerContainer",
+                      "displayName": "OverlayInnerContainer",
                       "foldedComponentIds": Array [],
                       "render": [Function],
                       "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
@@ -1209,7 +1209,13 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                         "isStatic": false,
                                                         "lastClassName": "c14",
                                                         "rules": Array [
-                                                          "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;white-space:nowrap;",
+                                                          "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+                                                          "100ms",
+                                                          " ease-in-out,border-color ",
+                                                          "100ms",
+                                                          " ease-in-out,box-shadow ",
+                                                          "100ms",
+                                                          " ease-in-out;white-space:nowrap;",
                                                           [Function],
                                                           ";:hover{cursor:pointer;text-decoration:none;",
                                                           [Function],
@@ -1386,7 +1392,13 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                         "isStatic": false,
                                                         "lastClassName": "c14",
                                                         "rules": Array [
-                                                          "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color 0.1s ease-in-out,border-color 0.1s ease-in-out,box-shadow 0.1s ease-in-out;white-space:nowrap;",
+                                                          "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+                                                          "100ms",
+                                                          " ease-in-out,border-color ",
+                                                          "100ms",
+                                                          " ease-in-out,box-shadow ",
+                                                          "100ms",
+                                                          " ease-in-out;white-space:nowrap;",
                                                           [Function],
                                                           ";:hover{cursor:pointer;text-decoration:none;",
                                                           [Function],
@@ -1510,10 +1522,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                     </StyledModalComponents__ModalOuterContainer>
                   </div>
                 </StyledComponent>
-              </StyledOverlayComponents__OverlayInnerContainer>
+              </OverlayInnerContainer>
             </div>
           </StyledComponent>
-        </StyledOverlayComponents__OverlayOuterContainer>
+        </OverlayOuterContainer>
         <LockToggle
           accountForScrollbars={true}
           isActive={true}

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import CardSegment from '../CardSegment/CardSegment';
 import {
   GREEN_1,
@@ -8,6 +9,7 @@ import {
   WHITE,
   YELLOW_1,
 } from '../../../../colors';
+import { duration } from '../../../../style/transitions';
 import { getStyleVariation } from '../../../../utils/StyleUtils';
 
 const backgroundColor = getStyleVariation('mode', {
@@ -35,7 +37,8 @@ const CardHeader = styled(CardSegment).attrs(() => ({
   background-color: ${backgroundColor};
   color: ${getFontColor};
   flex: none;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color ${duration.standard} ease-in-out,
+    color ${duration.standard} ease-in-out;
 `;
 
 export default CardHeader;
