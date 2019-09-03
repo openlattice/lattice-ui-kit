@@ -24,13 +24,13 @@ const getPosition = (props :Props) => {
 };
 
 const DrawerCard = styled.div`
-  position: fixed;
   background-color: ${WHITE};
-  height: 100%;
-  width: 300px;
-  top: 0;
-  z-index: 900;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  z-index: 900;
 
   ${getPosition};
 `;
