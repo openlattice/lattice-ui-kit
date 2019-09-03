@@ -80,7 +80,7 @@ const MenuList = () => (
     {
       menuValues.map((value) => {
         const { icon, text } = value;
-        return <MenuItem icon={icon} text={text} />;
+        return <MenuItem key={text} icon={icon} text={text} />;
       })
     }
   </MenuListWrapper>

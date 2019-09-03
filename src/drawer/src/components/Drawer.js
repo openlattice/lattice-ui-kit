@@ -2,13 +2,14 @@
 
 import React from 'react';
 import Overlay from '../../../overlay';
-import { DrawerWrapper } from './styled';
+import DrawerCard from './styled/DrawerCard';
 
 type Props = {
-  isOpen :boolean;
-  side :string;
-  onClose :() => void;
-  children :Node;
+  children ? :Node;
+  isOpen ? :boolean;
+  onClose ? :() => void;
+  shouldCloseOnOutsideClick ? :boolean;
+  side ? :'left' | 'right';
 }
 
 const Drawer = (props :Props) => {
@@ -16,6 +17,7 @@ const Drawer = (props :Props) => {
     children,
     isOpen,
     onClose,
+    shouldCloseOnOutsideClick,
     side,
   } = props;
 
@@ -24,12 +26,20 @@ const Drawer = (props :Props) => {
         onClose={onClose}
         isVisible={isOpen}
         isScrollable={false}
-        shouldCloseOnClick>
-      <DrawerWrapper side={side}>
+        shouldCloseOnClick={shouldCloseOnOutsideClick}>
+      <DrawerCard side={side}>
         {children}
-      </DrawerWrapper>
+      </DrawerCard>
     </Overlay>
   );
+};
+
+Drawer.defaultProps = {
+  children: undefined,
+  isOpen: false,
+  onClose: undefined,
+  shouldCloseOnOutsideClick: true,
+  side: 'left'
 };
 
 export default Drawer;

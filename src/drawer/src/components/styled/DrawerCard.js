@@ -1,6 +1,12 @@
+// @flow
+
 import styled, { css } from 'styled-components';
 
-const getPosition = (props) => {
+type Props = {
+  side :'left' | 'right';
+};
+
+const getPosition = (props :Props) => {
   const { side } = props;
   switch (side) {
     case 'right':
@@ -16,7 +22,7 @@ const getPosition = (props) => {
   }
 };
 
-const DrawerWrapper = styled.div`
+const DrawerCard = styled.div`
   position: fixed;
   background-color: white;
   height: 100%;
@@ -28,7 +34,4 @@ const DrawerWrapper = styled.div`
   ${getPosition};
 `;
 
-export {
-  // eslint-disable-next-line import/prefer-default-export
-  DrawerWrapper
-};
+export default DrawerCard;
