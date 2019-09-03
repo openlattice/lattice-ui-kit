@@ -190,6 +190,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
           }
         >
           <EmotionCssPropInternal
+            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="SelectContainer"
             __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
             className=""
             css={
@@ -319,6 +320,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                 }
               >
                 <EmotionCssPropInternal
+                  __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Control"
                   __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
                   className=""
                   css={
@@ -583,6 +585,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                             }
                           >
                             <EmotionCssPropInternal
+                              __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Placeholder"
                               __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
                               className=""
                               css={
@@ -712,6 +715,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                             value=""
                           >
                             <EmotionCssPropInternal
+                              __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Input"
                               __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
                               css={
                                 Object {
@@ -725,7 +729,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                               }
                             >
                               <div
-                                className="css-1g6gooi"
+                                className="css-w8afj7-Input"
                               >
                                 <AutosizeInput
                                   aria-autocomplete="list"
@@ -917,6 +921,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                       }
                     >
                       <EmotionCssPropInternal
+                        __EMOTION_LABEL_PLEASE_DO_NOT_USE__="IndicatorsContainer"
                         __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
                         className=""
                         css={
@@ -932,7 +937,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                         }
                       >
                         <div
-                          className=" css-t3xrk7"
+                          className=" css-1fgokuk-IndicatorsContainer"
                         >
                           <IndicatorSeparator
                             clearValue={[Function]}
@@ -1036,6 +1041,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                             }
                           >
                             <EmotionCssPropInternal
+                              __EMOTION_LABEL_PLEASE_DO_NOT_USE__="IndicatorSeparator"
                               __EMOTION_TYPE_PLEASE_DO_NOT_USE__="span"
                               className=""
                               css={
@@ -1045,7 +1051,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                               }
                             >
                               <span
-                                className=" css-1hyfx7x"
+                                className=" css-1emuzj5-IndicatorSeparator"
                               />
                             </EmotionCssPropInternal>
                           </IndicatorSeparator>
@@ -1158,6 +1164,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                             }
                           >
                             <EmotionCssPropInternal
+                              __EMOTION_LABEL_PLEASE_DO_NOT_USE__="DropdownIndicator"
                               __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
                               aria-hidden="true"
                               className=""
@@ -1189,6 +1196,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                     size={20}
                                   >
                                     <EmotionCssPropInternal
+                                      __EMOTION_LABEL_PLEASE_DO_NOT_USE__="Svg"
                                       __EMOTION_TYPE_PLEASE_DO_NOT_USE__="svg"
                                       aria-hidden="true"
                                       css={
@@ -1205,7 +1213,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                     >
                                       <svg
                                         aria-hidden="true"
-                                        className="css-19bqh2r"
+                                        className="css-tj5bde-Svg"
                                         focusable="false"
                                         height={20}
                                         viewBox="0 0 20 20"
