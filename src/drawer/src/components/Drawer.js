@@ -12,6 +12,11 @@ type Props = {
   side ? :'left' | 'right';
 }
 
+/*
+ * Inspiration:
+ * https://atlaskit.atlassian.com/packages/core/drawer
+ * https://evergreen.surge.sh/components/side-sheet
+ */
 const Drawer = (props :Props) => {
   const {
     children,
