@@ -7,7 +7,7 @@ type Props = {
   side :'left' | 'right';
 };
 
-const getPosition = (props :Props) => {
+const getScreenPosition = (props :Props) => {
   const { side } = props;
   switch (side) {
     case 'right':
@@ -32,7 +32,7 @@ const DrawerCard = styled.div`
   width: 300px;
   z-index: 900;
 
-  ${getPosition};
+  ${getScreenPosition};
 `;
 
 export default DrawerCard;
