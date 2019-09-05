@@ -7,7 +7,7 @@ import Button from './Button';
 import IconButton from './IconButton';
 import PlusButton from './PlusButton';
 
-const BUTTON_TXT = 'Edit';
+const BUTTON_TXT = 'Add';
 
 describe('PlusButton', () => {
 
