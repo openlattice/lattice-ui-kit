@@ -302,7 +302,7 @@ exports[`PlusButton icon with text should match snapshot 1`] = `
                             </span>
                           </StyledComponent>
                         </IconButton__IconMarginRight>
-                        Edit
+                        Add
                       </span>
                     </StyledComponent>
                   </Content>
