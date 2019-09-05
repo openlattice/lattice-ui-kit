@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react';
 
 import useStepState from './components/useStepState';
 
-import Button from '../../button';
+import { Button } from '../../button';
 import { Card, CardSegment } from '../../layout';
 import { Stepper, Step } from '..';
 

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import { storiesOf } from '@storybook/react';
 
-import Button from '../../button';
 import Modal from '..';
+import { Button } from '../../button';
 
 class ModalExample extends Component {
 
