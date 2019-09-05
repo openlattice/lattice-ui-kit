@@ -5,13 +5,18 @@
 import React from 'react';
 
 import { faPen } from '@fortawesome/pro-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import IconButton from './IconButton';
 import type { Props } from './Button';
 
+const icon = (
+  <FontAwesomeIcon icon={faPen} />
+);
+
 /* eslint-disable react/jsx-props-no-spreading */
 const EditButton = (props :Props) => (
-  <IconButton icon={faPen} {...props} />
+  <IconButton icon={icon} {...props} />
 );
 /* eslint-enable */
 

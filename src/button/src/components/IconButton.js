@@ -3,9 +3,9 @@
  */
 
 import React from 'react';
+import type { Element } from 'react';
 
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Button from './Button';
 import type { Props as ButtonProps } from './Button';
@@ -16,7 +16,7 @@ const IconMarginRight = styled.span`
 
 type Props = {
   ...ButtonProps;
-  icon ?:any;
+  icon ?:Element<any>;
 };
 
 /*
@@ -31,9 +31,7 @@ const IconButton = (props :Props) => {
   if (!children) {
     /* eslint-disable react/jsx-props-no-spreading */
     return (
-      <Button {...rest}>
-        <FontAwesomeIcon icon={icon} />
-      </Button>
+      <Button {...rest}>{icon}</Button>
     );
     /* eslint-enable */
   }
@@ -41,9 +39,7 @@ const IconButton = (props :Props) => {
   /* eslint-disable react/jsx-props-no-spreading */
   return (
     <Button {...rest}>
-      <IconMarginRight>
-        <FontAwesomeIcon icon={icon} />
-      </IconMarginRight>
+      <IconMarginRight>{icon}</IconMarginRight>
       {children}
     </Button>
   );

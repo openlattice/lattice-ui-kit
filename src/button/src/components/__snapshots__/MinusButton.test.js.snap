@@ -85,17 +85,36 @@ exports[`MinusButton icon with text should match snapshot 1`] = `
 <MinusButton>
   <IconButton
     icon={
-      Object {
-        "icon": Array [
-          384,
-          512,
-          Array [],
-          "f068",
-          "M368 224H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z",
-        ],
-        "iconName": "minus",
-        "prefix": "far",
-      }
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              384,
+              512,
+              Array [],
+              "f068",
+              "M368 224H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z",
+            ],
+            "iconName": "minus",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
     }
   >
     <Button
@@ -398,17 +417,36 @@ exports[`MinusButton icon without text should match snapshot 1`] = `
 <MinusButton>
   <IconButton
     icon={
-      Object {
-        "icon": Array [
-          384,
-          512,
-          Array [],
-          "f068",
-          "M368 224H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z",
-        ],
-        "iconName": "minus",
-        "prefix": "far",
-      }
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              384,
+              512,
+              Array [],
+              "f068",
+              "M368 224H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z",
+            ],
+            "iconName": "minus",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
     }
   >
     <Button

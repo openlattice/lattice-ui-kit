@@ -8,13 +8,16 @@ import Button from './Button';
 import IconButton from './IconButton';
 
 const BUTTON_TXT = 'Launch!';
+const LaunchIcon = (
+  <FontAwesomeIcon icon={faSpaceShuttle} rotate={-45} />
+);
 
 describe('IconButton', () => {
 
   describe('icon with text', () => {
 
     const iconButton = mount(
-      <IconButton icon={faSpaceShuttle}>
+      <IconButton icon={LaunchIcon}>
         {BUTTON_TXT}
       </IconButton>
     );
@@ -44,7 +47,7 @@ describe('IconButton', () => {
   describe('icon without text', () => {
 
     const iconButton = mount(
-      <IconButton icon={faSpaceShuttle} />
+      <IconButton icon={LaunchIcon} />
     );
 
     test('should match snapshot', () => {

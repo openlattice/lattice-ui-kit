@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { faSpaceShuttle } from '@fortawesome/pro-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
@@ -9,6 +11,7 @@ import {
   Button,
   CopyButton,
   EditButton,
+  IconButton,
   PlusButton,
   MinusButton,
   SearchButton,
@@ -31,6 +34,10 @@ const ButtonGrid = styled.div`
 const H2 = styled.h2`
   margin: 0 0 20px 0;
 `;
+
+const LaunchIcon = (
+  <FontAwesomeIcon icon={faSpaceShuttle} transform={{ rotate: -45 }} />
+);
 
 storiesOf('Button', module)
   .add('regular button', () => (
@@ -108,6 +115,13 @@ storiesOf('Button', module)
         <ButtonRow>
           <MinusButton mode="negative" onClick={action('click')} />
           <MinusButton mode="negative" onClick={action('click')}>Remove</MinusButton>
+        </ButtonRow>
+      </CardSegment>
+      <CardSegment vertical>
+        <H2>Custom Icon Button</H2>
+        <ButtonRow>
+          <IconButton icon={LaunchIcon} onClick={action('click')} />
+          <IconButton icon={LaunchIcon} onClick={action('click')}>Launch</IconButton>
         </ButtonRow>
       </CardSegment>
     </Card>
