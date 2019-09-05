@@ -1,0 +1,598 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CopyButton icon with text should match snapshot 1`] = `
+.c1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-width: 14px;
+}
+
+.c2 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c0 {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  white-space: nowrap;
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #8e929b;
+}
+
+.c0:hover {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+}
+
+.c0:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #b6bbc7;
+  border-color: #b6bbc7;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
+}
+
+.c0:focus-visible {
+  box-shadow: #b6bbc7 0 0 0 2px;
+}
+
+.c3 {
+  margin: 0 8px 0 0;
+}
+
+<CopyButton>
+  <IconButton
+    icon={
+      Object {
+        "icon": Array [
+          448,
+          512,
+          Array [],
+          "f0c5",
+          "M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z",
+        ],
+        "iconName": "copy",
+        "prefix": "far",
+      }
+    }
+  >
+    <Button
+      disabled={false}
+      isLoading={false}
+      mode="default"
+      type="button"
+    >
+      <StyledButton
+        disabled={false}
+        mode="default"
+        type="button"
+      >
+        <StyledComponent
+          disabled={false}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "StyledButton-sc-1etazn9-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+                  "100ms",
+                  " ease-in-out,border-color ",
+                  "100ms",
+                  " ease-in-out,box-shadow ",
+                  "100ms",
+                  " ease-in-out;white-space:nowrap;",
+                  [Function],
+                  ";:hover{cursor:pointer;text-decoration:none;",
+                  [Function],
+                  "};:active{text-decoration:none;",
+                  [Function],
+                  "};:disabled{cursor:not-allowed;text-decoration:none;",
+                  [Function],
+                  "};:focus-visible{",
+                  [Function],
+                  "}",
+                ],
+              },
+              "displayName": "StyledButton",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "StyledButton-sc-1etazn9-0",
+              "target": "button",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          mode="default"
+          type="button"
+        >
+          <button
+            className="c0"
+            disabled={false}
+            mode="default"
+            type="button"
+          >
+            <ContentWrapper>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "ContentWrapper-sc-36hfub-0",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
+                      ],
+                    },
+                    "displayName": "ContentWrapper",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "ContentWrapper-sc-36hfub-0",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <span
+                  className="c1"
+                >
+                  <Content
+                    isLoading={false}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content-sc-18psqsj-0",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "flex:1 1 auto;opacity:",
+                              [Function],
+                              ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                            ],
+                          },
+                          "displayName": "Content",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Content-sc-18psqsj-0",
+                          "target": "span",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      isLoading={false}
+                    >
+                      <span
+                        className="c2"
+                      >
+                        <IconButton__IconMarginRight>
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "IconButton__IconMarginRight-g9q5gl-0",
+                                  "isStatic": true,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    "margin:0 8px 0 0;",
+                                  ],
+                                },
+                                "displayName": "IconButton__IconMarginRight",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "IconButton__IconMarginRight-g9q5gl-0",
+                                "target": "span",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                          >
+                            <span
+                              className="c3"
+                            >
+                              <FontAwesomeIcon
+                                border={false}
+                                className=""
+                                fixedWidth={false}
+                                flip={null}
+                                icon={
+                                  Object {
+                                    "icon": Array [
+                                      448,
+                                      512,
+                                      Array [],
+                                      "f0c5",
+                                      "M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z",
+                                    ],
+                                    "iconName": "copy",
+                                    "prefix": "far",
+                                  }
+                                }
+                                inverse={false}
+                                listItem={false}
+                                mask={null}
+                                pull={null}
+                                pulse={false}
+                                rotation={null}
+                                size={null}
+                                spin={false}
+                                symbol={false}
+                                title=""
+                                transform={null}
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  className="svg-inline--fa fa-copy fa-w-14 "
+                                  data-icon="copy"
+                                  data-prefix="far"
+                                  focusable="false"
+                                  role="img"
+                                  style={Object {}}
+                                  viewBox="0 0 448 512"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"
+                                    fill="currentColor"
+                                    style={Object {}}
+                                  />
+                                </svg>
+                              </FontAwesomeIcon>
+                            </span>
+                          </StyledComponent>
+                        </IconButton__IconMarginRight>
+                        Copy
+                      </span>
+                    </StyledComponent>
+                  </Content>
+                </span>
+              </StyledComponent>
+            </ContentWrapper>
+          </button>
+        </StyledComponent>
+      </StyledButton>
+    </Button>
+  </IconButton>
+</CopyButton>
+`;
+
+exports[`CopyButton icon without text should match snapshot 1`] = `
+.c1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-width: 14px;
+}
+
+.c2 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c0 {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  white-space: nowrap;
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #8e929b;
+}
+
+.c0:hover {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+}
+
+.c0:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #b6bbc7;
+  border-color: #b6bbc7;
+  color: #ffffff;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #f0f0f7;
+  border-color: #f0f0f7;
+  color: #b6bbc7;
+}
+
+.c0:focus-visible {
+  box-shadow: #b6bbc7 0 0 0 2px;
+}
+
+<CopyButton>
+  <IconButton
+    icon={
+      Object {
+        "icon": Array [
+          448,
+          512,
+          Array [],
+          "f0c5",
+          "M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z",
+        ],
+        "iconName": "copy",
+        "prefix": "far",
+      }
+    }
+  >
+    <Button
+      disabled={false}
+      isLoading={false}
+      mode="default"
+      type="button"
+    >
+      <StyledButton
+        disabled={false}
+        mode="default"
+        type="button"
+      >
+        <StyledComponent
+          disabled={false}
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "StyledButton-sc-1etazn9-0",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+                  "100ms",
+                  " ease-in-out,border-color ",
+                  "100ms",
+                  " ease-in-out,box-shadow ",
+                  "100ms",
+                  " ease-in-out;white-space:nowrap;",
+                  [Function],
+                  ";:hover{cursor:pointer;text-decoration:none;",
+                  [Function],
+                  "};:active{text-decoration:none;",
+                  [Function],
+                  "};:disabled{cursor:not-allowed;text-decoration:none;",
+                  [Function],
+                  "};:focus-visible{",
+                  [Function],
+                  "}",
+                ],
+              },
+              "displayName": "StyledButton",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "StyledButton-sc-1etazn9-0",
+              "target": "button",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          mode="default"
+          type="button"
+        >
+          <button
+            className="c0"
+            disabled={false}
+            mode="default"
+            type="button"
+          >
+            <ContentWrapper>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "ContentWrapper-sc-36hfub-0",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
+                      ],
+                    },
+                    "displayName": "ContentWrapper",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "ContentWrapper-sc-36hfub-0",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <span
+                  className="c1"
+                >
+                  <Content
+                    isLoading={false}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "Content-sc-18psqsj-0",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              "flex:1 1 auto;opacity:",
+                              [Function],
+                              ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                            ],
+                          },
+                          "displayName": "Content",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "Content-sc-18psqsj-0",
+                          "target": "span",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      isLoading={false}
+                    >
+                      <span
+                        className="c2"
+                      >
+                        <FontAwesomeIcon
+                          border={false}
+                          className=""
+                          fixedWidth={false}
+                          flip={null}
+                          icon={
+                            Object {
+                              "icon": Array [
+                                448,
+                                512,
+                                Array [],
+                                "f0c5",
+                                "M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z",
+                              ],
+                              "iconName": "copy",
+                              "prefix": "far",
+                            }
+                          }
+                          inverse={false}
+                          listItem={false}
+                          mask={null}
+                          pull={null}
+                          pulse={false}
+                          rotation={null}
+                          size={null}
+                          spin={false}
+                          symbol={false}
+                          title=""
+                          transform={null}
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className="svg-inline--fa fa-copy fa-w-14 "
+                            data-icon="copy"
+                            data-prefix="far"
+                            focusable="false"
+                            role="img"
+                            style={Object {}}
+                            viewBox="0 0 448 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"
+                              fill="currentColor"
+                              style={Object {}}
+                            />
+                          </svg>
+                        </FontAwesomeIcon>
+                      </span>
+                    </StyledComponent>
+                  </Content>
+                </span>
+              </StyledComponent>
+            </ContentWrapper>
+          </button>
+        </StyledComponent>
+      </StyledButton>
+    </Button>
+  </IconButton>
+</CopyButton>
+`;
