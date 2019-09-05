@@ -12,17 +12,20 @@ import StyledButton from './styled/StyledButton';
 
 type ButtonMode =
   | 'default'
+  | 'negative'
+  | 'positive'
   | 'primary'
-  | 'secondary';
+  | 'secondary'
+  | 'subtle';
 
 type Props = {
-  children :Node;
-  className ? :string;
-  disabled ? :boolean;
-  isLoading ? :boolean;
-  mode ? :ButtonMode;
+  children ?:Node;
+  className ?:string;
+  disabled ?:boolean;
+  isLoading ?:boolean;
+  mode ?:ButtonMode;
   onClick :(e :SyntheticEvent<HTMLButtonElement>) => void;
-  type ? :string;
+  type ?:string;
 };
 
 /*
@@ -54,6 +57,7 @@ const Button = (props :Props) => {
 };
 
 Button.defaultProps = {
+  children: undefined,
   className: undefined,
   disabled: false,
   isLoading: false,
@@ -62,3 +66,8 @@ Button.defaultProps = {
 };
 
 export default Button;
+
+export type {
+  ButtonMode,
+  Props,
+};

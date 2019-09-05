@@ -5,7 +5,7 @@ import { LoremIpsum } from 'lorem-ipsum';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNarwhal } from '@fortawesome/pro-regular-svg-icons';
 
-import Button from '../../button';
+import { Button } from '../../button';
 import Banner from '..';
 
 const lorem = new LoremIpsum({

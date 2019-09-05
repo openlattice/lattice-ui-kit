@@ -6,10 +6,10 @@ import type { ComponentType, Node } from 'react';
 
 import DefaultResultComponent from './Result';
 import DefaultSearchResults from './SearchResults';
-import Button from '../../../../button';
-import { Input } from '../../../../text';
-import Label from '../../../../label';
 import DatePicker from '../../../../datetime/src/components/DatePicker';
+import Label from '../../../../label';
+import { Button } from '../../../../button';
+import { Input } from '../../../../text';
 import { InputGrid, Title } from './styled/StyledSearchComponents';
 import { CheckboxSelect } from '../../../../select';
 import { Card, CardSegment, CardStack } from '../../../../layout';

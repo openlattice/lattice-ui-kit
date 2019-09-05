@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 
 import Drawer from '../src/components/Drawer';
-import Button from '../../button';
 import MenuList from './components/MenuList';
+import { Button } from '../../button';
 import {
   Card,
   CardHeader,
