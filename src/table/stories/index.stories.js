@@ -23,7 +23,7 @@ storiesOf('Table', module)
         <Table
             headers={TABLE_HEADERS}
             data={TABLE_DATA}
-            rowsPerPageOptions={[3, 5, 100]}
+            rowsPerPageOptions={[5, 20, 50]}
             paginated />
       </CardSegment>
     </Card>
