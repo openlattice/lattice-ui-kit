@@ -28,7 +28,7 @@ const TABLE_DATA = [
     id: '3'
   },
   {
-    name: 'Larry Lobster',
+    name: 'Larry the Lobster',
     dob: '1975-06-23',
     manager: 'Patchy',
     lastUpdated: '2019-08-16',
@@ -40,6 +40,20 @@ const TABLE_DATA = [
     manager: 'Spongebob',
     lastUpdated: '2019-08-20',
     id: '5'
+  },
+  {
+    name: 'Mrs. Puff',
+    dob: '',
+    manager: 'Spongebob',
+    lastUpdated: '2019-08-21',
+    id: '6'
+  },
+  {
+    name: 'Flying Dutchman',
+    dob: '1678-04-20',
+    manager: 'Spongebob',
+    lastUpdated: '2019-06-21',
+    id: '7'
   },
 ];
 
