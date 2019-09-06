@@ -37,7 +37,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'StyleUtils',
   'Table',
   'TableBody',
-  'TableHead',
+  'TableHeader',
   'TableRow',
   'TextArea',
   'TimePicker',

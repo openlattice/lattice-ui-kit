@@ -43,7 +43,7 @@ export {
   HeadCell,
   Table,
   TableBody,
-  TableHead,
+  TableHeader,
   TableRow,
 } from './table';
 export {
