@@ -4,14 +4,13 @@ import React, { useState } from 'react';
 
 import TableHeader from './TableHeader';
 import TableBody from './TableBody';
-import TableFooter from './TableFooter';
+import PaginationToolbar from './PaginationToolbar';
 import { StyledTable } from './styled';
-import usePagination from './usePagination';
 
 type Props = {
   data :Array<Object>;
   headers :Array<Object>;
-  rowsPerPage :number;
+  rowsPerPageOptions :number[];
 };
 
 const Table = (props :Props) => {
@@ -19,12 +18,13 @@ const Table = (props :Props) => {
   const {
     data,
     headers,
-    rowsPerPage,
+    rowsPerPageOptions,
   } = props;
 
   const [orderBy, setOrderBy] = useState();
   const [order, setOrder] = useState();
-  const [currentPage, setPage, nextPage, prevPage] = usePagination(0, Math.ceil(data.length / rowsPerPage));
+  const [currentPage, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(rowsPerPageOptions[0]);
 
   const handleSort = (event, property) => {
     const isDesc = orderBy === property && order === 'desc';
@@ -33,26 +33,30 @@ const Table = (props :Props) => {
   };
 
   return (
-    <StyledTable>
-      <TableHeader
-          headers={headers}
-          order={order}
-          orderBy={orderBy}
-          onSort={handleSort}
-          sticky />
-      <TableBody
-          data={data}
-          order={order}
-          orderBy={orderBy}
-          rowsPerPage={rowsPerPage}
-          page={currentPage} />
-      <TableFooter
+    <div>
+      <StyledTable>
+        <TableHeader
+            headers={headers}
+            order={order}
+            orderBy={orderBy}
+            onSort={handleSort}
+            sticky />
+        <TableBody
+            data={data}
+            order={order}
+            orderBy={orderBy}
+            rowsPerPage={rowsPerPage}
+            page={currentPage} />
+      </StyledTable>
+      <PaginationToolbar
+          count={data.length}
           page={currentPage}
           rowsPerPage={rowsPerPage}
-          setPage={setPage}
-          nextPage={nextPage}
-          prevPage={prevPage} />
-    </StyledTable>
+          rowsPerPageOptions={rowsPerPageOptions}
+          setRowsPerPage={setRowsPerPage}
+          setPage={setPage} />
+    </div>
+
   );
 };
 

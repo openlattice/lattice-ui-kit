@@ -10,23 +10,31 @@ type Props = {
   order ? :SortOrder;
   orderBy ? :string;
   data :Object[];
-  rowsPerPage ? :number;
-  page ? :number;
-  rowComponent ? :Node;
+  rowsPerPage :number;
+  page :number;
+  // TODO: render rowComponent with data when available;
+  // rowComponent ? :Node;
 };
 
 const TableBody = (props :Props) => {
-  const { order, orderBy, data } = props;
+  const {
+    order,
+    orderBy,
+    data,
+    page,
+    rowsPerPage,
+  } = props;
 
   // sort data in 'asc' or 'desc' order
   // using the orderBy property
 
-  const sortedData :Array<Object> = getSortedData(data, order, orderBy);
+  const sortedData = getSortedData(data, order, orderBy);
+  const dataByPage = sortedData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
 
   return (
     <tbody>
       {
-        sortedData.map((rowData) => {
+        dataByPage.map((rowData) => {
           const {
             name,
             dob,
@@ -51,8 +59,6 @@ const TableBody = (props :Props) => {
 TableBody.defaultProps = {
   order: false,
   orderBy: undefined,
-  page: undefined,
-  rowsPerPage: undefined,
 };
 
 export default React.memo<Props>(TableBody);

@@ -1,13 +1,21 @@
 import styled from 'styled-components';
-import { NEUTRALS } from '../../../../colors';
+
+import { NEUTRALS, WHITE } from '../../../../colors';
 import { getStickyPosition } from '../../../../utils/StyleUtils';
 
 const StyledTable = styled.table`
-  background-color: ${NEUTRALS[6]};
+  background-color: ${WHITE};
   border-collapse: collapse;
   border: none;
   table-layout: fixed;
   width: 100%;
+`;
+
+const PaginationWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
 `;
 
 const Cell = styled.td`
@@ -23,7 +31,7 @@ Cell.displayName = 'Cell';
 
 const TableRow = styled.tr`
   height: 40px;
-  background-color: white;
+  background-color: ${WHITE};
   border-bottom: 1px solid ${NEUTRALS[4]};
 
   /* position: sticky doesn't work with thead/tr. Move to all cells within */
@@ -34,8 +42,15 @@ const TableRow = styled.tr`
 
 TableRow.displayName = 'TableRow';
 
+const RowPerPageWrapper = styled.div`
+  font-size: 14px;
+  width: 80px;
+`;
+
 export {
   Cell,
+  PaginationWrapper,
+  RowPerPageWrapper,
   StyledTable,
   TableRow,
 };

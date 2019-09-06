@@ -13,7 +13,8 @@ storiesOf('Table', module)
       <CardSegment vertical>
         <Table
             headers={TABLE_HEADERS}
-            data={TABLE_DATA} />
+            data={TABLE_DATA}
+            rowsPerPageOptions={[10, 50, 100]} />
       </CardSegment>
     </Card>
   ));
