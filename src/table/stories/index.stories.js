@@ -14,7 +14,7 @@ storiesOf('Table', module)
         <Table
             headers={TABLE_HEADERS}
             data={TABLE_DATA}
-            rowsPerPageOptions={[10, 50, 100]} />
+            rowsPerPageOptions={[5, 50, 100]} />
       </CardSegment>
     </Card>
   ));
