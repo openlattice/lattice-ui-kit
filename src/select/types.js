@@ -2,7 +2,7 @@
 
 type ReactSelectOption = {|
   label :string;
-  value :string;
+  value :any;
 |};
 
 type ReactSelectValue = ReactSelectOption | ReactSelectOption[];
