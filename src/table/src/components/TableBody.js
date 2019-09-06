@@ -12,6 +12,7 @@ type RowData = {
 }
 
 type Props = {
+  headers :Object[];
   order ? :SortOrder;
   orderBy ? :string;
   data :RowData[];
@@ -23,6 +24,7 @@ type Props = {
 const TableBody = (props :Props) => {
   const {
     data,
+    headers,
     order,
     orderBy,
     page,
@@ -33,22 +35,34 @@ const TableBody = (props :Props) => {
   const sortedData = getSortedData(data, order, orderBy);
   const dataByPage = sortedData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
 
+  // inject empty row to maintain table size
+  const emptyRowCount = rowsPerPage - dataByPage.length;
+  // height per row + (row - 1) * (padding + border)
+  const emptyHeight = emptyRowCount * 24 + (emptyRowCount - 1) * 21;
+
   return (
     <tbody>
       {
         dataByPage.map((rowData) => {
           if (RowComponent) {
-            return <RowComponent key={rowData.id} data={rowData} />;
+            return <RowComponent key={rowData.id} data={rowData} headers={headers} />;
           }
 
-          const { id, ...rest } = rowData;
-          const rows = Object.keys(rest).map((property) => <Cell>{rest[property]}</Cell>);
+          const { id } = rowData;
+          const cells = headers.map((header) => <Cell>{rowData[header.key]}</Cell>);
           return (
             <TableRow key={id}>
-              {rows}
+              {cells}
             </TableRow>
           );
         })
+      }
+      {
+        !!emptyRowCount && (
+          <TableRow>
+            <Cell colSpan={headers.length} height={emptyHeight} />
+          </TableRow>
+        )
       }
     </tbody>
   );

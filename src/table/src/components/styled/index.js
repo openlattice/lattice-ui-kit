@@ -23,14 +23,13 @@ const Cell = styled.td`
   word-wrap: break-word;
   cursor: ${(props) => (props.onClick ? 'pointer' : 'auto')};
   text-align: left;
-
+  height: ${(props) => props.height || null};
   background-color: ${(props) => (props.as === 'th' ? NEUTRALS[6] : 'inherit')};
 `;
 
 Cell.displayName = 'Cell';
 
 const TableRow = styled.tr`
-  height: 40px;
   background-color: ${WHITE};
   border-bottom: 1px solid ${NEUTRALS[4]};
 
