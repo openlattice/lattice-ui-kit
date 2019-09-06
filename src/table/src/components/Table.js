@@ -56,7 +56,6 @@ const Table = (props :Props) => {
           setRowsPerPage={setRowsPerPage}
           setPage={setPage} />
     </div>
-
   );
 };
 
