@@ -44,7 +44,8 @@ TableRow.displayName = 'TableRow';
 
 const RowPerPageWrapper = styled.div`
   font-size: 14px;
-  width: 80px;
+  width: 75px;
+  margin-right: 10px;
 `;
 
 export {
