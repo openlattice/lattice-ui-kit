@@ -39,7 +39,8 @@ const TableHeader = (props :Props) => {
               <HeadCell
                   key={key}
                   onClick={onSort ? createSortHandler(key) : undefined}
-                  order={orderBy === header.key ? order : false}>
+                  order={orderBy === header.key ? order : false}
+                  sortable>
                 {label}
               </HeadCell>
             );
