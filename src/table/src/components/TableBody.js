@@ -49,7 +49,7 @@ const TableBody = (props :Props) => {
           }
 
           const { id } = rowData;
-          const cells = headers.map((header) => <Cell>{rowData[header.key]}</Cell>);
+          const cells = headers.map((header) => <Cell key={`${id}_cell_${header.key}`}>{rowData[header.key]}</Cell>);
           return (
             <TableRow key={id}>
               {cells}
