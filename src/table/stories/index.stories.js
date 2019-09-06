@@ -13,8 +13,18 @@ storiesOf('Table', module)
       <CardSegment vertical>
         <Table
             headers={TABLE_HEADERS}
+            data={TABLE_DATA} />
+      </CardSegment>
+    </Card>
+  ))
+  .add('Paginated', () => (
+    <Card>
+      <CardSegment vertical>
+        <Table
+            headers={TABLE_HEADERS}
             data={TABLE_DATA}
-            rowsPerPageOptions={[5, 50, 100]} />
+            rowsPerPageOptions={[3, 5, 100]}
+            paginated />
       </CardSegment>
     </Card>
   ));

@@ -1,6 +1,7 @@
 // @flow
 
 import React, { useState } from 'react';
+import isEmpty from 'lodash/isEmpty';
 
 import TableHeader from './TableHeader';
 import TableBody from './TableBody';
@@ -10,7 +11,8 @@ import { StyledTable } from './styled';
 type Props = {
   data :Array<Object>;
   headers :Array<Object>;
-  rowsPerPageOptions :number[];
+  rowsPerPageOptions ? :number[];
+  paginated ? :boolean;
 };
 
 const Table = (props :Props) => {
@@ -19,12 +21,15 @@ const Table = (props :Props) => {
     data,
     headers,
     rowsPerPageOptions,
+    paginated,
   } = props;
+
+  const initialRowsPerPage = (paginated && !isEmpty(rowsPerPageOptions)) ? rowsPerPageOptions[0] : data.length;
 
   const [orderBy, setOrderBy] = useState();
   const [order, setOrder] = useState();
   const [currentPage, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(rowsPerPageOptions[0]);
+  const [rowsPerPage, setRowsPerPage] = useState(initialRowsPerPage);
 
   const handleSort = (event, property) => {
     const isDesc = orderBy === property && order === 'desc';
@@ -42,21 +47,31 @@ const Table = (props :Props) => {
             onSort={handleSort}
             sticky />
         <TableBody
+            headers={headers}
             data={data}
             order={order}
             orderBy={orderBy}
             rowsPerPage={rowsPerPage}
             page={currentPage} />
       </StyledTable>
-      <PaginationToolbar
-          count={data.length}
-          page={currentPage}
-          rowsPerPage={rowsPerPage}
-          rowsPerPageOptions={rowsPerPageOptions}
-          setRowsPerPage={setRowsPerPage}
-          setPage={setPage} />
+      {
+        paginated && (
+          <PaginationToolbar
+              count={data.length}
+              page={currentPage}
+              rowsPerPage={rowsPerPage}
+              rowsPerPageOptions={rowsPerPageOptions}
+              setRowsPerPage={setRowsPerPage}
+              setPage={setPage} />
+        )
+      }
     </div>
   );
+};
+
+Table.defaultProps = {
+  paginated: false,
+  rowsPerPageOptions: []
 };
 
 export default Table;

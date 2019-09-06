@@ -4,6 +4,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/pro-regular-svg-icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { PaginationWrapper, RowPerPageWrapper } from './styled';
+import { getRowsPerPageOptions } from './TableUtils';
 import { Select } from '../../../select';
 import { IconButton } from '../../../button';
 import Label from '../../../label';
@@ -12,7 +13,7 @@ type Props = {
   count :number;
   page :number;
   rowsPerPage :number;
-  rowsPerPageOptions :number[];
+  rowsPerPageOptions ? :number[];
   setPage :(number :number) => void;
   setRowsPerPage :(number :number) => void;
 };
@@ -27,7 +28,7 @@ const PaginationToolbar = (props :Props) => {
     setRowsPerPage,
   } = props;
 
-  const options = rowsPerPageOptions.map((option) => ({ label: option, value: option }));
+  const options = getRowsPerPageOptions(rowsPerPageOptions, count);
   const lastPage = Math.floor(count / rowsPerPage);
 
   const maxRowNumber = Math.min(rowsPerPage * (page + 1), count);
@@ -41,7 +42,10 @@ const PaginationToolbar = (props :Props) => {
         <Select
             borderless
             defaultValue={options[0]}
-            onChange={(rows) => setRowsPerPage(rows)}
+            onChange={(rows) => {
+              setPage(0);
+              setRowsPerPage(rows);
+            }}
             options={options}
             useRawValues />
       </RowPerPageWrapper>
@@ -58,6 +62,10 @@ const PaginationToolbar = (props :Props) => {
           onClick={() => setPage(page + 1)} />
     </PaginationWrapper>
   );
+};
+
+PaginationToolbar.defaultProps = {
+  rowsPerPageOptions: []
 };
 
 export default React.memo<Props>(PaginationToolbar);

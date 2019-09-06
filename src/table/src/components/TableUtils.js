@@ -1,5 +1,7 @@
 // @flow
+import isEmpty from 'lodash/isEmpty';
 import type { SortOrder } from '../../types';
+import type { ReactSelectOption } from '../../../select/types';
 
 const descendByProperty = (a :Object, b :Object, property ? :string) => {
   try {
@@ -32,7 +34,23 @@ const getSortedData = (data :Array<Object>, order ? :SortOrder, orderBy ? :strin
   return copyData.sort(comparator);
 };
 
+const createOption = (value :any) :ReactSelectOption => ({ label: `${value}`, value });
+
+const getRowsPerPageOptions = (rowsPerPageOptions :number[] = [], defaultRowCount ? :number) => {
+  if (!isEmpty(rowsPerPageOptions)) {
+    return rowsPerPageOptions.map<ReactSelectOption>(createOption);
+  }
+
+  if (typeof defaultRowCount === 'number') {
+    return [createOption(defaultRowCount)];
+  }
+
+  return [createOption()];
+};
+
+
 export {
   // eslint-disable-next-line import/prefer-default-export
-  getSortedData
+  getRowsPerPageOptions,
+  getSortedData,
 };
