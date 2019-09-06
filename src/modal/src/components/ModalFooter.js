@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import isEmpty from 'lodash/isEmpty';
 import styled from 'styled-components';
 
-import Button from '../../../button';
+import { Button } from '../../../button';
 import { FooterSection } from './styled/StyledModalComponents';
 
 export const DEFAULT_TEXT_PRIMARY_ACTION :'Confirm' = 'Confirm';

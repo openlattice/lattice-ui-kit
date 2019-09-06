@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNarwhal } from '@fortawesome/pro-regular-svg-icons';
 
-import Button from '../../button';
+import { Button } from '../../button';
 import Banner from '..';
 
 const CITIZENS_OF_DALARAN = `

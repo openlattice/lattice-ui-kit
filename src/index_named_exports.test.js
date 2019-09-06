@@ -6,6 +6,12 @@ import * as LatticeUIKit from './index';
 const EXPECTED_OBJ_EXPORTS = Set([
   'Banner',
   'Button',
+  'CopyButton',
+  'EditButton',
+  'IconButton',
+  'MinusButton',
+  'PlusButton',
+  'SearchButton',
   'Card',
   'CardHeader',
   'CardSegment',
