@@ -1,0 +1,411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableBody render should render rowComponent if provided 1`] = `
+<tbody>
+  <rowComponent
+    data={
+      Object {
+        "dob": "1942-11-30",
+        "id": "1",
+        "lastUpdated": "2019-09-01",
+        "manager": "Spongebob",
+        "name": "Eugene Krabs",
+      }
+    }
+    headers={
+      Array [
+        Object {
+          "key": "name",
+          "label": "Subject Name",
+        },
+        Object {
+          "key": "dob",
+          "label": "Date of Birth",
+        },
+        Object {
+          "key": "manager",
+          "label": "Manager",
+        },
+        Object {
+          "key": "lastUpdated",
+          "label": "Last Updated",
+        },
+      ]
+    }
+    key="1"
+  />
+  <rowComponent
+    data={
+      Object {
+        "dob": "",
+        "id": "2",
+        "lastUpdated": "2019-08-29",
+        "manager": "Smitty",
+        "name": "Squidward Tentacles",
+      }
+    }
+    headers={
+      Array [
+        Object {
+          "key": "name",
+          "label": "Subject Name",
+        },
+        Object {
+          "key": "dob",
+          "label": "Date of Birth",
+        },
+        Object {
+          "key": "manager",
+          "label": "Manager",
+        },
+        Object {
+          "key": "lastUpdated",
+          "label": "Last Updated",
+        },
+      ]
+    }
+    key="2"
+  />
+  <rowComponent
+    data={
+      Object {
+        "dob": "1987-11-17",
+        "id": "3",
+        "lastUpdated": "2019-07-30",
+        "manager": "Patrick",
+        "name": "Sandy Cheeks",
+      }
+    }
+    headers={
+      Array [
+        Object {
+          "key": "name",
+          "label": "Subject Name",
+        },
+        Object {
+          "key": "dob",
+          "label": "Date of Birth",
+        },
+        Object {
+          "key": "manager",
+          "label": "Manager",
+        },
+        Object {
+          "key": "lastUpdated",
+          "label": "Last Updated",
+        },
+      ]
+    }
+    key="3"
+  />
+  <rowComponent
+    data={
+      Object {
+        "dob": "1975-06-23",
+        "id": "4",
+        "lastUpdated": "2019-08-16",
+        "manager": "Patchy",
+        "name": "Larry the Lobster",
+      }
+    }
+    headers={
+      Array [
+        Object {
+          "key": "name",
+          "label": "Subject Name",
+        },
+        Object {
+          "key": "dob",
+          "label": "Date of Birth",
+        },
+        Object {
+          "key": "manager",
+          "label": "Manager",
+        },
+        Object {
+          "key": "lastUpdated",
+          "label": "Last Updated",
+        },
+      ]
+    }
+    key="4"
+  />
+  <rowComponent
+    data={
+      Object {
+        "dob": "1942-11-30",
+        "id": "5",
+        "lastUpdated": "2019-08-20",
+        "manager": "Spongebob",
+        "name": "Sheldon Plankton",
+      }
+    }
+    headers={
+      Array [
+        Object {
+          "key": "name",
+          "label": "Subject Name",
+        },
+        Object {
+          "key": "dob",
+          "label": "Date of Birth",
+        },
+        Object {
+          "key": "manager",
+          "label": "Manager",
+        },
+        Object {
+          "key": "lastUpdated",
+          "label": "Last Updated",
+        },
+      ]
+    }
+    key="5"
+  />
+  <rowComponent
+    data={
+      Object {
+        "dob": "",
+        "id": "6",
+        "lastUpdated": "2019-08-21",
+        "manager": "Spongebob",
+        "name": "Mrs. Puff",
+      }
+    }
+    headers={
+      Array [
+        Object {
+          "key": "name",
+          "label": "Subject Name",
+        },
+        Object {
+          "key": "dob",
+          "label": "Date of Birth",
+        },
+        Object {
+          "key": "manager",
+          "label": "Manager",
+        },
+        Object {
+          "key": "lastUpdated",
+          "label": "Last Updated",
+        },
+      ]
+    }
+    key="6"
+  />
+  <rowComponent
+    data={
+      Object {
+        "dob": "1678-04-20",
+        "id": "7",
+        "lastUpdated": "2019-06-21",
+        "manager": "Spongebob",
+        "name": "Flying Dutchman",
+      }
+    }
+    headers={
+      Array [
+        Object {
+          "key": "name",
+          "label": "Subject Name",
+        },
+        Object {
+          "key": "dob",
+          "label": "Date of Birth",
+        },
+        Object {
+          "key": "manager",
+          "label": "Manager",
+        },
+        Object {
+          "key": "lastUpdated",
+          "label": "Last Updated",
+        },
+      ]
+    }
+    key="7"
+  />
+  <TableRow>
+    <Cell
+      colSpan={4}
+      height={114}
+    />
+  </TableRow>
+</tbody>
+`;
+
+exports[`TableBody render should render tbody at root 1`] = `
+<tbody>
+  <TableRow
+    key="1"
+  >
+    <Cell
+      key="1_cell_name"
+    >
+      Eugene Krabs
+    </Cell>
+    <Cell
+      key="1_cell_dob"
+    >
+      1942-11-30
+    </Cell>
+    <Cell
+      key="1_cell_manager"
+    >
+      Spongebob
+    </Cell>
+    <Cell
+      key="1_cell_lastUpdated"
+    >
+      2019-09-01
+    </Cell>
+  </TableRow>
+  <TableRow
+    key="2"
+  >
+    <Cell
+      key="2_cell_name"
+    >
+      Squidward Tentacles
+    </Cell>
+    <Cell
+      key="2_cell_dob"
+    />
+    <Cell
+      key="2_cell_manager"
+    >
+      Smitty
+    </Cell>
+    <Cell
+      key="2_cell_lastUpdated"
+    >
+      2019-08-29
+    </Cell>
+  </TableRow>
+  <TableRow
+    key="3"
+  >
+    <Cell
+      key="3_cell_name"
+    >
+      Sandy Cheeks
+    </Cell>
+    <Cell
+      key="3_cell_dob"
+    >
+      1987-11-17
+    </Cell>
+    <Cell
+      key="3_cell_manager"
+    >
+      Patrick
+    </Cell>
+    <Cell
+      key="3_cell_lastUpdated"
+    >
+      2019-07-30
+    </Cell>
+  </TableRow>
+  <TableRow
+    key="4"
+  >
+    <Cell
+      key="4_cell_name"
+    >
+      Larry the Lobster
+    </Cell>
+    <Cell
+      key="4_cell_dob"
+    >
+      1975-06-23
+    </Cell>
+    <Cell
+      key="4_cell_manager"
+    >
+      Patchy
+    </Cell>
+    <Cell
+      key="4_cell_lastUpdated"
+    >
+      2019-08-16
+    </Cell>
+  </TableRow>
+  <TableRow
+    key="5"
+  >
+    <Cell
+      key="5_cell_name"
+    >
+      Sheldon Plankton
+    </Cell>
+    <Cell
+      key="5_cell_dob"
+    >
+      1942-11-30
+    </Cell>
+    <Cell
+      key="5_cell_manager"
+    >
+      Spongebob
+    </Cell>
+    <Cell
+      key="5_cell_lastUpdated"
+    >
+      2019-08-20
+    </Cell>
+  </TableRow>
+  <TableRow
+    key="6"
+  >
+    <Cell
+      key="6_cell_name"
+    >
+      Mrs. Puff
+    </Cell>
+    <Cell
+      key="6_cell_dob"
+    />
+    <Cell
+      key="6_cell_manager"
+    >
+      Spongebob
+    </Cell>
+    <Cell
+      key="6_cell_lastUpdated"
+    >
+      2019-08-21
+    </Cell>
+  </TableRow>
+  <TableRow
+    key="7"
+  >
+    <Cell
+      key="7_cell_name"
+    >
+      Flying Dutchman
+    </Cell>
+    <Cell
+      key="7_cell_dob"
+    >
+      1678-04-20
+    </Cell>
+    <Cell
+      key="7_cell_manager"
+    >
+      Spongebob
+    </Cell>
+    <Cell
+      key="7_cell_lastUpdated"
+    >
+      2019-06-21
+    </Cell>
+  </TableRow>
+  <TableRow>
+    <Cell
+      colSpan={4}
+      height={114}
+    />
+  </TableRow>
+</tbody>
+`;
