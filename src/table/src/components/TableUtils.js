@@ -45,7 +45,6 @@ const getRowsPerPageOptions = (rowsPerPageOptions :number[] = [], defaultRowCoun
 
 
 export {
-  // eslint-disable-next-line import/prefer-default-export
   descendByProperty,
   getComparator,
   getSortedData,
