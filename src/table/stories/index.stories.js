@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { Card, CardSegment } from '../../layout';
-import { TABLE_HEADERS, TABLE_DATA } from './constants';
+import { TABLE_DATA, TABLE_HEADERS } from './constants';
 import {
   Table
 } from '..';
