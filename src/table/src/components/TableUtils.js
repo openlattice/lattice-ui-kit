@@ -4,16 +4,11 @@ import type { SortOrder } from '../../types';
 import type { ReactSelectOption } from '../../../select/types';
 
 const descendByProperty = (a :Object, b :Object, property ? :string) => {
-  try {
-    if (a[property] < b[property]) {
-      return 1;
-    }
-    if (a[property] > b[property]) {
-      return -1;
-    }
+  if (a[property] < b[property]) {
+    return 1;
   }
-  catch (error) {
-    throw new Error(error);
+  if (a[property] > b[property]) {
+    return -1;
   }
 
   return 0;
@@ -45,12 +40,15 @@ const getRowsPerPageOptions = (rowsPerPageOptions :number[] = [], defaultRowCoun
     return [createOption(defaultRowCount)];
   }
 
-  return [createOption()];
+  return [];
 };
 
 
 export {
   // eslint-disable-next-line import/prefer-default-export
-  getRowsPerPageOptions,
+  descendByProperty,
+  getComparator,
   getSortedData,
+  createOption,
+  getRowsPerPageOptions,
 };
