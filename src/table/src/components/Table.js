@@ -1,6 +1,6 @@
 // @flow
 
-import React, { useState } from 'react';
+import React from 'react';
 import isEmpty from 'lodash/isEmpty';
 
 import TableHeader from './TableHeader';
@@ -9,7 +9,7 @@ import PaginationToolbar from './PaginationToolbar';
 import { StyledTable } from './styled';
 
 type Props = {
-  data :Array<Object>;
+  data ? :Array<Object>;
   headers :Array<Object>;
   rowsPerPageOptions ? :number[];
   paginated ? :boolean;
@@ -24,12 +24,14 @@ const Table = (props :Props) => {
     paginated,
   } = props;
 
-  const initialRowsPerPage = (paginated && !isEmpty(rowsPerPageOptions)) ? rowsPerPageOptions[0] : data.length;
+  const rowCount = !isEmpty(data) ? data.length : 0;
+  let initialRowsPerPage = rowCount || 5;
+  if (paginated && !isEmpty(rowsPerPageOptions)) [initialRowsPerPage] = rowsPerPageOptions;
 
-  const [orderBy, setOrderBy] = useState();
-  const [order, setOrder] = useState();
-  const [currentPage, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(initialRowsPerPage);
+  const [orderBy, setOrderBy] = React.useState();
+  const [order, setOrder] = React.useState();
+  const [currentPage, setPage] = React.useState(0);
+  const [rowsPerPage, setRowsPerPage] = React.useState(initialRowsPerPage);
 
   const handleSort = (event, property) => {
     const isDesc = orderBy === property && order === 'desc';
@@ -57,7 +59,7 @@ const Table = (props :Props) => {
       {
         paginated && (
           <PaginationToolbar
-              count={data.length}
+              count={rowCount}
               page={currentPage}
               rowsPerPage={rowsPerPage}
               rowsPerPageOptions={rowsPerPageOptions}
@@ -70,8 +72,9 @@ const Table = (props :Props) => {
 };
 
 Table.defaultProps = {
+  data: [],
   paginated: false,
-  rowsPerPageOptions: []
+  rowsPerPageOptions: [],
 };
 
 export default Table;

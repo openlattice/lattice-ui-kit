@@ -22,7 +22,7 @@ const getComparator = (order :SortOrder = false, property ? :string) => {
   return comparator;
 };
 
-const getSortedData = (data :Array<Object>, order ? :SortOrder, orderBy ? :string) :Array<Object> => {
+const getSortedData = (data ? :Array<Object> = [], order ? :SortOrder, orderBy ? :string) :Array<Object> => {
   const copyData :Array<Object> = [...data];
   const comparator = getComparator(order, orderBy);
 

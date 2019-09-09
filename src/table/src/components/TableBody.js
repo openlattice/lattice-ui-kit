@@ -15,7 +15,7 @@ type Props = {
   headers :Object[];
   order ? :SortOrder;
   orderBy ? :string;
-  data :RowData[];
+  data ? :RowData[];
   rowsPerPage :number;
   page :number;
   rowComponent ? :ComponentType<any>;
@@ -69,6 +69,7 @@ const TableBody = (props :Props) => {
 };
 
 TableBody.defaultProps = {
+  data: [],
   order: false,
   orderBy: undefined,
   rowComponent: undefined
