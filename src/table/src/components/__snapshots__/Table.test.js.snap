@@ -3916,6 +3916,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               </StyledComponent>
             </styled__RowPerPageWrapper>
             <Label
+              id="row-range"
               subtle={true}
             >
               <StyledComponent
@@ -3950,10 +3951,12 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   }
                 }
                 forwardedRef={null}
+                id="row-range"
                 subtle={true}
               >
                 <label
                   className="c7"
+                  id="row-range"
                 >
                   1 - 7 of 7
                 </label>
@@ -4184,7 +4187,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               </Button>
             </IconButton>
             <IconButton
-              disabled={false}
+              disabled={true}
               icon={
                 <FontAwesomeIcon
                   border={false}
@@ -4221,20 +4224,20 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               onClick={[Function]}
             >
               <Button
-                disabled={false}
+                disabled={true}
                 isLoading={false}
                 mode="subtle"
                 onClick={[Function]}
                 type="button"
               >
                 <StyledButton
-                  disabled={false}
+                  disabled={true}
                   mode="subtle"
                   onClick={[Function]}
                   type="button"
                 >
                   <StyledComponent
-                    disabled={false}
+                    disabled={true}
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
@@ -4280,7 +4283,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   >
                     <button
                       className="c9"
-                      disabled={false}
+                      disabled={true}
                       mode="subtle"
                       onClick={[Function]}
                       type="button"
@@ -9047,6 +9050,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
               </StyledComponent>
             </styled__RowPerPageWrapper>
             <Label
+              id="row-range"
               subtle={true}
             >
               <StyledComponent
@@ -9081,10 +9085,12 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
                   }
                 }
                 forwardedRef={null}
+                id="row-range"
                 subtle={true}
               >
                 <label
                   className="c7"
+                  id="row-range"
                 >
                   0 - 0 of 0
                 </label>
@@ -13420,6 +13426,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
               </StyledComponent>
             </styled__RowPerPageWrapper>
             <Label
+              id="row-range"
               subtle={true}
             >
               <StyledComponent
@@ -13454,10 +13461,12 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
                   }
                 }
                 forwardedRef={null}
+                id="row-range"
                 subtle={true}
               >
                 <label
                   className="c7"
+                  id="row-range"
                 >
                   1 - 7 of 7
                 </label>
@@ -13688,7 +13697,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
               </Button>
             </IconButton>
             <IconButton
-              disabled={false}
+              disabled={true}
               icon={
                 <FontAwesomeIcon
                   border={false}
@@ -13725,20 +13734,20 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
               onClick={[Function]}
             >
               <Button
-                disabled={false}
+                disabled={true}
                 isLoading={false}
                 mode="subtle"
                 onClick={[Function]}
                 type="button"
               >
                 <StyledButton
-                  disabled={false}
+                  disabled={true}
                   mode="subtle"
                   onClick={[Function]}
                   type="button"
                 >
                   <StyledComponent
-                    disabled={false}
+                    disabled={true}
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
@@ -13784,7 +13793,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
                   >
                     <button
                       className="c9"
-                      disabled={false}
+                      disabled={true}
                       mode="subtle"
                       onClick={[Function]}
                       type="button"
@@ -18050,6 +18059,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
               </StyledComponent>
             </styled__RowPerPageWrapper>
             <Label
+              id="row-range"
               subtle={true}
             >
               <StyledComponent
@@ -18084,10 +18094,12 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
                   }
                 }
                 forwardedRef={null}
+                id="row-range"
                 subtle={true}
               >
                 <label
                   className="c8"
+                  id="row-range"
                 >
                   1 - 7 of 7
                 </label>
@@ -22423,6 +22435,7 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
               </StyledComponent>
             </styled__RowPerPageWrapper>
             <Label
+              id="row-range"
               subtle={true}
             >
               <StyledComponent
@@ -22457,10 +22470,12 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
                   }
                 }
                 forwardedRef={null}
+                id="row-range"
                 subtle={true}
               >
                 <label
                   className="c7"
+                  id="row-range"
                 >
                   1 - 7 of 7
                 </label>
@@ -22691,7 +22706,7 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
               </Button>
             </IconButton>
             <IconButton
-              disabled={false}
+              disabled={true}
               icon={
                 <FontAwesomeIcon
                   border={false}
@@ -22728,20 +22743,20 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
               onClick={[Function]}
             >
               <Button
-                disabled={false}
+                disabled={true}
                 isLoading={false}
                 mode="subtle"
                 onClick={[Function]}
                 type="button"
               >
                 <StyledButton
-                  disabled={false}
+                  disabled={true}
                   mode="subtle"
                   onClick={[Function]}
                   type="button"
                 >
                   <StyledComponent
-                    disabled={false}
+                    disabled={true}
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
@@ -22787,7 +22802,7 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
                   >
                     <button
                       className="c9"
-                      disabled={false}
+                      disabled={true}
                       mode="subtle"
                       onClick={[Function]}
                       type="button"

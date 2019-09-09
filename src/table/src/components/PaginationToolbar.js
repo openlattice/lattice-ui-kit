@@ -29,10 +29,10 @@ const PaginationToolbar = (props :Props) => {
   } = props;
 
   const options = getRowsPerPageOptions(rowsPerPageOptions, count);
-  const lastPage = Math.floor(count / rowsPerPage);
+  const lastPage = Math.floor(count / rowsPerPage) - Number(!(count % rowsPerPage));
 
   const maxRowNumber = Math.min(rowsPerPage * (page + 1), count);
-  const minRowNumber = Math.min(rowsPerPage * Math.max(page) + 1, count);
+  const minRowNumber = Math.min(rowsPerPage * page + 1, count);
   const rowRange = `${minRowNumber} - ${maxRowNumber} of ${count}`;
 
   return (
@@ -49,16 +49,16 @@ const PaginationToolbar = (props :Props) => {
             options={options}
             useRawValues />
       </RowPerPageWrapper>
-      <Label subtle>{rowRange}</Label>
+      <Label id="row-range" subtle>{rowRange}</Label>
       <IconButton
           mode="subtle"
           icon={<FontAwesomeIcon icon={faChevronLeft} fixedWidth />}
-          disabled={page === 0}
+          disabled={page <= 0}
           onClick={() => setPage(page - 1)} />
       <IconButton
           mode="subtle"
           icon={<FontAwesomeIcon icon={faChevronRight} fixedWidth />}
-          disabled={page === lastPage}
+          disabled={page >= lastPage}
           onClick={() => setPage(page + 1)} />
     </PaginationWrapper>
   );

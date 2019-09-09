@@ -1660,6 +1660,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
           </StyledComponent>
         </styled__RowPerPageWrapper>
         <Label
+          id="row-range"
           subtle={true}
         >
           <StyledComponent
@@ -1694,10 +1695,12 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
               }
             }
             forwardedRef={null}
+            id="row-range"
             subtle={true}
           >
             <label
               className="c1"
+              id="row-range"
             >
               NaN - NaN of 0
             </label>

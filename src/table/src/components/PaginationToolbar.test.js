@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import PaginationToolbar from './PaginationToolbar';
@@ -70,6 +70,44 @@ describe('PaginationToolbar', () => {
         select.props.onChange(20);
         expect(mockSetRowsPerPage).toHaveBeenCalledTimes(1);
         expect(mockSetRowsPerPage.mock.calls[0][0]).toEqual(20);
+      });
+    });
+  });
+
+  describe('render', () => {
+    describe('row range', () => {
+      test('should show updated range when count and page change', () => {
+        const wrapper = shallow(
+          <PaginationToolbar
+              page={0}
+              count={0}
+              rowsPerPage={5} />
+        );
+        expect(wrapper.find('#row-range').text()).toEqual('0 - 0 of 0');
+        wrapper.setProps({ count: 7 });
+        expect(wrapper.find('#row-range').text()).toEqual('1 - 5 of 7');
+        wrapper.setProps({ page: 1 });
+        expect(wrapper.find('#row-range').text()).toEqual('6 - 7 of 7');
+      });
+    });
+
+    describe('page buttons', () => {
+
+      test('should disable page buttons when at their upper and lower page bounds', () => {
+        const wrapper = mount(
+          <PaginationToolbar
+              page={0}
+              count={7}
+              rowsPerPage={5} />
+        );
+        const buttons = wrapper.find(IconButton);
+        const prevButton = buttons.get(0);
+        const nextButton = buttons.get(1);
+        expect(prevButton.props.disabled).toEqual(true);
+        expect(nextButton.props.disabled).toEqual(false);
+
+        wrapper.setProps({ page: 1 });
+        expect(wrapper.find(IconButton).get(1).props.disabled).toEqual(true);
       });
     });
   });
