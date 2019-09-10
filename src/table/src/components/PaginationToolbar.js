@@ -65,7 +65,11 @@ const PaginationToolbar = (props :Props) => {
 };
 
 PaginationToolbar.defaultProps = {
+  count: 0,
+  page: 0,
+  rowsPerPage: 5,
   rowsPerPageOptions: []
 };
 
-export default React.memo<Props>(PaginationToolbar);
+// $FlowFixMe
+export default React.memo(PaginationToolbar);
