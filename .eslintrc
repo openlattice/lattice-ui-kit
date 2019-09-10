@@ -112,6 +112,12 @@
 
     "jsx-a11y/href-no-hash": "off",
 
+    "react/default-props-match-prop-types": [
+      "error",
+      {
+        "allowRequiredDefaults": true
+      }
+    ],
     "react/forbid-prop-types": "warn",
     "react-hooks/exhaustive-deps": "warn",
     "react-hooks/rules-of-hooks": "error",
