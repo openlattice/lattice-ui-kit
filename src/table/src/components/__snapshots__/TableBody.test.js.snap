@@ -226,7 +226,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     }
     key="7"
   />
-  <TableRow>
+  <TableRow
+    id="empty-row-filler"
+  >
     <Cell
       colSpan={4}
       height={114}
@@ -401,7 +403,9 @@ exports[`TableBody render should render tbody at root 1`] = `
       2019-06-21
     </Cell>
   </TableRow>
-  <TableRow>
+  <TableRow
+    id="empty-row-filler"
+  >
     <Cell
       colSpan={4}
       height={114}

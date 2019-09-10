@@ -53,13 +53,37 @@ describe('TableBody', () => {
             page={0} />
       );
 
-      const rowComponents = wrapper.find(rowComponent);
-      const sortedByIndex = [1, 4, 2, 5, 3];
+      let rowComponents = wrapper.find(rowComponent);
+      let actualOrderByIndices = [1, 4, 2, 5, 3];
       rowComponents.forEach((row, index) => {
         const rowData = row.prop('data');
-        const actualIndex = sortedByIndex[index];
+        const actualIndex = actualOrderByIndices[index];
         expect(rowData).toEqual(TABLE_DATA[actualIndex]);
       });
+
+      // change to page: 1
+      wrapper.setProps({ page: 1 });
+      rowComponents = wrapper.find(rowComponent);
+      actualOrderByIndices = [6, 0];
+      rowComponents.forEach((row, index) => {
+        const rowData = row.prop('data');
+        const actualIndex = actualOrderByIndices[index];
+        expect(rowData).toEqual(TABLE_DATA[actualIndex]);
+      });
+    });
+
+    test('should render empty-row-filler if displayed rows is less then rowsPerPage', () => {
+      const wrapper = shallow(
+        <TableBody
+            data={TABLE_DATA}
+            headers={TABLE_HEADERS}
+            rowsPerPage={5}
+            page={0} />
+      );
+
+      expect(wrapper.find('#empty-row-filler')).toHaveLength(0);
+      wrapper.setProps({ page: 1 });
+      expect(wrapper.find('#empty-row-filler')).toHaveLength(1);
     });
   });
 });

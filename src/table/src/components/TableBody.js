@@ -59,7 +59,7 @@ const TableBody = (props :Props) => {
       }
       {
         !!emptyRowCount && (
-          <TableRow>
+          <TableRow id="empty-row-filler">
             <Cell colSpan={headers.length} height={emptyHeight} />
           </TableRow>
         )

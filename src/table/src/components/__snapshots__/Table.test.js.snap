@@ -7414,7 +7414,9 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
             rowsPerPage={5}
           >
             <tbody>
-              <TableRow>
+              <TableRow
+                id="empty-row-filler"
+              >
                 <StyledComponent
                   forwardedComponent={
                     Object {
@@ -7447,9 +7449,11 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
                     }
                   }
                   forwardedRef={null}
+                  id="empty-row-filler"
                 >
                   <tr
                     className="c4"
+                    id="empty-row-filler"
                   >
                     <Cell
                       colSpan={4}
@@ -16265,7 +16269,9 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
                   </tr>
                 </StyledComponent>
               </TableRow>
-              <TableRow>
+              <TableRow
+                id="empty-row-filler"
+              >
                 <StyledComponent
                   forwardedComponent={
                     Object {
@@ -16298,9 +16304,11 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
                     }
                   }
                   forwardedRef={null}
+                  id="empty-row-filler"
                 >
                   <tr
                     className="c4"
+                    id="empty-row-filler"
                   >
                     <Cell
                       colSpan={4}
