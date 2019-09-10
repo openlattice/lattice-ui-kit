@@ -39,5 +39,27 @@ describe('TableBody', () => {
       });
       expect(toJson(wrapper)).toMatchSnapshot();
     });
+
+    test('should render sorted data by page', () => {
+      const rowComponent = () => <div>test</div>;
+      const wrapper = shallow(
+        <TableBody
+            data={TABLE_DATA}
+            headers={TABLE_HEADERS}
+            order="desc"
+            orderBy="name"
+            rowsPerPage={5}
+            rowComponent={rowComponent}
+            page={0} />
+      );
+
+      const rowComponents = wrapper.find(rowComponent);
+      const sortedByIndex = [1, 4, 2, 5, 3];
+      rowComponents.forEach((row, index) => {
+        const rowData = row.prop('data');
+        const actualIndex = sortedByIndex[index];
+        expect(rowData).toEqual(TABLE_DATA[actualIndex]);
+      });
+    });
   });
 });
