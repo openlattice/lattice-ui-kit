@@ -28,14 +28,12 @@ describe('HeadCell', () => {
       test('should render FontAwesomeIcon if true', () => {
         const wrapper = shallow(<HeadCell sortable />);
 
-        expect(toJson(wrapper)).toMatchSnapshot();
         expect(wrapper.find('FontAwesomeIcon')).toHaveLength(1);
       });
 
       test('should not render FontAwesomeIcon if false', () => {
         const wrapper = shallow(<HeadCell />);
 
-        expect(toJson(wrapper)).toMatchSnapshot();
         expect(wrapper.find('FontAwesomeIcon')).toHaveLength(0);
       });
     });
@@ -68,7 +66,6 @@ describe('HeadCell', () => {
     test('should render as th', () => {
       const wrapper = shallow(<HeadCell />);
 
-      expect(toJson(wrapper)).toMatchSnapshot();
       expect(wrapper.find(Cell).prop('as')).toEqual('th');
     });
 
@@ -76,7 +73,6 @@ describe('HeadCell', () => {
       const child = <div>child</div>;
       const wrapper = shallow(<HeadCell>{child}</HeadCell>);
 
-      expect(toJson(wrapper)).toMatchSnapshot();
       expect(wrapper.contains(child)).toEqual(true);
     });
   });
