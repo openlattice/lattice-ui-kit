@@ -16,7 +16,8 @@ type ButtonMode =
   | 'positive'
   | 'primary'
   | 'secondary'
-  | 'subtle';
+  | 'subtle'
+  | 'neutral';
 
 type Props = {
   children ?:Node;
