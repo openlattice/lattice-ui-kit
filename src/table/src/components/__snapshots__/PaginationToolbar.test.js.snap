@@ -1702,7 +1702,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
               className="c1"
               id="row-range"
             >
-              NaN - NaN of 0
+              0 - 0 of 0
             </label>
           </StyledComponent>
         </Label>
@@ -1931,7 +1931,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
           </Button>
         </IconButton>
         <IconButton
-          disabled={false}
+          disabled={true}
           icon={
             <FontAwesomeIcon
               border={false}
@@ -1968,20 +1968,20 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
           onClick={[Function]}
         >
           <Button
-            disabled={false}
+            disabled={true}
             isLoading={false}
             mode="subtle"
             onClick={[Function]}
             type="button"
           >
             <StyledButton
-              disabled={false}
+              disabled={true}
               mode="subtle"
               onClick={[Function]}
               type="button"
             >
               <StyledComponent
-                disabled={false}
+                disabled={true}
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -2027,7 +2027,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
               >
                 <button
                   className="c3"
-                  disabled={false}
+                  disabled={true}
                   mode="subtle"
                   onClick={[Function]}
                   type="button"
