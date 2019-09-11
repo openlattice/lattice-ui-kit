@@ -67,10 +67,10 @@ storiesOf('Button', module)
         </ButtonRow>
         <ButtonRow>
           <DarkColoredButtonRow>
-            <Button mode="neutral" fontColor="light" onClick={action('button clicked')}>Neutral</Button>
+            <Button mode="neutral" onClick={action('button clicked')}>Neutral</Button>
           </DarkColoredButtonRow>
           <LightColoredButtonRow>
-            <Button mode="neutral" fontColor="dark" onClick={action('button clicked')}>Neutral</Button>
+            <Button mode="neutral" fontColor={NEUTRALS[0]} onClick={action('button clicked')}>Neutral</Button>
           </LightColoredButtonRow>
         </ButtonRow>
       </CardSegment>
@@ -79,7 +79,7 @@ storiesOf('Button', module)
         <ButtonRow>
           <Button disabled onClick={action('button clicked')}>Default</Button>
           <Button mode="subtle" disabled onClick={action('button clicked')}>Subtle</Button>
-          <Button mode="neutral" disabled fontColor="dark" onClick={action('button clicked')}>Neutral</Button>
+          <Button mode="neutral" disabled fontColor={NEUTRALS[0]} onClick={action('button clicked')}>Neutral</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
@@ -101,7 +101,7 @@ storiesOf('Button', module)
           <Button mode="subtle" onClick={action('button clicked')}>TextTextTextTextTextTextTextTextTextText</Button>
           <Button
               mode="neutral"
-              fontColor="dark"
+              fontColor={NEUTRALS[0]}
               onClick={action('button clicked')}>
             TextTextTextTextTextTextTextTextTextText
           </Button>

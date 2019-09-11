@@ -24,6 +24,7 @@ type Props = {
   className ?:string;
   disabled ?:boolean;
   isLoading ?:boolean;
+  fontColor ?:string;
   mode ?:ButtonMode;
   onClick :(e :SyntheticEvent<HTMLButtonElement>) => void;
   type ?:string;
@@ -62,6 +63,7 @@ Button.defaultProps = {
   className: undefined,
   disabled: false,
   isLoading: false,
+  fontColor: '',
   mode: 'default',
   type: 'button',
 };

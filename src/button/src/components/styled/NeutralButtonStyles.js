@@ -1,19 +1,26 @@
 import { css } from 'styled-components';
 
 import { NEUTRALS, WHITE } from '../../../../colors';
-import { getStyleVariation } from '../../../../utils/StyleUtils';
+
+const getFontColor = (props) => {
+  const { fontColor } = props;
+  if (fontColor) {
+    return css`
+      color: ${fontColor};
+    `;
+  }
+
+  return css`
+    color: ${WHITE};
+  `;
+};
 
 // border-top + border-bottom + padding-top + padding-bottom + line-height = 40px
-const fontColorVariation = getStyleVariation('fontColor', {
-  dark: NEUTRALS[0],
-  light: WHITE,
-});
-
 const neutralStyle = css`
   background-color: transparent;
   border-color: transparent;
-  color: ${fontColorVariation};
   font-weight: 600;
+  ${getFontColor};
 `;
 
 const neutralHover = css`
@@ -22,13 +29,12 @@ const neutralHover = css`
 
 const neutralActive = css`
   background-color: rgba(255, 255, 255, 0.5);
-  color: ${fontColorVariation};
 `;
 
 const neutralDisabled = css`
   background-color: transparent;
   border-color: transparent;
-  color: ${fontColorVariation};
+  ${getFontColor};
 `;
 
 const neutralFocus = css`
