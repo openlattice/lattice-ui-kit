@@ -100,7 +100,7 @@ exports[`button mode="default" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "kSSewb",
+            "lastClassName": "cGlCQC",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -319,7 +319,7 @@ exports[`button mode="default" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "kSSewb",
+            "lastClassName": "cGlCQC",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -729,7 +729,6 @@ exports[`button mode="neutral" should match snapshot 1`] = `
   background-color: transparent;
   border-color: transparent;
   color: #555e6f;
-  font-weight: none;
 }
 
 .c0:focus-visible {
@@ -951,7 +950,6 @@ exports[`button mode="neutral" should match snapshot 2`] = `
   background-color: transparent;
   border-color: transparent;
   color: #ffffff;
-  font-weight: none;
 }
 
 .c0:focus-visible {
