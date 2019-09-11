@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
+import { NEUTRALS, YELLOW_1 } from '../../colors';
 import { Card, CardSegment } from '../../layout';
 import {
   Button,
@@ -39,6 +40,18 @@ const LaunchIcon = (
   <FontAwesomeIcon icon={faSpaceShuttle} transform={{ rotate: -45 }} />
 );
 
+const DarkColoredButtonRow = styled(ButtonRow)`
+  background-color: ${NEUTRALS[0]};
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 20px 0;
+`;
+
+const LightColoredButtonRow = styled(DarkColoredButtonRow)`
+  background-color: ${YELLOW_1};
+`;
+
 storiesOf('Button', module)
   .add('regular button', () => (
     <Card>
@@ -52,12 +65,21 @@ storiesOf('Button', module)
           <Button mode="negative" onClick={action('button clicked')}>Negative</Button>
           <Button mode="subtle" onClick={action('button clicked')}>Subtle</Button>
         </ButtonRow>
+        <ButtonRow>
+          <DarkColoredButtonRow>
+            <Button mode="neutral" fontColor="light" onClick={action('button clicked')}>Neutral</Button>
+          </DarkColoredButtonRow>
+          <LightColoredButtonRow>
+            <Button mode="neutral" fontColor="dark" onClick={action('button clicked')}>Neutral</Button>
+          </LightColoredButtonRow>
+        </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
         <H2>Disabled</H2>
         <ButtonRow>
           <Button disabled onClick={action('button clicked')}>Default</Button>
           <Button mode="subtle" disabled onClick={action('button clicked')}>Subtle</Button>
+          <Button mode="neutral" disabled fontColor="dark" onClick={action('button clicked')}>Neutral</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
@@ -65,6 +87,7 @@ storiesOf('Button', module)
         <ButtonRow>
           <Button isLoading onClick={action('button clicked')}>Default</Button>
           <Button mode="subtle" isLoading onClick={action('button clicked')}>Subtle</Button>
+          <Button mode="neutral" isLoading onClick={action('button clicked')}>Neutral</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
@@ -76,6 +99,12 @@ storiesOf('Button', module)
           <Button mode="positive" onClick={action('button clicked')}>TextTextTextTextTextTextTextTextTextText</Button>
           <Button mode="negative" onClick={action('button clicked')}>TextTextTextTextTextTextTextTextTextText</Button>
           <Button mode="subtle" onClick={action('button clicked')}>TextTextTextTextTextTextTextTextTextText</Button>
+          <Button
+              mode="neutral"
+              fontColor="dark"
+              onClick={action('button clicked')}>
+            TextTextTextTextTextTextTextTextTextText
+          </Button>
         </ButtonGrid>
       </CardSegment>
     </Card>
