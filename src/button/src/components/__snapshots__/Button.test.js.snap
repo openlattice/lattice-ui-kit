@@ -100,7 +100,7 @@ exports[`button mode="default" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "fZMTHX",
+            "lastClassName": "kSSewb",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -319,7 +319,7 @@ exports[`button mode="default" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "fZMTHX",
+            "lastClassName": "kSSewb",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -646,6 +646,450 @@ exports[`button mode="negative" should match snapshot 1`] = `
                     className="c2"
                   >
                     NEGATIVE_BUTTON
+                  </span>
+                </StyledComponent>
+              </Content>
+            </span>
+          </StyledComponent>
+        </ContentWrapper>
+      </button>
+    </StyledComponent>
+  </StyledButton>
+</Button>
+`;
+
+exports[`button mode="neutral" should match snapshot 1`] = `
+.c1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-width: 14px;
+}
+
+.c2 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c0 {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  white-space: nowrap;
+  background-color: transparent;
+  border-color: transparent;
+  color: #555e6f;
+  font-weight: 600;
+}
+
+.c0:hover {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.c0:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.5);
+  color: #555e6f;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #555e6f;
+  font-weight: none;
+}
+
+.c0:focus-visible {
+  box-shadow: #b6bbc7 0 0 0 2px;
+}
+
+<Button
+  disabled={false}
+  fontColor="dark"
+  isLoading={false}
+  mode="neutral"
+  onClick={[Function]}
+  type="button"
+>
+  <StyledButton
+    disabled={false}
+    fontColor="dark"
+    mode="neutral"
+    onClick={[Function]}
+    type="button"
+  >
+    <StyledComponent
+      disabled={false}
+      fontColor="dark"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledButton-sc-1etazn9-0",
+            "isStatic": false,
+            "lastClassName": "fZMTHX",
+            "rules": Array [
+              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+              "100ms",
+              " ease-in-out,border-color ",
+              "100ms",
+              " ease-in-out,box-shadow ",
+              "100ms",
+              " ease-in-out;white-space:nowrap;",
+              [Function],
+              ";:hover{cursor:pointer;text-decoration:none;",
+              [Function],
+              "};:active{text-decoration:none;",
+              [Function],
+              "};:disabled{cursor:not-allowed;text-decoration:none;",
+              [Function],
+              "};:focus-visible{",
+              [Function],
+              "}",
+            ],
+          },
+          "displayName": "StyledButton",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledButton-sc-1etazn9-0",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="neutral"
+      onClick={[Function]}
+      type="button"
+    >
+      <button
+        className="c0"
+        disabled={false}
+        mode="neutral"
+        onClick={[Function]}
+        type="button"
+      >
+        <ContentWrapper>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "ContentWrapper-sc-36hfub-0",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
+                  ],
+                },
+                "displayName": "ContentWrapper",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "ContentWrapper-sc-36hfub-0",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c1"
+            >
+              <Content
+                isLoading={false}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Content-sc-18psqsj-0",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "flex:1 1 auto;opacity:",
+                          [Function],
+                          ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                        ],
+                      },
+                      "displayName": "Content",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Content-sc-18psqsj-0",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  isLoading={false}
+                >
+                  <span
+                    className="c2"
+                  >
+                    NEUTRAL_BUTTON
+                  </span>
+                </StyledComponent>
+              </Content>
+            </span>
+          </StyledComponent>
+        </ContentWrapper>
+      </button>
+    </StyledComponent>
+  </StyledButton>
+</Button>
+`;
+
+exports[`button mode="neutral" should match snapshot 2`] = `
+.c1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-width: 14px;
+}
+
+.c2 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c0 {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  white-space: nowrap;
+  background-color: transparent;
+  border-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.c0:hover {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.c0:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.5);
+  color: #ffffff;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: #ffffff;
+  font-weight: none;
+}
+
+.c0:focus-visible {
+  box-shadow: #b6bbc7 0 0 0 2px;
+}
+
+<Button
+  disabled={false}
+  fontColor="light"
+  isLoading={false}
+  mode="neutral"
+  onClick={[Function]}
+  type="button"
+>
+  <StyledButton
+    disabled={false}
+    fontColor="light"
+    mode="neutral"
+    onClick={[Function]}
+    type="button"
+  >
+    <StyledComponent
+      disabled={false}
+      fontColor="light"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "StyledButton-sc-1etazn9-0",
+            "isStatic": false,
+            "lastClassName": "fZMTHX",
+            "rules": Array [
+              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+              "100ms",
+              " ease-in-out,border-color ",
+              "100ms",
+              " ease-in-out,box-shadow ",
+              "100ms",
+              " ease-in-out;white-space:nowrap;",
+              [Function],
+              ";:hover{cursor:pointer;text-decoration:none;",
+              [Function],
+              "};:active{text-decoration:none;",
+              [Function],
+              "};:disabled{cursor:not-allowed;text-decoration:none;",
+              [Function],
+              "};:focus-visible{",
+              [Function],
+              "}",
+            ],
+          },
+          "displayName": "StyledButton",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "StyledButton-sc-1etazn9-0",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="neutral"
+      onClick={[Function]}
+      type="button"
+    >
+      <button
+        className="c0"
+        disabled={false}
+        mode="neutral"
+        onClick={[Function]}
+        type="button"
+      >
+        <ContentWrapper>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "ContentWrapper-sc-36hfub-0",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
+                  ],
+                },
+                "displayName": "ContentWrapper",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "ContentWrapper-sc-36hfub-0",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c1"
+            >
+              <Content
+                isLoading={false}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Content-sc-18psqsj-0",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "flex:1 1 auto;opacity:",
+                          [Function],
+                          ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                        ],
+                      },
+                      "displayName": "Content",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Content-sc-18psqsj-0",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  isLoading={false}
+                >
+                  <span
+                    className="c2"
+                  >
+                    NEUTRAL_BUTTON
                   </span>
                 </StyledComponent>
               </Content>
