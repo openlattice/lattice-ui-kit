@@ -58,6 +58,7 @@ exports[`Search snapshots should match snapshot 1`] = `
           </div>
           <Button
             disabled={false}
+            fontColor=""
             isLoading={false}
             mode="primary"
             onClick={[Function]}
