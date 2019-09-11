@@ -12,6 +12,7 @@ const SECONDARY_BTN_TXT = 'SECONDARY_BUTTON';
 const POSITIVE_BTN_TXT = 'POSITIVE_BUTTON';
 const NEGATIVE_BTN_TXT = 'NEGATIVE_BUTTON';
 const SUBTLE_BTN_TXT = 'SUBTLE_BUTTON';
+const NEUTRAL_BTN_TXT = 'NEUTRAL_BUTTON';
 
 describe('button', () => {
 
@@ -473,6 +474,105 @@ describe('button', () => {
         );
         btn.simulate('click');
         expect(mockOnClick).toHaveBeenCalledTimes(1);
+      });
+
+    });
+
+  });
+
+  describe('mode="neutral"', () => {
+
+    const basicBtn1 = mount(
+      <Button mode="neutral" fontColor="dark" onClick={nope}>
+        { NEUTRAL_BTN_TXT }
+      </Button>
+    );
+    const basicBtn2 = mount(
+      <Button mode="neutral" fontColor="light" onClick={nope}>
+        { NEUTRAL_BTN_TXT }
+      </Button>
+    );
+
+    test('should match snapshot', () => {
+      expect(toJson(basicBtn1)).toMatchSnapshot();
+      expect(toJson(basicBtn2)).toMatchSnapshot();
+    });
+
+    test('should render StyledButton component', () => {
+      expect(basicBtn1.find(StyledButton)).toHaveLength(1);
+      expect(basicBtn2.find(StyledButton)).toHaveLength(1);
+    });
+
+    test('should render a button element', () => {
+      expect(basicBtn1.find('button')).toHaveLength(1);
+      expect(basicBtn2.find('button')).toHaveLength(1);
+    });
+
+    test('should render the correct text', () => {
+      expect(basicBtn1.text()).toEqual(NEUTRAL_BTN_TXT);
+      expect(basicBtn2.text()).toEqual(NEUTRAL_BTN_TXT);
+    });
+
+    describe('isLoading', () => {
+      test('should render loading spinner', () => {
+        const wrapper = mount(<Button isLoading />);
+        expect(wrapper.find('Spinner')).toHaveLength(1);
+      });
+
+      test('should set content opacity to 0', () => {
+        const wrapper = mount(<Button isLoading />);
+        expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
+      });
+    });
+
+    describe('disabled', () => {
+
+      const disabledBtn1 = mount(
+        <Button disabled onClick={nope}>
+          { NEUTRAL_BTN_TXT }
+        </Button>
+      );
+      const disabledBtn2 = mount(
+        <Button disabled mode="neutral" onClick={nope}>
+          { NEUTRAL_BTN_TXT }
+        </Button>
+      );
+
+      test('should set "disabled" attribute to true', () => {
+        expect(disabledBtn1.prop('disabled')).toEqual(true);
+        expect(disabledBtn2.prop('disabled')).toEqual(true);
+        expect(disabledBtn1.find('button').get(0).props.disabled).toEqual(true);
+        expect(disabledBtn2.find('button').get(0).props.disabled).toEqual(true);
+      });
+
+      test('should set "disabled" attribute to false', () => {
+        expect(basicBtn1.prop('disabled')).toEqual(false);
+        expect(basicBtn2.prop('disabled')).toEqual(false);
+        expect(basicBtn1.find('button').get(0).props.disabled).toEqual(false);
+        expect(basicBtn2.find('button').get(0).props.disabled).toEqual(false);
+      });
+
+    });
+
+    describe('onClick()', () => {
+
+      test('should invoke onClick handler', () => {
+        const mockOnClick1 = jest.fn();
+        const mockOnClick2 = jest.fn();
+        const btn1 = shallow(
+          <Button onClick={mockOnClick1}>
+            { NEUTRAL_BTN_TXT }
+          </Button>
+        );
+        const btn2 = shallow(
+          <Button mode="neutral" onClick={mockOnClick2}>
+            { NEUTRAL_BTN_TXT }
+          </Button>
+        );
+        btn1.simulate('click');
+        btn2.simulate('click');
+        expect(mockOnClick1).toHaveBeenCalledTimes(1);
+        expect(mockOnClick2).toHaveBeenCalledTimes(1);
       });
 
     });
