@@ -4001,6 +4001,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
             >
               <Button
                 disabled={true}
+                fontColor=""
                 isLoading={false}
                 mode="subtle"
                 onClick={[Function]}
@@ -4008,12 +4009,14 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               >
                 <StyledButton
                   disabled={true}
+                  fontColor=""
                   mode="subtle"
                   onClick={[Function]}
                   type="button"
                 >
                   <StyledComponent
                     disabled={true}
+                    fontColor=""
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
@@ -4225,6 +4228,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
             >
               <Button
                 disabled={true}
+                fontColor=""
                 isLoading={false}
                 mode="subtle"
                 onClick={[Function]}
@@ -4232,12 +4236,14 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               >
                 <StyledButton
                   disabled={true}
+                  fontColor=""
                   mode="subtle"
                   onClick={[Function]}
                   type="button"
                 >
                   <StyledComponent
                     disabled={true}
+                    fontColor=""
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
