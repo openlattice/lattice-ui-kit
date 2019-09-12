@@ -49,6 +49,7 @@ export { Creatable, Select, CheckboxSelect } from './select';
 export {
   Cell,
   HeadCell,
+  PaginationToolbar,
   Table,
   TableBody,
   TableHeader,
