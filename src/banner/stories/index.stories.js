@@ -46,7 +46,7 @@ const Container = styled.div`
 `;
 
 const Filler = styled.div`
-  height: 400;
+  height: 300px;
 `;
 
 class BannerController extends Component {
