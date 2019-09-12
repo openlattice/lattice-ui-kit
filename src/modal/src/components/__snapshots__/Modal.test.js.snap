@@ -1181,6 +1181,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                             <Button
                                               className="c9"
                                               disabled={false}
+                                              fontColor=""
                                               isLoading={false}
                                               isLonely={false}
                                               mode="primary"
@@ -1191,6 +1192,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               <StyledButton
                                                 className="c9"
                                                 disabled={false}
+                                                fontColor=""
                                                 isLonely={false}
                                                 mode="primary"
                                                 onClick={[Function]}
@@ -1200,6 +1202,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 <StyledComponent
                                                   className="c9"
                                                   disabled={false}
+                                                  fontColor=""
                                                   forwardedComponent={
                                                     Object {
                                                       "$$typeof": Symbol(react.forward_ref),
@@ -1366,6 +1369,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                             <Button
                                               className="c13"
                                               disabled={false}
+                                              fontColor=""
                                               isLoading={false}
                                               mode="default"
                                               onClick={[Function]}
@@ -1375,6 +1379,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                               <StyledButton
                                                 className="c13"
                                                 disabled={false}
+                                                fontColor=""
                                                 mode="default"
                                                 onClick={[Function]}
                                                 stretch={false}
@@ -1383,6 +1388,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 <StyledComponent
                                                   className="c13"
                                                   disabled={false}
+                                                  fontColor=""
                                                   forwardedComponent={
                                                     Object {
                                                       "$$typeof": Symbol(react.forward_ref),
