@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeadCell props onClick invoke onClick 1`] = `
+<Cell
+  as="th"
+  onClick={[MockFunction]}
+/>
+`;
+
+exports[`HeadCell props order should render faSort if sortable but without order 1`] = `
+<Cell
+  as="th"
+>
+  <span>
+    <FontAwesomeIcon
+      border={false}
+      className=""
+      fixedWidth={true}
+      flip={null}
+      icon={
+        Object {
+          "icon": Array [
+            320,
+            512,
+            Array [],
+            "f0dc",
+            Array [
+              "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
+              "",
+            ],
+          ],
+          "iconName": "sort",
+          "prefix": "fad",
+        }
+      }
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
+  </span>
+</Cell>
+`;
+
+exports[`HeadCell props order should render faSortDown if sortable and order="desc" 1`] = `
+<Cell
+  as="th"
+>
+  <span>
+    <FontAwesomeIcon
+      border={false}
+      className=""
+      fixedWidth={true}
+      flip={null}
+      icon={
+        Object {
+          "icon": Array [
+            320,
+            512,
+            Array [],
+            "f0dd",
+            Array [
+              "M279.07 224.05h-238c-21.4 0-32.1-25.9-17-41l119-119a23.9 23.9 0 0 1 33.8-.1l.1.1 119.1 119c15.07 15.05 4.4 41-17 41z",
+              "M296.07 329.05L177 448.05a23.9 23.9 0 0 1-33.8.1l-.1-.1-119-119c-15.1-15.1-4.4-41 17-41h238c21.37 0 32.04 25.95 16.97 41z",
+            ],
+          ],
+          "iconName": "sort-down",
+          "prefix": "fad",
+        }
+      }
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
+  </span>
+</Cell>
+`;
+
+exports[`HeadCell props order should render faSortUp if sortable and order="asc" 1`] = `
+<Cell
+  as="th"
+>
+  <span>
+    <FontAwesomeIcon
+      border={false}
+      className=""
+      fixedWidth={true}
+      flip={null}
+      icon={
+        Object {
+          "icon": Array [
+            320,
+            512,
+            Array [],
+            "f0de",
+            Array [
+              "M41.05 288.05h238c21.4 0 32.1 25.9 17 41l-119 119a23.9 23.9 0 0 1-33.8.1l-.1-.1-119.1-119c-15.05-15.05-4.4-41 17-41z",
+              "M24.05 183.05l119.1-119A23.9 23.9 0 0 1 177 64a.94.94 0 0 1 .1.1l119 119c15.1 15.1 4.4 41-17 41h-238c-21.45-.05-32.1-25.95-17.05-41.05z",
+            ],
+          ],
+          "iconName": "sort-up",
+          "prefix": "fad",
+        }
+      }
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
+  </span>
+</Cell>
+`;

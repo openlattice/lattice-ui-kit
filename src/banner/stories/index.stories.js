@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import { LoremIpsum } from 'lorem-ipsum';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNarwhal } from '@fortawesome/pro-regular-svg-icons';
 
 import { Button } from '../../button';
 import Banner from '..';
 
-const lorem = new LoremIpsum({
-  sentencesPerParagraph: {
-    max: 8,
-    min: 4
-  },
-  wordsPerSentence: {
-    max: 16,
-    min: 4
-  }
-});
+const CITIZENS_OF_DALARAN = `
+  CITIZENS OF DALARAN! RAISE YOUR EYES TO THE SKIES AND OBSERVE!
+  TODAY OUR WORLD'S DESTRUCTION HAS BEEN AVERTED IN DEFIANCE OF OUR VERY MAKERS!
+  ALGALON THE OBSERVER, HERALD OF THE TITANS, HAS BEEN DEFEATED BY OUR BRAVE COMRADES
+  IN THE DEPTHS OF THE TITAN CITY OF ULDUAR. ALGALON WAS SENT HERE TO JUDGE THE FATE OF OUR WORLD.
+  HE FOUND A PLANET WHOSE RACES HAD DEVIATED FROM THE TITANS' BLUEPRINTS.
+  A PLANET WHERE NOT EVERYTHING HAD GONE ACCORDING TO PLAN. COLD LOGIC DEEMED OUR WORLD NOT WORTH SAVING.
+  COLD LOGIC, HOWEVER, DOES NOT ACCOUNT FOR THE POWER OF FREE WILL.
+  IT'S UP TO EACH OF US TO PROVE THIS IS A WORLD WORTH SAVING.
+  THAT OUR LIVES... OUR LIVES ARE WORTH LIVING.
+`;
 
 const StyledDiv = styled.div`
   display: flex;
@@ -46,7 +46,7 @@ const Container = styled.div`
 `;
 
 const Filler = styled.div`
-  height: 400;
+  height: 300px;
 `;
 
 class BannerController extends Component {
@@ -66,7 +66,7 @@ class BannerController extends Component {
     return (
       <>
         <Button type="button" mode="primary" onClick={this.handleOpenToggle}>Toggle</Button>
-        <Banner isOpen={open}>
+        <Banner isOpen={open} mode="default">
           <StyledDiv>
             <Name>WERBENJAGERMANJENSEN, SMITTY</Name>
             <Birthdate>DOB: 07-14-1980</Birthdate>
@@ -87,9 +87,9 @@ storiesOf('Banner', module)
       <Banner isOpen icon={() => <FontAwesomeIcon icon={faNarwhal} fixedWidth />}>This is a custom icon</Banner>
       <br />
       <Container>
-        <Banner isOpen sticky>This is a sticky banner. Scroll down to observe</Banner>
+        <Banner isOpen mode="default" sticky>This is a sticky banner. Scroll down to observe</Banner>
         <Filler>
-          { lorem.generateParagraphs(4) }
+          { CITIZENS_OF_DALARAN }
         </Filler>
       </Container>
     </>
@@ -97,6 +97,6 @@ storiesOf('Banner', module)
   .add('Custom controlled', () => (
     <>
       <BannerController />
-      { lorem.generateParagraphs(4) }
+      { CITIZENS_OF_DALARAN }
     </>
   ));

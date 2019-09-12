@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableHeader props onSort invoke onSort with property when HeadCell is clicked 1`] = `
+<thead>
+  <TableRow
+    sticky={true}
+  >
+    <HeadCell
+      key="name"
+      onClick={[Function]}
+      order={false}
+      sortable={true}
+    >
+      Subject Name
+    </HeadCell>
+    <HeadCell
+      key="dob"
+      onClick={[Function]}
+      order={false}
+      sortable={true}
+    >
+      Date of Birth
+    </HeadCell>
+    <HeadCell
+      key="manager"
+      onClick={[Function]}
+      order={false}
+      sortable={true}
+    >
+      Manager
+    </HeadCell>
+    <HeadCell
+      key="lastUpdated"
+      onClick={[Function]}
+      order={false}
+      sortable={true}
+    >
+      Last Updated
+    </HeadCell>
+  </TableRow>
+</thead>
+`;
+
+exports[`TableHeader props order and orderBy should pass order to HeadCell when orderBy matches header key 1`] = `
+<thead>
+  <TableRow
+    sticky={true}
+  >
+    <HeadCell
+      key="name"
+      order="asc"
+      sortable={true}
+    >
+      Subject Name
+    </HeadCell>
+    <HeadCell
+      key="dob"
+      order={false}
+      sortable={true}
+    >
+      Date of Birth
+    </HeadCell>
+    <HeadCell
+      key="manager"
+      order={false}
+      sortable={true}
+    >
+      Manager
+    </HeadCell>
+    <HeadCell
+      key="lastUpdated"
+      order={false}
+      sortable={true}
+    >
+      Last Updated
+    </HeadCell>
+  </TableRow>
+</thead>
+`;
+
+exports[`TableHeader render should render a thead at the root 1`] = `
+<thead>
+  <TableRow
+    sticky={true}
+  />
+</thead>
+`;
+
+exports[`TableHeader render should render sortable HeadCells 1`] = `
+<thead>
+  <TableRow
+    sticky={true}
+  >
+    <HeadCell
+      key="name"
+      order={false}
+      sortable={true}
+    >
+      Subject Name
+    </HeadCell>
+    <HeadCell
+      key="dob"
+      order={false}
+      sortable={true}
+    >
+      Date of Birth
+    </HeadCell>
+    <HeadCell
+      key="manager"
+      order={false}
+      sortable={true}
+    >
+      Manager
+    </HeadCell>
+    <HeadCell
+      key="lastUpdated"
+      order={false}
+      sortable={true}
+    >
+      Last Updated
+    </HeadCell>
+  </TableRow>
+</thead>
+`;

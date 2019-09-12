@@ -47,6 +47,15 @@ export {
 } from './layout';
 export { Creatable, Select, CheckboxSelect } from './select';
 export {
+  Cell,
+  HeadCell,
+  PaginationToolbar,
+  Table,
+  TableBody,
+  TableHeader,
+  TableRow,
+} from './table';
+export {
   Search,
   DataGrid,
   IconSplash,
@@ -54,6 +63,7 @@ export {
   Result,
   SearchResults,
 } from './components/search';
+
 
 export default {
   version

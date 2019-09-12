@@ -1,6 +1,6 @@
 // @flow
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import {
   GREEN_1,
@@ -10,7 +10,7 @@ import {
   YELLOW_1,
 } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
-import { getStyleVariation } from '../../../../utils/StyleUtils';
+import { getStyleVariation, getStickyPosition } from '../../../../utils/StyleUtils';
 
 type ContainerProps = {
   maxHeight ? :string;
@@ -38,26 +38,13 @@ const getFontColor = getStyleVariation('mode', {
   warning: NEUTRALS[0]
 });
 
-const getPosition = (props :ContainerProps) => {
-  const { sticky } = props;
-  if (sticky) {
-    // WARNING: sticky position does not work in Internet Explorer
-    return css`
-      position: sticky;
-      top: 0;
-      z-index: 500;
-    `;
-  }
-  return null;
-};
-
 const Container = styled.div`
   background-color: ${backgroundColor};
   color: ${getFontColor};
   max-height: ${getMaxHeight};
   overflow: hidden;
   transition: max-height ${duration.enter} ease-in-out;
-  ${getPosition}
+  ${getStickyPosition}
 `;
 
 const Content = styled.div`
