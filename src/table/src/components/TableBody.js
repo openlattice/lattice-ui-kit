@@ -9,7 +9,7 @@ import type { SortOrder } from '../../types';
 
 type RowData = {
   id :string | number;
-}
+};
 
 type Props = {
   headers :Object[];
