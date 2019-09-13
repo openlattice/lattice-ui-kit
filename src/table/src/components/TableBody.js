@@ -12,6 +12,7 @@ type RowData = {
 };
 
 type Props = {
+  className ? :string;
   headers :Object[];
   order ? :SortOrder;
   orderBy ? :string;
@@ -23,6 +24,7 @@ type Props = {
 
 const TableBody = (props :Props) => {
   const {
+    className,
     data,
     headers,
     order,
@@ -41,7 +43,7 @@ const TableBody = (props :Props) => {
   const emptyHeight = emptyRowCount * 24 + (emptyRowCount - 1) * 21;
 
   return (
-    <tbody>
+    <tbody className={className}>
       {
         dataByPage.map((rowData) => {
           if (RowComponent) {
@@ -69,6 +71,7 @@ const TableBody = (props :Props) => {
 };
 
 TableBody.defaultProps = {
+  className: undefined,
   data: [],
   order: false,
   orderBy: undefined,

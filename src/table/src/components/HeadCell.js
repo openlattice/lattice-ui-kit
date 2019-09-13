@@ -8,6 +8,8 @@ import { Cell } from './styled';
 import type { SortOrder } from '../../types';
 
 type Props = {
+  align ? :string;
+  className ? :string;
   children :Node;
   onClick ? :(e :SyntheticEvent<HTMLElement>) => void;
   order ? :SortOrder;
@@ -16,6 +18,8 @@ type Props = {
 
 const HeadCell = (props :Props) => {
   const {
+    align,
+    className,
     children,
     onClick,
     order,
@@ -27,7 +31,7 @@ const HeadCell = (props :Props) => {
   if (order === 'desc') icon = faSortDown;
 
   return (
-    <Cell as="th" onClick={onClick}>
+    <Cell as="th" align={align} className={className} onClick={onClick}>
       {children}
       { (sortable) && <span><FontAwesomeIcon icon={icon} fixedWidth /></span> }
     </Cell>
@@ -36,6 +40,8 @@ const HeadCell = (props :Props) => {
 };
 
 HeadCell.defaultProps = {
+  className: undefined,
+  align: 'left',
   onClick: undefined,
   order: false,
   sortable: false,

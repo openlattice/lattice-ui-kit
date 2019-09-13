@@ -6,6 +6,7 @@ import HeadCell from './HeadCell';
 import type { SortOrder } from '../../types';
 
 type Props = {
+  className ? :string;
   headers ? :Object[];
   order ? :SortOrder;
   orderBy ? :string;
@@ -16,6 +17,7 @@ type Props = {
 
 const TableHeader = (props :Props) => {
   const {
+    className,
     headers,
     onSort,
     order,
@@ -30,7 +32,7 @@ const TableHeader = (props :Props) => {
   };
 
   return (
-    <thead>
+    <thead className={className}>
       <TableRow sticky={sticky}>
         {
           headers && headers.map((header) => {
@@ -52,6 +54,7 @@ const TableHeader = (props :Props) => {
 };
 
 TableHeader.defaultProps = {
+  className: undefined,
   headers: [],
   onSort: undefined,
   order: false,

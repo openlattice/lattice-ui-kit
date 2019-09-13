@@ -22,7 +22,7 @@ const Cell = styled.td`
   padding: 10px 10px;
   word-wrap: break-word;
   cursor: ${(props) => (props.onClick ? 'pointer' : 'auto')};
-  text-align: left;
+  text-align: ${(props) => props.align || 'left'};
   height: ${(props) => props.height || null};
   background-color: ${(props) => (props.as === 'th' ? NEUTRALS[6] : 'inherit')};
 `;
@@ -34,7 +34,7 @@ const TableRow = styled.tr`
   border-bottom: 1px solid ${NEUTRALS[4]};
 
   /* position: sticky doesn't work with thead/tr. Move to all cells within */
-  ${Cell} {
+  td, th {
     ${getStickyPosition}
   };
 `;
