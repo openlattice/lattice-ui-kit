@@ -3,15 +3,18 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import TableHeader from './TableHeader';
+import { TableRow } from './styled';
 import { TABLE_HEADERS } from '../../stories/constants';
 import HeadCell from './HeadCell';
 
 describe('TableHeader', () => {
 
+  const components = { HeadRow: TableRow, HeadCell };
+
   describe('props', () => {
     describe('sticky', () => {
       test('pass sticky prop to TableRow', () => {
-        const wrapper = shallow(<TableHeader sticky />);
+        const wrapper = shallow(<TableHeader components={components} sticky />);
 
         const tableRowWrapper = wrapper.find('TableRow');
         expect(tableRowWrapper.prop('sticky')).toEqual(true);
@@ -23,6 +26,7 @@ describe('TableHeader', () => {
         const mockOnSort = jest.fn();
         const wrapper = shallow(
           <TableHeader
+              components={components}
               headers={TABLE_HEADERS}
               onSort={mockOnSort} />
         );
@@ -45,6 +49,7 @@ describe('TableHeader', () => {
       test('should pass order to HeadCell when orderBy matches header key', () => {
         const wrapper = shallow(
           <TableHeader
+              components={components}
               headers={TABLE_HEADERS}
               order="asc"
               orderBy="name" />
@@ -62,13 +67,13 @@ describe('TableHeader', () => {
 
   describe('render', () => {
     test('should render a thead at the root', () => {
-      const wrapper = shallow(<TableHeader />);
+      const wrapper = shallow(<TableHeader components={components} />);
       expect(wrapper.type()).toEqual('thead');
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
     test('should render sortable HeadCells', () => {
-      const wrapper = shallow(<TableHeader headers={TABLE_HEADERS} />);
+      const wrapper = shallow(<TableHeader components={components} headers={TABLE_HEADERS} />);
       const headerCells = wrapper.find(HeadCell);
 
       headerCells.forEach((headerCell) => {

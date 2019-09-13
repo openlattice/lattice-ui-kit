@@ -1,12 +1,11 @@
 // @flow
 import React from 'react';
 import isFunction from 'lodash/isFunction';
-import { TableRow } from './styled';
-import HeadCell from './HeadCell';
 import type { SortOrder } from '../../types';
 
 type Props = {
   className ? :string;
+  components :Object;
   headers ? :Object[];
   onSort ? :(event :SyntheticEvent<HTMLElement>, property :string) => void;
   order ? :SortOrder;
@@ -17,6 +16,7 @@ type Props = {
 
 const TableHeader = (props :Props) => {
   const {
+    components,
     className,
     headers,
     onSort,
@@ -33,23 +33,24 @@ const TableHeader = (props :Props) => {
 
   return (
     <thead className={className}>
-      <TableRow sticky={sticky}>
+      <components.HeadRow sticky={sticky}>
         {
           headers && headers.map((header) => {
             const { key, label, cellStyle } = header;
             return (
-              <HeadCell
+              <components.HeadCell
                   key={key}
+                  components={components}
                   cellStyle={cellStyle}
                   onClick={onSort ? createSortHandler(key) : undefined}
                   order={orderBy === header.key ? order : false}
                   sortable>
                 {label}
-              </HeadCell>
+              </components.HeadCell>
             );
           })
         }
-      </TableRow>
+      </components.HeadRow>
     </thead>
   );
 };

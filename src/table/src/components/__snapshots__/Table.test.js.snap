@@ -169,6 +169,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
 }
 
 <Table
+  components={Object {}}
   data={
     Array [
       Object {
@@ -281,6 +282,94 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
           className="c0"
         >
           <TableHeader
+            components={
+              Object {
+                "Body": Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                },
+                "Cell": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "styled__Cell-r3xwjs-2",
+                    "isStatic": false,
+                    "lastClassName": "c5",
+                    "rules": Array [
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Cell",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "styled__Cell-r3xwjs-2",
+                  "target": "td",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+                "HeadCell": [Function],
+                "HeadRow": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "styled__TableRow-r3xwjs-3",
+                    "isStatic": false,
+                    "lastClassName": "c4",
+                    "rules": Array [
+                      "background-color:",
+                      "#ffffff",
+                      ";border-bottom:1px solid ",
+                      "#dcdce7",
+                      ";td,th{",
+                      [Function],
+                      "};",
+                    ],
+                  },
+                  "displayName": "TableRow",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "styled__TableRow-r3xwjs-3",
+                  "target": "tr",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+                "Header": [Function],
+                "Pagination": Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                },
+                "Row": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "styled__TableRow-r3xwjs-3",
+                    "isStatic": false,
+                    "lastClassName": "c4",
+                    "rules": Array [
+                      "background-color:",
+                      "#ffffff",
+                      ";border-bottom:1px solid ",
+                      "#dcdce7",
+                      ";td,th{",
+                      [Function],
+                      "};",
+                    ],
+                  },
+                  "displayName": "TableRow",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "styled__TableRow-r3xwjs-3",
+                  "target": "tr",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              }
+            }
             headers={
               Array [
                 Object {
@@ -351,6 +440,94 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       cellStyle={
                         Object {
                           "width": "50%",
+                        }
+                      }
+                      components={
+                        Object {
+                          "Body": Object {
+                            "$$typeof": Symbol(react.memo),
+                            "compare": null,
+                            "type": [Function],
+                          },
+                          "Cell": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__Cell-r3xwjs-2",
+                              "isStatic": false,
+                              "lastClassName": "c5",
+                              "rules": Array [
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Cell",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
+                            "target": "td",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
+                          "HeadCell": [Function],
+                          "HeadRow": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__TableRow-r3xwjs-3",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "background-color:",
+                                "#ffffff",
+                                ";border-bottom:1px solid ",
+                                "#dcdce7",
+                                ";td,th{",
+                                [Function],
+                                "};",
+                              ],
+                            },
+                            "displayName": "TableRow",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__TableRow-r3xwjs-3",
+                            "target": "tr",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
+                          "Header": [Function],
+                          "Pagination": Object {
+                            "$$typeof": Symbol(react.memo),
+                            "compare": null,
+                            "type": [Function],
+                          },
+                          "Row": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__TableRow-r3xwjs-3",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "background-color:",
+                                "#ffffff",
+                                ";border-bottom:1px solid ",
+                                "#dcdce7",
+                                ";td,th{",
+                                [Function],
+                                "};",
+                              ],
+                            },
+                            "displayName": "TableRow",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__TableRow-r3xwjs-3",
+                            "target": "tr",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
                         }
                       }
                       key="name"
@@ -475,6 +652,94 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     </HeadCell>
                     <HeadCell
                       cellStyle={Object {}}
+                      components={
+                        Object {
+                          "Body": Object {
+                            "$$typeof": Symbol(react.memo),
+                            "compare": null,
+                            "type": [Function],
+                          },
+                          "Cell": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__Cell-r3xwjs-2",
+                              "isStatic": false,
+                              "lastClassName": "c5",
+                              "rules": Array [
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Cell",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
+                            "target": "td",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
+                          "HeadCell": [Function],
+                          "HeadRow": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__TableRow-r3xwjs-3",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "background-color:",
+                                "#ffffff",
+                                ";border-bottom:1px solid ",
+                                "#dcdce7",
+                                ";td,th{",
+                                [Function],
+                                "};",
+                              ],
+                            },
+                            "displayName": "TableRow",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__TableRow-r3xwjs-3",
+                            "target": "tr",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
+                          "Header": [Function],
+                          "Pagination": Object {
+                            "$$typeof": Symbol(react.memo),
+                            "compare": null,
+                            "type": [Function],
+                          },
+                          "Row": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__TableRow-r3xwjs-3",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "background-color:",
+                                "#ffffff",
+                                ";border-bottom:1px solid ",
+                                "#dcdce7",
+                                ";td,th{",
+                                [Function],
+                                "};",
+                              ],
+                            },
+                            "displayName": "TableRow",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__TableRow-r3xwjs-3",
+                            "target": "tr",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
+                        }
+                      }
                       key="dob"
                       onClick={[Function]}
                       order={false}
@@ -589,6 +854,94 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     </HeadCell>
                     <HeadCell
                       cellStyle={Object {}}
+                      components={
+                        Object {
+                          "Body": Object {
+                            "$$typeof": Symbol(react.memo),
+                            "compare": null,
+                            "type": [Function],
+                          },
+                          "Cell": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__Cell-r3xwjs-2",
+                              "isStatic": false,
+                              "lastClassName": "c5",
+                              "rules": Array [
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Cell",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
+                            "target": "td",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
+                          "HeadCell": [Function],
+                          "HeadRow": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__TableRow-r3xwjs-3",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "background-color:",
+                                "#ffffff",
+                                ";border-bottom:1px solid ",
+                                "#dcdce7",
+                                ";td,th{",
+                                [Function],
+                                "};",
+                              ],
+                            },
+                            "displayName": "TableRow",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__TableRow-r3xwjs-3",
+                            "target": "tr",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
+                          "Header": [Function],
+                          "Pagination": Object {
+                            "$$typeof": Symbol(react.memo),
+                            "compare": null,
+                            "type": [Function],
+                          },
+                          "Row": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__TableRow-r3xwjs-3",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "background-color:",
+                                "#ffffff",
+                                ";border-bottom:1px solid ",
+                                "#dcdce7",
+                                ";td,th{",
+                                [Function],
+                                "};",
+                              ],
+                            },
+                            "displayName": "TableRow",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__TableRow-r3xwjs-3",
+                            "target": "tr",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
+                        }
+                      }
                       key="manager"
                       onClick={[Function]}
                       order={false}
@@ -703,6 +1056,94 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     </HeadCell>
                     <HeadCell
                       cellStyle={Object {}}
+                      components={
+                        Object {
+                          "Body": Object {
+                            "$$typeof": Symbol(react.memo),
+                            "compare": null,
+                            "type": [Function],
+                          },
+                          "Cell": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__Cell-r3xwjs-2",
+                              "isStatic": false,
+                              "lastClassName": "c5",
+                              "rules": Array [
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Cell",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
+                            "target": "td",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
+                          "HeadCell": [Function],
+                          "HeadRow": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__TableRow-r3xwjs-3",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "background-color:",
+                                "#ffffff",
+                                ";border-bottom:1px solid ",
+                                "#dcdce7",
+                                ";td,th{",
+                                [Function],
+                                "};",
+                              ],
+                            },
+                            "displayName": "TableRow",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__TableRow-r3xwjs-3",
+                            "target": "tr",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
+                          "Header": [Function],
+                          "Pagination": Object {
+                            "$$typeof": Symbol(react.memo),
+                            "compare": null,
+                            "type": [Function],
+                          },
+                          "Row": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__TableRow-r3xwjs-3",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "background-color:",
+                                "#ffffff",
+                                ";border-bottom:1px solid ",
+                                "#dcdce7",
+                                ";td,th{",
+                                [Function],
+                                "};",
+                              ],
+                            },
+                            "displayName": "TableRow",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__TableRow-r3xwjs-3",
+                            "target": "tr",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
+                        }
+                      }
                       key="lastUpdated"
                       onClick={[Function]}
                       order={false}
@@ -821,6 +1262,94 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
             </thead>
           </TableHeader>
           <TableBody
+            components={
+              Object {
+                "Body": Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                },
+                "Cell": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "styled__Cell-r3xwjs-2",
+                    "isStatic": false,
+                    "lastClassName": "c5",
+                    "rules": Array [
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Cell",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "styled__Cell-r3xwjs-2",
+                  "target": "td",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+                "HeadCell": [Function],
+                "HeadRow": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "styled__TableRow-r3xwjs-3",
+                    "isStatic": false,
+                    "lastClassName": "c4",
+                    "rules": Array [
+                      "background-color:",
+                      "#ffffff",
+                      ";border-bottom:1px solid ",
+                      "#dcdce7",
+                      ";td,th{",
+                      [Function],
+                      "};",
+                    ],
+                  },
+                  "displayName": "TableRow",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "styled__TableRow-r3xwjs-3",
+                  "target": "tr",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+                "Header": [Function],
+                "Pagination": Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                },
+                "Row": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "styled__TableRow-r3xwjs-3",
+                    "isStatic": false,
+                    "lastClassName": "c4",
+                    "rules": Array [
+                      "background-color:",
+                      "#ffffff",
+                      ";border-bottom:1px solid ",
+                      "#dcdce7",
+                      ";td,th{",
+                      [Function],
+                      "};",
+                    ],
+                  },
+                  "displayName": "TableRow",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "styled__TableRow-r3xwjs-3",
+                  "target": "tr",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              }
+            }
             data={
               Array [
                 Object {
@@ -4263,6 +4792,91 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
 <div>
   <styled__StyledTable>
     <TableHeader
+      components={
+        Object {
+          "Body": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Cell": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__Cell-r3xwjs-2",
+              "isStatic": false,
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__Cell-r3xwjs-2",
+            "target": "td",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "HeadCell": [Function],
+          "HeadRow": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "Header": [Function],
+          "Pagination": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        }
+      }
       headers={
         Array [
           Object {
@@ -4291,6 +4905,91 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
       sticky={true}
     />
     <Memo(TableBody)
+      components={
+        Object {
+          "Body": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Cell": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__Cell-r3xwjs-2",
+              "isStatic": false,
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__Cell-r3xwjs-2",
+            "target": "td",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "HeadCell": [Function],
+          "HeadRow": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "Header": [Function],
+          "Pagination": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        }
+      }
       data={
         Array [
           Object {
@@ -4378,6 +5077,91 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
 <div>
   <styled__StyledTable>
     <TableHeader
+      components={
+        Object {
+          "Body": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Cell": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__Cell-r3xwjs-2",
+              "isStatic": false,
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__Cell-r3xwjs-2",
+            "target": "td",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "HeadCell": [Function],
+          "HeadRow": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "Header": [Function],
+          "Pagination": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        }
+      }
       headers={
         Array [
           Object {
@@ -4406,6 +5190,91 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
       sticky={true}
     />
     <Memo(TableBody)
+      components={
+        Object {
+          "Body": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Cell": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__Cell-r3xwjs-2",
+              "isStatic": false,
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__Cell-r3xwjs-2",
+            "target": "td",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "HeadCell": [Function],
+          "HeadRow": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "Header": [Function],
+          "Pagination": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        }
+      }
       data={Array []}
       headers={
         Array [
@@ -4449,6 +5318,91 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
 <div>
   <styled__StyledTable>
     <TableHeader
+      components={
+        Object {
+          "Body": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Cell": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__Cell-r3xwjs-2",
+              "isStatic": false,
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__Cell-r3xwjs-2",
+            "target": "td",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "HeadCell": [Function],
+          "HeadRow": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "Header": [Function],
+          "Pagination": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        }
+      }
       headers={
         Array [
           Object {
@@ -4477,6 +5431,91 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
       sticky={true}
     />
     <Memo(TableBody)
+      components={
+        Object {
+          "Body": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Cell": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__Cell-r3xwjs-2",
+              "isStatic": false,
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__Cell-r3xwjs-2",
+            "target": "td",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "HeadCell": [Function],
+          "HeadRow": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "Header": [Function],
+          "Pagination": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        }
+      }
       data={
         Array [
           Object {
@@ -4572,6 +5611,91 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
 <div>
   <styled__StyledTable>
     <TableHeader
+      components={
+        Object {
+          "Body": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Cell": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__Cell-r3xwjs-2",
+              "isStatic": false,
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__Cell-r3xwjs-2",
+            "target": "td",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "HeadCell": [Function],
+          "HeadRow": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "Header": [Function],
+          "Pagination": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        }
+      }
       headers={
         Array [
           Object {
@@ -4600,6 +5724,91 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
       sticky={true}
     />
     <Memo(TableBody)
+      components={
+        Object {
+          "Body": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Cell": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__Cell-r3xwjs-2",
+              "isStatic": false,
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__Cell-r3xwjs-2",
+            "target": "td",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "HeadCell": [Function],
+          "HeadRow": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "Header": [Function],
+          "Pagination": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        }
+      }
       data={
         Array [
           Object {
@@ -4701,6 +5910,91 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
 <div>
   <styled__StyledTable>
     <TableHeader
+      components={
+        Object {
+          "Body": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Cell": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__Cell-r3xwjs-2",
+              "isStatic": false,
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__Cell-r3xwjs-2",
+            "target": "td",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "HeadCell": [Function],
+          "HeadRow": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "Header": [Function],
+          "Pagination": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        }
+      }
       headers={
         Array [
           Object {
@@ -4729,6 +6023,91 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
       sticky={true}
     />
     <Memo(TableBody)
+      components={
+        Object {
+          "Body": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Cell": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__Cell-r3xwjs-2",
+              "isStatic": false,
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__Cell-r3xwjs-2",
+            "target": "td",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "HeadCell": [Function],
+          "HeadRow": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "Header": [Function],
+          "Pagination": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        }
+      }
       data={
         Array [
           Object {
@@ -4824,6 +6203,94 @@ exports[`Table render should render table first child 1`] = `
 <div>
   <styled__StyledTable>
     <TableHeader
+      components={
+        Object {
+          "Body": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Cell": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__Cell-r3xwjs-2",
+              "isStatic": false,
+              "lastClassName": "bSxEEP",
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__Cell-r3xwjs-2",
+            "target": "td",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "HeadCell": [Function],
+          "HeadRow": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "lastClassName": "eDLXeN",
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "Header": [Function],
+          "Pagination": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "lastClassName": "eDLXeN",
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        }
+      }
       headers={
         Array [
           Object {
@@ -4852,6 +6319,94 @@ exports[`Table render should render table first child 1`] = `
       sticky={true}
     />
     <Memo(TableBody)
+      components={
+        Object {
+          "Body": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Cell": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__Cell-r3xwjs-2",
+              "isStatic": false,
+              "lastClassName": "bSxEEP",
+              "rules": Array [
+                [Function],
+              ],
+            },
+            "displayName": "Cell",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__Cell-r3xwjs-2",
+            "target": "td",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "HeadCell": [Function],
+          "HeadRow": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "lastClassName": "eDLXeN",
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+          "Header": [Function],
+          "Pagination": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "type": [Function],
+          },
+          "Row": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "styled__TableRow-r3xwjs-3",
+              "isStatic": false,
+              "lastClassName": "eDLXeN",
+              "rules": Array [
+                "background-color:",
+                "#ffffff",
+                ";border-bottom:1px solid ",
+                "#dcdce7",
+                ";td,th{",
+                [Function],
+                "};",
+              ],
+            },
+            "displayName": "TableRow",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "styled__TableRow-r3xwjs-3",
+            "target": "tr",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        }
+      }
       data={
         Array [
           Object {

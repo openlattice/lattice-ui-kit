@@ -3,14 +3,18 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import TableBody from './TableBody';
+import { TableRow, Cell } from './styled';
 import { TABLE_DATA, TABLE_HEADERS } from '../../stories/constants';
 
 describe('TableBody', () => {
+
+  const components = { Row: TableRow, Cell };
 
   describe('render', () => {
     test('should render tbody at root', () => {
       const wrapper = shallow(
         <TableBody
+            components={components}
             headers={TABLE_HEADERS}
             data={TABLE_DATA}
             rowsPerPage={10}
@@ -20,30 +24,11 @@ describe('TableBody', () => {
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
-    test('should render rowComponent if provided', () => {
-      const rowComponent = () => <div>test</div>;
-      const wrapper = shallow(
-        <TableBody
-            headers={TABLE_HEADERS}
-            data={TABLE_DATA}
-            rowsPerPage={10}
-            rowComponent={rowComponent}
-            page={0} />
-      );
-
-      const rowComponents = wrapper.find(rowComponent);
-      expect(rowComponents).toHaveLength(TABLE_DATA.length);
-      rowComponents.forEach((row, index) => {
-        expect(row.prop('data')).toEqual(TABLE_DATA[index]);
-        expect(row.prop('headers')).toEqual(TABLE_HEADERS);
-      });
-      expect(toJson(wrapper)).toMatchSnapshot();
-    });
-
     test('should render sorted data by page', () => {
       const rowComponent = () => <div>test</div>;
       const wrapper = shallow(
         <TableBody
+            components={components}
             data={TABLE_DATA}
             headers={TABLE_HEADERS}
             order="desc"
@@ -75,6 +60,7 @@ describe('TableBody', () => {
     test('should render empty-row-filler if displayed rows is less then rowsPerPage', () => {
       const wrapper = shallow(
         <TableBody
+            components={components}
             data={TABLE_DATA}
             headers={TABLE_HEADERS}
             rowsPerPage={5}
