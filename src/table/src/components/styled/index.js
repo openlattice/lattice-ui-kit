@@ -1,3 +1,4 @@
+// @flow
 import styled from 'styled-components';
 
 import { NEUTRALS, WHITE } from '../../../../colors';
@@ -12,20 +13,20 @@ const StyledTable = styled.table`
 `;
 
 const PaginationWrapper = styled.div`
-  display: flex;
-  width: 100%;
   align-items: center;
+  display: flex;
   justify-content: flex-end;
+  width: 100%;
 `;
 
-const Cell = styled.td`
-  padding: 10px 10px;
-  word-wrap: break-word;
-  cursor: ${(props) => (props.onClick ? 'pointer' : 'auto')};
-  text-align: ${(props) => props.align || 'left'};
-  height: ${(props) => props.height || null};
-  background-color: ${(props) => (props.as === 'th' ? NEUTRALS[6] : 'inherit')};
-`;
+const Cell = styled.td((props :Object) => ({
+  backgroundColor: props.as === 'th' ? NEUTRALS[6] : 'inherit',
+  cursor: props.onClick ? 'pointer' : 'auto',
+  padding: '10px 10px',
+  textAlign: 'left',
+  wordWrap: 'break-word',
+  ...props.cellStyle
+}));
 
 Cell.displayName = 'Cell';
 
@@ -43,8 +44,8 @@ TableRow.displayName = 'TableRow';
 
 const RowPerPageWrapper = styled.div`
   font-size: 14px;
-  width: 75px;
   margin-right: 10px;
+  width: 75px;
 `;
 
 export {

@@ -8,9 +8,9 @@ import type { SortOrder } from '../../types';
 type Props = {
   className ? :string;
   headers ? :Object[];
+  onSort ? :(event :SyntheticEvent<HTMLElement>, property :string) => void;
   order ? :SortOrder;
   orderBy ? :string;
-  onSort ? :(event :SyntheticEvent<HTMLElement>, property :string) => void;
   sticky ? :boolean;
 };
 
@@ -36,10 +36,11 @@ const TableHeader = (props :Props) => {
       <TableRow sticky={sticky}>
         {
           headers && headers.map((header) => {
-            const { key, label } = header;
+            const { key, label, cellStyle } = header;
             return (
               <HeadCell
                   key={key}
+                  cellStyle={cellStyle}
                   onClick={onSort ? createSortHandler(key) : undefined}
                   order={orderBy === header.key ? order : false}
                   sortable>
