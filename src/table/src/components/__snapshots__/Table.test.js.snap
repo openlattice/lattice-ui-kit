@@ -10,35 +10,44 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
 }
 
 .c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  width: 100%;
+}
+
+.c2 {
+  background-color: #f0f0f7;
+  cursor: pointer;
+  padding: 10px 10px;
+  text-align: left;
+  word-wrap: break-word;
+  width: 50%;
 }
 
 .c3 {
-  padding: 10px 10px;
-  word-wrap: break-word;
-  cursor: pointer;
-  text-align: left;
   background-color: #f0f0f7;
+  cursor: pointer;
+  padding: 10px 10px;
+  text-align: left;
+  word-wrap: break-word;
 }
 
 .c5 {
-  padding: 10px 10px;
-  word-wrap: break-word;
-  cursor: auto;
-  text-align: left;
   background-color: inherit;
+  cursor: auto;
+  padding: 10px 10px;
+  text-align: left;
+  word-wrap: break-word;
 }
 
 .c1 {
@@ -46,7 +55,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   border-bottom: 1px solid #dcdce7;
 }
 
-.c1 .c2 {
+.c1 td,
+.c1 th {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -60,8 +70,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
 
 .c8 {
   font-size: 14px;
-  width: 75px;
   margin-right: 10px;
+  width: 75px;
 }
 
 .c10 {
@@ -215,6 +225,9 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   headers={
     Array [
       Object {
+        "cellStyle": Object {
+          "width": "50%",
+        },
         "key": "name",
         "label": "Subject Name",
       },
@@ -271,6 +284,9 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
             headers={
               Array [
                 Object {
+                  "cellStyle": Object {
+                    "width": "50%",
+                  },
                   "key": "name",
                   "label": "Subject Name",
                 },
@@ -310,9 +326,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "#ffffff",
                           ";border-bottom:1px solid ",
                           "#dcdce7",
-                          ";",
-                          ".c2",
-                          "{",
+                          ";td,th{",
                           [Function],
                           "};",
                         ],
@@ -334,6 +348,11 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     className="c1"
                   >
                     <HeadCell
+                      cellStyle={
+                        Object {
+                          "width": "50%",
+                        }
+                      }
                       key="name"
                       onClick={[Function]}
                       order={false}
@@ -341,32 +360,36 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     >
                       <Cell
                         as="th"
+                        cellStyle={
+                          Object {
+                            "width": "50%",
+                          }
+                        }
                         onClick={[Function]}
                       >
                         <StyledComponent
                           as="th"
+                          cellStyle={
+                            Object {
+                              "width": "50%",
+                            }
+                          }
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "c2",
+                                "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
                                 "lastClassName": "c5",
                                 "rules": Array [
-                                  "padding:10px 10px;word-wrap:break-word;cursor:",
                                   [Function],
-                                  ";text-align:left;height:",
-                                  [Function],
-                                  ";background-color:",
-                                  [Function],
-                                  ";",
                                 ],
                               },
                               "displayName": "Cell",
                               "foldedComponentIds": Array [],
                               "render": [Function],
-                              "styledComponentId": "c2",
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
                               "target": "td",
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -377,7 +400,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           onClick={[Function]}
                         >
                           <th
-                            className="c2 c3"
+                            className="c2"
                             onClick={[Function]}
                           >
                             Subject Name
@@ -451,6 +474,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       </Cell>
                     </HeadCell>
                     <HeadCell
+                      cellStyle={Object {}}
                       key="dob"
                       onClick={[Function]}
                       order={false}
@@ -458,32 +482,28 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     >
                       <Cell
                         as="th"
+                        cellStyle={Object {}}
                         onClick={[Function]}
                       >
                         <StyledComponent
                           as="th"
+                          cellStyle={Object {}}
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "c2",
+                                "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
                                 "lastClassName": "c5",
                                 "rules": Array [
-                                  "padding:10px 10px;word-wrap:break-word;cursor:",
                                   [Function],
-                                  ";text-align:left;height:",
-                                  [Function],
-                                  ";background-color:",
-                                  [Function],
-                                  ";",
                                 ],
                               },
                               "displayName": "Cell",
                               "foldedComponentIds": Array [],
                               "render": [Function],
-                              "styledComponentId": "c2",
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
                               "target": "td",
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -494,7 +514,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           onClick={[Function]}
                         >
                           <th
-                            className="c2 c3"
+                            className="c3"
                             onClick={[Function]}
                           >
                             Date of Birth
@@ -568,6 +588,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       </Cell>
                     </HeadCell>
                     <HeadCell
+                      cellStyle={Object {}}
                       key="manager"
                       onClick={[Function]}
                       order={false}
@@ -575,32 +596,28 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     >
                       <Cell
                         as="th"
+                        cellStyle={Object {}}
                         onClick={[Function]}
                       >
                         <StyledComponent
                           as="th"
+                          cellStyle={Object {}}
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "c2",
+                                "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
                                 "lastClassName": "c5",
                                 "rules": Array [
-                                  "padding:10px 10px;word-wrap:break-word;cursor:",
                                   [Function],
-                                  ";text-align:left;height:",
-                                  [Function],
-                                  ";background-color:",
-                                  [Function],
-                                  ";",
                                 ],
                               },
                               "displayName": "Cell",
                               "foldedComponentIds": Array [],
                               "render": [Function],
-                              "styledComponentId": "c2",
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
                               "target": "td",
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -611,7 +628,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           onClick={[Function]}
                         >
                           <th
-                            className="c2 c3"
+                            className="c3"
                             onClick={[Function]}
                           >
                             Manager
@@ -685,6 +702,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       </Cell>
                     </HeadCell>
                     <HeadCell
+                      cellStyle={Object {}}
                       key="lastUpdated"
                       onClick={[Function]}
                       order={false}
@@ -692,32 +710,28 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     >
                       <Cell
                         as="th"
+                        cellStyle={Object {}}
                         onClick={[Function]}
                       >
                         <StyledComponent
                           as="th"
+                          cellStyle={Object {}}
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "c2",
+                                "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
                                 "lastClassName": "c5",
                                 "rules": Array [
-                                  "padding:10px 10px;word-wrap:break-word;cursor:",
                                   [Function],
-                                  ";text-align:left;height:",
-                                  [Function],
-                                  ";background-color:",
-                                  [Function],
-                                  ";",
                                 ],
                               },
                               "displayName": "Cell",
                               "foldedComponentIds": Array [],
                               "render": [Function],
-                              "styledComponentId": "c2",
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
                               "target": "td",
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
@@ -728,7 +742,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           onClick={[Function]}
                         >
                           <th
-                            className="c2 c3"
+                            className="c3"
                             onClick={[Function]}
                           >
                             Last Updated
@@ -863,6 +877,9 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
             headers={
               Array [
                 Object {
+                  "cellStyle": Object {
+                    "width": "50%",
+                  },
                   "key": "name",
                   "label": "Subject Name",
                 },
@@ -901,9 +918,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "#ffffff",
                           ";border-bottom:1px solid ",
                           "#dcdce7",
-                          ";",
-                          ".c2",
-                          "{",
+                          ";td,th{",
                           [Function],
                           "};",
                         ],
@@ -932,23 +947,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -958,7 +967,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Eugene Krabs
                         </td>
@@ -973,23 +982,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -999,7 +1002,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           1942-11-30
                         </td>
@@ -1014,23 +1017,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1040,7 +1037,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Spongebob
                         </td>
@@ -1055,23 +1052,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1081,7 +1072,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           2019-09-01
                         </td>
@@ -1107,9 +1098,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "#ffffff",
                           ";border-bottom:1px solid ",
                           "#dcdce7",
-                          ";",
-                          ".c2",
-                          "{",
+                          ";td,th{",
                           [Function],
                           "};",
                         ],
@@ -1138,23 +1127,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1164,7 +1147,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Squidward Tentacles
                         </td>
@@ -1179,23 +1162,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1205,7 +1182,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         />
                       </StyledComponent>
                     </Cell>
@@ -1218,23 +1195,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1244,7 +1215,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Smitty
                         </td>
@@ -1259,23 +1230,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1285,7 +1250,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           2019-08-29
                         </td>
@@ -1311,9 +1276,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "#ffffff",
                           ";border-bottom:1px solid ",
                           "#dcdce7",
-                          ";",
-                          ".c2",
-                          "{",
+                          ";td,th{",
                           [Function],
                           "};",
                         ],
@@ -1342,23 +1305,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1368,7 +1325,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Sandy Cheeks
                         </td>
@@ -1383,23 +1340,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1409,7 +1360,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           1987-11-17
                         </td>
@@ -1424,23 +1375,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1450,7 +1395,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Patrick
                         </td>
@@ -1465,23 +1410,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1491,7 +1430,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           2019-07-30
                         </td>
@@ -1517,9 +1456,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "#ffffff",
                           ";border-bottom:1px solid ",
                           "#dcdce7",
-                          ";",
-                          ".c2",
-                          "{",
+                          ";td,th{",
                           [Function],
                           "};",
                         ],
@@ -1548,23 +1485,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1574,7 +1505,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Larry the Lobster
                         </td>
@@ -1589,23 +1520,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1615,7 +1540,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           1975-06-23
                         </td>
@@ -1630,23 +1555,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1656,7 +1575,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Patchy
                         </td>
@@ -1671,23 +1590,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1697,7 +1610,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           2019-08-16
                         </td>
@@ -1723,9 +1636,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "#ffffff",
                           ";border-bottom:1px solid ",
                           "#dcdce7",
-                          ";",
-                          ".c2",
-                          "{",
+                          ";td,th{",
                           [Function],
                           "};",
                         ],
@@ -1754,23 +1665,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1780,7 +1685,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Sheldon Plankton
                         </td>
@@ -1795,23 +1700,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1821,7 +1720,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           1942-11-30
                         </td>
@@ -1836,23 +1735,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1862,7 +1755,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Spongebob
                         </td>
@@ -1877,23 +1770,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1903,7 +1790,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           2019-08-20
                         </td>
@@ -1929,9 +1816,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "#ffffff",
                           ";border-bottom:1px solid ",
                           "#dcdce7",
-                          ";",
-                          ".c2",
-                          "{",
+                          ";td,th{",
                           [Function],
                           "};",
                         ],
@@ -1960,23 +1845,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1986,7 +1865,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Mrs. Puff
                         </td>
@@ -2001,23 +1880,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -2027,7 +1900,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         />
                       </StyledComponent>
                     </Cell>
@@ -2040,23 +1913,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -2066,7 +1933,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Spongebob
                         </td>
@@ -2081,23 +1948,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -2107,7 +1968,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           2019-08-21
                         </td>
@@ -2133,9 +1994,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "#ffffff",
                           ";border-bottom:1px solid ",
                           "#dcdce7",
-                          ";",
-                          ".c2",
-                          "{",
+                          ";td,th{",
                           [Function],
                           "};",
                         ],
@@ -2164,23 +2023,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -2190,7 +2043,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Flying Dutchman
                         </td>
@@ -2205,23 +2058,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -2231,7 +2078,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           1678-04-20
                         </td>
@@ -2246,23 +2093,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -2272,7 +2113,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           Spongebob
                         </td>
@@ -2287,23 +2128,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "c2",
+                              "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
                               "lastClassName": "c5",
                               "rules": Array [
-                                "padding:10px 10px;word-wrap:break-word;cursor:",
                                 [Function],
-                                ";text-align:left;height:",
-                                [Function],
-                                ";background-color:",
-                                [Function],
-                                ";",
                               ],
                             },
                             "displayName": "Cell",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "c2",
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -2313,7 +2148,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c2 c5"
+                          className="c5"
                         >
                           2019-06-21
                         </td>
@@ -2388,7 +2223,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                 "isStatic": true,
                 "lastClassName": "c6",
                 "rules": Array [
-                  "display:flex;width:100%;align-items:center;justify-content:flex-end;",
+                  "align-items:center;display:flex;justify-content:flex-end;width:100%;",
                 ],
               },
               "displayName": "styled__PaginationWrapper",
@@ -2461,7 +2296,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       "isStatic": true,
                       "lastClassName": "c8",
                       "rules": Array [
-                        "font-size:14px;width:75px;margin-right:10px;",
+                        "font-size:14px;margin-right:10px;width:75px;",
                       ],
                     },
                     "displayName": "styled__RowPerPageWrapper",
@@ -4431,6 +4266,9 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
       headers={
         Array [
           Object {
+            "cellStyle": Object {
+              "width": "50%",
+            },
             "key": "name",
             "label": "Subject Name",
           },
@@ -4509,6 +4347,9 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
       headers={
         Array [
           Object {
+            "cellStyle": Object {
+              "width": "50%",
+            },
             "key": "name",
             "label": "Subject Name",
           },
@@ -4540,6 +4381,9 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
       headers={
         Array [
           Object {
+            "cellStyle": Object {
+              "width": "50%",
+            },
             "key": "name",
             "label": "Subject Name",
           },
@@ -4566,6 +4410,9 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
       headers={
         Array [
           Object {
+            "cellStyle": Object {
+              "width": "50%",
+            },
             "key": "name",
             "label": "Subject Name",
           },
@@ -4605,6 +4452,9 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
       headers={
         Array [
           Object {
+            "cellStyle": Object {
+              "width": "50%",
+            },
             "key": "name",
             "label": "Subject Name",
           },
@@ -4683,6 +4533,9 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
       headers={
         Array [
           Object {
+            "cellStyle": Object {
+              "width": "50%",
+            },
             "key": "name",
             "label": "Subject Name",
           },
@@ -4722,6 +4575,9 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
       headers={
         Array [
           Object {
+            "cellStyle": Object {
+              "width": "50%",
+            },
             "key": "name",
             "label": "Subject Name",
           },
@@ -4800,6 +4656,9 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
       headers={
         Array [
           Object {
+            "cellStyle": Object {
+              "width": "50%",
+            },
             "key": "name",
             "label": "Subject Name",
           },
@@ -4845,6 +4704,9 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
       headers={
         Array [
           Object {
+            "cellStyle": Object {
+              "width": "50%",
+            },
             "key": "name",
             "label": "Subject Name",
           },
@@ -4923,6 +4785,9 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
       headers={
         Array [
           Object {
+            "cellStyle": Object {
+              "width": "50%",
+            },
             "key": "name",
             "label": "Subject Name",
           },
@@ -4962,6 +4827,9 @@ exports[`Table render should render table first child 1`] = `
       headers={
         Array [
           Object {
+            "cellStyle": Object {
+              "width": "50%",
+            },
             "key": "name",
             "label": "Subject Name",
           },
@@ -5040,6 +4908,9 @@ exports[`Table render should render table first child 1`] = `
       headers={
         Array [
           Object {
+            "cellStyle": Object {
+              "width": "50%",
+            },
             "key": "name",
             "label": "Subject Name",
           },

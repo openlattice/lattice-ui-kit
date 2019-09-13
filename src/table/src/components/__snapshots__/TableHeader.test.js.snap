@@ -6,6 +6,11 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
     sticky={true}
   >
     <HeadCell
+      cellStyle={
+        Object {
+          "width": "50%",
+        }
+      }
       key="name"
       onClick={[Function]}
       order={false}
@@ -14,6 +19,7 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
       Subject Name
     </HeadCell>
     <HeadCell
+      cellStyle={Object {}}
       key="dob"
       onClick={[Function]}
       order={false}
@@ -22,6 +28,7 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
       Date of Birth
     </HeadCell>
     <HeadCell
+      cellStyle={Object {}}
       key="manager"
       onClick={[Function]}
       order={false}
@@ -30,6 +37,7 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
       Manager
     </HeadCell>
     <HeadCell
+      cellStyle={Object {}}
       key="lastUpdated"
       onClick={[Function]}
       order={false}
@@ -47,6 +55,11 @@ exports[`TableHeader props order and orderBy should pass order to HeadCell when 
     sticky={true}
   >
     <HeadCell
+      cellStyle={
+        Object {
+          "width": "50%",
+        }
+      }
       key="name"
       order="asc"
       sortable={true}
@@ -54,6 +67,7 @@ exports[`TableHeader props order and orderBy should pass order to HeadCell when 
       Subject Name
     </HeadCell>
     <HeadCell
+      cellStyle={Object {}}
       key="dob"
       order={false}
       sortable={true}
@@ -61,6 +75,7 @@ exports[`TableHeader props order and orderBy should pass order to HeadCell when 
       Date of Birth
     </HeadCell>
     <HeadCell
+      cellStyle={Object {}}
       key="manager"
       order={false}
       sortable={true}
@@ -68,6 +83,7 @@ exports[`TableHeader props order and orderBy should pass order to HeadCell when 
       Manager
     </HeadCell>
     <HeadCell
+      cellStyle={Object {}}
       key="lastUpdated"
       order={false}
       sortable={true}
@@ -92,6 +108,11 @@ exports[`TableHeader render should render sortable HeadCells 1`] = `
     sticky={true}
   >
     <HeadCell
+      cellStyle={
+        Object {
+          "width": "50%",
+        }
+      }
       key="name"
       order={false}
       sortable={true}
@@ -99,6 +120,7 @@ exports[`TableHeader render should render sortable HeadCells 1`] = `
       Subject Name
     </HeadCell>
     <HeadCell
+      cellStyle={Object {}}
       key="dob"
       order={false}
       sortable={true}
@@ -106,6 +128,7 @@ exports[`TableHeader render should render sortable HeadCells 1`] = `
       Date of Birth
     </HeadCell>
     <HeadCell
+      cellStyle={Object {}}
       key="manager"
       order={false}
       sortable={true}
@@ -113,6 +136,7 @@ exports[`TableHeader render should render sortable HeadCells 1`] = `
       Manager
     </HeadCell>
     <HeadCell
+      cellStyle={Object {}}
       key="lastUpdated"
       order={false}
       sortable={true}

@@ -15,6 +15,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -47,6 +50,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -79,6 +85,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -111,6 +120,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -143,6 +155,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -175,6 +190,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -207,6 +225,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },

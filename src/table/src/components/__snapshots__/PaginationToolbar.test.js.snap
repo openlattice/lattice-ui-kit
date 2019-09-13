@@ -2,25 +2,25 @@
 
 exports[`PaginationToolbar snapshots should match snaphot 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  width: 100%;
 }
 
 .c2 {
   font-size: 14px;
-  width: 75px;
   margin-right: 10px;
+  width: 75px;
 }
 
 .c4 {
@@ -132,7 +132,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
-              "display:flex;width:100%;align-items:center;justify-content:flex-end;",
+              "align-items:center;display:flex;justify-content:flex-end;width:100%;",
             ],
           },
           "displayName": "styled__PaginationWrapper",
@@ -205,7 +205,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                   "isStatic": true,
                   "lastClassName": "c2",
                   "rules": Array [
-                    "font-size:14px;width:75px;margin-right:10px;",
+                    "font-size:14px;margin-right:10px;width:75px;",
                   ],
                 },
                 "displayName": "styled__RowPerPageWrapper",
