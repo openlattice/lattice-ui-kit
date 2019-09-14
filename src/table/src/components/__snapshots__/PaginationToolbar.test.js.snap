@@ -241,6 +241,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                   ]
                 }
                 useRawValues={true}
+                value={5}
               >
                 <SelectController
                   borderless={true}
@@ -261,6 +262,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                   }
                   render={[Function]}
                   useRawValues={true}
+                  value={5}
                 >
                   <StateManager
                     borderless={true}
@@ -294,6 +296,12 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                         "menuPortal": [Function],
                         "option": [Function],
                         "singleValue": [Function],
+                      }
+                    }
+                    value={
+                      Object {
+                        "label": "5",
+                        "value": 5,
                       }
                     }
                   >
@@ -362,8 +370,8 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                       tabSelectsValue={true}
                       value={
                         Object {
-                          "label": "0",
-                          "value": 0,
+                          "label": "5",
+                          "value": 5,
                         }
                       }
                     >
@@ -454,8 +462,8 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                             "tabIndex": "0",
                             "tabSelectsValue": true,
                             "value": Object {
-                              "label": "0",
-                              "value": 0,
+                              "label": "5",
+                              "value": 5,
                             },
                           }
                         }
@@ -600,8 +608,8 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                   "tabIndex": "0",
                                   "tabSelectsValue": true,
                                   "value": Object {
-                                    "label": "0",
-                                    "value": 0,
+                                    "label": "5",
+                                    "value": 5,
                                   },
                                 }
                               }
@@ -759,8 +767,8 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                         "tabIndex": "0",
                                         "tabSelectsValue": true,
                                         "value": Object {
-                                          "label": "0",
-                                          "value": 0,
+                                          "label": "5",
+                                          "value": 5,
                                         },
                                       }
                                     }
@@ -820,8 +828,8 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                           cx={[Function]}
                                           data={
                                             Object {
-                                              "label": "0",
-                                              "value": 0,
+                                              "label": "5",
+                                              "value": 5,
                                             }
                                           }
                                           getStyles={[Function]}
@@ -901,8 +909,8 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                               "tabIndex": "0",
                                               "tabSelectsValue": true,
                                               "value": Object {
-                                                "label": "0",
-                                                "value": 0,
+                                                "label": "5",
+                                                "value": 5,
                                               },
                                             }
                                           }
@@ -961,7 +969,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                             <div
                                               className=" css-1xqm9c7-singleValue"
                                             >
-                                              0
+                                              5
                                             </div>
                                           </EmotionCssPropInternal>
                                         </SingleValue>
@@ -1041,8 +1049,8 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                               "tabIndex": "0",
                                               "tabSelectsValue": true,
                                               "value": Object {
-                                                "label": "0",
-                                                "value": 0,
+                                                "label": "5",
+                                                "value": 5,
                                               },
                                             }
                                           }
@@ -1266,8 +1274,8 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                         "tabIndex": "0",
                                         "tabSelectsValue": true,
                                         "value": Object {
-                                          "label": "0",
-                                          "value": 0,
+                                          "label": "5",
+                                          "value": 5,
                                         },
                                       }
                                     }
@@ -1402,8 +1410,8 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                               "tabIndex": "0",
                                               "tabSelectsValue": true,
                                               "value": Object {
-                                                "label": "0",
-                                                "value": 0,
+                                                "label": "5",
+                                                "value": 5,
                                               },
                                             }
                                           }
@@ -1541,8 +1549,8 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                               "tabIndex": "0",
                                               "tabSelectsValue": true,
                                               "value": Object {
-                                                "label": "0",
-                                                "value": 0,
+                                                "label": "5",
+                                                "value": 5,
                                               },
                                             }
                                           }
