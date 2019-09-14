@@ -4,11 +4,7 @@ import React from 'react';
 import { getSortedData } from './TableUtils';
 
 import { StyledRow, Cell } from './styled';
-import type { SortOrder } from '../../types';
-
-type RowData = {
-  id :string | number;
-};
+import type { RowData, SortOrder } from '../../types';
 
 type Props = {
   className ? :string;
@@ -34,7 +30,7 @@ const TableBody = (props :Props) => {
   } = props;
 
   const sortedData = getSortedData(data, order, orderBy);
-  const dataByPage = sortedData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
+  const dataByPage :RowData[] = sortedData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
 
   // inject empty row to maintain table size
   const emptyRowCount = rowsPerPage - dataByPage.length;
@@ -44,7 +40,7 @@ const TableBody = (props :Props) => {
   return (
     <tbody className={className}>
       {
-        dataByPage.map((rowData) => {
+        dataByPage.map((rowData :RowData) => {
 
           const { id } = rowData;
           return (

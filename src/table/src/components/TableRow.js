@@ -2,15 +2,22 @@
 
 import React from 'react';
 import { StyledRow } from './styled';
+import type { RowData } from '../../types';
 
 type Props = {
+  className ? :string;
   components :Object;
-  data :Object;
-  headers :Object;
+  data :RowData;
+  headers :Object[];
 };
 
 const TableRow = (props :Props) => {
-  const { components, data, headers } = props;
+  const {
+    className,
+    components,
+    data,
+    headers
+  } = props;
 
   const { id } = data;
 
@@ -18,10 +25,14 @@ const TableRow = (props :Props) => {
     .map((header) => <components.Cell key={`${id}_cell_${header.key}`}>{data[header.key]}</components.Cell>);
 
   return (
-    <StyledRow>
+    <StyledRow className={className}>
       {cells}
     </StyledRow>
   );
+};
+
+TableRow.defaultProps = {
+  className: undefined
 };
 
 export default TableRow;
