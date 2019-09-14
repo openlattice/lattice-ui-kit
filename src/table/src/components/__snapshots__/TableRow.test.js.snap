@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableRow render should render tr at the root 1`] = `<styled__StyledRow />`;
