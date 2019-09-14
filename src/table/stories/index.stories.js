@@ -1,24 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 
 import { Card, CardSegment } from '../../layout';
 import { TABLE_DATA, TABLE_HEADERS } from './constants';
-import { getHoverStyles } from '../../utils/StyleUtils';
+import CustomRow from './components/CustomRow';
 import {
   Table
 } from '..';
 
-const CustomRow = styled.tr`
-  ${getHoverStyles};
-`;
-
 const components = {
-  Row: () => (
-    <CustomRow onClick={() => {}}>
-      <td colSpan="4">row</td>
-    </CustomRow>
-  )
+  Row: CustomRow
 };
 
 storiesOf('Table', module)
