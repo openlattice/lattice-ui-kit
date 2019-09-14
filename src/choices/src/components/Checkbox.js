@@ -18,14 +18,18 @@ type Props = {
 
 /* eslint-disable react/jsx-props-no-spreading */
 const Checkbox = ({
+  disabled,
   id,
   label,
+  readOnly,
   ...rest
 } :Props) => (
-  <ChoiceLabel htmlFor={id}>
+  <ChoiceLabel htmlFor={id} readOnly={readOnly}>
     {label}
     <CheckboxInput
         id={id}
+        readOnly={readOnly}
+        disabled={disabled || readOnly}
         {...rest} />
     <CheckboxIndicator />
   </ChoiceLabel>

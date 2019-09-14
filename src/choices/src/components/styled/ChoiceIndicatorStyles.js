@@ -10,7 +10,9 @@ const choiceIndicatorStyles = css`
     box-shadow: ${PURPLES[0]} 0 0 0 2px;
   }
 
-  input:checked ~ & {
+  input:checked ~ &,
+  input[readonly]:checked:disabled ~ &,
+  input[readonly]:checked:hover ~ & {
     background-color: ${PURPLES[2]};
   }
 
@@ -22,9 +24,14 @@ const choiceIndicatorStyles = css`
     background-color: ${PURPLES[6]};
     cursor: not-allowed;
   }
-
   input:checked:disabled ~ & {
+    cursor: not-allowed;
     background-color: ${NEUTRALS[2]};
+  }
+
+  input[readonly] ~ & {
+    cursor: default;
+    pointer-events: none;
   }
 `;
 
