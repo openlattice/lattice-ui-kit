@@ -1,67 +1,62 @@
 // @flow
 import React from 'react';
-import type { ComponentType } from 'react';
 
-import { TableRow, Cell } from './styled';
 import { getSortedData } from './TableUtils';
 
-import type { SortOrder } from '../../types';
-
-type RowData = {
-  id :string | number;
-};
+import { StyledRow, Cell } from './styled';
+import type { RowData, SortOrder } from '../../types';
 
 type Props = {
+  className ? :string;
+  components :Object;
+  data ? :RowData[];
   headers :Object[];
   order ? :SortOrder;
   orderBy ? :string;
-  data ? :RowData[];
-  rowsPerPage :number;
   page :number;
-  rowComponent ? :ComponentType<any>;
+  rowsPerPage :number;
 };
 
 const TableBody = (props :Props) => {
   const {
+    className,
+    components,
     data,
     headers,
     order,
     orderBy,
     page,
-    rowComponent: RowComponent,
     rowsPerPage,
   } = props;
 
   const sortedData = getSortedData(data, order, orderBy);
-  const dataByPage = sortedData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
+  const dataByPage :RowData[] = sortedData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
 
   // inject empty row to maintain table size
   const emptyRowCount = rowsPerPage - dataByPage.length;
   // height per row + (row - 1) * (padding + border)
-  const emptyHeight = emptyRowCount * 24 + (emptyRowCount - 1) * 21;
+  const emptyHeight = `${emptyRowCount * 24 + (emptyRowCount - 1) * 21}px`;
 
   return (
-    <tbody>
+    <tbody className={className}>
       {
-        dataByPage.map((rowData) => {
-          if (RowComponent) {
-            return <RowComponent key={rowData.id} data={rowData} headers={headers} />;
-          }
+        dataByPage.map((rowData :RowData) => {
 
           const { id } = rowData;
-          const cells = headers.map((header) => <Cell key={`${id}_cell_${header.key}`}>{rowData[header.key]}</Cell>);
           return (
-            <TableRow key={id}>
-              {cells}
-            </TableRow>
+            <components.Row
+                key={id}
+                data={rowData}
+                headers={headers}
+                components={components} />
           );
         })
       }
       {
         !!emptyRowCount && (
-          <TableRow id="empty-row-filler">
-            <Cell colSpan={headers.length} height={emptyHeight} />
-          </TableRow>
+          <StyledRow id="empty-row-filler">
+            <Cell colSpan={headers.length} cellStyle={{ height: emptyHeight }} />
+          </StyledRow>
         )
       }
     </tbody>
@@ -69,10 +64,10 @@ const TableBody = (props :Props) => {
 };
 
 TableBody.defaultProps = {
+  className: undefined,
   data: [],
   order: false,
-  orderBy: undefined,
-  rowComponent: undefined
+  orderBy: undefined
 };
 
 export default React.memo<Props>(TableBody);

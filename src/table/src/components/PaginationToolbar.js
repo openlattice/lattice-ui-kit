@@ -47,6 +47,7 @@ const PaginationToolbar = (props :Props) => {
               setRowsPerPage(rows);
             }}
             options={options}
+            value={rowsPerPage}
             useRawValues />
       </RowPerPageWrapper>
       <Label id="row-range" subtle>{rowRange}</Label>

@@ -1,8 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableBody render should render rowComponent if provided 1`] = `
+exports[`TableBody render should render tbody at root 1`] = `
 <tbody>
-  <rowComponent
+  <TableRow
+    components={
+      Object {
+        "Cell": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styled__Cell-r3xwjs-2",
+            "isStatic": false,
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Cell",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "target": "td",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "Row": [Function],
+      }
+    }
     data={
       Object {
         "dob": "1942-11-30",
@@ -15,6 +39,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -34,7 +61,31 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     }
     key="1"
   />
-  <rowComponent
+  <TableRow
+    components={
+      Object {
+        "Cell": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styled__Cell-r3xwjs-2",
+            "isStatic": false,
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Cell",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "target": "td",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "Row": [Function],
+      }
+    }
     data={
       Object {
         "dob": "",
@@ -47,6 +98,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -66,7 +120,31 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     }
     key="2"
   />
-  <rowComponent
+  <TableRow
+    components={
+      Object {
+        "Cell": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styled__Cell-r3xwjs-2",
+            "isStatic": false,
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Cell",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "target": "td",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "Row": [Function],
+      }
+    }
     data={
       Object {
         "dob": "1987-11-17",
@@ -79,6 +157,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -98,7 +179,31 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     }
     key="3"
   />
-  <rowComponent
+  <TableRow
+    components={
+      Object {
+        "Cell": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styled__Cell-r3xwjs-2",
+            "isStatic": false,
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Cell",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "target": "td",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "Row": [Function],
+      }
+    }
     data={
       Object {
         "dob": "1975-06-23",
@@ -111,6 +216,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -130,7 +238,31 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     }
     key="4"
   />
-  <rowComponent
+  <TableRow
+    components={
+      Object {
+        "Cell": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styled__Cell-r3xwjs-2",
+            "isStatic": false,
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Cell",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "target": "td",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "Row": [Function],
+      }
+    }
     data={
       Object {
         "dob": "1942-11-30",
@@ -143,6 +275,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -162,7 +297,31 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     }
     key="5"
   />
-  <rowComponent
+  <TableRow
+    components={
+      Object {
+        "Cell": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styled__Cell-r3xwjs-2",
+            "isStatic": false,
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Cell",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "target": "td",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "Row": [Function],
+      }
+    }
     data={
       Object {
         "dob": "",
@@ -175,6 +334,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -194,7 +356,31 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     }
     key="6"
   />
-  <rowComponent
+  <TableRow
+    components={
+      Object {
+        "Cell": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styled__Cell-r3xwjs-2",
+            "isStatic": false,
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Cell",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "target": "td",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "Row": [Function],
+      }
+    }
     data={
       Object {
         "dob": "1678-04-20",
@@ -207,6 +393,9 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     headers={
       Array [
         Object {
+          "cellStyle": Object {
+            "width": "50%",
+          },
           "key": "name",
           "label": "Subject Name",
         },
@@ -226,190 +415,17 @@ exports[`TableBody render should render rowComponent if provided 1`] = `
     }
     key="7"
   />
-  <TableRow
+  <styled__StyledRow
     id="empty-row-filler"
   >
     <Cell
+      cellStyle={
+        Object {
+          "height": "114px",
+        }
+      }
       colSpan={4}
-      height={114}
     />
-  </TableRow>
-</tbody>
-`;
-
-exports[`TableBody render should render tbody at root 1`] = `
-<tbody>
-  <TableRow
-    key="1"
-  >
-    <Cell
-      key="1_cell_name"
-    >
-      Eugene Krabs
-    </Cell>
-    <Cell
-      key="1_cell_dob"
-    >
-      1942-11-30
-    </Cell>
-    <Cell
-      key="1_cell_manager"
-    >
-      Spongebob
-    </Cell>
-    <Cell
-      key="1_cell_lastUpdated"
-    >
-      2019-09-01
-    </Cell>
-  </TableRow>
-  <TableRow
-    key="2"
-  >
-    <Cell
-      key="2_cell_name"
-    >
-      Squidward Tentacles
-    </Cell>
-    <Cell
-      key="2_cell_dob"
-    />
-    <Cell
-      key="2_cell_manager"
-    >
-      Smitty
-    </Cell>
-    <Cell
-      key="2_cell_lastUpdated"
-    >
-      2019-08-29
-    </Cell>
-  </TableRow>
-  <TableRow
-    key="3"
-  >
-    <Cell
-      key="3_cell_name"
-    >
-      Sandy Cheeks
-    </Cell>
-    <Cell
-      key="3_cell_dob"
-    >
-      1987-11-17
-    </Cell>
-    <Cell
-      key="3_cell_manager"
-    >
-      Patrick
-    </Cell>
-    <Cell
-      key="3_cell_lastUpdated"
-    >
-      2019-07-30
-    </Cell>
-  </TableRow>
-  <TableRow
-    key="4"
-  >
-    <Cell
-      key="4_cell_name"
-    >
-      Larry the Lobster
-    </Cell>
-    <Cell
-      key="4_cell_dob"
-    >
-      1975-06-23
-    </Cell>
-    <Cell
-      key="4_cell_manager"
-    >
-      Patchy
-    </Cell>
-    <Cell
-      key="4_cell_lastUpdated"
-    >
-      2019-08-16
-    </Cell>
-  </TableRow>
-  <TableRow
-    key="5"
-  >
-    <Cell
-      key="5_cell_name"
-    >
-      Sheldon Plankton
-    </Cell>
-    <Cell
-      key="5_cell_dob"
-    >
-      1942-11-30
-    </Cell>
-    <Cell
-      key="5_cell_manager"
-    >
-      Spongebob
-    </Cell>
-    <Cell
-      key="5_cell_lastUpdated"
-    >
-      2019-08-20
-    </Cell>
-  </TableRow>
-  <TableRow
-    key="6"
-  >
-    <Cell
-      key="6_cell_name"
-    >
-      Mrs. Puff
-    </Cell>
-    <Cell
-      key="6_cell_dob"
-    />
-    <Cell
-      key="6_cell_manager"
-    >
-      Spongebob
-    </Cell>
-    <Cell
-      key="6_cell_lastUpdated"
-    >
-      2019-08-21
-    </Cell>
-  </TableRow>
-  <TableRow
-    key="7"
-  >
-    <Cell
-      key="7_cell_name"
-    >
-      Flying Dutchman
-    </Cell>
-    <Cell
-      key="7_cell_dob"
-    >
-      1678-04-20
-    </Cell>
-    <Cell
-      key="7_cell_manager"
-    >
-      Spongebob
-    </Cell>
-    <Cell
-      key="7_cell_lastUpdated"
-    >
-      2019-06-21
-    </Cell>
-  </TableRow>
-  <TableRow
-    id="empty-row-filler"
-  >
-    <Cell
-      colSpan={4}
-      height={114}
-    />
-  </TableRow>
+  </styled__StyledRow>
 </tbody>
 `;

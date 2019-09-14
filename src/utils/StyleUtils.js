@@ -23,7 +23,33 @@ const getStickyPosition = (props :{ sticky :boolean }) => {
   return null;
 };
 
+const getHoverStyles = (props :{ onClick :() => any }) => {
+  const { onClick } = props;
+  if (onClick) {
+    return css`
+      :hover, :focus {
+        box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.30);
+        outline: none;
+        cursor: pointer;
+
+        * {
+          cursor: inherit;
+          pointer-events: auto;
+        }
+      }
+
+      :active {
+        box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.30);
+        cursor: pointer;
+      }
+    `;
+  }
+
+  return null;
+};
+
 export {
   getStickyPosition,
   getStyleVariation,
+  getHoverStyles,
 };
