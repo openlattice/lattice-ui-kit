@@ -6,14 +6,14 @@ import isEmpty from 'lodash/isEmpty';
 import TableHeader from './TableHeader';
 import TableBody from './TableBody';
 import HeadCell from './HeadCell';
+import TableRow from './TableRow';
 import PaginationToolbar from './PaginationToolbar';
-import { StyledTable, Cell, TableRow } from './styled';
+import { StyledTable, Cell } from './styled';
 
 const defaultComponents = {
   Header: TableHeader,
   Body: TableBody,
   Pagination: PaginationToolbar,
-  HeadRow: TableRow,
   HeadCell,
   Cell,
   Row: TableRow,

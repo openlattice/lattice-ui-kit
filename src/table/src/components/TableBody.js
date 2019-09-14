@@ -3,6 +3,7 @@ import React from 'react';
 
 import { getSortedData } from './TableUtils';
 
+import { StyledRow, Cell } from './styled';
 import type { SortOrder } from '../../types';
 
 type RowData = {
@@ -46,20 +47,20 @@ const TableBody = (props :Props) => {
         dataByPage.map((rowData) => {
 
           const { id } = rowData;
-          const cells = headers
-            .map((header) => <components.Cell key={`${id}_cell_${header.key}`}>{rowData[header.key]}</components.Cell>);
           return (
-            <components.Row key={id}>
-              {cells}
-            </components.Row>
+            <components.Row
+                key={id}
+                data={rowData}
+                headers={headers}
+                components={components} />
           );
         })
       }
       {
         !!emptyRowCount && (
-          <components.Row id="empty-row-filler">
-            <components.Cell colSpan={headers.length} cellStyle={{ height: emptyHeight }} />
-          </components.Row>
+          <StyledRow id="empty-row-filler">
+            <Cell colSpan={headers.length} cellStyle={{ height: emptyHeight }} />
+          </StyledRow>
         )
       }
     </tbody>

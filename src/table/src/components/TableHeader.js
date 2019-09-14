@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
 import isFunction from 'lodash/isFunction';
+
+import { StyledRow } from './styled';
 import type { SortOrder } from '../../types';
 
 type Props = {
@@ -33,7 +35,7 @@ const TableHeader = (props :Props) => {
 
   return (
     <thead className={className}>
-      <components.HeadRow sticky={sticky}>
+      <StyledRow sticky={sticky}>
         {
           headers && headers.map((header) => {
             const { key, label, cellStyle } = header;
@@ -50,7 +52,7 @@ const TableHeader = (props :Props) => {
             );
           })
         }
-      </components.HeadRow>
+      </StyledRow>
     </thead>
   );
 };

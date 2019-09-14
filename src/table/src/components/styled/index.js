@@ -30,7 +30,7 @@ const Cell = styled.td((props :Object) => ({
 
 Cell.displayName = 'Cell';
 
-const TableRow = styled.tr`
+const StyledRow = styled.tr`
   background-color: ${WHITE};
   border-bottom: 1px solid ${NEUTRALS[4]};
 
@@ -39,8 +39,6 @@ const TableRow = styled.tr`
     ${getStickyPosition}
   };
 `;
-
-TableRow.displayName = 'TableRow';
 
 const RowPerPageWrapper = styled.div`
   font-size: 14px;
@@ -52,6 +50,6 @@ export {
   Cell,
   PaginationWrapper,
   RowPerPageWrapper,
+  StyledRow,
   StyledTable,
-  TableRow,
 };
