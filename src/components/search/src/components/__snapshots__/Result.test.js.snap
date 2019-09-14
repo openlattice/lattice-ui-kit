@@ -60,7 +60,7 @@ exports[`Result snapshots should match snapshot 1`] = `
 }
 
 .c0:hover {
-  box-shadow: 0 2px 8px -2px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px -2px rgba(0,0,0,0.30);
   cursor: pointer;
 }
 
@@ -70,7 +70,8 @@ exports[`Result snapshots should match snapshot 1`] = `
 }
 
 .c0:active {
-  box-shadow: none;
+  box-shadow: 0 2px 4px -2px rgba(0,0,0,0.30);
+  cursor: pointer;
 }
 
 <Result

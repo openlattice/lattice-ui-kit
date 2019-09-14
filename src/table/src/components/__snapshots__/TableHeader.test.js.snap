@@ -2,7 +2,7 @@
 
 exports[`TableHeader props onSort invoke onSort with property when HeadCell is clicked 1`] = `
 <thead>
-  <TableRow
+  <styled__StyledRow
     sticky={true}
   >
     <HeadCell
@@ -14,31 +14,6 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
       components={
         Object {
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
         }
       }
       key="name"
@@ -53,31 +28,6 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
       components={
         Object {
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
         }
       }
       key="dob"
@@ -92,31 +42,6 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
       components={
         Object {
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
         }
       }
       key="manager"
@@ -131,31 +56,6 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
       components={
         Object {
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
         }
       }
       key="lastUpdated"
@@ -165,13 +65,13 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
     >
       Last Updated
     </HeadCell>
-  </TableRow>
+  </styled__StyledRow>
 </thead>
 `;
 
 exports[`TableHeader props order and orderBy should pass order to HeadCell when orderBy matches header key 1`] = `
 <thead>
-  <TableRow
+  <styled__StyledRow
     sticky={true}
   >
     <HeadCell
@@ -183,31 +83,6 @@ exports[`TableHeader props order and orderBy should pass order to HeadCell when 
       components={
         Object {
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
         }
       }
       key="name"
@@ -221,31 +96,6 @@ exports[`TableHeader props order and orderBy should pass order to HeadCell when 
       components={
         Object {
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
         }
       }
       key="dob"
@@ -259,31 +109,6 @@ exports[`TableHeader props order and orderBy should pass order to HeadCell when 
       components={
         Object {
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
         }
       }
       key="manager"
@@ -297,31 +122,6 @@ exports[`TableHeader props order and orderBy should pass order to HeadCell when 
       components={
         Object {
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
         }
       }
       key="lastUpdated"
@@ -330,13 +130,13 @@ exports[`TableHeader props order and orderBy should pass order to HeadCell when 
     >
       Last Updated
     </HeadCell>
-  </TableRow>
+  </styled__StyledRow>
 </thead>
 `;
 
 exports[`TableHeader render should render a thead at the root 1`] = `
 <thead>
-  <TableRow
+  <styled__StyledRow
     sticky={true}
   />
 </thead>
@@ -344,7 +144,7 @@ exports[`TableHeader render should render a thead at the root 1`] = `
 
 exports[`TableHeader render should render sortable HeadCells 1`] = `
 <thead>
-  <TableRow
+  <styled__StyledRow
     sticky={true}
   >
     <HeadCell
@@ -356,31 +156,6 @@ exports[`TableHeader render should render sortable HeadCells 1`] = `
       components={
         Object {
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
         }
       }
       key="name"
@@ -394,31 +169,6 @@ exports[`TableHeader render should render sortable HeadCells 1`] = `
       components={
         Object {
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
         }
       }
       key="dob"
@@ -432,31 +182,6 @@ exports[`TableHeader render should render sortable HeadCells 1`] = `
       components={
         Object {
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
         }
       }
       key="manager"
@@ -470,31 +195,6 @@ exports[`TableHeader render should render sortable HeadCells 1`] = `
       components={
         Object {
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
         }
       }
       key="lastUpdated"
@@ -503,6 +203,6 @@ exports[`TableHeader render should render sortable HeadCells 1`] = `
     >
       Last Updated
     </HeadCell>
-  </TableRow>
+  </styled__StyledRow>
 </thead>
 `;

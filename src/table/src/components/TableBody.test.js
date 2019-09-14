@@ -3,7 +3,8 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import TableBody from './TableBody';
-import { TableRow, Cell } from './styled';
+import TableRow from './TableRow';
+import { Cell } from './styled';
 import { TABLE_DATA, TABLE_HEADERS } from '../../stories/constants';
 
 describe('TableBody', () => {

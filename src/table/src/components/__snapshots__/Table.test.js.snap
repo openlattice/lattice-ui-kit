@@ -310,64 +310,13 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   "withComponent": [Function],
                 },
                 "HeadCell": [Function],
-                "HeadRow": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "styled__TableRow-r3xwjs-3",
-                    "isStatic": false,
-                    "lastClassName": "c4",
-                    "rules": Array [
-                      "background-color:",
-                      "#ffffff",
-                      ";border-bottom:1px solid ",
-                      "#dcdce7",
-                      ";td,th{",
-                      [Function],
-                      "};",
-                    ],
-                  },
-                  "displayName": "TableRow",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "styled__TableRow-r3xwjs-3",
-                  "target": "tr",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                },
                 "Header": [Function],
                 "Pagination": Object {
                   "$$typeof": Symbol(react.memo),
                   "compare": null,
                   "type": [Function],
                 },
-                "Row": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "styled__TableRow-r3xwjs-3",
-                    "isStatic": false,
-                    "lastClassName": "c4",
-                    "rules": Array [
-                      "background-color:",
-                      "#ffffff",
-                      ";border-bottom:1px solid ",
-                      "#dcdce7",
-                      ";td,th{",
-                      [Function],
-                      "};",
-                    ],
-                  },
-                  "displayName": "TableRow",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "styled__TableRow-r3xwjs-3",
-                  "target": "tr",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                },
+                "Row": [Function],
               }
             }
             headers={
@@ -398,7 +347,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
             sticky={true}
           >
             <thead>
-              <TableRow
+              <styled__StyledRow
                 sticky={true}
               >
                 <StyledComponent
@@ -407,7 +356,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "styled__TableRow-r3xwjs-3",
+                        "componentId": "styled__StyledRow-r3xwjs-3",
                         "isStatic": false,
                         "lastClassName": "c4",
                         "rules": Array [
@@ -420,10 +369,10 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "};",
                         ],
                       },
-                      "displayName": "TableRow",
+                      "displayName": "styled__StyledRow",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "styled__TableRow-r3xwjs-3",
+                      "styledComponentId": "styled__StyledRow-r3xwjs-3",
                       "target": "tr",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -470,64 +419,13 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "withComponent": [Function],
                           },
                           "HeadCell": [Function],
-                          "HeadRow": Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__TableRow-r3xwjs-3",
-                              "isStatic": false,
-                              "lastClassName": "c4",
-                              "rules": Array [
-                                "background-color:",
-                                "#ffffff",
-                                ";border-bottom:1px solid ",
-                                "#dcdce7",
-                                ";td,th{",
-                                [Function],
-                                "};",
-                              ],
-                            },
-                            "displayName": "TableRow",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__TableRow-r3xwjs-3",
-                            "target": "tr",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          },
                           "Header": [Function],
                           "Pagination": Object {
                             "$$typeof": Symbol(react.memo),
                             "compare": null,
                             "type": [Function],
                           },
-                          "Row": Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__TableRow-r3xwjs-3",
-                              "isStatic": false,
-                              "lastClassName": "c4",
-                              "rules": Array [
-                                "background-color:",
-                                "#ffffff",
-                                ";border-bottom:1px solid ",
-                                "#dcdce7",
-                                ";td,th{",
-                                [Function],
-                                "};",
-                              ],
-                            },
-                            "displayName": "TableRow",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__TableRow-r3xwjs-3",
-                            "target": "tr",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          },
+                          "Row": [Function],
                         }
                       }
                       key="name"
@@ -680,64 +578,13 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "withComponent": [Function],
                           },
                           "HeadCell": [Function],
-                          "HeadRow": Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__TableRow-r3xwjs-3",
-                              "isStatic": false,
-                              "lastClassName": "c4",
-                              "rules": Array [
-                                "background-color:",
-                                "#ffffff",
-                                ";border-bottom:1px solid ",
-                                "#dcdce7",
-                                ";td,th{",
-                                [Function],
-                                "};",
-                              ],
-                            },
-                            "displayName": "TableRow",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__TableRow-r3xwjs-3",
-                            "target": "tr",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          },
                           "Header": [Function],
                           "Pagination": Object {
                             "$$typeof": Symbol(react.memo),
                             "compare": null,
                             "type": [Function],
                           },
-                          "Row": Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__TableRow-r3xwjs-3",
-                              "isStatic": false,
-                              "lastClassName": "c4",
-                              "rules": Array [
-                                "background-color:",
-                                "#ffffff",
-                                ";border-bottom:1px solid ",
-                                "#dcdce7",
-                                ";td,th{",
-                                [Function],
-                                "};",
-                              ],
-                            },
-                            "displayName": "TableRow",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__TableRow-r3xwjs-3",
-                            "target": "tr",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          },
+                          "Row": [Function],
                         }
                       }
                       key="dob"
@@ -882,64 +729,13 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "withComponent": [Function],
                           },
                           "HeadCell": [Function],
-                          "HeadRow": Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__TableRow-r3xwjs-3",
-                              "isStatic": false,
-                              "lastClassName": "c4",
-                              "rules": Array [
-                                "background-color:",
-                                "#ffffff",
-                                ";border-bottom:1px solid ",
-                                "#dcdce7",
-                                ";td,th{",
-                                [Function],
-                                "};",
-                              ],
-                            },
-                            "displayName": "TableRow",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__TableRow-r3xwjs-3",
-                            "target": "tr",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          },
                           "Header": [Function],
                           "Pagination": Object {
                             "$$typeof": Symbol(react.memo),
                             "compare": null,
                             "type": [Function],
                           },
-                          "Row": Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__TableRow-r3xwjs-3",
-                              "isStatic": false,
-                              "lastClassName": "c4",
-                              "rules": Array [
-                                "background-color:",
-                                "#ffffff",
-                                ";border-bottom:1px solid ",
-                                "#dcdce7",
-                                ";td,th{",
-                                [Function],
-                                "};",
-                              ],
-                            },
-                            "displayName": "TableRow",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__TableRow-r3xwjs-3",
-                            "target": "tr",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          },
+                          "Row": [Function],
                         }
                       }
                       key="manager"
@@ -1084,64 +880,13 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "withComponent": [Function],
                           },
                           "HeadCell": [Function],
-                          "HeadRow": Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__TableRow-r3xwjs-3",
-                              "isStatic": false,
-                              "lastClassName": "c4",
-                              "rules": Array [
-                                "background-color:",
-                                "#ffffff",
-                                ";border-bottom:1px solid ",
-                                "#dcdce7",
-                                ";td,th{",
-                                [Function],
-                                "};",
-                              ],
-                            },
-                            "displayName": "TableRow",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__TableRow-r3xwjs-3",
-                            "target": "tr",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          },
                           "Header": [Function],
                           "Pagination": Object {
                             "$$typeof": Symbol(react.memo),
                             "compare": null,
                             "type": [Function],
                           },
-                          "Row": Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__TableRow-r3xwjs-3",
-                              "isStatic": false,
-                              "lastClassName": "c4",
-                              "rules": Array [
-                                "background-color:",
-                                "#ffffff",
-                                ";border-bottom:1px solid ",
-                                "#dcdce7",
-                                ";td,th{",
-                                [Function],
-                                "};",
-                              ],
-                            },
-                            "displayName": "TableRow",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__TableRow-r3xwjs-3",
-                            "target": "tr",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          },
+                          "Row": [Function],
                         }
                       }
                       key="lastUpdated"
@@ -1258,7 +1003,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     </HeadCell>
                   </tr>
                 </StyledComponent>
-              </TableRow>
+              </styled__StyledRow>
             </thead>
           </TableHeader>
           <TableBody
@@ -1290,64 +1035,13 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   "withComponent": [Function],
                 },
                 "HeadCell": [Function],
-                "HeadRow": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "styled__TableRow-r3xwjs-3",
-                    "isStatic": false,
-                    "lastClassName": "c4",
-                    "rules": Array [
-                      "background-color:",
-                      "#ffffff",
-                      ";border-bottom:1px solid ",
-                      "#dcdce7",
-                      ";td,th{",
-                      [Function],
-                      "};",
-                    ],
-                  },
-                  "displayName": "TableRow",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "styled__TableRow-r3xwjs-3",
-                  "target": "tr",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                },
                 "Header": [Function],
                 "Pagination": Object {
                   "$$typeof": Symbol(react.memo),
                   "compare": null,
                   "type": [Function],
                 },
-                "Row": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "styled__TableRow-r3xwjs-3",
-                    "isStatic": false,
-                    "lastClassName": "c4",
-                    "rules": Array [
-                      "background-color:",
-                      "#ffffff",
-                      ";border-bottom:1px solid ",
-                      "#dcdce7",
-                      ";td,th{",
-                      [Function],
-                      "};",
-                    ],
-                  },
-                  "displayName": "TableRow",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "styled__TableRow-r3xwjs-3",
-                  "target": "tr",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                },
+                "Row": [Function],
               }
             }
             data={
@@ -1431,1260 +1125,1757 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
           >
             <tbody>
               <TableRow
+                components={
+                  Object {
+                    "Body": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Cell": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "styled__Cell-r3xwjs-2",
+                        "isStatic": false,
+                        "lastClassName": "c5",
+                        "rules": Array [
+                          [Function],
+                        ],
+                      },
+                      "displayName": "Cell",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "styled__Cell-r3xwjs-2",
+                      "target": "td",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                    "HeadCell": [Function],
+                    "Header": [Function],
+                    "Pagination": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Row": [Function],
+                  }
+                }
+                data={
+                  Object {
+                    "dob": "1942-11-30",
+                    "id": "1",
+                    "lastUpdated": "2019-09-01",
+                    "manager": "Spongebob",
+                    "name": "Eugene Krabs",
+                  }
+                }
+                headers={
+                  Array [
+                    Object {
+                      "cellStyle": Object {
+                        "width": "50%",
+                      },
+                      "key": "name",
+                      "label": "Subject Name",
+                    },
+                    Object {
+                      "key": "dob",
+                      "label": "Date of Birth",
+                    },
+                    Object {
+                      "key": "manager",
+                      "label": "Manager",
+                    },
+                    Object {
+                      "key": "lastUpdated",
+                      "label": "Last Updated",
+                    },
+                  ]
+                }
                 key="1"
               >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
+                <styled__StyledRow>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "styled__StyledRow-r3xwjs-3",
+                          "isStatic": false,
+                          "lastClassName": "c4",
+                          "rules": Array [
+                            "background-color:",
+                            "#ffffff",
+                            ";border-bottom:1px solid ",
+                            "#dcdce7",
+                            ";td,th{",
+                            [Function],
+                            "};",
+                          ],
+                        },
+                        "displayName": "styled__StyledRow",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "styled__StyledRow-r3xwjs-3",
+                        "target": "tr",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <tr
+                      className="c4"
+                    >
+                      <Cell
+                        key="1_cell_name"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            Eugene Krabs
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="1_cell_dob"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            1942-11-30
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="1_cell_manager"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            Spongebob
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="1_cell_lastUpdated"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            2019-09-01
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                    </tr>
+                  </StyledComponent>
+                </styled__StyledRow>
+              </TableRow>
+              <TableRow
+                components={
+                  Object {
+                    "Body": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Cell": Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "styled__TableRow-r3xwjs-3",
+                        "componentId": "styled__Cell-r3xwjs-2",
                         "isStatic": false,
-                        "lastClassName": "c4",
+                        "lastClassName": "c5",
                         "rules": Array [
-                          "background-color:",
-                          "#ffffff",
-                          ";border-bottom:1px solid ",
-                          "#dcdce7",
-                          ";td,th{",
                           [Function],
-                          "};",
                         ],
                       },
-                      "displayName": "TableRow",
+                      "displayName": "Cell",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "styled__TableRow-r3xwjs-3",
-                      "target": "tr",
+                      "styledComponentId": "styled__Cell-r3xwjs-2",
+                      "target": "td",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
-                    }
+                    },
+                    "HeadCell": [Function],
+                    "Header": [Function],
+                    "Pagination": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Row": [Function],
                   }
-                  forwardedRef={null}
-                >
-                  <tr
-                    className="c4"
-                  >
-                    <Cell
-                      key="1_cell_name"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          Eugene Krabs
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="1_cell_dob"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          1942-11-30
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="1_cell_manager"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          Spongebob
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="1_cell_lastUpdated"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          2019-09-01
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                  </tr>
-                </StyledComponent>
-              </TableRow>
-              <TableRow
+                }
+                data={
+                  Object {
+                    "dob": "",
+                    "id": "2",
+                    "lastUpdated": "2019-08-29",
+                    "manager": "Smitty",
+                    "name": "Squidward Tentacles",
+                  }
+                }
+                headers={
+                  Array [
+                    Object {
+                      "cellStyle": Object {
+                        "width": "50%",
+                      },
+                      "key": "name",
+                      "label": "Subject Name",
+                    },
+                    Object {
+                      "key": "dob",
+                      "label": "Date of Birth",
+                    },
+                    Object {
+                      "key": "manager",
+                      "label": "Manager",
+                    },
+                    Object {
+                      "key": "lastUpdated",
+                      "label": "Last Updated",
+                    },
+                  ]
+                }
                 key="2"
               >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
+                <styled__StyledRow>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "styled__StyledRow-r3xwjs-3",
+                          "isStatic": false,
+                          "lastClassName": "c4",
+                          "rules": Array [
+                            "background-color:",
+                            "#ffffff",
+                            ";border-bottom:1px solid ",
+                            "#dcdce7",
+                            ";td,th{",
+                            [Function],
+                            "};",
+                          ],
+                        },
+                        "displayName": "styled__StyledRow",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "styled__StyledRow-r3xwjs-3",
+                        "target": "tr",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <tr
+                      className="c4"
+                    >
+                      <Cell
+                        key="2_cell_name"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            Squidward Tentacles
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="2_cell_dob"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          />
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="2_cell_manager"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            Smitty
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="2_cell_lastUpdated"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            2019-08-29
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                    </tr>
+                  </StyledComponent>
+                </styled__StyledRow>
+              </TableRow>
+              <TableRow
+                components={
+                  Object {
+                    "Body": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Cell": Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "styled__TableRow-r3xwjs-3",
+                        "componentId": "styled__Cell-r3xwjs-2",
                         "isStatic": false,
-                        "lastClassName": "c4",
+                        "lastClassName": "c5",
                         "rules": Array [
-                          "background-color:",
-                          "#ffffff",
-                          ";border-bottom:1px solid ",
-                          "#dcdce7",
-                          ";td,th{",
                           [Function],
-                          "};",
                         ],
                       },
-                      "displayName": "TableRow",
+                      "displayName": "Cell",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "styled__TableRow-r3xwjs-3",
-                      "target": "tr",
+                      "styledComponentId": "styled__Cell-r3xwjs-2",
+                      "target": "td",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
-                    }
+                    },
+                    "HeadCell": [Function],
+                    "Header": [Function],
+                    "Pagination": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Row": [Function],
                   }
-                  forwardedRef={null}
-                >
-                  <tr
-                    className="c4"
-                  >
-                    <Cell
-                      key="2_cell_name"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          Squidward Tentacles
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="2_cell_dob"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        />
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="2_cell_manager"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          Smitty
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="2_cell_lastUpdated"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          2019-08-29
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                  </tr>
-                </StyledComponent>
-              </TableRow>
-              <TableRow
+                }
+                data={
+                  Object {
+                    "dob": "1987-11-17",
+                    "id": "3",
+                    "lastUpdated": "2019-07-30",
+                    "manager": "Patrick",
+                    "name": "Sandy Cheeks",
+                  }
+                }
+                headers={
+                  Array [
+                    Object {
+                      "cellStyle": Object {
+                        "width": "50%",
+                      },
+                      "key": "name",
+                      "label": "Subject Name",
+                    },
+                    Object {
+                      "key": "dob",
+                      "label": "Date of Birth",
+                    },
+                    Object {
+                      "key": "manager",
+                      "label": "Manager",
+                    },
+                    Object {
+                      "key": "lastUpdated",
+                      "label": "Last Updated",
+                    },
+                  ]
+                }
                 key="3"
               >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
+                <styled__StyledRow>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "styled__StyledRow-r3xwjs-3",
+                          "isStatic": false,
+                          "lastClassName": "c4",
+                          "rules": Array [
+                            "background-color:",
+                            "#ffffff",
+                            ";border-bottom:1px solid ",
+                            "#dcdce7",
+                            ";td,th{",
+                            [Function],
+                            "};",
+                          ],
+                        },
+                        "displayName": "styled__StyledRow",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "styled__StyledRow-r3xwjs-3",
+                        "target": "tr",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <tr
+                      className="c4"
+                    >
+                      <Cell
+                        key="3_cell_name"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            Sandy Cheeks
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="3_cell_dob"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            1987-11-17
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="3_cell_manager"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            Patrick
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="3_cell_lastUpdated"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            2019-07-30
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                    </tr>
+                  </StyledComponent>
+                </styled__StyledRow>
+              </TableRow>
+              <TableRow
+                components={
+                  Object {
+                    "Body": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Cell": Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "styled__TableRow-r3xwjs-3",
+                        "componentId": "styled__Cell-r3xwjs-2",
                         "isStatic": false,
-                        "lastClassName": "c4",
+                        "lastClassName": "c5",
                         "rules": Array [
-                          "background-color:",
-                          "#ffffff",
-                          ";border-bottom:1px solid ",
-                          "#dcdce7",
-                          ";td,th{",
                           [Function],
-                          "};",
                         ],
                       },
-                      "displayName": "TableRow",
+                      "displayName": "Cell",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "styled__TableRow-r3xwjs-3",
-                      "target": "tr",
+                      "styledComponentId": "styled__Cell-r3xwjs-2",
+                      "target": "td",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
-                    }
+                    },
+                    "HeadCell": [Function],
+                    "Header": [Function],
+                    "Pagination": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Row": [Function],
                   }
-                  forwardedRef={null}
-                >
-                  <tr
-                    className="c4"
-                  >
-                    <Cell
-                      key="3_cell_name"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          Sandy Cheeks
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="3_cell_dob"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          1987-11-17
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="3_cell_manager"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          Patrick
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="3_cell_lastUpdated"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          2019-07-30
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                  </tr>
-                </StyledComponent>
-              </TableRow>
-              <TableRow
+                }
+                data={
+                  Object {
+                    "dob": "1975-06-23",
+                    "id": "4",
+                    "lastUpdated": "2019-08-16",
+                    "manager": "Patchy",
+                    "name": "Larry the Lobster",
+                  }
+                }
+                headers={
+                  Array [
+                    Object {
+                      "cellStyle": Object {
+                        "width": "50%",
+                      },
+                      "key": "name",
+                      "label": "Subject Name",
+                    },
+                    Object {
+                      "key": "dob",
+                      "label": "Date of Birth",
+                    },
+                    Object {
+                      "key": "manager",
+                      "label": "Manager",
+                    },
+                    Object {
+                      "key": "lastUpdated",
+                      "label": "Last Updated",
+                    },
+                  ]
+                }
                 key="4"
               >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
+                <styled__StyledRow>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "styled__StyledRow-r3xwjs-3",
+                          "isStatic": false,
+                          "lastClassName": "c4",
+                          "rules": Array [
+                            "background-color:",
+                            "#ffffff",
+                            ";border-bottom:1px solid ",
+                            "#dcdce7",
+                            ";td,th{",
+                            [Function],
+                            "};",
+                          ],
+                        },
+                        "displayName": "styled__StyledRow",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "styled__StyledRow-r3xwjs-3",
+                        "target": "tr",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <tr
+                      className="c4"
+                    >
+                      <Cell
+                        key="4_cell_name"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            Larry the Lobster
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="4_cell_dob"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            1975-06-23
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="4_cell_manager"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            Patchy
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="4_cell_lastUpdated"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            2019-08-16
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                    </tr>
+                  </StyledComponent>
+                </styled__StyledRow>
+              </TableRow>
+              <TableRow
+                components={
+                  Object {
+                    "Body": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Cell": Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "styled__TableRow-r3xwjs-3",
+                        "componentId": "styled__Cell-r3xwjs-2",
                         "isStatic": false,
-                        "lastClassName": "c4",
+                        "lastClassName": "c5",
                         "rules": Array [
-                          "background-color:",
-                          "#ffffff",
-                          ";border-bottom:1px solid ",
-                          "#dcdce7",
-                          ";td,th{",
                           [Function],
-                          "};",
                         ],
                       },
-                      "displayName": "TableRow",
+                      "displayName": "Cell",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "styled__TableRow-r3xwjs-3",
-                      "target": "tr",
+                      "styledComponentId": "styled__Cell-r3xwjs-2",
+                      "target": "td",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
-                    }
+                    },
+                    "HeadCell": [Function],
+                    "Header": [Function],
+                    "Pagination": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Row": [Function],
                   }
-                  forwardedRef={null}
-                >
-                  <tr
-                    className="c4"
-                  >
-                    <Cell
-                      key="4_cell_name"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          Larry the Lobster
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="4_cell_dob"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          1975-06-23
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="4_cell_manager"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          Patchy
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="4_cell_lastUpdated"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          2019-08-16
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                  </tr>
-                </StyledComponent>
-              </TableRow>
-              <TableRow
+                }
+                data={
+                  Object {
+                    "dob": "1942-11-30",
+                    "id": "5",
+                    "lastUpdated": "2019-08-20",
+                    "manager": "Spongebob",
+                    "name": "Sheldon Plankton",
+                  }
+                }
+                headers={
+                  Array [
+                    Object {
+                      "cellStyle": Object {
+                        "width": "50%",
+                      },
+                      "key": "name",
+                      "label": "Subject Name",
+                    },
+                    Object {
+                      "key": "dob",
+                      "label": "Date of Birth",
+                    },
+                    Object {
+                      "key": "manager",
+                      "label": "Manager",
+                    },
+                    Object {
+                      "key": "lastUpdated",
+                      "label": "Last Updated",
+                    },
+                  ]
+                }
                 key="5"
               >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
+                <styled__StyledRow>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "styled__StyledRow-r3xwjs-3",
+                          "isStatic": false,
+                          "lastClassName": "c4",
+                          "rules": Array [
+                            "background-color:",
+                            "#ffffff",
+                            ";border-bottom:1px solid ",
+                            "#dcdce7",
+                            ";td,th{",
+                            [Function],
+                            "};",
+                          ],
+                        },
+                        "displayName": "styled__StyledRow",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "styled__StyledRow-r3xwjs-3",
+                        "target": "tr",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <tr
+                      className="c4"
+                    >
+                      <Cell
+                        key="5_cell_name"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            Sheldon Plankton
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="5_cell_dob"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            1942-11-30
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="5_cell_manager"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            Spongebob
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="5_cell_lastUpdated"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            2019-08-20
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                    </tr>
+                  </StyledComponent>
+                </styled__StyledRow>
+              </TableRow>
+              <TableRow
+                components={
+                  Object {
+                    "Body": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Cell": Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "styled__TableRow-r3xwjs-3",
+                        "componentId": "styled__Cell-r3xwjs-2",
                         "isStatic": false,
-                        "lastClassName": "c4",
+                        "lastClassName": "c5",
                         "rules": Array [
-                          "background-color:",
-                          "#ffffff",
-                          ";border-bottom:1px solid ",
-                          "#dcdce7",
-                          ";td,th{",
                           [Function],
-                          "};",
                         ],
                       },
-                      "displayName": "TableRow",
+                      "displayName": "Cell",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "styled__TableRow-r3xwjs-3",
-                      "target": "tr",
+                      "styledComponentId": "styled__Cell-r3xwjs-2",
+                      "target": "td",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
-                    }
+                    },
+                    "HeadCell": [Function],
+                    "Header": [Function],
+                    "Pagination": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Row": [Function],
                   }
-                  forwardedRef={null}
-                >
-                  <tr
-                    className="c4"
-                  >
-                    <Cell
-                      key="5_cell_name"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          Sheldon Plankton
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="5_cell_dob"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          1942-11-30
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="5_cell_manager"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          Spongebob
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="5_cell_lastUpdated"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
-                        >
-                          2019-08-20
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                  </tr>
-                </StyledComponent>
-              </TableRow>
-              <TableRow
+                }
+                data={
+                  Object {
+                    "dob": "",
+                    "id": "6",
+                    "lastUpdated": "2019-08-21",
+                    "manager": "Spongebob",
+                    "name": "Mrs. Puff",
+                  }
+                }
+                headers={
+                  Array [
+                    Object {
+                      "cellStyle": Object {
+                        "width": "50%",
+                      },
+                      "key": "name",
+                      "label": "Subject Name",
+                    },
+                    Object {
+                      "key": "dob",
+                      "label": "Date of Birth",
+                    },
+                    Object {
+                      "key": "manager",
+                      "label": "Manager",
+                    },
+                    Object {
+                      "key": "lastUpdated",
+                      "label": "Last Updated",
+                    },
+                  ]
+                }
                 key="6"
               >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "styled__TableRow-r3xwjs-3",
-                        "isStatic": false,
-                        "lastClassName": "c4",
-                        "rules": Array [
-                          "background-color:",
-                          "#ffffff",
-                          ";border-bottom:1px solid ",
-                          "#dcdce7",
-                          ";td,th{",
-                          [Function],
-                          "};",
-                        ],
-                      },
-                      "displayName": "TableRow",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "styled__TableRow-r3xwjs-3",
-                      "target": "tr",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                <styled__StyledRow>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "styled__StyledRow-r3xwjs-3",
+                          "isStatic": false,
+                          "lastClassName": "c4",
+                          "rules": Array [
+                            "background-color:",
+                            "#ffffff",
+                            ";border-bottom:1px solid ",
+                            "#dcdce7",
+                            ";td,th{",
+                            [Function],
+                            "};",
+                          ],
+                        },
+                        "displayName": "styled__StyledRow",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "styled__StyledRow-r3xwjs-3",
+                        "target": "tr",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
                     }
-                  }
-                  forwardedRef={null}
-                >
-                  <tr
-                    className="c4"
+                    forwardedRef={null}
                   >
-                    <Cell
-                      key="6_cell_name"
+                    <tr
+                      className="c4"
                     >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
+                      <Cell
+                        key="6_cell_name"
                       >
-                        <td
-                          className="c5"
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
                         >
-                          Mrs. Puff
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="6_cell_dob"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
+                          <td
+                            className="c5"
+                          >
+                            Mrs. Puff
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="6_cell_dob"
                       >
-                        <td
-                          className="c5"
-                        />
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="6_cell_manager"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
+                          forwardedRef={null}
                         >
-                          Spongebob
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="6_cell_lastUpdated"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
+                          <td
+                            className="c5"
+                          />
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="6_cell_manager"
                       >
-                        <td
-                          className="c5"
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
                         >
-                          2019-08-21
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                  </tr>
-                </StyledComponent>
+                          <td
+                            className="c5"
+                          >
+                            Spongebob
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="6_cell_lastUpdated"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            2019-08-21
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                    </tr>
+                  </StyledComponent>
+                </styled__StyledRow>
               </TableRow>
               <TableRow
-                key="7"
-              >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
+                components={
+                  Object {
+                    "Body": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Cell": Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "styled__TableRow-r3xwjs-3",
+                        "componentId": "styled__Cell-r3xwjs-2",
                         "isStatic": false,
-                        "lastClassName": "c4",
+                        "lastClassName": "c5",
                         "rules": Array [
-                          "background-color:",
-                          "#ffffff",
-                          ";border-bottom:1px solid ",
-                          "#dcdce7",
-                          ";td,th{",
                           [Function],
-                          "};",
                         ],
                       },
-                      "displayName": "TableRow",
+                      "displayName": "Cell",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "styled__TableRow-r3xwjs-3",
-                      "target": "tr",
+                      "styledComponentId": "styled__Cell-r3xwjs-2",
+                      "target": "td",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
-                    }
+                    },
+                    "HeadCell": [Function],
+                    "Header": [Function],
+                    "Pagination": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "Row": [Function],
                   }
-                  forwardedRef={null}
-                >
-                  <tr
-                    className="c4"
+                }
+                data={
+                  Object {
+                    "dob": "1678-04-20",
+                    "id": "7",
+                    "lastUpdated": "2019-06-21",
+                    "manager": "Spongebob",
+                    "name": "Flying Dutchman",
+                  }
+                }
+                headers={
+                  Array [
+                    Object {
+                      "cellStyle": Object {
+                        "width": "50%",
+                      },
+                      "key": "name",
+                      "label": "Subject Name",
+                    },
+                    Object {
+                      "key": "dob",
+                      "label": "Date of Birth",
+                    },
+                    Object {
+                      "key": "manager",
+                      "label": "Manager",
+                    },
+                    Object {
+                      "key": "lastUpdated",
+                      "label": "Last Updated",
+                    },
+                  ]
+                }
+                key="7"
+              >
+                <styled__StyledRow>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "styled__StyledRow-r3xwjs-3",
+                          "isStatic": false,
+                          "lastClassName": "c4",
+                          "rules": Array [
+                            "background-color:",
+                            "#ffffff",
+                            ";border-bottom:1px solid ",
+                            "#dcdce7",
+                            ";td,th{",
+                            [Function],
+                            "};",
+                          ],
+                        },
+                        "displayName": "styled__StyledRow",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "styled__StyledRow-r3xwjs-3",
+                        "target": "tr",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
                   >
-                    <Cell
-                      key="7_cell_name"
+                    <tr
+                      className="c4"
                     >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
+                      <Cell
+                        key="7_cell_name"
                       >
-                        <td
-                          className="c5"
-                        >
-                          Flying Dutchman
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="7_cell_dob"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
+                          forwardedRef={null}
                         >
-                          1678-04-20
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="7_cell_manager"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                          <td
+                            className="c5"
+                          >
+                            Flying Dutchman
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="7_cell_dob"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
+                          forwardedRef={null}
                         >
-                          Spongebob
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                    <Cell
-                      key="7_cell_lastUpdated"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "styled__Cell-r3xwjs-2",
-                              "isStatic": false,
-                              "lastClassName": "c5",
-                              "rules": Array [
-                                [Function],
-                              ],
-                            },
-                            "displayName": "Cell",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "styled__Cell-r3xwjs-2",
-                            "target": "td",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                          <td
+                            className="c5"
+                          >
+                            1678-04-20
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="7_cell_manager"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                      >
-                        <td
-                          className="c5"
+                          forwardedRef={null}
                         >
-                          2019-06-21
-                        </td>
-                      </StyledComponent>
-                    </Cell>
-                  </tr>
-                </StyledComponent>
+                          <td
+                            className="c5"
+                          >
+                            Spongebob
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                      <Cell
+                        key="7_cell_lastUpdated"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <td
+                            className="c5"
+                          >
+                            2019-06-21
+                          </td>
+                        </StyledComponent>
+                      </Cell>
+                    </tr>
+                  </StyledComponent>
+                </styled__StyledRow>
               </TableRow>
             </tbody>
           </TableBody>
@@ -4819,62 +5010,13 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
             "withComponent": [Function],
           },
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
           "Header": [Function],
           "Pagination": Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
             "type": [Function],
           },
-          "Row": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
+          "Row": [Function],
         }
       }
       headers={
@@ -4932,62 +5074,13 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
             "withComponent": [Function],
           },
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
           "Header": [Function],
           "Pagination": Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
             "type": [Function],
           },
-          "Row": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
+          "Row": [Function],
         }
       }
       data={
@@ -5104,62 +5197,13 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
             "withComponent": [Function],
           },
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
           "Header": [Function],
           "Pagination": Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
             "type": [Function],
           },
-          "Row": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
+          "Row": [Function],
         }
       }
       headers={
@@ -5217,62 +5261,13 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
             "withComponent": [Function],
           },
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
           "Header": [Function],
           "Pagination": Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
             "type": [Function],
           },
-          "Row": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
+          "Row": [Function],
         }
       }
       data={Array []}
@@ -5345,62 +5340,13 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
             "withComponent": [Function],
           },
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
           "Header": [Function],
           "Pagination": Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
             "type": [Function],
           },
-          "Row": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
+          "Row": [Function],
         }
       }
       headers={
@@ -5458,62 +5404,13 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
             "withComponent": [Function],
           },
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
           "Header": [Function],
           "Pagination": Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
             "type": [Function],
           },
-          "Row": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
+          "Row": [Function],
         }
       }
       data={
@@ -5638,62 +5535,13 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
             "withComponent": [Function],
           },
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
           "Header": [Function],
           "Pagination": Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
             "type": [Function],
           },
-          "Row": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
+          "Row": [Function],
         }
       }
       headers={
@@ -5751,62 +5599,13 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
             "withComponent": [Function],
           },
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
           "Header": [Function],
           "Pagination": Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
             "type": [Function],
           },
-          "Row": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
+          "Row": [Function],
         }
       }
       data={
@@ -5937,62 +5736,13 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
             "withComponent": [Function],
           },
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
           "Header": [Function],
           "Pagination": Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
             "type": [Function],
           },
-          "Row": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
+          "Row": [Function],
         }
       }
       headers={
@@ -6050,62 +5800,13 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
             "withComponent": [Function],
           },
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
           "Header": [Function],
           "Pagination": Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
             "type": [Function],
           },
-          "Row": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
+          "Row": [Function],
         }
       }
       data={
@@ -6231,64 +5932,13 @@ exports[`Table render should render table first child 1`] = `
             "withComponent": [Function],
           },
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "lastClassName": "eDLXeN",
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
           "Header": [Function],
           "Pagination": Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
             "type": [Function],
           },
-          "Row": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "lastClassName": "eDLXeN",
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
+          "Row": [Function],
         }
       }
       headers={
@@ -6347,64 +5997,13 @@ exports[`Table render should render table first child 1`] = `
             "withComponent": [Function],
           },
           "HeadCell": [Function],
-          "HeadRow": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "lastClassName": "eDLXeN",
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
           "Header": [Function],
           "Pagination": Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
             "type": [Function],
           },
-          "Row": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "styled__TableRow-r3xwjs-3",
-              "isStatic": false,
-              "lastClassName": "eDLXeN",
-              "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-bottom:1px solid ",
-                "#dcdce7",
-                ";td,th{",
-                [Function],
-                "};",
-              ],
-            },
-            "displayName": "TableRow",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "styled__TableRow-r3xwjs-3",
-            "target": "tr",
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          },
+          "Row": [Function],
         }
       }
       data={

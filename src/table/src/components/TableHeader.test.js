@@ -3,20 +3,20 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import TableHeader from './TableHeader';
-import { TableRow } from './styled';
+import { StyledRow } from './styled';
 import { TABLE_HEADERS } from '../../stories/constants';
 import HeadCell from './HeadCell';
 
 describe('TableHeader', () => {
 
-  const components = { HeadRow: TableRow, HeadCell };
+  const components = { HeadCell };
 
   describe('props', () => {
     describe('sticky', () => {
-      test('pass sticky prop to TableRow', () => {
+      test('pass sticky prop to StyledRow', () => {
         const wrapper = shallow(<TableHeader components={components} sticky />);
 
-        const tableRowWrapper = wrapper.find('TableRow');
+        const tableRowWrapper = wrapper.find(StyledRow);
         expect(tableRowWrapper.prop('sticky')).toEqual(true);
       });
     });
