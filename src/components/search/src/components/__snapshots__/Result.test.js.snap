@@ -59,12 +59,15 @@ exports[`Result snapshots should match snapshot 1`] = `
   border-radius: 0 0 3px 3px;
 }
 
-.c0:hover {
+.c0:hover,
+.c0:focus {
   box-shadow: 0 2px 8px -2px rgba(0,0,0,0.30);
+  outline: none;
   cursor: pointer;
 }
 
-.c0:hover * {
+.c0:hover *,
+.c0:focus * {
   cursor: inherit;
   pointer-events: auto;
 }

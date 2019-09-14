@@ -27,8 +27,9 @@ const getHoverStyles = (props :{ onClick :() => any }) => {
   const { onClick } = props;
   if (onClick) {
     return css`
-      :hover {
+      :hover, :focus {
         box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.30);
+        outline: none;
         cursor: pointer;
 
         * {
