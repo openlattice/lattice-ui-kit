@@ -56,6 +56,17 @@ const Table = (props :Props) => {
 
   return (
     <div>
+      {
+        paginated && (
+          <components.Pagination
+              count={rowCount}
+              page={currentPage}
+              rowsPerPage={rowsPerPage}
+              rowsPerPageOptions={rowsPerPageOptions}
+              setRowsPerPage={setRowsPerPage}
+              setPage={setPage} />
+        )
+      }
       <StyledTable>
         <components.Header
             components={components}
