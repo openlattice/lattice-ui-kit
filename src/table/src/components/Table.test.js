@@ -88,8 +88,8 @@ describe('Table', () => {
         wrapper.find('Cell').get(0).props.onClick();
       });
 
-      expect(setState.mock.calls[0][0]).toEqual('desc');
-      expect(setState.mock.calls[1][0]).toEqual('name');
+      expect(setState.mock.calls[1][0]).toEqual('desc');
+      expect(setState.mock.calls[2][0]).toEqual('name');
       expect(toJson(wrapper)).toMatchSnapshot();
     });
   });

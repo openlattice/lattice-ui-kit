@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import isEmpty from 'lodash/isEmpty';
 
 import TableHeader from './TableHeader';
@@ -43,8 +43,12 @@ const Table = (props :Props) => {
 
   const [orderBy, setOrderBy] = React.useState();
   const [order, setOrder] = React.useState();
-  const [currentPage, setPage] = React.useState(0);
+  const [currentPage, setPage] = React.useState();
   const [rowsPerPage, setRowsPerPage] = React.useState(initialRowsPerPage);
+
+  useEffect(() => {
+    setPage(0);
+  }, [data]);
 
   const handleSort = (event, property) => {
     const isDesc = orderBy === property && order === 'desc';
@@ -53,7 +57,6 @@ const Table = (props :Props) => {
   };
 
   const components = { ...defaultComponents, ...propComponents };
-
   return (
     <div>
       {
@@ -106,4 +109,4 @@ Table.defaultProps = {
   rowsPerPageOptions: [],
 };
 
-export default Table;
+export default React.memo<Props>(Table);
