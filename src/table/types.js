@@ -2,7 +2,11 @@
 
 type SortOrder = 'asc' | 'desc' | false;
 
+type RowData = {
+  id :string | number;
+};
+
 export type {
-  // eslint-disable-next-line import/prefer-default-export
+  RowData,
   SortOrder
 };

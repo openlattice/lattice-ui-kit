@@ -15,7 +15,7 @@ describe('Table', () => {
     describe('paginated', () => {
       test('paginated=true should render PaginationToolbar', () => {
         const wrapper = shallow(<Table data={TABLE_DATA} headers={TABLE_HEADERS} paginated />);
-        expect(wrapper.find(PaginationToolbar)).toHaveLength(1);
+        expect(wrapper.find(PaginationToolbar)).toHaveLength(2);
         expect(toJson(wrapper)).toMatchSnapshot();
       });
 
@@ -23,7 +23,9 @@ describe('Table', () => {
         const wrapper = shallow(<Table headers={TABLE_HEADERS} paginated />);
 
         expect(wrapper.find(TableBody).props().rowsPerPage).toEqual(5);
-        expect(wrapper.find(PaginationToolbar).props().rowsPerPage).toEqual(5);
+        wrapper.find(PaginationToolbar).forEach((node) => {
+          expect(node.prop('rowsPerPage')).toEqual(5);
+        });
         expect(toJson(wrapper)).toMatchSnapshot();
       });
 
@@ -43,7 +45,9 @@ describe('Table', () => {
         );
 
         expect(wrapper.find(TableBody).props().rowsPerPage).toEqual(7);
-        expect(wrapper.find(PaginationToolbar).props().rowsPerPage).toEqual(7);
+        wrapper.find(PaginationToolbar).forEach((node) => {
+          expect(node.prop('rowsPerPage')).toEqual(7);
+        });
         expect(toJson(wrapper)).toMatchSnapshot();
       });
 
@@ -57,7 +61,9 @@ describe('Table', () => {
         );
 
         expect(wrapper.find(TableBody).props().rowsPerPage).toEqual(10);
-        expect(wrapper.find(PaginationToolbar).props().rowsPerPage).toEqual(10);
+        wrapper.find(PaginationToolbar).forEach((node) => {
+          expect(node.prop('rowsPerPage')).toEqual(10);
+        });
         expect(toJson(wrapper)).toMatchSnapshot();
       });
 
@@ -82,8 +88,8 @@ describe('Table', () => {
         wrapper.find('Cell').get(0).props.onClick();
       });
 
-      expect(setState.mock.calls[0][0]).toEqual('desc');
-      expect(setState.mock.calls[1][0]).toEqual('name');
+      expect(setState.mock.calls[1][0]).toEqual('desc');
+      expect(setState.mock.calls[2][0]).toEqual('name');
       expect(toJson(wrapper)).toMatchSnapshot();
     });
   });

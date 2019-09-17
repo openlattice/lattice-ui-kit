@@ -21,7 +21,9 @@ input:focus-visible ~ .c2 {
   box-shadow: #410ab5 0 0 0 2px;
 }
 
-input:checked ~ .c2 {
+input:checked ~ .c2,
+input[readonly]:checked:disabled ~ .c2,
+input[readonly]:checked:hover ~ .c2 {
   background-color: #8045ff;
 }
 
@@ -35,7 +37,13 @@ input:disabled ~ .c2 {
 }
 
 input:checked:disabled ~ .c2 {
+  cursor: not-allowed;
   background-color: #b6bbc7;
+}
+
+input[readonly] ~ .c2 {
+  cursor: default;
+  pointer-events: none;
 }
 
 input:not(:checked) ~ .c2:after,
@@ -131,11 +139,8 @@ input:checked ~ .c2:after {
       <label
         className="c0"
       >
-        <ChoiceInputs__CheckboxInput
-          disabled={false}
-        >
+        <ChoiceInputs__CheckboxInput>
           <StyledComponent
-            disabled={false}
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -165,7 +170,6 @@ input:checked ~ .c2:after {
           >
             <input
               className="c1"
-              disabled={false}
               type="checkbox"
             />
           </StyledComponent>
@@ -192,15 +196,15 @@ input:checked ~ .c2:after {
                     "#8e929b",
                     ";}input:focus-visible ~ &{box-shadow:",
                     "#410ab5",
-                    " 0 0 0 2px;}input:checked ~ &{background-color:",
+                    " 0 0 0 2px;}input:checked ~ &,input[readonly]:checked:disabled ~ &,input[readonly]:checked:hover ~ &{background-color:",
                     "#8045ff",
                     ";}input:checked:hover ~ &{background-color:",
                     "#6124e2",
                     ";}input:disabled ~ &{background-color:",
                     "#e6e6f7",
-                    ";cursor:not-allowed;}input:checked:disabled ~ &{background-color:",
+                    ";cursor:not-allowed;}input:checked:disabled ~ &{cursor:not-allowed;background-color:",
                     "#b6bbc7",
-                    ";}",
+                    ";}input[readonly] ~ &{cursor:default;pointer-events:none;}",
                     ";input:not(:checked) ~ &:after,input:checked ~ &:after{",
                     "content:'';border:solid ",
                     "#ffffff",

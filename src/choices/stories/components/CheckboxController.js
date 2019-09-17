@@ -76,7 +76,6 @@ class CheckboxController extends Component<Props, State> {
                   name="checkedReadOnly"
                   readOnly
                   checked={checkboxesChecked.checkedReadOnly}
-                  onChange={this.handleChange}
                   value="checkedReadOnly" />
 
               <Checkbox

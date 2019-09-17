@@ -23,7 +23,7 @@ storiesOf('Checkbox', module)
 
             <Checkbox id="story-defaultchecked" label="defaultChecked" defaultChecked />
 
-            <Checkbox id="story-defaultcheckedreadonly" label="defaultChecked readOnly" defaultChecked readOnly />
+            <Checkbox id="story-defaultcheckedreadonly" label="checked readOnly" checked readOnly />
 
             <Checkbox id="story-disabled" label="Disabled" disabled />
 
