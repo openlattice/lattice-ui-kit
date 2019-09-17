@@ -3,6 +3,7 @@
 exports[`HeadCell props onClick invoke onClick 1`] = `
 <Cell
   as="th"
+  cellStyle={Object {}}
   onClick={[MockFunction]}
 />
 `;
@@ -10,6 +11,7 @@ exports[`HeadCell props onClick invoke onClick 1`] = `
 exports[`HeadCell props order should render faSort if sortable but without order 1`] = `
 <Cell
   as="th"
+  cellStyle={Object {}}
 >
   <span>
     <FontAwesomeIcon
@@ -52,6 +54,7 @@ exports[`HeadCell props order should render faSort if sortable but without order
 exports[`HeadCell props order should render faSortDown if sortable and order="desc" 1`] = `
 <Cell
   as="th"
+  cellStyle={Object {}}
 >
   <span>
     <FontAwesomeIcon
@@ -94,6 +97,7 @@ exports[`HeadCell props order should render faSortDown if sortable and order="de
 exports[`HeadCell props order should render faSortUp if sortable and order="asc" 1`] = `
 <Cell
   as="th"
+  cellStyle={Object {}}
 >
   <span>
     <FontAwesomeIcon

@@ -17,14 +17,18 @@ type Props = {
 
 /* eslint-disable react/jsx-props-no-spreading */
 const Radio = ({
-  label,
+  disabled,
   id,
+  label,
+  readOnly,
   ...rest
 } :Props) => (
-  <ChoiceLabel htmlFor={id}>
+  <ChoiceLabel htmlFor={id} readOnly={readOnly}>
     {label}
     <RadioInput
         id={id}
+        readOnly={readOnly}
+        disabled={disabled || readOnly}
         {...rest} />
     <RadioIndicator />
   </ChoiceLabel>

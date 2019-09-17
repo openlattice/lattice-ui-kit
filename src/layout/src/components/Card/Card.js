@@ -1,36 +1,11 @@
 // @flow
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import CardSegment from '../CardSegment/CardSegment';
 import * as Colors from '../../../../colors';
+import { getHoverStyles } from '../../../../utils/StyleUtils';
 
 const { NEUTRALS, WHITE } = Colors;
-
-type CardProps = {
-  onClick :Function;
-}
-
-const getHoverStyles = ({ onClick } :CardProps) => {
-  if (onClick) {
-    return css`
-      :hover {
-        box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.15);
-        cursor: pointer;
-
-        * {
-          cursor: inherit;
-          pointer-events: auto;
-        }
-      }
-
-      :active {
-        box-shadow: none;
-      }
-    `;
-  }
-
-  return null;
-};
 
 const Card = styled.div`
   background-color: ${WHITE};

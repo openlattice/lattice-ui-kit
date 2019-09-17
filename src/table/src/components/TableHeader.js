@@ -1,21 +1,25 @@
 // @flow
 import React from 'react';
 import isFunction from 'lodash/isFunction';
-import { TableRow } from './styled';
-import HeadCell from './HeadCell';
+
+import { StyledRow } from './styled';
 import type { SortOrder } from '../../types';
 
 type Props = {
+  className ? :string;
+  components :Object;
   headers ? :Object[];
+  onSort ? :(event :SyntheticEvent<HTMLElement>, property :string) => void;
   order ? :SortOrder;
   orderBy ? :string;
-  onSort ? :(event :SyntheticEvent<HTMLElement>, property :string) => void;
   sticky ? :boolean;
 };
 
 
 const TableHeader = (props :Props) => {
   const {
+    components,
+    className,
     headers,
     onSort,
     order,
@@ -30,28 +34,31 @@ const TableHeader = (props :Props) => {
   };
 
   return (
-    <thead>
-      <TableRow sticky={sticky}>
+    <thead className={className}>
+      <StyledRow sticky={sticky}>
         {
           headers && headers.map((header) => {
-            const { key, label } = header;
+            const { key, label, cellStyle } = header;
             return (
-              <HeadCell
+              <components.HeadCell
                   key={key}
+                  components={components}
+                  cellStyle={cellStyle}
                   onClick={onSort ? createSortHandler(key) : undefined}
                   order={orderBy === header.key ? order : false}
                   sortable>
                 {label}
-              </HeadCell>
+              </components.HeadCell>
             );
           })
         }
-      </TableRow>
+      </StyledRow>
     </thead>
   );
 };
 
 TableHeader.defaultProps = {
+  className: undefined,
   headers: [],
   onSort: undefined,
   order: false,
