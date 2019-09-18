@@ -44,4 +44,16 @@ storiesOf('Table', module)
             paginated />
       </CardSegment>
     </Card>
+  ))
+  .add('isLoading', () => (
+    <Card>
+      <CardSegment vertical>
+        <Table
+            components={components}
+            headers={TABLE_HEADERS}
+            isLoading
+            rowsPerPageOptions={[5, 20, 50]}
+            paginated />
+      </CardSegment>
+    </Card>
   ));
