@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 
+import Spinner from '../../../spinner';
 import { getSortedData } from './TableUtils';
 
 import { StyledRow, Cell } from './styled';
@@ -11,6 +12,7 @@ type Props = {
   components :Object;
   data ? :RowData[];
   headers :Object[];
+  isLoading ? :boolean;
   order ? :SortOrder;
   orderBy ? :string;
   page :number;
@@ -23,6 +25,7 @@ const TableBody = (props :Props) => {
     components,
     data,
     headers,
+    isLoading,
     order,
     orderBy,
     page,
@@ -35,7 +38,24 @@ const TableBody = (props :Props) => {
   // inject empty row to maintain table size
   const emptyRowCount = rowsPerPage - dataByPage.length;
   // height per row + (row - 1) * (padding + border)
-  const emptyHeight = `${emptyRowCount * 24 + (emptyRowCount - 1) * 21}px`;
+  let emptyHeight = `${emptyRowCount * 24 + (emptyRowCount - 1) * 21}px`;
+
+  if (isLoading) {
+    emptyHeight = `${rowsPerPage * 24 + (rowsPerPage - 1) * 21}px`;
+    return (
+      <tbody className={className}>
+        <StyledRow id="empty-row-filler">
+          <Cell colSpan={headers.length} cellStyle={{ height: emptyHeight, textAlign: 'center' }}>
+            {
+              isLoading && (
+                <Spinner size="2x" />
+              )
+            }
+          </Cell>
+        </StyledRow>
+      </tbody>
+    );
+  }
 
   return (
     <tbody className={className}>
@@ -66,6 +86,7 @@ const TableBody = (props :Props) => {
 TableBody.defaultProps = {
   className: undefined,
   data: [],
+  isLoading: false,
   order: false,
   orderBy: undefined
 };

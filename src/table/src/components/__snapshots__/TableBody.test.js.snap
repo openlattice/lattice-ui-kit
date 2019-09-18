@@ -1,5 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`TableBody render should render spinner when isLoading=true 1`] = `
+<tbody>
+  <styled__StyledRow
+    id="empty-row-filler"
+  >
+    <Cell
+      cellStyle={
+        Object {
+          "height": "429px",
+          "textAlign": "center",
+        }
+      }
+      colSpan={4}
+    >
+      <Spinner
+        bottomColor="#cdd1db"
+        centered={true}
+        size="2x"
+        topColor="#555e6f"
+      />
+    </Cell>
+  </styled__StyledRow>
+</tbody>
+`;
+
 exports[`TableBody render should render tbody at root 1`] = `
 <tbody>
   <TableRow

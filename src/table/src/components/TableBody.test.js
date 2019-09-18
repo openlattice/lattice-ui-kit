@@ -25,6 +25,21 @@ describe('TableBody', () => {
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
+    test('should render spinner when isLoading=true', () => {
+      const wrapper = shallow(
+        <TableBody
+            components={components}
+            headers={TABLE_HEADERS}
+            isLoading
+            data={[]}
+            rowsPerPage={10}
+            page={0} />
+      );
+
+      expect(wrapper.find('Spinner')).toHaveLength(1);
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
     test('should render sorted data by page', () => {
       const rowComponent = () => <div>test</div>;
       const wrapper = shallow(

@@ -23,6 +23,7 @@ type Props = {
   components :Object;
   data ? :Array<Object>;
   headers :Array<Object>;
+  isLoading :boolean;
   rowsPerPageOptions ? :number[];
   paginated ? :boolean;
 };
@@ -33,6 +34,7 @@ const Table = (props :Props) => {
     components: propComponents,
     data,
     headers,
+    isLoading,
     rowsPerPageOptions,
     paginated,
   } = props;
@@ -80,8 +82,9 @@ const Table = (props :Props) => {
             sticky />
         <components.Body
             components={components}
-            headers={headers}
             data={data}
+            headers={headers}
+            isLoading={isLoading}
             order={order}
             orderBy={orderBy}
             rowsPerPage={rowsPerPage}
