@@ -1,17 +1,26 @@
-// @flow
+/*
+ * @flow
+ */
+
 import styled, { css } from 'styled-components';
 
+import * as Colors from '../../../../colors';
+
+const { NEUTRALS } = Colors;
+
 type ComputedSegmentProps = {
-  bgColor :string;
-  noBleed :boolean;
-  onClick :() => void;
-  padding :'sm' | 'md';
-  vertical :boolean;
+  bgColor ?:string;
+  indent ?:number;
+  noBleed ?:boolean;
+  onClick ?:() => void;
+  padding ?:string;
+  vertical ?:boolean;
 };
 
 const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
   const {
     bgColor,
+    indent,
     noBleed,
     onClick,
     padding,
@@ -28,15 +37,32 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
     cursor = 'pointer';
   }
 
-  const finalMargin = noBleed ? '0 30px' : '0';
-  const lrPadding = noBleed ? '0' : '30px';
+  let indentation :number = 0;
+  if (typeof indent === 'number') {
+    indentation = 10 * indent;
+  }
 
-  let finalPadding = `30px ${lrPadding}`;
+  let finalMargin = '0';
+  if (noBleed) {
+    finalMargin = `0 30px 0 ${30 + indentation}px`;
+  }
+
+  let paddingLeft = `${30 + indentation}px`;
+  let paddingRight = '30px';
+  if (noBleed) {
+    paddingLeft = '0';
+    paddingRight = '0';
+  }
+
+  let finalPadding = `30px ${paddingRight} 30px ${paddingLeft}`;
   if (padding === 'sm') {
-    finalPadding = `10px ${lrPadding}`;
+    finalPadding = `10px ${paddingRight} 10px ${paddingLeft}`;
   }
   else if (padding === 'md') {
-    finalPadding = `20px ${lrPadding}`;
+    finalPadding = `20px ${paddingRight} 20px ${paddingLeft}`;
+  }
+  else if (typeof padding === 'string') {
+    finalPadding = padding;
   }
 
   let flexDirection = 'row';
@@ -62,6 +88,19 @@ const CardSegment = styled.div`
   flex: 1 0 auto;
   position: relative;
   ${getSegmentComputedStyles}
+
+  & & {
+    border-bottom: 1px solid ${NEUTRALS[4]};
+  }
+
+  & &:first-child {
+    border-radius: 3px 3px 0 0;
+  }
+
+  & &:last-child {
+    border-bottom: 0;
+    border-radius: 0 0 3px 3px;
+  }
 `;
 
 export default CardSegment;
