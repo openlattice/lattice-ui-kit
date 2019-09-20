@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { Button } from '../../button';
-import { Card, CardSegment } from '../../layout';
+import {
+  Card,
+  CardHeader,
+  CardSegment,
+  CardStack
+} from '../../layout';
 import { TABLE_DATA, TABLE_HEADERS } from './constants';
 import CustomRow from './components/CustomRow';
 import {
@@ -24,15 +29,32 @@ storiesOf('Table', module)
     </Card>
   ))
   .add('Paginated', () => (
-    <Card>
-      <CardSegment vertical>
-        <Table
-            headers={TABLE_HEADERS}
-            data={TABLE_DATA}
-            rowsPerPageOptions={[5, 20, 50]}
-            paginated />
-      </CardSegment>
-    </Card>
+    <CardStack>
+      <Card>
+        <CardHeader padding="sm">
+          Multiple rowsPerPageOptions values
+        </CardHeader>
+        <CardSegment vertical>
+          <Table
+              headers={TABLE_HEADERS}
+              data={TABLE_DATA}
+              rowsPerPageOptions={[5, 20, 50]}
+              paginated />
+        </CardSegment>
+      </Card>
+      <Card>
+        <CardHeader padding="sm">
+          One rowsPerPageOptions value
+        </CardHeader>
+        <CardSegment vertical>
+          <Table
+              headers={TABLE_HEADERS}
+              data={TABLE_DATA}
+              rowsPerPageOptions={[5]}
+              paginated />
+        </CardSegment>
+      </Card>
+    </CardStack>
   ))
   .add('Custom Components', () => (
     <Card>
@@ -54,8 +76,6 @@ storiesOf('Table', module)
           <Table
               components={components}
               headers={TABLE_HEADERS}
-              rowsPerPageOptions={[5, 20, 50]}
-              paginated
               data={data} />
         </CardSegment>
         <Button onClick={() => {
