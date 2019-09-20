@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
+import { Button } from '../../button';
 import { Card, CardSegment } from '../../layout';
 import { TABLE_DATA, TABLE_HEADERS } from './constants';
 import CustomRow from './components/CustomRow';
@@ -45,6 +46,26 @@ storiesOf('Table', module)
       </CardSegment>
     </Card>
   ))
+  .add('Add Rows', () => {
+    const [data, setData] = useState(TABLE_DATA);
+    return (
+      <Card>
+        <CardSegment vertical>
+          <Table
+              components={components}
+              headers={TABLE_HEADERS}
+              rowsPerPageOptions={[5, 20, 50]}
+              paginated
+              data={data} />
+        </CardSegment>
+        <Button onClick={() => {
+          setData([...data, {}]);
+        }}>
+          Add Blank Row
+        </Button>
+      </Card>
+    );
+  })
   .add('isLoading', () => (
     <Card>
       <CardSegment vertical>
