@@ -12,9 +12,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
 }
 
 .c2 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  word-break: break-word;
 }
 
 .c1 {
@@ -50,6 +48,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
     }
   }
   emptyString="---"
+  truncate={false}
 >
   <StyledResultComponents__ResultGrid
     columns={4}
@@ -132,24 +131,27 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -157,6 +159,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -164,7 +167,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 Werbenjagermanjensen
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="1"
@@ -213,24 +216,27 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -238,6 +244,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -245,7 +252,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 Smitty
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="2"
@@ -294,24 +301,27 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -319,12 +329,13 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
               />
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="3"
@@ -373,24 +384,27 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -398,6 +412,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -405,7 +420,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 M
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="4"
@@ -454,24 +469,27 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -479,6 +497,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -486,7 +505,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 M
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="5"
@@ -535,24 +554,27 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -560,6 +582,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -567,7 +590,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 Fish
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="6"
@@ -616,24 +639,27 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -641,6 +667,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -648,7 +675,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 02/22/2002
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="7"
@@ -697,24 +724,27 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -722,6 +752,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -729,7 +760,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                 365ba027-0c71-47d1-a5f4-61346ed96d8c
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
       </div>
     </StyledComponent>
@@ -749,9 +780,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
 }
 
 .c2 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  word-break: break-word;
 }
 
 .c1 {
@@ -799,6 +828,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
       "identifier": "Identifier",
     }
   }
+  truncate={false}
 >
   <StyledResultComponents__ResultGrid
     columns={4}
@@ -881,24 +911,27 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -906,6 +939,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -913,7 +947,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 Werbenjagermanjensen
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="1"
@@ -962,24 +996,27 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -987,6 +1024,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -994,7 +1032,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 Smitty
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="2"
@@ -1043,24 +1081,27 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1068,12 +1109,13 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
               />
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="3"
@@ -1122,24 +1164,27 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1147,6 +1192,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -1154,7 +1200,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 M
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="4"
@@ -1203,24 +1249,27 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1228,6 +1277,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -1235,7 +1285,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 M
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="5"
@@ -1284,24 +1334,27 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1309,6 +1362,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -1316,7 +1370,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 Fish
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="6"
@@ -1365,24 +1419,27 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1390,6 +1447,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -1397,7 +1455,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 02/22/2002
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
         <div
           key="7"
@@ -1446,24 +1504,27 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
               </label>
             </StyledComponent>
           </Label>
-          <StyledResultComponents__Truncated>
+          <StyledResultComponents__Text
+            truncate={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Truncated-drevdl-3",
-                    "isStatic": true,
+                    "componentId": "StyledResultComponents__Text-drevdl-3",
+                    "isStatic": false,
                     "lastClassName": "c2",
                     "rules": Array [
-                      "overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                      [Function],
+                      ";",
                     ],
                   },
-                  "displayName": "StyledResultComponents__Truncated",
+                  "displayName": "StyledResultComponents__Text",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Truncated-drevdl-3",
+                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -1471,6 +1532,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 }
               }
               forwardedRef={null}
+              truncate={false}
             >
               <div
                 className="c2"
@@ -1478,7 +1540,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                 365ba027-0c71-47d1-a5f4-61346ed96d8c
               </div>
             </StyledComponent>
-          </StyledResultComponents__Truncated>
+          </StyledResultComponents__Text>
         </div>
       </div>
     </StyledComponent>

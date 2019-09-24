@@ -20,10 +20,22 @@ const ResultDetails = styled.div`
   flex: 1;
 `;
 
-const Truncated = styled.div`
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+const getTruncatedStyles = (props :any) => {
+  const { truncate } = props;
+  if (truncate) {
+    return css`
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    `;
+  }
+  return css`
+    word-break: break-word;
+  `;
+};
+
+const Text = styled.div`
+  ${getTruncatedStyles};
 `;
 
 const Image = styled.img`
@@ -36,5 +48,5 @@ export {
   ResultGrid,
   ResultWrapper,
   ResultDetails,
-  Truncated,
+  Text,
 };

@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import { Map } from 'immutable';
-import { ResultGrid, Truncated } from './styled/StyledResultComponents';
+import { ResultGrid, Text } from './styled/StyledResultComponents';
 import Label from '../../../../label';
 
 type Props = {
@@ -10,6 +10,7 @@ type Props = {
   data :Map;
   labelMap ? :Map;
   emptyString ? :string;
+  truncate ? :boolean;
 };
 
 class DataGrid extends Component<Props> {
@@ -19,6 +20,7 @@ class DataGrid extends Component<Props> {
     columns: 4,
     emptyString: '---',
     labelMap: undefined,
+    truncate: false,
   }
 
   transformDataToDetailsList = () => {
@@ -44,7 +46,7 @@ class DataGrid extends Component<Props> {
   }
 
   render() {
-    const { className, columns } = this.props;
+    const { className, columns, truncate } = this.props;
     const details = this.transformDataToDetailsList();
 
     return (
@@ -55,9 +57,9 @@ class DataGrid extends Component<Props> {
               <Label subtle>
                 {detail.get('label', '')}
               </Label>
-              <Truncated>
+              <Text truncate={truncate}>
                 {detail.get('value', '')}
-              </Truncated>
+              </Text>
             </div>
           ))
         }
