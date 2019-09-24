@@ -36,6 +36,11 @@ const CustomRow = (props :Props) => {
     <CustomRowWrapper onClick={() => {}}>
       <StyledCell>
         <CellContent>
+          {data.id}
+        </CellContent>
+      </StyledCell>
+      <StyledCell>
+        <CellContent>
           {data.name}
         </CellContent>
       </StyledCell>
