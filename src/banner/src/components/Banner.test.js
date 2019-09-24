@@ -127,7 +127,7 @@ describe('Banner', () => {
         const wrapper = mount(<Banner sticky />);
         expect(wrapper.find(Container)).toHaveStyleRule('position', 'sticky');
         expect(wrapper.find(Container)).toHaveStyleRule('top', '0');
-        expect(wrapper.find(Container)).toHaveStyleRule('z-index', '500');
+        expect(wrapper.find(Container)).toHaveStyleRule('z-index', '200');
       });
     });
 
