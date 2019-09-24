@@ -2,16 +2,17 @@ import React from 'react';
 import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
-import Card from '../Card/Card';
 import CardHeader from './CardHeader';
-import {
+import * as Colors from '../../../../colors';
+
+const {
   GREEN_1,
   NEUTRALS,
   PURPLES,
   RED_1,
   WHITE,
   YELLOW_1,
-} from '../../../../colors';
+} = Colors;
 
 describe('CardHeader', () => {
 
@@ -103,27 +104,14 @@ describe('CardHeader', () => {
 
     describe('onClick', () => {
 
-      test('should have "cursor: inherit" by default for hover', () => {
+      test('should have "cursor: inherit" for ":hover" by default', () => {
         const wrapper = mount(<CardHeader />);
-        expect(wrapper).toHaveStyleRule('cursor', 'inherit', {
-          modifier: ':hover'
-        });
+        expect(wrapper).toHaveStyleRule('cursor', 'inherit', { modifier: ':hover' });
       });
 
-      test('should have "cursor: pointer" for hover', () => {
+      test('should have "cursor: pointer" for ":hover" when given onClick', () => {
         const wrapper = mount(<CardHeader onClick={() => {}} />);
-        expect(wrapper).toHaveStyleRule('cursor', 'pointer', {
-          modifier: ':hover'
-        });
-      });
-
-      test('should have "cursor: pointer" for hover when inside a Card', () => {
-        const wrapper = mount(
-          <Card onClick={() => {}}>
-            <CardHeader />
-          </Card>
-        );
-        wrapper.simulate('mouseEnter');
+        expect(wrapper).toHaveStyleRule('cursor', 'pointer', { modifier: ':hover' });
       });
 
     });

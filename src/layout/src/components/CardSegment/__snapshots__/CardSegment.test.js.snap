@@ -118,3 +118,154 @@ exports[`CardSegment snapshots with > 1 child 1`] = `
   </StyledComponent>
 </CardSegment>
 `;
+
+exports[`CardSegment snapshots with children 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  position: relative;
+  background-color: transparent;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 30px 30px 30px 30px;
+}
+
+.c1:hover {
+  cursor: inherit;
+}
+
+.c1 .c0 {
+  border-bottom: 1px solid #dcdce7;
+}
+
+.c1 .c0:first-child {
+  border-radius: 3px 3px 0 0;
+}
+
+.c1 .c0:last-child {
+  border-bottom: 0;
+  border-radius: 0 0 3px 3px;
+}
+
+<CardSegment>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "c0",
+          "isStatic": false,
+          "lastClassName": "c1",
+          "rules": Array [
+            "display:flex;flex:1 0 auto;position:relative;",
+            [Function],
+            " & &{border-bottom:1px solid ",
+            "#dcdce7",
+            ";}& &:first-child{border-radius:3px 3px 0 0;}& &:last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
+          ],
+        },
+        "displayName": "CardSegment",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "c0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0 c1"
+    >
+      <div>
+        child 1
+      </div>
+      <div>
+        child 2
+      </div>
+    </div>
+  </StyledComponent>
+</CardSegment>
+`;
+
+exports[`CardSegment snapshots without children 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  position: relative;
+  background-color: transparent;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 30px 30px 30px 30px;
+}
+
+.c1:hover {
+  cursor: inherit;
+}
+
+.c1 .c0 {
+  border-bottom: 1px solid #dcdce7;
+}
+
+.c1 .c0:first-child {
+  border-radius: 3px 3px 0 0;
+}
+
+.c1 .c0:last-child {
+  border-bottom: 0;
+  border-radius: 0 0 3px 3px;
+}
+
+<CardSegment>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "c0",
+          "isStatic": false,
+          "lastClassName": "c1",
+          "rules": Array [
+            "display:flex;flex:1 0 auto;position:relative;",
+            [Function],
+            " & &{border-bottom:1px solid ",
+            "#dcdce7",
+            ";}& &:first-child{border-radius:3px 3px 0 0;}& &:last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
+          ],
+        },
+        "displayName": "CardSegment",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "c0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0 c1"
+    />
+  </StyledComponent>
+</CardSegment>
+`;
