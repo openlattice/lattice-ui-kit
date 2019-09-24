@@ -65,7 +65,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -129,7 +129,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -193,7 +193,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -257,7 +257,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -321,7 +321,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -385,7 +385,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -449,7 +449,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",

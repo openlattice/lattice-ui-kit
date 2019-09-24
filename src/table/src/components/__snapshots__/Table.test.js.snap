@@ -31,7 +31,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   padding: 10px 10px;
   text-align: left;
   word-wrap: break-word;
-  width: 50%;
+  width: 33%;
 }
 
 .c8 {
@@ -229,7 +229,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
     Array [
       Object {
         "cellStyle": Object {
-          "width": "50%",
+          "width": "33%",
         },
         "key": "name",
         "label": "Subject Name",
@@ -984,7 +984,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               Array [
                 Object {
                   "cellStyle": Object {
-                    "width": "50%",
+                    "width": "33%",
                   },
                   "key": "name",
                   "label": "Subject Name",
@@ -1054,7 +1054,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     <HeadCell
                       cellStyle={
                         Object {
-                          "width": "50%",
+                          "width": "33%",
                         }
                       }
                       components={
@@ -1103,7 +1103,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         as="th"
                         cellStyle={
                           Object {
-                            "width": "50%",
+                            "width": "33%",
                           }
                         }
                         onClick={[Function]}
@@ -1112,7 +1112,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           as="th"
                           cellStyle={
                             Object {
-                              "width": "50%",
+                              "width": "33%",
                             }
                           }
                           forwardedComponent={
@@ -1849,7 +1849,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               Array [
                 Object {
                   "cellStyle": Object {
-                    "width": "50%",
+                    "width": "33%",
                   },
                   "key": "name",
                   "label": "Subject Name",
@@ -2671,7 +2671,7 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
         Array [
           Object {
             "cellStyle": Object {
-              "width": "50%",
+              "width": "33%",
             },
             "key": "name",
             "label": "Subject Name",
@@ -2793,7 +2793,7 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
         Array [
           Object {
             "cellStyle": Object {
-              "width": "50%",
+              "width": "33%",
             },
             "key": "name",
             "label": "Subject Name",
@@ -2874,7 +2874,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
         Array [
           Object {
             "cellStyle": Object {
-              "width": "50%",
+              "width": "33%",
             },
             "key": "name",
             "label": "Subject Name",
@@ -2944,7 +2944,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
         Array [
           Object {
             "cellStyle": Object {
-              "width": "50%",
+              "width": "33%",
             },
             "key": "name",
             "label": "Subject Name",
@@ -3032,7 +3032,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
         Array [
           Object {
             "cellStyle": Object {
-              "width": "50%",
+              "width": "33%",
             },
             "key": "name",
             "label": "Subject Name",
@@ -3154,7 +3154,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
         Array [
           Object {
             "cellStyle": Object {
-              "width": "50%",
+              "width": "33%",
             },
             "key": "name",
             "label": "Subject Name",
@@ -3248,7 +3248,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
         Array [
           Object {
             "cellStyle": Object {
-              "width": "50%",
+              "width": "33%",
             },
             "key": "name",
             "label": "Subject Name",
@@ -3370,7 +3370,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
         Array [
           Object {
             "cellStyle": Object {
-              "width": "50%",
+              "width": "33%",
             },
             "key": "name",
             "label": "Subject Name",
@@ -3464,7 +3464,7 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
         Array [
           Object {
             "cellStyle": Object {
-              "width": "50%",
+              "width": "33%",
             },
             "key": "name",
             "label": "Subject Name",
@@ -3586,7 +3586,7 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
         Array [
           Object {
             "cellStyle": Object {
-              "width": "50%",
+              "width": "33%",
             },
             "key": "name",
             "label": "Subject Name",
@@ -3668,7 +3668,7 @@ exports[`Table render should render table first child 1`] = `
         Array [
           Object {
             "cellStyle": Object {
-              "width": "50%",
+              "width": "33%",
             },
             "key": "name",
             "label": "Subject Name",
@@ -3791,7 +3791,7 @@ exports[`Table render should render table first child 1`] = `
         Array [
           Object {
             "cellStyle": Object {
-              "width": "50%",
+              "width": "33%",
             },
             "key": "name",
             "label": "Subject Name",

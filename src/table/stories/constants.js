@@ -1,5 +1,5 @@
 const TABLE_HEADERS = [
-  { key: 'name', label: 'Subject Name', cellStyle: { width: '50%' } },
+  { key: 'name', label: 'Subject Name', cellStyle: { width: '33%' } },
   { key: 'dob', label: 'Date of Birth' },
   { key: 'manager', label: 'Manager' },
   { key: 'lastUpdated', label: 'Last Updated' },
