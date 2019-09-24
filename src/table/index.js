@@ -5,6 +5,7 @@ import TableBody from './src/components/TableBody';
 import TableHeader from './src/components/TableHeader';
 import TableRow from './src/components/TableRow';
 import { Cell } from './src/components/styled';
+import * as TableUtils from './src/components/TableUtils';
 
 export {
   Cell,
@@ -14,4 +15,5 @@ export {
   TableBody,
   TableHeader,
   TableRow,
+  TableUtils,
 };
