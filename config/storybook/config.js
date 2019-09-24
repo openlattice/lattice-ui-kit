@@ -6,36 +6,29 @@ import { withInfo } from '@storybook/addon-info';
 import storybookTheme from './storybookTheme';
 import { NEUTRALS } from '../../src/colors';
 
-const StoryWrapper = styled.div`
+const StoryOuterWrapper = styled.div`
+  background-color: ${NEUTRALS[7]};
   color: ${NEUTRALS[0]};
+  display: flex;
   font-family: 'Open Sans', Arial, sans-serif;
   font-stretch: normal;
   font-style: normal;
   font-weight: normal;
+  height: 100%;
+  justify-content: center;
   letter-spacing: normal;
   line-height: 1.5;
-  background-color: ${NEUTRALS[7]};
-  height: 100%;
+  overflow: scroll;
+  position: relative;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  overflow: scroll;
 `;
 
-const AppContentWrapper = styled.div`
-  display: flex;
-  flex: 1 1 auto;
+const StoryInnerWrapper = styled.div`
+  max-width: 1200px;
+  padding: 30px;
   position: relative;
-  justify-content: center;
-`;
-
-const AppContentInnerWrapper = styled.div`
-  display: flex;
-  flex: 1 0 auto;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1020px;
   width: 100%;
-  margin: 30px;
 `;
 
 addDecorator(withInfo);
@@ -46,20 +39,18 @@ addParameters({
   },
 });
 
-addDecorator(Story => (
-  <StoryWrapper>
-    <AppContentWrapper>
-      <AppContentInnerWrapper>
-        <Story />
-      </AppContentInnerWrapper>
-    </AppContentWrapper>
-  </StoryWrapper>
+addDecorator((Story) => (
+  <StoryOuterWrapper>
+    <StoryInnerWrapper>
+      <Story />
+    </StoryInnerWrapper>
+  </StoryOuterWrapper>
 ));
 
 const req = require.context('../../src/', true, /\.stories\.js$/);
 
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  req.keys().forEach((filename) => req(filename));
 }
 
 configure(loadStories, module);

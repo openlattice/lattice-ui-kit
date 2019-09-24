@@ -40,6 +40,9 @@ export {
 } from './stepper';
 export { Input, SearchInput, TextArea } from './text';
 export {
+  AppContainerWrapper,
+  AppContentWrapper,
+  AppHeaderWrapper,
   Card,
   CardHeader,
   CardSegment,
