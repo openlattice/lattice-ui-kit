@@ -66,6 +66,18 @@ storiesOf('Layout', module)
       </Card>
 
       <Card>
+        <CardSegment indent={4}>Indented Segment 1</CardSegment>
+        <CardSegment indent={12}>Indented Segment 2</CardSegment>
+        <CardSegment indent={24}>Indented Segment 3</CardSegment>
+      </Card>
+
+      <Card>
+        <CardSegment indent={4} noBleed>Indented Segment 1</CardSegment>
+        <CardSegment indent={12} noBleed>Indented Segment 2</CardSegment>
+        <CardSegment indent={24} noBleed>Indented Segment 3</CardSegment>
+      </Card>
+
+      <Card>
         <CardSegment>
           <Button mode="primary">default</Button>
           <Button mode="secondary">flex</Button>

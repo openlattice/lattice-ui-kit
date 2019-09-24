@@ -2,6 +2,7 @@
  * @flow
  */
 
+import isFunction from 'lodash/isFunction';
 import styled, { css } from 'styled-components';
 
 import * as Colors from '../../../../colors';
@@ -32,13 +33,13 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
     backgroundColor = `${bgColor}`;
   }
 
-  let cursor = 'auto';
-  if (onClick) {
+  let cursor = 'inherit';
+  if (isFunction(onClick)) {
     cursor = 'pointer';
   }
 
   let indentation :number = 0;
-  if (typeof indent === 'number') {
+  if (typeof indent === 'number' && indent > 0) {
     indentation = 10 * indent;
   }
 
@@ -76,7 +77,7 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
     margin: ${finalMargin};
     padding: ${finalPadding};
     &:hover {
-      cursor: ${cursor}
+      cursor: ${cursor};
     }
   `;
 
