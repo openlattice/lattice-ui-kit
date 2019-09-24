@@ -43,11 +43,19 @@ const getRowsPerPageOptions = (rowsPerPageOptions :number[] = [], defaultRowCoun
   return [];
 };
 
+const getInitialRowsPerPage = (rowCount :number, rowsPerPageOptions ?:number[]) => {
+  let initialRowsPerPage = rowCount || 5;
+  if (!isEmpty(rowsPerPageOptions)) [initialRowsPerPage] = rowsPerPageOptions;
+
+  return initialRowsPerPage;
+};
+
 
 export {
   descendByProperty,
   getComparator,
   getSortedData,
   createOption,
+  getInitialRowsPerPage,
   getRowsPerPageOptions,
 };

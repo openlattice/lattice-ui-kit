@@ -9,6 +9,7 @@ import HeadCell from './HeadCell';
 import TableRow from './TableRow';
 import PaginationToolbar from './PaginationToolbar';
 import { StyledTable, Cell } from './styled';
+import { getInitialRowsPerPage } from './TableUtils';
 
 const defaultComponents = {
   Header: TableHeader,
@@ -23,6 +24,7 @@ type Props = {
   components :Object;
   data ? :Array<Object>;
   headers :Array<Object>;
+  isLoading :boolean;
   rowsPerPageOptions ? :number[];
   paginated ? :boolean;
 };
@@ -33,13 +35,13 @@ const Table = (props :Props) => {
     components: propComponents,
     data,
     headers,
+    isLoading,
     rowsPerPageOptions,
     paginated,
   } = props;
 
   const rowCount = !isEmpty(data) ? data.length : 0;
-  let initialRowsPerPage = rowCount || 5;
-  if (paginated && !isEmpty(rowsPerPageOptions)) [initialRowsPerPage] = rowsPerPageOptions;
+  const initialRowsPerPage = getInitialRowsPerPage(rowCount, rowsPerPageOptions);
 
   const [orderBy, setOrderBy] = React.useState();
   const [order, setOrder] = React.useState();
@@ -48,7 +50,10 @@ const Table = (props :Props) => {
 
   useEffect(() => {
     setPage(0);
-  }, [data]);
+    if (isEmpty(rowsPerPageOptions)) {
+      setRowsPerPage(getInitialRowsPerPage(rowCount, rowsPerPageOptions));
+    }
+  }, [rowCount, rowsPerPageOptions]);
 
   const handleSort = (event, property) => {
     const isDesc = orderBy === property && order === 'desc';
@@ -80,8 +85,9 @@ const Table = (props :Props) => {
             sticky />
         <components.Body
             components={components}
-            headers={headers}
             data={data}
+            headers={headers}
+            isLoading={isLoading}
             order={order}
             orderBy={orderBy}
             rowsPerPage={rowsPerPage}

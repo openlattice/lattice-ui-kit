@@ -1,5 +1,5 @@
-/* eslint-disable arrow-body-style */
 // @flow
+/* eslint-disable arrow-body-style */
 
 import { css } from 'styled-components';
 
@@ -17,7 +17,7 @@ const getStickyPosition = (props :{ sticky :boolean }) => {
     return css`
       position: sticky;
       top: 0;
-      z-index: 500;
+      z-index: 200;
     `;
   }
   return null;
@@ -28,7 +28,7 @@ const getHoverStyles = (props :{ onClick :() => any }) => {
   if (onClick) {
     return css`
       :hover, :focus {
-        box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.30);
+        box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.15);
         outline: none;
         cursor: pointer;
 
@@ -39,7 +39,7 @@ const getHoverStyles = (props :{ onClick :() => any }) => {
       }
 
       :active {
-        box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.30);
+        box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.15);
         cursor: pointer;
       }
     `;
@@ -49,7 +49,7 @@ const getHoverStyles = (props :{ onClick :() => any }) => {
 };
 
 export {
+  getHoverStyles,
   getStickyPosition,
   getStyleVariation,
-  getHoverStyles,
 };
