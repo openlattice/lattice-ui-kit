@@ -12,7 +12,7 @@ exports[`TableBody render should render spinner when isLoading=true 1`] = `
           "textAlign": "center",
         }
       }
-      colSpan={4}
+      colSpan={5}
     >
       <Spinner
         bottomColor="#cdd1db"
@@ -65,7 +65,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -82,9 +82,14 @@ exports[`TableBody render should render tbody at root 1`] = `
           "key": "lastUpdated",
           "label": "Last Updated",
         },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
       ]
     }
-    key="1"
+    key="row0-id1"
   />
   <TableRow
     components={
@@ -124,7 +129,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -141,9 +146,14 @@ exports[`TableBody render should render tbody at root 1`] = `
           "key": "lastUpdated",
           "label": "Last Updated",
         },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
       ]
     }
-    key="2"
+    key="row1-id2"
   />
   <TableRow
     components={
@@ -183,7 +193,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -200,9 +210,14 @@ exports[`TableBody render should render tbody at root 1`] = `
           "key": "lastUpdated",
           "label": "Last Updated",
         },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
       ]
     }
-    key="3"
+    key="row2-id3"
   />
   <TableRow
     components={
@@ -242,7 +257,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -259,9 +274,14 @@ exports[`TableBody render should render tbody at root 1`] = `
           "key": "lastUpdated",
           "label": "Last Updated",
         },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
       ]
     }
-    key="4"
+    key="row3-id4"
   />
   <TableRow
     components={
@@ -301,7 +321,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -318,9 +338,14 @@ exports[`TableBody render should render tbody at root 1`] = `
           "key": "lastUpdated",
           "label": "Last Updated",
         },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
       ]
     }
-    key="5"
+    key="row4-id5"
   />
   <TableRow
     components={
@@ -360,7 +385,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -377,9 +402,14 @@ exports[`TableBody render should render tbody at root 1`] = `
           "key": "lastUpdated",
           "label": "Last Updated",
         },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
       ]
     }
-    key="6"
+    key="row5-id6"
   />
   <TableRow
     components={
@@ -419,7 +449,7 @@ exports[`TableBody render should render tbody at root 1`] = `
       Array [
         Object {
           "cellStyle": Object {
-            "width": "50%",
+            "width": "33%",
           },
           "key": "name",
           "label": "Subject Name",
@@ -436,9 +466,14 @@ exports[`TableBody render should render tbody at root 1`] = `
           "key": "lastUpdated",
           "label": "Last Updated",
         },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
       ]
     }
-    key="7"
+    key="row6-id7"
   />
   <styled__StyledRow
     id="empty-row-filler"
@@ -449,7 +484,7 @@ exports[`TableBody render should render tbody at root 1`] = `
           "height": "114px",
         }
       }
-      colSpan={4}
+      colSpan={5}
     />
   </styled__StyledRow>
 </tbody>

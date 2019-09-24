@@ -17,7 +17,7 @@ const getStickyPosition = (props :{ sticky :boolean }) => {
     return css`
       position: sticky;
       top: 0;
-      z-index: 500;
+      z-index: 200;
     `;
   }
   return null;

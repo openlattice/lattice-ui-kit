@@ -8,7 +8,7 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
     <HeadCell
       cellStyle={
         Object {
-          "width": "50%",
+          "width": "33%",
         }
       }
       components={
@@ -65,6 +65,19 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
     >
       Last Updated
     </HeadCell>
+    <HeadCell
+      cellStyle={Object {}}
+      components={
+        Object {
+          "HeadCell": [Function],
+        }
+      }
+      key="id"
+      order={false}
+      sortable={false}
+    >
+      ID
+    </HeadCell>
   </styled__StyledRow>
 </thead>
 `;
@@ -77,7 +90,7 @@ exports[`TableHeader props order and orderBy should pass order to HeadCell when 
     <HeadCell
       cellStyle={
         Object {
-          "width": "50%",
+          "width": "33%",
         }
       }
       components={
@@ -130,6 +143,19 @@ exports[`TableHeader props order and orderBy should pass order to HeadCell when 
     >
       Last Updated
     </HeadCell>
+    <HeadCell
+      cellStyle={Object {}}
+      components={
+        Object {
+          "HeadCell": [Function],
+        }
+      }
+      key="id"
+      order={false}
+      sortable={false}
+    >
+      ID
+    </HeadCell>
   </styled__StyledRow>
 </thead>
 `;
@@ -150,7 +176,7 @@ exports[`TableHeader render should render sortable HeadCells 1`] = `
     <HeadCell
       cellStyle={
         Object {
-          "width": "50%",
+          "width": "33%",
         }
       }
       components={
@@ -202,6 +228,19 @@ exports[`TableHeader render should render sortable HeadCells 1`] = `
       sortable={true}
     >
       Last Updated
+    </HeadCell>
+    <HeadCell
+      cellStyle={Object {}}
+      components={
+        Object {
+          "HeadCell": [Function],
+        }
+      }
+      key="id"
+      order={false}
+      sortable={false}
+    >
+      ID
     </HeadCell>
   </styled__StyledRow>
 </thead>

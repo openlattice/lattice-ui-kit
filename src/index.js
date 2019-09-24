@@ -54,6 +54,7 @@ export {
   TableBody,
   TableHeader,
   TableRow,
+  TableUtils,
 } from './table';
 export {
   Search,
