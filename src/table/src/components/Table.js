@@ -9,6 +9,7 @@ import HeadCell from './HeadCell';
 import TableRow from './TableRow';
 import PaginationToolbar from './PaginationToolbar';
 import { StyledTable, Cell } from './styled';
+import { getInitialRowsPerPage } from './TableUtils';
 
 const defaultComponents = {
   Header: TableHeader,
@@ -40,8 +41,7 @@ const Table = (props :Props) => {
   } = props;
 
   const rowCount = !isEmpty(data) ? data.length : 0;
-  let initialRowsPerPage = rowCount || 5;
-  if (paginated && !isEmpty(rowsPerPageOptions)) [initialRowsPerPage] = rowsPerPageOptions;
+  const initialRowsPerPage = getInitialRowsPerPage(rowCount, rowsPerPageOptions);
 
   const [orderBy, setOrderBy] = React.useState();
   const [order, setOrder] = React.useState();
@@ -50,7 +50,10 @@ const Table = (props :Props) => {
 
   useEffect(() => {
     setPage(0);
-  }, [data]);
+    if (isEmpty(rowsPerPageOptions)) {
+      setRowsPerPage(getInitialRowsPerPage(rowCount, rowsPerPageOptions));
+    }
+  }, [rowCount, rowsPerPageOptions]);
 
   const handleSort = (event, property) => {
     const isDesc = orderBy === property && order === 'desc';

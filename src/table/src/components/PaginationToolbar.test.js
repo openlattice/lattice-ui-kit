@@ -32,7 +32,8 @@ describe('PaginationToolbar', () => {
           <PaginationToolbar
               page={0}
               setPage={mockSetPage}
-              setRowsPerPage={mockSetRowsPerPage} />
+              setRowsPerPage={mockSetRowsPerPage}
+              rowsPerPageOptions={[5, 10]} />
         );
         buttons = wrapper.find(IconButton);
       });
@@ -88,6 +89,21 @@ describe('PaginationToolbar', () => {
         expect(wrapper.find('#row-range').text()).toEqual('1 - 5 of 7');
         wrapper.setProps({ page: 1 });
         expect(wrapper.find('#row-range').text()).toEqual('6 - 7 of 7');
+      });
+    });
+
+    describe('rowsPerPageOptions', () => {
+
+      test('should not show Select with only one value in rowsPerPageOptions', () => {
+        const wrapper = shallow(
+          <PaginationToolbar
+              page={0}
+              count={0}
+              rowsPerPageOptions={[5, 10]} />
+        );
+        expect(wrapper.find(Select)).toHaveLength(1);
+        wrapper.setProps({ rowsPerPageOptions: [5] });
+        expect(wrapper.find(Select)).toHaveLength(0);
       });
     });
 
