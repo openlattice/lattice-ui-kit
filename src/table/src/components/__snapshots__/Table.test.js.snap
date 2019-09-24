@@ -42,7 +42,15 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   word-wrap: break-word;
 }
 
-.c11 {
+.c10 {
+  background-color: #f0f0f7;
+  cursor: auto;
+  padding: 10px 10px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.c12 {
   background-color: inherit;
   cursor: auto;
   padding: 10px 10px;
@@ -64,7 +72,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   z-index: 500;
 }
 
-.c10 {
+.c11 {
   background-color: #ffffff;
   border-bottom: 1px solid #dcdce7;
 }
@@ -243,6 +251,11 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
       Object {
         "key": "lastUpdated",
         "label": "Last Updated",
+      },
+      Object {
+        "key": "id",
+        "label": "ID",
+        "sortable": false,
       },
     ]
   }
@@ -2408,7 +2421,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "styled__Cell-r3xwjs-2",
                     "isStatic": false,
-                    "lastClassName": "c11",
+                    "lastClassName": "c12",
                     "rules": Array [
                       [Function],
                     ],
@@ -2453,6 +2466,11 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   "key": "lastUpdated",
                   "label": "Last Updated",
                 },
+                Object {
+                  "key": "id",
+                  "label": "ID",
+                  "sortable": false,
+                },
               ]
             }
             onSort={[Function]}
@@ -2471,7 +2489,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "styled__StyledRow-r3xwjs-3",
                         "isStatic": false,
-                        "lastClassName": "c10",
+                        "lastClassName": "c11",
                         "rules": Array [
                           "background-color:",
                           "#ffffff",
@@ -2517,7 +2535,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
-                              "lastClassName": "c11",
+                              "lastClassName": "c12",
                               "rules": Array [
                                 [Function],
                               ],
@@ -2569,7 +2587,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
-                                "lastClassName": "c11",
+                                "lastClassName": "c12",
                                 "rules": Array [
                                   [Function],
                                 ],
@@ -2676,7 +2694,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
-                              "lastClassName": "c11",
+                              "lastClassName": "c12",
                               "rules": Array [
                                 [Function],
                               ],
@@ -2720,7 +2738,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
-                                "lastClassName": "c11",
+                                "lastClassName": "c12",
                                 "rules": Array [
                                   [Function],
                                 ],
@@ -2827,7 +2845,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
-                              "lastClassName": "c11",
+                              "lastClassName": "c12",
                               "rules": Array [
                                 [Function],
                               ],
@@ -2871,7 +2889,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
-                                "lastClassName": "c11",
+                                "lastClassName": "c12",
                                 "rules": Array [
                                   [Function],
                                 ],
@@ -2978,7 +2996,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
-                              "lastClassName": "c11",
+                              "lastClassName": "c12",
                               "rules": Array [
                                 [Function],
                               ],
@@ -3022,7 +3040,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
-                                "lastClassName": "c11",
+                                "lastClassName": "c12",
                                 "rules": Array [
                                   [Function],
                                 ],
@@ -3114,6 +3132,88 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         </StyledComponent>
                       </Cell>
                     </HeadCell>
+                    <HeadCell
+                      cellStyle={Object {}}
+                      components={
+                        Object {
+                          "Body": Object {
+                            "$$typeof": Symbol(react.memo),
+                            "compare": null,
+                            "type": [Function],
+                          },
+                          "Cell": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "styled__Cell-r3xwjs-2",
+                              "isStatic": false,
+                              "lastClassName": "c12",
+                              "rules": Array [
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Cell",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "styled__Cell-r3xwjs-2",
+                            "target": "td",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          },
+                          "HeadCell": [Function],
+                          "Header": [Function],
+                          "Pagination": Object {
+                            "$$typeof": Symbol(react.memo),
+                            "compare": null,
+                            "type": [Function],
+                          },
+                          "Row": [Function],
+                        }
+                      }
+                      key="id"
+                      order={false}
+                      sortable={false}
+                    >
+                      <Cell
+                        as="th"
+                        cellStyle={Object {}}
+                      >
+                        <StyledComponent
+                          as="th"
+                          cellStyle={Object {}}
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "styled__Cell-r3xwjs-2",
+                                "isStatic": false,
+                                "lastClassName": "c12",
+                                "rules": Array [
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Cell",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "styled__Cell-r3xwjs-2",
+                              "target": "td",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <th
+                            className="c10"
+                          >
+                            ID
+                          </th>
+                        </StyledComponent>
+                      </Cell>
+                    </HeadCell>
                   </tr>
                 </StyledComponent>
               </styled__StyledRow>
@@ -3133,7 +3233,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "styled__Cell-r3xwjs-2",
                     "isStatic": false,
-                    "lastClassName": "c11",
+                    "lastClassName": "c12",
                     "rules": Array [
                       [Function],
                     ],
@@ -3231,6 +3331,11 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   "key": "lastUpdated",
                   "label": "Last Updated",
                 },
+                Object {
+                  "key": "id",
+                  "label": "ID",
+                  "sortable": false,
+                },
               ]
             }
             rowsPerPage={7}
@@ -3247,7 +3352,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "styled__StyledRow-r3xwjs-3",
                         "isStatic": false,
-                        "lastClassName": "c10",
+                        "lastClassName": "c11",
                         "rules": Array [
                           "background-color:",
                           "#ffffff",
@@ -3272,7 +3377,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   id="empty-row-filler"
                 >
                   <tr
-                    className="c10"
+                    className="c11"
                     id="empty-row-filler"
                   >
                     <Cell
@@ -3281,7 +3386,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "height": "294px",
                         }
                       }
-                      colSpan={4}
+                      colSpan={5}
                     >
                       <StyledComponent
                         cellStyle={
@@ -3289,7 +3394,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "height": "294px",
                           }
                         }
-                        colSpan={4}
+                        colSpan={5}
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
@@ -3297,7 +3402,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
-                              "lastClassName": "c11",
+                              "lastClassName": "c12",
                               "rules": Array [
                                 [Function],
                               ],
@@ -3315,8 +3420,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-                          className="c11"
-                          colSpan={4}
+                          className="c12"
+                          colSpan={5}
                         />
                       </StyledComponent>
                     </Cell>
@@ -5507,6 +5612,11 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
             "key": "lastUpdated",
             "label": "Last Updated",
           },
+          Object {
+            "key": "id",
+            "label": "ID",
+            "sortable": false,
+          },
         ]
       }
       onSort={[Function]}
@@ -5624,6 +5734,11 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
             "key": "lastUpdated",
             "label": "Last Updated",
           },
+          Object {
+            "key": "id",
+            "label": "ID",
+            "sortable": false,
+          },
         ]
       }
       rowsPerPage={7}
@@ -5700,6 +5815,11 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
             "key": "lastUpdated",
             "label": "Last Updated",
           },
+          Object {
+            "key": "id",
+            "label": "ID",
+            "sortable": false,
+          },
         ]
       }
       onSort={[Function]}
@@ -5764,6 +5884,11 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
           Object {
             "key": "lastUpdated",
             "label": "Last Updated",
+          },
+          Object {
+            "key": "id",
+            "label": "ID",
+            "sortable": false,
           },
         ]
       }
@@ -5848,6 +5973,11 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
             "key": "lastUpdated",
             "label": "Last Updated",
           },
+          Object {
+            "key": "id",
+            "label": "ID",
+            "sortable": false,
+          },
         ]
       }
       onSort={[Function]}
@@ -5964,6 +6094,11 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
           Object {
             "key": "lastUpdated",
             "label": "Last Updated",
+          },
+          Object {
+            "key": "id",
+            "label": "ID",
+            "sortable": false,
           },
         ]
       }
@@ -6054,6 +6189,11 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
             "key": "lastUpdated",
             "label": "Last Updated",
           },
+          Object {
+            "key": "id",
+            "label": "ID",
+            "sortable": false,
+          },
         ]
       }
       onSort={[Function]}
@@ -6170,6 +6310,11 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
           Object {
             "key": "lastUpdated",
             "label": "Last Updated",
+          },
+          Object {
+            "key": "id",
+            "label": "ID",
+            "sortable": false,
           },
         ]
       }
@@ -6260,6 +6405,11 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
             "key": "lastUpdated",
             "label": "Last Updated",
           },
+          Object {
+            "key": "id",
+            "label": "ID",
+            "sortable": false,
+          },
         ]
       }
       onSort={[Function]}
@@ -6376,6 +6526,11 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
           Object {
             "key": "lastUpdated",
             "label": "Last Updated",
+          },
+          Object {
+            "key": "id",
+            "label": "ID",
+            "sortable": false,
           },
         ]
       }
@@ -6454,6 +6609,11 @@ exports[`Table render should render table first child 1`] = `
             "key": "lastUpdated",
             "label": "Last Updated",
           },
+          Object {
+            "key": "id",
+            "label": "ID",
+            "sortable": false,
+          },
         ]
       }
       onSort={[Function]}
@@ -6571,6 +6731,11 @@ exports[`Table render should render table first child 1`] = `
           Object {
             "key": "lastUpdated",
             "label": "Last Updated",
+          },
+          Object {
+            "key": "id",
+            "label": "ID",
+            "sortable": false,
           },
         ]
       }

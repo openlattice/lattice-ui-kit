@@ -45,6 +45,25 @@ describe('TableHeader', () => {
       });
     });
 
+    describe('sortable', () => {
+      test('should not pass onClick when header sortable=false', () => {
+        const mockOnSort = jest.fn();
+        const wrapper = shallow(
+          <TableHeader
+              components={components}
+              headers={TABLE_HEADERS}
+              onSort={mockOnSort} />
+        );
+
+        const headerCells = wrapper.find(HeadCell);
+        headerCells.forEach((cell) => {
+          if (cell.prop('sortable') !== true) {
+            expect(cell.prop('onClick')).toEqual(undefined);
+          }
+        });
+      });
+    });
+
     describe('order and orderBy', () => {
       test('should pass order to HeadCell when orderBy matches header key', () => {
         const wrapper = shallow(
@@ -76,9 +95,6 @@ describe('TableHeader', () => {
       const wrapper = shallow(<TableHeader components={components} headers={TABLE_HEADERS} />);
       const headerCells = wrapper.find(HeadCell);
 
-      headerCells.forEach((headerCell) => {
-        expect(headerCell.prop('sortable')).toEqual(true);
-      });
       expect(headerCells).toHaveLength(TABLE_HEADERS.length);
       expect(toJson(wrapper)).toMatchSnapshot();
     });

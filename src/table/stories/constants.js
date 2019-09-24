@@ -3,6 +3,7 @@ const TABLE_HEADERS = [
   { key: 'dob', label: 'Date of Birth' },
   { key: 'manager', label: 'Manager' },
   { key: 'lastUpdated', label: 'Last Updated' },
+  { key: 'id', label: 'ID', sortable: false },
 ];
 
 const TABLE_DATA = [

@@ -38,15 +38,20 @@ const TableHeader = (props :Props) => {
       <StyledRow sticky={sticky}>
         {
           headers && headers.map((header) => {
-            const { key, label, cellStyle } = header;
+            const {
+              cellStyle,
+              key,
+              label,
+              sortable = true
+            } = header;
             return (
               <components.HeadCell
                   key={key}
                   components={components}
                   cellStyle={cellStyle}
-                  onClick={onSort ? createSortHandler(key) : undefined}
+                  onClick={(onSort && sortable) ? createSortHandler(key) : undefined}
                   order={orderBy === header.key ? order : false}
-                  sortable>
+                  sortable={sortable !== false}>
                 {label}
               </components.HeadCell>
             );

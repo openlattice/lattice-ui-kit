@@ -12,7 +12,7 @@ exports[`TableBody render should render spinner when isLoading=true 1`] = `
           "textAlign": "center",
         }
       }
-      colSpan={4}
+      colSpan={5}
     >
       <Spinner
         bottomColor="#cdd1db"
@@ -82,6 +82,11 @@ exports[`TableBody render should render tbody at root 1`] = `
           "key": "lastUpdated",
           "label": "Last Updated",
         },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
       ]
     }
     key="row0-id1"
@@ -140,6 +145,11 @@ exports[`TableBody render should render tbody at root 1`] = `
         Object {
           "key": "lastUpdated",
           "label": "Last Updated",
+        },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
         },
       ]
     }
@@ -200,6 +210,11 @@ exports[`TableBody render should render tbody at root 1`] = `
           "key": "lastUpdated",
           "label": "Last Updated",
         },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
       ]
     }
     key="row2-id3"
@@ -258,6 +273,11 @@ exports[`TableBody render should render tbody at root 1`] = `
         Object {
           "key": "lastUpdated",
           "label": "Last Updated",
+        },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
         },
       ]
     }
@@ -318,6 +338,11 @@ exports[`TableBody render should render tbody at root 1`] = `
           "key": "lastUpdated",
           "label": "Last Updated",
         },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
       ]
     }
     key="row4-id5"
@@ -376,6 +401,11 @@ exports[`TableBody render should render tbody at root 1`] = `
         Object {
           "key": "lastUpdated",
           "label": "Last Updated",
+        },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
         },
       ]
     }
@@ -436,6 +466,11 @@ exports[`TableBody render should render tbody at root 1`] = `
           "key": "lastUpdated",
           "label": "Last Updated",
         },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
       ]
     }
     key="row6-id7"
@@ -449,7 +484,7 @@ exports[`TableBody render should render tbody at root 1`] = `
           "height": "114px",
         }
       }
-      colSpan={4}
+      colSpan={5}
     />
   </styled__StyledRow>
 </tbody>
