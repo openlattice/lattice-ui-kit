@@ -42,8 +42,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   word-wrap: break-word;
 }
 
-.c10 {
-<<<<<<< HEAD
+.c9 {
   background-color: #f0f0f7;
   cursor: auto;
   padding: 10px 10px;
@@ -51,9 +50,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   word-wrap: break-word;
 }
 
-.c12 {
-=======
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+.c11 {
   background-color: inherit;
   cursor: auto;
   padding: 10px 10px;
@@ -75,11 +72,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   z-index: 200;
 }
 
-<<<<<<< HEAD
-.c11 {
-=======
-.c9 {
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+.c10 {
   background-color: #ffffff;
   border-bottom: 1px solid #dcdce7;
 }
@@ -963,11 +956,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "styled__Cell-r3xwjs-2",
                     "isStatic": false,
-<<<<<<< HEAD
-                    "lastClassName": "c12",
-=======
-                    "lastClassName": "c10",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                    "lastClassName": "c11",
                     "rules": Array [
                       [Function],
                     ],
@@ -1035,11 +1024,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "styled__StyledRow-r3xwjs-3",
                         "isStatic": false,
-<<<<<<< HEAD
-                        "lastClassName": "c11",
-=======
-                        "lastClassName": "c9",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                        "lastClassName": "c10",
                         "rules": Array [
                           "background-color:",
                           "#ffffff",
@@ -1085,11 +1070,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
-<<<<<<< HEAD
-                              "lastClassName": "c12",
-=======
-                              "lastClassName": "c10",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                              "lastClassName": "c11",
                               "rules": Array [
                                 [Function],
                               ],
@@ -1141,11 +1122,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
-<<<<<<< HEAD
-                                "lastClassName": "c12",
-=======
-                                "lastClassName": "c10",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                                "lastClassName": "c11",
                                 "rules": Array [
                                   [Function],
                                 ],
@@ -1252,11 +1229,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
-<<<<<<< HEAD
-                              "lastClassName": "c12",
-=======
-                              "lastClassName": "c10",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                              "lastClassName": "c11",
                               "rules": Array [
                                 [Function],
                               ],
@@ -1300,11 +1273,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
-<<<<<<< HEAD
-                                "lastClassName": "c12",
-=======
-                                "lastClassName": "c10",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                                "lastClassName": "c11",
                                 "rules": Array [
                                   [Function],
                                 ],
@@ -1411,11 +1380,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
-<<<<<<< HEAD
-                              "lastClassName": "c12",
-=======
-                              "lastClassName": "c10",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                              "lastClassName": "c11",
                               "rules": Array [
                                 [Function],
                               ],
@@ -1459,11 +1424,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
-<<<<<<< HEAD
-                                "lastClassName": "c12",
-=======
-                                "lastClassName": "c10",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                                "lastClassName": "c11",
                                 "rules": Array [
                                   [Function],
                                 ],
@@ -1570,11 +1531,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
-<<<<<<< HEAD
-                              "lastClassName": "c12",
-=======
-                              "lastClassName": "c10",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                              "lastClassName": "c11",
                               "rules": Array [
                                 [Function],
                               ],
@@ -1618,11 +1575,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
-<<<<<<< HEAD
-                                "lastClassName": "c12",
-=======
-                                "lastClassName": "c10",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                                "lastClassName": "c11",
                                 "rules": Array [
                                   [Function],
                                 ],
@@ -1729,7 +1682,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
-                              "lastClassName": "c12",
+                              "lastClassName": "c11",
                               "rules": Array [
                                 [Function],
                               ],
@@ -1771,7 +1724,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "styled__Cell-r3xwjs-2",
                                 "isStatic": false,
-                                "lastClassName": "c12",
+                                "lastClassName": "c11",
                                 "rules": Array [
                                   [Function],
                                 ],
@@ -1789,7 +1742,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           forwardedRef={null}
                         >
                           <th
-                            className="c10"
+                            className="c9"
                           >
                             ID
                           </th>
@@ -1815,11 +1768,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "styled__Cell-r3xwjs-2",
                     "isStatic": false,
-<<<<<<< HEAD
-                    "lastClassName": "c12",
-=======
-                    "lastClassName": "c10",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                    "lastClassName": "c11",
                     "rules": Array [
                       [Function],
                     ],
@@ -1938,11 +1887,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "styled__StyledRow-r3xwjs-3",
                         "isStatic": false,
-<<<<<<< HEAD
-                        "lastClassName": "c11",
-=======
-                        "lastClassName": "c9",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                        "lastClassName": "c10",
                         "rules": Array [
                           "background-color:",
                           "#ffffff",
@@ -1967,11 +1912,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   id="empty-row-filler"
                 >
                   <tr
-<<<<<<< HEAD
-                    className="c11"
-=======
-                    className="c9"
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                    className="c10"
                     id="empty-row-filler"
                   >
                     <Cell
@@ -1996,11 +1937,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "styled__Cell-r3xwjs-2",
                               "isStatic": false,
-<<<<<<< HEAD
-                              "lastClassName": "c12",
-=======
-                              "lastClassName": "c10",
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
+                              "lastClassName": "c11",
                               "rules": Array [
                                 [Function],
                               ],
@@ -2018,13 +1955,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         forwardedRef={null}
                       >
                         <td
-<<<<<<< HEAD
-                          className="c12"
+                          className="c11"
                           colSpan={5}
-=======
-                          className="c10"
-                          colSpan={4}
->>>>>>> 7a7b4c14e85e4980bafe90a118581b36eae7d38d
                         />
                       </StyledComponent>
                     </Cell>
