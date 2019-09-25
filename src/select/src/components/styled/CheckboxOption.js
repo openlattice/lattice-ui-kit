@@ -13,6 +13,7 @@ type OptionProps = {
   getStyles :Object;
   innerProps :Object;
   innerRef :Ref<any>;
+  isDisabled :boolean;
   isFocused :boolean;
   isSelected :boolean;
   label :string;
@@ -23,6 +24,7 @@ const Option = (props :OptionProps) => {
     getStyles,
     innerProps,
     innerRef,
+    isDisabled,
     isFocused,
     isSelected,
     label,
@@ -40,7 +42,7 @@ const Option = (props :OptionProps) => {
   /* eslint-disable react/jsx-props-no-spreading */
   return (
     <div ref={innerRef} {...innerProps} style={style}>
-      <Checkbox checked={isSelected} label={label} readOnly />
+      <Checkbox checked={isSelected} label={label} disabled={isDisabled} readOnly />
     </div>
   );
   /* eslint-enable */

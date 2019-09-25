@@ -3,7 +3,7 @@ import { NEUTRALS } from '../../../../colors';
 
 const ChoiceLabel = styled.label`
   align-items: center;
-  color: ${NEUTRALS[0]};
+  color: ${(props) => (props.disabled ? NEUTRALS[2] : NEUTRALS[0])};
   display: inline-flex;
   margin: 10px 0;
   min-height: 20px;
