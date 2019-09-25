@@ -102,8 +102,11 @@ input:checked ~ .c2:after {
 <Radio
   disabled={false}
 >
-  <ChoiceLabel>
+  <ChoiceLabel
+    disabled={false}
+  >
     <StyledComponent
+      disabled={false}
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -114,7 +117,7 @@ input:checked ~ .c2:after {
             "lastClassName": "c0",
             "rules": Array [
               "align-items:center;color:",
-              "#555e6f",
+              [Function],
               ";display:inline-flex;margin:10px 0;min-height:20px;padding-left:30px;pointer-events:",
               [Function],
               ";position:relative;",
@@ -134,6 +137,7 @@ input:checked ~ .c2:after {
     >
       <label
         className="c0"
+        disabled={false}
       >
         <ChoiceInputs__RadioInput>
           <StyledComponent
