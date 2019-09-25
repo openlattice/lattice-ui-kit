@@ -23,7 +23,6 @@ const RadioIndicator = styled.div`
   height: 20px;
   left: 0;
   position: absolute;
-  top: 0;
   transition: background-color ${duration.swift} ease-in-out,
     box-shadow ${duration.swift} ease-in-out;
   width: 20px;

@@ -21,7 +21,7 @@ storiesOf('Radio', module)
           }}>
             <Label>Showcase</Label>
             <Radio id="story-default" label="Default" />
-            <Radio id="story-checked" label="Checked" checked />
+            <Radio id="story-checked" label="defaultChecked" defaultChecked />
             <Radio id="story-checkedreadonly" label="Checked readOnly" checked readOnly />
             <Radio id="story-disabled" label="Disabled" disabled />
             <Radio id="story-disabledchecked" label="Disabled (checked)" disabled checked />
