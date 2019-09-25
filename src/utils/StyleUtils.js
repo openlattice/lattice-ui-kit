@@ -1,5 +1,5 @@
-/* eslint-disable arrow-body-style */
 // @flow
+/* eslint-disable arrow-body-style */
 
 import { css } from 'styled-components';
 
@@ -49,7 +49,7 @@ const getHoverStyles = (props :{ onClick :() => any }) => {
 };
 
 export {
+  getHoverStyles,
   getStickyPosition,
   getStyleVariation,
-  getHoverStyles,
 };
