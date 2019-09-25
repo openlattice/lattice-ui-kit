@@ -89,7 +89,7 @@ exports[`TableBody render should render tbody at root 1`] = `
         },
       ]
     }
-    key="row0-id1"
+    key="1"
   />
   <TableRow
     components={
@@ -153,7 +153,7 @@ exports[`TableBody render should render tbody at root 1`] = `
         },
       ]
     }
-    key="row1-id2"
+    key="2"
   />
   <TableRow
     components={
@@ -217,7 +217,7 @@ exports[`TableBody render should render tbody at root 1`] = `
         },
       ]
     }
-    key="row2-id3"
+    key="3"
   />
   <TableRow
     components={
@@ -281,7 +281,7 @@ exports[`TableBody render should render tbody at root 1`] = `
         },
       ]
     }
-    key="row3-id4"
+    key="4"
   />
   <TableRow
     components={
@@ -345,7 +345,7 @@ exports[`TableBody render should render tbody at root 1`] = `
         },
       ]
     }
-    key="row4-id5"
+    key="5"
   />
   <TableRow
     components={
@@ -409,7 +409,7 @@ exports[`TableBody render should render tbody at root 1`] = `
         },
       ]
     }
-    key="row5-id6"
+    key="6"
   />
   <TableRow
     components={
@@ -473,7 +473,7 @@ exports[`TableBody render should render tbody at root 1`] = `
         },
       ]
     }
-    key="row6-id7"
+    key="7"
   />
   <styled__StyledRow
     id="empty-row-filler"

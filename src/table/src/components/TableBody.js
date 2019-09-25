@@ -60,13 +60,12 @@ const TableBody = (props :Props) => {
   return (
     <tbody className={className}>
       {
-        dataByPage.map((rowData :RowData, index) => {
+        dataByPage.map((rowData :RowData) => {
 
           const { id } = rowData;
-          const key = `row${index}-id${id}`;
           return (
             <components.Row
-                key={key}
+                key={id}
                 data={rowData}
                 headers={headers}
                 components={components} />
