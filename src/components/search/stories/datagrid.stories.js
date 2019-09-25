@@ -16,13 +16,13 @@ storiesOf('DataGrid', module)
       </CardSegment>
     </Card>
   ))
-  .add('truncated', () => (
+  .add('truncate', () => (
     <Card>
       <CardSegment>
         <DataGrid
             data={mockSearchResultsForPeople.first()}
             labelMap={mockResultLabels}
-            truncated />
+            truncate />
       </CardSegment>
     </Card>
   ))
@@ -33,7 +33,7 @@ storiesOf('DataGrid', module)
             data={mockSearchResultsForPeople.first()}
             columns={3}
             labelMap={mockResultLabels}
-            truncated />
+            truncate />
       </CardSegment>
     </Card>
   ));
