@@ -108,4 +108,19 @@ storiesOf('Select', module)
           options={stateOptions}
           onChange={action('Single select changed')} />
     </>
+  ))
+  .add('Disabled options', () => (
+    <>
+      <h1>Disabled options</h1>
+      <h2>Checkbox Select</h2>
+      <CheckboxSelect
+          isOptionDisabled={(option) => option.value === 'AL'}
+          options={stateOptions}
+          onChange={action('CheckboxSelect changed')} />
+      <h2>Select</h2>
+      <Select
+          isOptionDisabled={(option) => option.value === 'AL'}
+          options={stateOptions}
+          onChange={action('Single select changed')} />
+    </>
   ));

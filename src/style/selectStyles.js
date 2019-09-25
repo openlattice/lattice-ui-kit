@@ -1,4 +1,4 @@
-import { NEUTRALS, PURPLES } from '../colors/src/Colors';
+import { NEUTRALS, PURPLES, WHITE } from '../colors/src/Colors';
 
 const selectStyles = {
   container: (base, state) => {
@@ -17,7 +17,7 @@ const selectStyles = {
     const defaultBackgroundColor = borderless ? 'transparent' : NEUTRALS[8];
 
     const style = {
-      backgroundColor: isFocused ? 'white' : defaultBackgroundColor,
+      backgroundColor: isFocused ? WHITE : defaultBackgroundColor,
       border: (isFocused && !borderless) ? `solid 1px ${PURPLES[1]}` : defaultBorder,
       borderRadius: '3px',
       boxShadow: 'none',
@@ -26,7 +26,7 @@ const selectStyles = {
       pointerEvents: isDisabled ? 'none' : 'auto',
       transition: 'background-color 0.2s ease-in-out, border-color 0.2s ease-in-out',
       ':hover': {
-        backgroundColor: isFocused ? 'white' : NEUTRALS[6],
+        backgroundColor: isFocused ? WHITE : NEUTRALS[6],
         border: (isFocused && !borderless) ? `solid 1px ${PURPLES[1]}` : defaultBorder,
       },
     };
@@ -39,9 +39,11 @@ const selectStyles = {
     return { ...base, display, zIndex: 550 };
   },
   option: (base, state) => {
-    const { isFocused, isSelected } = state;
-    const color = isSelected ? PURPLES[1] : NEUTRALS[0];
-    let backgroundColor = 'white';
+    const { isDisabled, isFocused, isSelected } = state;
+    let color = isSelected ? PURPLES[1] : NEUTRALS[0];
+    if (isDisabled) color = NEUTRALS[2];
+
+    let backgroundColor = WHITE;
 
     if (isSelected) {
       backgroundColor = PURPLES[6];
@@ -55,7 +57,7 @@ const selectStyles = {
       color,
       backgroundColor,
       ':active': {
-        backgroundColor: PURPLES[5]
+        backgroundColor: isDisabled ? WHITE : PURPLES[5]
       }
     };
   },

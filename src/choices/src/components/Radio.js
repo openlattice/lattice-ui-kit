@@ -23,7 +23,7 @@ const Radio = ({
   readOnly,
   ...rest
 } :Props) => (
-  <ChoiceLabel htmlFor={id} readOnly={readOnly}>
+  <ChoiceLabel htmlFor={id} readOnly={readOnly} disabled={disabled}>
     {label}
     <RadioInput
         id={id}
