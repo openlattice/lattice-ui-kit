@@ -3,6 +3,7 @@
  */
 
 import * as Colors from './colors';
+import * as Sizes from './style/Sizes';
 import * as StyleUtils from './utils/StyleUtils';
 
 // injected by Webpack.DefinePlugin
@@ -11,6 +12,7 @@ const version :string = __VERSION__;
 
 export {
   Colors,
+  Sizes,
   StyleUtils,
   version,
 };

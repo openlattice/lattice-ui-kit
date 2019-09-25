@@ -1,95 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { HashRouter, NavLink } from 'react-router-dom';
 
-import OpenLatticeLogo from './logo_v2.png';
 import { Button } from '../../button';
-import { SearchInput } from '../../text';
+import { PURPLES } from '../../colors';
 import {
-  AppContainerWrapper,
-  AppContentWrapper,
-  AppHeaderWrapper,
   Card,
   CardHeader,
   CardSegment,
-  CardStack
+  CardStack,
 } from '../index';
-import { NEUTRALS, PURPLES } from '../../colors';
 
-const StoryAppContainerWrapper = styled(AppContainerWrapper)`
-  min-width: 600px; /* overriding only for the story */
-`;
-
-const StoryAppHeaderWrapper = styled(AppHeaderWrapper)`
-  > div {
-    min-width: 600px; /* overriding only for the story */
-  }
-`;
-
-const StoryAppContentWrapper = styled(AppContentWrapper)`
-  > div {
-    min-width: 600px; /* overriding only for the story */
-  }
-`;
-
-const SearchContentWrapper = styled(StoryAppContentWrapper)`
-  border-bottom: 1px solid ${NEUTRALS[5]};
-  > div {
-    min-width: 600px; /* overriding only for the story */
-  }
-`;
-
-const CardGrid = styled.div`
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-
-  ${Card} {
-    align-items: center;
-    min-width: 0; /* setting min-width ensures cards do not overflow the grid column */
-  }
-`;
-
-const SearchWrapper = styled.div`
-  align-self: center;
-  padding: 50px 0;
-  width: 300px;
-`;
-
-storiesOf('Layout', module)
-  .add('App', () => (
-    <HashRouter>
-      <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper
-            icon={OpenLatticeLogo}
-            logout={action('clicked logout')}
-            user="storybook@openlattice.com">
-          <NavLink to="/home" />
-          <NavLink to="/tab2">Tab 1</NavLink>
-          <NavLink to="/tab3">Tab 2</NavLink>
-        </StoryAppHeaderWrapper>
-        <SearchContentWrapper bgColor="#fff">
-          <SearchWrapper>
-            <SearchInput />
-          </SearchWrapper>
-        </SearchContentWrapper>
-        <StoryAppContentWrapper>
-          <CardGrid>
-            <Card><CardSegment>1</CardSegment></Card>
-            <Card><CardSegment>2</CardSegment></Card>
-            <Card><CardSegment>3</CardSegment></Card>
-            <Card><CardSegment>4</CardSegment></Card>
-            <Card><CardSegment>5</CardSegment></Card>
-            <Card><CardSegment>6</CardSegment></Card>
-            <Card><CardSegment>7</CardSegment></Card>
-            <Card><CardSegment>8</CardSegment></Card>
-          </CardGrid>
-        </StoryAppContentWrapper>
-      </StoryAppContainerWrapper>
-    </HashRouter>
-  ))
+storiesOf('Card', module)
   .add('Card', () => (
     <CardStack>
       <Card>Blank Card</Card>
