@@ -6,7 +6,7 @@ import { Map } from 'immutable';
 import { mockSearchResultsForPeople, mockResultLabels } from './constants';
 import DataGrid from './DataGrid';
 import Label from '../../../../label';
-import { Truncated } from './styled/StyledResultComponents';
+import { Text } from './styled/StyledResultComponents';
 
 describe('DataGrid', () => {
   describe('snapshots', () => {
@@ -22,6 +22,17 @@ describe('DataGrid', () => {
     });
   });
 
+  describe('truncate', () => {
+    test('truncate=true should overflow with ellipsis', () => {
+      const data = mockSearchResultsForPeople.first();
+      const wrapper = mount(<DataGrid data={data} truncate />);
+
+      expect(wrapper.find(Text)).toHaveStyleRule('overflow', 'hidden');
+      expect(wrapper.find(Text)).toHaveStyleRule('text-overflow', 'ellipsis');
+      expect(wrapper.find(Text)).toHaveStyleRule('white-space', 'nowrap');
+    });
+  });
+
   describe('render', () => {
     test('should only render data for labels with matching keys', () => {
       const data = mockSearchResultsForPeople.first();
@@ -31,10 +42,10 @@ describe('DataGrid', () => {
 
       const wrapper = mount(<DataGrid data={data} labelMap={customResultLabels} />);
       expect(wrapper.find(Label)).toHaveLength(1);
-      expect(wrapper.find(Truncated)).toHaveLength(1);
+      expect(wrapper.find(Text)).toHaveLength(1);
 
       expect(wrapper.find(Label).text()).toEqual(customResultLabels.get('firstName'));
-      expect(wrapper.find(Truncated).text()).toEqual(data.get('firstName'));
+      expect(wrapper.find(Text).text()).toEqual(data.get('firstName'));
     });
 
     test('should render all data if labelMap not provided', () => {
@@ -42,7 +53,7 @@ describe('DataGrid', () => {
 
       const wrapper = mount(<DataGrid data={data} />);
       expect(wrapper.find(Label)).toHaveLength(data.count());
-      expect(wrapper.find(Truncated)).toHaveLength(data.count());
+      expect(wrapper.find(Text)).toHaveLength(data.count());
     });
   });
 

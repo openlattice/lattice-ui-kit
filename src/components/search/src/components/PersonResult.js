@@ -10,7 +10,7 @@ import {
   ResultGrid,
   ResultWrapper,
   ResultDetails,
-  Truncated
+  Text
 } from './styled/StyledResultComponents';
 
 const StyledResultGrid = styled(ResultGrid)`
@@ -66,9 +66,9 @@ class PersonResult extends Component<Props> {
                     <Label bold>
                       {detail.get('label', '')}
                     </Label>
-                    <Truncated>
+                    <Text>
                       {detail.get('value', '')}
-                    </Truncated>
+                    </Text>
                   </div>
                 ))
               }

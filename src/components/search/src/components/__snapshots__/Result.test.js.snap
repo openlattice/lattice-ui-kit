@@ -190,6 +190,7 @@ exports[`Result snapshots should match snapshot 1`] = `
                       columns={4}
                       data={Immutable.Map {}}
                       emptyString="---"
+                      truncate={false}
                     >
                       <StyledResultComponents__ResultGrid
                         columns={4}
