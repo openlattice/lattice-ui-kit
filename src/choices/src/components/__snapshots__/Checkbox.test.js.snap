@@ -7,7 +7,6 @@ exports[`Checkbox render matches snapshot 1`] = `
   height: 20px;
   left: 0;
   position: absolute;
-  top: 0;
   -webkit-transition: background-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
   transition: background-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
   width: 20px;
@@ -191,7 +190,7 @@ input:checked ~ .c2:after {
                   "rules": Array [
                     "background-color:",
                     "#e6e6f7",
-                    ";border-radius:3px;height:20px;left:0;position:absolute;top:0;transition:background-color ",
+                    ";border-radius:3px;height:20px;left:0;position:absolute;transition:background-color ",
                     "100ms",
                     " ease-in-out,box-shadow ",
                     "100ms",
