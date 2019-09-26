@@ -2,10 +2,12 @@ import React from 'react';
 import { mergeDeep } from 'immutable';
 import { TimePicker } from '@atlaskit/datetime-picker';
 import selectStyles from '../../../style/selectStyles';
+import times from '../../constants';
 
 export const defaultProps = {
   selectProps: { styles: selectStyles },
-  timeIsEditable: true
+  timeIsEditable: true,
+  times,
 };
 
 const LatticeTimePicker = (props) => {
