@@ -20,6 +20,7 @@ export { default as Modal } from './modal';
 export { default as Overlay } from './overlay';
 export { default as Portal } from './portal';
 export { default as Spinner } from './spinner';
+export { default as Tag } from './tag';
 export { default as selectStyles } from './style/selectStyles';
 export {
   Button,

@@ -47,6 +47,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'TableHeader',
   'TableRow',
   'TableUtils',
+  'Tag',
   'TextArea',
   'TimePicker',
 ]);
