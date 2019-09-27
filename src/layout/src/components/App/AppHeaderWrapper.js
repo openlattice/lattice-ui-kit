@@ -8,12 +8,7 @@ import type { Node } from 'react';
 import isArray from 'lodash/isArray';
 import isPlainObject from 'lodash/isPlainObject';
 import styled from 'styled-components';
-import {
-  List,
-  Map,
-  get,
-  isCollection,
-} from 'immutable';
+import { get, isCollection } from 'immutable';
 
 import * as Colors from '../../../../colors';
 import { Button } from '../../../../button';
