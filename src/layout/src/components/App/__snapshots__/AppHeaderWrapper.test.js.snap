@@ -1,0 +1,362 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppHeaderWrapper snapshots default 1`] = `
+<Fragment>
+  <AppHeaderWrapper__AppHeaderOuterWrapper>
+    <AppHeaderWrapper__AppHeaderInnerWrapper>
+      <AppHeaderWrapper__NavigationContentWrapper />
+      <AppHeaderWrapper__HeaderRightContentWrapper>
+        <AppHeaderWrapper__LogoutButton>
+          Log Out
+        </AppHeaderWrapper__LogoutButton>
+      </AppHeaderWrapper__HeaderRightContentWrapper>
+    </AppHeaderWrapper__AppHeaderInnerWrapper>
+  </AppHeaderWrapper__AppHeaderOuterWrapper>
+</Fragment>
+`;
+
+exports[`AppHeaderWrapper snapshots navigation 1`] = `
+<Fragment>
+  <AppHeaderWrapper__AppHeaderOuterWrapper>
+    <AppHeaderWrapper__AppHeaderInnerWrapper>
+      <AppHeaderWrapper__NavigationContentWrapper>
+        <a
+          className="nav-root"
+          href="/home"
+          key=".$home"
+        >
+          <AppIcon />
+          <AppTitle
+            title="Home"
+          />
+        </a>
+        <a
+          href="/tab1"
+          key=".$tab1"
+        >
+          Tab1
+        </a>
+        <a
+          href="/tab2"
+          key=".$tab2"
+        >
+          Tab2
+        </a>
+      </AppHeaderWrapper__NavigationContentWrapper>
+      <AppHeaderWrapper__HeaderRightContentWrapper>
+        <AppHeaderWrapper__LogoutButton>
+          Log Out
+        </AppHeaderWrapper__LogoutButton>
+      </AppHeaderWrapper__HeaderRightContentWrapper>
+    </AppHeaderWrapper__AppHeaderInnerWrapper>
+  </AppHeaderWrapper__AppHeaderOuterWrapper>
+</Fragment>
+`;
+
+exports[`AppHeaderWrapper snapshots navigation wrapping 1`] = `
+<Fragment>
+  <AppHeaderWrapper__AppHeaderOuterWrapper>
+    <AppHeaderWrapper__AppHeaderInnerWrapper>
+      <AppHeaderWrapper__NavigationContentWrapper>
+        <a
+          className="nav-root"
+          href="/home"
+          key=".$home"
+        >
+          <AppIcon />
+          <AppTitle
+            title="Home"
+          />
+        </a>
+      </AppHeaderWrapper__NavigationContentWrapper>
+      <AppHeaderWrapper__HeaderRightContentWrapper>
+        <AppHeaderWrapper__LogoutButton>
+          Log Out
+        </AppHeaderWrapper__LogoutButton>
+      </AppHeaderWrapper__HeaderRightContentWrapper>
+    </AppHeaderWrapper__AppHeaderInnerWrapper>
+  </AppHeaderWrapper__AppHeaderOuterWrapper>
+  <AppHeaderWrapper__AppHeaderOuterWrapper>
+    <AppHeaderWrapper__AppHeaderInnerWrapper>
+      <AppHeaderWrapper__NavigationContentWrapper>
+        <a
+          href="/tab1"
+          key=".$tab1"
+        >
+          Tab1
+        </a>
+        <a
+          href="/tab2"
+          key=".$tab2"
+        >
+          Tab2
+        </a>
+      </AppHeaderWrapper__NavigationContentWrapper>
+    </AppHeaderWrapper__AppHeaderInnerWrapper>
+  </AppHeaderWrapper__AppHeaderOuterWrapper>
+</Fragment>
+`;
+
+exports[`AppHeaderWrapper snapshots select + navigation 1`] = `
+<Fragment>
+  <AppHeaderWrapper__AppHeaderOuterWrapper>
+    <AppHeaderWrapper__AppHeaderInnerWrapper>
+      <AppHeaderWrapper__NavigationContentWrapper>
+        <a
+          className="nav-root"
+          href="/home"
+          key=".$home"
+        >
+          <AppIcon />
+          <AppTitle
+            title="Home"
+          />
+        </a>
+        <a
+          href="/tab1"
+          key=".$tab1"
+        >
+          Tab1
+        </a>
+        <a
+          href="/tab2"
+          key=".$tab2"
+        >
+          Tab2
+        </a>
+      </AppHeaderWrapper__NavigationContentWrapper>
+      <AppHeaderWrapper__HeaderRightContentWrapper>
+        <Select
+          isClearable={false}
+          isMulti={false}
+          menuPortalTarget={<body />}
+          options={
+            Array [
+              Object {
+                "label": "OpenLattice",
+                "value": "org1",
+              },
+              Object {
+                "label": "JustBeamIt",
+                "value": "org2",
+              },
+              Object {
+                "label": "Metallica",
+                "value": "org3",
+              },
+            ]
+          }
+          placeholder="Select an organization..."
+          styles={
+            Object {
+              "clearIndicator": [Function],
+              "container": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "indicatorSeparator": [Function],
+              "indicatorsContainer": [Function],
+              "menuList": [Function],
+              "menuPortal": [Function],
+              "option": [Function],
+              "singleValue": [Function],
+              "valueContainer": [Function],
+            }
+          }
+        />
+        <AppHeaderWrapper__LogoutButton>
+          Log Out
+        </AppHeaderWrapper__LogoutButton>
+      </AppHeaderWrapper__HeaderRightContentWrapper>
+    </AppHeaderWrapper__AppHeaderInnerWrapper>
+  </AppHeaderWrapper__AppHeaderOuterWrapper>
+</Fragment>
+`;
+
+exports[`AppHeaderWrapper snapshots select 1`] = `
+<Fragment>
+  <AppHeaderWrapper__AppHeaderOuterWrapper>
+    <AppHeaderWrapper__AppHeaderInnerWrapper>
+      <AppHeaderWrapper__NavigationContentWrapper />
+      <AppHeaderWrapper__HeaderRightContentWrapper>
+        <Select
+          isClearable={false}
+          isMulti={false}
+          menuPortalTarget={<body />}
+          options={
+            Array [
+              Object {
+                "label": "OpenLattice",
+                "value": "org1",
+              },
+              Object {
+                "label": "JustBeamIt",
+                "value": "org2",
+              },
+              Object {
+                "label": "Metallica",
+                "value": "org3",
+              },
+            ]
+          }
+          placeholder="Select an organization..."
+          styles={
+            Object {
+              "clearIndicator": [Function],
+              "container": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "indicatorSeparator": [Function],
+              "indicatorsContainer": [Function],
+              "menuList": [Function],
+              "menuPortal": [Function],
+              "option": [Function],
+              "singleValue": [Function],
+              "valueContainer": [Function],
+            }
+          }
+        />
+        <AppHeaderWrapper__LogoutButton>
+          Log Out
+        </AppHeaderWrapper__LogoutButton>
+      </AppHeaderWrapper__HeaderRightContentWrapper>
+    </AppHeaderWrapper__AppHeaderInnerWrapper>
+  </AppHeaderWrapper__AppHeaderOuterWrapper>
+</Fragment>
+`;
+
+exports[`AppHeaderWrapper snapshots user + navigation + select 1`] = `
+<Fragment>
+  <AppHeaderWrapper__AppHeaderOuterWrapper>
+    <AppHeaderWrapper__AppHeaderInnerWrapper>
+      <AppHeaderWrapper__NavigationContentWrapper>
+        <a
+          className="nav-root"
+          href="/home"
+          key=".$home"
+        >
+          <AppIcon />
+          <AppTitle
+            title="Home"
+          />
+        </a>
+        <a
+          href="/tab1"
+          key=".$tab1"
+        >
+          Tab1
+        </a>
+        <a
+          href="/tab2"
+          key=".$tab2"
+        >
+          Tab2
+        </a>
+      </AppHeaderWrapper__NavigationContentWrapper>
+      <AppHeaderWrapper__HeaderRightContentWrapper>
+        <span>
+          jest@openlattice.com
+        </span>
+        <Select
+          isClearable={false}
+          isMulti={false}
+          menuPortalTarget={<body />}
+          options={
+            Array [
+              Object {
+                "label": "OpenLattice",
+                "value": "org1",
+              },
+              Object {
+                "label": "JustBeamIt",
+                "value": "org2",
+              },
+              Object {
+                "label": "Metallica",
+                "value": "org3",
+              },
+            ]
+          }
+          placeholder="Select an organization..."
+          styles={
+            Object {
+              "clearIndicator": [Function],
+              "container": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "indicatorSeparator": [Function],
+              "indicatorsContainer": [Function],
+              "menuList": [Function],
+              "menuPortal": [Function],
+              "option": [Function],
+              "singleValue": [Function],
+              "valueContainer": [Function],
+            }
+          }
+        />
+        <AppHeaderWrapper__LogoutButton>
+          Log Out
+        </AppHeaderWrapper__LogoutButton>
+      </AppHeaderWrapper__HeaderRightContentWrapper>
+    </AppHeaderWrapper__AppHeaderInnerWrapper>
+  </AppHeaderWrapper__AppHeaderOuterWrapper>
+</Fragment>
+`;
+
+exports[`AppHeaderWrapper snapshots user + navigation 1`] = `
+<Fragment>
+  <AppHeaderWrapper__AppHeaderOuterWrapper>
+    <AppHeaderWrapper__AppHeaderInnerWrapper>
+      <AppHeaderWrapper__NavigationContentWrapper>
+        <a
+          className="nav-root"
+          href="/home"
+          key=".$home"
+        >
+          <AppIcon />
+          <AppTitle
+            title="Home"
+          />
+        </a>
+        <a
+          href="/tab1"
+          key=".$tab1"
+        >
+          Tab1
+        </a>
+        <a
+          href="/tab2"
+          key=".$tab2"
+        >
+          Tab2
+        </a>
+      </AppHeaderWrapper__NavigationContentWrapper>
+      <AppHeaderWrapper__HeaderRightContentWrapper>
+        <span>
+          jest@openlattice.com
+        </span>
+        <AppHeaderWrapper__LogoutButton>
+          Log Out
+        </AppHeaderWrapper__LogoutButton>
+      </AppHeaderWrapper__HeaderRightContentWrapper>
+    </AppHeaderWrapper__AppHeaderInnerWrapper>
+  </AppHeaderWrapper__AppHeaderOuterWrapper>
+</Fragment>
+`;
+
+exports[`AppHeaderWrapper snapshots user 1`] = `
+<Fragment>
+  <AppHeaderWrapper__AppHeaderOuterWrapper>
+    <AppHeaderWrapper__AppHeaderInnerWrapper>
+      <AppHeaderWrapper__NavigationContentWrapper />
+      <AppHeaderWrapper__HeaderRightContentWrapper>
+        <span>
+          jest@openlattice.com
+        </span>
+        <AppHeaderWrapper__LogoutButton>
+          Log Out
+        </AppHeaderWrapper__LogoutButton>
+      </AppHeaderWrapper__HeaderRightContentWrapper>
+    </AppHeaderWrapper__AppHeaderInnerWrapper>
+  </AppHeaderWrapper__AppHeaderOuterWrapper>
+</Fragment>
+`;

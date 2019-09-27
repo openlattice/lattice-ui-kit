@@ -229,7 +229,7 @@ type State = {
   shouldWrapNav :boolean;
 };
 
-class AppHeaderContainer extends Component<Props, State> {
+class AppHeaderWrapper extends Component<Props, State> {
 
   headerRef :{ current :null | HTMLElement } = React.createRef();
   nav1Ref :{ current :null | HTMLElement } = React.createRef();
@@ -401,4 +401,8 @@ class AppHeaderContainer extends Component<Props, State> {
   }
 }
 
-export default AppHeaderContainer;
+export default AppHeaderWrapper;
+export {
+  AppHeaderInnerWrapper,
+  AppHeaderOuterWrapper,
+};
