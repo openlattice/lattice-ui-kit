@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag snapshots should match snapshot 1`] = `
+.c0 {
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 5px;
+  padding: 0 5px;
+  text-transform: uppercase;
+  background-color: #f0f0f7;
+  color: #555e6f;
+}
+
+<Tag>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Tag-sc-1sp059-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "border-radius:3px;font-size:12px;font-weight:700;margin:0 5px;padding:0 5px;text-transform:uppercase;background-color:",
+            [Function],
+            ";color:",
+            [Function],
+            ";",
+          ],
+        },
+        "displayName": "Tag",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Tag-sc-1sp059-0",
+        "target": "span",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <span
+      className="c0"
+    >
+      tag
+    </span>
+  </StyledComponent>
+</Tag>
+`;
