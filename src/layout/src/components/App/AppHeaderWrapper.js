@@ -219,7 +219,7 @@ type Props = {
     isDisabled :boolean;
     isLoading :boolean;
     onChange :(selectedOption :Object) => void;
-    organizations :Array | Object | List | Map;
+    organizations :any;
     selectedOrganizationId :UUID;
   };
   user :?string;
