@@ -83,7 +83,7 @@ const ProfileGrid = styled.div`
   }
 `;
 
-const mockData = [
+const mockMetallica = [
   Map({
     index: '1',
     FirstName: 'James',
@@ -110,6 +110,12 @@ const mockData = [
   }),
 ];
 
+const mockOrgs = Map({
+  org1: { id: 'org1', title: 'OpenLattice' },
+  org2: { id: 'org2', title: 'JustBeamIt' },
+  org3: { id: 'org3', title: 'Metallica' },
+});
+
 storiesOf('App', module)
   .add('search section', () => (
     <HashRouter>
@@ -129,10 +135,10 @@ storiesOf('App', module)
         </SearchContentWrapper>
         <StoryAppContentWrapper contentWidth={1200}>
           <CardStack>
-            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockData[0]} /></CardSegment></Card>
-            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockData[1]} /></CardSegment></Card>
-            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockData[2]} /></CardSegment></Card>
-            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockData[3]} /></CardSegment></Card>
+            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockMetallica[0]} /></CardSegment></Card>
+            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockMetallica[1]} /></CardSegment></Card>
+            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockMetallica[2]} /></CardSegment></Card>
+            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockMetallica[3]} /></CardSegment></Card>
           </CardStack>
         </StoryAppContentWrapper>
       </StoryAppContainerWrapper>
@@ -171,6 +177,46 @@ storiesOf('App', module)
               </CardSegment>
             </Card>
           </ProfileGrid>
+        </StoryAppContentWrapper>
+      </StoryAppContainerWrapper>
+    </HashRouter>
+  ))
+  .add('organizations select', () => (
+    <HashRouter>
+      <StoryAppContainerWrapper>
+        <StoryAppHeaderWrapper
+            icon={OpenLatticeLogo}
+            logout={action('clicked logout')}
+            organizationsSelect={{
+              onChange: action('org select'),
+              organizations: mockOrgs,
+            }}
+            user="storybook@openlattice.com">
+          <NavLink to="/home" />
+          <NavLink to="/tab2">Tab 1</NavLink>
+          <NavLink to="/tab3">Tab 2</NavLink>
+        </StoryAppHeaderWrapper>
+      </StoryAppContainerWrapper>
+    </HashRouter>
+  ))
+  .add('automatic nav wrapping', () => (
+    <HashRouter>
+      <StoryAppContainerWrapper>
+        <StoryAppHeaderWrapper
+            icon={OpenLatticeLogo}
+            logout={action('clicked logout')}
+            organizationsSelect={{
+              onChange: action('org select'),
+              organizations: mockOrgs,
+            }}
+            user="storybook@openlattice.com">
+          <NavLink to="/home" />
+          <NavLink to="/tab2">Data</NavLink>
+          <NavLink to="/tab4">Admin</NavLink>
+          <NavLink to="/tab5">Settings</NavLink>
+        </StoryAppHeaderWrapper>
+        <StoryAppContentWrapper>
+          <p style={{ textAlign: 'center' }}>resize the browser to see how the navigation will wrap below the header</p>
         </StoryAppContentWrapper>
       </StoryAppContainerWrapper>
     </HashRouter>
