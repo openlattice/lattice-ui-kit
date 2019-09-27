@@ -3,9 +3,9 @@
 
 import { css } from 'styled-components';
 
-const getStyleVariation = (prop :string, values :Object) => {
+const getStyleVariation = (key :string, values :Object, defaultValue :any) => {
   return (props :Object) :any => {
-    return props[prop] && values[props[prop]];
+    return (props[key] && values[props[key]]) || defaultValue;
   };
 };
 

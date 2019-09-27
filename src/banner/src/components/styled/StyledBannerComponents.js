@@ -25,18 +25,18 @@ const backgroundColor = getStyleVariation('mode', {
   warning: YELLOW_1
 });
 
-const getMaxHeight = (props :ContainerProps) => {
-  const { maxHeight, isOpen } = props;
-  if (!isOpen) return '0';
-  return maxHeight;
-};
-
 const getFontColor = getStyleVariation('mode', {
   default: WHITE,
   success: WHITE,
   danger: WHITE,
   warning: NEUTRALS[0]
 });
+
+const getMaxHeight = (props :ContainerProps) => {
+  const { maxHeight, isOpen } = props;
+  if (!isOpen) return '0';
+  return maxHeight;
+};
 
 const Container = styled.div`
   background-color: ${backgroundColor};
