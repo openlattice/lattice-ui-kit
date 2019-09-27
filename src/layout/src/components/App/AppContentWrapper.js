@@ -6,7 +6,7 @@ import React from 'react';
 import type { Node } from 'react';
 
 import styled, { css } from 'styled-components';
-import { APP_CONTAINER_MAX_WIDTH, APP_CONTAINER_MIN_WIDTH } from '../../../../style/Sizes';
+import { APP_CONTAINER_MAX_WIDTH, APP_CONTAINER_MIN_WIDTH, APP_CONTENT_PADDING } from '../../../../style/Sizes';
 
 type Props = {
   bgColor :?string;
@@ -29,6 +29,7 @@ const getOuterComputedStyles = ({ bgColor } :Props) => {
 
 const AppContentOuterWrapper = styled.div`
   display: flex;
+  flex-direction: row;
   flex: 0 0 auto;
   justify-content: center;
   /*overflow: hidden;*/ /* TODO: make it work with overflow hidden */
@@ -38,13 +39,15 @@ const AppContentOuterWrapper = styled.div`
 
 const getInnerComputedStyles = ({ contentWidth } :Props) => {
 
-  let finalMaxWidth = APP_CONTAINER_MAX_WIDTH;
+  let finalMaxWidth :number = APP_CONTAINER_MAX_WIDTH;
+  let finalMinWidth :number = APP_CONTAINER_MIN_WIDTH;
   let finalWidth;
   if (contentWidth) {
     // setting "max-width" along with "width: 100%" instead of just "width" achieves the same effect when the browser
     // is really wide, however, it additionally allows the content width to shrink with the browser, which I think
     // would be desired behavior
     finalMaxWidth = contentWidth;
+    finalMinWidth = 0;
     finalWidth = '100%';
   }
 
@@ -54,7 +57,7 @@ const getInnerComputedStyles = ({ contentWidth } :Props) => {
 
   return css`
     max-width: ${finalMaxWidth}px;
-    min-width: ${APP_CONTAINER_MIN_WIDTH}px;
+    min-width: ${finalMinWidth}px;
     width: ${finalWidth};
   `;
 };
@@ -64,7 +67,7 @@ const AppContentInnerWrapper = styled.div`
   flex: 1 0 auto;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 30px;
+  padding: ${APP_CONTENT_PADDING}px;
   position: relative;
   ${getInnerComputedStyles}
 `;
