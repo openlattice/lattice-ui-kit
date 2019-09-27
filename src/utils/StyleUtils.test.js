@@ -42,6 +42,11 @@ describe('StyleUtils', () => {
       expect(backgroundColor(mockPropsInvalid)).toBeUndefined();
     });
 
+    test('should return defaultValue for non matching variation', () => {
+      const backgroundColor = getStyleVariation('mode', mockVariations, 'default');
+      expect(backgroundColor(mockPropsInvalid)).toEqual('default');
+    });
+
     test('styled component should apply style for matching variation', () => {
       const backgroundColor = getStyleVariation('mode', mockVariations);
       const StyledDiv = styled.div`
