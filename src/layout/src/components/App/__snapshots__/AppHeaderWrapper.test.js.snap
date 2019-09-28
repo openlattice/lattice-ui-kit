@@ -4,7 +4,6 @@ exports[`AppHeaderWrapper snapshots default 1`] = `
 <Fragment>
   <AppHeaderWrapper__AppHeaderOuterWrapper>
     <AppHeaderWrapper__AppHeaderInnerWrapper>
-      <AppHeaderWrapper__NavigationContentWrapper />
       <AppHeaderWrapper__HeaderRightContentWrapper>
         <AppHeaderWrapper__LogoutButton>
           Log Out
@@ -176,7 +175,6 @@ exports[`AppHeaderWrapper snapshots select 1`] = `
 <Fragment>
   <AppHeaderWrapper__AppHeaderOuterWrapper>
     <AppHeaderWrapper__AppHeaderInnerWrapper>
-      <AppHeaderWrapper__NavigationContentWrapper />
       <AppHeaderWrapper__HeaderRightContentWrapper>
         <Select
           isClearable={false}
@@ -347,7 +345,6 @@ exports[`AppHeaderWrapper snapshots user 1`] = `
 <Fragment>
   <AppHeaderWrapper__AppHeaderOuterWrapper>
     <AppHeaderWrapper__AppHeaderInnerWrapper>
-      <AppHeaderWrapper__NavigationContentWrapper />
       <AppHeaderWrapper__HeaderRightContentWrapper>
         <span>
           jest@openlattice.com
