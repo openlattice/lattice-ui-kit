@@ -304,7 +304,12 @@ class AppHeaderWrapper extends Component<Props, State> {
     // initially on mount, we know the lower nav will not render and the ref will be null
     const header = this.headerRef.current;
     if (header && header.offsetWidth < header.scrollWidth) {
-      this.setState({ shouldWrapNav: true });
+      // ensure "shouldWrapNav" has not already been set to true to prevent infinite renders in the case when the nav
+      // has already been wrapped but there's still overflow in the header (when the browser window is very small)
+      const { shouldWrapNav } = this.state;
+      if (!shouldWrapNav) {
+        this.setState({ shouldWrapNav: true });
+      }
     }
   }
 
