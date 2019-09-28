@@ -259,6 +259,11 @@ class AppHeaderWrapper extends Component<Props, State> {
 
   handleOnResize = () => {
 
+    const { children } = this.props;
+    if (Children.count(children) <= 1) {
+      return;
+    }
+
     const header = this.headerRef.current;
     const right = this.rightRef.current;
     const nav1 = this.nav1Ref.current;
@@ -290,6 +295,11 @@ class AppHeaderWrapper extends Component<Props, State> {
   }
 
   wrapNavIfNecessary = () => {
+
+    const { children } = this.props;
+    if (Children.count(children) <= 1) {
+      return;
+    }
 
     // initially on mount, we know the lower nav will not render and the ref will be null
     const header = this.headerRef.current;
@@ -358,30 +368,36 @@ class AppHeaderWrapper extends Component<Props, State> {
     const { children, className, icon } = this.props;
     const { shouldWrapNav } = this.state;
 
+    const childrenCount = Children.count(children);
+
     return (
       <>
         <AppHeaderOuterWrapper className={className} ref={this.headerRef}>
           <AppHeaderInnerWrapper>
-            <NavigationContentWrapper ref={this.nav1Ref}>
-              {
-                Children.map(children, (child, index) => {
-                  if (index === 0) {
-                    return React.cloneElement(
-                      child,
-                      { ...child.props, className: NAV_ROOT },
-                      React.createElement(AppIcon, { icon }),
-                      React.createElement(AppTitle, { title: child.props.children }),
-                    );
+            {
+              childrenCount > 0 && (
+                <NavigationContentWrapper ref={this.nav1Ref}>
+                  {
+                    Children.map(children, (child, index) => {
+                      if (index === 0) {
+                        return React.cloneElement(
+                          child,
+                          { ...child.props, className: NAV_ROOT },
+                          React.createElement(AppIcon, { icon }),
+                          React.createElement(AppTitle, { title: child.props.children }),
+                        );
+                      }
+                      return shouldWrapNav ? null : child;
+                    })
                   }
-                  return shouldWrapNav ? null : child;
-                })
-              }
-            </NavigationContentWrapper>
+                </NavigationContentWrapper>
+              )
+            }
             {this.renderHeaderRight()}
           </AppHeaderInnerWrapper>
         </AppHeaderOuterWrapper>
         {
-          shouldWrapNav && (
+          childrenCount > 1 && shouldWrapNav && (
             <AppHeaderOuterWrapper className={className}>
               <AppHeaderInnerWrapper>
                 <NavigationContentWrapper ref={this.nav2Ref}>

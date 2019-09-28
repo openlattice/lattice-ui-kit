@@ -220,4 +220,13 @@ storiesOf('App', module)
         </StoryAppContentWrapper>
       </StoryAppContainerWrapper>
     </HashRouter>
+  ))
+  .add('without navigation', () => (
+    <HashRouter>
+      <StoryAppContainerWrapper>
+        <StoryAppHeaderWrapper
+            logout={action('clicked logout')}
+            user="storybook@openlattice.com" />
+      </StoryAppContainerWrapper>
+    </HashRouter>
   ));
