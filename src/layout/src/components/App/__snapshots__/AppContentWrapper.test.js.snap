@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppContentWrapper snapshots should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 30px;
+  position: relative;
+  max-width: 2000px;
+  min-width: 1020px;
+}
+
+<AppContentWrapper>
+  <AppContentWrapper__AppContentOuterWrapper>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "AppContentWrapper__AppContentOuterWrapper-sc-1x3t0wn-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:flex;flex-direction:row;flex:0 0 auto;justify-content:center;position:relative;",
+              [Function],
+            ],
+          },
+          "displayName": "AppContentWrapper__AppContentOuterWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "AppContentWrapper__AppContentOuterWrapper-sc-1x3t0wn-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <AppContentWrapper__AppContentInnerWrapper>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "AppContentWrapper__AppContentInnerWrapper-sc-1x3t0wn-1",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "display:flex;flex:1 0 auto;flex-direction:column;justify-content:flex-start;padding:",
+                    "30",
+                    "px;position:relative;",
+                    [Function],
+                  ],
+                },
+                "displayName": "AppContentWrapper__AppContentInnerWrapper",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "AppContentWrapper__AppContentInnerWrapper-sc-1x3t0wn-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            />
+          </StyledComponent>
+        </AppContentWrapper__AppContentInnerWrapper>
+      </div>
+    </StyledComponent>
+  </AppContentWrapper__AppContentOuterWrapper>
+</AppContentWrapper>
+`;

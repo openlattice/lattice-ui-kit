@@ -1,17 +1,20 @@
 const path = require('path');
-const LIB_PATHS = require('../lib/paths.config.js');
+const Webpack = require('webpack');
 
-const BABEL_CONFIG = path.resolve(__dirname, '../babel/babel.config.js');
-const STORYBOOK_CONFIG = path.resolve(__dirname);
+const LIB_PATHS = require('../lib/paths.config.js');
+const PACKAGE = require('../../package.json');
 
 module.exports = ({ config }) => {
+
+  const BABEL_CONFIG = path.resolve(__dirname, '../babel/babel.config.js');
+  const STORYBOOK_CONFIG = path.resolve(__dirname);
 
   const BABEL_LOADER = {
     test: /\.js$/,
     exclude: /node_modules/,
     include: [
       LIB_PATHS.ABS.SOURCE,
-      STORYBOOK_CONFIG
+      STORYBOOK_CONFIG,
     ],
     use: {
       loader: 'babel-loader',
@@ -29,6 +32,14 @@ module.exports = ({ config }) => {
     }
   };
 
+  /*
+   * plugins
+   */
+
+  const DEFINE_PLUGIN = new Webpack.DefinePlugin({
+    __VERSION__: JSON.stringify(`v${PACKAGE.version}`),
+  });
+
   return {
     ...config,
     module: {
@@ -38,7 +49,7 @@ module.exports = ({ config }) => {
         FILE_LOADER_ASSETS,
         {
           test: /\.stories\.jsx?$/,
-          loaders: [require.resolve('@storybook/addon-storysource/loader')],
+          loaders: [require.resolve('@storybook/source-loader')],
           enforce: 'pre',
         },
         {
@@ -47,5 +58,9 @@ module.exports = ({ config }) => {
         }
       ],
     },
+    plugins: [
+      ...config.plugins,
+      DEFINE_PLUGIN,
+    ],
   };
 };

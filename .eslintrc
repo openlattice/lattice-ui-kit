@@ -136,6 +136,7 @@
     ],
     "react/jsx-indent-props": ["error", 4],
     "react/jsx-one-expression-per-line": "warn",
+    "react/no-did-update-set-state": "warn",
     "react/prefer-stateless-function": "warn",
     "react/prop-types": "warn",
     "react/require-default-props": [
