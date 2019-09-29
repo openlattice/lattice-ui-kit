@@ -1,16 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+
 import { Button } from '../../button';
+import { PURPLES } from '../../colors';
 import {
   Card,
   CardHeader,
   CardSegment,
-  CardStack
+  CardStack,
 } from '../index';
-import { PURPLES } from '../../colors';
 
-storiesOf('Layout', module)
+storiesOf('Card', module)
   .add('Card', () => (
     <CardStack>
       <Card>Blank Card</Card>

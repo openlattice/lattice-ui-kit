@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppContainerWrapper snapshots should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  min-width: 1020px;
+  padding: 0;
+}
+
+<AppContainerWrapper>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "AppContainerWrapper-urn6g2-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "display:flex;flex-direction:column;height:100%;margin:0;min-width:",
+            "1020",
+            "px;padding:0;",
+          ],
+        },
+        "displayName": "AppContainerWrapper",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "AppContainerWrapper-urn6g2-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0"
+    />
+  </StyledComponent>
+</AppContainerWrapper>
+`;

@@ -12,5 +12,10 @@
 #   https://github.com/facebook/flow/blob/master/lib/streams.js
 #
 [ignore]
-./build/.*
 .*/node_modules/.*
+<PROJECT_ROOT>/build/.*
+<PROJECT_ROOT>/config/.*
+.*/node_modules/immutable/.*
+
+[libs]
+./src/types.js.flow
