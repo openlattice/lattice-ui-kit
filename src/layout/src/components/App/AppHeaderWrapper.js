@@ -10,6 +10,8 @@ import isPlainObject from 'lodash/isPlainObject';
 import styled from 'styled-components';
 import { get, isCollection } from 'immutable';
 
+import AppNavigationWrapper, { APP_NAV_ROOT, NavigationContentWrapper } from './AppNavigationWrapper';
+import OpenLatticeAppIcon from '../../../../assets/images/ol_icon.png';
 import * as Colors from '../../../../colors';
 import { Button } from '../../../../button';
 import { Select } from '../../../../select';
@@ -17,7 +19,6 @@ import { AppContentInnerWrapper, AppContentOuterWrapper } from './AppContentWrap
 import { APP_CONTENT_PADDING } from '../../../../style/Sizes';
 
 const { NEUTRALS, PURPLES, WHITE } = Colors;
-const NAV_ROOT :string = 'nav-root';
 
 const AppHeaderOuterWrapper = styled(AppContentOuterWrapper).attrs({
   as: 'header',
@@ -54,71 +55,6 @@ const HeaderRightContentWrapper = styled.div`
 
   > * {
     margin-left: 30px;
-  }
-`;
-
-const NavigationContentWrapper = styled.nav`
-  display: flex;
-  flex: 0 0 auto;
-  height: 100%;
-  min-height: 60px;
-  justify-content: flex-start;
-
-  > a {
-    align-items: center;
-    border-bottom: 3px solid transparent;
-    color: ${NEUTRALS[1]};
-    display: flex;
-    font-size: 12px;
-    font-weight: normal;
-    justify-content: center;
-    letter-spacing: normal;
-    line-height: 18px; /* font-size (12px) * desired line-height (1.5) = 18px */
-    margin: 0 0 0 30px;
-    outline: none;
-    padding: 3px 3px 0px 3px;
-    text-align: center;
-    text-decoration: none;
-
-    &:first-child {
-      margin: 0;
-    }
-
-    &:focus {
-      outline: none;
-      text-decoration: none;
-    }
-
-    &:hover {
-      border-bottom: 3px solid ${NEUTRALS[2]};
-      color: ${NEUTRALS[0]};
-      cursor: pointer;
-    }
-
-    &.active {
-      border-bottom: 3px solid ${PURPLES[1]};
-      color: ${PURPLES[1]};
-    }
-
-    &.${NAV_ROOT} {
-      border: none;
-      margin: 0;
-      padding: 0;
-
-      > h1 {
-        color: ${NEUTRALS[0]};
-        font-size: 14px;
-        font-weight: 600;
-        letter-spacing: normal;
-        margin: 0;
-        padding: 0;
-      }
-
-      > img {
-        height: 26px;
-        margin-right: 10px;
-      }
-    }
   }
 `;
 
@@ -197,8 +133,8 @@ const organizationsSelectStyles = {
   valueContainer: (base) => ({ ...base, padding: '0 10px' }),
 };
 
-const AppIcon = ({ icon } :Object) => (
-  icon ? <img alt="OpenLattice Application Icon" src={icon} /> : null
+const AppIcon = ({ icon = OpenLatticeAppIcon } :Object) => (
+  <img alt="OpenLattice Application Icon" src={icon} />
 );
 
 const AppTitle = ({ title = 'OpenLattice' } :Object) => (
@@ -206,9 +142,10 @@ const AppTitle = ({ title = 'OpenLattice' } :Object) => (
 );
 
 type Props = {
+  appIcon :any;
+  appTitle :string;
   children :Node;
   className :?string;
-  icon :any;
   logout :() => void;
   organizationsSelect :{
     isDisabled :boolean;
@@ -259,8 +196,8 @@ class AppHeaderWrapper extends Component<Props, State> {
 
   handleOnResize = () => {
 
-    const { children } = this.props;
-    if (Children.count(children) <= 1) {
+    const { ignoreNavigation } = this.processChildren();
+    if (ignoreNavigation) {
       return;
     }
 
@@ -296,8 +233,8 @@ class AppHeaderWrapper extends Component<Props, State> {
 
   wrapNavIfNecessary = () => {
 
-    const { children } = this.props;
-    if (Children.count(children) <= 1) {
+    const { ignoreNavigation } = this.processChildren();
+    if (ignoreNavigation) {
       return;
     }
 
@@ -311,6 +248,32 @@ class AppHeaderWrapper extends Component<Props, State> {
         this.setState({ shouldWrapNav: true });
       }
     }
+  }
+
+  processChildren = () => {
+
+    const { children } = this.props;
+
+    let navigationChildrenCount :number = 0;
+    let navigationComponentDefined :boolean = false;
+
+    if (Children.count(children) > 0) {
+      Children.forEach(children, (child, index) => {
+        // we expect the first child to be <AppNavigationWrapper />
+        if (index === 0 && child.type.name === AppNavigationWrapper.name) {
+          navigationChildrenCount = Children.count(child.props.children);
+          // we won't handle navigation wrapping if <AppNavigationWrapper /> has the "component" prop
+          if (child.props.component !== null && child.props.component !== undefined) {
+            navigationComponentDefined = true;
+          }
+        }
+      });
+    }
+
+    return {
+      navigationChildrenCount,
+      ignoreNavigation: navigationChildrenCount <= 1 || navigationComponentDefined,
+    };
   }
 
   renderHeaderRight = () => {
@@ -370,46 +333,75 @@ class AppHeaderWrapper extends Component<Props, State> {
 
   render() {
 
-    const { children, className, icon } = this.props;
+    const {
+      appIcon,
+      appTitle,
+      children,
+      className,
+    } = this.props;
     const { shouldWrapNav } = this.state;
 
-    const childrenCount = Children.count(children);
+    const { navigationChildrenCount } = this.processChildren();
 
     return (
       <>
         <AppHeaderOuterWrapper className={className} ref={this.headerRef}>
           <AppHeaderInnerWrapper>
             {
-              childrenCount > 0 && (
-                <NavigationContentWrapper ref={this.nav1Ref}>
-                  {
-                    Children.map(children, (child, index) => {
-                      if (index === 0) {
-                        return React.cloneElement(
-                          child,
-                          { ...child.props, className: NAV_ROOT },
-                          React.createElement(AppIcon, { icon }),
-                          React.createElement(AppTitle, { title: child.props.children }),
-                        );
-                      }
-                      return shouldWrapNav ? null : child;
-                    })
-                  }
+              navigationChildrenCount === 0 && (
+                <NavigationContentWrapper>
+                  <a href={window.location.href} className={APP_NAV_ROOT}>
+                    <AppIcon icon={appIcon} />
+                    <AppTitle title={appTitle} />
+                  </a>
                 </NavigationContentWrapper>
               )
+            }
+            {
+              navigationChildrenCount > 0 && Children.map(children, (child, index) => {
+                // the first child is expected to be <AppNavigationWrapper />
+                if (index === 0 && child.type.name === AppNavigationWrapper.name) {
+                  return (
+                    <NavigationContentWrapper ref={this.nav1Ref}>
+                      {
+                        Children.map(child.props.children, (navChild, navIndex) => {
+                          // first child is expected to be the root route, i.e. the app icon + app title
+                          if (navIndex === 0) {
+                            return React.cloneElement(
+                              navChild,
+                              { ...navChild.props, className: APP_NAV_ROOT },
+                              React.createElement(AppIcon, { icon: appIcon }),
+                              React.createElement(AppTitle, { title: navChild.props.children }),
+                            );
+                          }
+                          return shouldWrapNav ? null : navChild;
+                        })
+                      }
+                    </NavigationContentWrapper>
+                  );
+                }
+                return child;
+              })
             }
             {this.renderHeaderRight()}
           </AppHeaderInnerWrapper>
         </AppHeaderOuterWrapper>
         {
-          childrenCount > 1 && shouldWrapNav && (
-            <AppHeaderOuterWrapper className={className}>
-              <AppHeaderInnerWrapper>
-                <NavigationContentWrapper ref={this.nav2Ref}>
-                  {Children.map(children, (child, index) => (index !== 0 ? child : null))}
-                </NavigationContentWrapper>
-              </AppHeaderInnerWrapper>
-            </AppHeaderOuterWrapper>
+          navigationChildrenCount > 1 && shouldWrapNav && (
+            <AppNavigationWrapper className={className} ref={this.nav2Ref}>
+              {
+                Children.map(children, (child, index) => {
+                  // the first child is expected to be <AppNavigationWrapper />
+                  if (index === 0 && child.type.name === AppNavigationWrapper.name) {
+                    // first child is expected to be the root route, i.e. the app icon + app title
+                    return Children.map(child.props.children, (navChild, navIndex) => (
+                      navIndex !== 0 ? navChild : null
+                    ));
+                  }
+                  return null;
+                })
+              }
+            </AppNavigationWrapper>
           )
         }
       </>
