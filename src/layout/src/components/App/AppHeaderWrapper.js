@@ -196,8 +196,8 @@ class AppHeaderWrapper extends Component<Props, State> {
 
   handleOnResize = () => {
 
-    const { ignoreNavigation } = this.processChildren();
-    if (ignoreNavigation) {
+    const { navigationChildrenCount } = this.processChildren();
+    if (navigationChildrenCount <= 1) {
       return;
     }
 
@@ -233,8 +233,8 @@ class AppHeaderWrapper extends Component<Props, State> {
 
   wrapNavIfNecessary = () => {
 
-    const { ignoreNavigation } = this.processChildren();
-    if (ignoreNavigation) {
+    const { navigationChildrenCount } = this.processChildren();
+    if (navigationChildrenCount <= 1) {
       return;
     }
 
@@ -255,7 +255,7 @@ class AppHeaderWrapper extends Component<Props, State> {
     const { children } = this.props;
 
     let navigationChildrenCount :number = 0;
-    let navigationComponentDefined :boolean = false;
+    // let navigationComponentDefined :boolean = false;
 
     if (Children.count(children) > 0) {
       Children.forEach(children, (child, index) => {
@@ -263,16 +263,15 @@ class AppHeaderWrapper extends Component<Props, State> {
         if (index === 0 && child.type.name === AppNavigationWrapper.name) {
           navigationChildrenCount = Children.count(child.props.children);
           // we won't handle navigation wrapping if <AppNavigationWrapper /> has the "component" prop
-          if (child.props.component !== null && child.props.component !== undefined) {
-            navigationComponentDefined = true;
-          }
+          // if (child.props.component !== null && child.props.component !== undefined) {
+          //   navigationComponentDefined = true;
+          // }
         }
       });
     }
 
     return {
       navigationChildrenCount,
-      ignoreNavigation: navigationChildrenCount <= 1 || navigationComponentDefined,
     };
   }
 
@@ -340,7 +339,6 @@ class AppHeaderWrapper extends Component<Props, State> {
       className,
     } = this.props;
     const { shouldWrapNav } = this.state;
-
     const { navigationChildrenCount } = this.processChildren();
 
     return (
@@ -348,6 +346,17 @@ class AppHeaderWrapper extends Component<Props, State> {
         <AppHeaderOuterWrapper className={className} ref={this.headerRef}>
           <AppHeaderInnerWrapper>
             {
+              /*
+               * this block is expected to handle the following examples:
+               *
+               *   1. this is expected to be common
+               *     <AppHeaderWrapper ... />
+               *
+               *   2. this is unlikely to be common and should be avoided
+               *     <AppHeaderWrapper ...>
+               *       <AppNavigationWrapper />
+               *     </AppHeaderWrapper>
+               */
               navigationChildrenCount === 0 && (
                 <NavigationContentWrapper>
                   <a href={window.location.href} className={APP_NAV_ROOT}>
@@ -358,14 +367,34 @@ class AppHeaderWrapper extends Component<Props, State> {
               )
             }
             {
+              /*
+               * this block is expected to handle the following examples. additionally, only example 2 is relevant when
+               * the header is handling automatic navigation wraping. nothing fancy happens with example 1.
+               *
+               *   1.
+               *     <AppHeaderWrapper ...>
+               *       <AppNavigationWrapper>
+               *         <NavLink to="/home" />
+               *       </AppNavigationWrapper>
+               *     </AppHeaderWrapper>
+               *
+               *   2.
+               *     <AppHeaderWrapper ...>
+               *       <AppNavigationWrapper>
+               *         <NavLink to="/home" />
+               *         <NavLink to="/tab1">Tab 1</NavLink>
+               *         <NavLink to="/tab2">Tab 2</NavLink>
+               *       </AppNavigationWrapper>
+               *     </AppHeaderWrapper>
+               */
               navigationChildrenCount > 0 && Children.map(children, (child, index) => {
-                // the first child is expected to be <AppNavigationWrapper />
+                // the 1st child is expected to be <AppNavigationWrapper />
                 if (index === 0 && child.type.name === AppNavigationWrapper.name) {
                   return (
                     <NavigationContentWrapper ref={this.nav1Ref}>
                       {
                         Children.map(child.props.children, (navChild, navIndex) => {
-                          // first child is expected to be the root route, i.e. the app icon + app title
+                          // the 1st child is expected to be the root route, i.e. the app icon + app title
                           if (navIndex === 0) {
                             return React.cloneElement(
                               navChild,
@@ -387,13 +416,25 @@ class AppHeaderWrapper extends Component<Props, State> {
           </AppHeaderInnerWrapper>
         </AppHeaderOuterWrapper>
         {
+          /*
+           * this block is only relevant when the header is handling automatic navigation wraping, and it only applies
+           * to the following example:
+           *
+           *   <AppHeaderWrapper ...>
+           *     <AppNavigationWrapper>
+           *       <NavLink to="/home" />
+           *       <NavLink to="/tab1">Tab 1</NavLink>
+           *       <NavLink to="/tab2">Tab 2</NavLink>
+           *     </AppNavigationWrapper>
+           *   </AppHeaderWrapper>
+           */
           navigationChildrenCount > 1 && shouldWrapNav && (
             <AppNavigationWrapper className={className} ref={this.nav2Ref}>
               {
                 Children.map(children, (child, index) => {
-                  // the first child is expected to be <AppNavigationWrapper />
+                  // the 1st child is expected to be <AppNavigationWrapper />
                   if (index === 0 && child.type.name === AppNavigationWrapper.name) {
-                    // first child is expected to be the root route, i.e. the app icon + app title
+                    // the 1st child is expected to be the root route, i.e. the app icon + app title
                     return Children.map(child.props.children, (navChild, navIndex) => (
                       navIndex !== 0 ? navChild : null
                     ));
