@@ -18,20 +18,24 @@ import {
 
 const { WHITE } = Colors;
 
+// have to use the optional prop syntax because of React.forwardRef below
+// https://github.com/facebook/flow/issues/7467
 type Props = {
   children :Node;
-  className :?string;
-  drawer :boolean;
-  forwardedRef :any;
-  headerBounds :?DOMRect;
-  isOpen :?boolean;
-  onClose :?() => void;
+  className ?:string;
+  drawer ?:boolean;
+  forwardedRef ?:any;
+  headerBounds ?:ClientRect;
+  isOpen ?:boolean;
+  onClose ?:() => void;
 };
 
 class AppNavigationWrapper extends Component<Props> {
 
   static defaultProps = {
+    className: undefined,
     drawer: false,
+    forwardedRef: undefined,
     headerBounds: undefined,
     isOpen: false,
     onClose: undefined,
@@ -70,7 +74,7 @@ class AppNavigationWrapper extends Component<Props> {
         return null;
       }
 
-      const top = headerBounds ? (headerBounds.height + headerBounds.y) : 0;
+      const top = headerBounds ? (headerBounds.height + headerBounds.top) : 0;
       return (
         <AppNavigationOuterWrapper borderless className={className}>
           <AppNavigationInnerWrapper vertical>
@@ -96,7 +100,8 @@ class AppNavigationWrapper extends Component<Props> {
   }
 }
 
-export default React.forwardRef((props, ref) => (
+// https://github.com/facebook/flow/issues/7467
+export default React.forwardRef<Props, HTMLElement>((props, ref) => (
   <AppNavigationWrapper
       className={props.className}
       drawer={props.drawer}

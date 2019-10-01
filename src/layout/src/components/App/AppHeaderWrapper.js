@@ -150,7 +150,7 @@ type Props = {
   appIcon :any;
   appTitle :string;
   children :Node;
-  className :?string;
+  className :string;
   logout :() => void;
   organizationsSelect :{
     isDisabled :boolean;
@@ -159,7 +159,7 @@ type Props = {
     organizations :any;
     selectedOrganizationId :UUID;
   };
-  user :?string;
+  user :string;
 };
 
 type State = {
@@ -173,6 +173,13 @@ class AppHeaderWrapper extends Component<Props, State> {
   nav1Ref :{ current :null | HTMLElement } = React.createRef();
   nav2Ref :{ current :null | HTMLElement } = React.createRef();
   rightRef :{ current :null | HTMLElement } = React.createRef();
+
+  static defaultProps = {
+    className: undefined,
+    logout: () => {},
+    organizationsSelect: {},
+    user: undefined,
+  }
 
   constructor(props :Props) {
 
@@ -308,11 +315,7 @@ class AppHeaderWrapper extends Component<Props, State> {
 
   renderHeaderRight = (renderLogOutButton :boolean) => {
 
-    const {
-      logout,
-      organizationsSelect = {},
-      user,
-    } = this.props;
+    const { logout, organizationsSelect, user } = this.props;
 
     let organizations = [];
     if (isArray(organizationsSelect.organizations) || isPlainObject(organizationsSelect.organizations)) {

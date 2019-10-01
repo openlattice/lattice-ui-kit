@@ -110,6 +110,7 @@ const NavigationDrawer = styled.nav`
   flex-direction: column;
   justify-content: flex-start;
   min-width: 300px;
+  overflow: scroll;
   padding: 15px 0;
   position: absolute;
   right: 0;
