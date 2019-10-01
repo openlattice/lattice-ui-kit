@@ -2,25 +2,44 @@
 
 exports[`AppHeaderWrapper snapshots default 1`] = `
 <Fragment>
-  <AppHeaderWrapper__AppHeaderOuterWrapper>
-    <AppHeaderWrapper__AppHeaderInnerWrapper>
-      <AppHeaderWrapper__HeaderRightContentWrapper>
-        <AppHeaderWrapper__LogoutButton>
+  <AppHeaderOuterWrapper
+    onClick={[Function]}
+  >
+    <AppHeaderInnerWrapper>
+      <NavigationWrapper>
+        <a
+          className="app-nav-root"
+          href="http://localhost/"
+        >
+          <AppIcon />
+          <AppTitle />
+        </a>
+      </NavigationWrapper>
+      <AppHeaderWrapper__HeaderSectionContentWrapper
+        align="right"
+      >
+        <AppHeaderWrapper__LogoutButton
+          onClick={[Function]}
+        >
           Log Out
         </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderRightContentWrapper>
-    </AppHeaderWrapper__AppHeaderInnerWrapper>
-  </AppHeaderWrapper__AppHeaderOuterWrapper>
+      </AppHeaderWrapper__HeaderSectionContentWrapper>
+    </AppHeaderInnerWrapper>
+  </AppHeaderOuterWrapper>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots navigation 1`] = `
 <Fragment>
-  <AppHeaderWrapper__AppHeaderOuterWrapper>
-    <AppHeaderWrapper__AppHeaderInnerWrapper>
-      <AppHeaderWrapper__NavigationContentWrapper>
+  <AppHeaderOuterWrapper
+    onClick={[Function]}
+  >
+    <AppHeaderInnerWrapper>
+      <NavigationWrapper
+        key=".0"
+      >
         <a
-          className="nav-root"
+          className="app-nav-root"
           href="/home"
           key=".$home"
         >
@@ -41,24 +60,32 @@ exports[`AppHeaderWrapper snapshots navigation 1`] = `
         >
           Tab2
         </a>
-      </AppHeaderWrapper__NavigationContentWrapper>
-      <AppHeaderWrapper__HeaderRightContentWrapper>
-        <AppHeaderWrapper__LogoutButton>
+      </NavigationWrapper>
+      <AppHeaderWrapper__HeaderSectionContentWrapper
+        align="right"
+      >
+        <AppHeaderWrapper__LogoutButton
+          onClick={[Function]}
+        >
           Log Out
         </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderRightContentWrapper>
-    </AppHeaderWrapper__AppHeaderInnerWrapper>
-  </AppHeaderWrapper__AppHeaderOuterWrapper>
+      </AppHeaderWrapper__HeaderSectionContentWrapper>
+    </AppHeaderInnerWrapper>
+  </AppHeaderOuterWrapper>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots navigation wrapping 1`] = `
 <Fragment>
-  <AppHeaderWrapper__AppHeaderOuterWrapper>
-    <AppHeaderWrapper__AppHeaderInnerWrapper>
-      <AppHeaderWrapper__NavigationContentWrapper>
+  <AppHeaderOuterWrapper
+    onClick={[Function]}
+  >
+    <AppHeaderInnerWrapper>
+      <NavigationWrapper
+        key=".0"
+      >
         <a
-          className="nav-root"
+          className="app-nav-root"
           href="/home"
           key=".$home"
         >
@@ -67,42 +94,46 @@ exports[`AppHeaderWrapper snapshots navigation wrapping 1`] = `
             title="Home"
           />
         </a>
-      </AppHeaderWrapper__NavigationContentWrapper>
-      <AppHeaderWrapper__HeaderRightContentWrapper>
-        <AppHeaderWrapper__LogoutButton>
+      </NavigationWrapper>
+      <AppHeaderWrapper__HeaderSectionContentWrapper
+        align="right"
+      >
+        <AppHeaderWrapper__LogoutButton
+          onClick={[Function]}
+        >
           Log Out
         </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderRightContentWrapper>
-    </AppHeaderWrapper__AppHeaderInnerWrapper>
-  </AppHeaderWrapper__AppHeaderOuterWrapper>
-  <AppHeaderWrapper__AppHeaderOuterWrapper>
-    <AppHeaderWrapper__AppHeaderInnerWrapper>
-      <AppHeaderWrapper__NavigationContentWrapper>
-        <a
-          href="/tab1"
-          key=".$tab1"
-        >
-          Tab1
-        </a>
-        <a
-          href="/tab2"
-          key=".$tab2"
-        >
-          Tab2
-        </a>
-      </AppHeaderWrapper__NavigationContentWrapper>
-    </AppHeaderWrapper__AppHeaderInnerWrapper>
-  </AppHeaderWrapper__AppHeaderOuterWrapper>
+      </AppHeaderWrapper__HeaderSectionContentWrapper>
+    </AppHeaderInnerWrapper>
+  </AppHeaderOuterWrapper>
+  <ForwardRef>
+    <a
+      href="/tab1"
+      key=".0/.$.$tab1"
+    >
+      Tab1
+    </a>
+    <a
+      href="/tab2"
+      key=".0/.$.$tab2"
+    >
+      Tab2
+    </a>
+  </ForwardRef>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots select + navigation 1`] = `
 <Fragment>
-  <AppHeaderWrapper__AppHeaderOuterWrapper>
-    <AppHeaderWrapper__AppHeaderInnerWrapper>
-      <AppHeaderWrapper__NavigationContentWrapper>
+  <AppHeaderOuterWrapper
+    onClick={[Function]}
+  >
+    <AppHeaderInnerWrapper>
+      <NavigationWrapper
+        key=".0"
+      >
         <a
-          className="nav-root"
+          className="app-nav-root"
           href="/home"
           key=".$home"
         >
@@ -123,8 +154,10 @@ exports[`AppHeaderWrapper snapshots select + navigation 1`] = `
         >
           Tab2
         </a>
-      </AppHeaderWrapper__NavigationContentWrapper>
-      <AppHeaderWrapper__HeaderRightContentWrapper>
+      </NavigationWrapper>
+      <AppHeaderWrapper__HeaderSectionContentWrapper
+        align="right"
+      >
         <Select
           isClearable={false}
           isMulti={false}
@@ -162,20 +195,35 @@ exports[`AppHeaderWrapper snapshots select + navigation 1`] = `
             }
           }
         />
-        <AppHeaderWrapper__LogoutButton>
+        <AppHeaderWrapper__LogoutButton
+          onClick={[Function]}
+        >
           Log Out
         </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderRightContentWrapper>
-    </AppHeaderWrapper__AppHeaderInnerWrapper>
-  </AppHeaderWrapper__AppHeaderOuterWrapper>
+      </AppHeaderWrapper__HeaderSectionContentWrapper>
+    </AppHeaderInnerWrapper>
+  </AppHeaderOuterWrapper>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots select 1`] = `
 <Fragment>
-  <AppHeaderWrapper__AppHeaderOuterWrapper>
-    <AppHeaderWrapper__AppHeaderInnerWrapper>
-      <AppHeaderWrapper__HeaderRightContentWrapper>
+  <AppHeaderOuterWrapper
+    onClick={[Function]}
+  >
+    <AppHeaderInnerWrapper>
+      <NavigationWrapper>
+        <a
+          className="app-nav-root"
+          href="http://localhost/"
+        >
+          <AppIcon />
+          <AppTitle />
+        </a>
+      </NavigationWrapper>
+      <AppHeaderWrapper__HeaderSectionContentWrapper
+        align="right"
+      >
         <Select
           isClearable={false}
           isMulti={false}
@@ -213,22 +261,28 @@ exports[`AppHeaderWrapper snapshots select 1`] = `
             }
           }
         />
-        <AppHeaderWrapper__LogoutButton>
+        <AppHeaderWrapper__LogoutButton
+          onClick={[Function]}
+        >
           Log Out
         </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderRightContentWrapper>
-    </AppHeaderWrapper__AppHeaderInnerWrapper>
-  </AppHeaderWrapper__AppHeaderOuterWrapper>
+      </AppHeaderWrapper__HeaderSectionContentWrapper>
+    </AppHeaderInnerWrapper>
+  </AppHeaderOuterWrapper>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots user + navigation + select 1`] = `
 <Fragment>
-  <AppHeaderWrapper__AppHeaderOuterWrapper>
-    <AppHeaderWrapper__AppHeaderInnerWrapper>
-      <AppHeaderWrapper__NavigationContentWrapper>
+  <AppHeaderOuterWrapper
+    onClick={[Function]}
+  >
+    <AppHeaderInnerWrapper>
+      <NavigationWrapper
+        key=".0"
+      >
         <a
-          className="nav-root"
+          className="app-nav-root"
           href="/home"
           key=".$home"
         >
@@ -249,8 +303,10 @@ exports[`AppHeaderWrapper snapshots user + navigation + select 1`] = `
         >
           Tab2
         </a>
-      </AppHeaderWrapper__NavigationContentWrapper>
-      <AppHeaderWrapper__HeaderRightContentWrapper>
+      </NavigationWrapper>
+      <AppHeaderWrapper__HeaderSectionContentWrapper
+        align="right"
+      >
         <span>
           jest@openlattice.com
         </span>
@@ -291,22 +347,28 @@ exports[`AppHeaderWrapper snapshots user + navigation + select 1`] = `
             }
           }
         />
-        <AppHeaderWrapper__LogoutButton>
+        <AppHeaderWrapper__LogoutButton
+          onClick={[Function]}
+        >
           Log Out
         </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderRightContentWrapper>
-    </AppHeaderWrapper__AppHeaderInnerWrapper>
-  </AppHeaderWrapper__AppHeaderOuterWrapper>
+      </AppHeaderWrapper__HeaderSectionContentWrapper>
+    </AppHeaderInnerWrapper>
+  </AppHeaderOuterWrapper>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots user + navigation 1`] = `
 <Fragment>
-  <AppHeaderWrapper__AppHeaderOuterWrapper>
-    <AppHeaderWrapper__AppHeaderInnerWrapper>
-      <AppHeaderWrapper__NavigationContentWrapper>
+  <AppHeaderOuterWrapper
+    onClick={[Function]}
+  >
+    <AppHeaderInnerWrapper>
+      <NavigationWrapper
+        key=".0"
+      >
         <a
-          className="nav-root"
+          className="app-nav-root"
           href="/home"
           key=".$home"
         >
@@ -327,33 +389,52 @@ exports[`AppHeaderWrapper snapshots user + navigation 1`] = `
         >
           Tab2
         </a>
-      </AppHeaderWrapper__NavigationContentWrapper>
-      <AppHeaderWrapper__HeaderRightContentWrapper>
+      </NavigationWrapper>
+      <AppHeaderWrapper__HeaderSectionContentWrapper
+        align="right"
+      >
         <span>
           jest@openlattice.com
         </span>
-        <AppHeaderWrapper__LogoutButton>
+        <AppHeaderWrapper__LogoutButton
+          onClick={[Function]}
+        >
           Log Out
         </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderRightContentWrapper>
-    </AppHeaderWrapper__AppHeaderInnerWrapper>
-  </AppHeaderWrapper__AppHeaderOuterWrapper>
+      </AppHeaderWrapper__HeaderSectionContentWrapper>
+    </AppHeaderInnerWrapper>
+  </AppHeaderOuterWrapper>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots user 1`] = `
 <Fragment>
-  <AppHeaderWrapper__AppHeaderOuterWrapper>
-    <AppHeaderWrapper__AppHeaderInnerWrapper>
-      <AppHeaderWrapper__HeaderRightContentWrapper>
+  <AppHeaderOuterWrapper
+    onClick={[Function]}
+  >
+    <AppHeaderInnerWrapper>
+      <NavigationWrapper>
+        <a
+          className="app-nav-root"
+          href="http://localhost/"
+        >
+          <AppIcon />
+          <AppTitle />
+        </a>
+      </NavigationWrapper>
+      <AppHeaderWrapper__HeaderSectionContentWrapper
+        align="right"
+      >
         <span>
           jest@openlattice.com
         </span>
-        <AppHeaderWrapper__LogoutButton>
+        <AppHeaderWrapper__LogoutButton
+          onClick={[Function]}
+        >
           Log Out
         </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderRightContentWrapper>
-    </AppHeaderWrapper__AppHeaderInnerWrapper>
-  </AppHeaderWrapper__AppHeaderOuterWrapper>
+      </AppHeaderWrapper__HeaderSectionContentWrapper>
+    </AppHeaderInnerWrapper>
+  </AppHeaderOuterWrapper>
 </Fragment>
 `;

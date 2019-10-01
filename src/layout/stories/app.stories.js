@@ -12,10 +12,11 @@ import {
   AppContainerWrapper,
   AppContentWrapper,
   AppHeaderWrapper,
+  AppNavigationWrapper,
   Card,
   CardSegment,
   CardStack,
-} from '../../index';
+} from '../index';
 import { NEUTRALS } from '../../colors';
 
 const StoryAppContainerWrapper = styled(AppContainerWrapper)`
@@ -29,6 +30,12 @@ const StoryAppHeaderWrapper = styled(AppHeaderWrapper)`
 `;
 
 const StoryAppContentWrapper = styled(AppContentWrapper)`
+  > div {
+    min-width: 600px; /* overriding only for the story */
+  }
+`;
+
+const StoryAppNavigationWrapper = styled(AppNavigationWrapper)`
   > div {
     min-width: 600px; /* overriding only for the story */
   }
@@ -116,17 +123,21 @@ const mockOrgs = Map({
   org3: { id: 'org3', title: 'Metallica' },
 });
 
+const mockOrgSelect = {
+  onChange: action('org select'),
+  organizations: mockOrgs,
+};
+
+const mockUser = 'storybook@openlattice.com';
+
 storiesOf('App', module)
   .add('search section', () => (
     <HashRouter>
       <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper
-            icon={OpenLatticeLogo}
-            logout={action('clicked logout')}
-            user="storybook@openlattice.com">
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} user={mockUser}>
           <NavLink to="/home" />
-          <NavLink to="/tab2">Tab 1</NavLink>
-          <NavLink to="/tab3">Tab 2</NavLink>
+          <NavLink to="/tab1">Tab 1</NavLink>
+          <NavLink to="/tab2">Tab 2</NavLink>
         </StoryAppHeaderWrapper>
         <SearchContentWrapper bgColor="#fff">
           <SearchWrapper>
@@ -147,13 +158,10 @@ storiesOf('App', module)
   .add('profile grid', () => (
     <HashRouter>
       <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper
-            icon={OpenLatticeLogo}
-            logout={action('clicked logout')}
-            user="storybook@openlattice.com">
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} user={mockUser}>
           <NavLink to="/home" />
-          <NavLink to="/tab2">Tab 1</NavLink>
-          <NavLink to="/tab3">Tab 2</NavLink>
+          <NavLink to="/tab1">Tab 1</NavLink>
+          <NavLink to="/tab2">Tab 2</NavLink>
         </StoryAppHeaderWrapper>
         <StoryAppContentWrapper>
           <ProfileGrid>
@@ -184,49 +192,59 @@ storiesOf('App', module)
   .add('organizations select', () => (
     <HashRouter>
       <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper
-            icon={OpenLatticeLogo}
-            logout={action('clicked logout')}
-            organizationsSelect={{
-              onChange: action('org select'),
-              organizations: mockOrgs,
-            }}
-            user="storybook@openlattice.com">
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} organizationsSelect={mockOrgSelect} user={mockUser}>
           <NavLink to="/home" />
-          <NavLink to="/tab2">Tab 1</NavLink>
-          <NavLink to="/tab3">Tab 2</NavLink>
+          <NavLink to="/tab1">Tab 1</NavLink>
+          <NavLink to="/tab2">Tab 2</NavLink>
         </StoryAppHeaderWrapper>
       </StoryAppContainerWrapper>
     </HashRouter>
   ))
-  .add('automatic nav wrapping', () => (
-    <HashRouter>
-      <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper
-            icon={OpenLatticeLogo}
-            logout={action('clicked logout')}
-            organizationsSelect={{
-              onChange: action('org select'),
-              organizations: mockOrgs,
-            }}
-            user="storybook@openlattice.com">
-          <NavLink to="/home" />
-          <NavLink to="/tab2">Data</NavLink>
-          <NavLink to="/tab4">Admin</NavLink>
-          <NavLink to="/tab5">Settings</NavLink>
-        </StoryAppHeaderWrapper>
-        <StoryAppContentWrapper>
-          <p style={{ textAlign: 'center' }}>resize the browser to see how the navigation will wrap below the header</p>
-        </StoryAppContentWrapper>
-      </StoryAppContainerWrapper>
-    </HashRouter>
+  .add('navigation default', () => (
+    <>
+      <HashRouter>
+        <StoryAppContainerWrapper>
+          <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} organizationsSelect={mockOrgSelect} user={mockUser}>
+            <StoryAppNavigationWrapper>
+              <NavLink to="/home" />
+              <NavLink to="/tab1">Data</NavLink>
+              <NavLink to="/tab2">Administration</NavLink>
+              <NavLink to="/tab3">Settings</NavLink>
+            </StoryAppNavigationWrapper>
+          </StoryAppHeaderWrapper>
+          <StoryAppContentWrapper>
+            <p style={{ textAlign: 'center' }}>app navigation is a part of the header, with automatic wrapping</p>
+            <p style={{ textAlign: 'center' }}>resize window to see how the navigation will wrap below the header</p>
+          </StoryAppContentWrapper>
+          <br />
+          <br />
+          <br />
+          <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} organizationsSelect={mockOrgSelect} user={mockUser} />
+          <StoryAppNavigationWrapper>
+            <NavLink to="/tab1">Data Management</NavLink>
+            <NavLink to="/tab2">Administration</NavLink>
+            <NavLink to="/tab3">Settings</NavLink>
+          </StoryAppNavigationWrapper>
+          <StoryAppContentWrapper>
+            <p style={{ textAlign: 'center' }}>app navigation is separate from the header</p>
+          </StoryAppContentWrapper>
+        </StoryAppContainerWrapper>
+      </HashRouter>
+    </>
   ))
-  .add('without navigation', () => (
+  .add('navigation drawer', () => (
     <HashRouter>
       <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper
-            logout={action('clicked logout')}
-            user="storybook@openlattice.com" />
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} user={mockUser}>
+          <StoryAppNavigationWrapper drawer>
+            <NavLink to="/home" />
+            <NavLink to="/tab1">Data</NavLink>
+            <NavLink to="/tab2">Administration</NavLink>
+            <hr />
+            <NavLink to="/tab3">Settings</NavLink>
+            <NavLink to="/tab3">Sign Out</NavLink>
+          </StoryAppNavigationWrapper>
+        </StoryAppHeaderWrapper>
       </StoryAppContainerWrapper>
     </HashRouter>
   ));
