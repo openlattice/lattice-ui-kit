@@ -3,8 +3,9 @@ import React from 'react';
 import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
 
+import AppContentInnerWrapper from './styled/AppContentInnerWrapper';
+import AppContentOuterWrapper from './styled/AppContentOuterWrapper';
 import AppContentWrapper from './AppContentWrapper';
-import { AppContentInnerWrapper, AppContentOuterWrapper } from './styled/StyledContentComponents';
 import { APP_CONTAINER_MIN_WIDTH, APP_CONTENT_PADDING } from '../../../../style/Sizes';
 
 describe('AppContentWrapper', () => {

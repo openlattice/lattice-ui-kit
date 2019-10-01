@@ -12,12 +12,13 @@ import { faBars } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { get, isCollection } from 'immutable';
 
+import AppHeaderInnerWrapper from './styled/AppHeaderInnerWrapper';
+import AppHeaderOuterWrapper from './styled/AppHeaderOuterWrapper';
 import AppNavigationWrapper from './AppNavigationWrapper';
+import NavigationWrapper, { APP_NAV_ROOT } from './styled/NavigationWrapper';
 import * as Colors from '../../../../colors';
 import { Button } from '../../../../button';
 import { Select } from '../../../../select';
-import { AppHeaderInnerWrapper, AppHeaderOuterWrapper } from './styled/StyledHeaderComponents';
-import { APP_NAV_ROOT, NavigationWrapper } from './styled/StyledNavigationComponents';
 
 const { NEUTRALS, PURPLES, WHITE } = Colors;
 

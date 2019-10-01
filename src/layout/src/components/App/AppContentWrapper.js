@@ -5,7 +5,8 @@
 import React from 'react';
 import type { Node } from 'react';
 
-import { AppContentInnerWrapper, AppContentOuterWrapper } from './styled/StyledContentComponents';
+import AppContentInnerWrapper from './styled/AppContentInnerWrapper';
+import AppContentOuterWrapper from './styled/AppContentOuterWrapper';
 
 type Props = {
   bgColor :?string;

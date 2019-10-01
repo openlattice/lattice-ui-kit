@@ -6,38 +6,11 @@ import styled, { css } from 'styled-components';
 
 import { APP_CONTAINER_MIN_WIDTH, APP_CONTENT_PADDING } from '../../../../../style/Sizes';
 
-
-type AppContentOuterWrapperProps = {
-  bgColor :?string;
-};
-
-const getOuterComputedStyles = ({ bgColor } :AppContentOuterWrapperProps) => {
-
-  let finalBackgroundColor = '';
-  if (bgColor) {
-    finalBackgroundColor = bgColor;
-  }
-
-  return css`
-    background-color: ${finalBackgroundColor};
-  `;
-};
-
-const AppContentOuterWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex: 0 0 auto;
-  justify-content: center;
-  /*overflow: hidden;*/ /* TODO: make it work with overflow hidden */
-  position: relative;
-  ${getOuterComputedStyles}
-`;
-
-type AppContentInnerWrapperProps = {
+type Props = {
   contentWidth :?number;
 };
 
-const getInnerComputedStyles = ({ contentWidth } :AppContentInnerWrapperProps) => {
+const getInnerComputedStyles = ({ contentWidth } :Props) => {
 
   let finalWidth;
   let finalMaxWidth;
@@ -69,7 +42,4 @@ const AppContentInnerWrapper = styled.div`
   ${getInnerComputedStyles}
 `;
 
-export {
-  AppContentInnerWrapper,
-  AppContentOuterWrapper,
-};
+export default AppContentInnerWrapper;

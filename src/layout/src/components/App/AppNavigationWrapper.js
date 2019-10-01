@@ -7,14 +7,12 @@ import type { Node } from 'react';
 
 import isFunction from 'lodash/isFunction';
 
+import AppNavigationInnerWrapper from './styled/AppNavigationInnerWrapper';
+import AppNavigationOuterWrapper from './styled/AppNavigationOuterWrapper';
+import NavigationDrawer from './styled/NavigationDrawer';
+import NavigationDrawerWrapper from './styled/NavigationDrawerWrapper';
+import NavigationWrapper from './styled/NavigationWrapper';
 import * as Colors from '../../../../colors';
-import {
-  AppNavigationInnerWrapper,
-  AppNavigationOuterWrapper,
-  NavigationDrawer,
-  NavigationDrawerWrapper,
-  NavigationWrapper,
-} from './styled/StyledNavigationComponents';
 
 const { WHITE } = Colors;
 
