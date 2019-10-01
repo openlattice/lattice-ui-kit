@@ -3,8 +3,9 @@ import React from 'react';
 import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
 
-import AppContentWrapper, { AppContentInnerWrapper, AppContentOuterWrapper } from './AppContentWrapper';
-import { APP_CONTAINER_MAX_WIDTH, APP_CONTAINER_MIN_WIDTH, APP_CONTENT_PADDING } from '../../../../style/Sizes';
+import AppContentWrapper from './AppContentWrapper';
+import { AppContentInnerWrapper, AppContentOuterWrapper } from './styled/StyledContentComponents';
+import { APP_CONTAINER_MIN_WIDTH, APP_CONTENT_PADDING } from '../../../../style/Sizes';
 
 describe('AppContentWrapper', () => {
 
@@ -99,7 +100,7 @@ describe('AppContentWrapper', () => {
 
         test('"max-width", "min-width", "width" defaults', () => {
           const wrapper = mount(<AppContentWrapper />);
-          expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('max-width', `${APP_CONTAINER_MAX_WIDTH}px`);
+          expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('max-width', undefined);
           expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('min-width', `${APP_CONTAINER_MIN_WIDTH}px`);
           expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('width', undefined);
         });
@@ -109,11 +110,6 @@ describe('AppContentWrapper', () => {
           expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('max-width', '500px');
           expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('min-width', '0px');
           expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('width', '100%');
-        });
-
-        test('"max-width" should not exceed the global constant', () => {
-          const wrapper = mount(<AppContentWrapper contentWidth={2500} />);
-          expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('max-width', `${APP_CONTAINER_MAX_WIDTH}px`);
         });
 
       });

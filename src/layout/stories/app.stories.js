@@ -128,13 +128,13 @@ const mockOrgSelect = {
   organizations: mockOrgs,
 };
 
-const mockUser = "storybook@openlattice.com";
+const mockUser = 'storybook@openlattice.com';
 
 storiesOf('App', module)
   .add('search section', () => (
     <HashRouter>
       <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper user={mockUser}>
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} user={mockUser}>
           <NavLink to="/home" />
           <NavLink to="/tab1">Tab 1</NavLink>
           <NavLink to="/tab2">Tab 2</NavLink>
@@ -158,7 +158,7 @@ storiesOf('App', module)
   .add('profile grid', () => (
     <HashRouter>
       <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper user={mockUser}>
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} user={mockUser}>
           <NavLink to="/home" />
           <NavLink to="/tab1">Tab 1</NavLink>
           <NavLink to="/tab2">Tab 2</NavLink>
@@ -192,7 +192,7 @@ storiesOf('App', module)
   .add('organizations select', () => (
     <HashRouter>
       <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper organizationsSelect={mockOrgSelect} user={mockUser}>
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} organizationsSelect={mockOrgSelect} user={mockUser}>
           <NavLink to="/home" />
           <NavLink to="/tab1">Tab 1</NavLink>
           <NavLink to="/tab2">Tab 2</NavLink>
@@ -200,11 +200,11 @@ storiesOf('App', module)
       </StoryAppContainerWrapper>
     </HashRouter>
   ))
-  .add('navigation', () => (
+  .add('navigation default', () => (
     <>
       <HashRouter>
         <StoryAppContainerWrapper>
-          <StoryAppHeaderWrapper organizationsSelect={mockOrgSelect} user={mockUser}>
+          <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} organizationsSelect={mockOrgSelect} user={mockUser}>
             <StoryAppNavigationWrapper>
               <NavLink to="/home" />
               <NavLink to="/tab1">Data</NavLink>
@@ -216,14 +216,10 @@ storiesOf('App', module)
             <p style={{ textAlign: 'center' }}>app navigation is a part of the header, with automatic wrapping</p>
             <p style={{ textAlign: 'center' }}>resize window to see how the navigation will wrap below the header</p>
           </StoryAppContentWrapper>
-        </StoryAppContainerWrapper>
-      </HashRouter>
-      <br />
-      <br />
-      <br />
-      <HashRouter>
-        <StoryAppContainerWrapper>
-          <StoryAppHeaderWrapper organizationsSelect={mockOrgSelect} user={mockUser} />
+          <br />
+          <br />
+          <br />
+          <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} organizationsSelect={mockOrgSelect} user={mockUser} />
           <StoryAppNavigationWrapper>
             <NavLink to="/tab1">Data Management</NavLink>
             <NavLink to="/tab2">Administration</NavLink>
@@ -239,12 +235,14 @@ storiesOf('App', module)
   .add('navigation drawer', () => (
     <HashRouter>
       <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper organizationsSelect={mockOrgSelect} user={mockUser}>
-          <StoryAppNavigationWrapper component="drawer">
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} user={mockUser}>
+          <StoryAppNavigationWrapper drawer>
             <NavLink to="/home" />
             <NavLink to="/tab1">Data</NavLink>
             <NavLink to="/tab2">Administration</NavLink>
+            <hr />
             <NavLink to="/tab3">Settings</NavLink>
+            <NavLink to="/tab3">Sign Out</NavLink>
           </StoryAppNavigationWrapper>
         </StoryAppHeaderWrapper>
       </StoryAppContainerWrapper>

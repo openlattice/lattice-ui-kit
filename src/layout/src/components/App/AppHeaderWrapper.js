@@ -8,31 +8,18 @@ import type { Node } from 'react';
 import isArray from 'lodash/isArray';
 import isPlainObject from 'lodash/isPlainObject';
 import styled from 'styled-components';
+import { faBars } from '@fortawesome/pro-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { get, isCollection } from 'immutable';
 
-import AppNavigationWrapper, { APP_NAV_ROOT, NavigationContentWrapper } from './AppNavigationWrapper';
-import OpenLatticeAppIcon from '../../../../assets/images/ol_icon.png';
+import AppNavigationWrapper from './AppNavigationWrapper';
 import * as Colors from '../../../../colors';
 import { Button } from '../../../../button';
 import { Select } from '../../../../select';
-import { AppContentInnerWrapper, AppContentOuterWrapper } from './AppContentWrapper';
-import { APP_CONTENT_PADDING } from '../../../../style/Sizes';
+import { AppHeaderInnerWrapper, AppHeaderOuterWrapper } from './styled/StyledHeaderComponents';
+import { APP_NAV_ROOT, NavigationWrapper } from './styled/StyledNavigationComponents';
 
 const { NEUTRALS, PURPLES, WHITE } = Colors;
-
-const AppHeaderOuterWrapper = styled(AppContentOuterWrapper).attrs({
-  as: 'header',
-  bgColor: WHITE,
-})`
-  border-bottom: 1px solid ${NEUTRALS[5]};
-`;
-
-const AppHeaderInnerWrapper = styled(AppContentInnerWrapper)`
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 ${APP_CONTENT_PADDING}px;
-`;
 
 // button line-height = font-size (12px) * desired line-height (1.5) = 18px
 // total button height = line-height (18px) + padding (2*8px) + border (2*1px) = 36px
@@ -44,17 +31,35 @@ const LogoutButton = styled(Button)`
   width: 100px;
 `;
 
-const HeaderRightContentWrapper = styled.div`
+const HeaderSectionContentWrapper = styled.div`
   align-items: center;
   display: flex;
   flex: 1 1 auto; /* this lets the select stretch a bit until max-width */
   font-size: 12px;
   font-weight: normal;
   justify-content: flex-end;
+  justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : 'flex-start')};
   padding: 12px 0;
 
   > * {
     margin-left: 30px;
+  }
+`;
+
+const NavigationToggleWrapper = styled.div`
+  align-items: center;
+  color: ${NEUTRALS[1]};
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  height: 32px;
+  justify-content: center;
+  margin-left: 21px; /* the icon is 14px wide, this div is 32px wide, so there's 9px on each side of the icon */
+  margin-right: -9px; /* to offset the extra space around icon */
+  width: 32px;
+
+  &:hover {
+    color: ${NEUTRALS[0]};
   }
 `;
 
@@ -133,11 +138,11 @@ const organizationsSelectStyles = {
   valueContainer: (base) => ({ ...base, padding: '0 10px' }),
 };
 
-const AppIcon = ({ icon = OpenLatticeAppIcon } :Object) => (
+const AppIcon = ({ icon } :{ icon :any }) => (
   <img alt="OpenLattice Application Icon" src={icon} />
 );
 
-const AppTitle = ({ title = 'OpenLattice' } :Object) => (
+const AppTitle = ({ title = 'OpenLattice' } :{ title :string }) => (
   <h1>{title}</h1>
 );
 
@@ -158,7 +163,8 @@ type Props = {
 };
 
 type State = {
-  shouldWrapNav :boolean;
+  isNavigationOpen :boolean;
+  shouldWrapNavigation :boolean;
 };
 
 class AppHeaderWrapper extends Component<Props, State> {
@@ -172,7 +178,8 @@ class AppHeaderWrapper extends Component<Props, State> {
 
     super(props);
     this.state = {
-      shouldWrapNav: false,
+      isNavigationOpen: false,
+      shouldWrapNavigation: false,
     };
   }
 
@@ -194,10 +201,31 @@ class AppHeaderWrapper extends Component<Props, State> {
     window.removeEventListener('resize', this.handleOnResize.bind(this));
   }
 
+  closeNavigation = () => {
+
+    const { isNavigationOpen } = this.state;
+    if (isNavigationOpen) {
+      this.setState({ isNavigationOpen: false });
+    }
+  }
+
+  toggleNavigation = () => {
+
+    const { isNavigationOpen } = this.state;
+    this.setState({ isNavigationOpen: !isNavigationOpen });
+  }
+
+  handleOnClickHeader = () => {
+
+    this.closeNavigation();
+  }
+
   handleOnResize = () => {
 
-    const { navigationChildrenCount } = this.processChildren();
-    if (navigationChildrenCount <= 1) {
+    const { handleNavigationWrapping, navigationChildrenCount } = this.processChildren();
+    if (!handleNavigationWrapping || navigationChildrenCount <= 1) {
+      // there's nothing to wrap if there's no children or if there's only 1 child, which is treated as the the
+      // header's app icon + app title section
       return;
     }
 
@@ -209,7 +237,7 @@ class AppHeaderWrapper extends Component<Props, State> {
     // the lower nav ref will be null if it is not rendered, so this is to check if we should wrap the nav
     if (header && !nav2) {
       if (header.offsetWidth < header.scrollWidth) {
-        this.setState({ shouldWrapNav: true });
+        this.setState({ shouldWrapNavigation: true });
       }
     }
     // check if the nav can fit in the header and undo the wrap if it can
@@ -222,30 +250,32 @@ class AppHeaderWrapper extends Component<Props, State> {
       headerWidthEstimate += nav1.offsetWidth;
       headerWidthEstimate += nav2.offsetWidth;
       if (headerWidthEstimate < header.offsetWidth) {
-        this.setState({ shouldWrapNav: false });
+        this.setState({ shouldWrapNavigation: false });
       }
     }
     // I don't think this is possible, but it's here for just in case
     else {
-      this.setState({ shouldWrapNav: false });
+      this.setState({ shouldWrapNavigation: false });
     }
   }
 
   wrapNavIfNecessary = () => {
 
-    const { navigationChildrenCount } = this.processChildren();
-    if (navigationChildrenCount <= 1) {
+    const { handleNavigationWrapping, navigationChildrenCount } = this.processChildren();
+    if (!handleNavigationWrapping || navigationChildrenCount <= 1) {
+      // there's nothing to wrap if there's no children or if there's only 1 child, which is treated as the the
+      // header's app icon + app title section
       return;
     }
 
     // initially on mount, we know the lower nav will not render and the ref will be null
     const header = this.headerRef.current;
     if (header && header.offsetWidth < header.scrollWidth) {
-      // ensure "shouldWrapNav" has not already been set to true to prevent infinite renders in the case when the nav
-      // has already been wrapped but there's still overflow in the header (when the browser window is very small)
-      const { shouldWrapNav } = this.state;
-      if (!shouldWrapNav) {
-        this.setState({ shouldWrapNav: true });
+      // ensure "shouldWrapNavigation" has not already been set to true to prevent infinite renders in the case where
+      // the nav has already been wrapped but there's still overflow in the header (when the window is very small)
+      const { shouldWrapNavigation } = this.state;
+      if (!shouldWrapNavigation) {
+        this.setState({ shouldWrapNavigation: true });
       }
     }
   }
@@ -254,28 +284,29 @@ class AppHeaderWrapper extends Component<Props, State> {
 
     const { children } = this.props;
 
+    let handleNavigationWrapping :boolean = true;
     let navigationChildrenCount :number = 0;
-    // let navigationComponentDefined :boolean = false;
 
     if (Children.count(children) > 0) {
       Children.forEach(children, (child, index) => {
         // we expect the first child to be <AppNavigationWrapper />
         if (index === 0 && child.type.name === AppNavigationWrapper.name) {
           navigationChildrenCount = Children.count(child.props.children);
-          // we won't handle navigation wrapping if <AppNavigationWrapper /> has the "component" prop
-          // if (child.props.component !== null && child.props.component !== undefined) {
-          //   navigationComponentDefined = true;
-          // }
+          // we won't handle navigation wrapping if <AppNavigationWrapper /> has the "drawer" prop
+          if (child.props.drawer === true) {
+            handleNavigationWrapping = false;
+          }
         }
       });
     }
 
     return {
+      handleNavigationWrapping,
       navigationChildrenCount,
     };
   }
 
-  renderHeaderRight = () => {
+  renderHeaderRight = (renderLogOutButton :boolean) => {
 
     const {
       logout,
@@ -304,7 +335,7 @@ class AppHeaderWrapper extends Component<Props, State> {
     ));
 
     return (
-      <HeaderRightContentWrapper ref={this.rightRef}>
+      <HeaderSectionContentWrapper align="right" ref={this.rightRef}>
         {
           user && (
             <span>{user}</span>
@@ -325,8 +356,18 @@ class AppHeaderWrapper extends Component<Props, State> {
                 value={selectedOrganizationOption} />
           )
         }
-        <LogoutButton onClick={logout}>Log Out</LogoutButton>
-      </HeaderRightContentWrapper>
+        {
+          renderLogOutButton
+            ? (
+              <LogoutButton onClick={logout}>Log Out</LogoutButton>
+            )
+            : (
+              <NavigationToggleWrapper onClick={this.toggleNavigation}>
+                <FontAwesomeIcon icon={faBars} />
+              </NavigationToggleWrapper>
+            )
+        }
+      </HeaderSectionContentWrapper>
     );
   }
 
@@ -338,18 +379,23 @@ class AppHeaderWrapper extends Component<Props, State> {
       children,
       className,
     } = this.props;
-    const { shouldWrapNav } = this.state;
-    const { navigationChildrenCount } = this.processChildren();
+    const { isNavigationOpen, shouldWrapNavigation } = this.state;
+    const { handleNavigationWrapping, navigationChildrenCount } = this.processChildren();
+
+    let headerBounds;
+    if (this.headerRef.current) {
+      headerBounds = this.headerRef.current.getBoundingClientRect();
+    }
 
     return (
       <>
-        <AppHeaderOuterWrapper className={className} ref={this.headerRef}>
+        <AppHeaderOuterWrapper className={className} ref={this.headerRef} onClick={this.handleOnClickHeader}>
           <AppHeaderInnerWrapper>
             {
               /*
                * this block is expected to handle the following examples:
                *
-               *   1. this is expected to be common
+               *   1. this is unlikely to be common and is not ideal
                *     <AppHeaderWrapper ... />
                *
                *   2. this is unlikely to be common and should be avoided
@@ -358,27 +404,31 @@ class AppHeaderWrapper extends Component<Props, State> {
                *     </AppHeaderWrapper>
                */
               navigationChildrenCount === 0 && (
-                <NavigationContentWrapper>
+                <NavigationWrapper>
                   <a href={window.location.href} className={APP_NAV_ROOT}>
                     <AppIcon icon={appIcon} />
                     <AppTitle title={appTitle} />
                   </a>
-                </NavigationContentWrapper>
+                </NavigationWrapper>
               )
             }
             {
               /*
+               * this block is responsible for rendering nav items inside the header. here's how it works:
+               *
+               *   1. AppNavigationWrapper MUST NOT have any special props enabled (like "drawer")
+               *
+               *      AND
+               *
+               *   2. AppNavigationWrapper's 1st child is expected to be the root route, i.e. the app icon + app title,
+               *      and will ALWAYS be rendered in the header
+               *   3. AppNavigationWrapper has many children AND they all will fit (otherwise, wrapping happens)
+               *
                * this block is expected to handle the following examples. additionally, only example 2 is relevant when
-               * the header is handling automatic navigation wraping. nothing fancy happens with example 1.
+               * the header is handling navigation wrapping. nothing fancy happens with example 1.
                *
-               *   1.
-               *     <AppHeaderWrapper ...>
-               *       <AppNavigationWrapper>
-               *         <NavLink to="/home" />
-               *       </AppNavigationWrapper>
-               *     </AppHeaderWrapper>
+               * for example...
                *
-               *   2.
                *     <AppHeaderWrapper ...>
                *       <AppNavigationWrapper>
                *         <NavLink to="/home" />
@@ -391,7 +441,7 @@ class AppHeaderWrapper extends Component<Props, State> {
                 // the 1st child is expected to be <AppNavigationWrapper />
                 if (index === 0 && child.type.name === AppNavigationWrapper.name) {
                   return (
-                    <NavigationContentWrapper ref={this.nav1Ref}>
+                    <NavigationWrapper ref={this.nav1Ref}>
                       {
                         Children.map(child.props.children, (navChild, navIndex) => {
                           // the 1st child is expected to be the root route, i.e. the app icon + app title
@@ -400,25 +450,28 @@ class AppHeaderWrapper extends Component<Props, State> {
                               navChild,
                               { ...navChild.props, className: APP_NAV_ROOT },
                               React.createElement(AppIcon, { icon: appIcon }),
-                              React.createElement(AppTitle, { title: navChild.props.children }),
+                              React.createElement(AppTitle, { title: navChild.props.children || appTitle }),
                             );
                           }
-                          return shouldWrapNav ? null : navChild;
+                          // return null if...
+                          //   - the header is not responsible for navigation wrapping (i.e. if the nav is a drawer)
+                          //   - the header has computed that the nav items won't fit and need to wrap around
+                          return (!handleNavigationWrapping || shouldWrapNavigation) ? null : navChild;
                         })
                       }
-                    </NavigationContentWrapper>
+                    </NavigationWrapper>
                   );
                 }
                 return child;
               })
             }
-            {this.renderHeaderRight()}
+            {this.renderHeaderRight(handleNavigationWrapping)}
           </AppHeaderInnerWrapper>
         </AppHeaderOuterWrapper>
         {
           /*
-           * this block is only relevant when the header is handling automatic navigation wraping, and it only applies
-           * to the following example:
+           * this block is only relevant when the header is handling navigation wrapping, and it only applies to the
+           * following example:
            *
            *   <AppHeaderWrapper ...>
            *     <AppNavigationWrapper>
@@ -428,21 +481,61 @@ class AppHeaderWrapper extends Component<Props, State> {
            *     </AppNavigationWrapper>
            *   </AppHeaderWrapper>
            */
-          navigationChildrenCount > 1 && shouldWrapNav && (
+          handleNavigationWrapping && navigationChildrenCount > 1 && shouldWrapNavigation && (
             <AppNavigationWrapper className={className} ref={this.nav2Ref}>
               {
                 Children.map(children, (child, index) => {
                   // the 1st child is expected to be <AppNavigationWrapper />
                   if (index === 0 && child.type.name === AppNavigationWrapper.name) {
-                    // the 1st child is expected to be the root route, i.e. the app icon + app title
                     return Children.map(child.props.children, (navChild, navIndex) => (
-                      navIndex !== 0 ? navChild : null
+                      // the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
+                      // processed above and moved into the header, so we want to return null here
+                      navIndex === 0 ? null : navChild
                     ));
                   }
+                  // ignoring other children for now...
                   return null;
                 })
               }
             </AppNavigationWrapper>
+          )
+        }
+        {
+          /*
+           * this block is only relevant when the header is NOT handling navigation wrapping, i.e. if the
+           * navigation is a drawer (or something else in the future)
+           *
+           *   <AppHeaderWrapper ...>
+           *     <AppNavigationWrapper drawer ...>
+           *       <NavLink to="/home" />
+           *       <NavLink to="/tab1">Tab 1</NavLink>
+           *       <NavLink to="/tab2">Tab 2</NavLink>
+           *     </AppNavigationWrapper>
+           *   </AppHeaderWrapper>
+           */
+          !handleNavigationWrapping && navigationChildrenCount > 0 && (
+            Children.map(children, (child, index) => {
+              // the 1st child is expected to be <AppNavigationWrapper ... />
+              if (index === 0) {
+                return (
+                  <AppNavigationWrapper
+                      drawer={child.props.drawer}
+                      headerBounds={headerBounds}
+                      isOpen={isNavigationOpen}
+                      onClose={this.closeNavigation}>
+                    {
+                      Children.map(child.props.children, (navChild, navIndex) => (
+                        // the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
+                        // processed above and moved into the header, so we want to return null here
+                        navIndex === 0 ? null : navChild
+                      ))
+                    }
+                  </AppNavigationWrapper>
+                );
+              }
+              // ignoring other children for now...
+              return null;
+            })
           )
         }
       </>
@@ -451,7 +544,3 @@ class AppHeaderWrapper extends Component<Props, State> {
 }
 
 export default AppHeaderWrapper;
-export {
-  AppHeaderInnerWrapper,
-  AppHeaderOuterWrapper,
-};

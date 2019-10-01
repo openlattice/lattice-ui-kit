@@ -16,8 +16,8 @@ module.exports = (env = {}) => {
   const BABEL_CONFIG = path.resolve(__dirname, '../babel/babel.config.js');
   const ENV_DEV = 'development';
   const ENV_PROD = 'production';
-  const LIB_FILE_NAME = 'lattice-ui-kit.js';
-  const LIB_NAMESPACE = 'LatticeUIKit';
+  const LIB_FILE_NAME = 'index.js';
+  const LIB_NAMESPACE = 'LUK';
 
   /*
    * loaders

@@ -22,7 +22,7 @@
     "url": "https://github.com/openlattice/lattice-ui-kit/issues"
   },
   "license": "Apache-2.0",
-  "main": "build/lattice-ui-kit.js",
+  "main": "build/index.js",
   "dependencies": {
     "@atlaskit/datetime-picker": "8.0.16",
     "@fortawesome/fontawesome-svg-core": "~1.2.0",
