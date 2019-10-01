@@ -46,6 +46,7 @@ export {
   AppContainerWrapper,
   AppContentWrapper,
   AppHeaderWrapper,
+  AppNavigationWrapper,
   Card,
   CardHeader,
   CardSegment,
