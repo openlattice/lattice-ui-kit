@@ -31,7 +31,7 @@ describe('AppHeaderWrapper', () => {
     test('navigation', () => {
       const wrapper = shallow(
         <AppHeaderWrapper>
-          {mockTabs}
+          <div>{mockTabs}</div>
         </AppHeaderWrapper>
       );
       expect(toJson(wrapper)).toMatchSnapshot();
@@ -40,10 +40,10 @@ describe('AppHeaderWrapper', () => {
     test('navigation wrapping', () => {
       const wrapper = shallow(
         <AppHeaderWrapper>
-          {mockTabs}
+          <div>{mockTabs}</div>
         </AppHeaderWrapper>
       );
-      wrapper.setState({ shouldWrapNav: true });
+      wrapper.setState({ shouldWrapNavigation: true });
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
@@ -57,7 +57,7 @@ describe('AppHeaderWrapper', () => {
     test('select + navigation', () => {
       const wrapper = shallow(
         <AppHeaderWrapper organizationsSelect={{ organizations: mockOrgs }}>
-          {mockTabs}
+          <div>{mockTabs}</div>
         </AppHeaderWrapper>
       );
       expect(toJson(wrapper)).toMatchSnapshot();
@@ -73,7 +73,7 @@ describe('AppHeaderWrapper', () => {
     test('user + navigation', () => {
       const wrapper = shallow(
         <AppHeaderWrapper user="jest@openlattice.com">
-          {mockTabs}
+          <div>{mockTabs}</div>
         </AppHeaderWrapper>
       );
       expect(toJson(wrapper)).toMatchSnapshot();
@@ -82,7 +82,7 @@ describe('AppHeaderWrapper', () => {
     test('user + navigation + select', () => {
       const wrapper = shallow(
         <AppHeaderWrapper organizationsSelect={{ organizations: mockOrgs }} user="jest@openlattice.com">
-          {mockTabs}
+          <div>{mockTabs}</div>
         </AppHeaderWrapper>
       );
       expect(toJson(wrapper)).toMatchSnapshot();

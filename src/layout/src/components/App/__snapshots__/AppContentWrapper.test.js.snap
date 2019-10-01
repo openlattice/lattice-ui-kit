@@ -1,6 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AppContentWrapper snapshots should match snapshot 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 30px;
+  position: relative;
+  min-width: 1020px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -19,36 +39,15 @@ exports[`AppContentWrapper snapshots should match snapshot 1`] = `
   position: relative;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  padding: 30px;
-  position: relative;
-  max-width: 2000px;
-  min-width: 1020px;
-}
-
 <AppContentWrapper>
-  <AppContentWrapper__AppContentOuterWrapper>
+  <AppContentOuterWrapper>
     <StyledComponent
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "AppContentWrapper__AppContentOuterWrapper-sc-1x3t0wn-0",
+            "componentId": "AppContentOuterWrapper-sc-13mz9i2-0",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -56,10 +55,10 @@ exports[`AppContentWrapper snapshots should match snapshot 1`] = `
               [Function],
             ],
           },
-          "displayName": "AppContentWrapper__AppContentOuterWrapper",
+          "displayName": "AppContentOuterWrapper",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "AppContentWrapper__AppContentOuterWrapper-sc-1x3t0wn-0",
+          "styledComponentId": "AppContentOuterWrapper-sc-13mz9i2-0",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -71,14 +70,14 @@ exports[`AppContentWrapper snapshots should match snapshot 1`] = `
       <div
         className="c0"
       >
-        <AppContentWrapper__AppContentInnerWrapper>
+        <AppContentInnerWrapper>
           <StyledComponent
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "AppContentWrapper__AppContentInnerWrapper-sc-1x3t0wn-1",
+                  "componentId": "AppContentInnerWrapper-dk4lgw-0",
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
@@ -88,10 +87,10 @@ exports[`AppContentWrapper snapshots should match snapshot 1`] = `
                     [Function],
                   ],
                 },
-                "displayName": "AppContentWrapper__AppContentInnerWrapper",
+                "displayName": "AppContentInnerWrapper",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "AppContentWrapper__AppContentInnerWrapper-sc-1x3t0wn-1",
+                "styledComponentId": "AppContentInnerWrapper-dk4lgw-0",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -104,9 +103,9 @@ exports[`AppContentWrapper snapshots should match snapshot 1`] = `
               className="c1"
             />
           </StyledComponent>
-        </AppContentWrapper__AppContentInnerWrapper>
+        </AppContentInnerWrapper>
       </div>
     </StyledComponent>
-  </AppContentWrapper__AppContentOuterWrapper>
+  </AppContentOuterWrapper>
 </AppContentWrapper>
 `;

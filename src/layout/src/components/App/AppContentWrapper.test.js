@@ -109,7 +109,7 @@ describe('AppContentWrapper', () => {
         test('"max-width", "min-width", "width" should adjust based on given content width', () => {
           const wrapper = mount(<AppContentWrapper contentWidth={500} />);
           expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('max-width', '500px');
-          expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('min-width', '0px');
+          expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('min-width', '0');
           expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('width', '100%');
         });
 
