@@ -11,6 +11,10 @@ const FigureWrapper = styled.figure`
   margin: 10px auto;
   text-align: center;
 
+  > div:first-child {
+    margin-bottom: 10px;
+  }
+
   figcaption {
     color: ${NEUTRALS[1]};
     font-size: 16px;
@@ -41,11 +45,10 @@ class IconSplash extends Component<Props> {
   renderIcon = () => {
     const { icon, size } = this.props;
     if (icon) {
-      if (typeof icon === 'function') {
-        return icon(size);
-      }
-
-      return <FontAwesomeIcon icon={icon} size={size} fixedWidth />;
+      const content = typeof icon === 'function'
+        ? icon(size)
+        : <FontAwesomeIcon icon={icon} size={size} fixedWidth />;
+      return <div>{content}</div>;
     }
     return null;
   }
