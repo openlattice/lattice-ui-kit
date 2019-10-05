@@ -8,6 +8,9 @@ import type { ComponentType } from 'react';
 import { NEUTRALS } from '../../../../colors';
 
 const FigureWrapper = styled.figure`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 10px auto;
   text-align: center;
 
