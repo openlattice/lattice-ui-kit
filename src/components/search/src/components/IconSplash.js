@@ -8,8 +8,15 @@ import type { ComponentType } from 'react';
 import { NEUTRALS } from '../../../../colors';
 
 const FigureWrapper = styled.figure`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 10px auto;
   text-align: center;
+
+  > div:first-child {
+    margin-bottom: 10px;
+  }
 
   figcaption {
     color: ${NEUTRALS[1]};
@@ -41,11 +48,10 @@ class IconSplash extends Component<Props> {
   renderIcon = () => {
     const { icon, size } = this.props;
     if (icon) {
-      if (typeof icon === 'function') {
-        return icon(size);
-      }
-
-      return <FontAwesomeIcon icon={icon} size={size} fixedWidth />;
+      const content = typeof icon === 'function'
+        ? icon(size)
+        : <FontAwesomeIcon icon={icon} size={size} fixedWidth />;
+      return <div>{content}</div>;
     }
     return null;
   }
