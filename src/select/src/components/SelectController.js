@@ -5,6 +5,7 @@ import type { Node, ComponentType } from 'react';
 import type { IconDefinition } from '@fortawesome/react-fontawesome';
 
 import DropdownIndicator from './styled/DropdownIndicator';
+import SelectOption from './SelectOption';
 import type { ReactSelectEvent, ReactSelectOption, ReactSelectValue } from '../../types';
 
 type Props = {
@@ -68,17 +69,18 @@ class SelectController extends Component<Props> {
   }
 
   composePropsWithComponents = (props :Object) :Object => {
+
     const { icon } = this.props;
+    const components :Object = {
+      Option: SelectOption,
+    };
 
     if (icon) {
-      const components = {
-        DropdownIndicator,
-      };
-
+      components.DropdownIndicator = DropdownIndicator;
       return { ...props, components };
     }
 
-    return props;
+    return { ...props, components };
   }
 
   renderWithDataOverrides = () => {

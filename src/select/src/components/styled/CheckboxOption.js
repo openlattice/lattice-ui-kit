@@ -39,9 +39,13 @@ const Option = (props :OptionProps) => {
     width: '100%'
   };
 
+  // this exists only as a (hopefully temporary) performance fix when there's many options
+  // https://github.com/JedWatson/react-select/issues/3128#issuecomment-451936743
+  const { onMouseMove, onMouseOver, ...finalInnerProps } = innerProps;
+
   /* eslint-disable react/jsx-props-no-spreading */
   return (
-    <div ref={innerRef} {...innerProps} style={style}>
+    <div ref={innerRef} {...finalInnerProps} style={style}>
       <Checkbox checked={isSelected} label={label} disabled={isDisabled} readOnly />
     </div>
   );

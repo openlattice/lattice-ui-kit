@@ -52,13 +52,22 @@ const selectStyles = {
       backgroundColor = NEUTRALS[6];
     }
 
+    const activeBgColor = isDisabled ? WHITE : PURPLES[5];
+    const hoverBgColor = isDisabled ? WHITE : PURPLES[5];
+
     return {
       ...base,
       color,
       backgroundColor,
       ':active': {
-        backgroundColor: isDisabled ? WHITE : PURPLES[5]
-      }
+        backgroundColor: activeBgColor,
+      },
+      ':active:hover': {
+        backgroundColor: activeBgColor,
+      },
+      ':hover': {
+        backgroundColor: hoverBgColor,
+      },
     };
   },
   singleValue: (base, state) => {

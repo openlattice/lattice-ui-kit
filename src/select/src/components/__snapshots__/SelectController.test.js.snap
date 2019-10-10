@@ -3,6 +3,11 @@
 exports[`Select snapshot render matches snapshot 1`] = `
 <Fragment>
   <StateManager
+    components={
+      Object {
+        "Option": [Function],
+      }
+    }
     defaultInputValue=""
     defaultMenuIsOpen={false}
     defaultValue={null}
