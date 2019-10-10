@@ -63,6 +63,7 @@ exports[`Banner snapshot should match snapshot when closed 1`] = `
           "styledComponentId": "StyledBannerComponents__Container-sc-88s6ku-0",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -82,7 +83,7 @@ exports[`Banner snapshot should match snapshot when closed 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "StyledBannerComponents__Content-sc-88s6ku-1",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
                     "align-items:center;display:flex;justify-content:center;margin:auto;max-width:900px;padding:10px;min-width:0;",
@@ -94,6 +95,7 @@ exports[`Banner snapshot should match snapshot when closed 1`] = `
                 "styledComponentId": "StyledBannerComponents__Content-sc-88s6ku-1",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -174,6 +176,7 @@ exports[`Banner snapshot should match snapshot when open 1`] = `
           "styledComponentId": "StyledBannerComponents__Container-sc-88s6ku-0",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -193,7 +196,7 @@ exports[`Banner snapshot should match snapshot when open 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "StyledBannerComponents__Content-sc-88s6ku-1",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
                     "align-items:center;display:flex;justify-content:center;margin:auto;max-width:900px;padding:10px;min-width:0;",
@@ -205,6 +208,7 @@ exports[`Banner snapshot should match snapshot when open 1`] = `
                 "styledComponentId": "StyledBannerComponents__Content-sc-88s6ku-1",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

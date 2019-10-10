@@ -113,7 +113,7 @@ exports[`Drawer snapshots isOpen = true 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c0",
                   "rules": Array [
                     "background-color:",
@@ -127,6 +127,7 @@ exports[`Drawer snapshots isOpen = true 1`] = `
                 "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -161,6 +162,7 @@ exports[`Drawer snapshots isOpen = true 1`] = `
                       "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
                       "target": "div",
                       "toString": [Function],
+                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -199,6 +201,7 @@ exports[`Drawer snapshots isOpen = true 1`] = `
                             "styledComponentId": "DrawerCard-sc-1ka5kr5-0",
                             "target": "div",
                             "toString": [Function],
+                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }

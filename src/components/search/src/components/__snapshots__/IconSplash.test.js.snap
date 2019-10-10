@@ -29,6 +29,7 @@ exports[`IconSplash should match snapshot 1`] = `
       rotation={null}
       size="5x"
       spin={false}
+      swapOpacity={false}
       symbol={false}
       title=""
       transform={null}

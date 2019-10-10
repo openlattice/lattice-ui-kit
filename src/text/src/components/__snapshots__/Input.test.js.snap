@@ -79,6 +79,7 @@ exports[`Input render matches snapshot 1`] = `
         "styledComponentId": "Input-ttuish-0",
         "target": "input",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

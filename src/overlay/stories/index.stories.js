@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import { storiesOf } from '@storybook/react';
 
-import Overlay from '..';
 import { Button } from '../../button';
+import Overlay from '..';
 
 class OverlayExample extends Component {
 

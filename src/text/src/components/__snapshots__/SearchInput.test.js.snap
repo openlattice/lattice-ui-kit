@@ -88,7 +88,7 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "SearchInput__SearchInputWrapper-sc-1bpx0dr-0",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "display:flex;position:relative;",
@@ -100,6 +100,7 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
           "styledComponentId": "SearchInput__SearchInputWrapper-sc-1bpx0dr-0",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -117,7 +118,7 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "SearchInput__SearchIcon-sc-1bpx0dr-2",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
                     "align-self:center;color:",
@@ -131,6 +132,7 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                 "styledComponentId": "SearchInput__SearchIcon-sc-1bpx0dr-2",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -166,6 +168,7 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                 rotation={null}
                 size={null}
                 spin={false}
+                swapOpacity={false}
                 symbol={false}
                 title=""
                 transform={null}
@@ -241,6 +244,7 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                 "styledComponentId": "SearchInput__Input-sc-1bpx0dr-1",
                 "target": "input",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

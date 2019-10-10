@@ -128,6 +128,7 @@ input:checked ~ .c2:after {
           "styledComponentId": "ChoiceLabel-sc-11kob9e-0",
           "target": "label",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -160,6 +161,7 @@ input:checked ~ .c2:after {
                 "styledComponentId": "ChoiceInputs__RadioInput-sc-1fkg6yx-0",
                 "target": "input",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -180,7 +182,7 @@ input:checked ~ .c2:after {
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "RadioIndicator-sc-1vlnpb4-0",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c2",
                   "rules": Array [
                     "background-color:",
@@ -220,6 +222,7 @@ input:checked ~ .c2:after {
                 "styledComponentId": "RadioIndicator-sc-1vlnpb4-0",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
