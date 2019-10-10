@@ -77,7 +77,6 @@ class SelectController extends Component<Props> {
 
     if (icon) {
       components.DropdownIndicator = DropdownIndicator;
-      return { ...props, components };
     }
 
     return { ...props, components };
