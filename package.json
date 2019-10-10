@@ -47,7 +47,7 @@
     "@babel/polyfill": "~7.6.0",
     "@babel/preset-env": "~7.6.3",
     "@babel/preset-flow": "~7.0.0",
-    "@babel/preset-react": "~7.0.0",
+    "@babel/preset-react": "~7.6.3",
     "@babel/register": "~7.6.0",
     "@babel/runtime": "~7.6.0",
     "@storybook/addon-actions": "~5.2.0",
