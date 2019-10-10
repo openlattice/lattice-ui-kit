@@ -129,15 +129,13 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #e6e6f7;
-  border-color: #e6e6f7;
+  background-color: rgba(0,0,0,0.15);
 }
 
 .c2:disabled {
@@ -150,7 +148,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
 }
 
 .c2:focus-visible {
-  box-shadow: #d0bbff 0 0 0 2px;
+  box-shadow: rgba(0,0,0,0.15) 0 0 0 2px;
 }
 
 .c1 {

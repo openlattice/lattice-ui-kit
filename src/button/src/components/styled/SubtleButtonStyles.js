@@ -9,13 +9,11 @@ const subtleStyle = css`
 `;
 
 const subtleHover = css`
-  background-color: ${NEUTRALS[6]};
-  border-color: ${NEUTRALS[6]};
+  background-color: rgba(0, 0, 0, 0.1);
 `;
 
 const subtleActive = css`
-  background-color: ${PURPLES[6]};
-  border-color: ${PURPLES[6]};
+  background-color: rgba(0, 0, 0, 0.15);
 `;
 
 const subtleDisabled = css`
@@ -25,7 +23,7 @@ const subtleDisabled = css`
 `;
 
 const subtleFocus = css`
-  box-shadow: ${PURPLES[4]} 0 0 0 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 0 0 2px;
 `;
 
 export {
