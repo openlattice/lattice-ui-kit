@@ -6,7 +6,7 @@ import selectStyles from '../../../style/selectStyles';
 export const defaultProps = {
   selectProps: { styles: selectStyles },
   // @atlaskit/datetime-picker uses date-fns format tokens
-  dateFormat: 'MM/DD/YYYY',
+  // locale defaults to 'en-US'
   placeholder: 'MM/DD/YYYY',
 };
 

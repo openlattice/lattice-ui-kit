@@ -59,6 +59,7 @@ exports[`CardSegment snapshots with children 1`] = `
         "styledComponentId": "c0",
         "target": "div",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -138,6 +139,7 @@ exports[`CardSegment snapshots without children 1`] = `
         "styledComponentId": "c0",
         "target": "div",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

@@ -61,6 +61,7 @@ exports[`AppContentWrapper snapshots should match snapshot 1`] = `
           "styledComponentId": "AppContentOuterWrapper-sc-13mz9i2-0",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -93,6 +94,7 @@ exports[`AppContentWrapper snapshots should match snapshot 1`] = `
                 "styledComponentId": "AppContentInnerWrapper-dk4lgw-0",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

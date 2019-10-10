@@ -65,6 +65,7 @@ exports[`Card snapshots With child divs 1`] = `
         "styledComponentId": "Card-sc-3vnjrr-0",
         "target": "div",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -153,6 +154,7 @@ exports[`Card snapshots Without Children 1`] = `
         "styledComponentId": "Card-sc-3vnjrr-0",
         "target": "div",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

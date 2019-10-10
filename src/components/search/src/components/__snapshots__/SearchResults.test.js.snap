@@ -38,7 +38,7 @@ exports[`SearchResults snapshots should match snapshot 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "CardStack-sc-1vtkaja-0",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "display:flex;flex-direction:column;position:relative;& > div{margin:10px 0;}& > div:first-child{margin-top:0;}& > div:last-child{margin-bottom:0;}",
@@ -50,6 +50,7 @@ exports[`SearchResults snapshots should match snapshot 1`] = `
           "styledComponentId": "CardStack-sc-1vtkaja-0",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }

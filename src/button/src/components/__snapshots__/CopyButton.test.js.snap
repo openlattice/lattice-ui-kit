@@ -111,6 +111,7 @@ exports[`CopyButton icon with text should match snapshot 1`] = `
         rotation={null}
         size={null}
         spin={false}
+        swapOpacity={false}
         symbol={false}
         title=""
         transform={null}
@@ -167,6 +168,7 @@ exports[`CopyButton icon with text should match snapshot 1`] = `
               "styledComponentId": "StyledButton-sc-1etazn9-0",
               "target": "button",
               "toString": [Function],
+              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -189,7 +191,7 @@ exports[`CopyButton icon with text should match snapshot 1`] = `
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
                       "componentId": "ContentWrapper-sc-36hfub-0",
-                      "isStatic": true,
+                      "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
                         "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
@@ -201,6 +203,7 @@ exports[`CopyButton icon with text should match snapshot 1`] = `
                     "styledComponentId": "ContentWrapper-sc-36hfub-0",
                     "target": "span",
                     "toString": [Function],
+                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -234,6 +237,7 @@ exports[`CopyButton icon with text should match snapshot 1`] = `
                           "styledComponentId": "Content-sc-18psqsj-0",
                           "target": "span",
                           "toString": [Function],
+                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -252,7 +256,7 @@ exports[`CopyButton icon with text should match snapshot 1`] = `
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "IconButton__IconMarginRight-g9q5gl-0",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "margin:0 8px 0 0;",
@@ -264,6 +268,7 @@ exports[`CopyButton icon with text should match snapshot 1`] = `
                                 "styledComponentId": "IconButton__IconMarginRight-g9q5gl-0",
                                 "target": "span",
                                 "toString": [Function],
+                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -299,6 +304,7 @@ exports[`CopyButton icon with text should match snapshot 1`] = `
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                swapOpacity={false}
                                 symbol={false}
                                 title=""
                                 transform={null}
@@ -446,6 +452,7 @@ exports[`CopyButton icon without text should match snapshot 1`] = `
         rotation={null}
         size={null}
         spin={false}
+        swapOpacity={false}
         symbol={false}
         title=""
         transform={null}
@@ -502,6 +509,7 @@ exports[`CopyButton icon without text should match snapshot 1`] = `
               "styledComponentId": "StyledButton-sc-1etazn9-0",
               "target": "button",
               "toString": [Function],
+              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -524,7 +532,7 @@ exports[`CopyButton icon without text should match snapshot 1`] = `
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
                       "componentId": "ContentWrapper-sc-36hfub-0",
-                      "isStatic": true,
+                      "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
                         "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
@@ -536,6 +544,7 @@ exports[`CopyButton icon without text should match snapshot 1`] = `
                     "styledComponentId": "ContentWrapper-sc-36hfub-0",
                     "target": "span",
                     "toString": [Function],
+                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -569,6 +578,7 @@ exports[`CopyButton icon without text should match snapshot 1`] = `
                           "styledComponentId": "Content-sc-18psqsj-0",
                           "target": "span",
                           "toString": [Function],
+                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -605,6 +615,7 @@ exports[`CopyButton icon without text should match snapshot 1`] = `
                           rotation={null}
                           size={null}
                           spin={false}
+                          swapOpacity={false}
                           symbol={false}
                           title=""
                           transform={null}
