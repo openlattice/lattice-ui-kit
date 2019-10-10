@@ -24,7 +24,7 @@
   "license": "Apache-2.0",
   "main": "build/index.js",
   "dependencies": {
-    "@atlaskit/datetime-picker": "8.0.16",
+    "@atlaskit/datetime-picker": "9.1.0",
     "@fortawesome/fontawesome-svg-core": "~1.2.0",
     "@fortawesome/pro-duotone-svg-icons": "~5.10.0",
     "@fortawesome/pro-light-svg-icons": "~5.7.0",
@@ -102,8 +102,8 @@
     "@babel/polyfill": "~7.4.0",
     "@babel/runtime": "~7.5.0",
     "polished": "~3.4.0",
-    "react": "~16.9.0",
-    "react-dom": "~16.9.0",
+    "react": "~16.10.0",
+    "react-dom": "~16.10.0",
     "styled-components": "~4.3.0"
   },
   "scripts": {
