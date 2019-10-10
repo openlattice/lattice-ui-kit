@@ -21,7 +21,7 @@ exports[`StepIcon complete should match snapshot 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "styled__IconLayer-g8vnjr-0",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "font-size:24px;min-width:24px;",
@@ -33,6 +33,7 @@ exports[`StepIcon complete should match snapshot 1`] = `
           "styledComponentId": "styled__IconLayer-g8vnjr-0",
           "target": "span",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -40,7 +41,7 @@ exports[`StepIcon complete should match snapshot 1`] = `
       forwardedRef={null}
     >
       <span
-        className="fa-layers c0"
+        className="c0 fa-layers"
       >
         <FontAwesomeIcon
           border={false}
@@ -181,7 +182,7 @@ exports[`StepIcon default should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "styled__StepIndex-g8vnjr-2",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "font-size:14px;font-weight:bold;",
@@ -193,6 +194,7 @@ exports[`StepIcon default should match snapshot 1`] = `
         "styledComponentId": "styled__StepIndex-g8vnjr-2",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

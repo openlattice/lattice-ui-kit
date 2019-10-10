@@ -82,6 +82,7 @@ exports[`TextArea render matches snapshot 1`] = `
         "styledComponentId": "TextArea-sc-10m8gjf-0",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

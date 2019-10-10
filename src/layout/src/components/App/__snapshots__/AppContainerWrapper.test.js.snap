@@ -23,7 +23,7 @@ exports[`AppContainerWrapper snapshots should match snapshot 1`] = `
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "AppContainerWrapper-urn6g2-0",
-          "isStatic": true,
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
             "display:flex;flex-direction:column;height:100%;margin:0;min-width:",
@@ -37,6 +37,7 @@ exports[`AppContainerWrapper snapshots should match snapshot 1`] = `
         "styledComponentId": "AppContainerWrapper-urn6g2-0",
         "target": "div",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

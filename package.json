@@ -88,7 +88,7 @@
     "react-router-dom": "~5.1.0",
     "rimraf": "~3.0.0",
     "style-loader": "~1.0.0",
-    "styled-components": "~4.3.0",
+    "styled-components": "~4.4.0",
     "stylelint": "~11.1.0",
     "stylelint-config-standard": "~19.0.0",
     "stylelint-config-styled-components": "~0.1.1",
@@ -99,12 +99,12 @@
     "webpack-hot-middleware": "~2.25.0"
   },
   "peerDependencies": {
-    "@babel/polyfill": "~7.4.0",
-    "@babel/runtime": "~7.5.0",
+    "@babel/polyfill": "~7.6.0",
+    "@babel/runtime": "~7.6.0",
     "polished": "~3.4.0",
     "react": "~16.10.0",
     "react-dom": "~16.10.0",
-    "styled-components": "~4.3.0"
+    "styled-components": "~4.4.0"
   },
   "scripts": {
     "build:dev": "webpack --config config/webpack/webpack.config.js --env.development",

@@ -121,7 +121,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "styled__PaginationWrapper-r3xwjs-1",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "align-items:center;display:flex;justify-content:flex-end;width:100%;",
@@ -133,6 +133,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
           "styledComponentId": "styled__PaginationWrapper-r3xwjs-1",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -172,6 +173,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                 "styledComponentId": "Label-sc-130fyca-0",
                 "target": "label",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -217,6 +219,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                 "styledComponentId": "Label-sc-130fyca-0",
                 "target": "label",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -323,6 +326,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                     "styledComponentId": "StyledButton-sc-1etazn9-0",
                     "target": "button",
                     "toString": [Function],
+                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -347,7 +351,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
                             "componentId": "ContentWrapper-sc-36hfub-0",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c3",
                             "rules": Array [
                               "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
@@ -359,6 +363,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                           "styledComponentId": "ContentWrapper-sc-36hfub-0",
                           "target": "span",
                           "toString": [Function],
+                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -392,6 +397,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                 "styledComponentId": "Content-sc-18psqsj-0",
                                 "target": "span",
                                 "toString": [Function],
+                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -552,6 +558,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                     "styledComponentId": "StyledButton-sc-1etazn9-0",
                     "target": "button",
                     "toString": [Function],
+                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -576,7 +583,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
                             "componentId": "ContentWrapper-sc-36hfub-0",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c3",
                             "rules": Array [
                               "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
@@ -588,6 +595,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                           "styledComponentId": "ContentWrapper-sc-36hfub-0",
                           "target": "span",
                           "toString": [Function],
+                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -621,6 +629,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                 "styledComponentId": "Content-sc-18psqsj-0",
                                 "target": "span",
                                 "toString": [Function],
+                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }

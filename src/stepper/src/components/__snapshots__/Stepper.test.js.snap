@@ -81,6 +81,7 @@ exports[`Stepper should match snapshot 1`] = `
           "styledComponentId": "styled__StepperWrapper-g8vnjr-5",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -120,6 +121,7 @@ exports[`Stepper should match snapshot 1`] = `
                   "styledComponentId": "styled__StepWrapper-g8vnjr-4",
                   "target": "div",
                   "toString": [Function],
+                  "usesTheme": false,
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 }
@@ -145,7 +147,7 @@ exports[`Stepper should match snapshot 1`] = `
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
                             "componentId": "styled__IconLayer-g8vnjr-0",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
                               "font-size:24px;min-width:24px;",
@@ -157,6 +159,7 @@ exports[`Stepper should match snapshot 1`] = `
                           "styledComponentId": "styled__IconLayer-g8vnjr-0",
                           "target": "span",
                           "toString": [Function],
+                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -164,7 +167,7 @@ exports[`Stepper should match snapshot 1`] = `
                       forwardedRef={null}
                     >
                       <span
-                        className="fa-layers c2"
+                        className="c2 fa-layers"
                       >
                         <FontAwesomeIcon
                           border={false}
@@ -228,7 +231,7 @@ exports[`Stepper should match snapshot 1`] = `
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "styled__StepIndex-g8vnjr-2",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "font-size:14px;font-weight:bold;",
@@ -240,6 +243,7 @@ exports[`Stepper should match snapshot 1`] = `
                                 "styledComponentId": "styled__StepIndex-g8vnjr-2",
                                 "target": "span",
                                 "toString": [Function],
+                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -247,7 +251,7 @@ exports[`Stepper should match snapshot 1`] = `
                             forwardedRef={null}
                           >
                             <span
-                              className="fa-layers-text fa-inverse c3"
+                              className="c3 fa-layers-text fa-inverse"
                             >
                               1
                             </span>
@@ -282,6 +286,7 @@ exports[`Stepper should match snapshot 1`] = `
                         "styledComponentId": "styled__StepLabel-g8vnjr-3",
                         "target": "span",
                         "toString": [Function],
+                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -324,6 +329,7 @@ exports[`Stepper should match snapshot 1`] = `
                 "styledComponentId": "styled__StepDivider-g8vnjr-1",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -365,6 +371,7 @@ exports[`Stepper should match snapshot 1`] = `
                   "styledComponentId": "styled__StepWrapper-g8vnjr-4",
                   "target": "div",
                   "toString": [Function],
+                  "usesTheme": false,
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 }
@@ -390,7 +397,7 @@ exports[`Stepper should match snapshot 1`] = `
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
                             "componentId": "styled__IconLayer-g8vnjr-0",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
                               "font-size:24px;min-width:24px;",
@@ -402,6 +409,7 @@ exports[`Stepper should match snapshot 1`] = `
                           "styledComponentId": "styled__IconLayer-g8vnjr-0",
                           "target": "span",
                           "toString": [Function],
+                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -409,7 +417,7 @@ exports[`Stepper should match snapshot 1`] = `
                       forwardedRef={null}
                     >
                       <span
-                        className="fa-layers c2"
+                        className="c2 fa-layers"
                       >
                         <FontAwesomeIcon
                           border={false}
@@ -473,7 +481,7 @@ exports[`Stepper should match snapshot 1`] = `
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "styled__StepIndex-g8vnjr-2",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "font-size:14px;font-weight:bold;",
@@ -485,6 +493,7 @@ exports[`Stepper should match snapshot 1`] = `
                                 "styledComponentId": "styled__StepIndex-g8vnjr-2",
                                 "target": "span",
                                 "toString": [Function],
+                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -492,7 +501,7 @@ exports[`Stepper should match snapshot 1`] = `
                             forwardedRef={null}
                           >
                             <span
-                              className="fa-layers-text fa-inverse c3"
+                              className="c3 fa-layers-text fa-inverse"
                             >
                               2
                             </span>
@@ -527,6 +536,7 @@ exports[`Stepper should match snapshot 1`] = `
                         "styledComponentId": "styled__StepLabel-g8vnjr-3",
                         "target": "span",
                         "toString": [Function],
+                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -569,6 +579,7 @@ exports[`Stepper should match snapshot 1`] = `
                 "styledComponentId": "styled__StepDivider-g8vnjr-1",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -610,6 +621,7 @@ exports[`Stepper should match snapshot 1`] = `
                   "styledComponentId": "styled__StepWrapper-g8vnjr-4",
                   "target": "div",
                   "toString": [Function],
+                  "usesTheme": false,
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 }
@@ -635,7 +647,7 @@ exports[`Stepper should match snapshot 1`] = `
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
                             "componentId": "styled__IconLayer-g8vnjr-0",
-                            "isStatic": true,
+                            "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
                               "font-size:24px;min-width:24px;",
@@ -647,6 +659,7 @@ exports[`Stepper should match snapshot 1`] = `
                           "styledComponentId": "styled__IconLayer-g8vnjr-0",
                           "target": "span",
                           "toString": [Function],
+                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -654,7 +667,7 @@ exports[`Stepper should match snapshot 1`] = `
                       forwardedRef={null}
                     >
                       <span
-                        className="fa-layers c2"
+                        className="c2 fa-layers"
                       >
                         <FontAwesomeIcon
                           border={false}
@@ -718,7 +731,7 @@ exports[`Stepper should match snapshot 1`] = `
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "styled__StepIndex-g8vnjr-2",
-                                  "isStatic": true,
+                                  "isStatic": false,
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "font-size:14px;font-weight:bold;",
@@ -730,6 +743,7 @@ exports[`Stepper should match snapshot 1`] = `
                                 "styledComponentId": "styled__StepIndex-g8vnjr-2",
                                 "target": "span",
                                 "toString": [Function],
+                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -737,7 +751,7 @@ exports[`Stepper should match snapshot 1`] = `
                             forwardedRef={null}
                           >
                             <span
-                              className="fa-layers-text fa-inverse c3"
+                              className="c3 fa-layers-text fa-inverse"
                             >
                               3
                             </span>
@@ -772,6 +786,7 @@ exports[`Stepper should match snapshot 1`] = `
                         "styledComponentId": "styled__StepLabel-g8vnjr-3",
                         "target": "span",
                         "toString": [Function],
+                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }

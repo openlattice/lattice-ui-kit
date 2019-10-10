@@ -513,7 +513,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   white-space: nowrap;
 }
 
-.c10 {
+.c9 {
   border-radius: 3px;
   border-style: solid;
   border-width: 2px;
@@ -534,7 +534,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   color: #ffffff;
 }
 
-.c10:hover {
+.c9:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -542,14 +542,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   border-color: #6124e2;
 }
 
-.c10:active {
+.c9:active {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #410ab5;
   border-color: #410ab5;
 }
 
-.c10:disabled {
+.c9:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -558,11 +558,11 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   color: #b6bbc7;
 }
 
-.c10:focus-visible {
+.c9:focus-visible {
   box-shadow: #410ab5 0 0 0 2px;
 }
 
-.c14 {
+.c13 {
   border-radius: 3px;
   border-style: solid;
   border-width: 2px;
@@ -583,7 +583,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   color: #8e929b;
 }
 
-.c14:hover {
+.c13:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -591,7 +591,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   border-color: #dcdce7;
 }
 
-.c14:active {
+.c13:active {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #b6bbc7;
@@ -599,7 +599,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   color: #ffffff;
 }
 
-.c14:disabled {
+.c13:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -608,18 +608,18 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   color: #b6bbc7;
 }
 
-.c14:focus-visible {
+.c13:focus-visible {
   box-shadow: #b6bbc7 0 0 0 2px;
 }
 
-.c9 {
+.c10 {
   margin: 0 0 0 20px;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c13 {
+.c14 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -746,7 +746,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c0",
                   "rules": Array [
                     "background-color:",
@@ -760,6 +760,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                 "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -794,6 +795,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                       "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
                       "target": "div",
                       "toString": [Function],
+                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -830,6 +832,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                             "styledComponentId": "StyledModalComponents__ModalOuterContainer-sc-1r1r1yf-0",
                             "target": "div",
                             "toString": [Function],
+                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -877,6 +880,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                   "styledComponentId": "StyledModalComponents__ModalInnerContainer-sc-1r1r1yf-1",
                                   "target": "div",
                                   "toString": [Function],
+                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -900,7 +904,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
                                             "componentId": "StyledModalComponents__HeaderSection-sc-1r1r1yf-5",
-                                            "isStatic": true,
+                                            "isStatic": false,
                                             "lastClassName": "c4",
                                             "rules": Array [
                                               "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
@@ -917,6 +921,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                           "styledComponentId": "StyledModalComponents__HeaderSection-sc-1r1r1yf-5",
                                           "target": "div",
                                           "toString": [Function],
+                                          "usesTheme": false,
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
                                         }
@@ -934,7 +939,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 "attrs": Array [],
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "ModalHeader__ModalTitle-sc-1rdyrep-0",
-                                                  "isStatic": true,
+                                                  "isStatic": false,
                                                   "lastClassName": "c5",
                                                   "rules": Array [
                                                     "color:#555e6f;font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
@@ -946,6 +951,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 "styledComponentId": "ModalHeader__ModalTitle-sc-1rdyrep-0",
                                                 "target": "h1",
                                                 "toString": [Function],
+                                                "usesTheme": false,
                                                 "warnTooManyClasses": [Function],
                                                 "withComponent": [Function],
                                               }
@@ -969,7 +975,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 "attrs": Array [],
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "ModalHeader__CloseButtonWrapper-sc-1rdyrep-1",
-                                                  "isStatic": true,
+                                                  "isStatic": false,
                                                   "lastClassName": "c6",
                                                   "rules": Array [
                                                     "background:none;border:none;cursor:pointer;font-size:12px;height:32px;margin:0 0 0 auto;padding:0;text-align:center;width:32px;",
@@ -981,6 +987,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 "styledComponentId": "ModalHeader__CloseButtonWrapper-sc-1rdyrep-1",
                                                 "target": "button",
                                                 "toString": [Function],
+                                                "usesTheme": false,
                                                 "warnTooManyClasses": [Function],
                                                 "withComponent": [Function],
                                               }
@@ -1081,6 +1088,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                           "styledComponentId": "StyledModalComponents__BodySection-sc-1r1r1yf-3",
                                           "target": "div",
                                           "toString": [Function],
+                                          "usesTheme": false,
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
                                         }
@@ -1114,7 +1122,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
                                             "componentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
-                                            "isStatic": true,
+                                            "isStatic": false,
                                             "lastClassName": "c8",
                                             "rules": Array [
                                               "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
@@ -1131,6 +1139,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                           "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
                                           "target": "div",
                                           "toString": [Function],
+                                          "usesTheme": false,
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
                                         }
@@ -1170,6 +1179,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                                                 "target": [Function],
                                                 "toString": [Function],
+                                                "usesTheme": false,
                                                 "warnTooManyClasses": [Function],
                                                 "withComponent": [Function],
                                               }
@@ -1238,6 +1248,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                                                       "target": "button",
                                                       "toString": [Function],
+                                                      "usesTheme": false,
                                                       "warnTooManyClasses": [Function],
                                                       "withComponent": [Function],
                                                     }
@@ -1250,7 +1261,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                   type="button"
                                                 >
                                                   <button
-                                                    className="c9 c10"
+                                                    className="c10 c9"
                                                     disabled={false}
                                                     mode="primary"
                                                     onClick={[Function]}
@@ -1264,7 +1275,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                             "attrs": Array [],
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "ContentWrapper-sc-36hfub-0",
-                                                              "isStatic": true,
+                                                              "isStatic": false,
                                                               "lastClassName": "c11",
                                                               "rules": Array [
                                                                 "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
@@ -1276,6 +1287,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                                                             "target": "span",
                                                             "toString": [Function],
+                                                            "usesTheme": false,
                                                             "warnTooManyClasses": [Function],
                                                             "withComponent": [Function],
                                                           }
@@ -1309,6 +1321,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                   "styledComponentId": "Content-sc-18psqsj-0",
                                                                   "target": "span",
                                                                   "toString": [Function],
+                                                                  "usesTheme": false,
                                                                   "warnTooManyClasses": [Function],
                                                                   "withComponent": [Function],
                                                                 }
@@ -1359,6 +1372,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                                                 "target": [Function],
                                                 "toString": [Function],
+                                                "usesTheme": false,
                                                 "warnTooManyClasses": [Function],
                                                 "withComponent": [Function],
                                               }
@@ -1424,6 +1438,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                                                       "target": "button",
                                                       "toString": [Function],
+                                                      "usesTheme": false,
                                                       "warnTooManyClasses": [Function],
                                                       "withComponent": [Function],
                                                     }
@@ -1435,7 +1450,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                   type="button"
                                                 >
                                                   <button
-                                                    className="c13 c14"
+                                                    className="c14 c13"
                                                     disabled={false}
                                                     mode="default"
                                                     onClick={[Function]}
@@ -1449,7 +1464,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                             "attrs": Array [],
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "ContentWrapper-sc-36hfub-0",
-                                                              "isStatic": true,
+                                                              "isStatic": false,
                                                               "lastClassName": "c11",
                                                               "rules": Array [
                                                                 "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
@@ -1461,6 +1476,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                                                             "target": "span",
                                                             "toString": [Function],
+                                                            "usesTheme": false,
                                                             "warnTooManyClasses": [Function],
                                                             "withComponent": [Function],
                                                           }
@@ -1494,6 +1510,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                   "styledComponentId": "Content-sc-18psqsj-0",
                                                                   "target": "span",
                                                                   "toString": [Function],
+                                                                  "usesTheme": false,
                                                                   "warnTooManyClasses": [Function],
                                                                   "withComponent": [Function],
                                                                 }
