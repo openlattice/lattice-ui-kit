@@ -166,6 +166,7 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                 rotation={null}
                 size={null}
                 spin={false}
+                swapOpacity={false}
                 symbol={false}
                 title=""
                 transform={null}

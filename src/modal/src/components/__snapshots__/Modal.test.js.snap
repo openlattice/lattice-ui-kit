@@ -1018,6 +1018,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 rotation={null}
                                                 size="lg"
                                                 spin={false}
+                                                swapOpacity={false}
                                                 symbol={false}
                                                 title=""
                                                 transform={null}
