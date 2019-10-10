@@ -36,6 +36,7 @@ exports[`Tag snapshots should match snapshot 1`] = `
         "styledComponentId": "Tag-sc-1sp059-0",
         "target": "span",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

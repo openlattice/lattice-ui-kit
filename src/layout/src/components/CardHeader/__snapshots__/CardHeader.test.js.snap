@@ -81,6 +81,7 @@ exports[`CardHeader snapshots with children 1`] = `
         "styledComponentId": "c0",
         "target": "div",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -175,6 +176,7 @@ exports[`CardHeader snapshots without children 1`] = `
         "styledComponentId": "c0",
         "target": "div",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
