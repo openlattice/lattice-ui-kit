@@ -53,7 +53,7 @@ const selectStyles = {
     }
 
     const activeBgColor = isDisabled ? WHITE : PURPLES[5];
-    const hoverBgColor = isDisabled ? WHITE : PURPLES[5];
+    const hoverBgColor = isDisabled ? WHITE : NEUTRALS[6];
 
     return {
       ...base,
