@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from 'react';
+import { createFilter } from 'react-select';
 import isFunction from 'lodash/isFunction';
 import type { Node, ComponentType } from 'react';
 import type { IconDefinition } from '@fortawesome/react-fontawesome';
@@ -67,18 +68,23 @@ class SelectController extends Component<Props> {
     };
   }
 
-  composePropsWithComponents = (props :Object) :Object => {
+  composeProps = (props :Object) :Object => {
     const { icon } = this.props;
+
+    const composedProps = Object.assign(
+      props,
+      { filterOption: createFilter({ ignoreAccents: false }) }
+    );
 
     if (icon) {
       const components = {
         DropdownIndicator,
       };
 
-      return { ...props, components };
+      return { ...composedProps, components };
     }
 
-    return props;
+    return composedProps;
   }
 
   renderWithDataOverrides = () => {
@@ -98,13 +104,13 @@ class SelectController extends Component<Props> {
       overrideProps.value = this.getOptionsFromRawValue();
     }
 
-    const composedProps = this.composePropsWithComponents(overrideProps);
+    const composedProps = this.composeProps(overrideProps);
     return render(composedProps);
   }
 
   render() {
     const { useRawValues, render, ...rest } = this.props;
-    const composedProps = this.composePropsWithComponents({ ...rest });
+    const composedProps = this.composeProps({ ...rest });
     return (
       <>
         {
