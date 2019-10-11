@@ -6,6 +6,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
     defaultInputValue=""
     defaultMenuIsOpen={false}
     defaultValue={null}
+    filterOption={[Function]}
   />
 </Fragment>
 `;
