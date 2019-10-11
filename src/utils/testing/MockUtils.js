@@ -23,7 +23,7 @@ function genSelectOptions() {
   return stressOptions;
 }
 
-function genRealWordSelectOptions(text :paragraph) {
+function genRealWordSelectOptions(text :string) {
 
   const stressOptions = [];
   const words = text.split(' ');
