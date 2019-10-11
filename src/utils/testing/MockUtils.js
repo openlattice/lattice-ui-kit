@@ -13,16 +13,6 @@ function genRandomString() :string {
   return Math.random().toString(36).slice(2);
 }
 
-function genSelectOptions() {
-
-  const stressOptions = [];
-  for (let i = 0; i < 2000; i += 1) {
-    const string = genRandomString();
-    stressOptions.push({ label: string, value: string });
-  }
-  return stressOptions;
-}
-
 function genRealWordSelectOptions(text :string) {
 
   const stressOptions = [];
@@ -37,6 +27,5 @@ function genRealWordSelectOptions(text :string) {
 export {
   genRandomString,
   genRealWordSelectOptions,
-  genSelectOptions,
   nope,
 };
