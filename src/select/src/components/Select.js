@@ -6,9 +6,9 @@ import SelectController from './SelectController';
 import selectStyles from '../../../style/selectStyles';
 
 export const defaultProps = {
-  styles: selectStyles,
+  filterOption: createFilter({ ignoreAccents: false }),
   menuPlacement: 'auto',
-  filterOption: createFilter({ ignoreAccents: false })
+  styles: selectStyles,
 };
 
 /* eslint-disable react/jsx-props-no-spreading */

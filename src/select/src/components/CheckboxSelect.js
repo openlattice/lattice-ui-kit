@@ -7,15 +7,15 @@ import SelectController from './SelectController';
 import selectStyles from '../../../style/selectStyles';
 
 export const defaultProps = {
-  styles: selectStyles,
-  menuPlacement: 'auto',
   components: {
     Option
   },
-  isMulti: true,
-  hideSelectedOptions: false,
   closeMenuOnSelect: false,
   filterOption: createFilter({ ignoreAccents: false }),
+  hideSelectedOptions: false,
+  isMulti: true,
+  menuPlacement: 'auto',
+  styles: selectStyles,
 };
 
 /* eslint-disable react/jsx-props-no-spreading */
