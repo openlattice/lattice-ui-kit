@@ -5,9 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNarwhal } from '@fortawesome/pro-regular-svg-icons';
 
 import { Select, Creatable, CheckboxSelect } from '../index';
-import { stateOptions, REACT_SELECT_USAGE } from './constants';
+import { paragraph, stateOptions, REACT_SELECT_USAGE } from './constants';
+import { genRealWordSelectOptions } from '../../utils/testing/MockUtils';
 
 const customIcon = () => <FontAwesomeIcon icon={faNarwhal} spin />;
+
+const stressTestWordOptions = genRealWordSelectOptions(paragraph);
 
 storiesOf('Select', module)
   .addDecorator((storyFn) => (
@@ -32,6 +35,9 @@ storiesOf('Select', module)
           options={stateOptions}
           onChange={action('Multiple selection changed')}
           isMulti />
+      <h1>Select (Stress Test)</h1>
+      <Select
+          options={stressTestWordOptions} />
     </>
   ))
   .add('useRawValues', () => (

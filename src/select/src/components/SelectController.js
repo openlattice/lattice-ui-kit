@@ -67,7 +67,7 @@ class SelectController extends Component<Props> {
     };
   }
 
-  composePropsWithComponents = (props :Object) :Object => {
+  composeProps = (props :Object) :Object => {
     const { icon } = this.props;
 
     if (icon) {
@@ -98,13 +98,13 @@ class SelectController extends Component<Props> {
       overrideProps.value = this.getOptionsFromRawValue();
     }
 
-    const composedProps = this.composePropsWithComponents(overrideProps);
+    const composedProps = this.composeProps(overrideProps);
     return render(composedProps);
   }
 
   render() {
     const { useRawValues, render, ...rest } = this.props;
-    const composedProps = this.composePropsWithComponents({ ...rest });
+    const composedProps = this.composeProps({ ...rest });
     return (
       <>
         {
