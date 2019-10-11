@@ -71,20 +71,15 @@ class SelectController extends Component<Props> {
   composeProps = (props :Object) :Object => {
     const { icon } = this.props;
 
-    const composedProps = Object.assign(
-      props,
-      { filterOption: createFilter({ ignoreAccents: false }) }
-    );
-
     if (icon) {
       const components = {
         DropdownIndicator,
       };
 
-      return { ...composedProps, components };
+      return { ...props, components };
     }
 
-    return composedProps;
+    return props;
   }
 
   renderWithDataOverrides = () => {
