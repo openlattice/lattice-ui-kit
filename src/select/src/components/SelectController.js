@@ -1,6 +1,5 @@
 // @flow
 import React, { Component } from 'react';
-import { createFilter } from 'react-select';
 import isFunction from 'lodash/isFunction';
 import type { Node, ComponentType } from 'react';
 import type { IconDefinition } from '@fortawesome/react-fontawesome';

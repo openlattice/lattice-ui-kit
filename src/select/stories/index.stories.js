@@ -6,7 +6,7 @@ import { faNarwhal } from '@fortawesome/pro-regular-svg-icons';
 
 import { Select, Creatable, CheckboxSelect } from '../index';
 import { paragraph, stateOptions, REACT_SELECT_USAGE } from './constants';
-import { genRealWordSelectOptions, genSelectOptions } from '../../utils/testing/MockUtils';
+import { genRealWordSelectOptions } from '../../utils/testing/MockUtils';
 
 const customIcon = () => <FontAwesomeIcon icon={faNarwhal} spin />;
 
