@@ -6,6 +6,11 @@ exports[`Creatable render matches snapshot 1`] = `
     render={[Function]}
   >
     <StateManager
+      components={
+        Object {
+          "Option": [Function],
+        }
+      }
       defaultInputValue=""
       defaultMenuIsOpen={false}
       defaultValue={null}
@@ -28,6 +33,11 @@ exports[`Creatable render matches snapshot 1`] = `
     >
       <Creatable
         allowCreateWhileLoading={false}
+        components={
+          Object {
+            "Option": [Function],
+          }
+        }
         createOptionPosition="last"
         filterOption={[Function]}
         formatCreateLabel={[Function]}
@@ -63,7 +73,11 @@ exports[`Creatable render matches snapshot 1`] = `
           captureMenuScroll={false}
           closeMenuOnScroll={false}
           closeMenuOnSelect={true}
-          components={Object {}}
+          components={
+            Object {
+              "Option": [Function],
+            }
+          }
           controlShouldRenderValue={true}
           createOptionPosition="last"
           escapeClearsValue={false}
@@ -144,7 +158,9 @@ exports[`Creatable render matches snapshot 1`] = `
                 "captureMenuScroll": false,
                 "closeMenuOnScroll": false,
                 "closeMenuOnSelect": true,
-                "components": Object {},
+                "components": Object {
+                  "Option": [Function],
+                },
                 "controlShouldRenderValue": true,
                 "createOptionPosition": "last",
                 "escapeClearsValue": false,
@@ -279,7 +295,9 @@ exports[`Creatable render matches snapshot 1`] = `
                       "captureMenuScroll": false,
                       "closeMenuOnScroll": false,
                       "closeMenuOnSelect": true,
-                      "components": Object {},
+                      "components": Object {
+                        "Option": [Function],
+                      },
                       "controlShouldRenderValue": true,
                       "createOptionPosition": "last",
                       "escapeClearsValue": false,
@@ -427,7 +445,9 @@ exports[`Creatable render matches snapshot 1`] = `
                             "captureMenuScroll": false,
                             "closeMenuOnScroll": false,
                             "closeMenuOnSelect": true,
-                            "components": Object {},
+                            "components": Object {
+                              "Option": [Function],
+                            },
                             "controlShouldRenderValue": true,
                             "createOptionPosition": "last",
                             "escapeClearsValue": false,
@@ -554,7 +574,9 @@ exports[`Creatable render matches snapshot 1`] = `
                                   "captureMenuScroll": false,
                                   "closeMenuOnScroll": false,
                                   "closeMenuOnSelect": true,
-                                  "components": Object {},
+                                  "components": Object {
+                                    "Option": [Function],
+                                  },
                                   "controlShouldRenderValue": true,
                                   "createOptionPosition": "last",
                                   "escapeClearsValue": false,
@@ -686,7 +708,9 @@ exports[`Creatable render matches snapshot 1`] = `
                                   "captureMenuScroll": false,
                                   "closeMenuOnScroll": false,
                                   "closeMenuOnSelect": true,
-                                  "components": Object {},
+                                  "components": Object {
+                                    "Option": [Function],
+                                  },
                                   "controlShouldRenderValue": true,
                                   "createOptionPosition": "last",
                                   "escapeClearsValue": false,
@@ -900,7 +924,9 @@ exports[`Creatable render matches snapshot 1`] = `
                             "captureMenuScroll": false,
                             "closeMenuOnScroll": false,
                             "closeMenuOnSelect": true,
-                            "components": Object {},
+                            "components": Object {
+                              "Option": [Function],
+                            },
                             "controlShouldRenderValue": true,
                             "createOptionPosition": "last",
                             "escapeClearsValue": false,
@@ -1025,7 +1051,9 @@ exports[`Creatable render matches snapshot 1`] = `
                                   "captureMenuScroll": false,
                                   "closeMenuOnScroll": false,
                                   "closeMenuOnSelect": true,
-                                  "components": Object {},
+                                  "components": Object {
+                                    "Option": [Function],
+                                  },
                                   "controlShouldRenderValue": true,
                                   "createOptionPosition": "last",
                                   "escapeClearsValue": false,
@@ -1153,7 +1181,9 @@ exports[`Creatable render matches snapshot 1`] = `
                                   "captureMenuScroll": false,
                                   "closeMenuOnScroll": false,
                                   "closeMenuOnSelect": true,
-                                  "components": Object {},
+                                  "components": Object {
+                                    "Option": [Function],
+                                  },
                                   "controlShouldRenderValue": true,
                                   "createOptionPosition": "last",
                                   "escapeClearsValue": false,

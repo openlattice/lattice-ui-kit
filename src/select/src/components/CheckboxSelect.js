@@ -22,7 +22,7 @@ export const defaultProps = {
 const CheckboxSelect = (props) => (
   <SelectController
       {...props} // eslint-disable-line indent
-      render={((selectProps) => <ReactSelect {...mergeDeep(defaultProps, selectProps)} />)} />
+      render={((selectProps) => <ReactSelect {...mergeDeep(selectProps, defaultProps)} />)} />
 );
 /* eslint-enable */
 

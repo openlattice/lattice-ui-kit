@@ -6,8 +6,8 @@ import React from 'react';
 
 import type { Ref } from 'react';
 
+import SelectOption from '../SelectOption';
 import { Checkbox } from '../../../../choices';
-import { NEUTRALS } from '../../../../colors';
 
 type OptionProps = {
   getStyles :Object;
@@ -21,29 +21,16 @@ type OptionProps = {
 
 const Option = (props :OptionProps) => {
   const {
-    getStyles,
-    innerProps,
-    innerRef,
     isDisabled,
-    isFocused,
     isSelected,
     label,
   } = props;
 
-  const style = {
-    ...getStyles('option', props),
-    display: 'flex',
-    flex: '1 1 auto',
-    padding: '0 10px',
-    backgroundColor: isFocused ? NEUTRALS[6] : 'white',
-    width: '100%'
-  };
-
   /* eslint-disable react/jsx-props-no-spreading */
   return (
-    <div ref={innerRef} {...innerProps} style={style}>
+    <SelectOption {...props} isCheckBoxOption>
       <Checkbox checked={isSelected} label={label} disabled={isDisabled} readOnly />
-    </div>
+    </SelectOption>
   );
   /* eslint-enable */
 };
