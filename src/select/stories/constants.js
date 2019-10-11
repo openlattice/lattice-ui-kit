@@ -1,4 +1,5 @@
 // @flow
+import { randomString } from 'lodash';
 
 // eslint-disable-next-line max-len
 const REACT_SELECT_USAGE :string = 'Select and Creatable components are simple wrappers that pass OpenLattice styling to their respective react-select components. All props provided to these wrappers are passed through allowing full use of react-select functionality.';
@@ -65,7 +66,27 @@ const stateOptions = [
   { value: 'WY', label: 'Wyoming' },
 ];
 
+const generateOptions = (count :number) :Object[] => {
+
+  const options = [];
+  const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  for (let i = 0; i < count; i += 1) {
+    let label = '';
+    let value = '';
+    for (let j = 0; j < 10; j += 1) {
+      label += chars[Math.floor(Math.random() * chars.length)];
+    }
+    value = chars[Math.floor(Math.random() * chars.length)];
+    options.push({ label, value });
+  }
+  return options;
+};
+
+const stressTestOptions = generateOptions(2000);
+
 export {
   REACT_SELECT_USAGE,
-  stateOptions
+  generateOptions,
+  stateOptions,
+  stressTestOptions,
 };
