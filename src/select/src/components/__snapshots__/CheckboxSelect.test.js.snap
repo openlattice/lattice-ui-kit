@@ -15,6 +15,7 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
       defaultInputValue=""
       defaultMenuIsOpen={false}
       defaultValue={null}
+      filterOption={[Function]}
       hideSelectedOptions={false}
       isMulti={true}
       menuPlacement="auto"

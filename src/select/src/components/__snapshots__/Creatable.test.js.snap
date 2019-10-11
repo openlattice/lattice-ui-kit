@@ -14,6 +14,7 @@ exports[`Creatable render matches snapshot 1`] = `
       defaultInputValue=""
       defaultMenuIsOpen={false}
       defaultValue={null}
+      filterOption={[Function]}
       menuPlacement="auto"
       styles={
         Object {
@@ -38,6 +39,7 @@ exports[`Creatable render matches snapshot 1`] = `
           }
         }
         createOptionPosition="last"
+        filterOption={[Function]}
         formatCreateLabel={[Function]}
         getNewOptionData={[Function]}
         inputValue=""
