@@ -1,7 +1,6 @@
 // @flow
-import { randomString } from 'lodash';
 
-// eslint-disable-next-line max-len
+/* eslint-disable max-len */
 const REACT_SELECT_USAGE :string = 'Select and Creatable components are simple wrappers that pass OpenLattice styling to their respective react-select components. All props provided to these wrappers are passed through allowing full use of react-select functionality.';
 
 const stateOptions = [
@@ -66,27 +65,12 @@ const stateOptions = [
   { value: 'WY', label: 'Wyoming' },
 ];
 
-const generateOptions = (count :number) :Object[] => {
-
-  const options = [];
-  const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  for (let i = 0; i < count; i += 1) {
-    let label = '';
-    let value = '';
-    for (let j = 0; j < 10; j += 1) {
-      label += chars[Math.floor(Math.random() * chars.length)];
-    }
-    value = chars[Math.floor(Math.random() * chars.length)];
-    options.push({ label, value });
-  }
-  return options;
-};
-
-const stressTestOptions = generateOptions(2000);
+const paragraph = `
+October arrived, spreading a damp chill over the grounds and into the castle. Madam Pomfrey, the nurse, was kept busy by a sudden spate of colds among the staff and students. Her Pepperup potion worked instantly, though it left the drinker smoking at the ears for several hours afterward. Ginny Weasley, who had been looking pale, was bullied into taking some by Percy. The steam pouring from under her vivid hair gave the impression that her whole head was on fire. Raindrops the size of bullets thundered on the castle windows for days on end; the lake rose, the flower beds turned into muddy streams, and Hagrid's pumpkins swelled to the size of garden sheds. Oliver Wood's enthusiasm for regular training sessions, however, was not dampened, which was why Harry was to be found, late one stormy Saturday afternoon a few days before Halloween, returning to Gryffindor Tower, drenched to the skin and splattered with mud.
+`;
 
 export {
   REACT_SELECT_USAGE,
-  generateOptions,
+  paragraph,
   stateOptions,
-  stressTestOptions,
 };
