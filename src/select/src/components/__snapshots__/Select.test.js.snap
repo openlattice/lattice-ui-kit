@@ -6,9 +6,15 @@ exports[`Select snapshot render matches snapshot 1`] = `
     render={[Function]}
   >
     <StateManager
+      components={
+        Object {
+          "Option": [Function],
+        }
+      }
       defaultInputValue=""
       defaultMenuIsOpen={false}
       defaultValue={null}
+      filterOption={[Function]}
       menuPlacement="auto"
       styles={
         Object {
@@ -31,7 +37,11 @@ exports[`Select snapshot render matches snapshot 1`] = `
         captureMenuScroll={false}
         closeMenuOnScroll={false}
         closeMenuOnSelect={true}
-        components={Object {}}
+        components={
+          Object {
+            "Option": [Function],
+          }
+        }
         controlShouldRenderValue={true}
         escapeClearsValue={false}
         filterOption={[Function]}
@@ -107,7 +117,9 @@ exports[`Select snapshot render matches snapshot 1`] = `
               "captureMenuScroll": false,
               "closeMenuOnScroll": false,
               "closeMenuOnSelect": true,
-              "components": Object {},
+              "components": Object {
+                "Option": [Function],
+              },
               "controlShouldRenderValue": true,
               "escapeClearsValue": false,
               "filterOption": [Function],
@@ -237,7 +249,9 @@ exports[`Select snapshot render matches snapshot 1`] = `
                     "captureMenuScroll": false,
                     "closeMenuOnScroll": false,
                     "closeMenuOnSelect": true,
-                    "components": Object {},
+                    "components": Object {
+                      "Option": [Function],
+                    },
                     "controlShouldRenderValue": true,
                     "escapeClearsValue": false,
                     "filterOption": [Function],
@@ -380,7 +394,9 @@ exports[`Select snapshot render matches snapshot 1`] = `
                           "captureMenuScroll": false,
                           "closeMenuOnScroll": false,
                           "closeMenuOnSelect": true,
-                          "components": Object {},
+                          "components": Object {
+                            "Option": [Function],
+                          },
                           "controlShouldRenderValue": true,
                           "escapeClearsValue": false,
                           "filterOption": [Function],
@@ -502,7 +518,9 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                 "captureMenuScroll": false,
                                 "closeMenuOnScroll": false,
                                 "closeMenuOnSelect": true,
-                                "components": Object {},
+                                "components": Object {
+                                  "Option": [Function],
+                                },
                                 "controlShouldRenderValue": true,
                                 "escapeClearsValue": false,
                                 "filterOption": [Function],
@@ -629,7 +647,9 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                 "captureMenuScroll": false,
                                 "closeMenuOnScroll": false,
                                 "closeMenuOnSelect": true,
-                                "components": Object {},
+                                "components": Object {
+                                  "Option": [Function],
+                                },
                                 "controlShouldRenderValue": true,
                                 "escapeClearsValue": false,
                                 "filterOption": [Function],
@@ -838,7 +858,9 @@ exports[`Select snapshot render matches snapshot 1`] = `
                           "captureMenuScroll": false,
                           "closeMenuOnScroll": false,
                           "closeMenuOnSelect": true,
-                          "components": Object {},
+                          "components": Object {
+                            "Option": [Function],
+                          },
                           "controlShouldRenderValue": true,
                           "escapeClearsValue": false,
                           "filterOption": [Function],
@@ -958,7 +980,9 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                 "captureMenuScroll": false,
                                 "closeMenuOnScroll": false,
                                 "closeMenuOnSelect": true,
-                                "components": Object {},
+                                "components": Object {
+                                  "Option": [Function],
+                                },
                                 "controlShouldRenderValue": true,
                                 "escapeClearsValue": false,
                                 "filterOption": [Function],
@@ -1081,7 +1105,9 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                 "captureMenuScroll": false,
                                 "closeMenuOnScroll": false,
                                 "closeMenuOnSelect": true,
-                                "components": Object {},
+                                "components": Object {
+                                  "Option": [Function],
+                                },
                                 "controlShouldRenderValue": true,
                                 "escapeClearsValue": false,
                                 "filterOption": [Function],
