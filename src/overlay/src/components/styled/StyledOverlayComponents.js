@@ -5,6 +5,7 @@
 import styled from 'styled-components';
 
 import { OVERLAY_BG } from '../../../../colors';
+import { fadeTransitionStyles } from '../../../../transitions';
 
 // TODO: centralize z-index layering
 export const OverlayOuterContainer = styled.div`
@@ -16,6 +17,8 @@ export const OverlayOuterContainer = styled.div`
   right: 0;
   top: 0;
   z-index: 1000;
+
+  ${fadeTransitionStyles};
 `;
 
 OverlayOuterContainer.displayName = 'OverlayOuterContainer';

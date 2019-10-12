@@ -48,9 +48,10 @@ class AppNavigationWrapper extends Component<Props> {
 
     if (drawer) {
 
-      if (!isOpen) {
-        return null;
-      }
+      // if (!isOpen) {
+      //   return null;
+      // }
+      console.log(isOpen);
 
       return (
         <AppNavigationOuterWrapper borderless className={className}>

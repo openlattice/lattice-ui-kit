@@ -8,6 +8,7 @@ import type { Node } from 'react';
 import PropTypes from 'prop-types';
 import ScrollLock from 'react-scrolllock';
 import isFunction from 'lodash/isFunction';
+import { CSSTransition } from 'react-transition-group';
 
 import Portal from '../../../portal';
 import { OverlayInnerContainer, OverlayOuterContainer } from './styled/StyledOverlayComponents';
@@ -78,11 +79,17 @@ export default class Overlay extends Component<Props> {
 
     return (
       <Portal>
-        <OverlayOuterContainer transparent={transparent}>
-          <OverlayInnerContainer isScrollable={isScrollable} onClick={this.handleOnClick}>
-            { children }
-          </OverlayInnerContainer>
-        </OverlayOuterContainer>
+        <CSSTransition
+            in
+            appear
+            timeout={150}
+            classNames="fade">
+          <OverlayOuterContainer transparent={transparent}>
+            <OverlayInnerContainer isScrollable={isScrollable} onClick={this.handleOnClick}>
+              { children }
+            </OverlayInnerContainer>
+          </OverlayOuterContainer>
+        </CSSTransition>
         <ScrollLock />
       </Portal>
     );
