@@ -5,14 +5,12 @@
 import React, { Component } from 'react';
 import type { Node } from 'react';
 
-import isFunction from 'lodash/isFunction';
-
 import AppNavigationInnerWrapper from './styled/AppNavigationInnerWrapper';
 import AppNavigationOuterWrapper from './styled/AppNavigationOuterWrapper';
 import NavigationDrawer from './styled/NavigationDrawer';
-import NavigationDrawerWrapper from './styled/NavigationDrawerWrapper';
 import NavigationWrapper from './styled/NavigationWrapper';
 import * as Colors from '../../../../colors';
+import Drawer from '../../../../drawer/src/components/Drawer';
 
 const { WHITE } = Colors;
 
@@ -23,7 +21,6 @@ type Props = {
   className ?:string;
   drawer ?:boolean;
   forwardedRef ?:any;
-  headerBounds ?:ClientRect;
   isOpen ?:boolean;
   onClose ?:() => void;
 };
@@ -34,25 +31,8 @@ class AppNavigationWrapper extends Component<Props> {
     className: undefined,
     drawer: false,
     forwardedRef: undefined,
-    headerBounds: undefined,
     isOpen: false,
     onClose: undefined,
-  }
-
-  close = () => {
-
-    const { onClose } = this.props;
-    if (onClose && isFunction(onClose)) {
-      onClose();
-    }
-  }
-
-  handleOnClick = (event :SyntheticEvent<HTMLElement>) => {
-
-    if (event.target === event.currentTarget) {
-      event.preventDefault();
-      this.close();
-    }
   }
 
   render() {
@@ -62,8 +42,8 @@ class AppNavigationWrapper extends Component<Props> {
       className,
       drawer,
       forwardedRef,
-      headerBounds,
       isOpen,
+      onClose,
     } = this.props;
 
     if (drawer) {
@@ -72,15 +52,14 @@ class AppNavigationWrapper extends Component<Props> {
         return null;
       }
 
-      const top = headerBounds ? (headerBounds.height + headerBounds.top) : 0;
       return (
         <AppNavigationOuterWrapper borderless className={className}>
           <AppNavigationInnerWrapper vertical>
-            <NavigationDrawerWrapper onClick={this.handleOnClick} topOffset={top}>
+            <Drawer isOpen={isOpen} onClose={onClose} side="right" transparentOverlay>
               <NavigationDrawer>
                 {children}
               </NavigationDrawer>
-            </NavigationDrawerWrapper>
+            </Drawer>
           </AppNavigationInnerWrapper>
         </AppNavigationOuterWrapper>
       );
@@ -104,7 +83,6 @@ export default React.forwardRef<Props, HTMLElement>((props, ref) => (
       className={props.className}
       drawer={props.drawer}
       forwardedRef={ref}
-      headerBounds={props.headerBounds}
       isOpen={props.isOpen}
       onClose={props.onClose}>
     {props.children}
