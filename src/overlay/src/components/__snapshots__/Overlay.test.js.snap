@@ -6,6 +6,7 @@ exports[`overlay snapshots should match snapshot when isVisible="false" 1`] = `
   isVisible={false}
   onClose={[Function]}
   shouldCloseOnClick={true}
+  transparent={false}
 />
 `;
 
@@ -34,6 +35,7 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
   isVisible={true}
   onClose={[Function]}
   shouldCloseOnClick={true}
+  transparent={false}
 >
   <Portal>
     <Portal
@@ -74,7 +76,9 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
         </div>
       }
     >
-      <OverlayOuterContainer>
+      <OverlayOuterContainer
+        transparent={false}
+      >
         <StyledComponent
           forwardedComponent={
             Object {
@@ -86,7 +90,7 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
                 "lastClassName": "c0",
                 "rules": Array [
                   "background-color:",
-                  "rgba(8,0,25,0.3)",
+                  [Function],
                   ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
                 ],
               },
@@ -102,6 +106,7 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
             }
           }
           forwardedRef={null}
+          transparent={false}
         >
           <div
             className="c0"

@@ -3,6 +3,7 @@ import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
 
 import Overlay from './Overlay';
+import { OverlayOuterContainer } from './styled/StyledOverlayComponents';
 import { nope } from '../../../utils/testing/MockUtils';
 
 const MOCK_CHILD = (
@@ -130,6 +131,18 @@ describe('overlay', () => {
         expect(closeSpy).toHaveBeenCalledTimes(0);
       });
 
+    });
+
+    describe('transparent', () => {
+      test('should set overlay background-color to transparent', () => {
+        const wrapper = mount(
+          <Overlay isVisible shouldCloseOnClick transparent>
+            { MOCK_CHILD }
+          </Overlay>
+        );
+
+        expect(wrapper.find(OverlayOuterContainer)).toHaveStyleRule('background-color', 'transparent');
+      });
     });
 
   });

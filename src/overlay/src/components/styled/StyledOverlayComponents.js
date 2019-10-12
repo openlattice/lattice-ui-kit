@@ -8,7 +8,7 @@ import { OVERLAY_BG } from '../../../../colors';
 
 // TODO: centralize z-index layering
 export const OverlayOuterContainer = styled.div`
-  background-color: ${OVERLAY_BG};
+  background-color: ${(props) => (props.transparent ? 'transparent' : OVERLAY_BG)};
   bottom: 0;
   display: block;
   left: 0;
