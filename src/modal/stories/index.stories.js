@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { Button } from '../../button';
+import { Card, CardSegment } from '../../layout';
+import { useBoolean } from '../../hooks';
 import Modal from '..';
 
 class ModalExample extends Component {
@@ -34,7 +36,30 @@ class ModalExample extends Component {
   }
 }
 
+const TheNextLevel = ({ isVisible, onClose }) => {
+  const [showNext, goDeeper, kicker] = useBoolean();
+  return (
+    <Modal
+        isVisible={isVisible}
+        onClose={onClose}
+        onClickPrimary={goDeeper}
+        textPrimary="Go Deeper"
+        textSecondary="Kick Out"
+        textTitle="Inception">
+      Am I in limbo?
+      <TheNextLevel isVisible={showNext} onClose={kicker} />
+    </Modal>
+  );
+};
+
 storiesOf('Modal', module)
+  .addDecorator((Story) => (
+    <Card>
+      <CardSegment>
+        <Story />
+      </CardSegment>
+    </Card>
+  ))
   .add('basic', () => (
     <ModalExample>
       {
@@ -59,6 +84,15 @@ storiesOf('Modal', module)
       }
     </ModalExample>
   ))
+  .add('Nested', () => {
+    const [isVisible, setVisible, setInvisible] = useBoolean();
+    return (
+      <div>
+        <TheNextLevel isVisible={isVisible} onClose={setInvisible} />
+        <Button onClick={setVisible}>Dream</Button>
+      </div>
+    );
+  })
   .add('stretchy buttons', () => (
     <ModalExample>
       {
