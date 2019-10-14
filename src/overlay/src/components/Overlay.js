@@ -73,16 +73,13 @@ export default class Overlay extends Component<Props> {
       transparent
     } = this.props;
 
-    if (!isVisible) {
-      return null;
-    }
-
     return (
       <Portal>
         <CSSTransition
-            in
-            appear
-            timeout={150}
+            in={isVisible}
+            mountOnEnter
+            unmountOnExit
+            timeout={100}
             classNames="fade">
           <OverlayOuterContainer transparent={transparent}>
             <OverlayInnerContainer isScrollable={isScrollable} onClick={this.handleOnClick}>

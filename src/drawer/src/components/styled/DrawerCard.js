@@ -1,6 +1,7 @@
 // @flow
 
 import styled, { css } from 'styled-components';
+import { slideTransitionStyles } from '../../../../transitions';
 import { WHITE } from '../../../../colors';
 
 type Props = {
@@ -34,9 +35,10 @@ const DrawerCard = styled.div`
   overflow-y: auto;
   position: fixed;
   top: 0;
-  z-index: 900;
+  z-index: 1000;
 
   ${getScreenPosition};
+  ${slideTransitionStyles};
 `;
 
 export default DrawerCard;

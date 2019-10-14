@@ -1,8 +1,10 @@
 // @flow
 
 import React from 'react';
+import { CSSTransition } from 'react-transition-group';
 import type { Element } from 'react';
 
+import Portal from '../../../portal';
 import Overlay from '../../../overlay';
 import DrawerCard from './styled/DrawerCard';
 
@@ -31,16 +33,26 @@ const Drawer = (props :Props) => {
   } = props;
 
   return (
-    <Overlay
-        onClose={onClose}
-        isVisible={isOpen}
-        isScrollable
-        shouldCloseOnClick={shouldCloseOnOutsideClick}
-        transparent={transparentOverlay}>
-      <DrawerCard side={side}>
-        {children}
-      </DrawerCard>
-    </Overlay>
+    <>
+      <Overlay
+          onClose={onClose}
+          isVisible={isOpen}
+          isScrollable
+          shouldCloseOnClick={shouldCloseOnOutsideClick}
+          transparent={transparentOverlay} />
+      <Portal>
+        <CSSTransition
+            in={isOpen}
+            mountOnEnter
+            unmountOnExit
+            timeout={100}
+            classNames="slide">
+          <DrawerCard side={side}>
+            {children}
+          </DrawerCard>
+        </CSSTransition>
+      </Portal>
+    </>
   );
 };
 

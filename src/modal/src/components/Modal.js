@@ -214,10 +214,6 @@ export default class Modal extends Component<Props> {
       viewportScrolling,
     } = this.props;
 
-    if (!isVisible) {
-      return null;
-    }
-
     return (
       <Overlay isScrollable={viewportScrolling} isVisible={isVisible} onClose={this.handleOnClickOverlay}>
         <ModalOuterContainer onClick={this.handleOnClickOutside} viewportScrolling={viewportScrolling}>
