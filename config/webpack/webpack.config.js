@@ -109,7 +109,7 @@ module.exports = (env = {}) => {
       extensions: ['.js'],
       modules: [
         LIB_PATHS.ABS.SOURCE,
-        LIB_PATHS.ABS.NODE,
+        'node_modules',
       ],
     },
     target: 'web',
