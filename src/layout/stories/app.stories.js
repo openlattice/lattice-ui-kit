@@ -135,9 +135,11 @@ storiesOf('App', module)
     <HashRouter>
       <StoryAppContainerWrapper>
         <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} user={mockUser}>
-          <NavLink to="/home" />
-          <NavLink to="/tab1">Tab 1</NavLink>
-          <NavLink to="/tab2">Tab 2</NavLink>
+          <StoryAppNavigationWrapper>
+            <NavLink to="/home" />
+            <NavLink to="/tab1">Tab 1</NavLink>
+            <NavLink to="/tab2">Tab 2</NavLink>
+          </StoryAppNavigationWrapper>
         </StoryAppHeaderWrapper>
         <SearchContentWrapper bgColor="#fff">
           <SearchWrapper>
@@ -159,9 +161,11 @@ storiesOf('App', module)
     <HashRouter>
       <StoryAppContainerWrapper>
         <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} user={mockUser}>
-          <NavLink to="/home" />
-          <NavLink to="/tab1">Tab 1</NavLink>
-          <NavLink to="/tab2">Tab 2</NavLink>
+          <StoryAppNavigationWrapper>
+            <NavLink to="/home" />
+            <NavLink to="/tab1">Tab 1</NavLink>
+            <NavLink to="/tab2">Tab 2</NavLink>
+          </StoryAppNavigationWrapper>
         </StoryAppHeaderWrapper>
         <StoryAppContentWrapper>
           <ProfileGrid>
@@ -193,9 +197,11 @@ storiesOf('App', module)
     <HashRouter>
       <StoryAppContainerWrapper>
         <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} organizationsSelect={mockOrgSelect} user={mockUser}>
-          <NavLink to="/home" />
-          <NavLink to="/tab1">Tab 1</NavLink>
-          <NavLink to="/tab2">Tab 2</NavLink>
+          <StoryAppNavigationWrapper>
+            <NavLink to="/home" />
+            <NavLink to="/tab1">Tab 1</NavLink>
+            <NavLink to="/tab2">Tab 2</NavLink>
+          </StoryAppNavigationWrapper>
         </StoryAppHeaderWrapper>
       </StoryAppContainerWrapper>
     </HashRouter>
