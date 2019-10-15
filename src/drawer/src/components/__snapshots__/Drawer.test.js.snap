@@ -3,14 +3,84 @@
 exports[`Drawer snapshots isOpen = false 1`] = `
 <Drawer
   isOpen={false}
+  shouldCloseOnEscape={true}
   shouldCloseOnOutsideClick={true}
   side="left"
+  transparentOverlay={false}
 >
   <Overlay
-    isScrollable={false}
+    isScrollable={true}
     isVisible={false}
     shouldCloseOnClick={true}
-  />
+    transparent={false}
+  >
+    <Portal>
+      <Portal
+        containerInfo={
+          <div
+            lattice-portal-inner-container=""
+          />
+        }
+      >
+        <CSSTransition
+          classNames="fade"
+          in={false}
+          mountOnEnter={true}
+          timeout={200}
+          unmountOnExit={true}
+        >
+          <Transition
+            appear={false}
+            enter={true}
+            exit={true}
+            in={false}
+            mountOnEnter={true}
+            onEnter={[Function]}
+            onEntered={[Function]}
+            onEntering={[Function]}
+            onExit={[Function]}
+            onExited={[Function]}
+            onExiting={[Function]}
+            timeout={200}
+            unmountOnExit={true}
+          />
+        </CSSTransition>
+      </Portal>
+    </Portal>
+  </Overlay>
+  <Portal>
+    <Portal
+      containerInfo={
+        <div
+          lattice-portal-inner-container=""
+        />
+      }
+    >
+      <CSSTransition
+        classNames="slide"
+        in={false}
+        mountOnEnter={true}
+        timeout={200}
+        unmountOnExit={true}
+      >
+        <Transition
+          appear={false}
+          enter={true}
+          exit={true}
+          in={false}
+          mountOnEnter={true}
+          onEnter={[Function]}
+          onEntered={[Function]}
+          onEntering={[Function]}
+          onExit={[Function]}
+          onExited={[Function]}
+          onExiting={[Function]}
+          timeout={200}
+          unmountOnExit={true}
+        />
+      </CSSTransition>
+    </Portal>
+  </Portal>
 </Drawer>
 `;
 
@@ -26,34 +96,125 @@ exports[`Drawer snapshots isOpen = true 1`] = `
   z-index: 1000;
 }
 
+.c0.fade-appear {
+  opacity: 0;
+}
+
+.c0.fade-appear-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0.fade-enter {
+  opacity: 0;
+}
+
+.c0.fade-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0.fade-exit {
+  opacity: 1;
+}
+
+.c0.fade-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
 .c1 {
   display: block;
   height: 100%;
   position: absolute;
-  overflow-y: visible;
+  overflow-y: scroll;
   width: 100%;
 }
 
 .c2 {
   background-color: #ffffff;
   box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  min-width: 300px;
+  overflow-y: auto;
   position: fixed;
   top: 0;
-  width: 300px;
-  z-index: 900;
+  z-index: 1000;
   left: 0;
+  --transform: translate(-100%);
+}
+
+.c2.slide-appear {
+  -webkit-transform: var(--transform);
+  -ms-transform: var(--transform);
+  transform: var(--transform);
+}
+
+.c2.slide-appear-active {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -webkit-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+}
+
+.c2.slide-enter {
+  -webkit-transform: var(--transform);
+  -ms-transform: var(--transform);
+  transform: var(--transform);
+}
+
+.c2.slide-enter-active {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -webkit-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+}
+
+.c2.slide-exit {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+}
+
+.c2.slide-exit-active {
+  -webkit-transform: var(--transform);
+  -ms-transform: var(--transform);
+  transform: var(--transform);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -webkit-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 
 <Drawer
   isOpen={true}
+  shouldCloseOnEscape={true}
   shouldCloseOnOutsideClick={true}
   side="left"
+  transparentOverlay={false}
 >
   <Overlay
-    isScrollable={false}
+    isScrollable={true}
     isVisible={true}
     shouldCloseOnClick={true}
+    transparent={false}
   >
     <Portal>
       <Portal
@@ -69,23 +230,42 @@ exports[`Drawer snapshots isOpen = true 1`] = `
   z-index: 1000;
 }
 
+.c0.fade-appear {
+  opacity: 0;
+}
+
+.c0.fade-appear-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0.fade-enter {
+  opacity: 0;
+}
+
+.c0.fade-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0.fade-exit {
+  opacity: 1;
+}
+
+.c0.fade-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
 .c1 {
   display: block;
   height: 100%;
   position: absolute;
-  overflow-y: visible;
+  overflow-y: scroll;
   width: 100%;
-}
-
-.c2 {
-  background-color: #ffffff;
-  box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
-  height: 100%;
-  position: fixed;
-  top: 0;
-  width: 300px;
-  z-index: 900;
-  left: 0;
 }
 
 <div
@@ -96,151 +276,309 @@ exports[`Drawer snapshots isOpen = true 1`] = `
             >
               <div
                 class="c1"
-              >
-                <div
-                  class="c2"
-                />
-              </div>
+              />
             </div>
           </div>
         }
       >
-        <OverlayOuterContainer>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
-                  "isStatic": false,
-                  "lastClassName": "c0",
-                  "rules": Array [
-                    "background-color:",
-                    "rgba(8,0,25,0.3)",
-                    ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
-                  ],
-                },
-                "displayName": "OverlayOuterContainer",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
-                "target": "div",
-                "toString": [Function],
-                "usesTheme": false,
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <div
-              className="c0"
-            >
-              <OverlayInnerContainer
-                isScrollable={false}
-                onClick={[Function]}
-              >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
-                        "isStatic": false,
-                        "lastClassName": "c1",
-                        "rules": Array [
-                          "display:block;height:100%;position:absolute;overflow-y:",
-                          [Function],
-                          ";width:100%;",
-                        ],
-                      },
-                      "displayName": "OverlayInnerContainer",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
-                      "target": "div",
-                      "toString": [Function],
-                      "usesTheme": false,
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  isScrollable={false}
-                  onClick={[Function]}
-                >
-                  <div
-                    className="c1"
-                    onClick={[Function]}
-                  >
-                    <DrawerCard
-                      side="left"
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "DrawerCard-sc-1ka5kr5-0",
-                              "isStatic": false,
-                              "lastClassName": "c2",
-                              "rules": Array [
-                                "background-color:",
-                                "#ffffff",
-                                ";box-shadow:0 0 30px 0 rgba(0,0,0,0.2);height:100%;position:fixed;top:0;width:300px;z-index:900;",
-                                [Function],
-                                ";",
-                              ],
-                            },
-                            "displayName": "DrawerCard",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "DrawerCard-sc-1ka5kr5-0",
-                            "target": "div",
-                            "toString": [Function],
-                            "usesTheme": false,
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                        side="left"
-                      >
-                        <div
-                          className="c2"
-                        />
-                      </StyledComponent>
-                    </DrawerCard>
-                  </div>
-                </StyledComponent>
-              </OverlayInnerContainer>
-            </div>
-          </StyledComponent>
-        </OverlayOuterContainer>
-        <LockToggle
-          accountForScrollbars={true}
-          isActive={true}
+        <CSSTransition
+          classNames="fade"
+          in={true}
+          mountOnEnter={true}
+          timeout={200}
+          unmountOnExit={true}
         >
-          <SheetProvider
-            accountForScrollbars={true}
-            isActive={true}
+          <Transition
+            appear={false}
+            enter={true}
+            exit={true}
+            in={true}
+            mountOnEnter={true}
+            onEnter={[Function]}
+            onEntered={[Function]}
+            onEntering={[Function]}
+            onExit={[Function]}
+            onExited={[Function]}
+            onExiting={[Function]}
+            timeout={200}
+            unmountOnExit={true}
           >
-            <TouchProvider
+            <LockToggle
               accountForScrollbars={true}
               isActive={true}
             >
-              <ScrollLock
+              <SheetProvider
                 accountForScrollbars={true}
                 isActive={true}
-              />
-            </TouchProvider>
-          </SheetProvider>
-        </LockToggle>
+              >
+                <TouchProvider
+                  accountForScrollbars={true}
+                  isActive={true}
+                >
+                  <ScrollLock
+                    accountForScrollbars={true}
+                    isActive={true}
+                  >
+                    <TouchScrollable>
+                      <NodeResolver
+                        innerRef={[Function]}
+                      >
+                        <OverlayOuterContainer
+                          transparent={false}
+                        >
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
+                                  "isStatic": false,
+                                  "lastClassName": "c0",
+                                  "rules": Array [
+                                    "background-color:",
+                                    [Function],
+                                    ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
+                                    "&.fade-appear{opacity:0;};&.fade-appear-active{opacity:1;transition:opacity ",
+                                    "200ms",
+                                    " ease-in-out;};&.fade-enter{opacity:0;};&.fade-enter-active{opacity:1;transition:opacity ",
+                                    "200ms",
+                                    " ease-in-out;};&.fade-exit{opacity:1;};&.fade-exit-active{opacity:0;transition:opacity ",
+                                    "200ms",
+                                    " ease-in-out;};",
+                                    ";",
+                                  ],
+                                },
+                                "displayName": "OverlayOuterContainer",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
+                                "target": "div",
+                                "toString": [Function],
+                                "usesTheme": false,
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            transparent={false}
+                          >
+                            <div
+                              className="c0"
+                            >
+                              <OverlayInnerContainer
+                                isScrollable={true}
+                                onClick={[Function]}
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
+                                        "isStatic": false,
+                                        "lastClassName": "c1",
+                                        "rules": Array [
+                                          "display:block;height:100%;position:absolute;overflow-y:",
+                                          [Function],
+                                          ";width:100%;",
+                                        ],
+                                      },
+                                      "displayName": "OverlayInnerContainer",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "usesTheme": false,
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  isScrollable={true}
+                                  onClick={[Function]}
+                                >
+                                  <div
+                                    className="c1"
+                                    onClick={[Function]}
+                                  />
+                                </StyledComponent>
+                              </OverlayInnerContainer>
+                            </div>
+                          </StyledComponent>
+                        </OverlayOuterContainer>
+                      </NodeResolver>
+                    </TouchScrollable>
+                  </ScrollLock>
+                </TouchProvider>
+              </SheetProvider>
+            </LockToggle>
+          </Transition>
+        </CSSTransition>
       </Portal>
     </Portal>
   </Overlay>
+  <Portal>
+    <Portal
+      containerInfo={
+        .c0 {
+  background-color: #ffffff;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  min-width: 300px;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  --transform: translate(-100%);
+}
+
+.c0.slide-appear {
+  -webkit-transform: var(--transform);
+  -ms-transform: var(--transform);
+  transform: var(--transform);
+}
+
+.c0.slide-appear-active {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -webkit-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+}
+
+.c0.slide-enter {
+  -webkit-transform: var(--transform);
+  -ms-transform: var(--transform);
+  transform: var(--transform);
+}
+
+.c0.slide-enter-active {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -webkit-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+}
+
+.c0.slide-exit {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+}
+
+.c0.slide-exit-active {
+  -webkit-transform: var(--transform);
+  -ms-transform: var(--transform);
+  transform: var(--transform);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -webkit-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+}
+
+<div
+          lattice-portal-inner-container=""
+        >
+          <div
+            class="c0"
+          />
+        </div>
+      }
+    >
+      <CSSTransition
+        classNames="slide"
+        in={true}
+        mountOnEnter={true}
+        timeout={200}
+        unmountOnExit={true}
+      >
+        <Transition
+          appear={false}
+          enter={true}
+          exit={true}
+          in={true}
+          mountOnEnter={true}
+          onEnter={[Function]}
+          onEntered={[Function]}
+          onEntering={[Function]}
+          onExit={[Function]}
+          onExited={[Function]}
+          onExiting={[Function]}
+          timeout={200}
+          unmountOnExit={true}
+        >
+          <DrawerCard
+            shouldCloseOnEscape={true}
+            side="left"
+          >
+            <DrawerCard__DrawerCardWrapper
+              side="left"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "DrawerCard__DrawerCardWrapper-sc-1ka5kr5-0",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "background-color:",
+                        "#ffffff",
+                        ";box-shadow:0 0 30px 0 rgba(0,0,0,0.2);display:flex;flex-direction:column;height:100%;justify-content:flex-start;min-width:300px;overflow-y:auto;position:fixed;top:0;z-index:1000;",
+                        [Function],
+                        ";",
+                        [Function],
+                        ";&.slide-appear{transform:var(--transform);};&.slide-appear-active{transform:translate(0);transition:transform ",
+                        "200ms",
+                        " ease-in-out;};&.slide-enter{transform:var(--transform);};&.slide-enter-active{transform:translate(0);transition:transform ",
+                        "200ms",
+                        " ease-in-out;};&.slide-exit{transform:translate(0);};&.slide-exit-active{transform:var(--transform);transition:transform ",
+                        "200ms",
+                        " ease-in-out;}",
+                        ";",
+                      ],
+                    },
+                    "displayName": "DrawerCard__DrawerCardWrapper",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "DrawerCard__DrawerCardWrapper-sc-1ka5kr5-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "usesTheme": false,
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                side="left"
+              >
+                <div
+                  className="c2"
+                />
+              </StyledComponent>
+            </DrawerCard__DrawerCardWrapper>
+          </DrawerCard>
+        </Transition>
+      </CSSTransition>
+    </Portal>
+  </Portal>
 </Drawer>
 `;

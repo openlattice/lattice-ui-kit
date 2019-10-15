@@ -13,8 +13,7 @@ import ModalBody from './ModalBody';
 import ModalFooter from './ModalFooter';
 import ModalHeader from './ModalHeader';
 import { ModalOuterContainer, ModalInnerContainer } from './styled/StyledModalComponents';
-
-const ESC_KEY_CODE :'Escape' = 'Escape';
+import { ESC_KEY_CODE } from '../../../utils/keycodes';
 
 type Props = {
   children :Node;
@@ -213,10 +212,6 @@ export default class Modal extends Component<Props> {
       shouldBeCentered,
       viewportScrolling,
     } = this.props;
-
-    if (!isVisible) {
-      return null;
-    }
 
     return (
       <Overlay isScrollable={viewportScrolling} isVisible={isVisible} onClose={this.handleOnClickOverlay}>
