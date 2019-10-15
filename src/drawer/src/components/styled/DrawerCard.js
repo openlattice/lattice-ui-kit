@@ -5,7 +5,8 @@ import type { Element } from 'react';
 
 import { slideTransitionStyles } from '../../../../transitions';
 import { WHITE } from '../../../../colors';
-import { useCloseOnEscape } from '../../../../hooks';
+import { useKeydownListener } from '../../../../hooks';
+import { ESC_KEY_CODE } from '../../../../utils/keycodes';
 
 type Props = {
   children :Element<any>,
@@ -55,7 +56,7 @@ const DrawerCard = (props :Props) => {
     side,
   } = props;
 
-  useCloseOnEscape(shouldCloseOnEscape, onClose);
+  useKeydownListener(ESC_KEY_CODE, onClose, shouldCloseOnEscape);
 
   return (
     <DrawerCardWrapper side={side}>
