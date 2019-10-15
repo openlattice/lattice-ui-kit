@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 
 // https://reactjs.org/docs/hooks-effect.html#effects-with-cleanup
-const useKeydownListener = (keyCode :string, listener :() => any, enable :boolean = true) => {
+const useKeyDownListener = (keyCode :string, listener :() => any, enable :boolean = true) => {
 
   useEffect(() => {
     function handleListener(event :KeyboardEvent) {
@@ -19,4 +19,4 @@ const useKeydownListener = (keyCode :string, listener :() => any, enable :boolea
   }, [keyCode, enable, listener]);
 };
 
-export default useKeydownListener;
+export default useKeyDownListener;
