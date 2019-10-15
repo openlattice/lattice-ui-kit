@@ -81,13 +81,14 @@ export default class Overlay extends Component<Props> {
             unmountOnExit
             timeout={200}
             classNames="fade">
-          <OverlayOuterContainer transparent={transparent}>
-            <OverlayInnerContainer isScrollable={isScrollable} onClick={this.handleOnClick}>
-              { children }
-            </OverlayInnerContainer>
-          </OverlayOuterContainer>
+          <ScrollLock>
+            <OverlayOuterContainer transparent={transparent}>
+              <OverlayInnerContainer isScrollable={isScrollable} onClick={this.handleOnClick}>
+                { children }
+              </OverlayInnerContainer>
+            </OverlayOuterContainer>
+          </ScrollLock>
         </CSSTransition>
-        <ScrollLock />
       </Portal>
     );
   }
