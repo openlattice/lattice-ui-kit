@@ -79,7 +79,7 @@ export default class Overlay extends Component<Props> {
             in={isVisible}
             mountOnEnter
             unmountOnExit
-            timeout={100}
+            timeout={200}
             classNames="fade">
           <OverlayOuterContainer transparent={transparent}>
             <OverlayInnerContainer isScrollable={isScrollable} onClick={this.handleOnClick}>

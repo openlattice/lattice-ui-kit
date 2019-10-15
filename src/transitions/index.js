@@ -9,7 +9,7 @@ const fadeTransitionStyles = css`
 
   &.fade-appear-active {
     opacity: 1;
-    transition: opacity ${duration.swift} ease-in-out;
+    transition: opacity ${duration.standard} ease-in-out;
   };
 
   &.fade-enter {
@@ -18,7 +18,7 @@ const fadeTransitionStyles = css`
 
   &.fade-enter-active {
     opacity: 1;
-    transition: opacity ${duration.swift} ease-in-out;
+    transition: opacity ${duration.standard} ease-in-out;
   };
 
   &.fade-exit {
@@ -27,7 +27,7 @@ const fadeTransitionStyles = css`
 
   &.fade-exit-active {
     opacity: 0;
-    transition: opacity ${duration.swift} ease-in-out;
+    transition: opacity ${duration.standard} ease-in-out;
   };
 `;
 
@@ -50,7 +50,7 @@ const slideTransitionStyles = css`
 
   &.slide-appear-active {
     transform: translate(0);
-    transition: transform ${duration.swift} ease-in-out;
+    transition: transform ${duration.standard} ease-in-out;
   };
 
   &.slide-enter {
@@ -59,7 +59,7 @@ const slideTransitionStyles = css`
 
   &.slide-enter-active {
     transform: translate(0);
-    transition: transform ${duration.swift} ease-in-out;
+    transition: transform ${duration.standard} ease-in-out;
   };
 
   &.slide-exit {
@@ -68,7 +68,7 @@ const slideTransitionStyles = css`
 
   &.slide-exit-active {
     transform: var(--transform);
-    transition: transform ${duration.swift} ease-in-out;
+    transition: transform ${duration.standard} ease-in-out;
   }
 `;
 
