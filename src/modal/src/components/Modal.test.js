@@ -1,6 +1,7 @@
 import React from 'react';
 import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
+import { CSSTransition, config } from 'react-transition-group';
 
 import Modal from './Modal';
 import ModalFooter from './ModalFooter';
@@ -8,6 +9,8 @@ import ModalHeader from './ModalHeader';
 import { ModalInnerContainer, ModalOuterContainer } from './styled/StyledModalComponents';
 import { OverlayInnerContainer } from '../../../overlay/src/components/styled/StyledOverlayComponents';
 import { nope } from '../../../utils/testing/MockUtils';
+
+config.disabled = true;
 
 const CANCEL_TXT = 'Cancel';
 const CONFIRM_TXT = 'Confirm';
@@ -118,39 +121,38 @@ describe('modal', () => {
     describe('isVisible', () => {
 
       test('should show the modal', () => {
-        const wrapper = shallow(
+        const wrapper = mount(
           <Modal isVisible onClose={nope}>
             { MOCK_CHILD }
           </Modal>
         );
-        expect(wrapper.prop('isVisible')).toEqual(true);
-        expect(wrapper.dive().type()).not.toBeNull();
+        const transitionWrapper = wrapper.find(CSSTransition);
+        expect(transitionWrapper.prop('in')).toEqual(true);
       });
 
       test('should hide the modal', () => {
-        const wrapper = shallow(
+        const wrapper = mount(
           <Modal isVisible={false} onClose={nope}>
             { MOCK_CHILD }
           </Modal>
         );
-        expect(wrapper.props()).toEqual({});
-        expect(wrapper.type()).toBeNull();
+
+        const transitionWrapper = wrapper.find(CSSTransition);
+        expect(transitionWrapper.prop('in')).toEqual(false);
       });
 
       test('should toggle visibility', () => {
-        const wrapper = shallow(
+        const wrapper = mount(
           <Modal isVisible={false} onClose={nope}>
             { MOCK_CHILD }
           </Modal>
         );
-        expect(wrapper.props()).toEqual({});
-        expect(wrapper.type()).toBeNull();
+
+        expect(wrapper.find(CSSTransition).prop('in')).toEqual(false);
         wrapper.setProps({ isVisible: true });
-        expect(wrapper.prop('isVisible')).toEqual(true);
-        expect(wrapper.dive().type()).not.toBeNull();
+        expect(wrapper.find(CSSTransition).prop('in')).toEqual(true);
         wrapper.setProps({ isVisible: false });
-        expect(wrapper.props()).toEqual({});
-        expect(wrapper.type()).toBeNull();
+        expect(wrapper.find(CSSTransition).prop('in')).toEqual(false);
       });
 
     });

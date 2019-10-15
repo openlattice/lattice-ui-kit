@@ -1,7 +1,9 @@
 // @flow
 import { useCallback, useState, useEffect } from 'react';
 
-const useBoolean = (initialValue :boolean = false) => {
+type Props = [boolean, () => void, () => void];
+
+const useBoolean = (initialValue :boolean = false) :Props => {
   const [state, setState] = useState(initialValue);
   useEffect(() => {
     setState(initialValue);

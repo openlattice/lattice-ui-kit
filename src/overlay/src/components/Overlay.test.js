@@ -1,6 +1,7 @@
 import React from 'react';
 import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
+import { CSSTransition } from 'react-transition-group';
 
 import Overlay from './Overlay';
 import { OverlayOuterContainer } from './styled/StyledOverlayComponents';
@@ -74,15 +75,15 @@ describe('overlay', () => {
     describe('isVisible', () => {
 
       test('should show the overlay', () => {
-        expect(mVisibleOverlay.children()).toHaveLength(1);
-        expect(mVisibleOverlay.html()).not.toBeNull();
-        expect(mVisibleOverlay.prop('isVisible')).toEqual(true);
+        const transitionWrapper = mVisibleOverlay.find(CSSTransition);
+        expect(transitionWrapper).toHaveLength(1);
+        expect(transitionWrapper.prop('in')).toEqual(true);
       });
 
       test('should hide the overlay', () => {
-        expect(mHiddenOverlay.children()).toHaveLength(0);
-        expect(mHiddenOverlay.html()).toBeNull();
-        expect(mHiddenOverlay.prop('isVisible')).toEqual(false);
+        const transitionWrapper = mHiddenOverlay.find(CSSTransition);
+        expect(transitionWrapper).toHaveLength(1);
+        expect(transitionWrapper.prop('in')).toEqual(false);
       });
 
     });

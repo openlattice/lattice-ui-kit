@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 const ESC_KEY_CODE :'Escape' = 'Escape';
 
 // https://reactjs.org/docs/hooks-effect.html#effects-with-cleanup
-const useCloseOnEscape = (shouldCloseOnEscape :boolean = false, onClose :() => any) => {
+const useCloseOnEscape = (shouldCloseOnEscape :boolean = true, onClose :() => any) => {
 
   useEffect(() => {
     function handleClose(event :KeyboardEvent) {
@@ -13,10 +13,10 @@ const useCloseOnEscape = (shouldCloseOnEscape :boolean = false, onClose :() => a
       }
     }
 
-    document.addEventListener('keydown', handleClose, true);
+    document.addEventListener('keydown', handleClose, false);
 
     return () => {
-      document.removeEventListener('keydown', handleClose, true);
+      document.removeEventListener('keydown', handleClose, false);
     };
   }, [shouldCloseOnEscape, onClose]);
 };

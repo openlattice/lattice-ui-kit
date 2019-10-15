@@ -16,7 +16,68 @@ exports[`modal snapshots should match snapshot when isVisible="false" 1`] = `
   viewportScrolling={false}
   withFooter={true}
   withHeader={true}
-/>
+>
+  <Overlay
+    isScrollable={false}
+    isVisible={false}
+    onClose={[Function]}
+    shouldCloseOnClick={true}
+    transparent={false}
+  >
+    <Portal>
+      <Portal
+        containerInfo={
+          <div
+            lattice-portal-inner-container=""
+          />
+        }
+      >
+        <CSSTransition
+          classNames="fade"
+          in={false}
+          mountOnEnter={true}
+          timeout={200}
+          unmountOnExit={true}
+        >
+          <Transition
+            appear={false}
+            enter={true}
+            exit={true}
+            in={false}
+            mountOnEnter={true}
+            onEnter={[Function]}
+            onEntered={[Function]}
+            onEntering={[Function]}
+            onExit={[Function]}
+            onExited={[Function]}
+            onExiting={[Function]}
+            timeout={200}
+            unmountOnExit={true}
+          />
+        </CSSTransition>
+        <LockToggle
+          accountForScrollbars={true}
+          isActive={true}
+        >
+          <SheetProvider
+            accountForScrollbars={true}
+            isActive={true}
+          >
+            <TouchProvider
+              accountForScrollbars={true}
+              isActive={true}
+            >
+              <ScrollLock
+                accountForScrollbars={true}
+                isActive={true}
+              />
+            </TouchProvider>
+          </SheetProvider>
+        </LockToggle>
+      </Portal>
+    </Portal>
+  </Overlay>
+</Modal>
 `;
 
 exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
@@ -29,6 +90,36 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   right: 0;
   top: 0;
   z-index: 1000;
+}
+
+.c0.fade-appear {
+  opacity: 0;
+}
+
+.c0.fade-appear-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0.fade-enter {
+  opacity: 0;
+}
+
+.c0.fade-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0.fade-exit {
+  opacity: 1;
+}
+
+.c0.fade-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .c1 {
@@ -356,6 +447,36 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   right: 0;
   top: 0;
   z-index: 1000;
+}
+
+.c0.fade-appear {
+  opacity: 0;
+}
+
+.c0.fade-appear-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0.fade-enter {
+  opacity: 0;
+}
+
+.c0.fade-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0.fade-exit {
+  opacity: 1;
+}
+
+.c0.fade-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .c1 {
@@ -739,821 +860,853 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
           </div>
         }
       >
-        <OverlayOuterContainer
-          transparent={false}
+        <CSSTransition
+          classNames="fade"
+          in={true}
+          mountOnEnter={true}
+          timeout={200}
+          unmountOnExit={true}
         >
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
-                  "isStatic": false,
-                  "lastClassName": "c0",
-                  "rules": Array [
-                    "background-color:",
-                    [Function],
-                    ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
-                  ],
-                },
-                "displayName": "OverlayOuterContainer",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
-                "target": "div",
-                "toString": [Function],
-                "usesTheme": false,
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-            transparent={false}
+          <Transition
+            appear={false}
+            enter={true}
+            exit={true}
+            in={true}
+            mountOnEnter={true}
+            onEnter={[Function]}
+            onEntered={[Function]}
+            onEntering={[Function]}
+            onExit={[Function]}
+            onExited={[Function]}
+            onExiting={[Function]}
+            timeout={200}
+            unmountOnExit={true}
           >
-            <div
-              className="c0"
+            <OverlayOuterContainer
+              transparent={false}
             >
-              <OverlayInnerContainer
-                isScrollable={false}
-                onClick={[Function]}
-              >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
-                        "isStatic": false,
-                        "lastClassName": "c1",
-                        "rules": Array [
-                          "display:block;height:100%;position:absolute;overflow-y:",
-                          [Function],
-                          ";width:100%;",
-                        ],
-                      },
-                      "displayName": "OverlayInnerContainer",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
-                      "target": "div",
-                      "toString": [Function],
-                      "usesTheme": false,
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
+                      "isStatic": false,
+                      "lastClassName": "c0",
+                      "rules": Array [
+                        "background-color:",
+                        [Function],
+                        ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
+                        "&.fade-appear{opacity:0;};&.fade-appear-active{opacity:1;transition:opacity ",
+                        "200ms",
+                        " ease-in-out;};&.fade-enter{opacity:0;};&.fade-enter-active{opacity:1;transition:opacity ",
+                        "200ms",
+                        " ease-in-out;};&.fade-exit{opacity:1;};&.fade-exit-active{opacity:0;transition:opacity ",
+                        "200ms",
+                        " ease-in-out;};",
+                        ";",
+                      ],
+                    },
+                    "displayName": "OverlayOuterContainer",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "usesTheme": false,
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
                   }
-                  forwardedRef={null}
-                  isScrollable={false}
-                  onClick={[Function]}
+                }
+                forwardedRef={null}
+                transparent={false}
+              >
+                <div
+                  className="c0"
                 >
-                  <div
-                    className="c1"
+                  <OverlayInnerContainer
+                    isScrollable={false}
                     onClick={[Function]}
                   >
-                    <StyledModalComponents__ModalOuterContainer
-                      onClick={[Function]}
-                      viewportScrolling={false}
-                    >
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "StyledModalComponents__ModalOuterContainer-sc-1r1r1yf-0",
-                              "isStatic": false,
-                              "lastClassName": "c2",
-                              "rules": Array [
-                                "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;",
-                                [Function],
-                              ],
-                            },
-                            "displayName": "StyledModalComponents__ModalOuterContainer",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "StyledModalComponents__ModalOuterContainer-sc-1r1r1yf-0",
-                            "target": "div",
-                            "toString": [Function],
-                            "usesTheme": false,
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
+                            "isStatic": false,
+                            "lastClassName": "c1",
+                            "rules": Array [
+                              "display:block;height:100%;position:absolute;overflow-y:",
+                              [Function],
+                              ";width:100%;",
+                            ],
+                          },
+                          "displayName": "OverlayInnerContainer",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
+                          "target": "div",
+                          "toString": [Function],
+                          "usesTheme": false,
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
                         }
-                        forwardedRef={null}
+                      }
+                      forwardedRef={null}
+                      isScrollable={false}
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="c1"
                         onClick={[Function]}
-                        viewportScrolling={false}
                       >
-                        <div
-                          className="c2"
+                        <StyledModalComponents__ModalOuterContainer
                           onClick={[Function]}
+                          viewportScrolling={false}
                         >
-                          <StyledModalComponents__ModalInnerContainer
-                            center={true}
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "StyledModalComponents__ModalOuterContainer-sc-1r1r1yf-0",
+                                  "isStatic": false,
+                                  "lastClassName": "c2",
+                                  "rules": Array [
+                                    "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;",
+                                    [Function],
+                                  ],
+                                },
+                                "displayName": "StyledModalComponents__ModalOuterContainer",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "StyledModalComponents__ModalOuterContainer-sc-1r1r1yf-0",
+                                "target": "div",
+                                "toString": [Function],
+                                "usesTheme": false,
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            onClick={[Function]}
                             viewportScrolling={false}
                           >
-                            <StyledComponent
-                              center={true}
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "StyledModalComponents__ModalInnerContainer-sc-1r1r1yf-1",
-                                    "isStatic": false,
-                                    "lastClassName": "c3",
-                                    "rules": Array [
-                                      "align-self:",
-                                      [Function],
-                                      ";background-color:",
-                                      "#ffffff",
-                                      ";border-radius:3px;box-shadow:0 2px 8px -2px ",
-                                      "#555e6f",
-                                      ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                      "240",
-                                      "px);min-height:200px;min-width:300px;position:relative;",
-                                      [Function],
-                                      " ",
-                                      [Function],
-                                    ],
-                                  },
-                                  "displayName": "StyledModalComponents__ModalInnerContainer",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "StyledModalComponents__ModalInnerContainer-sc-1r1r1yf-1",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "usesTheme": false,
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                              viewportScrolling={false}
+                            <div
+                              className="c2"
+                              onClick={[Function]}
                             >
-                              <div
-                                className="c3"
+                              <StyledModalComponents__ModalInnerContainer
+                                center={true}
+                                viewportScrolling={false}
                               >
-                                <ModalHeader
-                                  onClickClose={[Function]}
-                                  textTitle="Title"
-                                  withHeader={true}
-                                >
-                                  <StyledModalComponents__HeaderSection>
-                                    <StyledComponent
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "StyledModalComponents__HeaderSection-sc-1r1r1yf-5",
-                                            "isStatic": false,
-                                            "lastClassName": "c4",
-                                            "rules": Array [
-                                              "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                              "30",
-                                              "px;position:relative;",
-                                              "align-items:center;flex-direction:row;justify-content:space-between;",
-                                            ],
-                                          },
-                                          "displayName": "StyledModalComponents__HeaderSection",
-                                          "foldedComponentIds": Array [
-                                            "StyledModalComponents__ModalSection-sc-1r1r1yf-2",
-                                          ],
-                                          "render": [Function],
-                                          "styledComponentId": "StyledModalComponents__HeaderSection-sc-1r1r1yf-5",
-                                          "target": "div",
-                                          "toString": [Function],
-                                          "usesTheme": false,
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
-                                    >
-                                      <div
-                                        className="c4"
-                                      >
-                                        <ModalHeader__ModalTitle>
-                                          <StyledComponent
-                                            forwardedComponent={
-                                              Object {
-                                                "$$typeof": Symbol(react.forward_ref),
-                                                "attrs": Array [],
-                                                "componentStyle": ComponentStyle {
-                                                  "componentId": "ModalHeader__ModalTitle-sc-1rdyrep-0",
-                                                  "isStatic": false,
-                                                  "lastClassName": "c5",
-                                                  "rules": Array [
-                                                    "color:#555e6f;font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
-                                                  ],
-                                                },
-                                                "displayName": "ModalHeader__ModalTitle",
-                                                "foldedComponentIds": Array [],
-                                                "render": [Function],
-                                                "styledComponentId": "ModalHeader__ModalTitle-sc-1rdyrep-0",
-                                                "target": "h1",
-                                                "toString": [Function],
-                                                "usesTheme": false,
-                                                "warnTooManyClasses": [Function],
-                                                "withComponent": [Function],
-                                              }
-                                            }
-                                            forwardedRef={null}
-                                          >
-                                            <h1
-                                              className="c5"
-                                            >
-                                              Title
-                                            </h1>
-                                          </StyledComponent>
-                                        </ModalHeader__ModalTitle>
-                                        <ModalHeader__CloseButtonWrapper
-                                          onClick={[Function]}
-                                        >
-                                          <StyledComponent
-                                            forwardedComponent={
-                                              Object {
-                                                "$$typeof": Symbol(react.forward_ref),
-                                                "attrs": Array [],
-                                                "componentStyle": ComponentStyle {
-                                                  "componentId": "ModalHeader__CloseButtonWrapper-sc-1rdyrep-1",
-                                                  "isStatic": false,
-                                                  "lastClassName": "c6",
-                                                  "rules": Array [
-                                                    "background:none;border:none;cursor:pointer;font-size:12px;height:32px;margin:0 0 0 auto;padding:0;text-align:center;width:32px;",
-                                                  ],
-                                                },
-                                                "displayName": "ModalHeader__CloseButtonWrapper",
-                                                "foldedComponentIds": Array [],
-                                                "render": [Function],
-                                                "styledComponentId": "ModalHeader__CloseButtonWrapper-sc-1rdyrep-1",
-                                                "target": "button",
-                                                "toString": [Function],
-                                                "usesTheme": false,
-                                                "warnTooManyClasses": [Function],
-                                                "withComponent": [Function],
-                                              }
-                                            }
-                                            forwardedRef={null}
-                                            onClick={[Function]}
-                                          >
-                                            <button
-                                              className="c6"
-                                              onClick={[Function]}
-                                            >
-                                              <FontAwesomeIcon
-                                                border={false}
-                                                className=""
-                                                fixedWidth={false}
-                                                flip={null}
-                                                icon={
-                                                  Object {
-                                                    "icon": Array [
-                                                      320,
-                                                      512,
-                                                      Array [],
-                                                      "f00d",
-                                                      "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
-                                                    ],
-                                                    "iconName": "times",
-                                                    "prefix": "fal",
-                                                  }
-                                                }
-                                                inverse={false}
-                                                listItem={false}
-                                                mask={null}
-                                                pull={null}
-                                                pulse={false}
-                                                rotation={null}
-                                                size="lg"
-                                                spin={false}
-                                                swapOpacity={false}
-                                                symbol={false}
-                                                title=""
-                                                transform={null}
-                                              >
-                                                <svg
-                                                  aria-hidden="true"
-                                                  className="svg-inline--fa fa-times fa-w-10 fa-lg "
-                                                  data-icon="times"
-                                                  data-prefix="fal"
-                                                  focusable="false"
-                                                  role="img"
-                                                  style={Object {}}
-                                                  viewBox="0 0 320 512"
-                                                  xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                  <path
-                                                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
-                                                    fill="currentColor"
-                                                    style={Object {}}
-                                                  />
-                                                </svg>
-                                              </FontAwesomeIcon>
-                                            </button>
-                                          </StyledComponent>
-                                        </ModalHeader__CloseButtonWrapper>
-                                      </div>
-                                    </StyledComponent>
-                                  </StyledModalComponents__HeaderSection>
-                                </ModalHeader>
-                                <ModalBody
+                                <StyledComponent
+                                  center={true}
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "StyledModalComponents__ModalInnerContainer-sc-1r1r1yf-1",
+                                        "isStatic": false,
+                                        "lastClassName": "c3",
+                                        "rules": Array [
+                                          "align-self:",
+                                          [Function],
+                                          ";background-color:",
+                                          "#ffffff",
+                                          ";border-radius:3px;box-shadow:0 2px 8px -2px ",
+                                          "#555e6f",
+                                          ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
+                                          "240",
+                                          "px);min-height:200px;min-width:300px;position:relative;",
+                                          [Function],
+                                          " ",
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "StyledModalComponents__ModalInnerContainer",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "StyledModalComponents__ModalInnerContainer-sc-1r1r1yf-1",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "usesTheme": false,
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
                                   viewportScrolling={false}
                                 >
-                                  <StyledModalComponents__BodySection
-                                    viewportScrolling={false}
+                                  <div
+                                    className="c3"
                                   >
-                                    <StyledComponent
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "StyledModalComponents__BodySection-sc-1r1r1yf-3",
-                                            "isStatic": false,
-                                            "lastClassName": "c7",
-                                            "rules": Array [
-                                              "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                              "30",
-                                              "px;position:relative;",
-                                              "flex:1 1 auto;padding:0 ",
-                                              "30",
-                                              "px;",
-                                              [Function],
-                                            ],
-                                          },
-                                          "displayName": "StyledModalComponents__BodySection",
-                                          "foldedComponentIds": Array [
-                                            "StyledModalComponents__ModalSection-sc-1r1r1yf-2",
-                                          ],
-                                          "render": [Function],
-                                          "styledComponentId": "StyledModalComponents__BodySection-sc-1r1r1yf-3",
-                                          "target": "div",
-                                          "toString": [Function],
-                                          "usesTheme": false,
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
+                                    <ModalHeader
+                                      onClickClose={[Function]}
+                                      textTitle="Title"
+                                      withHeader={true}
+                                    >
+                                      <StyledModalComponents__HeaderSection>
+                                        <StyledComponent
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "StyledModalComponents__HeaderSection-sc-1r1r1yf-5",
+                                                "isStatic": false,
+                                                "lastClassName": "c4",
+                                                "rules": Array [
+                                                  "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
+                                                  "30",
+                                                  "px;position:relative;",
+                                                  "align-items:center;flex-direction:row;justify-content:space-between;",
+                                                ],
+                                              },
+                                              "displayName": "StyledModalComponents__HeaderSection",
+                                              "foldedComponentIds": Array [
+                                                "StyledModalComponents__ModalSection-sc-1r1r1yf-2",
+                                              ],
+                                              "render": [Function],
+                                              "styledComponentId": "StyledModalComponents__HeaderSection-sc-1r1r1yf-5",
+                                              "target": "div",
+                                              "toString": [Function],
+                                              "usesTheme": false,
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                        >
+                                          <div
+                                            className="c4"
+                                          >
+                                            <ModalHeader__ModalTitle>
+                                              <StyledComponent
+                                                forwardedComponent={
+                                                  Object {
+                                                    "$$typeof": Symbol(react.forward_ref),
+                                                    "attrs": Array [],
+                                                    "componentStyle": ComponentStyle {
+                                                      "componentId": "ModalHeader__ModalTitle-sc-1rdyrep-0",
+                                                      "isStatic": false,
+                                                      "lastClassName": "c5",
+                                                      "rules": Array [
+                                                        "color:#555e6f;font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                                                      ],
+                                                    },
+                                                    "displayName": "ModalHeader__ModalTitle",
+                                                    "foldedComponentIds": Array [],
+                                                    "render": [Function],
+                                                    "styledComponentId": "ModalHeader__ModalTitle-sc-1rdyrep-0",
+                                                    "target": "h1",
+                                                    "toString": [Function],
+                                                    "usesTheme": false,
+                                                    "warnTooManyClasses": [Function],
+                                                    "withComponent": [Function],
+                                                  }
+                                                }
+                                                forwardedRef={null}
+                                              >
+                                                <h1
+                                                  className="c5"
+                                                >
+                                                  Title
+                                                </h1>
+                                              </StyledComponent>
+                                            </ModalHeader__ModalTitle>
+                                            <ModalHeader__CloseButtonWrapper
+                                              onClick={[Function]}
+                                            >
+                                              <StyledComponent
+                                                forwardedComponent={
+                                                  Object {
+                                                    "$$typeof": Symbol(react.forward_ref),
+                                                    "attrs": Array [],
+                                                    "componentStyle": ComponentStyle {
+                                                      "componentId": "ModalHeader__CloseButtonWrapper-sc-1rdyrep-1",
+                                                      "isStatic": false,
+                                                      "lastClassName": "c6",
+                                                      "rules": Array [
+                                                        "background:none;border:none;cursor:pointer;font-size:12px;height:32px;margin:0 0 0 auto;padding:0;text-align:center;width:32px;",
+                                                      ],
+                                                    },
+                                                    "displayName": "ModalHeader__CloseButtonWrapper",
+                                                    "foldedComponentIds": Array [],
+                                                    "render": [Function],
+                                                    "styledComponentId": "ModalHeader__CloseButtonWrapper-sc-1rdyrep-1",
+                                                    "target": "button",
+                                                    "toString": [Function],
+                                                    "usesTheme": false,
+                                                    "warnTooManyClasses": [Function],
+                                                    "withComponent": [Function],
+                                                  }
+                                                }
+                                                forwardedRef={null}
+                                                onClick={[Function]}
+                                              >
+                                                <button
+                                                  className="c6"
+                                                  onClick={[Function]}
+                                                >
+                                                  <FontAwesomeIcon
+                                                    border={false}
+                                                    className=""
+                                                    fixedWidth={false}
+                                                    flip={null}
+                                                    icon={
+                                                      Object {
+                                                        "icon": Array [
+                                                          320,
+                                                          512,
+                                                          Array [],
+                                                          "f00d",
+                                                          "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                                                        ],
+                                                        "iconName": "times",
+                                                        "prefix": "fal",
+                                                      }
+                                                    }
+                                                    inverse={false}
+                                                    listItem={false}
+                                                    mask={null}
+                                                    pull={null}
+                                                    pulse={false}
+                                                    rotation={null}
+                                                    size="lg"
+                                                    spin={false}
+                                                    swapOpacity={false}
+                                                    symbol={false}
+                                                    title=""
+                                                    transform={null}
+                                                  >
+                                                    <svg
+                                                      aria-hidden="true"
+                                                      className="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                                      data-icon="times"
+                                                      data-prefix="fal"
+                                                      focusable="false"
+                                                      role="img"
+                                                      style={Object {}}
+                                                      viewBox="0 0 320 512"
+                                                      xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                      <path
+                                                        d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                                        fill="currentColor"
+                                                        style={Object {}}
+                                                      />
+                                                    </svg>
+                                                  </FontAwesomeIcon>
+                                                </button>
+                                              </StyledComponent>
+                                            </ModalHeader__CloseButtonWrapper>
+                                          </div>
+                                        </StyledComponent>
+                                      </StyledModalComponents__HeaderSection>
+                                    </ModalHeader>
+                                    <ModalBody
                                       viewportScrolling={false}
                                     >
-                                      <div
-                                        className="c7"
+                                      <StyledModalComponents__BodySection
+                                        viewportScrolling={false}
                                       >
-                                        <span>
-                                          hello
-                                        </span>
-                                      </div>
-                                    </StyledComponent>
-                                  </StyledModalComponents__BodySection>
-                                </ModalBody>
-                                <ModalFooter
-                                  onClickPrimary={[Function]}
-                                  onClickSecondary={[Function]}
-                                  shouldStretchButtons={false}
-                                  textPrimary="Confirm"
-                                  textSecondary="Cancel"
-                                  withFooter={true}
-                                >
-                                  <StyledModalComponents__FooterSection>
-                                    <StyledComponent
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
-                                            "isStatic": false,
-                                            "lastClassName": "c8",
-                                            "rules": Array [
-                                              "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                              "30",
-                                              "px;position:relative;",
-                                              "align-items:center;flex-direction:row-reverse;",
-                                            ],
-                                          },
-                                          "displayName": "StyledModalComponents__FooterSection",
-                                          "foldedComponentIds": Array [
-                                            "StyledModalComponents__ModalSection-sc-1r1r1yf-2",
-                                          ],
-                                          "render": [Function],
-                                          "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
-                                          "target": "div",
-                                          "toString": [Function],
-                                          "usesTheme": false,
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
-                                    >
-                                      <div
-                                        className="c8"
-                                      >
-                                        <ModalFooter__PrimaryButton
-                                          isLonely={false}
-                                          onClick={[Function]}
-                                          stretch={false}
-                                        >
-                                          <StyledComponent
-                                            forwardedComponent={
-                                              Object {
-                                                "$$typeof": Symbol(react.forward_ref),
-                                                "attrs": Array [
+                                        <StyledComponent
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "StyledModalComponents__BodySection-sc-1r1r1yf-3",
+                                                "isStatic": false,
+                                                "lastClassName": "c7",
+                                                "rules": Array [
+                                                  "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
+                                                  "30",
+                                                  "px;position:relative;",
+                                                  "flex:1 1 auto;padding:0 ",
+                                                  "30",
+                                                  "px;",
                                                   [Function],
                                                 ],
-                                                "componentStyle": ComponentStyle {
-                                                  "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
-                                                  "isStatic": false,
-                                                  "lastClassName": "c9",
-                                                  "rules": Array [
-                                                    "margin:",
-                                                    [Function],
-                                                    ";flex:",
-                                                    [Function],
-                                                    ";",
-                                                  ],
-                                                },
-                                                "displayName": "ModalFooter__PrimaryButton",
-                                                "foldedComponentIds": Array [],
-                                                "render": [Function],
-                                                "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
-                                                "target": [Function],
-                                                "toString": [Function],
-                                                "usesTheme": false,
-                                                "warnTooManyClasses": [Function],
-                                                "withComponent": [Function],
-                                              }
+                                              },
+                                              "displayName": "StyledModalComponents__BodySection",
+                                              "foldedComponentIds": Array [
+                                                "StyledModalComponents__ModalSection-sc-1r1r1yf-2",
+                                              ],
+                                              "render": [Function],
+                                              "styledComponentId": "StyledModalComponents__BodySection-sc-1r1r1yf-3",
+                                              "target": "div",
+                                              "toString": [Function],
+                                              "usesTheme": false,
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
                                             }
-                                            forwardedRef={null}
-                                            isLonely={false}
-                                            onClick={[Function]}
-                                            stretch={false}
+                                          }
+                                          forwardedRef={null}
+                                          viewportScrolling={false}
+                                        >
+                                          <div
+                                            className="c7"
                                           >
-                                            <Button
-                                              className="c9"
-                                              disabled={false}
-                                              fontColor=""
-                                              isLoading={false}
+                                            <span>
+                                              hello
+                                            </span>
+                                          </div>
+                                        </StyledComponent>
+                                      </StyledModalComponents__BodySection>
+                                    </ModalBody>
+                                    <ModalFooter
+                                      onClickPrimary={[Function]}
+                                      onClickSecondary={[Function]}
+                                      shouldStretchButtons={false}
+                                      textPrimary="Confirm"
+                                      textSecondary="Cancel"
+                                      withFooter={true}
+                                    >
+                                      <StyledModalComponents__FooterSection>
+                                        <StyledComponent
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
+                                                "isStatic": false,
+                                                "lastClassName": "c8",
+                                                "rules": Array [
+                                                  "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
+                                                  "30",
+                                                  "px;position:relative;",
+                                                  "align-items:center;flex-direction:row-reverse;",
+                                                ],
+                                              },
+                                              "displayName": "StyledModalComponents__FooterSection",
+                                              "foldedComponentIds": Array [
+                                                "StyledModalComponents__ModalSection-sc-1r1r1yf-2",
+                                              ],
+                                              "render": [Function],
+                                              "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
+                                              "target": "div",
+                                              "toString": [Function],
+                                              "usesTheme": false,
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                        >
+                                          <div
+                                            className="c8"
+                                          >
+                                            <ModalFooter__PrimaryButton
                                               isLonely={false}
-                                              mode="primary"
                                               onClick={[Function]}
                                               stretch={false}
-                                              type="button"
                                             >
-                                              <StyledButton
-                                                className="c9"
-                                                disabled={false}
-                                                fontColor=""
+                                              <StyledComponent
+                                                forwardedComponent={
+                                                  Object {
+                                                    "$$typeof": Symbol(react.forward_ref),
+                                                    "attrs": Array [
+                                                      [Function],
+                                                    ],
+                                                    "componentStyle": ComponentStyle {
+                                                      "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
+                                                      "isStatic": false,
+                                                      "lastClassName": "c9",
+                                                      "rules": Array [
+                                                        "margin:",
+                                                        [Function],
+                                                        ";flex:",
+                                                        [Function],
+                                                        ";",
+                                                      ],
+                                                    },
+                                                    "displayName": "ModalFooter__PrimaryButton",
+                                                    "foldedComponentIds": Array [],
+                                                    "render": [Function],
+                                                    "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
+                                                    "target": [Function],
+                                                    "toString": [Function],
+                                                    "usesTheme": false,
+                                                    "warnTooManyClasses": [Function],
+                                                    "withComponent": [Function],
+                                                  }
+                                                }
+                                                forwardedRef={null}
                                                 isLonely={false}
-                                                mode="primary"
                                                 onClick={[Function]}
                                                 stretch={false}
-                                                type="button"
                                               >
-                                                <StyledComponent
+                                                <Button
                                                   className="c9"
                                                   disabled={false}
                                                   fontColor=""
-                                                  forwardedComponent={
-                                                    Object {
-                                                      "$$typeof": Symbol(react.forward_ref),
-                                                      "attrs": Array [],
-                                                      "componentStyle": ComponentStyle {
-                                                        "componentId": "StyledButton-sc-1etazn9-0",
-                                                        "isStatic": false,
-                                                        "lastClassName": "c14",
-                                                        "rules": Array [
-                                                          "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
-                                                          "100ms",
-                                                          " ease-in-out,border-color ",
-                                                          "100ms",
-                                                          " ease-in-out,box-shadow ",
-                                                          "100ms",
-                                                          " ease-in-out;white-space:nowrap;",
-                                                          [Function],
-                                                          ";:hover{cursor:pointer;text-decoration:none;",
-                                                          [Function],
-                                                          "};:active{text-decoration:none;",
-                                                          [Function],
-                                                          "};:disabled{cursor:not-allowed;text-decoration:none;",
-                                                          [Function],
-                                                          "};:focus-visible{",
-                                                          [Function],
-                                                          "}",
-                                                        ],
-                                                      },
-                                                      "displayName": "StyledButton",
-                                                      "foldedComponentIds": Array [],
-                                                      "render": [Function],
-                                                      "styledComponentId": "StyledButton-sc-1etazn9-0",
-                                                      "target": "button",
-                                                      "toString": [Function],
-                                                      "usesTheme": false,
-                                                      "warnTooManyClasses": [Function],
-                                                      "withComponent": [Function],
-                                                    }
-                                                  }
-                                                  forwardedRef={null}
+                                                  isLoading={false}
                                                   isLonely={false}
                                                   mode="primary"
                                                   onClick={[Function]}
                                                   stretch={false}
                                                   type="button"
                                                 >
-                                                  <button
-                                                    className="c10 c9"
+                                                  <StyledButton
+                                                    className="c9"
                                                     disabled={false}
+                                                    fontColor=""
+                                                    isLonely={false}
                                                     mode="primary"
                                                     onClick={[Function]}
+                                                    stretch={false}
                                                     type="button"
                                                   >
-                                                    <ContentWrapper>
-                                                      <StyledComponent
-                                                        forwardedComponent={
-                                                          Object {
-                                                            "$$typeof": Symbol(react.forward_ref),
-                                                            "attrs": Array [],
-                                                            "componentStyle": ComponentStyle {
-                                                              "componentId": "ContentWrapper-sc-36hfub-0",
-                                                              "isStatic": false,
-                                                              "lastClassName": "c11",
-                                                              "rules": Array [
-                                                                "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
-                                                              ],
-                                                            },
-                                                            "displayName": "ContentWrapper",
-                                                            "foldedComponentIds": Array [],
-                                                            "render": [Function],
-                                                            "styledComponentId": "ContentWrapper-sc-36hfub-0",
-                                                            "target": "span",
-                                                            "toString": [Function],
-                                                            "usesTheme": false,
-                                                            "warnTooManyClasses": [Function],
-                                                            "withComponent": [Function],
-                                                          }
+                                                    <StyledComponent
+                                                      className="c9"
+                                                      disabled={false}
+                                                      fontColor=""
+                                                      forwardedComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": ComponentStyle {
+                                                            "componentId": "StyledButton-sc-1etazn9-0",
+                                                            "isStatic": false,
+                                                            "lastClassName": "c14",
+                                                            "rules": Array [
+                                                              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+                                                              "100ms",
+                                                              " ease-in-out,border-color ",
+                                                              "100ms",
+                                                              " ease-in-out,box-shadow ",
+                                                              "100ms",
+                                                              " ease-in-out;white-space:nowrap;",
+                                                              [Function],
+                                                              ";:hover{cursor:pointer;text-decoration:none;",
+                                                              [Function],
+                                                              "};:active{text-decoration:none;",
+                                                              [Function],
+                                                              "};:disabled{cursor:not-allowed;text-decoration:none;",
+                                                              [Function],
+                                                              "};:focus-visible{",
+                                                              [Function],
+                                                              "}",
+                                                            ],
+                                                          },
+                                                          "displayName": "StyledButton",
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "styledComponentId": "StyledButton-sc-1etazn9-0",
+                                                          "target": "button",
+                                                          "toString": [Function],
+                                                          "usesTheme": false,
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
                                                         }
-                                                        forwardedRef={null}
+                                                      }
+                                                      forwardedRef={null}
+                                                      isLonely={false}
+                                                      mode="primary"
+                                                      onClick={[Function]}
+                                                      stretch={false}
+                                                      type="button"
+                                                    >
+                                                      <button
+                                                        className="c10 c9"
+                                                        disabled={false}
+                                                        mode="primary"
+                                                        onClick={[Function]}
+                                                        type="button"
                                                       >
-                                                        <span
-                                                          className="c11"
-                                                        >
-                                                          <Content
-                                                            isLoading={false}
-                                                          >
-                                                            <StyledComponent
-                                                              forwardedComponent={
-                                                                Object {
-                                                                  "$$typeof": Symbol(react.forward_ref),
-                                                                  "attrs": Array [],
-                                                                  "componentStyle": ComponentStyle {
-                                                                    "componentId": "Content-sc-18psqsj-0",
-                                                                    "isStatic": false,
-                                                                    "lastClassName": "c12",
-                                                                    "rules": Array [
-                                                                      "flex:1 1 auto;opacity:",
-                                                                      [Function],
-                                                                      ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
-                                                                    ],
-                                                                  },
-                                                                  "displayName": "Content",
-                                                                  "foldedComponentIds": Array [],
-                                                                  "render": [Function],
-                                                                  "styledComponentId": "Content-sc-18psqsj-0",
-                                                                  "target": "span",
-                                                                  "toString": [Function],
-                                                                  "usesTheme": false,
-                                                                  "warnTooManyClasses": [Function],
-                                                                  "withComponent": [Function],
-                                                                }
+                                                        <ContentWrapper>
+                                                          <StyledComponent
+                                                            forwardedComponent={
+                                                              Object {
+                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                "attrs": Array [],
+                                                                "componentStyle": ComponentStyle {
+                                                                  "componentId": "ContentWrapper-sc-36hfub-0",
+                                                                  "isStatic": false,
+                                                                  "lastClassName": "c11",
+                                                                  "rules": Array [
+                                                                    "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
+                                                                  ],
+                                                                },
+                                                                "displayName": "ContentWrapper",
+                                                                "foldedComponentIds": Array [],
+                                                                "render": [Function],
+                                                                "styledComponentId": "ContentWrapper-sc-36hfub-0",
+                                                                "target": "span",
+                                                                "toString": [Function],
+                                                                "usesTheme": false,
+                                                                "warnTooManyClasses": [Function],
+                                                                "withComponent": [Function],
                                                               }
-                                                              forwardedRef={null}
-                                                              isLoading={false}
+                                                            }
+                                                            forwardedRef={null}
+                                                          >
+                                                            <span
+                                                              className="c11"
                                                             >
-                                                              <span
-                                                                className="c12"
+                                                              <Content
+                                                                isLoading={false}
                                                               >
-                                                                Confirm
-                                                              </span>
-                                                            </StyledComponent>
-                                                          </Content>
-                                                        </span>
-                                                      </StyledComponent>
-                                                    </ContentWrapper>
-                                                  </button>
-                                                </StyledComponent>
-                                              </StyledButton>
-                                            </Button>
-                                          </StyledComponent>
-                                        </ModalFooter__PrimaryButton>
-                                        <ModalFooter__SecondaryButton
-                                          onClick={[Function]}
-                                          stretch={false}
-                                        >
-                                          <StyledComponent
-                                            forwardedComponent={
-                                              Object {
-                                                "$$typeof": Symbol(react.forward_ref),
-                                                "attrs": Array [
-                                                  [Function],
-                                                ],
-                                                "componentStyle": ComponentStyle {
-                                                  "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
-                                                  "isStatic": false,
-                                                  "lastClassName": "c13",
-                                                  "rules": Array [
-                                                    "flex:",
-                                                    [Function],
-                                                    ";",
-                                                  ],
-                                                },
-                                                "displayName": "ModalFooter__SecondaryButton",
-                                                "foldedComponentIds": Array [],
-                                                "render": [Function],
-                                                "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
-                                                "target": [Function],
-                                                "toString": [Function],
-                                                "usesTheme": false,
-                                                "warnTooManyClasses": [Function],
-                                                "withComponent": [Function],
-                                              }
-                                            }
-                                            forwardedRef={null}
-                                            onClick={[Function]}
-                                            stretch={false}
-                                          >
-                                            <Button
-                                              className="c13"
-                                              disabled={false}
-                                              fontColor=""
-                                              isLoading={false}
-                                              mode="default"
+                                                                <StyledComponent
+                                                                  forwardedComponent={
+                                                                    Object {
+                                                                      "$$typeof": Symbol(react.forward_ref),
+                                                                      "attrs": Array [],
+                                                                      "componentStyle": ComponentStyle {
+                                                                        "componentId": "Content-sc-18psqsj-0",
+                                                                        "isStatic": false,
+                                                                        "lastClassName": "c12",
+                                                                        "rules": Array [
+                                                                          "flex:1 1 auto;opacity:",
+                                                                          [Function],
+                                                                          ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                                                                        ],
+                                                                      },
+                                                                      "displayName": "Content",
+                                                                      "foldedComponentIds": Array [],
+                                                                      "render": [Function],
+                                                                      "styledComponentId": "Content-sc-18psqsj-0",
+                                                                      "target": "span",
+                                                                      "toString": [Function],
+                                                                      "usesTheme": false,
+                                                                      "warnTooManyClasses": [Function],
+                                                                      "withComponent": [Function],
+                                                                    }
+                                                                  }
+                                                                  forwardedRef={null}
+                                                                  isLoading={false}
+                                                                >
+                                                                  <span
+                                                                    className="c12"
+                                                                  >
+                                                                    Confirm
+                                                                  </span>
+                                                                </StyledComponent>
+                                                              </Content>
+                                                            </span>
+                                                          </StyledComponent>
+                                                        </ContentWrapper>
+                                                      </button>
+                                                    </StyledComponent>
+                                                  </StyledButton>
+                                                </Button>
+                                              </StyledComponent>
+                                            </ModalFooter__PrimaryButton>
+                                            <ModalFooter__SecondaryButton
                                               onClick={[Function]}
                                               stretch={false}
-                                              type="button"
                                             >
-                                              <StyledButton
-                                                className="c13"
-                                                disabled={false}
-                                                fontColor=""
-                                                mode="default"
+                                              <StyledComponent
+                                                forwardedComponent={
+                                                  Object {
+                                                    "$$typeof": Symbol(react.forward_ref),
+                                                    "attrs": Array [
+                                                      [Function],
+                                                    ],
+                                                    "componentStyle": ComponentStyle {
+                                                      "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
+                                                      "isStatic": false,
+                                                      "lastClassName": "c13",
+                                                      "rules": Array [
+                                                        "flex:",
+                                                        [Function],
+                                                        ";",
+                                                      ],
+                                                    },
+                                                    "displayName": "ModalFooter__SecondaryButton",
+                                                    "foldedComponentIds": Array [],
+                                                    "render": [Function],
+                                                    "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
+                                                    "target": [Function],
+                                                    "toString": [Function],
+                                                    "usesTheme": false,
+                                                    "warnTooManyClasses": [Function],
+                                                    "withComponent": [Function],
+                                                  }
+                                                }
+                                                forwardedRef={null}
                                                 onClick={[Function]}
                                                 stretch={false}
-                                                type="button"
                                               >
-                                                <StyledComponent
+                                                <Button
                                                   className="c13"
                                                   disabled={false}
                                                   fontColor=""
-                                                  forwardedComponent={
-                                                    Object {
-                                                      "$$typeof": Symbol(react.forward_ref),
-                                                      "attrs": Array [],
-                                                      "componentStyle": ComponentStyle {
-                                                        "componentId": "StyledButton-sc-1etazn9-0",
-                                                        "isStatic": false,
-                                                        "lastClassName": "c14",
-                                                        "rules": Array [
-                                                          "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
-                                                          "100ms",
-                                                          " ease-in-out,border-color ",
-                                                          "100ms",
-                                                          " ease-in-out,box-shadow ",
-                                                          "100ms",
-                                                          " ease-in-out;white-space:nowrap;",
-                                                          [Function],
-                                                          ";:hover{cursor:pointer;text-decoration:none;",
-                                                          [Function],
-                                                          "};:active{text-decoration:none;",
-                                                          [Function],
-                                                          "};:disabled{cursor:not-allowed;text-decoration:none;",
-                                                          [Function],
-                                                          "};:focus-visible{",
-                                                          [Function],
-                                                          "}",
-                                                        ],
-                                                      },
-                                                      "displayName": "StyledButton",
-                                                      "foldedComponentIds": Array [],
-                                                      "render": [Function],
-                                                      "styledComponentId": "StyledButton-sc-1etazn9-0",
-                                                      "target": "button",
-                                                      "toString": [Function],
-                                                      "usesTheme": false,
-                                                      "warnTooManyClasses": [Function],
-                                                      "withComponent": [Function],
-                                                    }
-                                                  }
-                                                  forwardedRef={null}
+                                                  isLoading={false}
                                                   mode="default"
                                                   onClick={[Function]}
                                                   stretch={false}
                                                   type="button"
                                                 >
-                                                  <button
-                                                    className="c14 c13"
+                                                  <StyledButton
+                                                    className="c13"
                                                     disabled={false}
+                                                    fontColor=""
                                                     mode="default"
                                                     onClick={[Function]}
+                                                    stretch={false}
                                                     type="button"
                                                   >
-                                                    <ContentWrapper>
-                                                      <StyledComponent
-                                                        forwardedComponent={
-                                                          Object {
-                                                            "$$typeof": Symbol(react.forward_ref),
-                                                            "attrs": Array [],
-                                                            "componentStyle": ComponentStyle {
-                                                              "componentId": "ContentWrapper-sc-36hfub-0",
-                                                              "isStatic": false,
-                                                              "lastClassName": "c11",
-                                                              "rules": Array [
-                                                                "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
-                                                              ],
-                                                            },
-                                                            "displayName": "ContentWrapper",
-                                                            "foldedComponentIds": Array [],
-                                                            "render": [Function],
-                                                            "styledComponentId": "ContentWrapper-sc-36hfub-0",
-                                                            "target": "span",
-                                                            "toString": [Function],
-                                                            "usesTheme": false,
-                                                            "warnTooManyClasses": [Function],
-                                                            "withComponent": [Function],
-                                                          }
+                                                    <StyledComponent
+                                                      className="c13"
+                                                      disabled={false}
+                                                      fontColor=""
+                                                      forwardedComponent={
+                                                        Object {
+                                                          "$$typeof": Symbol(react.forward_ref),
+                                                          "attrs": Array [],
+                                                          "componentStyle": ComponentStyle {
+                                                            "componentId": "StyledButton-sc-1etazn9-0",
+                                                            "isStatic": false,
+                                                            "lastClassName": "c14",
+                                                            "rules": Array [
+                                                              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+                                                              "100ms",
+                                                              " ease-in-out,border-color ",
+                                                              "100ms",
+                                                              " ease-in-out,box-shadow ",
+                                                              "100ms",
+                                                              " ease-in-out;white-space:nowrap;",
+                                                              [Function],
+                                                              ";:hover{cursor:pointer;text-decoration:none;",
+                                                              [Function],
+                                                              "};:active{text-decoration:none;",
+                                                              [Function],
+                                                              "};:disabled{cursor:not-allowed;text-decoration:none;",
+                                                              [Function],
+                                                              "};:focus-visible{",
+                                                              [Function],
+                                                              "}",
+                                                            ],
+                                                          },
+                                                          "displayName": "StyledButton",
+                                                          "foldedComponentIds": Array [],
+                                                          "render": [Function],
+                                                          "styledComponentId": "StyledButton-sc-1etazn9-0",
+                                                          "target": "button",
+                                                          "toString": [Function],
+                                                          "usesTheme": false,
+                                                          "warnTooManyClasses": [Function],
+                                                          "withComponent": [Function],
                                                         }
-                                                        forwardedRef={null}
+                                                      }
+                                                      forwardedRef={null}
+                                                      mode="default"
+                                                      onClick={[Function]}
+                                                      stretch={false}
+                                                      type="button"
+                                                    >
+                                                      <button
+                                                        className="c14 c13"
+                                                        disabled={false}
+                                                        mode="default"
+                                                        onClick={[Function]}
+                                                        type="button"
                                                       >
-                                                        <span
-                                                          className="c11"
-                                                        >
-                                                          <Content
-                                                            isLoading={false}
-                                                          >
-                                                            <StyledComponent
-                                                              forwardedComponent={
-                                                                Object {
-                                                                  "$$typeof": Symbol(react.forward_ref),
-                                                                  "attrs": Array [],
-                                                                  "componentStyle": ComponentStyle {
-                                                                    "componentId": "Content-sc-18psqsj-0",
-                                                                    "isStatic": false,
-                                                                    "lastClassName": "c12",
-                                                                    "rules": Array [
-                                                                      "flex:1 1 auto;opacity:",
-                                                                      [Function],
-                                                                      ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
-                                                                    ],
-                                                                  },
-                                                                  "displayName": "Content",
-                                                                  "foldedComponentIds": Array [],
-                                                                  "render": [Function],
-                                                                  "styledComponentId": "Content-sc-18psqsj-0",
-                                                                  "target": "span",
-                                                                  "toString": [Function],
-                                                                  "usesTheme": false,
-                                                                  "warnTooManyClasses": [Function],
-                                                                  "withComponent": [Function],
-                                                                }
+                                                        <ContentWrapper>
+                                                          <StyledComponent
+                                                            forwardedComponent={
+                                                              Object {
+                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                "attrs": Array [],
+                                                                "componentStyle": ComponentStyle {
+                                                                  "componentId": "ContentWrapper-sc-36hfub-0",
+                                                                  "isStatic": false,
+                                                                  "lastClassName": "c11",
+                                                                  "rules": Array [
+                                                                    "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
+                                                                  ],
+                                                                },
+                                                                "displayName": "ContentWrapper",
+                                                                "foldedComponentIds": Array [],
+                                                                "render": [Function],
+                                                                "styledComponentId": "ContentWrapper-sc-36hfub-0",
+                                                                "target": "span",
+                                                                "toString": [Function],
+                                                                "usesTheme": false,
+                                                                "warnTooManyClasses": [Function],
+                                                                "withComponent": [Function],
                                                               }
-                                                              forwardedRef={null}
-                                                              isLoading={false}
+                                                            }
+                                                            forwardedRef={null}
+                                                          >
+                                                            <span
+                                                              className="c11"
                                                             >
-                                                              <span
-                                                                className="c12"
+                                                              <Content
+                                                                isLoading={false}
                                                               >
-                                                                Cancel
-                                                              </span>
-                                                            </StyledComponent>
-                                                          </Content>
-                                                        </span>
-                                                      </StyledComponent>
-                                                    </ContentWrapper>
-                                                  </button>
-                                                </StyledComponent>
-                                              </StyledButton>
-                                            </Button>
-                                          </StyledComponent>
-                                        </ModalFooter__SecondaryButton>
-                                      </div>
-                                    </StyledComponent>
-                                  </StyledModalComponents__FooterSection>
-                                </ModalFooter>
-                              </div>
-                            </StyledComponent>
-                          </StyledModalComponents__ModalInnerContainer>
-                        </div>
-                      </StyledComponent>
-                    </StyledModalComponents__ModalOuterContainer>
-                  </div>
-                </StyledComponent>
-              </OverlayInnerContainer>
-            </div>
-          </StyledComponent>
-        </OverlayOuterContainer>
+                                                                <StyledComponent
+                                                                  forwardedComponent={
+                                                                    Object {
+                                                                      "$$typeof": Symbol(react.forward_ref),
+                                                                      "attrs": Array [],
+                                                                      "componentStyle": ComponentStyle {
+                                                                        "componentId": "Content-sc-18psqsj-0",
+                                                                        "isStatic": false,
+                                                                        "lastClassName": "c12",
+                                                                        "rules": Array [
+                                                                          "flex:1 1 auto;opacity:",
+                                                                          [Function],
+                                                                          ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                                                                        ],
+                                                                      },
+                                                                      "displayName": "Content",
+                                                                      "foldedComponentIds": Array [],
+                                                                      "render": [Function],
+                                                                      "styledComponentId": "Content-sc-18psqsj-0",
+                                                                      "target": "span",
+                                                                      "toString": [Function],
+                                                                      "usesTheme": false,
+                                                                      "warnTooManyClasses": [Function],
+                                                                      "withComponent": [Function],
+                                                                    }
+                                                                  }
+                                                                  forwardedRef={null}
+                                                                  isLoading={false}
+                                                                >
+                                                                  <span
+                                                                    className="c12"
+                                                                  >
+                                                                    Cancel
+                                                                  </span>
+                                                                </StyledComponent>
+                                                              </Content>
+                                                            </span>
+                                                          </StyledComponent>
+                                                        </ContentWrapper>
+                                                      </button>
+                                                    </StyledComponent>
+                                                  </StyledButton>
+                                                </Button>
+                                              </StyledComponent>
+                                            </ModalFooter__SecondaryButton>
+                                          </div>
+                                        </StyledComponent>
+                                      </StyledModalComponents__FooterSection>
+                                    </ModalFooter>
+                                  </div>
+                                </StyledComponent>
+                              </StyledModalComponents__ModalInnerContainer>
+                            </div>
+                          </StyledComponent>
+                        </StyledModalComponents__ModalOuterContainer>
+                      </div>
+                    </StyledComponent>
+                  </OverlayInnerContainer>
+                </div>
+              </StyledComponent>
+            </OverlayOuterContainer>
+          </Transition>
+        </CSSTransition>
         <LockToggle
           accountForScrollbars={true}
           isActive={true}
