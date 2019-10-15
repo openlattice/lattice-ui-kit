@@ -51,7 +51,7 @@ class AppNavigationWrapper extends Component<Props> {
       return (
         <AppNavigationOuterWrapper borderless className={className}>
           <AppNavigationInnerWrapper vertical>
-            <Drawer isOpen={isOpen} onClose={onClose} side="right" transparentOverlay>
+            <Drawer isOpen={isOpen} onClose={onClose} side="right">
               <NavigationDrawer>
                 {children}
               </NavigationDrawer>
