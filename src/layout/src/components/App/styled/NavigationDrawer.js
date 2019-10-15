@@ -4,26 +4,17 @@
 
 import styled from 'styled-components';
 
-import * as Colors from '../../../../../colors';
-
-const { NEUTRALS, PURPLES, WHITE } = Colors;
+import { NEUTRALS, PURPLES, WHITE } from '../../../../../colors';
 
 const NavigationDrawer = styled.nav`
-  background-color: ${WHITE};
-  bottom: 0;
-  box-shadow: 10px 0 50px -10px #969696;
   display: flex;
+  flex: 1 0 auto;
   flex-direction: column;
   justify-content: flex-start;
-  min-width: 300px;
-  overflow: scroll;
   padding: 15px 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1000;
 
   > a {
+    background-color: ${WHITE};
     color: ${NEUTRALS[0]};
     font-size: 14px;
     font-weight: 600;

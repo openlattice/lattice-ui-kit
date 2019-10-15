@@ -8,6 +8,7 @@ import type { Node } from 'react';
 import PropTypes from 'prop-types';
 import ScrollLock from 'react-scrolllock';
 import isFunction from 'lodash/isFunction';
+import { CSSTransition } from 'react-transition-group';
 
 import Portal from '../../../portal';
 import { OverlayInnerContainer, OverlayOuterContainer } from './styled/StyledOverlayComponents';
@@ -18,6 +19,7 @@ type Props = {
   isVisible ? :boolean;
   onClose ? :() => void;
   shouldCloseOnClick ? :boolean;
+  transparent ? :boolean;
 };
 
 /*
@@ -33,6 +35,7 @@ export default class Overlay extends Component<Props> {
     isVisible: PropTypes.bool,
     onClose: PropTypes.func,
     shouldCloseOnClick: PropTypes.bool,
+    transparent: PropTypes.bool,
   }
 
   static defaultProps = {
@@ -41,6 +44,7 @@ export default class Overlay extends Component<Props> {
     isVisible: false,
     onClose: undefined,
     shouldCloseOnClick: true,
+    transparent: false
   }
 
   close = () => {
@@ -62,20 +66,29 @@ export default class Overlay extends Component<Props> {
 
   render() {
 
-    const { isVisible, children, isScrollable } = this.props;
-
-    if (!isVisible) {
-      return null;
-    }
+    const {
+      isVisible,
+      children,
+      isScrollable,
+      transparent
+    } = this.props;
 
     return (
       <Portal>
-        <OverlayOuterContainer>
-          <OverlayInnerContainer isScrollable={isScrollable} onClick={this.handleOnClick}>
-            { children }
-          </OverlayInnerContainer>
-        </OverlayOuterContainer>
-        <ScrollLock />
+        <CSSTransition
+            in={isVisible}
+            mountOnEnter
+            unmountOnExit
+            timeout={200}
+            classNames="fade">
+          <ScrollLock>
+            <OverlayOuterContainer transparent={transparent}>
+              <OverlayInnerContainer isScrollable={isScrollable} onClick={this.handleOnClick}>
+                { children }
+              </OverlayInnerContainer>
+            </OverlayOuterContainer>
+          </ScrollLock>
+        </CSSTransition>
       </Portal>
     );
   }

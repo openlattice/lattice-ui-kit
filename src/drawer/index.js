@@ -1,6 +1,4 @@
-/*
- * @flow
- */
+// @flow
+import Drawer from './src/components/Drawer';
 
-// eslint-disable-next-line import/prefer-default-export
-export { default as Drawer } from './src/components/Drawer';
+export default Drawer;
