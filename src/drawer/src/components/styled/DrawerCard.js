@@ -1,10 +1,16 @@
 // @flow
-
+import React from 'react';
 import styled, { css } from 'styled-components';
+import type { Element } from 'react';
+
 import { slideTransitionStyles } from '../../../../transitions';
 import { WHITE } from '../../../../colors';
+import { useCloseOnEscape } from '../../../../hooks';
 
 type Props = {
+  children :Element<any>,
+  onClose :() => any;
+  shouldCloseOnEscape :boolean;
   side :'left' | 'right';
 };
 
@@ -24,7 +30,7 @@ const getScreenPosition = (props :Props) => {
   }
 };
 
-const DrawerCard = styled.div`
+const DrawerCardWrapper = styled.div`
   background-color: ${WHITE};
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -40,5 +46,22 @@ const DrawerCard = styled.div`
   ${getScreenPosition};
   ${slideTransitionStyles};
 `;
+
+const DrawerCard = (props :Props) => {
+  const {
+    children,
+    onClose,
+    shouldCloseOnEscape,
+    side,
+  } = props;
+
+  useCloseOnEscape(shouldCloseOnEscape, onClose);
+
+  return (
+    <DrawerCardWrapper side={side}>
+      { children }
+    </DrawerCardWrapper>
+  );
+};
 
 export default DrawerCard;

@@ -9,12 +9,13 @@ import Overlay from '../../../overlay';
 import DrawerCard from './styled/DrawerCard';
 
 type Props = {
-  children ? :Node | Element<any>;
-  isOpen ? :boolean;
-  onClose ? :() => void;
-  shouldCloseOnOutsideClick ? :boolean;
-  side ? :'left' | 'right';
-  transparentOverlay ? :boolean;
+  children :Element<any>;
+  isOpen :boolean;
+  onClose :() => void;
+  shouldCloseOnOutsideClick :boolean;
+  shouldCloseOnEscape :boolean;
+  side :'left' | 'right';
+  transparentOverlay :boolean;
 }
 
 /*
@@ -27,6 +28,7 @@ const Drawer = (props :Props) => {
     children,
     isOpen,
     onClose,
+    shouldCloseOnEscape,
     shouldCloseOnOutsideClick,
     side,
     transparentOverlay,
@@ -45,9 +47,12 @@ const Drawer = (props :Props) => {
             in={isOpen}
             mountOnEnter
             unmountOnExit
-            timeout={100}
+            timeout={200}
             classNames="slide">
-          <DrawerCard side={side}>
+          <DrawerCard
+              onClose={onClose}
+              shouldCloseOnEscape={shouldCloseOnEscape}
+              side={side}>
             {children}
           </DrawerCard>
         </CSSTransition>
@@ -60,6 +65,7 @@ Drawer.defaultProps = {
   children: undefined,
   isOpen: false,
   onClose: undefined,
+  shouldCloseOnEscape: true,
   shouldCloseOnOutsideClick: true,
   side: 'left',
   transparentOverlay: false,
