@@ -10,8 +10,7 @@ const latticeMuiTheme = createMuiTheme({
       root: {
         backgroundColor: NEUTRALS[8],
         borderRadius: '3px',
-        color: NEUTRALS[0],
-        fontFamily: 'Open Sans',
+        fontFamily: 'inherit',
         fontSize: '14px',
         height: '40px',
         lineHeight: '1.5',
@@ -28,7 +27,9 @@ const latticeMuiTheme = createMuiTheme({
         }
       },
       input: {
+        color: NEUTRALS[0],
         '&$disabled': {
+          color: NEUTRALS[1],
           cursor: 'not-allowed'
         }
       }

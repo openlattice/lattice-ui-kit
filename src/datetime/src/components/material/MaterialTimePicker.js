@@ -10,45 +10,67 @@ import { latticeMuiTheme } from './styles';
 
 type DateChange = (date :DateTime, value ?:string | null) => void;
 type Props = {
+  ampm :boolean;
+  disabled :boolean;
   onChange :DateChange;
-  value :DateTime;
+  value :string;
 }
 
-const MaterialDatePicker = (props :Props) => {
-  const { onChange, value, ...rest } = props;
+const MaterialTimePicker = (props :Props) => {
+  const {
+    ampm,
+    disabled,
+    onChange,
+    value
+  } = props;
   const [selectedDate, setSelectedDate] = useState(null);
 
   useEffect(() => {
-    const time = DateTime.fromISO(value);
-    if (time.isValid) {
-      setSelectedDate(time);
+    const timeIso = DateTime.fromISO(value);
+    if (timeIso.isValid) {
+      setSelectedDate(timeIso);
     }
-  }, [value]);
+  }, [value, ampm]);
 
-  const handleDateChange = useCallback<DateChange>((date) => {
-    if (isFunction(onChange)) {
-      const time = date.toLocaleString(DateTime.TIME_24_SIMPLE);
-      onChange(time);
+  const handleDateChange = useCallback<DateChange>((date, inputValue) => {
+    if (inputValue !== null && date !== null) {
+      const parsedTime = DateTime.fromFormat(inputValue, 'h:mm a');
+      if (isFunction(onChange)) {
+        if (parsedTime.isValid || date.isValid) {
+          onChange(parsedTime.toLocaleString(DateTime.TIME_24_SIMPLE));
+        }
+        else {
+          onChange('');
+        }
+      }
+      setSelectedDate(parsedTime);
     }
-    setSelectedDate(date);
+    else {
+
+      setSelectedDate(null);
+    }
+
   }, [onChange]);
-
   return (
     <ThemeProvider theme={latticeMuiTheme}>
       <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
         <KeyboardTimePicker
-            ampm={false}
+            ampm={ampm}
+            disabled={disabled}
             inputVariant="outlined"
-            mask="__:__"
+            mask={ampm ? '__:__ _M' : '__:__'}
             onChange={handleDateChange}
             placeholder="e.g 08:00"
-            showTodayButton
             value={selectedDate}
-            variant="inline"
-            {...rest} />
+            variant="inline" />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
   );
 };
 
-export default MaterialDatePicker;
+MaterialTimePicker.defaultProps = {
+  ampm: true,
+  value: null
+};
+
+export default MaterialTimePicker;

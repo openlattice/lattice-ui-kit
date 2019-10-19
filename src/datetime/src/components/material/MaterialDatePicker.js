@@ -10,12 +10,13 @@ import { latticeMuiTheme } from './styles';
 
 type DateChange = (date :DateTime, value ?:string | null) => void;
 type Props = {
+  disabled :boolean;
   onChange :DateChange;
   value :DateTime | string;
 }
 
 const MaterialDatePicker = (props :Props) => {
-  const { onChange, value, ...rest } = props;
+  const { disabled, onChange, value } = props;
   const [selectedDate, setSelectedDate] = useState(null);
 
   useEffect(() => {
@@ -27,8 +28,13 @@ const MaterialDatePicker = (props :Props) => {
 
   const handleDateChange = useCallback<DateChange>((date) => {
     if (isFunction(onChange)) {
-      const dateISO = date.toISODate();
-      onChange(dateISO);
+      if (date === null || !date.isValid) {
+        onChange('');
+      }
+      else {
+        const dateIso = date.toISODate();
+        onChange(dateIso);
+      }
     }
     setSelectedDate(date);
   }, [onChange]);
@@ -37,13 +43,13 @@ const MaterialDatePicker = (props :Props) => {
     <ThemeProvider theme={latticeMuiTheme}>
       <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
         <KeyboardDatePicker
+            disabled={disabled}
             format="MM/dd/yyyy"
             inputVariant="outlined"
             onChange={handleDateChange}
             placeholder="MM/DD/YYYY"
             value={selectedDate}
-            variant="inline"
-            {...rest} />
+            variant="inline" />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
   );
