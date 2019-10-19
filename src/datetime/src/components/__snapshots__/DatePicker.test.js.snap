@@ -2,6 +2,7 @@
 
 exports[`DatePicker render matches snapshot 1`] = `
 <WithAnalyticsContext(WithAnalyticsEvents(DatePicker))
+  dateFormat="MM/DD/YYYY"
   placeholder="MM/DD/YYYY"
   selectProps={
     Object {
