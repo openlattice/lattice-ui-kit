@@ -22,8 +22,16 @@ const latticeMuiTheme = createMuiTheme({
         },
         '&$focused:not($disabled)': {
           backgroundColor: 'white'
+        },
+        '&$disabled': {
+          cursor: 'not-allowed'
         }
       },
+      input: {
+        '&$disabled': {
+          cursor: 'not-allowed'
+        }
+      }
     },
     MuiOutlinedInput: {
       root: {
@@ -32,6 +40,9 @@ const latticeMuiTheme = createMuiTheme({
           borderWidth: '1px'
         },
         '&:hover:not($disabled):not($focused):not($error) $notchedOutline': {
+          borderColor: NEUTRALS[4]
+        },
+        '&$disabled $notchedOutline': {
           borderColor: NEUTRALS[4]
         }
       },
