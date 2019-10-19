@@ -1,7 +1,9 @@
 import React from 'react';
+import { DateTime } from 'luxon';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { Card, CardSegment, CardStack } from '../../layout';
+import Label from '../../label';
 import { DatePicker, TimePicker } from '../index';
 import MaterialDatePicker from '../src/components/material/MaterialDatePicker';
 import MaterialTimePicker from '../src/components/material/MaterialTimePicker';
@@ -22,14 +24,39 @@ storiesOf('Date and Time', module)
             <a href="https://atlaskit.atlassian.com/packages/core/datetime-picker">
               Atlaskit Documentation
             </a>
+            <Label subtle>Default</Label>
             <DatePicker
+                onChange={dateChange} />
+            <hr />
+            <Label subtle>Disabled</Label>
+            <DatePicker
+                isDisabled
+                placeholder="disabled"
+                onChange={dateChange} />
+            <hr />
+            <Label subtle>Provided Value</Label>
+            <DatePicker
+                value={DateTime.local()}
                 onChange={dateChange} />
           </CardSegment>
         </Card>
         <Card>
           <CardSegment vertical padding="sm">
             <h3>Material</h3>
+            <Label subtle>Default</Label>
             <MaterialDatePicker onChange={dateChange} />
+            <hr />
+            <Label subtle>Disabled</Label>
+            <MaterialDatePicker
+                placeholder="disabled"
+                disabled
+                onChange={dateChange} />
+            <hr />
+            <Label subtle>Provided Value</Label>
+            <MaterialDatePicker
+                value={DateTime.local()}
+                placeholder="disabled"
+                onChange={dateChange} />
           </CardSegment>
         </Card>
       </CardStack>
