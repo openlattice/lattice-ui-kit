@@ -11,8 +11,8 @@ import { latticeMuiTheme } from './styles';
 type DateChange = (date :DateTime, value ?:string | null) => void;
 type Props = {
   disabled :boolean;
-  onChange :DateChange;
-  value :DateTime | string;
+  onChange :(dateIso :string) => void;
+  value :string;
 }
 
 const MaterialDatePicker = (props :Props) => {
