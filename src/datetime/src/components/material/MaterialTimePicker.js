@@ -10,7 +10,6 @@ import { latticeMuiTheme } from './styles';
 
 type DateChange = (date :DateTime, value ?:string | null) => void;
 type Props = {
-  ampm :boolean;
   disabled :boolean;
   onChange :DateChange;
   value :string;
@@ -18,7 +17,6 @@ type Props = {
 
 const MaterialTimePicker = (props :Props) => {
   const {
-    ampm,
     disabled,
     onChange,
     value
@@ -30,7 +28,7 @@ const MaterialTimePicker = (props :Props) => {
     if (timeIso.isValid) {
       setSelectedDate(timeIso);
     }
-  }, [value, ampm]);
+  }, [value]);
 
   const handleDateChange = useCallback<DateChange>((date, inputValue) => {
     if (inputValue !== null && date !== null) {
@@ -55,10 +53,9 @@ const MaterialTimePicker = (props :Props) => {
     <ThemeProvider theme={latticeMuiTheme}>
       <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
         <KeyboardTimePicker
-            ampm={ampm}
             disabled={disabled}
             inputVariant="outlined"
-            mask={ampm ? '__:__ _M' : '__:__'}
+            mask="__:__ _M"
             onChange={handleDateChange}
             placeholder="e.g 08:00"
             value={selectedDate}
@@ -69,8 +66,7 @@ const MaterialTimePicker = (props :Props) => {
 };
 
 MaterialTimePicker.defaultProps = {
-  ampm: true,
-  value: null
+  value: '',
 };
 
 export default MaterialTimePicker;
