@@ -1,5 +1,5 @@
 // @flow
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import isFunction from 'lodash/isFunction';
 import { DateTime } from 'luxon';
 import { ThemeProvider } from '@material-ui/styles';
@@ -15,12 +15,20 @@ type Props = {
 }
 
 const MaterialDatePicker = (props :Props) => {
-  const { onChange, ...rest } = props;
+  const { onChange, value, ...rest } = props;
   const [selectedDate, setSelectedDate] = useState(null);
 
-  const handleDateChange = useCallback<DateChange>((date, value) => {
+  useEffect(() => {
+    const time = DateTime.fromISO(value);
+    if (time.isValid) {
+      setSelectedDate(time);
+    }
+  }, [value]);
+
+  const handleDateChange = useCallback<DateChange>((date) => {
     if (isFunction(onChange)) {
-      onChange(value, date);
+      const time = date.toLocaleString(DateTime.TIME_24_SIMPLE);
+      onChange(time);
     }
     setSelectedDate(date);
   }, [onChange]);
@@ -33,6 +41,7 @@ const MaterialDatePicker = (props :Props) => {
             inputVariant="outlined"
             mask="__:__"
             onChange={handleDateChange}
+            placeholder="e.g 08:00"
             showTodayButton
             value={selectedDate}
             variant="inline"

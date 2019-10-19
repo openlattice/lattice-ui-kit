@@ -11,19 +11,24 @@ import { latticeMuiTheme } from './styles';
 type DateChange = (date :DateTime, value ?:string | null) => void;
 type Props = {
   onChange :DateChange;
-  value :DateTime;
+  value :DateTime | string;
 }
 
 const MaterialDatePicker = (props :Props) => {
   const { onChange, value, ...rest } = props;
   const [selectedDate, setSelectedDate] = useState(null);
+
   useEffect(() => {
-    setSelectedDate(value);
+    const date = DateTime.fromISO(value);
+    if (date.isValid) {
+      setSelectedDate(date);
+    }
   }, [value]);
 
-  const handleDateChange = useCallback<DateChange>((date, dateAsString) => {
+  const handleDateChange = useCallback<DateChange>((date) => {
     if (isFunction(onChange)) {
-      onChange(dateAsString, date);
+      const dateISO = date.toISODate();
+      onChange(dateISO);
     }
     setSelectedDate(date);
   }, [onChange]);
