@@ -1,10 +1,11 @@
 // @flow
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import isFunction from 'lodash/isFunction';
-import LuxonUtils from '@date-io/luxon';
 import { DateTime } from 'luxon';
 import { ThemeProvider } from '@material-ui/styles';
 import { KeyboardDatePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
+
+import LatticeLuxonUtils from './utils';
 import { latticeMuiTheme } from './styles';
 
 type DateChange = (date :DateTime, value ?:string | null) => void;
@@ -14,30 +15,37 @@ type Props = {
 }
 
 const MaterialDatePicker = (props :Props) => {
-  const { onChange } = props;
+  const { onChange, value, ...rest } = props;
   const [selectedDate, setSelectedDate] = useState(null);
+  useEffect(() => {
+    setSelectedDate(value);
+  }, [value]);
 
-  const handleDateChange = useCallback<DateChange>((date, value) => {
+  const handleDateChange = useCallback<DateChange>((date, dateAsString) => {
     if (isFunction(onChange)) {
-      onChange(value, date);
+      onChange(dateAsString, date);
     }
     setSelectedDate(date);
   }, [onChange]);
 
   return (
     <ThemeProvider theme={latticeMuiTheme}>
-      <MuiPickersUtilsProvider utils={LuxonUtils}>
+      <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
         <KeyboardDatePicker
             format="MM/dd/yyyy"
             inputVariant="outlined"
             onChange={handleDateChange}
             placeholder="MM/DD/YYYY"
-            showTodayButton
             value={selectedDate}
-            variant="inline" />
+            variant="inline"
+            {...rest} />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
   );
+};
+
+MaterialDatePicker.defaultProps = {
+  value: null
 };
 
 export default MaterialDatePicker;

@@ -1,10 +1,11 @@
 // @flow
 import React, { useCallback, useState } from 'react';
 import isFunction from 'lodash/isFunction';
-import LuxonUtils from '@date-io/luxon';
 import { DateTime } from 'luxon';
 import { ThemeProvider } from '@material-ui/styles';
 import { KeyboardTimePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
+
+import LatticeLuxonUtils from './utils';
 import { latticeMuiTheme } from './styles';
 
 type DateChange = (date :DateTime, value ?:string | null) => void;
@@ -14,7 +15,7 @@ type Props = {
 }
 
 const MaterialDatePicker = (props :Props) => {
-  const { onChange } = props;
+  const { onChange, ...rest } = props;
   const [selectedDate, setSelectedDate] = useState(null);
 
   const handleDateChange = useCallback<DateChange>((date, value) => {
@@ -26,7 +27,7 @@ const MaterialDatePicker = (props :Props) => {
 
   return (
     <ThemeProvider theme={latticeMuiTheme}>
-      <MuiPickersUtilsProvider utils={LuxonUtils}>
+      <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
         <KeyboardTimePicker
             ampm={false}
             inputVariant="outlined"
@@ -34,7 +35,8 @@ const MaterialDatePicker = (props :Props) => {
             onChange={handleDateChange}
             showTodayButton
             value={selectedDate}
-            variant="inline" />
+            variant="inline"
+            {...rest} />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
   );
