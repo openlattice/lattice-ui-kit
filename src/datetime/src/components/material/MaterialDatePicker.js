@@ -8,7 +8,7 @@ import { KeyboardDatePicker, MuiPickersUtilsProvider } from '@material-ui/picker
 import LatticeLuxonUtils from './utils';
 import { latticeMuiTheme } from './styles';
 
-type DateChange = (date :DateTime, value ?:string | null) => void;
+type DateChange = (date :DateTime, value :string | null) => void;
 type Props = {
   disabled :boolean;
   onChange :(dateIso :string) => void;

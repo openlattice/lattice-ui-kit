@@ -8,10 +8,10 @@ import { KeyboardTimePicker, MuiPickersUtilsProvider } from '@material-ui/picker
 import LatticeLuxonUtils from './utils';
 import { latticeMuiTheme } from './styles';
 
-type DateChange = (date :DateTime, value ?:string | null) => void;
+type TimeChange = (date :DateTime, value :string | null) => void;
 type Props = {
   disabled :boolean;
-  onChange :DateChange;
+  onChange :(timeIso :string) => void;
   value :string;
 }
 
@@ -30,7 +30,7 @@ const MaterialTimePicker = (props :Props) => {
     }
   }, [value]);
 
-  const handleDateChange = useCallback<DateChange>((date, inputValue) => {
+  const handleDateChange = useCallback<TimeChange>((date, inputValue) => {
     if (inputValue !== null && date !== null) {
       const parsedTime = DateTime.fromFormat(inputValue, 'h:mm a');
       if (isFunction(onChange)) {
