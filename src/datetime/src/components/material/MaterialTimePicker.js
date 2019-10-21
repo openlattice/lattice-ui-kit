@@ -30,30 +30,25 @@ const MaterialTimePicker = (props :Props) => {
     }
   }, [value]);
 
-  const handleDateChange = useCallback<TimeChange>((date, inputValue) => {
-    if (inputValue !== null && date !== null) {
-      const parsedTime = DateTime.fromFormat(inputValue, 'h:mm a');
-      if (isFunction(onChange)) {
-        if (parsedTime.isValid || date.isValid) {
-          onChange(parsedTime.toLocaleString(DateTime.TIME_24_SIMPLE));
-        }
-        else {
-          onChange('');
-        }
+  const handleDateChange = useCallback<TimeChange>((date) => {
+    if (isFunction(onChange)) {
+      if (date === null || !date.isValid) {
+        onChange('');
       }
-      setSelectedDate(parsedTime);
+      else {
+        onChange(date.toLocaleString(DateTime.TIME_24_SIMPLE));
+      }
     }
-    else {
-
-      setSelectedDate(null);
-    }
+    setSelectedDate(date);
 
   }, [onChange]);
   return (
     <ThemeProvider theme={latticeMuiTheme}>
       <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
         <KeyboardTimePicker
+            ampm
             disabled={disabled}
+            format="hh:mm a"
             inputVariant="outlined"
             mask="__:__ _M"
             onChange={handleDateChange}
