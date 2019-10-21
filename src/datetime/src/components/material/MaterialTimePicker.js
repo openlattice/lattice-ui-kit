@@ -57,7 +57,7 @@ const MaterialTimePicker = (props :Props) => {
             inputVariant="outlined"
             mask="__:__ _M"
             onChange={handleDateChange}
-            placeholder="e.g 08:00"
+            placeholder="e.g 08:00 AM"
             value={selectedDate}
             variant="inline" />
       </MuiPickersUtilsProvider>
