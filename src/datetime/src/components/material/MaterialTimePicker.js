@@ -4,9 +4,13 @@ import isFunction from 'lodash/isFunction';
 import { DateTime } from 'luxon';
 import { ThemeProvider } from '@material-ui/styles';
 import { KeyboardTimePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
+import { faClock } from '@fortawesome/pro-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import LatticeLuxonUtils from './utils';
 import { latticeMuiTheme } from './styles';
+
+const ClockIcon = <FontAwesomeIcon icon={faClock} />;
 
 type TimeChange = (date :DateTime, value :string | null) => void;
 type Props = {
@@ -42,6 +46,7 @@ const MaterialTimePicker = (props :Props) => {
     setSelectedDate(date);
 
   }, [onChange]);
+
   return (
     <ThemeProvider theme={latticeMuiTheme}>
       <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
@@ -51,6 +56,7 @@ const MaterialTimePicker = (props :Props) => {
             format="hh:mm a"
             inputVariant="outlined"
             mask="__:__ _M"
+            keyboardIcon={ClockIcon}
             onChange={handleDateChange}
             placeholder="e.g 08:00 AM"
             value={selectedDate}
