@@ -49,8 +49,7 @@ const MaterialDateTimePicker = (props :Props) => {
             format="MM/dd/yyyy hh:mm a"
             mask="__/__/____ __:__ _M"
             value={selectedDateTime}
-            showTodayButton
-            variant="dialog" />
+            variant="inline" />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
   );
