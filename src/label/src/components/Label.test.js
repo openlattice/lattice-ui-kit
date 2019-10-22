@@ -41,5 +41,10 @@ describe('Label', () => {
         modifier: ':after'
       });
     });
+
+    test('hidden prop should set visibility hidden', () => {
+      const wrapper = mount(<Label hidden>First Name</Label>);
+      expect(wrapper.find(Label)).toHaveStyleRule('visibility', 'hidden');
+    });
   });
 });

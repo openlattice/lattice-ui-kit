@@ -209,15 +209,19 @@ class Search extends Component<Props, State> {
         { title && <Title>{title}</Title> }
         <form>
           {/* $FlowFixMe optional not recognizing defaultProps */}
-          <InputGrid columns={searchFields.length + 1} align="flex-end">
+          <InputGrid columns={searchFields.length + 1} align="flex-start">
             {searchFieldComponents}
-            <Button
-                type="submit"
-                isLoading={isLoading}
-                mode="primary"
-                onClick={this.handleOnClickSearchButton}>
-              Search
-            </Button>
+            <div>
+              <Label hidden>Submit</Label>
+              <Button
+                  type="submit"
+                  fullWidth
+                  isLoading={isLoading}
+                  mode="primary"
+                  onClick={this.handleOnClickSearchButton}>
+                Search
+              </Button>
+            </div>
           </InputGrid>
         </form>
       </CardSegment>
