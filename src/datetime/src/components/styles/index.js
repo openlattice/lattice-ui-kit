@@ -6,6 +6,16 @@ import { duration } from '../../../../style/transitions';
 
 const latticeMuiTheme = createMuiTheme({
   overrides: {
+    MuiFormHelperText: {
+      root: {
+        fontFamily: 'inherit',
+        fontSize: '12px',
+        margin: '5px 10px 0'
+      },
+      '&$error': {
+        borderColor: RED_1
+      },
+    },
     MuiInputBase: {
       root: {
         backgroundColor: NEUTRALS[8],
