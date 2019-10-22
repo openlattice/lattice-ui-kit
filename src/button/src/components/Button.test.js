@@ -16,6 +16,14 @@ const NEUTRAL_BTN_TXT = 'NEUTRAL_BUTTON';
 
 describe('button', () => {
 
+  describe('props', () => {
+    test('fullWidth should set width to 100%', () => {
+      const wrapper = mount(<Button fullWidth onClick={nope}>{ DEFAULT_BTN_TXT }</Button>);
+
+      expect(wrapper.find(StyledButton)).toHaveStyleRule('width', '100%');
+    });
+  });
+
   describe('mode="default"', () => {
 
     const basicBtn1 = mount(

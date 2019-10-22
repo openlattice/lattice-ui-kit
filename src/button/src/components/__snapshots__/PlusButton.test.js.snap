@@ -31,7 +31,7 @@ exports[`PlusButton icon with text should match snapshot 1`] = `
 .c0 {
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -143,13 +143,15 @@ exports[`PlusButton icon with text should match snapshot 1`] = `
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
-                  "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+                  "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                   "100ms",
                   " ease-in-out,border-color ",
                   "100ms",
                   " ease-in-out,box-shadow ",
                   "100ms",
-                  " ease-in-out;white-space:nowrap;",
+                  " ease-in-out;width:",
+                  [Function],
+                  ";white-space:nowrap;",
                   [Function],
                   ";:hover{cursor:pointer;text-decoration:none;",
                   [Function],
@@ -376,7 +378,7 @@ exports[`PlusButton icon without text should match snapshot 1`] = `
 .c0 {
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -484,13 +486,15 @@ exports[`PlusButton icon without text should match snapshot 1`] = `
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
-                  "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+                  "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                   "100ms",
                   " ease-in-out,border-color ",
                   "100ms",
                   " ease-in-out,box-shadow ",
                   "100ms",
-                  " ease-in-out;white-space:nowrap;",
+                  " ease-in-out;width:",
+                  [Function],
+                  ";white-space:nowrap;",
                   [Function],
                   ";:hover{cursor:pointer;text-decoration:none;",
                   [Function],

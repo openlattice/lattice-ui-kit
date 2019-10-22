@@ -31,7 +31,7 @@ exports[`button mode="default" should match snapshot 1`] = `
 .c0 {
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -103,15 +103,17 @@ exports[`button mode="default" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "gJMnAo",
+            "lastClassName": "cnZzDI",
             "rules": Array [
-              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+              "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
               " ease-in-out,border-color ",
               "100ms",
               " ease-in-out,box-shadow ",
               "100ms",
-              " ease-in-out;white-space:nowrap;",
+              " ease-in-out;width:",
+              [Function],
+              ";white-space:nowrap;",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -256,7 +258,7 @@ exports[`button mode="default" should match snapshot 2`] = `
 .c0 {
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -328,15 +330,17 @@ exports[`button mode="default" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "gJMnAo",
+            "lastClassName": "cnZzDI",
             "rules": Array [
-              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+              "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
               " ease-in-out,border-color ",
               "100ms",
               " ease-in-out,box-shadow ",
               "100ms",
-              " ease-in-out;white-space:nowrap;",
+              " ease-in-out;width:",
+              [Function],
+              ";white-space:nowrap;",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -481,7 +485,7 @@ exports[`button mode="negative" should match snapshot 1`] = `
 .c0 {
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -554,15 +558,17 @@ exports[`button mode="negative" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "gWbiYQ",
+            "lastClassName": "hisSGK",
             "rules": Array [
-              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+              "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
               " ease-in-out,border-color ",
               "100ms",
               " ease-in-out,box-shadow ",
               "100ms",
-              " ease-in-out;white-space:nowrap;",
+              " ease-in-out;width:",
+              [Function],
+              ";white-space:nowrap;",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -707,7 +713,7 @@ exports[`button mode="neutral" should match snapshot 1`] = `
 .c0 {
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -777,15 +783,17 @@ exports[`button mode="neutral" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "iAGHHV",
+            "lastClassName": "iltUac",
             "rules": Array [
-              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+              "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
               " ease-in-out,border-color ",
               "100ms",
               " ease-in-out,box-shadow ",
               "100ms",
-              " ease-in-out;white-space:nowrap;",
+              " ease-in-out;width:",
+              [Function],
+              ";white-space:nowrap;",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -930,7 +938,7 @@ exports[`button mode="neutral" should match snapshot 2`] = `
 .c0 {
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -1000,15 +1008,17 @@ exports[`button mode="neutral" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "iAGHHV",
+            "lastClassName": "iltUac",
             "rules": Array [
-              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+              "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
               " ease-in-out,border-color ",
               "100ms",
               " ease-in-out,box-shadow ",
               "100ms",
-              " ease-in-out;white-space:nowrap;",
+              " ease-in-out;width:",
+              [Function],
+              ";white-space:nowrap;",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -1153,7 +1163,7 @@ exports[`button mode="positive" should match snapshot 1`] = `
 .c0 {
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -1226,15 +1236,17 @@ exports[`button mode="positive" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "cKBKAN",
+            "lastClassName": "jZDdNY",
             "rules": Array [
-              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+              "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
               " ease-in-out,border-color ",
               "100ms",
               " ease-in-out,box-shadow ",
               "100ms",
-              " ease-in-out;white-space:nowrap;",
+              " ease-in-out;width:",
+              [Function],
+              ";white-space:nowrap;",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -1379,7 +1391,7 @@ exports[`button mode="primary" should match snapshot 1`] = `
 .c0 {
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -1450,15 +1462,17 @@ exports[`button mode="primary" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "frOVBL",
+            "lastClassName": "cbaiVx",
             "rules": Array [
-              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+              "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
               " ease-in-out,border-color ",
               "100ms",
               " ease-in-out,box-shadow ",
               "100ms",
-              " ease-in-out;white-space:nowrap;",
+              " ease-in-out;width:",
+              [Function],
+              ";white-space:nowrap;",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -1603,7 +1617,7 @@ exports[`button mode="secondary" should match snapshot 1`] = `
 .c0 {
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -1674,15 +1688,17 @@ exports[`button mode="secondary" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "kBGuWN",
+            "lastClassName": "fpEUer",
             "rules": Array [
-              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+              "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
               " ease-in-out,border-color ",
               "100ms",
               " ease-in-out,box-shadow ",
               "100ms",
-              " ease-in-out;white-space:nowrap;",
+              " ease-in-out;width:",
+              [Function],
+              ";white-space:nowrap;",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -1827,7 +1843,7 @@ exports[`button mode="subtle" should match snapshot 1`] = `
 .c0 {
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -1896,15 +1912,17 @@ exports[`button mode="subtle" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "kkCaIZ",
+            "lastClassName": "htRHMc",
             "rules": Array [
-              "border-radius:3px;border-style:solid;border-width:2px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
+              "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
               " ease-in-out,border-color ",
               "100ms",
               " ease-in-out,box-shadow ",
               "100ms",
-              " ease-in-out;white-space:nowrap;",
+              " ease-in-out;width:",
+              [Function],
+              ";white-space:nowrap;",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],

@@ -8,7 +8,7 @@ exports[`Search snapshots should match snapshot 1`] = `
     >
       <form>
         <StyledSearchComponents__InputGrid
-          align="flex-end"
+          align="flex-start"
           columns={4}
         >
           <div
@@ -49,23 +49,30 @@ exports[`Search snapshots should match snapshot 1`] = `
             >
               Date of Birth
             </Label>
-            <LatticeDatePicker
+            <MaterialDatePicker
+              disabled={false}
               id="luk-search-dob"
               name="dob"
               onChange={[Function]}
               value=""
             />
           </div>
-          <Button
-            disabled={false}
-            fontColor=""
-            isLoading={false}
-            mode="primary"
-            onClick={[Function]}
-            type="submit"
-          >
-            Search
-          </Button>
+          <div>
+            <Label>
+              adfas
+            </Label>
+            <Button
+              disabled={false}
+              fontColor=""
+              fullWidth={true}
+              isLoading={false}
+              mode="primary"
+              onClick={[Function]}
+              type="submit"
+            >
+              Search
+            </Button>
+          </div>
         </StyledSearchComponents__InputGrid>
       </form>
     </CardSegment>
