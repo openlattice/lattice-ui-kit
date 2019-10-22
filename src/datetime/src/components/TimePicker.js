@@ -9,20 +9,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import LatticeLuxonUtils from './utils';
 import { latticeMuiTheme } from './styles';
+import useInputPropsMemo from './hooks/useInputPropsMemo';
 
 const ClockIcon = <FontAwesomeIcon icon={faClock} />;
 
 type TimeChange = (date :DateTime, value :string | null) => void;
 type Props = {
   disabled :boolean;
+  format :string;
+  mask :string;
   onChange :(timeIso :string) => void;
+  placeholder :string;
   value :string;
 }
 
 const TimePicker = (props :Props) => {
   const {
     disabled,
+    format,
+    mask,
     onChange,
+    placeholder,
     value
   } = props;
   const [selectedDate, setSelectedDate] = useState(null);
@@ -33,6 +40,8 @@ const TimePicker = (props :Props) => {
       setSelectedDate(timeIso);
     }
   }, [value]);
+
+  const inputProps = useInputPropsMemo();
 
   const handleDateChange = useCallback<TimeChange>((date) => {
     if (isFunction(onChange)) {
@@ -52,13 +61,14 @@ const TimePicker = (props :Props) => {
       <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
         <KeyboardTimePicker
             ampm
+            InputProps={inputProps}
             disabled={disabled}
-            format="hh:mm a"
+            format={format}
             inputVariant="outlined"
-            mask="__:__ _M"
             keyboardIcon={ClockIcon}
+            mask={mask}
             onChange={handleDateChange}
-            placeholder="HH:MM AM"
+            placeholder={placeholder}
             value={selectedDate}
             variant="inline" />
       </MuiPickersUtilsProvider>
@@ -68,6 +78,9 @@ const TimePicker = (props :Props) => {
 
 TimePicker.defaultProps = {
   disabled: false,
+  format: 'hh:mm a',
+  mask: '__:__ _M',
+  placeholder: 'HH:MM AM',
   value: '',
 };
 
