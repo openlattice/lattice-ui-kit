@@ -1,7 +1,7 @@
 import { createMuiTheme } from '@material-ui/core';
 import deepPurple from '@material-ui/core/colors/deepPurple';
 
-import { NEUTRALS, PURPLES } from '../../../../colors';
+import { NEUTRALS, PURPLES, RED_1 } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
 
 const latticeMuiTheme = createMuiTheme({
@@ -41,33 +41,33 @@ const latticeMuiTheme = createMuiTheme({
     },
     MuiOutlinedInput: {
       root: {
-        '&$focused $notchedOutline': {
+        border: `1px solid ${NEUTRALS[4]}`,
+        '&$focused': {
           borderColor: PURPLES[1],
-          borderWidth: '1px'
         },
-        '&:hover:not($disabled):not($focused):not($error) $notchedOutline': {
-          borderColor: NEUTRALS[4]
+        '&$error': {
+          borderColor: RED_1
         },
-        '&$disabled $notchedOutline': {
-          borderColor: NEUTRALS[4]
-        }
       },
       input: {
         padding: '10px'
       },
       notchedOutline: {
-        borderColor: NEUTRALS[4],
-        borderRadius: '3px'
-      }
-    },
-    MuiTextField: {
-      root: {
-        width: '100%'
+        visibility: 'hidden'
       }
     }
   },
   palette: {
     primary: deepPurple
+  },
+  props: {
+    MuiFormControl: {
+      fullWidth: true,
+      hiddenLabel: true
+    },
+    MuiOutlinedInput: {
+      notched: false
+    }
   }
 });
 
