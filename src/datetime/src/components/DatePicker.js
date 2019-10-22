@@ -1,21 +1,63 @@
-import React from 'react';
-import { mergeDeep } from 'immutable';
-import { DatePicker } from '@atlaskit/datetime-picker';
-import selectStyles from '../../../style/selectStyles';
+// @flow
+import React, { useCallback, useEffect, useState } from 'react';
+import isFunction from 'lodash/isFunction';
+import { DateTime } from 'luxon';
+import { ThemeProvider } from '@material-ui/styles';
+import { KeyboardDatePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
 
-export const defaultProps = {
-  selectProps: { styles: selectStyles },
-  // @atlaskit/datetime-picker uses date-fns format tokens
-  // locale defaults to 'en-US'
-  dateFormat: 'MM/DD/YYYY',
-  placeholder: 'MM/DD/YYYY',
+import LatticeLuxonUtils from './utils';
+import { latticeMuiTheme } from './styles';
+
+type DateChange = (date :DateTime, value :string | null) => void;
+type Props = {
+  disabled :boolean;
+  onChange :(dateIso :string) => void;
+  value :string;
+}
+
+const MaterialDatePicker = (props :Props) => {
+  const { disabled, onChange, value } = props;
+  const [selectedDate, setSelectedDate] = useState(null);
+
+  useEffect(() => {
+    const date = DateTime.fromISO(value);
+    if (date.isValid) {
+      setSelectedDate(date);
+    }
+  }, [value]);
+
+  const handleDateChange = useCallback<DateChange>((date) => {
+    if (isFunction(onChange)) {
+      if (date === null || !date.isValid) {
+        onChange('');
+      }
+      else {
+        const dateIso = date.toISODate();
+        onChange(dateIso);
+      }
+    }
+    setSelectedDate(date);
+  }, [onChange]);
+
+  return (
+    <ThemeProvider theme={latticeMuiTheme}>
+      <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+        <KeyboardDatePicker
+            disabled={disabled}
+            format="MM/dd/yyyy"
+            inputVariant="outlined"
+            onChange={handleDateChange}
+            placeholder="MM/DD/YYYY"
+            value={selectedDate}
+            variant="inline" />
+      </MuiPickersUtilsProvider>
+    </ThemeProvider>
+  );
 };
 
-const LatticeDatePicker = (props) => {
-  const mergedProps = mergeDeep(defaultProps, props);
-  /* eslint-disable react/jsx-props-no-spreading */
-  return <DatePicker {...mergedProps} />;
-  /* eslint-enable */
+MaterialDatePicker.defaultProps = {
+  disabled: false,
+  value: ''
 };
 
-export default LatticeDatePicker;
+export default MaterialDatePicker;

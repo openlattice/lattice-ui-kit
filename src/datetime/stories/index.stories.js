@@ -3,13 +3,11 @@ import styled from 'styled-components';
 import { DateTime } from 'luxon';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { DatePicker as AKDatePicker, TimePicker as AKTimePicker } from '@atlaskit/datetime-picker';
 
 import Label from '../../label';
-import MaterialDatePicker from '../src/components/MaterialDatePicker';
-import MaterialTimePicker from '../src/components/MaterialTimePicker';
-import MaterialDateTimePicker from '../src/components/DateTimePicker';
 import { Card, CardSegment } from '../../layout';
-import { DatePicker, TimePicker } from '../index';
+import { DatePicker, TimePicker, DateTimePicker } from '../index';
 
 const dateAkChange = action('AK Date changed');
 const timeAkChange = action('AK Time changed');
@@ -38,22 +36,22 @@ storiesOf('Date and Time', module)
             <CardSegment vertical padding="sm">
               <h3>Atlaskit</h3>
               <Label subtle>Default</Label>
-              <DatePicker
+              <AKDatePicker
                   onChange={dateAkChange} />
               <hr />
               <Label subtle>Disabled</Label>
-              <DatePicker
+              <AKDatePicker
                   isDisabled
                   value="2019-01-01"
                   onChange={dateAkChange} />
               <hr />
               <Label subtle>Provided Value</Label>
-              <DatePicker
+              <AKDatePicker
                   value="2019-01-01"
                   onChange={dateAkChange} />
               <hr />
               <Label subtle>Controlled</Label>
-              <DatePicker
+              <AKDatePicker
                   value={selectedDate}
                   onChange={(value) => {
                     dateAkChange(value);
@@ -69,21 +67,21 @@ storiesOf('Date and Time', module)
             <CardSegment vertical padding="sm">
               <h3>Material</h3>
               <Label subtle>Default</Label>
-              <MaterialDatePicker onChange={dateMuiChange} />
+              <DatePicker onChange={dateMuiChange} />
               <hr />
               <Label subtle>Disabled</Label>
-              <MaterialDatePicker
+              <DatePicker
                   disabled
                   value="2019-01-01"
                   onChange={dateMuiChange} />
               <hr />
               <Label subtle>Provided Value</Label>
-              <MaterialDatePicker
+              <DatePicker
                   value="2019-01-01"
                   onChange={dateMuiChange} />
               <hr />
               <Label subtle>Controlled</Label>
-              <MaterialDatePicker
+              <DatePicker
                   value={selectedDate}
                   onChange={(value) => {
                     dateMuiChange(value);
@@ -107,21 +105,21 @@ storiesOf('Date and Time', module)
             <CardSegment vertical padding="sm">
               <h3>Atlaskit</h3>
               <Label subtle>Default</Label>
-              <TimePicker
+              <AKTimePicker
                   onChange={timeAkChange} />
               <hr />
               <Label subtle>Disabled</Label>
-              <TimePicker
+              <AKTimePicker
                   isDisabled
                   onChange={timeAkChange} />
               <hr />
               <Label subtle>Provided Value</Label>
-              <TimePicker
+              <AKTimePicker
                   onChange={timeAkChange}
                   value="23:11" />
               <hr />
               <Label subtle>Controlled</Label>
-              <TimePicker
+              <AKTimePicker
                   onChange={(value) => {
                     timeAkChange(value);
                     setSelectedTime(value);
@@ -137,20 +135,20 @@ storiesOf('Date and Time', module)
             <CardSegment vertical padding="sm">
               <h3>Material</h3>
               <Label subtle>Default</Label>
-              <MaterialTimePicker onChange={timeMuiChange} />
+              <TimePicker onChange={timeMuiChange} />
               <hr />
               <Label subtle>Disabled</Label>
-              <MaterialTimePicker
+              <TimePicker
                   disabled
                   onChange={timeMuiChange} />
               <hr />
               <Label subtle>Provided Value</Label>
-              <MaterialTimePicker
+              <TimePicker
                   onChange={timeMuiChange}
                   value="23:11" />
               <hr />
               <Label subtle>Controlled</Label>
-              <MaterialTimePicker
+              <TimePicker
                   onChange={(value) => {
                     timeMuiChange(value);
                     setSelectedTime(value);
@@ -171,20 +169,20 @@ storiesOf('Date and Time', module)
           <CardSegment vertical padding="sm">
             <h3>Material</h3>
             <Label subtle>Default</Label>
-            <MaterialDateTimePicker onChange={datetimeMuiChange} />
+            <DateTimePicker onChange={datetimeMuiChange} />
             <hr />
             <Label subtle>Disabled</Label>
-            <MaterialDateTimePicker
+            <DateTimePicker
                 disabled
                 onChange={datetimeMuiChange} />
             <hr />
             <Label subtle>Provided Value</Label>
-            <MaterialDateTimePicker
+            <DateTimePicker
                 value={DateTime.local().toISO()}
                 onChange={datetimeMuiChange} />
             <hr />
             <Label subtle>Controlled</Label>
-            <MaterialDateTimePicker
+            <DateTimePicker
                 onChange={(value) => {
                   datetimeMuiChange(value);
                   setDateTime(value);

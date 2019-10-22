@@ -40,8 +40,6 @@ export { Checkbox, Radio } from './choices';
 export {
   DatePicker,
   TimePicker,
-  MaterialDatePicker,
-  MaterialTimePicker,
   DateTimePicker,
 } from './datetime';
 export {

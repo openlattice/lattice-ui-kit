@@ -44,15 +44,21 @@ const DateTimePicker = (props :Props) => {
         <KeyboardDateTimePicker
             ampm
             disabled={disabled}
+            format="MM/dd/yyyy  hh:mm a"
             inputVariant="outlined"
+            mask="__/__/____  __:__ _M"
             onChange={handleDateTimeChange}
-            format="MM/dd/yyyy hh:mm a"
-            mask="__/__/____ __:__ _M"
+            placeholder="MM/DD/YYYY  HH:MM AM"
             value={selectedDateTime}
             variant="inline" />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
   );
+};
+
+DateTimePicker.defaultProps = {
+  disabled: false,
+  value: ''
 };
 
 export default DateTimePicker;
