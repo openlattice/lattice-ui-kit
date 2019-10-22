@@ -34,6 +34,11 @@ const latticeMuiTheme = createMuiTheme({
         }
       }
     },
+    MuiIconButton: {
+      root: {
+        padding: '5px'
+      }
+    },
     MuiOutlinedInput: {
       root: {
         '&$focused $notchedOutline': {
@@ -55,9 +60,9 @@ const latticeMuiTheme = createMuiTheme({
         borderRadius: '3px'
       }
     },
-    MuiIconButton: {
+    MuiTextField: {
       root: {
-        padding: '5px'
+        width: '100%'
       }
     }
   },
