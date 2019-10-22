@@ -51,15 +51,20 @@ exports[`Search snapshots should match snapshot 1`] = `
             </Label>
             <MaterialDatePicker
               disabled={false}
+              format="MM/dd/yyyy"
               id="luk-search-dob"
+              mask="__/__/____"
               name="dob"
               onChange={[Function]}
+              placeholder="MM/DD/YYYY"
               value=""
             />
           </div>
           <div>
-            <Label>
-              adfas
+            <Label
+              stealth={true}
+            >
+              Submit
             </Label>
             <Button
               disabled={false}

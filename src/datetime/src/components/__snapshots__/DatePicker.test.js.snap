@@ -39,6 +39,16 @@ exports[`DatePicker render matches snapshot 1`] = `
         },
       },
       "overrides": Object {
+        "MuiFormHelperText": Object {
+          "&$error": Object {
+            "borderColor": "#ff3c5d",
+          },
+          "root": Object {
+            "fontFamily": "inherit",
+            "fontSize": "12px",
+            "margin": "5px 10px 0",
+          },
+        },
         "MuiIconButton": Object {
           "root": Object {
             "padding": "5px",
@@ -77,25 +87,16 @@ exports[`DatePicker render matches snapshot 1`] = `
             "padding": "10px",
           },
           "notchedOutline": Object {
-            "borderColor": "#dcdce7",
-            "borderRadius": "3px",
+            "visibility": "hidden",
           },
           "root": Object {
-            "&$disabled $notchedOutline": Object {
-              "borderColor": "#dcdce7",
+            "&$error": Object {
+              "borderColor": "#ff3c5d",
             },
-            "&$focused $notchedOutline": Object {
+            "&$focused": Object {
               "borderColor": "#6124e2",
-              "borderWidth": "1px",
             },
-            "&:hover:not($disabled):not($focused):not($error) $notchedOutline": Object {
-              "borderColor": "#dcdce7",
-            },
-          },
-        },
-        "MuiTextField": Object {
-          "root": Object {
-            "width": "100%",
+            "border": "1px solid #dcdce7",
           },
         },
       },
@@ -177,7 +178,15 @@ exports[`DatePicker render matches snapshot 1`] = `
         "tonalOffset": 0.2,
         "type": "light",
       },
-      "props": Object {},
+      "props": Object {
+        "MuiFormControl": Object {
+          "fullWidth": true,
+          "hiddenLabel": true,
+        },
+        "MuiOutlinedInput": Object {
+          "notched": false,
+        },
+      },
       "shadows": Array [
         "none",
         "0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)",
@@ -348,11 +357,17 @@ exports[`DatePicker render matches snapshot 1`] = `
     utils={[Function]}
   >
     <PickerWithState
+      InputProps={
+        Object {
+          "onKeyDown": [Function],
+        }
+      }
       allowKeyboardControl={true}
       disabled={false}
       format="MM/dd/yyyy"
       inputVariant="outlined"
       invalidDateMessage="Invalid Date Format"
+      mask="__/__/____"
       maxDate={2100-01-01T00:00:00.000Z}
       maxDateMessage="Date should not be after maximal date"
       minDate={1900-01-01T00:00:00.000Z}
