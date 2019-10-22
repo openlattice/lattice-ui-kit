@@ -1,8 +1,8 @@
 import { createMuiTheme } from '@material-ui/core';
 import deepPurple from '@material-ui/core/colors/deepPurple';
 
-import { NEUTRALS, PURPLES } from '../../../../../colors';
-import { duration } from '../../../../../style/transitions';
+import { NEUTRALS, PURPLES } from '../../../../colors';
+import { duration } from '../../../../style/transitions';
 
 const latticeMuiTheme = createMuiTheme({
   overrides: {

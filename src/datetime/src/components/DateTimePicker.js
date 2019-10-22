@@ -15,7 +15,7 @@ type Props = {
   value :string;
 };
 
-const MaterialDateTimePicker = (props :Props) => {
+const DateTimePicker = (props :Props) => {
   const { disabled, onChange, value } = props;
   const [selectedDateTime, setDateTime] = useState(null);
 
@@ -55,4 +55,4 @@ const MaterialDateTimePicker = (props :Props) => {
   );
 };
 
-export default MaterialDateTimePicker;
+export default DateTimePicker;

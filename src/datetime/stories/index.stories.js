@@ -5,9 +5,9 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import Label from '../../label';
-import MaterialDatePicker from '../src/components/material/MaterialDatePicker';
-import MaterialTimePicker from '../src/components/material/MaterialTimePicker';
-import MaterialDateTimePicker from '../src/components/material/MaterialDateTimePicker';
+import MaterialDatePicker from '../src/components/MaterialDatePicker';
+import MaterialTimePicker from '../src/components/MaterialTimePicker';
+import MaterialDateTimePicker from '../src/components/DateTimePicker';
 import { Card, CardSegment } from '../../layout';
 import { DatePicker, TimePicker } from '../index';
 

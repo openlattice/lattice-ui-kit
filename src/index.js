@@ -37,7 +37,13 @@ export {
   SearchButton,
 } from './button';
 export { Checkbox, Radio } from './choices';
-export { DatePicker, TimePicker } from './datetime';
+export {
+  DatePicker,
+  TimePicker,
+  MaterialDatePicker,
+  MaterialTimePicker,
+  DateTimePicker,
+} from './datetime';
 export {
   Stepper,
   StepLabel,
