@@ -212,7 +212,7 @@ class Search extends Component<Props, State> {
           <InputGrid columns={searchFields.length + 1} align="flex-start">
             {searchFieldComponents}
             <div>
-              <Label hidden>Submit</Label>
+              <Label stealth>Submit</Label>
               <Button
                   type="submit"
                   fullWidth

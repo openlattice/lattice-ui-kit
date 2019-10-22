@@ -43,7 +43,7 @@ const Label = styled.label`
   font-weight: ${(props) => (props.bold ? '600' : 'normal')};
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  visibility: ${(props) => props.hidden && 'hidden'};
+  visibility: ${(props) => props.stealth && 'hidden'};
   ${getSubtleStyles};
   ${getRequiredStyles};
 `;
