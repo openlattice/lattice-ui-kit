@@ -60,4 +60,26 @@ describe('DateTimePicker', () => {
     });
   });
 
+  describe('input should preventDefault onKeyPress only for Enter', () => {
+    const preventDefault = jest.fn();
+    const wrapper = mount(<DateTimePicker />);
+    const input = wrapper.find('input');
+
+    expect(preventDefault).toHaveBeenCalledTimes(0);
+
+    input.simulate('keyDown', {
+      preventDefault,
+      key: 'Enter'
+    });
+
+    expect(preventDefault).toHaveBeenCalledTimes(1);
+
+    input.simulate('keyDown', {
+      preventDefault,
+      key: 'Escape'
+    });
+
+    expect(preventDefault).toHaveBeenCalledTimes(1);
+  });
+
 });
