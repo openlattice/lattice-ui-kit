@@ -13,7 +13,7 @@ import useInputPropsMemo from './hooks/useInputPropsMemo';
 
 const ClockIcon = <FontAwesomeIcon icon={faClock} />;
 
-type TimeChange = (date :DateTime, value :string | null) => void;
+type DateChange = (date :DateTime, value :string | null) => void;
 type Props = {
   disabled :boolean;
   format :string;
@@ -34,27 +34,35 @@ const TimePicker = (props :Props) => {
   } = props;
 
   const [selectedDate, setSelectedDate] = useState(null);
+  const [lastValidDate, setLastValidDate] = useState(null);
 
   useEffect(() => {
-    const timeIso = DateTime.fromISO(value);
-    if (timeIso.isValid) {
-      setSelectedDate(timeIso);
+    const date = DateTime.fromISO(value);
+    if (date.isValid) {
+      setSelectedDate(date);
+      setLastValidDate(date);
+    }
+    else {
+      setSelectedDate(null);
+      setLastValidDate(null);
     }
   }, [value]);
 
-  const inputProps = useInputPropsMemo();
+  const inputProps = useInputPropsMemo(lastValidDate, setSelectedDate);
 
-  const handleDateChange = useCallback<TimeChange>((date) => {
+  const handleDateChange = useCallback<DateChange>((date) => {
     if (isFunction(onChange)) {
-      if (date === null || !date.isValid) {
-        onChange('');
+      if (date === null) {
+        onChange();
+        setLastValidDate(null);
       }
-      else {
-        onChange(date.toLocaleString(DateTime.TIME_24_SIMPLE));
+      if (date && date.isValid) {
+        const timeIso = date.toLocaleString(DateTime.TIME_24_SIMPLE);
+        onChange(timeIso);
+        setLastValidDate(date);
       }
     }
     setSelectedDate(date);
-
   }, [onChange]);
 
   return (

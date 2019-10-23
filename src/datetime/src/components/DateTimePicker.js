@@ -9,7 +9,7 @@ import LatticeLuxonUtils from './utils/LatticeLuxonUtils';
 import { latticeMuiTheme } from './styles';
 import useInputPropsMemo from './hooks/useInputPropsMemo';
 
-type DateTimeChange = (datetime :DateTime, value :string | null) => void;
+type DateChange = (datetime :DateTime, value :string | null) => void;
 type Props = {
   disabled :boolean;
   format :string;
@@ -29,27 +29,36 @@ const DateTimePicker = (props :Props) => {
     value
   } = props;
 
-  const [selectedDateTime, setDateTime] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [lastValidDate, setLastValidDate] = useState(null);
 
   useEffect(() => {
-    const datetime = DateTime.fromISO(value);
-    if (datetime.isValid) {
-      setDateTime(datetime);
+    const date = DateTime.fromISO(value);
+    if (date.isValid) {
+      setSelectedDate(date);
+      setLastValidDate(date);
+    }
+    else {
+      setSelectedDate(null);
+      setLastValidDate(null);
     }
   }, [value]);
 
-  const inputProps = useInputPropsMemo();
+  const inputProps = useInputPropsMemo(lastValidDate, setSelectedDate);
 
-  const handleDateTimeChange = useCallback<DateTimeChange>((datetime :DateTime) => {
+  const handleDateTimeChange = useCallback<DateChange>((date) => {
     if (isFunction(onChange)) {
-      if (datetime === null || !datetime.isValid) {
-        onChange('');
+      if (date === null) {
+        onChange();
+        setLastValidDate(null);
       }
-      else {
-        onChange(datetime.toISO());
+      if (date && date.isValid) {
+        const dateIso = date.toISO();
+        onChange(dateIso);
+        setLastValidDate(date);
       }
     }
-    setDateTime(datetime);
+    setSelectedDate(date);
   }, [onChange]);
 
   return (
@@ -64,7 +73,7 @@ const DateTimePicker = (props :Props) => {
             mask={mask}
             onChange={handleDateTimeChange}
             placeholder={placeholder}
-            value={selectedDateTime}
+            value={selectedDate}
             variant="inline" />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
