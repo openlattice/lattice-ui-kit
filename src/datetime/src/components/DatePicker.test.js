@@ -13,8 +13,7 @@ const validDateStr = '2019-01-01';
 describe('DatePicker', () => {
 
   test('render matches snapshot', () => {
-    // Use shallow render to avoid the current date from imposing on snapshot
-    const tree = shallow(<DatePicker />);
+    const tree = mount(<DatePicker />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 

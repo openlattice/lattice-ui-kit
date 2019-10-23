@@ -13,8 +13,7 @@ const validDateTimeStr = DateTime.local().toISO();
 describe('DateTimePicker', () => {
 
   test('render matches snapshot', () => {
-    // Use shallow render to avoid the current date from imposing on snapshot
-    const tree = shallow(<DateTimePicker />);
+    const tree = mount(<DateTimePicker />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 

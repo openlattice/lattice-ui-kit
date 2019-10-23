@@ -13,8 +13,7 @@ const validTimeStr = '23:11';
 describe('TimePicker', () => {
 
   test('render matches snapshot', () => {
-    // Use shallow render to avoid the current date from imposing on snapshot
-    const tree = shallow(<TimePicker />);
+    const tree = mount(<TimePicker />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 

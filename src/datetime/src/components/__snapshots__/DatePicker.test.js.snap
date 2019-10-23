@@ -1,389 +1,1063 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DatePicker render matches snapshot 1`] = `
-<ThemeProvider
-  theme={
-    Object {
-      "breakpoints": Object {
-        "between": [Function],
-        "down": [Function],
-        "keys": Array [
-          "xs",
-          "sm",
-          "md",
-          "lg",
-          "xl",
-        ],
-        "only": [Function],
-        "up": [Function],
-        "values": Object {
-          "lg": 1280,
-          "md": 960,
-          "sm": 600,
-          "xl": 1920,
-          "xs": 0,
+<DatePicker
+  disabled={false}
+  format="MM/dd/yyyy"
+  mask="__/__/____"
+  placeholder="MM/DD/YYYY"
+  value=""
+>
+  <ThemeProvider
+    theme={
+      Object {
+        "breakpoints": Object {
+          "between": [Function],
+          "down": [Function],
+          "keys": Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ],
+          "only": [Function],
+          "up": [Function],
+          "values": Object {
+            "lg": 1280,
+            "md": 960,
+            "sm": 600,
+            "xl": 1920,
+            "xs": 0,
+          },
+          "width": [Function],
         },
-        "width": [Function],
-      },
-      "direction": "ltr",
-      "mixins": Object {
-        "gutters": [Function],
-        "toolbar": Object {
-          "@media (min-width:0px) and (orientation: landscape)": Object {
-            "minHeight": 48,
-          },
-          "@media (min-width:600px)": Object {
-            "minHeight": 64,
-          },
-          "minHeight": 56,
-        },
-      },
-      "overrides": Object {
-        "MuiFormHelperText": Object {
-          "&$error": Object {
-            "borderColor": "#ff3c5d",
-          },
-          "root": Object {
-            "fontFamily": "inherit",
-            "fontSize": "12px",
-            "margin": "5px 10px 0",
-          },
-        },
-        "MuiIconButton": Object {
-          "root": Object {
-            "padding": "5px",
-          },
-        },
-        "MuiInputBase": Object {
-          "input": Object {
-            "&$disabled": Object {
-              "color": "#8e929b",
-              "cursor": "not-allowed",
+        "direction": "ltr",
+        "mixins": Object {
+          "gutters": [Function],
+          "toolbar": Object {
+            "@media (min-width:0px) and (orientation: landscape)": Object {
+              "minHeight": 48,
             },
-            "color": "#555e6f",
-          },
-          "root": Object {
-            "&$disabled": Object {
-              "cursor": "not-allowed",
+            "@media (min-width:600px)": Object {
+              "minHeight": 64,
             },
-            "&$focused:not($disabled)": Object {
-              "backgroundColor": "white",
-            },
-            "&:hover:not($disabled):not($focused):not($error)": Object {
-              "backgroundColor": "#f0f0f7",
-            },
-            "backgroundColor": "#f9f9fd",
-            "borderRadius": "3px",
-            "fontFamily": "inherit",
-            "fontSize": "14px",
-            "height": "40px",
-            "lineHeight": "1.5",
-            "transition": "background-color 200ms ease-in-out,
-        border-color 200ms ease-in-out",
+            "minHeight": 56,
           },
         },
-        "MuiOutlinedInput": Object {
-          "input": Object {
-            "padding": "10px",
-          },
-          "notchedOutline": Object {
-            "visibility": "hidden",
-          },
-          "root": Object {
+        "overrides": Object {
+          "MuiFormHelperText": Object {
             "&$error": Object {
               "borderColor": "#ff3c5d",
             },
-            "&$focused": Object {
-              "borderColor": "#6124e2",
+            "root": Object {
+              "fontFamily": "inherit",
+              "fontSize": "12px",
+              "margin": "5px 10px 0",
             },
-            "border": "1px solid #dcdce7",
+          },
+          "MuiIconButton": Object {
+            "root": Object {
+              "padding": "5px",
+            },
+          },
+          "MuiInputBase": Object {
+            "input": Object {
+              "&$disabled": Object {
+                "color": "#8e929b",
+                "cursor": "not-allowed",
+              },
+              "color": "#555e6f",
+            },
+            "root": Object {
+              "&$disabled": Object {
+                "cursor": "not-allowed",
+              },
+              "&$focused:not($disabled)": Object {
+                "backgroundColor": "white",
+              },
+              "&:hover:not($disabled):not($focused):not($error)": Object {
+                "backgroundColor": "#f0f0f7",
+              },
+              "backgroundColor": "#f9f9fd",
+              "borderRadius": "3px",
+              "fontFamily": "inherit",
+              "fontSize": "14px",
+              "height": "40px",
+              "lineHeight": "1.5",
+              "transition": "background-color 200ms ease-in-out,
+        border-color 200ms ease-in-out",
+            },
+          },
+          "MuiOutlinedInput": Object {
+            "input": Object {
+              "padding": "10px",
+            },
+            "notchedOutline": Object {
+              "visibility": "hidden",
+            },
+            "root": Object {
+              "&$error": Object {
+                "borderColor": "#ff3c5d",
+              },
+              "&$focused": Object {
+                "borderColor": "#6124e2",
+              },
+              "border": "1px solid #dcdce7",
+            },
           },
         },
-      },
-      "palette": Object {
-        "action": Object {
-          "active": "rgba(0, 0, 0, 0.54)",
-          "disabled": "rgba(0, 0, 0, 0.26)",
-          "disabledBackground": "rgba(0, 0, 0, 0.12)",
-          "hover": "rgba(0, 0, 0, 0.08)",
-          "hoverOpacity": 0.08,
-          "selected": "rgba(0, 0, 0, 0.14)",
+        "palette": Object {
+          "action": Object {
+            "active": "rgba(0, 0, 0, 0.54)",
+            "disabled": "rgba(0, 0, 0, 0.26)",
+            "disabledBackground": "rgba(0, 0, 0, 0.12)",
+            "hover": "rgba(0, 0, 0, 0.08)",
+            "hoverOpacity": 0.08,
+            "selected": "rgba(0, 0, 0, 0.14)",
+          },
+          "augmentColor": [Function],
+          "background": Object {
+            "default": "#fafafa",
+            "paper": "#fff",
+          },
+          "common": Object {
+            "black": "#000",
+            "white": "#fff",
+          },
+          "contrastThreshold": 3,
+          "divider": "rgba(0, 0, 0, 0.12)",
+          "error": Object {
+            "contrastText": "#fff",
+            "dark": "#d32f2f",
+            "light": "#e57373",
+            "main": "#f44336",
+          },
+          "getContrastText": [Function],
+          "grey": Object {
+            "100": "#f5f5f5",
+            "200": "#eeeeee",
+            "300": "#e0e0e0",
+            "400": "#bdbdbd",
+            "50": "#fafafa",
+            "500": "#9e9e9e",
+            "600": "#757575",
+            "700": "#616161",
+            "800": "#424242",
+            "900": "#212121",
+            "A100": "#d5d5d5",
+            "A200": "#aaaaaa",
+            "A400": "#303030",
+            "A700": "#616161",
+          },
+          "primary": Object {
+            "100": "#d1c4e9",
+            "200": "#b39ddb",
+            "300": "#9575cd",
+            "400": "#7e57c2",
+            "50": "#ede7f6",
+            "500": "#673ab7",
+            "600": "#5e35b1",
+            "700": "#512da8",
+            "800": "#4527a0",
+            "900": "#311b92",
+            "A100": "#b388ff",
+            "A200": "#7c4dff",
+            "A400": "#651fff",
+            "A700": "#6200ea",
+            "contrastText": "#fff",
+            "dark": "#512da8",
+            "light": "#9575cd",
+            "main": "#673ab7",
+          },
+          "secondary": Object {
+            "contrastText": "#fff",
+            "dark": "#c51162",
+            "light": "#ff4081",
+            "main": "#f50057",
+          },
+          "text": Object {
+            "disabled": "rgba(0, 0, 0, 0.38)",
+            "hint": "rgba(0, 0, 0, 0.38)",
+            "primary": "rgba(0, 0, 0, 0.87)",
+            "secondary": "rgba(0, 0, 0, 0.54)",
+          },
+          "tonalOffset": 0.2,
+          "type": "light",
         },
-        "augmentColor": [Function],
-        "background": Object {
-          "default": "#fafafa",
-          "paper": "#fff",
+        "props": Object {
+          "MuiFormControl": Object {
+            "fullWidth": true,
+            "hiddenLabel": true,
+          },
+          "MuiOutlinedInput": Object {
+            "notched": false,
+          },
         },
-        "common": Object {
-          "black": "#000",
-          "white": "#fff",
+        "shadows": Array [
+          "none",
+          "0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)",
+          "0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12)",
+          "0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12)",
+          "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
+          "0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12)",
+          "0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12)",
+          "0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12)",
+          "0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)",
+          "0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12)",
+          "0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12)",
+          "0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12)",
+          "0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12)",
+          "0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12)",
+          "0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12)",
+          "0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12)",
+          "0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12)",
+          "0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12)",
+          "0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12)",
+          "0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12)",
+          "0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12)",
+          "0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12)",
+          "0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12)",
+          "0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12)",
+          "0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12)",
+        ],
+        "shape": Object {
+          "borderRadius": 4,
         },
-        "contrastThreshold": 3,
-        "divider": "rgba(0, 0, 0, 0.12)",
-        "error": Object {
-          "contrastText": "#fff",
-          "dark": "#d32f2f",
-          "light": "#e57373",
-          "main": "#f44336",
+        "spacing": [Function],
+        "transitions": Object {
+          "create": [Function],
+          "duration": Object {
+            "complex": 375,
+            "enteringScreen": 225,
+            "leavingScreen": 195,
+            "short": 250,
+            "shorter": 200,
+            "shortest": 150,
+            "standard": 300,
+          },
+          "easing": Object {
+            "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+            "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+            "easeOut": "cubic-bezier(0.0, 0, 0.2, 1)",
+            "sharp": "cubic-bezier(0.4, 0, 0.6, 1)",
+          },
+          "getAutoHeightDuration": [Function],
         },
-        "getContrastText": [Function],
-        "grey": Object {
-          "100": "#f5f5f5",
-          "200": "#eeeeee",
-          "300": "#e0e0e0",
-          "400": "#bdbdbd",
-          "50": "#fafafa",
-          "500": "#9e9e9e",
-          "600": "#757575",
-          "700": "#616161",
-          "800": "#424242",
-          "900": "#212121",
-          "A100": "#d5d5d5",
-          "A200": "#aaaaaa",
-          "A400": "#303030",
-          "A700": "#616161",
-        },
-        "primary": Object {
-          "100": "#d1c4e9",
-          "200": "#b39ddb",
-          "300": "#9575cd",
-          "400": "#7e57c2",
-          "50": "#ede7f6",
-          "500": "#673ab7",
-          "600": "#5e35b1",
-          "700": "#512da8",
-          "800": "#4527a0",
-          "900": "#311b92",
-          "A100": "#b388ff",
-          "A200": "#7c4dff",
-          "A400": "#651fff",
-          "A700": "#6200ea",
-          "contrastText": "#fff",
-          "dark": "#512da8",
-          "light": "#9575cd",
-          "main": "#673ab7",
-        },
-        "secondary": Object {
-          "contrastText": "#fff",
-          "dark": "#c51162",
-          "light": "#ff4081",
-          "main": "#f50057",
-        },
-        "text": Object {
-          "disabled": "rgba(0, 0, 0, 0.38)",
-          "hint": "rgba(0, 0, 0, 0.38)",
-          "primary": "rgba(0, 0, 0, 0.87)",
-          "secondary": "rgba(0, 0, 0, 0.54)",
-        },
-        "tonalOffset": 0.2,
-        "type": "light",
-      },
-      "props": Object {
-        "MuiFormControl": Object {
-          "fullWidth": true,
-          "hiddenLabel": true,
-        },
-        "MuiOutlinedInput": Object {
-          "notched": false,
-        },
-      },
-      "shadows": Array [
-        "none",
-        "0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)",
-        "0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12)",
-        "0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12)",
-        "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
-        "0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12)",
-        "0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12)",
-        "0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12)",
-        "0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)",
-        "0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12)",
-        "0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12)",
-        "0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12)",
-        "0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12)",
-        "0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12)",
-        "0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12)",
-        "0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12)",
-        "0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12)",
-        "0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12)",
-        "0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12)",
-        "0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12)",
-        "0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12)",
-        "0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12)",
-        "0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12)",
-        "0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12)",
-        "0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12)",
-      ],
-      "shape": Object {
-        "borderRadius": 4,
-      },
-      "spacing": [Function],
-      "transitions": Object {
-        "create": [Function],
-        "duration": Object {
-          "complex": 375,
-          "enteringScreen": 225,
-          "leavingScreen": 195,
-          "short": 250,
-          "shorter": 200,
-          "shortest": 150,
-          "standard": 300,
-        },
-        "easing": Object {
-          "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
-          "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
-          "easeOut": "cubic-bezier(0.0, 0, 0.2, 1)",
-          "sharp": "cubic-bezier(0.4, 0, 0.6, 1)",
-        },
-        "getAutoHeightDuration": [Function],
-      },
-      "typography": Object {
-        "body1": Object {
+        "typography": Object {
+          "body1": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+            "letterSpacing": "0.00938em",
+            "lineHeight": 1.5,
+          },
+          "body2": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "0.875rem",
+            "fontWeight": 400,
+            "letterSpacing": "0.01071em",
+            "lineHeight": 1.43,
+          },
+          "button": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "0.875rem",
+            "fontWeight": 500,
+            "letterSpacing": "0.02857em",
+            "lineHeight": 1.75,
+            "textTransform": "uppercase",
+          },
+          "caption": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 400,
+            "letterSpacing": "0.03333em",
+            "lineHeight": 1.66,
+          },
           "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "1rem",
-          "fontWeight": 400,
-          "letterSpacing": "0.00938em",
-          "lineHeight": 1.5,
+          "fontSize": 14,
+          "fontWeightBold": 700,
+          "fontWeightLight": 300,
+          "fontWeightMedium": 500,
+          "fontWeightRegular": 400,
+          "h1": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "6rem",
+            "fontWeight": 300,
+            "letterSpacing": "-0.01562em",
+            "lineHeight": 1,
+          },
+          "h2": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "3.75rem",
+            "fontWeight": 300,
+            "letterSpacing": "-0.00833em",
+            "lineHeight": 1,
+          },
+          "h3": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "3rem",
+            "fontWeight": 400,
+            "letterSpacing": "0em",
+            "lineHeight": 1.04,
+          },
+          "h4": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "2.125rem",
+            "fontWeight": 400,
+            "letterSpacing": "0.00735em",
+            "lineHeight": 1.17,
+          },
+          "h5": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "1.5rem",
+            "fontWeight": 400,
+            "letterSpacing": "0em",
+            "lineHeight": 1.33,
+          },
+          "h6": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "1.25rem",
+            "fontWeight": 500,
+            "letterSpacing": "0.0075em",
+            "lineHeight": 1.6,
+          },
+          "htmlFontSize": 16,
+          "overline": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 400,
+            "letterSpacing": "0.08333em",
+            "lineHeight": 2.66,
+            "textTransform": "uppercase",
+          },
+          "pxToRem": [Function],
+          "round": [Function],
+          "subtitle1": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+            "letterSpacing": "0.00938em",
+            "lineHeight": 1.75,
+          },
+          "subtitle2": Object {
+            "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+            "fontSize": "0.875rem",
+            "fontWeight": 500,
+            "letterSpacing": "0.00714em",
+            "lineHeight": 1.57,
+          },
         },
-        "body2": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "0.875rem",
-          "fontWeight": 400,
-          "letterSpacing": "0.01071em",
-          "lineHeight": 1.43,
+        "zIndex": Object {
+          "appBar": 1100,
+          "drawer": 1200,
+          "mobileStepper": 1000,
+          "modal": 1300,
+          "snackbar": 1400,
+          "speedDial": 1050,
+          "tooltip": 1500,
         },
-        "button": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "0.875rem",
-          "fontWeight": 500,
-          "letterSpacing": "0.02857em",
-          "lineHeight": 1.75,
-          "textTransform": "uppercase",
-        },
-        "caption": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "0.75rem",
-          "fontWeight": 400,
-          "letterSpacing": "0.03333em",
-          "lineHeight": 1.66,
-        },
-        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-        "fontSize": 14,
-        "fontWeightBold": 700,
-        "fontWeightLight": 300,
-        "fontWeightMedium": 500,
-        "fontWeightRegular": 400,
-        "h1": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "6rem",
-          "fontWeight": 300,
-          "letterSpacing": "-0.01562em",
-          "lineHeight": 1,
-        },
-        "h2": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "3.75rem",
-          "fontWeight": 300,
-          "letterSpacing": "-0.00833em",
-          "lineHeight": 1,
-        },
-        "h3": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "3rem",
-          "fontWeight": 400,
-          "letterSpacing": "0em",
-          "lineHeight": 1.04,
-        },
-        "h4": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "2.125rem",
-          "fontWeight": 400,
-          "letterSpacing": "0.00735em",
-          "lineHeight": 1.17,
-        },
-        "h5": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "1.5rem",
-          "fontWeight": 400,
-          "letterSpacing": "0em",
-          "lineHeight": 1.33,
-        },
-        "h6": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "1.25rem",
-          "fontWeight": 500,
-          "letterSpacing": "0.0075em",
-          "lineHeight": 1.6,
-        },
-        "htmlFontSize": 16,
-        "overline": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "0.75rem",
-          "fontWeight": 400,
-          "letterSpacing": "0.08333em",
-          "lineHeight": 2.66,
-          "textTransform": "uppercase",
-        },
-        "pxToRem": [Function],
-        "round": [Function],
-        "subtitle1": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "1rem",
-          "fontWeight": 400,
-          "letterSpacing": "0.00938em",
-          "lineHeight": 1.75,
-        },
-        "subtitle2": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
-          "fontSize": "0.875rem",
-          "fontWeight": 500,
-          "letterSpacing": "0.00714em",
-          "lineHeight": 1.57,
-        },
-      },
-      "zIndex": Object {
-        "appBar": 1100,
-        "drawer": 1200,
-        "mobileStepper": 1000,
-        "modal": 1300,
-        "snackbar": 1400,
-        "speedDial": 1050,
-        "tooltip": 1500,
-      },
+        Symbol(mui.nested): false,
+      }
     }
-  }
->
-  <MuiPickersUtilsProvider
-    utils={[Function]}
   >
-    <PickerWithState
-      InputProps={
-        Object {
-          "onKeyDown": [Function],
+    <MuiPickersUtilsProvider
+      utils={[Function]}
+    >
+      <PickerWithState
+        InputProps={
+          Object {
+            "onKeyDown": [Function],
+          }
         }
-      }
-      allowKeyboardControl={true}
-      disabled={false}
-      format="MM/dd/yyyy"
-      inputVariant="outlined"
-      invalidDateMessage="Invalid Date Format"
-      mask="__/__/____"
-      maxDate={2100-01-01T00:00:00.000Z}
-      maxDateMessage="Date should not be after maximal date"
-      minDate={1900-01-01T00:00:00.000Z}
-      minDateMessage="Date should not be before minimal date"
-      onChange={[Function]}
-      openTo="date"
-      placeholder="MM/DD/YYYY"
-      value={null}
-      variant="inline"
-      views={
-        Array [
-          "year",
-          "date",
-        ]
-      }
-    />
-  </MuiPickersUtilsProvider>
-</ThemeProvider>
+        allowKeyboardControl={true}
+        disabled={false}
+        format="MM/dd/yyyy"
+        inputVariant="outlined"
+        invalidDateMessage="Invalid Date Format"
+        mask="__/__/____"
+        maxDate={2100-01-01T00:00:00.000Z}
+        maxDateMessage="Date should not be after maximal date"
+        minDate={1900-01-01T00:00:00.000Z}
+        minDateMessage="Date should not be before minimal date"
+        onChange={[Function]}
+        openTo="date"
+        placeholder="MM/DD/YYYY"
+        value={null}
+        variant="inline"
+        views={
+          Array [
+            "year",
+            "date",
+          ]
+        }
+      >
+        <Wrapper
+          DateInputProps={
+            Object {
+              "format": "MM/dd/yyyy",
+              "inputValue": "",
+              "onChange": [Function],
+              "openPicker": [Function],
+              "validationError": "",
+            }
+          }
+          InputComponent={[Function]}
+          InputProps={
+            Object {
+              "onKeyDown": [Function],
+            }
+          }
+          disabled={false}
+          format="MM/dd/yyyy"
+          inputVariant="outlined"
+          mask="__/__/____"
+          onAccept={[Function]}
+          onClear={[Function]}
+          onDismiss={[Function]}
+          onSetToday={[Function]}
+          open={false}
+          placeholder="MM/DD/YYYY"
+          variant="inline"
+        >
+          <InlineWrapper
+            DateInputProps={
+              Object {
+                "format": "MM/dd/yyyy",
+                "inputValue": "",
+                "onChange": [Function],
+                "openPicker": [Function],
+                "validationError": "",
+              }
+            }
+            InputComponent={[Function]}
+            InputProps={
+              Object {
+                "onKeyDown": [Function],
+              }
+            }
+            disabled={false}
+            format="MM/dd/yyyy"
+            inputVariant="outlined"
+            mask="__/__/____"
+            onAccept={[Function]}
+            onClear={[Function]}
+            onDismiss={[Function]}
+            onSetToday={[Function]}
+            open={false}
+            placeholder="MM/DD/YYYY"
+          >
+            <KeyboardDateInput
+              InputProps={
+                Object {
+                  "onKeyDown": [Function],
+                }
+              }
+              disabled={false}
+              format="MM/dd/yyyy"
+              inputRef={
+                Object {
+                  "current": <input
+                    aria-invalid="false"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                    placeholder="MM/DD/YYYY"
+                    type="text"
+                    value=""
+                  />,
+                }
+              }
+              inputValue=""
+              inputVariant="outlined"
+              keyboardIcon={<KeyboardIcon />}
+              mask="__/__/____"
+              onChange={[Function]}
+              openPicker={[Function]}
+              placeholder="MM/DD/YYYY"
+              validationError=""
+            >
+              <Rifm
+                format={[Function]}
+                key="__/__/____"
+                onChange={[Function]}
+                refuse={/\\[\\^\\\\d\\]\\+/gi}
+                value=""
+              >
+                <WithStyles(ForwardRef(TextField))
+                  InputProps={
+                    Object {
+                      "endAdornment": <ForwardRef(WithStyles)
+                        position="end"
+                      >
+                        <ForwardRef(WithStyles)
+                          disabled={false}
+                          onClick={[Function]}
+                        >
+                          <KeyboardIcon />
+                        </ForwardRef(WithStyles)>
+                      </ForwardRef(WithStyles)>,
+                      "onKeyDown": [Function],
+                    }
+                  }
+                  disabled={false}
+                  error={false}
+                  helperText=""
+                  inputRef={
+                    Object {
+                      "current": <input
+                        aria-invalid="false"
+                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                        placeholder="MM/DD/YYYY"
+                        type="text"
+                        value=""
+                      />,
+                    }
+                  }
+                  onChange={[Function]}
+                  placeholder="MM/DD/YYYY"
+                  value=""
+                  variant="outlined"
+                >
+                  <ForwardRef(TextField)
+                    InputProps={
+                      Object {
+                        "endAdornment": <ForwardRef(WithStyles)
+                          position="end"
+                        >
+                          <ForwardRef(WithStyles)
+                            disabled={false}
+                            onClick={[Function]}
+                          >
+                            <KeyboardIcon />
+                          </ForwardRef(WithStyles)>
+                        </ForwardRef(WithStyles)>,
+                        "onKeyDown": [Function],
+                      }
+                    }
+                    classes={
+                      Object {
+                        "root": "MuiTextField-root",
+                      }
+                    }
+                    disabled={false}
+                    error={false}
+                    helperText=""
+                    inputRef={
+                      Object {
+                        "current": <input
+                          aria-invalid="false"
+                          class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                          placeholder="MM/DD/YYYY"
+                          type="text"
+                          value=""
+                        />,
+                      }
+                    }
+                    onChange={[Function]}
+                    placeholder="MM/DD/YYYY"
+                    value=""
+                    variant="outlined"
+                  >
+                    <WithStyles(ForwardRef(FormControl))
+                      className="MuiTextField-root"
+                      disabled={false}
+                      error={false}
+                      required={false}
+                      variant="outlined"
+                    >
+                      <ForwardRef(FormControl)
+                        className="MuiTextField-root"
+                        classes={
+                          Object {
+                            "fullWidth": "MuiFormControl-fullWidth",
+                            "marginDense": "MuiFormControl-marginDense",
+                            "marginNormal": "MuiFormControl-marginNormal",
+                            "root": "MuiFormControl-root",
+                          }
+                        }
+                        disabled={false}
+                        error={false}
+                        fullWidth={true}
+                        hiddenLabel={true}
+                        required={false}
+                        variant="outlined"
+                      >
+                        <div
+                          className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <WithStyles(ForwardRef(OutlinedInput))
+                            endAdornment={
+                              <ForwardRef(WithStyles)
+                                position="end"
+                              >
+                                <ForwardRef(WithStyles)
+                                  disabled={false}
+                                  onClick={[Function]}
+                                >
+                                  <KeyboardIcon />
+                                </ForwardRef(WithStyles)>
+                              </ForwardRef(WithStyles)>
+                            }
+                            inputRef={
+                              Object {
+                                "current": <input
+                                  aria-invalid="false"
+                                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                  placeholder="MM/DD/YYYY"
+                                  type="text"
+                                  value=""
+                                />,
+                              }
+                            }
+                            labelWidth={0}
+                            onChange={[Function]}
+                            onKeyDown={[Function]}
+                            placeholder="MM/DD/YYYY"
+                            value=""
+                          >
+                            <ForwardRef(OutlinedInput)
+                              classes={
+                                Object {
+                                  "adornedEnd": "MuiOutlinedInput-adornedEnd",
+                                  "adornedStart": "MuiOutlinedInput-adornedStart",
+                                  "disabled": "Mui-disabled",
+                                  "error": "Mui-error",
+                                  "focused": "Mui-focused",
+                                  "input": "MuiOutlinedInput-input",
+                                  "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
+                                  "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
+                                  "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
+                                  "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                  "inputSelect": "MuiOutlinedInput-inputSelect",
+                                  "marginDense": "MuiOutlinedInput-marginDense",
+                                  "multiline": "MuiOutlinedInput-multiline",
+                                  "notchedOutline": "MuiOutlinedInput-notchedOutline",
+                                  "root": "MuiOutlinedInput-root",
+                                }
+                              }
+                              endAdornment={
+                                <ForwardRef(WithStyles)
+                                  position="end"
+                                >
+                                  <ForwardRef(WithStyles)
+                                    disabled={false}
+                                    onClick={[Function]}
+                                  >
+                                    <KeyboardIcon />
+                                  </ForwardRef(WithStyles)>
+                                </ForwardRef(WithStyles)>
+                              }
+                              inputRef={
+                                Object {
+                                  "current": <input
+                                    aria-invalid="false"
+                                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                    placeholder="MM/DD/YYYY"
+                                    type="text"
+                                    value=""
+                                  />,
+                                }
+                              }
+                              labelWidth={0}
+                              notched={false}
+                              onChange={[Function]}
+                              onKeyDown={[Function]}
+                              placeholder="MM/DD/YYYY"
+                              value=""
+                            >
+                              <WithStyles(ForwardRef(InputBase))
+                                classes={
+                                  Object {
+                                    "adornedEnd": "MuiOutlinedInput-adornedEnd",
+                                    "adornedStart": "MuiOutlinedInput-adornedStart",
+                                    "disabled": "Mui-disabled",
+                                    "error": "Mui-error",
+                                    "focused": "Mui-focused",
+                                    "input": "MuiOutlinedInput-input",
+                                    "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
+                                    "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
+                                    "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
+                                    "inputMultiline": "MuiOutlinedInput-inputMultiline",
+                                    "inputSelect": "MuiOutlinedInput-inputSelect",
+                                    "marginDense": "MuiOutlinedInput-marginDense",
+                                    "multiline": "MuiOutlinedInput-multiline",
+                                    "notchedOutline": null,
+                                    "root": "MuiOutlinedInput-root",
+                                  }
+                                }
+                                endAdornment={
+                                  <ForwardRef(WithStyles)
+                                    position="end"
+                                  >
+                                    <ForwardRef(WithStyles)
+                                      disabled={false}
+                                      onClick={[Function]}
+                                    >
+                                      <KeyboardIcon />
+                                    </ForwardRef(WithStyles)>
+                                  </ForwardRef(WithStyles)>
+                                }
+                                fullWidth={false}
+                                inputComponent="input"
+                                inputRef={
+                                  Object {
+                                    "current": <input
+                                      aria-invalid="false"
+                                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                      placeholder="MM/DD/YYYY"
+                                      type="text"
+                                      value=""
+                                    />,
+                                  }
+                                }
+                                multiline={false}
+                                onChange={[Function]}
+                                onKeyDown={[Function]}
+                                placeholder="MM/DD/YYYY"
+                                renderSuffix={[Function]}
+                                type="text"
+                                value=""
+                              >
+                                <ForwardRef(InputBase)
+                                  classes={
+                                    Object {
+                                      "adornedEnd": "MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd",
+                                      "adornedStart": "MuiInputBase-adornedStart MuiOutlinedInput-adornedStart",
+                                      "disabled": "Mui-disabled Mui-disabled",
+                                      "error": "Mui-error Mui-error",
+                                      "focused": "Mui-focused Mui-focused",
+                                      "formControl": "MuiInputBase-formControl",
+                                      "fullWidth": "MuiInputBase-fullWidth",
+                                      "input": "MuiInputBase-input MuiOutlinedInput-input",
+                                      "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd",
+                                      "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
+                                      "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
+                                      "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
+                                      "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                      "inputSelect": "MuiInputBase-inputSelect MuiOutlinedInput-inputSelect",
+                                      "inputTypeSearch": "MuiInputBase-inputTypeSearch",
+                                      "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
+                                      "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
+                                      "root": "MuiInputBase-root MuiOutlinedInput-root",
+                                    }
+                                  }
+                                  endAdornment={
+                                    <ForwardRef(WithStyles)
+                                      position="end"
+                                    >
+                                      <ForwardRef(WithStyles)
+                                        disabled={false}
+                                        onClick={[Function]}
+                                      >
+                                        <KeyboardIcon />
+                                      </ForwardRef(WithStyles)>
+                                    </ForwardRef(WithStyles)>
+                                  }
+                                  fullWidth={false}
+                                  inputComponent="input"
+                                  inputRef={
+                                    Object {
+                                      "current": <input
+                                        aria-invalid="false"
+                                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                        placeholder="MM/DD/YYYY"
+                                        type="text"
+                                        value=""
+                                      />,
+                                    }
+                                  }
+                                  multiline={false}
+                                  onChange={[Function]}
+                                  onKeyDown={[Function]}
+                                  placeholder="MM/DD/YYYY"
+                                  renderSuffix={[Function]}
+                                  type="text"
+                                  value=""
+                                >
+                                  <div
+                                    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                                    onClick={[Function]}
+                                  >
+                                    <input
+                                      aria-invalid={false}
+                                      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                      disabled={false}
+                                      onAnimationStart={[Function]}
+                                      onBlur={[Function]}
+                                      onChange={[Function]}
+                                      onFocus={[Function]}
+                                      onKeyDown={[Function]}
+                                      placeholder="MM/DD/YYYY"
+                                      required={false}
+                                      type="text"
+                                      value=""
+                                    />
+                                    <WithStyles(ForwardRef(InputAdornment))
+                                      position="end"
+                                    >
+                                      <ForwardRef(InputAdornment)
+                                        classes={
+                                          Object {
+                                            "disablePointerEvents": "MuiInputAdornment-disablePointerEvents",
+                                            "filled": "MuiInputAdornment-filled",
+                                            "hiddenLabel": "MuiInputAdornment-hiddenLabel",
+                                            "marginDense": "MuiInputAdornment-marginDense",
+                                            "positionEnd": "MuiInputAdornment-positionEnd",
+                                            "positionStart": "MuiInputAdornment-positionStart",
+                                            "root": "MuiInputAdornment-root",
+                                          }
+                                        }
+                                        position="end"
+                                      >
+                                        <div
+                                          className="MuiInputAdornment-root MuiInputAdornment-hiddenLabel MuiInputAdornment-positionEnd"
+                                        >
+                                          <WithStyles(ForwardRef(IconButton))
+                                            disabled={false}
+                                            onClick={[Function]}
+                                          >
+                                            <ForwardRef(IconButton)
+                                              classes={
+                                                Object {
+                                                  "colorInherit": "MuiIconButton-colorInherit",
+                                                  "colorPrimary": "MuiIconButton-colorPrimary",
+                                                  "colorSecondary": "MuiIconButton-colorSecondary",
+                                                  "disabled": "Mui-disabled",
+                                                  "edgeEnd": "MuiIconButton-edgeEnd",
+                                                  "edgeStart": "MuiIconButton-edgeStart",
+                                                  "label": "MuiIconButton-label",
+                                                  "root": "MuiIconButton-root",
+                                                  "sizeSmall": "MuiIconButton-sizeSmall",
+                                                }
+                                              }
+                                              disabled={false}
+                                              onClick={[Function]}
+                                            >
+                                              <WithStyles(ForwardRef(ButtonBase))
+                                                centerRipple={true}
+                                                className="MuiIconButton-root"
+                                                disabled={false}
+                                                focusRipple={true}
+                                                onClick={[Function]}
+                                              >
+                                                <ForwardRef(ButtonBase)
+                                                  centerRipple={true}
+                                                  className="MuiIconButton-root"
+                                                  classes={
+                                                    Object {
+                                                      "disabled": "Mui-disabled",
+                                                      "focusVisible": "Mui-focusVisible",
+                                                      "root": "MuiButtonBase-root",
+                                                    }
+                                                  }
+                                                  disabled={false}
+                                                  focusRipple={true}
+                                                  onClick={[Function]}
+                                                >
+                                                  <button
+                                                    className="MuiButtonBase-root MuiIconButton-root"
+                                                    disabled={false}
+                                                    onBlur={[Function]}
+                                                    onClick={[Function]}
+                                                    onDragLeave={[Function]}
+                                                    onFocus={[Function]}
+                                                    onKeyDown={[Function]}
+                                                    onKeyUp={[Function]}
+                                                    onMouseDown={[Function]}
+                                                    onMouseLeave={[Function]}
+                                                    onMouseUp={[Function]}
+                                                    onTouchEnd={[Function]}
+                                                    onTouchMove={[Function]}
+                                                    onTouchStart={[Function]}
+                                                    tabIndex={0}
+                                                    type="button"
+                                                  >
+                                                    <span
+                                                      className="MuiIconButton-label"
+                                                    >
+                                                      <KeyboardIcon>
+                                                        <WithStyles(ForwardRef(SvgIcon))>
+                                                          <ForwardRef(SvgIcon)
+                                                            classes={
+                                                              Object {
+                                                                "colorAction": "MuiSvgIcon-colorAction",
+                                                                "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                                "colorError": "MuiSvgIcon-colorError",
+                                                                "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                                "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                                "root": "MuiSvgIcon-root",
+                                                              }
+                                                            }
+                                                          >
+                                                            <svg
+                                                              aria-hidden="true"
+                                                              className="MuiSvgIcon-root"
+                                                              focusable="false"
+                                                              role="presentation"
+                                                              viewBox="0 0 24 24"
+                                                            >
+                                                              <path
+                                                                d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
+                                                              />
+                                                              <path
+                                                                d="M0 0h24v24H0z"
+                                                                fill="none"
+                                                              />
+                                                            </svg>
+                                                          </ForwardRef(SvgIcon)>
+                                                        </WithStyles(ForwardRef(SvgIcon))>
+                                                      </KeyboardIcon>
+                                                    </span>
+                                                    <NoSsr>
+                                                      <WithStyles(undefined)
+                                                        center={true}
+                                                      >
+                                                        <ForwardRef(TouchRipple)
+                                                          center={true}
+                                                          classes={
+                                                            Object {
+                                                              "child": "MuiTouchRipple-child",
+                                                              "childLeaving": "MuiTouchRipple-childLeaving",
+                                                              "childPulsate": "MuiTouchRipple-childPulsate",
+                                                              "ripple": "MuiTouchRipple-ripple",
+                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                                              "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                                              "root": "MuiTouchRipple-root",
+                                                            }
+                                                          }
+                                                        >
+                                                          <span
+                                                            className="MuiTouchRipple-root"
+                                                          >
+                                                            <TransitionGroup
+                                                              childFactory={[Function]}
+                                                              component={null}
+                                                              exit={true}
+                                                            />
+                                                          </span>
+                                                        </ForwardRef(TouchRipple)>
+                                                      </WithStyles(undefined)>
+                                                    </NoSsr>
+                                                  </button>
+                                                </ForwardRef(ButtonBase)>
+                                              </WithStyles(ForwardRef(ButtonBase))>
+                                            </ForwardRef(IconButton)>
+                                          </WithStyles(ForwardRef(IconButton))>
+                                        </div>
+                                      </ForwardRef(InputAdornment)>
+                                    </WithStyles(ForwardRef(InputAdornment))>
+                                    <WithStyles(ForwardRef(NotchedOutline))
+                                      className="MuiOutlinedInput-notchedOutline"
+                                      labelWidth={0}
+                                      notched={false}
+                                    >
+                                      <ForwardRef(NotchedOutline)
+                                        className="MuiOutlinedInput-notchedOutline"
+                                        classes={
+                                          Object {
+                                            "legend": "PrivateNotchedOutline-legend-70",
+                                            "root": "PrivateNotchedOutline-root-69",
+                                          }
+                                        }
+                                        labelWidth={0}
+                                        notched={false}
+                                      >
+                                        <fieldset
+                                          aria-hidden={true}
+                                          className="PrivateNotchedOutline-root-69 MuiOutlinedInput-notchedOutline"
+                                          style={
+                                            Object {
+                                              "paddingLeft": 8,
+                                            }
+                                          }
+                                        >
+                                          <legend
+                                            className="PrivateNotchedOutline-legend-70"
+                                            style={
+                                              Object {
+                                                "width": 0.01,
+                                              }
+                                            }
+                                          >
+                                            <span
+                                              dangerouslySetInnerHTML={
+                                                Object {
+                                                  "__html": "&#8203;",
+                                                }
+                                              }
+                                            />
+                                          </legend>
+                                        </fieldset>
+                                      </ForwardRef(NotchedOutline)>
+                                    </WithStyles(ForwardRef(NotchedOutline))>
+                                  </div>
+                                </ForwardRef(InputBase)>
+                              </WithStyles(ForwardRef(InputBase))>
+                            </ForwardRef(OutlinedInput)>
+                          </WithStyles(ForwardRef(OutlinedInput))>
+                        </div>
+                      </ForwardRef(FormControl)>
+                    </WithStyles(ForwardRef(FormControl))>
+                  </ForwardRef(TextField)>
+                </WithStyles(ForwardRef(TextField))>
+              </Rifm>
+            </KeyboardDateInput>
+            <WithStyles(ForwardRef(Popover))
+              anchorOrigin={
+                Object {
+                  "horizontal": "center",
+                  "vertical": "bottom",
+                }
+              }
+              onClose={[Function]}
+              open={false}
+              transformOrigin={
+                Object {
+                  "horizontal": "center",
+                  "vertical": "top",
+                }
+              }
+            >
+              <ForwardRef(Popover)
+                anchorOrigin={
+                  Object {
+                    "horizontal": "center",
+                    "vertical": "bottom",
+                  }
+                }
+                classes={
+                  Object {
+                    "paper": "MuiPopover-paper",
+                    "root": "MuiPopover-root",
+                  }
+                }
+                onClose={[Function]}
+                open={false}
+                transformOrigin={
+                  Object {
+                    "horizontal": "center",
+                    "vertical": "top",
+                  }
+                }
+              >
+                <ForwardRef(Modal)
+                  BackdropProps={
+                    Object {
+                      "invisible": true,
+                    }
+                  }
+                  className="MuiPopover-root"
+                  onClose={[Function]}
+                  open={false}
+                />
+              </ForwardRef(Popover)>
+            </WithStyles(ForwardRef(Popover))>
+          </InlineWrapper>
+        </Wrapper>
+      </PickerWithState>
+    </MuiPickersUtilsProvider>
+  </ThemeProvider>
+</DatePicker>
 `;
