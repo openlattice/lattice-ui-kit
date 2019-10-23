@@ -1,7 +1,12 @@
 import { createMuiTheme } from '@material-ui/core';
 import deepPurple from '@material-ui/core/colors/deepPurple';
 
-import { NEUTRALS, PURPLES, RED_1 } from '../../../../colors';
+import {
+  NEUTRALS,
+  PURPLES,
+  RED_1,
+  WHITE
+} from '../../../../colors';
 import { duration } from '../../../../style/transitions';
 
 const latticeMuiTheme = createMuiTheme({
@@ -10,10 +15,12 @@ const latticeMuiTheme = createMuiTheme({
       root: {
         fontFamily: 'inherit',
         fontSize: '12px',
-        margin: '5px 10px 0'
+        '&$error': {
+          color: RED_1
+        },
       },
-      '&$error': {
-        borderColor: RED_1
+      contained: {
+        margin: '5px 10px 0'
       },
     },
     MuiInputBase: {
@@ -30,7 +37,7 @@ const latticeMuiTheme = createMuiTheme({
           backgroundColor: NEUTRALS[6]
         },
         '&$focused:not($disabled)': {
-          backgroundColor: 'white'
+          backgroundColor: WHITE
         },
         '&$disabled': {
           cursor: 'not-allowed'

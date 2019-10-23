@@ -47,13 +47,15 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         },
         "overrides": Object {
           "MuiFormHelperText": Object {
-            "&$error": Object {
-              "borderColor": "#ff3c5d",
+            "contained": Object {
+              "margin": "5px 10px 0",
             },
             "root": Object {
+              "&$error": Object {
+                "color": "#ff3c5d",
+              },
               "fontFamily": "inherit",
               "fontSize": "12px",
-              "margin": "5px 10px 0",
             },
           },
           "MuiIconButton": Object {
@@ -74,7 +76,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                 "cursor": "not-allowed",
               },
               "&$focused:not($disabled)": Object {
-                "backgroundColor": "white",
+                "backgroundColor": "#ffffff",
               },
               "&:hover:not($disabled):not($focused):not($error)": Object {
                 "backgroundColor": "#f0f0f7",
