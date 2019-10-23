@@ -9,6 +9,13 @@ describe('LatticeLuxonUtils', () => {
 
   test('getWeekArray should return a matrix of the month of the provided date', () => {
     const date = DateTime.fromISO('2019-01-01');
-    const week = new LatticeLuxonUtils().getWeekArray(date);
+    const month = new LatticeLuxonUtils().getWeekArray(date);
+
+    month.forEach((week) => {
+      expect(Array.isArray(week)).toBe(true);
+      week.forEach((day) => {
+        expect(day.isLuxonDateTime).toBe(true);
+      });
+    });
   });
 });
