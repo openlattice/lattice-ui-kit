@@ -36,7 +36,7 @@ describe('TimePicker', () => {
       expect(mockOnChange.mock.calls[1][0]).toEqual('');
     });
 
-    test('valid date calls onChange with ISO date string', () => {
+    test('valid date calls onChange with ISO time string', () => {
       const mockOnChange = jest.fn();
       const wrapper = shallow(<TimePicker onChange={mockOnChange} />);
 
@@ -50,7 +50,7 @@ describe('TimePicker', () => {
   });
 
   describe('value', () => {
-    test('valid parsed times are passed to KeyboardDatePicker', () => {
+    test('valid parsed times are passed to KeyboardTimePicker', () => {
       const wrapper = mount(<TimePicker value={validTimeStr} />);
       expect(wrapper.find(KeyboardTimePicker).prop('value')).toEqual(DateTime.fromISO(validTimeStr));
     });

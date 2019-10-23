@@ -28,6 +28,7 @@ const DateTimePicker = (props :Props) => {
     placeholder,
     value
   } = props;
+
   const [selectedDateTime, setDateTime] = useState(null);
 
   useEffect(() => {
