@@ -19,7 +19,7 @@ type Props = {
   value :string;
 }
 
-const MaterialDatePicker = (props :Props) => {
+const DatePicker = (props :Props) => {
   const {
     disabled,
     format,
@@ -28,6 +28,7 @@ const MaterialDatePicker = (props :Props) => {
     placeholder,
     value
   } = props;
+
   const [selectedDate, setSelectedDate] = useState(null);
 
   useEffect(() => {
@@ -45,8 +46,7 @@ const MaterialDatePicker = (props :Props) => {
         onChange('');
       }
       else {
-        const dateIso = date.toISODate();
-        onChange(dateIso);
+        onChange(date.toISODate());
       }
     }
     setSelectedDate(date);
@@ -70,7 +70,7 @@ const MaterialDatePicker = (props :Props) => {
   );
 };
 
-MaterialDatePicker.defaultProps = {
+DatePicker.defaultProps = {
   disabled: false,
   format: 'MM/dd/yyyy',
   placeholder: 'MM/DD/YYYY',
@@ -78,4 +78,4 @@ MaterialDatePicker.defaultProps = {
   value: ''
 };
 
-export default MaterialDatePicker;
+export default DatePicker;

@@ -49,7 +49,7 @@ exports[`Search snapshots should match snapshot 1`] = `
             >
               Date of Birth
             </Label>
-            <MaterialDatePicker
+            <DatePicker
               disabled={false}
               format="MM/dd/yyyy"
               id="luk-search-dob"

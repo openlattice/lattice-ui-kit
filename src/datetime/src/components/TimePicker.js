@@ -32,6 +32,7 @@ const TimePicker = (props :Props) => {
     placeholder,
     value
   } = props;
+
   const [selectedDate, setSelectedDate] = useState(null);
 
   useEffect(() => {
