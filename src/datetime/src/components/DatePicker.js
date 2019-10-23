@@ -5,7 +5,7 @@ import { DateTime } from 'luxon';
 import { ThemeProvider } from '@material-ui/styles';
 import { KeyboardDatePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
 
-import LatticeLuxonUtils from './utils';
+import LatticeLuxonUtils from './utils/LatticeLuxonUtils';
 import useInputPropsMemo from './hooks/useInputPropsMemo';
 import { latticeMuiTheme } from './styles';
 

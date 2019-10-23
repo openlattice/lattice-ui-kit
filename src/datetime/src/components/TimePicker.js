@@ -7,7 +7,7 @@ import { KeyboardTimePicker, MuiPickersUtilsProvider } from '@material-ui/picker
 import { faClock } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import LatticeLuxonUtils from './utils';
+import LatticeLuxonUtils from './utils/LatticeLuxonUtils';
 import { latticeMuiTheme } from './styles';
 import useInputPropsMemo from './hooks/useInputPropsMemo';
 

@@ -1,4 +1,6 @@
+// @flow
 import LuxonUtils from '@date-io/luxon';
+import type { DateTime, DurationObject } from 'luxon';
 
 // Extend LuxonUtils to start week on Sunday
 // https://github.com/mui-org/material-ui-pickers/issues/1270
@@ -8,23 +10,23 @@ class LatticeLuxonUtils extends LuxonUtils {
     return ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
   }
 
-  getWeekArray(date) {
-    const { days } = date
+  getWeekArray(date :DateTime) {
+    const { days = 0 } :DurationObject = date
       .endOf('month')
       .endOf('week')
       .diff(date.startOf('month').startOf('week'), 'days')
       .toObject();
 
-    const weeks = [];
+    const weeks :DateTime[][] = [];
     new Array(Math.round(days))
       .fill(0)
       .map((_, i) => i)
-      .map((day) => date
+      .map((day :number) => date
         .startOf('month')
         .startOf('week')
         .minus({ days: 1 })
         .plus({ days: day }))
-      .forEach((v, i) => {
+      .forEach((v :DateTime, i) => {
         if (i === 0 || (i % 7 === 0 && i > 6)) {
           weeks.push([v]);
           return;
