@@ -1,5 +1,4 @@
 import React from 'react';
-import { act } from 'react-dom/test-utils';
 import { DateTime } from 'luxon';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
