@@ -30,23 +30,32 @@ const DatePicker = (props :Props) => {
   } = props;
 
   const [selectedDate, setSelectedDate] = useState(null);
+  const [lastValidDate, setLastValidDate] = useState(null);
 
   useEffect(() => {
     const date = DateTime.fromISO(value);
     if (date.isValid) {
       setSelectedDate(date);
+      setLastValidDate(date);
+    }
+    else {
+      setSelectedDate(null);
+      setLastValidDate(null);
     }
   }, [value]);
 
-  const InputProps = useInputPropsMemo();
+  const inputProps = useInputPropsMemo(lastValidDate, setSelectedDate);
 
   const handleDateChange = useCallback<DateChange>((date) => {
     if (isFunction(onChange)) {
-      if (date === null || !date.isValid) {
-        onChange('');
+      if (date === null) {
+        onChange();
+        setLastValidDate(null);
       }
-      else {
-        onChange(date.toISODate());
+      if (date && date.isValid) {
+        const dateIso = date.toISODate();
+        onChange(dateIso);
+        setLastValidDate(date);
       }
     }
     setSelectedDate(date);
@@ -58,7 +67,7 @@ const DatePicker = (props :Props) => {
         <KeyboardDatePicker
             disabled={disabled}
             format={format}
-            InputProps={InputProps}
+            InputProps={inputProps}
             inputVariant="outlined"
             mask={mask}
             onChange={handleDateChange}
