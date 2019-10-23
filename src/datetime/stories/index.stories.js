@@ -39,7 +39,6 @@ storiesOf('Date and Time', module)
             <Label subtle>Controlled</Label>
             <DatePicker
                 onChange={(value) => {
-                  console.log(value);
                   dateMuiChange(value);
                   setSelectedDate(value);
                 }}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { act } from 'react-dom/test-utils';
 import { DateTime } from 'luxon';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
@@ -19,7 +20,7 @@ describe('DatePicker', () => {
 
   describe('onChange', () => {
 
-    test('null or invalid date calls onChange with empty string', () => {
+    test('null calls onChange with undefined', () => {
       const mockOnChange = jest.fn();
       const wrapper = shallow(<DatePicker onChange={mockOnChange} />);
 
@@ -28,11 +29,19 @@ describe('DatePicker', () => {
 
       innerChange(null);
       expect(mockOnChange).toHaveBeenCalledTimes(1);
-      expect(mockOnChange.mock.calls[0][0]).toEqual('');
+      expect(mockOnChange.mock.calls[0][0]).toEqual();
+      expect(wrapper.find(KeyboardDatePicker).prop('value')).toEqual(null);
+    });
+
+    test('invalid date does not call onChange', () => {
+      const mockOnChange = jest.fn();
+      const wrapper = shallow(<DatePicker onChange={mockOnChange} />);
+
+      expect(mockOnChange).toHaveBeenCalledTimes(0);
+      const innerChange = wrapper.find(KeyboardDatePicker).prop('onChange');
 
       innerChange(invalidDate);
-      expect(mockOnChange).toHaveBeenCalledTimes(2);
-      expect(mockOnChange.mock.calls[1][0]).toEqual('');
+      expect(mockOnChange).toHaveBeenCalledTimes(0);
     });
 
     test('valid date calls onChange with ISO date string', () => {
@@ -45,6 +54,7 @@ describe('DatePicker', () => {
       innerChange(validDate);
       expect(mockOnChange).toHaveBeenCalledTimes(1);
       expect(mockOnChange.mock.calls[0][0]).toEqual(validDate.toISODate());
+      expect(wrapper.find(KeyboardDatePicker).prop('value')).toEqual(validDate);
     });
   });
 
@@ -60,26 +70,34 @@ describe('DatePicker', () => {
     });
   });
 
-  describe('input should preventDefault onKeyPress only for Enter', () => {
-    const preventDefault = jest.fn();
-    const wrapper = mount(<DatePicker />);
-    const input = wrapper.find('input');
+  describe('InputProps', () => {
+    test('input should preventDefault only for Enter keyPress', () => {
+      const preventDefault = jest.fn();
+      const wrapper = mount(<DatePicker />);
+      const input = wrapper.find('input');
 
-    expect(preventDefault).toHaveBeenCalledTimes(0);
+      expect(preventDefault).toHaveBeenCalledTimes(0);
 
-    input.simulate('keyDown', {
-      preventDefault,
-      key: 'Enter'
+      input.simulate('keyDown', {
+        preventDefault,
+        key: 'Enter'
+      });
+
+      expect(preventDefault).toHaveBeenCalledTimes(1);
+
+      input.simulate('keyDown', {
+        preventDefault,
+        key: 'Escape'
+      });
+
+      expect(preventDefault).toHaveBeenCalledTimes(1);
     });
 
-    expect(preventDefault).toHaveBeenCalledTimes(1);
+    test('inner input should have onBlur', () => {
+      const wrapper = mount(<DatePicker />);
 
-    input.simulate('keyDown', {
-      preventDefault,
-      key: 'Escape'
+      expect(typeof wrapper.find('input').prop('onBlur')).toEqual('function');
     });
-
-    expect(preventDefault).toHaveBeenCalledTimes(1);
   });
 
 });

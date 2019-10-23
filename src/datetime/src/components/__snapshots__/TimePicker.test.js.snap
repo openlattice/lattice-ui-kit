@@ -369,6 +369,7 @@ exports[`TimePicker render matches snapshot 1`] = `
       <PickerWithState
         InputProps={
           Object {
+            "onBlur": [Function],
             "onKeyDown": [Function],
           }
         }
@@ -436,6 +437,7 @@ exports[`TimePicker render matches snapshot 1`] = `
           InputComponent={[Function]}
           InputProps={
             Object {
+              "onBlur": [Function],
               "onKeyDown": [Function],
             }
           }
@@ -498,6 +500,7 @@ exports[`TimePicker render matches snapshot 1`] = `
             InputComponent={[Function]}
             InputProps={
               Object {
+                "onBlur": [Function],
                 "onKeyDown": [Function],
               }
             }
@@ -549,6 +552,7 @@ exports[`TimePicker render matches snapshot 1`] = `
             <KeyboardDateInput
               InputProps={
                 Object {
+                  "onBlur": [Function],
                   "onKeyDown": [Function],
                 }
               }
@@ -657,6 +661,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                           />
                         </ForwardRef(WithStyles)>
                       </ForwardRef(WithStyles)>,
+                      "onBlur": [Function],
                       "onKeyDown": [Function],
                     }
                   }
@@ -722,6 +727,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                             />
                           </ForwardRef(WithStyles)>
                         </ForwardRef(WithStyles)>,
+                        "onBlur": [Function],
                         "onKeyDown": [Function],
                       }
                     }
@@ -831,6 +837,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                               }
                             }
                             labelWidth={0}
+                            onBlur={[Function]}
                             onChange={[Function]}
                             onKeyDown={[Function]}
                             placeholder="HH:MM AM"
@@ -911,6 +918,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                               }
                               labelWidth={0}
                               notched={false}
+                              onBlur={[Function]}
                               onChange={[Function]}
                               onKeyDown={[Function]}
                               placeholder="HH:MM AM"
@@ -992,6 +1000,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                   }
                                 }
                                 multiline={false}
+                                onBlur={[Function]}
                                 onChange={[Function]}
                                 onKeyDown={[Function]}
                                 placeholder="HH:MM AM"
@@ -1078,6 +1087,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                     }
                                   }
                                   multiline={false}
+                                  onBlur={[Function]}
                                   onChange={[Function]}
                                   onKeyDown={[Function]}
                                   placeholder="HH:MM AM"

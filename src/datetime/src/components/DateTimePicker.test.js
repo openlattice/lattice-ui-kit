@@ -19,7 +19,7 @@ describe('DateTimePicker', () => {
 
   describe('onChange', () => {
 
-    test('null or invalid date calls onChange with empty string', () => {
+    test('null calls onChange undefined', () => {
       const mockOnChange = jest.fn();
       const wrapper = shallow(<DateTimePicker onChange={mockOnChange} />);
 
@@ -28,11 +28,18 @@ describe('DateTimePicker', () => {
 
       innerChange(null);
       expect(mockOnChange).toHaveBeenCalledTimes(1);
-      expect(mockOnChange.mock.calls[0][0]).toEqual('');
+      expect(mockOnChange.mock.calls[0][0]).toEqual();
+    });
+
+    test('invalid date does not call onChange', () => {
+      const mockOnChange = jest.fn();
+      const wrapper = shallow(<DateTimePicker onChange={mockOnChange} />);
+
+      expect(mockOnChange).toHaveBeenCalledTimes(0);
+      const innerChange = wrapper.find(KeyboardDateTimePicker).prop('onChange');
 
       innerChange(invalidDateTime);
-      expect(mockOnChange).toHaveBeenCalledTimes(2);
-      expect(mockOnChange.mock.calls[1][0]).toEqual('');
+      expect(mockOnChange).toHaveBeenCalledTimes(0);
     });
 
     test('valid date calls onChange with ISO datetime string', () => {
