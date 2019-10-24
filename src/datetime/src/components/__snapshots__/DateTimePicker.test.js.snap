@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TimePicker render matches snapshot 1`] = `
-<TimePicker
+exports[`DateTimePicker render matches snapshot 1`] = `
+<DateTimePicker
   disabled={false}
-  format="hh:mm a"
-  mask="__:__ _M"
-  placeholder="HH:MM AM"
+  format="MM/dd/yyyy  hh:mm a"
+  mask="__/__/____  __:__ _M"
+  placeholder="MM/DD/YYYY  HH:MM AM"
   value=""
 >
   <ThemeProvider
@@ -373,61 +373,38 @@ exports[`TimePicker render matches snapshot 1`] = `
             "onKeyDown": [Function],
           }
         }
+        allowKeyboardControl={true}
         ampm={true}
         disabled={false}
-        format="hh:mm a"
+        format="MM/dd/yyyy  hh:mm a"
         inputVariant="outlined"
-        invalidDateMessage="Invalid Time Format"
-        keyboardIcon={
-          <FontAwesomeIcon
-            border={false}
-            className=""
-            fixedWidth={false}
-            flip={null}
-            icon={
-              Object {
-                "icon": Array [
-                  512,
-                  512,
-                  Array [],
-                  "f017",
-                  "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z",
-                ],
-                "iconName": "clock",
-                "prefix": "far",
-              }
-            }
-            inverse={false}
-            listItem={false}
-            mask={null}
-            pull={null}
-            pulse={false}
-            rotation={null}
-            size={null}
-            spin={false}
-            swapOpacity={false}
-            symbol={false}
-            title=""
-            transform={null}
-          />
-        }
-        mask="__:__ _M"
+        invalidDateMessage="Invalid Date Format"
+        mask="__/__/____  __:__ _M"
+        maxDate={2100-01-01T00:00:00.000Z}
+        maxDateMessage="Date should not be after maximal date"
+        minDate={1900-01-01T00:00:00.000Z}
+        minDateMessage="Date should not be before minimal date"
         onChange={[Function]}
-        openTo="hours"
-        placeholder="HH:MM AM"
+        openTo="date"
+        orientation="portrait"
+        placeholder="MM/DD/YYYY  HH:MM AM"
+        showTabs={true}
         value={null}
         variant="inline"
         views={
           Array [
+            "year",
+            "date",
             "hours",
             "minutes",
           ]
         }
+        wider={true}
       >
         <Wrapper
           DateInputProps={
             Object {
-              "format": "hh:mm a",
+              "format": "MM/dd/yyyy  hh:mm a",
               "inputValue": "",
               "onChange": [Function],
               "openPicker": [Function],
@@ -442,55 +419,24 @@ exports[`TimePicker render matches snapshot 1`] = `
             }
           }
           disabled={false}
-          format="hh:mm a"
+          format="MM/dd/yyyy  hh:mm a"
           inputVariant="outlined"
-          keyboardIcon={
-            <FontAwesomeIcon
-              border={false}
-              className=""
-              fixedWidth={false}
-              flip={null}
-              icon={
-                Object {
-                  "icon": Array [
-                    512,
-                    512,
-                    Array [],
-                    "f017",
-                    "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z",
-                  ],
-                  "iconName": "clock",
-                  "prefix": "far",
-                }
-              }
-              inverse={false}
-              listItem={false}
-              mask={null}
-              pull={null}
-              pulse={false}
-              rotation={null}
-              size={null}
-              spin={false}
-              swapOpacity={false}
-              symbol={false}
-              title=""
-              transform={null}
-            />
-          }
-          mask="__:__ _M"
+          mask="__/__/____  __:__ _M"
           onAccept={[Function]}
           onClear={[Function]}
           onDismiss={[Function]}
           onSetToday={[Function]}
           open={false}
-          placeholder="HH:MM AM"
+          placeholder="MM/DD/YYYY  HH:MM AM"
           refuse={/\\[\\^\\\\dap\\]\\+/gi}
+          showTabs={true}
           variant="inline"
+          wider={true}
         >
           <InlineWrapper
             DateInputProps={
               Object {
-                "format": "hh:mm a",
+                "format": "MM/dd/yyyy  hh:mm a",
                 "inputValue": "",
                 "onChange": [Function],
                 "openPicker": [Function],
@@ -505,49 +451,18 @@ exports[`TimePicker render matches snapshot 1`] = `
               }
             }
             disabled={false}
-            format="hh:mm a"
+            format="MM/dd/yyyy  hh:mm a"
             inputVariant="outlined"
-            keyboardIcon={
-              <FontAwesomeIcon
-                border={false}
-                className=""
-                fixedWidth={false}
-                flip={null}
-                icon={
-                  Object {
-                    "icon": Array [
-                      512,
-                      512,
-                      Array [],
-                      "f017",
-                      "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z",
-                    ],
-                    "iconName": "clock",
-                    "prefix": "far",
-                  }
-                }
-                inverse={false}
-                listItem={false}
-                mask={null}
-                pull={null}
-                pulse={false}
-                rotation={null}
-                size={null}
-                spin={false}
-                swapOpacity={false}
-                symbol={false}
-                title=""
-                transform={null}
-              />
-            }
-            mask="__:__ _M"
+            mask="__/__/____  __:__ _M"
             onAccept={[Function]}
             onClear={[Function]}
             onDismiss={[Function]}
             onSetToday={[Function]}
             open={false}
-            placeholder="HH:MM AM"
+            placeholder="MM/DD/YYYY  HH:MM AM"
             refuse={/\\[\\^\\\\dap\\]\\+/gi}
+            showTabs={true}
+            wider={true}
           >
             <KeyboardDateInput
               InputProps={
@@ -557,13 +472,13 @@ exports[`TimePicker render matches snapshot 1`] = `
                 }
               }
               disabled={false}
-              format="hh:mm a"
+              format="MM/dd/yyyy  hh:mm a"
               inputRef={
                 Object {
                   "current": <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
-                    placeholder="HH:MM AM"
+                    placeholder="MM/DD/YYYY  HH:MM AM"
                     type="text"
                     value=""
                   />,
@@ -571,49 +486,17 @@ exports[`TimePicker render matches snapshot 1`] = `
               }
               inputValue=""
               inputVariant="outlined"
-              keyboardIcon={
-                <FontAwesomeIcon
-                  border={false}
-                  className=""
-                  fixedWidth={false}
-                  flip={null}
-                  icon={
-                    Object {
-                      "icon": Array [
-                        512,
-                        512,
-                        Array [],
-                        "f017",
-                        "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z",
-                      ],
-                      "iconName": "clock",
-                      "prefix": "far",
-                    }
-                  }
-                  inverse={false}
-                  listItem={false}
-                  mask={null}
-                  pull={null}
-                  pulse={false}
-                  rotation={null}
-                  size={null}
-                  spin={false}
-                  swapOpacity={false}
-                  symbol={false}
-                  title=""
-                  transform={null}
-                />
-              }
-              mask="__:__ _M"
+              keyboardIcon={<KeyboardIcon />}
+              mask="__/__/____  __:__ _M"
               onChange={[Function]}
               openPicker={[Function]}
-              placeholder="HH:MM AM"
+              placeholder="MM/DD/YYYY  HH:MM AM"
               refuse={/\\[\\^\\\\dap\\]\\+/gi}
               validationError=""
             >
               <Rifm
                 format={[Function]}
-                key="__:__ _M"
+                key="__/__/____  __:__ _M"
                 onChange={[Function]}
                 refuse={/\\[\\^\\\\dap\\]\\+/gi}
                 value=""
@@ -628,37 +511,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                           disabled={false}
                           onClick={[Function]}
                         >
-                          <FontAwesomeIcon
-                            border={false}
-                            className=""
-                            fixedWidth={false}
-                            flip={null}
-                            icon={
-                              Object {
-                                "icon": Array [
-                                  512,
-                                  512,
-                                  Array [],
-                                  "f017",
-                                  "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z",
-                                ],
-                                "iconName": "clock",
-                                "prefix": "far",
-                              }
-                            }
-                            inverse={false}
-                            listItem={false}
-                            mask={null}
-                            pull={null}
-                            pulse={false}
-                            rotation={null}
-                            size={null}
-                            spin={false}
-                            swapOpacity={false}
-                            symbol={false}
-                            title=""
-                            transform={null}
-                          />
+                          <KeyboardIcon />
                         </ForwardRef(WithStyles)>
                       </ForwardRef(WithStyles)>,
                       "onBlur": [Function],
@@ -673,14 +526,14 @@ exports[`TimePicker render matches snapshot 1`] = `
                       "current": <input
                         aria-invalid="false"
                         class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
-                        placeholder="HH:MM AM"
+                        placeholder="MM/DD/YYYY  HH:MM AM"
                         type="text"
                         value=""
                       />,
                     }
                   }
                   onChange={[Function]}
-                  placeholder="HH:MM AM"
+                  placeholder="MM/DD/YYYY  HH:MM AM"
                   value=""
                   variant="outlined"
                 >
@@ -694,37 +547,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                             disabled={false}
                             onClick={[Function]}
                           >
-                            <FontAwesomeIcon
-                              border={false}
-                              className=""
-                              fixedWidth={false}
-                              flip={null}
-                              icon={
-                                Object {
-                                  "icon": Array [
-                                    512,
-                                    512,
-                                    Array [],
-                                    "f017",
-                                    "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z",
-                                  ],
-                                  "iconName": "clock",
-                                  "prefix": "far",
-                                }
-                              }
-                              inverse={false}
-                              listItem={false}
-                              mask={null}
-                              pull={null}
-                              pulse={false}
-                              rotation={null}
-                              size={null}
-                              spin={false}
-                              swapOpacity={false}
-                              symbol={false}
-                              title=""
-                              transform={null}
-                            />
+                            <KeyboardIcon />
                           </ForwardRef(WithStyles)>
                         </ForwardRef(WithStyles)>,
                         "onBlur": [Function],
@@ -744,14 +567,14 @@ exports[`TimePicker render matches snapshot 1`] = `
                         "current": <input
                           aria-invalid="false"
                           class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
-                          placeholder="HH:MM AM"
+                          placeholder="MM/DD/YYYY  HH:MM AM"
                           type="text"
                           value=""
                         />,
                       }
                     }
                     onChange={[Function]}
-                    placeholder="HH:MM AM"
+                    placeholder="MM/DD/YYYY  HH:MM AM"
                     value=""
                     variant="outlined"
                   >
@@ -791,37 +614,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                   disabled={false}
                                   onClick={[Function]}
                                 >
-                                  <FontAwesomeIcon
-                                    border={false}
-                                    className=""
-                                    fixedWidth={false}
-                                    flip={null}
-                                    icon={
-                                      Object {
-                                        "icon": Array [
-                                          512,
-                                          512,
-                                          Array [],
-                                          "f017",
-                                          "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z",
-                                        ],
-                                        "iconName": "clock",
-                                        "prefix": "far",
-                                      }
-                                    }
-                                    inverse={false}
-                                    listItem={false}
-                                    mask={null}
-                                    pull={null}
-                                    pulse={false}
-                                    rotation={null}
-                                    size={null}
-                                    spin={false}
-                                    swapOpacity={false}
-                                    symbol={false}
-                                    title=""
-                                    transform={null}
-                                  />
+                                  <KeyboardIcon />
                                 </ForwardRef(WithStyles)>
                               </ForwardRef(WithStyles)>
                             }
@@ -830,7 +623,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                 "current": <input
                                   aria-invalid="false"
                                   class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
-                                  placeholder="HH:MM AM"
+                                  placeholder="MM/DD/YYYY  HH:MM AM"
                                   type="text"
                                   value=""
                                 />,
@@ -840,7 +633,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                             onBlur={[Function]}
                             onChange={[Function]}
                             onKeyDown={[Function]}
-                            placeholder="HH:MM AM"
+                            placeholder="MM/DD/YYYY  HH:MM AM"
                             value=""
                           >
                             <ForwardRef(OutlinedInput)
@@ -871,37 +664,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                     disabled={false}
                                     onClick={[Function]}
                                   >
-                                    <FontAwesomeIcon
-                                      border={false}
-                                      className=""
-                                      fixedWidth={false}
-                                      flip={null}
-                                      icon={
-                                        Object {
-                                          "icon": Array [
-                                            512,
-                                            512,
-                                            Array [],
-                                            "f017",
-                                            "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z",
-                                          ],
-                                          "iconName": "clock",
-                                          "prefix": "far",
-                                        }
-                                      }
-                                      inverse={false}
-                                      listItem={false}
-                                      mask={null}
-                                      pull={null}
-                                      pulse={false}
-                                      rotation={null}
-                                      size={null}
-                                      spin={false}
-                                      swapOpacity={false}
-                                      symbol={false}
-                                      title=""
-                                      transform={null}
-                                    />
+                                    <KeyboardIcon />
                                   </ForwardRef(WithStyles)>
                                 </ForwardRef(WithStyles)>
                               }
@@ -910,7 +673,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                   "current": <input
                                     aria-invalid="false"
                                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
-                                    placeholder="HH:MM AM"
+                                    placeholder="MM/DD/YYYY  HH:MM AM"
                                     type="text"
                                     value=""
                                   />,
@@ -921,7 +684,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               onKeyDown={[Function]}
-                              placeholder="HH:MM AM"
+                              placeholder="MM/DD/YYYY  HH:MM AM"
                               value=""
                             >
                               <WithStyles(ForwardRef(InputBase))
@@ -952,37 +715,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                       disabled={false}
                                       onClick={[Function]}
                                     >
-                                      <FontAwesomeIcon
-                                        border={false}
-                                        className=""
-                                        fixedWidth={false}
-                                        flip={null}
-                                        icon={
-                                          Object {
-                                            "icon": Array [
-                                              512,
-                                              512,
-                                              Array [],
-                                              "f017",
-                                              "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z",
-                                            ],
-                                            "iconName": "clock",
-                                            "prefix": "far",
-                                          }
-                                        }
-                                        inverse={false}
-                                        listItem={false}
-                                        mask={null}
-                                        pull={null}
-                                        pulse={false}
-                                        rotation={null}
-                                        size={null}
-                                        spin={false}
-                                        swapOpacity={false}
-                                        symbol={false}
-                                        title=""
-                                        transform={null}
-                                      />
+                                      <KeyboardIcon />
                                     </ForwardRef(WithStyles)>
                                   </ForwardRef(WithStyles)>
                                 }
@@ -993,7 +726,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                     "current": <input
                                       aria-invalid="false"
                                       class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
-                                      placeholder="HH:MM AM"
+                                      placeholder="MM/DD/YYYY  HH:MM AM"
                                       type="text"
                                       value=""
                                     />,
@@ -1003,7 +736,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 onKeyDown={[Function]}
-                                placeholder="HH:MM AM"
+                                placeholder="MM/DD/YYYY  HH:MM AM"
                                 renderSuffix={[Function]}
                                 type="text"
                                 value=""
@@ -1039,37 +772,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                         disabled={false}
                                         onClick={[Function]}
                                       >
-                                        <FontAwesomeIcon
-                                          border={false}
-                                          className=""
-                                          fixedWidth={false}
-                                          flip={null}
-                                          icon={
-                                            Object {
-                                              "icon": Array [
-                                                512,
-                                                512,
-                                                Array [],
-                                                "f017",
-                                                "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z",
-                                              ],
-                                              "iconName": "clock",
-                                              "prefix": "far",
-                                            }
-                                          }
-                                          inverse={false}
-                                          listItem={false}
-                                          mask={null}
-                                          pull={null}
-                                          pulse={false}
-                                          rotation={null}
-                                          size={null}
-                                          spin={false}
-                                          swapOpacity={false}
-                                          symbol={false}
-                                          title=""
-                                          transform={null}
-                                        />
+                                        <KeyboardIcon />
                                       </ForwardRef(WithStyles)>
                                     </ForwardRef(WithStyles)>
                                   }
@@ -1080,7 +783,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                       "current": <input
                                         aria-invalid="false"
                                         class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
-                                        placeholder="HH:MM AM"
+                                        placeholder="MM/DD/YYYY  HH:MM AM"
                                         type="text"
                                         value=""
                                       />,
@@ -1090,7 +793,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   onKeyDown={[Function]}
-                                  placeholder="HH:MM AM"
+                                  placeholder="MM/DD/YYYY  HH:MM AM"
                                   renderSuffix={[Function]}
                                   type="text"
                                   value=""
@@ -1108,7 +811,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                       onChange={[Function]}
                                       onFocus={[Function]}
                                       onKeyDown={[Function]}
-                                      placeholder="HH:MM AM"
+                                      placeholder="MM/DD/YYYY  HH:MM AM"
                                       required={false}
                                       type="text"
                                       value=""
@@ -1196,55 +899,41 @@ exports[`TimePicker render matches snapshot 1`] = `
                                                     <span
                                                       className="MuiIconButton-label"
                                                     >
-                                                      <FontAwesomeIcon
-                                                        border={false}
-                                                        className=""
-                                                        fixedWidth={false}
-                                                        flip={null}
-                                                        icon={
-                                                          Object {
-                                                            "icon": Array [
-                                                              512,
-                                                              512,
-                                                              Array [],
-                                                              "f017",
-                                                              "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z",
-                                                            ],
-                                                            "iconName": "clock",
-                                                            "prefix": "far",
-                                                          }
-                                                        }
-                                                        inverse={false}
-                                                        listItem={false}
-                                                        mask={null}
-                                                        pull={null}
-                                                        pulse={false}
-                                                        rotation={null}
-                                                        size={null}
-                                                        spin={false}
-                                                        swapOpacity={false}
-                                                        symbol={false}
-                                                        title=""
-                                                        transform={null}
-                                                      >
-                                                        <svg
-                                                          aria-hidden="true"
-                                                          className="svg-inline--fa fa-clock fa-w-16 "
-                                                          data-icon="clock"
-                                                          data-prefix="far"
-                                                          focusable="false"
-                                                          role="img"
-                                                          style={Object {}}
-                                                          viewBox="0 0 512 512"
-                                                          xmlns="http://www.w3.org/2000/svg"
-                                                        >
-                                                          <path
-                                                            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"
-                                                            fill="currentColor"
-                                                            style={Object {}}
-                                                          />
-                                                        </svg>
-                                                      </FontAwesomeIcon>
+                                                      <KeyboardIcon>
+                                                        <WithStyles(ForwardRef(SvgIcon))>
+                                                          <ForwardRef(SvgIcon)
+                                                            classes={
+                                                              Object {
+                                                                "colorAction": "MuiSvgIcon-colorAction",
+                                                                "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                                "colorError": "MuiSvgIcon-colorError",
+                                                                "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                                "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                                "root": "MuiSvgIcon-root",
+                                                              }
+                                                            }
+                                                          >
+                                                            <svg
+                                                              aria-hidden="true"
+                                                              className="MuiSvgIcon-root"
+                                                              focusable="false"
+                                                              role="presentation"
+                                                              viewBox="0 0 24 24"
+                                                            >
+                                                              <path
+                                                                d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
+                                                              />
+                                                              <path
+                                                                d="M0 0h24v24H0z"
+                                                                fill="none"
+                                                              />
+                                                            </svg>
+                                                          </ForwardRef(SvgIcon)>
+                                                        </WithStyles(ForwardRef(SvgIcon))>
+                                                      </KeyboardIcon>
                                                     </span>
                                                     <NoSsr>
                                                       <WithStyles(undefined)
@@ -1293,8 +982,8 @@ exports[`TimePicker render matches snapshot 1`] = `
                                         className="MuiOutlinedInput-notchedOutline"
                                         classes={
                                           Object {
-                                            "legend": "PrivateNotchedOutline-legend-61",
-                                            "root": "PrivateNotchedOutline-root-60",
+                                            "legend": "PrivateNotchedOutline-legend-70",
+                                            "root": "PrivateNotchedOutline-root-69",
                                           }
                                         }
                                         labelWidth={0}
@@ -1302,7 +991,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                       >
                                         <fieldset
                                           aria-hidden={true}
-                                          className="PrivateNotchedOutline-root-60 MuiOutlinedInput-notchedOutline"
+                                          className="PrivateNotchedOutline-root-69 MuiOutlinedInput-notchedOutline"
                                           style={
                                             Object {
                                               "paddingLeft": 8,
@@ -1310,7 +999,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                           }
                                         >
                                           <legend
-                                            className="PrivateNotchedOutline-legend-61"
+                                            className="PrivateNotchedOutline-legend-70"
                                             style={
                                               Object {
                                                 "width": 0.01,
@@ -1395,5 +1084,5 @@ exports[`TimePicker render matches snapshot 1`] = `
       </PickerWithState>
     </MuiPickersUtilsProvider>
   </ThemeProvider>
-</TimePicker>
+</DateTimePicker>
 `;

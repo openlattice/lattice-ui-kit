@@ -1,11 +1,28 @@
 import { createMuiTheme } from '@material-ui/core';
 import deepPurple from '@material-ui/core/colors/deepPurple';
 
-import { NEUTRALS, PURPLES } from '../../../../../colors';
-import { duration } from '../../../../../style/transitions';
+import {
+  NEUTRALS,
+  PURPLES,
+  RED_1,
+  WHITE
+} from '../../../../colors';
+import { duration } from '../../../../style/transitions';
 
 const latticeMuiTheme = createMuiTheme({
   overrides: {
+    MuiFormHelperText: {
+      root: {
+        fontFamily: 'inherit',
+        fontSize: '12px',
+        '&$error': {
+          color: RED_1
+        },
+      },
+      contained: {
+        margin: '5px 10px 0'
+      },
+    },
     MuiInputBase: {
       root: {
         backgroundColor: NEUTRALS[8],
@@ -20,7 +37,7 @@ const latticeMuiTheme = createMuiTheme({
           backgroundColor: NEUTRALS[6]
         },
         '&$focused:not($disabled)': {
-          backgroundColor: 'white'
+          backgroundColor: WHITE
         },
         '&$disabled': {
           cursor: 'not-allowed'
@@ -34,35 +51,40 @@ const latticeMuiTheme = createMuiTheme({
         }
       }
     },
+    MuiIconButton: {
+      root: {
+        padding: '5px'
+      }
+    },
     MuiOutlinedInput: {
       root: {
-        '&$focused $notchedOutline': {
+        border: `1px solid ${NEUTRALS[4]}`,
+        '&$focused': {
           borderColor: PURPLES[1],
-          borderWidth: '1px'
         },
-        '&:hover:not($disabled):not($focused):not($error) $notchedOutline': {
-          borderColor: NEUTRALS[4]
+        '&$error': {
+          borderColor: RED_1
         },
-        '&$disabled $notchedOutline': {
-          borderColor: NEUTRALS[4]
-        }
       },
       input: {
         padding: '10px'
       },
       notchedOutline: {
-        borderColor: NEUTRALS[4],
-        borderRadius: '3px'
-      }
-    },
-    MuiIconButton: {
-      root: {
-        padding: '5px'
+        visibility: 'hidden'
       }
     }
   },
   palette: {
     primary: deepPurple
+  },
+  props: {
+    MuiFormControl: {
+      fullWidth: true,
+      hiddenLabel: true
+    },
+    MuiOutlinedInput: {
+      notched: false
+    }
   }
 });
 

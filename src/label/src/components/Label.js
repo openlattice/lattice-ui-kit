@@ -4,8 +4,9 @@ import { NEUTRALS } from '../../../colors';
 
 type LabelProps = {
   bold :boolean;
-  subtle :boolean;
+  hidden :boolean;
   required :boolean;
+  subtle :boolean;
 }
 
 const getSubtleStyles = ({ subtle } :LabelProps) => {
@@ -42,6 +43,7 @@ const Label = styled.label`
   font-weight: ${(props) => (props.bold ? '600' : 'normal')};
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
+  visibility: ${(props) => props.stealth && 'hidden'};
   ${getSubtleStyles};
   ${getRequiredStyles};
 `;
