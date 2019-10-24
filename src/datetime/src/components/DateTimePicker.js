@@ -3,23 +3,23 @@ import React, { useCallback, useEffect, useState } from 'react';
 import isFunction from 'lodash/isFunction';
 import { DateTime } from 'luxon';
 import { ThemeProvider } from '@material-ui/styles';
-import { KeyboardDatePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
+import { KeyboardDateTimePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
 
 import LatticeLuxonUtils from './utils/LatticeLuxonUtils';
-import useInputPropsMemo from './hooks/useInputPropsMemo';
 import { latticeMuiTheme } from './styles';
+import useInputPropsMemo from './hooks/useInputPropsMemo';
 
-type DateChange = (date :DateTime, value :string | null) => void;
+type DateChange = (datetime :DateTime, value :string | null) => void;
 type Props = {
   disabled :boolean;
   format :string;
   mask :string;
-  onChange :(dateIso :string) => void;
+  onChange :(datetimeIso :string) => void;
   placeholder :string;
   value :string;
-}
+};
 
-const DatePicker = (props :Props) => {
+const DateTimePicker = (props :Props) => {
   const {
     disabled,
     format,
@@ -46,14 +46,14 @@ const DatePicker = (props :Props) => {
 
   const inputProps = useInputPropsMemo(lastValidDate, setSelectedDate);
 
-  const handleDateChange = useCallback<DateChange>((date) => {
+  const handleDateTimeChange = useCallback<DateChange>((date) => {
     if (isFunction(onChange)) {
       if (date === null) {
         onChange();
         setLastValidDate(null);
       }
       if (date && date.isValid) {
-        const dateIso = date.toISODate();
+        const dateIso = date.toISO();
         onChange(dateIso);
         setLastValidDate(date);
       }
@@ -64,13 +64,14 @@ const DatePicker = (props :Props) => {
   return (
     <ThemeProvider theme={latticeMuiTheme}>
       <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
-        <KeyboardDatePicker
+        <KeyboardDateTimePicker
+            ampm
             disabled={disabled}
             format={format}
             InputProps={inputProps}
             inputVariant="outlined"
             mask={mask}
-            onChange={handleDateChange}
+            onChange={handleDateTimeChange}
             placeholder={placeholder}
             value={selectedDate}
             variant="inline" />
@@ -79,12 +80,12 @@ const DatePicker = (props :Props) => {
   );
 };
 
-DatePicker.defaultProps = {
+DateTimePicker.defaultProps = {
   disabled: false,
-  format: 'MM/dd/yyyy',
-  placeholder: 'MM/DD/YYYY',
-  mask: '__/__/____',
+  format: 'MM/dd/yyyy  hh:mm a',
+  mask: '__/__/____  __:__ _M',
+  placeholder: 'MM/DD/YYYY  HH:MM AM',
   value: ''
 };
 
-export default DatePicker;
+export default DateTimePicker;

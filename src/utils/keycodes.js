@@ -1,7 +1,8 @@
 // @flow
 const ESC_KEY_CODE :'Escape' = 'Escape';
+const ENTER_KEY_CODE :'Enter' = 'Enter';
 
 export {
-  // eslint-disable-next-line import/prefer-default-export
-  ESC_KEY_CODE
+  ESC_KEY_CODE,
+  ENTER_KEY_CODE,
 };

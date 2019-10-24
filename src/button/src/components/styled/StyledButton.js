@@ -112,7 +112,7 @@ const focusVariation = getStyleVariation('mode', {
 const StyledButton = styled.button`
   border-radius: 3px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 14px;
@@ -124,6 +124,7 @@ const StyledButton = styled.button`
   transition: background-color ${duration.swift} ease-in-out,
     border-color ${duration.swift} ease-in-out,
     box-shadow ${duration.swift} ease-in-out;
+  width: ${(props) => (props.fullWidth && '100%')};
   white-space: nowrap;
   ${baseButtonVariation};
 
