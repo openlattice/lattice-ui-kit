@@ -4,8 +4,8 @@ exports[`Banner snapshot should match snapshot when closed 1`] = `
 .c0 {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 250ms ease-in-out;
-  transition: max-height 250ms ease-in-out;
+  -webkit-transition: max-height 250ms ease-out;
+  transition: max-height 250ms ease-out;
 }
 
 .c1 {
@@ -53,7 +53,7 @@ exports[`Banner snapshot should match snapshot when closed 1`] = `
               [Function],
               ";overflow:hidden;transition:max-height ",
               "250ms",
-              " ease-in-out;",
+              " ease-out;",
               [Function],
             ],
           },
@@ -117,8 +117,8 @@ exports[`Banner snapshot should match snapshot when open 1`] = `
 .c0 {
   max-height: 60px;
   overflow: hidden;
-  -webkit-transition: max-height 250ms ease-in-out;
-  transition: max-height 250ms ease-in-out;
+  -webkit-transition: max-height 250ms ease-out;
+  transition: max-height 250ms ease-out;
 }
 
 .c1 {
@@ -166,7 +166,7 @@ exports[`Banner snapshot should match snapshot when open 1`] = `
               [Function],
               ";overflow:hidden;transition:max-height ",
               "250ms",
-              " ease-in-out;",
+              " ease-out;",
               [Function],
             ],
           },

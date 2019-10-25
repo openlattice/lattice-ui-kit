@@ -7,8 +7,8 @@ exports[`Checkbox render matches snapshot 1`] = `
   height: 20px;
   left: 0;
   position: absolute;
-  -webkit-transition: background-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,box-shadow 100ms ease-out;
   width: 20px;
 }
 
@@ -59,9 +59,9 @@ input:checked ~ .c2:after {
   -webkit-transform: rotate(45deg) scale(1);
   -ms-transform: rotate(45deg) scale(1);
   transform: rotate(45deg) scale(1);
-  -webkit-transition: -webkit-transform 200ms ease-in-out,opacity 200ms ease-in-out;
-  -webkit-transition: transform 200ms ease-in-out,opacity 200ms ease-in-out;
-  transition: transform 200ms ease-in-out,opacity 200ms ease-in-out;
+  -webkit-transition: -webkit-transform 200ms ease-out,opacity 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out,opacity 200ms ease-out;
+  transition: transform 200ms ease-out,opacity 200ms ease-out;
 }
 
 input:not(:checked) ~ .c2:after {
@@ -194,9 +194,9 @@ input:checked ~ .c2:after {
                     "#e6e6f7",
                     ";border-radius:3px;height:20px;left:0;position:absolute;transition:background-color ",
                     "100ms",
-                    " ease-in-out,box-shadow ",
+                    " ease-out,box-shadow ",
                     "100ms",
-                    " ease-in-out;width:20px;",
+                    " ease-out;width:20px;",
                     "input:hover ~ &{background-color:",
                     "#8e929b",
                     ";}input:focus-visible ~ &{box-shadow:",
@@ -215,9 +215,9 @@ input:checked ~ .c2:after {
                     "#ffffff",
                     ";border-width:0 2px 2px 0;box-sizing:border-box;height:10px;left:8px;position:absolute;top:4px;width:5px;transform:rotate(45deg) scale(1);transition:transform ",
                     "200ms",
-                    " ease-in-out,opacity ",
+                    " ease-out,opacity ",
                     "200ms",
-                    " ease-in-out;",
+                    " ease-out;",
                     "}input:not(:checked) ~ &:after{opacity:0;transform:rotate(45deg) scale(0);}input:checked ~ &:after{opacity:1;transform:rotate(45deg) scale(1);}",
                   ],
                 },

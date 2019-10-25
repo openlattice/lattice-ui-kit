@@ -117,8 +117,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
@@ -525,11 +525,11 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "rules": Array [
                             "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                             "100ms",
-                            " ease-in-out,border-color ",
+                            " ease-out,border-color ",
                             "100ms",
-                            " ease-in-out,box-shadow ",
+                            " ease-out,box-shadow ",
                             "100ms",
-                            " ease-in-out;width:",
+                            " ease-out;width:",
                             [Function],
                             ";white-space:nowrap;",
                             [Function],
@@ -759,11 +759,11 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "rules": Array [
                             "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                             "100ms",
-                            " ease-in-out,border-color ",
+                            " ease-out,border-color ",
                             "100ms",
-                            " ease-in-out,box-shadow ",
+                            " ease-out,box-shadow ",
                             "100ms",
-                            " ease-in-out;width:",
+                            " ease-out;width:",
                             [Function],
                             ";white-space:nowrap;",
                             [Function],
@@ -2278,11 +2278,11 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "rules": Array [
                             "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                             "100ms",
-                            " ease-in-out,border-color ",
+                            " ease-out,border-color ",
                             "100ms",
-                            " ease-in-out,box-shadow ",
+                            " ease-out,box-shadow ",
                             "100ms",
-                            " ease-in-out;width:",
+                            " ease-out;width:",
                             [Function],
                             ";white-space:nowrap;",
                             [Function],
@@ -2512,11 +2512,11 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "rules": Array [
                             "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                             "100ms",
-                            " ease-in-out,border-color ",
+                            " ease-out,border-color ",
                             "100ms",
-                            " ease-in-out,box-shadow ",
+                            " ease-out,box-shadow ",
                             "100ms",
-                            " ease-in-out;width:",
+                            " ease-out;width:",
                             [Function],
                             ";white-space:nowrap;",
                             [Function],
