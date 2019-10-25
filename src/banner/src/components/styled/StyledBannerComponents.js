@@ -43,7 +43,7 @@ const Container = styled.div`
   color: ${getFontColor};
   max-height: ${getMaxHeight};
   overflow: hidden;
-  transition: max-height ${duration.enter} ease-in-out;
+  transition: max-height ${duration.enter} ease-out;
   ${getStickyPosition}
 `;
 

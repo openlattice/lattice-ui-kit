@@ -16,8 +16,8 @@ const afterStyles = css`
   top: 4px;
   width: 5px;
   transform: rotate(45deg) scale(1);
-  transition: transform ${duration.standard} ease-in-out,
-    opacity ${duration.standard} ease-in-out;
+  transition: transform ${duration.standard} ease-out,
+    opacity ${duration.standard} ease-out;
 `;
 
 const CheckboxIndicator = styled.div`
@@ -26,8 +26,8 @@ const CheckboxIndicator = styled.div`
   height: 20px;
   left: 0;
   position: absolute;
-  transition: background-color ${duration.swift} ease-in-out,
-    box-shadow ${duration.swift} ease-in-out;
+  transition: background-color ${duration.swift} ease-out,
+    box-shadow ${duration.swift} ease-out;
   width: 20px;
 
   ${choiceIndicatorStyles};
