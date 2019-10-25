@@ -47,7 +47,7 @@ const Drawer = (props :Props) => {
           mountOnEnter
           unmountOnExit
           timeout={200}
-          classNames="slide">
+          classNames="luk-slide">
         <Portal>
           <DrawerCard
               onClose={onClose}

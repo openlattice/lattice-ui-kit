@@ -79,7 +79,7 @@ export default class Overlay extends Component<Props> {
           mountOnEnter
           unmountOnExit
           timeout={200}
-          classNames="fade">
+          classNames="luk-fade">
         <Portal>
           <ScrollLock>
             <OverlayOuterContainer transparent={transparent}>
