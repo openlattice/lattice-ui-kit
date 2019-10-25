@@ -41,8 +41,8 @@ exports[`button mode="default" should match snapshot 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: #f0f0f7;
   border-color: #f0f0f7;
@@ -103,15 +103,15 @@ exports[`button mode="default" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "cnZzDI",
+            "lastClassName": "lcbhQd",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
-              " ease-in-out,border-color ",
+              " ease-out,border-color ",
               "100ms",
-              " ease-in-out,box-shadow ",
+              " ease-out,box-shadow ",
               "100ms",
-              " ease-in-out;width:",
+              " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
               [Function],
@@ -268,8 +268,8 @@ exports[`button mode="default" should match snapshot 2`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: #f0f0f7;
   border-color: #f0f0f7;
@@ -330,15 +330,15 @@ exports[`button mode="default" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "cnZzDI",
+            "lastClassName": "lcbhQd",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
-              " ease-in-out,border-color ",
+              " ease-out,border-color ",
               "100ms",
-              " ease-in-out,box-shadow ",
+              " ease-out,box-shadow ",
               "100ms",
-              " ease-in-out;width:",
+              " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
               [Function],
@@ -495,8 +495,8 @@ exports[`button mode="negative" should match snapshot 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: #ffd0cb;
   border-color: #ffd0cb;
@@ -558,15 +558,15 @@ exports[`button mode="negative" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "hisSGK",
+            "lastClassName": "klDhEB",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
-              " ease-in-out,border-color ",
+              " ease-out,border-color ",
               "100ms",
-              " ease-in-out,box-shadow ",
+              " ease-out,box-shadow ",
               "100ms",
-              " ease-in-out;width:",
+              " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
               [Function],
@@ -723,8 +723,8 @@ exports[`button mode="neutral" should match snapshot 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
@@ -783,15 +783,15 @@ exports[`button mode="neutral" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "iltUac",
+            "lastClassName": "eUBioa",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
-              " ease-in-out,border-color ",
+              " ease-out,border-color ",
               "100ms",
-              " ease-in-out,box-shadow ",
+              " ease-out,box-shadow ",
               "100ms",
-              " ease-in-out;width:",
+              " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
               [Function],
@@ -948,8 +948,8 @@ exports[`button mode="neutral" should match snapshot 2`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
@@ -1008,15 +1008,15 @@ exports[`button mode="neutral" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "iltUac",
+            "lastClassName": "eUBioa",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
-              " ease-in-out,border-color ",
+              " ease-out,border-color ",
               "100ms",
-              " ease-in-out,box-shadow ",
+              " ease-out,box-shadow ",
               "100ms",
-              " ease-in-out;width:",
+              " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
               [Function],
@@ -1173,8 +1173,8 @@ exports[`button mode="positive" should match snapshot 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: #d3f0e6;
   border-color: #d3f0e6;
@@ -1236,15 +1236,15 @@ exports[`button mode="positive" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "jZDdNY",
+            "lastClassName": "fUcLar",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
-              " ease-in-out,border-color ",
+              " ease-out,border-color ",
               "100ms",
-              " ease-in-out,box-shadow ",
+              " ease-out,box-shadow ",
               "100ms",
-              " ease-in-out;width:",
+              " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
               [Function],
@@ -1401,8 +1401,8 @@ exports[`button mode="primary" should match snapshot 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: #8045ff;
   border-color: #8045ff;
@@ -1462,15 +1462,15 @@ exports[`button mode="primary" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "cbaiVx",
+            "lastClassName": "fJELRZ",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
-              " ease-in-out,border-color ",
+              " ease-out,border-color ",
               "100ms",
-              " ease-in-out,box-shadow ",
+              " ease-out,box-shadow ",
               "100ms",
-              " ease-in-out;width:",
+              " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
               [Function],
@@ -1627,8 +1627,8 @@ exports[`button mode="secondary" should match snapshot 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: #e4d8ff;
   border-color: #e4d8ff;
@@ -1688,15 +1688,15 @@ exports[`button mode="secondary" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "fpEUer",
+            "lastClassName": "fzalXj",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
-              " ease-in-out,border-color ",
+              " ease-out,border-color ",
               "100ms",
-              " ease-in-out,box-shadow ",
+              " ease-out,box-shadow ",
               "100ms",
-              " ease-in-out;width:",
+              " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
               [Function],
@@ -1853,8 +1853,8 @@ exports[`button mode="subtle" should match snapshot 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
@@ -1912,15 +1912,15 @@ exports[`button mode="subtle" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "htRHMc",
+            "lastClassName": "eGZCXM",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
-              " ease-in-out,border-color ",
+              " ease-out,border-color ",
               "100ms",
-              " ease-in-out,box-shadow ",
+              " ease-out,box-shadow ",
               "100ms",
-              " ease-in-out;width:",
+              " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
               [Function],

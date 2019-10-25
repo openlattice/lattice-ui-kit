@@ -14,73 +14,53 @@ exports[`Drawer snapshots isOpen = false 1`] = `
     shouldCloseOnClick={true}
     transparent={false}
   >
-    <Portal>
-      <Portal
-        containerInfo={
-          <div
-            lattice-portal-inner-container=""
-          />
-        }
-      >
-        <CSSTransition
-          classNames="fade"
-          in={false}
-          mountOnEnter={true}
-          timeout={200}
-          unmountOnExit={true}
-        >
-          <Transition
-            appear={false}
-            enter={true}
-            exit={true}
-            in={false}
-            mountOnEnter={true}
-            onEnter={[Function]}
-            onEntered={[Function]}
-            onEntering={[Function]}
-            onExit={[Function]}
-            onExited={[Function]}
-            onExiting={[Function]}
-            timeout={200}
-            unmountOnExit={true}
-          />
-        </CSSTransition>
-      </Portal>
-    </Portal>
-  </Overlay>
-  <Portal>
-    <Portal
-      containerInfo={
-        <div
-          lattice-portal-inner-container=""
-        />
-      }
+    <CSSTransition
+      classNames="luk-fade"
+      in={false}
+      mountOnEnter={true}
+      timeout={200}
+      unmountOnExit={true}
     >
-      <CSSTransition
-        classNames="slide"
+      <Transition
+        appear={false}
+        enter={true}
+        exit={true}
         in={false}
         mountOnEnter={true}
+        onEnter={[Function]}
+        onEntered={[Function]}
+        onEntering={[Function]}
+        onExit={[Function]}
+        onExited={[Function]}
+        onExiting={[Function]}
         timeout={200}
         unmountOnExit={true}
-      >
-        <Transition
-          appear={false}
-          enter={true}
-          exit={true}
-          in={false}
-          mountOnEnter={true}
-          onEnter={[Function]}
-          onEntered={[Function]}
-          onEntering={[Function]}
-          onExit={[Function]}
-          onExited={[Function]}
-          onExiting={[Function]}
-          timeout={200}
-          unmountOnExit={true}
-        />
-      </CSSTransition>
-    </Portal>
-  </Portal>
+      />
+    </CSSTransition>
+  </Overlay>
+  <CSSTransition
+    classNames="luk-slide"
+    in={false}
+    mountOnEnter={true}
+    timeout={200}
+    unmountOnExit={true}
+  >
+    <Transition
+      appear={false}
+      enter={true}
+      exit={true}
+      in={false}
+      mountOnEnter={true}
+      onEnter={[Function]}
+      onEntered={[Function]}
+      onEntering={[Function]}
+      onExit={[Function]}
+      onExited={[Function]}
+      onExiting={[Function]}
+      timeout={200}
+      unmountOnExit={true}
+    />
+  </CSSTransition>
 </Drawer>
 `;
 
@@ -96,34 +76,34 @@ exports[`Drawer snapshots isOpen = true 1`] = `
   z-index: 1000;
 }
 
-.c0.fade-appear {
+.c0.luk-fade-appear {
   opacity: 0;
 }
 
-.c0.fade-appear-active {
+.c0.luk-fade-appear-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
-.c0.fade-enter {
+.c0.luk-fade-enter {
   opacity: 0;
 }
 
-.c0.fade-enter-active {
+.c0.luk-fade-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
-.c0.fade-exit {
+.c0.luk-fade-exit {
   opacity: 1;
 }
 
-.c0.fade-exit-active {
+.c0.luk-fade-exit-active {
   opacity: 0;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .c1 {
@@ -158,49 +138,49 @@ exports[`Drawer snapshots isOpen = true 1`] = `
   --transform: translate(-100%);
 }
 
-.c2.slide-appear {
+.c2.luk-slide-appear {
   -webkit-transform: var(--transform);
   -ms-transform: var(--transform);
   transform: var(--transform);
 }
 
-.c2.slide-appear-active {
+.c2.luk-slide-appear-active {
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  -webkit-transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  -webkit-transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out;
 }
 
-.c2.slide-enter {
+.c2.luk-slide-enter {
   -webkit-transform: var(--transform);
   -ms-transform: var(--transform);
   transform: var(--transform);
 }
 
-.c2.slide-enter-active {
+.c2.luk-slide-enter-active {
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  -webkit-transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  -webkit-transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out;
 }
 
-.c2.slide-exit {
+.c2.luk-slide-exit {
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
 }
 
-.c2.slide-exit-active {
+.c2.luk-slide-exit-active {
   -webkit-transform: var(--transform);
   -ms-transform: var(--transform);
   transform: var(--transform);
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  -webkit-transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
 }
 
 <Drawer
@@ -216,10 +196,32 @@ exports[`Drawer snapshots isOpen = true 1`] = `
     shouldCloseOnClick={true}
     transparent={false}
   >
-    <Portal>
-      <Portal
-        containerInfo={
-          .c0 {
+    <CSSTransition
+      classNames="luk-fade"
+      in={true}
+      mountOnEnter={true}
+      timeout={200}
+      unmountOnExit={true}
+    >
+      <Transition
+        appear={false}
+        enter={true}
+        exit={true}
+        in={true}
+        mountOnEnter={true}
+        onEnter={[Function]}
+        onEntered={[Function]}
+        onEntering={[Function]}
+        onExit={[Function]}
+        onExited={[Function]}
+        onExiting={[Function]}
+        timeout={200}
+        unmountOnExit={true}
+      >
+        <Portal>
+          <Portal
+            containerInfo={
+              .c0 {
   background-color: rgba(8,0,25,0.3);
   bottom: 0;
   display: block;
@@ -230,34 +232,34 @@ exports[`Drawer snapshots isOpen = true 1`] = `
   z-index: 1000;
 }
 
-.c0.fade-appear {
+.c0.luk-fade-appear {
   opacity: 0;
 }
 
-.c0.fade-appear-active {
+.c0.luk-fade-appear-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
-.c0.fade-enter {
+.c0.luk-fade-enter {
   opacity: 0;
 }
 
-.c0.fade-enter-active {
+.c0.luk-fade-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
-.c0.fade-exit {
+.c0.luk-fade-exit {
   opacity: 1;
 }
 
-.c0.fade-exit-active {
+.c0.luk-fade-exit-active {
   opacity: 0;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .c1 {
@@ -269,39 +271,17 @@ exports[`Drawer snapshots isOpen = true 1`] = `
 }
 
 <div
-            lattice-portal-inner-container=""
-          >
-            <div
-              class="c0"
-            >
-              <div
-                class="c1"
-              />
-            </div>
-          </div>
-        }
-      >
-        <CSSTransition
-          classNames="fade"
-          in={true}
-          mountOnEnter={true}
-          timeout={200}
-          unmountOnExit={true}
-        >
-          <Transition
-            appear={false}
-            enter={true}
-            exit={true}
-            in={true}
-            mountOnEnter={true}
-            onEnter={[Function]}
-            onEntered={[Function]}
-            onEntering={[Function]}
-            onExit={[Function]}
-            onExited={[Function]}
-            onExiting={[Function]}
-            timeout={200}
-            unmountOnExit={true}
+                lattice-portal-inner-container=""
+              >
+                <div
+                  class="c0"
+                >
+                  <div
+                    class="c1"
+                  />
+                </div>
+              </div>
+            }
           >
             <LockToggle
               accountForScrollbars={true}
@@ -339,13 +319,13 @@ exports[`Drawer snapshots isOpen = true 1`] = `
                                     "background-color:",
                                     [Function],
                                     ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
-                                    "&.fade-appear{opacity:0;};&.fade-appear-active{opacity:1;transition:opacity ",
+                                    "&.luk-fade-appear{opacity:0;};&.luk-fade-appear-active{opacity:1;transition:opacity ",
                                     "200ms",
-                                    " ease-in-out;};&.fade-enter{opacity:0;};&.fade-enter-active{opacity:1;transition:opacity ",
+                                    " ease-out;};&.luk-fade-enter{opacity:0;};&.luk-fade-enter-active{opacity:1;transition:opacity ",
                                     "200ms",
-                                    " ease-in-out;};&.fade-exit{opacity:1;};&.fade-exit-active{opacity:0;transition:opacity ",
+                                    " ease-out;};&.luk-fade-exit{opacity:1;};&.luk-fade-exit-active{opacity:0;transition:opacity ",
                                     "200ms",
-                                    " ease-in-out;};",
+                                    " ease-out;};",
                                     ";",
                                   ],
                                 },
@@ -415,15 +395,37 @@ exports[`Drawer snapshots isOpen = true 1`] = `
                 </TouchProvider>
               </SheetProvider>
             </LockToggle>
-          </Transition>
-        </CSSTransition>
-      </Portal>
-    </Portal>
+          </Portal>
+        </Portal>
+      </Transition>
+    </CSSTransition>
   </Overlay>
-  <Portal>
-    <Portal
-      containerInfo={
-        .c0 {
+  <CSSTransition
+    classNames="luk-slide"
+    in={true}
+    mountOnEnter={true}
+    timeout={200}
+    unmountOnExit={true}
+  >
+    <Transition
+      appear={false}
+      enter={true}
+      exit={true}
+      in={true}
+      mountOnEnter={true}
+      onEnter={[Function]}
+      onEntered={[Function]}
+      onEntering={[Function]}
+      onExit={[Function]}
+      onExited={[Function]}
+      onExiting={[Function]}
+      timeout={200}
+      unmountOnExit={true}
+    >
+      <Portal>
+        <Portal
+          containerInfo={
+            .c0 {
   background-color: #ffffff;
   box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
   display: -webkit-box;
@@ -447,81 +449,59 @@ exports[`Drawer snapshots isOpen = true 1`] = `
   --transform: translate(-100%);
 }
 
-.c0.slide-appear {
+.c0.luk-slide-appear {
   -webkit-transform: var(--transform);
   -ms-transform: var(--transform);
   transform: var(--transform);
 }
 
-.c0.slide-appear-active {
+.c0.luk-slide-appear-active {
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  -webkit-transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  -webkit-transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out;
 }
 
-.c0.slide-enter {
+.c0.luk-slide-enter {
   -webkit-transform: var(--transform);
   -ms-transform: var(--transform);
   transform: var(--transform);
 }
 
-.c0.slide-enter-active {
+.c0.luk-slide-enter-active {
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  -webkit-transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  -webkit-transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out;
 }
 
-.c0.slide-exit {
+.c0.luk-slide-exit {
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
 }
 
-.c0.slide-exit-active {
+.c0.luk-slide-exit-active {
   -webkit-transform: var(--transform);
   -ms-transform: var(--transform);
   transform: var(--transform);
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  -webkit-transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
 }
 
 <div
-          lattice-portal-inner-container=""
-        >
-          <div
-            class="c0"
-          />
-        </div>
-      }
-    >
-      <CSSTransition
-        classNames="slide"
-        in={true}
-        mountOnEnter={true}
-        timeout={200}
-        unmountOnExit={true}
-      >
-        <Transition
-          appear={false}
-          enter={true}
-          exit={true}
-          in={true}
-          mountOnEnter={true}
-          onEnter={[Function]}
-          onEntered={[Function]}
-          onEntering={[Function]}
-          onExit={[Function]}
-          onExited={[Function]}
-          onExiting={[Function]}
-          timeout={200}
-          unmountOnExit={true}
+              lattice-portal-inner-container=""
+            >
+              <div
+                class="c0"
+              />
+            </div>
+          }
         >
           <DrawerCard
             shouldCloseOnEscape={true}
@@ -546,13 +526,13 @@ exports[`Drawer snapshots isOpen = true 1`] = `
                         [Function],
                         ";",
                         [Function],
-                        ";&.slide-appear{transform:var(--transform);};&.slide-appear-active{transform:translate(0);transition:transform ",
+                        ";&.luk-slide-appear{transform:var(--transform);};&.luk-slide-appear-active{transform:translate(0);transition:transform ",
+                        "250ms",
+                        " ease-out;};&.luk-slide-enter{transform:var(--transform);};&.luk-slide-enter-active{transform:translate(0);transition:transform ",
+                        "250ms",
+                        " ease-out;};&.luk-slide-exit{transform:translate(0);};&.luk-slide-exit-active{transform:var(--transform);transition:transform ",
                         "200ms",
-                        " ease-in-out;};&.slide-enter{transform:var(--transform);};&.slide-enter-active{transform:translate(0);transition:transform ",
-                        "200ms",
-                        " ease-in-out;};&.slide-exit{transform:translate(0);};&.slide-exit-active{transform:var(--transform);transition:transform ",
-                        "200ms",
-                        " ease-in-out;}",
+                        " ease-out;}",
                         ";",
                       ],
                     },
@@ -576,9 +556,9 @@ exports[`Drawer snapshots isOpen = true 1`] = `
               </StyledComponent>
             </DrawerCard__DrawerCardWrapper>
           </DrawerCard>
-        </Transition>
-      </CSSTransition>
-    </Portal>
-  </Portal>
+        </Portal>
+      </Portal>
+    </Transition>
+  </CSSTransition>
 </Drawer>
 `;

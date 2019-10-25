@@ -20,8 +20,8 @@ exports[`TextArea render matches snapshot 1`] = `
   font-size: 14px;
   padding: 10px;
   text-overflow: ellipsis;
-  -webkit-transition: background-color 200ms ease-in-out,border-color 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out,border-color 200ms ease-in-out;
+  -webkit-transition: background-color 200ms ease-out,border-color 200ms ease-out;
+  transition: background-color 200ms ease-out,border-color 200ms ease-out;
   width: 100%;
 }
 
@@ -61,9 +61,9 @@ exports[`TextArea render matches snapshot 1`] = `
             "#555e6f",
             ";display:flex;flex:0 1 auto;font-size:14px;padding:10px;text-overflow:ellipsis;transition:background-color ",
             "200ms",
-            " ease-in-out,border-color ",
+            " ease-out,border-color ",
             "200ms",
-            " ease-in-out;width:",
+            " ease-out;width:",
             [Function],
             ";:hover{background-color:",
             "#f0f0f7",

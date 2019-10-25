@@ -8,39 +8,29 @@ exports[`overlay snapshots should match snapshot when isVisible="false" 1`] = `
   shouldCloseOnClick={true}
   transparent={false}
 >
-  <Portal>
-    <Portal
-      containerInfo={
-        <div
-          lattice-portal-inner-container=""
-        />
-      }
-    >
-      <CSSTransition
-        classNames="fade"
-        in={false}
-        mountOnEnter={true}
-        timeout={200}
-        unmountOnExit={true}
-      >
-        <Transition
-          appear={false}
-          enter={true}
-          exit={true}
-          in={false}
-          mountOnEnter={true}
-          onEnter={[Function]}
-          onEntered={[Function]}
-          onEntering={[Function]}
-          onExit={[Function]}
-          onExited={[Function]}
-          onExiting={[Function]}
-          timeout={200}
-          unmountOnExit={true}
-        />
-      </CSSTransition>
-    </Portal>
-  </Portal>
+  <CSSTransition
+    classNames="luk-fade"
+    in={false}
+    mountOnEnter={true}
+    timeout={200}
+    unmountOnExit={true}
+  >
+    <Transition
+      appear={false}
+      enter={true}
+      exit={true}
+      in={false}
+      mountOnEnter={true}
+      onEnter={[Function]}
+      onEntered={[Function]}
+      onEntering={[Function]}
+      onExit={[Function]}
+      onExited={[Function]}
+      onExiting={[Function]}
+      timeout={200}
+      unmountOnExit={true}
+    />
+  </CSSTransition>
 </Overlay>
 `;
 
@@ -56,34 +46,34 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
   z-index: 1000;
 }
 
-.c0.fade-appear {
+.c0.luk-fade-appear {
   opacity: 0;
 }
 
-.c0.fade-appear-active {
+.c0.luk-fade-appear-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
-.c0.fade-enter {
+.c0.luk-fade-enter {
   opacity: 0;
 }
 
-.c0.fade-enter-active {
+.c0.luk-fade-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
-.c0.fade-exit {
+.c0.luk-fade-exit {
   opacity: 1;
 }
 
-.c0.fade-exit-active {
+.c0.luk-fade-exit-active {
   opacity: 0;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .c1 {
@@ -101,10 +91,32 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
   shouldCloseOnClick={true}
   transparent={false}
 >
-  <Portal>
-    <Portal
-      containerInfo={
-        .c0 {
+  <CSSTransition
+    classNames="luk-fade"
+    in={true}
+    mountOnEnter={true}
+    timeout={200}
+    unmountOnExit={true}
+  >
+    <Transition
+      appear={false}
+      enter={true}
+      exit={true}
+      in={true}
+      mountOnEnter={true}
+      onEnter={[Function]}
+      onEntered={[Function]}
+      onEntering={[Function]}
+      onExit={[Function]}
+      onExited={[Function]}
+      onExiting={[Function]}
+      timeout={200}
+      unmountOnExit={true}
+    >
+      <Portal>
+        <Portal
+          containerInfo={
+            .c0 {
   background-color: rgba(8,0,25,0.3);
   bottom: 0;
   display: block;
@@ -115,34 +127,34 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
   z-index: 1000;
 }
 
-.c0.fade-appear {
+.c0.luk-fade-appear {
   opacity: 0;
 }
 
-.c0.fade-appear-active {
+.c0.luk-fade-appear-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
-.c0.fade-enter {
+.c0.luk-fade-enter {
   opacity: 0;
 }
 
-.c0.fade-enter-active {
+.c0.luk-fade-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
-.c0.fade-exit {
+.c0.luk-fade-exit {
   opacity: 1;
 }
 
-.c0.fade-exit-active {
+.c0.luk-fade-exit-active {
   opacity: 0;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .c1 {
@@ -154,43 +166,21 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 <div
-          lattice-portal-inner-container=""
-        >
-          <div
-            class="c0"
-          >
-            <div
-              class="c1"
+              lattice-portal-inner-container=""
             >
-              <span>
-                hello
-              </span>
+              <div
+                class="c0"
+              >
+                <div
+                  class="c1"
+                >
+                  <span>
+                    hello
+                  </span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      }
-    >
-      <CSSTransition
-        classNames="fade"
-        in={true}
-        mountOnEnter={true}
-        timeout={200}
-        unmountOnExit={true}
-      >
-        <Transition
-          appear={false}
-          enter={true}
-          exit={true}
-          in={true}
-          mountOnEnter={true}
-          onEnter={[Function]}
-          onEntered={[Function]}
-          onEntering={[Function]}
-          onExit={[Function]}
-          onExited={[Function]}
-          onExiting={[Function]}
-          timeout={200}
-          unmountOnExit={true}
+          }
         >
           <LockToggle
             accountForScrollbars={true}
@@ -228,13 +218,13 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
                                   "background-color:",
                                   [Function],
                                   ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
-                                  "&.fade-appear{opacity:0;};&.fade-appear-active{opacity:1;transition:opacity ",
+                                  "&.luk-fade-appear{opacity:0;};&.luk-fade-appear-active{opacity:1;transition:opacity ",
                                   "200ms",
-                                  " ease-in-out;};&.fade-enter{opacity:0;};&.fade-enter-active{opacity:1;transition:opacity ",
+                                  " ease-out;};&.luk-fade-enter{opacity:0;};&.luk-fade-enter-active{opacity:1;transition:opacity ",
                                   "200ms",
-                                  " ease-in-out;};&.fade-exit{opacity:1;};&.fade-exit-active{opacity:0;transition:opacity ",
+                                  " ease-out;};&.luk-fade-exit{opacity:1;};&.luk-fade-exit-active{opacity:0;transition:opacity ",
                                   "200ms",
-                                  " ease-in-out;};",
+                                  " ease-out;};",
                                   ";",
                                 ],
                               },
@@ -308,9 +298,9 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
               </TouchProvider>
             </SheetProvider>
           </LockToggle>
-        </Transition>
-      </CSSTransition>
-    </Portal>
-  </Portal>
+        </Portal>
+      </Portal>
+    </Transition>
+  </CSSTransition>
 </Overlay>
 `;

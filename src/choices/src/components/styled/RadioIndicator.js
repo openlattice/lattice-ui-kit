@@ -13,8 +13,8 @@ const afterStyles = css`
   position: absolute;
   top: 6px;
   width: 8px;
-  transition: transform ${duration.standard} ease-in-out,
-    opacity ${duration.standard} ease-in-out;
+  transition: transform ${duration.standard} ease-out,
+    opacity ${duration.standard} ease-out;
 `;
 
 const RadioIndicator = styled.div`
@@ -23,8 +23,8 @@ const RadioIndicator = styled.div`
   height: 20px;
   left: 0;
   position: absolute;
-  transition: background-color ${duration.swift} ease-in-out,
-    box-shadow ${duration.swift} ease-in-out;
+  transition: background-color ${duration.swift} ease-out,
+    box-shadow ${duration.swift} ease-out;
   width: 20px;
 
   ${choiceIndicatorStyles};
