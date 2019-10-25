@@ -7,12 +7,13 @@ const inputStyles = css`
   background-color: ${NEUTRALS[8]};
   border-radius: 3px;
   border: 1px solid ${(props) => (props.invalid ? RED_1 : NEUTRALS[4])};
-  box-shadow: 0;
+  box-shadow: none;
   box-sizing: border-box;
   color: ${NEUTRALS[0]};
   display: flex;
   flex: 0 1 auto;
   font-size: 14px;
+  min-height: 40px;
   padding: 10px;
   text-overflow: ellipsis;
   transition: background-color ${duration.standard} ease-out,
