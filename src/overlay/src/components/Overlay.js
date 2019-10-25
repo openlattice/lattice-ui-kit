@@ -74,13 +74,13 @@ export default class Overlay extends Component<Props> {
     } = this.props;
 
     return (
-      <Portal>
-        <CSSTransition
-            in={isVisible}
-            mountOnEnter
-            unmountOnExit
-            timeout={200}
-            classNames="fade">
+      <CSSTransition
+          in={isVisible}
+          mountOnEnter
+          unmountOnExit
+          timeout={200}
+          classNames="fade">
+        <Portal>
           <ScrollLock>
             <OverlayOuterContainer transparent={transparent}>
               <OverlayInnerContainer isScrollable={isScrollable} onClick={this.handleOnClick}>
@@ -88,8 +88,8 @@ export default class Overlay extends Component<Props> {
               </OverlayInnerContainer>
             </OverlayOuterContainer>
           </ScrollLock>
-        </CSSTransition>
-      </Portal>
+        </Portal>
+      </CSSTransition>
     );
   }
 }

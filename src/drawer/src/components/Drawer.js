@@ -42,21 +42,21 @@ const Drawer = (props :Props) => {
           isScrollable
           shouldCloseOnClick={shouldCloseOnOutsideClick}
           transparent={transparentOverlay} />
-      <Portal>
-        <CSSTransition
-            in={isOpen}
-            mountOnEnter
-            unmountOnExit
-            timeout={200}
-            classNames="slide">
+      <CSSTransition
+          in={isOpen}
+          mountOnEnter
+          unmountOnExit
+          timeout={200}
+          classNames="slide">
+        <Portal>
           <DrawerCard
               onClose={onClose}
               shouldCloseOnEscape={shouldCloseOnEscape}
               side={side}>
             {children}
           </DrawerCard>
-        </CSSTransition>
-      </Portal>
+        </Portal>
+      </CSSTransition>
     </>
   );
 };
