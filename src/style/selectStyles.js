@@ -24,7 +24,7 @@ const selectStyles = {
       fontSize: '14px',
       minHeight: '40px',
       pointerEvents: isDisabled ? 'none' : 'auto',
-      transition: 'background-color 0.2s ease-in-out, border-color 0.2s ease-in-out',
+      transition: 'background-color 0.2s ease-out, border-color 0.2s ease-out',
       ':hover': {
         backgroundColor: isFocused ? WHITE : NEUTRALS[6],
         border: (isFocused && !borderless) ? `solid 1px ${PURPLES[1]}` : defaultBorder,

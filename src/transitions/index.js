@@ -3,31 +3,31 @@ import { css } from 'styled-components';
 import { duration } from '../style/transitions';
 
 const fadeTransitionStyles = css`
-  &.fade-appear {
+  &.luk-fade-appear {
     opacity: 0;
   };
 
-  &.fade-appear-active {
+  &.luk-fade-appear-active {
     opacity: 1;
-    transition: opacity ${duration.standard} ease-in-out;
+    transition: opacity ${duration.standard} ease-out;
   };
 
-  &.fade-enter {
+  &.luk-fade-enter {
     opacity: 0;
   };
 
-  &.fade-enter-active {
+  &.luk-fade-enter-active {
     opacity: 1;
-    transition: opacity ${duration.standard} ease-in-out;
+    transition: opacity ${duration.standard} ease-out;
   };
 
-  &.fade-exit {
+  &.luk-fade-exit {
     opacity: 1;
   };
 
-  &.fade-exit-active {
+  &.luk-fade-exit-active {
     opacity: 0;
-    transition: opacity ${duration.standard} ease-in-out;
+    transition: opacity ${duration.standard} ease-out;
   };
 `;
 
@@ -44,31 +44,31 @@ const setTransform = (props :Props) => {
 
 const slideTransitionStyles = css`
   ${setTransform};
-  &.slide-appear {
+  &.luk-slide-appear {
     transform: var(--transform);
   };
 
-  &.slide-appear-active {
+  &.luk-slide-appear-active {
     transform: translate(0);
-    transition: transform ${duration.standard} ease-in-out;
+    transition: transform ${duration.enter} ease-out;
   };
 
-  &.slide-enter {
+  &.luk-slide-enter {
     transform: var(--transform);
   };
 
-  &.slide-enter-active {
+  &.luk-slide-enter-active {
     transform: translate(0);
-    transition: transform ${duration.standard} ease-in-out;
+    transition: transform ${duration.enter} ease-out;
   };
 
-  &.slide-exit {
+  &.luk-slide-exit {
     transform: translate(0);
   };
 
-  &.slide-exit-active {
+  &.luk-slide-exit-active {
     transform: var(--transform);
-    transition: transform ${duration.standard} ease-in-out;
+    transition: transform ${duration.exit} ease-out;
   }
 `;
 

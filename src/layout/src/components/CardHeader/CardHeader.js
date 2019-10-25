@@ -37,8 +37,8 @@ const CardHeader = styled(CardSegment).attrs(() => ({
   background-color: ${backgroundColor};
   color: ${getFontColor};
   flex: none;
-  transition: background-color ${duration.standard} ease-in-out,
-    color ${duration.standard} ease-in-out;
+  transition: background-color ${duration.standard} ease-out,
+    color ${duration.standard} ease-out;
 `;
 
 export default CardHeader;

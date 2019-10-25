@@ -31,8 +31,8 @@ const latticeMuiTheme = createMuiTheme({
         fontSize: '14px',
         height: '40px',
         lineHeight: '1.5',
-        transition: `background-color ${duration.standard} ease-in-out,
-        border-color ${duration.standard} ease-in-out`,
+        transition: `background-color ${duration.standard} ease-out,
+        border-color ${duration.standard} ease-out`,
         '&:hover:not($disabled):not($focused):not($error)': {
           backgroundColor: NEUTRALS[6]
         },

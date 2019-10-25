@@ -24,39 +24,29 @@ exports[`modal snapshots should match snapshot when isVisible="false" 1`] = `
     shouldCloseOnClick={true}
     transparent={false}
   >
-    <Portal>
-      <Portal
-        containerInfo={
-          <div
-            lattice-portal-inner-container=""
-          />
-        }
-      >
-        <CSSTransition
-          classNames="fade"
-          in={false}
-          mountOnEnter={true}
-          timeout={200}
-          unmountOnExit={true}
-        >
-          <Transition
-            appear={false}
-            enter={true}
-            exit={true}
-            in={false}
-            mountOnEnter={true}
-            onEnter={[Function]}
-            onEntered={[Function]}
-            onEntering={[Function]}
-            onExit={[Function]}
-            onExited={[Function]}
-            onExiting={[Function]}
-            timeout={200}
-            unmountOnExit={true}
-          />
-        </CSSTransition>
-      </Portal>
-    </Portal>
+    <CSSTransition
+      classNames="luk-fade"
+      in={false}
+      mountOnEnter={true}
+      timeout={200}
+      unmountOnExit={true}
+    >
+      <Transition
+        appear={false}
+        enter={true}
+        exit={true}
+        in={false}
+        mountOnEnter={true}
+        onEnter={[Function]}
+        onEntered={[Function]}
+        onEntering={[Function]}
+        onExit={[Function]}
+        onExited={[Function]}
+        onExiting={[Function]}
+        timeout={200}
+        unmountOnExit={true}
+      />
+    </CSSTransition>
   </Overlay>
 </Modal>
 `;
@@ -73,34 +63,34 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   z-index: 1000;
 }
 
-.c0.fade-appear {
+.c0.luk-fade-appear {
   opacity: 0;
 }
 
-.c0.fade-appear-active {
+.c0.luk-fade-appear-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
-.c0.fade-enter {
+.c0.luk-fade-enter {
   opacity: 0;
 }
 
-.c0.fade-enter-active {
+.c0.luk-fade-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
-.c0.fade-exit {
+.c0.luk-fade-exit {
   opacity: 1;
 }
 
-.c0.fade-exit-active {
+.c0.luk-fade-exit-active {
   opacity: 0;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .c1 {
@@ -272,8 +262,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: #8045ff;
   border-color: #8045ff;
@@ -321,8 +311,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: #f0f0f7;
   border-color: #f0f0f7;
@@ -416,10 +406,32 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
     shouldCloseOnClick={true}
     transparent={false}
   >
-    <Portal>
-      <Portal
-        containerInfo={
-          .c0 {
+    <CSSTransition
+      classNames="luk-fade"
+      in={true}
+      mountOnEnter={true}
+      timeout={200}
+      unmountOnExit={true}
+    >
+      <Transition
+        appear={false}
+        enter={true}
+        exit={true}
+        in={true}
+        mountOnEnter={true}
+        onEnter={[Function]}
+        onEntered={[Function]}
+        onEntering={[Function]}
+        onExit={[Function]}
+        onExited={[Function]}
+        onExiting={[Function]}
+        timeout={200}
+        unmountOnExit={true}
+      >
+        <Portal>
+          <Portal
+            containerInfo={
+              .c0 {
   background-color: rgba(8,0,25,0.3);
   bottom: 0;
   display: block;
@@ -430,34 +442,34 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   z-index: 1000;
 }
 
-.c0.fade-appear {
+.c0.luk-fade-appear {
   opacity: 0;
 }
 
-.c0.fade-appear-active {
+.c0.luk-fade-appear-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
-.c0.fade-enter {
+.c0.luk-fade-enter {
   opacity: 0;
 }
 
-.c0.fade-enter-active {
+.c0.luk-fade-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
-.c0.fade-exit {
+.c0.luk-fade-exit {
   opacity: 1;
 }
 
-.c0.fade-exit-active {
+.c0.luk-fade-exit-active {
   opacity: 0;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .c1 {
@@ -629,8 +641,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: #8045ff;
   border-color: #8045ff;
@@ -678,8 +690,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
-  transition: background-color 100ms ease-in-out,border-color 100ms ease-in-out,box-shadow 100ms ease-in-out;
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
   background-color: #f0f0f7;
   border-color: #f0f0f7;
@@ -751,117 +763,95 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 <div
-            lattice-portal-inner-container=""
-          >
-            <div
-              class="c0"
-            >
-              <div
-                class="c1"
+                lattice-portal-inner-container=""
               >
                 <div
-                  class="c2"
+                  class="c0"
                 >
                   <div
-                    class="c3"
+                    class="c1"
                   >
                     <div
-                      class="c4"
+                      class="c2"
                     >
-                      <h1
-                        class="c5"
+                      <div
+                        class="c3"
                       >
-                        Title
-                      </h1>
-                      <button
-                        class="c6"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="svg-inline--fa fa-times fa-w-10 fa-lg "
-                          data-icon="times"
-                          data-prefix="fal"
-                          focusable="false"
-                          role="img"
-                          viewBox="0 0 320 512"
-                          xmlns="http://www.w3.org/2000/svg"
+                        <div
+                          class="c4"
                         >
-                          <path
-                            d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <div
-                      class="c7"
-                    >
-                      <span>
-                        hello
-                      </span>
-                    </div>
-                    <div
-                      class="c8"
-                    >
-                      <button
-                        class="c9 c10"
-                        mode="primary"
-                        type="button"
-                      >
-                        <span
-                          class="c11"
-                        >
-                          <span
-                            class="c12"
+                          <h1
+                            class="c5"
                           >
-                            Confirm
-                          </span>
-                        </span>
-                      </button>
-                      <button
-                        class="c13 c14"
-                        mode="default"
-                        type="button"
-                      >
-                        <span
-                          class="c11"
-                        >
-                          <span
-                            class="c12"
+                            Title
+                          </h1>
+                          <button
+                            class="c6"
                           >
-                            Cancel
+                            <svg
+                              aria-hidden="true"
+                              class="svg-inline--fa fa-times fa-w-10 fa-lg "
+                              data-icon="times"
+                              data-prefix="fal"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 320 512"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div
+                          class="c7"
+                        >
+                          <span>
+                            hello
                           </span>
-                        </span>
-                      </button>
+                        </div>
+                        <div
+                          class="c8"
+                        >
+                          <button
+                            class="c9 c10"
+                            mode="primary"
+                            type="button"
+                          >
+                            <span
+                              class="c11"
+                            >
+                              <span
+                                class="c12"
+                              >
+                                Confirm
+                              </span>
+                            </span>
+                          </button>
+                          <button
+                            class="c13 c14"
+                            mode="default"
+                            type="button"
+                          >
+                            <span
+                              class="c11"
+                            >
+                              <span
+                                class="c12"
+                              >
+                                Cancel
+                              </span>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        }
-      >
-        <CSSTransition
-          classNames="fade"
-          in={true}
-          mountOnEnter={true}
-          timeout={200}
-          unmountOnExit={true}
-        >
-          <Transition
-            appear={false}
-            enter={true}
-            exit={true}
-            in={true}
-            mountOnEnter={true}
-            onEnter={[Function]}
-            onEntered={[Function]}
-            onEntering={[Function]}
-            onExit={[Function]}
-            onExited={[Function]}
-            onExiting={[Function]}
-            timeout={200}
-            unmountOnExit={true}
+            }
           >
             <LockToggle
               accountForScrollbars={true}
@@ -899,13 +889,13 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                     "background-color:",
                                     [Function],
                                     ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
-                                    "&.fade-appear{opacity:0;};&.fade-appear-active{opacity:1;transition:opacity ",
+                                    "&.luk-fade-appear{opacity:0;};&.luk-fade-appear-active{opacity:1;transition:opacity ",
                                     "200ms",
-                                    " ease-in-out;};&.fade-enter{opacity:0;};&.fade-enter-active{opacity:1;transition:opacity ",
+                                    " ease-out;};&.luk-fade-enter{opacity:0;};&.luk-fade-enter-active{opacity:1;transition:opacity ",
                                     "200ms",
-                                    " ease-in-out;};&.fade-exit{opacity:1;};&.fade-exit-active{opacity:0;transition:opacity ",
+                                    " ease-out;};&.luk-fade-exit{opacity:1;};&.luk-fade-exit-active{opacity:0;transition:opacity ",
                                     "200ms",
-                                    " ease-in-out;};",
+                                    " ease-out;};",
                                     ";",
                                   ],
                                 },
@@ -1381,11 +1371,11 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                         "rules": Array [
                                                                           "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                                                                           "100ms",
-                                                                          " ease-in-out,border-color ",
+                                                                          " ease-out,border-color ",
                                                                           "100ms",
-                                                                          " ease-in-out,box-shadow ",
+                                                                          " ease-out,box-shadow ",
                                                                           "100ms",
-                                                                          " ease-in-out;width:",
+                                                                          " ease-out;width:",
                                                                           [Function],
                                                                           ";white-space:nowrap;",
                                                                           [Function],
@@ -1573,11 +1563,11 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                         "rules": Array [
                                                                           "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                                                                           "100ms",
-                                                                          " ease-in-out,border-color ",
+                                                                          " ease-out,border-color ",
                                                                           "100ms",
-                                                                          " ease-in-out,box-shadow ",
+                                                                          " ease-out,box-shadow ",
                                                                           "100ms",
-                                                                          " ease-in-out;width:",
+                                                                          " ease-out;width:",
                                                                           [Function],
                                                                           ";white-space:nowrap;",
                                                                           [Function],
@@ -1716,10 +1706,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                 </TouchProvider>
               </SheetProvider>
             </LockToggle>
-          </Transition>
-        </CSSTransition>
-      </Portal>
-    </Portal>
+          </Portal>
+        </Portal>
+      </Transition>
+    </CSSTransition>
   </Overlay>
 </Modal>
 `;

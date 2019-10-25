@@ -121,9 +121,9 @@ const StyledButton = styled.button`
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  transition: background-color ${duration.swift} ease-in-out,
-    border-color ${duration.swift} ease-in-out,
-    box-shadow ${duration.swift} ease-in-out;
+  transition: background-color ${duration.swift} ease-out,
+    border-color ${duration.swift} ease-out,
+    box-shadow ${duration.swift} ease-out;
   width: ${(props) => (props.fullWidth && '100%')};
   white-space: nowrap;
   ${baseButtonVariation};

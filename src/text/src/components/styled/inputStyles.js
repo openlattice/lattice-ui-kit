@@ -15,8 +15,8 @@ const inputStyles = css`
   font-size: 14px;
   padding: 10px;
   text-overflow: ellipsis;
-  transition: background-color ${duration.standard} ease-in-out,
-    border-color ${duration.standard} ease-in-out;
+  transition: background-color ${duration.standard} ease-out,
+    border-color ${duration.standard} ease-out;
   width: ${(props) => (props.width || '100%')};
 
   :hover {
