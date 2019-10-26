@@ -5,7 +5,7 @@ exports[`Input render matches snapshot 1`] = `
   background-color: #f9f9fd;
   border-radius: 3px;
   border: 1px solid #dcdce7;
-  box-shadow: 0;
+  box-shadow: none;
   box-sizing: border-box;
   color: #555e6f;
   display: -webkit-box;
@@ -16,6 +16,7 @@ exports[`Input render matches snapshot 1`] = `
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   font-size: 14px;
+  min-height: 40px;
   padding: 10px;
   text-overflow: ellipsis;
   -webkit-transition: background-color 200ms ease-out,border-color 200ms ease-out;
@@ -54,9 +55,9 @@ exports[`Input render matches snapshot 1`] = `
             "#f9f9fd",
             ";border-radius:3px;border:1px solid ",
             [Function],
-            ";box-shadow:0;box-sizing:border-box;color:",
+            ";box-shadow:none;box-sizing:border-box;color:",
             "#555e6f",
-            ";display:flex;flex:0 1 auto;font-size:14px;padding:10px;text-overflow:ellipsis;transition:background-color ",
+            ";display:flex;flex:0 1 auto;font-size:14px;min-height:40px;padding:10px;text-overflow:ellipsis;transition:background-color ",
             "200ms",
             " ease-out,border-color ",
             "200ms",
