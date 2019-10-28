@@ -8,7 +8,7 @@ const ChoiceWrapper = styled.span`
   position: relative;
   vertical-align: middle;
   width: 20px;
-  margin: 10px;
+  margin: 10px 10px 10px 0;
 `;
 
 const ChoiceInnerWrapper = styled.span`
