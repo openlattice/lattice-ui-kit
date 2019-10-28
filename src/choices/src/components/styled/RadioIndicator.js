@@ -21,9 +21,9 @@ const afterStyles = css`
 `;
 
 const RadioIndicator = styled.span`
-  display: inline-block;
   background-color: ${PURPLES[6]};
   border-radius: 100%;
+  display: inline-block;
   height: 20px;
   transition: background-color ${duration.swift} ease-out,
     box-shadow ${duration.swift} ease-out;
