@@ -12,6 +12,9 @@ import Modal from './Modal';
 import ModalFooter from './ModalFooter';
 import type { ModalProps } from './Modal';
 
+const DEFAULT_PRIMARY_TEXT :'Confirm' = 'Confirm';
+const DEFAULT_SECONDARY_TEXT :'Cancel' = 'Cancel';
+
 type ActionModalProps = {
   ...ModalProps;
   requestState :RequestState;
@@ -95,10 +98,15 @@ const ActionModal = (props :ActionModalProps) => {
   /* eslint-enable */
 };
 
+/* eslint-disable react/default-props-match-prop-types */
 ActionModal.defaultProps = {
+  children: null,
   requestState: RequestStates.STANDBY,
   requestStateComponents: {},
   shouldCloseOnSuccess: false,
+  textPrimary: DEFAULT_PRIMARY_TEXT,
+  textSecondary: DEFAULT_SECONDARY_TEXT,
 };
+/* eslint-enable */
 
 export default ActionModal;

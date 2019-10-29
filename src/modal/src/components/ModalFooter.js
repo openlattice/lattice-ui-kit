@@ -172,6 +172,12 @@ export default class ModalFooter extends Component<ModalFooterProps> {
   }
 }
 
+// for testing
+export {
+  PrimaryButton,
+  SecondaryButton,
+};
+
 export type {
   ModalFooterProps,
 };

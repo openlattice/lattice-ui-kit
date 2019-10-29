@@ -23,7 +23,7 @@ const ModalTitle = styled.h1`
   white-space: nowrap;
 `;
 
-const CloseButtonWrapper = styled.button`
+const CloseButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
@@ -60,9 +60,9 @@ export default class ModalHeader extends Component<ModalHeaderProps> {
     const { onClickClose } = this.props;
 
     return (
-      <CloseButtonWrapper onClick={onClickClose}>
+      <CloseButton onClick={onClickClose}>
         <FontAwesomeIcon icon={faTimes} size="lg" />
-      </CloseButtonWrapper>
+      </CloseButton>
     );
   }
 
@@ -118,6 +118,11 @@ export default class ModalHeader extends Component<ModalHeaderProps> {
     return null;
   }
 }
+
+// for testing
+export {
+  CloseButton,
+};
 
 export type {
   ModalHeaderProps,
