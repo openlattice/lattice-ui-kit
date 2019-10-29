@@ -151,6 +151,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c7 {
+  color: #555e6f;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -173,6 +174,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c8 {
+  color: #555e6f;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -196,6 +198,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c4 {
+  color: #555e6f;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -530,6 +533,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c7 {
+  color: #555e6f;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -552,6 +556,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c8 {
+  color: #555e6f;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -575,6 +580,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c4 {
+  color: #555e6f;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1053,7 +1059,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                             "isStatic": false,
                                                             "lastClassName": "c4",
                                                             "rules": Array [
-                                                              "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
+                                                              "color:",
+                                                              "#555e6f",
+                                                              ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30",
                                                               "px;position:relative;",
                                                               "align-items:center;flex-direction:row;justify-content:space-between;",
@@ -1088,7 +1096,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                   "isStatic": false,
                                                                   "lastClassName": "c5",
                                                                   "rules": Array [
-                                                                    "color:#555e6f;font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
+                                                                    "color:",
+                                                                    "#555e6f",
+                                                                    ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                   ],
                                                                 },
                                                                 "displayName": "ModalHeader__ModalTitle",
@@ -1217,7 +1227,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                             "isStatic": false,
                                                             "lastClassName": "c7",
                                                             "rules": Array [
-                                                              "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
+                                                              "color:",
+                                                              "#555e6f",
+                                                              ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30",
                                                               "px;position:relative;",
                                                               "flex:1 1 auto;padding:0 ",
@@ -1253,6 +1265,10 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                   </StyledModalComponents__BodySection>
                                                 </ModalBody>
                                                 <ModalFooter
+                                                  isDisabledPrimary={false}
+                                                  isDisabledSecondary={false}
+                                                  isPendingPrimary={false}
+                                                  isPendingSecondary={false}
                                                   onClickPrimary={[Function]}
                                                   onClickSecondary={[Function]}
                                                   shouldStretchButtons={false}
@@ -1271,7 +1287,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                             "isStatic": false,
                                                             "lastClassName": "c8",
                                                             "rules": Array [
-                                                              "display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
+                                                              "color:",
+                                                              "#555e6f",
+                                                              ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30",
                                                               "px;position:relative;",
                                                               "align-items:center;flex-direction:row-reverse;",
@@ -1296,11 +1314,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                         className="c8"
                                                       >
                                                         <ModalFooter__PrimaryButton
+                                                          disabled={false}
+                                                          isLoading={false}
                                                           isLonely={false}
                                                           onClick={[Function]}
                                                           stretch={false}
                                                         >
                                                           <StyledComponent
+                                                            disabled={false}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
@@ -1331,6 +1352,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                               }
                                                             }
                                                             forwardedRef={null}
+                                                            isLoading={false}
                                                             isLonely={false}
                                                             onClick={[Function]}
                                                             stretch={false}
@@ -1494,10 +1516,13 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           </StyledComponent>
                                                         </ModalFooter__PrimaryButton>
                                                         <ModalFooter__SecondaryButton
+                                                          disabled={false}
+                                                          isLoading={false}
                                                           onClick={[Function]}
                                                           stretch={false}
                                                         >
                                                           <StyledComponent
+                                                            disabled={false}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
@@ -1526,6 +1551,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                               }
                                                             }
                                                             forwardedRef={null}
+                                                            isLoading={false}
                                                             onClick={[Function]}
                                                             stretch={false}
                                                           >

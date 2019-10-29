@@ -21,7 +21,7 @@ import type { ModalHeaderProps } from './ModalHeader';
 type ModalProps = {
   children :Node;
   isVisible :boolean;
-  modalRef :{ current :null | HTMLElement };
+  modalRef ?:{ current :null | HTMLElement };
   onClickPrimary ?:() => void;
   onClickSecondary ?:() => void;
   onClose :() => void;
