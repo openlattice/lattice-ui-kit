@@ -11,91 +11,132 @@ exports[`Radio render matches snapshot 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 10px 0;
-  min-height: 20px;
-  padding-left: 30px;
+  vertical-align: middle;
   pointer-events: auto;
   position: relative;
 }
 
-.c2 {
+.c4 {
   background-color: #e6e6f7;
   border-radius: 100%;
+  display: inline-block;
   height: 20px;
-  left: 0;
-  position: absolute;
   -webkit-transition: background-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,box-shadow 100ms ease-out;
   width: 20px;
 }
 
-input:hover ~ .c2 {
+input:hover ~ .c4 {
   background-color: #8e929b;
 }
 
-input:focus-visible ~ .c2 {
+input:focus-visible ~ .c4 {
   box-shadow: #410ab5 0 0 0 2px;
 }
 
-input:checked ~ .c2,
-input[readonly]:checked:disabled ~ .c2,
-input[readonly]:checked:hover ~ .c2 {
+input:checked ~ .c4,
+input[readonly]:checked:disabled ~ .c4,
+input[readonly]:checked:hover ~ .c4 {
   background-color: #8045ff;
 }
 
-input:checked:hover ~ .c2 {
+input:checked:hover ~ .c4 {
   background-color: #6124e2;
 }
 
-input:disabled ~ .c2 {
+input:disabled ~ .c4 {
   background-color: #e6e6f7;
   cursor: not-allowed;
 }
 
-input:checked:disabled ~ .c2 {
+input:checked:disabled ~ .c4 {
   cursor: not-allowed;
   background-color: #b6bbc7;
 }
 
-input[readonly] ~ .c2 {
+input[readonly] ~ .c4 {
   cursor: default;
   pointer-events: none;
 }
 
-input:not(:checked) ~ .c2:after,
-input:checked ~ .c2:after {
+input:not(:checked) ~ .c4:after,
+input:checked ~ .c4:after {
   content: '';
   background-color: #ffffff;
   border-radius: 50%;
   height: 8px;
-  left: 6px;
+  left: 0;
+  margin: auto;
   position: absolute;
-  top: 6px;
+  right: 0;
+  top: 0;
+  bottom: 0;
   width: 8px;
   -webkit-transition: -webkit-transform 200ms ease-out,opacity 200ms ease-out;
   -webkit-transition: transform 200ms ease-out,opacity 200ms ease-out;
   transition: transform 200ms ease-out,opacity 200ms ease-out;
 }
 
-input:not(:checked) ~ .c2:after {
+input:not(:checked) ~ .c4:after {
   opacity: 0;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
 }
 
-input:checked ~ .c2:after {
+input:checked ~ .c4:after {
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.c1 {
-  position: absolute;
-  z-index: -1;
+.c3 {
+  height: 100%;
+  left: 0;
+  margin: 0;
   opacity: 0;
+  position: absolute;
+  top: 0;
   vertical-align: middle;
+  width: 100%;
+  z-index: -1;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  vertical-align: middle;
+  width: 20px;
+  margin: 10px 10px 10px 0;
+}
+
+.c2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: inherit;
+  -webkit-box-align: inherit;
+  -ms-flex-align: inherit;
+  align-items: inherit;
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
 }
 
 <Radio
@@ -117,7 +158,7 @@ input:checked ~ .c2:after {
             "rules": Array [
               "align-items:center;color:",
               [Function],
-              ";display:inline-flex;margin:10px 0;min-height:20px;padding-left:30px;pointer-events:",
+              ";display:inline-flex;vertical-align:middle;pointer-events:",
               [Function],
               ";position:relative;",
             ],
@@ -139,88 +180,25 @@ input:checked ~ .c2:after {
         className="c0"
         disabled={false}
       >
-        <ChoiceInputs__RadioInput>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [
-                  [Function],
-                ],
-                "componentStyle": ComponentStyle {
-                  "componentId": "ChoiceInputs__RadioInput-sc-1fkg6yx-0",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "position:absolute;z-index:-1;opacity:0;vertical-align:middle;",
-                  ],
-                },
-                "displayName": "ChoiceInputs__RadioInput",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "ChoiceInputs__RadioInput-sc-1fkg6yx-0",
-                "target": "input",
-                "toString": [Function],
-                "usesTheme": false,
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <input
-              className="c1"
-              type="radio"
-            />
-          </StyledComponent>
-        </ChoiceInputs__RadioInput>
-        <RadioIndicator>
+        <ChoiceWrappers__ChoiceWrapper>
           <StyledComponent
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "RadioIndicator-sc-1vlnpb4-0",
+                  "componentId": "ChoiceWrappers__ChoiceWrapper-kj63qq-0",
                   "isStatic": false,
-                  "lastClassName": "c2",
+                  "lastClassName": "c1",
                   "rules": Array [
-                    "background-color:",
-                    "#e6e6f7",
-                    ";border-radius:100%;height:20px;left:0;position:absolute;transition:background-color ",
-                    "100ms",
-                    " ease-out,box-shadow ",
-                    "100ms",
-                    " ease-out;width:20px;",
-                    "input:hover ~ &{background-color:",
-                    "#8e929b",
-                    ";}input:focus-visible ~ &{box-shadow:",
-                    "#410ab5",
-                    " 0 0 0 2px;}input:checked ~ &,input[readonly]:checked:disabled ~ &,input[readonly]:checked:hover ~ &{background-color:",
-                    "#8045ff",
-                    ";}input:checked:hover ~ &{background-color:",
-                    "#6124e2",
-                    ";}input:disabled ~ &{background-color:",
-                    "#e6e6f7",
-                    ";cursor:not-allowed;}input:checked:disabled ~ &{cursor:not-allowed;background-color:",
-                    "#b6bbc7",
-                    ";}input[readonly] ~ &{cursor:default;pointer-events:none;}",
-                    ";input:not(:checked) ~ &:after,input:checked ~ &:after{",
-                    "content:'';background-color:",
-                    "#ffffff",
-                    ";border-radius:50%;height:8px;left:6px;position:absolute;top:6px;width:8px;transition:transform ",
-                    "200ms",
-                    " ease-out,opacity ",
-                    "200ms",
-                    " ease-out;",
-                    "}input:not(:checked) ~ &:after{opacity:0;transform:scale(0);}input:checked ~ &:after{opacity:1;transform:scale(1);}",
+                    "align-items:center;display:inline-flex;height:20px;justify-content:center;position:relative;vertical-align:middle;width:20px;margin:10px 10px 10px 0;",
                   ],
                 },
-                "displayName": "RadioIndicator",
+                "displayName": "ChoiceWrappers__ChoiceWrapper",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "RadioIndicator-sc-1vlnpb4-0",
-                "target": "div",
+                "styledComponentId": "ChoiceWrappers__ChoiceWrapper-kj63qq-0",
+                "target": "span",
                 "toString": [Function],
                 "usesTheme": false,
                 "warnTooManyClasses": [Function],
@@ -229,11 +207,141 @@ input:checked ~ .c2:after {
             }
             forwardedRef={null}
           >
-            <div
-              className="c2"
-            />
+            <span
+              className="c1"
+            >
+              <ChoiceWrappers__ChoiceInnerWrapper>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "ChoiceWrappers__ChoiceInnerWrapper-kj63qq-1",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "width:100%;display:flex;align-items:inherit;justify-content:inherit;",
+                        ],
+                      },
+                      "displayName": "ChoiceWrappers__ChoiceInnerWrapper",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "ChoiceWrappers__ChoiceInnerWrapper-kj63qq-1",
+                      "target": "span",
+                      "toString": [Function],
+                      "usesTheme": false,
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <span
+                    className="c2"
+                  >
+                    <ChoiceInputs__RadioInput>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [
+                              [Function],
+                            ],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "ChoiceInputs__RadioInput-sc-1fkg6yx-0",
+                              "isStatic": false,
+                              "lastClassName": "c3",
+                              "rules": Array [
+                                "height:100%;left:0;margin:0;opacity:0;position:absolute;top:0;vertical-align:middle;width:100%;z-index:-1;",
+                              ],
+                            },
+                            "displayName": "ChoiceInputs__RadioInput",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "ChoiceInputs__RadioInput-sc-1fkg6yx-0",
+                            "target": "input",
+                            "toString": [Function],
+                            "usesTheme": false,
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <input
+                          className="c3"
+                          type="radio"
+                        />
+                      </StyledComponent>
+                    </ChoiceInputs__RadioInput>
+                    <RadioIndicator>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "RadioIndicator-sc-1vlnpb4-0",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "background-color:",
+                                "#e6e6f7",
+                                ";border-radius:100%;display:inline-block;height:20px;transition:background-color ",
+                                "100ms",
+                                " ease-out,box-shadow ",
+                                "100ms",
+                                " ease-out;width:20px;",
+                                "input:hover ~ &{background-color:",
+                                "#8e929b",
+                                ";}input:focus-visible ~ &{box-shadow:",
+                                "#410ab5",
+                                " 0 0 0 2px;}input:checked ~ &,input[readonly]:checked:disabled ~ &,input[readonly]:checked:hover ~ &{background-color:",
+                                "#8045ff",
+                                ";}input:checked:hover ~ &{background-color:",
+                                "#6124e2",
+                                ";}input:disabled ~ &{background-color:",
+                                "#e6e6f7",
+                                ";cursor:not-allowed;}input:checked:disabled ~ &{cursor:not-allowed;background-color:",
+                                "#b6bbc7",
+                                ";}input[readonly] ~ &{cursor:default;pointer-events:none;}",
+                                ";input:not(:checked) ~ &:after,input:checked ~ &:after{",
+                                "content:'';background-color:",
+                                "#ffffff",
+                                ";border-radius:50%;height:8px;left:0;margin:auto;position:absolute;right:0;top:0;bottom:0;width:8px;transition:transform ",
+                                "200ms",
+                                " ease-out,opacity ",
+                                "200ms",
+                                " ease-out;",
+                                "}input:not(:checked) ~ &:after{opacity:0;transform:scale(0);}input:checked ~ &:after{opacity:1;transform:scale(1);}",
+                              ],
+                            },
+                            "displayName": "RadioIndicator",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "RadioIndicator-sc-1vlnpb4-0",
+                            "target": "span",
+                            "toString": [Function],
+                            "usesTheme": false,
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <span
+                          className="c4"
+                        />
+                      </StyledComponent>
+                    </RadioIndicator>
+                  </span>
+                </StyledComponent>
+              </ChoiceWrappers__ChoiceInnerWrapper>
+            </span>
           </StyledComponent>
-        </RadioIndicator>
+        </ChoiceWrappers__ChoiceWrapper>
+        <span />
       </label>
     </StyledComponent>
   </ChoiceLabel>
