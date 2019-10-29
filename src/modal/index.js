@@ -2,4 +2,5 @@
  * @flow
  */
 
-export { default } from './src/components/Modal';
+export { default as ActionModal } from './src/components/ActionModal';
+export { default as Modal } from './src/components/Modal';

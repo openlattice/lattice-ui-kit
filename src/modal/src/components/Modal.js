@@ -3,7 +3,7 @@
  */
 
 import React, { Component } from 'react';
-import type { Node, ComponentType } from 'react';
+import type { ComponentType, Element, Node } from 'react';
 
 import PropTypes from 'prop-types';
 import isFunction from 'lodash/isFunction';
@@ -15,9 +15,13 @@ import ModalHeader from './ModalHeader';
 import { ModalOuterContainer, ModalInnerContainer } from './styled/StyledModalComponents';
 import { ESC_KEY_CODE } from '../../../utils/keycodes';
 
-type Props = {
+import type { ModalFooterProps } from './ModalFooter';
+import type { ModalHeaderProps } from './ModalHeader';
+
+type ModalProps = {
   children :Node;
   isVisible :boolean;
+  modalRef :{ current :null | HTMLElement };
   onClickPrimary ?:() => void;
   onClickSecondary ?:() => void;
   onClose :() => void;
@@ -29,8 +33,8 @@ type Props = {
   textSecondary ?:string;
   textTitle ?:string;
   viewportScrolling ?:boolean;
-  withFooter ?:ComponentType<*> | boolean;
-  withHeader ?:ComponentType<*> | boolean;
+  withFooter ?:Element<any> | ComponentType<ModalFooterProps> | boolean;
+  withHeader ?:Element<any> | ComponentType<ModalHeaderProps> | boolean;
 };
 
 /*
@@ -38,11 +42,12 @@ type Props = {
  * https://atlaskit.atlassian.com/packages/core/modal-dialog
  * https://evergreen.surge.sh/components/dialog
  */
-export default class Modal extends Component<Props> {
+export default class Modal extends Component<ModalProps> {
 
   static propTypes = {
     children: PropTypes.node.isRequired,
     isVisible: PropTypes.bool.isRequired,
+    modalRef: PropTypes.oneOfType([PropTypes.func, PropTypes.shape({ current: PropTypes.any })]),
     onClickPrimary: PropTypes.func,
     onClickSecondary: PropTypes.func,
     onClose: PropTypes.func.isRequired,
@@ -59,14 +64,15 @@ export default class Modal extends Component<Props> {
   }
 
   static defaultProps = {
+    modalRef: undefined,
     onClickPrimary: undefined,
     onClickSecondary: undefined,
     shouldBeCentered: true,
     shouldCloseOnEscape: true,
     shouldCloseOnOutsideClick: true,
     shouldStretchButtons: false,
-    textPrimary: '',
-    textSecondary: '',
+    textPrimary: undefined,
+    textSecondary: undefined,
     textTitle: '',
     viewportScrolling: false,
     withFooter: true,
@@ -168,16 +174,26 @@ export default class Modal extends Component<Props> {
       withHeader,
     } = this.props;
 
-    if (withHeader === false) {
+    if (!withHeader) {
       return null;
     }
 
-    return (
-      <ModalHeader
-          onClickClose={this.close}
-          textTitle={textTitle}
-          withHeader={withHeader} />
-    );
+    // $FlowFixMe
+    const { type: { name = null } = {} } = withHeader;
+    if (name === ModalHeader.name) {
+      return withHeader;
+    }
+
+    if (withHeader) {
+      return (
+        <ModalHeader
+            onClickClose={this.close}
+            textTitle={textTitle}
+            withHeader={withHeader} />
+      );
+    }
+
+    return null;
   }
 
   renderFooterComponent = () => {
@@ -189,19 +205,29 @@ export default class Modal extends Component<Props> {
       withFooter,
     } = this.props;
 
-    if (withFooter === false || (!textPrimary && !textSecondary)) {
+    if (!withFooter) {
       return null;
     }
 
-    return (
-      <ModalFooter
-          onClickPrimary={this.handleOnClickPrimary}
-          onClickSecondary={this.handleOnClickSecondary}
-          shouldStretchButtons={shouldStretchButtons}
-          textPrimary={textPrimary}
-          textSecondary={textSecondary}
-          withFooter={withFooter} />
-    );
+    // $FlowFixMe
+    const { type: { name = null } = {} } = withFooter;
+    if (name === ModalFooter.name) {
+      return withFooter;
+    }
+
+    if (withFooter || textPrimary || textSecondary) {
+      return (
+        <ModalFooter
+            onClickPrimary={this.handleOnClickPrimary}
+            onClickSecondary={this.handleOnClickSecondary}
+            shouldStretchButtons={shouldStretchButtons}
+            textPrimary={textPrimary}
+            textSecondary={textSecondary}
+            withFooter={withFooter} />
+      );
+    }
+
+    return null;
   }
 
   render() {
@@ -209,13 +235,14 @@ export default class Modal extends Component<Props> {
     const {
       children,
       isVisible,
+      modalRef,
       shouldBeCentered,
       viewportScrolling,
     } = this.props;
 
     return (
       <Overlay isScrollable={viewportScrolling} isVisible={isVisible} onClose={this.handleOnClickOverlay}>
-        <ModalOuterContainer onClick={this.handleOnClickOutside} viewportScrolling={viewportScrolling}>
+        <ModalOuterContainer onClick={this.handleOnClickOutside} ref={modalRef} viewportScrolling={viewportScrolling}>
           <ModalInnerContainer center={shouldBeCentered} viewportScrolling={viewportScrolling}>
             { this.renderHeaderComponent() }
             <ModalBody viewportScrolling={viewportScrolling}>
@@ -228,3 +255,5 @@ export default class Modal extends Component<Props> {
     );
   }
 }
+
+export type { ModalProps };

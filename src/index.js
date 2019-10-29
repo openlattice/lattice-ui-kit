@@ -21,7 +21,6 @@ export {
 export { default as Banner } from './banner';
 export { default as Drawer } from './drawer';
 export { default as Label } from './label';
-export { default as Modal } from './modal';
 export { default as Overlay } from './overlay';
 export { default as Portal } from './portal';
 export { default as Spinner } from './spinner';
@@ -42,6 +41,7 @@ export {
   TimePicker,
   DateTimePicker,
 } from './datetime';
+export { ActionModal, Modal } from './modal';
 export {
   Stepper,
   StepLabel,

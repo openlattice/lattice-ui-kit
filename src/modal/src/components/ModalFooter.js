@@ -3,7 +3,7 @@
  */
 
 import React, { Component, createElement } from 'react';
-import type { ComponentType } from 'react';
+import type { ComponentType, Element } from 'react';
 
 import PropTypes from 'prop-types';
 import isEmpty from 'lodash/isEmpty';
@@ -27,24 +27,25 @@ const SecondaryButton :any = styled(Button).attrs(() => ({ mode: 'default' }))`
 `;
 
 type ModalFooterProps = {
-  onClickPrimary ? :() => void;
-  onClickSecondary ? :() => void;
-  shouldStretchButtons ? :boolean;
-  textPrimary ? :string;
-  textSecondary ? :string;
+  isDisabledPrimary ?:boolean;
+  isDisabledSecondary ?:boolean;
+  isPendingPrimary ?:boolean;
+  isPendingSecondary ?:boolean;
+  onClickPrimary ?:() => void;
+  onClickSecondary ?:() => void;
+  shouldStretchButtons ?:boolean;
+  textPrimary ?:string;
+  textSecondary ?:string;
+  withFooter ?:ComponentType<any> | Element<any> | boolean;
 };
 
-type OverrideFooterProps = {
-  withFooter ? :ComponentType<ModalFooterProps> | boolean;
-};
-
-type Props =
-  & ModalFooterProps
-  & OverrideFooterProps;
-
-export default class ModalFooter extends Component<Props> {
+export default class ModalFooter extends Component<ModalFooterProps> {
 
   static propTypes = {
+    isDisabledPrimary: PropTypes.bool,
+    isDisabledSecondary: PropTypes.bool,
+    isPendingPrimary: PropTypes.bool,
+    isPendingSecondary: PropTypes.bool,
     onClickPrimary: PropTypes.func,
     onClickSecondary: PropTypes.func,
     shouldStretchButtons: PropTypes.bool,
@@ -54,6 +55,10 @@ export default class ModalFooter extends Component<Props> {
   }
 
   static defaultProps = {
+    isDisabledPrimary: false,
+    isDisabledSecondary: false,
+    isPendingPrimary: false,
+    isPendingSecondary: false,
     onClickPrimary: undefined,
     onClickSecondary: undefined,
     shouldStretchButtons: false,
@@ -71,13 +76,22 @@ export default class ModalFooter extends Component<Props> {
 
   renderPrimaryButton = () => {
 
-    const { onClickPrimary, shouldStretchButtons, textPrimary } = this.props;
+    const {
+      isDisabledPrimary,
+      isPendingPrimary,
+      onClickPrimary,
+      shouldStretchButtons,
+      textPrimary,
+    } = this.props;
+
     if (!textPrimary) {
       return null;
     }
 
     return (
       <PrimaryButton
+          disabled={isDisabledPrimary}
+          isLoading={isPendingPrimary}
           isLonely={this.isLonely()}
           onClick={onClickPrimary}
           stretch={shouldStretchButtons}>
@@ -88,13 +102,24 @@ export default class ModalFooter extends Component<Props> {
 
   renderSecondaryButton = () => {
 
-    const { onClickSecondary, shouldStretchButtons, textSecondary } = this.props;
+    const {
+      isDisabledSecondary,
+      isPendingSecondary,
+      onClickSecondary,
+      shouldStretchButtons,
+      textSecondary,
+    } = this.props;
+
     if (!textSecondary) {
       return null;
     }
 
     return (
-      <SecondaryButton onClick={onClickSecondary} stretch={shouldStretchButtons}>
+      <SecondaryButton
+          disabled={isDisabledSecondary}
+          isLoading={isPendingSecondary}
+          onClick={onClickSecondary}
+          stretch={shouldStretchButtons}>
         { textSecondary }
       </SecondaryButton>
     );
@@ -103,6 +128,10 @@ export default class ModalFooter extends Component<Props> {
   render() {
 
     const {
+      isDisabledPrimary,
+      isDisabledSecondary,
+      isPendingPrimary,
+      isPendingSecondary,
       onClickPrimary,
       onClickSecondary,
       textPrimary,
@@ -110,7 +139,7 @@ export default class ModalFooter extends Component<Props> {
       withFooter,
     } = this.props;
 
-    if (withFooter === false || (!textPrimary && !textSecondary)) {
+    if (!withFooter || (!textPrimary && !textSecondary)) {
       return null;
     }
 
@@ -123,8 +152,18 @@ export default class ModalFooter extends Component<Props> {
       );
     }
 
+    if (React.isValidElement(withFooter)) {
+      // $FlowFixMe - how do we refine Element?
+      return withFooter;
+    }
+
     if (withFooter) {
+      // $FlowFixMe - how do we refine ComponentType?
       return createElement(withFooter, {
+        isDisabledPrimary,
+        isDisabledSecondary,
+        isPendingPrimary,
+        isPendingSecondary,
         onClickPrimary,
         onClickSecondary,
         textPrimary,
@@ -135,3 +174,7 @@ export default class ModalFooter extends Component<Props> {
     return null;
   }
 }
+
+export type {
+  ModalFooterProps,
+};
