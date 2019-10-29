@@ -12,9 +12,6 @@ import styled from 'styled-components';
 import { Button } from '../../../button';
 import { FooterSection } from './styled/StyledModalComponents';
 
-export const DEFAULT_TEXT_PRIMARY_ACTION :'Confirm' = 'Confirm';
-export const DEFAULT_TEXT_SECONDARY_ACTION :'Cancel' = 'Cancel';
-
 // TODO: ":any" is a temporary fix
 const PrimaryButton :any = styled(Button).attrs(() => ({ mode: 'primary' }))`
   margin: ${({ isLonely }) => (isLonely ? 0 : '0 0 0 20px')};
@@ -62,8 +59,8 @@ export default class ModalFooter extends Component<ModalFooterProps> {
     onClickPrimary: undefined,
     onClickSecondary: undefined,
     shouldStretchButtons: false,
-    textPrimary: DEFAULT_TEXT_PRIMARY_ACTION,
-    textSecondary: DEFAULT_TEXT_SECONDARY_ACTION,
+    textPrimary: undefined,
+    textSecondary: undefined,
     withFooter: true,
   }
 
