@@ -347,8 +347,9 @@ describe('ActionModal', () => {
 
       describe(RequestStates.SUCCESS, () => {
 
+        const mockOnClose = jest.fn();
         const wrapper = mount(
-          <ActionModal isVisible onClose={nope} requestState={RequestStates.SUCCESS} />
+          <ActionModal isVisible onClose={mockOnClose} requestState={RequestStates.SUCCESS} />
         );
 
         test('should render correct primary button', () => {
@@ -360,14 +361,20 @@ describe('ActionModal', () => {
 
         test('should not render secondary button', () => {
           expect(wrapper.find(SecondaryButton)).toHaveLength(0);
+        });
+
+        test('primary button should call onClose', () => {
+          wrapper.find(PrimaryButton).find('button').simulate('click');
+          expect(mockOnClose).toHaveBeenCalledTimes(1);
         });
 
       });
 
       describe(RequestStates.FAILURE, () => {
 
+        const mockOnClose = jest.fn();
         const wrapper = mount(
-          <ActionModal isVisible onClose={nope} requestState={RequestStates.FAILURE} />
+          <ActionModal isVisible onClose={mockOnClose} requestState={RequestStates.FAILURE} />
         );
 
         test('should render correct primary button', () => {
@@ -379,6 +386,11 @@ describe('ActionModal', () => {
 
         test('should not render secondary button', () => {
           expect(wrapper.find(SecondaryButton)).toHaveLength(0);
+        });
+
+        test('primary button should call onClose', () => {
+          wrapper.find(PrimaryButton).find('button').simulate('click');
+          expect(mockOnClose).toHaveBeenCalledTimes(1);
         });
 
       });
