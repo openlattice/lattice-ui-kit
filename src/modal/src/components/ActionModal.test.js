@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import toJson from 'enzyme-to-json';
+import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
 import { RequestStates } from 'redux-reqseq';
 
@@ -13,6 +13,18 @@ import { nope } from '../../../utils/testing/MockUtils';
 const CANCEL_TXT = 'No, cancel';
 const CONFIRM_TXT = 'Yes, confirm';
 const TITLE_TXT = 'Action Action Action';
+
+const RS_COMPONENTS = {
+  STANDBY: (
+    <span>Are you absolutely sure you want to take this action?</span>
+  ),
+  SUCCESS: (
+    <span>Success! The action has been taken.</span>
+  ),
+  FAILURE: (
+    <span>Action failed. Please try again.</span>
+  ),
+};
 
 describe('ActionModal', () => {
 
@@ -31,6 +43,144 @@ describe('ActionModal', () => {
   });
 
   describe('snapshots', () => {
+
+    test('should match snapshot when isVisible="false"', () => {
+      const wrapper = mount(
+        <ActionModal
+            isVisible={false}
+            onClose={nope}
+            onClickPrimary={nope}
+            onClickSecondary={nope}
+            textPrimary={CONFIRM_TXT}
+            textSecondary={CANCEL_TXT}
+            textTitle={TITLE_TXT} />
+      );
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('should match snapshot when requestState="STANDBY"', () => {
+      const wrapper = mount(
+        <ActionModal
+            isVisible
+            onClose={nope}
+            onClickPrimary={nope}
+            onClickSecondary={nope}
+            requestState={RequestStates.STANDBY}
+            textPrimary={CONFIRM_TXT}
+            textSecondary={CANCEL_TXT}
+            textTitle={TITLE_TXT} />
+      );
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('should match snapshot when requestState="PENDING"', () => {
+      const wrapper = mount(
+        <ActionModal
+            isVisible
+            onClose={nope}
+            onClickPrimary={nope}
+            onClickSecondary={nope}
+            requestState={RequestStates.PENDING}
+            textPrimary={CONFIRM_TXT}
+            textSecondary={CANCEL_TXT}
+            textTitle={TITLE_TXT} />
+      );
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('should match snapshot when requestState="SUCCESS"', () => {
+      const wrapper = mount(
+        <ActionModal
+            isVisible
+            onClose={nope}
+            onClickPrimary={nope}
+            onClickSecondary={nope}
+            requestState={RequestStates.SUCCESS}
+            textPrimary={CONFIRM_TXT}
+            textSecondary={CANCEL_TXT}
+            textTitle={TITLE_TXT} />
+      );
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('should match snapshot when requestState="FAILURE"', () => {
+      const wrapper = mount(
+        <ActionModal
+            isVisible
+            onClose={nope}
+            onClickPrimary={nope}
+            onClickSecondary={nope}
+            requestState={RequestStates.FAILURE}
+            textPrimary={CONFIRM_TXT}
+            textSecondary={CANCEL_TXT}
+            textTitle={TITLE_TXT} />
+      );
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('should match snapshot when requestState="STANDBY" with requestStateComponents', () => {
+      const wrapper = mount(
+        <ActionModal
+            isVisible
+            onClose={nope}
+            onClickPrimary={nope}
+            onClickSecondary={nope}
+            requestState={RequestStates.STANDBY}
+            requestStateComponents={RS_COMPONENTS}
+            textPrimary={CONFIRM_TXT}
+            textSecondary={CANCEL_TXT}
+            textTitle={TITLE_TXT} />
+      );
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('should match snapshot when requestState="PENDING" with requestStateComponents', () => {
+      const wrapper = mount(
+        <ActionModal
+            isVisible
+            onClose={nope}
+            onClickPrimary={nope}
+            onClickSecondary={nope}
+            requestState={RequestStates.PENDING}
+            requestStateComponents={RS_COMPONENTS}
+            textPrimary={CONFIRM_TXT}
+            textSecondary={CANCEL_TXT}
+            textTitle={TITLE_TXT} />
+      );
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('should match snapshot when requestState="SUCCESS" with requestStateComponents', () => {
+      const wrapper = mount(
+        <ActionModal
+            isVisible
+            onClose={nope}
+            onClickPrimary={nope}
+            onClickSecondary={nope}
+            requestState={RequestStates.SUCCESS}
+            requestStateComponents={RS_COMPONENTS}
+            textPrimary={CONFIRM_TXT}
+            textSecondary={CANCEL_TXT}
+            textTitle={TITLE_TXT} />
+      );
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('should match snapshot when requestState="FAILURE" with requestStateComponents', () => {
+      const wrapper = mount(
+        <ActionModal
+            isVisible
+            onClose={nope}
+            onClickPrimary={nope}
+            onClickSecondary={nope}
+            requestState={RequestStates.FAILURE}
+            requestStateComponents={RS_COMPONENTS}
+            textPrimary={CONFIRM_TXT}
+            textSecondary={CANCEL_TXT}
+            textTitle={TITLE_TXT} />
+      );
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
 
   });
 
