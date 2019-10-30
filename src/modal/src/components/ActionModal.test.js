@@ -385,6 +385,96 @@ describe('ActionModal', () => {
 
     });
 
+    describe('requestStateComponents', () => {
+
+      describe(RequestStates.STANDBY, () => {
+
+        const wrapper = mount(
+          <ActionModal
+              isVisible
+              onClose={nope}
+              requestState={RequestStates.STANDBY}
+              requestStateComponents={RS_COMPONENTS} />
+        );
+
+        test('should render given component', () => {
+          expect(wrapper.contains(RS_COMPONENTS.STANDBY)).toEqual(true);
+        });
+
+      });
+
+      describe(RequestStates.PENDING, () => {
+
+        const wrapper = mount(
+          <ActionModal
+              isVisible
+              onClose={nope}
+              requestState={RequestStates.PENDING}
+              requestStateComponents={RS_COMPONENTS} />
+        );
+
+        test('should render given component', () => {
+          expect(wrapper.contains(RS_COMPONENTS.STANDBY)).toEqual(true);
+        });
+
+      });
+
+      describe(RequestStates.SUCCESS, () => {
+
+        const wrapper = mount(
+          <ActionModal
+              isVisible
+              onClose={nope}
+              requestState={RequestStates.SUCCESS}
+              requestStateComponents={RS_COMPONENTS} />
+        );
+
+        test('should render given component', () => {
+          expect(wrapper.contains(RS_COMPONENTS.SUCCESS)).toEqual(true);
+        });
+
+      });
+
+      describe(RequestStates.FAILURE, () => {
+
+        const wrapper = mount(
+          <ActionModal
+              isVisible
+              onClose={nope}
+              requestState={RequestStates.FAILURE}
+              requestStateComponents={RS_COMPONENTS} />
+        );
+
+        test('should render given component', () => {
+          expect(wrapper.contains(RS_COMPONENTS.FAILURE)).toEqual(true);
+        });
+
+      });
+
+    });
+
+    describe('shouldCloseOnSuccess', () => {
+
+      test('should close modal when true', () => {
+        const mockOnClose = jest.fn();
+        const wrapper = mount(
+          <ActionModal isVisible onClose={mockOnClose} requestState={RequestStates.SUCCESS} shouldCloseOnSuccess />
+        );
+        expect(mockOnClose).toHaveBeenCalledTimes(1);
+        expect(wrapper.find(Modal)).toHaveLength(0);
+      });
+
+      test('should not close modal when false', () => {
+        const mockOnClose = jest.fn();
+        const wrapper = mount(
+          <ActionModal isVisible onClose={mockOnClose} shouldCloseOnSuccess={false} />
+        );
+        expect(mockOnClose).toHaveBeenCalledTimes(0);
+        expect(wrapper.find(Modal)).toHaveLength(1);
+      });
+
+    });
+
     describe('textPrimary', () => {
 
       test('should set the primary button text (secondary button missing)', () => {
@@ -428,28 +518,6 @@ describe('ActionModal', () => {
           <ActionModal isVisible onClose={nope} textTitle={TITLE_TXT} />
         );
         expect(wrapper.find('h1').first().text()).toEqual(TITLE_TXT);
-      });
-
-    });
-
-    describe('shouldCloseOnSuccess', () => {
-
-      test('should close modal when true', () => {
-        const mockOnClose = jest.fn();
-        const wrapper = mount(
-          <ActionModal isVisible onClose={mockOnClose} requestState={RequestStates.SUCCESS} shouldCloseOnSuccess />
-        );
-        expect(mockOnClose).toHaveBeenCalledTimes(1);
-        expect(wrapper.find(Modal)).toHaveLength(0);
-      });
-
-      test('should not close modal when false', () => {
-        const mockOnClose = jest.fn();
-        const wrapper = mount(
-          <ActionModal isVisible onClose={mockOnClose} shouldCloseOnSuccess={false} />
-        );
-        expect(mockOnClose).toHaveBeenCalledTimes(0);
-        expect(wrapper.find(Modal)).toHaveLength(1);
       });
 
     });
