@@ -5,6 +5,7 @@
 import React from 'react';
 import type { Element } from 'react';
 
+import isFunction from 'lodash/isFunction';
 import { RequestStates } from 'redux-reqseq';
 import type { RequestState } from 'redux-reqseq';
 
@@ -82,11 +83,18 @@ const ActionModal = (props :ActionModalProps) => {
           textPrimary="Close"
           textSecondary="" />
     );
-    if (shouldCloseOnSuccess === true) {
-      isVisibleModal = false;
+  }
+
+  if (requestState === RequestStates.SUCCESS && shouldCloseOnSuccess === true) {
+    isVisibleModal = false;
+    if (isFunction(onClose)) {
+      onClose();
     }
   }
 
+  if (!isVisibleModal) {
+    return null;
+  }
 
   /* eslint-disable react/jsx-props-no-spreading */
   return (

@@ -2,9 +2,10 @@ import React from 'react';
 
 // import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
-// import { RequestStates } from 'redux-reqseq';
+import { RequestStates } from 'redux-reqseq';
 
 import ActionModal from './ActionModal';
+import Modal from './Modal';
 import { PrimaryButton, SecondaryButton } from './ModalFooter';
 import { CloseButton } from './ModalHeader';
 import { nope } from '../../../utils/testing/MockUtils';
@@ -148,6 +149,92 @@ describe('ActionModal', () => {
 
     });
 
+    describe('requestState', () => {
+
+      describe(RequestStates.STANDBY, () => {
+
+        const wrapper = mount(
+          <ActionModal isVisible onClose={nope} requestState={RequestStates.STANDBY} />
+        );
+
+        test('should render correct primary button', () => {
+          expect(wrapper.find(PrimaryButton).find('button').text()).toEqual('Confirm');
+          expect(wrapper.find(PrimaryButton).find('button').prop('disabled')).toEqual(false);
+          expect(wrapper.find(PrimaryButton).prop('disabled')).toEqual(false);
+          expect(wrapper.find(PrimaryButton).prop('isLoading')).toEqual(false);
+        });
+
+        test('should render correct secondary button', () => {
+          expect(wrapper.find(SecondaryButton).find('button').text()).toEqual('Cancel');
+          expect(wrapper.find(SecondaryButton).find('button').prop('disabled')).toEqual(false);
+          expect(wrapper.find(SecondaryButton).prop('disabled')).toEqual(false);
+          expect(wrapper.find(SecondaryButton).prop('isLoading')).toEqual(false);
+        });
+
+      });
+
+      describe(RequestStates.PENDING, () => {
+
+        const wrapper = mount(
+          <ActionModal isVisible onClose={nope} requestState={RequestStates.PENDING} />
+        );
+
+        test('should render correct primary button', () => {
+          expect(wrapper.find(PrimaryButton).find('button').text()).toEqual('Confirm');
+          expect(wrapper.find(PrimaryButton).find('button').prop('disabled')).toEqual(true);
+          expect(wrapper.find(PrimaryButton).prop('disabled')).toEqual(true);
+          expect(wrapper.find(PrimaryButton).prop('isLoading')).toEqual(true);
+        });
+
+        test('should render correct secondary button', () => {
+          expect(wrapper.find(SecondaryButton).find('button').text()).toEqual('Cancel');
+          expect(wrapper.find(SecondaryButton).find('button').prop('disabled')).toEqual(true);
+          expect(wrapper.find(SecondaryButton).prop('disabled')).toEqual(true);
+          expect(wrapper.find(SecondaryButton).prop('isLoading')).toEqual(false);
+        });
+
+      });
+
+      describe(RequestStates.SUCCESS, () => {
+
+        const wrapper = mount(
+          <ActionModal isVisible onClose={nope} requestState={RequestStates.SUCCESS} />
+        );
+
+        test('should render correct primary button', () => {
+          expect(wrapper.find(PrimaryButton).find('button').text()).toEqual('Close');
+          expect(wrapper.find(PrimaryButton).find('button').prop('disabled')).toEqual(false);
+          expect(wrapper.find(PrimaryButton).prop('disabled')).toEqual(false);
+          expect(wrapper.find(PrimaryButton).prop('isLoading')).toEqual(false);
+        });
+
+        test('should not render secondary button', () => {
+          expect(wrapper.find(SecondaryButton)).toHaveLength(0);
+        });
+
+      });
+
+      describe(RequestStates.FAILURE, () => {
+
+        const wrapper = mount(
+          <ActionModal isVisible onClose={nope} requestState={RequestStates.FAILURE} />
+        );
+
+        test('should render correct primary button', () => {
+          expect(wrapper.find(PrimaryButton).find('button').text()).toEqual('Close');
+          expect(wrapper.find(PrimaryButton).find('button').prop('disabled')).toEqual(false);
+          expect(wrapper.find(PrimaryButton).prop('disabled')).toEqual(false);
+          expect(wrapper.find(PrimaryButton).prop('isLoading')).toEqual(false);
+        });
+
+        test('should not render secondary button', () => {
+          expect(wrapper.find(SecondaryButton)).toHaveLength(0);
+        });
+
+      });
+
+    });
+
     describe('textPrimary', () => {
 
       test('should set the primary button text (secondary button missing)', () => {
@@ -191,6 +278,28 @@ describe('ActionModal', () => {
           <ActionModal isVisible onClose={nope} textTitle={TITLE_TXT} />
         );
         expect(wrapper.find('h1').first().text()).toEqual(TITLE_TXT);
+      });
+
+    });
+
+    describe('shouldCloseOnSuccess', () => {
+
+      test('should close modal when true', () => {
+        const mockOnClose = jest.fn();
+        const wrapper = mount(
+          <ActionModal isVisible onClose={mockOnClose} requestState={RequestStates.SUCCESS} shouldCloseOnSuccess />
+        );
+        expect(mockOnClose).toHaveBeenCalledTimes(1);
+        expect(wrapper.find(Modal)).toHaveLength(0);
+      });
+
+      test('should not close modal when false', () => {
+        const mockOnClose = jest.fn();
+        const wrapper = mount(
+          <ActionModal isVisible onClose={mockOnClose} shouldCloseOnSuccess={false} />
+        );
+        expect(mockOnClose).toHaveBeenCalledTimes(0);
+        expect(wrapper.find(Modal)).toHaveLength(1);
       });
 
     });

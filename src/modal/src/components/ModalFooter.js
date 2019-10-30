@@ -87,7 +87,7 @@ export default class ModalFooter extends Component<ModalFooterProps> {
 
     return (
       <PrimaryButton
-          disabled={isDisabledPrimary}
+          disabled={isDisabledPrimary || isPendingPrimary}
           isLoading={isPendingPrimary}
           isLonely={this.isLonely()}
           onClick={onClickPrimary}
@@ -113,7 +113,7 @@ export default class ModalFooter extends Component<ModalFooterProps> {
 
     return (
       <SecondaryButton
-          disabled={isDisabledSecondary}
+          disabled={isDisabledSecondary || isPendingSecondary}
           isLoading={isPendingSecondary}
           onClick={onClickSecondary}
           stretch={shouldStretchButtons}>
