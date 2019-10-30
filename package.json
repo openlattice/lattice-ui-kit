@@ -1,6 +1,6 @@
 {
   "name": "lattice-ui-kit",
-  "version": "0.18.1",
+  "version": "0.18.2",
   "homepage": "https://github.com/openlattice/lattice-ui-kit",
   "description": "OpenLattice UI Kit for React",
   "author": {
@@ -32,8 +32,8 @@
     "@fortawesome/pro-solid-svg-icons": "~5.11.0",
     "@fortawesome/react-fontawesome": "~0.1.0",
     "@material-ui/core": "~4.5.1",
-    "@material-ui/pickers": "^3.2.7",
-    "@material-ui/styles": "^4.5.0",
+    "@material-ui/pickers": "~3.2.7",
+    "@material-ui/styles": "~4.5.0",
     "immutable": "4.0.0-rc.9",
     "lodash": "~4.17.10",
     "luxon": "~1.19.3",

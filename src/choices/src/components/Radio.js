@@ -1,6 +1,12 @@
 // @flow
 import React from 'react';
-import { ChoiceLabel, RadioIndicator, RadioInput } from './styled';
+import {
+  ChoiceLabel,
+  ChoiceWrapper,
+  ChoiceInnerWrapper,
+  RadioIndicator,
+  RadioInput
+} from './styled';
 
 type Props = {
   checked ? :boolean;
@@ -24,13 +30,19 @@ const Radio = ({
   ...rest
 } :Props) => (
   <ChoiceLabel htmlFor={id} readOnly={readOnly} disabled={disabled}>
-    {label}
-    <RadioInput
-        id={id}
-        readOnly={readOnly}
-        disabled={disabled || readOnly}
-        {...rest} />
-    <RadioIndicator />
+    <ChoiceWrapper>
+      <ChoiceInnerWrapper>
+        <RadioInput
+            id={id}
+            readOnly={readOnly}
+            disabled={disabled || readOnly}
+            {...rest} />
+        <RadioIndicator />
+      </ChoiceInnerWrapper>
+    </ChoiceWrapper>
+    <span>
+      {label}
+    </span>
   </ChoiceLabel>
 );
 /* eslint-enable */

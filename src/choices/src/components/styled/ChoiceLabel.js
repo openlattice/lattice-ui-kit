@@ -5,9 +5,7 @@ const ChoiceLabel = styled.label`
   align-items: center;
   color: ${(props) => (props.disabled ? NEUTRALS[2] : NEUTRALS[0])};
   display: inline-flex;
-  margin: 10px 0;
-  min-height: 20px;
-  padding-left: 30px;
+  vertical-align: middle;
   pointer-events: ${(props) => (props.readOnly ? 'none' : 'auto')};
   position: relative;
 `;

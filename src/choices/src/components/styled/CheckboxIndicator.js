@@ -4,28 +4,27 @@ import choiceIndicatorStyles from './ChoiceIndicatorStyles';
 import { duration } from '../../../../style/transitions';
 import { PURPLES, WHITE } from '../../../../colors';
 
-
 const afterStyles = css`
-  content: '';
-  border: solid ${WHITE};
+  border-color: ${WHITE};
+  border-style: solid;
   border-width: 0 2px 2px 0;
   box-sizing: border-box;
+  content: '';
   height: 10px;
-  left: 8px;
+  left: 7px;
   position: absolute;
   top: 4px;
-  width: 5px;
   transform: rotate(45deg) scale(1);
   transition: transform ${duration.standard} ease-out,
     opacity ${duration.standard} ease-out;
+  width: 6px;
 `;
 
-const CheckboxIndicator = styled.div`
+const CheckboxIndicator = styled.span`
   background-color: ${PURPLES[6]};
   border-radius: 3px;
+  display: inline-block;
   height: 20px;
-  left: 0;
-  position: absolute;
   transition: background-color ${duration.swift} ease-out,
     box-shadow ${duration.swift} ease-out;
   width: 20px;

@@ -9,20 +9,22 @@ const afterStyles = css`
   background-color: ${WHITE};
   border-radius: 50%;
   height: 8px;
-  left: 6px;
+  left: 0;
+  margin: auto;
   position: absolute;
-  top: 6px;
+  right: 0;
+  top: 0;
+  bottom: 0;
   width: 8px;
   transition: transform ${duration.standard} ease-out,
     opacity ${duration.standard} ease-out;
 `;
 
-const RadioIndicator = styled.div`
+const RadioIndicator = styled.span`
   background-color: ${PURPLES[6]};
   border-radius: 100%;
+  display: inline-block;
   height: 20px;
-  left: 0;
-  position: absolute;
   transition: background-color ${duration.swift} ease-out,
     box-shadow ${duration.swift} ease-out;
   width: 20px;

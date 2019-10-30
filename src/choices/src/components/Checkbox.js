@@ -1,6 +1,12 @@
 // @flow
 import React from 'react';
-import { CheckboxIndicator, CheckboxInput, ChoiceLabel } from './styled';
+import {
+  CheckboxIndicator,
+  CheckboxInput,
+  ChoiceInnerWrapper,
+  ChoiceLabel,
+  ChoiceWrapper,
+} from './styled';
 
 type Props = {
   checked ? :boolean;
@@ -25,13 +31,17 @@ const Checkbox = ({
   ...rest
 } :Props) => (
   <ChoiceLabel htmlFor={id} readOnly={readOnly} disabled={disabled}>
+    <ChoiceWrapper>
+      <ChoiceInnerWrapper>
+        <CheckboxInput
+            id={id}
+            readOnly={readOnly}
+            disabled={disabled || readOnly}
+            {...rest} />
+        <CheckboxIndicator />
+      </ChoiceInnerWrapper>
+    </ChoiceWrapper>
     {label}
-    <CheckboxInput
-        id={id}
-        readOnly={readOnly}
-        disabled={disabled || readOnly}
-        {...rest} />
-    <CheckboxIndicator />
   </ChoiceLabel>
 );
 /* eslint-enable */
