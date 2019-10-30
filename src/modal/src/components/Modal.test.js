@@ -4,8 +4,8 @@ import { mount, shallow } from 'enzyme';
 import { CSSTransition, config } from 'react-transition-group';
 
 import Modal from './Modal';
-import ModalFooter from './ModalFooter';
-import ModalHeader from './ModalHeader';
+import ModalFooter, { PrimaryButton, SecondaryButton } from './ModalFooter';
+import ModalHeader, { CloseButton } from './ModalHeader';
 import { ModalInnerContainer, ModalOuterContainer } from './styled/StyledModalComponents';
 import { OverlayInnerContainer } from '../../../overlay/src/components/styled/StyledOverlayComponents';
 import { nope } from '../../../utils/testing/MockUtils';
@@ -31,6 +31,22 @@ const MOCK_COMPONENT = () => (
       clicky
     </button>
   </div>
+);
+
+const MOCK_MODAL_FOOTER = (
+  <ModalFooter
+      textPrimary={CONFIRM_TXT}
+      textSecondary={CANCEL_TXT}>
+    {MOCK_COMPONENT}
+  </ModalFooter>
+);
+
+const MOCK_MODAL_HEADER = (
+  <ModalHeader
+      onClickClose={nope}
+      textTitle={TITLE_TXT}>
+    {MOCK_COMPONENT}
+  </ModalHeader>
 );
 
 describe('modal', () => {
@@ -170,6 +186,17 @@ describe('modal', () => {
         expect(mockOnClick).toHaveBeenCalledTimes(1);
       });
 
+      test('should not invoke onClickPrimary if is not a function', () => {
+        const wrapper = mount(
+          <Modal isVisible onClose={nope} textPrimary={CONFIRM_TXT}>
+            { MOCK_CHILD }
+          </Modal>
+        );
+        expect(() => {
+          wrapper.find(PrimaryButton).find('button').simulate('click');
+        }).not.toThrow();
+      });
+
     });
 
     describe('onClickSecondary', () => {
@@ -183,6 +210,17 @@ describe('modal', () => {
         );
         wrapper.find('button').last().simulate('click');
         expect(mockOnClick).toHaveBeenCalledTimes(1);
+      });
+
+      test('should not invoke onClickSecondary if is not a function', () => {
+        const wrapper = mount(
+          <Modal isVisible onClose={nope} textSecondary={CONFIRM_TXT}>
+            { MOCK_CHILD }
+          </Modal>
+        );
+        expect(() => {
+          wrapper.find(SecondaryButton).find('button').simulate('click');
+        }).not.toThrow();
       });
 
     });
@@ -209,6 +247,17 @@ describe('modal', () => {
         );
         wrapper.find('button').last().simulate('click');
         expect(mockOnClose).toHaveBeenCalledTimes(1);
+      });
+
+      test('should not invoke onClose if is not a function', () => {
+        const wrapper = mount(
+          <Modal isVisible>
+            { MOCK_CHILD }
+          </Modal>
+        );
+        expect(() => {
+          wrapper.find(CloseButton).find('button').simulate('click');
+        }).not.toThrow();
       });
 
     });
@@ -454,6 +503,15 @@ describe('modal', () => {
         expect(wrapper.contains(MOCK_COMPONENT)).toEqual(true);
       });
 
+      test('should render custom footer element', () => {
+        const wrapper = mount(
+          <Modal isVisible onClose={nope} withFooter={MOCK_MODAL_FOOTER}>
+            { MOCK_CHILD }
+          </Modal>
+        );
+        expect(wrapper.contains(MOCK_MODAL_FOOTER)).toEqual(true);
+      });
+
       test('should not render a footer component when withFooter="false"', () => {
         const wrapper = mount(
           <Modal isVisible onClose={nope} withFooter={false}>
@@ -484,6 +542,15 @@ describe('modal', () => {
           </Modal>
         );
         expect(wrapper.contains(MOCK_COMPONENT)).toEqual(true);
+      });
+
+      test('should render custom header element', () => {
+        const wrapper = mount(
+          <Modal isVisible onClose={nope} withHeader={MOCK_MODAL_HEADER}>
+            { MOCK_CHILD }
+          </Modal>
+        );
+        expect(wrapper.contains(MOCK_MODAL_HEADER)).toEqual(true);
       });
 
       test('should not render a header component when withHeader="false"', () => {

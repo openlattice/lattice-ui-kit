@@ -174,10 +174,6 @@ export default class Modal extends Component<ModalProps> {
       withHeader,
     } = this.props;
 
-    if (!withHeader) {
-      return null;
-    }
-
     // $FlowFixMe
     const { type: { name = null } = {} } = withHeader;
     if (name === ModalHeader.name) {
@@ -204,10 +200,6 @@ export default class Modal extends Component<ModalProps> {
       textSecondary,
       withFooter,
     } = this.props;
-
-    if (!withFooter) {
-      return null;
-    }
 
     // $FlowFixMe
     const { type: { name = null } = {} } = withFooter;
