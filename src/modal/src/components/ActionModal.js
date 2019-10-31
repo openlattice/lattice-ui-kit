@@ -20,10 +20,10 @@ type ActionModalProps = {
   ...ModalProps;
   requestState :RequestState;
   requestStateComponents :{
-    STANDBY ?:Element<*>;
-    PENDING ?:Element<*>;
-    SUCCESS ?:Element<*>;
-    FAILURE ?:Element<*>;
+    STANDBY ?:Element<any>;
+    PENDING ?:Element<any>;
+    SUCCESS ?:Element<any>;
+    FAILURE ?:Element<any>;
   };
   shouldCloseOnSuccess :boolean;
 };
@@ -33,13 +33,22 @@ const ActionModal = (props :ActionModalProps) => {
   const {
     children,
     isVisible,
+    modalRef,
+    onClickPrimary,
+    onClickSecondary,
     onClose,
     requestState,
     requestStateComponents,
+    shouldBeCentered,
+    shouldCloseOnEscape,
+    shouldCloseOnOutsideClick,
     shouldCloseOnSuccess,
     shouldStretchButtons,
     textPrimary,
     textSecondary,
+    textTitle,
+    viewportScrolling,
+    withHeader,
   } = props;
 
   if (!isVisible) {
@@ -96,14 +105,29 @@ const ActionModal = (props :ActionModalProps) => {
     return null;
   }
 
-  /* eslint-disable react/jsx-props-no-spreading */
   return (
-    <Modal {...props} isVisible={isVisibleModal} withFooter={withFooter}>
+    <Modal
+        isVisible={isVisibleModal}
+        modalRef={modalRef}
+        onClickPrimary={onClickPrimary}
+        onClickSecondary={onClickSecondary}
+        onClose={onClose}
+        requestState={requestState}
+        requestStateComponents={requestStateComponents}
+        shouldBeCentered={shouldBeCentered}
+        shouldCloseOnEscape={shouldCloseOnEscape}
+        shouldCloseOnOutsideClick={shouldCloseOnOutsideClick}
+        shouldStretchButtons={shouldStretchButtons}
+        textPrimary={textPrimary}
+        textSecondary={textSecondary}
+        textTitle={textTitle}
+        viewportScrolling={viewportScrolling}
+        withFooter={withFooter}
+        withHeader={withHeader}>
       { body }
       { children }
     </Modal>
   );
-  /* eslint-enable */
 };
 
 /* eslint-disable react/default-props-match-prop-types */
