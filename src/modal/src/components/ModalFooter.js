@@ -64,13 +64,6 @@ export default class ModalFooter extends Component<ModalFooterProps> {
     withFooter: true,
   }
 
-  isLonely = () :boolean => {
-
-    const { textPrimary, textSecondary } = this.props;
-    return (isEmpty(textPrimary) && !isEmpty(textSecondary))
-      || (!isEmpty(textPrimary) && isEmpty(textSecondary));
-  }
-
   renderPrimaryButton = () => {
 
     const {
@@ -79,6 +72,7 @@ export default class ModalFooter extends Component<ModalFooterProps> {
       onClickPrimary,
       shouldStretchButtons,
       textPrimary,
+      textSecondary,
     } = this.props;
 
     if (!textPrimary) {
@@ -89,7 +83,7 @@ export default class ModalFooter extends Component<ModalFooterProps> {
       <PrimaryButton
           disabled={isDisabledPrimary || isPendingPrimary}
           isLoading={isPendingPrimary}
-          isLonely={this.isLonely()}
+          isLonely={isEmpty(textSecondary)}
           onClick={onClickPrimary}
           stretch={shouldStretchButtons}>
         { textPrimary }
@@ -136,7 +130,7 @@ export default class ModalFooter extends Component<ModalFooterProps> {
       withFooter,
     } = this.props;
 
-    if (!withFooter || (!textPrimary && !textSecondary)) {
+    if (!textPrimary && !textSecondary) {
       return null;
     }
 
