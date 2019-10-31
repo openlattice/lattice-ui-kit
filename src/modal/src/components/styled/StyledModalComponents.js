@@ -107,11 +107,11 @@ export const ModalInnerContainer = styled.div`
  * "min-height" 40px + "padding" 30px = 100px of total height
  */
 export const ModalSection = styled.div`
+  color: ${NEUTRALS[0]};
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   min-height: 40px;
-  /* overflow: scroll; */
   padding: ${DEFAULT_PADDING}px;
   position: relative;
 `;

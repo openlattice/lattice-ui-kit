@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
@@ -6,14 +5,9 @@ import { storiesOf } from '@storybook/react';
 import { Button } from '../../button';
 import { Card, CardSegment } from '../../layout';
 import { useBoolean } from '../../hooks';
-import Modal from '..';
+import { Modal } from '..';
 
-type Props = {
-  isVisible :boolean;
-  onClose :() => void;
-}
-
-const TheNextLevel = ({ isVisible, onClose } :Props) => {
+const TheNextLevel = ({ isVisible, onClose }) => {
   const [showNext, goDeeper, kicker] = useBoolean();
   return (
     <Modal

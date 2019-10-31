@@ -3,17 +3,18 @@
  */
 
 import React, { Component, createElement } from 'react';
-import type { ComponentType } from 'react';
+import type { ComponentType, Element } from 'react';
 
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { faTimes } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { NEUTRALS } from '../../../colors';
 import { HeaderSection } from './styled/StyledModalComponents';
 
 const ModalTitle = styled.h1`
-  color: #555e6f;
+  color: ${NEUTRALS[0]};
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -22,7 +23,7 @@ const ModalTitle = styled.h1`
   white-space: nowrap;
 `;
 
-const CloseButtonWrapper = styled.button`
+const CloseButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
@@ -35,19 +36,12 @@ const CloseButtonWrapper = styled.button`
 `;
 
 type ModalHeaderProps = {
-  onClickClose ? :() => void;
-  textTitle ? :string;
+  onClickClose ?:() => void;
+  textTitle ?:string;
+  withHeader ?:ComponentType<ModalHeaderProps> | Element<any> | boolean;
 };
 
-type OverrideHeaderProps = {
-  withHeader ? :ComponentType<ModalHeaderProps> | boolean;
-};
-
-type Props =
-  & ModalHeaderProps
-  & OverrideHeaderProps;
-
-export default class ModalHeader extends Component<Props> {
+export default class ModalHeader extends Component<ModalHeaderProps> {
 
   static propTypes = {
     onClickClose: PropTypes.func,
@@ -66,9 +60,9 @@ export default class ModalHeader extends Component<Props> {
     const { onClickClose } = this.props;
 
     return (
-      <CloseButtonWrapper onClick={onClickClose}>
+      <CloseButton onClick={onClickClose}>
         <FontAwesomeIcon icon={faTimes} size="lg" />
-      </CloseButtonWrapper>
+      </CloseButton>
     );
   }
 
@@ -95,7 +89,7 @@ export default class ModalHeader extends Component<Props> {
       withHeader,
     } = this.props;
 
-    if (withHeader === false) {
+    if (!withHeader) {
       return null;
     }
 
@@ -108,7 +102,13 @@ export default class ModalHeader extends Component<Props> {
       );
     }
 
+    if (React.isValidElement(withHeader)) {
+      // $FlowFixMe - how do we refine Element?
+      return withHeader;
+    }
+
     if (withHeader) {
+      // $FlowFixMe - how do we refine ComponentType?
       return createElement(withHeader, {
         onClickClose,
         textTitle,
@@ -118,3 +118,12 @@ export default class ModalHeader extends Component<Props> {
     return null;
   }
 }
+
+// for testing
+export {
+  CloseButton,
+};
+
+export type {
+  ModalHeaderProps,
+};
