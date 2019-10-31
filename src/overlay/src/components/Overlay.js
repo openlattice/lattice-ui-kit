@@ -59,7 +59,6 @@ export default class Overlay extends Component<Props> {
 
     const { shouldCloseOnClick } = this.props;
     if (event.target === event.currentTarget && shouldCloseOnClick) {
-      event.preventDefault();
       this.close();
     }
   }

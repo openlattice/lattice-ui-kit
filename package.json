@@ -36,12 +36,13 @@
     "@material-ui/styles": "~4.5.0",
     "immutable": "4.0.0-rc.9",
     "lodash": "~4.17.10",
-    "luxon": "~1.19.3",
+    "luxon": "~1.21.0",
     "polished": "~3.4.0",
     "prop-types": "~15.7.0",
     "react-scrolllock": "~4.0.0",
     "react-select": "~3.0.0",
-    "react-transition-group": "~4.3.0"
+    "react-transition-group": "~4.3.0",
+    "redux-reqseq": "0.5.0"
   },
   "devDependencies": {
     "@babel/cli": "~7.6.0",
