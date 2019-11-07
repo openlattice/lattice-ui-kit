@@ -28,9 +28,11 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
           "indicatorSeparator": [Function],
           "indicatorsContainer": [Function],
           "menu": [Function],
+          "menuList": [Function],
           "menuPortal": [Function],
           "option": [Function],
           "singleValue": [Function],
+          "valueContainer": [Function],
         }
       }
     >
@@ -87,9 +89,11 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
             "indicatorSeparator": [Function],
             "indicatorsContainer": [Function],
             "menu": [Function],
+            "menuList": [Function],
             "menuPortal": [Function],
             "option": [Function],
             "singleValue": [Function],
+            "valueContainer": [Function],
           }
         }
         tabIndex="0"
@@ -166,9 +170,11 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                 "indicatorSeparator": [Function],
                 "indicatorsContainer": [Function],
                 "menu": [Function],
+                "menuList": [Function],
                 "menuPortal": [Function],
                 "option": [Function],
                 "singleValue": [Function],
+                "valueContainer": [Function],
               },
               "tabIndex": "0",
               "tabSelectsValue": true,
@@ -299,9 +305,11 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                       "indicatorSeparator": [Function],
                       "indicatorsContainer": [Function],
                       "menu": [Function],
+                      "menuList": [Function],
                       "menuPortal": [Function],
                       "option": [Function],
                       "singleValue": [Function],
+                      "valueContainer": [Function],
                     },
                     "tabIndex": "0",
                     "tabSelectsValue": true,
@@ -367,6 +375,7 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                       "fontSize": "14px",
                       "justifyContent": "space-between",
                       "label": "control",
+                      "lineHeight": 1.5,
                       "minHeight": "40px",
                       "outline": "0 !important",
                       "pointerEvents": "auto",
@@ -378,7 +387,7 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                   onTouchEnd={[Function]}
                 >
                   <div
-                    className=" css-fdf293-control"
+                    className=" css-wo44iz-control"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                   >
@@ -445,9 +454,11 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                             "indicatorSeparator": [Function],
                             "indicatorsContainer": [Function],
                             "menu": [Function],
+                            "menuList": [Function],
                             "menuPortal": [Function],
                             "option": [Function],
                             "singleValue": [Function],
+                            "valueContainer": [Function],
                           },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
@@ -497,13 +508,13 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                             "flex": 1,
                             "flexWrap": "wrap",
                             "overflow": "hidden",
-                            "padding": "2px 8px",
+                            "padding": "0 10px",
                             "position": "relative",
                           }
                         }
                       >
                         <div
-                          className=" css-1hwfws3"
+                          className=" css-1gbz4ua"
                         >
                           <Placeholder
                             clearValue={[Function]}
@@ -570,9 +581,11 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                                   "indicatorSeparator": [Function],
                                   "indicatorsContainer": [Function],
                                   "menu": [Function],
+                                  "menuList": [Function],
                                   "menuPortal": [Function],
                                   "option": [Function],
                                   "singleValue": [Function],
+                                  "valueContainer": [Function],
                                 },
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
@@ -700,9 +713,11 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                                   "indicatorSeparator": [Function],
                                   "indicatorsContainer": [Function],
                                   "menu": [Function],
+                                  "menuList": [Function],
                                   "menuPortal": [Function],
                                   "option": [Function],
                                   "singleValue": [Function],
+                                  "valueContainer": [Function],
                                 },
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
@@ -912,9 +927,11 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                             "indicatorSeparator": [Function],
                             "indicatorsContainer": [Function],
                             "menu": [Function],
+                            "menuList": [Function],
                             "menuPortal": [Function],
                             "option": [Function],
                             "singleValue": [Function],
+                            "valueContainer": [Function],
                           },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
@@ -964,12 +981,12 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                             "color": "#b6bbc7",
                             "display": "flex",
                             "flexShrink": 0,
-                            "marginRight": "10px",
+                            "marginRight": "5px",
                           }
                         }
                       >
                         <div
-                          className=" css-199467i-IndicatorsContainer"
+                          className=" css-1y4h2k2-IndicatorsContainer"
                         >
                           <IndicatorSeparator
                             clearValue={[Function]}
@@ -1035,9 +1052,11 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                                   "indicatorSeparator": [Function],
                                   "indicatorsContainer": [Function],
                                   "menu": [Function],
+                                  "menuList": [Function],
                                   "menuPortal": [Function],
                                   "option": [Function],
                                   "singleValue": [Function],
+                                  "valueContainer": [Function],
                                 },
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
@@ -1161,9 +1180,11 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                                   "indicatorSeparator": [Function],
                                   "indicatorsContainer": [Function],
                                   "menu": [Function],
+                                  "menuList": [Function],
                                   "menuPortal": [Function],
                                   "option": [Function],
                                   "singleValue": [Function],
+                                  "valueContainer": [Function],
                                 },
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
@@ -1208,16 +1229,10 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                               className=""
                               css={
                                 Object {
-                                  ":hover": Object {
-                                    "color": "hsl(0, 0%, 60%)",
-                                  },
-                                  "boxSizing": "border-box",
                                   "color": "#b6bbc7",
                                   "display": "flex",
-                                  "label": "indicatorContainer",
                                   "margin": "5px",
                                   "padding": "0",
-                                  "transition": "color 150ms",
                                 }
                               }
                               onMouseDown={[Function]}
@@ -1225,7 +1240,7 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                             >
                               <div
                                 aria-hidden="true"
-                                className=" css-ydho0m-indicatorContainer"
+                                className=" css-1vd5qh6-DropdownIndicator"
                                 onMouseDown={[Function]}
                                 onTouchEnd={[Function]}
                               >

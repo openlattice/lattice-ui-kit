@@ -19,8 +19,14 @@ import NavigationWrapper, { APP_NAV_ROOT } from './styled/NavigationWrapper';
 import * as Colors from '../../../../colors';
 import { Button } from '../../../../button';
 import { Select } from '../../../../select';
+import {
+  containerStyles,
+  controlStyles,
+  optionStyles,
+  selectStyles,
+} from '../../../../style/select';
 
-const { NEUTRALS, PURPLES, WHITE } = Colors;
+const { NEUTRALS } = Colors;
 
 // button line-height = font-size (12px) * desired line-height (1.5) = 18px
 // total button height = line-height (18px) + padding (2*8px) + border (2*1px) = 36px
@@ -65,78 +71,24 @@ const NavigationToggleWrapper = styled.div`
 `;
 
 const organizationsSelectStyles = {
-  clearIndicator: (base) => ({ ...base, padding: '0', margin: '5px' }),
+  ...selectStyles,
   container: (base, state) => ({
-    ...base,
-    cursor: state.isDisabled ? 'not-allowed' : 'default',
-    pointerEvents: 'auto', // not sure what this was for
+    ...containerStyles(base, state),
     // the following are not ideal, but it's tricky figuring out how to make it flex perfectly in all cases
     flex: '1 1 auto',
     maxWidth: '300px',
     minWidth: '200px',
   }),
-  control: (base, state) => {
-
-    const { isFocused, isDisabled, selectProps } = state;
-    let backgroundColor = isFocused ? WHITE : NEUTRALS[8];
-    let border = isFocused ? `solid 1px ${PURPLES[1]}` : `solid 1px ${NEUTRALS[4]}`;
-
-    if (selectProps && selectProps.noBorder) {
-      backgroundColor = 'transparent';
-      border = 'none';
-    }
-
-    const style = {
-      backgroundColor,
-      border,
-      borderRadius: '3px',
-      boxShadow: 'none',
-      fontSize: '12px',
-      lineHeight: '18px', // 12px font size * 1.5 = 18px
-      minHeight: '36px', // to match log out button total height
-      pointerEvents: isDisabled ? 'none' : 'auto',
-      ':hover': {
-        backgroundColor,
-        border,
-      },
-    };
-    return { ...base, ...style };
-  },
-  dropdownIndicator: (base, state) => ({
-    ...base,
-    color: NEUTRALS[2],
-    display: state.selectProps && state.selectProps.hideMenu ? 'none' : 'flex',
-    margin: '4px',
-    padding: '0',
+  control: (base, state) => ({
+    ...controlStyles(base, state),
+    fontSize: '12px',
+    lineHeight: 1.5,
+    minHeight: '36px', // to match log out button total height
   }),
-  indicatorSeparator: () => ({ display: 'none' }),
-  indicatorsContainer: (base) => ({ ...base, marginRight: '5px', color: NEUTRALS[2] }),
-  menuList: (base) => ({ ...base, borderRadius: '4px' }),
-  menuPortal: (base) => ({ ...base, zIndex: 1000 }),
-  option: (base, state) => {
-
-    const { isFocused, isSelected } = state;
-    const color = isSelected ? PURPLES[1] : NEUTRALS[0];
-    let backgroundColor = WHITE;
-    if (isSelected) {
-      backgroundColor = PURPLES[6];
-    }
-    else if (isFocused) {
-      backgroundColor = NEUTRALS[6];
-    }
-
-    return {
-      ...base,
-      color,
-      backgroundColor,
-      fontSize: '12px',
-      ':active': {
-        backgroundColor: PURPLES[5],
-      },
-    };
-  },
-  singleValue: (base, state) => ({ ...base, color: state.isDisabled ? NEUTRALS[1] : NEUTRALS[0] }),
-  valueContainer: (base) => ({ ...base, padding: '0 10px' }),
+  option: (base, state) => ({
+    ...optionStyles(base, state),
+    fontSize: '12px',
+  }),
 };
 
 const AppIcon = ({ icon } :{ icon :any }) => (
