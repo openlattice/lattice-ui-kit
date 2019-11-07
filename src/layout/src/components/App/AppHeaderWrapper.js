@@ -82,7 +82,7 @@ const organizationsSelectStyles = {
   control: (base, state) => ({
     ...controlStyles(base, state),
     fontSize: '12px',
-    lineHeight: '18px', // 12px font size * 1.5 = 18px
+    lineHeight: 1.5,
     minHeight: '36px', // to match log out button total height
   }),
   option: (base, state) => ({

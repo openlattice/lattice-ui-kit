@@ -375,7 +375,7 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                       "fontSize": "14px",
                       "justifyContent": "space-between",
                       "label": "control",
-                      "lineHeight": "21px",
+                      "lineHeight": 1.5,
                       "minHeight": "40px",
                       "outline": "0 !important",
                       "pointerEvents": "auto",
@@ -387,7 +387,7 @@ exports[`CheckboxSelect snapshot render matches snapshot 1`] = `
                   onTouchEnd={[Function]}
                 >
                   <div
-                    className=" css-ktdwx4-control"
+                    className=" css-wo44iz-control"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                   >

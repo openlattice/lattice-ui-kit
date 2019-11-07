@@ -20,7 +20,7 @@ const controlStyles = (base, state) => {
     borderRadius: '3px',
     boxShadow: 'none',
     fontSize: '14px',
-    lineHeight: '21px', // 14px font size * 1.5 = 21px
+    lineHeight: 1.5,
     minHeight: '40px',
     pointerEvents: isDisabled ? 'none' : 'auto', // not sure what this was for
     transition: 'background-color 0.2s ease-out, border-color 0.2s ease-out',
