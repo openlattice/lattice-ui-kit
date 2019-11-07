@@ -133,7 +133,6 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
           "styledComponentId": "styled__PaginationWrapper-r3xwjs-1",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -175,7 +174,6 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                 "styledComponentId": "Label-sc-130fyca-0",
                 "target": "label",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -223,7 +221,6 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                 "styledComponentId": "Label-sc-130fyca-0",
                 "target": "label",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -332,7 +329,6 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                     "styledComponentId": "StyledButton-sc-1etazn9-0",
                     "target": "button",
                     "toString": [Function],
-                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -369,7 +365,6 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                           "styledComponentId": "ContentWrapper-sc-36hfub-0",
                           "target": "span",
                           "toString": [Function],
-                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -403,7 +398,6 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                 "styledComponentId": "Content-sc-18psqsj-0",
                                 "target": "span",
                                 "toString": [Function],
-                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -566,7 +560,6 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                     "styledComponentId": "StyledButton-sc-1etazn9-0",
                     "target": "button",
                     "toString": [Function],
-                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -603,7 +596,6 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                           "styledComponentId": "ContentWrapper-sc-36hfub-0",
                           "target": "span",
                           "toString": [Function],
-                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -637,7 +629,6 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                                 "styledComponentId": "Content-sc-18psqsj-0",
                                 "target": "span",
                                 "toString": [Function],
-                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }

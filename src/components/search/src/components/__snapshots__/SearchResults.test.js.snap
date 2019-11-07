@@ -50,7 +50,6 @@ exports[`SearchResults snapshots should match snapshot 1`] = `
           "styledComponentId": "CardStack-sc-1vtkaja-0",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }

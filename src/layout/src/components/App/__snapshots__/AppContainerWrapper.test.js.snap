@@ -37,7 +37,6 @@ exports[`AppContainerWrapper snapshots should match snapshot 1`] = `
         "styledComponentId": "AppContainerWrapper-urn6g2-0",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
