@@ -4,7 +4,7 @@ import { mergeDeep } from 'immutable';
 
 import Option from './styled/CheckboxOption';
 import SelectController from './SelectController';
-import selectStyles from '../../../style/selectStyles';
+import { selectStyles } from '../../../style/select';
 
 export const defaultProps = {
   components: {
