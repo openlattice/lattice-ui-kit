@@ -101,7 +101,6 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
           "styledComponentId": "SearchInput__SearchInputWrapper-sc-1bpx0dr-0",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -133,7 +132,6 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                 "styledComponentId": "SearchInput__SearchIcon-sc-1bpx0dr-2",
                 "target": "div",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -245,7 +243,6 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                 "styledComponentId": "SearchInput__Input-sc-1bpx0dr-1",
                 "target": "input",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

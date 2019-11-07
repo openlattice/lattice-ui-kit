@@ -132,7 +132,6 @@ exports[`button mode="default" should match snapshot 1`] = `
           "styledComponentId": "StyledButton-sc-1etazn9-0",
           "target": "button",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -169,7 +168,6 @@ exports[`button mode="default" should match snapshot 1`] = `
                 "styledComponentId": "ContentWrapper-sc-36hfub-0",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -203,7 +201,6 @@ exports[`button mode="default" should match snapshot 1`] = `
                       "styledComponentId": "Content-sc-18psqsj-0",
                       "target": "span",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -359,7 +356,6 @@ exports[`button mode="default" should match snapshot 2`] = `
           "styledComponentId": "StyledButton-sc-1etazn9-0",
           "target": "button",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -396,7 +392,6 @@ exports[`button mode="default" should match snapshot 2`] = `
                 "styledComponentId": "ContentWrapper-sc-36hfub-0",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -430,7 +425,6 @@ exports[`button mode="default" should match snapshot 2`] = `
                       "styledComponentId": "Content-sc-18psqsj-0",
                       "target": "span",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -587,7 +581,6 @@ exports[`button mode="negative" should match snapshot 1`] = `
           "styledComponentId": "StyledButton-sc-1etazn9-0",
           "target": "button",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -624,7 +617,6 @@ exports[`button mode="negative" should match snapshot 1`] = `
                 "styledComponentId": "ContentWrapper-sc-36hfub-0",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -658,7 +650,6 @@ exports[`button mode="negative" should match snapshot 1`] = `
                       "styledComponentId": "Content-sc-18psqsj-0",
                       "target": "span",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -812,7 +803,6 @@ exports[`button mode="neutral" should match snapshot 1`] = `
           "styledComponentId": "StyledButton-sc-1etazn9-0",
           "target": "button",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -849,7 +839,6 @@ exports[`button mode="neutral" should match snapshot 1`] = `
                 "styledComponentId": "ContentWrapper-sc-36hfub-0",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -883,7 +872,6 @@ exports[`button mode="neutral" should match snapshot 1`] = `
                       "styledComponentId": "Content-sc-18psqsj-0",
                       "target": "span",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -1037,7 +1025,6 @@ exports[`button mode="neutral" should match snapshot 2`] = `
           "styledComponentId": "StyledButton-sc-1etazn9-0",
           "target": "button",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -1074,7 +1061,6 @@ exports[`button mode="neutral" should match snapshot 2`] = `
                 "styledComponentId": "ContentWrapper-sc-36hfub-0",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1108,7 +1094,6 @@ exports[`button mode="neutral" should match snapshot 2`] = `
                       "styledComponentId": "Content-sc-18psqsj-0",
                       "target": "span",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -1265,7 +1250,6 @@ exports[`button mode="positive" should match snapshot 1`] = `
           "styledComponentId": "StyledButton-sc-1etazn9-0",
           "target": "button",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -1302,7 +1286,6 @@ exports[`button mode="positive" should match snapshot 1`] = `
                 "styledComponentId": "ContentWrapper-sc-36hfub-0",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1336,7 +1319,6 @@ exports[`button mode="positive" should match snapshot 1`] = `
                       "styledComponentId": "Content-sc-18psqsj-0",
                       "target": "span",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -1491,7 +1473,6 @@ exports[`button mode="primary" should match snapshot 1`] = `
           "styledComponentId": "StyledButton-sc-1etazn9-0",
           "target": "button",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -1528,7 +1509,6 @@ exports[`button mode="primary" should match snapshot 1`] = `
                 "styledComponentId": "ContentWrapper-sc-36hfub-0",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1562,7 +1542,6 @@ exports[`button mode="primary" should match snapshot 1`] = `
                       "styledComponentId": "Content-sc-18psqsj-0",
                       "target": "span",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -1717,7 +1696,6 @@ exports[`button mode="secondary" should match snapshot 1`] = `
           "styledComponentId": "StyledButton-sc-1etazn9-0",
           "target": "button",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -1754,7 +1732,6 @@ exports[`button mode="secondary" should match snapshot 1`] = `
                 "styledComponentId": "ContentWrapper-sc-36hfub-0",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1788,7 +1765,6 @@ exports[`button mode="secondary" should match snapshot 1`] = `
                       "styledComponentId": "Content-sc-18psqsj-0",
                       "target": "span",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -1941,7 +1917,6 @@ exports[`button mode="subtle" should match snapshot 1`] = `
           "styledComponentId": "StyledButton-sc-1etazn9-0",
           "target": "button",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -1978,7 +1953,6 @@ exports[`button mode="subtle" should match snapshot 1`] = `
                 "styledComponentId": "ContentWrapper-sc-36hfub-0",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -2012,7 +1986,6 @@ exports[`button mode="subtle" should match snapshot 1`] = `
                       "styledComponentId": "Content-sc-18psqsj-0",
                       "target": "span",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }

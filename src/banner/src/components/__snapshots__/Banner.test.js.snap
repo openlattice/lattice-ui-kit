@@ -63,7 +63,6 @@ exports[`Banner snapshot should match snapshot when closed 1`] = `
           "styledComponentId": "StyledBannerComponents__Container-sc-88s6ku-0",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -95,7 +94,6 @@ exports[`Banner snapshot should match snapshot when closed 1`] = `
                 "styledComponentId": "StyledBannerComponents__Content-sc-88s6ku-1",
                 "target": "div",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -176,7 +174,6 @@ exports[`Banner snapshot should match snapshot when open 1`] = `
           "styledComponentId": "StyledBannerComponents__Container-sc-88s6ku-0",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -208,7 +205,6 @@ exports[`Banner snapshot should match snapshot when open 1`] = `
                 "styledComponentId": "StyledBannerComponents__Content-sc-88s6ku-1",
                 "target": "div",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

@@ -33,7 +33,6 @@ exports[`StepIcon complete should match snapshot 1`] = `
           "styledComponentId": "styled__IconLayer-g8vnjr-0",
           "target": "span",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -194,7 +193,6 @@ exports[`StepIcon default should match snapshot 1`] = `
         "styledComponentId": "styled__StepIndex-g8vnjr-2",
         "target": "span",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

@@ -169,7 +169,6 @@ input:checked ~ .c4:after {
           "styledComponentId": "ChoiceLabel-sc-11kob9e-0",
           "target": "label",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -200,7 +199,6 @@ input:checked ~ .c4:after {
                 "styledComponentId": "ChoiceWrappers__ChoiceWrapper-kj63qq-0",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -230,7 +228,6 @@ input:checked ~ .c4:after {
                       "styledComponentId": "ChoiceWrappers__ChoiceInnerWrapper-kj63qq-1",
                       "target": "span",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -262,7 +259,6 @@ input:checked ~ .c4:after {
                             "styledComponentId": "ChoiceInputs__RadioInput-sc-1fkg6yx-0",
                             "target": "input",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -323,7 +319,6 @@ input:checked ~ .c4:after {
                             "styledComponentId": "RadioIndicator-sc-1vlnpb4-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
