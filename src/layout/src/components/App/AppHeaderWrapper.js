@@ -115,8 +115,17 @@ const organizationsSelectStyles = {
   menuPortal: (base) => ({ ...base, zIndex: 1000 }),
   option: (base, state) => {
 
-    const { isFocused, isSelected } = state;
-    const color = isSelected ? PURPLES[1] : NEUTRALS[0];
+    const {
+      isDisabled,
+      isFocused,
+      isSelected,
+    } = state;
+
+    let color = isSelected ? PURPLES[1] : NEUTRALS[0];
+    if (isDisabled) {
+      color = NEUTRALS[2];
+    }
+
     let backgroundColor = WHITE;
     if (isSelected) {
       backgroundColor = PURPLES[6];
@@ -125,15 +134,25 @@ const organizationsSelectStyles = {
       backgroundColor = NEUTRALS[6];
     }
 
-    return {
-      ...base,
+    const activeBgColor = isDisabled ? WHITE : PURPLES[5];
+    const hoverBgColor = isDisabled ? WHITE : NEUTRALS[6];
+
+    const style = {
       color,
       backgroundColor,
       fontSize: '12px',
       ':active': {
-        backgroundColor: PURPLES[5],
+        backgroundColor: activeBgColor,
+      },
+      ':active:hover': {
+        backgroundColor: activeBgColor,
+      },
+      ':hover': {
+        backgroundColor: hoverBgColor,
       },
     };
+
+    return { ...base, ...style };
   },
   singleValue: (base, state) => ({ ...base, color: state.isDisabled ? NEUTRALS[1] : NEUTRALS[0] }),
   valueContainer: (base) => ({ ...base, padding: '0 10px' }),
