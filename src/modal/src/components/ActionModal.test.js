@@ -465,28 +465,6 @@ describe('ActionModal', () => {
 
     });
 
-    describe('shouldCloseOnSuccess', () => {
-
-      test('should close modal when true', () => {
-        const mockOnClose = jest.fn();
-        const wrapper = mount(
-          <ActionModal isVisible onClose={mockOnClose} requestState={RequestStates.SUCCESS} shouldCloseOnSuccess />
-        );
-        expect(mockOnClose).toHaveBeenCalledTimes(1);
-        expect(wrapper.find(Modal)).toHaveLength(0);
-      });
-
-      test('should not close modal when false', () => {
-        const mockOnClose = jest.fn();
-        const wrapper = mount(
-          <ActionModal isVisible onClose={mockOnClose} shouldCloseOnSuccess={false} />
-        );
-        expect(mockOnClose).toHaveBeenCalledTimes(0);
-        expect(wrapper.find(Modal)).toHaveLength(1);
-      });
-
-    });
-
     describe('textPrimary', () => {
 
       test('should set the primary button text (secondary button missing)', () => {
