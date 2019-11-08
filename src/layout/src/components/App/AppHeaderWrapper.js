@@ -483,7 +483,9 @@ class AppHeaderWrapper extends Component<Props, State> {
                       Children.map(child.props.children, (navChild, navIndex) => (
                         // the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
                         // processed above and moved into the header, so we want to return null here
-                        navIndex === 0 ? null : navChild
+                        navIndex === 0
+                          ? null
+                          : React.cloneElement(navChild, { ...navChild.props, onClick: this.closeNavigation })
                       ))
                     }
                   </AppNavigationWrapper>
