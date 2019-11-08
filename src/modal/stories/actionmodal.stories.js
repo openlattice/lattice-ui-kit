@@ -35,7 +35,6 @@ storiesOf('ActionModal', module)
                 onClickSecondary={onClickSecondary}
                 onClose={closeModal}
                 requestState={requestState}
-                shouldCloseOnSuccess={false}
                 shouldStretchButtons
                 textPrimary="Simulate Success"
                 textSecondary="Simulate Failure"

@@ -234,7 +234,6 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
                               "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
                               "target": "div",
                               "toString": [Function],
-                              "usesTheme": false,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -270,7 +269,6 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
                                     "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
                                     "target": "div",
                                     "toString": [Function],
-                                    "usesTheme": false,
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
                                   }

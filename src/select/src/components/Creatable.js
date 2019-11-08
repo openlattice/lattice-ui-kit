@@ -4,7 +4,7 @@ import { createFilter } from 'react-select';
 import { mergeDeep } from 'immutable';
 
 import SelectController from './SelectController';
-import selectStyles from '../../../style/selectStyles';
+import { selectStyles } from '../../../style/select';
 
 export const defaultProps = {
   filterOption: createFilter({ ignoreAccents: false }),

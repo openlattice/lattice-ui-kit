@@ -351,7 +351,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               "styledComponentId": "styled__PaginationWrapper-r3xwjs-1",
               "target": "div",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -393,7 +392,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     "styledComponentId": "Label-sc-130fyca-0",
                     "target": "label",
                     "toString": [Function],
-                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -441,7 +439,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     "styledComponentId": "Label-sc-130fyca-0",
                     "target": "label",
                     "toString": [Function],
-                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -550,7 +547,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         "styledComponentId": "StyledButton-sc-1etazn9-0",
                         "target": "button",
                         "toString": [Function],
-                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -587,7 +583,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "styledComponentId": "ContentWrapper-sc-36hfub-0",
                               "target": "span",
                               "toString": [Function],
-                              "usesTheme": false,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -621,7 +616,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                     "styledComponentId": "Content-sc-18psqsj-0",
                                     "target": "span",
                                     "toString": [Function],
-                                    "usesTheme": false,
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
                                   }
@@ -784,7 +778,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         "styledComponentId": "StyledButton-sc-1etazn9-0",
                         "target": "button",
                         "toString": [Function],
-                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -821,7 +814,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "styledComponentId": "ContentWrapper-sc-36hfub-0",
                               "target": "span",
                               "toString": [Function],
-                              "usesTheme": false,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -855,7 +847,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                     "styledComponentId": "Content-sc-18psqsj-0",
                                     "target": "span",
                                     "toString": [Function],
-                                    "usesTheme": false,
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
                                   }
@@ -952,7 +943,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
             "styledComponentId": "styled__StyledTable-r3xwjs-0",
             "target": "table",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           }
@@ -987,7 +977,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   "styledComponentId": "styled__Cell-r3xwjs-2",
                   "target": "td",
                   "toString": [Function],
-                  "usesTheme": false,
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 },
@@ -1062,7 +1051,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       "styledComponentId": "styled__StyledRow-r3xwjs-3",
                       "target": "tr",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -1103,7 +1091,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           },
@@ -1156,7 +1143,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "styledComponentId": "styled__Cell-r3xwjs-2",
                               "target": "td",
                               "toString": [Function],
-                              "usesTheme": false,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -1265,7 +1251,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           },
@@ -1310,7 +1295,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "styledComponentId": "styled__Cell-r3xwjs-2",
                               "target": "td",
                               "toString": [Function],
-                              "usesTheme": false,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -1419,7 +1403,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           },
@@ -1464,7 +1447,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "styledComponentId": "styled__Cell-r3xwjs-2",
                               "target": "td",
                               "toString": [Function],
-                              "usesTheme": false,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -1573,7 +1555,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           },
@@ -1618,7 +1599,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "styledComponentId": "styled__Cell-r3xwjs-2",
                               "target": "td",
                               "toString": [Function],
-                              "usesTheme": false,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -1727,7 +1707,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           },
@@ -1770,7 +1749,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "styledComponentId": "styled__Cell-r3xwjs-2",
                               "target": "td",
                               "toString": [Function],
-                              "usesTheme": false,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -1815,7 +1793,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   "styledComponentId": "styled__Cell-r3xwjs-2",
                   "target": "td",
                   "toString": [Function],
-                  "usesTheme": false,
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 },
@@ -1941,7 +1918,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       "styledComponentId": "styled__StyledRow-r3xwjs-3",
                       "target": "tr",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -1986,7 +1962,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             "styledComponentId": "styled__Cell-r3xwjs-2",
                             "target": "td",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -2104,7 +2079,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               "styledComponentId": "styled__PaginationWrapper-r3xwjs-1",
               "target": "div",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -2146,7 +2120,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     "styledComponentId": "Label-sc-130fyca-0",
                     "target": "label",
                     "toString": [Function],
-                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -2194,7 +2167,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     "styledComponentId": "Label-sc-130fyca-0",
                     "target": "label",
                     "toString": [Function],
-                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -2303,7 +2275,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         "styledComponentId": "StyledButton-sc-1etazn9-0",
                         "target": "button",
                         "toString": [Function],
-                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -2340,7 +2311,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "styledComponentId": "ContentWrapper-sc-36hfub-0",
                               "target": "span",
                               "toString": [Function],
-                              "usesTheme": false,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -2374,7 +2344,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                     "styledComponentId": "Content-sc-18psqsj-0",
                                     "target": "span",
                                     "toString": [Function],
-                                    "usesTheme": false,
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
                                   }
@@ -2537,7 +2506,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         "styledComponentId": "StyledButton-sc-1etazn9-0",
                         "target": "button",
                         "toString": [Function],
-                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -2574,7 +2542,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                               "styledComponentId": "ContentWrapper-sc-36hfub-0",
                               "target": "span",
                               "toString": [Function],
-                              "usesTheme": false,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -2608,7 +2575,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                     "styledComponentId": "Content-sc-18psqsj-0",
                                     "target": "span",
                                     "toString": [Function],
-                                    "usesTheme": false,
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
                                   }
@@ -2714,7 +2680,6 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
             "styledComponentId": "styled__Cell-r3xwjs-2",
             "target": "td",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },
@@ -2784,7 +2749,6 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
             "styledComponentId": "styled__Cell-r3xwjs-2",
             "target": "td",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },
@@ -2919,7 +2883,6 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
             "styledComponentId": "styled__Cell-r3xwjs-2",
             "target": "td",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },
@@ -2989,7 +2952,6 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
             "styledComponentId": "styled__Cell-r3xwjs-2",
             "target": "td",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },
@@ -3079,7 +3041,6 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
             "styledComponentId": "styled__Cell-r3xwjs-2",
             "target": "td",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },
@@ -3149,7 +3110,6 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
             "styledComponentId": "styled__Cell-r3xwjs-2",
             "target": "td",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },
@@ -3297,7 +3257,6 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
             "styledComponentId": "styled__Cell-r3xwjs-2",
             "target": "td",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },
@@ -3367,7 +3326,6 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
             "styledComponentId": "styled__Cell-r3xwjs-2",
             "target": "td",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },
@@ -3515,7 +3473,6 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
             "styledComponentId": "styled__Cell-r3xwjs-2",
             "target": "td",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },
@@ -3585,7 +3542,6 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
             "styledComponentId": "styled__Cell-r3xwjs-2",
             "target": "td",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },
@@ -3721,7 +3677,6 @@ exports[`Table render should render table first child 1`] = `
             "styledComponentId": "styled__Cell-r3xwjs-2",
             "target": "td",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },
@@ -3792,7 +3747,6 @@ exports[`Table render should render table first child 1`] = `
             "styledComponentId": "styled__Cell-r3xwjs-2",
             "target": "td",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },

@@ -52,7 +52,6 @@ exports[`Step should match snapshot 1`] = `
           "styledComponentId": "styled__StepWrapper-g8vnjr-4",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -88,7 +87,6 @@ exports[`Step should match snapshot 1`] = `
                   "styledComponentId": "styled__IconLayer-g8vnjr-0",
                   "target": "span",
                   "toString": [Function],
-                  "usesTheme": false,
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 }
@@ -172,7 +170,6 @@ exports[`Step should match snapshot 1`] = `
                         "styledComponentId": "styled__StepIndex-g8vnjr-2",
                         "target": "span",
                         "toString": [Function],
-                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -212,7 +209,6 @@ exports[`Step should match snapshot 1`] = `
                 "styledComponentId": "styled__StepLabel-g8vnjr-3",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

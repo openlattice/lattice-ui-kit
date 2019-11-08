@@ -45,7 +45,6 @@ exports[`Label snapshots should match snapshot 1`] = `
         "styledComponentId": "Label-sc-130fyca-0",
         "target": "label",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

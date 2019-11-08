@@ -232,7 +232,6 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
           "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -275,7 +274,6 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
                 "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -347,7 +345,6 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -386,7 +383,6 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -420,7 +416,6 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -474,7 +469,6 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
                 "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -543,7 +537,6 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -581,7 +574,6 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -615,7 +607,6 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -848,7 +839,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
           "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -891,7 +881,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
                 "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -963,7 +952,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -1002,7 +990,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -1036,7 +1023,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -1090,7 +1076,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
                 "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1159,7 +1144,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -1197,7 +1181,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -1231,7 +1214,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -1408,7 +1390,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button only 1`
           "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -1451,7 +1432,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button only 1`
                 "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1523,7 +1503,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button only 1`
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -1562,7 +1541,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button only 1`
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -1596,7 +1574,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button only 1`
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -1860,7 +1837,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
           "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -1903,7 +1879,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                 "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1975,7 +1950,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -2014,7 +1988,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -2045,7 +2018,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                                     "styledComponentId": "ButtonSpinner__SpinnerWrapper-sc-1wmxw4l-0",
                                     "target": "div",
                                     "toString": [Function],
-                                    "usesTheme": false,
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
                                   }
@@ -2090,7 +2062,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                                             "styledComponentId": "Rotate-sc-1o7nhkd-0",
                                             "target": "span",
                                             "toString": [Function],
-                                            "usesTheme": false,
                                             "warnTooManyClasses": [Function],
                                             "withComponent": [Function],
                                           }
@@ -2238,7 +2209,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -2292,7 +2262,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                 "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -2361,7 +2330,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -2399,7 +2367,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -2433,7 +2400,6 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -2666,7 +2632,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
           "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -2709,7 +2674,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
                 "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -2781,7 +2745,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -2820,7 +2783,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -2854,7 +2816,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -2908,7 +2869,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
                 "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -2977,7 +2937,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -3015,7 +2974,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -3049,7 +3007,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -3226,7 +3183,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button only 
           "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -3266,7 +3222,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button only 
                 "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -3335,7 +3290,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button only 
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -3373,7 +3327,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button only 
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -3407,7 +3360,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button only 
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -3671,7 +3623,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
           "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -3714,7 +3665,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                 "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -3786,7 +3736,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -3825,7 +3774,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -3859,7 +3807,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -3913,7 +3860,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                 "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -3982,7 +3928,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -4020,7 +3965,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -4051,7 +3995,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                                     "styledComponentId": "ButtonSpinner__SpinnerWrapper-sc-1wmxw4l-0",
                                     "target": "div",
                                     "toString": [Function],
-                                    "usesTheme": false,
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
                                   }
@@ -4096,7 +4039,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                                             "styledComponentId": "Rotate-sc-1o7nhkd-0",
                                             "target": "span",
                                             "toString": [Function],
-                                            "usesTheme": false,
                                             "warnTooManyClasses": [Function],
                                             "withComponent": [Function],
                                           }
@@ -4244,7 +4186,6 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -4477,7 +4418,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
           "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -4520,7 +4460,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
                 "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -4592,7 +4531,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -4631,7 +4569,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -4665,7 +4602,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -4719,7 +4655,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
                 "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -4788,7 +4723,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -4826,7 +4760,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -4860,7 +4793,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -5037,7 +4969,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary butto
           "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -5080,7 +5011,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary butto
                 "styledComponentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -5152,7 +5082,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary butto
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -5191,7 +5120,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary butto
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -5225,7 +5153,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary butto
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
@@ -5402,7 +5329,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy secondary but
           "styledComponentId": "StyledModalComponents__FooterSection-sc-1r1r1yf-4",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -5442,7 +5368,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy secondary but
                 "styledComponentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                 "target": [Function],
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -5511,7 +5436,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy secondary but
                       "styledComponentId": "StyledButton-sc-1etazn9-0",
                       "target": "button",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -5549,7 +5473,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy secondary but
                             "styledComponentId": "ContentWrapper-sc-36hfub-0",
                             "target": "span",
                             "toString": [Function],
-                            "usesTheme": false,
                             "warnTooManyClasses": [Function],
                             "withComponent": [Function],
                           }
@@ -5583,7 +5506,6 @@ exports[`ModalFooter snapshots should match snapshot with stretchy secondary but
                                   "styledComponentId": "Content-sc-18psqsj-0",
                                   "target": "span",
                                   "toString": [Function],
-                                  "usesTheme": false,
                                   "warnTooManyClasses": [Function],
                                   "withComponent": [Function],
                                 }
