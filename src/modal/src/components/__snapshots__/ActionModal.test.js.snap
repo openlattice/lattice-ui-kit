@@ -8,7 +8,6 @@ exports[`ActionModal snapshots should match snapshot when isVisible="false" 1`] 
   onClose={[Function]}
   requestState="STANDBY"
   requestStateComponents={Object {}}
-  shouldCloseOnSuccess={false}
   textPrimary="Yes, confirm"
   textSecondary="No, cancel"
   textTitle="Action Action Action"
@@ -301,7 +300,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   onClose={[Function]}
   requestState="FAILURE"
   requestStateComponents={Object {}}
-  shouldCloseOnSuccess={false}
   textPrimary="Yes, confirm"
   textSecondary="No, cancel"
   textTitle="Action Action Action"
@@ -1693,7 +1691,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
       </span>,
     }
   }
-  shouldCloseOnSuccess={false}
   textPrimary="Yes, confirm"
   textSecondary="No, cancel"
   textTitle="Action Action Action"
@@ -3172,7 +3169,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   onClose={[Function]}
   requestState="PENDING"
   requestStateComponents={Object {}}
-  shouldCloseOnSuccess={false}
   textPrimary="Yes, confirm"
   textSecondary="No, cancel"
   textTitle="Action Action Action"
@@ -5162,7 +5158,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
       </span>,
     }
   }
-  shouldCloseOnSuccess={false}
   textPrimary="Yes, confirm"
   textSecondary="No, cancel"
   textTitle="Action Action Action"
@@ -7121,7 +7116,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   onClose={[Function]}
   requestState="STANDBY"
   requestStateComponents={Object {}}
-  shouldCloseOnSuccess={false}
   textPrimary="Yes, confirm"
   textSecondary="No, cancel"
   textTitle="Action Action Action"
@@ -8820,7 +8814,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
       </span>,
     }
   }
-  shouldCloseOnSuccess={false}
   textPrimary="Yes, confirm"
   textSecondary="No, cancel"
   textTitle="Action Action Action"
@@ -10463,7 +10456,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   onClose={[Function]}
   requestState="SUCCESS"
   requestStateComponents={Object {}}
-  shouldCloseOnSuccess={false}
   textPrimary="Yes, confirm"
   textSecondary="No, cancel"
   textTitle="Action Action Action"
@@ -11855,7 +11847,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
       </span>,
     }
   }
-  shouldCloseOnSuccess={false}
   textPrimary="Yes, confirm"
   textSecondary="No, cancel"
   textTitle="Action Action Action"
