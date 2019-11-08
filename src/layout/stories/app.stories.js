@@ -241,14 +241,14 @@ storiesOf('App', module)
   .add('navigation drawer', () => (
     <HashRouter>
       <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} user={mockUser}>
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} organizationsSelect={mockOrgSelect} user={mockUser}>
           <StoryAppNavigationWrapper drawer>
             <NavLink to="/home" />
             <NavLink to="/tab1">Data</NavLink>
             <NavLink to="/tab2">Administration</NavLink>
             <hr />
             <NavLink to="/tab3">Settings</NavLink>
-            <NavLink to="/tab3">Sign Out</NavLink>
+            <NavLink to="/sign-out">Sign Out</NavLink>
           </StoryAppNavigationWrapper>
         </StoryAppHeaderWrapper>
       </StoryAppContainerWrapper>
