@@ -5,7 +5,6 @@
 import React from 'react';
 import type { Element } from 'react';
 
-import isFunction from 'lodash/isFunction';
 import { RequestStates } from 'redux-reqseq';
 import type { RequestState } from 'redux-reqseq';
 
@@ -25,7 +24,6 @@ type ActionModalProps = {
     SUCCESS ?:Element<any>;
     FAILURE ?:Element<any>;
   };
-  shouldCloseOnSuccess :boolean;
 };
 
 const ActionModal = (props :ActionModalProps) => {
@@ -42,7 +40,6 @@ const ActionModal = (props :ActionModalProps) => {
     shouldBeCentered,
     shouldCloseOnEscape,
     shouldCloseOnOutsideClick,
-    shouldCloseOnSuccess,
     shouldStretchButtons,
     textPrimary,
     textSecondary,
@@ -55,7 +52,6 @@ const ActionModal = (props :ActionModalProps) => {
     return null;
   }
 
-  let isVisibleModal = isVisible;
   let withFooter = true;
 
   let body = requestStateComponents[RequestStates.STANDBY] || (
@@ -94,20 +90,9 @@ const ActionModal = (props :ActionModalProps) => {
     );
   }
 
-  if (requestState === RequestStates.SUCCESS && shouldCloseOnSuccess === true) {
-    isVisibleModal = false;
-    if (isFunction(onClose)) {
-      onClose();
-    }
-  }
-
-  if (!isVisibleModal) {
-    return null;
-  }
-
   return (
     <Modal
-        isVisible={isVisibleModal}
+        isVisible={isVisible}
         modalRef={modalRef}
         onClickPrimary={onClickPrimary}
         onClickSecondary={onClickSecondary}
@@ -135,7 +120,6 @@ ActionModal.defaultProps = {
   children: null,
   requestState: RequestStates.STANDBY,
   requestStateComponents: {},
-  shouldCloseOnSuccess: false,
   textPrimary: DEFAULT_PRIMARY_TEXT,
   textSecondary: DEFAULT_SECONDARY_TEXT,
 };

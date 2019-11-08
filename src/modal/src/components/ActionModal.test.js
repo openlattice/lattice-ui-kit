@@ -5,7 +5,6 @@ import { mount, shallow } from 'enzyme';
 import { RequestStates } from 'redux-reqseq';
 
 import ActionModal from './ActionModal';
-import Modal from './Modal';
 import { PrimaryButton, SecondaryButton } from './ModalFooter';
 import { CloseButton } from './ModalHeader';
 import { nope } from '../../../utils/testing/MockUtils';
@@ -461,28 +460,6 @@ describe('ActionModal', () => {
           expect(wrapper.contains(RS_COMPONENTS.FAILURE)).toEqual(true);
         });
 
-      });
-
-    });
-
-    describe('shouldCloseOnSuccess', () => {
-
-      test('should close modal when true', () => {
-        const mockOnClose = jest.fn();
-        const wrapper = mount(
-          <ActionModal isVisible onClose={mockOnClose} requestState={RequestStates.SUCCESS} shouldCloseOnSuccess />
-        );
-        expect(mockOnClose).toHaveBeenCalledTimes(1);
-        expect(wrapper.find(Modal)).toHaveLength(0);
-      });
-
-      test('should not close modal when false', () => {
-        const mockOnClose = jest.fn();
-        const wrapper = mount(
-          <ActionModal isVisible onClose={mockOnClose} shouldCloseOnSuccess={false} />
-        );
-        expect(mockOnClose).toHaveBeenCalledTimes(0);
-        expect(wrapper.find(Modal)).toHaveLength(1);
       });
 
     });
