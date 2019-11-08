@@ -5,7 +5,6 @@ import { mount, shallow } from 'enzyme';
 import { RequestStates } from 'redux-reqseq';
 
 import ActionModal from './ActionModal';
-import Modal from './Modal';
 import { PrimaryButton, SecondaryButton } from './ModalFooter';
 import { CloseButton } from './ModalHeader';
 import { nope } from '../../../utils/testing/MockUtils';
