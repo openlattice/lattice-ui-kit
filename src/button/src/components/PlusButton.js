@@ -8,7 +8,7 @@ import { faPlus } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import IconButton from './IconButton';
-import type { Props } from './Button';
+import type { Props } from './IconButton';
 
 const icon = (
   <FontAwesomeIcon icon={faPlus} />

@@ -105,12 +105,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -293,6 +293,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   width: 32px;
 }
 
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
+}
+
 <ActionModal
   isVisible={true}
   onClickPrimary={[Function]}
@@ -456,12 +462,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -642,6 +648,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   padding: 0;
   text-align: center;
   width: 32px;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
 }
 
 <div
@@ -877,8 +889,18 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
                                                         ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "240",
+                                                        "120",
                                                         "px);min-height:200px;min-width:300px;position:relative;",
+                                                        "@media (max-width:",
+                                                        "36",
+                                                        "em){",
+                                                        "
+    max-width: calc(100vw - ",
+                                                        "60",
+                                                        "px);
+  ",
+                                                        "}",
+                                                        " ",
                                                         [Function],
                                                         " ",
                                                         [Function],
@@ -1484,12 +1506,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -1670,6 +1692,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   padding: 0;
   text-align: center;
   width: 32px;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
 }
 
 <ActionModal
@@ -1859,12 +1887,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -2045,6 +2073,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   padding: 0;
   text-align: center;
   width: 32px;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
 }
 
 <div
@@ -2280,8 +2314,18 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
                                                         ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "240",
+                                                        "120",
                                                         "px);min-height:200px;min-width:300px;position:relative;",
+                                                        "@media (max-width:",
+                                                        "36",
+                                                        "em){",
+                                                        "
+    max-width: calc(100vw - ",
+                                                        "60",
+                                                        "px);
+  ",
+                                                        "}",
+                                                        " ",
                                                         [Function],
                                                         " ",
                                                         [Function],
@@ -2887,12 +2931,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -3162,6 +3206,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   width: 32px;
 }
 
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
+}
+
 <ActionModal
   isVisible={true}
   onClickPrimary={[Function]}
@@ -3324,12 +3374,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -3597,6 +3647,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   padding: 0;
   text-align: center;
   width: 32px;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
 }
 
 <div
@@ -3891,8 +3947,18 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
                                                         ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "240",
+                                                        "120",
                                                         "px);min-height:200px;min-width:300px;position:relative;",
+                                                        "@media (max-width:",
+                                                        "36",
+                                                        "em){",
+                                                        "
+    max-width: calc(100vw - ",
+                                                        "60",
+                                                        "px);
+  ",
+                                                        "}",
+                                                        " ",
                                                         [Function],
                                                         " ",
                                                         [Function],
@@ -4864,12 +4930,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -5139,6 +5205,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   width: 32px;
 }
 
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
+}
+
 <ActionModal
   isVisible={true}
   onClickPrimary={[Function]}
@@ -5325,12 +5397,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -5598,6 +5670,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   padding: 0;
   text-align: center;
   width: 32px;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
 }
 
 <div
@@ -5892,8 +5970,18 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
                                                         ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "240",
+                                                        "120",
                                                         "px);min-height:200px;min-width:300px;position:relative;",
+                                                        "@media (max-width:",
+                                                        "36",
+                                                        "em){",
+                                                        "
+    max-width: calc(100vw - ",
+                                                        "60",
+                                                        "px);
+  ",
+                                                        "}",
+                                                        " ",
                                                         [Function],
                                                         " ",
                                                         [Function],
@@ -6865,12 +6953,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -7109,6 +7197,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   width: 32px;
 }
 
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
+}
+
 <ActionModal
   isVisible={true}
   onClickPrimary={[Function]}
@@ -7260,12 +7354,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -7502,6 +7596,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   padding: 0;
   text-align: center;
   width: 32px;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
 }
 
 <div
@@ -7752,8 +7852,18 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
                                                         ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "240",
+                                                        "120",
                                                         "px);min-height:200px;min-width:300px;position:relative;",
+                                                        "@media (max-width:",
+                                                        "36",
+                                                        "em){",
+                                                        "
+    max-width: calc(100vw - ",
+                                                        "60",
+                                                        "px);
+  ",
+                                                        "}",
+                                                        " ",
                                                         [Function],
                                                         " ",
                                                         [Function],
@@ -8551,12 +8661,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -8795,6 +8905,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   width: 32px;
 }
 
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
+}
+
 <ActionModal
   isVisible={true}
   onClickPrimary={[Function]}
@@ -8970,12 +9086,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -9212,6 +9328,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   padding: 0;
   text-align: center;
   width: 32px;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
 }
 
 <div
@@ -9462,8 +9584,18 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
                                                         ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "240",
+                                                        "120",
                                                         "px);min-height:200px;min-width:300px;position:relative;",
+                                                        "@media (max-width:",
+                                                        "36",
+                                                        "em){",
+                                                        "
+    max-width: calc(100vw - ",
+                                                        "60",
+                                                        "px);
+  ",
+                                                        "}",
+                                                        " ",
                                                         [Function],
                                                         " ",
                                                         [Function],
@@ -10261,12 +10393,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -10449,6 +10581,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   width: 32px;
 }
 
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
+}
+
 <ActionModal
   isVisible={true}
   onClickPrimary={[Function]}
@@ -10612,12 +10750,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -10798,6 +10936,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   padding: 0;
   text-align: center;
   width: 32px;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
 }
 
 <div
@@ -11033,8 +11177,18 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
                                                         ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "240",
+                                                        "120",
                                                         "px);min-height:200px;min-width:300px;position:relative;",
+                                                        "@media (max-width:",
+                                                        "36",
+                                                        "em){",
+                                                        "
+    max-width: calc(100vw - ",
+                                                        "60",
+                                                        "px);
+  ",
+                                                        "}",
+                                                        " ",
                                                         [Function],
                                                         " ",
                                                         [Function],
@@ -11640,12 +11794,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -11826,6 +11980,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   padding: 0;
   text-align: center;
   width: 32px;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
 }
 
 <ActionModal
@@ -12015,12 +12175,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -12201,6 +12361,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   padding: 0;
   text-align: center;
   width: 32px;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
 }
 
 <div
@@ -12436,8 +12602,18 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
                                                         ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "240",
+                                                        "120",
                                                         "px);min-height:200px;min-width:300px;position:relative;",
+                                                        "@media (max-width:",
+                                                        "36",
+                                                        "em){",
+                                                        "
+    max-width: calc(100vw - ",
+                                                        "60",
+                                                        "px);
+  ",
+                                                        "}",
+                                                        " ",
                                                         [Function],
                                                         " ",
                                                         [Function],

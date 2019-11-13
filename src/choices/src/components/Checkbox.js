@@ -37,6 +37,7 @@ const Checkbox = ({
             id={id}
             readOnly={readOnly}
             disabled={disabled || readOnly}
+            // $FlowFixMe
             {...rest} />
         <CheckboxIndicator />
       </ChoiceInnerWrapper>
