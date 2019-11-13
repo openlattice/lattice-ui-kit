@@ -57,9 +57,9 @@ const sizes = {
 // https://www.styled-components.com/docs/advanced#media-templates
 // font-size: 16
 const media = Object.keys(sizes).reduce((acc, label) => {
-  acc[label] = (...args) => css`
+  acc[label] = (...styles :any) => css`
     @media (max-width: ${sizes[label] / 16}em) {
-      ${css(...args)}
+      ${css(...styles)}
     }
   `;
 
