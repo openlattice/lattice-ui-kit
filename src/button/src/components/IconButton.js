@@ -14,8 +14,7 @@ const IconMarginRight = styled.span`
   margin: 0 8px 0 0;
 `;
 
-type Props = {
-  ...ButtonProps;
+type Props = ButtonProps & {
   icon ?:Element<any>;
 };
 

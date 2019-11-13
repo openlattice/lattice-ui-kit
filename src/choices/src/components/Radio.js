@@ -36,6 +36,7 @@ const Radio = ({
             id={id}
             readOnly={readOnly}
             disabled={disabled || readOnly}
+            // $FlowFixMe
             {...rest} />
         <RadioIndicator />
       </ChoiceInnerWrapper>
