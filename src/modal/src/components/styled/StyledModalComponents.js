@@ -5,9 +5,10 @@
 import styled, { css } from 'styled-components';
 
 import { NEUTRALS, WHITE } from '../../../../colors';
+import { media } from '../../../../utils/StyleUtils';
 
 const DEFAULT_PADDING :number = 30;
-const VIEWPORT_PADDING :number = 120;
+const VIEWPORT_PADDING :number = 60;
 
 const getOuterContainerHeight = ({ viewportScrolling }) => {
 
@@ -99,6 +100,10 @@ export const ModalInnerContainer = styled.div`
   min-height: 200px; /* = 2 * 100px, where 100px is the "min-height" of ModalSection */
   min-width: 300px;
   position: relative;
+
+  ${media.phone`
+    max-width: calc(100vw - ${VIEWPORT_PADDING}px);
+  `}
   ${getInnerContainerMargin}
   ${getInnerContainerMaxHeight}
 `;

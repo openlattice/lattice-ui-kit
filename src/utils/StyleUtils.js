@@ -48,8 +48,31 @@ const getHoverStyles = (props :{ onClick :() => any }) => {
   return null;
 };
 
+// TODO: Refine and justify media query sizes
+// Loosely based on 4:3 ratio and using em units
+const sizes = {
+  desktop: 1024, // 60em
+  tablet: 768, // 48em
+  phone: 576, // 36em
+};
+
+// https://github.com/styled-components/styled-components/pull/183/files
+const media = Object.keys(sizes).reduce((acc, label) => {
+  // em-based media queries adapt better when browser is zoomed
+  // browser defaults to 16px = 1em
+  acc[label] = (...styles :any) => css`
+    @media (max-width: ${sizes[label] / 16}em) {
+      ${css(...styles)}
+    }
+  `;
+
+  return acc;
+}, {});
+
+
 export {
   getHoverStyles,
   getStickyPosition,
   getStyleVariation,
+  media,
 };

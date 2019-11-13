@@ -142,12 +142,12 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -386,6 +386,12 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   width: 32px;
 }
 
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
+}
+
 <Modal
   isVisible={true}
   onClickPrimary={[Function]}
@@ -524,12 +530,12 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 240px);
+  max-width: calc(100vw - 120px);
   min-height: 200px;
   min-width: 300px;
   position: relative;
   margin: 0;
-  max-height: calc(100vh - 240px);
+  max-height: calc(100vh - 120px);
 }
 
 .c7 {
@@ -766,6 +772,12 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   padding: 0;
   text-align: center;
   width: 32px;
+}
+
+@media (max-width:36em) {
+  .c3 {
+    max-width: calc(100vw - 60px);
+  }
 }
 
 <div
@@ -1016,8 +1028,18 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                       ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                       "#555e6f",
                                                       ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                      "240",
+                                                      "120",
                                                       "px);min-height:200px;min-width:300px;position:relative;",
+                                                      "@media (max-width:",
+                                                      "36",
+                                                      "em){",
+                                                      "
+    max-width: calc(100vw - ",
+                                                      "60",
+                                                      "px);
+  ",
+                                                      "}",
+                                                      " ",
                                                       [Function],
                                                       " ",
                                                       [Function],

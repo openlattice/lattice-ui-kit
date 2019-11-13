@@ -431,7 +431,7 @@ describe('modal', () => {
           expect(modalOuterContainer).toHaveStyleRule('min-height', '100%');
 
           const modalInnerContainer = modal.find(ModalInnerContainer);
-          expect(modalInnerContainer).toHaveStyleRule('max-height', 'calc(100vh - 240px)');
+          expect(modalInnerContainer).toHaveStyleRule('max-height', 'calc(100vh - 120px)');
           expect(modalInnerContainer).toHaveStyleRule('margin', '0');
         });
 
@@ -466,7 +466,7 @@ describe('modal', () => {
 
           const modalInnerContainer = modal.find(ModalInnerContainer);
           expect(modalInnerContainer).not.toHaveStyleRule('max-height');
-          expect(modalInnerContainer).toHaveStyleRule('margin', '120px 0');
+          expect(modalInnerContainer).toHaveStyleRule('margin', '60px 0');
         });
 
         test('should pass "isScrollable=true" to the overlay component', () => {
