@@ -84,6 +84,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -105,12 +106,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -294,8 +294,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -441,6 +441,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -462,12 +463,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -651,8 +651,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -845,7 +845,19 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                 "isStatic": false,
                                                 "lastClassName": "c2",
                                                 "rules": Array [
-                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;",
+                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;padding:",
+                                                  "60px",
+                                                  ";",
+                                                  "@media (max-width:",
+                                                  "36",
+                                                  "em){",
+                                                  "
+    padding: ",
+                                                  "30px",
+                                                  ";
+  ",
+                                                  "}",
+                                                  " ",
                                                   [Function],
                                                 ],
                                               },
@@ -888,21 +900,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                         "#ffffff",
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
-                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "120",
-                                                        "px);min-height:200px;min-width:300px;position:relative;",
-                                                        "@media (max-width:",
-                                                        "36",
-                                                        "em){",
-                                                        "
-    max-width: calc(100vw - ",
-                                                        "60",
-                                                        "px);
-  ",
-                                                        "}",
-                                                        " ",
-                                                        [Function],
-                                                        " ",
+                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                         [Function],
                                                       ],
                                                     },
@@ -941,8 +939,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row;justify-content:space-between;",
                                                               ],
                                                             },
@@ -1106,11 +1104,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "flex:1 1 auto;padding:0 ",
-                                                                "30",
-                                                                "px;",
+                                                                "30px",
+                                                                ";",
                                                                 [Function],
                                                               ],
                                                             },
@@ -1164,8 +1162,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row-reverse;",
                                                               ],
                                                             },
@@ -1485,6 +1483,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -1506,12 +1505,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -1695,8 +1693,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -1866,6 +1864,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -1887,12 +1886,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -2076,8 +2074,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -2270,7 +2268,19 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                 "isStatic": false,
                                                 "lastClassName": "c2",
                                                 "rules": Array [
-                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;",
+                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;padding:",
+                                                  "60px",
+                                                  ";",
+                                                  "@media (max-width:",
+                                                  "36",
+                                                  "em){",
+                                                  "
+    padding: ",
+                                                  "30px",
+                                                  ";
+  ",
+                                                  "}",
+                                                  " ",
                                                   [Function],
                                                 ],
                                               },
@@ -2313,21 +2323,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                         "#ffffff",
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
-                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "120",
-                                                        "px);min-height:200px;min-width:300px;position:relative;",
-                                                        "@media (max-width:",
-                                                        "36",
-                                                        "em){",
-                                                        "
-    max-width: calc(100vw - ",
-                                                        "60",
-                                                        "px);
-  ",
-                                                        "}",
-                                                        " ",
-                                                        [Function],
-                                                        " ",
+                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                         [Function],
                                                       ],
                                                     },
@@ -2366,8 +2362,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row;justify-content:space-between;",
                                                               ],
                                                             },
@@ -2531,11 +2527,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "flex:1 1 auto;padding:0 ",
-                                                                "30",
-                                                                "px;",
+                                                                "30px",
+                                                                ";",
                                                                 [Function],
                                                               ],
                                                             },
@@ -2589,8 +2585,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row-reverse;",
                                                               ],
                                                             },
@@ -2910,6 +2906,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -2931,12 +2928,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -3207,8 +3203,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -3353,6 +3349,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -3374,12 +3371,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -3650,8 +3646,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -3903,7 +3899,19 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                 "isStatic": false,
                                                 "lastClassName": "c2",
                                                 "rules": Array [
-                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;",
+                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;padding:",
+                                                  "60px",
+                                                  ";",
+                                                  "@media (max-width:",
+                                                  "36",
+                                                  "em){",
+                                                  "
+    padding: ",
+                                                  "30px",
+                                                  ";
+  ",
+                                                  "}",
+                                                  " ",
                                                   [Function],
                                                 ],
                                               },
@@ -3946,21 +3954,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                         "#ffffff",
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
-                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "120",
-                                                        "px);min-height:200px;min-width:300px;position:relative;",
-                                                        "@media (max-width:",
-                                                        "36",
-                                                        "em){",
-                                                        "
-    max-width: calc(100vw - ",
-                                                        "60",
-                                                        "px);
-  ",
-                                                        "}",
-                                                        " ",
-                                                        [Function],
-                                                        " ",
+                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                         [Function],
                                                       ],
                                                     },
@@ -3999,8 +3993,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row;justify-content:space-between;",
                                                               ],
                                                             },
@@ -4164,11 +4158,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "flex:1 1 auto;padding:0 ",
-                                                                "30",
-                                                                "px;",
+                                                                "30px",
+                                                                ";",
                                                                 [Function],
                                                               ],
                                                             },
@@ -4221,8 +4215,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row-reverse;",
                                                               ],
                                                             },
@@ -4909,6 +4903,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -4930,12 +4925,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -5206,8 +5200,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -5376,6 +5370,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -5397,12 +5392,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -5673,8 +5667,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -5926,7 +5920,19 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                 "isStatic": false,
                                                 "lastClassName": "c2",
                                                 "rules": Array [
-                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;",
+                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;padding:",
+                                                  "60px",
+                                                  ";",
+                                                  "@media (max-width:",
+                                                  "36",
+                                                  "em){",
+                                                  "
+    padding: ",
+                                                  "30px",
+                                                  ";
+  ",
+                                                  "}",
+                                                  " ",
                                                   [Function],
                                                 ],
                                               },
@@ -5969,21 +5975,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                         "#ffffff",
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
-                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "120",
-                                                        "px);min-height:200px;min-width:300px;position:relative;",
-                                                        "@media (max-width:",
-                                                        "36",
-                                                        "em){",
-                                                        "
-    max-width: calc(100vw - ",
-                                                        "60",
-                                                        "px);
-  ",
-                                                        "}",
-                                                        " ",
-                                                        [Function],
-                                                        " ",
+                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                         [Function],
                                                       ],
                                                     },
@@ -6022,8 +6014,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row;justify-content:space-between;",
                                                               ],
                                                             },
@@ -6187,11 +6179,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "flex:1 1 auto;padding:0 ",
-                                                                "30",
-                                                                "px;",
+                                                                "30px",
+                                                                ";",
                                                                 [Function],
                                                               ],
                                                             },
@@ -6244,8 +6236,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row-reverse;",
                                                               ],
                                                             },
@@ -6932,6 +6924,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -6953,12 +6946,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -7198,8 +7190,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -7333,6 +7325,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -7354,12 +7347,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -7599,8 +7591,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -7808,7 +7800,19 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                 "isStatic": false,
                                                 "lastClassName": "c2",
                                                 "rules": Array [
-                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;",
+                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;padding:",
+                                                  "60px",
+                                                  ";",
+                                                  "@media (max-width:",
+                                                  "36",
+                                                  "em){",
+                                                  "
+    padding: ",
+                                                  "30px",
+                                                  ";
+  ",
+                                                  "}",
+                                                  " ",
                                                   [Function],
                                                 ],
                                               },
@@ -7851,21 +7855,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                         "#ffffff",
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
-                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "120",
-                                                        "px);min-height:200px;min-width:300px;position:relative;",
-                                                        "@media (max-width:",
-                                                        "36",
-                                                        "em){",
-                                                        "
-    max-width: calc(100vw - ",
-                                                        "60",
-                                                        "px);
-  ",
-                                                        "}",
-                                                        " ",
-                                                        [Function],
-                                                        " ",
+                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                         [Function],
                                                       ],
                                                     },
@@ -7904,8 +7894,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row;justify-content:space-between;",
                                                               ],
                                                             },
@@ -8069,11 +8059,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "flex:1 1 auto;padding:0 ",
-                                                                "30",
-                                                                "px;",
+                                                                "30px",
+                                                                ";",
                                                                 [Function],
                                                               ],
                                                             },
@@ -8128,8 +8118,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row-reverse;",
                                                               ],
                                                             },
@@ -8640,6 +8630,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -8661,12 +8652,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -8906,8 +8896,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -9065,6 +9055,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -9086,12 +9077,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -9331,8 +9321,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -9540,7 +9530,19 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                 "isStatic": false,
                                                 "lastClassName": "c2",
                                                 "rules": Array [
-                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;",
+                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;padding:",
+                                                  "60px",
+                                                  ";",
+                                                  "@media (max-width:",
+                                                  "36",
+                                                  "em){",
+                                                  "
+    padding: ",
+                                                  "30px",
+                                                  ";
+  ",
+                                                  "}",
+                                                  " ",
                                                   [Function],
                                                 ],
                                               },
@@ -9583,21 +9585,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                         "#ffffff",
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
-                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "120",
-                                                        "px);min-height:200px;min-width:300px;position:relative;",
-                                                        "@media (max-width:",
-                                                        "36",
-                                                        "em){",
-                                                        "
-    max-width: calc(100vw - ",
-                                                        "60",
-                                                        "px);
-  ",
-                                                        "}",
-                                                        " ",
-                                                        [Function],
-                                                        " ",
+                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                         [Function],
                                                       ],
                                                     },
@@ -9636,8 +9624,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row;justify-content:space-between;",
                                                               ],
                                                             },
@@ -9801,11 +9789,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "flex:1 1 auto;padding:0 ",
-                                                                "30",
-                                                                "px;",
+                                                                "30px",
+                                                                ";",
                                                                 [Function],
                                                               ],
                                                             },
@@ -9860,8 +9848,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row-reverse;",
                                                               ],
                                                             },
@@ -10372,6 +10360,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -10393,12 +10382,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -10582,8 +10570,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -10729,6 +10717,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -10750,12 +10739,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -10939,8 +10927,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -11133,7 +11121,19 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                 "isStatic": false,
                                                 "lastClassName": "c2",
                                                 "rules": Array [
-                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;",
+                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;padding:",
+                                                  "60px",
+                                                  ";",
+                                                  "@media (max-width:",
+                                                  "36",
+                                                  "em){",
+                                                  "
+    padding: ",
+                                                  "30px",
+                                                  ";
+  ",
+                                                  "}",
+                                                  " ",
                                                   [Function],
                                                 ],
                                               },
@@ -11176,21 +11176,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                         "#ffffff",
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
-                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "120",
-                                                        "px);min-height:200px;min-width:300px;position:relative;",
-                                                        "@media (max-width:",
-                                                        "36",
-                                                        "em){",
-                                                        "
-    max-width: calc(100vw - ",
-                                                        "60",
-                                                        "px);
-  ",
-                                                        "}",
-                                                        " ",
-                                                        [Function],
-                                                        " ",
+                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                         [Function],
                                                       ],
                                                     },
@@ -11229,8 +11215,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row;justify-content:space-between;",
                                                               ],
                                                             },
@@ -11394,11 +11380,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "flex:1 1 auto;padding:0 ",
-                                                                "30",
-                                                                "px;",
+                                                                "30px",
+                                                                ";",
                                                                 [Function],
                                                               ],
                                                             },
@@ -11452,8 +11438,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row-reverse;",
                                                               ],
                                                             },
@@ -11773,6 +11759,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -11794,12 +11781,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -11983,8 +11969,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -12154,6 +12140,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  padding: 60px;
   height: 100%;
   min-height: 100%;
 }
@@ -12175,12 +12162,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: calc(100vw - 120px);
+  max-width: 100%;
   min-height: 200px;
   min-width: 300px;
   position: relative;
-  margin: 0;
-  max-height: calc(100vh - 120px);
+  max-height: 100%;
 }
 
 .c7 {
@@ -12364,8 +12350,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 @media (max-width:36em) {
-  .c3 {
-    max-width: calc(100vw - 60px);
+  .c2 {
+    padding: 30px;
   }
 }
 
@@ -12558,7 +12544,19 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                 "isStatic": false,
                                                 "lastClassName": "c2",
                                                 "rules": Array [
-                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;",
+                                                  "align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;padding:",
+                                                  "60px",
+                                                  ";",
+                                                  "@media (max-width:",
+                                                  "36",
+                                                  "em){",
+                                                  "
+    padding: ",
+                                                  "30px",
+                                                  ";
+  ",
+                                                  "}",
+                                                  " ",
                                                   [Function],
                                                 ],
                                               },
@@ -12601,21 +12599,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                         "#ffffff",
                                                         ";border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                         "#555e6f",
-                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:calc(100vw - ",
-                                                        "120",
-                                                        "px);min-height:200px;min-width:300px;position:relative;",
-                                                        "@media (max-width:",
-                                                        "36",
-                                                        "em){",
-                                                        "
-    max-width: calc(100vw - ",
-                                                        "60",
-                                                        "px);
-  ",
-                                                        "}",
-                                                        " ",
-                                                        [Function],
-                                                        " ",
+                                                        ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                         [Function],
                                                       ],
                                                     },
@@ -12654,8 +12638,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row;justify-content:space-between;",
                                                               ],
                                                             },
@@ -12819,11 +12803,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "flex:1 1 auto;padding:0 ",
-                                                                "30",
-                                                                "px;",
+                                                                "30px",
+                                                                ";",
                                                                 [Function],
                                                               ],
                                                             },
@@ -12877,8 +12861,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                 "color:",
                                                                 "#555e6f",
                                                                 ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
-                                                                "30",
-                                                                "px;position:relative;",
+                                                                "30px",
+                                                                ";position:relative;",
                                                                 "align-items:center;flex-direction:row-reverse;",
                                                               ],
                                                             },
