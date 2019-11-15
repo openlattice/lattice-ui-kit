@@ -7,8 +7,8 @@ import styled, { css } from 'styled-components';
 import { NEUTRALS, WHITE } from '../../../../colors';
 import { media } from '../../../../utils/StyleUtils';
 
-const DEFAULT_PADDING :number = 30;
-const VIEWPORT_PADDING :number = 60;
+const DEFAULT_PADDING :string = '30px';
+const LARGE_PADDING :string = '60px';
 
 const getOuterContainerHeight = ({ viewportScrolling }) => {
 
@@ -25,30 +25,11 @@ const getOuterContainerHeight = ({ viewportScrolling }) => {
   `;
 };
 
-const getInnerContainerMargin = ({ center, viewportScrolling }) => {
-
-  if (viewportScrolling) {
-    return css`
-      margin: ${VIEWPORT_PADDING}px 0;
-    `;
-  }
-
-  if (!center) {
-    return css`
-      margin-top: ${VIEWPORT_PADDING}px;
-    `;
-  }
-
-  return css`
-    margin: 0;
-  `;
-};
-
 const getInnerContainerMaxHeight = ({ viewportScrolling }) => {
 
   if (!viewportScrolling) {
     return css`
-      max-height: calc(100vh - ${VIEWPORT_PADDING * 2}px);
+      max-height: 100%;
     `;
   }
 
@@ -76,17 +57,17 @@ export const ModalOuterContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  padding: ${LARGE_PADDING};
+
+  ${media.phone`
+    padding: ${DEFAULT_PADDING};
+  `}
   ${getOuterContainerHeight}
 `;
 
 /*
- * height & width are dynamically calculated based on the viewport:
- *   - the max-height is equal to the height of the viewport minus 2x the desired padding (bottom & top)
- *   - the max-width is equal to the width of the viewport minus 2x the desired padding (left & right)
- * for a centered modal, the parent container takes care of centering with flexbox
- * for a not-centered modal:
- *   - horizontal positioning is controlled by the parent container with flexbox, center by default
- *   - vertical positioning uses "margin-top", set to the desired viewport padding, half of what is subtracted
+ * max height & width are bounded by the ModalOuterContainer padding
+ * alignment is handled by flexbox
  */
 export const ModalInnerContainer = styled.div`
   align-self: ${({ center }) => (center ? 'center' : 'flex-start')};
@@ -96,15 +77,11 @@ export const ModalInnerContainer = styled.div`
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  max-width: calc(100vw - ${VIEWPORT_PADDING * 2}px);
+  max-width: 100%;
   min-height: 200px; /* = 2 * 100px, where 100px is the "min-height" of ModalSection */
   min-width: 300px;
   position: relative;
 
-  ${media.phone`
-    max-width: calc(100vw - ${VIEWPORT_PADDING}px);
-  `}
-  ${getInnerContainerMargin}
   ${getInnerContainerMaxHeight}
 `;
 
@@ -117,13 +94,13 @@ export const ModalSection = styled.div`
   flex: 0 0 auto;
   flex-direction: column;
   min-height: 40px;
-  padding: ${DEFAULT_PADDING}px;
+  padding: ${DEFAULT_PADDING};
   position: relative;
 `;
 
 export const BodySection = styled(ModalSection)`
   flex: 1 1 auto;
-  padding: 0 ${DEFAULT_PADDING}px;
+  padding: 0 ${DEFAULT_PADDING};
   ${getScrollBehavior}
 `;
 

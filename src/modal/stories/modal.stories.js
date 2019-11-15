@@ -52,6 +52,23 @@ storiesOf('Modal', module)
       </>
     );
   })
+  .add('viewportScrolling', () => {
+    const [isVisible, show, hide] = useBoolean();
+    return (
+      <>
+        <Modal
+            isVisible={isVisible}
+            onClose={hide}
+            textPrimary="Confirm"
+            textSecondary="Cancel"
+            textTitle="Metallica, Master of Puppets - March 3, 1986"
+            viewportScrolling>
+          <div style={{ height: '4096px' }}>I am a tall div</div>
+        </Modal>
+        <Button onClick={show}>Show Modal</Button>
+      </>
+    );
+  })
   .add('Nested', () => {
     const [isVisible, show, hide] = useBoolean();
     return (
