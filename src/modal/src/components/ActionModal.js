@@ -48,10 +48,6 @@ const ActionModal = (props :ActionModalProps) => {
     withHeader,
   } = props;
 
-  if (!isVisible) {
-    return null;
-  }
-
   let withFooter = true;
 
   let body = requestStateComponents[RequestStates.STANDBY] || (
