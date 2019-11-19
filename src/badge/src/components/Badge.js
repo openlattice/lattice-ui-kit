@@ -1,7 +1,6 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import type { Node } from 'react';
 
 import * as Colors from '../../../colors';
 import { getStyleVariation } from '../../../utils/StyleUtils';
@@ -42,23 +41,23 @@ const BadgeWrapper = styled.span`
 
 type Props = {
   className ? :string;
-  children :Node;
+  count :number;
   max ? :number;
   mode ? :string;
 };
 
 const Badge = ({
   className,
-  children,
+  count,
   max,
   mode
 } :Props) => (
   <BadgeWrapper className={className} mode={mode}>
     {
-      max ? (
+      (max !== undefined && count > max) ? (
         `${max}+`
       )
-        : children
+        : count
     }
   </BadgeWrapper>
 );
