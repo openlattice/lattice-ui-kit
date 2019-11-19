@@ -1,5 +1,8 @@
 // @flow
+import React from 'react';
 import styled from 'styled-components';
+import type { Node } from 'react';
+
 import * as Colors from '../../../colors';
 import { getStyleVariation } from '../../../utils/StyleUtils';
 
@@ -27,7 +30,7 @@ const getFontColor = getStyleVariation('mode', {
   subtle: PURPLES[2],
 }, NEUTRALS[0]);
 
-const Badge = styled.span`
+const BadgeWrapper = styled.span`
   background-color: ${getBackgroundColor};
   border-radius: 32px;
   color: ${getFontColor};
@@ -36,5 +39,27 @@ const Badge = styled.span`
   margin: 0 5px;
   padding: 3px 8px;
 `;
+
+type Props = {
+  children :Node;
+  max ? :number;
+  mode ? :string;
+};
+
+const Badge = ({ children, max, mode } :Props) => (
+  <BadgeWrapper mode={mode}>
+    {
+      max ? (
+        `${max}+`
+      )
+        : children
+    }
+  </BadgeWrapper>
+);
+
+Badge.defaultProps = {
+  max: 0,
+  mode: '',
+};
 
 export default Badge;

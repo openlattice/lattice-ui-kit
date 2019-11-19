@@ -17,6 +17,9 @@ storiesOf('Badge', module)
           <Badge mode="added">+100</Badge>
           <Badge mode="removed">-99</Badge>
         </CardSegment>
+        <CardSegment>
+          <Badge mode="primary" max="100" />
+        </CardSegment>
       </Card>
     </>
   ));
