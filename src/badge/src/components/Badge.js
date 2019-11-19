@@ -41,13 +41,19 @@ const BadgeWrapper = styled.span`
 `;
 
 type Props = {
+  className ? :string;
   children :Node;
   max ? :number;
   mode ? :string;
 };
 
-const Badge = ({ children, max, mode } :Props) => (
-  <BadgeWrapper mode={mode}>
+const Badge = ({
+  className,
+  children,
+  max,
+  mode
+} :Props) => (
+  <BadgeWrapper className={className} mode={mode}>
     {
       max ? (
         `${max}+`
@@ -58,6 +64,7 @@ const Badge = ({ children, max, mode } :Props) => (
 );
 
 Badge.defaultProps = {
+  className: undefined,
   max: 0,
   mode: '',
 };
