@@ -11,41 +11,50 @@ exports[`Badge snapshots should match snapshot 1`] = `
   padding: 3px 8px;
 }
 
-<Badge>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "Badge-sc-1kfg7sp-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "background-color:",
-            [Function],
-            ";border-radius:32px;color:",
-            [Function],
-            ";font-size:12px;font-weight:normal;margin:0 5px;padding:3px 8px;",
-          ],
-        },
-        "displayName": "Badge",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "Badge-sc-1kfg7sp-0",
-        "target": "span",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
+<Badge
+  max={0}
+  mode=""
+>
+  <Badge__BadgeWrapper
+    mode=""
   >
-    <span
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              [Function],
+              ";border-radius:32px;color:",
+              [Function],
+              ";font-size:12px;font-weight:normal;margin:0 5px;padding:3px 8px;",
+            ],
+          },
+          "displayName": "Badge__BadgeWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode=""
     >
-      tag
-    </span>
-  </StyledComponent>
+      <span
+        className="c0"
+        mode=""
+      >
+        tag
+      </span>
+    </StyledComponent>
+  </Badge__BadgeWrapper>
 </Badge>
 `;
