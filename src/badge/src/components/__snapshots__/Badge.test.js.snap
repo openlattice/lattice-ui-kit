@@ -12,7 +12,6 @@ exports[`Badge snapshots should match snapshot 1`] = `
 }
 
 <Badge
-  max={0}
   mode=""
 >
   <Badge__BadgeWrapper
