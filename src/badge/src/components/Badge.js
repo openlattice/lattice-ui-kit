@@ -64,7 +64,7 @@ const Badge = ({
 
 Badge.defaultProps = {
   className: undefined,
-  max: 0,
+  max: undefined,
   mode: '',
 };
 
