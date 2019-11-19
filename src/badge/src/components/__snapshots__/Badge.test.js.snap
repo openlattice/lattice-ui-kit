@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge snapshots should match snapshot 1`] = `
+.c0 {
+  border-radius: 32px;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 5px;
+  padding: 3px 8px;
+  background-color: #f0f0f7;
+  color: #555e6f;
+}
+
+<Badge>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Badge-sc-1kfg7sp-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "border-radius:32px;font-size:12px;font-weight:normal;margin:0 5px;padding:3px 8px;background-color:",
+            [Function],
+            ";color:",
+            [Function],
+            ";",
+          ],
+        },
+        "displayName": "Badge",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Badge-sc-1kfg7sp-0",
+        "target": "span",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <span
+      className="c0"
+    >
+      tag
+    </span>
+  </StyledComponent>
+</Badge>
+`;
