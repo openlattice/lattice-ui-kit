@@ -10,15 +10,15 @@ storiesOf('Badge', module)
       <h1>Badges</h1>
       <Card>
         <CardSegment>
-          <Badge>5</Badge>
-          <Badge mode="primary">25</Badge>
-          <Badge mode="secondary">10</Badge>
-          <Badge mode="subtle">25</Badge>
-          <Badge mode="added">+100</Badge>
-          <Badge mode="removed">-99</Badge>
+          <Badge count="5" />
+          <Badge mode="primary" count="25" />
+          <Badge mode="secondary" count="10" />
+          <Badge mode="subtle" count="25" />
+          <Badge mode="added" count="+34" />
+          <Badge mode="removed" count="-34" />
         </CardSegment>
         <CardSegment>
-          <Badge mode="primary" max="100" />
+          <Badge mode="primary" max="100" count="456" />
         </CardSegment>
       </Card>
     </>
