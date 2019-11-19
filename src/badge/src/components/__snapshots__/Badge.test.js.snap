@@ -51,9 +51,7 @@ exports[`Badge snapshots should match snapshot 1`] = `
       <span
         className="c0"
         mode=""
-      >
-        tag
-      </span>
+      />
     </StyledComponent>
   </Badge__BadgeWrapper>
 </Badge>
