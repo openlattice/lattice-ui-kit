@@ -13,6 +13,7 @@ storiesOf('Badge', module)
           <Badge>5</Badge>
           <Badge mode="primary">25</Badge>
           <Badge mode="secondary">10</Badge>
+          <Badge mode="subtle">25</Badge>
           <Badge mode="added">+100</Badge>
           <Badge mode="removed">-99</Badge>
         </CardSegment>
