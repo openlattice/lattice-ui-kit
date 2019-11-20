@@ -27,6 +27,16 @@ describe('Badge', () => {
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
+    test('text should show count and not max', () => {
+      const wrapper = mount(<Badge count="82" max="99" />);
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('default max value should be displayed', () => {
+      const wrapper = mount(<Badge count="8000" />);
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
   });
 
   describe('modes', () => {
