@@ -12,6 +12,7 @@ exports[`Badge snapshots should match snapshot 1`] = `
 }
 
 <Badge
+  count="10"
   mode=""
 >
   <Badge__BadgeWrapper
@@ -50,7 +51,69 @@ exports[`Badge snapshots should match snapshot 1`] = `
       <span
         className="c0"
         mode=""
-      />
+      >
+        10
+      </span>
+    </StyledComponent>
+  </Badge__BadgeWrapper>
+</Badge>
+`;
+
+exports[`Badge snapshots text should show max and not count 1`] = `
+.c0 {
+  background-color: #f0f0f7;
+  border-radius: 32px;
+  color: #555e6f;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 5px;
+  padding: 3px 8px;
+}
+
+<Badge
+  count="100"
+  max="99"
+  mode=""
+>
+  <Badge__BadgeWrapper
+    mode=""
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              [Function],
+              ";border-radius:32px;color:",
+              [Function],
+              ";font-size:12px;font-weight:normal;margin:0 5px;padding:3px 8px;",
+            ],
+          },
+          "displayName": "Badge__BadgeWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode=""
+    >
+      <span
+        className="c0"
+        mode=""
+      >
+        100
+      </span>
     </StyledComponent>
   </Badge__BadgeWrapper>
 </Badge>
