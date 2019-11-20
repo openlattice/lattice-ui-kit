@@ -3,20 +3,20 @@
 exports[`Badge snapshots should match snapshot 1`] = `
 .c0 {
   background-color: #f0f0f7;
-  border-radius: 32px;
+  border-radius: 50%;
   color: #555e6f;
   font-size: 12px;
   font-weight: normal;
-  margin: 0 5px;
   padding: 3px 8px;
 }
 
 <Badge
   count="10"
-  mode=""
+  max={999}
+  mode="default"
 >
   <Badge__BadgeWrapper
-    mode=""
+    mode="default"
   >
     <StyledComponent
       forwardedComponent={
@@ -30,9 +30,9 @@ exports[`Badge snapshots should match snapshot 1`] = `
             "rules": Array [
               "background-color:",
               [Function],
-              ";border-radius:32px;color:",
+              ";border-radius:50%;color:",
               [Function],
-              ";font-size:12px;font-weight:normal;margin:0 5px;padding:3px 8px;",
+              ";font-size:12px;font-weight:normal;padding:3px 8px;",
             ],
           },
           "displayName": "Badge__BadgeWrapper",
@@ -46,11 +46,11 @@ exports[`Badge snapshots should match snapshot 1`] = `
         }
       }
       forwardedRef={null}
-      mode=""
+      mode="default"
     >
       <span
         className="c0"
-        mode=""
+        mode="default"
       >
         10
       </span>
@@ -62,21 +62,20 @@ exports[`Badge snapshots should match snapshot 1`] = `
 exports[`Badge snapshots text should show max and not count 1`] = `
 .c0 {
   background-color: #f0f0f7;
-  border-radius: 32px;
+  border-radius: 50%;
   color: #555e6f;
   font-size: 12px;
   font-weight: normal;
-  margin: 0 5px;
   padding: 3px 8px;
 }
 
 <Badge
   count="100"
   max="99"
-  mode=""
+  mode="default"
 >
   <Badge__BadgeWrapper
-    mode=""
+    mode="default"
   >
     <StyledComponent
       forwardedComponent={
@@ -90,9 +89,9 @@ exports[`Badge snapshots text should show max and not count 1`] = `
             "rules": Array [
               "background-color:",
               [Function],
-              ";border-radius:32px;color:",
+              ";border-radius:50%;color:",
               [Function],
-              ";font-size:12px;font-weight:normal;margin:0 5px;padding:3px 8px;",
+              ";font-size:12px;font-weight:normal;padding:3px 8px;",
             ],
           },
           "displayName": "Badge__BadgeWrapper",
@@ -106,11 +105,11 @@ exports[`Badge snapshots text should show max and not count 1`] = `
         }
       }
       forwardedRef={null}
-      mode=""
+      mode="default"
     >
       <span
         className="c0"
-        mode=""
+        mode="default"
       >
         100
       </span>
