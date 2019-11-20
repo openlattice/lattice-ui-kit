@@ -2,12 +2,15 @@ import React from 'react';
 
 import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
+import { CSSTransition, config } from 'react-transition-group';
 import { RequestStates } from 'redux-reqseq';
 
 import ActionModal from './ActionModal';
 import { PrimaryButton, SecondaryButton } from './ModalFooter';
 import { CloseButton } from './ModalHeader';
 import { nope } from '../../../utils/testing/MockUtils';
+
+config.disabled = true;
 
 const CANCEL_TXT = 'No, cancel';
 const CONFIRM_TXT = 'Yes, confirm';
@@ -226,26 +229,21 @@ describe('ActionModal', () => {
         expect(wrapper.dive().type()).not.toBeNull();
       });
 
-      test('should close the modal', () => {
-        const wrapper = shallow(
-          <ActionModal isVisible={false} onClose={nope} />
+      test('should show the modal', () => {
+        const wrapper = mount(
+          <ActionModal isVisible onClose={nope} />
         );
-        expect(wrapper.props()).toEqual({});
-        expect(wrapper.type()).toBeNull();
+        const transitionWrapper = wrapper.find(CSSTransition);
+        expect(transitionWrapper.prop('in')).toEqual(true);
       });
 
-      test('should toggle visibility', () => {
-        const wrapper = shallow(
+      test('should hide the modal', () => {
+        const wrapper = mount(
           <ActionModal isVisible={false} onClose={nope} />
         );
-        expect(wrapper.props()).toEqual({});
-        expect(wrapper.type()).toBeNull();
-        wrapper.setProps({ isVisible: true });
-        expect(wrapper.prop('isVisible')).toEqual(true);
-        expect(wrapper.dive().type()).not.toBeNull();
-        wrapper.setProps({ isVisible: false });
-        expect(wrapper.props()).toEqual({});
-        expect(wrapper.type()).toBeNull();
+
+        const transitionWrapper = wrapper.find(CSSTransition);
+        expect(transitionWrapper.prop('in')).toEqual(false);
       });
 
     });
