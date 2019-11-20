@@ -75,6 +75,17 @@ storiesOf('Button', module)
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
+        <H2>Size: sm</H2>
+        <ButtonRow>
+          <Button size="sm" onClick={action('button clicked')}>Default</Button>
+          <Button size="sm" mode="primary" onClick={action('button clicked')}>Primary</Button>
+          <Button size="sm" mode="secondary" onClick={action('button clicked')}>Secondary</Button>
+          <Button size="sm" mode="positive" onClick={action('button clicked')}>Positive</Button>
+          <Button size="sm" mode="negative" onClick={action('button clicked')}>Negative</Button>
+          <Button size="sm" mode="subtle" onClick={action('button clicked')}>Subtle</Button>
+        </ButtonRow>
+      </CardSegment>
+      <CardSegment vertical>
         <H2>Disabled</H2>
         <ButtonRow>
           <Button disabled onClick={action('button clicked')}>Default</Button>
@@ -151,6 +162,17 @@ storiesOf('Button', module)
         <ButtonRow>
           <IconButton icon={LaunchIcon} onClick={action('click')} />
           <IconButton icon={LaunchIcon} onClick={action('click')}>Launch</IconButton>
+        </ButtonRow>
+      </CardSegment>
+      <CardSegment vertical>
+        <H2>Size: sm</H2>
+        <ButtonRow>
+          <SearchButton size="sm" mode="primary" onClick={action('click')} />
+          <CopyButton size="sm" mode="secondary" onClick={action('click')} />
+          <EditButton size="sm" onClick={action('click')} />
+          <PlusButton size="sm" mode="positive" onClick={action('click')} />
+          <MinusButton size="sm" mode="negative" onClick={action('click')} />
+          <IconButton size="sm" icon={LaunchIcon} onClick={action('click')} />
         </ButtonRow>
       </CardSegment>
     </Card>

@@ -69,6 +69,19 @@ describe('button', () => {
       });
     });
 
+    describe('size="sm"', () => {
+      const basicBtn = mount(
+        <Button size="sm" mode="default" onClick={nope}>
+          { DEFAULT_BTN_TXT }
+        </Button>
+      );
+      test('should have small styles', () => {
+        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
+        expect(basicBtn).toHaveStyleRule('font-size', '11px');
+        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
+      });
+    });
+
     describe('disabled', () => {
 
       const disabledBtn1 = mount(
@@ -159,6 +172,19 @@ describe('button', () => {
       });
     });
 
+    describe('size="sm"', () => {
+      const basicBtn = mount(
+        <Button size="sm" mode="primary" onClick={nope}>
+          { PRIMARY_BTN_TXT }
+        </Button>
+      );
+      test('should have small styles', () => {
+        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
+        expect(basicBtn).toHaveStyleRule('font-size', '11px');
+        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
+      });
+    });
+
     describe('disabled', () => {
 
       const disabledBtn = mount(
@@ -229,6 +255,19 @@ describe('button', () => {
       test('should set content opacity to 0', () => {
         const wrapper = mount(<Button mode="secondary" isLoading />);
         expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
+      });
+    });
+
+    describe('size="sm"', () => {
+      const basicBtn = mount(
+        <Button size="sm" mode="secondary" onClick={nope}>
+          { SECONDARY_BTN_TXT }
+        </Button>
+      );
+      test('should have small styles', () => {
+        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
+        expect(basicBtn).toHaveStyleRule('font-size', '11px');
+        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
       });
     });
 
@@ -305,6 +344,19 @@ describe('button', () => {
       });
     });
 
+    describe('size="sm"', () => {
+      const basicBtn = mount(
+        <Button size="sm" mode="positive" onClick={nope}>
+          { POSITIVE_BTN_TXT }
+        </Button>
+      );
+      test('should have small styles', () => {
+        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
+        expect(basicBtn).toHaveStyleRule('font-size', '11px');
+        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
+      });
+    });
+
     describe('disabled', () => {
 
       const disabledBtn = mount(
@@ -378,6 +430,19 @@ describe('button', () => {
       });
     });
 
+    describe('size="sm"', () => {
+      const basicBtn = mount(
+        <Button size="sm" mode="negative" onClick={nope}>
+          { NEGATIVE_BTN_TXT }
+        </Button>
+      );
+      test('should have small styles', () => {
+        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
+        expect(basicBtn).toHaveStyleRule('font-size', '11px');
+        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
+      });
+    });
+
     describe('disabled', () => {
 
       const disabledBtn = mount(
@@ -448,6 +513,19 @@ describe('button', () => {
       test('should set content opacity to 0', () => {
         const wrapper = mount(<Button mode="subtle" isLoading />);
         expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
+      });
+    });
+
+    describe('size="sm"', () => {
+      const basicBtn = mount(
+        <Button size="sm" mode="subtle" onClick={nope}>
+          { SUBTLE_BTN_TXT }
+        </Button>
+      );
+      test('should have small styles', () => {
+        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
+        expect(basicBtn).toHaveStyleRule('font-size', '11px');
+        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
       });
     });
 
@@ -530,6 +608,19 @@ describe('button', () => {
       test('should set content opacity to 0', () => {
         const wrapper = mount(<Button isLoading />);
         expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
+      });
+    });
+
+    describe('size="sm"', () => {
+      const basicBtn = mount(
+        <Button size="sm" mode="neutral" onClick={nope}>
+          { NEUTRAL_BTN_TXT }
+        </Button>
+      );
+      test('should have small styles', () => {
+        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
+        expect(basicBtn).toHaveStyleRule('font-size', '11px');
+        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
       });
     });
 
