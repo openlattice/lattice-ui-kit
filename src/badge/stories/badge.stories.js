@@ -12,7 +12,7 @@ storiesOf('Badge', module)
         <CardSegment>
           <Badge count="5" />
           <Badge mode="primary" count="25" />
-          <Badge mode="secondary" count="10" />
+          <Badge mode="secondary" count="1000" />
           <Badge mode="subtle" count="25" />
           <Badge mode="added" count="+34" />
           <Badge mode="removed" count="-34" />

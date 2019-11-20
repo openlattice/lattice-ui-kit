@@ -31,19 +31,18 @@ const getFontColor = getStyleVariation('mode', {
 
 const BadgeWrapper = styled.span`
   background-color: ${getBackgroundColor};
-  border-radius: 32px;
+  border-radius: 50%;
   color: ${getFontColor};
   font-size: 12px;
   font-weight: normal;
-  margin: 0 5px;
   padding: 3px 8px;
 `;
 
 type Props = {
   className ? :string;
   count :number;
-  max ? :number;
-  mode ? :string;
+  max ?:number;
+  mode ?:string;
 };
 
 const Badge = ({
@@ -54,9 +53,8 @@ const Badge = ({
 } :Props) => (
   <BadgeWrapper className={className} mode={mode}>
     {
-      (max !== undefined && count > max) ? (
-        `${max}+`
-      )
+      (max !== undefined && count > max)
+        ? `${max}+`
         : count
     }
   </BadgeWrapper>
@@ -64,8 +62,8 @@ const Badge = ({
 
 Badge.defaultProps = {
   className: undefined,
-  max: undefined,
-  mode: '',
+  max: 999,
+  mode: 'default',
 };
 
 export default Badge;
