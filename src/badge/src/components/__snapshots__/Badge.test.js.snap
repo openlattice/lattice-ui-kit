@@ -7,7 +7,7 @@ exports[`Badge snapshots default max value should be displayed 1`] = `
   color: #555e6f;
   font-size: 12px;
   font-weight: 600;
-  padding: 3px 8px;
+  padding: 0.1875em 0.5em;
   text-align: center;
 }
 
@@ -33,7 +33,7 @@ exports[`Badge snapshots default max value should be displayed 1`] = `
               [Function],
               ";border-radius:2em;color:",
               [Function],
-              ";font-size:12px;font-weight:600;padding:3px 8px;text-align:center;",
+              ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;",
             ],
           },
           "displayName": "Badge__BadgeWrapper",
@@ -67,7 +67,7 @@ exports[`Badge snapshots should match snapshot 1`] = `
   color: #555e6f;
   font-size: 12px;
   font-weight: 600;
-  padding: 3px 8px;
+  padding: 0.1875em 0.5em;
   text-align: center;
 }
 
@@ -93,7 +93,7 @@ exports[`Badge snapshots should match snapshot 1`] = `
               [Function],
               ";border-radius:2em;color:",
               [Function],
-              ";font-size:12px;font-weight:600;padding:3px 8px;text-align:center;",
+              ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;",
             ],
           },
           "displayName": "Badge__BadgeWrapper",
@@ -127,7 +127,7 @@ exports[`Badge snapshots text should show count and not max 1`] = `
   color: #555e6f;
   font-size: 12px;
   font-weight: 600;
-  padding: 3px 8px;
+  padding: 0.1875em 0.5em;
   text-align: center;
 }
 
@@ -153,7 +153,7 @@ exports[`Badge snapshots text should show count and not max 1`] = `
               [Function],
               ";border-radius:2em;color:",
               [Function],
-              ";font-size:12px;font-weight:600;padding:3px 8px;text-align:center;",
+              ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;",
             ],
           },
           "displayName": "Badge__BadgeWrapper",
@@ -187,7 +187,7 @@ exports[`Badge snapshots text should show max and not count 1`] = `
   color: #555e6f;
   font-size: 12px;
   font-weight: 600;
-  padding: 3px 8px;
+  padding: 0.1875em 0.5em;
   text-align: center;
 }
 
@@ -213,7 +213,7 @@ exports[`Badge snapshots text should show max and not count 1`] = `
               [Function],
               ";border-radius:2em;color:",
               [Function],
-              ";font-size:12px;font-weight:600;padding:3px 8px;text-align:center;",
+              ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;",
             ],
           },
           "displayName": "Badge__BadgeWrapper",
