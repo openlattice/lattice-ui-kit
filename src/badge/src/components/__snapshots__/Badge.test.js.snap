@@ -3,7 +3,7 @@
 exports[`Badge snapshots default max value should be displayed 1`] = `
 .c0 {
   background-color: #f0f0f7;
-  border-radius: 50%;
+  border-radius: 35%;
   color: #555e6f;
   font-size: 12px;
   font-weight: normal;
@@ -30,7 +30,7 @@ exports[`Badge snapshots default max value should be displayed 1`] = `
             "rules": Array [
               "background-color:",
               [Function],
-              ";border-radius:50%;color:",
+              ";border-radius:35%;color:",
               [Function],
               ";font-size:12px;font-weight:normal;padding:3px 8px;",
             ],
@@ -62,7 +62,7 @@ exports[`Badge snapshots default max value should be displayed 1`] = `
 exports[`Badge snapshots should match snapshot 1`] = `
 .c0 {
   background-color: #f0f0f7;
-  border-radius: 50%;
+  border-radius: 35%;
   color: #555e6f;
   font-size: 12px;
   font-weight: normal;
@@ -89,7 +89,7 @@ exports[`Badge snapshots should match snapshot 1`] = `
             "rules": Array [
               "background-color:",
               [Function],
-              ";border-radius:50%;color:",
+              ";border-radius:35%;color:",
               [Function],
               ";font-size:12px;font-weight:normal;padding:3px 8px;",
             ],
@@ -121,7 +121,7 @@ exports[`Badge snapshots should match snapshot 1`] = `
 exports[`Badge snapshots text should show count and not max 1`] = `
 .c0 {
   background-color: #f0f0f7;
-  border-radius: 50%;
+  border-radius: 35%;
   color: #555e6f;
   font-size: 12px;
   font-weight: normal;
@@ -148,7 +148,7 @@ exports[`Badge snapshots text should show count and not max 1`] = `
             "rules": Array [
               "background-color:",
               [Function],
-              ";border-radius:50%;color:",
+              ";border-radius:35%;color:",
               [Function],
               ";font-size:12px;font-weight:normal;padding:3px 8px;",
             ],
@@ -180,7 +180,7 @@ exports[`Badge snapshots text should show count and not max 1`] = `
 exports[`Badge snapshots text should show max and not count 1`] = `
 .c0 {
   background-color: #f0f0f7;
-  border-radius: 50%;
+  border-radius: 35%;
   color: #555e6f;
   font-size: 12px;
   font-weight: normal;
@@ -207,7 +207,7 @@ exports[`Badge snapshots text should show max and not count 1`] = `
             "rules": Array [
               "background-color:",
               [Function],
-              ";border-radius:50%;color:",
+              ";border-radius:35%;color:",
               [Function],
               ";font-size:12px;font-weight:normal;padding:3px 8px;",
             ],
