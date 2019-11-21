@@ -25,7 +25,7 @@ const BadgeWrapper = styled.span`
   color: ${getFontColor};
   font-size: 12px;
   font-weight: 600;
-  padding: 3px 8px;
+  padding: 0.1875em 0.5em;
   text-align: center;
 `;
 
