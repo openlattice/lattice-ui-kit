@@ -30,7 +30,7 @@ const BadgeWrapper = styled.span`
 `;
 
 type Props = {
-  className ? :string;
+  className ?:string;
   count :number;
   max ?:number;
   mode ?:string;
