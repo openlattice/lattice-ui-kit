@@ -5,14 +5,7 @@ import { mount } from 'enzyme';
 import * as Colors from '../../../colors';
 import Badge from './Badge';
 
-const {
-  GREENS,
-  NEUTRALS,
-  PURPLES,
-  REDS,
-  WHITE,
-} = Colors;
-
+const { NEUTRALS, PURPLES, WHITE } = Colors;
 
 describe('Badge', () => {
   describe('snapshots', () => {
@@ -57,18 +50,6 @@ describe('Badge', () => {
       const wrapper = mount(<Badge mode="secondary" count="10" />);
       expect(wrapper.find(Badge)).toHaveStyleRule('color', PURPLES[1]);
       expect(wrapper.find(Badge)).toHaveStyleRule('background-color', PURPLES[5]);
-    });
-
-    test('added', () => {
-      const wrapper = mount(<Badge mode="added" count="10" />);
-      expect(wrapper.find(Badge)).toHaveStyleRule('color', GREENS[3]);
-      expect(wrapper.find(Badge)).toHaveStyleRule('background-color', GREENS[0]);
-    });
-
-    test('removed', () => {
-      const wrapper = mount(<Badge mode="removed" count="10" />);
-      expect(wrapper.find(Badge)).toHaveStyleRule('color', REDS[3]);
-      expect(wrapper.find(Badge)).toHaveStyleRule('background-color', REDS[0]);
     });
 
   });
