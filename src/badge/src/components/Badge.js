@@ -21,7 +21,7 @@ const getFontColor = getStyleVariation('mode', {
 
 const BadgeWrapper = styled.span`
   background-color: ${getBackgroundColor};
-  border-radius: 50%;
+  border-radius: 35%;
   color: ${getFontColor};
   font-size: 12px;
   font-weight: normal;

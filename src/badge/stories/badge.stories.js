@@ -12,7 +12,7 @@ storiesOf('Badge', module)
         <CardSegment>
           <Badge count="5" />
           <Badge mode="primary" count="25" />
-          <Badge mode="secondary" count="25" />
+          <Badge mode="secondary" count="150" />
           <Badge mode="subtle" count="25" />
         </CardSegment>
         <CardSegment>
