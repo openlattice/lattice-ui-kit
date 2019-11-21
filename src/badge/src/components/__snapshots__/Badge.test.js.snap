@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge snapshots default max value should be displayed 1`] = `
+.c0 {
+  background-color: #f0f0f7;
+  border-radius: 2em;
+  color: #555e6f;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.1875em 0.5em;
+  text-align: center;
+}
+
+<Badge
+  count="8000"
+  max={999}
+  mode="default"
+>
+  <Badge__BadgeWrapper
+    mode="default"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              [Function],
+              ";border-radius:2em;color:",
+              [Function],
+              ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;",
+            ],
+          },
+          "displayName": "Badge__BadgeWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="default"
+    >
+      <span
+        className="c0"
+        mode="default"
+      >
+        999+
+      </span>
+    </StyledComponent>
+  </Badge__BadgeWrapper>
+</Badge>
+`;
+
+exports[`Badge snapshots should match snapshot 1`] = `
+.c0 {
+  background-color: #f0f0f7;
+  border-radius: 2em;
+  color: #555e6f;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.1875em 0.5em;
+  text-align: center;
+}
+
+<Badge
+  count="10"
+  max={999}
+  mode="default"
+>
+  <Badge__BadgeWrapper
+    mode="default"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              [Function],
+              ";border-radius:2em;color:",
+              [Function],
+              ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;",
+            ],
+          },
+          "displayName": "Badge__BadgeWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="default"
+    >
+      <span
+        className="c0"
+        mode="default"
+      >
+        10
+      </span>
+    </StyledComponent>
+  </Badge__BadgeWrapper>
+</Badge>
+`;
+
+exports[`Badge snapshots text should show count and not max 1`] = `
+.c0 {
+  background-color: #f0f0f7;
+  border-radius: 2em;
+  color: #555e6f;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.1875em 0.5em;
+  text-align: center;
+}
+
+<Badge
+  count="82"
+  max="99"
+  mode="default"
+>
+  <Badge__BadgeWrapper
+    mode="default"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              [Function],
+              ";border-radius:2em;color:",
+              [Function],
+              ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;",
+            ],
+          },
+          "displayName": "Badge__BadgeWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="default"
+    >
+      <span
+        className="c0"
+        mode="default"
+      >
+        82
+      </span>
+    </StyledComponent>
+  </Badge__BadgeWrapper>
+</Badge>
+`;
+
+exports[`Badge snapshots text should show max and not count 1`] = `
+.c0 {
+  background-color: #f0f0f7;
+  border-radius: 2em;
+  color: #555e6f;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.1875em 0.5em;
+  text-align: center;
+}
+
+<Badge
+  count="100"
+  max="99"
+  mode="default"
+>
+  <Badge__BadgeWrapper
+    mode="default"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "background-color:",
+              [Function],
+              ";border-radius:2em;color:",
+              [Function],
+              ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;",
+            ],
+          },
+          "displayName": "Badge__BadgeWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      mode="default"
+    >
+      <span
+        className="c0"
+        mode="default"
+      >
+        100
+      </span>
+    </StyledComponent>
+  </Badge__BadgeWrapper>
+</Badge>
+`;
