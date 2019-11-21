@@ -18,6 +18,7 @@ export {
   StyleUtils,
   version,
 };
+export { default as Badge } from './badge';
 export { default as Banner } from './banner';
 export { default as Drawer } from './drawer';
 export { default as Label } from './label';
