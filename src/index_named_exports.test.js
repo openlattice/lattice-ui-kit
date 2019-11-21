@@ -4,6 +4,7 @@ import PACKAGE from '../package.json';
 import * as LatticeUIKit from './index';
 
 const EXPECTED_OBJ_EXPORTS = Set([
+  'Badge',
   'Banner',
   'Button',
   'CopyButton',

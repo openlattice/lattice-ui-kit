@@ -2862,7 +2862,6 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
   <Memo(PaginationToolbar)
     count={0}
     rowsPerPage={5}
-    rowsPerPageOptions={Array []}
     setPage={[Function]}
     setRowsPerPage={[Function]}
   />
@@ -2973,7 +2972,6 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
           "Row": [Function],
         }
       }
-      data={Array []}
       headers={
         Array [
           Object {
@@ -3008,7 +3006,6 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
   <Memo(PaginationToolbar)
     count={0}
     rowsPerPage={5}
-    rowsPerPageOptions={Array []}
     setPage={[Function]}
     setRowsPerPage={[Function]}
   />
@@ -3020,7 +3017,6 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
   <Memo(PaginationToolbar)
     count={7}
     rowsPerPage={7}
-    rowsPerPageOptions={Array []}
     setPage={[Function]}
     setRowsPerPage={[Function]}
   />
@@ -3218,7 +3214,6 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
   <Memo(PaginationToolbar)
     count={7}
     rowsPerPage={7}
-    rowsPerPageOptions={Array []}
     setPage={[Function]}
     setRowsPerPage={[Function]}
   />
@@ -3452,7 +3447,6 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
   <Memo(PaginationToolbar)
     count={7}
     rowsPerPage={7}
-    rowsPerPageOptions={Array []}
     setPage={[Function]}
     setRowsPerPage={[Function]}
   />
@@ -3650,7 +3644,6 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
   <Memo(PaginationToolbar)
     count={7}
     rowsPerPage={7}
-    rowsPerPageOptions={Array []}
     setPage={[Function]}
     setRowsPerPage={[Function]}
   />
