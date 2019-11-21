@@ -21,11 +21,12 @@ const getFontColor = getStyleVariation('mode', {
 
 const BadgeWrapper = styled.span`
   background-color: ${getBackgroundColor};
-  border-radius: 35%;
+  border-radius: 2em;
   color: ${getFontColor};
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 600;
   padding: 3px 8px;
+  text-align: center;
 `;
 
 type Props = {

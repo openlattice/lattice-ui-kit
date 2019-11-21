@@ -17,7 +17,7 @@ storiesOf('Badge', module)
         </CardSegment>
         <CardSegment>
           <Badge mode="primary" max="100" count="456" />
-          <Badge mode="primary" count="4560" />
+          <Badge mode="primary" count="456000000" max="100000" />
         </CardSegment>
       </Card>
     </>

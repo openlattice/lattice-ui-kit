@@ -3,11 +3,12 @@
 exports[`Badge snapshots default max value should be displayed 1`] = `
 .c0 {
   background-color: #f0f0f7;
-  border-radius: 35%;
+  border-radius: 2em;
   color: #555e6f;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 600;
   padding: 3px 8px;
+  text-align: center;
 }
 
 <Badge
@@ -30,9 +31,9 @@ exports[`Badge snapshots default max value should be displayed 1`] = `
             "rules": Array [
               "background-color:",
               [Function],
-              ";border-radius:35%;color:",
+              ";border-radius:2em;color:",
               [Function],
-              ";font-size:12px;font-weight:normal;padding:3px 8px;",
+              ";font-size:12px;font-weight:600;padding:3px 8px;text-align:center;",
             ],
           },
           "displayName": "Badge__BadgeWrapper",
@@ -62,11 +63,12 @@ exports[`Badge snapshots default max value should be displayed 1`] = `
 exports[`Badge snapshots should match snapshot 1`] = `
 .c0 {
   background-color: #f0f0f7;
-  border-radius: 35%;
+  border-radius: 2em;
   color: #555e6f;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 600;
   padding: 3px 8px;
+  text-align: center;
 }
 
 <Badge
@@ -89,9 +91,9 @@ exports[`Badge snapshots should match snapshot 1`] = `
             "rules": Array [
               "background-color:",
               [Function],
-              ";border-radius:35%;color:",
+              ";border-radius:2em;color:",
               [Function],
-              ";font-size:12px;font-weight:normal;padding:3px 8px;",
+              ";font-size:12px;font-weight:600;padding:3px 8px;text-align:center;",
             ],
           },
           "displayName": "Badge__BadgeWrapper",
@@ -121,11 +123,12 @@ exports[`Badge snapshots should match snapshot 1`] = `
 exports[`Badge snapshots text should show count and not max 1`] = `
 .c0 {
   background-color: #f0f0f7;
-  border-radius: 35%;
+  border-radius: 2em;
   color: #555e6f;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 600;
   padding: 3px 8px;
+  text-align: center;
 }
 
 <Badge
@@ -148,9 +151,9 @@ exports[`Badge snapshots text should show count and not max 1`] = `
             "rules": Array [
               "background-color:",
               [Function],
-              ";border-radius:35%;color:",
+              ";border-radius:2em;color:",
               [Function],
-              ";font-size:12px;font-weight:normal;padding:3px 8px;",
+              ";font-size:12px;font-weight:600;padding:3px 8px;text-align:center;",
             ],
           },
           "displayName": "Badge__BadgeWrapper",
@@ -180,11 +183,12 @@ exports[`Badge snapshots text should show count and not max 1`] = `
 exports[`Badge snapshots text should show max and not count 1`] = `
 .c0 {
   background-color: #f0f0f7;
-  border-radius: 35%;
+  border-radius: 2em;
   color: #555e6f;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 600;
   padding: 3px 8px;
+  text-align: center;
 }
 
 <Badge
@@ -207,9 +211,9 @@ exports[`Badge snapshots text should show max and not count 1`] = `
             "rules": Array [
               "background-color:",
               [Function],
-              ";border-radius:35%;color:",
+              ";border-radius:2em;color:",
               [Function],
-              ";font-size:12px;font-weight:normal;padding:3px 8px;",
+              ";font-size:12px;font-weight:600;padding:3px 8px;text-align:center;",
             ],
           },
           "displayName": "Badge__BadgeWrapper",
