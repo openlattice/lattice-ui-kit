@@ -173,15 +173,15 @@ describe('button', () => {
     });
 
     describe('size="sm"', () => {
-      const basicBtn = mount(
+      const smallBtn = mount(
         <Button size="sm" mode="primary" onClick={nope}>
           { PRIMARY_BTN_TXT }
         </Button>
       );
       test('should have small styles', () => {
-        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
-        expect(basicBtn).toHaveStyleRule('font-size', '11px');
-        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
+        expect(smallBtn).toHaveStyleRule('padding', '5px 10px');
+        expect(smallBtn).toHaveStyleRule('font-size', '11px');
+        expect(smallBtn).toHaveStyleRule('line-height', '1.5');
       });
     });
 
@@ -259,15 +259,15 @@ describe('button', () => {
     });
 
     describe('size="sm"', () => {
-      const basicBtn = mount(
+      const smallBtn = mount(
         <Button size="sm" mode="secondary" onClick={nope}>
           { SECONDARY_BTN_TXT }
         </Button>
       );
       test('should have small styles', () => {
-        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
-        expect(basicBtn).toHaveStyleRule('font-size', '11px');
-        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
+        expect(smallBtn).toHaveStyleRule('padding', '5px 10px');
+        expect(smallBtn).toHaveStyleRule('font-size', '11px');
+        expect(smallBtn).toHaveStyleRule('line-height', '1.5');
       });
     });
 
@@ -345,15 +345,15 @@ describe('button', () => {
     });
 
     describe('size="sm"', () => {
-      const basicBtn = mount(
+      const smallBtn = mount(
         <Button size="sm" mode="positive" onClick={nope}>
           { POSITIVE_BTN_TXT }
         </Button>
       );
       test('should have small styles', () => {
-        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
-        expect(basicBtn).toHaveStyleRule('font-size', '11px');
-        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
+        expect(smallBtn).toHaveStyleRule('padding', '5px 10px');
+        expect(smallBtn).toHaveStyleRule('font-size', '11px');
+        expect(smallBtn).toHaveStyleRule('line-height', '1.5');
       });
     });
 
@@ -431,15 +431,15 @@ describe('button', () => {
     });
 
     describe('size="sm"', () => {
-      const basicBtn = mount(
+      const smallBtn = mount(
         <Button size="sm" mode="negative" onClick={nope}>
           { NEGATIVE_BTN_TXT }
         </Button>
       );
       test('should have small styles', () => {
-        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
-        expect(basicBtn).toHaveStyleRule('font-size', '11px');
-        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
+        expect(smallBtn).toHaveStyleRule('padding', '5px 10px');
+        expect(smallBtn).toHaveStyleRule('font-size', '11px');
+        expect(smallBtn).toHaveStyleRule('line-height', '1.5');
       });
     });
 
@@ -517,15 +517,15 @@ describe('button', () => {
     });
 
     describe('size="sm"', () => {
-      const basicBtn = mount(
+      const smallBtn = mount(
         <Button size="sm" mode="subtle" onClick={nope}>
           { SUBTLE_BTN_TXT }
         </Button>
       );
       test('should have small styles', () => {
-        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
-        expect(basicBtn).toHaveStyleRule('font-size', '11px');
-        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
+        expect(smallBtn).toHaveStyleRule('padding', '5px 10px');
+        expect(smallBtn).toHaveStyleRule('font-size', '11px');
+        expect(smallBtn).toHaveStyleRule('line-height', '1.5');
       });
     });
 
