@@ -109,7 +109,7 @@ const focusVariation = getStyleVariation('mode', {
   neutral: neutralFocus,
 });
 
-const paddingVariation = getStyleVariation('size', {
+const size = getStyleVariation('size', {
   sm: css`
     padding: 5px 10px;
     font-size: 11px;
@@ -134,7 +134,7 @@ const StyledButton = styled.button`
     box-shadow ${duration.swift} ease-out;
   width: ${(props) => (props.fullWidth && '100%')};
   white-space: nowrap;
-  ${paddingVariation};
+  ${size};
   ${baseButtonVariation};
 
   :hover {
