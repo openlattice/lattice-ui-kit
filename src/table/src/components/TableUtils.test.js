@@ -1,10 +1,11 @@
 import {
-  descendByProperty,
+  ascendByProperty,
   getComparator,
   getSortedData,
   createOption,
   getRowsPerPageOptions,
 } from './TableUtils';
+import { TABLE_HEADERS } from '../../stories/constants';
 
 describe('TableUtils', () => {
   const a = { foo: 'bar' };
@@ -12,72 +13,103 @@ describe('TableUtils', () => {
   const c = { foo: 'bar' };
   const data = [a, b, c];
 
-  describe('descendByProperty', () => {
+  describe('ascendByProperty', () => {
 
-    test('should return 1 if property at a < b', () => {
-      expect(descendByProperty(a, b, 'foo')).toEqual(1);
+    test('should return -1 if property at a < b', () => {
+      expect(ascendByProperty(a, b, 'foo')).toEqual(-1);
     });
 
-    test('should return -1 if property at a > b', () => {
-      expect(descendByProperty(b, a, 'foo')).toEqual(-1);
+    test('should return 1 if property at a > b', () => {
+      expect(ascendByProperty(b, a, 'foo')).toEqual(1);
     });
 
     test('should return 0 if property at a = c', () => {
-      expect(descendByProperty(a, c, 'foo')).toEqual(0);
+      expect(ascendByProperty(a, c, 'foo')).toEqual(0);
     });
 
     test('should return 0 if property does not exist in either a or b', () => {
-      expect(descendByProperty(a, b, 'missing')).toEqual(0);
+      expect(ascendByProperty(a, b, 'missing')).toEqual(0);
     });
 
     test('should return 0 if property is undefined', () => {
-      expect(descendByProperty(a, b)).toEqual(0);
+      expect(ascendByProperty(a, b)).toEqual(0);
+    });
+
+    test('should execute custom comparator function when provided', () => {
+      const mockComparator = jest.fn();
+
+      ascendByProperty(a, b, 'foo', mockComparator);
+      expect(mockComparator).toHaveBeenCalledTimes(1);
+      expect(mockComparator.mock.calls[0][0]).toEqual(a.foo);
+      expect(mockComparator.mock.calls[0][1]).toEqual(b.foo);
     });
   });
 
   describe('getComparator', () => {
 
     test('should return a function', () => {
-      expect(typeof getComparator('asc')).toEqual('function');
-      expect(typeof getComparator('desc')).toEqual('function');
-      expect(typeof getComparator('asc', 'property')).toEqual('function');
-      expect(typeof getComparator('desc', 'property')).toEqual('function');
+      expect(typeof getComparator(TABLE_HEADERS, 'asc')).toEqual('function');
+      expect(typeof getComparator(TABLE_HEADERS, 'desc')).toEqual('function');
+      expect(typeof getComparator(TABLE_HEADERS, 'asc', 'property')).toEqual('function');
+      expect(typeof getComparator(TABLE_HEADERS, 'desc', 'property')).toEqual('function');
     });
 
-    test('should return an descending comparator function by property when order="desc"', () => {
-      const cmp = getComparator('desc', 'foo');
+    test('should return a negative ascending comparator function by property when order="desc"', () => {
+      const cmp = getComparator(TABLE_HEADERS, 'desc', 'foo');
       expect(cmp(a, b)).toEqual(1);
       expect(cmp(b, a)).toEqual(-1);
+      expect(cmp(a, c)).toEqual(-0); // wat
+    });
+
+    test('should return an ascending comparator function by property when order="asc"', () => {
+      const cmp = getComparator(TABLE_HEADERS, 'asc', 'foo');
+      expect(cmp(a, b)).toEqual(-1);
+      expect(cmp(b, a)).toEqual(1);
       expect(cmp(a, c)).toEqual(0);
     });
 
-    test('should return a negative descending comparator function by property when order="asc"', () => {
-      const cmp = getComparator('asc', 'foo');
-      expect(cmp(a, b)).toEqual(-1);
-      expect(cmp(b, a)).toEqual(1);
-      expect(cmp(a, c)).toEqual(-0); // wat
+    test('should execute custom comparator function from matching header definition', () => {
+      const mockComparator = jest.fn();
+      const CUSTOM_HEADERS = [{ key: 'foo', comparator: mockComparator }];
+
+      const cmp = getComparator(CUSTOM_HEADERS, 'asc', 'foo');
+      cmp(a, b);
+
+      expect(mockComparator).toHaveBeenCalledTimes(1);
+      expect(mockComparator.mock.calls[0][0]).toEqual(a.foo);
+      expect(mockComparator.mock.calls[0][1]).toEqual(b.foo);
     });
   });
 
   describe('getSortedData', () => {
     test('should sort data by property in asc order', () => {
-      const sortedData = getSortedData(data, 'asc', 'foo');
+      const sortedData = getSortedData(TABLE_HEADERS, data, 'asc', 'foo');
       expect(sortedData).toEqual([a, c, b]);
     });
 
     test('should sort data by property in desc order', () => {
-      const sortedData = getSortedData(data, 'desc', 'foo');
+      const sortedData = getSortedData(TABLE_HEADERS, data, 'desc', 'foo');
       expect(sortedData).toEqual([b, a, c]);
     });
 
-    test('should sort data by property in asc without order', () => {
-      const sortedData = getSortedData(data, undefined, 'foo');
-      expect(sortedData).toEqual([a, c, b]);
+    test('should not sort data without order', () => {
+      const sortedData = getSortedData(TABLE_HEADERS, data, undefined, 'foo');
+      expect(sortedData).toEqual(data);
     });
 
     test('should not sort data without property', () => {
-      const sortedData = getSortedData(data);
-      expect(sortedData).toEqual([a, b, c]);
+      const sortedData = getSortedData(TABLE_HEADERS, data, 'asc');
+      expect(sortedData).toEqual(data);
+    });
+
+    test('should return empty array without data', () => {
+      const sortedData = getSortedData(TABLE_HEADERS);
+      expect(sortedData).toEqual([]);
+    });
+
+    test('should return empty array without params', () => {
+      const sortedData = getSortedData();
+      expect(sortedData).toEqual([]);
     });
   });
 
