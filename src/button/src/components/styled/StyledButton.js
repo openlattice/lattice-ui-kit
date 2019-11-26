@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { duration } from '../../../../style/transitions';
 import { getStyleVariation } from '../../../../utils/StyleUtils';
@@ -109,6 +109,14 @@ const focusVariation = getStyleVariation('mode', {
   neutral: neutralFocus,
 });
 
+const size = getStyleVariation('size', {
+  sm: css`
+    padding: 5px 10px;
+    font-size: 11px;
+    line-height: 1.5;
+  `,
+});
+
 const StyledButton = styled.button`
   border-radius: 3px;
   border-style: solid;
@@ -126,6 +134,7 @@ const StyledButton = styled.button`
     box-shadow ${duration.swift} ease-out;
   width: ${(props) => (props.fullWidth && '100%')};
   white-space: nowrap;
+  ${size};
   ${baseButtonVariation};
 
   :hover {

@@ -32,7 +32,7 @@ const TableBody = (props :Props) => {
     rowsPerPage,
   } = props;
 
-  const sortedData = getSortedData(data, order, orderBy);
+  const sortedData = getSortedData(headers, data, order, orderBy);
   const dataByPage :RowData[] = sortedData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
 
   // inject empty row to maintain table size
