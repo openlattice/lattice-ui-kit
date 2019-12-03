@@ -58,7 +58,45 @@ const TABLE_DATA = [
   },
 ];
 
+const PRIORITY_ORDER = {
+  High: 3,
+  Medium: 2,
+  Low: 1,
+};
+
+const comparator = (a, b) => {
+  const priorityA = PRIORITY_ORDER[a];
+  const priorityB = PRIORITY_ORDER[b];
+
+  return priorityA - priorityB;
+};
+
+const COMPARATOR_HEADERS = [
+  { key: 'title', label: 'Title' },
+  { key: 'priority', label: 'Priority', comparator },
+];
+
+const COMPARATOR_DATA = [
+  {
+    id: '1',
+    title: 'Issue #1',
+    priority: 'High'
+  },
+  {
+    id: '2',
+    title: 'Issue #2',
+    priority: 'Low'
+  },
+  {
+    id: '3',
+    title: 'Issue #3',
+    priority: 'Medium'
+  },
+];
+
 export {
-  TABLE_HEADERS,
+  COMPARATOR_DATA,
+  COMPARATOR_HEADERS,
   TABLE_DATA,
+  TABLE_HEADERS,
 };

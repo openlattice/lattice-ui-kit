@@ -8,7 +8,12 @@ import {
   CardSegment,
   CardStack
 } from '../../layout';
-import { TABLE_DATA, TABLE_HEADERS } from './constants';
+import {
+  COMPARATOR_DATA,
+  COMPARATOR_HEADERS,
+  TABLE_DATA,
+  TABLE_HEADERS
+} from './constants';
 import CustomRow from './components/CustomRow';
 import {
   Table
@@ -25,6 +30,16 @@ storiesOf('Table', module)
         <Table
             headers={TABLE_HEADERS}
             data={TABLE_DATA} />
+      </CardSegment>
+    </Card>
+  ))
+  .add('Custom Comparator', () => (
+    <Card>
+      <CardSegment vertical>
+        Priority is sorted from High to Low instead of alphabetically
+        <Table
+            headers={COMPARATOR_HEADERS}
+            data={COMPARATOR_DATA} />
       </CardSegment>
     </Card>
   ))

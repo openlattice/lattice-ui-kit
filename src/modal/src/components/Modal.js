@@ -138,7 +138,7 @@ export default class Modal extends Component<ModalProps> {
 
   handleOnKeyDown = (event :KeyboardEvent) => {
 
-    const { shouldCloseOnEscape } = this.props;
+    const { isVisible, shouldCloseOnEscape } = this.props;
 
     if (this.escapeKeyIsPressed) {
       return;
@@ -150,7 +150,7 @@ export default class Modal extends Component<ModalProps> {
 
     switch (event.key) {
       case ESC_KEY_CODE: {
-        if (shouldCloseOnEscape === true) {
+        if (isVisible === true && shouldCloseOnEscape === true) {
           this.close();
         }
         break;

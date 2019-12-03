@@ -103,7 +103,7 @@ exports[`button mode="default" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "lcbhQd",
+            "lastClassName": "iVPlO",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -114,6 +114,8 @@ exports[`button mode="default" should match snapshot 1`] = `
               " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
+              [Function],
+              ";",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -327,7 +329,7 @@ exports[`button mode="default" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "lcbhQd",
+            "lastClassName": "iVPlO",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -338,6 +340,8 @@ exports[`button mode="default" should match snapshot 2`] = `
               " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
+              [Function],
+              ";",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -552,7 +556,7 @@ exports[`button mode="negative" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "klDhEB",
+            "lastClassName": "ghVsKh",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -563,6 +567,8 @@ exports[`button mode="negative" should match snapshot 1`] = `
               " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
+              [Function],
+              ";",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -774,7 +780,7 @@ exports[`button mode="neutral" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "eUBioa",
+            "lastClassName": "cOanjD",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -785,6 +791,8 @@ exports[`button mode="neutral" should match snapshot 1`] = `
               " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
+              [Function],
+              ";",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -996,7 +1004,7 @@ exports[`button mode="neutral" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "eUBioa",
+            "lastClassName": "cOanjD",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1007,6 +1015,8 @@ exports[`button mode="neutral" should match snapshot 2`] = `
               " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
+              [Function],
+              ";",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -1221,7 +1231,7 @@ exports[`button mode="positive" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "fUcLar",
+            "lastClassName": "jHtmbM",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1232,6 +1242,8 @@ exports[`button mode="positive" should match snapshot 1`] = `
               " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
+              [Function],
+              ";",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -1444,7 +1456,7 @@ exports[`button mode="primary" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "fJELRZ",
+            "lastClassName": "IxcRz",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1455,6 +1467,8 @@ exports[`button mode="primary" should match snapshot 1`] = `
               " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
+              [Function],
+              ";",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -1667,7 +1681,7 @@ exports[`button mode="secondary" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "fzalXj",
+            "lastClassName": "bOovIN",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1678,6 +1692,8 @@ exports[`button mode="secondary" should match snapshot 1`] = `
               " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
+              [Function],
+              ";",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
@@ -1888,7 +1904,7 @@ exports[`button mode="subtle" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "eGZCXM",
+            "lastClassName": "chaVaY",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1899,6 +1915,8 @@ exports[`button mode="subtle" should match snapshot 1`] = `
               " ease-out;width:",
               [Function],
               ";white-space:nowrap;",
+              [Function],
+              ";",
               [Function],
               ";:hover{cursor:pointer;text-decoration:none;",
               [Function],
