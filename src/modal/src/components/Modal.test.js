@@ -322,6 +322,22 @@ describe('modal', () => {
         expect(mockOnClose).toHaveBeenCalledTimes(1);
       });
 
+      test('should not call close() if the modal is not visible', () => {
+        const mockOnClose = jest.fn();
+        shallow(
+          <Modal isVisible={false} onClose={mockOnClose} shouldCloseOnEscape>
+            { MOCK_CHILD }
+          </Modal>
+        );
+        mockAddEventListenerMap.keydown({ key: 'Escape', code: 'Escape' });
+        mockAddEventListenerMap.keyup({ key: 'Escape', code: 'Escape' });
+        mockAddEventListenerMap.keydown({ key: 'Escape', code: 'Escape' });
+        mockAddEventListenerMap.keyup({ key: 'Escape', code: 'Escape' });
+        mockAddEventListenerMap.keydown({ key: 'Escape', code: 'Escape' });
+        mockAddEventListenerMap.keyup({ key: 'Escape', code: 'Escape' });
+        expect(mockOnClose).toHaveBeenCalledTimes(0);
+      });
+
     });
 
     describe('shouldCloseOnOutsideClick', () => {
