@@ -26,8 +26,15 @@ type Props = {
   exact ?:boolean;
   headers :Array<Object>;
   isLoading :boolean;
-  onPageChange ?:(payload :any) => void;
-  onSort ?:(column :string, isDescending :boolean) => void;
+  onPageChange ?:({
+    page :number,
+    start :number,
+    rowsPerPage :number
+  }) => void;
+  onSort ?:({
+    column :string,
+    descending :boolean
+  }) => void;
   paginated ? :boolean;
   rowsPerPageOptions :number[];
   totalRows ?:number;
@@ -62,11 +69,11 @@ const Table = (props :Props) => {
     }
   }, [rowCount, rowsPerPageOptions]);
 
-  const handleSort = useCallback((event, property) => {
-    const isDesc = orderBy === property && order === 'desc';
+  const handleSort = useCallback((event, column) => {
+    const isDesc = orderBy === column && order === 'desc';
     setOrder(isDesc ? 'asc' : 'desc');
-    setOrderBy(property);
-    if (isFunction(onSort)) onSort(property, !isDesc);
+    setOrderBy(column);
+    if (isFunction(onSort)) onSort({ column, descending: !isDesc });
   }, [onSort, order, orderBy]);
 
   const components = { ...defaultComponents, ...propComponents };

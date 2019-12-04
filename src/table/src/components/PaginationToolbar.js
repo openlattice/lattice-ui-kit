@@ -12,7 +12,11 @@ import Label from '../../../label';
 
 type Props = {
   count :number;
-  onPageChange ?:(payload :any) => void;
+  onPageChange ?:({
+    page :number,
+    start :number,
+    rowsPerPage :number
+  }) => void;
   page :number;
   rowsPerPage :number;
   rowsPerPageOptions ? :number[];

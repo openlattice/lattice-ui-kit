@@ -108,8 +108,10 @@ describe('Table', () => {
         wrapper.find('Cell').get(0).props.onClick();
       });
 
-      expect(onSort.mock.calls[0][0]).toEqual('name');
-      expect(onSort.mock.calls[0][1]).toEqual(true);
+      expect(onSort.mock.calls[0][0]).toEqual({
+        column: 'name',
+        descending: true
+      });
       expect(toJson(wrapper)).toMatchSnapshot();
     });
   });

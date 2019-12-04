@@ -254,8 +254,10 @@ exports[`Table handleSort should invoke onSort with property and isDesc 1`] = `
     [MockFunction] {
       "calls": Array [
         Array [
-          "name",
-          true,
+          Object {
+            "column": "name",
+            "descending": true,
+          },
         ],
       ],
       "results": Array [
