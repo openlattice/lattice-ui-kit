@@ -1,8 +1,17 @@
-import { NEUTRALS, PURPLES, WHITE } from '../../colors/src/Colors';
+import {
+  NEUTRALS,
+  PURPLES,
+  RED_1,
+  WHITE
+} from '../../colors/src/Colors';
 
 const controlStyles = (base, state) => {
 
-  const { isFocused, isDisabled, selectProps } = state;
+  const {
+    isFocused,
+    isDisabled,
+    selectProps
+  } = state;
 
   let backgroundColor = isFocused ? WHITE : NEUTRALS[8];
   let border = isFocused ? `solid 1px ${PURPLES[1]}` : `solid 1px ${NEUTRALS[4]}`;
@@ -10,6 +19,10 @@ const controlStyles = (base, state) => {
   if (selectProps && selectProps.borderless) {
     backgroundColor = 'transparent';
     border = 'none';
+  }
+
+  if (selectProps && selectProps.invalid) {
+    border = selectProps.invalid ? `solid 1px ${RED_1}` : border;
   }
 
   const hoverBgColor = (isDisabled || isFocused) ? WHITE : NEUTRALS[6];
