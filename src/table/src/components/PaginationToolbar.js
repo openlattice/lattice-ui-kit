@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import isFunction from 'lodash/isFunction';
 import { faChevronLeft, faChevronRight } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -11,6 +12,7 @@ import Label from '../../../label';
 
 type Props = {
   count :number;
+  onPageChange ?:(payload :any) => void;
   page :number;
   rowsPerPage :number;
   rowsPerPageOptions ? :number[];
@@ -21,6 +23,7 @@ type Props = {
 const PaginationToolbar = (props :Props) => {
   const {
     count,
+    onPageChange,
     page,
     rowsPerPage,
     rowsPerPageOptions,
@@ -35,6 +38,30 @@ const PaginationToolbar = (props :Props) => {
   const minRowNumber = Math.min(rowsPerPage * page + 1, count);
   const rowRange = `${minRowNumber} - ${maxRowNumber} of ${count}`;
 
+  const getPageChanger = (increment :number) => () => {
+    const newPage = page + increment;
+    setPage(newPage);
+    if (isFunction(onPageChange)) {
+      onPageChange({
+        page: newPage,
+        start: Math.min(rowsPerPage * newPage, count),
+        rowsPerPage,
+      });
+    }
+  };
+
+  const handleRowsPerPage = (rows) => {
+    setPage(0);
+    setRowsPerPage(rows);
+    if (isFunction(onPageChange)) {
+      onPageChange({
+        page: 0,
+        start: 0,
+        rowsPerPage: rows
+      });
+    }
+  };
+
   return (
     <PaginationWrapper>
       <Label subtle>Rows per page</Label>
@@ -44,10 +71,7 @@ const PaginationToolbar = (props :Props) => {
             <Select
                 borderless
                 defaultValue={options[0]}
-                onChange={(rows) => {
-                  setPage(0);
-                  setRowsPerPage(rows);
-                }}
+                onChange={handleRowsPerPage}
                 options={options}
                 value={rowsPerPage}
                 useRawValues />
@@ -59,21 +83,22 @@ const PaginationToolbar = (props :Props) => {
           mode="subtle"
           icon={<FontAwesomeIcon icon={faChevronLeft} fixedWidth />}
           disabled={page <= 0}
-          onClick={() => setPage(page - 1)} />
+          onClick={getPageChanger(-1)} />
       <IconButton
           mode="subtle"
           icon={<FontAwesomeIcon icon={faChevronRight} fixedWidth />}
           disabled={page >= lastPage}
-          onClick={() => setPage(page + 1)} />
+          onClick={getPageChanger(1)} />
     </PaginationWrapper>
   );
 };
 
 PaginationToolbar.defaultProps = {
   count: 0,
+  onPageChange: undefined,
   page: 0,
   rowsPerPage: 5,
-  rowsPerPageOptions: []
+  rowsPerPageOptions: [],
 };
 
 // $FlowFixMe

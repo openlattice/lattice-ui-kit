@@ -92,6 +92,26 @@ describe('Table', () => {
       expect(setState.mock.calls[3][0]).toEqual('name');
       expect(toJson(wrapper)).toMatchSnapshot();
     });
+
+    test('should invoke onSort with property and isDesc', () => {
+      const onSort = jest.fn();
+
+      const wrapper = mount(
+        <Table
+            data={TABLE_DATA}
+            headers={TABLE_HEADERS}
+            onSort={onSort}
+            paginated />
+      );
+
+      act(() => {
+        wrapper.find('Cell').get(0).props.onClick();
+      });
+
+      expect(onSort.mock.calls[0][0]).toEqual('name');
+      expect(onSort.mock.calls[0][1]).toEqual(true);
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
   });
 
   describe('render', () => {

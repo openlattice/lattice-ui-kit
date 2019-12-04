@@ -1,7 +1,7 @@
 // @flow
 
-import React, { useEffect } from 'react';
-import isEmpty from 'lodash/isEmpty';
+import React, { useCallback, useEffect } from 'react';
+import isFunction from 'lodash/isFunction';
 
 import TableHeader from './TableHeader';
 import TableBody from './TableBody';
@@ -22,11 +22,15 @@ const defaultComponents = {
 
 type Props = {
   components :Object;
-  data ? :Array<Object>;
+  data :Array<Object>;
+  exact ?:boolean;
   headers :Array<Object>;
   isLoading :boolean;
-  rowsPerPageOptions ? :number[];
+  onPageChange ?:(payload :any) => void;
+  onSort ?:(column :string, isDescending :boolean) => void;
   paginated ? :boolean;
+  rowsPerPageOptions :number[];
+  totalRows ?:number;
 };
 
 const Table = (props :Props) => {
@@ -34,32 +38,36 @@ const Table = (props :Props) => {
   const {
     components: propComponents,
     data,
+    exact,
     headers,
     isLoading,
-    rowsPerPageOptions,
+    onPageChange,
+    onSort,
     paginated,
+    rowsPerPageOptions,
+    totalRows,
   } = props;
-
-  const rowCount = !isEmpty(data) ? data.length : 0;
+  const rowCount = totalRows || (data && data.length);
   const initialRowsPerPage = getInitialRowsPerPage(rowCount, rowsPerPageOptions);
 
   const [orderBy, setOrderBy] = React.useState();
   const [order, setOrder] = React.useState();
-  const [currentPage, setPage] = React.useState();
+  const [currentPage, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(initialRowsPerPage);
 
   useEffect(() => {
     setPage(0);
-    if (isEmpty(rowsPerPageOptions)) {
+    if (!rowsPerPageOptions.length) {
       setRowsPerPage(getInitialRowsPerPage(rowCount, rowsPerPageOptions));
     }
   }, [rowCount, rowsPerPageOptions]);
 
-  const handleSort = (event, property) => {
+  const handleSort = useCallback((event, property) => {
     const isDesc = orderBy === property && order === 'desc';
     setOrder(isDesc ? 'asc' : 'desc');
     setOrderBy(property);
-  };
+    if (isFunction(onSort)) onSort(property, !isDesc);
+  }, [onSort, order, orderBy]);
 
   const components = { ...defaultComponents, ...propComponents };
   return (
@@ -68,6 +76,7 @@ const Table = (props :Props) => {
         paginated && (
           <components.Pagination
               count={rowCount}
+              onPageChange={onPageChange}
               page={currentPage}
               rowsPerPage={rowsPerPage}
               rowsPerPageOptions={rowsPerPageOptions}
@@ -88,6 +97,7 @@ const Table = (props :Props) => {
             data={data}
             headers={headers}
             isLoading={isLoading}
+            exact={exact}
             order={order}
             orderBy={orderBy}
             rowsPerPage={rowsPerPage}
@@ -97,6 +107,7 @@ const Table = (props :Props) => {
         paginated && (
           <components.Pagination
               count={rowCount}
+              onPageChange={onPageChange}
               page={currentPage}
               rowsPerPage={rowsPerPage}
               rowsPerPageOptions={rowsPerPageOptions}
@@ -111,8 +122,12 @@ const Table = (props :Props) => {
 Table.defaultProps = {
   components: {},
   data: [],
+  exact: false,
+  onPageChange: undefined,
+  onSort: undefined,
   paginated: false,
   rowsPerPageOptions: [],
+  totalRows: 0,
 };
 
 export default React.memo<Props>(Table);
