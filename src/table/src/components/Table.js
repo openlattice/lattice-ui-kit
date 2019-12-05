@@ -20,21 +20,22 @@ const defaultComponents = {
   Row: TableRow,
 };
 
+type ChangeHandler = ? ({
+  column ?:string,
+  order ?:'asc' | 'desc',
+  page :number,
+  rowsPerPage :number,
+  start :number,
+}) => void;
+
 type Props = {
   components :Object;
   data :Array<Object>;
   exact ?:boolean;
   headers :Array<Object>;
   isLoading :boolean;
-  onPageChange ?:({
-    page :number,
-    start :number,
-    rowsPerPage :number
-  }) => void;
-  onSort ?:({
-    column :string,
-    descending :boolean
-  }) => void;
+  onPageChange :ChangeHandler;
+  onSort :ChangeHandler;
   paginated ? :boolean;
   rowsPerPageOptions :number[];
   totalRows ?:number;
@@ -71,12 +72,13 @@ const Table = (props :Props) => {
 
   const handleSort = useCallback((column :string, event :SyntheticEvent<HTMLTableCellElement>) => {
     const isDesc = orderBy === column && order === 'desc';
-    setOrder(isDesc ? 'asc' : 'desc');
+    const newOrder = isDesc ? 'asc' : 'desc';
+    setOrder(newOrder);
     setOrderBy(column);
     if (isFunction(onSort)) {
       onSort({
         column,
-        descending: !isDesc,
+        order: newOrder,
         page: currentPage,
         rowsPerPage,
         start: Math.min(currentPage * rowsPerPage, rowCount)
@@ -99,7 +101,7 @@ const Table = (props :Props) => {
       onPageChange({
         ...payload,
         column: orderBy,
-        descending: order,
+        order,
       }, event);
     }
   }, [

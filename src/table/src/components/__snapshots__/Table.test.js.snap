@@ -6,7 +6,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
     Array [
       Object {
         "column": undefined,
-        "descending": undefined,
+        "order": undefined,
         "page": 1,
         "rowsPerPage": 7,
         "start": 7,
@@ -281,7 +281,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
         Array [
           Object {
             "column": undefined,
-            "descending": undefined,
+            "order": undefined,
             "page": 1,
             "rowsPerPage": 7,
             "start": 7,
@@ -4523,7 +4523,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
     Array [
       Object {
         "column": undefined,
-        "descending": undefined,
+        "order": undefined,
         "page": 0,
         "rowsPerPage": 20,
         "start": 0,
@@ -4804,7 +4804,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
         Array [
           Object {
             "column": undefined,
-            "descending": undefined,
+            "order": undefined,
             "page": 0,
             "rowsPerPage": 20,
             "start": 0,
@@ -16285,7 +16285,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 1`] = `
     Array [
       Object {
         "column": "name",
-        "descending": true,
+        "order": "desc",
         "page": 0,
         "rowsPerPage": 7,
         "start": 0,
@@ -16560,7 +16560,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
         Array [
           Object {
             "column": "name",
-            "descending": true,
+            "order": "desc",
             "page": 0,
             "rowsPerPage": 7,
             "start": 0,

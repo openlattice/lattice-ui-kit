@@ -112,7 +112,7 @@ describe('Table', () => {
 
       expect(mockOnSort.mock.calls[0][0]).toEqual({
         column: 'name',
-        descending: true,
+        order: 'desc',
         page: 0,
         rowsPerPage: 7,
         start: 0
@@ -163,7 +163,7 @@ describe('Table', () => {
       expect(mockOnPageChange).toBeCalledTimes(1);
       expect(mockOnPageChange.mock.calls[0][0]).toEqual({
         column: undefined,
-        descending: undefined,
+        order: undefined,
         page: 1,
         rowsPerPage: 7,
         start: 7
@@ -191,7 +191,7 @@ describe('Table', () => {
       expect(mockOnPageChange).toBeCalledTimes(1);
       expect(mockOnPageChange.mock.calls[0][0]).toEqual({
         column: undefined,
-        descending: undefined,
+        order: undefined,
         page: 0,
         rowsPerPage: 20,
         start: 0
