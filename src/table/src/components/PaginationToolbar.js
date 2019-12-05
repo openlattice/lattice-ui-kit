@@ -12,16 +12,13 @@ import Label from '../../../label';
 
 type Props = {
   count :number;
-  onPageChange ?:({
+  onPageChange :({
     page :number,
-    start :number,
     rowsPerPage :number
-  }) => void;
+  }, event :SyntheticEvent<HTMLButtonElement>) => void;
   page :number;
   rowsPerPage :number;
   rowsPerPageOptions ? :number[];
-  setPage :(number :number) => void;
-  setRowsPerPage :(number :number) => void;
 };
 
 const PaginationToolbar = (props :Props) => {
@@ -31,8 +28,6 @@ const PaginationToolbar = (props :Props) => {
     page,
     rowsPerPage,
     rowsPerPageOptions,
-    setPage,
-    setRowsPerPage,
   } = props;
 
   const options = getRowsPerPageOptions(rowsPerPageOptions, count);
@@ -42,28 +37,19 @@ const PaginationToolbar = (props :Props) => {
   const minRowNumber = Math.min(rowsPerPage * page + 1, count);
   const rowRange = `${minRowNumber} - ${maxRowNumber} of ${count}`;
 
-  const getPageChanger = (increment :number) => () => {
+  const getPageChanger = (increment :number) => (event :SyntheticEvent<HTMLButtonElement>) => {
     const newPage = page + increment;
-    setPage(newPage);
-    if (isFunction(onPageChange)) {
-      onPageChange({
-        page: newPage,
-        start: Math.min(rowsPerPage * newPage, count),
-        rowsPerPage,
-      });
-    }
+    onPageChange({
+      page: newPage,
+      rowsPerPage,
+    }, event);
   };
 
-  const handleRowsPerPage = (rows) => {
-    setPage(0);
-    setRowsPerPage(rows);
-    if (isFunction(onPageChange)) {
-      onPageChange({
-        page: 0,
-        start: 0,
-        rowsPerPage: rows
-      });
-    }
+  const handleRowsPerPage = (rows, event) => {
+    onPageChange({
+      page: 0,
+      rowsPerPage: rows
+    }, event);
   };
 
   return (

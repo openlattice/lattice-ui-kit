@@ -69,12 +69,47 @@ const Table = (props :Props) => {
     }
   }, [rowCount, rowsPerPageOptions]);
 
-  const handleSort = useCallback((event, column) => {
+  const handleSort = useCallback((column :string, event :SyntheticEvent<HTMLTableCellElement>) => {
     const isDesc = orderBy === column && order === 'desc';
     setOrder(isDesc ? 'asc' : 'desc');
     setOrderBy(column);
-    if (isFunction(onSort)) onSort({ column, descending: !isDesc });
-  }, [onSort, order, orderBy]);
+    if (isFunction(onSort)) {
+      onSort({
+        column,
+        descending: !isDesc,
+        page: currentPage,
+        rowsPerPage,
+        start: Math.min(currentPage * rowsPerPage, rowCount)
+      }, event);
+    }
+  }, [
+    currentPage,
+    rowsPerPage,
+    rowCount,
+    onSort,
+    order,
+    orderBy
+  ]);
+
+  const handlePageChange = useCallback((payload, event) => {
+    const { page: newPage, rowsPerPage: newRowsPerPage } = payload;
+    setPage(newPage);
+    setRowsPerPage(newRowsPerPage);
+    if (isFunction(onPageChange)) {
+      onPageChange({
+        column: orderBy,
+        descending: order,
+        page: newPage,
+        rowsPerPage: newRowsPerPage,
+        start: Math.min(newPage * newRowsPerPage, rowCount)
+      }, event);
+    }
+  }, [
+    onPageChange,
+    order,
+    orderBy,
+    rowCount,
+  ]);
 
   const components = { ...defaultComponents, ...propComponents };
   return (
@@ -83,12 +118,10 @@ const Table = (props :Props) => {
         paginated && (
           <components.Pagination
               count={rowCount}
-              onPageChange={onPageChange}
+              onPageChange={handlePageChange}
               page={currentPage}
               rowsPerPage={rowsPerPage}
-              rowsPerPageOptions={rowsPerPageOptions}
-              setRowsPerPage={setRowsPerPage}
-              setPage={setPage} />
+              rowsPerPageOptions={rowsPerPageOptions} />
         )
       }
       <StyledTable>
@@ -114,12 +147,10 @@ const Table = (props :Props) => {
         paginated && (
           <components.Pagination
               count={rowCount}
-              onPageChange={onPageChange}
+              onPageChange={handlePageChange}
               page={currentPage}
               rowsPerPage={rowsPerPage}
-              rowsPerPageOptions={rowsPerPageOptions}
-              setRowsPerPage={setRowsPerPage}
-              setPage={setPage} />
+              rowsPerPageOptions={rowsPerPageOptions} />
         )
       }
     </div>
