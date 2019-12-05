@@ -22,21 +22,15 @@ describe('PaginationToolbar', () => {
   describe('props', () => {
     let buttons;
     let mockOnPageChange;
-    let mockSetPage;
-    let mockSetRowsPerPage;
     let wrapper;
     beforeEach(() => {
-      mockSetPage = jest.fn();
-      mockSetRowsPerPage = jest.fn();
       mockOnPageChange = jest.fn();
       wrapper = mount(
         <PaginationToolbar
             count={10}
             onPageChange={mockOnPageChange}
             page={1}
-            rowsPerPageOptions={[5, 10]}
-            setPage={mockSetPage}
-            setRowsPerPage={mockSetRowsPerPage} />
+            rowsPerPageOptions={[5, 10]} />
       );
       buttons = wrapper.find(IconButton);
     });
@@ -45,10 +39,7 @@ describe('PaginationToolbar', () => {
       test('should invoke setPage and onPageChange when back button is clicked', () => {
         const prevButton = buttons.get(0);
 
-        expect(mockSetPage).toHaveBeenCalledTimes(0);
         prevButton.props.onClick();
-        expect(mockSetPage).toHaveBeenCalledTimes(1);
-        expect(mockSetPage.mock.calls[0][0]).toEqual(0);
 
         expect(mockOnPageChange.mock.calls[0][0]).toEqual({
           page: 0,
@@ -60,10 +51,7 @@ describe('PaginationToolbar', () => {
       test('should invoke setPage and onPageChange when next button is clicked', () => {
         const nextButton = buttons.get(1);
 
-        expect(mockSetPage).toHaveBeenCalledTimes(0);
         nextButton.props.onClick();
-        expect(mockSetPage).toHaveBeenCalledTimes(1);
-        expect(mockSetPage.mock.calls[0][0]).toEqual(2);
 
         expect(mockOnPageChange.mock.calls[0][0]).toEqual({
           page: 2,
@@ -74,31 +62,17 @@ describe('PaginationToolbar', () => {
     });
 
     describe('change rowsPerPage', () => {
-      test('should setPage to 0 for Select onChange', () => {
-        const select = wrapper.find(Select).get(0);
-
-        expect(mockSetPage).toHaveBeenCalledTimes(0);
-        select.props.onChange();
-        expect(mockSetPage).toHaveBeenCalledTimes(1);
-        expect(mockSetPage.mock.calls[0][0]).toEqual(0);
-      });
-
-      test('should setRowsPerPage when Select onChange', () => {
-        const select = wrapper.find(Select).get(0);
-
-        expect(mockSetRowsPerPage).toHaveBeenCalledTimes(0);
-        select.props.onChange(20);
-        expect(mockSetRowsPerPage).toHaveBeenCalledTimes(1);
-        expect(mockSetRowsPerPage.mock.calls[0][0]).toEqual(20);
-      });
 
       test('should invoke onPageChange when Select onChange', () => {
         const select = wrapper.find(Select).get(0);
 
-        expect(mockSetRowsPerPage).toHaveBeenCalledTimes(0);
         select.props.onChange(20);
-        expect(mockSetRowsPerPage).toHaveBeenCalledTimes(1);
-        expect(mockSetRowsPerPage.mock.calls[0][0]).toEqual(20);
+
+        expect(mockOnPageChange.mock.calls[0][0]).toEqual({
+          page: 0,
+          start: 0,
+          rowsPerPage: 20
+        });
       });
     });
   });

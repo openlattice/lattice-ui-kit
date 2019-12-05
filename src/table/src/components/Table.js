@@ -97,18 +97,15 @@ const Table = (props :Props) => {
     setRowsPerPage(newRowsPerPage);
     if (isFunction(onPageChange)) {
       onPageChange({
+        ...payload,
         column: orderBy,
         descending: order,
-        page: newPage,
-        rowsPerPage: newRowsPerPage,
-        start: Math.min(newPage * newRowsPerPage, rowCount)
       }, event);
     }
   }, [
     onPageChange,
     order,
-    orderBy,
-    rowCount,
+    orderBy
   ]);
 
   const components = { ...defaultComponents, ...propComponents };

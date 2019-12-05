@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import isFunction from 'lodash/isFunction';
 import { faChevronLeft, faChevronRight } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -42,13 +41,15 @@ const PaginationToolbar = (props :Props) => {
     onPageChange({
       page: newPage,
       rowsPerPage,
+      start: Math.min(rowsPerPage * newPage, count)
     }, event);
   };
 
   const handleRowsPerPage = (rows, event) => {
     onPageChange({
       page: 0,
-      rowsPerPage: rows
+      rowsPerPage: rows,
+      start: 0
     }, event);
   };
 
