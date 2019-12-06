@@ -1,33 +1,33 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, WHITE } from '../../../../colors';
+import { NEUTRALS } from '../../../../colors';
 
 // border-top + border-bottom + padding-top + padding-bottom + line-height = 40px
 const defaultStyle = css`
-  background-color: ${NEUTRALS[6]};
-  border-color: ${NEUTRALS[6]};
-  color: ${NEUTRALS[1]};
+  background-color: ${NEUTRALS[7]};
+  border-color: ${NEUTRALS[7]};
+  color: ${NEUTRALS[0]};
 `;
 
 const defaultHover = css`
-  background-color: ${NEUTRALS[4]};
-  border-color: ${NEUTRALS[4]};
+  background-color: ${NEUTRALS[5]};
+  border-color: ${NEUTRALS[5]};
 `;
 
 const defaultActive = css`
-  background-color: ${NEUTRALS[2]};
-  border-color: ${NEUTRALS[2]};
-  color: ${WHITE};
+  background-color: ${NEUTRALS[4]};
+  border-color: ${NEUTRALS[4]};
+  color: ${NEUTRALS[0]};
 `;
 
 const defaultDisabled = css`
-  background-color: ${NEUTRALS[6]};
-  border-color: ${NEUTRALS[6]};
+  background-color: ${NEUTRALS[7]};
+  border-color: ${NEUTRALS[7]};
   color: ${NEUTRALS[2]};
 `;
 
 const defaultFocus = css`
-  box-shadow: ${NEUTRALS[2]} 0 0 0 2px;
+  box-shadow: ${NEUTRALS[4]} 0 0 0 2px;
 `;
 
 export {
