@@ -122,38 +122,38 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c6:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c6:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c6:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c6:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c0 {
@@ -733,38 +733,38 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c6:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c6:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c6:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c6:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c0 {
@@ -1737,38 +1737,38 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c8:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c8:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c8:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c8:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c0 {
@@ -2536,38 +2536,38 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c6:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c6:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c6:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c6:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c0 {
@@ -3098,38 +3098,38 @@ exports[`ModalFooter snapshots should match snapshot with secondary button only 
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c2:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c2:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c2:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c0 {
@@ -3533,38 +3533,38 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c6:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c6:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c6:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c6:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c0 {
@@ -4332,38 +4332,38 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c6:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c6:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c6:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c6:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c0 {
@@ -5256,38 +5256,38 @@ exports[`ModalFooter snapshots should match snapshot with stretchy secondary but
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c2:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c2:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c2:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c0 {
