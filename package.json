@@ -54,7 +54,7 @@
     "@babel/preset-env": "~7.7.6",
     "@babel/preset-flow": "~7.7.4",
     "@babel/preset-react": "~7.7.4",
-    "@babel/register": "~7.7.0",
+    "@babel/register": "~7.7.4",
     "@babel/runtime": "~7.7.0",
     "@storybook/addon-actions": "~5.2.0",
     "@storybook/addon-info": "~5.2.0",
