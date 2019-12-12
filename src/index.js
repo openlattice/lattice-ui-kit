@@ -42,7 +42,12 @@ export {
   TimePicker,
   DateTimePicker,
 } from './datetime';
-export { ActionModal, Modal } from './modal';
+export {
+  ActionModal,
+  Modal,
+  ModalHeader,
+  ModalFooter
+} from './modal';
 export {
   Stepper,
   StepLabel,
