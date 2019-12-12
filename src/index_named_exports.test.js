@@ -30,6 +30,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Input',
   'Label',
   'Modal',
+  'ModalFooter',
   'Overlay',
   'PaginationToolbar',
   'PersonResult',
