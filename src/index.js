@@ -45,8 +45,8 @@ export {
 export {
   ActionModal,
   Modal,
-  ModalHeader,
-  ModalFooter
+  ModalFooter,
+  ModalHeader
 } from './modal';
 export {
   Stepper,
