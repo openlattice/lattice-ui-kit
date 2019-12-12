@@ -44,38 +44,38 @@ exports[`button mode="default" should match snapshot 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c0:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c0:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 <Button
@@ -103,7 +103,7 @@ exports[`button mode="default" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "iVPlO",
+            "lastClassName": "ikRbms",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -270,38 +270,38 @@ exports[`button mode="default" should match snapshot 2`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c0:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c0:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 <Button
@@ -329,7 +329,7 @@ exports[`button mode="default" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "iVPlO",
+            "lastClassName": "ikRbms",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1456,7 +1456,7 @@ exports[`button mode="primary" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "IxcRz",
+            "lastClassName": "dexVSa",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",

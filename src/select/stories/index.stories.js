@@ -97,6 +97,12 @@ storiesOf('Select', module)
           borderless
           options={stateOptions}
           onChange={action('Borderless changed')} />
+      <h1>invalid</h1>
+      <p>border is red</p>
+      <Select
+          invalid
+          options={stateOptions}
+          onChange={action('Borderless changed')} />
     </>
   ))
   .add('custom dropdown indicator', () => (

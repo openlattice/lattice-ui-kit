@@ -3188,38 +3188,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c16:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c16:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c16:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c16:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c9 {
@@ -3631,38 +3631,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c15:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c15:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c15:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c15:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c10 {
@@ -5189,38 +5189,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c16:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c16:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c16:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c16:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c9 {
@@ -5656,38 +5656,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c15:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c15:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c15:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c15:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c10 {
@@ -7183,38 +7183,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c14:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c14:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c14:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c14:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c9 {
@@ -7584,38 +7584,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c13:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c13:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c13:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c13:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c10 {
@@ -8893,38 +8893,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c14:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c14:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c14:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c14:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c9 {
@@ -9318,38 +9318,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #8e929b;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
+  color: #555e6f;
 }
 
 .c13:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
+  background-color: #eaeaf0;
+  border-color: #eaeaf0;
 }
 
 .c13:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b6bbc7;
-  border-color: #b6bbc7;
-  color: #ffffff;
+  background-color: #dcdce7;
+  border-color: #dcdce7;
+  color: #555e6f;
 }
 
 .c13:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
+  background-color: #f5f5f8;
+  border-color: #f5f5f8;
   color: #b6bbc7;
 }
 
 .c13:focus-visible {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #dcdce7 0 0 0 2px;
 }
 
 .c10 {
