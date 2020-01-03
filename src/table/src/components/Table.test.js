@@ -7,7 +7,9 @@ import Table from './Table';
 import TableBody from './TableBody';
 import PaginationToolbar from './PaginationToolbar';
 import { StyledTable } from './styled';
+import { Select } from '../../../select';
 import { TABLE_DATA, TABLE_HEADERS } from '../../stories/constants';
+import { MOCK_CLICK_EVENT, MOCK_SELECT_EVENT } from '../../../utils/testing/MockUtils';
 
 describe('Table', () => {
 
@@ -85,11 +87,116 @@ describe('Table', () => {
       );
 
       act(() => {
-        wrapper.find('Cell').get(0).props.onClick();
+        wrapper.find('Cell').get(0).props.onClick(MOCK_CLICK_EVENT);
       });
 
-      expect(setState.mock.calls[2][0]).toEqual('desc');
-      expect(setState.mock.calls[3][0]).toEqual('name');
+      expect(setState.mock.calls[2][0]).toEqual('desc'); // setOrder
+      expect(setState.mock.calls[3][0]).toEqual('name'); // setOrderBy
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('should invoke onSort with property and isDesc', () => {
+      const mockOnSort = jest.fn();
+
+      const wrapper = mount(
+        <Table
+            data={TABLE_DATA}
+            headers={TABLE_HEADERS}
+            onSort={mockOnSort}
+            paginated />
+      );
+
+      act(() => {
+        wrapper.find('Cell').get(0).props.onClick(MOCK_CLICK_EVENT);
+      });
+
+      expect(mockOnSort.mock.calls[0][0]).toEqual({
+        column: 'name',
+        order: 'desc',
+        page: 0,
+        rowsPerPage: 7,
+        start: 0
+      });
+      expect(mockOnSort).toMatchSnapshot();
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+  });
+
+  describe('handlePageChange', () => {
+
+    test('should set page and rowsPerPage when invoked', () => {
+      const setState = jest.fn();
+      const useStateSpy = jest.spyOn(React, 'useState');
+      useStateSpy.mockImplementation((init) => [init, setState]);
+
+      const wrapper = mount(
+        <Table
+            data={TABLE_DATA}
+            headers={TABLE_HEADERS}
+            paginated />
+      );
+
+      act(() => {
+        wrapper.find('IconButton').get(1).props.onClick(MOCK_CLICK_EVENT);
+      });
+
+      expect(setState.mock.calls[2][0]).toEqual(1); // setPage
+      expect(setState.mock.calls[3][0]).toEqual(7); // setRowsPerPage
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('should invoke onPageChange on pagination button click', () => {
+      const mockOnPageChange = jest.fn();
+
+      const wrapper = mount(
+        <Table
+            data={TABLE_DATA}
+            headers={TABLE_HEADERS}
+            onPageChange={mockOnPageChange}
+            paginated />
+      );
+
+      act(() => {
+        wrapper.find('IconButton').get(1).props.onClick(MOCK_CLICK_EVENT);
+      });
+
+      expect(mockOnPageChange).toBeCalledTimes(1);
+      expect(mockOnPageChange.mock.calls[0][0]).toEqual({
+        column: undefined,
+        order: undefined,
+        page: 1,
+        rowsPerPage: 7,
+        start: 7
+      });
+      expect(mockOnPageChange).toMatchSnapshot();
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
+    test('should invoke onPageChange on rows per page select', () => {
+      const mockOnPageChange = jest.fn();
+
+      const wrapper = mount(
+        <Table
+            data={TABLE_DATA}
+            headers={TABLE_HEADERS}
+            rowsPerPageOptions={[5, 20, 50]}
+            onPageChange={mockOnPageChange}
+            paginated />
+      );
+
+      act(() => {
+        wrapper.find(Select).get(0).props.onChange(20, MOCK_SELECT_EVENT);
+      });
+
+      expect(mockOnPageChange).toBeCalledTimes(1);
+      expect(mockOnPageChange.mock.calls[0][0]).toEqual({
+        column: undefined,
+        order: undefined,
+        page: 0,
+        rowsPerPage: 20,
+        start: 0
+      });
+      expect(mockOnPageChange).toMatchSnapshot();
       expect(toJson(wrapper)).toMatchSnapshot();
     });
   });

@@ -10,7 +10,8 @@ import type { RowData, SortOrder } from '../../types';
 type Props = {
   className ? :string;
   components :Object;
-  data ? :RowData[];
+  data :RowData[];
+  exact ? :boolean;
   headers :Object[];
   isLoading ? :boolean;
   order ? :SortOrder;
@@ -26,6 +27,7 @@ const TableBody = (props :Props) => {
     data,
     headers,
     isLoading,
+    exact,
     order,
     orderBy,
     page,
@@ -33,7 +35,9 @@ const TableBody = (props :Props) => {
   } = props;
 
   const sortedData = getSortedData(headers, data, order, orderBy);
-  const dataByPage :RowData[] = sortedData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
+  const dataByPage :RowData[] = exact
+    ? sortedData
+    : sortedData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
 
   // inject empty row to maintain table size
   const emptyRowCount = rowsPerPage - dataByPage.length;
@@ -87,6 +91,7 @@ TableBody.defaultProps = {
   className: undefined,
   data: [],
   isLoading: false,
+  exact: false,
   order: false,
   orderBy: undefined
 };
