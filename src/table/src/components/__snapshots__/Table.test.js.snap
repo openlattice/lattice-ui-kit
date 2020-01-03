@@ -3903,52 +3903,6 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
             className="c0"
           >
             <Label
-              subtle={true}
-            >
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Label-sc-130fyca-0",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "color:",
-                        "#555e6f",
-                        ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                        [Function],
-                        ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                        [Function],
-                        ";",
-                        [Function],
-                        ";",
-                        [Function],
-                        ";",
-                      ],
-                    },
-                    "displayName": "Label",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Label-sc-130fyca-0",
-                    "target": "label",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                subtle={true}
-              >
-                <label
-                  className="c1"
-                >
-                  Rows per page
-                </label>
-              </StyledComponent>
-            </Label>
-            <Label
               id="row-range"
               subtle={true}
             >
@@ -4578,6 +4532,24 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
   width: 75px;
 }
 
+.c1 {
+  color: #555e6f;
+  display: inline-block;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 5px 5px 5px 0;
+  color: #8e929b;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .c4 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -4650,24 +4622,6 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
 
 .c3:focus-visible {
   box-shadow: rgba(0,0,0,0.15) 0 0 0 2px;
-}
-
-.c1 {
-  color: #555e6f;
-  display: inline-block;
-  font-size: 14px;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 5px 5px 5px 0;
-  color: #8e929b;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 <Table
@@ -11841,6 +11795,24 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
   border-bottom: 1px solid #dcdce7;
 }
 
+.c1 {
+  color: #555e6f;
+  display: inline-block;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 5px 5px 5px 0;
+  color: #8e929b;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -11913,24 +11885,6 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
 
 .c2:focus-visible {
   box-shadow: rgba(0,0,0,0.15) 0 0 0 2px;
-}
-
-.c1 {
-  color: #555e6f;
-  display: inline-block;
-  font-size: 14px;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 5px 5px 5px 0;
-  color: #8e929b;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 <Table
@@ -12054,52 +12008,6 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
           <div
             className="c0"
           >
-            <Label
-              subtle={true}
-            >
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Label-sc-130fyca-0",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "color:",
-                        "#555e6f",
-                        ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                        [Function],
-                        ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                        [Function],
-                        ";",
-                        [Function],
-                        ";",
-                        [Function],
-                        ";",
-                      ],
-                    },
-                    "displayName": "Label",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Label-sc-130fyca-0",
-                    "target": "label",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                subtle={true}
-              >
-                <label
-                  className="c1"
-                >
-                  Rows per page
-                </label>
-              </StyledComponent>
-            </Label>
             <Label
               id="row-range"
               subtle={true}
@@ -15664,52 +15572,6 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
           <div
             className="c0"
           >
-            <Label
-              subtle={true}
-            >
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Label-sc-130fyca-0",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "color:",
-                        "#555e6f",
-                        ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                        [Function],
-                        ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                        [Function],
-                        ";",
-                        [Function],
-                        ";",
-                        [Function],
-                        ";",
-                      ],
-                    },
-                    "displayName": "Label",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Label-sc-130fyca-0",
-                    "target": "label",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                subtle={true}
-              >
-                <label
-                  className="c1"
-                >
-                  Rows per page
-                </label>
-              </StyledComponent>
-            </Label>
             <Label
               id="row-range"
               subtle={true}
@@ -16334,6 +16196,24 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
   border-bottom: 1px solid #dcdce7;
 }
 
+.c1 {
+  color: #555e6f;
+  display: inline-block;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 5px 5px 5px 0;
+  color: #8e929b;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -16406,24 +16286,6 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
 
 .c2:focus-visible {
   box-shadow: rgba(0,0,0,0.15) 0 0 0 2px;
-}
-
-.c1 {
-  color: #555e6f;
-  display: inline-block;
-  font-size: 14px;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 5px 5px 5px 0;
-  color: #8e929b;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 <Table
@@ -16571,52 +16433,6 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
           <div
             className="c0"
           >
-            <Label
-              subtle={true}
-            >
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Label-sc-130fyca-0",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "color:",
-                        "#555e6f",
-                        ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                        [Function],
-                        ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                        [Function],
-                        ";",
-                        [Function],
-                        ";",
-                        [Function],
-                        ";",
-                      ],
-                    },
-                    "displayName": "Label",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Label-sc-130fyca-0",
-                    "target": "label",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                subtle={true}
-              >
-                <label
-                  className="c1"
-                >
-                  Rows per page
-                </label>
-              </StyledComponent>
-            </Label>
             <Label
               id="row-range"
               subtle={true}
@@ -20182,52 +19998,6 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
             className="c0"
           >
             <Label
-              subtle={true}
-            >
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Label-sc-130fyca-0",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "color:",
-                        "#555e6f",
-                        ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                        [Function],
-                        ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                        [Function],
-                        ";",
-                        [Function],
-                        ";",
-                        [Function],
-                        ";",
-                      ],
-                    },
-                    "displayName": "Label",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Label-sc-130fyca-0",
-                    "target": "label",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                subtle={true}
-              >
-                <label
-                  className="c1"
-                >
-                  Rows per page
-                </label>
-              </StyledComponent>
-            </Label>
-            <Label
               id="row-range"
               subtle={true}
             >
@@ -20826,6 +20596,24 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   border-bottom: 1px solid #dcdce7;
 }
 
+.c1 {
+  color: #555e6f;
+  display: inline-block;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 5px 5px 5px 0;
+  color: #8e929b;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -20898,24 +20686,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
 
 .c2:focus-visible {
   box-shadow: rgba(0,0,0,0.15) 0 0 0 2px;
-}
-
-.c1 {
-  color: #555e6f;
-  display: inline-block;
-  font-size: 14px;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 5px 5px 5px 0;
-  color: #8e929b;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 <Table
@@ -21039,52 +20809,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
           <div
             className="c0"
           >
-            <Label
-              subtle={true}
-            >
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Label-sc-130fyca-0",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "color:",
-                        "#555e6f",
-                        ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                        [Function],
-                        ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                        [Function],
-                        ";",
-                        [Function],
-                        ";",
-                        [Function],
-                        ";",
-                      ],
-                    },
-                    "displayName": "Label",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Label-sc-130fyca-0",
-                    "target": "label",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                subtle={true}
-              >
-                <label
-                  className="c1"
-                >
-                  Rows per page
-                </label>
-              </StyledComponent>
-            </Label>
             <Label
               id="row-range"
               subtle={true}

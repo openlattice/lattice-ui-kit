@@ -59,15 +59,18 @@ const PaginationToolbar = (props :Props) => {
     <PaginationWrapper>
       {
         (options.length > 1) && (
-          <RowPerPageWrapper>
-            <Select
-                borderless
-                defaultValue={options[0]}
-                onChange={handleRowsPerPage}
-                options={options}
-                value={rowsPerPage}
-                useRawValues />
-          </RowPerPageWrapper>
+          <>
+            <Label subtle>Rows per page</Label>
+            <RowPerPageWrapper>
+              <Select
+                  borderless
+                  defaultValue={options[0]}
+                  onChange={handleRowsPerPage}
+                  options={options}
+                  value={rowsPerPage}
+                  useRawValues />
+            </RowPerPageWrapper>
+          </>
         )
       }
       <Label id="row-range" subtle>{rowRange}</Label>
