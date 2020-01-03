@@ -1,13 +1,15 @@
 // @flow
 import React from 'react';
+
 import { faChevronLeft, faChevronRight } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { PaginationWrapper, RowPerPageWrapper } from './styled';
 import { getRowsPerPageOptions } from './TableUtils';
-import { Select } from '../../../select';
-import { IconButton } from '../../../button';
+import { PaginationWrapper, RowPerPageWrapper } from './styled';
+
 import Label from '../../../label';
+import { IconButton } from '../../../button';
+import { Select } from '../../../select';
 
 type Props = {
   count :number;
@@ -55,18 +57,20 @@ const PaginationToolbar = (props :Props) => {
 
   return (
     <PaginationWrapper>
-      <Label subtle>Rows per page</Label>
       {
         (options.length > 1) && (
-          <RowPerPageWrapper>
-            <Select
-                borderless
-                defaultValue={options[0]}
-                onChange={handleRowsPerPage}
-                options={options}
-                value={rowsPerPage}
-                useRawValues />
-          </RowPerPageWrapper>
+          <>
+            <Label subtle>Rows per page</Label>
+            <RowPerPageWrapper>
+              <Select
+                  borderless
+                  defaultValue={options[0]}
+                  onChange={handleRowsPerPage}
+                  options={options}
+                  value={rowsPerPage}
+                  useRawValues />
+            </RowPerPageWrapper>
+          </>
         )
       }
       <Label id="row-range" subtle>{rowRange}</Label>
