@@ -24,8 +24,18 @@ function genRealWordSelectOptions(text :string) {
   return stressOptions;
 }
 
+const MOCK_CLICK_EVENT = {
+  target: 'mock'
+};
+
+const MOCK_SELECT_EVENT = {
+  action: 'select-option'
+};
+
 export {
+  MOCK_CLICK_EVENT,
+  MOCK_SELECT_EVENT,
   genRandomString,
   genRealWordSelectOptions,
-  nope,
+  nope
 };
