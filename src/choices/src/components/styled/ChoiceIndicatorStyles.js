@@ -1,4 +1,5 @@
 import { css } from 'styled-components';
+
 import { NEUTRALS, PURPLES } from '../../../../colors';
 
 const choiceIndicatorStyles = css`

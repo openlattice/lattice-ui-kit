@@ -336,7 +336,6 @@ input:checked ~ .c4:after {
             </span>
           </StyledComponent>
         </ChoiceWrappers__ChoiceWrapper>
-        <span />
       </label>
     </StyledComponent>
   </ChoiceLabel>
