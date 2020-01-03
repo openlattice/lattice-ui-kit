@@ -1,13 +1,15 @@
-import { PaginationWrapper, RowPerPageWrapper } from './styled';
-import { faChevronLeft, faChevronRight } from '@fortawesome/pro-regular-svg-icons';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconButton } from '../../../button';
-import Label from '../../../label';
 // @flow
 import React from 'react';
-import { Select } from '../../../select';
+
+import { faChevronLeft, faChevronRight } from '@fortawesome/pro-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { getRowsPerPageOptions } from './TableUtils';
+import { PaginationWrapper, RowPerPageWrapper } from './styled';
+
+import Label from '../../../label';
+import { IconButton } from '../../../button';
+import { Select } from '../../../select';
 
 type Props = {
   count :number;
