@@ -1,6 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TableHeader props onSort invoke onSort with property when HeadCell is clicked 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "name",
+      Object {
+        "target": "mock",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`TableHeader props onSort invoke onSort with property when HeadCell is clicked 2`] = `
 <thead>
   <styled__StyledRow
     sticky={true}

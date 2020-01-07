@@ -4,8 +4,9 @@ import toJson from 'enzyme-to-json';
 
 import TableHeader from './TableHeader';
 import { StyledRow } from './styled';
-import { TABLE_HEADERS } from '../../stories/constants';
 import HeadCell from './HeadCell';
+import { TABLE_HEADERS } from '../../stories/constants';
+import { MOCK_CLICK_EVENT } from '../../../utils/testing/MockUtils';
 
 describe('TableHeader', () => {
 
@@ -34,13 +35,11 @@ describe('TableHeader', () => {
         const headerCells = wrapper.find(HeadCell);
         expect(mockOnSort).toHaveBeenCalledTimes(0);
 
-        headerCells.get(0).props.onClick();
+        headerCells.get(0).props.onClick(MOCK_CLICK_EVENT);
         expect(mockOnSort).toHaveBeenCalledTimes(1);
-        expect(mockOnSort.mock.calls[0][1]).toEqual('name');
+        expect(mockOnSort).toBeCalledWith('name', MOCK_CLICK_EVENT);
 
-        headerCells.get(1).props.onClick();
-        expect(mockOnSort).toHaveBeenCalledTimes(2);
-        expect(mockOnSort.mock.calls[1][1]).toEqual('dob');
+        expect(mockOnSort).toMatchSnapshot();
         expect(toJson(wrapper)).toMatchSnapshot();
       });
     });
