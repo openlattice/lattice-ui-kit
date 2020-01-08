@@ -1,6 +1,12 @@
 import styled, { css } from 'styled-components';
 
-import { NEUTRALS, PURPLES } from '../../../../colors';
+import {
+  defaultActive,
+  defaultDisabled,
+  defaultHover,
+  defaultStyle,
+} from '../../../../button/src/components/styled/DefaultButtonStyles';
+import { PURPLES } from '../../../../colors';
 
 export const RadioInputContainer = styled.input.attrs({
   type: 'radio'
@@ -22,35 +28,47 @@ const choiceButtonStyles = css`
   min-width: 84px;
   height: ${(props) => (props.large ? '56px' : '40px')};
   border-radius: 3px;
-  background-color: ${NEUTRALS[6]};
-  border: solid 1px ${NEUTRALS[6]};
-  color: ${NEUTRALS[1]};
+  ${defaultStyle}
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out, box-shadow 0.2s ease-out;
 
-  input:enabled:not(:checked) ~ & {
-    background-color: ${NEUTRALS[3]};
-    cursor: pointer;
+  input:hover ~ & {
+    ${defaultHover}
   }
 
-  input:checked ~ & {
-    background-color: ${PURPLES[5]};
+  input:focus-visible ~ & {
+    box-shadow: ${PURPLES[1]} 0 0 0 1px;
+  }
+
+  input:checked ~ &,
+  input[readonly]:checked:disabled ~ &,
+  input[readonly]:checked:hover ~ & {
+    background-color: ${PURPLES[6]};
     border: solid 1px ${PURPLES[1]};
     color: ${PURPLES[1]};
   }
 
+  input:checked:hover ~ & {
+    background-color: ${PURPLES[5]};
+  }
+
   input:disabled ~ & {
+    ${defaultDisabled}
     cursor: not-allowed;
   }
 
-  input:disabled:checked ~ & {
-    background-color: ${NEUTRALS[2]};
-    border: solid 1px ${NEUTRALS[1]};
+  input:checked:disabled ~ & {
+    ${defaultActive}
     cursor: not-allowed;
+  }
+
+  input[readonly] ~ & {
+    cursor: default;
+    pointer-events: none;
   }
 `;
 
