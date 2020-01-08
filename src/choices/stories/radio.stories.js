@@ -64,12 +64,13 @@ storiesOf('Radio', module)
             flexDirection: 'column'
           }}>
             <Label>Showcase</Label>
-            <Radio id="story-default" label="Default" />
-            <Radio id="story-checked" label="defaultChecked" defaultChecked />
-            <Radio id="story-checkedreadonly" label="Checked readOnly" checked readOnly />
-            <Radio id="story-disabled" label="Disabled" disabled />
-            <Radio id="story-disabledchecked" label="Disabled (checked)" disabled checked />
+            <Radio mode="button" id="story-default" label="Default" />
+            <Radio mode="button" id="story-checked" label="defaultChecked" defaultChecked />
+            <Radio mode="button" id="story-checkedreadonly" label="Checked readOnly" checked readOnly />
+            <Radio mode="button" id="story-disabled" label="Disabled" disabled />
+            <Radio mode="button" id="story-disabledchecked" label="Disabled (checked)" disabled checked />
             <Radio
+                mode="button"
                 id="story-eventhandlers"
                 label="Event handlers (see Actions tab)"
                 value={false}
