@@ -25,6 +25,7 @@ const choiceIndicatorStyles = css`
     background-color: ${PURPLES[6]};
     cursor: not-allowed;
   }
+
   input:checked:disabled ~ & {
     cursor: not-allowed;
     background-color: ${NEUTRALS[2]};

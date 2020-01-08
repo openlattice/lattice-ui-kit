@@ -4,9 +4,10 @@ import React from 'react';
 import {
   ChoiceInnerWrapper,
   ChoiceLabel,
+  ChoiceText,
   ChoiceWrapper,
   RadioIndicator,
-  RadioInput
+  RadioInput,
 } from './styled';
 
 type Props = {
@@ -49,7 +50,11 @@ const Radio = ({
       </ChoiceInnerWrapper>
     </ChoiceWrapper>
     {
-      mode !== 'button' && label
+      mode !== 'button' && (
+        <ChoiceText>
+          {label}
+        </ChoiceText>
+      )
     }
   </ChoiceLabel>
 );

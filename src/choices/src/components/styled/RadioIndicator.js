@@ -23,7 +23,12 @@ const afterStyles = css`
     opacity ${duration.standard} ease-out;
 `;
 
-const choiceWithAfterStyles = css`
+const radioWithAfterStyles = css`
+  background-color: ${PURPLES[6]};
+  border-radius: 100%;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
   ${choiceIndicatorStyles};
 
   input:not(:checked) ~ &:after,
@@ -44,16 +49,13 @@ const choiceWithAfterStyles = css`
 
 const getIndicatorStyles = getStyleVariation('mode', {
   button: choiceButtonStyles
-}, choiceWithAfterStyles);
+}, radioWithAfterStyles);
 
 const RadioIndicator = styled.span`
-  background-color: ${PURPLES[6]};
-  border-radius: 100%;
-  display: inline-block;
-  height: 20px;
   transition: background-color ${duration.swift} ease-out,
-    box-shadow ${duration.swift} ease-out;
-  width: 20px;
+    border-color ${duration.swift} ease-out,
+    box-shadow ${duration.swift} ease-out,
+    color ${duration.swift} ease-out;
 
   ${getIndicatorStyles};
 `;

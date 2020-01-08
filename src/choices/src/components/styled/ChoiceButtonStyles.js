@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
 
 import {
   defaultActive,
@@ -8,33 +8,18 @@ import {
 } from '../../../../button/src/components/styled/DefaultButtonStyles';
 import { PURPLES } from '../../../../colors';
 
-export const RadioInputContainer = styled.input.attrs({
-  type: 'radio'
-})`
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  margin: 10px 10px 10px;
-`;
-
-export const RadioContainer = styled.label`
-  display: flex;
-  width: 100%;
-`;
-
 const choiceButtonStyles = css`
-  padding: 10px 12px;
-  width: 100%;
-  min-width: 84px;
-  height: ${(props) => (props.large ? '56px' : '40px')};
+  align-items: center;
   border-radius: 3px;
-  ${defaultStyle}
   display: flex;
   flex-direction: column;
+  height: ${(props) => (props.large ? '56px' : '40px')};
   justify-content: center;
-  align-items: center;
+  min-width: 84px;
+  padding: 10px 12px;
   text-align: center;
-  transition: background-color 0.2s ease-out, border-color 0.2s ease-out, box-shadow 0.2s ease-out;
+  width: 100%;
+  ${defaultStyle}
 
   input:hover ~ & {
     ${defaultHover}
