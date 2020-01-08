@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { NEUTRALS } from '../../../../colors';
 
 const ChoiceLabel = styled.label`
@@ -8,6 +9,7 @@ const ChoiceLabel = styled.label`
   vertical-align: middle;
   pointer-events: ${(props) => (props.readOnly ? 'none' : 'auto')};
   position: relative;
+  margin: 10px 10px 10px 0;
 `;
 
 export default ChoiceLabel;
