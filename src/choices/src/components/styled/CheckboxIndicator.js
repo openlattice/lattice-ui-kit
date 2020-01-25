@@ -1,8 +1,11 @@
 import styled, { css } from 'styled-components';
 
+import choiceButtonStyles from './ChoiceButtonStyles';
 import choiceIndicatorStyles from './ChoiceIndicatorStyles';
-import { duration } from '../../../../style/transitions';
+
 import { PURPLES, WHITE } from '../../../../colors';
+import { duration } from '../../../../style/transitions';
+import { getStyleVariation } from '../../../../utils/StyleUtils';
 
 const afterStyles = css`
   border-color: ${WHITE};
@@ -20,15 +23,12 @@ const afterStyles = css`
   width: 6px;
 `;
 
-const CheckboxIndicator = styled.span`
+const checkboxWithAfterStyles = css`
   background-color: ${PURPLES[6]};
   border-radius: 3px;
   display: inline-block;
   height: 20px;
-  transition: background-color ${duration.swift} ease-out,
-    box-shadow ${duration.swift} ease-out;
   width: 20px;
-
   ${choiceIndicatorStyles};
 
   input:not(:checked) ~ &:after,
@@ -45,6 +45,19 @@ const CheckboxIndicator = styled.span`
     opacity: 1;
     transform: rotate(45deg) scale(1);
   }
+`;
+
+const getIndicatorStyles = getStyleVariation('mode', {
+  button: choiceButtonStyles
+}, checkboxWithAfterStyles);
+
+const CheckboxIndicator = styled.span`
+  transition: background-color ${duration.swift} ease-out,
+    border-color ${duration.swift} ease-out,
+    box-shadow ${duration.swift} ease-out,
+    color ${duration.swift} ease-out;
+
+  ${getIndicatorStyles}
 `;
 
 export default CheckboxIndicator;

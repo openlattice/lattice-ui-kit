@@ -1,8 +1,8 @@
 // @flow
 import React, { Component } from 'react';
 
-import { Checkbox } from '../..';
 import { Card, CardSegment } from '../../../layout';
+import { Checkbox } from '../..';
 
 type Props = {
   action :(name :string) => () => void;

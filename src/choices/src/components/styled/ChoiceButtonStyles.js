@@ -11,9 +11,11 @@ import { PURPLES } from '../../../../colors';
 const choiceButtonStyles = css`
   align-items: center;
   border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
   display: flex;
   flex-direction: column;
-  height: ${(props) => (props.large ? '56px' : '40px')};
+  min-height: ${(props) => (props.large ? '56px' : '40px')};
   justify-content: center;
   min-width: 84px;
   padding: 10px 12px;

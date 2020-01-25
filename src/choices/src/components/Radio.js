@@ -34,7 +34,7 @@ const Radio = ({
   ...rest
 } :Props) => (
   <ChoiceLabel htmlFor={id} readOnly={readOnly} disabled={disabled}>
-    <ChoiceWrapper>
+    <ChoiceWrapper mode={mode}>
       <ChoiceInnerWrapper>
         <RadioInput
             id={id}
@@ -43,9 +43,7 @@ const Radio = ({
             // $FlowFixMe
             {...rest} />
         <RadioIndicator mode={mode}>
-          {
-            mode === 'button' && label
-          }
+          { mode === 'button' && label }
         </RadioIndicator>
       </ChoiceInnerWrapper>
     </ChoiceWrapper>

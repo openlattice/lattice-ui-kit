@@ -35,7 +35,7 @@ const Checkbox = ({
   ...rest
 } :Props) => (
   <ChoiceLabel htmlFor={id} readOnly={readOnly} disabled={disabled}>
-    <ChoiceWrapper>
+    <ChoiceWrapper mode={mode}>
       <ChoiceInnerWrapper>
         <CheckboxInput
             id={id}
@@ -43,7 +43,9 @@ const Checkbox = ({
             disabled={disabled || readOnly}
             // $FlowFixMe
             {...rest} />
-        <CheckboxIndicator />
+        <CheckboxIndicator mode={mode}>
+          { mode === 'button' && label }
+        </CheckboxIndicator>
       </ChoiceInnerWrapper>
     </ChoiceWrapper>
     {
