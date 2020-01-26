@@ -36,7 +36,7 @@
     "@material-ui/styles": "~4.5.0",
     "immutable": "4.0.0-rc.9",
     "lodash": "~4.17.10",
-    "luxon": "~1.21.0",
+    "luxon": "~1.22.0",
     "polished": "~3.4.0",
     "prop-types": "~15.7.0",
     "react-scrolllock": "~4.0.0",
