@@ -27,8 +27,12 @@ const choiceButtonStyles = css`
     ${defaultHover}
   }
 
-  input:focus-visible ~ & {
-    box-shadow: ${PURPLES[1]} 0 0 0 1px;
+  input:active ~ & {
+    ${defaultActive};
+  }
+
+  input:focus ~ & {
+    box-shadow: ${PURPLES[1]} 0 0 0 2px;
   }
 
   input:checked ~ &,

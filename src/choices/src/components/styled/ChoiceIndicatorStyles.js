@@ -7,7 +7,7 @@ const choiceIndicatorStyles = css`
     background-color: ${NEUTRALS[1]};
   }
 
-  input:focus-visible ~ & {
+  input:focus ~ & {
     box-shadow: ${PURPLES[0]} 0 0 0 2px;
   }
 
