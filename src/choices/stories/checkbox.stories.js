@@ -60,7 +60,7 @@ storiesOf('Checkbox', module)
             flexDirection: 'column'
           }}>
             <Label>Showcase</Label>
-            <ChoiceGroup row>
+            <ChoiceGroup>
               <Checkbox mode="button" id="story-default" label="Default" />
               <Checkbox mode="button" id="story-defaultchecked" label="Default Checked" defaultChecked />
               <Checkbox mode="button" id="story-defaultcheckedreadonly" label="Checked readOnly" checked readOnly />
@@ -80,7 +80,7 @@ storiesOf('Checkbox', module)
             flexDirection: 'column'
           }}>
             <Label>Showcase</Label>
-            <ChoiceGroup row>
+            <ChoiceGroup>
               <Checkbox mode="button" id="group-1" label="Out of Touch with Reality" />
               <Checkbox mode="button" id="group-2" label="Neglect of Self Care" />
               <Checkbox mode="button" id="group-3" label="Depressed" />

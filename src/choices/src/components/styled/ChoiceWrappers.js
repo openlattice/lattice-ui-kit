@@ -11,7 +11,6 @@ const getChoiceSize = ({ mode }) => {
   return null;
 };
 
-
 const ChoiceWrapper = styled.span`
   align-items: stretch;
   display: inline-flex;

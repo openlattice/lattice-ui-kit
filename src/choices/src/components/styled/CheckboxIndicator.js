@@ -61,3 +61,6 @@ const CheckboxIndicator = styled.span`
 `;
 
 export default CheckboxIndicator;
+export {
+  getIndicatorStyles
+};

@@ -61,3 +61,6 @@ const RadioIndicator = styled.span`
 `;
 
 export default RadioIndicator;
+export {
+  getIndicatorStyles
+};

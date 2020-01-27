@@ -1,6 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`IconButton icon with text should match snapshot 1`] = `
+.c2 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .c1 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -16,16 +26,6 @@ exports[`IconButton icon with text should match snapshot 1`] = `
   position: relative;
   overflow: hidden;
   min-width: 14px;
-}
-
-.c2 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .c0 {
@@ -74,7 +74,7 @@ exports[`IconButton icon with text should match snapshot 1`] = `
   color: #b6bbc7;
 }
 
-.c0:focus-visible {
+.c0:focus {
   box-shadow: #dcdce7 0 0 0 2px;
 }
 
@@ -161,7 +161,7 @@ exports[`IconButton icon with text should match snapshot 1`] = `
                 [Function],
                 "};:disabled{cursor:not-allowed;text-decoration:none;",
                 [Function],
-                "};:focus-visible{",
+                "};:focus{",
                 [Function],
                 "}",
               ],
@@ -347,6 +347,16 @@ exports[`IconButton icon with text should match snapshot 1`] = `
 `;
 
 exports[`IconButton icon without text should match snapshot 1`] = `
+.c2 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .c1 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -362,16 +372,6 @@ exports[`IconButton icon without text should match snapshot 1`] = `
   position: relative;
   overflow: hidden;
   min-width: 14px;
-}
-
-.c2 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .c0 {
@@ -420,7 +420,7 @@ exports[`IconButton icon without text should match snapshot 1`] = `
   color: #b6bbc7;
 }
 
-.c0:focus-visible {
+.c0:focus {
   box-shadow: #dcdce7 0 0 0 2px;
 }
 
@@ -503,7 +503,7 @@ exports[`IconButton icon without text should match snapshot 1`] = `
                 [Function],
                 "};:disabled{cursor:not-allowed;text-decoration:none;",
                 [Function],
-                "};:focus-visible{",
+                "};:focus{",
                 [Function],
                 "}",
               ],

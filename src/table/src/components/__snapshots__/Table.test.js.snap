@@ -77,6 +77,16 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   border-bottom: 1px solid #dcdce7;
 }
 
+.c4 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -92,16 +102,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   position: relative;
   overflow: hidden;
   min-width: 14px;
-}
-
-.c4 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .c2 {
@@ -147,7 +147,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   color: #b6bbc7;
 }
 
-.c2:focus-visible {
+.c2:focus {
   box-shadow: rgba(0,0,0,0.15) 0 0 0 2px;
 }
 
@@ -538,7 +538,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -771,7 +771,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -2270,7 +2270,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -2503,7 +2503,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],

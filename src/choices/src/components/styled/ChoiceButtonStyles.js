@@ -15,7 +15,7 @@ const choiceButtonStyles = css`
   border-width: 1px;
   display: flex;
   flex-direction: column;
-  min-height: ${(props) => (props.large ? '56px' : '40px')};
+  min-height: 40px;
   justify-content: center;
   min-width: 84px;
   padding: 10px 12px;
