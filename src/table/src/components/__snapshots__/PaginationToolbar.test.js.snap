@@ -17,16 +17,6 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
   width: 100%;
 }
 
-<<<<<<< HEAD
-.c4 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-=======
 .c1 {
   color: #555e6f;
   display: inline-block;
@@ -43,7 +33,16 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
->>>>>>> 65b6615d4bed9ff140b7130fd4db9d4ab671497d
+}
+
+.c4 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c3 {

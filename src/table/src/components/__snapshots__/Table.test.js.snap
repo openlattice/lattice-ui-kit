@@ -101,16 +101,6 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
   border-bottom: 1px solid #dcdce7;
 }
 
-<<<<<<< HEAD
-.c4 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-=======
 .c1 {
   color: #555e6f;
   display: inline-block;
@@ -127,7 +117,16 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
->>>>>>> 65b6615d4bed9ff140b7130fd4db9d4ab671497d
+}
+
+.c4 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c3 {
@@ -4035,7 +4034,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -4268,7 +4267,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -4551,6 +4550,16 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
   text-transform: uppercase;
 }
 
+.c5 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .c4 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -4566,16 +4575,6 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
   position: relative;
   overflow: hidden;
   min-width: 14px;
-}
-
-.c5 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .c3 {
@@ -4621,7 +4620,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
   color: #b6bbc7;
 }
 
-.c3:focus-visible {
+.c3:focus {
   box-shadow: rgba(0,0,0,0.15) 0 0 0 2px;
 }
 
@@ -6627,7 +6626,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -6860,7 +6859,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -11329,7 +11328,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -11562,7 +11561,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -11814,6 +11813,16 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
   text-transform: uppercase;
 }
 
+.c4 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -11829,16 +11838,6 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
   position: relative;
   overflow: hidden;
   min-width: 14px;
-}
-
-.c4 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .c2 {
@@ -11884,7 +11883,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
   color: #b6bbc7;
 }
 
-.c2:focus-visible {
+.c2:focus {
   box-shadow: rgba(0,0,0,0.15) 0 0 0 2px;
 }
 
@@ -12141,7 +12140,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -12374,7 +12373,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -15705,7 +15704,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -15938,7 +15937,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -16215,6 +16214,16 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
   text-transform: uppercase;
 }
 
+.c4 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -16230,16 +16239,6 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
   position: relative;
   overflow: hidden;
   min-width: 14px;
-}
-
-.c4 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .c2 {
@@ -16285,7 +16284,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
   color: #b6bbc7;
 }
 
-.c2:focus-visible {
+.c2:focus {
   box-shadow: rgba(0,0,0,0.15) 0 0 0 2px;
 }
 
@@ -16566,7 +16565,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -16799,7 +16798,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -20130,7 +20129,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -20363,7 +20362,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -20615,6 +20614,16 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   text-transform: uppercase;
 }
 
+.c4 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  opacity: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -20630,16 +20639,6 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   position: relative;
   overflow: hidden;
   min-width: 14px;
-}
-
-.c4 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .c2 {
@@ -20685,7 +20684,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   color: #b6bbc7;
 }
 
-.c2:focus-visible {
+.c2:focus {
   box-shadow: rgba(0,0,0,0.15) 0 0 0 2px;
 }
 
@@ -20942,7 +20941,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
@@ -21175,7 +21174,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             [Function],
                             "};:disabled{cursor:not-allowed;text-decoration:none;",
                             [Function],
-                            "};:focus-visible{",
+                            "};:focus{",
                             [Function],
                             "}",
                           ],
