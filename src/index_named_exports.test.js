@@ -1,7 +1,8 @@
 import { Set } from 'immutable';
-import PACKAGE from '../package.json';
 
 import * as LatticeUIKit from './index';
+
+import PACKAGE from '../package.json';
 
 const EXPECTED_OBJ_EXPORTS = Set([
   'Badge',
@@ -13,6 +14,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Cell',
   'Checkbox',
   'CheckboxSelect',
+  'ChoiceGroup',
   'Colors',
   'CopyButton',
   'Creatable',
