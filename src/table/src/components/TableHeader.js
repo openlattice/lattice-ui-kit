@@ -9,7 +9,7 @@ type Props = {
   className ? :string;
   components :Object;
   headers ? :Object[];
-  onSort ? :(event :SyntheticEvent<HTMLElement>, property :string) => void;
+  onSort ? :(property :string, event :SyntheticEvent<HTMLTableCellElement>) => void;
   order ? :SortOrder;
   orderBy ? :string;
   sticky ? :boolean;
@@ -27,9 +27,9 @@ const TableHeader = (props :Props) => {
     sticky,
   } = props;
 
-  const createSortHandler = (property :string) => (event :SyntheticEvent<HTMLElement>) => {
+  const createSortHandler = (property :string) => (event :SyntheticEvent<HTMLTableCellElement>) => {
     if (isFunction(onSort)) {
-      onSort(event, property);
+      onSort(property, event);
     }
   };
 
