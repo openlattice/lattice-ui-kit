@@ -1,8 +1,5 @@
 import styled, { css } from 'styled-components';
 
-import { duration } from '../../../../style/transitions';
-import { getStyleVariation } from '../../../../utils/StyleUtils';
-
 import {
   defaultActive,
   defaultDisabled,
@@ -10,15 +7,27 @@ import {
   defaultHover,
   defaultStyle,
 } from './DefaultButtonStyles';
-
 import {
-  secondaryActive,
-  secondaryDisabled,
-  secondaryFocus,
-  secondaryHover,
-  secondaryStyle,
-} from './SecondaryButtonStyles';
-
+  negativeActive,
+  negativeDisabled,
+  negativeFocus,
+  negativeHover,
+  negativeStyle,
+} from './NegativeButtonStyles';
+import {
+  neutralActive,
+  neutralDisabled,
+  neutralFocus,
+  neutralHover,
+  neutralStyle,
+} from './NeutralButtonStyles';
+import {
+  positiveActive,
+  positiveDisabled,
+  positiveFocus,
+  positiveHover,
+  positiveStyle,
+} from './PositiveButtonStyles';
 import {
   primaryActive,
   primaryDisabled,
@@ -26,7 +35,13 @@ import {
   primaryHover,
   primaryStyle,
 } from './PrimaryButtonStyles';
-
+import {
+  secondaryActive,
+  secondaryDisabled,
+  secondaryFocus,
+  secondaryHover,
+  secondaryStyle,
+} from './SecondaryButtonStyles';
 import {
   subtleActive,
   subtleDisabled,
@@ -35,29 +50,8 @@ import {
   subtleStyle,
 } from './SubtleButtonStyles';
 
-import {
-  positiveActive,
-  positiveDisabled,
-  positiveFocus,
-  positiveHover,
-  positiveStyle,
-} from './PositiveButtonStyles';
-
-import {
-  negativeActive,
-  negativeDisabled,
-  negativeFocus,
-  negativeHover,
-  negativeStyle,
-} from './NegativeButtonStyles';
-
-import {
-  neutralActive,
-  neutralDisabled,
-  neutralFocus,
-  neutralHover,
-  neutralStyle,
-} from './NeutralButtonStyles';
+import { duration } from '../../../../style/transitions';
+import { getStyleVariation } from '../../../../utils/StyleUtils';
 
 const baseButtonVariation = getStyleVariation('mode', {
   default: defaultStyle,
@@ -154,7 +148,7 @@ const StyledButton = styled.button`
     ${disabledVariation}
   };
 
-  :focus-visible {
+  :focus {
     ${focusVariation}
   }
 `;

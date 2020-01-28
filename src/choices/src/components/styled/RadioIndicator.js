@@ -1,8 +1,11 @@
 import styled, { css } from 'styled-components';
 
+import choiceButtonStyles from './ChoiceButtonStyles';
 import choiceIndicatorStyles from './ChoiceIndicatorStyles';
-import { duration } from '../../../../style/transitions';
+
 import { PURPLES, WHITE } from '../../../../colors';
+import { duration } from '../../../../style/transitions';
+import { getStyleVariation } from '../../../../utils/StyleUtils';
 
 const afterStyles = css`
   content: '';
@@ -20,15 +23,12 @@ const afterStyles = css`
     opacity ${duration.standard} ease-out;
 `;
 
-const RadioIndicator = styled.span`
+const radioWithAfterStyles = css`
   background-color: ${PURPLES[6]};
   border-radius: 100%;
   display: inline-block;
   height: 20px;
-  transition: background-color ${duration.swift} ease-out,
-    box-shadow ${duration.swift} ease-out;
   width: 20px;
-
   ${choiceIndicatorStyles};
 
   input:not(:checked) ~ &:after,
@@ -47,4 +47,20 @@ const RadioIndicator = styled.span`
   }
 `;
 
+const getIndicatorStyles = getStyleVariation('mode', {
+  button: choiceButtonStyles
+}, radioWithAfterStyles);
+
+const RadioIndicator = styled.span`
+  transition: background-color ${duration.swift} ease-out,
+    border-color ${duration.swift} ease-out,
+    box-shadow ${duration.swift} ease-out,
+    color ${duration.swift} ease-out;
+
+  ${getIndicatorStyles};
+`;
+
 export default RadioIndicator;
+export {
+  getIndicatorStyles
+};

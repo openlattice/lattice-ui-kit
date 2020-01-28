@@ -1,8 +1,9 @@
 import React from 'react';
-import { DateTime } from 'luxon';
-import { mount, shallow } from 'enzyme';
+
 import toJson from 'enzyme-to-json';
 import { KeyboardTimePicker } from '@material-ui/pickers';
+import { mount, shallow } from 'enzyme';
+import { DateTime } from 'luxon';
 
 import TimePicker from './TimePicker';
 

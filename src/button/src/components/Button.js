@@ -5,9 +5,9 @@
 import React from 'react';
 import type { Node } from 'react';
 
-import ContentWrapper from './styled/ContentWrapper';
-import Content from './styled/Content';
 import ButtonSpinner from './styled/ButtonSpinner';
+import Content from './styled/Content';
+import ContentWrapper from './styled/ContentWrapper';
 import StyledButton from './styled/StyledButton';
 
 type ButtonMode =

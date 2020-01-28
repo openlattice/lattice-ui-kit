@@ -1,9 +1,12 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import Checkbox from './Checkbox';
-import { CheckboxInput, CheckboxIndicator, ChoiceLabel } from './styled';
+import choiceButtonStyles from './styled/ChoiceButtonStyles';
+import { CheckboxIndicator, CheckboxInput, ChoiceLabel } from './styled';
+import { getIndicatorStyles } from './styled/CheckboxIndicator';
 
 describe('Checkbox', () => {
 
@@ -61,6 +64,19 @@ describe('Checkbox', () => {
       expect(mockOnChange).toHaveBeenCalledTimes(1);
     });
 
+  });
+
+  describe('mode', () => {
+
+    test('should pass mode to CheckboxIndicator', () => {
+      const wrapper = mount(<Checkbox mode="button" />);
+      expect(wrapper.find(CheckboxIndicator).prop('mode')).toEqual('button');
+    });
+
+    test('mode="button" should use choiceButtonStyles', () => {
+      const indicatorStyles = getIndicatorStyles({ mode: 'button' });
+      expect(indicatorStyles).toEqual(choiceButtonStyles);
+    });
   });
 
 });
