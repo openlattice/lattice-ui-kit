@@ -84,7 +84,7 @@ storiesOf('Radio', module)
             flexBasis: 'fit-content'
           }}>
             <Label>Showcase</Label>
-            <ChoiceGroup>
+            <ChoiceGroup row>
               <Radio mode="button" id="story-default" label="Default" />
               <Radio mode="button" id="story-checked" label="Default Checked" defaultChecked />
               <Radio mode="button" id="story-checkedreadonly" label="Checked readOnly" checked readOnly />
@@ -105,7 +105,7 @@ storiesOf('Radio', module)
             flexDirection: 'column'
           }}>
             <Label>Group</Label>
-            <ChoiceGroup>
+            <ChoiceGroup row>
               <Radio mode="button" name="group" id="group-1" label="Out of Touch with Reality" value="1" />
               <Radio mode="button" name="group" id="group-2" label="Neglect of Self Care" value="2" />
               <Radio mode="button" name="group" id="group-3" label="Depressed" value="3" />

@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 
 import { Card, CardSegment } from '../../../layout';
+import { ChoiceGroup } from '../../src/components/styled';
 import { Checkbox } from '../..';
 
 type Props = {
@@ -54,59 +55,55 @@ class CheckboxController extends Component<Props, State> {
               flex: '0 1 100%',
               flexDirection: 'column'
             }}>
-              <Checkbox
-                  id="story-default"
-                  label="Default"
-                  name="default"
-                  checked={checkboxesChecked.default}
-                  onChange={this.handleChange}
-                  value="default" />
-
-              <Checkbox
-                  id="story-checked"
-                  label="Checked"
-                  name="checked"
-                  checked={checkboxesChecked.checked}
-                  onChange={this.handleChange}
-                  value="checked" />
-
-              <Checkbox
-                  id="story-checkedreadonly"
-                  label="Checked readOnly"
-                  name="checkedReadOnly"
-                  readOnly
-                  checked={checkboxesChecked.checkedReadOnly}
-                  value="checkedReadOnly" />
-
-              <Checkbox
-                  id="story-disabled"
-                  label="Disabled"
-                  name="disabled"
-                  checked={checkboxesChecked.disabled}
-                  onChange={this.handleChange}
-                  value="disabled"
-                  disabled />
-
-              <Checkbox
-                  id="story-disabledchecked"
-                  label="Disabled
-                  (checked)"
-                  name="disabledChecked"
-                  checked={checkboxesChecked.disabledChecked}
-                  onChange={this.handleChange}
-                  value="disabledChecked"
-                  disabled />
-
-              <Checkbox
-                  id="story-eventhandlers"
-                  label="Event handlers (see Actions tab)"
-                  name="event"
-                  checked={checkboxesChecked.event}
-                  onChange={this.handleChange}
-                  value="event"
-                  onBlur={action('onBlur')}
-                  onFocus={action('onFocus')} />
-
+              <ChoiceGroup>
+                <Checkbox
+                    id="story-default"
+                    label="Default"
+                    name="default"
+                    checked={checkboxesChecked.default}
+                    onChange={this.handleChange}
+                    value="default" />
+                <Checkbox
+                    id="story-checked"
+                    label="Checked"
+                    name="checked"
+                    checked={checkboxesChecked.checked}
+                    onChange={this.handleChange}
+                    value="checked" />
+                <Checkbox
+                    id="story-checkedreadonly"
+                    label="Checked readOnly"
+                    name="checkedReadOnly"
+                    readOnly
+                    checked={checkboxesChecked.checkedReadOnly}
+                    value="checkedReadOnly" />
+                <Checkbox
+                    id="story-disabled"
+                    label="Disabled"
+                    name="disabled"
+                    checked={checkboxesChecked.disabled}
+                    onChange={this.handleChange}
+                    value="disabled"
+                    disabled />
+                <Checkbox
+                    id="story-disabledchecked"
+                    label="Disabled
+                    (checked)"
+                    name="disabledChecked"
+                    checked={checkboxesChecked.disabledChecked}
+                    onChange={this.handleChange}
+                    value="disabledChecked"
+                    disabled />
+                <Checkbox
+                    id="story-eventhandlers"
+                    label="Event handlers (see Actions tab)"
+                    name="event"
+                    checked={checkboxesChecked.event}
+                    onChange={this.handleChange}
+                    value="event"
+                    onBlur={action('onBlur')}
+                    onFocus={action('onFocus')} />
+              </ChoiceGroup>
             </form>
           </CardSegment>
         </Card>

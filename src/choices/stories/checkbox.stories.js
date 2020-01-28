@@ -23,22 +23,19 @@ storiesOf('Checkbox', module)
             flex: '0 1 100%',
             flexDirection: 'column'
           }}>
-            <Checkbox id="story-default" label="Default" />
-
-            <Checkbox id="story-defaultchecked" label="Default Checked" defaultChecked />
-
-            <Checkbox id="story-defaultcheckedreadonly" label="Checked readOnly" checked readOnly />
-
-            <Checkbox id="story-disabled" label="Disabled" disabled />
-
-            <Checkbox id="story-disabledchecked" label="Disabled (checked)" disabled defaultChecked />
-
-            <Checkbox
-                id="story-eventhandlers"
-                label="Event handlers (see Actions tab)"
-                onChange={action('onChange')}
-                onBlur={action('onBlur')}
-                onFocus={action('onFocus')} />
+            <ChoiceGroup>
+              <Checkbox id="story-default" label="Default" />
+              <Checkbox id="story-defaultchecked" label="Default Checked" defaultChecked />
+              <Checkbox id="story-defaultcheckedreadonly" label="Checked readOnly" checked readOnly />
+              <Checkbox id="story-disabled" label="Disabled" disabled />
+              <Checkbox id="story-disabledchecked" label="Disabled (checked)" disabled defaultChecked />
+              <Checkbox
+                  id="story-eventhandlers"
+                  label="Event handlers (see Actions tab)"
+                  onChange={action('onChange')}
+                  onBlur={action('onBlur')}
+                  onFocus={action('onFocus')} />
+            </ChoiceGroup>
 
           </form>
         </CardSegment>
@@ -60,7 +57,7 @@ storiesOf('Checkbox', module)
             flexDirection: 'column'
           }}>
             <Label>Showcase</Label>
-            <ChoiceGroup>
+            <ChoiceGroup row>
               <Checkbox mode="button" id="story-default" label="Default" />
               <Checkbox mode="button" id="story-defaultchecked" label="Default Checked" defaultChecked />
               <Checkbox mode="button" id="story-defaultcheckedreadonly" label="Checked readOnly" checked readOnly />
@@ -80,7 +77,7 @@ storiesOf('Checkbox', module)
             flexDirection: 'column'
           }}>
             <Label>Showcase</Label>
-            <ChoiceGroup>
+            <ChoiceGroup row>
               <Checkbox mode="button" id="group-1" label="Out of Touch with Reality" />
               <Checkbox mode="button" id="group-2" label="Neglect of Self Care" />
               <Checkbox mode="button" id="group-3" label="Depressed" />
