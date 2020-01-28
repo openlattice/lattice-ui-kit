@@ -25058,6 +25058,7 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
           },
         ]
       }
+      exact={false}
       headers={
         Array [
           Object {
@@ -25096,9 +25097,11 @@ exports[`Table props paginated Table should set rowsPerPage to data.length when 
 exports[`Table props paginated paginated Table should set rowsPerPage to 5 by default 1`] = `
 <div>
   <Memo(PaginationToolbar)
+    count={0}
     onPageChange={[Function]}
     page={0}
     rowsPerPage={5}
+    rowsPerPageOptions={Array []}
   />
   <styled__StyledTable>
     <TableHeader
@@ -25207,6 +25210,8 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
           "Row": [Function],
         }
       }
+      data={Array []}
+      exact={false}
       headers={
         Array [
           Object {
@@ -25240,9 +25245,11 @@ exports[`Table props paginated paginated Table should set rowsPerPage to 5 by de
     />
   </styled__StyledTable>
   <Memo(PaginationToolbar)
+    count={0}
     onPageChange={[Function]}
     page={0}
     rowsPerPage={5}
+    rowsPerPageOptions={Array []}
   />
 </div>
 `;
@@ -25254,6 +25261,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
     onPageChange={[Function]}
     page={0}
     rowsPerPage={7}
+    rowsPerPageOptions={Array []}
   />
   <styled__StyledTable>
     <TableHeader
@@ -25415,6 +25423,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
           },
         ]
       }
+      exact={false}
       headers={
         Array [
           Object {
@@ -25452,6 +25461,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to data.le
     onPageChange={[Function]}
     page={0}
     rowsPerPage={7}
+    rowsPerPageOptions={Array []}
   />
 </div>
 `;
@@ -25631,6 +25641,7 @@ exports[`Table props paginated paginated Table should set rowsPerPage to first e
           },
         ]
       }
+      exact={false}
       headers={
         Array [
           Object {
@@ -25686,6 +25697,7 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
     onPageChange={[Function]}
     page={0}
     rowsPerPage={7}
+    rowsPerPageOptions={Array []}
   />
   <styled__StyledTable>
     <TableHeader
@@ -25847,6 +25859,7 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
           },
         ]
       }
+      exact={false}
       headers={
         Array [
           Object {
@@ -25884,6 +25897,7 @@ exports[`Table props paginated paginated=true should render PaginationToolbar 1`
     onPageChange={[Function]}
     page={0}
     rowsPerPage={7}
+    rowsPerPageOptions={Array []}
   />
 </div>
 `;
@@ -26052,6 +26066,7 @@ exports[`Table render should render table first child 1`] = `
           },
         ]
       }
+      exact={false}
       headers={
         Array [
           Object {
