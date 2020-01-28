@@ -199,98 +199,94 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
                   isActive={true}
                 >
                   <TouchScrollable>
-                    <NodeResolver
-                      innerRef={[Function]}
+                    <OverlayOuterContainer
+                      transparent={false}
                     >
-                      <OverlayOuterContainer
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
+                              "isStatic": false,
+                              "lastClassName": "c0",
+                              "rules": Array [
+                                "background-color:",
+                                [Function],
+                                ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
+                                "&.luk-fade-appear{opacity:0;};&.luk-fade-appear-active{opacity:1;transition:opacity ",
+                                "200ms",
+                                " ease-out;};&.luk-fade-enter{opacity:0;};&.luk-fade-enter-active{opacity:1;transition:opacity ",
+                                "200ms",
+                                " ease-out;};&.luk-fade-exit{opacity:1;};&.luk-fade-exit-active{opacity:0;transition:opacity ",
+                                "200ms",
+                                " ease-out;};",
+                                ";",
+                              ],
+                            },
+                            "displayName": "OverlayOuterContainer",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={[Function]}
                         transparent={false}
                       >
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
-                                "isStatic": false,
-                                "lastClassName": "c0",
-                                "rules": Array [
-                                  "background-color:",
-                                  [Function],
-                                  ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;",
-                                  "&.luk-fade-appear{opacity:0;};&.luk-fade-appear-active{opacity:1;transition:opacity ",
-                                  "200ms",
-                                  " ease-out;};&.luk-fade-enter{opacity:0;};&.luk-fade-enter-active{opacity:1;transition:opacity ",
-                                  "200ms",
-                                  " ease-out;};&.luk-fade-exit{opacity:1;};&.luk-fade-exit-active{opacity:0;transition:opacity ",
-                                  "200ms",
-                                  " ease-out;};",
-                                  ";",
-                                ],
-                              },
-                              "displayName": "OverlayOuterContainer",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "StyledOverlayComponents__OverlayOuterContainer-ol4tzw-0",
-                              "target": "div",
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={null}
-                          transparent={false}
+                        <div
+                          className="c0"
                         >
-                          <div
-                            className="c0"
+                          <OverlayInnerContainer
+                            isScrollable={false}
+                            onClick={[Function]}
                           >
-                            <OverlayInnerContainer
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
+                                    "isStatic": false,
+                                    "lastClassName": "c1",
+                                    "rules": Array [
+                                      "display:block;height:100%;position:absolute;overflow-y:",
+                                      [Function],
+                                      ";width:100%;",
+                                    ],
+                                  },
+                                  "displayName": "OverlayInnerContainer",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
                               isScrollable={false}
                               onClick={[Function]}
                             >
-                              <StyledComponent
-                                forwardedComponent={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [],
-                                    "componentStyle": ComponentStyle {
-                                      "componentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
-                                      "isStatic": false,
-                                      "lastClassName": "c1",
-                                      "rules": Array [
-                                        "display:block;height:100%;position:absolute;overflow-y:",
-                                        [Function],
-                                        ";width:100%;",
-                                      ],
-                                    },
-                                    "displayName": "OverlayInnerContainer",
-                                    "foldedComponentIds": Array [],
-                                    "render": [Function],
-                                    "styledComponentId": "StyledOverlayComponents__OverlayInnerContainer-ol4tzw-1",
-                                    "target": "div",
-                                    "toString": [Function],
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                  }
-                                }
-                                forwardedRef={null}
-                                isScrollable={false}
+                              <div
+                                className="c1"
                                 onClick={[Function]}
                               >
-                                <div
-                                  className="c1"
-                                  onClick={[Function]}
-                                >
-                                  <span>
-                                    hello
-                                  </span>
-                                </div>
-                              </StyledComponent>
-                            </OverlayInnerContainer>
-                          </div>
-                        </StyledComponent>
-                      </OverlayOuterContainer>
-                    </NodeResolver>
+                                <span>
+                                  hello
+                                </span>
+                              </div>
+                            </StyledComponent>
+                          </OverlayInnerContainer>
+                        </div>
+                      </StyledComponent>
+                    </OverlayOuterContainer>
                   </TouchScrollable>
                 </ScrollLock>
               </TouchProvider>
