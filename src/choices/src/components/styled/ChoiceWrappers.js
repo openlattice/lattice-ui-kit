@@ -1,21 +1,28 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+const getChoiceSize = ({ mode }) => {
+  if (mode === 'button') {
+    return css`
+      width: 100%;
+      height: 100%;
+    `;
+  }
+
+  return null;
+};
 
 const ChoiceWrapper = styled.span`
-  align-items: center;
+  align-items: stretch;
   display: inline-flex;
-  height: 20px;
   justify-content: center;
   position: relative;
   vertical-align: middle;
-  width: 20px;
-  margin: 10px 10px 10px 0;
+  ${getChoiceSize};
 `;
 
 const ChoiceInnerWrapper = styled.span`
-  width: 100%;
   display: flex;
-  align-items: inherit;
-  justify-content: inherit;
+  flex: 1;
 `;
 
 export {

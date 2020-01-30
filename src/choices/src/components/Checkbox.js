@@ -1,10 +1,12 @@
 // @flow
 import React from 'react';
+
 import {
   CheckboxIndicator,
   CheckboxInput,
   ChoiceInnerWrapper,
   ChoiceLabel,
+  ChoiceText,
   ChoiceWrapper,
 } from './styled';
 
@@ -14,6 +16,7 @@ type Props = {
   disabled ? :boolean;
   id ? :string;
   label ? :string;
+  mode ? :string;
   name ? :string;
   onBlur ? :(event :SyntheticFocusEvent<HTMLInputElement>) => void;
   onChange ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
@@ -27,11 +30,12 @@ const Checkbox = ({
   disabled,
   id,
   label,
+  mode,
   readOnly,
   ...rest
 } :Props) => (
   <ChoiceLabel htmlFor={id} readOnly={readOnly} disabled={disabled}>
-    <ChoiceWrapper>
+    <ChoiceWrapper mode={mode}>
       <ChoiceInnerWrapper>
         <CheckboxInput
             id={id}
@@ -39,10 +43,18 @@ const Checkbox = ({
             disabled={disabled || readOnly}
             // $FlowFixMe
             {...rest} />
-        <CheckboxIndicator />
+        <CheckboxIndicator mode={mode}>
+          { mode === 'button' && label }
+        </CheckboxIndicator>
       </ChoiceInnerWrapper>
     </ChoiceWrapper>
-    {label}
+    {
+      mode !== 'button' && (
+        <ChoiceText>
+          {label}
+        </ChoiceText>
+      )
+    }
   </ChoiceLabel>
 );
 /* eslint-enable */
@@ -53,6 +65,7 @@ Checkbox.defaultProps = {
   disabled: false,
   id: undefined,
   label: undefined,
+  mode: undefined,
   name: undefined,
   onBlur: undefined,
   onChange: undefined,

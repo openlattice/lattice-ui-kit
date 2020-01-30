@@ -1,4 +1,5 @@
 import { css } from 'styled-components';
+
 import { NEUTRALS, PURPLES } from '../../../../colors';
 
 const choiceIndicatorStyles = css`
@@ -6,7 +7,7 @@ const choiceIndicatorStyles = css`
     background-color: ${NEUTRALS[1]};
   }
 
-  input:focus-visible ~ & {
+  input:focus ~ & {
     box-shadow: ${PURPLES[0]} 0 0 0 2px;
   }
 
@@ -24,6 +25,7 @@ const choiceIndicatorStyles = css`
     background-color: ${PURPLES[6]};
     cursor: not-allowed;
   }
+
   input:checked:disabled ~ & {
     cursor: not-allowed;
     background-color: ${NEUTRALS[2]};

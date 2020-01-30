@@ -2,12 +2,12 @@
 
 exports[`Checkbox render matches snapshot 1`] = `
 .c4 {
+  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out,color 100ms ease-out;
+  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out,color 100ms ease-out;
   background-color: #e6e6f7;
   border-radius: 3px;
   display: inline-block;
   height: 20px;
-  -webkit-transition: background-color 100ms ease-out,box-shadow 100ms ease-out;
-  transition: background-color 100ms ease-out,box-shadow 100ms ease-out;
   width: 20px;
 }
 
@@ -15,7 +15,7 @@ input:hover ~ .c4 {
   background-color: #8e929b;
 }
 
-input:focus-visible ~ .c4 {
+input:focus ~ .c4 {
   box-shadow: #410ab5 0 0 0 2px;
 }
 
@@ -88,9 +88,15 @@ input:checked ~ .c4:after {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  vertical-align: middle;
+  font-size: 14px;
+  min-height: 40px;
   pointer-events: auto;
   position: relative;
+  vertical-align: middle;
+}
+
+.c5 {
+  margin-left: 10px;
 }
 
 .c3 {
@@ -106,39 +112,30 @@ input:checked ~ .c4:after {
 }
 
 .c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: 20px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
   vertical-align: middle;
-  width: 20px;
-  margin: 10px 10px 10px 0;
 }
 
 .c2 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: inherit;
-  -webkit-box-align: inherit;
-  -ms-flex-align: inherit;
-  align-items: inherit;
-  -webkit-box-pack: inherit;
-  -webkit-justify-content: inherit;
-  -ms-flex-pack: inherit;
-  justify-content: inherit;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 <Checkbox
@@ -160,9 +157,9 @@ input:checked ~ .c4:after {
             "rules": Array [
               "align-items:center;color:",
               [Function],
-              ";display:inline-flex;vertical-align:middle;pointer-events:",
+              ";display:inline-flex;font-size:14px;min-height:40px;pointer-events:",
               [Function],
-              ";position:relative;",
+              ";position:relative;vertical-align:middle;",
             ],
           },
           "displayName": "ChoiceLabel",
@@ -192,7 +189,9 @@ input:checked ~ .c4:after {
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "align-items:center;display:inline-flex;height:20px;justify-content:center;position:relative;vertical-align:middle;width:20px;margin:10px 10px 10px 0;",
+                    "align-items:stretch;display:inline-flex;justify-content:center;position:relative;vertical-align:middle;",
+                    [Function],
+                    ";",
                   ],
                 },
                 "displayName": "ChoiceWrappers__ChoiceWrapper",
@@ -221,7 +220,7 @@ input:checked ~ .c4:after {
                         "isStatic": false,
                         "lastClassName": "c2",
                         "rules": Array [
-                          "width:100%;display:flex;align-items:inherit;justify-content:inherit;",
+                          "display:flex;flex:1;",
                         ],
                       },
                       "displayName": "ChoiceWrappers__ChoiceInnerWrapper",
@@ -285,35 +284,16 @@ input:checked ~ .c4:after {
                               "isStatic": false,
                               "lastClassName": "c4",
                               "rules": Array [
-                                "background-color:",
-                                "#e6e6f7",
-                                ";border-radius:3px;display:inline-block;height:20px;transition:background-color ",
+                                "transition:background-color ",
+                                "100ms",
+                                " ease-out,border-color ",
                                 "100ms",
                                 " ease-out,box-shadow ",
                                 "100ms",
-                                " ease-out;width:20px;",
-                                "input:hover ~ &{background-color:",
-                                "#8e929b",
-                                ";}input:focus-visible ~ &{box-shadow:",
-                                "#410ab5",
-                                " 0 0 0 2px;}input:checked ~ &,input[readonly]:checked:disabled ~ &,input[readonly]:checked:hover ~ &{background-color:",
-                                "#8045ff",
-                                ";}input:checked:hover ~ &{background-color:",
-                                "#6124e2",
-                                ";}input:disabled ~ &{background-color:",
-                                "#e6e6f7",
-                                ";cursor:not-allowed;}input:checked:disabled ~ &{cursor:not-allowed;background-color:",
-                                "#b6bbc7",
-                                ";}input[readonly] ~ &{cursor:default;pointer-events:none;}",
-                                ";input:not(:checked) ~ &:after,input:checked ~ &:after{",
-                                "border-color:",
-                                "#ffffff",
-                                ";border-style:solid;border-width:0 2px 2px 0;box-sizing:border-box;content:'';height:10px;left:7px;position:absolute;top:4px;transform:rotate(45deg) scale(1);transition:transform ",
-                                "200ms",
-                                " ease-out,opacity ",
-                                "200ms",
-                                " ease-out;width:6px;",
-                                "}input:not(:checked) ~ &:after{opacity:0;transform:rotate(45deg) scale(0);}input:checked ~ &:after{opacity:1;transform:rotate(45deg) scale(1);}",
+                                " ease-out,color ",
+                                "100ms",
+                                " ease-out;",
+                                [Function],
                               ],
                             },
                             "displayName": "CheckboxIndicator",
@@ -339,6 +319,37 @@ input:checked ~ .c4:after {
             </span>
           </StyledComponent>
         </ChoiceWrappers__ChoiceWrapper>
+        <ChoiceText>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "ChoiceText-sc-1qnriny-0",
+                  "isStatic": false,
+                  "lastClassName": "c5",
+                  "rules": Array [
+                    "margin-left:10px;",
+                  ],
+                },
+                "displayName": "ChoiceText",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "ChoiceText-sc-1qnriny-0",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <span
+              className="c5"
+            />
+          </StyledComponent>
+        </ChoiceText>
       </label>
     </StyledComponent>
   </ChoiceLabel>

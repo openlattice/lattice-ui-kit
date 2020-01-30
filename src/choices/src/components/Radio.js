@@ -1,11 +1,13 @@
 // @flow
 import React from 'react';
+
 import {
-  ChoiceLabel,
-  ChoiceWrapper,
   ChoiceInnerWrapper,
+  ChoiceLabel,
+  ChoiceText,
+  ChoiceWrapper,
   RadioIndicator,
-  RadioInput
+  RadioInput,
 } from './styled';
 
 type Props = {
@@ -13,6 +15,7 @@ type Props = {
   disabled ? :boolean;
   id ? :string;
   label ? :string;
+  mode ? :string;
   name ? :string;
   onBlur ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
   onChange ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
@@ -26,11 +29,12 @@ const Radio = ({
   disabled,
   id,
   label,
+  mode,
   readOnly,
   ...rest
 } :Props) => (
   <ChoiceLabel htmlFor={id} readOnly={readOnly} disabled={disabled}>
-    <ChoiceWrapper>
+    <ChoiceWrapper mode={mode}>
       <ChoiceInnerWrapper>
         <RadioInput
             id={id}
@@ -38,12 +42,18 @@ const Radio = ({
             disabled={disabled || readOnly}
             // $FlowFixMe
             {...rest} />
-        <RadioIndicator />
+        <RadioIndicator mode={mode}>
+          { mode === 'button' && label }
+        </RadioIndicator>
       </ChoiceInnerWrapper>
     </ChoiceWrapper>
-    <span>
-      {label}
-    </span>
+    {
+      mode !== 'button' && (
+        <ChoiceText>
+          {label}
+        </ChoiceText>
+      )
+    }
   </ChoiceLabel>
 );
 /* eslint-enable */
@@ -53,6 +63,7 @@ Radio.defaultProps = {
   disabled: false,
   id: undefined,
   label: undefined,
+  mode: undefined,
   name: undefined,
   onBlur: undefined,
   onChange: undefined,

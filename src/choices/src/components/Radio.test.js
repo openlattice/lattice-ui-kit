@@ -1,9 +1,12 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import Radio from './Radio';
-import { RadioInput, RadioIndicator, ChoiceLabel } from './styled';
+import choiceButtonStyles from './styled/ChoiceButtonStyles';
+import { ChoiceLabel, RadioIndicator, RadioInput } from './styled';
+import { getIndicatorStyles } from './styled/RadioIndicator';
 
 describe('Radio', () => {
 
@@ -61,6 +64,19 @@ describe('Radio', () => {
       expect(mockOnChange).toHaveBeenCalledTimes(1);
     });
 
+  });
+
+  describe('mode', () => {
+
+    test('should pass mode to RadioIndicator', () => {
+      const wrapper = mount(<Radio mode="button" />);
+      expect(wrapper.find(RadioIndicator).prop('mode')).toEqual('button');
+    });
+
+    test('mode="button" should use choiceButtonStyles', () => {
+      const indicatorStyles = getIndicatorStyles({ mode: 'button' });
+      expect(indicatorStyles).toEqual(choiceButtonStyles);
+    });
   });
 
 });

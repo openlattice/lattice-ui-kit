@@ -2,15 +2,16 @@
 
 import React, { Component } from 'react';
 import type { ComponentType, Node } from 'react';
-import { List, Map } from 'immutable';
+
 import { faSearchMinus } from '@fortawesome/pro-regular-svg-icons';
+import { List, Map } from 'immutable';
 
 import IconSplash from './IconSplash';
 import Result from './Result';
+import type { ResultProps } from './Result';
+
 import Spinner from '../../../../spinner';
 import { CardStack } from '../../../../layout';
-
-import type { ResultProps } from './Result';
 
 type Props = {
   className ? :string;

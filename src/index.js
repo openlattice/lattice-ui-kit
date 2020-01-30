@@ -36,7 +36,7 @@ export {
   PlusButton,
   SearchButton,
 } from './button';
-export { Checkbox, Radio } from './choices';
+export { Checkbox, ChoiceGroup, Radio } from './choices';
 export {
   DatePicker,
   TimePicker,

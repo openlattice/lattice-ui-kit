@@ -1,5 +1,6 @@
 // @flow
 import { css } from 'styled-components';
+
 import { duration } from '../style/transitions';
 
 const fadeTransitionStyles = css`
