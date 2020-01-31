@@ -2,6 +2,8 @@
  * @flow
  */
 
+import { Skeleton } from '@material-ui/lab';
+
 import * as Colors from './colors';
 import * as Hooks from './hooks';
 import * as Sizes from './style/Sizes';
@@ -37,11 +39,6 @@ export {
   SearchButton,
 } from './button';
 export { Checkbox, ChoiceGroup, Radio } from './choices';
-export {
-  DatePicker,
-  TimePicker,
-  DateTimePicker,
-} from './datetime';
 export {
   ActionModal,
   Modal,
@@ -84,6 +81,13 @@ export {
   Result,
   SearchResults,
 } from './components/search';
+// Material-ui
+export {
+  DatePicker,
+  TimePicker,
+  DateTimePicker,
+} from './datetime';
+export { Skeleton };
 
 
 export default {
