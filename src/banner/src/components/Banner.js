@@ -1,12 +1,13 @@
 // @flow
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faExclamationTriangle, faTimesOctagon } from '@fortawesome/pro-solid-svg-icons';
-
-import type { IconDefinition } from '@fortawesome/react-fontawesome';
 import type { ComponentType } from 'react';
 
+import { faCheckCircle, faExclamationTriangle, faTimesOctagon } from '@fortawesome/pro-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import type { IconDefinition } from '@fortawesome/react-fontawesome';
+
 import { Container, Content, IconWrapper } from './styled/StyledBannerComponents';
+
 import { getStyleVariation } from '../../../utils/StyleUtils';
 
 const DEFAULT_BANNER_HEIGHT = '60px';
@@ -39,25 +40,24 @@ class Banner extends Component<Props> {
       warning: faExclamationTriangle
     })(this.props);
 
-    if (icon) {
-      if (typeof icon === 'function') {
+    const finalIcon = icon || modeIcon;
+
+    if (finalIcon) {
+      if (typeof finalIcon === 'function') {
         return (
           <IconWrapper>
-            { icon() }
+            { finalIcon() }
           </IconWrapper>
         );
       }
 
-      return <FontAwesomeIcon icon={icon} fixedWidth />;
-    }
-
-    if (modeIcon) {
       return (
         <IconWrapper>
-          <FontAwesomeIcon icon={modeIcon} fixedWidth />
+          <FontAwesomeIcon icon={finalIcon} fixedWidth />
         </IconWrapper>
       );
     }
+
     return null;
   }
 
