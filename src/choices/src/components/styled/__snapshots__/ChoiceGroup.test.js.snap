@@ -49,7 +49,7 @@ exports[`ChoiceGroup row=true should yield multiple columns 1`] = `
 .c0 {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
