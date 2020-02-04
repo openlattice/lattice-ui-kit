@@ -8,7 +8,7 @@ import ChoiceGroup from './ChoiceGroup';
 describe('ChoiceGroup', () => {
   test('row=true should yield multiple columns', () => {
     const wrapper = mount(<ChoiceGroup row />);
-    expect(wrapper).toHaveStyleRule('grid-template-columns', 'repeat(auto-fit,minmax(120px,1fr))');
+    expect(wrapper).toHaveStyleRule('grid-template-columns', 'repeat(auto-fit,minmax(200px,1fr))');
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
