@@ -2,8 +2,6 @@
  * @flow
  */
 
-import { Skeleton } from '@material-ui/lab';
-
 import * as Colors from './colors';
 import * as Hooks from './hooks';
 import * as Sizes from './style/Sizes';
@@ -87,7 +85,8 @@ export {
   TimePicker,
   DateTimePicker,
 } from './datetime';
-export { Skeleton };
+export { default as Skeleton } from './skeleton';
+export { default as Tooltip } from './tooltip';
 
 
 export default {
