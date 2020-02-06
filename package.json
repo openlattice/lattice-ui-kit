@@ -84,7 +84,7 @@
     "eslint-plugin-react": "~7.18.0",
     "eslint-plugin-react-hooks": "~2.3.0",
     "file-loader": "~5.0.0",
-    "flow-bin": "~0.117.0",
+    "flow-bin": "~0.118.0",
     "import-sort-style-openlattice": "~0.1.0",
     "jest": "~24.8.0",
     "jest-styled-components": "~6.3.0",
