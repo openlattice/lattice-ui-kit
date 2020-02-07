@@ -58,6 +58,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Tag',
   'TextArea',
   'TimePicker',
+  'Tooltip',
 ]);
 
 describe('lattice-ui-kit named exports', () => {

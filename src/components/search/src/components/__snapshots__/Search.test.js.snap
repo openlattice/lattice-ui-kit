@@ -52,6 +52,7 @@ exports[`Search snapshots should match snapshot 1`] = `
             <DatePicker
               disabled={false}
               format="MM/dd/yyyy"
+              fullWidth={true}
               id="luk-search-dob"
               mask="__/__/____"
               name="dob"
