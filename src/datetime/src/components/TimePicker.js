@@ -1,4 +1,5 @@
 // @flow
+/* eslint-disable react/jsx-props-no-spreading */
 import React, { useCallback, useEffect, useState } from 'react';
 
 import isFunction from 'lodash/isFunction';
@@ -85,6 +86,7 @@ const TimePicker = (props :Props) => {
             placeholder={placeholder}
             value={selectedDate}
             variant="inline"
+            // $FlowFixMe inexact pattern
             {...other} />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
