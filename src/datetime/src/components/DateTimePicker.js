@@ -1,18 +1,21 @@
 // @flow
+/* eslint-disable react/jsx-props-no-spreading */
 import React, { useCallback, useEffect, useState } from 'react';
+
 import isFunction from 'lodash/isFunction';
-import { DateTime } from 'luxon';
-import { ThemeProvider } from '@material-ui/styles';
 import { KeyboardDateTimePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
+import { ThemeProvider } from '@material-ui/styles';
+import { DateTime } from 'luxon';
 
 import LatticeLuxonUtils from './utils/LatticeLuxonUtils';
-import { latticeMuiTheme } from './styles';
 import useInputPropsMemo from './hooks/useInputPropsMemo';
+import { latticeMuiTheme } from './styles';
 
 type DateChange = (datetime :DateTime, value :string | null) => void;
 type Props = {
   disabled :boolean;
   format :string;
+  fullWidth :boolean;
   mask :string;
   onChange :(datetimeIso :string) => void;
   placeholder :string;
@@ -23,10 +26,12 @@ const DateTimePicker = (props :Props) => {
   const {
     disabled,
     format,
+    fullWidth,
     mask,
     onChange,
     placeholder,
-    value
+    value,
+    ...other
   } = props;
 
   const [selectedDate, setSelectedDate] = useState(null);
@@ -68,13 +73,16 @@ const DateTimePicker = (props :Props) => {
             ampm
             disabled={disabled}
             format={format}
+            fullWidth={fullWidth}
             InputProps={inputProps}
             inputVariant="outlined"
             mask={mask}
             onChange={handleDateTimeChange}
             placeholder={placeholder}
             value={selectedDate}
-            variant="inline" />
+            variant="inline"
+            // $FlowFixMe inexact pattern
+            {...other} />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
   );
@@ -83,6 +91,7 @@ const DateTimePicker = (props :Props) => {
 DateTimePicker.defaultProps = {
   disabled: false,
   format: 'MM/dd/yyyy  hh:mm a',
+  fullWidth: true,
   mask: '__/__/____  __:__ _M',
   placeholder: 'MM/DD/YYYY  HH:MM AM',
   value: ''
