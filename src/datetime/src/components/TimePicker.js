@@ -1,15 +1,16 @@
 // @flow
 import React, { useCallback, useEffect, useState } from 'react';
+
 import isFunction from 'lodash/isFunction';
-import { DateTime } from 'luxon';
-import { ThemeProvider } from '@material-ui/styles';
-import { KeyboardTimePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
 import { faClock } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { KeyboardTimePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
+import { ThemeProvider } from '@material-ui/styles';
+import { DateTime } from 'luxon';
 
 import LatticeLuxonUtils from './utils/LatticeLuxonUtils';
-import { latticeMuiTheme } from './styles';
 import useInputPropsMemo from './hooks/useInputPropsMemo';
+import { latticeMuiTheme } from './styles';
 
 const ClockIcon = <FontAwesomeIcon icon={faClock} />;
 
@@ -17,6 +18,7 @@ type DateChange = (date :DateTime, value :string | null) => void;
 type Props = {
   disabled :boolean;
   format :string;
+  fullWidth :boolean;
   mask :string;
   onChange :(timeIso :string) => void;
   placeholder :string;
@@ -27,10 +29,12 @@ const TimePicker = (props :Props) => {
   const {
     disabled,
     format,
+    fullWidth,
     mask,
     onChange,
     placeholder,
-    value
+    value,
+    ...other
   } = props;
 
   const [selectedDate, setSelectedDate] = useState(null);
@@ -73,13 +77,15 @@ const TimePicker = (props :Props) => {
             InputProps={inputProps}
             disabled={disabled}
             format={format}
+            fullWidth={fullWidth}
             inputVariant="outlined"
             keyboardIcon={ClockIcon}
             mask={mask}
             onChange={handleDateChange}
             placeholder={placeholder}
             value={selectedDate}
-            variant="inline" />
+            variant="inline"
+            {...other} />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
   );
@@ -88,6 +94,7 @@ const TimePicker = (props :Props) => {
 TimePicker.defaultProps = {
   disabled: false,
   format: 'hh:mm a',
+  fullWidth: true,
   mask: '__:__ _M',
   placeholder: 'HH:MM AM',
   value: '',

@@ -1,9 +1,10 @@
 // @flow
 import React, { useCallback, useEffect, useState } from 'react';
+
 import isFunction from 'lodash/isFunction';
-import { DateTime } from 'luxon';
-import { ThemeProvider } from '@material-ui/styles';
 import { KeyboardDatePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
+import { ThemeProvider } from '@material-ui/styles';
+import { DateTime } from 'luxon';
 
 import LatticeLuxonUtils from './utils/LatticeLuxonUtils';
 import useInputPropsMemo from './hooks/useInputPropsMemo';
@@ -13,6 +14,7 @@ type DateChange = (date :DateTime, value :string | null) => void;
 type Props = {
   disabled :boolean;
   format :string;
+  fullWidth :boolean;
   mask :string;
   onChange :(dateIso :string) => void;
   placeholder :string;
@@ -23,10 +25,12 @@ const DatePicker = (props :Props) => {
   const {
     disabled,
     format,
+    fullWidth,
     mask,
     onChange,
     placeholder,
-    value
+    value,
+    ...other
   } = props;
 
   const [selectedDate, setSelectedDate] = useState(null);
@@ -67,13 +71,15 @@ const DatePicker = (props :Props) => {
         <KeyboardDatePicker
             disabled={disabled}
             format={format}
+            fullWidth={fullWidth}
             InputProps={inputProps}
             inputVariant="outlined"
             mask={mask}
             onChange={handleDateChange}
             placeholder={placeholder}
             value={selectedDate}
-            variant="inline" />
+            variant="inline"
+            {...other} />
       </MuiPickersUtilsProvider>
     </ThemeProvider>
   );
@@ -82,6 +88,7 @@ const DatePicker = (props :Props) => {
 DatePicker.defaultProps = {
   disabled: false,
   format: 'MM/dd/yyyy',
+  fullWidth: true,
   placeholder: 'MM/DD/YYYY',
   mask: '__/__/____',
   value: ''

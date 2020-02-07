@@ -4,6 +4,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
 <DateTimePicker
   disabled={false}
   format="MM/dd/yyyy  hh:mm a"
+  fullWidth={true}
   mask="__/__/____  __:__ _M"
   placeholder="MM/DD/YYYY  HH:MM AM"
   value=""
@@ -114,9 +115,10 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "active": "rgba(0, 0, 0, 0.54)",
             "disabled": "rgba(0, 0, 0, 0.26)",
             "disabledBackground": "rgba(0, 0, 0, 0.12)",
-            "hover": "rgba(0, 0, 0, 0.08)",
-            "hoverOpacity": 0.08,
-            "selected": "rgba(0, 0, 0, 0.14)",
+            "hover": "rgba(0, 0, 0, 0.04)",
+            "hoverOpacity": 0.04,
+            "selected": "rgba(0, 0, 0, 0.08)",
+            "selectedOpacity": 0.08,
           },
           "augmentColor": [Function],
           "background": Object {
@@ -152,6 +154,12 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "A400": "#303030",
             "A700": "#616161",
           },
+          "info": Object {
+            "contrastText": "#fff",
+            "dark": "#1976d2",
+            "light": "#64b5f6",
+            "main": "#2196f3",
+          },
           "primary": Object {
             "100": "#d1c4e9",
             "200": "#b39ddb",
@@ -178,6 +186,12 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "light": "#ff4081",
             "main": "#f50057",
           },
+          "success": Object {
+            "contrastText": "rgba(0, 0, 0, 0.87)",
+            "dark": "#388e3c",
+            "light": "#81c784",
+            "main": "#4caf50",
+          },
           "text": Object {
             "disabled": "rgba(0, 0, 0, 0.38)",
             "hint": "rgba(0, 0, 0, 0.38)",
@@ -186,6 +200,12 @@ exports[`DateTimePicker render matches snapshot 1`] = `
           },
           "tonalOffset": 0.2,
           "type": "light",
+          "warning": Object {
+            "contrastText": "rgba(0, 0, 0, 0.87)",
+            "dark": "#f57c00",
+            "light": "#ffb74d",
+            "main": "#ff9800",
+          },
         },
         "props": Object {
           "MuiFormControl": Object {
@@ -287,35 +307,35 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "fontSize": "6rem",
             "fontWeight": 300,
             "letterSpacing": "-0.01562em",
-            "lineHeight": 1,
+            "lineHeight": 1.167,
           },
           "h2": Object {
             "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
             "fontSize": "3.75rem",
             "fontWeight": 300,
             "letterSpacing": "-0.00833em",
-            "lineHeight": 1,
+            "lineHeight": 1.2,
           },
           "h3": Object {
             "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
             "fontSize": "3rem",
             "fontWeight": 400,
             "letterSpacing": "0em",
-            "lineHeight": 1.04,
+            "lineHeight": 1.167,
           },
           "h4": Object {
             "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
             "fontSize": "2.125rem",
             "fontWeight": 400,
             "letterSpacing": "0.00735em",
-            "lineHeight": 1.17,
+            "lineHeight": 1.235,
           },
           "h5": Object {
             "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
             "fontSize": "1.5rem",
             "fontWeight": 400,
             "letterSpacing": "0em",
-            "lineHeight": 1.33,
+            "lineHeight": 1.334,
           },
           "h6": Object {
             "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
@@ -377,6 +397,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         ampm={true}
         disabled={false}
         format="MM/dd/yyyy  hh:mm a"
+        fullWidth={true}
         inputVariant="outlined"
         invalidDateMessage="Invalid Date Format"
         mask="__/__/____  __:__ _M"
@@ -420,6 +441,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
           }
           disabled={false}
           format="MM/dd/yyyy  hh:mm a"
+          fullWidth={true}
           inputVariant="outlined"
           mask="__/__/____  __:__ _M"
           onAccept={[Function]}
@@ -452,6 +474,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             }
             disabled={false}
             format="MM/dd/yyyy  hh:mm a"
+            fullWidth={true}
             inputVariant="outlined"
             mask="__/__/____  __:__ _M"
             onAccept={[Function]}
@@ -473,6 +496,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
               }
               disabled={false}
               format="MM/dd/yyyy  hh:mm a"
+              fullWidth={true}
               inputRef={
                 Object {
                   "current": <input
@@ -520,6 +544,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                   }
                   disabled={false}
                   error={false}
+                  fullWidth={true}
                   helperText=""
                   inputRef={
                     Object {
@@ -561,6 +586,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                     }
                     disabled={false}
                     error={false}
+                    fullWidth={true}
                     helperText=""
                     inputRef={
                       Object {
@@ -580,8 +606,10 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                   >
                     <WithStyles(ForwardRef(FormControl))
                       className="MuiTextField-root"
+                      color="primary"
                       disabled={false}
                       error={false}
+                      fullWidth={true}
                       required={false}
                       variant="outlined"
                     >
@@ -595,6 +623,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                             "root": "MuiFormControl-root",
                           }
                         }
+                        color="primary"
                         disabled={false}
                         error={false}
                         fullWidth={true}
@@ -606,6 +635,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                           className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
                         >
                           <WithStyles(ForwardRef(OutlinedInput))
+                            autoFocus={false}
                             endAdornment={
                               <ForwardRef(WithStyles)
                                 position="end"
@@ -618,6 +648,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                 </ForwardRef(WithStyles)>
                               </ForwardRef(WithStyles)>
                             }
+                            fullWidth={true}
                             inputRef={
                               Object {
                                 "current": <input
@@ -629,7 +660,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                 />,
                               }
                             }
-                            labelWidth={0}
+                            multiline={false}
                             onBlur={[Function]}
                             onChange={[Function]}
                             onKeyDown={[Function]}
@@ -637,10 +668,12 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                             value=""
                           >
                             <ForwardRef(OutlinedInput)
+                              autoFocus={false}
                               classes={
                                 Object {
                                   "adornedEnd": "MuiOutlinedInput-adornedEnd",
                                   "adornedStart": "MuiOutlinedInput-adornedStart",
+                                  "colorSecondary": "MuiOutlinedInput-colorSecondary",
                                   "disabled": "Mui-disabled",
                                   "error": "Mui-error",
                                   "focused": "Mui-focused",
@@ -649,7 +682,6 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                   "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                   "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                   "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                  "inputSelect": "MuiOutlinedInput-inputSelect",
                                   "marginDense": "MuiOutlinedInput-marginDense",
                                   "multiline": "MuiOutlinedInput-multiline",
                                   "notchedOutline": "MuiOutlinedInput-notchedOutline",
@@ -668,6 +700,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                   </ForwardRef(WithStyles)>
                                 </ForwardRef(WithStyles)>
                               }
+                              fullWidth={true}
                               inputRef={
                                 Object {
                                   "current": <input
@@ -679,7 +712,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                   />,
                                 }
                               }
-                              labelWidth={0}
+                              multiline={false}
                               notched={false}
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -688,10 +721,12 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                               value=""
                             >
                               <WithStyles(ForwardRef(InputBase))
+                                autoFocus={false}
                                 classes={
                                   Object {
                                     "adornedEnd": "MuiOutlinedInput-adornedEnd",
                                     "adornedStart": "MuiOutlinedInput-adornedStart",
+                                    "colorSecondary": "MuiOutlinedInput-colorSecondary",
                                     "disabled": "Mui-disabled",
                                     "error": "Mui-error",
                                     "focused": "Mui-focused",
@@ -700,7 +735,6 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                     "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
                                     "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
                                     "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                    "inputSelect": "MuiOutlinedInput-inputSelect",
                                     "marginDense": "MuiOutlinedInput-marginDense",
                                     "multiline": "MuiOutlinedInput-multiline",
                                     "notchedOutline": null,
@@ -719,7 +753,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                     </ForwardRef(WithStyles)>
                                   </ForwardRef(WithStyles)>
                                 }
-                                fullWidth={false}
+                                fullWidth={true}
                                 inputComponent="input"
                                 inputRef={
                                   Object {
@@ -742,10 +776,12 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                 value=""
                               >
                                 <ForwardRef(InputBase)
+                                  autoFocus={false}
                                   classes={
                                     Object {
                                       "adornedEnd": "MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd",
                                       "adornedStart": "MuiInputBase-adornedStart MuiOutlinedInput-adornedStart",
+                                      "colorSecondary": "MuiInputBase-colorSecondary MuiOutlinedInput-colorSecondary",
                                       "disabled": "Mui-disabled Mui-disabled",
                                       "error": "Mui-error Mui-error",
                                       "focused": "Mui-focused Mui-focused",
@@ -757,7 +793,6 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                       "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
                                       "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
                                       "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
-                                      "inputSelect": "MuiInputBase-inputSelect MuiOutlinedInput-inputSelect",
                                       "inputTypeSearch": "MuiInputBase-inputTypeSearch",
                                       "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
                                       "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
@@ -776,7 +811,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                       </ForwardRef(WithStyles)>
                                     </ForwardRef(WithStyles)>
                                   }
-                                  fullWidth={false}
+                                  fullWidth={true}
                                   inputComponent="input"
                                   inputRef={
                                     Object {
@@ -799,11 +834,12 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                   value=""
                                 >
                                   <div
-                                    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                                    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
                                     onClick={[Function]}
                                   >
                                     <input
                                       aria-invalid={false}
+                                      autoFocus={false}
                                       className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                       disabled={false}
                                       onAnimationStart={[Function]}
@@ -982,8 +1018,10 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                         className="MuiOutlinedInput-notchedOutline"
                                         classes={
                                           Object {
-                                            "legend": "PrivateNotchedOutline-legend-70",
-                                            "root": "PrivateNotchedOutline-root-69",
+                                            "legend": "PrivateNotchedOutline-legend-68",
+                                            "legendLabelled": "PrivateNotchedOutline-legendLabelled-69",
+                                            "legendNotched": "PrivateNotchedOutline-legendNotched-70",
+                                            "root": "PrivateNotchedOutline-root-67",
                                           }
                                         }
                                         labelWidth={0}
@@ -991,7 +1029,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                       >
                                         <fieldset
                                           aria-hidden={true}
-                                          className="PrivateNotchedOutline-root-69 MuiOutlinedInput-notchedOutline"
+                                          className="PrivateNotchedOutline-root-67 MuiOutlinedInput-notchedOutline"
                                           style={
                                             Object {
                                               "paddingLeft": 8,
@@ -999,7 +1037,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                           }
                                         >
                                           <legend
-                                            className="PrivateNotchedOutline-legend-70"
+                                            className="PrivateNotchedOutline-legend-68"
                                             style={
                                               Object {
                                                 "width": 0.01,
