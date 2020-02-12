@@ -2,7 +2,8 @@
  * @flow
  */
 
-import { SpeedDial } from '@material-ui/lab';
+import { Fab } from '@material-ui/core';
+import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
 
 import * as Colors from './colors';
 import * as Hooks from './hooks';
@@ -89,7 +90,8 @@ export {
 } from './datetime';
 export { default as Skeleton } from './skeleton';
 export { default as Tooltip } from './tooltip';
-export { SpeedDial };
+export { SpeedDial, SpeedDialAction, SpeedDialIcon };
+export { Fab };
 
 export default {
   version
