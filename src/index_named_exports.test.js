@@ -45,6 +45,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'SearchResults',
   'Select',
   'Skeleton',
+  'SpeedDial',
   'Step',
   'StepIcon',
   'StepLabel',
