@@ -1,20 +1,22 @@
 import React from 'react';
-import styled from 'styled-components';
 
-import { faSpaceShuttle } from '@fortawesome/pro-solid-svg-icons';
+import styled from 'styled-components';
+import { faMapMarkerPlus, faSpaceShuttle } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { storiesOf } from '@storybook/react';
+import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
 import { action } from '@storybook/addon-actions';
+import { storiesOf } from '@storybook/react';
 
 import { NEUTRALS, YELLOW_1 } from '../../colors';
+import { useBoolean } from '../../hooks';
 import { Card, CardSegment } from '../../layout';
 import {
   Button,
   CopyButton,
   EditButton,
   IconButton,
-  PlusButton,
   MinusButton,
+  PlusButton,
   SearchButton,
 } from '..';
 
@@ -51,6 +53,8 @@ const DarkColoredButtonRow = styled(ButtonRow)`
 const LightColoredButtonRow = styled(DarkColoredButtonRow)`
   background-color: ${YELLOW_1};
 `;
+
+const NewLocationIcon = <FontAwesomeIcon icon={faMapMarkerPlus} fixedWidth />;
 
 storiesOf('Button', module)
   .add('regular button', () => (
@@ -176,4 +180,17 @@ storiesOf('Button', module)
         </ButtonRow>
       </CardSegment>
     </Card>
-  ));
+  ))
+  .add('Speed Dial', () => {
+    const [isOpen, setOpen, setClose] = useBoolean(false);
+    return (
+      <SpeedDial
+          ariaLabel="Speed Dial Actions"
+          icon={<SpeedDialIcon />}
+          open={isOpen}
+          onOpen={setOpen}
+          onClose={setClose}>
+        <SpeedDialAction tooltipTitle="Create" icon={NewLocationIcon} />
+      </SpeedDial>
+    );
+  });
