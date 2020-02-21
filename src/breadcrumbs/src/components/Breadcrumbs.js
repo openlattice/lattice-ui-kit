@@ -7,9 +7,9 @@ import { faChevronRight } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Breadcrumbs as MUIBreadcrumbs } from '@material-ui/core';
 
-type Props = {|
+type Props = {
   separator ?:Node;
-|};
+};
 
 const Breadcrumbs = (props :Props) => <MUIBreadcrumbs {...props} />;
 
