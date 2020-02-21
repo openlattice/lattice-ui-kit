@@ -1,7 +1,9 @@
 // @flow
 
 import React from 'react';
+
 import styled from 'styled-components';
+
 import { Checkbox } from '../../../choices';
 import { NEUTRALS } from '../../../colors';
 import { getHoverStyles } from '../../../utils/StyleUtils';
@@ -36,11 +38,6 @@ const CustomRow = (props :Props) => {
     <CustomRowWrapper onClick={() => {}}>
       <StyledCell>
         <CellContent>
-          {data.id}
-        </CellContent>
-      </StyledCell>
-      <StyledCell>
-        <CellContent>
           {data.name}
         </CellContent>
       </StyledCell>
@@ -49,12 +46,17 @@ const CustomRow = (props :Props) => {
           {data.dob}
         </CellContent>
       </StyledCell>
-      <StyledCell align="center">
+      <StyledCell>
         <Checkbox defaultChecked={data.manager} />
       </StyledCell>
       <StyledCell>
         <CellContent>
           {data.lastUpdated}
+        </CellContent>
+      </StyledCell>
+      <StyledCell>
+        <CellContent>
+          {data.id}
         </CellContent>
       </StyledCell>
     </CustomRowWrapper>

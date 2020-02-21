@@ -1,0 +1,314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs should match snapshot 1`] = `
+<Breadcrumbs
+  separator={
+    <FontAwesomeIcon
+      border={false}
+      className=""
+      fixedWidth={true}
+      flip={null}
+      icon={
+        Object {
+          "icon": Array [
+            256,
+            512,
+            Array [],
+            "f054",
+            "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+          ],
+          "iconName": "chevron-right",
+          "prefix": "far",
+        }
+      }
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      swapOpacity={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
+  }
+>
+  <WithStyles(ForwardRef(Breadcrumbs))
+    separator={
+      <FontAwesomeIcon
+        border={false}
+        className=""
+        fixedWidth={true}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              256,
+              512,
+              Array [],
+              "f054",
+              "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+            ],
+            "iconName": "chevron-right",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+    }
+  >
+    <ForwardRef(Breadcrumbs)
+      classes={
+        Object {
+          "li": "MuiBreadcrumbs-li",
+          "ol": "MuiBreadcrumbs-ol",
+          "root": "MuiBreadcrumbs-root",
+          "separator": "MuiBreadcrumbs-separator",
+        }
+      }
+      separator={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={true}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                256,
+                512,
+                Array [],
+                "f054",
+                "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+              ],
+              "iconName": "chevron-right",
+              "prefix": "far",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+    >
+      <WithStyles(ForwardRef(Typography))
+        className="MuiBreadcrumbs-root"
+        color="textSecondary"
+        component="nav"
+      >
+        <ForwardRef(Typography)
+          className="MuiBreadcrumbs-root"
+          classes={
+            Object {
+              "alignCenter": "MuiTypography-alignCenter",
+              "alignJustify": "MuiTypography-alignJustify",
+              "alignLeft": "MuiTypography-alignLeft",
+              "alignRight": "MuiTypography-alignRight",
+              "body1": "MuiTypography-body1",
+              "body2": "MuiTypography-body2",
+              "button": "MuiTypography-button",
+              "caption": "MuiTypography-caption",
+              "colorError": "MuiTypography-colorError",
+              "colorInherit": "MuiTypography-colorInherit",
+              "colorPrimary": "MuiTypography-colorPrimary",
+              "colorSecondary": "MuiTypography-colorSecondary",
+              "colorTextPrimary": "MuiTypography-colorTextPrimary",
+              "colorTextSecondary": "MuiTypography-colorTextSecondary",
+              "displayBlock": "MuiTypography-displayBlock",
+              "displayInline": "MuiTypography-displayInline",
+              "gutterBottom": "MuiTypography-gutterBottom",
+              "h1": "MuiTypography-h1",
+              "h2": "MuiTypography-h2",
+              "h3": "MuiTypography-h3",
+              "h4": "MuiTypography-h4",
+              "h5": "MuiTypography-h5",
+              "h6": "MuiTypography-h6",
+              "noWrap": "MuiTypography-noWrap",
+              "overline": "MuiTypography-overline",
+              "paragraph": "MuiTypography-paragraph",
+              "root": "MuiTypography-root",
+              "srOnly": "MuiTypography-srOnly",
+              "subtitle1": "MuiTypography-subtitle1",
+              "subtitle2": "MuiTypography-subtitle2",
+            }
+          }
+          color="textSecondary"
+          component="nav"
+        >
+          <nav
+            className="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+          >
+            <ol
+              className="MuiBreadcrumbs-ol"
+            >
+              <li
+                className="MuiBreadcrumbs-li"
+                key="child-0"
+              >
+                <span
+                  key=".0"
+                >
+                  Foo
+                </span>
+              </li>
+              <li
+                aria-hidden={true}
+                className="MuiBreadcrumbs-separator"
+                key="separator-0"
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className=""
+                  fixedWidth={true}
+                  flip={null}
+                  icon={
+                    Object {
+                      "icon": Array [
+                        256,
+                        512,
+                        Array [],
+                        "f054",
+                        "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                      ],
+                      "iconName": "chevron-right",
+                      "prefix": "far",
+                    }
+                  }
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  swapOpacity={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                    data-icon="chevron-right"
+                    data-prefix="far"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 256 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </FontAwesomeIcon>
+              </li>
+              <li
+                className="MuiBreadcrumbs-li"
+                key="child-1"
+              >
+                <span
+                  key=".1"
+                >
+                  Bar
+                </span>
+              </li>
+              <li
+                aria-hidden={true}
+                className="MuiBreadcrumbs-separator"
+                key="separator-1"
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className=""
+                  fixedWidth={true}
+                  flip={null}
+                  icon={
+                    Object {
+                      "icon": Array [
+                        256,
+                        512,
+                        Array [],
+                        "f054",
+                        "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                      ],
+                      "iconName": "chevron-right",
+                      "prefix": "far",
+                    }
+                  }
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  swapOpacity={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                    data-icon="chevron-right"
+                    data-prefix="far"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 256 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </FontAwesomeIcon>
+              </li>
+              <li
+                className="MuiBreadcrumbs-li"
+                key="child-2"
+              >
+                <span
+                  key=".2"
+                >
+                  Baz
+                </span>
+              </li>
+            </ol>
+          </nav>
+        </ForwardRef(Typography)>
+      </WithStyles(ForwardRef(Typography))>
+    </ForwardRef(Breadcrumbs)>
+  </WithStyles(ForwardRef(Breadcrumbs))>
+</Breadcrumbs>
+`;

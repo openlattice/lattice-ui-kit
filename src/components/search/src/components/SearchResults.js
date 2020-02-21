@@ -55,6 +55,7 @@ class SearchResults extends Component<Props> {
             key={index.toString()}
             onClick={onResultClick}
             result={result}
+            index={index}
             resultLabels={resultLabels} />
       ));
     }
