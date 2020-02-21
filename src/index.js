@@ -2,7 +2,7 @@
  * @flow
  */
 
-import { Fab } from '@material-ui/core';
+import { Fab, ThemeProvider } from '@material-ui/core';
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
 
 import * as Colors from './colors';
@@ -92,7 +92,7 @@ export {
 export { default as Skeleton } from './skeleton';
 export { default as Tooltip } from './tooltip';
 export { SpeedDial, SpeedDialAction, SpeedDialIcon };
-export { Fab };
+export { Fab, ThemeProvider };
 export { default as Breadcrumbs } from './breadcrumbs';
 export { default as olTheme } from './theme';
 
