@@ -117,7 +117,7 @@
   "scripts": {
     "build:dev": "webpack --config config/webpack/webpack.config.js --env.development",
     "build:prod": "webpack --config config/webpack/webpack.config.js --env.production",
-    "build:storybook": "build-storybook -c config/storybook -o build/storybook",
+    "build:storybook": "build-storybook -c config/storybook -o build/storybook -s config/storybook/static",
     "clean": "rimraf build/*",
     "flow": "flow check",
     "lib": "webpack-dev-server --config config/webpack/webpack.config.js --env.development --port 9000 --content-base build/",
@@ -128,7 +128,7 @@
     "preversion": "npm-run-all lint test",
     "version": "npm-run-all clean build:prod && git add -A package.json build/",
     "postversion": "git push && git push --tags",
-    "storybook": "start-storybook -p 9009 -c config/storybook",
+    "storybook": "start-storybook -p 9009 -c config/storybook -s config/storybook/static",
     "test": "jest --config config/jest/jest.config.js",
     "test:watch": "jest --config config/jest/jest.config.js --watch --coverage=false"
   }
