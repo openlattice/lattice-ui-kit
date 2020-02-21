@@ -7,6 +7,7 @@ import PACKAGE from '../package.json';
 const EXPECTED_OBJ_EXPORTS = Set([
   'Badge',
   'Banner',
+  'Breadcrumbs',
   'Button',
   'Card',
   'CardHeader',
@@ -61,8 +62,10 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'TableUtils',
   'Tag',
   'TextArea',
+  'ThemeProvider',
   'TimePicker',
   'Tooltip',
+  'olTheme',
 ]);
 
 describe('lattice-ui-kit named exports', () => {

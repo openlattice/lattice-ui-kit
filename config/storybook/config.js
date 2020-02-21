@@ -1,16 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
-import { configure, addDecorator, addParameters } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
 
-import storybookTheme from './storybookTheme';
+import styled from 'styled-components';
+import { ThemeProvider } from '@material-ui/core';
+import { withInfo } from '@storybook/addon-info';
+import { addDecorator, configure } from '@storybook/react';
+
+import olTheme from '../../src/theme';
 import { NEUTRALS } from '../../src/colors';
 
 const StoryOuterWrapper = styled.div`
   background-color: ${NEUTRALS[7]};
   color: ${NEUTRALS[0]};
   display: flex;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   font-stretch: normal;
   font-style: normal;
   font-weight: normal;
@@ -37,16 +39,12 @@ const StoryInnerWrapper = styled.div`
 
 addDecorator(withInfo);
 
-addParameters({
-  options: {
-    theme: storybookTheme
-  },
-});
-
 addDecorator((Story) => (
   <StoryOuterWrapper>
     <StoryInnerWrapper>
-      <Story />
+      <ThemeProvider theme={olTheme}>
+        <Story />
+      </ThemeProvider>
     </StoryInnerWrapper>
   </StoryOuterWrapper>
 ));
