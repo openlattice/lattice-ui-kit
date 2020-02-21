@@ -82,6 +82,7 @@ export {
   Result,
   SearchResults,
 } from './components/search';
+
 // Material-ui
 export {
   DatePicker,
@@ -92,6 +93,8 @@ export { default as Skeleton } from './skeleton';
 export { default as Tooltip } from './tooltip';
 export { SpeedDial, SpeedDialAction, SpeedDialIcon };
 export { Fab };
+export { default as Breadcrumbs } from './breadcrumbs';
+export { default as olTheme } from './theme';
 
 export default {
   version
