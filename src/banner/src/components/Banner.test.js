@@ -1,16 +1,18 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCheckCircle,
   faExclamationTriangle,
   faNarwhal,
   faTimesOctagon
 } from '@fortawesome/pro-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { mount, shallow } from 'enzyme';
 
 import Banner from './Banner';
 import { Container } from './styled/StyledBannerComponents';
+
 import {
   GREEN_1,
   NEUTRALS,
@@ -18,7 +20,6 @@ import {
   WHITE,
   YELLOW_1,
 } from '../../../colors';
-
 
 describe('Banner', () => {
 
