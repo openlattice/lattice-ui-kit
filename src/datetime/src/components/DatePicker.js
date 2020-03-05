@@ -3,13 +3,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
 
 import isFunction from 'lodash/isFunction';
-import { KeyboardDatePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
-import { ThemeProvider } from '@material-ui/styles';
+import { KeyboardDatePicker } from '@material-ui/pickers';
 import { DateTime } from 'luxon';
 
-import LatticeLuxonUtils from './utils/LatticeLuxonUtils';
 import useInputPropsMemo from './hooks/useInputPropsMemo';
-import { latticeMuiTheme } from './styles';
 
 type DateChange = (date :DateTime, value :string | null) => void;
 type Props = {
@@ -67,23 +64,19 @@ const DatePicker = (props :Props) => {
   }, [onChange]);
 
   return (
-    <ThemeProvider theme={latticeMuiTheme}>
-      <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
-        <KeyboardDatePicker
-            disabled={disabled}
-            format={format}
-            fullWidth={fullWidth}
-            InputProps={inputProps}
-            inputVariant="outlined"
-            mask={mask}
-            onChange={handleDateChange}
-            placeholder={placeholder}
-            value={selectedDate}
-            variant="inline"
-            // $FlowFixMe inexact pattern
-            {...other} />
-      </MuiPickersUtilsProvider>
-    </ThemeProvider>
+    <KeyboardDatePicker
+        disabled={disabled}
+        format={format}
+        fullWidth={fullWidth}
+        InputProps={inputProps}
+        inputVariant="outlined"
+        mask={mask}
+        onChange={handleDateChange}
+        placeholder={placeholder}
+        value={selectedDate}
+        variant="inline"
+        // $FlowFixMe inexact pattern
+        {...other} />
   );
 };
 

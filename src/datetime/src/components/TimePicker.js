@@ -5,13 +5,10 @@ import React, { useCallback, useEffect, useState } from 'react';
 import isFunction from 'lodash/isFunction';
 import { faClock } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { KeyboardTimePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
-import { ThemeProvider } from '@material-ui/styles';
+import { KeyboardTimePicker } from '@material-ui/pickers';
 import { DateTime } from 'luxon';
 
-import LatticeLuxonUtils from './utils/LatticeLuxonUtils';
 import useInputPropsMemo from './hooks/useInputPropsMemo';
-import { latticeMuiTheme } from './styles';
 
 const ClockIcon = <FontAwesomeIcon icon={faClock} />;
 
@@ -71,25 +68,21 @@ const TimePicker = (props :Props) => {
   }, [onChange]);
 
   return (
-    <ThemeProvider theme={latticeMuiTheme}>
-      <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
-        <KeyboardTimePicker
-            ampm
-            InputProps={inputProps}
-            disabled={disabled}
-            format={format}
-            fullWidth={fullWidth}
-            inputVariant="outlined"
-            keyboardIcon={ClockIcon}
-            mask={mask}
-            onChange={handleDateChange}
-            placeholder={placeholder}
-            value={selectedDate}
-            variant="inline"
-            // $FlowFixMe inexact pattern
-            {...other} />
-      </MuiPickersUtilsProvider>
-    </ThemeProvider>
+    <KeyboardTimePicker
+        ampm
+        InputProps={inputProps}
+        disabled={disabled}
+        format={format}
+        fullWidth={fullWidth}
+        inputVariant="outlined"
+        keyboardIcon={ClockIcon}
+        mask={mask}
+        onChange={handleDateChange}
+        placeholder={placeholder}
+        value={selectedDate}
+        variant="inline"
+        // $FlowFixMe inexact pattern
+        {...other} />
   );
 };
 

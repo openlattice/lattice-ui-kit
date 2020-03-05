@@ -1,28 +1,41 @@
 import React from 'react';
-import toJson from 'enzyme-to-json';
-import { mount, shallow } from 'enzyme';
-import { Map, List } from 'immutable';
 
-import Search from './Search';
-import SearchResults from './SearchResults';
+import toJson from 'enzyme-to-json';
+import { MuiPickersUtilsProvider } from '@material-ui/pickers';
+import { ThemeProvider } from '@material-ui/styles';
+import { mount } from 'enzyme';
+import { List, Map } from 'immutable';
+import { act } from 'react-dom/test-utils';
+
 import PersonResult from './PersonResult';
 import Result from './Result';
-import { Input } from '../../../../text';
-import { Title } from './styled/StyledSearchComponents';
-import { Card } from '../../../../layout';
-import { DatePicker } from '../../../../datetime';
+import Search from './Search';
+import SearchResults from './SearchResults';
 import {
   mockFilterFields,
   mockSearchResultsForPeople,
   mockSearchResultsForReports
 } from './constants';
+import { Title } from './styled/StyledSearchComponents';
+
+import LatticeLuxonUtils from '../../../../datetime/src/components/utils/LatticeLuxonUtils';
+import { DatePicker } from '../../../../datetime';
+import { latticeMaterialTheme } from '../../../../datetime/src/components/styles';
+import { Card } from '../../../../layout';
+import { Input } from '../../../../text';
 
 describe('Search', () => {
 
   describe('snapshots', () => {
 
     test('should match snapshot', () => {
-      const wrapper = shallow(<Search />);
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Search />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
@@ -34,7 +47,13 @@ describe('Search', () => {
       let wrapper;
 
       beforeEach(() => {
-        wrapper = shallow(<Search />);
+        wrapper = mount(
+          <ThemeProvider theme={latticeMaterialTheme}>
+            <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+              <Search />
+            </MuiPickersUtilsProvider>
+          </ThemeProvider>
+        );
       });
 
       test('render Card', () => {
@@ -58,40 +77,74 @@ describe('Search', () => {
 
     describe('render with props', () => {
       test('should render provided title', () => {
-        const wrapper = shallow(<Search title="Title" />);
+        const wrapper = mount(
+          <ThemeProvider theme={latticeMaterialTheme}>
+            <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+              <Search title="Title" />
+            </MuiPickersUtilsProvider>
+          </ThemeProvider>
+        );
         expect(wrapper.find(Title).text()).toEqual('Title');
       });
 
       test('should not render undefined title', () => {
-        const wrapper = shallow(<Search />);
+        const wrapper = mount(
+          <ThemeProvider theme={latticeMaterialTheme}>
+            <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+              <Search />
+            </MuiPickersUtilsProvider>
+          </ThemeProvider>
+        );
         expect(wrapper.find(Title)).toHaveLength(0);
       });
 
       test('should render provided filterFields', () => {
-        const wrapper = shallow(<Search filterFields={mockFilterFields} />);
+        const wrapper = mount(
+          <ThemeProvider theme={latticeMaterialTheme}>
+            <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+              <Search filterFields={mockFilterFields} />
+            </MuiPickersUtilsProvider>
+          </ThemeProvider>
+        );
         expect(wrapper.find('CheckboxSelect')).toHaveLength(3);
       });
 
       test('should render custom SearchResultComponent', () => {
         // eslint-disable-next-line react/jsx-props-no-spreading
-        const customComponent = (props) => <div {...props} />;
+        const customComponent = () => <div>custom result</div>;
         customComponent.displayName = 'CustomComponent';
-        const wrapper = shallow(<Search searchResultsComponent={customComponent} />);
+        const wrapper = mount(
+          <ThemeProvider theme={latticeMaterialTheme}>
+            <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+              <Search searchResultsComponent={customComponent} />
+            </MuiPickersUtilsProvider>
+          </ThemeProvider>
+        );
 
         expect(wrapper.find('CustomComponent')).toHaveLength(1);
       });
 
       test('should render custom ResultComponents', () => {
         const wrapper = mount(
-          <Search
-              searchResults={mockSearchResultsForPeople}
-              resultComponent={PersonResult} />
+          <ThemeProvider theme={latticeMaterialTheme}>
+            <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+              <Search
+                  searchResults={mockSearchResultsForPeople}
+                  resultComponent={PersonResult} />
+            </MuiPickersUtilsProvider>
+          </ThemeProvider>
         );
         expect(wrapper.find(PersonResult)).toHaveLength(3);
       });
 
       test('should render default Result when provided searchResults', () => {
-        const wrapper = mount(<Search searchResults={mockSearchResultsForPeople} />);
+        const wrapper = mount(
+          <ThemeProvider theme={latticeMaterialTheme}>
+            <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+              <Search searchResults={mockSearchResultsForPeople} />
+            </MuiPickersUtilsProvider>
+          </ThemeProvider>
+        );
         expect(wrapper.find(Result)).toHaveLength(3);
       });
 
@@ -99,66 +152,17 @@ describe('Search', () => {
 
   });
 
-  describe('searchFieldValues', () => {
-    test('change input', () => {
-      const wrapper = shallow(<Search />);
-      const firstNameInput = wrapper.find('Input[name="firstname"]');
-
-      expect(firstNameInput).toHaveLength(1);
-      expect(firstNameInput.type()).toEqual(Input);
-
-      const changeValue = 'OpenLattice';
-      const initialSearchFieldValues = wrapper.state('searchFieldValues');
-      const expectedSearchFieldValues = initialSearchFieldValues.set('firstname', changeValue);
-
-      firstNameInput.simulate('change', { currentTarget: { value: changeValue, name: 'firstname' } });
-
-      const actualSearchFieldValues = wrapper.state('searchFieldValues');
-      expect(actualSearchFieldValues).toStrictEqual(expectedSearchFieldValues);
-
-    });
-
-    test('delete input', () => {
-      const wrapper = shallow(<Search />);
-      const firstNameInput = wrapper.find('Input[name="firstname"]');
-
-      expect(firstNameInput).toHaveLength(1);
-      expect(firstNameInput.type()).toEqual(Input);
-
-      const changeValue = undefined;
-      const initialSearchFieldValues = wrapper.state('searchFieldValues');
-      const expectedSearchFieldValues = initialSearchFieldValues.set('firstname', '');
-
-      firstNameInput.simulate('change', { currentTarget: { value: changeValue, name: 'firstname' } });
-
-      const actualSearchFieldValues = wrapper.state('searchFieldValues');
-      expect(actualSearchFieldValues).toStrictEqual(expectedSearchFieldValues);
-
-    });
-
-    test('change date', () => {
-      const wrapper = shallow(<Search />);
-      const datePicker = wrapper.find(DatePicker);
-
-      expect(datePicker).toHaveLength(1);
-      expect(datePicker.type()).toEqual(DatePicker);
-
-      const changeValue = '1970-01-01';
-      const initialSearchFieldValues = wrapper.state('searchFieldValues');
-      const expectedSearchFieldValues = initialSearchFieldValues.set('dob', changeValue);
-
-      datePicker.simulate('change', changeValue);
-
-      const actualSearchFieldValues = wrapper.state('searchFieldValues');
-      expect(actualSearchFieldValues).toStrictEqual(expectedSearchFieldValues);
-
-    });
-  });
-
   describe('filterfieldValues', () => {
     test('handleOnChangeFilter should change filterFieldValues', () => {
-      const wrapper = shallow(<Search filterFields={mockFilterFields} />);
-      const instance = wrapper.instance();
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Search filterFields={mockFilterFields} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
+      const search = wrapper.find(Search);
+      const instance = search.instance();
 
       const changeValue = [{
         label: 'Report #1',
@@ -166,26 +170,37 @@ describe('Search', () => {
       }];
       const changeEvent = { name: 'reportType' };
 
-      const initialFilterFieldValues = wrapper.state('filterFieldValues');
+      const initialFilterFieldValues = search.state('filterFieldValues');
       const expectedFilterFieldValues = initialFilterFieldValues.set('reportType', changeValue);
       instance.handleOnChangeFilter(changeValue, changeEvent);
 
-      const actualFilterFieldValues = wrapper.state('filterFieldValues');
+      const actualFilterFieldValues = search.state('filterFieldValues');
       expect(actualFilterFieldValues).toStrictEqual(expectedFilterFieldValues);
     });
   });
 
   describe('renderFilteredSearchResults', () => {
     test('should return null with falsy SearchResultsComponent', () => {
-      const wrapper = shallow(<Search searchResultsComponent={false} />);
-      const instance = wrapper.instance();
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Search searchResultsComponent={false} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
+      const search = wrapper.find(Search);
+      const instance = search.instance();
       expect(instance.renderFilteredSearchResults()).toEqual(null);
     });
 
     test('should not filter results if invalid searchResults', () => {
-      const wrapper = shallow(
-        <Search
-            searchResults={false} />
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Search
+                searchResults={false} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
       );
 
       const filteredResults = wrapper.find(SearchResults).props().results;
@@ -194,12 +209,18 @@ describe('Search', () => {
     });
 
     test('should not filter results if invalid filterFields', () => {
-      const wrapper = shallow(
-        <Search
-            searchResults={mockSearchResultsForReports}
-            filterFields={false} />
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Search
+                searchResults={mockSearchResultsForReports}
+                filterFields={false} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
       );
-      const instance = wrapper.instance();
+
+      const search = wrapper.find(Search);
+      const instance = search.instance();
 
       const changeValue = [{
         label: 'Report #1',
@@ -213,21 +234,30 @@ describe('Search', () => {
       expect(filteredResults).toEqual(mockSearchResultsForReports);
     });
 
-    test('should filter results', () => {
-      const wrapper = shallow(
-        <Search
-            filterFields={mockFilterFields}
-            searchResults={mockSearchResultsForReports} />
+    // Feature marked for sunset
+    // eslint-disable-next-line jest/no-disabled-tests
+    xtest('should filter results', () => {
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Search
+                filterFields={mockFilterFields}
+                searchResults={mockSearchResultsForReports} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
       );
-      const instance = wrapper.instance();
+      const search = wrapper.find(Search);
+      const instance = search.instance();
 
       let changeValue = [{
         value: 'Report #1'
       }];
       let changeEvent = { name: 'reportType' };
       // apply one filter
-      instance.handleOnChangeFilter(changeValue, changeEvent);
-      let filteredResults = wrapper.find(SearchResults).props().results;
+      act(() => {
+        instance.handleOnChangeFilter(changeValue, changeEvent);
+      });
+      let filteredResults = search.find(SearchResults).props().results;
       expect(List.isList(filteredResults)).toEqual(true);
       expect(filteredResults.count()).toEqual(3);
 
@@ -239,7 +269,7 @@ describe('Search', () => {
 
       // apply second filter
       instance.handleOnChangeFilter(changeValue, changeEvent);
-      filteredResults = wrapper.find(SearchResults).props().results;
+      filteredResults = search.find(SearchResults).props().results;
       expect(List.isList(filteredResults)).toEqual(true);
       expect(filteredResults.count()).toEqual(2);
 
@@ -250,29 +280,39 @@ describe('Search', () => {
 
       // apply third filter
       instance.handleOnChangeFilter(changeValue, changeEvent);
-      filteredResults = wrapper.find(SearchResults).props().results;
+      filteredResults = search.find(SearchResults).props().results;
       expect(filteredResults.count()).toEqual(1);
       expect(filteredResults.first()).toEqual(mockSearchResultsForReports.get(2));
 
     });
 
     test('should return all results if no filter applied', () => {
-      const wrapper = shallow(
-        <Search
-            filterFields={mockFilterFields}
-            searchResults={mockSearchResultsForReports} />
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Search
+                filterFields={mockFilterFields}
+                searchResults={mockSearchResultsForReports} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
       );
       const filteredResults = wrapper.find(SearchResults).props().results;
       expect(filteredResults).toEqual(mockSearchResultsForReports);
     });
 
     test('should not filter for non-matching filter definition', () => {
-      const wrapper = shallow(
-        <Search
-            filterFields={mockFilterFields}
-            searchResults={mockSearchResultsForReports} />
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Search
+                filterFields={mockFilterFields}
+                searchResults={mockSearchResultsForReports} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
       );
-      const instance = wrapper.instance();
+
+      const search = wrapper.find(Search);
+      const instance = search.instance();
 
       const changeValue = [{
         value: 'Report #1'
@@ -287,19 +327,32 @@ describe('Search', () => {
 
   describe('onSearch()', () => {
     test('should call handleOnClickSearchButton', () => {
-      const wrapper = mount(<Search />);
-      const instance = wrapper.instance();
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Search />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
+      const search = wrapper.find(Search);
+      const instance = search.instance();
       const handleOnClickSearchButtonSpy = jest.spyOn(instance, 'handleOnClickSearchButton');
 
       instance.forceUpdate();
-      wrapper.find('Button').simulate('click');
+      search.find('Button').simulate('click');
 
       expect(handleOnClickSearchButtonSpy).toHaveBeenCalledTimes(1);
     });
 
     test('should invoke onSearch with searchFieldValues', () => {
       const mockOnSearch = jest.fn();
-      const wrapper = mount(<Search onSearch={mockOnSearch} />);
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Search onSearch={mockOnSearch} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
 
       const searchFieldValues = Map({
         firstname: 'Smitty',
@@ -307,12 +360,14 @@ describe('Search', () => {
         dob: '2002-02-22'
       });
 
-      wrapper.setState({ searchFieldValues });
-      const instance = wrapper.instance();
+      const searchWrapper = wrapper.find(Search);
+
+      searchWrapper.setState({ searchFieldValues });
+      const instance = searchWrapper.instance();
       const handleOnClickSearchButtonSpy = jest.spyOn(instance, 'handleOnClickSearchButton');
 
       instance.forceUpdate();
-      wrapper.find('Button').simulate('click');
+      searchWrapper.find('Button').simulate('click');
 
       expect(handleOnClickSearchButtonSpy).toHaveBeenCalledTimes(1);
       expect(mockOnSearch).toHaveBeenCalledTimes(1);
@@ -324,7 +379,13 @@ describe('Search', () => {
   describe('onResultClick', () => {
     test('should call onResultClick with result', () => {
       const mockOnResultClick = jest.fn();
-      const wrapper = mount(<Search onResultClick={mockOnResultClick} searchResults={mockSearchResultsForPeople} />);
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Search onResultClick={mockOnResultClick} searchResults={mockSearchResultsForPeople} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
 
       const resultWrapper = wrapper.find('Result').first();
       expect(resultWrapper).toHaveLength(1);
@@ -336,7 +397,13 @@ describe('Search', () => {
 
     test('should not call onResultClick if onClick is not a function', () => {
       const mockOnResultClick = jest.fn();
-      const wrapper = mount(<Search onResultClick={mockOnResultClick} searchResults={mockSearchResultsForPeople} />);
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Search onResultClick={mockOnResultClick} searchResults={mockSearchResultsForPeople} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
 
       const resultWrapper = wrapper.find('Result').first();
       expect(resultWrapper).toHaveLength(1);

@@ -1,42 +1,47 @@
 import React, { useState } from 'react';
 
+import { MuiPickersUtilsProvider } from '@material-ui/pickers';
+import { ThemeProvider } from '@material-ui/styles';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import { DateTime } from 'luxon';
 
 import Label from '../../label';
+import LatticeLuxonUtils from '../src/components/utils/LatticeLuxonUtils';
+import { Button } from '../../button';
 import { Card, CardSegment } from '../../layout';
 import { DatePicker, DateTimePicker, TimePicker } from '../index';
+import { darkLatticeMaterialTheme, latticeMaterialTheme } from '../src/components/styles';
 
 const dateMuiChange = action('MUI Date changed');
 const timeMuiChange = action('MUI Time changed');
 const datetimeMuiChange = action('MUI DateTime changed');
 
 storiesOf('Date and Time', module)
-  .add('Date', () => {
+  .add('Date', ({ isDark }) => {
     const [selectedDate, setSelectedDate] = useState('2019-01-01');
+    const bgColor = isDark ? '#1F1E24' : undefined;
     return (
       <div>
         <h1>
           Date Picker
         </h1>
         <Card>
-          <CardSegment vertical padding="sm">
-            <h3>Material</h3>
+          <CardSegment bgColor={bgColor} vertical padding="sm">
             <Label subtle>Default</Label>
             <DatePicker onChange={dateMuiChange} />
-            <hr />
+            <br />
             <Label subtle>Disabled</Label>
             <DatePicker
                 disabled
                 value="2019-01-01"
                 onChange={dateMuiChange} />
-            <hr />
+            <br />
             <Label subtle>Provided Value</Label>
             <DatePicker
                 value="2019-01-01"
                 onChange={dateMuiChange} />
-            <hr />
+            <br />
             <Label subtle>Controlled</Label>
             <DatePicker
                 onChange={(value) => {
@@ -49,29 +54,29 @@ storiesOf('Date and Time', module)
       </div>
     );
   })
-  .add('Time', () => {
+  .add('Time', ({ isDark }) => {
     const [selectedTime, setSelectedTime] = useState('23:11');
+    const bgColor = isDark ? '#1F1E24' : undefined;
     return (
       <div>
         <h1>
           Time Picker
         </h1>
         <Card>
-          <CardSegment vertical padding="sm">
-            <h3>Material</h3>
+          <CardSegment bgColor={bgColor} vertical padding="sm">
             <Label subtle>Default</Label>
             <TimePicker onChange={timeMuiChange} />
-            <hr />
+            <br />
             <Label subtle>Disabled</Label>
             <TimePicker
                 disabled
                 onChange={timeMuiChange} />
-            <hr />
+            <br />
             <Label subtle>Provided Value</Label>
             <TimePicker
                 onChange={timeMuiChange}
                 value="23:11" />
-            <hr />
+            <br />
             <Label subtle>Controlled</Label>
             <TimePicker
                 onChange={(value) => {
@@ -84,27 +89,27 @@ storiesOf('Date and Time', module)
       </div>
     );
   })
-  .add('DateTime', () => {
+  .add('DateTime', ({ isDark }) => {
     const [selectedDateTime, setDateTime] = useState(DateTime.local().toISO());
+    const bgColor = isDark ? '#1F1E24' : undefined;
     return (
       <div>
         <h1>DateTime Picker</h1>
         <Card>
-          <CardSegment vertical padding="sm">
-            <h3>Material</h3>
+          <CardSegment bgColor={bgColor} vertical padding="sm">
             <Label subtle>Default</Label>
             <DateTimePicker onChange={datetimeMuiChange} />
-            <hr />
+            <br />
             <Label subtle>Disabled</Label>
             <DateTimePicker
                 disabled
                 onChange={datetimeMuiChange} />
-            <hr />
+            <br />
             <Label subtle>Provided Value</Label>
             <DateTimePicker
                 value={DateTime.local().toISO()}
                 onChange={datetimeMuiChange} />
-            <hr />
+            <br />
             <Label subtle>Controlled</Label>
             <DateTimePicker
                 onChange={(value) => {

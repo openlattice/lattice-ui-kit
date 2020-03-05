@@ -1,10 +1,15 @@
 import React from 'react';
-import { DateTime } from 'luxon';
-import { mount, shallow } from 'enzyme';
+
 import toJson from 'enzyme-to-json';
-import { KeyboardDatePicker } from '@material-ui/pickers';
+import { KeyboardDatePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
+import { ThemeProvider } from '@material-ui/styles';
+import { mount } from 'enzyme';
+import { DateTime } from 'luxon';
+import { act } from 'react-dom/test-utils';
 
 import DatePicker from './DatePicker';
+import LatticeLuxonUtils from './utils/LatticeLuxonUtils';
+import { latticeMaterialTheme } from './styles';
 
 const invalidDate = DateTime.local(null);
 const validDate = DateTime.local();
@@ -13,7 +18,13 @@ const validDateStr = '2019-01-01';
 describe('DatePicker', () => {
 
   test('render matches snapshot', () => {
-    const tree = mount(<DatePicker />);
+    const tree = mount(
+      <ThemeProvider theme={latticeMaterialTheme}>
+        <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+          <DatePicker />
+        </MuiPickersUtilsProvider>
+      </ThemeProvider>
+    );
     expect(toJson(tree)).toMatchSnapshot();
   });
 
@@ -21,12 +32,21 @@ describe('DatePicker', () => {
 
     test('null calls onChange with undefined', () => {
       const mockOnChange = jest.fn();
-      const wrapper = shallow(<DatePicker onChange={mockOnChange} />);
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <DatePicker onChange={mockOnChange} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
 
       expect(mockOnChange).toHaveBeenCalledTimes(0);
-      const innerChange = wrapper.find(KeyboardDatePicker).prop('onChange');
 
-      innerChange(null);
+      act(() => {
+        const innerChange = wrapper.find(KeyboardDatePicker).prop('onChange');
+        innerChange(null);
+      });
+
       expect(mockOnChange).toHaveBeenCalledTimes(1);
       expect(mockOnChange.mock.calls[0][0]).toEqual();
       expect(wrapper.find(KeyboardDatePicker).prop('value')).toEqual(null);
@@ -34,37 +54,66 @@ describe('DatePicker', () => {
 
     test('invalid date does not call onChange', () => {
       const mockOnChange = jest.fn();
-      const wrapper = shallow(<DatePicker onChange={mockOnChange} />);
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <DatePicker onChange={mockOnChange} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
 
       expect(mockOnChange).toHaveBeenCalledTimes(0);
-      const innerChange = wrapper.find(KeyboardDatePicker).prop('onChange');
 
-      innerChange(invalidDate);
+      act(() => {
+        const innerChange = wrapper.find(KeyboardDatePicker).prop('onChange');
+        innerChange(invalidDate);
+      });
+
       expect(mockOnChange).toHaveBeenCalledTimes(0);
     });
 
     test('valid date calls onChange with ISO date string', () => {
       const mockOnChange = jest.fn();
-      const wrapper = shallow(<DatePicker onChange={mockOnChange} />);
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <DatePicker onChange={mockOnChange} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
 
       expect(mockOnChange).toHaveBeenCalledTimes(0);
-      const innerChange = wrapper.find(KeyboardDatePicker).prop('onChange');
 
-      innerChange(validDate);
+      act(() => {
+        const innerChange = wrapper.find(KeyboardDatePicker).prop('onChange');
+        innerChange(validDate);
+      });
+
       expect(mockOnChange).toHaveBeenCalledTimes(1);
       expect(mockOnChange.mock.calls[0][0]).toEqual(validDate.toISODate());
-      expect(wrapper.find(KeyboardDatePicker).prop('value')).toEqual(validDate);
     });
   });
 
   describe('value', () => {
     test('valid parsed dates are passed to KeyboardDatePicker', () => {
-      const wrapper = mount(<DatePicker value={validDateStr} />);
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <DatePicker value={validDateStr} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
       expect(wrapper.find(KeyboardDatePicker).prop('value')).toEqual(DateTime.fromISO(validDateStr));
     });
 
     test('invalid parsed dates are not passed to KeyboardDatePicker', () => {
-      const wrapper = mount(<DatePicker value="invalid" />);
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <DatePicker value="invalid" />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
       expect(wrapper.find(KeyboardDatePicker).prop('value')).toEqual(null);
     });
   });
@@ -72,7 +121,13 @@ describe('DatePicker', () => {
   describe('InputProps', () => {
     test('input should preventDefault only for Enter keyPress', () => {
       const preventDefault = jest.fn();
-      const wrapper = mount(<DatePicker />);
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <DatePicker />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
       const input = wrapper.find('input');
 
       expect(preventDefault).toHaveBeenCalledTimes(0);
@@ -93,7 +148,13 @@ describe('DatePicker', () => {
     });
 
     test('inner input should have onBlur', () => {
-      const wrapper = mount(<DatePicker />);
+      const wrapper = mount(
+        <ThemeProvider theme={latticeMaterialTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <DatePicker />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
 
       expect(typeof wrapper.find('input').prop('onBlur')).toEqual('function');
     });
