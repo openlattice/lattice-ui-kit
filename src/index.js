@@ -4,7 +4,9 @@
 
 import { Fab, ThemeProvider } from '@material-ui/core';
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
+import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 
+import LatticeLuxonUtils from './datetime/src/components/utils/LatticeLuxonUtils';
 import * as Colors from './colors';
 import * as Hooks from './hooks';
 import * as Sizes from './style/Sizes';
@@ -91,10 +93,20 @@ export {
 } from './datetime';
 export { default as Skeleton } from './skeleton';
 export { default as Tooltip } from './tooltip';
-export { SpeedDial, SpeedDialAction, SpeedDialIcon };
-export { Fab, ThemeProvider };
+export {
+  Fab,
+  MuiPickersUtilsProvider,
+  SpeedDial,
+  SpeedDialAction,
+  SpeedDialIcon,
+  ThemeProvider,
+  LatticeLuxonUtils,
+};
 export { default as Breadcrumbs } from './breadcrumbs';
-export { default as olTheme } from './theme';
+export {
+  darkLatticeMaterialTheme,
+  latticeMaterialTheme
+} from './theme';
 
 export default {
   version
