@@ -104,8 +104,8 @@ export {
 };
 export { default as Breadcrumbs } from './breadcrumbs';
 export {
-  darkLatticeMaterialTheme,
-  latticeMaterialTheme
+  darkTheme,
+  lightTheme
 } from './theme';
 
 export default {

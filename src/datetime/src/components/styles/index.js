@@ -9,7 +9,7 @@ import {
 } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
 
-const latticeMaterialTheme = createMuiTheme({
+const lightTheme = createMuiTheme({
   overrides: {
     MuiFormHelperText: {
       root: {
@@ -88,7 +88,7 @@ const latticeMaterialTheme = createMuiTheme({
   }
 });
 
-const darkLatticeMaterialTheme = createMuiTheme({
+const darkTheme = createMuiTheme({
   overrides: {
     MuiFormHelperText: {
       root: {
@@ -167,4 +167,4 @@ const darkLatticeMaterialTheme = createMuiTheme({
   }
 });
 
-export { darkLatticeMaterialTheme, latticeMaterialTheme };
+export { darkTheme, lightTheme };

@@ -67,8 +67,8 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'ThemeProvider',
   'TimePicker',
   'Tooltip',
-  'darkLatticeMaterialTheme',
-  'latticeMaterialTheme',
+  'darkTheme',
+  'lightTheme',
 ]);
 
 describe('lattice-ui-kit named exports', () => {

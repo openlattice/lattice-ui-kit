@@ -20,7 +20,7 @@ import { Title } from './styled/StyledSearchComponents';
 
 import LatticeLuxonUtils from '../../../../datetime/src/components/utils/LatticeLuxonUtils';
 import { DatePicker } from '../../../../datetime';
-import { latticeMaterialTheme } from '../../../../datetime/src/components/styles';
+import { lightTheme } from '../../../../datetime/src/components/styles';
 import { Card } from '../../../../layout';
 import { Input } from '../../../../text';
 
@@ -30,7 +30,7 @@ describe('Search', () => {
 
     test('should match snapshot', () => {
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <Search />
           </MuiPickersUtilsProvider>
@@ -48,7 +48,7 @@ describe('Search', () => {
 
       beforeEach(() => {
         wrapper = mount(
-          <ThemeProvider theme={latticeMaterialTheme}>
+          <ThemeProvider theme={lightTheme}>
             <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
               <Search />
             </MuiPickersUtilsProvider>
@@ -78,7 +78,7 @@ describe('Search', () => {
     describe('render with props', () => {
       test('should render provided title', () => {
         const wrapper = mount(
-          <ThemeProvider theme={latticeMaterialTheme}>
+          <ThemeProvider theme={lightTheme}>
             <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
               <Search title="Title" />
             </MuiPickersUtilsProvider>
@@ -89,7 +89,7 @@ describe('Search', () => {
 
       test('should not render undefined title', () => {
         const wrapper = mount(
-          <ThemeProvider theme={latticeMaterialTheme}>
+          <ThemeProvider theme={lightTheme}>
             <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
               <Search />
             </MuiPickersUtilsProvider>
@@ -100,7 +100,7 @@ describe('Search', () => {
 
       test('should render provided filterFields', () => {
         const wrapper = mount(
-          <ThemeProvider theme={latticeMaterialTheme}>
+          <ThemeProvider theme={lightTheme}>
             <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
               <Search filterFields={mockFilterFields} />
             </MuiPickersUtilsProvider>
@@ -114,7 +114,7 @@ describe('Search', () => {
         const customComponent = () => <div>custom result</div>;
         customComponent.displayName = 'CustomComponent';
         const wrapper = mount(
-          <ThemeProvider theme={latticeMaterialTheme}>
+          <ThemeProvider theme={lightTheme}>
             <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
               <Search searchResultsComponent={customComponent} />
             </MuiPickersUtilsProvider>
@@ -126,7 +126,7 @@ describe('Search', () => {
 
       test('should render custom ResultComponents', () => {
         const wrapper = mount(
-          <ThemeProvider theme={latticeMaterialTheme}>
+          <ThemeProvider theme={lightTheme}>
             <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
               <Search
                   searchResults={mockSearchResultsForPeople}
@@ -139,7 +139,7 @@ describe('Search', () => {
 
       test('should render default Result when provided searchResults', () => {
         const wrapper = mount(
-          <ThemeProvider theme={latticeMaterialTheme}>
+          <ThemeProvider theme={lightTheme}>
             <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
               <Search searchResults={mockSearchResultsForPeople} />
             </MuiPickersUtilsProvider>
@@ -155,7 +155,7 @@ describe('Search', () => {
   describe('filterfieldValues', () => {
     test('handleOnChangeFilter should change filterFieldValues', () => {
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <Search filterFields={mockFilterFields} />
           </MuiPickersUtilsProvider>
@@ -182,7 +182,7 @@ describe('Search', () => {
   describe('renderFilteredSearchResults', () => {
     test('should return null with falsy SearchResultsComponent', () => {
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <Search searchResultsComponent={false} />
           </MuiPickersUtilsProvider>
@@ -195,7 +195,7 @@ describe('Search', () => {
 
     test('should not filter results if invalid searchResults', () => {
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <Search
                 searchResults={false} />
@@ -210,7 +210,7 @@ describe('Search', () => {
 
     test('should not filter results if invalid filterFields', () => {
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <Search
                 searchResults={mockSearchResultsForReports}
@@ -238,7 +238,7 @@ describe('Search', () => {
     // eslint-disable-next-line jest/no-disabled-tests
     xtest('should filter results', () => {
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <Search
                 filterFields={mockFilterFields}
@@ -288,7 +288,7 @@ describe('Search', () => {
 
     test('should return all results if no filter applied', () => {
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <Search
                 filterFields={mockFilterFields}
@@ -302,7 +302,7 @@ describe('Search', () => {
 
     test('should not filter for non-matching filter definition', () => {
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <Search
                 filterFields={mockFilterFields}
@@ -328,7 +328,7 @@ describe('Search', () => {
   describe('onSearch()', () => {
     test('should call handleOnClickSearchButton', () => {
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <Search />
           </MuiPickersUtilsProvider>
@@ -347,7 +347,7 @@ describe('Search', () => {
     test('should invoke onSearch with searchFieldValues', () => {
       const mockOnSearch = jest.fn();
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <Search onSearch={mockOnSearch} />
           </MuiPickersUtilsProvider>
@@ -380,7 +380,7 @@ describe('Search', () => {
     test('should call onResultClick with result', () => {
       const mockOnResultClick = jest.fn();
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <Search onResultClick={mockOnResultClick} searchResults={mockSearchResultsForPeople} />
           </MuiPickersUtilsProvider>
@@ -398,7 +398,7 @@ describe('Search', () => {
     test('should not call onResultClick if onClick is not a function', () => {
       const mockOnResultClick = jest.fn();
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <Search onResultClick={mockOnResultClick} searchResults={mockSearchResultsForPeople} />
           </MuiPickersUtilsProvider>

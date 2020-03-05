@@ -9,7 +9,7 @@ import { addDecorator, configure } from '@storybook/react';
 import LatticeLuxonUtils from '../../src/datetime/src/components/utils/LatticeLuxonUtils';
 import { Button } from '../../src/button';
 import { NEUTRALS } from '../../src/colors';
-import { darkLatticeMaterialTheme, latticeMaterialTheme } from '../../src/theme';
+import { darkTheme, lightTheme } from '../../src/theme';
 
 const StoryOuterWrapper = styled.div`
   background-color: ${NEUTRALS[7]};
@@ -44,7 +44,7 @@ addDecorator(withInfo);
 
 addDecorator((StoryFn) => {
   const [isDark, setTheme] = useState(false);
-  const theme = isDark ? darkLatticeMaterialTheme : latticeMaterialTheme;
+  const theme = isDark ? darkTheme : lightTheme;
 
   const toggleTheme = () => {
     setTheme(!isDark);

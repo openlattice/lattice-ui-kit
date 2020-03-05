@@ -9,7 +9,7 @@ import { act } from 'react-dom/test-utils';
 
 import DateTimePicker from './DateTimePicker';
 import LatticeLuxonUtils from './utils/LatticeLuxonUtils';
-import { latticeMaterialTheme } from './styles';
+import { lightTheme } from './styles';
 
 const invalidDateTime = DateTime.local(null);
 const validDateTime = DateTime.local();
@@ -19,7 +19,7 @@ describe('DateTimePicker', () => {
 
   test('render matches snapshot', () => {
     const tree = mount(
-      <ThemeProvider theme={latticeMaterialTheme}>
+      <ThemeProvider theme={lightTheme}>
         <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
           <DateTimePicker />
         </MuiPickersUtilsProvider>
@@ -33,7 +33,7 @@ describe('DateTimePicker', () => {
     test('null calls onChange undefined', () => {
       const mockOnChange = jest.fn();
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <DateTimePicker onChange={mockOnChange} />
           </MuiPickersUtilsProvider>
@@ -53,7 +53,7 @@ describe('DateTimePicker', () => {
     test('invalid date does not call onChange', () => {
       const mockOnChange = jest.fn();
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <DateTimePicker onChange={mockOnChange} />
           </MuiPickersUtilsProvider>
@@ -72,7 +72,7 @@ describe('DateTimePicker', () => {
     test('valid date calls onChange with ISO datetime string', () => {
       const mockOnChange = jest.fn();
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <DateTimePicker onChange={mockOnChange} />
           </MuiPickersUtilsProvider>
@@ -93,7 +93,7 @@ describe('DateTimePicker', () => {
   describe('value', () => {
     test('valid parsed times are passed to KeyboardDateTimePicker', () => {
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <DateTimePicker value={validDateTimeStr} />
           </MuiPickersUtilsProvider>
@@ -104,7 +104,7 @@ describe('DateTimePicker', () => {
 
     test('invalid parsed times are not passed to KeyboardDateTimePicker', () => {
       const wrapper = mount(
-        <ThemeProvider theme={latticeMaterialTheme}>
+        <ThemeProvider theme={lightTheme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
             <DateTimePicker value="invalid" />
           </MuiPickersUtilsProvider>
@@ -117,7 +117,7 @@ describe('DateTimePicker', () => {
   describe('input should preventDefault onKeyPress only for Enter', () => {
     const preventDefault = jest.fn();
     const wrapper = mount(
-      <ThemeProvider theme={latticeMaterialTheme}>
+      <ThemeProvider theme={lightTheme}>
         <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
           <DateTimePicker />
         </MuiPickersUtilsProvider>

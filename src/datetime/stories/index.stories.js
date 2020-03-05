@@ -1,17 +1,12 @@
 import React, { useState } from 'react';
 
-import { MuiPickersUtilsProvider } from '@material-ui/pickers';
-import { ThemeProvider } from '@material-ui/styles';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import { DateTime } from 'luxon';
 
 import Label from '../../label';
-import LatticeLuxonUtils from '../src/components/utils/LatticeLuxonUtils';
-import { Button } from '../../button';
 import { Card, CardSegment } from '../../layout';
 import { DatePicker, DateTimePicker, TimePicker } from '../index';
-import { darkLatticeMaterialTheme, latticeMaterialTheme } from '../src/components/styles';
 
 const dateMuiChange = action('MUI Date changed');
 const timeMuiChange = action('MUI Time changed');
