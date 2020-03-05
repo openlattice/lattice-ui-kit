@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styled from 'styled-components';
 import { ThemeProvider } from '@material-ui/core';
+import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import { withInfo } from '@storybook/addon-info';
 import { addDecorator, configure } from '@storybook/react';
 
-import olTheme from '../../src/theme';
+import LatticeLuxonUtils from '../../src/datetime/src/components/utils/LatticeLuxonUtils';
+import { Button } from '../../src/button';
 import { NEUTRALS } from '../../src/colors';
+import { darkTheme, lightTheme } from '../../src/theme';
 
 const StoryOuterWrapper = styled.div`
   background-color: ${NEUTRALS[7]};
@@ -39,15 +42,27 @@ const StoryInnerWrapper = styled.div`
 
 addDecorator(withInfo);
 
-addDecorator((Story) => (
-  <StoryOuterWrapper>
-    <StoryInnerWrapper>
-      <ThemeProvider theme={olTheme}>
-        <Story />
-      </ThemeProvider>
-    </StoryInnerWrapper>
-  </StoryOuterWrapper>
-));
+addDecorator((StoryFn) => {
+  const [isDark, setTheme] = useState(false);
+  const theme = isDark ? darkTheme : lightTheme;
+
+  const toggleTheme = () => {
+    setTheme(!isDark);
+  };
+
+  return (
+    <StoryOuterWrapper>
+      <StoryInnerWrapper>
+        <ThemeProvider theme={theme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <Button mode="primary" onClick={toggleTheme}>{`Dark Theme: ${isDark}`}</Button>
+            <StoryFn isDark={isDark} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      </StoryInnerWrapper>
+    </StoryOuterWrapper>
+  );
+});
 
 const req = require.context('../../src/', true, /\.stories\.js$/);
 

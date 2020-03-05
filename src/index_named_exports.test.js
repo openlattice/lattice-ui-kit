@@ -34,6 +34,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Modal',
   'ModalFooter',
   'ModalHeader',
+  'MuiPickersUtilsProvider',
   'Overlay',
   'PaginationToolbar',
   'PersonResult',
@@ -63,9 +64,11 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Tag',
   'TextArea',
   'ThemeProvider',
+  'ThemeProvider',
   'TimePicker',
   'Tooltip',
-  'olTheme',
+  'darkTheme',
+  'lightTheme',
 ]);
 
 describe('lattice-ui-kit named exports', () => {
