@@ -9,7 +9,8 @@ import { act } from 'react-dom/test-utils';
 
 import DatePicker from './DatePicker';
 import LatticeLuxonUtils from './utils/LatticeLuxonUtils';
-import { lightTheme } from './styles';
+
+import { lightTheme } from '../../../theme';
 
 const invalidDate = DateTime.local(null);
 const validDate = DateTime.local();

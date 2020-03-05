@@ -20,9 +20,9 @@ import { Title } from './styled/StyledSearchComponents';
 
 import LatticeLuxonUtils from '../../../../datetime/src/components/utils/LatticeLuxonUtils';
 import { DatePicker } from '../../../../datetime';
-import { lightTheme } from '../../../../datetime/src/components/styles';
 import { Card } from '../../../../layout';
 import { Input } from '../../../../text';
+import { lightTheme } from '../../../../theme';
 
 describe('Search', () => {
 
