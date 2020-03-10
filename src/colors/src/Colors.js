@@ -18,9 +18,6 @@ export const NEUTRALS :string[] = [
   '#f0f0f7', // 6
   '#f5f5f8', // 7
   '#f9f9fd', // 8
-  '#2e2e34', // 9
-  '#f0eeee', // 10
-  '#e1e1eb' // 11
 ];
 
 /*
@@ -70,7 +67,6 @@ export const REDS :string[] = [
 export const BLACK :string = '#000000';
 export const BLUE_1 :string = '#455aff';
 export const BLUE_2 :string = '#a3adff';
-export const BLUE_3 :string = '#7199f3';
 export const GREEN_1 :string = '#008f63';
 export const GREEN_2 :string = '#00be84';
 export const GREEN_3 :string = '#00d493';
