@@ -13,7 +13,7 @@ import { Card, CardSegment, CardStack } from '../../layout';
 const expandIcon = <FontAwesomeIcon icon={faChevronDown} size="xs" />;
 
 storiesOf('Expansion', module)
-  .add('default', () => (
+  .addDecorator((Story) => (
     <div>
       <h1>
         Expansion
@@ -33,14 +33,39 @@ storiesOf('Expansion', module)
             </p>
           </CardSegment>
         </Card>
-        <div>
-          <ExpansionPanel>
-            <ExpansionPanelSummary expandIcon={expandIcon}>
-              <Label subtle>Summary</Label>
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails>Details</ExpansionPanelDetails>
-          </ExpansionPanel>
-        </div>
+        <Story />
       </CardStack>
+    </div>
+  ))
+  .add('default', () => (
+    <div>
+      <ExpansionPanel>
+        <ExpansionPanelSummary expandIcon={expandIcon}>
+          <Label subtle>Summary</Label>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>Details</ExpansionPanelDetails>
+      </ExpansionPanel>
+    </div>
+  ))
+  .add('group', () => (
+    <div>
+      <ExpansionPanel>
+        <ExpansionPanelSummary expandIcon={expandIcon}>
+          <Label subtle>Summary #1</Label>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>Details #1</ExpansionPanelDetails>
+      </ExpansionPanel>
+      <ExpansionPanel>
+        <ExpansionPanelSummary expandIcon={expandIcon}>
+          <Label subtle>Summary #2</Label>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>Details #2</ExpansionPanelDetails>
+      </ExpansionPanel>
+      <ExpansionPanel>
+        <ExpansionPanelSummary expandIcon={expandIcon}>
+          <Label subtle>Summary #3</Label>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>Details #3</ExpansionPanelDetails>
+      </ExpansionPanel>
     </div>
   ));
