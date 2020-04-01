@@ -104,6 +104,11 @@ export {
 };
 export { default as Breadcrumbs } from './breadcrumbs';
 export {
+  ExpansionPanel,
+  ExpansionPanelDetails,
+  ExpansionPanelSummary,
+} from './expansion';
+export {
   darkTheme,
   lightTheme
 } from './theme';

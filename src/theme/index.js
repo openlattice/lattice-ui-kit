@@ -75,7 +75,14 @@ const lightTheme = createMuiTheme({
     }
   },
   palette: {
-    primary: deepPurple
+    primary: deepPurple,
+    text: {
+      primary: NEUTRALS[0]
+    },
+    background: {
+      header: NEUTRALS[6]
+    },
+    divider: '#E1E1EB'
   },
   props: {
     MuiFormControl: {
@@ -154,7 +161,10 @@ const darkTheme = createMuiTheme({
   },
   palette: {
     type: 'dark',
-    primary: deepPurple
+    primary: deepPurple,
+    background: {
+      header: '#333'
+    },
   },
   props: {
     MuiFormControl: {
