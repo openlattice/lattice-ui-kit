@@ -36,7 +36,7 @@ storiesOf('Expansion', module)
         <div>
           <ExpansionPanel>
             <ExpansionPanelSummary expandIcon={expandIcon}>
-              <Label subtle>Appearance</Label>
+              <Label subtle>Summary</Label>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>Details</ExpansionPanelDetails>
           </ExpansionPanel>
