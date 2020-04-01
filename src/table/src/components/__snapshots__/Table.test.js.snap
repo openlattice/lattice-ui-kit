@@ -114,7 +114,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
   color: #8e929b;
-  font-size: 11px;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -4545,7 +4545,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
   color: #8e929b;
-  font-size: 11px;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -11808,7 +11808,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
   color: #8e929b;
-  font-size: 11px;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -16209,7 +16209,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
   color: #8e929b;
-  font-size: 11px;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -20609,7 +20609,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
   color: #8e929b;
-  font-size: 11px;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
 }

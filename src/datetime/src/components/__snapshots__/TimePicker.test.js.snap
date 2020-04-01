@@ -115,6 +115,7 @@ exports[`TimePicker render matches snapshot 1`] = `
         "augmentColor": [Function],
         "background": Object {
           "default": "#fafafa",
+          "header": "#f0f0f7",
           "paper": "#fff",
         },
         "common": Object {
@@ -122,7 +123,7 @@ exports[`TimePicker render matches snapshot 1`] = `
           "white": "#fff",
         },
         "contrastThreshold": 3,
-        "divider": "rgba(0, 0, 0, 0.12)",
+        "divider": "#E1E1EB",
         "error": Object {
           "contrastText": "#fff",
           "dark": "#d32f2f",
@@ -187,7 +188,7 @@ exports[`TimePicker render matches snapshot 1`] = `
         "text": Object {
           "disabled": "rgba(0, 0, 0, 0.38)",
           "hint": "rgba(0, 0, 0, 0.38)",
-          "primary": "rgba(0, 0, 0, 0.87)",
+          "primary": "#555e6f",
           "secondary": "rgba(0, 0, 0, 0.54)",
         },
         "tonalOffset": 0.2,

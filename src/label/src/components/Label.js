@@ -1,5 +1,6 @@
 // @flow
 import styled, { css } from 'styled-components';
+
 import { NEUTRALS } from '../../../colors';
 
 type LabelProps = {
@@ -13,7 +14,7 @@ const getSubtleStyles = ({ subtle } :LabelProps) => {
   if (subtle) {
     return css`
       color: ${NEUTRALS[1]};
-      font-size: 11px;
+      font-size: 0.75rem;
       font-weight: 600;
       text-transform: uppercase;
     `;

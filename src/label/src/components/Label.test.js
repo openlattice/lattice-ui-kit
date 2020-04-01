@@ -1,10 +1,11 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
-import { NEUTRALS } from '../../../colors';
-
 import Label from './Label';
+
+import { NEUTRALS } from '../../../colors';
 
 describe('Label', () => {
   describe('snapshots', () => {
@@ -31,7 +32,7 @@ describe('Label', () => {
       const wrapper = mount(<Label subtle />);
       expect(wrapper.find(Label)).toHaveStyleRule('font-weight', '600');
       expect(wrapper.find(Label)).toHaveStyleRule('color', NEUTRALS[1]);
-      expect(wrapper.find(Label)).toHaveStyleRule('font-size', '11px');
+      expect(wrapper.find(Label)).toHaveStyleRule('font-size', '0.75rem');
       expect(wrapper.find(Label)).toHaveStyleRule('text-transform', 'uppercase');
     });
 
