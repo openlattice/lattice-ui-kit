@@ -1,7 +1,8 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
+import { faSearchMinus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearchMinus } from '@fortawesome/pro-regular-svg-icons';
 import { shallow } from 'enzyme';
 
 import IconSplash from './IconSplash';

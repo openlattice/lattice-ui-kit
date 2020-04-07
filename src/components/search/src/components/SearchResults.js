@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import type { ComponentType, Node } from 'react';
 
-import { faSearchMinus } from '@fortawesome/pro-regular-svg-icons';
+import { faSearchMinus } from '@fortawesome/free-solid-svg-icons';
 import { List, Map } from 'immutable';
 
 import IconSplash from './IconSplash';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFingerprint, faDiceD20 } from '@fortawesome/pro-light-svg-icons';
+import { faFingerprint, faDiceD20 } from '@fortawesome/free-solid-svg-icons';
 
 import IconSplash from '../src/components/IconSplash';
 import { Card, CardSegment } from '../../../layout';
