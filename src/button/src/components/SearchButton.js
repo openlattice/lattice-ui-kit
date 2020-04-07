@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-import { faSearch } from '@fortawesome/pro-regular-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import IconButton from './IconButton';

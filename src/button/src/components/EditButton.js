@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-import { faPen } from '@fortawesome/pro-solid-svg-icons';
+import { faPen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import IconButton from './IconButton';

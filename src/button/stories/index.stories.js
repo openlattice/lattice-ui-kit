@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import { faMapMarkerPlus, faSpaceShuttle } from '@fortawesome/pro-solid-svg-icons';
+import { faMapMarkerAlt, faSpaceShuttle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
 import { action } from '@storybook/addon-actions';
@@ -54,7 +54,7 @@ const LightColoredButtonRow = styled(DarkColoredButtonRow)`
   background-color: ${YELLOW_1};
 `;
 
-const NewLocationIcon = <FontAwesomeIcon icon={faMapMarkerPlus} fixedWidth />;
+const NewLocationIcon = <FontAwesomeIcon icon={faMapMarkerAlt} fixedWidth />;
 
 storiesOf('Button', module)
   .add('regular button', () => (

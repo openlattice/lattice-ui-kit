@@ -1,6 +1,6 @@
 import React from 'react';
 import toJson from 'enzyme-to-json';
-import { faSpaceShuttle } from '@fortawesome/pro-solid-svg-icons';
+import { faSpaceShuttle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { mount } from 'enzyme';
 

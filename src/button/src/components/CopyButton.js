@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-import { faCopy } from '@fortawesome/pro-regular-svg-icons';
+import { faCopy } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import IconButton from './IconButton';
