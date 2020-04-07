@@ -4,9 +4,9 @@ import toJson from 'enzyme-to-json';
 import {
   faCheckCircle,
   faExclamationTriangle,
-  faNarwhal,
-  faTimesOctagon
-} from '@fortawesome/pro-solid-svg-icons';
+  faKiwiBird,
+  faTimesCircle,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { mount, shallow } from 'enzyme';
 
@@ -58,7 +58,7 @@ describe('Banner', () => {
         expect(wrapper.prop('mode')).toEqual('danger');
         expect(wrapper.find(Container)).toHaveStyleRule('background-color', RED_1);
         expect(wrapper.find(Container)).toHaveStyleRule('color', WHITE);
-        expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faTimesOctagon);
+        expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faTimesCircle);
       });
 
       test('should render warning mode', () => {
@@ -74,13 +74,13 @@ describe('Banner', () => {
     describe('icon', () => {
 
       test('should render FontAwesome IconDefinition', () => {
-        const wrapper = shallow(<Banner icon={faNarwhal} />);
-        expect(wrapper.find(FontAwesomeIcon).props().icon).toEqual(faNarwhal);
+        const wrapper = shallow(<Banner icon={faKiwiBird} />);
+        expect(wrapper.find(FontAwesomeIcon).props().icon).toEqual(faKiwiBird);
       });
 
       test('fontawesome icon definition should override mode icon', () => {
-        const wrapper = mount(<Banner mode="warning" icon={faNarwhal} />);
-        expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faNarwhal);
+        const wrapper = mount(<Banner mode="warning" icon={faKiwiBird} />);
+        expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faKiwiBird);
       });
 
       test('should invoke icon render prop', () => {
@@ -90,15 +90,15 @@ describe('Banner', () => {
       });
 
       test('should render custom icon', () => {
-        const customIcon = () => <FontAwesomeIcon icon={faNarwhal} />;
+        const customIcon = () => <FontAwesomeIcon icon={faKiwiBird} />;
         const wrapper = mount(<Banner icon={customIcon} />);
-        expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faNarwhal);
+        expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faKiwiBird);
       });
 
       test('custom icon should override mode icon', () => {
-        const customIcon = () => <FontAwesomeIcon icon={faNarwhal} />;
+        const customIcon = () => <FontAwesomeIcon icon={faKiwiBird} />;
         const wrapper = mount(<Banner mode="warning" icon={customIcon} />);
-        expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faNarwhal);
+        expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faKiwiBird);
       });
     });
 

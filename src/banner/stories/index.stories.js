@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faNarwhal } from '@fortawesome/pro-regular-svg-icons';
+import { faKiwiBird } from '@fortawesome/free-solid-svg-icons';
 
 import { Button } from '../../button';
 import Banner from '..';
@@ -84,7 +84,7 @@ storiesOf('Banner', module)
       <Banner isOpen mode="danger">This is an error</Banner>
       <Banner isOpen mode="warning">This is a warning</Banner>
       <Banner isOpen mode="success">This is a success</Banner>
-      <Banner isOpen icon={() => <FontAwesomeIcon icon={faNarwhal} fixedWidth />}>This is a custom icon</Banner>
+      <Banner isOpen icon={() => <FontAwesomeIcon icon={faKiwiBird} fixedWidth />}>This is a custom icon</Banner>
       <br />
       <Container>
         <Banner isOpen mode="default" sticky>This is a sticky banner. Scroll down to observe</Banner>
