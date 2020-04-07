@@ -1,16 +1,17 @@
 // @flow
 
 import React from 'react';
+
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faUsers,
+  faCommentDots,
   faFileAlt,
   faInbox,
-  faUserCircle,
-  faCommentAltLines,
   faSignOut,
-} from '@fortawesome/pro-light-svg-icons';
+  faUserCircle,
+  faUsers,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { PURPLES } from '../../../colors';
 
@@ -59,7 +60,7 @@ const menuValues = [
     text: 'Profile'
   },
   {
-    icon: faCommentAltLines,
+    icon: faCommentDots,
     text: 'Feedback'
   },
   {

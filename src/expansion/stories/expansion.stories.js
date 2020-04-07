@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { faChevronDown } from '@fortawesome/pro-light-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { storiesOf } from '@storybook/react';
 

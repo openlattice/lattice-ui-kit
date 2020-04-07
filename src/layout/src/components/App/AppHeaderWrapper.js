@@ -8,7 +8,7 @@ import type { Node } from 'react';
 import isArray from 'lodash/isArray';
 import isPlainObject from 'lodash/isPlainObject';
 import styled from 'styled-components';
-import { faBars } from '@fortawesome/pro-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { get, isCollection } from 'immutable';
 
@@ -16,6 +16,7 @@ import AppHeaderInnerWrapper from './styled/AppHeaderInnerWrapper';
 import AppHeaderOuterWrapper from './styled/AppHeaderOuterWrapper';
 import AppNavigationWrapper from './AppNavigationWrapper';
 import NavigationWrapper, { APP_NAV_ROOT } from './styled/NavigationWrapper';
+
 import * as Colors from '../../../../colors';
 import { Button } from '../../../../button';
 import { Select } from '../../../../select';
