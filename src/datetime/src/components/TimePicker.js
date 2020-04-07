@@ -3,7 +3,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 
 import isFunction from 'lodash/isFunction';
-import { faClock } from '@fortawesome/pro-regular-svg-icons';
+import { faClock } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { KeyboardTimePicker } from '@material-ui/pickers';
 import { DateTime } from 'luxon';
