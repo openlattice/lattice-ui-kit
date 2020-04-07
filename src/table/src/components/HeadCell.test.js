@@ -1,9 +1,11 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+
 import toJson from 'enzyme-to-json';
-import { faSort, faSortUp, faSortDown } from '@fortawesome/pro-duotone-svg-icons';
+import { faSort, faSortDown, faSortUp } from '@fortawesome/free-solid-svg-icons';
+import { shallow } from 'enzyme';
 
 import HeadCell from './HeadCell';
+
 import { Cell } from '../..';
 
 describe('HeadCell', () => {

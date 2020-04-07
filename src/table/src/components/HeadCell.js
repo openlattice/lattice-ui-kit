@@ -1,10 +1,12 @@
 // @flow
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { Node } from 'react';
-import { faSort, faSortUp, faSortDown } from '@fortawesome/pro-duotone-svg-icons';
+
+import { faSort, faSortDown, faSortUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Cell } from './styled';
+
 import type { SortOrder } from '../../types';
 
 type Props = {
@@ -26,9 +28,9 @@ const HeadCell = (props :Props) => {
     sortable,
   } = props;
 
-  let icon = faSort;
-  if (order === 'asc') icon = faSortUp;
-  if (order === 'desc') icon = faSortDown;
+  let sortIcon;
+  if (order === 'asc') sortIcon = faSortUp;
+  if (order === 'desc') sortIcon = faSortDown;
 
   return (
     <Cell
@@ -37,7 +39,14 @@ const HeadCell = (props :Props) => {
         className={className}
         onClick={onClick}>
       {children}
-      { (sortable) && <span><FontAwesomeIcon icon={icon} fixedWidth /></span> }
+      {
+        (sortable) && (
+          <span className="fa-layers fa-fw">
+            <FontAwesomeIcon icon={faSort} fixedWidth style={{ opacity: '0.4' }} />
+            { (sortIcon) && <FontAwesomeIcon icon={sortIcon} fixedWidth /> }
+          </span>
+        )
+      }
     </Cell>
   );
 
