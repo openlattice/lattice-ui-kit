@@ -2,13 +2,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faNarwhal } from '@fortawesome/pro-regular-svg-icons';
+import { faKiwiBird } from '@fortawesome/free-solid-svg-icons';
 
 import { Select, Creatable, CheckboxSelect } from '../index';
 import { paragraph, stateOptions, REACT_SELECT_USAGE } from './constants';
 import { genRealWordSelectOptions } from '../../utils/testing/MockUtils';
 
-const customIcon = () => <FontAwesomeIcon icon={faNarwhal} spin />;
+const customIcon = () => <FontAwesomeIcon icon={faKiwiBird} spin />;
 
 const stressTestWordOptions = genRealWordSelectOptions(paragraph);
 
@@ -110,7 +110,7 @@ storiesOf('Select', module)
       <h1>Custom Dropdown Indicator</h1>
       <h2>FontAwesome IconDefinition</h2>
       <Select
-          icon={faNarwhal}
+          icon={faKiwiBird}
           options={stateOptions}
           onChange={action('Single select changed')} />
       <h2>Custom Icon</h2>

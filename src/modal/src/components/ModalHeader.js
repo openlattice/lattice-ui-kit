@@ -7,11 +7,12 @@ import type { ComponentType, Element } from 'react';
 
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { faTimes } from '@fortawesome/pro-light-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { NEUTRALS } from '../../../colors';
 import { HeaderSection } from './styled/StyledModalComponents';
+
+import { NEUTRALS } from '../../../colors';
 
 const ModalTitle = styled.h1`
   color: ${NEUTRALS[0]};

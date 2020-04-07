@@ -1,10 +1,12 @@
 // @flow
 import React from 'react';
+
+import { faCheck, faCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/pro-solid-svg-icons';
-import { faCheck } from '@fortawesome/pro-regular-svg-icons';
+
 import { IconLayer, StepIndex } from './styled';
-import { PURPLES, NEUTRALS, WHITE } from '../../../colors';
+
+import { NEUTRALS, PURPLES, WHITE } from '../../../colors';
 
 type Props = {
   active :boolean;

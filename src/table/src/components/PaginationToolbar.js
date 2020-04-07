@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import { faChevronLeft, faChevronRight } from '@fortawesome/pro-regular-svg-icons';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { getRowsPerPageOptions } from './TableUtils';

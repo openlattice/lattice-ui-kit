@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import { faInfoCircle } from '@fortawesome/pro-regular-svg-icons';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { storiesOf } from '@storybook/react';
 

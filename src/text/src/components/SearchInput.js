@@ -5,7 +5,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import { faSearch } from '@fortawesome/pro-regular-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import inputStyles from './styled/inputStyles';
