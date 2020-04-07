@@ -3,7 +3,7 @@
 import React from 'react';
 import type { Node } from 'react';
 
-import { faChevronRight } from '@fortawesome/pro-regular-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Breadcrumbs as MUIBreadcrumbs } from '@material-ui/core';
 

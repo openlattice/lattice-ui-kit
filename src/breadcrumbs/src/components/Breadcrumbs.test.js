@@ -1,7 +1,7 @@
 import React from 'react';
 
 import toJson from 'enzyme-to-json';
-import { faChevronRight } from '@fortawesome/pro-regular-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { mount } from 'enzyme';
 
