@@ -1,63 +1,56 @@
-// @flow
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpinnerThird, faCircle } from '@fortawesome/pro-light-svg-icons';
+/*
+ * @flow
+ */
 
-import Rotate from './styled/Rotate';
-import { NEUTRALS } from '../../../colors';
+import React from 'react';
 
 type Props = {
-  /** color of spinner circle */
-  bottomColor ? :string;
-  /** set align-self to center or flex-start */
-  centered ? :boolean;
-  /** React component className */
-  className ? :string;
-  /** animation duration */
-  duration ? :string;
-  /** FontAwesomeIcon size */
-  size ? :string;
-  /** color of spinner-third */
-  topColor ? :string;
+  color :string;
+  size :number;
 };
 
-const Spinner = (props :Props) => {
-  const {
-    bottomColor,
-    centered,
-    className,
-    duration,
-    size,
-    topColor,
-  } = props;
+/*
+ * Inspiration:
+ * https://glennmccomb.com/articles/building-a-pure-css-animated-svg-spinner
+ */
 
-  // https://github.com/FortAwesome/react-fontawesome#advanced
-  // $FlowFixMe trying to coerce undefined but is provided by defaultProps
-  const defaultClassName = `fa-layers fa-fw fa-${size}`;
-  const styledClassName = className ? `${defaultClassName} ${className}` : defaultClassName;
-
-  return (
-    <Rotate className={styledClassName} duration={duration} centered={centered}>
-      <FontAwesomeIcon
-          id="spinner-circle"
-          color={bottomColor}
-          icon={faCircle} />
-      <FontAwesomeIcon
-          id="spinner-third"
-          color={topColor}
-          icon={faSpinnerThird} />
-    </Rotate>
-  );
-};
-
+const Spinner = ({ color, size } :Props) => (
+  <svg
+      height={`${size}px`}
+      preserveAspectRatio="xMidYMid"
+      style={{ display: 'block', shapeRendering: 'auto' }}
+      viewBox="0 0 100 100"
+      width={`${size}px`}
+      xmlns="http://www.w3.org/2000/svg">
+    <circle
+        cx="50"
+        cy="50"
+        fill="none"
+        r="30"
+        stroke={color}
+        strokeLinecap="round"
+        strokeWidth="5"
+        transform="rotate(180 50 50)">
+      <animateTransform
+          attributeName="transform"
+          dur="1.3s"
+          keyTimes="0;0.5;1"
+          repeatCount="indefinite"
+          type="rotate"
+          values="0 50 50;180 50 50;720 50 50" />
+      <animate
+          attributeName="stroke-dasharray"
+          dur="1.3s"
+          keyTimes="0;0.5;1"
+          repeatCount="indefinite"
+          values="20 180;150 40;20 180" />
+    </circle>
+  </svg>
+);
 
 Spinner.defaultProps = {
-  bottomColor: NEUTRALS[3],
-  centered: true,
-  className: undefined,
-  duration: undefined,
-  size: '1x',
-  topColor: NEUTRALS[0],
+  color: '#4c566a',
+  size: 40,
 };
 
 export default Spinner;
