@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import type { ComponentType } from 'react';
 
-import { faCheckCircle, faExclamationTriangle, faTimesOctagon } from '@fortawesome/pro-solid-svg-icons';
+import { faCheckCircle, faExclamationTriangle, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { IconDefinition } from '@fortawesome/react-fontawesome';
 
@@ -35,7 +35,7 @@ class Banner extends Component<Props> {
     const { icon } = this.props;
 
     const modeIcon = getStyleVariation('mode', {
-      danger: faTimesOctagon,
+      danger: faTimesCircle,
       success: faCheckCircle,
       warning: faExclamationTriangle
     })(this.props);
