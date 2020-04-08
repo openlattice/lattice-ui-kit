@@ -7,7 +7,7 @@ import {
   faCommentDots,
   faFileAlt,
   faInbox,
-  faSignOut,
+  faSignOutAlt,
   faUserCircle,
   faUsers,
 } from '@fortawesome/free-solid-svg-icons';
@@ -64,7 +64,7 @@ const menuValues = [
     text: 'Feedback'
   },
   {
-    icon: faSignOut,
+    icon: faSignOutAlt,
     text: 'Sign Out'
   }
 ];
