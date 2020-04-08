@@ -18,7 +18,7 @@ const Spinner = ({ color, size } :Props) => (
   <svg
       height={`${size}px`}
       preserveAspectRatio="xMidYMid"
-      style={{ display: 'block', shapeRendering: 'auto' }}
+      style={{ display: 'block', shapeRendering: 'auto', margin: '0 auto' }}
       viewBox="0 0 100 100"
       width={`${size}px`}
       xmlns="http://www.w3.org/2000/svg">

@@ -47,7 +47,7 @@ class SearchResults extends Component<Props> {
       results,
     } = this.props;
 
-    if (isLoading) return <Spinner size="2x" />;
+    if (isLoading) return <Spinner />;
 
     if (List.isList(results) && results.count() && ResultComponent) {
       return results.map((result :Map, index :number) => (

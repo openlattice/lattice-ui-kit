@@ -52,7 +52,7 @@ const TableBody = (props :Props) => {
           <Cell colSpan={headers.length} cellStyle={{ height: emptyHeight, textAlign: 'center' }}>
             {
               isLoading && (
-                <Spinner size="2x" />
+                <Spinner />
               )
             }
           </Cell>
