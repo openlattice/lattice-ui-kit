@@ -93,14 +93,14 @@ exports[`PlusButton icon with text should match snapshot 1`] = `
         icon={
           Object {
             "icon": Array [
-              384,
+              448,
               512,
               Array [],
               "f067",
-              "M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z",
+              "M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z",
             ],
             "iconName": "plus",
-            "prefix": "far",
+            "prefix": "fas",
           }
         }
         inverse={false}
@@ -286,14 +286,14 @@ exports[`PlusButton icon with text should match snapshot 1`] = `
                                 icon={
                                   Object {
                                     "icon": Array [
-                                      384,
+                                      448,
                                       512,
                                       Array [],
                                       "f067",
-                                      "M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z",
+                                      "M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z",
                                     ],
                                     "iconName": "plus",
-                                    "prefix": "far",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -311,17 +311,17 @@ exports[`PlusButton icon with text should match snapshot 1`] = `
                               >
                                 <svg
                                   aria-hidden="true"
-                                  className="svg-inline--fa fa-plus fa-w-12 "
+                                  className="svg-inline--fa fa-plus fa-w-14 "
                                   data-icon="plus"
-                                  data-prefix="far"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
                                   style={Object {}}
-                                  viewBox="0 0 384 512"
+                                  viewBox="0 0 448 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
                                   <path
-                                    d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                                    d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
                                     fill="currentColor"
                                     style={Object {}}
                                   />
@@ -434,14 +434,14 @@ exports[`PlusButton icon without text should match snapshot 1`] = `
         icon={
           Object {
             "icon": Array [
-              384,
+              448,
               512,
               Array [],
               "f067",
-              "M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z",
+              "M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z",
             ],
             "iconName": "plus",
-            "prefix": "far",
+            "prefix": "fas",
           }
         }
         inverse={false}
@@ -598,14 +598,14 @@ exports[`PlusButton icon without text should match snapshot 1`] = `
                           icon={
                             Object {
                               "icon": Array [
-                                384,
+                                448,
                                 512,
                                 Array [],
                                 "f067",
-                                "M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z",
+                                "M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z",
                               ],
                               "iconName": "plus",
-                              "prefix": "far",
+                              "prefix": "fas",
                             }
                           }
                           inverse={false}
@@ -623,17 +623,17 @@ exports[`PlusButton icon without text should match snapshot 1`] = `
                         >
                           <svg
                             aria-hidden="true"
-                            className="svg-inline--fa fa-plus fa-w-12 "
+                            className="svg-inline--fa fa-plus fa-w-14 "
                             data-icon="plus"
-                            data-prefix="far"
+                            data-prefix="fas"
                             focusable="false"
                             role="img"
                             style={Object {}}
-                            viewBox="0 0 384 512"
+                            viewBox="0 0 448 512"
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <path
-                              d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                              d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
                               fill="currentColor"
                               style={Object {}}
                             />

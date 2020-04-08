@@ -15,10 +15,8 @@ exports[`TableBody render should render spinner when isLoading=true 1`] = `
       colSpan={5}
     >
       <Spinner
-        bottomColor="#cdd1db"
-        centered={true}
-        size="2x"
-        topColor="#555e6f"
+        color="#4c566a"
+        size={40}
       />
     </Cell>
   </styled__StyledRow>

@@ -13,7 +13,9 @@ exports[`HeadCell props order should render faSort if sortable but without order
   as="th"
   cellStyle={Object {}}
 >
-  <span>
+  <span
+    className="fa-layers fa-fw"
+  >
     <FontAwesomeIcon
       border={false}
       className=""
@@ -26,13 +28,10 @@ exports[`HeadCell props order should render faSort if sortable but without order
             512,
             Array [],
             "f0dc",
-            Array [
-              "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-              "",
-            ],
+            "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
           ],
           "iconName": "sort",
-          "prefix": "fad",
+          "prefix": "fas",
         }
       }
       inverse={false}
@@ -43,6 +42,11 @@ exports[`HeadCell props order should render faSort if sortable but without order
       rotation={null}
       size={null}
       spin={false}
+      style={
+        Object {
+          "opacity": "0.4",
+        }
+      }
       swapOpacity={false}
       symbol={false}
       title=""
@@ -57,7 +61,45 @@ exports[`HeadCell props order should render faSortDown if sortable and order="de
   as="th"
   cellStyle={Object {}}
 >
-  <span>
+  <span
+    className="fa-layers fa-fw"
+  >
+    <FontAwesomeIcon
+      border={false}
+      className=""
+      fixedWidth={true}
+      flip={null}
+      icon={
+        Object {
+          "icon": Array [
+            320,
+            512,
+            Array [],
+            "f0dc",
+            "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
+          ],
+          "iconName": "sort",
+          "prefix": "fas",
+        }
+      }
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      style={
+        Object {
+          "opacity": "0.4",
+        }
+      }
+      swapOpacity={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
     <FontAwesomeIcon
       border={false}
       className=""
@@ -70,13 +112,10 @@ exports[`HeadCell props order should render faSortDown if sortable and order="de
             512,
             Array [],
             "f0dd",
-            Array [
-              "M279.07 224.05h-238c-21.4 0-32.1-25.9-17-41l119-119a23.9 23.9 0 0 1 33.8-.1l.1.1 119.1 119c15.07 15.05 4.4 41-17 41z",
-              "M296.07 329.05L177 448.05a23.9 23.9 0 0 1-33.8.1l-.1-.1-119-119c-15.1-15.1-4.4-41 17-41h238c21.37 0 32.04 25.95 16.97 41z",
-            ],
+            "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z",
           ],
           "iconName": "sort-down",
-          "prefix": "fad",
+          "prefix": "fas",
         }
       }
       inverse={false}
@@ -101,7 +140,45 @@ exports[`HeadCell props order should render faSortUp if sortable and order="asc"
   as="th"
   cellStyle={Object {}}
 >
-  <span>
+  <span
+    className="fa-layers fa-fw"
+  >
+    <FontAwesomeIcon
+      border={false}
+      className=""
+      fixedWidth={true}
+      flip={null}
+      icon={
+        Object {
+          "icon": Array [
+            320,
+            512,
+            Array [],
+            "f0dc",
+            "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
+          ],
+          "iconName": "sort",
+          "prefix": "fas",
+        }
+      }
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      style={
+        Object {
+          "opacity": "0.4",
+        }
+      }
+      swapOpacity={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
     <FontAwesomeIcon
       border={false}
       className=""
@@ -114,13 +191,10 @@ exports[`HeadCell props order should render faSortUp if sortable and order="asc"
             512,
             Array [],
             "f0de",
-            Array [
-              "M41.05 288.05h238c21.4 0 32.1 25.9 17 41l-119 119a23.9 23.9 0 0 1-33.8.1l-.1-.1-119.1-119c-15.05-15.05-4.4-41 17-41z",
-              "M24.05 183.05l119.1-119A23.9 23.9 0 0 1 177 64a.94.94 0 0 1 .1.1l119 119c15.1 15.1 4.4 41-17 41h-238c-21.45-.05-32.1-25.95-17.05-41.05z",
-            ],
+            "M279 224H41c-21.4 0-32.1-25.9-17-41L143 64c9.4-9.4 24.6-9.4 33.9 0l119 119c15.2 15.1 4.5 41-16.9 41z",
           ],
           "iconName": "sort-up",
-          "prefix": "fad",
+          "prefix": "fas",
         }
       }
       inverse={false}

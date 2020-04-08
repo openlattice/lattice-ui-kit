@@ -398,14 +398,14 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f053",
-                        "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                        "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                       ],
                       "iconName": "chevron-left",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -568,14 +568,14 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f053",
-                                          "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                                          "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                                         ],
                                         "iconName": "chevron-left",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -593,17 +593,17 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-left fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-left fa-w-10 fa-fw "
                                       data-icon="chevron-left"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
+                                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -631,14 +631,14 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f054",
-                        "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                        "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                       ],
                       "iconName": "chevron-right",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -801,14 +801,14 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f054",
-                                          "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                                          "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                                         ],
                                         "iconName": "chevron-right",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -826,17 +826,17 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-right fa-w-10 fa-fw "
                                       data-icon="chevron-right"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -1091,7 +1091,9 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                             onClick={[Function]}
                           >
                             Subject Name
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -1104,13 +1106,10 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -1121,6 +1120,11 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -1130,30 +1134,22 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -1243,7 +1239,9 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                             onClick={[Function]}
                           >
                             Date of Birth
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -1256,13 +1254,10 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -1273,6 +1268,11 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -1282,30 +1282,22 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -1395,7 +1387,9 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                             onClick={[Function]}
                           >
                             Manager
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -1408,13 +1402,10 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -1425,6 +1416,11 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -1434,30 +1430,22 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -1547,7 +1535,9 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                             onClick={[Function]}
                           >
                             Last Updated
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -1560,13 +1550,10 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -1577,6 +1564,11 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -1586,30 +1578,22 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -3962,14 +3946,14 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f053",
-                        "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                        "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                       ],
                       "iconName": "chevron-left",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -4132,14 +4116,14 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f053",
-                                          "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                                          "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                                         ],
                                         "iconName": "chevron-left",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -4157,17 +4141,17 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-left fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-left fa-w-10 fa-fw "
                                       data-icon="chevron-left"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
+                                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -4195,14 +4179,14 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f054",
-                        "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                        "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                       ],
                       "iconName": "chevron-right",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -4365,14 +4349,14 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f054",
-                                          "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                                          "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                                         ],
                                         "iconName": "chevron-right",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -4390,17 +4374,17 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-right fa-w-10 fa-fw "
                                       data-icon="chevron-right"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -6554,14 +6538,14 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f053",
-                        "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                        "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                       ],
                       "iconName": "chevron-left",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -6724,14 +6708,14 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f053",
-                                          "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                                          "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                                         ],
                                         "iconName": "chevron-left",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -6749,17 +6733,17 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-left fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-left fa-w-10 fa-fw "
                                       data-icon="chevron-left"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
+                                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -6787,14 +6771,14 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f054",
-                        "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                        "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                       ],
                       "iconName": "chevron-right",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -6957,14 +6941,14 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f054",
-                                          "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                                          "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                                         ],
                                         "iconName": "chevron-right",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -6982,17 +6966,17 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-right fa-w-10 fa-fw "
                                       data-icon="chevron-right"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -7247,7 +7231,9 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             onClick={[Function]}
                           >
                             Subject Name
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -7260,13 +7246,10 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -7277,6 +7260,11 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -7286,30 +7274,22 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -7399,7 +7379,9 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             onClick={[Function]}
                           >
                             Date of Birth
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -7412,13 +7394,10 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -7429,6 +7408,11 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -7438,30 +7422,22 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -7551,7 +7527,9 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             onClick={[Function]}
                           >
                             Manager
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -7564,13 +7542,10 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -7581,6 +7556,11 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -7590,30 +7570,22 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -7703,7 +7675,9 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             onClick={[Function]}
                           >
                             Last Updated
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -7716,13 +7690,10 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -7733,6 +7704,11 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -7742,30 +7718,22 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -11256,14 +11224,14 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f053",
-                        "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                        "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                       ],
                       "iconName": "chevron-left",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -11426,14 +11394,14 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f053",
-                                          "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                                          "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                                         ],
                                         "iconName": "chevron-left",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -11451,17 +11419,17 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-left fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-left fa-w-10 fa-fw "
                                       data-icon="chevron-left"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
+                                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -11489,14 +11457,14 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f054",
-                        "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                        "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                       ],
                       "iconName": "chevron-right",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -11659,14 +11627,14 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f054",
-                                          "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                                          "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                                         ],
                                         "iconName": "chevron-right",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -11684,17 +11652,17 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-right fa-w-10 fa-fw "
                                       data-icon="chevron-right"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -12068,14 +12036,14 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f053",
-                        "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                        "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                       ],
                       "iconName": "chevron-left",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -12238,14 +12206,14 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f053",
-                                          "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                                          "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                                         ],
                                         "iconName": "chevron-left",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -12263,17 +12231,17 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-left fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-left fa-w-10 fa-fw "
                                       data-icon="chevron-left"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
+                                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -12301,14 +12269,14 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f054",
-                        "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                        "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                       ],
                       "iconName": "chevron-right",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -12471,14 +12439,14 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f054",
-                                          "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                                          "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                                         ],
                                         "iconName": "chevron-right",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -12496,17 +12464,17 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-right fa-w-10 fa-fw "
                                       data-icon="chevron-right"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -12761,7 +12729,9 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                             onClick={[Function]}
                           >
                             Subject Name
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -12774,13 +12744,10 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -12791,6 +12758,11 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -12800,30 +12772,22 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -12913,7 +12877,9 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                             onClick={[Function]}
                           >
                             Date of Birth
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -12926,13 +12892,10 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -12943,6 +12906,11 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -12952,30 +12920,22 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -13065,7 +13025,9 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                             onClick={[Function]}
                           >
                             Manager
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -13078,13 +13040,10 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -13095,6 +13054,11 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -13104,30 +13068,22 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -13217,7 +13173,9 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                             onClick={[Function]}
                           >
                             Last Updated
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -13230,13 +13188,10 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -13247,6 +13202,11 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -13256,30 +13216,22 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -15632,14 +15584,14 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f053",
-                        "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                        "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                       ],
                       "iconName": "chevron-left",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -15802,14 +15754,14 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f053",
-                                          "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                                          "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                                         ],
                                         "iconName": "chevron-left",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -15827,17 +15779,17 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-left fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-left fa-w-10 fa-fw "
                                       data-icon="chevron-left"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
+                                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -15865,14 +15817,14 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f054",
-                        "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                        "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                       ],
                       "iconName": "chevron-right",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -16035,14 +15987,14 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f054",
-                                          "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                                          "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                                         ],
                                         "iconName": "chevron-right",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -16060,17 +16012,17 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-right fa-w-10 fa-fw "
                                       data-icon="chevron-right"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -16493,14 +16445,14 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f053",
-                        "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                        "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                       ],
                       "iconName": "chevron-left",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -16663,14 +16615,14 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f053",
-                                          "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                                          "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                                         ],
                                         "iconName": "chevron-left",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -16688,17 +16640,17 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-left fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-left fa-w-10 fa-fw "
                                       data-icon="chevron-left"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
+                                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -16726,14 +16678,14 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f054",
-                        "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                        "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                       ],
                       "iconName": "chevron-right",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -16896,14 +16848,14 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f054",
-                                          "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                                          "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                                         ],
                                         "iconName": "chevron-right",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -16921,17 +16873,17 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-right fa-w-10 fa-fw "
                                       data-icon="chevron-right"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -17186,7 +17138,9 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                             onClick={[Function]}
                           >
                             Subject Name
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -17199,13 +17153,10 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -17216,6 +17167,11 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -17225,30 +17181,22 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -17338,7 +17286,9 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                             onClick={[Function]}
                           >
                             Date of Birth
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -17351,13 +17301,10 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -17368,6 +17315,11 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -17377,30 +17329,22 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -17490,7 +17434,9 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                             onClick={[Function]}
                           >
                             Manager
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -17503,13 +17449,10 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -17520,6 +17463,11 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -17529,30 +17477,22 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -17642,7 +17582,9 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                             onClick={[Function]}
                           >
                             Last Updated
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -17655,13 +17597,10 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -17672,6 +17611,11 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -17681,30 +17625,22 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -20057,14 +19993,14 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f053",
-                        "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                        "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                       ],
                       "iconName": "chevron-left",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -20227,14 +20163,14 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f053",
-                                          "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                                          "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                                         ],
                                         "iconName": "chevron-left",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -20252,17 +20188,17 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-left fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-left fa-w-10 fa-fw "
                                       data-icon="chevron-left"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
+                                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -20290,14 +20226,14 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f054",
-                        "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                        "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                       ],
                       "iconName": "chevron-right",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -20460,14 +20396,14 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f054",
-                                          "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                                          "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                                         ],
                                         "iconName": "chevron-right",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -20485,17 +20421,17 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-right fa-w-10 fa-fw "
                                       data-icon="chevron-right"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -20869,14 +20805,14 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f053",
-                        "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                        "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                       ],
                       "iconName": "chevron-left",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -21039,14 +20975,14 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f053",
-                                          "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                                          "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                                         ],
                                         "iconName": "chevron-left",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -21064,17 +21000,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-left fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-left fa-w-10 fa-fw "
                                       data-icon="chevron-left"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
+                                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -21102,14 +21038,14 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f054",
-                        "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                        "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                       ],
                       "iconName": "chevron-right",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -21272,14 +21208,14 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f054",
-                                          "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                                          "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                                         ],
                                         "iconName": "chevron-right",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -21297,17 +21233,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-right fa-w-10 fa-fw "
                                       data-icon="chevron-right"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -21562,7 +21498,9 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             onClick={[Function]}
                           >
                             Subject Name
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -21575,13 +21513,10 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -21592,6 +21527,11 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -21601,30 +21541,22 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -21714,7 +21646,9 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             onClick={[Function]}
                           >
                             Date of Birth
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -21727,13 +21661,10 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -21744,6 +21675,11 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -21753,30 +21689,22 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -21866,7 +21794,9 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             onClick={[Function]}
                           >
                             Manager
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -21879,13 +21809,10 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -21896,6 +21823,11 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -21905,30 +21837,22 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -22018,7 +21942,9 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             onClick={[Function]}
                           >
                             Last Updated
-                            <span>
+                            <span
+                              className="fa-layers fa-fw"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -22031,13 +21957,10 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                       512,
                                       Array [],
                                       "f0dc",
-                                      Array [
-                                        "M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z",
-                                        "",
-                                      ],
+                                      "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z",
                                     ],
                                     "iconName": "sort",
-                                    "prefix": "fad",
+                                    "prefix": "fas",
                                   }
                                 }
                                 inverse={false}
@@ -22048,6 +21971,11 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                 rotation={null}
                                 size={null}
                                 spin={false}
+                                style={
+                                  Object {
+                                    "opacity": "0.4",
+                                  }
+                                }
                                 swapOpacity={false}
                                 symbol={false}
                                 title=""
@@ -22057,30 +21985,22 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                   aria-hidden="true"
                                   className="svg-inline--fa fa-sort fa-w-10 fa-fw "
                                   data-icon="sort"
-                                  data-prefix="fad"
+                                  data-prefix="fas"
                                   focusable="false"
                                   role="img"
-                                  style={Object {}}
+                                  style={
+                                    Object {
+                                      "opacity": "0.4",
+                                    }
+                                  }
                                   viewBox="0 0 320 512"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
-                                  <g
-                                    className="fa-group"
+                                  <path
+                                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                                    fill="currentColor"
                                     style={Object {}}
-                                  >
-                                    <path
-                                      className="fa-secondary"
-                                      d="M279.05 288.05h-238c-21.4 0-32.07 25.95-17 41l119.1 119 .1.1a23.9 23.9 0 0 0 33.8-.1l119-119c15.1-15.05 4.4-41-17-41zm-238-64h238c21.4 0 32.1-25.9 17-41l-119-119a.94.94 0 0 0-.1-.1 23.9 23.9 0 0 0-33.8.1l-119.1 119c-15.05 15.1-4.4 41 17 41z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                    <path
-                                      className="fa-primary"
-                                      d=""
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </g>
+                                  />
                                 </svg>
                               </FontAwesomeIcon>
                             </span>
@@ -24433,14 +24353,14 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f053",
-                        "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                        "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                       ],
                       "iconName": "chevron-left",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -24603,14 +24523,14 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f053",
-                                          "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                                          "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
                                         ],
                                         "iconName": "chevron-left",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -24628,17 +24548,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-left fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-left fa-w-10 fa-fw "
                                       data-icon="chevron-left"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
+                                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />
@@ -24666,14 +24586,14 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   icon={
                     Object {
                       "icon": Array [
-                        256,
+                        320,
                         512,
                         Array [],
                         "f054",
-                        "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                        "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                       ],
                       "iconName": "chevron-right",
-                      "prefix": "far",
+                      "prefix": "fas",
                     }
                   }
                   inverse={false}
@@ -24836,14 +24756,14 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                     icon={
                                       Object {
                                         "icon": Array [
-                                          256,
+                                          320,
                                           512,
                                           Array [],
                                           "f054",
-                                          "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                                          "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z",
                                         ],
                                         "iconName": "chevron-right",
-                                        "prefix": "far",
+                                        "prefix": "fas",
                                       }
                                     }
                                     inverse={false}
@@ -24861,17 +24781,17 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                                   >
                                     <svg
                                       aria-hidden="true"
-                                      className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                                      className="svg-inline--fa fa-chevron-right fa-w-10 fa-fw "
                                       data-icon="chevron-right"
-                                      data-prefix="far"
+                                      data-prefix="fas"
                                       focusable="false"
                                       role="img"
                                       style={Object {}}
-                                      viewBox="0 0 256 512"
+                                      viewBox="0 0 320 512"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <path
-                                        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
                                         fill="currentColor"
                                         style={Object {}}
                                       />

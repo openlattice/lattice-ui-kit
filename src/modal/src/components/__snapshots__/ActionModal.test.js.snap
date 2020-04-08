@@ -735,16 +735,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                             >
                               <svg
                                 aria-hidden="true"
-                                class="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                class="svg-inline--fa fa-times fa-w-11 fa-lg "
                                 data-icon="times"
-                                data-prefix="fal"
+                                data-prefix="fas"
                                 focusable="false"
                                 role="img"
-                                viewBox="0 0 320 512"
+                                viewBox="0 0 352 512"
                                 xmlns="http://www.w3.org/2000/svg"
                               >
                                 <path
-                                  d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                   fill="currentColor"
                                 />
                               </svg>
@@ -1085,14 +1085,14 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                 icon={
                                                                   Object {
                                                                     "icon": Array [
-                                                                      320,
+                                                                      352,
                                                                       512,
                                                                       Array [],
                                                                       "f00d",
-                                                                      "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                                                                      "M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z",
                                                                     ],
                                                                     "iconName": "times",
-                                                                    "prefix": "fal",
+                                                                    "prefix": "fas",
                                                                   }
                                                                 }
                                                                 inverse={false}
@@ -1110,17 +1110,17 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                               >
                                                                 <svg
                                                                   aria-hidden="true"
-                                                                  className="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                                                  className="svg-inline--fa fa-times fa-w-11 fa-lg "
                                                                   data-icon="times"
-                                                                  data-prefix="fal"
+                                                                  data-prefix="fas"
                                                                   focusable="false"
                                                                   role="img"
                                                                   style={Object {}}
-                                                                  viewBox="0 0 320 512"
+                                                                  viewBox="0 0 352 512"
                                                                   xmlns="http://www.w3.org/2000/svg"
                                                                 >
                                                                   <path
-                                                                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                                                     fill="currentColor"
                                                                     style={Object {}}
                                                                   />
@@ -2156,16 +2156,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                             >
                               <svg
                                 aria-hidden="true"
-                                class="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                class="svg-inline--fa fa-times fa-w-11 fa-lg "
                                 data-icon="times"
-                                data-prefix="fal"
+                                data-prefix="fas"
                                 focusable="false"
                                 role="img"
-                                viewBox="0 0 320 512"
+                                viewBox="0 0 352 512"
                                 xmlns="http://www.w3.org/2000/svg"
                               >
                                 <path
-                                  d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                   fill="currentColor"
                                 />
                               </svg>
@@ -2506,14 +2506,14 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                 icon={
                                                                   Object {
                                                                     "icon": Array [
-                                                                      320,
+                                                                      352,
                                                                       512,
                                                                       Array [],
                                                                       "f00d",
-                                                                      "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                                                                      "M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z",
                                                                     ],
                                                                     "iconName": "times",
-                                                                    "prefix": "fal",
+                                                                    "prefix": "fas",
                                                                   }
                                                                 }
                                                                 inverse={false}
@@ -2531,17 +2531,17 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                               >
                                                                 <svg
                                                                   aria-hidden="true"
-                                                                  className="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                                                  className="svg-inline--fa fa-times fa-w-11 fa-lg "
                                                                   data-icon="times"
-                                                                  data-prefix="fal"
+                                                                  data-prefix="fas"
                                                                   focusable="false"
                                                                   role="img"
                                                                   style={Object {}}
-                                                                  viewBox="0 0 320 512"
+                                                                  viewBox="0 0 352 512"
                                                                   xmlns="http://www.w3.org/2000/svg"
                                                                 >
                                                                   <path
-                                                                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                                                     fill="currentColor"
                                                                     style={Object {}}
                                                                   />
@@ -3057,14 +3057,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   justify-content: space-between;
 }
 
-.c13 {
-  -webkit-animation: fa-spin 0.75s infinite linear;
-  animation: fa-spin 0.75s infinite linear;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 .c12 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3078,7 +3070,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   transform: translate(-50%,-50%);
 }
 
-.c17 {
+.c12 svg {
+  height: 100%;
+  width: 100%;
+}
+
+.c16 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -3088,7 +3085,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   white-space: nowrap;
 }
 
-.c14 {
+.c13 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -3164,7 +3161,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   box-shadow: #410ab5 0 0 0 2px;
 }
 
-.c16 {
+.c15 {
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
@@ -3185,7 +3182,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   color: #555e6f;
 }
 
-.c16:hover {
+.c15:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3193,7 +3190,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   border-color: #eaeaf0;
 }
 
-.c16:active {
+.c15:active {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #dcdce7;
@@ -3201,7 +3198,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   color: #555e6f;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3210,7 +3207,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   color: #b6bbc7;
 }
 
-.c16:focus {
+.c15:focus {
   box-shadow: #dcdce7 0 0 0 2px;
 }
 
@@ -3221,7 +3218,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   flex: none;
 }
 
-.c15 {
+.c14 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -3500,14 +3497,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   justify-content: space-between;
 }
 
-.c13 {
-  -webkit-animation: fa-spin 0.75s infinite linear;
-  animation: fa-spin 0.75s infinite linear;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 .c12 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3521,7 +3510,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   transform: translate(-50%,-50%);
 }
 
-.c17 {
+.c12 svg {
+  height: 100%;
+  width: 100%;
+}
+
+.c16 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -3531,7 +3525,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   white-space: nowrap;
 }
 
-.c14 {
+.c13 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -3607,7 +3601,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   box-shadow: #410ab5 0 0 0 2px;
 }
 
-.c15 {
+.c14 {
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
@@ -3628,7 +3622,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   color: #555e6f;
 }
 
-.c15:hover {
+.c14:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3636,7 +3630,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   border-color: #eaeaf0;
 }
 
-.c15:active {
+.c14:active {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #dcdce7;
@@ -3644,7 +3638,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   color: #555e6f;
 }
 
-.c15:disabled {
+.c14:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3653,7 +3647,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   color: #b6bbc7;
 }
 
-.c15:focus {
+.c14:focus {
   box-shadow: #dcdce7 0 0 0 2px;
 }
 
@@ -3664,7 +3658,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   flex: none;
 }
 
-.c16 {
+.c15 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -3726,16 +3720,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                             >
                               <svg
                                 aria-hidden="true"
-                                class="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                class="svg-inline--fa fa-times fa-w-11 fa-lg "
                                 data-icon="times"
-                                data-prefix="fal"
+                                data-prefix="fas"
                                 focusable="false"
                                 role="img"
-                                viewBox="0 0 320 512"
+                                viewBox="0 0 352 512"
                                 xmlns="http://www.w3.org/2000/svg"
                               >
                                 <path
-                                  d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                   fill="currentColor"
                                 />
                               </svg>
@@ -3763,54 +3757,51 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                 <div
                                   class="c12"
                                 >
-                                  <span
-                                    class="c13 fa-layers fa-fw fa-1x"
+                                  <svg
+                                    height="40px"
+                                    preserveAspectRatio="xMidYMid"
+                                    style="display: block; shape-rendering: auto; margin: 0px auto;"
+                                    viewBox="0 0 100 100"
+                                    width="40px"
+                                    xmlns="http://www.w3.org/2000/svg"
                                   >
-                                    <svg
-                                      aria-hidden="true"
-                                      class="svg-inline--fa fa-circle fa-w-16 "
-                                      color="#cdd1db"
-                                      data-icon="circle"
-                                      data-prefix="fal"
-                                      focusable="false"
-                                      id="spinner-circle"
-                                      role="img"
-                                      viewBox="0 0 512 512"
-                                      xmlns="http://www.w3.org/2000/svg"
+                                    <circle
+                                      cx="50"
+                                      cy="50"
+                                      fill="none"
+                                      r="30"
+                                      stroke="#4c566a"
+                                      stroke-linecap="round"
+                                      stroke-width="5"
+                                      transform="rotate(180 50 50)"
                                     >
-                                      <path
-                                        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216z"
-                                        fill="currentColor"
+                                      <animatetransform
+                                        attributeName="transform"
+                                        dur="1.3s"
+                                        keyTimes="0;0.5;1"
+                                        repeatCount="indefinite"
+                                        type="rotate"
+                                        values="0 50 50;180 50 50;720 50 50"
                                       />
-                                    </svg>
-                                    <svg
-                                      aria-hidden="true"
-                                      class="svg-inline--fa fa-spinner-third fa-w-16 "
-                                      color="#555e6f"
-                                      data-icon="spinner-third"
-                                      data-prefix="fal"
-                                      focusable="false"
-                                      id="spinner-third"
-                                      role="img"
-                                      viewBox="0 0 512 512"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M460.115 373.846l-6.941-4.008c-5.546-3.202-7.564-10.177-4.661-15.886 32.971-64.838 31.167-142.731-5.415-205.954-36.504-63.356-103.118-103.876-175.8-107.701C260.952 39.963 256 34.676 256 28.321v-8.012c0-6.904 5.808-12.337 12.703-11.982 83.552 4.306 160.157 50.861 202.106 123.67 42.069 72.703 44.083 162.322 6.034 236.838-3.14 6.149-10.75 8.462-16.728 5.011z"
-                                        fill="currentColor"
+                                      <animate
+                                        attributeName="stroke-dasharray"
+                                        dur="1.3s"
+                                        keyTimes="0;0.5;1"
+                                        repeatCount="indefinite"
+                                        values="20 180;150 40;20 180"
                                       />
-                                    </svg>
-                                  </span>
+                                    </circle>
+                                  </svg>
                                 </div>
                                 <span
-                                  class="c14"
+                                  class="c13"
                                 >
                                   Yes, confirm
                                 </span>
                               </span>
                             </button>
                             <button
-                              class="c15 c16"
+                              class="c14 c15"
                               disabled=""
                               mode="default"
                               type="button"
@@ -3819,7 +3810,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                 class="c11"
                               >
                                 <span
-                                  class="c17"
+                                  class="c16"
                                 >
                                   No, cancel
                                 </span>
@@ -4135,14 +4126,14 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                 icon={
                                                                   Object {
                                                                     "icon": Array [
-                                                                      320,
+                                                                      352,
                                                                       512,
                                                                       Array [],
                                                                       "f00d",
-                                                                      "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                                                                      "M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z",
                                                                     ],
                                                                     "iconName": "times",
-                                                                    "prefix": "fal",
+                                                                    "prefix": "fas",
                                                                   }
                                                                 }
                                                                 inverse={false}
@@ -4160,17 +4151,17 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                               >
                                                                 <svg
                                                                   aria-hidden="true"
-                                                                  className="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                                                  className="svg-inline--fa fa-times fa-w-11 fa-lg "
                                                                   data-icon="times"
-                                                                  data-prefix="fal"
+                                                                  data-prefix="fas"
                                                                   focusable="false"
                                                                   role="img"
                                                                   style={Object {}}
-                                                                  viewBox="0 0 320 512"
+                                                                  viewBox="0 0 352 512"
                                                                   xmlns="http://www.w3.org/2000/svg"
                                                                 >
                                                                   <path
-                                                                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                                                     fill="currentColor"
                                                                     style={Object {}}
                                                                   />
@@ -4352,7 +4343,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "StyledButton-sc-1etazn9-0",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c16",
+                                                                        "lastClassName": "c15",
                                                                         "rules": Array [
                                                                           "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                                                                           "100ms",
@@ -4440,7 +4431,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                       "isStatic": false,
                                                                                       "lastClassName": "c12",
                                                                                       "rules": Array [
-                                                                                        "display:flex;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);",
+                                                                                        "display:flex;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);svg{height:100%;width:100%;}",
                                                                                       ],
                                                                                     },
                                                                                     "displayName": "ButtonSpinner__SpinnerWrapper",
@@ -4459,158 +4450,50 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                   className="c12"
                                                                                 >
                                                                                   <Spinner
-                                                                                    bottomColor="#cdd1db"
-                                                                                    centered={true}
-                                                                                    size="1x"
-                                                                                    topColor="#555e6f"
+                                                                                    color="#4c566a"
+                                                                                    size={40}
                                                                                   >
-                                                                                    <Rotate
-                                                                                      centered={true}
-                                                                                      className="fa-layers fa-fw fa-1x"
-                                                                                    >
-                                                                                      <StyledComponent
-                                                                                        centered={true}
-                                                                                        className="fa-layers fa-fw fa-1x"
-                                                                                        forwardedComponent={
-                                                                                          Object {
-                                                                                            "$$typeof": Symbol(react.forward_ref),
-                                                                                            "attrs": Array [],
-                                                                                            "componentStyle": ComponentStyle {
-                                                                                              "componentId": "Rotate-sc-1o7nhkd-0",
-                                                                                              "isStatic": false,
-                                                                                              "lastClassName": "c13",
-                                                                                              "rules": Array [
-                                                                                                "animation:fa-spin ",
-                                                                                                [Function],
-                                                                                                " infinite linear;align-self:",
-                                                                                                [Function],
-                                                                                                ";",
-                                                                                              ],
-                                                                                            },
-                                                                                            "displayName": "Rotate",
-                                                                                            "foldedComponentIds": Array [],
-                                                                                            "render": [Function],
-                                                                                            "styledComponentId": "Rotate-sc-1o7nhkd-0",
-                                                                                            "target": "span",
-                                                                                            "toString": [Function],
-                                                                                            "warnTooManyClasses": [Function],
-                                                                                            "withComponent": [Function],
-                                                                                          }
+                                                                                    <svg
+                                                                                      height="40px"
+                                                                                      preserveAspectRatio="xMidYMid"
+                                                                                      style={
+                                                                                        Object {
+                                                                                          "display": "block",
+                                                                                          "margin": "0 auto",
+                                                                                          "shapeRendering": "auto",
                                                                                         }
-                                                                                        forwardedRef={null}
+                                                                                      }
+                                                                                      viewBox="0 0 100 100"
+                                                                                      width="40px"
+                                                                                      xmlns="http://www.w3.org/2000/svg"
+                                                                                    >
+                                                                                      <circle
+                                                                                        cx="50"
+                                                                                        cy="50"
+                                                                                        fill="none"
+                                                                                        r="30"
+                                                                                        stroke="#4c566a"
+                                                                                        strokeLinecap="round"
+                                                                                        strokeWidth="5"
+                                                                                        transform="rotate(180 50 50)"
                                                                                       >
-                                                                                        <span
-                                                                                          className="c13 fa-layers fa-fw fa-1x"
-                                                                                        >
-                                                                                          <FontAwesomeIcon
-                                                                                            border={false}
-                                                                                            className=""
-                                                                                            color="#cdd1db"
-                                                                                            fixedWidth={false}
-                                                                                            flip={null}
-                                                                                            icon={
-                                                                                              Object {
-                                                                                                "icon": Array [
-                                                                                                  512,
-                                                                                                  512,
-                                                                                                  Array [],
-                                                                                                  "f111",
-                                                                                                  "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216z",
-                                                                                                ],
-                                                                                                "iconName": "circle",
-                                                                                                "prefix": "fal",
-                                                                                              }
-                                                                                            }
-                                                                                            id="spinner-circle"
-                                                                                            inverse={false}
-                                                                                            listItem={false}
-                                                                                            mask={null}
-                                                                                            pull={null}
-                                                                                            pulse={false}
-                                                                                            rotation={null}
-                                                                                            size={null}
-                                                                                            spin={false}
-                                                                                            swapOpacity={false}
-                                                                                            symbol={false}
-                                                                                            title=""
-                                                                                            transform={null}
-                                                                                          >
-                                                                                            <svg
-                                                                                              aria-hidden="true"
-                                                                                              className="svg-inline--fa fa-circle fa-w-16 "
-                                                                                              color="#cdd1db"
-                                                                                              data-icon="circle"
-                                                                                              data-prefix="fal"
-                                                                                              focusable="false"
-                                                                                              id="spinner-circle"
-                                                                                              role="img"
-                                                                                              style={Object {}}
-                                                                                              viewBox="0 0 512 512"
-                                                                                              xmlns="http://www.w3.org/2000/svg"
-                                                                                            >
-                                                                                              <path
-                                                                                                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216z"
-                                                                                                fill="currentColor"
-                                                                                                style={Object {}}
-                                                                                              />
-                                                                                            </svg>
-                                                                                          </FontAwesomeIcon>
-                                                                                          <FontAwesomeIcon
-                                                                                            border={false}
-                                                                                            className=""
-                                                                                            color="#555e6f"
-                                                                                            fixedWidth={false}
-                                                                                            flip={null}
-                                                                                            icon={
-                                                                                              Object {
-                                                                                                "icon": Array [
-                                                                                                  512,
-                                                                                                  512,
-                                                                                                  Array [],
-                                                                                                  "f3f4",
-                                                                                                  "M460.115 373.846l-6.941-4.008c-5.546-3.202-7.564-10.177-4.661-15.886 32.971-64.838 31.167-142.731-5.415-205.954-36.504-63.356-103.118-103.876-175.8-107.701C260.952 39.963 256 34.676 256 28.321v-8.012c0-6.904 5.808-12.337 12.703-11.982 83.552 4.306 160.157 50.861 202.106 123.67 42.069 72.703 44.083 162.322 6.034 236.838-3.14 6.149-10.75 8.462-16.728 5.011z",
-                                                                                                ],
-                                                                                                "iconName": "spinner-third",
-                                                                                                "prefix": "fal",
-                                                                                              }
-                                                                                            }
-                                                                                            id="spinner-third"
-                                                                                            inverse={false}
-                                                                                            listItem={false}
-                                                                                            mask={null}
-                                                                                            pull={null}
-                                                                                            pulse={false}
-                                                                                            rotation={null}
-                                                                                            size={null}
-                                                                                            spin={false}
-                                                                                            swapOpacity={false}
-                                                                                            symbol={false}
-                                                                                            title=""
-                                                                                            transform={null}
-                                                                                          >
-                                                                                            <svg
-                                                                                              aria-hidden="true"
-                                                                                              className="svg-inline--fa fa-spinner-third fa-w-16 "
-                                                                                              color="#555e6f"
-                                                                                              data-icon="spinner-third"
-                                                                                              data-prefix="fal"
-                                                                                              focusable="false"
-                                                                                              id="spinner-third"
-                                                                                              role="img"
-                                                                                              style={Object {}}
-                                                                                              viewBox="0 0 512 512"
-                                                                                              xmlns="http://www.w3.org/2000/svg"
-                                                                                            >
-                                                                                              <path
-                                                                                                d="M460.115 373.846l-6.941-4.008c-5.546-3.202-7.564-10.177-4.661-15.886 32.971-64.838 31.167-142.731-5.415-205.954-36.504-63.356-103.118-103.876-175.8-107.701C260.952 39.963 256 34.676 256 28.321v-8.012c0-6.904 5.808-12.337 12.703-11.982 83.552 4.306 160.157 50.861 202.106 123.67 42.069 72.703 44.083 162.322 6.034 236.838-3.14 6.149-10.75 8.462-16.728 5.011z"
-                                                                                                fill="currentColor"
-                                                                                                style={Object {}}
-                                                                                              />
-                                                                                            </svg>
-                                                                                          </FontAwesomeIcon>
-                                                                                        </span>
-                                                                                      </StyledComponent>
-                                                                                    </Rotate>
+                                                                                        <animateTransform
+                                                                                          attributeName="transform"
+                                                                                          dur="1.3s"
+                                                                                          keyTimes="0;0.5;1"
+                                                                                          repeatCount="indefinite"
+                                                                                          type="rotate"
+                                                                                          values="0 50 50;180 50 50;720 50 50"
+                                                                                        />
+                                                                                        <animate
+                                                                                          attributeName="stroke-dasharray"
+                                                                                          dur="1.3s"
+                                                                                          keyTimes="0;0.5;1"
+                                                                                          repeatCount="indefinite"
+                                                                                          values="20 180;150 40;20 180"
+                                                                                        />
+                                                                                      </circle>
+                                                                                    </svg>
                                                                                   </Spinner>
                                                                                 </div>
                                                                               </StyledComponent>
@@ -4627,7 +4510,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                   "componentStyle": ComponentStyle {
                                                                                     "componentId": "Content-sc-18psqsj-0",
                                                                                     "isStatic": false,
-                                                                                    "lastClassName": "c17",
+                                                                                    "lastClassName": "c16",
                                                                                     "rules": Array [
                                                                                       "flex:1 1 auto;opacity:",
                                                                                       [Function],
@@ -4648,7 +4531,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                               isLoading={true}
                                                                             >
                                                                               <span
-                                                                                className="c14"
+                                                                                className="c13"
                                                                               >
                                                                                 Yes, confirm
                                                                               </span>
@@ -4679,7 +4562,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c15",
+                                                                  "lastClassName": "c14",
                                                                   "rules": Array [
                                                                     "flex:",
                                                                     [Function],
@@ -4701,7 +4584,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                             stretch={false}
                                                           >
                                                             <Button
-                                                              className="c15"
+                                                              className="c14"
                                                               disabled={true}
                                                               fontColor=""
                                                               isLoading={false}
@@ -4710,7 +4593,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                               type="button"
                                                             >
                                                               <StyledButton
-                                                                className="c15"
+                                                                className="c14"
                                                                 disabled={true}
                                                                 fontColor=""
                                                                 mode="default"
@@ -4718,7 +4601,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                 type="button"
                                                               >
                                                                 <StyledComponent
-                                                                  className="c15"
+                                                                  className="c14"
                                                                   disabled={true}
                                                                   fontColor=""
                                                                   forwardedComponent={
@@ -4728,7 +4611,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "StyledButton-sc-1etazn9-0",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c16",
+                                                                        "lastClassName": "c15",
                                                                         "rules": Array [
                                                                           "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                                                                           "100ms",
@@ -4769,7 +4652,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                   type="button"
                                                                 >
                                                                   <button
-                                                                    className="c16 c15"
+                                                                    className="c15 c14"
                                                                     disabled={true}
                                                                     mode="default"
                                                                     type="button"
@@ -4814,7 +4697,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                   "componentStyle": ComponentStyle {
                                                                                     "componentId": "Content-sc-18psqsj-0",
                                                                                     "isStatic": false,
-                                                                                    "lastClassName": "c17",
+                                                                                    "lastClassName": "c16",
                                                                                     "rules": Array [
                                                                                       "flex:1 1 auto;opacity:",
                                                                                       [Function],
@@ -4835,7 +4718,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                               isLoading={false}
                                                                             >
                                                                               <span
-                                                                                className="c17"
+                                                                                className="c16"
                                                                               >
                                                                                 No, cancel
                                                                               </span>
@@ -5054,14 +4937,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   justify-content: space-between;
 }
 
-.c13 {
-  -webkit-animation: fa-spin 0.75s infinite linear;
-  animation: fa-spin 0.75s infinite linear;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 .c12 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5075,7 +4950,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   transform: translate(-50%,-50%);
 }
 
-.c17 {
+.c12 svg {
+  height: 100%;
+  width: 100%;
+}
+
+.c16 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -5085,7 +4965,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   white-space: nowrap;
 }
 
-.c14 {
+.c13 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -5161,7 +5041,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   box-shadow: #410ab5 0 0 0 2px;
 }
 
-.c16 {
+.c15 {
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
@@ -5182,7 +5062,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   color: #555e6f;
 }
 
-.c16:hover {
+.c15:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5190,7 +5070,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   border-color: #eaeaf0;
 }
 
-.c16:active {
+.c15:active {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #dcdce7;
@@ -5198,7 +5078,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   color: #555e6f;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5207,7 +5087,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   color: #b6bbc7;
 }
 
-.c16:focus {
+.c15:focus {
   box-shadow: #dcdce7 0 0 0 2px;
 }
 
@@ -5218,7 +5098,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   flex: none;
 }
 
-.c15 {
+.c14 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -5521,14 +5401,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   justify-content: space-between;
 }
 
-.c13 {
-  -webkit-animation: fa-spin 0.75s infinite linear;
-  animation: fa-spin 0.75s infinite linear;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 .c12 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5542,7 +5414,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   transform: translate(-50%,-50%);
 }
 
-.c17 {
+.c12 svg {
+  height: 100%;
+  width: 100%;
+}
+
+.c16 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -5552,7 +5429,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   white-space: nowrap;
 }
 
-.c14 {
+.c13 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -5628,7 +5505,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   box-shadow: #410ab5 0 0 0 2px;
 }
 
-.c15 {
+.c14 {
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
@@ -5649,7 +5526,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   color: #555e6f;
 }
 
-.c15:hover {
+.c14:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5657,7 +5534,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   border-color: #eaeaf0;
 }
 
-.c15:active {
+.c14:active {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #dcdce7;
@@ -5665,7 +5542,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   color: #555e6f;
 }
 
-.c15:disabled {
+.c14:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5674,7 +5551,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   color: #b6bbc7;
 }
 
-.c15:focus {
+.c14:focus {
   box-shadow: #dcdce7 0 0 0 2px;
 }
 
@@ -5685,7 +5562,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   flex: none;
 }
 
-.c16 {
+.c15 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -5747,16 +5624,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                             >
                               <svg
                                 aria-hidden="true"
-                                class="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                class="svg-inline--fa fa-times fa-w-11 fa-lg "
                                 data-icon="times"
-                                data-prefix="fal"
+                                data-prefix="fas"
                                 focusable="false"
                                 role="img"
-                                viewBox="0 0 320 512"
+                                viewBox="0 0 352 512"
                                 xmlns="http://www.w3.org/2000/svg"
                               >
                                 <path
-                                  d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                   fill="currentColor"
                                 />
                               </svg>
@@ -5784,54 +5661,51 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                 <div
                                   class="c12"
                                 >
-                                  <span
-                                    class="c13 fa-layers fa-fw fa-1x"
+                                  <svg
+                                    height="40px"
+                                    preserveAspectRatio="xMidYMid"
+                                    style="display: block; shape-rendering: auto; margin: 0px auto;"
+                                    viewBox="0 0 100 100"
+                                    width="40px"
+                                    xmlns="http://www.w3.org/2000/svg"
                                   >
-                                    <svg
-                                      aria-hidden="true"
-                                      class="svg-inline--fa fa-circle fa-w-16 "
-                                      color="#cdd1db"
-                                      data-icon="circle"
-                                      data-prefix="fal"
-                                      focusable="false"
-                                      id="spinner-circle"
-                                      role="img"
-                                      viewBox="0 0 512 512"
-                                      xmlns="http://www.w3.org/2000/svg"
+                                    <circle
+                                      cx="50"
+                                      cy="50"
+                                      fill="none"
+                                      r="30"
+                                      stroke="#4c566a"
+                                      stroke-linecap="round"
+                                      stroke-width="5"
+                                      transform="rotate(180 50 50)"
                                     >
-                                      <path
-                                        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216z"
-                                        fill="currentColor"
+                                      <animatetransform
+                                        attributeName="transform"
+                                        dur="1.3s"
+                                        keyTimes="0;0.5;1"
+                                        repeatCount="indefinite"
+                                        type="rotate"
+                                        values="0 50 50;180 50 50;720 50 50"
                                       />
-                                    </svg>
-                                    <svg
-                                      aria-hidden="true"
-                                      class="svg-inline--fa fa-spinner-third fa-w-16 "
-                                      color="#555e6f"
-                                      data-icon="spinner-third"
-                                      data-prefix="fal"
-                                      focusable="false"
-                                      id="spinner-third"
-                                      role="img"
-                                      viewBox="0 0 512 512"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M460.115 373.846l-6.941-4.008c-5.546-3.202-7.564-10.177-4.661-15.886 32.971-64.838 31.167-142.731-5.415-205.954-36.504-63.356-103.118-103.876-175.8-107.701C260.952 39.963 256 34.676 256 28.321v-8.012c0-6.904 5.808-12.337 12.703-11.982 83.552 4.306 160.157 50.861 202.106 123.67 42.069 72.703 44.083 162.322 6.034 236.838-3.14 6.149-10.75 8.462-16.728 5.011z"
-                                        fill="currentColor"
+                                      <animate
+                                        attributeName="stroke-dasharray"
+                                        dur="1.3s"
+                                        keyTimes="0;0.5;1"
+                                        repeatCount="indefinite"
+                                        values="20 180;150 40;20 180"
                                       />
-                                    </svg>
-                                  </span>
+                                    </circle>
+                                  </svg>
                                 </div>
                                 <span
-                                  class="c14"
+                                  class="c13"
                                 >
                                   Yes, confirm
                                 </span>
                               </span>
                             </button>
                             <button
-                              class="c15 c16"
+                              class="c14 c15"
                               disabled=""
                               mode="default"
                               type="button"
@@ -5840,7 +5714,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                 class="c11"
                               >
                                 <span
-                                  class="c17"
+                                  class="c16"
                                 >
                                   No, cancel
                                 </span>
@@ -6156,14 +6030,14 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                 icon={
                                                                   Object {
                                                                     "icon": Array [
-                                                                      320,
+                                                                      352,
                                                                       512,
                                                                       Array [],
                                                                       "f00d",
-                                                                      "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                                                                      "M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z",
                                                                     ],
                                                                     "iconName": "times",
-                                                                    "prefix": "fal",
+                                                                    "prefix": "fas",
                                                                   }
                                                                 }
                                                                 inverse={false}
@@ -6181,17 +6055,17 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                               >
                                                                 <svg
                                                                   aria-hidden="true"
-                                                                  className="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                                                  className="svg-inline--fa fa-times fa-w-11 fa-lg "
                                                                   data-icon="times"
-                                                                  data-prefix="fal"
+                                                                  data-prefix="fas"
                                                                   focusable="false"
                                                                   role="img"
                                                                   style={Object {}}
-                                                                  viewBox="0 0 320 512"
+                                                                  viewBox="0 0 352 512"
                                                                   xmlns="http://www.w3.org/2000/svg"
                                                                 >
                                                                   <path
-                                                                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                                                     fill="currentColor"
                                                                     style={Object {}}
                                                                   />
@@ -6373,7 +6247,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "StyledButton-sc-1etazn9-0",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c16",
+                                                                        "lastClassName": "c15",
                                                                         "rules": Array [
                                                                           "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                                                                           "100ms",
@@ -6461,7 +6335,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                       "isStatic": false,
                                                                                       "lastClassName": "c12",
                                                                                       "rules": Array [
-                                                                                        "display:flex;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);",
+                                                                                        "display:flex;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);svg{height:100%;width:100%;}",
                                                                                       ],
                                                                                     },
                                                                                     "displayName": "ButtonSpinner__SpinnerWrapper",
@@ -6480,158 +6354,50 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                   className="c12"
                                                                                 >
                                                                                   <Spinner
-                                                                                    bottomColor="#cdd1db"
-                                                                                    centered={true}
-                                                                                    size="1x"
-                                                                                    topColor="#555e6f"
+                                                                                    color="#4c566a"
+                                                                                    size={40}
                                                                                   >
-                                                                                    <Rotate
-                                                                                      centered={true}
-                                                                                      className="fa-layers fa-fw fa-1x"
-                                                                                    >
-                                                                                      <StyledComponent
-                                                                                        centered={true}
-                                                                                        className="fa-layers fa-fw fa-1x"
-                                                                                        forwardedComponent={
-                                                                                          Object {
-                                                                                            "$$typeof": Symbol(react.forward_ref),
-                                                                                            "attrs": Array [],
-                                                                                            "componentStyle": ComponentStyle {
-                                                                                              "componentId": "Rotate-sc-1o7nhkd-0",
-                                                                                              "isStatic": false,
-                                                                                              "lastClassName": "c13",
-                                                                                              "rules": Array [
-                                                                                                "animation:fa-spin ",
-                                                                                                [Function],
-                                                                                                " infinite linear;align-self:",
-                                                                                                [Function],
-                                                                                                ";",
-                                                                                              ],
-                                                                                            },
-                                                                                            "displayName": "Rotate",
-                                                                                            "foldedComponentIds": Array [],
-                                                                                            "render": [Function],
-                                                                                            "styledComponentId": "Rotate-sc-1o7nhkd-0",
-                                                                                            "target": "span",
-                                                                                            "toString": [Function],
-                                                                                            "warnTooManyClasses": [Function],
-                                                                                            "withComponent": [Function],
-                                                                                          }
+                                                                                    <svg
+                                                                                      height="40px"
+                                                                                      preserveAspectRatio="xMidYMid"
+                                                                                      style={
+                                                                                        Object {
+                                                                                          "display": "block",
+                                                                                          "margin": "0 auto",
+                                                                                          "shapeRendering": "auto",
                                                                                         }
-                                                                                        forwardedRef={null}
+                                                                                      }
+                                                                                      viewBox="0 0 100 100"
+                                                                                      width="40px"
+                                                                                      xmlns="http://www.w3.org/2000/svg"
+                                                                                    >
+                                                                                      <circle
+                                                                                        cx="50"
+                                                                                        cy="50"
+                                                                                        fill="none"
+                                                                                        r="30"
+                                                                                        stroke="#4c566a"
+                                                                                        strokeLinecap="round"
+                                                                                        strokeWidth="5"
+                                                                                        transform="rotate(180 50 50)"
                                                                                       >
-                                                                                        <span
-                                                                                          className="c13 fa-layers fa-fw fa-1x"
-                                                                                        >
-                                                                                          <FontAwesomeIcon
-                                                                                            border={false}
-                                                                                            className=""
-                                                                                            color="#cdd1db"
-                                                                                            fixedWidth={false}
-                                                                                            flip={null}
-                                                                                            icon={
-                                                                                              Object {
-                                                                                                "icon": Array [
-                                                                                                  512,
-                                                                                                  512,
-                                                                                                  Array [],
-                                                                                                  "f111",
-                                                                                                  "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216z",
-                                                                                                ],
-                                                                                                "iconName": "circle",
-                                                                                                "prefix": "fal",
-                                                                                              }
-                                                                                            }
-                                                                                            id="spinner-circle"
-                                                                                            inverse={false}
-                                                                                            listItem={false}
-                                                                                            mask={null}
-                                                                                            pull={null}
-                                                                                            pulse={false}
-                                                                                            rotation={null}
-                                                                                            size={null}
-                                                                                            spin={false}
-                                                                                            swapOpacity={false}
-                                                                                            symbol={false}
-                                                                                            title=""
-                                                                                            transform={null}
-                                                                                          >
-                                                                                            <svg
-                                                                                              aria-hidden="true"
-                                                                                              className="svg-inline--fa fa-circle fa-w-16 "
-                                                                                              color="#cdd1db"
-                                                                                              data-icon="circle"
-                                                                                              data-prefix="fal"
-                                                                                              focusable="false"
-                                                                                              id="spinner-circle"
-                                                                                              role="img"
-                                                                                              style={Object {}}
-                                                                                              viewBox="0 0 512 512"
-                                                                                              xmlns="http://www.w3.org/2000/svg"
-                                                                                            >
-                                                                                              <path
-                                                                                                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216z"
-                                                                                                fill="currentColor"
-                                                                                                style={Object {}}
-                                                                                              />
-                                                                                            </svg>
-                                                                                          </FontAwesomeIcon>
-                                                                                          <FontAwesomeIcon
-                                                                                            border={false}
-                                                                                            className=""
-                                                                                            color="#555e6f"
-                                                                                            fixedWidth={false}
-                                                                                            flip={null}
-                                                                                            icon={
-                                                                                              Object {
-                                                                                                "icon": Array [
-                                                                                                  512,
-                                                                                                  512,
-                                                                                                  Array [],
-                                                                                                  "f3f4",
-                                                                                                  "M460.115 373.846l-6.941-4.008c-5.546-3.202-7.564-10.177-4.661-15.886 32.971-64.838 31.167-142.731-5.415-205.954-36.504-63.356-103.118-103.876-175.8-107.701C260.952 39.963 256 34.676 256 28.321v-8.012c0-6.904 5.808-12.337 12.703-11.982 83.552 4.306 160.157 50.861 202.106 123.67 42.069 72.703 44.083 162.322 6.034 236.838-3.14 6.149-10.75 8.462-16.728 5.011z",
-                                                                                                ],
-                                                                                                "iconName": "spinner-third",
-                                                                                                "prefix": "fal",
-                                                                                              }
-                                                                                            }
-                                                                                            id="spinner-third"
-                                                                                            inverse={false}
-                                                                                            listItem={false}
-                                                                                            mask={null}
-                                                                                            pull={null}
-                                                                                            pulse={false}
-                                                                                            rotation={null}
-                                                                                            size={null}
-                                                                                            spin={false}
-                                                                                            swapOpacity={false}
-                                                                                            symbol={false}
-                                                                                            title=""
-                                                                                            transform={null}
-                                                                                          >
-                                                                                            <svg
-                                                                                              aria-hidden="true"
-                                                                                              className="svg-inline--fa fa-spinner-third fa-w-16 "
-                                                                                              color="#555e6f"
-                                                                                              data-icon="spinner-third"
-                                                                                              data-prefix="fal"
-                                                                                              focusable="false"
-                                                                                              id="spinner-third"
-                                                                                              role="img"
-                                                                                              style={Object {}}
-                                                                                              viewBox="0 0 512 512"
-                                                                                              xmlns="http://www.w3.org/2000/svg"
-                                                                                            >
-                                                                                              <path
-                                                                                                d="M460.115 373.846l-6.941-4.008c-5.546-3.202-7.564-10.177-4.661-15.886 32.971-64.838 31.167-142.731-5.415-205.954-36.504-63.356-103.118-103.876-175.8-107.701C260.952 39.963 256 34.676 256 28.321v-8.012c0-6.904 5.808-12.337 12.703-11.982 83.552 4.306 160.157 50.861 202.106 123.67 42.069 72.703 44.083 162.322 6.034 236.838-3.14 6.149-10.75 8.462-16.728 5.011z"
-                                                                                                fill="currentColor"
-                                                                                                style={Object {}}
-                                                                                              />
-                                                                                            </svg>
-                                                                                          </FontAwesomeIcon>
-                                                                                        </span>
-                                                                                      </StyledComponent>
-                                                                                    </Rotate>
+                                                                                        <animateTransform
+                                                                                          attributeName="transform"
+                                                                                          dur="1.3s"
+                                                                                          keyTimes="0;0.5;1"
+                                                                                          repeatCount="indefinite"
+                                                                                          type="rotate"
+                                                                                          values="0 50 50;180 50 50;720 50 50"
+                                                                                        />
+                                                                                        <animate
+                                                                                          attributeName="stroke-dasharray"
+                                                                                          dur="1.3s"
+                                                                                          keyTimes="0;0.5;1"
+                                                                                          repeatCount="indefinite"
+                                                                                          values="20 180;150 40;20 180"
+                                                                                        />
+                                                                                      </circle>
+                                                                                    </svg>
                                                                                   </Spinner>
                                                                                 </div>
                                                                               </StyledComponent>
@@ -6648,7 +6414,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                   "componentStyle": ComponentStyle {
                                                                                     "componentId": "Content-sc-18psqsj-0",
                                                                                     "isStatic": false,
-                                                                                    "lastClassName": "c17",
+                                                                                    "lastClassName": "c16",
                                                                                     "rules": Array [
                                                                                       "flex:1 1 auto;opacity:",
                                                                                       [Function],
@@ -6669,7 +6435,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                               isLoading={true}
                                                                             >
                                                                               <span
-                                                                                className="c14"
+                                                                                className="c13"
                                                                               >
                                                                                 Yes, confirm
                                                                               </span>
@@ -6700,7 +6466,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c15",
+                                                                  "lastClassName": "c14",
                                                                   "rules": Array [
                                                                     "flex:",
                                                                     [Function],
@@ -6722,7 +6488,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                             stretch={false}
                                                           >
                                                             <Button
-                                                              className="c15"
+                                                              className="c14"
                                                               disabled={true}
                                                               fontColor=""
                                                               isLoading={false}
@@ -6731,7 +6497,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                               type="button"
                                                             >
                                                               <StyledButton
-                                                                className="c15"
+                                                                className="c14"
                                                                 disabled={true}
                                                                 fontColor=""
                                                                 mode="default"
@@ -6739,7 +6505,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                 type="button"
                                                               >
                                                                 <StyledComponent
-                                                                  className="c15"
+                                                                  className="c14"
                                                                   disabled={true}
                                                                   fontColor=""
                                                                   forwardedComponent={
@@ -6749,7 +6515,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                       "componentStyle": ComponentStyle {
                                                                         "componentId": "StyledButton-sc-1etazn9-0",
                                                                         "isStatic": false,
-                                                                        "lastClassName": "c16",
+                                                                        "lastClassName": "c15",
                                                                         "rules": Array [
                                                                           "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                                                                           "100ms",
@@ -6790,7 +6556,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                   type="button"
                                                                 >
                                                                   <button
-                                                                    className="c16 c15"
+                                                                    className="c15 c14"
                                                                     disabled={true}
                                                                     mode="default"
                                                                     type="button"
@@ -6835,7 +6601,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                   "componentStyle": ComponentStyle {
                                                                                     "componentId": "Content-sc-18psqsj-0",
                                                                                     "isStatic": false,
-                                                                                    "lastClassName": "c17",
+                                                                                    "lastClassName": "c16",
                                                                                     "rules": Array [
                                                                                       "flex:1 1 auto;opacity:",
                                                                                       [Function],
@@ -6856,7 +6622,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                               isLoading={false}
                                                                             >
                                                                               <span
-                                                                                className="c17"
+                                                                                className="c16"
                                                                               >
                                                                                 No, cancel
                                                                               </span>
@@ -7671,16 +7437,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                             >
                               <svg
                                 aria-hidden="true"
-                                class="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                class="svg-inline--fa fa-times fa-w-11 fa-lg "
                                 data-icon="times"
-                                data-prefix="fal"
+                                data-prefix="fas"
                                 focusable="false"
                                 role="img"
-                                viewBox="0 0 320 512"
+                                viewBox="0 0 352 512"
                                 xmlns="http://www.w3.org/2000/svg"
                               >
                                 <path
-                                  d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                   fill="currentColor"
                                 />
                               </svg>
@@ -8036,14 +7802,14 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                 icon={
                                                                   Object {
                                                                     "icon": Array [
-                                                                      320,
+                                                                      352,
                                                                       512,
                                                                       Array [],
                                                                       "f00d",
-                                                                      "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                                                                      "M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z",
                                                                     ],
                                                                     "iconName": "times",
-                                                                    "prefix": "fal",
+                                                                    "prefix": "fas",
                                                                   }
                                                                 }
                                                                 inverse={false}
@@ -8061,17 +7827,17 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                               >
                                                                 <svg
                                                                   aria-hidden="true"
-                                                                  className="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                                                  className="svg-inline--fa fa-times fa-w-11 fa-lg "
                                                                   data-icon="times"
-                                                                  data-prefix="fal"
+                                                                  data-prefix="fas"
                                                                   focusable="false"
                                                                   role="img"
                                                                   style={Object {}}
-                                                                  viewBox="0 0 320 512"
+                                                                  viewBox="0 0 352 512"
                                                                   xmlns="http://www.w3.org/2000/svg"
                                                                 >
                                                                   <path
-                                                                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                                                     fill="currentColor"
                                                                     style={Object {}}
                                                                   />
@@ -9401,16 +9167,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                             >
                               <svg
                                 aria-hidden="true"
-                                class="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                class="svg-inline--fa fa-times fa-w-11 fa-lg "
                                 data-icon="times"
-                                data-prefix="fal"
+                                data-prefix="fas"
                                 focusable="false"
                                 role="img"
-                                viewBox="0 0 320 512"
+                                viewBox="0 0 352 512"
                                 xmlns="http://www.w3.org/2000/svg"
                               >
                                 <path
-                                  d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                   fill="currentColor"
                                 />
                               </svg>
@@ -9766,14 +9532,14 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                 icon={
                                                                   Object {
                                                                     "icon": Array [
-                                                                      320,
+                                                                      352,
                                                                       512,
                                                                       Array [],
                                                                       "f00d",
-                                                                      "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                                                                      "M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z",
                                                                     ],
                                                                     "iconName": "times",
-                                                                    "prefix": "fal",
+                                                                    "prefix": "fas",
                                                                   }
                                                                 }
                                                                 inverse={false}
@@ -9791,17 +9557,17 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                               >
                                                                 <svg
                                                                   aria-hidden="true"
-                                                                  className="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                                                  className="svg-inline--fa fa-times fa-w-11 fa-lg "
                                                                   data-icon="times"
-                                                                  data-prefix="fal"
+                                                                  data-prefix="fas"
                                                                   focusable="false"
                                                                   role="img"
                                                                   style={Object {}}
-                                                                  viewBox="0 0 320 512"
+                                                                  viewBox="0 0 352 512"
                                                                   xmlns="http://www.w3.org/2000/svg"
                                                                 >
                                                                   <path
-                                                                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                                                     fill="currentColor"
                                                                     style={Object {}}
                                                                   />
@@ -11007,16 +10773,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                             >
                               <svg
                                 aria-hidden="true"
-                                class="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                class="svg-inline--fa fa-times fa-w-11 fa-lg "
                                 data-icon="times"
-                                data-prefix="fal"
+                                data-prefix="fas"
                                 focusable="false"
                                 role="img"
-                                viewBox="0 0 320 512"
+                                viewBox="0 0 352 512"
                                 xmlns="http://www.w3.org/2000/svg"
                               >
                                 <path
-                                  d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                   fill="currentColor"
                                 />
                               </svg>
@@ -11357,14 +11123,14 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                 icon={
                                                                   Object {
                                                                     "icon": Array [
-                                                                      320,
+                                                                      352,
                                                                       512,
                                                                       Array [],
                                                                       "f00d",
-                                                                      "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                                                                      "M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z",
                                                                     ],
                                                                     "iconName": "times",
-                                                                    "prefix": "fal",
+                                                                    "prefix": "fas",
                                                                   }
                                                                 }
                                                                 inverse={false}
@@ -11382,17 +11148,17 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                               >
                                                                 <svg
                                                                   aria-hidden="true"
-                                                                  className="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                                                  className="svg-inline--fa fa-times fa-w-11 fa-lg "
                                                                   data-icon="times"
-                                                                  data-prefix="fal"
+                                                                  data-prefix="fas"
                                                                   focusable="false"
                                                                   role="img"
                                                                   style={Object {}}
-                                                                  viewBox="0 0 320 512"
+                                                                  viewBox="0 0 352 512"
                                                                   xmlns="http://www.w3.org/2000/svg"
                                                                 >
                                                                   <path
-                                                                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                                                     fill="currentColor"
                                                                     style={Object {}}
                                                                   />
@@ -12428,16 +12194,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                             >
                               <svg
                                 aria-hidden="true"
-                                class="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                class="svg-inline--fa fa-times fa-w-11 fa-lg "
                                 data-icon="times"
-                                data-prefix="fal"
+                                data-prefix="fas"
                                 focusable="false"
                                 role="img"
-                                viewBox="0 0 320 512"
+                                viewBox="0 0 352 512"
                                 xmlns="http://www.w3.org/2000/svg"
                               >
                                 <path
-                                  d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                  d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                   fill="currentColor"
                                 />
                               </svg>
@@ -12778,14 +12544,14 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                 icon={
                                                                   Object {
                                                                     "icon": Array [
-                                                                      320,
+                                                                      352,
                                                                       512,
                                                                       Array [],
                                                                       "f00d",
-                                                                      "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                                                                      "M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z",
                                                                     ],
                                                                     "iconName": "times",
-                                                                    "prefix": "fal",
+                                                                    "prefix": "fas",
                                                                   }
                                                                 }
                                                                 inverse={false}
@@ -12803,17 +12569,17 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                               >
                                                                 <svg
                                                                   aria-hidden="true"
-                                                                  className="svg-inline--fa fa-times fa-w-10 fa-lg "
+                                                                  className="svg-inline--fa fa-times fa-w-11 fa-lg "
                                                                   data-icon="times"
-                                                                  data-prefix="fal"
+                                                                  data-prefix="fas"
                                                                   focusable="false"
                                                                   role="img"
                                                                   style={Object {}}
-                                                                  viewBox="0 0 320 512"
+                                                                  viewBox="0 0 352 512"
                                                                   xmlns="http://www.w3.org/2000/svg"
                                                                 >
                                                                   <path
-                                                                    d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+                                                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
                                                                     fill="currentColor"
                                                                     style={Object {}}
                                                                   />

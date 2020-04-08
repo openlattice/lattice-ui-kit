@@ -45,14 +45,20 @@ describe('HeadCell', () => {
         const wrapper = shallow(<HeadCell sortable order="asc" />);
 
         expect(toJson(wrapper)).toMatchSnapshot();
-        expect(wrapper.find('FontAwesomeIcon').prop('icon')).toEqual(faSortUp);
+        const icons = wrapper.find('FontAwesomeIcon');
+        expect(icons).toHaveLength(2);
+        expect(icons.at(0).prop('icon')).toEqual(faSort);
+        expect(icons.at(1).prop('icon')).toEqual(faSortUp);
       });
 
       test('should render faSortDown if sortable and order="desc"', () => {
         const wrapper = shallow(<HeadCell sortable order="desc" />);
 
         expect(toJson(wrapper)).toMatchSnapshot();
-        expect(wrapper.find('FontAwesomeIcon').prop('icon')).toEqual(faSortDown);
+        const icons = wrapper.find('FontAwesomeIcon');
+        expect(icons).toHaveLength(2);
+        expect(icons.at(0).prop('icon')).toEqual(faSort);
+        expect(icons.at(1).prop('icon')).toEqual(faSortDown);
       });
 
       test('should render faSort if sortable but without order', () => {
