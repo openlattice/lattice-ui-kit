@@ -35,6 +35,7 @@
     "@material-ui/lab": "~4.0.0-alpha.42",
     "@material-ui/pickers": "~3.2.10",
     "@material-ui/styles": "~4.9.0",
+    "babel-plugin-transform-imports": "^2.0.0",
     "immutable": "4.0.0-rc.9",
     "lodash": "~4.17.10",
     "luxon": "~1.22.0",
