@@ -16,6 +16,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Checkbox',
   'CheckboxSelect',
   'ChoiceGroup',
+  'Collapse',
   'Colors',
   'CopyButton',
   'Creatable',
