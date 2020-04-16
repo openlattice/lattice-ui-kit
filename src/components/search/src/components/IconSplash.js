@@ -1,9 +1,10 @@
 // @flow
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import type { ComponentType } from 'react';
+
+import styled from 'styled-components';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { NEUTRALS } from '../../../../colors';
 
@@ -30,6 +31,7 @@ const FigureWrapper = styled.figure`
 `;
 
 type Props = {
+  className ? :string;
   /** Caption that renders underneath the icon */
   caption ? :string;
   /** Either a FontAwesome IconDefinition or a render prop */
@@ -40,6 +42,7 @@ type Props = {
 
 class IconSplash extends Component<Props> {
   static defaultProps = {
+    className: undefined,
     caption: '',
     icon: undefined,
     size: '5x'
@@ -57,9 +60,9 @@ class IconSplash extends Component<Props> {
   }
 
   render() {
-    const { caption } = this.props;
+    const { className, caption } = this.props;
     return (
-      <FigureWrapper>
+      <FigureWrapper className={className}>
         { this.renderIcon() }
         <figcaption>{caption}</figcaption>
       </FigureWrapper>
