@@ -13,6 +13,7 @@ import { getStyleVariation } from '../../../utils/StyleUtils';
 const DEFAULT_BANNER_HEIGHT = '60px';
 
 type Props = {
+  className ? :string;
   children ? :Node;
   icon ? :IconDefinition | ComponentType<any>;
   isOpen ? :boolean;
@@ -24,6 +25,7 @@ type Props = {
 class Banner extends Component<Props> {
 
   static defaultProps = {
+    className: undefined,
     children: undefined,
     icon: undefined,
     isOpen: false,
@@ -63,6 +65,7 @@ class Banner extends Component<Props> {
 
   render() {
     const {
+      className,
       children,
       isOpen,
       maxHeight,
@@ -72,6 +75,7 @@ class Banner extends Component<Props> {
 
     return (
       <Container
+          className={className}
           isOpen={isOpen}
           maxHeight={maxHeight}
           mode={mode}

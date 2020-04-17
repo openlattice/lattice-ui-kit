@@ -2,7 +2,7 @@
  * @flow
  */
 
-import { Fab, ThemeProvider } from '@material-ui/core';
+import { Collapse, Fab, ThemeProvider } from '@material-ui/core';
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 
@@ -94,6 +94,7 @@ export {
 export { default as Skeleton } from './skeleton';
 export { default as Tooltip } from './tooltip';
 export {
+  Collapse,
   Fab,
   MuiPickersUtilsProvider,
   SpeedDial,
