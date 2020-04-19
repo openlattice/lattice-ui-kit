@@ -27,6 +27,7 @@ const optionStyles = (base, state) => {
 
   let style = {
     color,
+    fontSize: '0.875rem',
     backgroundColor,
     ':active': {
       backgroundColor: activeBgColor,
