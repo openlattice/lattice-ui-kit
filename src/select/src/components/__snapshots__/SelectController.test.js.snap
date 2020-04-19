@@ -5,12 +5,15 @@ exports[`Select snapshot render matches snapshot 1`] = `
   <StateManager
     components={
       Object {
+        "DropdownIndicator": [Function],
         "Option": [Function],
+        "ValueContainer": [Function],
       }
     }
     defaultInputValue=""
     defaultMenuIsOpen={false}
     defaultValue={null}
+    hideDropdownIcon={false}
   />
 </Fragment>
 `;

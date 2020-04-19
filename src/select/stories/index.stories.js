@@ -1,14 +1,14 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
+
+import { faSearch } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faNarwhal } from '@fortawesome/pro-regular-svg-icons';
+import { action } from '@storybook/addon-actions';
+import { storiesOf } from '@storybook/react';
 
-import { Select, Creatable, CheckboxSelect } from '../index';
-import { paragraph, stateOptions, REACT_SELECT_USAGE } from './constants';
+import { REACT_SELECT_USAGE, paragraph, stateOptions } from './constants';
+
 import { genRealWordSelectOptions } from '../../utils/testing/MockUtils';
-
-const customIcon = () => <FontAwesomeIcon icon={faNarwhal} spin />;
+import { CheckboxSelect, Creatable, Select } from '../index';
 
 const stressTestWordOptions = genRealWordSelectOptions(paragraph);
 
@@ -91,34 +91,28 @@ storiesOf('Select', module)
   ))
   .add('Appearances', () => (
     <>
-      <h1>borderless</h1>
+      <h2>borderless</h2>
       <p>Default background-color is transparent</p>
       <Select
           borderless
-          options={stateOptions}
-          onChange={action('Borderless changed')} />
-      <h1>invalid</h1>
+          options={stateOptions} />
+      <h2>invalid</h2>
       <p>border is red</p>
       <Select
           invalid
-          options={stateOptions}
-          onChange={action('Borderless changed')} />
-    </>
-  ))
-  .add('custom dropdown indicator', () => (
-    <>
-      <h1>Custom Dropdown Indicator</h1>
-      <h2>FontAwesome IconDefinition</h2>
+          options={stateOptions} />
+      <h2>inputIcon</h2>
       <Select
-          icon={faNarwhal}
-          options={stateOptions}
-          onChange={action('Single select changed')} />
-      <h2>Custom Icon</h2>
+          inputIcon={<FontAwesomeIcon icon={faSearch} fixedWidth />}
+          options={stateOptions} />
+      <h2>dropdownIcon</h2>
       <Select
-          icon={customIcon}
-          useRawValues
-          options={stateOptions}
-          onChange={action('Single select changed')} />
+          dropdownIcon={<FontAwesomeIcon icon={faSearch} fixedWidth />}
+          options={stateOptions} />
+      <h2>hideDropdownIcon</h2>
+      <Select
+          hideDropdownIcon
+          options={stateOptions} />
     </>
   ))
   .add('Disabled options', () => (

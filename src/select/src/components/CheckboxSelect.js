@@ -1,14 +1,20 @@
 import React from 'react';
+
 import ReactSelect, { createFilter } from 'react-select';
 import { mergeDeep } from 'immutable';
 
+import DropdownIndicator from './styled/DropdownIndicator';
 import Option from './styled/CheckboxOption';
 import SelectController from './SelectController';
+import ValueContainer from './styled/ValueContainer';
+
 import { selectStyles } from '../../../style/select';
 
 export const defaultProps = {
   components: {
-    Option
+    DropdownIndicator,
+    Option,
+    ValueContainer,
   },
   closeMenuOnSelect: false,
   filterOption: createFilter({ ignoreAccents: false }),
