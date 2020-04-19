@@ -2,38 +2,41 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import type { ElementConfig, Element } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import type { ElementConfig } from 'react';
 
+import isPlainObject from 'lodash/isPlainObject';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { components } from 'react-select';
 
 const { DropdownIndicator: RSDropdownIndicator } = components;
 
 type Props = ElementConfig<typeof RSDropdownIndicator>;
 
+const LUKDropdownIndicator = (props :Props) => {
 
-class DropdownIndicator extends Component<Props> {
+  const { selectProps: { dropdownIcon, icon, hideDropdownIcon } } = props;
 
-  renderIcon = () :Element<any> => {
-    const { selectProps: { icon } } = this.props;
+  if (hideDropdownIcon) return null;
 
-    if (typeof icon === 'function') {
-      return icon();
-    }
-
-    return <FontAwesomeIcon icon={icon} fixedWidth />;
+  if (icon) {
+    console.warn('lattice-ui-kit Select: \'icon\' prop is deprecated. Use \'dropdownIcon\' which accepts React.Node.');
   }
 
-  render() {
-    /* eslint-disable react/jsx-props-no-spreading */
-    return (
-      <RSDropdownIndicator {...this.props}>
-        { this.renderIcon() }
-      </RSDropdownIndicator>
-    );
-    /* eslint-enable */
+  let finalIcon = dropdownIcon || icon;
+  if (typeof icon === 'function') {
+    finalIcon = icon();
   }
-}
+  else if (isPlainObject(icon)) {
+    finalIcon = <FontAwesomeIcon icon={icon} fixedWidth />;
+  }
 
-export default DropdownIndicator;
+  return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <RSDropdownIndicator {...props}>
+      { finalIcon }
+    </RSDropdownIndicator>
+  );
+};
+
+export default LUKDropdownIndicator;
