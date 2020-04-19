@@ -1,17 +1,19 @@
 // @flow
 import React, { Component } from 'react';
-import type { ComponentType, Node } from 'react';
+import type { Node } from 'react';
 
 import isFunction from 'lodash/isFunction';
-import type { IconDefinition } from '@fortawesome/react-fontawesome';
 
 import DropdownIndicator from './styled/DropdownIndicator';
 import SelectOption from './SelectOption';
+import ValueContainer from './styled/ValueContainer';
 
 import type { ReactSelectEvent, ReactSelectOption, ReactSelectValue } from '../../types';
 
 type Props = {
-  icon ? :IconDefinition | ComponentType<any>;
+  dropdownIcon ? :Node;
+  hideDropdownIcon ? :boolean;
+  inputIcon ? :Node;
   isMulti :boolean;
   onChange :(value :any, event :ReactSelectEvent) => void;
   options :ReactSelectOption[] | any[];
@@ -21,9 +23,12 @@ type Props = {
 }
 
 class SelectController extends Component<Props> {
+
   static defaultProps = {
-    icon: undefined
-  }
+    dropdownIcon: undefined,
+    hideDropdownIcon: false,
+    inputIcon: undefined,
+  };
 
   handleChangeRawValues = (selectedOption :ReactSelectValue, event :ReactSelectEvent) => {
     const { onChange } = this.props;
@@ -72,14 +77,11 @@ class SelectController extends Component<Props> {
 
   composeProps = (props :Object) :Object => {
 
-    const { icon } = this.props;
     const defaultComponents :Object = {
       Option: SelectOption,
+      ValueContainer,
+      DropdownIndicator
     };
-
-    if (icon) {
-      defaultComponents.DropdownIndicator = DropdownIndicator;
-    }
 
     const components = { ...defaultComponents, ...props.components };
 
