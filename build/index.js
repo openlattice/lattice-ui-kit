@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.30.0
+ * lattice-ui-kit - v0.30.1
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -32473,9 +32473,17 @@ function singleValueStyles_objectSpread(target) { for (var i = 1; i < arguments.
 
 
 var singleValueStyles_singleValueStyles = function singleValueStyles(base, state) {
-  return singleValueStyles_objectSpread({}, base, {
+  var selectProps = state.selectProps;
+
+  var styles = singleValueStyles_objectSpread({}, base, {
     color: state.isDisabled ? NEUTRALS[1] : 'inherit'
   });
+
+  if (selectProps && selectProps.inputIcon) {
+    styles.maxWidth = 'calc(100% - 32px)';
+  }
+
+  return styles;
 };
 
 /* harmony default export */ var select_singleValueStyles = (singleValueStyles_singleValueStyles);
@@ -60791,7 +60799,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.30.0";
+var src_version = "v0.30.1";
 
 
 
