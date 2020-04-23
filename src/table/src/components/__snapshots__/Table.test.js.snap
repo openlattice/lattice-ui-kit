@@ -5706,6 +5706,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                           }
                                         >
                                           <EmotionCssPropInternal
+                                            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="ValueContainer"
                                             __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
                                             className=""
                                             css={
@@ -5723,7 +5724,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                             }
                                           >
                                             <div
-                                              className=" css-1gbz4ua"
+                                              className=" css-1xmm524-ValueContainer"
                                             >
                                               <SingleValue
                                                 clearValue={[Function]}
@@ -10739,6 +10740,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                           }
                                         >
                                           <EmotionCssPropInternal
+                                            __EMOTION_LABEL_PLEASE_DO_NOT_USE__="ValueContainer"
                                             __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
                                             className=""
                                             css={
@@ -10756,7 +10758,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                             }
                                           >
                                             <div
-                                              className=" css-1gbz4ua"
+                                              className=" css-1xmm524-ValueContainer"
                                             >
                                               <SingleValue
                                                 clearValue={[Function]}
