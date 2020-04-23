@@ -619,6 +619,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                         }
                       >
                         <EmotionCssPropInternal
+                          __EMOTION_LABEL_PLEASE_DO_NOT_USE__="ValueContainer"
                           __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
                           className=""
                           css={
@@ -636,7 +637,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                           }
                         >
                           <div
-                            className=" css-1gbz4ua"
+                            className=" css-1xmm524-ValueContainer"
                           >
                             <Placeholder
                               clearValue={[Function]}
