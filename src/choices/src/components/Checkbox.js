@@ -10,7 +10,7 @@ import {
   ChoiceWrapper,
 } from './styled';
 
-type Props = {
+type Props = {|
   checked ? :boolean;
   defaultChecked ? :boolean;
   disabled ? :boolean;
@@ -23,7 +23,7 @@ type Props = {
   onFocus ? :(event :SyntheticFocusEvent<HTMLInputElement>) => void;
   readOnly ? :boolean;
   value ? :any;
-}
+|}
 
 /* eslint-disable react/jsx-props-no-spreading */
 const Checkbox = ({
