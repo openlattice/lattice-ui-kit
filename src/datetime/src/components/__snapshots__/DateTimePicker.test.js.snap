@@ -104,9 +104,13 @@ exports[`DateTimePicker render matches snapshot 1`] = `
       },
       "palette": Object {
         "action": Object {
+          "activatedOpacity": 0.12,
           "active": "rgba(0, 0, 0, 0.54)",
           "disabled": "rgba(0, 0, 0, 0.26)",
           "disabledBackground": "rgba(0, 0, 0, 0.12)",
+          "disabledOpacity": 0.38,
+          "focus": "rgba(0, 0, 0, 0.12)",
+          "focusOpacity": 0.12,
           "hover": "rgba(0, 0, 0, 0.04)",
           "hoverOpacity": 0.04,
           "selected": "rgba(0, 0, 0, 0.08)",
@@ -502,7 +506,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                 Object {
                   "current": <input
                     aria-invalid="false"
-                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                     placeholder="MM/DD/YYYY HH:MM AM"
                     type="text"
                     value=""
@@ -529,16 +533,16 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                 <WithStyles(ForwardRef(TextField))
                   InputProps={
                     Object {
-                      "endAdornment": <ForwardRef(WithStyles)
+                      "endAdornment": <WithStyles(ForwardRef(InputAdornment))
                         position="end"
                       >
-                        <ForwardRef(WithStyles)
+                        <WithStyles(ForwardRef(IconButton))
                           disabled={false}
                           onClick={[Function]}
                         >
                           <KeyboardIcon />
-                        </ForwardRef(WithStyles)>
-                      </ForwardRef(WithStyles)>,
+                        </WithStyles(ForwardRef(IconButton))>
+                      </WithStyles(ForwardRef(InputAdornment))>,
                       "onBlur": [Function],
                       "onKeyDown": [Function],
                     }
@@ -551,7 +555,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                     Object {
                       "current": <input
                         aria-invalid="false"
-                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                         placeholder="MM/DD/YYYY HH:MM AM"
                         type="text"
                         value=""
@@ -566,16 +570,16 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                   <ForwardRef(TextField)
                     InputProps={
                       Object {
-                        "endAdornment": <ForwardRef(WithStyles)
+                        "endAdornment": <WithStyles(ForwardRef(InputAdornment))
                           position="end"
                         >
-                          <ForwardRef(WithStyles)
+                          <WithStyles(ForwardRef(IconButton))
                             disabled={false}
                             onClick={[Function]}
                           >
                             <KeyboardIcon />
-                          </ForwardRef(WithStyles)>
-                        </ForwardRef(WithStyles)>,
+                          </WithStyles(ForwardRef(IconButton))>
+                        </WithStyles(ForwardRef(InputAdornment))>,
                         "onBlur": [Function],
                         "onKeyDown": [Function],
                       }
@@ -593,7 +597,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                       Object {
                         "current": <input
                           aria-invalid="false"
-                          class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                          class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                           placeholder="MM/DD/YYYY HH:MM AM"
                           type="text"
                           value=""
@@ -628,7 +632,6 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                         disabled={false}
                         error={false}
                         fullWidth={true}
-                        hiddenLabel={true}
                         required={false}
                         variant="outlined"
                       >
@@ -638,23 +641,23 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                           <WithStyles(ForwardRef(OutlinedInput))
                             autoFocus={false}
                             endAdornment={
-                              <ForwardRef(WithStyles)
+                              <WithStyles(ForwardRef(InputAdornment))
                                 position="end"
                               >
-                                <ForwardRef(WithStyles)
+                                <WithStyles(ForwardRef(IconButton))
                                   disabled={false}
                                   onClick={[Function]}
                                 >
                                   <KeyboardIcon />
-                                </ForwardRef(WithStyles)>
-                              </ForwardRef(WithStyles)>
+                                </WithStyles(ForwardRef(IconButton))>
+                              </WithStyles(ForwardRef(InputAdornment))>
                             }
                             fullWidth={true}
                             inputRef={
                               Object {
                                 "current": <input
                                   aria-invalid="false"
-                                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                   placeholder="MM/DD/YYYY HH:MM AM"
                                   type="text"
                                   value=""
@@ -690,23 +693,23 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                 }
                               }
                               endAdornment={
-                                <ForwardRef(WithStyles)
+                                <WithStyles(ForwardRef(InputAdornment))
                                   position="end"
                                 >
-                                  <ForwardRef(WithStyles)
+                                  <WithStyles(ForwardRef(IconButton))
                                     disabled={false}
                                     onClick={[Function]}
                                   >
                                     <KeyboardIcon />
-                                  </ForwardRef(WithStyles)>
-                                </ForwardRef(WithStyles)>
+                                  </WithStyles(ForwardRef(IconButton))>
+                                </WithStyles(ForwardRef(InputAdornment))>
                               }
                               fullWidth={true}
                               inputRef={
                                 Object {
                                   "current": <input
                                     aria-invalid="false"
-                                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                     placeholder="MM/DD/YYYY HH:MM AM"
                                     type="text"
                                     value=""
@@ -714,7 +717,6 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                 }
                               }
                               multiline={false}
-                              notched={false}
                               onBlur={[Function]}
                               onChange={[Function]}
                               onKeyDown={[Function]}
@@ -743,16 +745,16 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                   }
                                 }
                                 endAdornment={
-                                  <ForwardRef(WithStyles)
+                                  <WithStyles(ForwardRef(InputAdornment))
                                     position="end"
                                   >
-                                    <ForwardRef(WithStyles)
+                                    <WithStyles(ForwardRef(IconButton))
                                       disabled={false}
                                       onClick={[Function]}
                                     >
                                       <KeyboardIcon />
-                                    </ForwardRef(WithStyles)>
-                                  </ForwardRef(WithStyles)>
+                                    </WithStyles(ForwardRef(IconButton))>
+                                  </WithStyles(ForwardRef(InputAdornment))>
                                 }
                                 fullWidth={true}
                                 inputComponent="input"
@@ -760,7 +762,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                   Object {
                                     "current": <input
                                       aria-invalid="false"
-                                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                       placeholder="MM/DD/YYYY HH:MM AM"
                                       type="text"
                                       value=""
@@ -801,16 +803,16 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                     }
                                   }
                                   endAdornment={
-                                    <ForwardRef(WithStyles)
+                                    <WithStyles(ForwardRef(InputAdornment))
                                       position="end"
                                     >
-                                      <ForwardRef(WithStyles)
+                                      <WithStyles(ForwardRef(IconButton))
                                         disabled={false}
                                         onClick={[Function]}
                                       >
                                         <KeyboardIcon />
-                                      </ForwardRef(WithStyles)>
-                                    </ForwardRef(WithStyles)>
+                                      </WithStyles(ForwardRef(IconButton))>
+                                    </WithStyles(ForwardRef(InputAdornment))>
                                   }
                                   fullWidth={true}
                                   inputComponent="input"
@@ -818,7 +820,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                     Object {
                                       "current": <input
                                         aria-invalid="false"
-                                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                         placeholder="MM/DD/YYYY HH:MM AM"
                                         type="text"
                                         value=""
@@ -841,7 +843,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                     <input
                                       aria-invalid={false}
                                       autoFocus={false}
-                                      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                       disabled={false}
                                       onAnimationStart={[Function]}
                                       onBlur={[Function]}
@@ -871,7 +873,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                         position="end"
                                       >
                                         <div
-                                          className="MuiInputAdornment-root MuiInputAdornment-hiddenLabel MuiInputAdornment-positionEnd"
+                                          className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
                                         >
                                           <WithStyles(ForwardRef(IconButton))
                                             disabled={false}
@@ -957,7 +959,6 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                                               aria-hidden="true"
                                                               className="MuiSvgIcon-root"
                                                               focusable="false"
-                                                              role="presentation"
                                                               viewBox="0 0 24 24"
                                                             >
                                                               <path
@@ -972,36 +973,34 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                                         </WithStyles(ForwardRef(SvgIcon))>
                                                       </KeyboardIcon>
                                                     </span>
-                                                    <NoSsr>
-                                                      <WithStyles(undefined)
+                                                    <WithStyles(memo)
+                                                      center={true}
+                                                    >
+                                                      <ForwardRef(TouchRipple)
                                                         center={true}
-                                                      >
-                                                        <ForwardRef(TouchRipple)
-                                                          center={true}
-                                                          classes={
-                                                            Object {
-                                                              "child": "MuiTouchRipple-child",
-                                                              "childLeaving": "MuiTouchRipple-childLeaving",
-                                                              "childPulsate": "MuiTouchRipple-childPulsate",
-                                                              "ripple": "MuiTouchRipple-ripple",
-                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate",
-                                                              "rippleVisible": "MuiTouchRipple-rippleVisible",
-                                                              "root": "MuiTouchRipple-root",
-                                                            }
+                                                        classes={
+                                                          Object {
+                                                            "child": "MuiTouchRipple-child",
+                                                            "childLeaving": "MuiTouchRipple-childLeaving",
+                                                            "childPulsate": "MuiTouchRipple-childPulsate",
+                                                            "ripple": "MuiTouchRipple-ripple",
+                                                            "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                                            "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                                            "root": "MuiTouchRipple-root",
                                                           }
+                                                        }
+                                                      >
+                                                        <span
+                                                          className="MuiTouchRipple-root"
                                                         >
-                                                          <span
-                                                            className="MuiTouchRipple-root"
-                                                          >
-                                                            <TransitionGroup
-                                                              childFactory={[Function]}
-                                                              component={null}
-                                                              exit={true}
-                                                            />
-                                                          </span>
-                                                        </ForwardRef(TouchRipple)>
-                                                      </WithStyles(undefined)>
-                                                    </NoSsr>
+                                                          <TransitionGroup
+                                                            childFactory={[Function]}
+                                                            component={null}
+                                                            exit={true}
+                                                          />
+                                                        </span>
+                                                      </ForwardRef(TouchRipple)>
+                                                    </WithStyles(memo)>
                                                   </button>
                                                 </ForwardRef(ButtonBase)>
                                               </WithStyles(ForwardRef(ButtonBase))>

@@ -10,7 +10,7 @@ import {
   RadioInput,
 } from './styled';
 
-type Props = {
+type Props = {|
   checked ? :boolean;
   disabled ? :boolean;
   id ? :string;
@@ -22,7 +22,7 @@ type Props = {
   onFocus ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
   readOnly ? :boolean;
   value ? :any;
-};
+|};
 
 /* eslint-disable react/jsx-props-no-spreading */
 const Radio = ({

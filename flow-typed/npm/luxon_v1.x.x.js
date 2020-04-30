@@ -1,5 +1,5 @@
-// flow-typed signature: cb630f593a241651a4fb74c62926fc5f
-// flow-typed version: 58abe292d3/luxon_v1.x.x/flow_>=v0.104.x
+// flow-typed signature: 04175a47dd85325d6d53697f23c72b80
+// flow-typed version: 5f2e24d53b/luxon_v1.x.x/flow_>=v0.104.x
 
 // @flow
 
@@ -491,11 +491,11 @@ declare module "luxon" {
     zoneName: string;
     diff(
       otherDateTime: DateTime,
-      unit: DateTimeUnit | Array<DateTimeUnit>,
+      unit?: DateTimeUnit | Array<DateTimeUnit>,
       options?: DateTimeDiffOptions
     ): Duration;
     diffNow(
-      unit: DateTimeUnit | Array<DateTimeUnit>,
+      unit?: DateTimeUnit | Array<DateTimeUnit>,
       options?: DateTimeDiffOptions
     ): Duration;
     endOf(unit: DateTimeUnit): DateTime;

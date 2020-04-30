@@ -8,18 +8,7 @@ import { DateTime } from 'luxon';
 
 import useInputPropsMemo from './hooks/useInputPropsMemo';
 
-type DateChange = (datetime :DateTime, value :string | null) => void;
-type Props = {
-  disabled :boolean;
-  format :string;
-  fullWidth :boolean;
-  mask :string;
-  onChange :(datetimeIso :string) => void;
-  placeholder :string;
-  value :string;
-};
-
-const DateTimePicker = (props :Props) => {
+const DateTimePicker = (props :typeof KeyboardDateTimePicker) => {
   const {
     disabled,
     format,
@@ -48,7 +37,7 @@ const DateTimePicker = (props :Props) => {
 
   const inputProps = useInputPropsMemo(lastValidDate, setSelectedDate);
 
-  const handleDateTimeChange = useCallback<DateChange>((date) => {
+  const handleDateTimeChange = useCallback((date) => {
     if (isFunction(onChange)) {
       if (date === null) {
         onChange();
@@ -76,7 +65,6 @@ const DateTimePicker = (props :Props) => {
         placeholder={placeholder}
         value={selectedDate}
         variant="inline"
-        // $FlowFixMe inexact pattern
         {...other} />
   );
 };

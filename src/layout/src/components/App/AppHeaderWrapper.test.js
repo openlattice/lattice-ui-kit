@@ -17,6 +17,8 @@ const mockTabs = [
   <a key="tab2" href="/tab2">Tab2</a>,
 ];
 
+const logout = () => {};
+
 describe('AppHeaderWrapper', () => {
 
   describe('snapshots', () => {
@@ -28,9 +30,16 @@ describe('AppHeaderWrapper', () => {
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
+    test('logout', () => {
+      const wrapper = shallow(
+        <AppHeaderWrapper logout={logout} />
+      );
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
     test('navigation', () => {
       const wrapper = shallow(
-        <AppHeaderWrapper>
+        <AppHeaderWrapper logout={logout}>
           <div>{mockTabs}</div>
         </AppHeaderWrapper>
       );
@@ -39,7 +48,7 @@ describe('AppHeaderWrapper', () => {
 
     test('navigation wrapping', () => {
       const wrapper = shallow(
-        <AppHeaderWrapper>
+        <AppHeaderWrapper logout={logout}>
           <div>{mockTabs}</div>
         </AppHeaderWrapper>
       );
@@ -49,14 +58,14 @@ describe('AppHeaderWrapper', () => {
 
     test('select', () => {
       const wrapper = shallow(
-        <AppHeaderWrapper organizationsSelect={{ organizations: mockOrgs }} />
+        <AppHeaderWrapper logout={logout} organizationsSelect={{ organizations: mockOrgs }} />
       );
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
     test('select + navigation', () => {
       const wrapper = shallow(
-        <AppHeaderWrapper organizationsSelect={{ organizations: mockOrgs }}>
+        <AppHeaderWrapper logout={logout} organizationsSelect={{ organizations: mockOrgs }}>
           <div>{mockTabs}</div>
         </AppHeaderWrapper>
       );
@@ -65,14 +74,14 @@ describe('AppHeaderWrapper', () => {
 
     test('user', () => {
       const wrapper = shallow(
-        <AppHeaderWrapper user="jest@openlattice.com" />
+        <AppHeaderWrapper logout={logout} user="jest@openlattice.com" />
       );
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
     test('user + navigation', () => {
       const wrapper = shallow(
-        <AppHeaderWrapper user="jest@openlattice.com">
+        <AppHeaderWrapper logout={logout} user="jest@openlattice.com">
           <div>{mockTabs}</div>
         </AppHeaderWrapper>
       );
@@ -81,7 +90,7 @@ describe('AppHeaderWrapper', () => {
 
     test('user + navigation + select', () => {
       const wrapper = shallow(
-        <AppHeaderWrapper organizationsSelect={{ organizations: mockOrgs }} user="jest@openlattice.com">
+        <AppHeaderWrapper logout={logout} organizationsSelect={{ organizations: mockOrgs }} user="jest@openlattice.com">
           <div>{mockTabs}</div>
         </AppHeaderWrapper>
       );

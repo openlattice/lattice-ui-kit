@@ -131,10 +131,39 @@ const mockOrgSelect = {
 const mockUser = 'storybook@openlattice.com';
 
 storiesOf('App', module)
+  .add('header variations', () => (
+    <HashRouter>
+      <StoryAppContainerWrapper>
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} appTitle="Custom App Title" />
+        <br />
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} user={mockUser} />
+        <br />
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} logout={() => {}} user={mockUser} />
+        <br />
+        <StoryAppHeaderWrapper
+            appIcon={OpenLatticeLogo}
+            logout={() => {}}
+            organizationsSelect={mockOrgSelect}
+            user={mockUser} />
+        <br />
+        <StoryAppHeaderWrapper
+            appIcon={OpenLatticeLogo}
+            logout={() => {}}
+            organizationsSelect={mockOrgSelect}
+            user={mockUser}>
+          <StoryAppNavigationWrapper>
+            <NavLink to="/home" />
+            <NavLink to="/tab1">Tab 1</NavLink>
+            <NavLink to="/tab2">Tab 2</NavLink>
+          </StoryAppNavigationWrapper>
+        </StoryAppHeaderWrapper>
+      </StoryAppContainerWrapper>
+    </HashRouter>
+  ))
   .add('search section', () => (
     <HashRouter>
       <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} user={mockUser}>
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} logout={() => {}} user={mockUser}>
           <StoryAppNavigationWrapper>
             <NavLink to="/home" />
             <NavLink to="/tab1">Tab 1</NavLink>
@@ -160,7 +189,7 @@ storiesOf('App', module)
   .add('profile grid', () => (
     <HashRouter>
       <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} user={mockUser}>
+        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} logout={() => {}} user={mockUser}>
           <StoryAppNavigationWrapper>
             <NavLink to="/home" />
             <NavLink to="/tab1">Tab 1</NavLink>
@@ -193,24 +222,15 @@ storiesOf('App', module)
       </StoryAppContainerWrapper>
     </HashRouter>
   ))
-  .add('organizations select', () => (
-    <HashRouter>
-      <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} organizationsSelect={mockOrgSelect} user={mockUser}>
-          <StoryAppNavigationWrapper>
-            <NavLink to="/home" />
-            <NavLink to="/tab1">Tab 1</NavLink>
-            <NavLink to="/tab2">Tab 2</NavLink>
-          </StoryAppNavigationWrapper>
-        </StoryAppHeaderWrapper>
-      </StoryAppContainerWrapper>
-    </HashRouter>
-  ))
   .add('navigation default', () => (
     <>
       <HashRouter>
         <StoryAppContainerWrapper>
-          <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} organizationsSelect={mockOrgSelect} user={mockUser}>
+          <StoryAppHeaderWrapper
+              appIcon={OpenLatticeLogo}
+              logout={() => {}}
+              organizationsSelect={mockOrgSelect}
+              user={mockUser}>
             <StoryAppNavigationWrapper>
               <NavLink to="/home" />
               <NavLink to="/tab1">Data</NavLink>
@@ -225,7 +245,11 @@ storiesOf('App', module)
           <br />
           <br />
           <br />
-          <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} organizationsSelect={mockOrgSelect} user={mockUser} />
+          <StoryAppHeaderWrapper
+              appIcon={OpenLatticeLogo}
+              logout={() => {}}
+              organizationsSelect={mockOrgSelect}
+              user={mockUser} />
           <StoryAppNavigationWrapper>
             <NavLink to="/tab1">Data Management</NavLink>
             <NavLink to="/tab2">Administration</NavLink>
@@ -241,7 +265,11 @@ storiesOf('App', module)
   .add('navigation drawer', () => (
     <HashRouter>
       <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} organizationsSelect={mockOrgSelect} user={mockUser}>
+        <StoryAppHeaderWrapper
+            appIcon={OpenLatticeLogo}
+            logout={() => {}}
+            organizationsSelect={mockOrgSelect}
+            user={mockUser}>
           <StoryAppNavigationWrapper drawer>
             <NavLink to="/home" />
             <NavLink to="/tab1">Data</NavLink>

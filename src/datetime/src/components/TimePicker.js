@@ -12,18 +12,7 @@ import useInputPropsMemo from './hooks/useInputPropsMemo';
 
 const ClockIcon = <FontAwesomeIcon icon={faClock} />;
 
-type DateChange = (date :DateTime, value :string | null) => void;
-type Props = {
-  disabled :boolean;
-  format :string;
-  fullWidth :boolean;
-  mask :string;
-  onChange :(timeIso :string) => void;
-  placeholder :string;
-  value :string;
-}
-
-const TimePicker = (props :Props) => {
+const TimePicker = (props :typeof KeyboardTimePicker) => {
   const {
     disabled,
     format,
@@ -52,7 +41,7 @@ const TimePicker = (props :Props) => {
 
   const inputProps = useInputPropsMemo(lastValidDate, setSelectedDate);
 
-  const handleDateChange = useCallback<DateChange>((date) => {
+  const handleDateChange = useCallback((date) => {
     if (isFunction(onChange)) {
       if (date === null) {
         onChange();
@@ -81,7 +70,6 @@ const TimePicker = (props :Props) => {
         placeholder={placeholder}
         value={selectedDate}
         variant="inline"
-        // $FlowFixMe inexact pattern
         {...other} />
   );
 };
