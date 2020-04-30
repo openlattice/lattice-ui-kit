@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.30.1
+ * lattice-ui-kit - v0.30.2
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -100,7 +100,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 101);
+/******/ 	return __webpack_require__(__webpack_require__.s = 103);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -129,7 +129,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__1__;
 if (false) { var throwOnDirectAccess, ReactIs; } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(109)();
+  module.exports = __webpack_require__(111)();
 }
 
 
@@ -172,6 +172,19 @@ module.exports = _assertThisInitialized;
 /* 5 */
 /***/ (function(module, exports) {
 
+function _getPrototypeOf(o) {
+  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+module.exports = _getPrototypeOf;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
 function _extends() {
   module.exports = _extends = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -193,7 +206,7 @@ function _extends() {
 module.exports = _extends;
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports) {
 
 function _classCallCheck(instance, Constructor) {
@@ -205,7 +218,7 @@ function _classCallCheck(instance, Constructor) {
 module.exports = _classCallCheck;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 function _defineProperties(target, props) {
@@ -227,41 +240,10 @@ function _createClass(Constructor, protoProps, staticProps) {
 module.exports = _createClass;
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__(49);
-
-var assertThisInitialized = __webpack_require__(4);
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return assertThisInitialized(self);
-}
-
-module.exports = _possibleConstructorReturn;
-
-/***/ }),
 /* 9 */
-/***/ (function(module, exports) {
-
-function _getPrototypeOf(o) {
-  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-module.exports = _getPrototypeOf;
-
-/***/ }),
-/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var setPrototypeOf = __webpack_require__(102);
+var setPrototypeOf = __webpack_require__(104);
 
 function _inherits(subClass, superClass) {
   if (typeof superClass !== "function" && superClass !== null) {
@@ -281,6 +263,24 @@ function _inherits(subClass, superClass) {
 module.exports = _inherits;
 
 /***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(49);
+
+var assertThisInitialized = __webpack_require__(4);
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return assertThisInitialized(self);
+}
+
+module.exports = _possibleConstructorReturn;
+
+/***/ }),
 /* 11 */
 /***/ (function(module, exports) {
 
@@ -291,7 +291,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__11__;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(28),
-    isObject = __webpack_require__(59);
+    isObject = __webpack_require__(62);
 
 /** `Object#toString` result references. */
 var asyncTag = '[object AsyncFunction]',
@@ -334,7 +334,7 @@ module.exports = isFunction;
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var objectWithoutPropertiesLoose = __webpack_require__(116);
+var objectWithoutPropertiesLoose = __webpack_require__(118);
 
 function _objectWithoutProperties(source, excluded) {
   if (source == null) return {};
@@ -362,14 +362,16 @@ module.exports = _objectWithoutProperties;
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayWithHoles = __webpack_require__(103);
+var arrayWithHoles = __webpack_require__(105);
 
-var iterableToArrayLimit = __webpack_require__(104);
+var iterableToArrayLimit = __webpack_require__(106);
 
-var nonIterableRest = __webpack_require__(105);
+var unsupportedIterableToArray = __webpack_require__(57);
+
+var nonIterableRest = __webpack_require__(107);
 
 function _slicedToArray(arr, i) {
-  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || nonIterableRest();
+  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
 }
 
 module.exports = _slicedToArray;
@@ -1167,8 +1169,6 @@ function formatRelativeTime(unit, count, numeric, narrow) {
       case 0:
         return isDay ? "today" : "this " + units[unit][0];
 
-      default: // fall through
-
     }
   }
 
@@ -1543,7 +1543,7 @@ function () {
           // like +0600
           return formatOffset({
             format: "techie",
-            allowZ: false
+            allowZ: _this.opts.allowZ
           });
 
         case "ZZZZ":
@@ -3385,10 +3385,11 @@ function extractIANAZone(match, cursor) {
 } // ISO duration parsing
 
 
-var isoDuration = /^P(?:(?:(-?\d{1,9})Y)?(?:(-?\d{1,9})M)?(?:(-?\d{1,9})W)?(?:(-?\d{1,9})D)?(?:T(?:(-?\d{1,9})H)?(?:(-?\d{1,9})M)?(?:(-?\d{1,9})(?:[.,](-?\d{1,9}))?S)?)?)$/;
+var isoDuration = /^-?P(?:(?:(-?\d{1,9})Y)?(?:(-?\d{1,9})M)?(?:(-?\d{1,9})W)?(?:(-?\d{1,9})D)?(?:T(?:(-?\d{1,9})H)?(?:(-?\d{1,9})M)?(?:(-?\d{1,9})(?:[.,](-?\d{1,9}))?S)?)?)$/;
 
 function extractISODuration(match) {
-  var yearStr = match[1],
+  var s = match[0],
+      yearStr = match[1],
       monthStr = match[2],
       weekStr = match[3],
       dayStr = match[4],
@@ -3396,15 +3397,21 @@ function extractISODuration(match) {
       minuteStr = match[6],
       secondStr = match[7],
       millisecondsStr = match[8];
+  var hasNegativePrefix = s[0] === "-";
+
+  var maybeNegate = function maybeNegate(num) {
+    return num && hasNegativePrefix ? -num : num;
+  };
+
   return [{
-    years: parseInteger(yearStr),
-    months: parseInteger(monthStr),
-    weeks: parseInteger(weekStr),
-    days: parseInteger(dayStr),
-    hours: parseInteger(hourStr),
-    minutes: parseInteger(minuteStr),
-    seconds: parseInteger(secondStr),
-    milliseconds: parseMillis(millisecondsStr)
+    years: maybeNegate(parseInteger(yearStr)),
+    months: maybeNegate(parseInteger(monthStr)),
+    weeks: maybeNegate(parseInteger(weekStr)),
+    days: maybeNegate(parseInteger(dayStr)),
+    hours: maybeNegate(parseInteger(hourStr)),
+    minutes: maybeNegate(parseInteger(minuteStr)),
+    seconds: maybeNegate(parseInteger(secondStr)),
+    milliseconds: maybeNegate(parseMillis(millisecondsStr))
   }];
 } // These are a little braindead. EDT *should* tell us that we're in, say, America/New_York
 // and not just that we're in -240 *right now*. But since I don't think these are used that often
@@ -3994,8 +4001,19 @@ function () {
     var dur = friendlyDuration(duration),
         result = {};
 
-    for (var _i = 0, _orderedUnits = orderedUnits; _i < _orderedUnits.length; _i++) {
-      var k = _orderedUnits[_i];
+    for (var _iterator = orderedUnits, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
+      var _ref;
+
+      if (_isArray) {
+        if (_i >= _iterator.length) break;
+        _ref = _iterator[_i++];
+      } else {
+        _i = _iterator.next();
+        if (_i.done) break;
+        _ref = _i.value;
+      }
+
+      var k = _ref;
 
       if (hasOwnProperty(dur.values, k) || hasOwnProperty(this.values, k)) {
         result[k] = dur.get(k) + this.get(k);
@@ -4077,10 +4095,10 @@ function () {
   ;
 
   _proto.reconfigure = function reconfigure(_temp) {
-    var _ref = _temp === void 0 ? {} : _temp,
-        locale = _ref.locale,
-        numberingSystem = _ref.numberingSystem,
-        conversionAccuracy = _ref.conversionAccuracy;
+    var _ref2 = _temp === void 0 ? {} : _temp,
+        locale = _ref2.locale,
+        numberingSystem = _ref2.numberingSystem,
+        conversionAccuracy = _ref2.conversionAccuracy;
 
     var loc = this.loc.clone({
       locale: locale,
@@ -4152,8 +4170,19 @@ function () {
     var lastUnit;
     normalizeValues(this.matrix, vals);
 
-    for (var _i3 = 0, _orderedUnits2 = orderedUnits; _i3 < _orderedUnits2.length; _i3++) {
-      var k = _orderedUnits2[_i3];
+    for (var _iterator2 = orderedUnits, _isArray2 = Array.isArray(_iterator2), _i3 = 0, _iterator2 = _isArray2 ? _iterator2 : _iterator2[Symbol.iterator]();;) {
+      var _ref3;
+
+      if (_isArray2) {
+        if (_i3 >= _iterator2.length) break;
+        _ref3 = _iterator2[_i3++];
+      } else {
+        _i3 = _iterator2.next();
+        if (_i3.done) break;
+        _ref3 = _i3.value;
+      }
+
+      var k = _ref3;
 
       if (units.indexOf(k) >= 0) {
         lastUnit = k;
@@ -4238,8 +4267,19 @@ function () {
       return false;
     }
 
-    for (var _i5 = 0, _orderedUnits3 = orderedUnits; _i5 < _orderedUnits3.length; _i5++) {
-      var u = _orderedUnits3[_i5];
+    for (var _iterator3 = orderedUnits, _isArray3 = Array.isArray(_iterator3), _i5 = 0, _iterator3 = _isArray3 ? _iterator3 : _iterator3[Symbol.iterator]();;) {
+      var _ref4;
+
+      if (_isArray3) {
+        if (_i5 >= _iterator3.length) break;
+        _ref4 = _iterator3[_i5++];
+      } else {
+        _i5 = _iterator3.next();
+        if (_i5.done) break;
+        _ref4 = _i5.value;
+      }
+
+      var u = _ref4;
 
       if (this.values[u] !== other.values[u]) {
         return false;
@@ -4564,7 +4604,7 @@ function () {
       }
     }
 
-    return Interval.invalid("unparsable", "the input \"" + text + "\" can't be parsed asISO 8601");
+    return Interval.invalid("unparsable", "the input \"" + text + "\" can't be parsed as ISO 8601");
   }
   /**
    * Check if an object is an Interval. Works across context boundaries
@@ -6381,9 +6421,13 @@ function parseDataToDateTime(parsed, parsedZone, opts, format, text) {
 // helps handle the details
 
 
-function toTechFormat(dt, format) {
+function toTechFormat(dt, format, allowZ) {
+  if (allowZ === void 0) {
+    allowZ = true;
+  }
+
   return dt.isValid ? Formatter.create(Locale.create("en-US"), {
-    allowZ: true,
+    allowZ: allowZ,
     forceSimple: true
   }).formatDateTimeFromString(dt, format) : null;
 } // technical time formats (e.g. the time part of ISO 8601), take some options
@@ -6399,11 +6443,13 @@ function toTechTimeFormat(dt, _ref) {
       _ref$includeZone = _ref.includeZone,
       includeZone = _ref$includeZone === void 0 ? false : _ref$includeZone,
       _ref$spaceZone = _ref.spaceZone,
-      spaceZone = _ref$spaceZone === void 0 ? false : _ref$spaceZone;
-  var fmt = "HH:mm";
+      spaceZone = _ref$spaceZone === void 0 ? false : _ref$spaceZone,
+      _ref$format = _ref.format,
+      format = _ref$format === void 0 ? "extended" : _ref$format;
+  var fmt = format === "basic" ? "HHmm" : "HH:mm";
 
   if (!suppressSeconds || dt.second !== 0 || dt.millisecond !== 0) {
-    fmt += ":ss";
+    fmt += format === "basic" ? "ss" : ":ss";
 
     if (!suppressMilliseconds || dt.millisecond !== 0) {
       fmt += ".SSS";
@@ -6417,7 +6463,7 @@ function toTechTimeFormat(dt, _ref) {
   if (includeZone) {
     fmt += "z";
   } else if (includeOffset) {
-    fmt += "ZZ";
+    fmt += format === "basic" ? "ZZZ" : "ZZ";
   }
 
   return toTechFormat(dt, fmt);
@@ -6488,8 +6534,19 @@ function normalizeUnit(unit) {
 
 function quickDT(obj, zone) {
   // assume we have the higher-order units
-  for (var _i = 0, _orderedUnits = orderedUnits$1; _i < _orderedUnits.length; _i++) {
-    var u = _orderedUnits[_i];
+  for (var _iterator = orderedUnits$1, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
+    var _ref2;
+
+    if (_isArray) {
+      if (_i >= _iterator.length) break;
+      _ref2 = _iterator[_i++];
+    } else {
+      _i = _iterator.next();
+      if (_i.done) break;
+      _ref2 = _i.value;
+    }
+
+    var u = _ref2;
 
     if (isUndefined(obj[u])) {
       obj[u] = defaultUnitValues[u];
@@ -6536,19 +6593,19 @@ function diffRelative(start, end, opts) {
     return format(differ(opts.unit), opts.unit);
   }
 
-  for (var _iterator = opts.units, _isArray = Array.isArray(_iterator), _i2 = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
-    var _ref2;
+  for (var _iterator2 = opts.units, _isArray2 = Array.isArray(_iterator2), _i2 = 0, _iterator2 = _isArray2 ? _iterator2 : _iterator2[Symbol.iterator]();;) {
+    var _ref3;
 
-    if (_isArray) {
-      if (_i2 >= _iterator.length) break;
-      _ref2 = _iterator[_i2++];
+    if (_isArray2) {
+      if (_i2 >= _iterator2.length) break;
+      _ref3 = _iterator2[_i2++];
     } else {
-      _i2 = _iterator.next();
+      _i2 = _iterator2.next();
       if (_i2.done) break;
-      _ref2 = _i2.value;
+      _ref3 = _i2.value;
     }
 
-    var unit = _ref2;
+    var unit = _ref3;
     var count = differ(unit);
 
     if (Math.abs(count) >= 1) {
@@ -6601,9 +6658,9 @@ function () {
       var unchanged = config.old && config.old.ts === this.ts && config.old.zone.equals(zone);
 
       if (unchanged) {
-        var _ref3 = [config.old.c, config.old.o];
-        c = _ref3[0];
-        o = _ref3[1];
+        var _ref4 = [config.old.c, config.old.o];
+        c = _ref4[0];
+        o = _ref4[1];
       } else {
         var ot = zone.offset(this.ts);
         c = tsToObj(this.ts, ot);
@@ -6777,7 +6834,7 @@ function () {
     }
 
     if (!isNumber(milliseconds)) {
-      throw new InvalidArgumentError("fromMillis requires a numerical input");
+      throw new InvalidArgumentError("fromMillis requires a numerical input, but received a " + typeof milliseconds + " with value " + milliseconds);
     } else if (milliseconds < -MAX_DATE || milliseconds > MAX_DATE) {
       // this isn't perfect because because we can still end up out of range because of additional shifting, but it's a start
       return DateTime.invalid("Timestamp out of range");
@@ -6896,19 +6953,19 @@ function () {
 
     var foundFirst = false;
 
-    for (var _iterator2 = units, _isArray2 = Array.isArray(_iterator2), _i3 = 0, _iterator2 = _isArray2 ? _iterator2 : _iterator2[Symbol.iterator]();;) {
-      var _ref4;
+    for (var _iterator3 = units, _isArray3 = Array.isArray(_iterator3), _i3 = 0, _iterator3 = _isArray3 ? _iterator3 : _iterator3[Symbol.iterator]();;) {
+      var _ref5;
 
-      if (_isArray2) {
-        if (_i3 >= _iterator2.length) break;
-        _ref4 = _iterator2[_i3++];
+      if (_isArray3) {
+        if (_i3 >= _iterator3.length) break;
+        _ref5 = _iterator3[_i3++];
       } else {
-        _i3 = _iterator2.next();
+        _i3 = _iterator3.next();
         if (_i3.done) break;
-        _ref4 = _i3.value;
+        _ref5 = _i3.value;
       }
 
-      var u = _ref4;
+      var u = _ref5;
       var v = normalized[u];
 
       if (!isUndefined(v)) {
@@ -7249,11 +7306,11 @@ function () {
   ;
 
   _proto.setZone = function setZone(zone, _temp) {
-    var _ref5 = _temp === void 0 ? {} : _temp,
-        _ref5$keepLocalTime = _ref5.keepLocalTime,
-        keepLocalTime = _ref5$keepLocalTime === void 0 ? false : _ref5$keepLocalTime,
-        _ref5$keepCalendarTim = _ref5.keepCalendarTime,
-        keepCalendarTime = _ref5$keepCalendarTim === void 0 ? false : _ref5$keepCalendarTim;
+    var _ref6 = _temp === void 0 ? {} : _temp,
+        _ref6$keepLocalTime = _ref6.keepLocalTime,
+        keepLocalTime = _ref6$keepLocalTime === void 0 ? false : _ref6$keepLocalTime,
+        _ref6$keepCalendarTim = _ref6.keepCalendarTime,
+        keepCalendarTime = _ref6$keepCalendarTim === void 0 ? false : _ref6$keepCalendarTim;
 
     zone = normalizeZone(zone, Settings.defaultZone);
 
@@ -7288,10 +7345,10 @@ function () {
   ;
 
   _proto.reconfigure = function reconfigure(_temp2) {
-    var _ref6 = _temp2 === void 0 ? {} : _temp2,
-        locale = _ref6.locale,
-        numberingSystem = _ref6.numberingSystem,
-        outputCalendar = _ref6.outputCalendar;
+    var _ref7 = _temp2 === void 0 ? {} : _temp2,
+        locale = _ref7.locale,
+        numberingSystem = _ref7.numberingSystem,
+        outputCalendar = _ref7.outputCalendar;
 
     var loc = this.loc.clone({
       locale: locale,
@@ -7430,9 +7487,6 @@ function () {
       case "seconds":
         o.millisecond = 0;
         break;
-
-      case "milliseconds":
-        break;
       // no default, invalid units throw in normalizeUnit()
     }
 
@@ -7541,9 +7595,11 @@ function () {
    * @param {boolean} [opts.suppressMilliseconds=false] - exclude milliseconds from the format if they're 0
    * @param {boolean} [opts.suppressSeconds=false] - exclude seconds from the format if they're 0
    * @param {boolean} [opts.includeOffset=true] - include the offset, such as 'Z' or '-04:00'
+   * @param {string} [opts.format='extended'] - choose between the basic and extended format
    * @example DateTime.utc(1982, 5, 25).toISO() //=> '1982-05-25T00:00:00.000Z'
    * @example DateTime.local().toISO() //=> '2017-04-22T20:47:05.335-04:00'
    * @example DateTime.local().toISO({ includeOffset: false }) //=> '2017-04-22T20:47:05.335'
+   * @example DateTime.local().toISO({ format: 'basic' }) //=> '20170422T204705.335-0400'
    * @return {string}
    */
   ;
@@ -7557,23 +7613,30 @@ function () {
       return null;
     }
 
-    return this.toISODate() + "T" + this.toISOTime(opts);
+    return this.toISODate(opts) + "T" + this.toISOTime(opts);
   }
   /**
    * Returns an ISO 8601-compliant string representation of this DateTime's date component
+   * @param {Object} opts - options
+   * @param {string} [opts.format='extended'] - choose between the basic and extended format
    * @example DateTime.utc(1982, 5, 25).toISODate() //=> '1982-05-25'
+   * @example DateTime.utc(1982, 5, 25).toISODate({ format: 'basic' }) //=> '19820525'
    * @return {string}
    */
   ;
 
-  _proto.toISODate = function toISODate() {
-    var format = "yyyy-MM-dd";
+  _proto.toISODate = function toISODate(_temp3) {
+    var _ref8 = _temp3 === void 0 ? {} : _temp3,
+        _ref8$format = _ref8.format,
+        format = _ref8$format === void 0 ? "extended" : _ref8$format;
+
+    var fmt = format === "basic" ? "yyyyMMdd" : "yyyy-MM-dd";
 
     if (this.year > 9999) {
-      format = "+" + format;
+      fmt = "+" + fmt;
     }
 
-    return toTechFormat(this, format);
+    return toTechFormat(this, fmt);
   }
   /**
    * Returns an ISO 8601-compliant string representation of this DateTime's week date
@@ -7591,25 +7654,30 @@ function () {
    * @param {boolean} [opts.suppressMilliseconds=false] - exclude milliseconds from the format if they're 0
    * @param {boolean} [opts.suppressSeconds=false] - exclude seconds from the format if they're 0
    * @param {boolean} [opts.includeOffset=true] - include the offset, such as 'Z' or '-04:00'
-   * @example DateTime.utc().hour(7).minute(34).toISOTime() //=> '07:34:19.361Z'
-   * @example DateTime.utc().hour(7).minute(34).toISOTime({ suppressSeconds: true }) //=> '07:34Z'
+   * @param {string} [opts.format='extended'] - choose between the basic and extended format
+   * @example DateTime.utc().set({ hour: 7, minute: 34 }).toISOTime() //=> '07:34:19.361Z'
+   * @example DateTime.utc().set({ hour: 7, minute: 34, seconds: 0, milliseconds: 0 }).toISOTime({ suppressSeconds: true }) //=> '07:34Z'
+   * @example DateTime.utc().set({ hour: 7, minute: 34 }).toISOTime({ format: 'basic' }) //=> '073419.361Z'
    * @return {string}
    */
   ;
 
-  _proto.toISOTime = function toISOTime(_temp3) {
-    var _ref7 = _temp3 === void 0 ? {} : _temp3,
-        _ref7$suppressMillise = _ref7.suppressMilliseconds,
-        suppressMilliseconds = _ref7$suppressMillise === void 0 ? false : _ref7$suppressMillise,
-        _ref7$suppressSeconds = _ref7.suppressSeconds,
-        suppressSeconds = _ref7$suppressSeconds === void 0 ? false : _ref7$suppressSeconds,
-        _ref7$includeOffset = _ref7.includeOffset,
-        includeOffset = _ref7$includeOffset === void 0 ? true : _ref7$includeOffset;
+  _proto.toISOTime = function toISOTime(_temp4) {
+    var _ref9 = _temp4 === void 0 ? {} : _temp4,
+        _ref9$suppressMillise = _ref9.suppressMilliseconds,
+        suppressMilliseconds = _ref9$suppressMillise === void 0 ? false : _ref9$suppressMillise,
+        _ref9$suppressSeconds = _ref9.suppressSeconds,
+        suppressSeconds = _ref9$suppressSeconds === void 0 ? false : _ref9$suppressSeconds,
+        _ref9$includeOffset = _ref9.includeOffset,
+        includeOffset = _ref9$includeOffset === void 0 ? true : _ref9$includeOffset,
+        _ref9$format = _ref9.format,
+        format = _ref9$format === void 0 ? "extended" : _ref9$format;
 
     return toTechTimeFormat(this, {
       suppressSeconds: suppressSeconds,
       suppressMilliseconds: suppressMilliseconds,
-      includeOffset: includeOffset
+      includeOffset: includeOffset,
+      format: format
     });
   }
   /**
@@ -7621,7 +7689,7 @@ function () {
   ;
 
   _proto.toRFC2822 = function toRFC2822() {
-    return toTechFormat(this, "EEE, dd LLL yyyy HH:mm:ss ZZZ");
+    return toTechFormat(this, "EEE, dd LLL yyyy HH:mm:ss ZZZ", false);
   }
   /**
    * Returns a string representation of this DateTime appropriate for use in HTTP headers.
@@ -7659,12 +7727,12 @@ function () {
    */
   ;
 
-  _proto.toSQLTime = function toSQLTime(_temp4) {
-    var _ref8 = _temp4 === void 0 ? {} : _temp4,
-        _ref8$includeOffset = _ref8.includeOffset,
-        includeOffset = _ref8$includeOffset === void 0 ? true : _ref8$includeOffset,
-        _ref8$includeZone = _ref8.includeZone,
-        includeZone = _ref8$includeZone === void 0 ? false : _ref8$includeZone;
+  _proto.toSQLTime = function toSQLTime(_temp5) {
+    var _ref10 = _temp5 === void 0 ? {} : _temp5,
+        _ref10$includeOffset = _ref10.includeOffset,
+        includeOffset = _ref10$includeOffset === void 0 ? true : _ref10$includeOffset,
+        _ref10$includeZone = _ref10.includeZone,
+        includeZone = _ref10$includeZone === void 0 ? false : _ref10$includeZone;
 
     return toTechTimeFormat(this, {
       includeOffset: includeOffset,
@@ -8690,7 +8758,7 @@ exports.Zone = Zone;
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var freeGlobal = __webpack_require__(58);
+var freeGlobal = __webpack_require__(61);
 
 /** Detect free variable `self`. */
 var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -8709,7 +8777,7 @@ module.exports = root;
 
 
 if (true) {
-  module.exports = __webpack_require__(142);
+  module.exports = __webpack_require__(144);
 } else {}
 
 
@@ -8747,9 +8815,9 @@ module.exports = g;
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(57),
-    getRawTag = __webpack_require__(114),
-    objectToString = __webpack_require__(115);
+var Symbol = __webpack_require__(60),
+    getRawTag = __webpack_require__(116),
+    objectToString = __webpack_require__(117);
 
 /** `Object#toString` result references. */
 var nullTag = '[object Null]',
@@ -8781,8 +8849,8 @@ module.exports = baseGetTag;
 /* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsNative = __webpack_require__(121),
-    getValue = __webpack_require__(124);
+var baseIsNative = __webpack_require__(123),
+    getValue = __webpack_require__(126);
 
 /**
  * Gets the native function at `key` of `object`.
@@ -8952,11 +9020,10 @@ var pipe = exports.pipe = function pipe() {
 function getPadding() {
   if (!_exenv.canUseDOM) return 0;
 
-  var currentPadding = parseInt(document.body.paddingRight, 10) || 0;
-  var clientWidth = document.body ? document.body.clientWidth : 0;
-  var adjustedPadding = window.innerWidth - clientWidth + currentPadding || 0;
+  var paddingRight = parseInt(window.getComputedStyle(document.body).paddingRight, 10);
+  var scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
-  return adjustedPadding;
+  return paddingRight + scrollbarWidth;
 }
 
 function getWindowHeight() {
@@ -8999,6 +9066,7 @@ function insertStyleTag(tag) {
   if (!_exenv.canUseDOM) return;
 
   var head = document.head || document.getElementsByTagName('head')[0];
+
   head.appendChild(tag);
 }
 
@@ -10083,6 +10151,7 @@ function makeIconMasking (_ref) {
       attributes = _ref.attributes,
       main = _ref.main,
       mask = _ref.mask,
+      explicitMaskId = _ref.maskId,
       transform = _ref.transform;
   var mainWidth = main.width,
       mainPath = main.icon;
@@ -10115,8 +10184,8 @@ function makeIconMasking (_ref) {
     attributes: _objectSpread({}, trans.outer),
     children: [maskInnerGroup]
   };
-  var maskId = "mask-".concat(nextUniqueId());
-  var clipId = "clip-".concat(nextUniqueId());
+  var maskId = "mask-".concat(explicitMaskId || nextUniqueId());
+  var clipId = "clip-".concat(explicitMaskId || nextUniqueId());
   var maskTag = {
     tag: 'mask',
     attributes: _objectSpread({}, ALL_SPACE, {
@@ -10249,6 +10318,8 @@ function makeInlineSvgAbstract(params) {
       transform = params.transform,
       symbol = params.symbol,
       title = params.title,
+      maskId = params.maskId,
+      titleId = params.titleId,
       extra = params.extra,
       _params$watchable = params.watchable,
       watchable = _params$watchable === void 0 ? false : _params$watchable;
@@ -10280,7 +10351,7 @@ function makeInlineSvgAbstract(params) {
   if (title) content.children.push({
     tag: 'title',
     attributes: {
-      id: content.attributes['aria-labelledby'] || "title-".concat(nextUniqueId())
+      id: content.attributes['aria-labelledby'] || "title-".concat(titleId || nextUniqueId())
     },
     children: [title]
   });
@@ -10290,6 +10361,7 @@ function makeInlineSvgAbstract(params) {
     iconName: iconName,
     main: main,
     mask: mask,
+    maskId: maskId,
     transform: transform,
     symbol: symbol,
     styles: extra.styles
@@ -10408,7 +10480,7 @@ var p = config.measurePerformance && PERFORMANCE && PERFORMANCE.mark && PERFORMA
   mark: noop$1,
   measure: noop$1
 };
-var preamble = "FA \"5.11.2\"";
+var preamble = "FA \"5.13.0\"";
 
 var begin = function begin(name) {
   p.mark("".concat(preamble, " ").concat(name, " begins"));
@@ -10913,10 +10985,11 @@ function attributesParser (node) {
     return acc;
   }, {});
   var title = node.getAttribute('title');
+  var titleId = node.getAttribute('data-fa-title-id');
 
   if (config.autoA11y) {
     if (title) {
-      extraAttributes['aria-labelledby'] = "".concat(config.replacementClass, "-title-").concat(nextUniqueId());
+      extraAttributes['aria-labelledby'] = "".concat(config.replacementClass, "-title-").concat(titleId || nextUniqueId());
     } else {
       extraAttributes['aria-hidden'] = 'true';
       extraAttributes['focusable'] = 'false';
@@ -10942,10 +11015,12 @@ function blankMeta() {
   return {
     iconName: null,
     title: null,
+    titleId: null,
     prefix: null,
     transform: meaninglessTransform,
     symbol: false,
     mask: null,
+    maskId: null,
     extra: {
       classes: [],
       styles: {},
@@ -10967,10 +11042,12 @@ function parseMeta(node) {
   return {
     iconName: iconName,
     title: node.getAttribute('title'),
+    titleId: node.getAttribute('data-fa-title-id'),
     prefix: prefix,
     transform: transform,
     symbol: symbol,
     mask: mask,
+    maskId: node.getAttribute('data-fa-mask-id'),
     extra: {
       classes: extraClasses,
       styles: extraStyles,
@@ -11140,10 +11217,12 @@ var styles$3 = namespace.styles;
 function generateSvgReplacementMutation(node, nodeMeta) {
   var iconName = nodeMeta.iconName,
       title = nodeMeta.title,
+      titleId = nodeMeta.titleId,
       prefix = nodeMeta.prefix,
       transform = nodeMeta.transform,
       symbol = nodeMeta.symbol,
       mask = nodeMeta.mask,
+      maskId = nodeMeta.maskId,
       extra = nodeMeta.extra;
   return new picked(function (resolve, reject) {
     picked.all([findIcon(iconName, prefix), findIcon(mask.iconName, mask.prefix)]).then(function (_ref) {
@@ -11161,7 +11240,9 @@ function generateSvgReplacementMutation(node, nodeMeta) {
         transform: transform,
         symbol: symbol,
         mask: mask,
+        maskId: maskId,
         title: title,
+        titleId: titleId,
         extra: extra,
         watchable: true
       })]);
@@ -11302,6 +11383,7 @@ function replaceForPosition(node, position) {
     var styles = WINDOW.getComputedStyle(node, position);
     var fontFamily = styles.getPropertyValue('font-family').match(FONT_FAMILY_PATTERN);
     var fontWeight = styles.getPropertyValue('font-weight');
+    var content = styles.getPropertyValue('content');
 
     if (alreadyProcessedPseudoElement && !fontFamily) {
       // If we've already processed it but the current computed style does not result in a font-family,
@@ -11309,8 +11391,7 @@ function replaceForPosition(node, position) {
       // removed. So we now should delete the icon.
       node.removeChild(alreadyProcessedPseudoElement);
       return resolve();
-    } else if (fontFamily) {
-      var content = styles.getPropertyValue('content');
+    } else if (fontFamily && content !== 'none' && content !== '') {
       var prefix = ~['Solid', 'Regular', 'Light', 'Duotone', 'Brands'].indexOf(fontFamily[1]) ? STYLE_TO_PREFIX[fontFamily[1].toLowerCase()] : FONT_WEIGHT_TO_PREFIX[fontWeight];
       var hexValue = toHex(content.length === 3 ? content.substr(1, 1) : content);
       var iconName = byUnicode(prefix, hexValue);
@@ -11583,8 +11664,12 @@ var icon = resolveIcons(function (iconDefinition) {
       symbol = _params$symbol === void 0 ? false : _params$symbol,
       _params$mask = params.mask,
       mask = _params$mask === void 0 ? null : _params$mask,
+      _params$maskId = params.maskId,
+      maskId = _params$maskId === void 0 ? null : _params$maskId,
       _params$title = params.title,
       title = _params$title === void 0 ? null : _params$title,
+      _params$titleId = params.titleId,
+      titleId = _params$titleId === void 0 ? null : _params$titleId,
       _params$classes = params.classes,
       classes = _params$classes === void 0 ? [] : _params$classes,
       _params$attributes = params.attributes,
@@ -11602,7 +11687,7 @@ var icon = resolveIcons(function (iconDefinition) {
 
     if (config.autoA11y) {
       if (title) {
-        attributes['aria-labelledby'] = "".concat(config.replacementClass, "-title-").concat(nextUniqueId());
+        attributes['aria-labelledby'] = "".concat(config.replacementClass, "-title-").concat(titleId || nextUniqueId());
       } else {
         attributes['aria-hidden'] = 'true';
         attributes['focusable'] = 'false';
@@ -11624,6 +11709,8 @@ var icon = resolveIcons(function (iconDefinition) {
       transform: _objectSpread({}, meaninglessTransform, transform),
       symbol: symbol,
       title: title,
+      maskId: maskId,
+      titleId: titleId,
       extra: {
         attributes: attributes,
         styles: styles,
@@ -11735,7 +11822,7 @@ var autoReplace = function autoReplace() {
 
 
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(27), __webpack_require__(106).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(27), __webpack_require__(108).setImmediate))
 
 /***/ }),
 /* 37 */
@@ -11777,7 +11864,7 @@ exports.svgPathData = svgPathData;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(28),
-    getPrototype = __webpack_require__(138),
+    getPrototype = __webpack_require__(140),
     isObjectLike = __webpack_require__(34);
 
 /** `Object#toString` result references. */
@@ -11889,6 +11976,8 @@ exports.svgPathData = svgPathData;
 /***/ (function(module, exports) {
 
 function _typeof(obj) {
+  "@babel/helpers - typeof";
+
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
     module.exports = _typeof = function _typeof(obj) {
       return typeof obj;
@@ -11971,7 +12060,41 @@ exports.default = _default;
 /* 53 */,
 /* 54 */,
 /* 55 */,
-/* 56 */
+/* 56 */,
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(58);
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
+}
+
+module.exports = _unsupportedIterableToArray;
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports) {
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+
+module.exports = _arrayLikeToArray;
+
+/***/ }),
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12050,7 +12173,7 @@ var TouchScrollable = exports.TouchScrollable = function (_PureComponent) {
 }(_react.PureComponent);
 
 /***/ }),
-/* 57 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(21);
@@ -12062,7 +12185,7 @@ module.exports = Symbol;
 
 
 /***/ }),
-/* 58 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
@@ -12073,7 +12196,7 @@ module.exports = freeGlobal;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(27)))
 
 /***/ }),
-/* 59 */
+/* 62 */
 /***/ (function(module, exports) {
 
 /**
@@ -12110,7 +12233,7 @@ module.exports = isObject;
 
 
 /***/ }),
-/* 60 */
+/* 63 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -12134,7 +12257,7 @@ module.exports = isPrototype;
 
 
 /***/ }),
-/* 61 */
+/* 64 */
 /***/ (function(module, exports) {
 
 /**
@@ -12155,7 +12278,7 @@ module.exports = overArg;
 
 
 /***/ }),
-/* 62 */
+/* 65 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -12187,7 +12310,7 @@ module.exports = toSource;
 
 
 /***/ }),
-/* 63 */
+/* 66 */
 /***/ (function(module, exports) {
 
 /** Used as references for various `Number` constants. */
@@ -12228,7 +12351,7 @@ module.exports = isLength;
 
 
 /***/ }),
-/* 64 */
+/* 67 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -12256,7 +12379,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 65 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12291,7 +12414,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 66 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12326,7 +12449,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 67 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12361,7 +12484,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 68 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12371,7 +12494,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ScrollLock = __webpack_require__(111);
+var _ScrollLock = __webpack_require__(113);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -12380,7 +12503,7 @@ Object.defineProperty(exports, 'default', {
   }
 });
 
-var _TouchScrollable = __webpack_require__(56);
+var _TouchScrollable = __webpack_require__(59);
 
 Object.defineProperty(exports, 'TouchScrollable', {
   enumerable: true,
@@ -12392,7 +12515,7 @@ Object.defineProperty(exports, 'TouchScrollable', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 69 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12427,7 +12550,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 70 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12462,7 +12585,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 71 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12497,7 +12620,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 72 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12532,7 +12655,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 73 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12567,7 +12690,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 74 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12602,7 +12725,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 75 */
+/* 78 */
 /***/ (function(module, exports) {
 
 function _taggedTemplateLiteral(strings, raw) {
@@ -12620,17 +12743,17 @@ function _taggedTemplateLiteral(strings, raw) {
 module.exports = _taggedTemplateLiteral;
 
 /***/ }),
-/* 76 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseKeys = __webpack_require__(117),
-    getTag = __webpack_require__(119),
-    isArguments = __webpack_require__(129),
+var baseKeys = __webpack_require__(119),
+    getTag = __webpack_require__(121),
+    isArguments = __webpack_require__(131),
     isArray = __webpack_require__(50),
-    isArrayLike = __webpack_require__(131),
-    isBuffer = __webpack_require__(132),
-    isPrototype = __webpack_require__(60),
-    isTypedArray = __webpack_require__(134);
+    isArrayLike = __webpack_require__(133),
+    isBuffer = __webpack_require__(134),
+    isPrototype = __webpack_require__(63),
+    isTypedArray = __webpack_require__(136);
 
 /** `Object#toString` result references. */
 var mapTag = '[object Map]',
@@ -12703,7 +12826,7 @@ module.exports = isEmpty;
 
 
 /***/ }),
-/* 77 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12738,7 +12861,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 78 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12773,7 +12896,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 79 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12808,7 +12931,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 80 */
+/* 83 */
 /***/ (function(module, exports) {
 
 function _inheritsLoose(subClass, superClass) {
@@ -12820,7 +12943,7 @@ function _inheritsLoose(subClass, superClass) {
 module.exports = _inheritsLoose;
 
 /***/ }),
-/* 81 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12855,7 +12978,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 82 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12890,7 +13013,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 83 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12925,7 +13048,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 84 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12960,23 +13083,25 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 85 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayWithoutHoles = __webpack_require__(139);
+var arrayWithoutHoles = __webpack_require__(141);
 
-var iterableToArray = __webpack_require__(140);
+var iterableToArray = __webpack_require__(142);
 
-var nonIterableSpread = __webpack_require__(141);
+var unsupportedIterableToArray = __webpack_require__(57);
+
+var nonIterableSpread = __webpack_require__(143);
 
 function _toConsumableArray(arr) {
-  return arrayWithoutHoles(arr) || iterableToArray(arr) || nonIterableSpread();
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
 }
 
 module.exports = _toConsumableArray;
 
 /***/ }),
-/* 86 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13011,7 +13136,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 87 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13046,7 +13171,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 88 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13097,11 +13222,14 @@ var MEMO_STATICS = {
 };
 var TYPE_STATICS = {};
 TYPE_STATICS[reactIs.ForwardRef] = FORWARD_REF_STATICS;
+TYPE_STATICS[reactIs.Memo] = MEMO_STATICS;
 
 function getStatics(component) {
+  // React v16.11 and below
   if (reactIs.isMemo(component)) {
     return MEMO_STATICS;
-  }
+  } // React v16.12 and above
+
 
   return TYPE_STATICS[component['$$typeof']] || REACT_STATICS;
 }
@@ -13153,7 +13281,7 @@ module.exports = hoistNonReactStatics;
 
 
 /***/ }),
-/* 89 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13188,13 +13316,13 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 90 */
+/* 93 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {/**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
- * @version 1.16.0
+ * @version 1.16.1
  * @license
  * Copyright (c) 2016 Federico Zivolo and contributors
  *
@@ -13540,7 +13668,7 @@ function getBordersSize(styles, axis) {
   var sideA = axis === 'x' ? 'Left' : 'Top';
   var sideB = sideA === 'Left' ? 'Right' : 'Bottom';
 
-  return parseFloat(styles['border' + sideA + 'Width'], 10) + parseFloat(styles['border' + sideB + 'Width'], 10);
+  return parseFloat(styles['border' + sideA + 'Width']) + parseFloat(styles['border' + sideB + 'Width']);
 }
 
 function getSize(axis, body, html, computedStyle) {
@@ -13695,8 +13823,8 @@ function getOffsetRectRelativeToArbitraryNode(children, parent) {
   var scrollParent = getScrollParent(children);
 
   var styles = getStyleComputedProperty(parent);
-  var borderTopWidth = parseFloat(styles.borderTopWidth, 10);
-  var borderLeftWidth = parseFloat(styles.borderLeftWidth, 10);
+  var borderTopWidth = parseFloat(styles.borderTopWidth);
+  var borderLeftWidth = parseFloat(styles.borderLeftWidth);
 
   // In cases where the parent is fixed, we must ignore negative scroll in offset calc
   if (fixedPosition && isHTML) {
@@ -13717,8 +13845,8 @@ function getOffsetRectRelativeToArbitraryNode(children, parent) {
   // differently when margins are applied to it. The margins are included in
   // the box of the documentElement, in the other cases not.
   if (!isIE10 && isHTML) {
-    var marginTop = parseFloat(styles.marginTop, 10);
-    var marginLeft = parseFloat(styles.marginLeft, 10);
+    var marginTop = parseFloat(styles.marginTop);
+    var marginLeft = parseFloat(styles.marginLeft);
 
     offsets.top -= borderTopWidth - marginTop;
     offsets.bottom -= borderTopWidth - marginTop;
@@ -14657,8 +14785,8 @@ function arrow(data, options) {
   // Compute the sideValue using the updated popper offsets
   // take popper margin in account because we don't have this info available
   var css = getStyleComputedProperty(data.instance.popper);
-  var popperMarginSide = parseFloat(css['margin' + sideCapitalized], 10);
-  var popperBorderSide = parseFloat(css['border' + sideCapitalized + 'Width'], 10);
+  var popperMarginSide = parseFloat(css['margin' + sideCapitalized]);
+  var popperBorderSide = parseFloat(css['border' + sideCapitalized + 'Width']);
   var sideValue = center - data.offsets.popper[side] - popperMarginSide - popperBorderSide;
 
   // prevent arrowElement from being placed not contiguously to its popper
@@ -15812,9 +15940,6 @@ Popper.Defaults = Defaults;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(27)))
 
 /***/ }),
-/* 91 */,
-/* 92 */,
-/* 93 */,
 /* 94 */,
 /* 95 */,
 /* 96 */,
@@ -15822,14 +15947,16 @@ Popper.Defaults = Defaults;
 /* 98 */,
 /* 99 */,
 /* 100 */,
-/* 101 */
+/* 101 */,
+/* 102 */,
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(143);
+module.exports = __webpack_require__(145);
 
 
 /***/ }),
-/* 102 */
+/* 104 */
 /***/ (function(module, exports) {
 
 function _setPrototypeOf(o, p) {
@@ -15844,7 +15971,7 @@ function _setPrototypeOf(o, p) {
 module.exports = _setPrototypeOf;
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ (function(module, exports) {
 
 function _arrayWithHoles(arr) {
@@ -15854,14 +15981,11 @@ function _arrayWithHoles(arr) {
 module.exports = _arrayWithHoles;
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, exports) {
 
 function _iterableToArrayLimit(arr, i) {
-  if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) {
-    return;
-  }
-
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
   var _arr = [];
   var _n = true;
   var _d = false;
@@ -15890,17 +16014,17 @@ function _iterableToArrayLimit(arr, i) {
 module.exports = _iterableToArrayLimit;
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ (function(module, exports) {
 
 function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance");
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
 module.exports = _nonIterableRest;
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -15956,7 +16080,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(107);
+__webpack_require__(109);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -15970,7 +16094,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(27)))
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -16160,10 +16284,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(27), __webpack_require__(108)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(27), __webpack_require__(110)))
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -16353,7 +16477,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16366,7 +16490,7 @@ process.umask = function() { return 0; };
 
 
 
-var ReactPropTypesSecret = __webpack_require__(110);
+var ReactPropTypesSecret = __webpack_require__(112);
 
 function emptyFunction() {}
 function emptyFunctionWithReset() {}
@@ -16424,7 +16548,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16443,7 +16567,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16461,13 +16585,13 @@ var _react2 = _interopRequireDefault(_react);
 
 var _exenv = __webpack_require__(32);
 
-var _TouchScrollable = __webpack_require__(56);
+var _TouchScrollable = __webpack_require__(59);
 
-var _withLockSheet = __webpack_require__(112);
+var _withLockSheet = __webpack_require__(114);
 
 var _withLockSheet2 = _interopRequireDefault(_withLockSheet);
 
-var _withTouchListeners = __webpack_require__(113);
+var _withTouchListeners = __webpack_require__(115);
 
 var _withTouchListeners2 = _interopRequireDefault(_withTouchListeners);
 
@@ -16547,7 +16671,7 @@ LockToggle.defaultProps = {
 exports.default = LockToggle;
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16643,7 +16767,7 @@ function withLockSheet(WrappedComponent) {
 }
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16711,10 +16835,10 @@ function withTouchListeners(WrappedComponent) {
 }
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(57);
+var Symbol = __webpack_require__(60);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -16763,7 +16887,7 @@ module.exports = getRawTag;
 
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -16791,7 +16915,7 @@ module.exports = objectToString;
 
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, exports) {
 
 function _objectWithoutPropertiesLoose(source, excluded) {
@@ -16812,11 +16936,11 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 module.exports = _objectWithoutPropertiesLoose;
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isPrototype = __webpack_require__(60),
-    nativeKeys = __webpack_require__(118);
+var isPrototype = __webpack_require__(63),
+    nativeKeys = __webpack_require__(120);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -16848,10 +16972,10 @@ module.exports = baseKeys;
 
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var overArg = __webpack_require__(61);
+var overArg = __webpack_require__(64);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeKeys = overArg(Object.keys, Object);
@@ -16860,16 +16984,16 @@ module.exports = nativeKeys;
 
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var DataView = __webpack_require__(120),
-    Map = __webpack_require__(125),
-    Promise = __webpack_require__(126),
-    Set = __webpack_require__(127),
-    WeakMap = __webpack_require__(128),
+var DataView = __webpack_require__(122),
+    Map = __webpack_require__(127),
+    Promise = __webpack_require__(128),
+    Set = __webpack_require__(129),
+    WeakMap = __webpack_require__(130),
     baseGetTag = __webpack_require__(28),
-    toSource = __webpack_require__(62);
+    toSource = __webpack_require__(65);
 
 /** `Object#toString` result references. */
 var mapTag = '[object Map]',
@@ -16924,7 +17048,7 @@ module.exports = getTag;
 
 
 /***/ }),
-/* 120 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(29),
@@ -16937,13 +17061,13 @@ module.exports = DataView;
 
 
 /***/ }),
-/* 121 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isFunction = __webpack_require__(12),
-    isMasked = __webpack_require__(122),
-    isObject = __webpack_require__(59),
-    toSource = __webpack_require__(62);
+    isMasked = __webpack_require__(124),
+    isObject = __webpack_require__(62),
+    toSource = __webpack_require__(65);
 
 /**
  * Used to match `RegExp`
@@ -16990,10 +17114,10 @@ module.exports = baseIsNative;
 
 
 /***/ }),
-/* 122 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var coreJsData = __webpack_require__(123);
+var coreJsData = __webpack_require__(125);
 
 /** Used to detect methods masquerading as native. */
 var maskSrcKey = (function() {
@@ -17016,7 +17140,7 @@ module.exports = isMasked;
 
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(21);
@@ -17028,7 +17152,7 @@ module.exports = coreJsData;
 
 
 /***/ }),
-/* 124 */
+/* 126 */
 /***/ (function(module, exports) {
 
 /**
@@ -17047,7 +17171,7 @@ module.exports = getValue;
 
 
 /***/ }),
-/* 125 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(29),
@@ -17060,7 +17184,7 @@ module.exports = Map;
 
 
 /***/ }),
-/* 126 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(29),
@@ -17073,7 +17197,7 @@ module.exports = Promise;
 
 
 /***/ }),
-/* 127 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(29),
@@ -17086,7 +17210,7 @@ module.exports = Set;
 
 
 /***/ }),
-/* 128 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(29),
@@ -17099,10 +17223,10 @@ module.exports = WeakMap;
 
 
 /***/ }),
-/* 129 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsArguments = __webpack_require__(130),
+var baseIsArguments = __webpack_require__(132),
     isObjectLike = __webpack_require__(34);
 
 /** Used for built-in method references. */
@@ -17141,7 +17265,7 @@ module.exports = isArguments;
 
 
 /***/ }),
-/* 130 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(28),
@@ -17165,11 +17289,11 @@ module.exports = baseIsArguments;
 
 
 /***/ }),
-/* 131 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isFunction = __webpack_require__(12),
-    isLength = __webpack_require__(63);
+    isLength = __webpack_require__(66);
 
 /**
  * Checks if `value` is array-like. A value is considered array-like if it's
@@ -17204,11 +17328,11 @@ module.exports = isArrayLike;
 
 
 /***/ }),
-/* 132 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(21),
-    stubFalse = __webpack_require__(133);
+    stubFalse = __webpack_require__(135);
 
 /** Detect free variable `exports`. */
 var freeExports =  true && exports && !exports.nodeType && exports;
@@ -17246,10 +17370,10 @@ var isBuffer = nativeIsBuffer || stubFalse;
 
 module.exports = isBuffer;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(64)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(67)(module)))
 
 /***/ }),
-/* 133 */
+/* 135 */
 /***/ (function(module, exports) {
 
 /**
@@ -17273,12 +17397,12 @@ module.exports = stubFalse;
 
 
 /***/ }),
-/* 134 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsTypedArray = __webpack_require__(135),
-    baseUnary = __webpack_require__(136),
-    nodeUtil = __webpack_require__(137);
+var baseIsTypedArray = __webpack_require__(137),
+    baseUnary = __webpack_require__(138),
+    nodeUtil = __webpack_require__(139);
 
 /* Node.js helper references. */
 var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
@@ -17306,11 +17430,11 @@ module.exports = isTypedArray;
 
 
 /***/ }),
-/* 135 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(28),
-    isLength = __webpack_require__(63),
+    isLength = __webpack_require__(66),
     isObjectLike = __webpack_require__(34);
 
 /** `Object#toString` result references. */
@@ -17372,7 +17496,7 @@ module.exports = baseIsTypedArray;
 
 
 /***/ }),
-/* 136 */
+/* 138 */
 /***/ (function(module, exports) {
 
 /**
@@ -17392,10 +17516,10 @@ module.exports = baseUnary;
 
 
 /***/ }),
-/* 137 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(58);
+/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(61);
 
 /** Detect free variable `exports`. */
 var freeExports =  true && exports && !exports.nodeType && exports;
@@ -17426,13 +17550,13 @@ var nodeUtil = (function() {
 
 module.exports = nodeUtil;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(64)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(67)(module)))
 
 /***/ }),
-/* 138 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var overArg = __webpack_require__(61);
+var overArg = __webpack_require__(64);
 
 /** Built-in value references. */
 var getPrototype = overArg(Object.getPrototypeOf, Object);
@@ -17441,47 +17565,43 @@ module.exports = getPrototype;
 
 
 /***/ }),
-/* 139 */
-/***/ (function(module, exports) {
+/* 141 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(58);
 
 function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
-      arr2[i] = arr[i];
-    }
-
-    return arr2;
-  }
+  if (Array.isArray(arr)) return arrayLikeToArray(arr);
 }
 
 module.exports = _arrayWithoutHoles;
 
 /***/ }),
-/* 140 */
+/* 142 */
 /***/ (function(module, exports) {
 
 function _iterableToArray(iter) {
-  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
 }
 
 module.exports = _iterableToArray;
 
 /***/ }),
-/* 141 */
+/* 143 */
 /***/ (function(module, exports) {
 
 function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance");
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
 module.exports = _nonIterableSpread;
 
 /***/ }),
-/* 142 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.12.0
+/** @license React v16.13.1
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -17490,20 +17610,104 @@ module.exports = _nonIterableSpread;
  * LICENSE file in the root directory of this source tree.
  */
 
-Object.defineProperty(exports,"__esModule",{value:!0});
-var b="function"===typeof Symbol&&Symbol.for,c=b?Symbol.for("react.element"):60103,d=b?Symbol.for("react.portal"):60106,e=b?Symbol.for("react.fragment"):60107,f=b?Symbol.for("react.strict_mode"):60108,g=b?Symbol.for("react.profiler"):60114,h=b?Symbol.for("react.provider"):60109,k=b?Symbol.for("react.context"):60110,l=b?Symbol.for("react.async_mode"):60111,m=b?Symbol.for("react.concurrent_mode"):60111,n=b?Symbol.for("react.forward_ref"):60112,p=b?Symbol.for("react.suspense"):60113,q=b?Symbol.for("react.suspense_list"):
-60120,r=b?Symbol.for("react.memo"):60115,t=b?Symbol.for("react.lazy"):60116,v=b?Symbol.for("react.fundamental"):60117,w=b?Symbol.for("react.responder"):60118,x=b?Symbol.for("react.scope"):60119;function y(a){if("object"===typeof a&&null!==a){var u=a.$$typeof;switch(u){case c:switch(a=a.type,a){case l:case m:case e:case g:case f:case p:return a;default:switch(a=a&&a.$$typeof,a){case k:case n:case t:case r:case h:return a;default:return u}}case d:return u}}}function z(a){return y(a)===m}
-exports.typeOf=y;exports.AsyncMode=l;exports.ConcurrentMode=m;exports.ContextConsumer=k;exports.ContextProvider=h;exports.Element=c;exports.ForwardRef=n;exports.Fragment=e;exports.Lazy=t;exports.Memo=r;exports.Portal=d;exports.Profiler=g;exports.StrictMode=f;exports.Suspense=p;
-exports.isValidElementType=function(a){return"string"===typeof a||"function"===typeof a||a===e||a===m||a===g||a===f||a===p||a===q||"object"===typeof a&&null!==a&&(a.$$typeof===t||a.$$typeof===r||a.$$typeof===h||a.$$typeof===k||a.$$typeof===n||a.$$typeof===v||a.$$typeof===w||a.$$typeof===x)};exports.isAsyncMode=function(a){return z(a)||y(a)===l};exports.isConcurrentMode=z;exports.isContextConsumer=function(a){return y(a)===k};exports.isContextProvider=function(a){return y(a)===h};
-exports.isElement=function(a){return"object"===typeof a&&null!==a&&a.$$typeof===c};exports.isForwardRef=function(a){return y(a)===n};exports.isFragment=function(a){return y(a)===e};exports.isLazy=function(a){return y(a)===t};exports.isMemo=function(a){return y(a)===r};exports.isPortal=function(a){return y(a)===d};exports.isProfiler=function(a){return y(a)===g};exports.isStrictMode=function(a){return y(a)===f};exports.isSuspense=function(a){return y(a)===p};
+var b="function"===typeof Symbol&&Symbol.for,c=b?Symbol.for("react.element"):60103,d=b?Symbol.for("react.portal"):60106,e=b?Symbol.for("react.fragment"):60107,f=b?Symbol.for("react.strict_mode"):60108,g=b?Symbol.for("react.profiler"):60114,h=b?Symbol.for("react.provider"):60109,k=b?Symbol.for("react.context"):60110,l=b?Symbol.for("react.async_mode"):60111,m=b?Symbol.for("react.concurrent_mode"):60111,n=b?Symbol.for("react.forward_ref"):60112,p=b?Symbol.for("react.suspense"):60113,q=b?
+Symbol.for("react.suspense_list"):60120,r=b?Symbol.for("react.memo"):60115,t=b?Symbol.for("react.lazy"):60116,v=b?Symbol.for("react.block"):60121,w=b?Symbol.for("react.fundamental"):60117,x=b?Symbol.for("react.responder"):60118,y=b?Symbol.for("react.scope"):60119;
+function z(a){if("object"===typeof a&&null!==a){var u=a.$$typeof;switch(u){case c:switch(a=a.type,a){case l:case m:case e:case g:case f:case p:return a;default:switch(a=a&&a.$$typeof,a){case k:case n:case t:case r:case h:return a;default:return u}}case d:return u}}}function A(a){return z(a)===m}exports.AsyncMode=l;exports.ConcurrentMode=m;exports.ContextConsumer=k;exports.ContextProvider=h;exports.Element=c;exports.ForwardRef=n;exports.Fragment=e;exports.Lazy=t;exports.Memo=r;exports.Portal=d;
+exports.Profiler=g;exports.StrictMode=f;exports.Suspense=p;exports.isAsyncMode=function(a){return A(a)||z(a)===l};exports.isConcurrentMode=A;exports.isContextConsumer=function(a){return z(a)===k};exports.isContextProvider=function(a){return z(a)===h};exports.isElement=function(a){return"object"===typeof a&&null!==a&&a.$$typeof===c};exports.isForwardRef=function(a){return z(a)===n};exports.isFragment=function(a){return z(a)===e};exports.isLazy=function(a){return z(a)===t};
+exports.isMemo=function(a){return z(a)===r};exports.isPortal=function(a){return z(a)===d};exports.isProfiler=function(a){return z(a)===g};exports.isStrictMode=function(a){return z(a)===f};exports.isSuspense=function(a){return z(a)===p};
+exports.isValidElementType=function(a){return"string"===typeof a||"function"===typeof a||a===e||a===m||a===g||a===f||a===p||a===q||"object"===typeof a&&null!==a&&(a.$$typeof===t||a.$$typeof===r||a.$$typeof===h||a.$$typeof===k||a.$$typeof===n||a.$$typeof===w||a.$$typeof===x||a.$$typeof===y||a.$$typeof===v)};exports.typeOf=z;
 
 
 /***/ }),
-/* 143 */
+/* 145 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "Colors", function() { return /* reexport */ colors_namespaceObject; });
+__webpack_require__.d(__webpack_exports__, "Hooks", function() { return /* reexport */ hooks_namespaceObject; });
+__webpack_require__.d(__webpack_exports__, "Sizes", function() { return /* reexport */ Sizes_namespaceObject; });
+__webpack_require__.d(__webpack_exports__, "StyleUtils", function() { return /* reexport */ StyleUtils_namespaceObject; });
+__webpack_require__.d(__webpack_exports__, "version", function() { return /* binding */ src_version; });
+__webpack_require__.d(__webpack_exports__, "Badge", function() { return /* reexport */ badge; });
+__webpack_require__.d(__webpack_exports__, "Banner", function() { return /* reexport */ banner; });
+__webpack_require__.d(__webpack_exports__, "Drawer", function() { return /* reexport */ src_drawer; });
+__webpack_require__.d(__webpack_exports__, "Label", function() { return /* reexport */ src_label; });
+__webpack_require__.d(__webpack_exports__, "Overlay", function() { return /* reexport */ Overlay_Overlay; });
+__webpack_require__.d(__webpack_exports__, "Portal", function() { return /* reexport */ components_Portal_Portal; });
+__webpack_require__.d(__webpack_exports__, "Spinner", function() { return /* reexport */ components_Spinner; });
+__webpack_require__.d(__webpack_exports__, "Tag", function() { return /* reexport */ tag; });
+__webpack_require__.d(__webpack_exports__, "selectStyles", function() { return /* reexport */ selectStyles; });
+__webpack_require__.d(__webpack_exports__, "Button", function() { return /* reexport */ components_Button; });
+__webpack_require__.d(__webpack_exports__, "CopyButton", function() { return /* reexport */ components_CopyButton; });
+__webpack_require__.d(__webpack_exports__, "EditButton", function() { return /* reexport */ components_EditButton; });
+__webpack_require__.d(__webpack_exports__, "IconButton", function() { return /* reexport */ components_IconButton; });
+__webpack_require__.d(__webpack_exports__, "MinusButton", function() { return /* reexport */ components_MinusButton; });
+__webpack_require__.d(__webpack_exports__, "PlusButton", function() { return /* reexport */ components_PlusButton; });
+__webpack_require__.d(__webpack_exports__, "SearchButton", function() { return /* reexport */ components_SearchButton; });
+__webpack_require__.d(__webpack_exports__, "Checkbox", function() { return /* reexport */ components_Checkbox; });
+__webpack_require__.d(__webpack_exports__, "ChoiceGroup", function() { return /* reexport */ styled_ChoiceGroup; });
+__webpack_require__.d(__webpack_exports__, "Radio", function() { return /* reexport */ components_Radio; });
+__webpack_require__.d(__webpack_exports__, "ActionModal", function() { return /* reexport */ components_ActionModal; });
+__webpack_require__.d(__webpack_exports__, "Modal", function() { return /* reexport */ Modal_Modal; });
+__webpack_require__.d(__webpack_exports__, "ModalFooter", function() { return /* reexport */ ModalFooter_ModalFooter; });
+__webpack_require__.d(__webpack_exports__, "ModalHeader", function() { return /* reexport */ ModalHeader_ModalHeader; });
+__webpack_require__.d(__webpack_exports__, "Stepper", function() { return /* reexport */ components_Stepper; });
+__webpack_require__.d(__webpack_exports__, "StepLabel", function() { return /* reexport */ StepLabel; });
+__webpack_require__.d(__webpack_exports__, "StepIcon", function() { return /* reexport */ components_StepIcon; });
+__webpack_require__.d(__webpack_exports__, "Step", function() { return /* reexport */ components_Step; });
+__webpack_require__.d(__webpack_exports__, "Input", function() { return /* reexport */ components_Input; });
+__webpack_require__.d(__webpack_exports__, "SearchInput", function() { return /* reexport */ components_SearchInput; });
+__webpack_require__.d(__webpack_exports__, "TextArea", function() { return /* reexport */ components_TextArea; });
+__webpack_require__.d(__webpack_exports__, "AppContainerWrapper", function() { return /* reexport */ App_AppContainerWrapper; });
+__webpack_require__.d(__webpack_exports__, "AppContentWrapper", function() { return /* reexport */ App_AppContentWrapper; });
+__webpack_require__.d(__webpack_exports__, "AppHeaderWrapper", function() { return /* reexport */ App_AppHeaderWrapper; });
+__webpack_require__.d(__webpack_exports__, "AppNavigationWrapper", function() { return /* reexport */ App_AppNavigationWrapper; });
+__webpack_require__.d(__webpack_exports__, "Card", function() { return /* reexport */ Card_Card; });
+__webpack_require__.d(__webpack_exports__, "CardHeader", function() { return /* reexport */ CardHeader_CardHeader; });
+__webpack_require__.d(__webpack_exports__, "CardSegment", function() { return /* reexport */ CardSegment_CardSegment; });
+__webpack_require__.d(__webpack_exports__, "CardStack", function() { return /* reexport */ CardStack_CardStack; });
+__webpack_require__.d(__webpack_exports__, "Creatable", function() { return /* reexport */ components_Creatable; });
+__webpack_require__.d(__webpack_exports__, "Select", function() { return /* reexport */ components_Select; });
+__webpack_require__.d(__webpack_exports__, "CheckboxSelect", function() { return /* reexport */ components_CheckboxSelect; });
+__webpack_require__.d(__webpack_exports__, "Cell", function() { return /* reexport */ Cell; });
+__webpack_require__.d(__webpack_exports__, "HeadCell", function() { return /* reexport */ components_HeadCell; });
+__webpack_require__.d(__webpack_exports__, "PaginationToolbar", function() { return /* reexport */ components_PaginationToolbar; });
+__webpack_require__.d(__webpack_exports__, "Table", function() { return /* reexport */ components_Table; });
+__webpack_require__.d(__webpack_exports__, "TableBody", function() { return /* reexport */ components_TableBody; });
+__webpack_require__.d(__webpack_exports__, "TableHeader", function() { return /* reexport */ components_TableHeader; });
+__webpack_require__.d(__webpack_exports__, "TableRow", function() { return /* reexport */ components_TableRow; });
+__webpack_require__.d(__webpack_exports__, "TableUtils", function() { return /* reexport */ TableUtils_namespaceObject; });
+__webpack_require__.d(__webpack_exports__, "Search", function() { return /* reexport */ components_Search; });
+__webpack_require__.d(__webpack_exports__, "DataGrid", function() { return /* reexport */ components_DataGrid; });
+__webpack_require__.d(__webpack_exports__, "IconSplash", function() { return /* reexport */ components_IconSplash; });
+__webpack_require__.d(__webpack_exports__, "PersonResult", function() { return /* reexport */ components_PersonResult; });
+__webpack_require__.d(__webpack_exports__, "Result", function() { return /* reexport */ components_Result; });
+__webpack_require__.d(__webpack_exports__, "SearchResults", function() { return /* reexport */ components_SearchResults; });
+__webpack_require__.d(__webpack_exports__, "DatePicker", function() { return /* reexport */ components_DatePicker; });
+__webpack_require__.d(__webpack_exports__, "TimePicker", function() { return /* reexport */ components_TimePicker; });
+__webpack_require__.d(__webpack_exports__, "DateTimePicker", function() { return /* reexport */ components_DateTimePicker; });
+__webpack_require__.d(__webpack_exports__, "Skeleton", function() { return /* reexport */ skeleton; });
+__webpack_require__.d(__webpack_exports__, "Tooltip", function() { return /* reexport */ tooltip; });
+__webpack_require__.d(__webpack_exports__, "Collapse", function() { return /* reexport */ esm_Collapse_Collapse; });
+__webpack_require__.d(__webpack_exports__, "Fab", function() { return /* reexport */ esm_Fab_Fab; });
+__webpack_require__.d(__webpack_exports__, "MuiPickersUtilsProvider", function() { return /* reexport */ useUtils_cfb96ac9_MuiPickersUtilsProvider; });
+__webpack_require__.d(__webpack_exports__, "SpeedDial", function() { return /* reexport */ esm_SpeedDial_SpeedDial; });
+__webpack_require__.d(__webpack_exports__, "SpeedDialAction", function() { return /* reexport */ esm_SpeedDialAction_SpeedDialAction; });
+__webpack_require__.d(__webpack_exports__, "SpeedDialIcon", function() { return /* reexport */ esm_SpeedDialIcon_SpeedDialIcon; });
+__webpack_require__.d(__webpack_exports__, "ThemeProvider", function() { return /* reexport */ ThemeProvider_ThemeProvider; });
+__webpack_require__.d(__webpack_exports__, "LatticeLuxonUtils", function() { return /* reexport */ utils_LatticeLuxonUtils; });
+__webpack_require__.d(__webpack_exports__, "Breadcrumbs", function() { return /* reexport */ breadcrumbs; });
+__webpack_require__.d(__webpack_exports__, "ExpansionPanel", function() { return /* reexport */ components_ExpansionPanel; });
+__webpack_require__.d(__webpack_exports__, "ExpansionPanelDetails", function() { return /* reexport */ components_ExpansionPanelDetails; });
+__webpack_require__.d(__webpack_exports__, "ExpansionPanelSummary", function() { return /* reexport */ components_ExpansionPanelSummary; });
+__webpack_require__.d(__webpack_exports__, "darkTheme", function() { return /* reexport */ darkTheme; });
+__webpack_require__.d(__webpack_exports__, "lightTheme", function() { return /* reexport */ lightTheme; });
+
+// NAMESPACE OBJECT: ./src/colors/index.js
 var colors_namespaceObject = {};
 __webpack_require__.r(colors_namespaceObject);
 __webpack_require__.d(colors_namespaceObject, "BLACK", function() { return BLACK; });
@@ -17523,21 +17727,29 @@ __webpack_require__.d(colors_namespaceObject, "REDS", function() { return REDS; 
 __webpack_require__.d(colors_namespaceObject, "RED_1", function() { return RED_1; });
 __webpack_require__.d(colors_namespaceObject, "WHITE", function() { return WHITE; });
 __webpack_require__.d(colors_namespaceObject, "YELLOW_1", function() { return YELLOW_1; });
+
+// NAMESPACE OBJECT: ./src/hooks/index.js
 var hooks_namespaceObject = {};
 __webpack_require__.r(hooks_namespaceObject);
 __webpack_require__.d(hooks_namespaceObject, "useBoolean", function() { return hooks_useBoolean; });
 __webpack_require__.d(hooks_namespaceObject, "useKeyDownListener", function() { return hooks_useKeyDownListener; });
+
+// NAMESPACE OBJECT: ./src/style/Sizes.js
 var Sizes_namespaceObject = {};
 __webpack_require__.r(Sizes_namespaceObject);
 __webpack_require__.d(Sizes_namespaceObject, "APP_CONTAINER_MIN_WIDTH", function() { return APP_CONTAINER_MIN_WIDTH; });
 __webpack_require__.d(Sizes_namespaceObject, "APP_CONTENT_PADDING", function() { return APP_CONTENT_PADDING; });
 __webpack_require__.d(Sizes_namespaceObject, "APP_CONTENT_WIDTH", function() { return APP_CONTENT_WIDTH; });
+
+// NAMESPACE OBJECT: ./src/utils/StyleUtils.js
 var StyleUtils_namespaceObject = {};
 __webpack_require__.r(StyleUtils_namespaceObject);
 __webpack_require__.d(StyleUtils_namespaceObject, "getHoverStyles", function() { return StyleUtils_getHoverStyles; });
 __webpack_require__.d(StyleUtils_namespaceObject, "getStickyPosition", function() { return StyleUtils_getStickyPosition; });
 __webpack_require__.d(StyleUtils_namespaceObject, "getStyleVariation", function() { return getStyleVariation; });
 __webpack_require__.d(StyleUtils_namespaceObject, "media", function() { return media; });
+
+// NAMESPACE OBJECT: ./src/table/src/components/TableUtils.js
 var TableUtils_namespaceObject = {};
 __webpack_require__.r(TableUtils_namespaceObject);
 __webpack_require__.d(TableUtils_namespaceObject, "ascendByProperty", function() { return ascendByProperty; });
@@ -17658,7 +17870,7 @@ var external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_
 var external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_default = /*#__PURE__*/__webpack_require__.n(external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_);
 
 // CONCATENATED MODULE: ./node_modules/react-transition-group/esm/config.js
-/* harmony default export */ var esm_config = ({
+/* harmony default export */ var config = ({
   disabled: false
 });
 // CONCATENATED MODULE: ./node_modules/react-transition-group/esm/TransitionGroupContext.js
@@ -17915,7 +18127,7 @@ function (_React$Component) {
     var enterTimeout = appearing ? timeouts.appear : timeouts.enter; // no enter animation skip right to ENTERED
     // if we are mounting and running this it means appear _must_ be set
 
-    if (!mounting && !enter || esm_config.disabled) {
+    if (!mounting && !enter || config.disabled) {
       this.safeSetState({
         status: ENTERED
       }, function () {
@@ -17946,7 +18158,7 @@ function (_React$Component) {
     var exit = this.props.exit;
     var timeouts = this.getTimeouts(); // no exit animation skip right to EXITED
 
-    if (!exit || esm_config.disabled) {
+    if (!exit || config.disabled) {
       this.safeSetState({
         status: EXITED
       }, function () {
@@ -18095,7 +18307,7 @@ Transition_Transition.ENTERED = 3;
 Transition_Transition.EXITING = 4;
 /* harmony default export */ var esm_Transition = (Transition_Transition);
 // EXTERNAL MODULE: ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js
-var hoist_non_react_statics_cjs = __webpack_require__(88);
+var hoist_non_react_statics_cjs = __webpack_require__(91);
 var hoist_non_react_statics_cjs_default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics_cjs);
 
 // CONCATENATED MODULE: ./node_modules/is-in-browser/dist/module.js
@@ -18805,21 +19017,22 @@ function () {
       var str = '';
 
       for (var index = 0; index < this.style.length; index++) {
-        str += toCss(this.key, this.style[index]);
+        str += toCss(this.at, this.style[index]);
         if (this.style[index + 1]) str += '\n';
       }
 
       return str;
     }
 
-    return toCss(this.key, this.style, options);
+    return toCss(this.at, this.style, options);
   };
 
   return FontFaceRule;
 }();
+var keyRegExp$2 = /@font-face/;
 var pluginFontFaceRule = {
   onCreateRule: function onCreateRule(key, style, options) {
-    return key === '@font-face' ? new FontFaceRule(key, style, options) : null;
+    return keyRegExp$2.test(key) ? new FontFaceRule(key, style, options) : null;
   }
 };
 
@@ -20100,7 +20313,7 @@ var jss_esm_Jss =
 function () {
   function Jss(options) {
     this.id = instanceCounter++;
-    this.version = "10.0.4";
+    this.version = "10.1.1";
     this.plugins = new PluginsRegistry();
     this.options = {
       id: {
@@ -20376,7 +20589,6 @@ var jss_esm_index = jss_esm_create();
 // CONCATENATED MODULE: ./node_modules/@material-ui/styles/esm/mergeClasses/mergeClasses.js
 
 
-
 function mergeClasses() {
   var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var baseClasses = options.baseClasses,
@@ -20400,8 +20612,6 @@ function mergeClasses() {
   });
   return nextClasses;
 }
-
-/* harmony default export */ var mergeClasses_mergeClasses = (mergeClasses);
 // CONCATENATED MODULE: ./node_modules/@material-ui/styles/esm/makeStyles/multiKeyStore.js
 // Used https://github.com/thinkloop/multi-key-cache as inspiration
 var multiKeyStore = {
@@ -20436,7 +20646,11 @@ if (false) {}
 
 
 function useTheme() {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useContext(useTheme_ThemeContext);
+  var theme = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useContext(useTheme_ThemeContext);
+
+  if (false) {}
+
+  return theme;
 }
 // CONCATENATED MODULE: ./node_modules/@material-ui/styles/esm/ThemeProvider/nested.js
 var hasSymbol = typeof Symbol === 'function' && Symbol.for;
@@ -20508,6 +20722,7 @@ function createGenerateClassName() {
 // CONCATENATED MODULE: ./node_modules/jss-plugin-rule-value-function/dist/jss-plugin-rule-value-function.esm.js
 
 
+
 var jss_plugin_rule_value_function_esm_now = Date.now();
 var fnValuesNs = "fnValues" + jss_plugin_rule_value_function_esm_now;
 var fnRuleNs = "fnStyle" + ++jss_plugin_rule_value_function_esm_now;
@@ -20547,13 +20762,15 @@ function functionPlugin() {
         // Empty object will remove all currently defined props
         // in case function rule returns a falsy value.
         styleRule.style = fnRule(data) || {};
+
+        if (false) { var prop; }
       }
 
       var fnValues = styleRule[fnValuesNs]; // If we have a fn values map, it is a rule with function values.
 
       if (fnValues) {
-        for (var prop in fnValues) {
-          styleRule.prop(prop, fnValues[prop](data), options);
+        for (var _prop in fnValues) {
+          styleRule.prop(_prop, fnValues[_prop](data), options);
         }
       }
     }
@@ -21119,12 +21336,10 @@ function iterate(prop, value, options) {
       }
     }
   } else if (typeof value === 'number') {
-    if (options[prop]) {
-      return "" + value + options[prop];
-    }
+    var unit = options[prop] || units[prop];
 
-    if (units[prop]) {
-      return typeof units[prop] === 'function' ? units[prop](value).toString() : "" + value + units[prop];
+    if (unit) {
+      return typeof unit === 'function' ? unit(value).toString() : "" + value + unit;
     }
 
     return value.toString();
@@ -21166,30 +21381,46 @@ function defaultUnit(options) {
 
 /* harmony default export */ var jss_plugin_default_unit_esm = (defaultUnit);
 
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
-      arr2[i] = arr[i];
-    }
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
 
-    return arr2;
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
   }
+
+  return arr2;
+}
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
 }
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js
 function _iterableToArray(iter) {
-  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+}
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
 }
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js
 function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance");
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js
 
 
 
+
 function _toConsumableArray(arr) {
-  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
 }
 // CONCATENATED MODULE: ./node_modules/css-vendor/dist/css-vendor.esm.js
 
@@ -21406,7 +21637,7 @@ var writingMode = {
   supportedProperty: function supportedProperty(prop) {
     if (prop !== 'writing-mode') return false;
 
-    if (css_vendor_esm_prefix.js === 'Webkit' || css_vendor_esm_prefix.js === 'ms') {
+    if (css_vendor_esm_prefix.js === 'Webkit' || css_vendor_esm_prefix.js === 'ms' && css_vendor_esm_prefix.browser !== 'edge') {
       return css_vendor_esm_prefix.css + prop;
     }
 
@@ -21874,8 +22105,6 @@ function jssPreset() {
     typeof window === 'undefined' ? null : jss_plugin_vendor_prefixer_esm(), jss_plugin_props_sort_esm()]
   };
 }
-
-/* harmony default export */ var jssPreset_jssPreset = (jssPreset);
 // CONCATENATED MODULE: ./node_modules/@material-ui/styles/esm/StylesProvider/StylesProvider.js
 
 
@@ -21886,7 +22115,7 @@ function jssPreset() {
 
  // Default JSS instance.
 
-var StylesProvider_jss = jss_esm_create(jssPreset_jssPreset()); // Use a singleton or the provided one by the context.
+var StylesProvider_jss = jss_esm_create(jssPreset()); // Use a singleton or the provided one by the context.
 //
 // The counter-based approach doesn't tolerate any mistake.
 // It's much safer to use the same counter everywhere.
@@ -21907,7 +22136,6 @@ var StylesContext = external_root_React_commonjs2_react_commonjs_react_amd_react
 if (false) {}
 
 var injectFirstNode;
-
 function StylesProvider(props) {
   var children = props.children,
       _props$injectFirst = props.injectFirst,
@@ -21936,21 +22164,18 @@ function StylesProvider(props) {
     }
 
     context.jss = jss_esm_create({
-      plugins: jssPreset_jssPreset().plugins,
+      plugins: jssPreset().plugins,
       insertionPoint: injectFirstNode
     });
   }
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StylesContext.Provider, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StylesContext.Provider, {
     value: context
   }, children);
 }
-
  false ? undefined : void 0;
 
 if (false) {}
-
-/* harmony default export */ var StylesProvider_StylesProvider = (StylesProvider);
 // CONCATENATED MODULE: ./node_modules/@material-ui/styles/esm/makeStyles/indexCounter.js
 /* eslint-disable import/prefer-default-export */
 // Global index counter to preserve source order.
@@ -21971,6 +22196,8 @@ function increment() {
 }
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/typeof.js
 function typeof_typeof(obj) {
+  "@babel/helpers - typeof";
+
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
     typeof_typeof = function _typeof(obj) {
       return typeof obj;
@@ -21986,8 +22213,8 @@ function typeof_typeof(obj) {
 // CONCATENATED MODULE: ./node_modules/@material-ui/utils/esm/deepmerge.js
 
 
-function isObject(item) {
-  return item && typeof_typeof(item) === 'object' && !Array.isArray(item);
+function isPlainObject(item) {
+  return item && typeof_typeof(item) === 'object' && item.constructor === Object;
 }
 function deepmerge(target, source) {
   var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {
@@ -21995,14 +22222,14 @@ function deepmerge(target, source) {
   };
   var output = options.clone ? _extends({}, target) : target;
 
-  if (isObject(target) && isObject(source)) {
+  if (isPlainObject(target) && isPlainObject(source)) {
     Object.keys(source).forEach(function (key) {
       // Avoid prototype pollution
       if (key === '__proto__') {
         return;
       }
 
-      if (isObject(source[key]) && key in target) {
+      if (isPlainObject(source[key]) && key in target) {
         output[key] = deepmerge(target[key], source[key], options);
       } else {
         output[key] = source[key];
@@ -22013,7 +22240,6 @@ function deepmerge(target, source) {
   return output;
 }
 // CONCATENATED MODULE: ./node_modules/@material-ui/styles/esm/getStylesCreator/getStylesCreator.js
-
 
 
 
@@ -22053,8 +22279,6 @@ function getStylesCreator(stylesOrCreator) {
     options: {}
   };
 }
-
-/* harmony default export */ var getStylesCreator_getStylesCreator = (getStylesCreator);
 // CONCATENATED MODULE: ./node_modules/@material-ui/styles/esm/getStylesCreator/noopTheme.js
 // We use the same empty object to ref count the styles that don't need a theme object.
 var noopTheme = {};
@@ -22106,7 +22330,7 @@ function getClasses(_ref, classes, Component) {
   }
 
   if (generate) {
-    state.cacheClasses.value = mergeClasses_mergeClasses({
+    state.cacheClasses.value = mergeClasses({
       baseClasses: state.cacheClasses.lastJSS,
       newClasses: classes,
       Component: Component
@@ -22181,7 +22405,7 @@ function attach(_ref2, props) {
     dynamicSheet.update(props);
     dynamicSheet.attach();
     state.dynamicSheet = dynamicSheet;
-    state.classes = mergeClasses_mergeClasses({
+    state.classes = mergeClasses({
       baseClasses: sheetManager.staticSheet.classes,
       newClasses: dynamicSheet.classes
     });
@@ -22270,7 +22494,7 @@ function makeStyles(stylesOrCreator) {
       defaultTheme = _options$defaultTheme === void 0 ? getStylesCreator_noopTheme : _options$defaultTheme,
       stylesOptions2 = _objectWithoutProperties(options, ["name", "classNamePrefix", "Component", "defaultTheme"]);
 
-  var stylesCreator = getStylesCreator_getStylesCreator(stylesOrCreator);
+  var stylesCreator = getStylesCreator(stylesOrCreator);
   var classNamePrefix = name || classNamePrefixOption || 'makeStyles';
   stylesCreator.options = {
     index: increment(),
@@ -22278,7 +22502,8 @@ function makeStyles(stylesOrCreator) {
     meta: classNamePrefix,
     classNamePrefix: classNamePrefix
   };
-  return function () {
+
+  var useStyles = function useStyles() {
     var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var theme = useTheme() || defaultTheme;
 
@@ -22308,11 +22533,15 @@ function makeStyles(stylesOrCreator) {
 
       shouldUpdate.current = true;
     });
-    return getClasses(instance.current, props.classes, Component);
-  };
-}
+    var classes = getClasses(instance.current, props.classes, Component);
 
-/* harmony default export */ var makeStyles_makeStyles = (makeStyles);
+    if (false) {}
+
+    return classes;
+  };
+
+  return useStyles;
+}
 // CONCATENATED MODULE: ./node_modules/@material-ui/styles/esm/getThemeProps/getThemeProps.js
 /* eslint-disable no-restricted-syntax */
 function getThemeProps(params) {
@@ -22337,8 +22566,6 @@ function getThemeProps(params) {
 
   return props;
 }
-
-/* harmony default export */ var getThemeProps_getThemeProps = (getThemeProps);
 // CONCATENATED MODULE: ./node_modules/@material-ui/styles/esm/withStyles/withStyles.js
 
 
@@ -22367,7 +22594,7 @@ var withStyles_withStyles = function withStyles(stylesOrCreator) {
 
     if (false) { var displayName; }
 
-    var useStyles = makeStyles_makeStyles(stylesOrCreator, _extends({
+    var useStyles = makeStyles(stylesOrCreator, _extends({
       defaultTheme: defaultTheme,
       Component: Component,
       name: name || Component.displayName,
@@ -22376,9 +22603,12 @@ var withStyles_withStyles = function withStyles(stylesOrCreator) {
     var WithStyles = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function WithStyles(props, ref) {
       var classesProp = props.classes,
           innerRef = props.innerRef,
-          other = _objectWithoutProperties(props, ["classes", "innerRef"]);
+          other = _objectWithoutProperties(props, ["classes", "innerRef"]); // The wrapper receives only user supplied props, which could be a subset of
+      // the actual props Component might receive due to merging with defaultProps.
+      // So copying it here would give us the same result in the wrapper as well.
 
-      var classes = useStyles(props);
+
+      var classes = useStyles(_extends({}, Component.defaultProps, {}, props));
       var theme;
       var more = other;
 
@@ -22388,7 +22618,7 @@ var withStyles_withStyles = function withStyles(stylesOrCreator) {
         theme = useTheme() || defaultTheme;
 
         if (name) {
-          more = getThemeProps_getThemeProps({
+          more = getThemeProps({
             theme: theme,
             name: name,
             props: other
@@ -22402,16 +22632,12 @@ var withStyles_withStyles = function withStyles(stylesOrCreator) {
         }
       }
 
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
         ref: innerRef || ref,
         classes: classes
       }, more));
     });
-     false ? undefined : void 0; // The wrapper receives only user supplied props, which could be a subset of
-    // the actual props Component might receive due to merging with defaultProps.
-    // So copying it here would give us the same result in the wrapper as well.
-
-    WithStyles.defaultProps = Component.defaultProps;
+     false ? undefined : void 0;
 
     if (false) {}
 
@@ -22444,7 +22670,7 @@ function _defineProperty(obj, key, value) {
 
 // Sorted ASC by size. That's important.
 // It can't be configured as it's used statically for propTypes.
-var createBreakpoints_keys = ['xs', 'sm', 'md', 'lg', 'xl']; // Keep in mind that @media is inclusive by the CSS specification.
+var keys = ['xs', 'sm', 'md', 'lg', 'xl']; // Keep in mind that @media is inclusive by the CSS specification.
 
 function createBreakpoints(breakpoints) {
   var _breakpoints$values = breakpoints.values,
@@ -22467,10 +22693,10 @@ function createBreakpoints(breakpoints) {
   }
 
   function down(key) {
-    var endIndex = createBreakpoints_keys.indexOf(key) + 1;
-    var upperbound = values[createBreakpoints_keys[endIndex]];
+    var endIndex = keys.indexOf(key) + 1;
+    var upperbound = values[keys[endIndex]];
 
-    if (endIndex === createBreakpoints_keys.length) {
+    if (endIndex === keys.length) {
       // xl down applies to all sizes
       return up('xs');
     }
@@ -22480,13 +22706,13 @@ function createBreakpoints(breakpoints) {
   }
 
   function between(start, end) {
-    var endIndex = createBreakpoints_keys.indexOf(end);
+    var endIndex = keys.indexOf(end);
 
-    if (endIndex === createBreakpoints_keys.length - 1) {
+    if (endIndex === keys.length - 1) {
       return up(start);
     }
 
-    return "@media (min-width:".concat(typeof values[start] === 'number' ? values[start] : start).concat(unit, ") and ") + "(max-width:".concat((endIndex !== -1 && typeof values[createBreakpoints_keys[endIndex + 1]] === 'number' ? values[createBreakpoints_keys[endIndex + 1]] : end) - step / 100).concat(unit, ")");
+    return "@media (min-width:".concat(typeof values[start] === 'number' ? values[start] : start).concat(unit, ") and ") + "(max-width:".concat((endIndex !== -1 && typeof values[keys[endIndex + 1]] === 'number' ? values[keys[endIndex + 1]] : end) - step / 100).concat(unit, ")");
   }
 
   function only(key) {
@@ -22498,7 +22724,7 @@ function createBreakpoints(breakpoints) {
   }
 
   return _extends({
-    keys: createBreakpoints_keys,
+    keys: keys,
     values: values,
     up: up,
     down: down,
@@ -23002,7 +23228,11 @@ var createPalette_light = {
     // The color of a disabled action.
     disabled: 'rgba(0, 0, 0, 0.26)',
     // The background color of a disabled action.
-    disabledBackground: 'rgba(0, 0, 0, 0.12)'
+    disabledBackground: 'rgba(0, 0, 0, 0.12)',
+    disabledOpacity: 0.38,
+    focus: 'rgba(0, 0, 0, 0.12)',
+    focusOpacity: 0.12,
+    activatedOpacity: 0.12
   }
 };
 var dark = {
@@ -23025,18 +23255,25 @@ var dark = {
     selected: 'rgba(255, 255, 255, 0.16)',
     selectedOpacity: 0.16,
     disabled: 'rgba(255, 255, 255, 0.3)',
-    disabledBackground: 'rgba(255, 255, 255, 0.12)'
+    disabledBackground: 'rgba(255, 255, 255, 0.12)',
+    disabledOpacity: 0.38,
+    focus: 'rgba(255, 255, 255, 0.12)',
+    focusOpacity: 0.12,
+    activatedOpacity: 0.24
   }
 };
 
 function addLightOrDark(intent, direction, shade, tonalOffset) {
+  var tonalOffsetLight = tonalOffset.light || tonalOffset;
+  var tonalOffsetDark = tonalOffset.dark || tonalOffset * 1.5;
+
   if (!intent[direction]) {
     if (intent.hasOwnProperty(shade)) {
       intent[direction] = intent[shade];
     } else if (direction === 'light') {
-      intent.light = lighten(intent.main, tonalOffset);
+      intent.light = lighten(intent.main, tonalOffsetLight);
     } else if (direction === 'dark') {
-      intent.dark = darken(intent.main, tonalOffset * 1.5);
+      intent.dark = darken(intent.main, tonalOffsetDark);
     }
   }
 }
@@ -23090,10 +23327,6 @@ function createPalette(palette) {
 
 
   function getContrastText(background) {
-    if (!background) {
-      throw new TypeError("Material-UI: missing background argument in getContrastText(".concat(background, ")."));
-    }
-
     var contrastText = getContrastRatio(background, dark.text.primary) >= contrastThreshold ? dark.text.primary : createPalette_light.text.primary;
 
     if (false) { var contrast; }
@@ -23101,7 +23334,7 @@ function createPalette(palette) {
     return contrastText;
   }
 
-  function augmentColor(color) {
+  var augmentColor = function augmentColor(color) {
     var mainShade = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;
     var lightShade = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 300;
     var darkShade = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 700;
@@ -23111,7 +23344,13 @@ function createPalette(palette) {
       color.main = color[mainShade];
     }
 
-    if (false) {}
+    if (!color.main) {
+      throw new Error(['Material-UI: the color provided to augmentColor(color) is invalid.', "The color object needs to have a `main` property or a `".concat(mainShade, "` property.")].join('\n'));
+    }
+
+    if (typeof color.main !== 'string') {
+      throw new Error(['Material-UI: the color provided to augmentColor(color) is invalid.', "`color.main` should be a string, but `".concat(JSON.stringify(color.main), "` was provided instead."), '', 'Did you intend to use one of the following approaches?', '', 'import { green } from "@material-ui/core/colors";', '', 'const theme1 = createMuiTheme({ palette: {', '  primary: green,', '} });', '', 'const theme2 = createMuiTheme({ palette: {', '  primary: { main: green[500] },', '} });'].join('\n'));
+    }
 
     addLightOrDark(color, 'light', lightShade, tonalOffset);
     addLightOrDark(color, 'dark', darkShade, tonalOffset);
@@ -23121,7 +23360,7 @@ function createPalette(palette) {
     }
 
     return color;
-  }
+  };
 
   var types = {
     dark: dark,
@@ -23269,7 +23508,274 @@ var shape = {
   borderRadius: 4
 };
 /* harmony default export */ var styles_shape = (shape);
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
+function _iterableToArrayLimit(arr, i) {
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js
+
+
+
+
+function _slicedToArray(arr, i) {
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+}
+// CONCATENATED MODULE: ./node_modules/@material-ui/system/esm/merge.js
+
+
+function merge(acc, item) {
+  if (!item) {
+    return acc;
+  }
+
+  return deepmerge(acc, item, {
+    clone: false // No need to clone deep, it's way faster.
+
+  });
+}
+
+/* harmony default export */ var esm_merge = (merge);
+// CONCATENATED MODULE: ./node_modules/@material-ui/system/esm/breakpoints.js
+
+
+
+
+ // The breakpoint **start** at this value.
+// For instance with the first breakpoint xs: [xs, sm[.
+
+var breakpoints_values = {
+  xs: 0,
+  sm: 600,
+  md: 960,
+  lg: 1280,
+  xl: 1920
+};
+var defaultBreakpoints = {
+  // Sorted ASC by size. That's important.
+  // It can't be configured as it's used statically for propTypes.
+  keys: ['xs', 'sm', 'md', 'lg', 'xl'],
+  up: function up(key) {
+    return "@media (min-width:".concat(breakpoints_values[key], "px)");
+  }
+};
+function handleBreakpoints(props, propValue, styleFromPropValue) {
+  if (false) {}
+
+  if (Array.isArray(propValue)) {
+    var themeBreakpoints = props.theme.breakpoints || defaultBreakpoints;
+    return propValue.reduce(function (acc, item, index) {
+      acc[themeBreakpoints.up(themeBreakpoints.keys[index])] = styleFromPropValue(propValue[index]);
+      return acc;
+    }, {});
+  }
+
+  if (typeof_typeof(propValue) === 'object') {
+    var _themeBreakpoints = props.theme.breakpoints || defaultBreakpoints;
+
+    return Object.keys(propValue).reduce(function (acc, breakpoint) {
+      acc[_themeBreakpoints.up(breakpoint)] = styleFromPropValue(propValue[breakpoint]);
+      return acc;
+    }, {});
+  }
+
+  var output = styleFromPropValue(propValue);
+  return output;
+}
+
+function breakpoints_breakpoints(styleFunction) {
+  var newStyleFunction = function newStyleFunction(props) {
+    var base = styleFunction(props);
+    var themeBreakpoints = props.theme.breakpoints || defaultBreakpoints;
+    var extended = themeBreakpoints.keys.reduce(function (acc, key) {
+      if (props[key]) {
+        acc = acc || {};
+        acc[themeBreakpoints.up(key)] = styleFunction(_extends({
+          theme: props.theme
+        }, props[key]));
+      }
+
+      return acc;
+    }, null);
+    return esm_merge(base, extended);
+  };
+
+  newStyleFunction.propTypes =  false ? undefined : {};
+  newStyleFunction.filterProps = ['xs', 'sm', 'md', 'lg', 'xl'].concat(_toConsumableArray(styleFunction.filterProps));
+  return newStyleFunction;
+}
+
+/* harmony default export */ var esm_breakpoints = (breakpoints_breakpoints);
+// CONCATENATED MODULE: ./node_modules/@material-ui/system/esm/memoize.js
+function memoize_memoize(fn) {
+  var cache = {};
+  return function (arg) {
+    if (cache[arg] === undefined) {
+      cache[arg] = fn(arg);
+    }
+
+    return cache[arg];
+  };
+}
+// CONCATENATED MODULE: ./node_modules/@material-ui/system/esm/spacing.js
+
+
+
+
+
+var properties = {
+  m: 'margin',
+  p: 'padding'
+};
+var directions = {
+  t: 'Top',
+  r: 'Right',
+  b: 'Bottom',
+  l: 'Left',
+  x: ['Left', 'Right'],
+  y: ['Top', 'Bottom']
+};
+var aliases = {
+  marginX: 'mx',
+  marginY: 'my',
+  paddingX: 'px',
+  paddingY: 'py'
+}; // memoize() impact:
+// From 300,000 ops/sec
+// To 350,000 ops/sec
+
+var getCssProperties = memoize_memoize(function (prop) {
+  // It's not a shorthand notation.
+  if (prop.length > 2) {
+    if (aliases[prop]) {
+      prop = aliases[prop];
+    } else {
+      return [prop];
+    }
+  }
+
+  var _prop$split = prop.split(''),
+      _prop$split2 = _slicedToArray(_prop$split, 2),
+      a = _prop$split2[0],
+      b = _prop$split2[1];
+
+  var property = properties[a];
+  var direction = directions[b] || '';
+  return Array.isArray(direction) ? direction.map(function (dir) {
+    return property + dir;
+  }) : [property + direction];
+});
+var spacingKeys = ['m', 'mt', 'mr', 'mb', 'ml', 'mx', 'my', 'p', 'pt', 'pr', 'pb', 'pl', 'px', 'py', 'margin', 'marginTop', 'marginRight', 'marginBottom', 'marginLeft', 'marginX', 'marginY', 'padding', 'paddingTop', 'paddingRight', 'paddingBottom', 'paddingLeft', 'paddingX', 'paddingY'];
+function createUnarySpacing(theme) {
+  var themeSpacing = theme.spacing || 8;
+
+  if (typeof themeSpacing === 'number') {
+    return function (abs) {
+      if (false) {}
+
+      return themeSpacing * abs;
+    };
+  }
+
+  if (Array.isArray(themeSpacing)) {
+    return function (abs) {
+      if (false) {}
+
+      return themeSpacing[abs];
+    };
+  }
+
+  if (typeof themeSpacing === 'function') {
+    return themeSpacing;
+  }
+
+  if (false) {}
+
+  return function () {
+    return undefined;
+  };
+}
+
+function spacing_getValue(transformer, propValue) {
+  if (typeof propValue === 'string') {
+    return propValue;
+  }
+
+  var abs = Math.abs(propValue);
+  var transformed = transformer(abs);
+
+  if (propValue >= 0) {
+    return transformed;
+  }
+
+  if (typeof transformed === 'number') {
+    return -transformed;
+  }
+
+  return "-".concat(transformed);
+}
+
+function getStyleFromPropValue(cssProperties, transformer) {
+  return function (propValue) {
+    return cssProperties.reduce(function (acc, cssProperty) {
+      acc[cssProperty] = spacing_getValue(transformer, propValue);
+      return acc;
+    }, {});
+  };
+}
+
+function spacing_spacing(props) {
+  var theme = props.theme;
+  var transformer = createUnarySpacing(theme);
+  return Object.keys(props).map(function (prop) {
+    // Using a hash computation over an array iteration could be faster, but with only 28 items,
+    // it's doesn't worth the bundle size.
+    if (spacingKeys.indexOf(prop) === -1) {
+      return null;
+    }
+
+    var cssProperties = getCssProperties(prop);
+    var styleFromPropValue = getStyleFromPropValue(cssProperties, transformer);
+    var propValue = props[prop];
+    return handleBreakpoints(props, propValue, styleFromPropValue);
+  }).reduce(esm_merge, {});
+}
+
+spacing_spacing.propTypes =  false ? undefined : {};
+spacing_spacing.filterProps = spacingKeys;
+/* harmony default export */ var esm_spacing = (spacing_spacing);
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/styles/createSpacing.js
+
 var warnOnce;
 function createSpacing() {
   var spacingInput = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 8;
@@ -23277,23 +23783,14 @@ function createSpacing() {
   // Already transformed.
   if (spacingInput.mui) {
     return spacingInput;
-  } // All components align to an 8dp square baseline grid for mobile, tablet, and desktop.
-  // https://material.io/design/layout/understanding-layout.html#pixel-density
+  } // Material Design layouts are visually balanced. Most measurements align to an 8dp grid applied, which aligns both spacing and the overall layout.
+  // Smaller components, such as icons and type, can align to a 4dp grid.
+  // https://material.io/design/layout/understanding-layout.html#usage
 
 
-  var transform;
-
-  if (typeof spacingInput === 'function') {
-    transform = spacingInput;
-  } else {
-    if (false) {}
-
-    transform = function transform(factor) {
-      if (false) {}
-
-      return spacingInput * factor;
-    };
-  }
+  var transform = createUnarySpacing({
+    spacing: spacingInput
+  });
 
   var spacing = function spacing() {
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
@@ -23310,8 +23807,12 @@ function createSpacing() {
       return transform(args[0]);
     }
 
-    return args.map(function (factor) {
-      var output = transform(factor);
+    return args.map(function (argument) {
+      if (typeof argument === 'string') {
+        return argument;
+      }
+
+      var output = transform(argument);
       return typeof output === 'number' ? "".concat(output, "px") : output;
     }).join(' ');
   }; // Backward compatibility, to remove in v5.
@@ -23509,8 +24010,13 @@ function getTransitionProps(props, options) {
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/styles/useTheme.js
 
 
+
 function useTheme_useTheme() {
-  return useTheme() || styles_defaultTheme;
+  var theme = useTheme() || styles_defaultTheme;
+
+  if (false) {}
+
+  return theme;
 }
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Collapse/Collapse.js
 
@@ -23561,7 +24067,7 @@ var Collapse_styles = function styles(theme) {
  * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
  */
 
-var Collapse_Collapse = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Collapse(props, ref) {
+var Collapse_Collapse = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Collapse(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -23578,14 +24084,16 @@ var Collapse_Collapse = external_root_React_commonjs2_react_commonjs_react_amd_r
       style = props.style,
       _props$timeout = props.timeout,
       timeout = _props$timeout === void 0 ? transitions_duration.standard : _props$timeout,
-      other = _objectWithoutProperties(props, ["children", "classes", "className", "collapsedHeight", "component", "in", "onEnter", "onEntered", "onEntering", "onExit", "onExiting", "style", "timeout"]);
+      _props$TransitionComp = props.TransitionComponent,
+      TransitionComponent = _props$TransitionComp === void 0 ? esm_Transition : _props$TransitionComp,
+      other = _objectWithoutProperties(props, ["children", "classes", "className", "collapsedHeight", "component", "in", "onEnter", "onEntered", "onEntering", "onExit", "onExiting", "style", "timeout", "TransitionComponent"]);
 
   var theme = useTheme_useTheme();
-  var timer = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
-  var wrapperRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
-  var autoTransitionDuration = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
+  var timer = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
+  var wrapperRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
+  var autoTransitionDuration = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
   var collapsedHeight = typeof collapsedHeightProp === 'number' ? "".concat(collapsedHeightProp, "px") : collapsedHeightProp;
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     return function () {
       clearTimeout(timer.current);
     };
@@ -23674,7 +24182,7 @@ var Collapse_Collapse = external_root_React_commonjs2_react_commonjs_react_amd_r
     }
   };
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Transition, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](TransitionComponent, _extends({
     in: inProp,
     onEnter: handleEnter,
     onEntered: handleEntered,
@@ -23684,19 +24192,19 @@ var Collapse_Collapse = external_root_React_commonjs2_react_commonjs_react_amd_r
     addEndListener: addEndListener,
     timeout: timeout === 'auto' ? null : timeout
   }, other), function (state, childProps) {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
       className: clsx_m(classes.container, className, {
-        entered: classes.entered,
-        exited: !inProp && collapsedHeight === '0px' && classes.hidden
+        'entered': classes.entered,
+        'exited': !inProp && collapsedHeight === '0px' && classes.hidden
       }[state]),
       style: _extends({
         minHeight: collapsedHeight
       }, style),
       ref: ref
-    }, childProps), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+    }, childProps), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
       className: classes.wrapper,
       ref: wrapperRef
-    }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+    }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
       className: classes.wrapperInner
     }, children)));
   });
@@ -23707,7 +24215,7 @@ Collapse_Collapse.muiSupportAuto = true;
   name: 'MuiCollapse'
 })(Collapse_Collapse));
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/utils/setRef.js
-// TODO v5: make it private
+// TODO v5: consider to make it private
 function setRef(ref, value) {
   if (typeof ref === 'function') {
     ref(value);
@@ -23724,7 +24232,7 @@ function useForkRef(refA, refB) {
    * This means react will call the old forkRef with `null` and the new forkRef
    * with the ref. Cleanup naturally emerges from this behavior
    */
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useMemo(function () {
+  return external_root_React_commonjs2_react_commonjs_react_amd_react_["useMemo"](function () {
     if (refA == null && refB == null) {
       return null;
     }
@@ -23737,7 +24245,7 @@ function useForkRef(refA, refB) {
 }
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/utils/useEventCallback.js
 
-var useEnhancedEffect = typeof window !== 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useLayoutEffect : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect;
+var useEnhancedEffect = typeof window !== 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_["useLayoutEffect"] : external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"];
 /**
  * https://github.com/facebook/react/issues/14099#issuecomment-440013892
  *
@@ -23745,60 +24253,15 @@ var useEnhancedEffect = typeof window !== 'undefined' ? external_root_React_comm
  */
 
 function useEventCallback(fn) {
-  var ref = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(fn);
+  var ref = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](fn);
   useEnhancedEffect(function () {
     ref.current = fn;
   });
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function () {
+  return external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function () {
     return (0, ref.current).apply(void 0, arguments);
   }, []);
 }
-// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/NoSsr/NoSsr.js
-
-
-
-var NoSsr_useEnhancedEffect = typeof window !== 'undefined' && "production" !== 'test' ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useLayoutEffect : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect;
-/**
- * NoSsr purposely removes components from the subject of Server Side Rendering (SSR).
- *
- * This component can be useful in a variety of situations:
- * - Escape hatch for broken dependencies not supporting SSR.
- * - Improve the time-to-first paint on the client by only rendering above the fold.
- * - Reduce the rendering time on the server.
- * - Under too heavy server load, you can turn on service degradation.
- */
-
-function NoSsr(props) {
-  var children = props.children,
-      _props$defer = props.defer,
-      defer = _props$defer === void 0 ? false : _props$defer,
-      _props$fallback = props.fallback,
-      fallback = _props$fallback === void 0 ? null : _props$fallback;
-
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(false),
-      mountedState = _React$useState[0],
-      setMountedState = _React$useState[1];
-
-  NoSsr_useEnhancedEffect(function () {
-    if (!defer) {
-      setMountedState(true);
-    }
-  }, [defer]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
-    if (defer) {
-      setMountedState(true);
-    }
-  }, [defer]); // We need the Fragment here to force react-docgen to recognise NoSsr as a component.
-
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, mountedState ? children : fallback);
-}
-
- false ? undefined : void 0;
-
-if (false) {}
-
-/* harmony default export */ var NoSsr_NoSsr = (NoSsr);
-// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/utils/focusVisible.js
+// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/utils/useIsFocusVisible.js
 // based on https://github.com/WICG/focus-visible/blob/v4.1.5/src/focus-visible.js
 
 
@@ -23855,7 +24318,7 @@ function focusTriggersKeyboardModality(node) {
  */
 
 
-function focusVisible_handleKeyDown(event) {
+function useIsFocusVisible_handleKeyDown(event) {
   if (event.metaKey || event.altKey || event.ctrlKey) {
     return;
   }
@@ -23888,7 +24351,7 @@ function handleVisibilityChange() {
 }
 
 function prepare(doc) {
-  doc.addEventListener('keydown', focusVisible_handleKeyDown, true);
+  doc.addEventListener('keydown', useIsFocusVisible_handleKeyDown, true);
   doc.addEventListener('mousedown', handlePointerDown, true);
   doc.addEventListener('pointerdown', handlePointerDown, true);
   doc.addEventListener('touchstart', handlePointerDown, true);
@@ -23896,14 +24359,14 @@ function prepare(doc) {
 }
 
 function teardown(doc) {
-  doc.removeEventListener('keydown', focusVisible_handleKeyDown, true);
+  doc.removeEventListener('keydown', useIsFocusVisible_handleKeyDown, true);
   doc.removeEventListener('mousedown', handlePointerDown, true);
   doc.removeEventListener('pointerdown', handlePointerDown, true);
   doc.removeEventListener('touchstart', handlePointerDown, true);
   doc.removeEventListener('visibilitychange', handleVisibilityChange, true);
 }
 
-function focusVisible_isFocusVisible(event) {
+function useIsFocusVisible_isFocusVisible(event) {
   var target = event.target;
 
   try {
@@ -23936,15 +24399,18 @@ function handleBlurVisible() {
 }
 
 function useIsFocusVisible() {
-  var ref = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (instance) {
-    var node = external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_default.a.findDOMNode(instance);
+  var ref = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (instance) {
+    var node = external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["findDOMNode"](instance);
 
     if (node != null) {
       prepare(node.ownerDocument);
     }
   }, []);
+
+  if (false) {}
+
   return {
-    isFocusVisible: focusVisible_isFocusVisible,
+    isFocusVisible: useIsFocusVisible_isFocusVisible,
     onBlurVisible: handleBlurVisible,
     ref: ref
   };
@@ -24230,7 +24696,7 @@ TransitionGroup_TransitionGroup.defaultProps = defaultProps;
 
 
 
-var Ripple_useEnhancedEffect = typeof window === 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useLayoutEffect;
+var Ripple_useEnhancedEffect = typeof window === 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"] : external_root_React_commonjs2_react_commonjs_react_amd_react_["useLayoutEffect"];
 /**
  * @ignore - internal component.
  */
@@ -24247,7 +24713,7 @@ function Ripple(props) {
       onExited = _props$onExited === void 0 ? function () {} : _props$onExited,
       timeout = props.timeout;
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(false),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](false),
       leaving = _React$useState[0],
       setLeaving = _React$useState[1];
 
@@ -24274,10 +24740,10 @@ function Ripple(props) {
 
     return undefined;
   }, [handleExited, inProp, timeout]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
     className: rippleClassName,
     style: rippleStyles
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
     className: childClassName
   }));
 }
@@ -24389,46 +24855,46 @@ var TouchRipple_styles = function styles(theme) {
  * TODO v5: Make private
  */
 
-var TouchRipple_TouchRipple = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function TouchRipple(props, ref) {
+var TouchRipple_TouchRipple = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function TouchRipple(props, ref) {
   var _props$center = props.center,
       centerProp = _props$center === void 0 ? false : _props$center,
       classes = props.classes,
       className = props.className,
       other = _objectWithoutProperties(props, ["center", "classes", "className"]);
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState([]),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"]([]),
       ripples = _React$useState[0],
       setRipples = _React$useState[1];
 
-  var nextKey = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(0);
-  var rippleCallback = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  var nextKey = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](0);
+  var rippleCallback = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     if (rippleCallback.current) {
       rippleCallback.current();
       rippleCallback.current = null;
     }
   }, [ripples]); // Used to filter out mouse emulated events on mobile.
 
-  var ignoringMouseDown = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(false); // We use a timer in order to only show the ripples for touch "click" like events.
+  var ignoringMouseDown = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](false); // We use a timer in order to only show the ripples for touch "click" like events.
   // We don't want to display the ripple for touch scroll events.
 
-  var startTimer = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null); // This is the hook called once the previous timeout is ready.
+  var startTimer = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null); // This is the hook called once the previous timeout is ready.
 
-  var startTimerCommit = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
-  var container = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  var startTimerCommit = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
+  var container = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     return function () {
       clearTimeout(startTimer.current);
     };
   }, []);
-  var startCommit = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (params) {
+  var startCommit = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (params) {
     var pulsate = params.pulsate,
         rippleX = params.rippleX,
         rippleY = params.rippleY,
         rippleSize = params.rippleSize,
         cb = params.cb;
     setRipples(function (oldRipples) {
-      return [].concat(_toConsumableArray(oldRipples), [external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ButtonBase_Ripple, {
+      return [].concat(_toConsumableArray(oldRipples), [/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](ButtonBase_Ripple, {
         key: nextKey.current,
         classes: classes,
         timeout: DURATION,
@@ -24441,7 +24907,7 @@ var TouchRipple_TouchRipple = external_root_React_commonjs2_react_commonjs_react
     nextKey.current += 1;
     rippleCallback.current = cb;
   }, [classes]);
-  var start = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function () {
+  var start = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function () {
     var event = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var cb = arguments.length > 2 ? arguments[2] : undefined;
@@ -24477,8 +24943,10 @@ var TouchRipple_TouchRipple = external_root_React_commonjs2_react_commonjs_react
       rippleX = Math.round(rect.width / 2);
       rippleY = Math.round(rect.height / 2);
     } else {
-      var clientX = event.clientX ? event.clientX : event.touches[0].clientX;
-      var clientY = event.clientY ? event.clientY : event.touches[0].clientY;
+      var _ref = event.touches ? event.touches[0] : event,
+          clientX = _ref.clientX,
+          clientY = _ref.clientY;
+
       rippleX = Math.round(clientX - rect.left);
       rippleY = Math.round(clientY - rect.top);
     }
@@ -24530,12 +24998,12 @@ var TouchRipple_TouchRipple = external_root_React_commonjs2_react_commonjs_react
       });
     }
   }, [centerProp, startCommit]);
-  var pulsate = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function () {
+  var pulsate = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function () {
     start({}, {
       pulsate: true
     });
   }, [start]);
-  var stop = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (event, cb) {
+  var stop = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (event, cb) {
     clearTimeout(startTimer.current); // The touch interaction occurs too quickly.
     // We still want to show ripple effect.
 
@@ -24559,17 +25027,17 @@ var TouchRipple_TouchRipple = external_root_React_commonjs2_react_commonjs_react
     });
     rippleCallback.current = cb;
   }, []);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useImperativeHandle(ref, function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useImperativeHandle"](ref, function () {
     return {
       pulsate: pulsate,
       start: start,
       stop: stop
     };
   }, [pulsate, start, stop]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", _extends({
     className: clsx_m(classes.root, className),
     ref: container
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_TransitionGroup, {
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_TransitionGroup, {
     component: null,
     exit: true
   }, ripples));
@@ -24578,9 +25046,8 @@ var TouchRipple_TouchRipple = external_root_React_commonjs2_react_commonjs_react
 /* harmony default export */ var ButtonBase_TouchRipple = (styles_withStyles(TouchRipple_styles, {
   flip: false,
   name: 'MuiTouchRipple'
-})(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.memo(TouchRipple_TouchRipple)));
+})(external_root_React_commonjs2_react_commonjs_react_amd_react_["memo"](TouchRipple_TouchRipple)));
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/ButtonBase/ButtonBase.js
-
 
 
 
@@ -24629,6 +25096,9 @@ var ButtonBase_styles = {
       pointerEvents: 'none',
       // Disable link interactions
       cursor: 'default'
+    },
+    '@media print': {
+      colorAdjust: 'exact'
     }
   },
 
@@ -24644,7 +25114,7 @@ var ButtonBase_styles = {
  * It contains a load of style reset and some focus/ripple logic.
  */
 
-var ButtonBase_ButtonBase = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function ButtonBase(props, ref) {
+var ButtonBase_ButtonBase = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function ButtonBase(props, ref) {
   var action = props.action,
       buttonRefProp = props.buttonRef,
       _props$centerRipple = props.centerRipple,
@@ -24683,16 +25153,16 @@ var ButtonBase_ButtonBase = external_root_React_commonjs2_react_commonjs_react_a
       type = _props$type === void 0 ? 'button' : _props$type,
       other = _objectWithoutProperties(props, ["action", "buttonRef", "centerRipple", "children", "classes", "className", "component", "disabled", "disableRipple", "disableTouchRipple", "focusRipple", "focusVisibleClassName", "onBlur", "onClick", "onFocus", "onFocusVisible", "onKeyDown", "onKeyUp", "onMouseDown", "onMouseLeave", "onMouseUp", "onTouchEnd", "onTouchMove", "onTouchStart", "onDragLeave", "tabIndex", "TouchRippleProps", "type"]);
 
-  var buttonRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
+  var buttonRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
 
   function getButtonNode() {
     // #StrictMode ready
-    return external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_default.a.findDOMNode(buttonRef.current);
+    return external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["findDOMNode"](buttonRef.current);
   }
 
-  var rippleRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
+  var rippleRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(false),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](false),
       focusVisible = _React$useState[0],
       setFocusVisible = _React$useState[1];
 
@@ -24705,7 +25175,7 @@ var ButtonBase_ButtonBase = external_root_React_commonjs2_react_commonjs_react_a
       onBlurVisible = _useIsFocusVisible.onBlurVisible,
       focusVisibleRef = _useIsFocusVisible.ref;
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useImperativeHandle(action, function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useImperativeHandle"](action, function () {
     return {
       focusVisible: function focusVisible() {
         setFocusVisible(true);
@@ -24713,7 +25183,7 @@ var ButtonBase_ButtonBase = external_root_React_commonjs2_react_commonjs_react_a
       }
     };
   }, []);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     if (focusVisible && focusRipple && !disableRipple) {
       rippleRef.current.pulsate();
     }
@@ -24762,11 +25232,7 @@ var ButtonBase_ButtonBase = external_root_React_commonjs2_react_commonjs_react_a
     }
   }, false);
   var handleFocus = useEventCallback(function (event) {
-    if (disabled) {
-      return;
-    } // Fix for https://github.com/facebook/react/issues/7769
-
-
+    // Fix for https://github.com/facebook/react/issues/7769
     if (!buttonRef.current) {
       buttonRef.current = event.currentTarget;
     }
@@ -24793,7 +25259,7 @@ var ButtonBase_ButtonBase = external_root_React_commonjs2_react_commonjs_react_a
    */
 
 
-  var keydownRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(false);
+  var keydownRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](false);
   var handleKeyDown = useEventCallback(function (event) {
     // Check if key is already down to avoid repeats being counted as multiple activations
     if (focusRipple && !keydownRef.current && focusVisible && rippleRef.current && event.key === ' ') {
@@ -24804,12 +25270,16 @@ var ButtonBase_ButtonBase = external_root_React_commonjs2_react_commonjs_react_a
       });
     }
 
+    if (event.target === event.currentTarget && isNonNativeButton() && event.key === ' ') {
+      event.preventDefault();
+    }
+
     if (onKeyDown) {
       onKeyDown(event);
     } // Keyboard accessibility for non interactive elements
 
 
-    if (event.target === event.currentTarget && isNonNativeButton() && event.key === 'Enter') {
+    if (event.target === event.currentTarget && isNonNativeButton() && event.key === 'Enter' && !disabled) {
       event.preventDefault();
 
       if (onClick) {
@@ -24833,12 +25303,8 @@ var ButtonBase_ButtonBase = external_root_React_commonjs2_react_commonjs_react_a
     } // Keyboard accessibility for non interactive elements
 
 
-    if (event.target === event.currentTarget && isNonNativeButton() && event.key === ' ' && !event.defaultPrevented) {
-      event.preventDefault();
-
-      if (onClick) {
-        onClick(event);
-      }
+    if (onClick && event.target === event.currentTarget && isNonNativeButton() && event.key === ' ' && !event.defaultPrevented) {
+      onClick(event);
     }
   });
   var ComponentProp = component;
@@ -24863,7 +25329,19 @@ var ButtonBase_ButtonBase = external_root_React_commonjs2_react_commonjs_react_a
   var handleUserRef = useForkRef(buttonRefProp, ref);
   var handleOwnRef = useForkRef(focusVisibleRef, buttonRef);
   var handleRef = useForkRef(handleUserRef, handleOwnRef);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ComponentProp, _extends({
+
+  var _React$useState2 = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](false),
+      mountedState = _React$useState2[0],
+      setMountedState = _React$useState2[1];
+
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
+    setMountedState(true);
+  }, []);
+  var enableTouchRipple = mountedState && !disableRipple && !disabled;
+
+  if (false) {}
+
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](ComponentProp, _extends({
     className: clsx_m(classes.root, className, focusVisible && [classes.focusVisible, focusVisibleClassName], disabled && classes.disabled),
     onBlur: handleBlur,
     onClick: onClick,
@@ -24879,10 +25357,14 @@ var ButtonBase_ButtonBase = external_root_React_commonjs2_react_commonjs_react_a
     onTouchStart: handleTouchStart,
     ref: handleRef,
     tabIndex: disabled ? -1 : tabIndex
-  }, buttonProps, other), children, !disableRipple && !disabled ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(NoSsr_NoSsr, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ButtonBase_TouchRipple, _extends({
+  }, buttonProps, other), children, enableTouchRipple ?
+  /*#__PURE__*/
+
+  /* TouchRipple is only needed client-side, x2 boost on the server. */
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](ButtonBase_TouchRipple, _extends({
     ref: rippleRef,
     center: centerRipple
-  }, TouchRippleProps))) : null);
+  }, TouchRippleProps)) : null);
 });
  false ? undefined : void 0;
 /* harmony default export */ var esm_ButtonBase_ButtonBase = (styles_withStyles(ButtonBase_styles, {
@@ -24927,9 +25409,6 @@ var Fab_styles = function styles(theme) {
       },
       color: theme.palette.getContrastText(theme.palette.grey[300]),
       backgroundColor: theme.palette.grey[300],
-      '&$focusVisible': {
-        boxShadow: theme.shadows[6]
-      },
       '&:hover': {
         backgroundColor: theme.palette.grey.A100,
         // Reset on touch devices, it doesn't add specificity
@@ -24940,6 +25419,9 @@ var Fab_styles = function styles(theme) {
           backgroundColor: theme.palette.action.disabledBackground
         },
         textDecoration: 'none'
+      },
+      '&$focusVisible': {
+        boxShadow: theme.shadows[6]
       },
       '&$disabled': {
         color: theme.palette.action.disabled,
@@ -25031,7 +25513,7 @@ var Fab_styles = function styles(theme) {
     }
   };
 };
-var Fab_Fab = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Fab(props, ref) {
+var Fab_Fab = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Fab(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -25050,18 +25532,18 @@ var Fab_Fab = external_root_React_commonjs2_react_commonjs_react_amd_react_defau
       variant = _props$variant === void 0 ? 'round' : _props$variant,
       other = _objectWithoutProperties(props, ["children", "classes", "className", "color", "component", "disabled", "disableFocusRipple", "focusVisibleClassName", "size", "variant"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_ButtonBase_ButtonBase, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_ButtonBase_ButtonBase, _extends({
     className: clsx_m(classes.root, className, variant !== "round" && classes.extended, size !== 'large' && classes["size".concat(capitalize(size))], disabled && classes.disabled, {
-      primary: classes.primary,
-      secondary: classes.secondary,
-      inherit: classes.colorInherit
+      'primary': classes.primary,
+      'secondary': classes.secondary,
+      'inherit': classes.colorInherit
     }[color]),
     component: component,
     disabled: disabled,
     focusRipple: !disableFocusRipple,
     focusVisibleClassName: clsx_m(classes.focusVisible, focusVisibleClassName),
     ref: ref
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
     className: classes.label
   }, children));
 });
@@ -25112,7 +25594,7 @@ function ThemeProvider(props) {
 
     return output;
   }, [localTheme, outerTheme]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(useTheme_ThemeContext.Provider, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(useTheme_ThemeContext.Provider, {
     value: theme
   }, children);
 }
@@ -25153,7 +25635,7 @@ var defaultTimeout = {
  * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
  */
 
-var Zoom_Zoom = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Zoom(props, ref) {
+var Zoom_Zoom = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Zoom(props, ref) {
   var children = props.children,
       inProp = props.in,
       onEnter = props.onEnter,
@@ -25161,7 +25643,9 @@ var Zoom_Zoom = external_root_React_commonjs2_react_commonjs_react_amd_react_def
       style = props.style,
       _props$timeout = props.timeout,
       timeout = _props$timeout === void 0 ? defaultTimeout : _props$timeout,
-      other = _objectWithoutProperties(props, ["children", "in", "onEnter", "onExit", "style", "timeout"]);
+      _props$TransitionComp = props.TransitionComponent,
+      TransitionComponent = _props$TransitionComp === void 0 ? esm_Transition : _props$TransitionComp,
+      other = _objectWithoutProperties(props, ["children", "in", "onEnter", "onExit", "style", "timeout", "TransitionComponent"]);
 
   var theme = useTheme_useTheme();
   var handleRef = useForkRef(children.ref, ref);
@@ -25198,14 +25682,14 @@ var Zoom_Zoom = external_root_React_commonjs2_react_commonjs_react_amd_react_def
     }
   };
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Transition, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](TransitionComponent, _extends({
     appear: true,
     in: inProp,
     onEnter: handleEnter,
     onExit: handleExit,
     timeout: timeout
   }, other), function (state, childProps) {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(children, _extends({
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](children, _extends({
       style: _extends({
         transform: 'scale(0)',
         visibility: state === 'exited' && !inProp ? 'hidden' : undefined
@@ -25219,7 +25703,7 @@ var Zoom_Zoom = external_root_React_commonjs2_react_commonjs_react_amd_react_def
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/utils/isMuiElement.js
 
 function isMuiElement(element, muiNames) {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(element) && muiNames.indexOf(element.type.muiName) !== -1;
+  return external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](element) && muiNames.indexOf(element.type.muiName) !== -1;
 }
 // CONCATENATED MODULE: ./node_modules/@material-ui/lab/esm/SpeedDial/SpeedDial.js
 
@@ -25327,7 +25811,7 @@ var SpeedDial_styles = function styles(theme) {
     }
   };
 };
-var SpeedDial_SpeedDial = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function SpeedDial(props, ref) {
+var SpeedDial_SpeedDial = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function SpeedDial(props, ref) {
   var ariaLabel = props.ariaLabel,
       _props$FabProps = props.FabProps;
   _props$FabProps = _props$FabProps === void 0 ? {} : _props$FabProps;
@@ -25361,8 +25845,8 @@ var SpeedDial_SpeedDial = external_root_React_commonjs2_react_commonjs_react_amd
       TransitionProps = props.TransitionProps,
       other = _objectWithoutProperties(props, ["ariaLabel", "FabProps", "children", "classes", "className", "direction", "hidden", "icon", "onBlur", "onClose", "onFocus", "onKeyDown", "onMouseEnter", "onMouseLeave", "onOpen", "open", "openIcon", "TransitionComponent", "transitionDuration", "TransitionProps"]);
 
-  var eventTimer = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  var eventTimer = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     return function () {
       clearTimeout(eventTimer.current);
     };
@@ -25371,7 +25855,7 @@ var SpeedDial_SpeedDial = external_root_React_commonjs2_react_commonjs_react_amd
    * an index in actions.current
    */
 
-  var focusedAction = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(0);
+  var focusedAction = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](0);
   /**
    * pressing this key while the focus is on a child SpeedDialAction focuses
    * the next SpeedDialAction.
@@ -25380,16 +25864,16 @@ var SpeedDial_SpeedDial = external_root_React_commonjs2_react_commonjs_react_amd
    * @type {utils.ArrowKey?}
    */
 
-  var nextItemArrowKey = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
+  var nextItemArrowKey = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
   /**
    * refs to the Button that have an action associated to them in this SpeedDial
    * [Fab, ...(SpeedDialActions > Button)]
    * @type {HTMLButtonElement[]}
    */
 
-  var actions = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef([]);
+  var actions = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]([]);
   actions.current = [actions.current[0]];
-  var handleOwnFabRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (fabFef) {
+  var handleOwnFabRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (fabFef) {
     actions.current[0] = fabFef;
   }, []);
   var handleFabRef = useForkRef(origDialButtonRef, handleOwnFabRef);
@@ -25440,7 +25924,7 @@ var SpeedDial_SpeedDial = external_root_React_commonjs2_react_commonjs_react_amd
     }
   };
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     // actions were closed while navigation state was not reset
     if (!open) {
       focusedAction.current = 0;
@@ -25516,10 +26000,10 @@ var SpeedDial_SpeedDial = external_root_React_commonjs2_react_commonjs_react_amd
 
 
   var id = ariaLabel.replace(/^[^a-z]+|[^\w:.-]+/gi, '');
-  var allItems = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Children.toArray(childrenProp).filter(function (child) {
+  var allItems = external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].toArray(childrenProp).filter(function (child) {
     if (false) {}
 
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(child);
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](child);
   });
   var children = allItems.map(function (child, index) {
     var _child$props$FabProps = child.props.FabProps;
@@ -25528,7 +26012,7 @@ var SpeedDial_SpeedDial = external_root_React_commonjs2_react_commonjs_react_amd
     var origButtonRef = _child$props$FabProps.ref,
         ChildFabProps = _objectWithoutProperties(_child$props$FabProps, ["ref"]);
 
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(child, {
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](child, {
       FabProps: _extends({}, ChildFabProps, {
         ref: createHandleSpeedDialActionButtonRef(index, origButtonRef)
       }),
@@ -25537,7 +26021,7 @@ var SpeedDial_SpeedDial = external_root_React_commonjs2_react_commonjs_react_amd
       id: "".concat(id, "-action-").concat(index)
     });
   });
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", _extends({
     className: clsx_m(classes.root, classes["direction".concat(capitalize(direction))], className),
     ref: ref,
     role: "presentation",
@@ -25546,11 +26030,11 @@ var SpeedDial_SpeedDial = external_root_React_commonjs2_react_commonjs_react_amd
     onFocus: handleOpen,
     onMouseEnter: handleOpen,
     onMouseLeave: handleClose
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(TransitionComponent, _extends({
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](TransitionComponent, _extends({
     in: !hidden,
     timeout: transitionDuration,
     unmountOnExit: true
-  }, TransitionProps), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Fab_Fab, _extends({
+  }, TransitionProps), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Fab_Fab, _extends({
     color: "primary",
     "aria-label": ariaLabel,
     "aria-haspopup": "true",
@@ -25560,9 +26044,9 @@ var SpeedDial_SpeedDial = external_root_React_commonjs2_react_commonjs_react_amd
     onClick: handleClick,
     className: clsx_m(classes.fab, FabProps.className),
     ref: handleFabRef
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(icon) && isMuiElement(icon, ['SpeedDialIcon']) ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(icon, {
+  }), external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](icon) && isMuiElement(icon, ['SpeedDialIcon']) ? external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](icon, {
     open: open
-  }) : icon)), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+  }) : icon)), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
     id: "".concat(id, "-actions"),
     role: "menu",
     "aria-orientation": getOrientation(direction),
@@ -25573,51 +26057,6 @@ var SpeedDial_SpeedDial = external_root_React_commonjs2_react_commonjs_react_amd
 /* harmony default export */ var esm_SpeedDial_SpeedDial = (styles_withStyles(SpeedDial_styles, {
   name: 'MuiSpeedDial'
 })(SpeedDial_SpeedDial));
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
-function _iterableToArrayLimit(arr, i) {
-  if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) {
-    return;
-  }
-
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance");
-}
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js
-
-
-
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();
-}
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Grow/Grow.js
 
 
@@ -25648,7 +26087,7 @@ var Grow_styles = {
  * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
  */
 
-var Grow_Grow = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Grow(props, ref) {
+var Grow_Grow = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Grow(props, ref) {
   var children = props.children,
       inProp = props.in,
       onEnter = props.onEnter,
@@ -25656,10 +26095,12 @@ var Grow_Grow = external_root_React_commonjs2_react_commonjs_react_amd_react_def
       style = props.style,
       _props$timeout = props.timeout,
       timeout = _props$timeout === void 0 ? 'auto' : _props$timeout,
-      other = _objectWithoutProperties(props, ["children", "in", "onEnter", "onExit", "style", "timeout"]);
+      _props$TransitionComp = props.TransitionComponent,
+      TransitionComponent = _props$TransitionComp === void 0 ? esm_Transition : _props$TransitionComp,
+      other = _objectWithoutProperties(props, ["children", "in", "onEnter", "onExit", "style", "timeout", "TransitionComponent"]);
 
-  var timer = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
-  var autoTimeout = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
+  var timer = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
+  var autoTimeout = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
   var handleRef = useForkRef(children.ref, ref);
   var theme = useTheme_useTheme();
 
@@ -25737,12 +26178,12 @@ var Grow_Grow = external_root_React_commonjs2_react_commonjs_react_amd_react_def
     }
   };
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     return function () {
       clearTimeout(timer.current);
     };
   }, []);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Transition, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](TransitionComponent, _extends({
     appear: true,
     in: inProp,
     onEnter: handleEnter,
@@ -25750,7 +26191,7 @@ var Grow_Grow = external_root_React_commonjs2_react_commonjs_react_amd_react_def
     addEndListener: addEndListener,
     timeout: timeout === 'auto' ? null : timeout
   }, other), function (state, childProps) {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(children, _extends({
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](children, _extends({
       style: _extends({
         opacity: 0,
         transform: getScale(0.75),
@@ -25764,7 +26205,7 @@ var Grow_Grow = external_root_React_commonjs2_react_commonjs_react_amd_react_def
 Grow_Grow.muiSupportAuto = true;
 /* harmony default export */ var esm_Grow_Grow = (Grow_Grow);
 // EXTERNAL MODULE: ./node_modules/popper.js/dist/esm/popper.js
-var esm_popper = __webpack_require__(90);
+var esm_popper = __webpack_require__(93);
 
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Portal/Portal.js
 
@@ -25777,27 +26218,27 @@ var esm_popper = __webpack_require__(90);
 function getContainer(container) {
   container = typeof container === 'function' ? container() : container; // #StrictMode ready
 
-  return external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_default.a.findDOMNode(container);
+  return external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["findDOMNode"](container);
 }
 
-var Portal_useEnhancedEffect = typeof window !== 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useLayoutEffect : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect;
+var Portal_useEnhancedEffect = typeof window !== 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_["useLayoutEffect"] : external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"];
 /**
  * Portals provide a first-class way to render children into a DOM node
  * that exists outside the DOM hierarchy of the parent component.
  */
 
-var Portal_Portal = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Portal(props, ref) {
+var Portal_Portal = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Portal(props, ref) {
   var children = props.children,
       container = props.container,
       _props$disablePortal = props.disablePortal,
       disablePortal = _props$disablePortal === void 0 ? false : _props$disablePortal,
       onRendered = props.onRendered;
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(null),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](null),
       mountNode = _React$useState[0],
       setMountNode = _React$useState[1];
 
-  var handleRef = useForkRef(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(children) ? children.ref : null, ref);
+  var handleRef = useForkRef(external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](children) ? children.ref : null, ref);
   Portal_useEnhancedEffect(function () {
     if (!disablePortal) {
       setMountNode(getContainer(container) || document.body);
@@ -25820,8 +26261,8 @@ var Portal_Portal = external_root_React_commonjs2_react_commonjs_react_amd_react
   }, [onRendered, mountNode, disablePortal]);
 
   if (disablePortal) {
-    if (external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(children)) {
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(children, {
+    if (external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](children)) {
+      return external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](children, {
         ref: handleRef
       });
     }
@@ -25829,7 +26270,7 @@ var Portal_Portal = external_root_React_commonjs2_react_commonjs_react_amd_react
     return children;
   }
 
-  return mountNode ? external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_default.a.createPortal(children, mountNode) : mountNode;
+  return mountNode ? external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["createPortal"](children, mountNode) : mountNode;
 });
  false ? undefined : void 0;
 
@@ -25881,7 +26322,6 @@ function createChainedFunction() {
 
 
 
-
 function flipPlacement(placement, theme) {
   var direction = theme && theme.direction || 'ltr';
 
@@ -25911,13 +26351,13 @@ function getAnchorEl(anchorEl) {
   return typeof anchorEl === 'function' ? anchorEl() : anchorEl;
 }
 
-var Popper_useEnhancedEffect = typeof window !== 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useLayoutEffect : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect;
+var Popper_useEnhancedEffect = typeof window !== 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_["useLayoutEffect"] : external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"];
 var defaultPopperOptions = {};
 /**
- * Poppers rely on the 3rd party library [Popper.js](https://github.com/FezVrasta/popper.js) for positioning.
+ * Poppers rely on the 3rd party library [Popper.js](https://popper.js.org/docs/v1/) for positioning.
  */
 
-var Popper_Popper = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Popper(props, ref) {
+var Popper_Popper = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Popper(props, ref) {
   var anchorEl = props.anchorEl,
       children = props.children,
       container = props.container,
@@ -25932,23 +26372,24 @@ var Popper_Popper = external_root_React_commonjs2_react_commonjs_react_amd_react
       _props$popperOptions = props.popperOptions,
       popperOptions = _props$popperOptions === void 0 ? defaultPopperOptions : _props$popperOptions,
       popperRefProp = props.popperRef,
+      style = props.style,
       _props$transition = props.transition,
       transition = _props$transition === void 0 ? false : _props$transition,
-      other = _objectWithoutProperties(props, ["anchorEl", "children", "container", "disablePortal", "keepMounted", "modifiers", "open", "placement", "popperOptions", "popperRef", "transition"]);
+      other = _objectWithoutProperties(props, ["anchorEl", "children", "container", "disablePortal", "keepMounted", "modifiers", "open", "placement", "popperOptions", "popperRef", "style", "transition"]);
 
-  var tooltipRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
+  var tooltipRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
   var ownRef = useForkRef(tooltipRef, ref);
-  var popperRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
+  var popperRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
   var handlePopperRef = useForkRef(popperRef, popperRefProp);
-  var handlePopperRefRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(handlePopperRef);
+  var handlePopperRefRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](handlePopperRef);
   Popper_useEnhancedEffect(function () {
     handlePopperRefRef.current = handlePopperRef;
   }, [handlePopperRef]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useImperativeHandle(popperRefProp, function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useImperativeHandle"](popperRefProp, function () {
     return popperRef.current;
   }, []);
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(true),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](true),
       exited = _React$useState[0],
       setExited = _React$useState[1];
 
@@ -25959,16 +26400,16 @@ var Popper_Popper = external_root_React_commonjs2_react_commonjs_react_amd_react
    * modifiers.flip is essentially a flip for controlled/uncontrolled behavior
    */
 
-  var _React$useState2 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(rtlPlacement),
+  var _React$useState2 = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](rtlPlacement),
       placement = _React$useState2[0],
       setPlacement = _React$useState2[1];
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     if (popperRef.current) {
       popperRef.current.update();
     }
   });
-  var handleOpen = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function () {
+  var handleOpen = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function () {
     if (!tooltipRef.current || !anchorEl || !open) {
       return;
     }
@@ -25984,7 +26425,7 @@ var Popper_Popper = external_root_React_commonjs2_react_commonjs_react_amd_react
 
     var resolvedAnchorEl = getAnchorEl(anchorEl);
 
-    if (false) { var box, containerWindow; }
+    if (false) { var box; }
 
     var popper = new esm_popper["a" /* default */](getAnchorEl(anchorEl), tooltipRef.current, _extends({
       placement: rtlPlacement
@@ -26002,7 +26443,7 @@ var Popper_Popper = external_root_React_commonjs2_react_commonjs_react_amd_react
     }));
     handlePopperRefRef.current(popper);
   }, [anchorEl, disablePortal, modifiers, open, rtlPlacement, popperOptions]);
-  var handleRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (node) {
+  var handleRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (node) {
     setRef(ownRef, node);
     handleOpen();
   }, [ownRef, handleOpen]);
@@ -26025,16 +26466,16 @@ var Popper_Popper = external_root_React_commonjs2_react_commonjs_react_amd_react
     handleClose();
   };
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     // Let's update the popper position.
     handleOpen();
   }, [handleOpen]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     return function () {
       handleClose();
     };
   }, []);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     if (!open && !transition) {
       // Otherwise handleExited will call this.
       handleClose();
@@ -26057,10 +26498,10 @@ var Popper_Popper = external_root_React_commonjs2_react_commonjs_react_amd_react
     };
   }
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Portal_Portal, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Portal_Portal, {
     disablePortal: disablePortal,
     container: container
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", _extends({
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", _extends({
     ref: handleRef,
     role: "tooltip"
   }, other, {
@@ -26070,23 +26511,47 @@ var Popper_Popper = external_root_React_commonjs2_react_commonjs_react_amd_react
       // Fix Popper.js display issue
       top: 0,
       left: 0
-    }, other.style)
+    }, style)
   }), typeof children === 'function' ? children(childProps) : children));
 });
  false ? undefined : void 0;
 /* harmony default export */ var esm_Popper_Popper = (Popper_Popper);
+// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/utils/unstable_useId.js
+
+/**
+ * Private module reserved for @material-ui/x packages.
+ */
+
+function useId(idOverride) {
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](idOverride),
+      defaultId = _React$useState[0],
+      setDefaultId = _React$useState[1];
+
+  var id = idOverride || defaultId;
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
+    if (defaultId == null) {
+      // Fallback to this default id when possible.
+      // Use the random value for client-side rendering only.
+      // We can't use it server-side.
+      setDefaultId("mui-".concat(Math.round(Math.random() * 1e5)));
+    }
+  }, [defaultId]);
+  return id;
+}
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/utils/useControlled.js
 /* eslint-disable react-hooks/rules-of-hooks, react-hooks/exhaustive-deps */
 
 function useControlled(_ref) {
   var controlled = _ref.controlled,
       defaultProp = _ref.default,
-      name = _ref.name;
+      name = _ref.name,
+      _ref$state = _ref.state,
+      state = _ref$state === void 0 ? 'value' : _ref$state;
 
-  var _React$useRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(controlled !== undefined),
+  var _React$useRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](controlled !== undefined),
       isControlled = _React$useRef.current;
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(defaultProp),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](defaultProp),
       valueState = _React$useState[0],
       setValue = _React$useState[1];
 
@@ -26094,7 +26559,7 @@ function useControlled(_ref) {
 
   if (false) { var _React$useRef2, defaultValue; }
 
-  var setValueIfUncontrolled = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (newValue) {
+  var setValueIfUncontrolled = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (newValue) {
     if (!isControlled) {
       setValue(newValue);
     }
@@ -26122,6 +26587,7 @@ function useControlled(_ref) {
 
 
 
+
 function Tooltip_round(value) {
   return Math.round(value * 1e5) / 1e5;
 }
@@ -26129,7 +26595,6 @@ function Tooltip_round(value) {
 function arrowGenerator() {
   return {
     '&[x-placement*="bottom"] $arrow': {
-      flip: false,
       top: 0,
       left: 0,
       marginTop: '-0.95em',
@@ -26138,13 +26603,11 @@ function arrowGenerator() {
       width: '2em',
       height: '1em',
       '&::before': {
-        flip: false,
         borderWidth: '0 1em 1em 1em',
         borderColor: 'transparent transparent currentcolor transparent'
       }
     },
     '&[x-placement*="top"] $arrow': {
-      flip: false,
       bottom: 0,
       left: 0,
       marginBottom: '-0.95em',
@@ -26153,13 +26616,11 @@ function arrowGenerator() {
       width: '2em',
       height: '1em',
       '&::before': {
-        flip: false,
         borderWidth: '1em 1em 0 1em',
         borderColor: 'currentcolor transparent transparent transparent'
       }
     },
     '&[x-placement*="right"] $arrow': {
-      flip: false,
       left: 0,
       marginLeft: '-0.95em',
       marginTop: 4,
@@ -26167,13 +26628,11 @@ function arrowGenerator() {
       height: '2em',
       width: '1em',
       '&::before': {
-        flip: false,
         borderWidth: '1em 1em 1em 0',
         borderColor: 'transparent currentcolor transparent transparent'
       }
     },
     '&[x-placement*="left"] $arrow': {
-      flip: false,
       right: 0,
       marginRight: '-0.95em',
       marginTop: 4,
@@ -26181,7 +26640,6 @@ function arrowGenerator() {
       height: '2em',
       width: '1em',
       '&::before': {
-        flip: false,
         borderWidth: '1em 0 1em 1em',
         borderColor: 'transparent transparent transparent currentcolor'
       }
@@ -26194,8 +26652,7 @@ var Tooltip_styles = function styles(theme) {
     /* Styles applied to the Popper component. */
     popper: {
       zIndex: theme.zIndex.tooltip,
-      pointerEvents: 'none',
-      flip: false // disable jss-rtl plugin
+      pointerEvents: 'none' // disable jss-rtl plugin
 
     },
 
@@ -26289,7 +26746,7 @@ function testReset() {
   hystersisOpen = false;
   clearTimeout(hystersisTimer);
 }
-var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Tooltip(props, ref) {
+var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Tooltip(props, ref) {
   var _props$arrow = props.arrow,
       arrow = _props$arrow === void 0 ? false : _props$arrow,
       children = props.children,
@@ -26301,7 +26758,9 @@ var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_rea
       _props$disableTouchLi = props.disableTouchListener,
       disableTouchListener = _props$disableTouchLi === void 0 ? false : _props$disableTouchLi,
       _props$enterDelay = props.enterDelay,
-      enterDelay = _props$enterDelay === void 0 ? 0 : _props$enterDelay,
+      enterDelay = _props$enterDelay === void 0 ? 100 : _props$enterDelay,
+      _props$enterNextDelay = props.enterNextDelay,
+      enterNextDelay = _props$enterNextDelay === void 0 ? 0 : _props$enterNextDelay,
       _props$enterTouchDela = props.enterTouchDelay,
       enterTouchDelay = _props$enterTouchDela === void 0 ? 700 : _props$enterTouchDela,
       idProp = props.id,
@@ -26321,28 +26780,29 @@ var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_rea
       _props$TransitionComp = props.TransitionComponent,
       TransitionComponent = _props$TransitionComp === void 0 ? esm_Grow_Grow : _props$TransitionComp,
       TransitionProps = props.TransitionProps,
-      other = _objectWithoutProperties(props, ["arrow", "children", "classes", "disableFocusListener", "disableHoverListener", "disableTouchListener", "enterDelay", "enterTouchDelay", "id", "interactive", "leaveDelay", "leaveTouchDelay", "onClose", "onOpen", "open", "placement", "PopperProps", "title", "TransitionComponent", "TransitionProps"]);
+      other = _objectWithoutProperties(props, ["arrow", "children", "classes", "disableFocusListener", "disableHoverListener", "disableTouchListener", "enterDelay", "enterNextDelay", "enterTouchDelay", "id", "interactive", "leaveDelay", "leaveTouchDelay", "onClose", "onOpen", "open", "placement", "PopperProps", "title", "TransitionComponent", "TransitionProps"]);
 
   var theme = useTheme_useTheme();
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](),
       childNode = _React$useState[0],
       setChildNode = _React$useState[1];
 
-  var _React$useState2 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(null),
+  var _React$useState2 = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](null),
       arrowRef = _React$useState2[0],
       setArrowRef = _React$useState2[1];
 
-  var ignoreNonTouchEvents = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(false);
-  var closeTimer = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
-  var enterTimer = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
-  var leaveTimer = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
-  var touchTimer = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
+  var ignoreNonTouchEvents = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](false);
+  var closeTimer = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
+  var enterTimer = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
+  var leaveTimer = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
+  var touchTimer = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
 
   var _useControlled = useControlled({
     controlled: openProp,
     default: false,
-    name: 'Tooltip'
+    name: 'Tooltip',
+    state: 'open'
   }),
       _useControlled2 = _slicedToArray(_useControlled, 2),
       openState = _useControlled2[0],
@@ -26352,22 +26812,8 @@ var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_rea
 
   if (false) { var _React$useRef, isControlled; }
 
-  var _React$useState3 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(),
-      defaultId = _React$useState3[0],
-      setDefaultId = _React$useState3[1];
-
-  var id = idProp || defaultId;
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
-    if (!open || defaultId) {
-      return;
-    } // Fallback to this default id when possible.
-    // Use the random value for client-side rendering only.
-    // We can't use it server-side.
-
-
-    setDefaultId("mui-tooltip-".concat(Math.round(Math.random() * 1e5)));
-  }, [open, defaultId]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  var id = useId(idProp);
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     return function () {
       clearTimeout(closeTimer.current);
       clearTimeout(enterTimer.current);
@@ -26389,35 +26835,38 @@ var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_rea
     }
   };
 
-  var handleEnter = function handleEnter(event) {
-    var childrenProps = children.props;
+  var handleEnter = function handleEnter() {
+    var forward = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+    return function (event) {
+      var childrenProps = children.props;
 
-    if (event.type === 'mouseover' && childrenProps.onMouseOver && event.currentTarget === childNode) {
-      childrenProps.onMouseOver(event);
-    }
+      if (event.type === 'mouseover' && childrenProps.onMouseOver && forward) {
+        childrenProps.onMouseOver(event);
+      }
 
-    if (ignoreNonTouchEvents.current && event.type !== 'touchstart') {
-      return;
-    } // Remove the title ahead of time.
-    // We don't want to wait for the next render commit.
-    // We would risk displaying two tooltips at the same time (native + this one).
+      if (ignoreNonTouchEvents.current && event.type !== 'touchstart') {
+        return;
+      } // Remove the title ahead of time.
+      // We don't want to wait for the next render commit.
+      // We would risk displaying two tooltips at the same time (native + this one).
 
 
-    if (childNode) {
-      childNode.removeAttribute('title');
-    }
+      if (childNode) {
+        childNode.removeAttribute('title');
+      }
 
-    clearTimeout(enterTimer.current);
-    clearTimeout(leaveTimer.current);
+      clearTimeout(enterTimer.current);
+      clearTimeout(leaveTimer.current);
 
-    if (enterDelay && !hystersisOpen) {
-      event.persist();
-      enterTimer.current = setTimeout(function () {
+      if (enterDelay || hystersisOpen && enterNextDelay) {
+        event.persist();
+        enterTimer.current = setTimeout(function () {
+          handleOpen(event);
+        }, hystersisOpen ? enterNextDelay : enterDelay);
+      } else {
         handleOpen(event);
-      }, enterDelay);
-    } else {
-      handleOpen(event);
-    }
+      }
+    };
   };
 
   var _useIsFocusVisible = useIsFocusVisible(),
@@ -26425,9 +26874,9 @@ var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_rea
       onBlurVisible = _useIsFocusVisible.onBlurVisible,
       focusVisibleRef = _useIsFocusVisible.ref;
 
-  var _React$useState4 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(false),
-      childIsFocusVisible = _React$useState4[0],
-      setChildIsFocusVisible = _React$useState4[1];
+  var _React$useState3 = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](false),
+      childIsFocusVisible = _React$useState3[0],
+      setChildIsFocusVisible = _React$useState3[1];
 
   var handleBlur = function handleBlur() {
     if (childIsFocusVisible) {
@@ -26436,32 +26885,34 @@ var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_rea
     }
   };
 
-  var handleFocus = function handleFocus(event) {
-    // Workaround for https://github.com/facebook/react/issues/7769
-    // The autoFocus of React might trigger the event before the componentDidMount.
-    // We need to account for this eventuality.
-    if (!childNode) {
-      setChildNode(event.currentTarget);
-    }
+  var handleFocus = function handleFocus() {
+    var forward = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+    return function (event) {
+      // Workaround for https://github.com/facebook/react/issues/7769
+      // The autoFocus of React might trigger the event before the componentDidMount.
+      // We need to account for this eventuality.
+      if (!childNode) {
+        setChildNode(event.currentTarget);
+      }
 
-    if (isFocusVisible(event)) {
-      setChildIsFocusVisible(true);
-      handleEnter(event);
-    }
+      if (isFocusVisible(event)) {
+        setChildIsFocusVisible(true);
+        handleEnter()(event);
+      }
 
-    var childrenProps = children.props;
+      var childrenProps = children.props;
 
-    if (childrenProps.onFocus && event.currentTarget === childNode) {
-      childrenProps.onFocus(event);
-    }
+      if (childrenProps.onFocus && forward) {
+        childrenProps.onFocus(event);
+      }
+    };
   };
 
   var handleClose = function handleClose(event) {
     clearTimeout(hystersisTimer);
     hystersisTimer = setTimeout(function () {
       hystersisOpen = false;
-    }, 500); // Use 500 ms per https://github.com/reach/reach-ui/blob/3b5319027d763a3082880be887d7a29aee7d3afc/packages/tooltip/src/index.js#L214
-
+    }, 800 + leaveDelay);
     setOpenState(false);
 
     if (onClose) {
@@ -26474,27 +26925,30 @@ var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_rea
     }, theme.transitions.duration.shortest);
   };
 
-  var handleLeave = function handleLeave(event) {
-    var childrenProps = children.props;
+  var handleLeave = function handleLeave() {
+    var forward = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+    return function (event) {
+      var childrenProps = children.props;
 
-    if (event.type === 'blur') {
-      if (childrenProps.onBlur && event.currentTarget === childNode) {
-        childrenProps.onBlur(event);
+      if (event.type === 'blur') {
+        if (childrenProps.onBlur && forward) {
+          childrenProps.onBlur(event);
+        }
+
+        handleBlur();
       }
 
-      handleBlur(event);
-    }
+      if (event.type === 'mouseleave' && childrenProps.onMouseLeave && event.currentTarget === childNode) {
+        childrenProps.onMouseLeave(event);
+      }
 
-    if (event.type === 'mouseleave' && childrenProps.onMouseLeave && event.currentTarget === childNode) {
-      childrenProps.onMouseLeave(event);
-    }
-
-    clearTimeout(enterTimer.current);
-    clearTimeout(leaveTimer.current);
-    event.persist();
-    leaveTimer.current = setTimeout(function () {
-      handleClose(event);
-    }, leaveDelay);
+      clearTimeout(enterTimer.current);
+      clearTimeout(leaveTimer.current);
+      event.persist();
+      leaveTimer.current = setTimeout(function () {
+        handleClose(event);
+      }, leaveDelay);
+    };
   };
 
   var handleTouchStart = function handleTouchStart(event) {
@@ -26510,7 +26964,7 @@ var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_rea
     clearTimeout(touchTimer.current);
     event.persist();
     touchTimer.current = setTimeout(function () {
-      handleEnter(event);
+      handleEnter()(event);
     }, enterTouchDelay);
   };
 
@@ -26530,9 +26984,9 @@ var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_rea
   var handleUseRef = useForkRef(setChildNode, ref);
   var handleFocusRef = useForkRef(focusVisibleRef, handleUseRef); // can be removed once we drop support for non ref forwarding class components
 
-  var handleOwnRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (instance) {
+  var handleOwnRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (instance) {
     // #StrictMode ready
-    setRef(handleFocusRef, external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_default.a.findDOMNode(instance));
+    setRef(handleFocusRef, external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["findDOMNode"](instance));
   }, [handleFocusRef]);
   var handleRef = useForkRef(children.ref, handleOwnRef); // There is no point in displaying an empty tooltip.
 
@@ -26551,8 +27005,11 @@ var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_rea
     'aria-describedby': open ? id : null,
     title: shouldShowNativeTitle && typeof title === 'string' ? title : null
   }, other, {}, children.props, {
-    className: clsx_m(other.className, children.props.className)
+    className: clsx_m(other.className, children.props.className),
+    ref: handleRef
   });
+
+  var interactiveWrapperListeners = {};
 
   if (!disableTouchListener) {
     childrenProps.onTouchStart = handleTouchStart;
@@ -26560,53 +27017,54 @@ var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_rea
   }
 
   if (!disableHoverListener) {
-    childrenProps.onMouseOver = handleEnter;
-    childrenProps.onMouseLeave = handleLeave;
+    childrenProps.onMouseOver = handleEnter();
+    childrenProps.onMouseLeave = handleLeave();
+
+    if (interactive) {
+      interactiveWrapperListeners.onMouseOver = handleEnter(false);
+      interactiveWrapperListeners.onMouseLeave = handleLeave(false);
+    }
   }
 
   if (!disableFocusListener) {
-    childrenProps.onFocus = handleFocus;
-    childrenProps.onBlur = handleLeave;
+    childrenProps.onFocus = handleFocus();
+    childrenProps.onBlur = handleLeave();
+
+    if (interactive) {
+      interactiveWrapperListeners.onFocus = handleFocus(false);
+      interactiveWrapperListeners.onBlur = handleLeave(false);
+    }
   }
 
-  var interactiveWrapperListeners = interactive ? {
-    onMouseOver: childrenProps.onMouseOver,
-    onMouseLeave: childrenProps.onMouseLeave,
-    onFocus: childrenProps.onFocus,
-    onBlur: childrenProps.onBlur
-  } : {};
+  if (false) {}
 
-  if (false) {} // Avoid the creation of a new Popper.js instance at each render.
-
-
-  var popperOptions = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useMemo(function () {
-    return {
-      modifiers: {
-        arrow: {
-          enabled: Boolean(arrowRef),
-          element: arrowRef
+  var mergedPopperProps = external_root_React_commonjs2_react_commonjs_react_amd_react_["useMemo"](function () {
+    return deepmerge({
+      popperOptions: {
+        modifiers: {
+          arrow: {
+            enabled: Boolean(arrowRef),
+            element: arrowRef
+          }
         }
       }
-    };
-  }, [arrowRef]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(children, _extends({
-    ref: handleRef
-  }, childrenProps)), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Popper_Popper, _extends({
+    }, PopperProps);
+  }, [arrowRef, PopperProps]);
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](external_root_React_commonjs2_react_commonjs_react_amd_react_["Fragment"], null, external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](children, childrenProps), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Popper_Popper, _extends({
     className: clsx_m(classes.popper, interactive && classes.popperInteractive, arrow && classes.popperArrow),
     placement: placement,
     anchorEl: childNode,
     open: childNode ? open : false,
     id: childrenProps['aria-describedby'],
-    transition: true,
-    popperOptions: popperOptions
-  }, interactiveWrapperListeners, PopperProps), function (_ref) {
+    transition: true
+  }, interactiveWrapperListeners, mergedPopperProps), function (_ref) {
     var placementInner = _ref.placement,
         TransitionPropsInner = _ref.TransitionProps;
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(TransitionComponent, _extends({
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](TransitionComponent, _extends({
       timeout: theme.transitions.duration.shorter
-    }, TransitionPropsInner, TransitionProps), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+    }, TransitionPropsInner, TransitionProps), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
       className: clsx_m(classes.tooltip, classes["tooltipPlacement".concat(capitalize(placementInner.split('-')[0]))], ignoreNonTouchEvents.current && classes.touch, arrow && classes.tooltipArrow)
-    }, title, arrow ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+    }, title, arrow ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
       className: classes.arrow,
       ref: setArrowRef
     }) : null));
@@ -26614,7 +27072,8 @@ var Tooltip_Tooltip = external_root_React_commonjs2_react_commonjs_react_amd_rea
 });
  false ? undefined : void 0;
 /* harmony default export */ var esm_Tooltip_Tooltip = (styles_withStyles(Tooltip_styles, {
-  name: 'MuiTooltip'
+  name: 'MuiTooltip',
+  flip: false
 })(Tooltip_Tooltip));
 // CONCATENATED MODULE: ./node_modules/@material-ui/lab/esm/SpeedDialAction/SpeedDialAction.js
 
@@ -26701,7 +27160,7 @@ var SpeedDialAction_styles = function styles(theme) {
     }
   };
 };
-var SpeedDialAction_SpeedDialAction = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function SpeedDialAction(props, ref) {
+var SpeedDialAction_SpeedDialAction = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function SpeedDialAction(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$delay = props.delay,
@@ -26719,7 +27178,7 @@ var SpeedDialAction_SpeedDialAction = external_root_React_commonjs2_react_common
       tooltipTitle = props.tooltipTitle,
       other = _objectWithoutProperties(props, ["classes", "className", "delay", "FabProps", "icon", "id", "open", "TooltipClasses", "tooltipOpen", "tooltipPlacement", "tooltipTitle"]);
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(tooltipOpenProp),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](tooltipOpenProp),
       tooltipOpen = _React$useState[0],
       setTooltipOpen = _React$useState[1];
 
@@ -26734,7 +27193,7 @@ var SpeedDialAction_SpeedDialAction = external_root_React_commonjs2_react_common
   var transitionStyle = {
     transitionDelay: "".concat(delay, "ms")
   };
-  var fab = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Fab_Fab, _extends({
+  var fab = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Fab_Fab, _extends({
     size: "small",
     className: clsx_m(classes.fab, className, !open && classes.fabClosed),
     tabIndex: -1,
@@ -26745,18 +27204,18 @@ var SpeedDialAction_SpeedDialAction = external_root_React_commonjs2_react_common
   }), icon);
 
   if (tooltipOpenProp) {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", _extends({
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", _extends({
       id: id,
       ref: ref,
       className: clsx_m(classes.staticTooltip, classes["tooltipPlacement".concat(capitalize(tooltipPlacement))], !open && classes.staticTooltipClosed)
-    }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+    }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
       style: transitionStyle,
       id: "".concat(id, "-label"),
       className: classes.staticTooltipLabel
     }, tooltipTitle), fab);
   }
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Tooltip_Tooltip, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Tooltip_Tooltip, _extends({
     id: id,
     ref: ref,
     title: tooltipTitle,
@@ -26836,7 +27295,7 @@ var SvgIcon_styles = function styles(theme) {
     }
   };
 };
-var SvgIcon_SvgIcon = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function SvgIcon(props, ref) {
+var SvgIcon_SvgIcon = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function SvgIcon(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -26852,28 +27311,32 @@ var SvgIcon_SvgIcon = external_root_React_commonjs2_react_commonjs_react_amd_rea
       viewBox = _props$viewBox === void 0 ? '0 0 24 24' : _props$viewBox,
       other = _objectWithoutProperties(props, ["children", "classes", "className", "color", "component", "fontSize", "htmlColor", "titleAccess", "viewBox"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
     className: clsx_m(classes.root, className, color !== 'inherit' && classes["color".concat(capitalize(color))], fontSize !== 'default' && classes["fontSize".concat(capitalize(fontSize))]),
     focusable: "false",
     viewBox: viewBox,
     color: htmlColor,
-    "aria-hidden": titleAccess ? null : 'true',
-    role: titleAccess ? 'img' : 'presentation',
+    "aria-hidden": titleAccess ? undefined : 'true',
+    role: titleAccess ? 'img' : undefined,
     ref: ref
-  }, other), children, titleAccess ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("title", null, titleAccess) : null);
+  }, other), children, titleAccess ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("title", null, titleAccess) : null);
 });
  false ? undefined : void 0;
 SvgIcon_SvgIcon.muiName = 'SvgIcon';
 /* harmony default export */ var esm_SvgIcon_SvgIcon = (styles_withStyles(SvgIcon_styles, {
   name: 'MuiSvgIcon'
 })(SvgIcon_SvgIcon));
-// CONCATENATED MODULE: ./node_modules/@material-ui/lab/esm/internal/svg-icons/createSvgIcon.js
+// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/utils/createSvgIcon.js
 
 
+
+/**
+ * Private module reserved for @material-ui/x packages.
+ */
 
 function createSvgIcon(path, displayName) {
   var Component = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.memo(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_SvgIcon_SvgIcon, _extends({
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_SvgIcon_SvgIcon, _extends({
       ref: ref
     }, props), path);
   }));
@@ -26890,7 +27353,7 @@ function createSvgIcon(path, displayName) {
  * @ignore - internal component.
  */
 
-/* harmony default export */ var Add = (createSvgIcon(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("path", {
+/* harmony default export */ var Add = (createSvgIcon( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("path", {
   d: "M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
 }), 'Add'));
 // CONCATENATED MODULE: ./node_modules/@material-ui/lab/esm/SpeedDialIcon/SpeedDialIcon.js
@@ -26942,7 +27405,7 @@ var SpeedDialIcon_styles = function styles(theme) {
     }
   };
 };
-var SpeedDialIcon_SpeedDialIcon = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function SpeedDialIcon(props, ref) {
+var SpeedDialIcon_SpeedDialIcon = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function SpeedDialIcon(props, ref) {
   var className = props.className,
       classes = props.classes,
       iconProp = props.icon,
@@ -26954,8 +27417,8 @@ var SpeedDialIcon_SpeedDialIcon = external_root_React_commonjs2_react_commonjs_r
   var openIconClassName = clsx_m(classes.openIcon, open && classes.openIconOpen);
 
   function formatIcon(icon, newClassName) {
-    if (external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(icon)) {
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(icon, {
+    if (external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](icon)) {
+      return external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](icon, {
         className: newClassName
       });
     }
@@ -26963,10 +27426,10 @@ var SpeedDialIcon_SpeedDialIcon = external_root_React_commonjs2_react_commonjs_r
     return icon;
   }
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", _extends({
     className: clsx_m(classes.root, className),
     ref: ref
-  }, other), openIconProp ? formatIcon(openIconProp, openIconClassName) : null, iconProp ? formatIcon(iconProp, iconClassName) : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Add, {
+  }, other), openIconProp ? formatIcon(openIconProp, openIconClassName) : null, iconProp ? formatIcon(iconProp, iconClassName) : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Add, {
     className: iconClassName
   }));
 });
@@ -27014,24 +27477,24 @@ function useUtils() {
 //# sourceMappingURL=useUtils-cfb96ac9.js.map
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/classCallCheck.js
-var classCallCheck = __webpack_require__(6);
+var classCallCheck = __webpack_require__(7);
 var classCallCheck_default = /*#__PURE__*/__webpack_require__.n(classCallCheck);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/createClass.js
-var createClass = __webpack_require__(7);
+var createClass = __webpack_require__(8);
 var createClass_default = /*#__PURE__*/__webpack_require__.n(createClass);
 
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/inherits.js
+var inherits = __webpack_require__(9);
+var inherits_default = /*#__PURE__*/__webpack_require__.n(inherits);
+
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js
-var possibleConstructorReturn = __webpack_require__(8);
+var possibleConstructorReturn = __webpack_require__(10);
 var possibleConstructorReturn_default = /*#__PURE__*/__webpack_require__.n(possibleConstructorReturn);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/getPrototypeOf.js
-var getPrototypeOf = __webpack_require__(9);
+var getPrototypeOf = __webpack_require__(5);
 var getPrototypeOf_default = /*#__PURE__*/__webpack_require__.n(getPrototypeOf);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/inherits.js
-var inherits = __webpack_require__(10);
-var inherits_default = /*#__PURE__*/__webpack_require__.n(inherits);
 
 // EXTERNAL MODULE: ./node_modules/luxon/build/cjs-browser/luxon.js
 var luxon = __webpack_require__(17);
@@ -27097,8 +27560,17 @@ var index_esm_LuxonUtils = /** @class */ (function () {
         }
         return this.date(value).equals(this.date(comparing));
     };
-    LuxonUtils.prototype.isSameDay = function (value, comparing) {
-        return value.hasSame(comparing, "day");
+    LuxonUtils.prototype.isSameDay = function (date, comparing) {
+        return date.hasSame(comparing, "day");
+    };
+    LuxonUtils.prototype.isSameMonth = function (date, comparing) {
+        return date.hasSame(comparing, "month");
+    };
+    LuxonUtils.prototype.isSameYear = function (date, comparing) {
+        return date.hasSame(comparing, "year");
+    };
+    LuxonUtils.prototype.isSameHour = function (date, comparing) {
+        return date.hasSame(comparing, "hour");
     };
     LuxonUtils.prototype.isAfter = function (value, comparing) {
         return value > comparing;
@@ -27283,20 +27755,25 @@ var index_esm_LuxonUtils = /** @class */ (function () {
 
 
 
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 // Extend LuxonUtils to start week on Sunday
 // https://github.com/mui-org/material-ui-pickers/issues/1270
 
 /* eslint-disable class-methods-use-this */
-var LatticeLuxonUtils_LatticeLuxonUtils =
-/*#__PURE__*/
-function (_LuxonUtils) {
+var LatticeLuxonUtils_LatticeLuxonUtils = /*#__PURE__*/function (_LuxonUtils) {
   inherits_default()(LatticeLuxonUtils, _LuxonUtils);
+
+  var _super = _createSuper(LatticeLuxonUtils);
 
   function LatticeLuxonUtils() {
     classCallCheck_default()(this, LatticeLuxonUtils);
 
-    return possibleConstructorReturn_default()(this, getPrototypeOf_default()(LatticeLuxonUtils).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   createClass_default()(LatticeLuxonUtils, [{
@@ -27356,10 +27833,8 @@ function _setPrototypeOf(o, p) {
 function _isNativeFunction(fn) {
   return Function.toString.call(fn).indexOf("[native code]") !== -1;
 }
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/construct.js
-
-
-function isNativeReflectConstruct() {
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js
+function isNativeReflectConstruct_isNativeReflectConstruct() {
   if (typeof Reflect === "undefined" || !Reflect.construct) return false;
   if (Reflect.construct.sham) return false;
   if (typeof Proxy === "function") return true;
@@ -27371,9 +27846,11 @@ function isNativeReflectConstruct() {
     return false;
   }
 }
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/construct.js
+
 
 function construct_construct(Parent, args, Class) {
-  if (isNativeReflectConstruct()) {
+  if (isNativeReflectConstruct_isNativeReflectConstruct()) {
     construct_construct = Reflect.construct;
   } else {
     construct_construct = function _construct(Parent, args, Class) {
@@ -27738,7 +28215,9 @@ var ERRORS = {
   "69": "Expected a string ending in \"px\" or a number passed as the first argument to %s(), got %s instead.\n\n",
   "70": "Expected a string ending in \"px\" or a number passed as the second argument to %s(), got %s instead.\n\n",
   "71": "Passed invalid pixel value %s to %s(), please pass a value like \"12px\" or 12.\n\n",
-  "72": "Passed invalid base value %s to %s(), please pass a value like \"12px\" or 12.\n"
+  "72": "Passed invalid base value %s to %s(), please pass a value like \"12px\" or 12.\n\n",
+  "73": "Please provide a valid CSS variable.\n\n",
+  "74": "CSS variable not found.\n"
 };
 /**
  * super basic version of sprintf
@@ -27770,9 +28249,7 @@ function polished_es_format() {
  */
 
 
-var polished_es_PolishedError =
-/*#__PURE__*/
-function (_Error) {
+var polished_es_PolishedError = /*#__PURE__*/function (_Error) {
   _inheritsLoose(PolishedError, _Error);
 
   function PolishedError(code) {
@@ -27786,9 +28263,7 @@ function (_Error) {
   }
 
   return PolishedError;
-}(
-/*#__PURE__*/
-wrapNativeSuper_wrapNativeSuper(Error));
+}( /*#__PURE__*/wrapNativeSuper_wrapNativeSuper(Error));
 
 var unitRegExp = /((?!\w)a|na|hc|mc|dg|me[r]?|xe|ni(?![a-zA-Z])|mm|cp|tp|xp|q(?!s)|hv|xamv|nimv|wv|sm|s(?!\D|$)|ged|darg?|nrut)/g; // Merges additional math functionality into the defaults.
 
@@ -27935,6 +28410,54 @@ function math(formula, additionalSymbols) {
   return "" + calculate(cleanFormula, additionalSymbols) + (formulaMatch ? reverseString(formulaMatch[0]) : '');
 }
 
+var cssVariableRegex = /--[\S]*/g;
+/**
+ * Fetches the value of a passed CSS Variable.
+ *
+ * Passthrough can be enabled (off by default) for when you are unsure of the input and want non-variable values to be returned instead of an error.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   'background': cssVar('--background-color'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${cssVar('--background-color')};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   'background': 'red'
+ * }
+ */
+
+function cssVar(cssVariable, passThrough) {
+  if (!cssVariable || !cssVariable.match(cssVariableRegex)) {
+    if (passThrough) return cssVariable;
+    throw new polished_es_PolishedError(73);
+  }
+
+  var variableValue;
+  /* eslint-disable */
+
+  /* istanbul ignore next */
+
+  if (document.documentElement !== null) {
+    variableValue = getComputedStyle(document.documentElement).getPropertyValue(cssVariable);
+  }
+  /* eslint-enable */
+
+
+  if (variableValue) {
+    return variableValue.trim();
+  } else {
+    throw new polished_es_PolishedError(74);
+  }
+}
+
 // @private
 function capitalizeString(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -28019,26 +28542,25 @@ function endsWith (string, suffix) {
 
 var cssRegex = /^([+-]?(?:\d+|\d*\.\d+))([a-z]*|%)$/;
 /**
- * Returns a given CSS value minus its unit (or the original value if an invalid string is passed). Optionally returns an array containing the stripped value and the original unit of measure.
+ * Returns a given CSS value minus its unit of measure.
+ *
+ * @deprecated - stripUnit's unitReturn functionality has been marked for deprecation in polished 4.0. It's functionality has been been moved to getValueAndUnit.
  *
  * @example
  * // Styles as object usage
  * const styles = {
- *   '--dimension': stripUnit('100px'),
- *   '--unit': stripUnit('100px')[1],
+ *   '--dimension': stripUnit('100px')
  * }
  *
  * // styled-components usage
  * const div = styled.div`
  *   --dimension: ${stripUnit('100px')};
- *   --unit: ${stripUnit('100px')[1]};
  * `
  *
  * // CSS in JS Output
  *
  * element {
- *   '--dimension': 100,
- *   '--unit': 'px',
+ *   '--dimension': 100
  * }
  */
 
@@ -28047,6 +28569,8 @@ function stripUnit(value, unitReturn) {
   var matchedValue = value.match(cssRegex);
 
   if (unitReturn) {
+    // eslint-disable-next-line no-console
+    console.warn("stripUnit's unitReturn functionality has been marked for deprecation in polished 4.0. It's functionality has been been moved to getValueAndUnit.");
     if (matchedValue) return [parseFloat(value), matchedValue[2]];
     return [value, undefined];
   }
@@ -28121,15 +28645,11 @@ var pxtoFactory = function pxtoFactory(to) {
  * }
  */
 
-var em =
-/*#__PURE__*/
-pxtoFactory('em');
+var em = /*#__PURE__*/pxtoFactory('em');
 
 var cssRegex$1 = /^([+-]?(?:\d+|\d*\.\d+))([a-z]*|%)$/;
 /**
  * Returns a given CSS value and its unit as elements of an array.
- *
- * @deprecated - getValueAndUnit has been marked for deprecation in polished 3.0 and will be fully deprecated in 4.0. It's functionality has been been moved to stripUnit as an optional return.
  *
  * @example
  * // Styles as object usage
@@ -28153,8 +28673,6 @@ var cssRegex$1 = /^([+-]?(?:\d+|\d*\.\d+))([a-z]*|%)$/;
  */
 
 function getValueAndUnit(value) {
-  // eslint-disable-next-line no-console
-  console.warn("getValueAndUnit has been marked for deprecation in polished 3.0 and will be fully deprecated in 4.0. It's functionality has been been moved to stripUnit as an optional return.");
   if (typeof value !== 'string') return [value, ''];
   var matchedValue = value.match(cssRegex$1);
   if (matchedValue) return [parseFloat(value), matchedValue[2]];
@@ -28224,7 +28742,7 @@ function modularScale(steps, base, ratio) {
     throw new polished_es_PolishedError(43);
   }
 
-  var _ref = typeof base === 'string' ? stripUnit(base, true) : [base, ''],
+  var _ref = typeof base === 'string' ? getValueAndUnit(base) : [base, ''],
       realBase = _ref[0],
       unit = _ref[1];
 
@@ -28234,7 +28752,7 @@ function modularScale(steps, base, ratio) {
     throw new polished_es_PolishedError(44, base);
   }
 
-  return "" + realBase * Math.pow(realRatio, steps) + unit;
+  return "" + realBase * Math.pow(realRatio, steps) + (unit || '');
 }
 
 /**
@@ -28261,9 +28779,7 @@ function modularScale(steps, base, ratio) {
  * }
  */
 
-var rem =
-/*#__PURE__*/
-pxtoFactory('rem');
+var rem = /*#__PURE__*/pxtoFactory('rem');
 
 /**
  * Returns a CSS calc formula for linear interpolation of a property between two values. Accepts optional minScreen (defaults to '320px') and maxScreen (defaults to '1200px').
@@ -28298,21 +28814,21 @@ function polished_es_between(fromSize, toSize, minScreen, maxScreen) {
     maxScreen = '1200px';
   }
 
-  var _stripUnit = stripUnit(fromSize, true),
-      unitlessFromSize = _stripUnit[0],
-      fromSizeUnit = _stripUnit[1];
+  var _getValueAndUnit = getValueAndUnit(fromSize),
+      unitlessFromSize = _getValueAndUnit[0],
+      fromSizeUnit = _getValueAndUnit[1];
 
-  var _stripUnit2 = stripUnit(toSize, true),
-      unitlessToSize = _stripUnit2[0],
-      toSizeUnit = _stripUnit2[1];
+  var _getValueAndUnit2 = getValueAndUnit(toSize),
+      unitlessToSize = _getValueAndUnit2[0],
+      toSizeUnit = _getValueAndUnit2[1];
 
-  var _stripUnit3 = stripUnit(minScreen, true),
-      unitlessMinScreen = _stripUnit3[0],
-      minScreenUnit = _stripUnit3[1];
+  var _getValueAndUnit3 = getValueAndUnit(minScreen),
+      unitlessMinScreen = _getValueAndUnit3[0],
+      minScreenUnit = _getValueAndUnit3[1];
 
-  var _stripUnit4 = stripUnit(maxScreen, true),
-      unitlessMaxScreen = _stripUnit4[0],
-      maxScreenUnit = _stripUnit4[1];
+  var _getValueAndUnit4 = getValueAndUnit(maxScreen),
+      unitlessMaxScreen = _getValueAndUnit4[0],
+      maxScreenUnit = _getValueAndUnit4[1];
 
   if (typeof unitlessMinScreen !== 'number' || typeof unitlessMaxScreen !== 'number' || !minScreenUnit || !maxScreenUnit || minScreenUnit !== maxScreenUnit) {
     throw new polished_es_PolishedError(47);
@@ -28327,6 +28843,28 @@ function polished_es_between(fromSize, toSize, minScreen, maxScreen) {
   return "calc(" + base.toFixed(2) + (fromSizeUnit || '') + " + " + (100 * slope).toFixed(2) + "vw)";
 }
 
+/**
+ * CSS to contain a float (credit to CSSMojo).
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *    ...clearFix(),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${clearFix()}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * '&::after': {
+ *   'clear': 'both',
+ *   'content': '""',
+ *   'display': 'table'
+ * }
+ */
 function clearFix(parent) {
   var _ref;
 
@@ -28342,6 +28880,30 @@ function clearFix(parent) {
   }, _ref;
 }
 
+/**
+ * CSS to fully cover an area. Can optionally be passed an offset to act as a "padding".
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...cover()
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${cover()}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div: {
+ *   'position': 'absolute',
+ *   'top': '0',
+ *   'right: '0',
+ *   'bottom': '0',
+ *   'left: '0'
+ * }
+ */
 function cover(offset) {
   if (offset === void 0) {
     offset = 0;
@@ -28356,6 +28918,31 @@ function cover(offset) {
   };
 }
 
+/**
+ * CSS to represent truncated text with an ellipsis.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...ellipsis('250px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${ellipsis('250px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div: {
+ *   'display': 'inline-block',
+ *   'maxWidth': '250px',
+ *   'overflow': 'hidden',
+ *   'textOverflow': 'ellipsis',
+ *   'whiteSpace': 'nowrap',
+ *   'wordWrap': 'normal'
+ * }
+ */
 function ellipsis(width) {
   if (width === void 0) {
     width = '100%';
@@ -28371,6 +28958,48 @@ function ellipsis(width) {
   };
 }
 
+/**
+ * Returns a set of media queries that resizes a property (or set of properties) between a provided fromSize and toSize. Accepts optional minScreen (defaults to '320px') and maxScreen (defaults to '1200px') to constrain the interpolation.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...fluidRange(
+ *    {
+ *        prop: 'padding',
+ *        fromSize: '20px',
+ *        toSize: '100px',
+ *      },
+ *      '400px',
+ *      '1000px',
+ *    )
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${fluidRange(
+ *      {
+ *        prop: 'padding',
+ *        fromSize: '20px',
+ *        toSize: '100px',
+ *      },
+ *      '400px',
+ *      '1000px',
+ *    )}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div: {
+ *   "@media (min-width: 1000px)": Object {
+ *     "padding": "100px",
+ *   },
+ *   "@media (min-width: 400px)": Object {
+ *     "padding": "calc(-33.33333333333334px + 13.333333333333334vw)",
+ *   },
+ *   "padding": "20px",
+ * }
+ */
 function fluidRange(cssProp, minScreen, maxScreen) {
   if (minScreen === void 0) {
     minScreen = '320px';
@@ -28551,6 +29180,31 @@ function fontFace(_ref) {
   return JSON.parse(JSON.stringify(fontFaceDeclaration));
 }
 
+/**
+ * CSS to hide text to show a background image in a SEO-friendly way.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   'backgroundImage': 'url(logo.png)',
+ *   ...hideText(),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   backgroundImage: url(logo.png);
+ *   ${hideText()};
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * 'div': {
+ *   'backgroundImage': 'url(logo.png)',
+ *   'textIndent': '101%',
+ *   'overflow': 'hidden',
+ *   'whiteSpace': 'nowrap',
+ * }
+ */
 function hideText() {
   return {
     textIndent: '101%',
@@ -28559,11 +29213,39 @@ function hideText() {
   };
 }
 
+/**
+ * CSS to hide content visually but remain accessible to screen readers.
+ * from [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/9a176f57af1cfe8ec70300da4621fb9b07e5fa31/src/css/main.css#L121)
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...hideVisually(),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${hideVisually()};
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * 'div': {
+ *   'border': '0',
+ *   'clip': 'rect(0 0 0 0)',
+ *   'height': '1px',
+ *   'margin': '-1px',
+ *   'overflow': 'hidden',
+ *   'padding': '0',
+ *   'position': 'absolute',
+ *   'whiteSpace': 'nowrap',
+ *   'width': '1px',
+ * }
+ */
 function hideVisually() {
   return {
     border: '0',
     clip: 'rect(0 0 0 0)',
-    clipPath: 'inset(50%)',
     height: '1px',
     margin: '-1px',
     overflow: 'hidden',
@@ -28648,6 +29330,36 @@ function _templateObject() {
 
   return data;
 }
+
+/**
+ * CSS for declaring a linear gradient, including a fallback background-color. The fallback is either the first color-stop or an explicitly passed fallback color.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...linearGradient({
+        colorStops: ['#00FFFF 0%', 'rgba(0, 0, 255, 0) 50%', '#0000FF 95%'],
+        toDirection: 'to top right',
+        fallback: '#FFF',
+      })
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${linearGradient({
+        colorStops: ['#00FFFF 0%', 'rgba(0, 0, 255, 0) 50%', '#0000FF 95%'],
+        toDirection: 'to top right',
+        fallback: '#FFF',
+      })}
+ *`
+ *
+ * // CSS as JS Output
+ *
+ * div: {
+ *   'backgroundColor': '#FFF',
+ *   'backgroundImage': 'linear-gradient(to top right, #00FFFF 0%, rgba(0, 0, 255, 0) 50%, #0000FF 95%)',
+ * }
+ */
 function linearGradient(_ref) {
   var colorStops = _ref.colorStops,
       fallback = _ref.fallback,
@@ -28664,6 +29376,25 @@ function linearGradient(_ref) {
   };
 }
 
+/**
+ * CSS to normalize abnormalities across browsers (normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css)
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *    ...normalize(),
+ * }
+ *
+ * // styled-components usage
+ * const GlobalStyle = createGlobalStyle`${normalize()}`
+ *
+ * // CSS as JS Output
+ *
+ * html {
+ *   lineHeight: 1.15,
+ *   textSizeAdjust: 100%,
+ * } ...
+ */
 function normalize() {
   var _ref;
 
@@ -28779,6 +29510,38 @@ function _templateObject$1() {
 
   return data;
 }
+
+/**
+ * CSS for declaring a radial gradient, including a fallback background-color. The fallback is either the first color-stop or an explicitly passed fallback color.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...radialGradient({
+ *     colorStops: ['#00FFFF 0%', 'rgba(0, 0, 255, 0) 50%', '#0000FF 95%'],
+ *     extent: 'farthest-corner at 45px 45px',
+ *     position: 'center',
+ *     shape: 'ellipse',
+ *   })
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${radialGradient({
+ *     colorStops: ['#00FFFF 0%', 'rgba(0, 0, 255, 0) 50%', '#0000FF 95%'],
+ *     extent: 'farthest-corner at 45px 45px',
+ *     position: 'center',
+ *     shape: 'ellipse',
+ *   })}
+ *`
+ *
+ * // CSS as JS Output
+ *
+ * div: {
+ *   'backgroundColor': '#00FFFF',
+ *   'backgroundImage': 'radial-gradient(center ellipse farthest-corner at 45px 45px, #00FFFF 0%, rgba(0, 0, 255, 0) 50%, #0000FF 95%)',
+ * }
+ */
 function radialGradient(_ref) {
   var colorStops = _ref.colorStops,
       _ref$extent = _ref.extent,
@@ -28799,6 +29562,34 @@ function radialGradient(_ref) {
   };
 }
 
+/**
+ * A helper to generate a retina background image and non-retina
+ * background image. The retina background image will output to a HiDPI media query. The mixin uses
+ * a _2x.png filename suffix by default.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *  ...retinaImage('my-img')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${retinaImage('my-img')}
+ * `
+ *
+ * // CSS as JS Output
+ * div {
+ *   backgroundImage: 'url(my-img.png)',
+ *   '@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+ *    only screen and (min--moz-device-pixel-ratio: 1.3),
+ *    only screen and (-o-min-device-pixel-ratio: 1.3/1),
+ *    only screen and (min-resolution: 144dpi),
+ *    only screen and (min-resolution: 1.5dppx)': {
+ *     backgroundImage: 'url(my-img_2x.png)',
+ *   }
+ * }
+ */
 function retinaImage(filename, backgroundSize, extension, retinaFilename, retinaSuffix) {
   var _ref;
 
@@ -28826,6 +29617,7 @@ function retinaImage(filename, backgroundSize, extension, retinaFilename, retina
   } : {}), _ref;
 }
 
+/* eslint-disable key-spacing */
 var functionsMap = {
   easeInBack: 'cubic-bezier(0.600, -0.280, 0.735, 0.045)',
   easeInCirc: 'cubic-bezier(0.600,  0.040, 0.980, 0.335)',
@@ -28974,8 +29766,8 @@ function triangle(_ref) {
       foregroundColor = _ref.foregroundColor,
       _ref$backgroundColor = _ref.backgroundColor,
       backgroundColor = _ref$backgroundColor === void 0 ? 'transparent' : _ref$backgroundColor;
-  var widthAndUnit = stripUnit(width, true);
-  var heightAndUnit = stripUnit(height, true);
+  var widthAndUnit = getValueAndUnit(width);
+  var heightAndUnit = getValueAndUnit(height);
 
   if (isNaN(heightAndUnit[0]) || isNaN(widthAndUnit[0])) {
     throw new polished_es_PolishedError(60);
@@ -28990,6 +29782,28 @@ function triangle(_ref) {
   };
 }
 
+/**
+ * Provides an easy way to change the `wordWrap` property.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...wordWrap('break-word')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${wordWrap('break-word')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * const styles = {
+ *   overflowWrap: 'break-word',
+ *   wordWrap: 'break-word',
+ *   wordBreak: 'break-all',
+ * }
+ */
 function wordWrap(wrap) {
   if (wrap === void 0) {
     wrap = 'break-word';
@@ -29414,6 +30228,17 @@ function rgbToHsl(color) {
   };
 }
 
+/**
+ * Returns an HslColor or HslaColor object. This utility function is only useful
+ * if want to extract a color component. With the color util `toColorString` you
+ * can convert a HslColor or HslaColor object back to a string.
+ *
+ * @example
+ * // Assigns `{ hue: 0, saturation: 1, lightness: 0.5 }` to color1
+ * const color1 = parseToHsl('rgb(255, 0, 0)');
+ * // Assigns `{ hue: 128, saturation: 1, lightness: 0.5, alpha: 0.75 }` to color2
+ * const color2 = parseToHsl('hsla(128, 100%, 50%, 0.75)');
+ */
 function parseToHsl(color) {
   // Note: At a later stage we can optimize this function as right now a hsl
   // color would be parsed converted to rgb values and converted back to hsl.
@@ -29449,6 +30274,29 @@ function hslToHex(hue, saturation, lightness) {
   return polished_es_hslToRgb(hue, saturation, lightness, convertToHex);
 }
 
+/**
+ * Returns a string value for the color. The returned result is the smallest possible hex notation.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: hsl(359, 0.75, 0.4),
+ *   background: hsl({ hue: 360, saturation: 0.75, lightness: 0.4 }),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${hsl(359, 0.75, 0.4)};
+ *   background: ${hsl({ hue: 360, saturation: 0.75, lightness: 0.4 })};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#b3191c";
+ *   background: "#b3191c";
+ * }
+ */
 function hsl(value, saturation, lightness) {
   if (typeof value === 'number' && typeof saturation === 'number' && typeof lightness === 'number') {
     return hslToHex(value, saturation, lightness);
@@ -29459,6 +30307,32 @@ function hsl(value, saturation, lightness) {
   throw new polished_es_PolishedError(1);
 }
 
+/**
+ * Returns a string value for the color. The returned result is the smallest possible rgba or hex notation.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: hsla(359, 0.75, 0.4, 0.7),
+ *   background: hsla({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0,7 }),
+ *   background: hsla(359, 0.75, 0.4, 1),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${hsla(359, 0.75, 0.4, 0.7)};
+ *   background: ${hsla({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0,7 })};
+ *   background: ${hsla(359, 0.75, 0.4, 1)};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "rgba(179,25,28,0.7)";
+ *   background: "rgba(179,25,28,0.7)";
+ *   background: "#b3191c";
+ * }
+ */
 function hsla(value, saturation, lightness, alpha) {
   if (typeof value === 'number' && typeof saturation === 'number' && typeof lightness === 'number' && typeof alpha === 'number') {
     return alpha >= 1 ? hslToHex(value, saturation, lightness) : "rgba(" + polished_es_hslToRgb(value, saturation, lightness) + "," + alpha + ")";
@@ -29469,6 +30343,29 @@ function hsla(value, saturation, lightness, alpha) {
   throw new polished_es_PolishedError(2);
 }
 
+/**
+ * Returns a string value for the color. The returned result is the smallest possible hex notation.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: rgb(255, 205, 100),
+ *   background: rgb({ red: 255, green: 205, blue: 100 }),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${rgb(255, 205, 100)};
+ *   background: ${rgb({ red: 255, green: 205, blue: 100 })};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#ffcd64";
+ *   background: "#ffcd64";
+ * }
+ */
 function rgb(value, green, blue) {
   if (typeof value === 'number' && typeof green === 'number' && typeof blue === 'number') {
     return reduceHexValue("#" + numberToHex(value) + numberToHex(green) + numberToHex(blue));
@@ -29479,6 +30376,40 @@ function rgb(value, green, blue) {
   throw new polished_es_PolishedError(6);
 }
 
+/**
+ * Returns a string value for the color. The returned result is the smallest possible rgba or hex notation.
+ *
+ * Can also be used to fade a color by passing a hex value or named CSS color along with an alpha value.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: rgba(255, 205, 100, 0.7),
+ *   background: rgba({ red: 255, green: 205, blue: 100, alpha: 0.7 }),
+ *   background: rgba(255, 205, 100, 1),
+ *   background: rgba('#ffffff', 0.4),
+ *   background: rgba('black', 0.7),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${rgba(255, 205, 100, 0.7)};
+ *   background: ${rgba({ red: 255, green: 205, blue: 100, alpha: 0.7 })};
+ *   background: ${rgba(255, 205, 100, 1)};
+ *   background: ${rgba('#ffffff', 0.4)};
+ *   background: ${rgba('black', 0.7)};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "rgba(255,205,100,0.7)";
+ *   background: "rgba(255,205,100,0.7)";
+ *   background: "#ffcd64";
+ *   background: "rgba(255,255,255,0.4)";
+ *   background: "rgba(0,0,0,0.7)";
+ * }
+ */
 function rgba(firstValue, secondValue, thirdValue, fourthValue) {
   if (typeof firstValue === 'string' && typeof secondValue === 'number') {
     var rgbValue = parseToRgb(firstValue);
@@ -29600,9 +30531,7 @@ function adjustHue(degree, color) {
 } // prettier-ignore
 
 
-var curriedAdjustHue =
-/*#__PURE__*/
-curry
+var curriedAdjustHue = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (adjustHue);
 
@@ -29674,9 +30603,7 @@ function polished_es_darken(amount, color) {
 } // prettier-ignore
 
 
-var curriedDarken =
-/*#__PURE__*/
-curry
+var curriedDarken = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (polished_es_darken);
 
@@ -29714,9 +30641,7 @@ function desaturate(amount, color) {
 } // prettier-ignore
 
 
-var curriedDesaturate =
-/*#__PURE__*/
-curry
+var curriedDesaturate = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (desaturate);
 
@@ -29806,6 +30731,30 @@ function grayscale(color) {
   }));
 }
 
+/**
+ * Converts a HslColor or HslaColor object to a color string.
+ * This util is useful in case you only know on runtime which color object is
+ * used. Otherwise we recommend to rely on `hsl` or `hsla`.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: hslToColorString({ hue: 240, saturation: 1, lightness: 0.5 }),
+ *   background: hslToColorString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 }),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${hslToColorString({ hue: 240, saturation: 1, lightness: 0.5 })};
+ *   background: ${hslToColorString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 })};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#00f";
+ *   background: "rgba(179,25,25,0.72)";
+ * }
+ */
 function hslToColorString(color) {
   if (typeof color === 'object' && typeof color.hue === 'number' && typeof color.saturation === 'number' && typeof color.lightness === 'number') {
     if (color.alpha && typeof color.alpha === 'number') {
@@ -29895,12 +30844,17 @@ function polished_es_lighten(amount, color) {
 } // prettier-ignore
 
 
-var curriedLighten =
-/*#__PURE__*/
-curry
+var curriedLighten = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (polished_es_lighten);
 
+/**
+ * Determines which contrast guidelines have been met for two colors.
+ * Based on the [contrast calculations recommended by W3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html).
+ *
+ * @example
+ * const scores = meetsContrastGuidelines('#444', '#fff');
+ */
 function meetsContrastGuidelines(color1, color2) {
   var contrastRatio = getContrast(color1, color2);
   return {
@@ -29941,6 +30895,7 @@ function meetsContrastGuidelines(color1, color2) {
 function mix(weight, color, otherColor) {
   if (color === 'transparent') return otherColor;
   if (otherColor === 'transparent') return color;
+  if (weight === 0) return otherColor;
   var parsedColor1 = parseToRgb(color);
 
   var color1 = _extends({}, parsedColor1, {
@@ -29951,7 +30906,7 @@ function mix(weight, color, otherColor) {
 
   var color2 = _extends({}, parsedColor2, {
     alpha: typeof parsedColor2.alpha === 'number' ? parsedColor2.alpha : 1
-  }); // The formular is copied from the original Sass implementation:
+  }); // The formula is copied from the original Sass implementation:
   // http://sass-lang.com/documentation/Sass/Script/Functions.html#mix-instance_method
 
 
@@ -29965,15 +30920,13 @@ function mix(weight, color, otherColor) {
     red: Math.floor(color1.red * weight1 + color2.red * weight2),
     green: Math.floor(color1.green * weight1 + color2.green * weight2),
     blue: Math.floor(color1.blue * weight1 + color2.blue * weight2),
-    alpha: color1.alpha + (color2.alpha - color1.alpha) * (parseFloat(weight) / 1.0)
+    alpha: color1.alpha * (parseFloat(weight) / 1.0) + color2.alpha * (1 - parseFloat(weight) / 1.0)
   };
   return rgba(mixedColor);
 } // prettier-ignore
 
 
-var curriedMix =
-/*#__PURE__*/
-curry
+var curriedMix = /*#__PURE__*/curry
 /* ::<number | string, string, string, string> */
 (mix);
 
@@ -30018,14 +30971,20 @@ function opacify(amount, color) {
 } // prettier-ignore
 
 
-var curriedOpacify =
-/*#__PURE__*/
-curry
+var curriedOpacify = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (opacify);
 
+var defaultLightReturnColor = '#000';
+var defaultDarkReturnColor = '#fff';
 /**
- * Returns black or white (or optional light and dark return colors) for best contrast depending on the luminosity of the given color.
+ * Returns black or white (or optional light and dark return colors) for best
+ * contrast depending on the luminosity of the given color.
+ * When passing custom return colors, set `strict` to `true` to ensure that the
+ * return color always meets or exceeds WCAG level AA or greater. If this test
+ * fails, the default return color (black or white) is returned in place of the
+ * custom return color.
+ *
  * Follows [W3C specs for readability](https://www.w3.org/TR/WCAG20-TECHS/G18.html).
  *
  * @example
@@ -30034,6 +30993,7 @@ curry
  *   color: readableColor('#000'),
  *   color: readableColor('black', '#001', '#ff8'),
  *   color: readableColor('white', '#001', '#ff8'),
+ *   color: readableColor('red', '#333', '#ddd', true)
  * }
  *
  * // styled-components usage
@@ -30041,29 +31001,66 @@ curry
  *   color: ${readableColor('#000')};
  *   color: ${readableColor('black', '#001', '#ff8')};
  *   color: ${readableColor('white', '#001', '#ff8')};
+ *   color: ${readableColor('red', '#333', '#ddd', true)};
  * `
  *
  * // CSS in JS Output
- *
  * element {
  *   color: "#fff";
  *   color: "#ff8";
  *   color: "#001";
+ *   color: "#000";
  * }
  */
 
-function readableColor(color, lightReturnColor, darkReturnColor) {
+function readableColor(color, lightReturnColor, darkReturnColor, strict) {
   if (lightReturnColor === void 0) {
-    lightReturnColor = '#000';
+    lightReturnColor = defaultLightReturnColor;
   }
 
   if (darkReturnColor === void 0) {
-    darkReturnColor = '#fff';
+    darkReturnColor = defaultDarkReturnColor;
   }
 
-  return polished_es_getLuminance(color) > 0.179 ? lightReturnColor : darkReturnColor;
+  if (strict === void 0) {
+    strict = false;
+  }
+
+  var isLightColor = polished_es_getLuminance(color) > 0.179;
+  var preferredReturnColor = isLightColor ? lightReturnColor : darkReturnColor; // TODO: Make `strict` the default behaviour in the next major release.
+  // Without `strict`, this may return a color that does not meet WCAG AA.
+
+  if (!strict || getContrast(color, preferredReturnColor) >= 4.5) {
+    return preferredReturnColor;
+  }
+
+  return isLightColor ? defaultLightReturnColor : defaultDarkReturnColor;
 }
 
+/**
+ * Converts a RgbColor or RgbaColor object to a color string.
+ * This util is useful in case you only know on runtime which color object is
+ * used. Otherwise we recommend to rely on `rgb` or `rgba`.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: rgbToColorString({ red: 255, green: 205, blue: 100 }),
+ *   background: rgbToColorString({ red: 255, green: 205, blue: 100, alpha: 0.72 }),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${rgbToColorString({ red: 255, green: 205, blue: 100 })};
+ *   background: ${rgbToColorString({ red: 255, green: 205, blue: 100, alpha: 0.72 })};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#ffcd64";
+ *   background: "rgba(255,205,100,0.72)";
+ * }
+ */
 function rgbToColorString(color) {
   if (typeof color === 'object' && typeof color.red === 'number' && typeof color.green === 'number' && typeof color.blue === 'number') {
     if (color.alpha && typeof color.alpha === 'number') {
@@ -30120,9 +31117,7 @@ function saturate(amount, color) {
 } // prettier-ignore
 
 
-var curriedSaturate =
-/*#__PURE__*/
-curry
+var curriedSaturate = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (saturate);
 
@@ -30158,9 +31153,7 @@ function setHue(hue, color) {
 } // prettier-ignore
 
 
-var curriedSetHue =
-/*#__PURE__*/
-curry
+var curriedSetHue = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (setHue);
 
@@ -30196,9 +31189,7 @@ function setLightness(lightness, color) {
 } // prettier-ignore
 
 
-var curriedSetLightness =
-/*#__PURE__*/
-curry
+var curriedSetLightness = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (setLightness);
 
@@ -30234,9 +31225,7 @@ function setSaturation(saturation, color) {
 } // prettier-ignore
 
 
-var curriedSetSaturation =
-/*#__PURE__*/
-curry
+var curriedSetSaturation = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (setSaturation);
 
@@ -30269,9 +31258,7 @@ function polished_es_shade(percentage, color) {
 } // prettier-ignore
 
 
-var curriedShade =
-/*#__PURE__*/
-curry
+var curriedShade = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (polished_es_shade);
 
@@ -30304,9 +31291,7 @@ function tint(percentage, color) {
 } // prettier-ignore
 
 
-var curriedTint =
-/*#__PURE__*/
-curry
+var curriedTint = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (tint);
 
@@ -30351,12 +31336,46 @@ function transparentize(amount, color) {
 } // prettier-ignore
 
 
-var curriedTransparentize =
-/*#__PURE__*/
-curry
+var curriedTransparentize = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (transparentize);
 
+/**
+ * Shorthand for easily setting the animation property. Allows either multiple arrays with animations
+ * or a single animation spread over the arguments.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...animation(['rotate', '1s', 'ease-in-out'], ['colorchange', '2s'])
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${animation(['rotate', '1s', 'ease-in-out'], ['colorchange', '2s'])}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'animation': 'rotate 1s ease-in-out, colorchange 2s'
+ * }
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...animation('rotate', '1s', 'ease-in-out')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${animation('rotate', '1s', 'ease-in-out')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'animation': 'rotate 1s ease-in-out'
+ * }
+ */
 function polished_es_animation() {
   for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
     args[_key] = arguments[_key];
@@ -30385,6 +31404,25 @@ function polished_es_animation() {
   };
 }
 
+/**
+ * Shorthand that accepts any number of backgroundImage values as parameters for creating a single background statement.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...backgroundImages('url("/image/background.jpg")', 'linear-gradient(red, green)')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${backgroundImages('url("/image/background.jpg")', 'linear-gradient(red, green)')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'backgroundImage': 'url("/image/background.jpg"), linear-gradient(red, green)'
+ * }
+ */
 function backgroundImages() {
   for (var _len = arguments.length, properties = new Array(_len), _key = 0; _key < _len; _key++) {
     properties[_key] = arguments[_key];
@@ -30395,6 +31433,25 @@ function backgroundImages() {
   };
 }
 
+/**
+ * Shorthand that accepts any number of background values as parameters for creating a single background statement.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...backgrounds('url("/image/background.jpg")', 'linear-gradient(red, green)', 'center no-repeat')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${backgrounds('url("/image/background.jpg")', 'linear-gradient(red, green)', 'center no-repeat')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'background': 'url("/image/background.jpg"), linear-gradient(red, green), center no-repeat'
+ * }
+ */
 function backgrounds() {
   for (var _len = arguments.length, properties = new Array(_len), _key = 0; _key < _len; _key++) {
     properties[_key] = arguments[_key];
@@ -30466,6 +31523,28 @@ function polished_es_border(sideKeyword) {
   }
 }
 
+/**
+ * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...borderColor('red', 'green', 'blue', 'yellow')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${borderColor('red', 'green', 'blue', 'yellow')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'borderTopColor': 'red',
+ *   'borderRightColor': 'green',
+ *   'borderBottomColor': 'blue',
+ *   'borderLeftColor': 'yellow'
+ * }
+ */
 function borderColor() {
   for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
     values[_key] = arguments[_key];
@@ -30474,7 +31553,27 @@ function borderColor() {
   return directionalProperty.apply(void 0, ['borderColor'].concat(values));
 }
 
-function polished_es_borderRadius(side, radius) {
+/**
+ * Shorthand that accepts a value for side and a value for radius and applies the radius value to both corners of the side.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...borderRadius('top', '5px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${borderRadius('top', '5px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'borderTopRightRadius': '5px',
+ *   'borderTopLeftRadius': '5px',
+ * }
+ */
+function borderRadius(side, radius) {
   var uppercaseSide = capitalizeString(side);
 
   if (!radius && radius !== 0) {
@@ -30496,6 +31595,28 @@ function polished_es_borderRadius(side, radius) {
   throw new polished_es_PolishedError(63);
 }
 
+/**
+ * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...borderStyle('solid', 'dashed', 'dotted', 'double')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${borderStyle('solid', 'dashed', 'dotted', 'double')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'borderTopStyle': 'solid',
+ *   'borderRightStyle': 'dashed',
+ *   'borderBottomStyle': 'dotted',
+ *   'borderLeftStyle': 'double'
+ * }
+ */
 function borderStyle() {
   for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
     values[_key] = arguments[_key];
@@ -30504,6 +31625,28 @@ function borderStyle() {
   return directionalProperty.apply(void 0, ['borderStyle'].concat(values));
 }
 
+/**
+ * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...borderWidth('12px', '24px', '36px', '48px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${borderWidth('12px', '24px', '36px', '48px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'borderTopWidth': '12px',
+ *   'borderRightWidth': '24px',
+ *   'borderBottomWidth': '36px',
+ *   'borderLeftWidth': '48px'
+ * }
+ */
 function borderWidth() {
   for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
     values[_key] = arguments[_key];
@@ -30580,6 +31723,28 @@ function buttons() {
   return statefulSelectors(states, template, stateMap);
 }
 
+/**
+ * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...margin('12px', '24px', '36px', '48px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${margin('12px', '24px', '36px', '48px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'marginTop': '12px',
+ *   'marginRight': '24px',
+ *   'marginBottom': '36px',
+ *   'marginLeft': '48px'
+ * }
+ */
 function polished_es_margin() {
   for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
     values[_key] = arguments[_key];
@@ -30588,6 +31753,28 @@ function polished_es_margin() {
   return directionalProperty.apply(void 0, ['margin'].concat(values));
 }
 
+/**
+ * Shorthand that accepts up to four values, including null to skip a value, and maps them to their respective directions.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...padding('12px', '24px', '36px', '48px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${padding('12px', '24px', '36px', '48px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'paddingTop': '12px',
+ *   'paddingRight': '24px',
+ *   'paddingBottom': '36px',
+ *   'paddingLeft': '48px'
+ * }
+ */
 function polished_es_padding() {
   for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
     values[_key] = arguments[_key];
@@ -30640,22 +31827,40 @@ var positionMap$1 = ['absolute', 'fixed', 'relative', 'static', 'sticky'];
  * }
  */
 
-function polished_es_position(positionKeyword) {
+function polished_es_position(firstValue) {
   for (var _len = arguments.length, values = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
     values[_key - 1] = arguments[_key];
   }
 
-  if (positionMap$1.indexOf(positionKeyword) >= 0) {
-    return _extends({
-      position: positionKeyword
-    }, directionalProperty.apply(void 0, [''].concat(values)));
+  if (positionMap$1.indexOf(firstValue) >= 0 && firstValue) {
+    return _extends({}, directionalProperty.apply(void 0, [''].concat(values)), {
+      position: firstValue
+    });
   } else {
-    var firstValue = positionKeyword; // in this case position is actually the first value
-
     return directionalProperty.apply(void 0, ['', firstValue].concat(values));
   }
 }
 
+/**
+ * Shorthand to set the height and width properties in a single statement.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   ...size('300px', '250px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   ${size('300px', '250px')}
+ * `
+ *
+ * // CSS as JS Output
+ *
+ * div {
+ *   'height': '300px',
+ *   'width': '250px',
+ * }
+ */
 function polished_es_size(height, width) {
   if (width === void 0) {
     width = height;
@@ -30981,7 +32186,7 @@ var Badge_Badge = function Badge(_ref) {
       count = _ref.count,
       max = _ref.max,
       mode = _ref.mode;
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(BadgeWrapper, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(BadgeWrapper, {
     className: className,
     mode: mode
   }, max !== undefined && count > max ? "".concat(max, "+") : count);
@@ -31005,13 +32210,13 @@ var defineProperty = __webpack_require__(3);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faCheckCircle.js
-var faCheckCircle = __webpack_require__(66);
+var faCheckCircle = __webpack_require__(69);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faExclamationTriangle.js
-var faExclamationTriangle = __webpack_require__(67);
+var faExclamationTriangle = __webpack_require__(70);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faTimesOctagon.js
-var faTimesOctagon = __webpack_require__(65);
+var faTimesOctagon = __webpack_require__(68);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/fontawesome-svg-core/index.es.js
 var index_es = __webpack_require__(36);
@@ -31050,20 +32255,35 @@ function index_es_defineProperty(obj, key, value) {
   return obj;
 }
 
-function _objectSpread(target) {
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    if (enumerableOnly) symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    });
+    keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread2(target) {
   for (var i = 1; i < arguments.length; i++) {
     var source = arguments[i] != null ? arguments[i] : {};
-    var ownKeys = Object.keys(source);
 
-    if (typeof Object.getOwnPropertySymbols === 'function') {
-      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
-        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-      }));
+    if (i % 2) {
+      ownKeys(Object(source), true).forEach(function (key) {
+        index_es_defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
     }
-
-    ownKeys.forEach(function (key) {
-      index_es_defineProperty(target, key, source[key]);
-    });
   }
 
   return target;
@@ -31210,6 +32430,8 @@ function convert(createElement, element) {
   var children = (element.children || []).map(function (child) {
     return convert(createElement, child);
   });
+  /* eslint-disable dot-notation */
+
   var mixins = Object.keys(element.attributes || {}).reduce(function (acc, key) {
     var val = element.attributes[key];
 
@@ -31241,8 +32463,10 @@ function convert(createElement, element) {
       existingStyle = _extraProps$style === void 0 ? {} : _extraProps$style,
       remaining = index_es_objectWithoutProperties(extraProps, ["style"]);
 
-  mixins.attrs['style'] = _objectSpread({}, mixins.attrs['style'], existingStyle);
-  return createElement.apply(void 0, [element.tag, _objectSpread({}, mixins.attrs, remaining)].concat(index_es_toConsumableArray(children)));
+  mixins.attrs['style'] = _objectSpread2({}, mixins.attrs['style'], {}, existingStyle);
+  /* eslint-enable */
+
+  return createElement.apply(void 0, [element.tag, _objectSpread2({}, mixins.attrs, {}, remaining)].concat(index_es_toConsumableArray(children)));
 }
 
 var PRODUCTION = false;
@@ -31260,31 +32484,31 @@ function log () {
 }
 
 // Normalize icon arguments
-function normalizeIconArgs(icon$$1) {
+function normalizeIconArgs(icon) {
   // if the icon is null, there's nothing to do
-  if (icon$$1 === null) {
+  if (icon === null) {
     return null;
   } // if the icon is an object and has a prefix and an icon name, return it
 
 
-  if (index_es_typeof(icon$$1) === 'object' && icon$$1.prefix && icon$$1.iconName) {
-    return icon$$1;
+  if (index_es_typeof(icon) === 'object' && icon.prefix && icon.iconName) {
+    return icon;
   } // if it's an array with length of two
 
 
-  if (Array.isArray(icon$$1) && icon$$1.length === 2) {
+  if (Array.isArray(icon) && icon.length === 2) {
     // use the first item as prefix, second as icon name
     return {
-      prefix: icon$$1[0],
-      iconName: icon$$1[1]
+      prefix: icon[0],
+      iconName: icon[1]
     };
   } // if it's a string, use it as the icon name
 
 
-  if (typeof icon$$1 === 'string') {
+  if (typeof icon === 'string') {
     return {
       prefix: 'fas',
-      iconName: icon$$1
+      iconName: icon
     };
   }
 }
@@ -31310,7 +32534,7 @@ function FontAwesomeIcon(props) {
   var classes = objectWithKey('classes', [].concat(index_es_toConsumableArray(classList(props)), index_es_toConsumableArray(className.split(' '))));
   var transform = objectWithKey('transform', typeof props.transform === 'string' ? index_es["b" /* parse */].transform(props.transform) : props.transform);
   var mask = objectWithKey('mask', normalizeIconArgs(maskArgs));
-  var renderedIcon = Object(index_es["a" /* icon */])(iconLookup, _objectSpread({}, classes, transform, mask, {
+  var renderedIcon = Object(index_es["a" /* icon */])(iconLookup, _objectSpread2({}, classes, {}, transform, {}, mask, {
     symbol: symbol,
     title: title
   }));
@@ -31323,6 +32547,7 @@ function FontAwesomeIcon(props) {
   var abstract = renderedIcon.abstract;
   var extraProps = {};
   Object.keys(props).forEach(function (key) {
+    // eslint-disable-next-line no-prototype-builtins
     if (!FontAwesomeIcon.defaultProps.hasOwnProperty(key)) {
       extraProps[key] = props[key];
     }
@@ -31427,6 +32652,11 @@ var IconWrapper = external_amd_styled_components_commonjs_styled_components_comm
 
 
 
+function Banner_createSuper(Derived) { var hasNativeReflectConstruct = Banner_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function Banner_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 
 
@@ -31435,14 +32665,12 @@ var IconWrapper = external_amd_styled_components_commonjs_styled_components_comm
 
 var DEFAULT_BANNER_HEIGHT = '60px';
 
-var Banner_Banner =
-/*#__PURE__*/
-function (_Component) {
+var Banner_Banner = /*#__PURE__*/function (_Component) {
   inherits_default()(Banner, _Component);
 
-  function Banner() {
-    var _getPrototypeOf2;
+  var _super = Banner_createSuper(Banner);
 
+  function Banner() {
     var _this;
 
     classCallCheck_default()(this, Banner);
@@ -31451,7 +32679,7 @@ function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(Banner)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     defineProperty_default()(assertThisInitialized_default()(_this), "renderIcon", function () {
       var icon = _this.props.icon;
@@ -31464,10 +32692,10 @@ function (_Component) {
 
       if (finalIcon) {
         if (typeof finalIcon === 'function') {
-          return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconWrapper, null, finalIcon());
+          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconWrapper, null, finalIcon());
         }
 
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconWrapper, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
           icon: finalIcon,
           fixedWidth: true
         }));
@@ -31489,13 +32717,13 @@ function (_Component) {
           maxHeight = _this$props.maxHeight,
           mode = _this$props.mode,
           sticky = _this$props.sticky;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledBannerComponents_Container, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledBannerComponents_Container, {
         className: className,
         isOpen: isOpen,
         maxHeight: maxHeight,
         mode: mode,
         sticky: sticky
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Content, null, this.renderIcon(), children));
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Content, null, this.renderIcon(), children));
     }
   }]);
 
@@ -31799,6 +33027,11 @@ CSSTransition_CSSTransition.propTypes =  false ? undefined : {};
 
 
 
+function Portal_createSuper(Derived) { var hasNativeReflectConstruct = Portal_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function Portal_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 
 var portalOuterContainer;
@@ -31810,17 +33043,17 @@ var portalOuterContainer;
  * https://atlaskit.atlassian.com/packages/core/layer-manager
  * https://github.com/segmentio/evergreen/blob/master/src/portal/src/Portal.js
  */
-var components_Portal_Portal =
-/*#__PURE__*/
-function (_Component) {
+var components_Portal_Portal = /*#__PURE__*/function (_Component) {
   inherits_default()(Portal, _Component);
+
+  var _super = Portal_createSuper(Portal);
 
   function Portal(props) {
     var _this;
 
     classCallCheck_default()(this, Portal);
 
-    _this = possibleConstructorReturn_default()(this, getPrototypeOf_default()(Portal).call(this, props)); // assumption is that we are dealing with a standard browser DOM
+    _this = _super.call(this, props); // assumption is that we are dealing with a standard browser DOM
 
     defineProperty_default()(assertThisInitialized_default()(_this), "portalInnerContainer", void 0);
 
@@ -31869,7 +33102,7 @@ defineProperty_default()(components_Portal_Portal, "propTypes", {
 // CONCATENATED MODULE: ./src/portal/index.js
 
 // EXTERNAL MODULE: ./node_modules/react-scrolllock/dist/index.js
-var dist = __webpack_require__(68);
+var dist = __webpack_require__(71);
 var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
 
 // EXTERNAL MODULE: ./node_modules/lodash/isFunction.js
@@ -31922,6 +33155,11 @@ OverlayInnerContainer.displayName = 'OverlayInnerContainer';
 
 
 
+function Overlay_createSuper(Derived) { var hasNativeReflectConstruct = Overlay_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function Overlay_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 
 
@@ -31934,14 +33172,12 @@ OverlayInnerContainer.displayName = 'OverlayInnerContainer';
  * https://atlaskit.atlassian.com/packages/core/blanket
  * https://github.com/segmentio/evergreen/blob/master/src/overlay/src/Overlay.js
  */
-var Overlay_Overlay =
-/*#__PURE__*/
-function (_Component) {
+var Overlay_Overlay = /*#__PURE__*/function (_Component) {
   inherits_default()(Overlay, _Component);
 
-  function Overlay() {
-    var _getPrototypeOf2;
+  var _super = Overlay_createSuper(Overlay);
 
+  function Overlay() {
     var _this;
 
     classCallCheck_default()(this, Overlay);
@@ -31950,7 +33186,7 @@ function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(Overlay)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     defineProperty_default()(assertThisInitialized_default()(_this), "close", function () {
       var onClose = _this.props.onClose;
@@ -31979,15 +33215,15 @@ function (_Component) {
           children = _this$props.children,
           isScrollable = _this$props.isScrollable,
           transparent = _this$props.transparent;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_CSSTransition, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_CSSTransition, {
         "in": isVisible,
         mountOnEnter: true,
         unmountOnExit: true,
         timeout: 200,
         classNames: "luk-fade"
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Portal_Portal, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(dist_default.a, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(OverlayOuterContainer, {
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Portal_Portal, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(dist_default.a, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(OverlayOuterContainer, {
         transparent: transparent
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(OverlayInnerContainer, {
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(OverlayInnerContainer, {
         isScrollable: isScrollable,
         onClick: this.handleOnClick
       }, children)))));
@@ -32054,7 +33290,7 @@ var DrawerCard_DrawerCard = function DrawerCard(props) {
       shouldCloseOnEscape = props.shouldCloseOnEscape,
       side = props.side;
   hooks_useKeyDownListener(ESC_KEY_CODE, onClose, shouldCloseOnEscape);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(DrawerCardWrapper, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(DrawerCardWrapper, {
     side: side
   }, children);
 };
@@ -32080,19 +33316,19 @@ var Drawer_Drawer = function Drawer(props) {
       shouldCloseOnOutsideClick = props.shouldCloseOnOutsideClick,
       side = props.side,
       transparentOverlay = props.transparentOverlay;
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Overlay_Overlay, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Overlay_Overlay, {
     onClose: onClose,
     isVisible: isOpen,
     isScrollable: true,
     shouldCloseOnClick: shouldCloseOnOutsideClick,
     transparent: transparentOverlay
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_CSSTransition, {
+  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_CSSTransition, {
     "in": isOpen,
     mountOnEnter: true,
     unmountOnExit: true,
     timeout: 200,
     classNames: "luk-slide"
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Portal_Portal, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_DrawerCard, {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Portal_Portal, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_DrawerCard, {
     onClose: onClose,
     shouldCloseOnEscape: shouldCloseOnEscape,
     side: side
@@ -32149,10 +33385,10 @@ var Label_Label = external_amd_styled_components_commonjs_styled_components_comm
 
 /* harmony default export */ var src_label = (components_Label);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-light-svg-icons/faSpinnerThird.js
-var faSpinnerThird = __webpack_require__(70);
+var faSpinnerThird = __webpack_require__(73);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-light-svg-icons/faCircle.js
-var faCircle = __webpack_require__(69);
+var faCircle = __webpack_require__(72);
 
 // CONCATENATED MODULE: ./src/spinner/src/components/styled/Rotate.js
 
@@ -32186,15 +33422,15 @@ var Spinner_Spinner = function Spinner(props) {
 
   var defaultClassName = "fa-layers fa-fw fa-".concat(size);
   var styledClassName = className ? "".concat(defaultClassName, " ").concat(className) : defaultClassName;
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_Rotate, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_Rotate, {
     className: styledClassName,
     duration: duration,
     centered: centered
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
     id: "spinner-circle",
     color: bottomColor,
     icon: faCircle["faCircle"]
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
     id: "spinner-third",
     color: topColor,
     icon: faSpinnerThird["faSpinnerThird"]
@@ -32251,10 +33487,10 @@ var Tag = external_amd_styled_components_commonjs_styled_components_commonjs2_st
 
 function clearIndicatorStyles_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function clearIndicatorStyles_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { clearIndicatorStyles_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { clearIndicatorStyles_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { clearIndicatorStyles_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { clearIndicatorStyles_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 var clearIndicatorStyles = function clearIndicatorStyles(base) {
-  return clearIndicatorStyles_objectSpread({}, base, {
+  return _objectSpread(_objectSpread({}, base), {}, {
     margin: '5px',
     padding: '0'
   });
@@ -32269,7 +33505,7 @@ function containerStyles_ownKeys(object, enumerableOnly) { var keys = Object.key
 function containerStyles_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { containerStyles_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { containerStyles_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 var containerStyles = function containerStyles(base, state) {
-  return containerStyles_objectSpread({}, base, {
+  return containerStyles_objectSpread(containerStyles_objectSpread({}, base), {}, {
     cursor: state.isDisabled ? 'not-allowed' : 'default',
     pointerEvents: 'auto',
     // not sure what this was for
@@ -32320,7 +33556,7 @@ var controlStyles_controlStyles = function controlStyles(base, state) {
       backgroundColor: hoverBgColor
     }
   };
-  return controlStyles_objectSpread({}, base, {}, style);
+  return controlStyles_objectSpread(controlStyles_objectSpread({}, base), style);
 };
 
 /* harmony default export */ var select_controlStyles = (controlStyles_controlStyles);
@@ -32355,7 +33591,7 @@ function indicatorsContainerStyles_objectSpread(target) { for (var i = 1; i < ar
 
 
 var indicatorsContainerStyles_indicatorsContainerStyles = function indicatorsContainerStyles(base) {
-  return indicatorsContainerStyles_objectSpread({}, base, {
+  return indicatorsContainerStyles_objectSpread(indicatorsContainerStyles_objectSpread({}, base), {}, {
     color: NEUTRALS[2],
     marginRight: '5px'
   });
@@ -32370,7 +33606,7 @@ function menuListStyles_ownKeys(object, enumerableOnly) { var keys = Object.keys
 function menuListStyles_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { menuListStyles_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { menuListStyles_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 var menuListStyles = function menuListStyles(base) {
-  return menuListStyles_objectSpread({}, base, {
+  return menuListStyles_objectSpread(menuListStyles_objectSpread({}, base), {}, {
     borderRadius: '4px'
   });
 };
@@ -32384,7 +33620,7 @@ function menuPortalStyles_ownKeys(object, enumerableOnly) { var keys = Object.ke
 function menuPortalStyles_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { menuPortalStyles_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { menuPortalStyles_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 var menuPortalStyles = function menuPortalStyles(base) {
-  return menuPortalStyles_objectSpread({}, base, {
+  return menuPortalStyles_objectSpread(menuPortalStyles_objectSpread({}, base), {}, {
     zIndex: 1000
   });
 };
@@ -32398,7 +33634,7 @@ function menuStyles_ownKeys(object, enumerableOnly) { var keys = Object.keys(obj
 function menuStyles_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { menuStyles_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { menuStyles_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 var menuStyles = function menuStyles(base, state) {
-  return menuStyles_objectSpread({}, base, {
+  return menuStyles_objectSpread(menuStyles_objectSpread({}, base), {}, {
     display: state.selectProps && state.selectProps.hideMenu ? 'none' : 'block',
     zIndex: 1000
   });
@@ -32451,7 +33687,7 @@ var optionStyles_optionStyles = function optionStyles(base, state) {
   };
 
   if (isCheckBoxOption) {
-    style = optionStyles_objectSpread({}, style, {
+    style = optionStyles_objectSpread(optionStyles_objectSpread({}, style), {}, {
       display: 'flex',
       flex: '1 1 auto',
       padding: '0 10px',
@@ -32459,7 +33695,7 @@ var optionStyles_optionStyles = function optionStyles(base, state) {
     });
   }
 
-  return optionStyles_objectSpread({}, base, {}, style);
+  return optionStyles_objectSpread(optionStyles_objectSpread({}, base), style);
 };
 
 /* harmony default export */ var select_optionStyles = (optionStyles_optionStyles);
@@ -32475,7 +33711,7 @@ function singleValueStyles_objectSpread(target) { for (var i = 1; i < arguments.
 var singleValueStyles_singleValueStyles = function singleValueStyles(base, state) {
   var selectProps = state.selectProps;
 
-  var styles = singleValueStyles_objectSpread({}, base, {
+  var styles = singleValueStyles_objectSpread(singleValueStyles_objectSpread({}, base), {}, {
     color: state.isDisabled ? NEUTRALS[1] : 'inherit'
   });
 
@@ -32502,7 +33738,7 @@ var valueContainerStyles = function valueContainerStyles(base, state) {
     padding = '0 10px 0 34px';
   }
 
-  return valueContainerStyles_objectSpread({}, base, {
+  return valueContainerStyles_objectSpread(valueContainerStyles_objectSpread({}, base), {}, {
     padding: padding
   });
 };
@@ -32537,7 +33773,7 @@ var selectStyles = {
 };
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/extends.js
-var helpers_extends = __webpack_require__(5);
+var helpers_extends = __webpack_require__(6);
 var extends_default = /*#__PURE__*/__webpack_require__.n(helpers_extends);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/objectWithoutProperties.js
@@ -32554,7 +33790,7 @@ var SpinnerWrapper = external_amd_styled_components_commonjs_styled_components_c
 })(["display:flex;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);"]);
 
 var ButtonSpinner_ButtonSpinner = function ButtonSpinner() {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SpinnerWrapper, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, null));
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SpinnerWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, null));
 };
 
 /* harmony default export */ var styled_ButtonSpinner = (ButtonSpinner_ButtonSpinner);
@@ -32738,9 +33974,9 @@ var Button_Button = function Button(props) {
   /* eslint-disable react/jsx-props-no-spreading */
 
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_StyledButton, extends_default()({}, rest, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_StyledButton, extends_default()({}, rest, {
     disabled: isLoading || disabled
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ContentWrapper, null, isLoading && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ButtonSpinner, null), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_Content, {
+  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ContentWrapper, null, isLoading && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ButtonSpinner, null), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_Content, {
     isLoading: isLoading
   }, children)));
   /* eslint-enable */
@@ -32757,7 +33993,7 @@ Button_Button.defaultProps = {
 };
 /* harmony default export */ var components_Button = (Button_Button);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faCopy.js
-var faCopy = __webpack_require__(71);
+var faCopy = __webpack_require__(74);
 
 // CONCATENATED MODULE: ./src/button/src/components/IconButton.js
 
@@ -32781,13 +34017,13 @@ var IconButton_IconButton = function IconButton(props) {
 
   if (!children) {
     /* eslint-disable react/jsx-props-no-spreading */
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Button, rest, icon);
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Button, rest, icon);
     /* eslint-enable */
   }
   /* eslint-disable react/jsx-props-no-spreading */
 
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Button, rest, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconMarginRight, null, icon), children);
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Button, rest, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconMarginRight, null, icon), children);
   /* eslint-enable */
 };
 
@@ -32801,13 +34037,13 @@ IconButton_IconButton.defaultProps = {
 
 
 
-var CopyButton_icon = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+var CopyButton_icon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
   icon: faCopy["faCopy"]
 });
 /* eslint-disable react/jsx-props-no-spreading */
 
 var CopyButton_CopyButton = function CopyButton(props) {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, extends_default()({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, extends_default()({
     icon: CopyButton_icon
   }, props));
 };
@@ -32816,7 +34052,7 @@ var CopyButton_CopyButton = function CopyButton(props) {
 
 /* harmony default export */ var components_CopyButton = (CopyButton_CopyButton);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faPen.js
-var faPen = __webpack_require__(72);
+var faPen = __webpack_require__(75);
 
 // CONCATENATED MODULE: ./src/button/src/components/EditButton.js
 
@@ -32824,13 +34060,13 @@ var faPen = __webpack_require__(72);
 
 
 
-var EditButton_icon = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+var EditButton_icon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
   icon: faPen["faPen"]
 });
 /* eslint-disable react/jsx-props-no-spreading */
 
 var EditButton_EditButton = function EditButton(props) {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, extends_default()({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, extends_default()({
     icon: EditButton_icon
   }, props));
 };
@@ -32839,7 +34075,7 @@ var EditButton_EditButton = function EditButton(props) {
 
 /* harmony default export */ var components_EditButton = (EditButton_EditButton);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faMinus.js
-var faMinus = __webpack_require__(73);
+var faMinus = __webpack_require__(76);
 
 // CONCATENATED MODULE: ./src/button/src/components/MinusButton.js
 
@@ -32847,13 +34083,13 @@ var faMinus = __webpack_require__(73);
 
 
 
-var MinusButton_icon = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+var MinusButton_icon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
   icon: faMinus["faMinus"]
 });
 /* eslint-disable react/jsx-props-no-spreading */
 
 var MinusButton_MinusButton = function MinusButton(props) {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, extends_default()({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, extends_default()({
     icon: MinusButton_icon
   }, props));
 };
@@ -32862,7 +34098,7 @@ var MinusButton_MinusButton = function MinusButton(props) {
 
 /* harmony default export */ var components_MinusButton = (MinusButton_MinusButton);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faPlus.js
-var faPlus = __webpack_require__(74);
+var faPlus = __webpack_require__(77);
 
 // CONCATENATED MODULE: ./src/button/src/components/PlusButton.js
 
@@ -32870,13 +34106,13 @@ var faPlus = __webpack_require__(74);
 
 
 
-var PlusButton_icon = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+var PlusButton_icon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
   icon: faPlus["faPlus"]
 });
 /* eslint-disable react/jsx-props-no-spreading */
 
 var PlusButton_PlusButton = function PlusButton(props) {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, extends_default()({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, extends_default()({
     icon: PlusButton_icon
   }, props));
 };
@@ -32893,13 +34129,13 @@ var faSearch = __webpack_require__(37);
 
 
 
-var SearchButton_icon = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+var SearchButton_icon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
   icon: faSearch["faSearch"]
 });
 /* eslint-disable react/jsx-props-no-spreading */
 
 var SearchButton_SearchButton = function SearchButton(props) {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, extends_default()({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, extends_default()({
     icon: SearchButton_icon
   }, props));
 };
@@ -33056,20 +34292,20 @@ var Checkbox_Checkbox = function Checkbox(_ref) {
       readOnly = _ref.readOnly,
       rest = objectWithoutProperties_default()(_ref, ["disabled", "id", "label", "mode", "readOnly"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceLabel, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceLabel, {
     htmlFor: id,
     readOnly: readOnly,
     disabled: disabled
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ChoiceWrapper, {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ChoiceWrapper, {
     mode: mode
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ChoiceInnerWrapper, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CheckboxInput, extends_default()({
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ChoiceInnerWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CheckboxInput, extends_default()({
     id: id,
     readOnly: readOnly,
     disabled: disabled || readOnly // $FlowFixMe
 
-  }, rest)), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_CheckboxIndicator, {
+  }, rest)), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_CheckboxIndicator, {
     mode: mode
-  }, mode === 'button' && label))), mode !== 'button' && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceText, null, label));
+  }, mode === 'button' && label))), mode !== 'button' && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceText, null, label));
 };
 /* eslint-enable */
 
@@ -33104,20 +34340,20 @@ var Radio_Radio = function Radio(_ref) {
       readOnly = _ref.readOnly,
       rest = objectWithoutProperties_default()(_ref, ["disabled", "id", "label", "mode", "readOnly"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceLabel, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceLabel, {
     htmlFor: id,
     readOnly: readOnly,
     disabled: disabled
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ChoiceWrapper, {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ChoiceWrapper, {
     mode: mode
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ChoiceInnerWrapper, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(RadioInput, extends_default()({
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ChoiceInnerWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(RadioInput, extends_default()({
     id: id,
     readOnly: readOnly,
     disabled: disabled || readOnly // $FlowFixMe
 
-  }, rest)), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_RadioIndicator, {
+  }, rest)), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_RadioIndicator, {
     mode: mode
-  }, mode === 'button' && label))), mode !== 'button' && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceText, null, label));
+  }, mode === 'button' && label))), mode !== 'button' && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceText, null, label));
 };
 /* eslint-enable */
 
@@ -33145,7 +34381,7 @@ Radio_Radio.defaultProps = {
 var build = __webpack_require__(19);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js
-var taggedTemplateLiteral = __webpack_require__(75);
+var taggedTemplateLiteral = __webpack_require__(78);
 var taggedTemplateLiteral_default = /*#__PURE__*/__webpack_require__.n(taggedTemplateLiteral);
 
 // CONCATENATED MODULE: ./src/modal/src/components/styled/StyledModalComponents.js
@@ -33241,7 +34477,7 @@ var HeaderSection = external_amd_styled_components_commonjs_styled_components_co
 var ModalBody_ModalBody = function ModalBody(props) {
   var children = props.children,
       viewportScrolling = props.viewportScrolling;
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(BodySection, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(BodySection, {
     viewportScrolling: viewportScrolling
   }, children);
 };
@@ -33255,7 +34491,7 @@ ModalBody_ModalBody.defaultProps = {
 };
 /* harmony default export */ var components_ModalBody = (ModalBody_ModalBody);
 // EXTERNAL MODULE: ./node_modules/lodash/isEmpty.js
-var isEmpty = __webpack_require__(76);
+var isEmpty = __webpack_require__(79);
 var isEmpty_default = /*#__PURE__*/__webpack_require__.n(isEmpty);
 
 // CONCATENATED MODULE: ./src/modal/src/components/ModalFooter.js
@@ -33265,6 +34501,11 @@ var isEmpty_default = /*#__PURE__*/__webpack_require__.n(isEmpty);
 
 
 
+
+
+function ModalFooter_createSuper(Derived) { var hasNativeReflectConstruct = ModalFooter_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function ModalFooter_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -33300,14 +34541,12 @@ var SecondaryButton = external_amd_styled_components_commonjs_styled_components_
   return stretch ? 1 : 'none';
 });
 
-var ModalFooter_ModalFooter =
-/*#__PURE__*/
-function (_Component) {
+var ModalFooter_ModalFooter = /*#__PURE__*/function (_Component) {
   inherits_default()(ModalFooter, _Component);
 
-  function ModalFooter() {
-    var _getPrototypeOf2;
+  var _super = ModalFooter_createSuper(ModalFooter);
 
+  function ModalFooter() {
     var _this;
 
     classCallCheck_default()(this, ModalFooter);
@@ -33316,7 +34555,7 @@ function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(ModalFooter)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     defineProperty_default()(assertThisInitialized_default()(_this), "renderPrimaryButton", function () {
       var _this$props = _this.props,
@@ -33331,7 +34570,7 @@ function (_Component) {
         return null;
       }
 
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(PrimaryButton, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(PrimaryButton, {
         disabled: isDisabledPrimary || isPendingPrimary,
         isLoading: isPendingPrimary,
         isLonely: isEmpty_default()(textSecondary),
@@ -33352,7 +34591,7 @@ function (_Component) {
         return null;
       }
 
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SecondaryButton, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SecondaryButton, {
         disabled: isDisabledSecondary || isPendingSecondary,
         isLoading: isPendingSecondary,
         onClick: onClickSecondary,
@@ -33382,7 +34621,7 @@ function (_Component) {
       }
 
       if (withFooter === true) {
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FooterSection, null, this.renderPrimaryButton(), this.renderSecondaryButton());
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FooterSection, null, this.renderPrimaryButton(), this.renderSecondaryButton());
       }
 
       if (external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(withFooter)) {
@@ -33441,7 +34680,7 @@ defineProperty_default()(ModalFooter_ModalFooter, "defaultProps", {
 
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-light-svg-icons/faTimes.js
-var faTimes = __webpack_require__(77);
+var faTimes = __webpack_require__(80);
 
 // CONCATENATED MODULE: ./src/modal/src/components/ModalHeader.js
 
@@ -33450,6 +34689,11 @@ var faTimes = __webpack_require__(77);
 
 
 
+
+
+function ModalHeader_createSuper(Derived) { var hasNativeReflectConstruct = ModalHeader_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function ModalHeader_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -33467,14 +34711,12 @@ var CloseButton = external_amd_styled_components_commonjs_styled_components_comm
   componentId: "sc-1rdyrep-1"
 })(["background:none;border:none;cursor:pointer;font-size:12px;height:32px;margin:0 0 0 auto;padding:0;text-align:center;width:32px;"]);
 
-var ModalHeader_ModalHeader =
-/*#__PURE__*/
-function (_Component) {
+var ModalHeader_ModalHeader = /*#__PURE__*/function (_Component) {
   inherits_default()(ModalHeader, _Component);
 
-  function ModalHeader() {
-    var _getPrototypeOf2;
+  var _super = ModalHeader_createSuper(ModalHeader);
 
+  function ModalHeader() {
     var _this;
 
     classCallCheck_default()(this, ModalHeader);
@@ -33483,13 +34725,13 @@ function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(ModalHeader)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     defineProperty_default()(assertThisInitialized_default()(_this), "renderCloseButton", function () {
       var onClickClose = _this.props.onClickClose;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CloseButton, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CloseButton, {
         onClick: onClickClose
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
         icon: faTimes["faTimes"],
         size: "lg"
       }));
@@ -33502,7 +34744,7 @@ function (_Component) {
         return null;
       }
 
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalTitle, null, textTitle);
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalTitle, null, textTitle);
     });
 
     return _this;
@@ -33521,7 +34763,7 @@ function (_Component) {
       }
 
       if (withHeader === true) {
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(HeaderSection, null, this.renderTitle(), this.renderCloseButton());
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(HeaderSection, null, this.renderTitle(), this.renderCloseButton());
       }
 
       if (external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(withHeader)) {
@@ -33568,6 +34810,11 @@ defineProperty_default()(ModalHeader_ModalHeader, "defaultProps", {
 
 
 
+function Modal_createSuper(Derived) { var hasNativeReflectConstruct = Modal_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function Modal_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 
 
@@ -33582,14 +34829,12 @@ defineProperty_default()(ModalHeader_ModalHeader, "defaultProps", {
  * https://atlaskit.atlassian.com/packages/core/modal-dialog
  * https://evergreen.surge.sh/components/dialog
  */
-var Modal_Modal =
-/*#__PURE__*/
-function (_Component) {
+var Modal_Modal = /*#__PURE__*/function (_Component) {
   inherits_default()(Modal, _Component);
 
-  function Modal() {
-    var _getPrototypeOf2;
+  var _super = Modal_createSuper(Modal);
 
+  function Modal() {
     var _this;
 
     classCallCheck_default()(this, Modal);
@@ -33598,7 +34843,7 @@ function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(Modal)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     defineProperty_default()(assertThisInitialized_default()(_this), "escapeKeyIsPressed", false);
 
@@ -33693,7 +34938,7 @@ function (_Component) {
       }
 
       if (withHeader) {
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalHeader_ModalHeader, {
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalHeader_ModalHeader, {
           onClickClose: _this.close,
           textTitle: textTitle,
           withHeader: withHeader
@@ -33720,7 +34965,7 @@ function (_Component) {
       }
 
       if (withFooter || textPrimary || textSecondary) {
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalFooter_ModalFooter, {
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalFooter_ModalFooter, {
           onClickPrimary: _this.handleOnClickPrimary,
           onClickSecondary: _this.handleOnClickSecondary,
           shouldStretchButtons: shouldStretchButtons,
@@ -33757,18 +35002,18 @@ function (_Component) {
           modalRef = _this$props4.modalRef,
           shouldBeCentered = _this$props4.shouldBeCentered,
           viewportScrolling = _this$props4.viewportScrolling;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Overlay_Overlay, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Overlay_Overlay, {
         isScrollable: viewportScrolling,
         isVisible: isVisible,
         onClose: this.handleOnClickOverlay
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalOuterContainer, {
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalOuterContainer, {
         onClick: this.handleOnClickOutside,
         ref: modalRef,
         viewportScrolling: viewportScrolling
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalInnerContainer, {
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalInnerContainer, {
         center: shouldBeCentered,
         viewportScrolling: viewportScrolling
-      }, this.renderHeaderComponent(), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_ModalBody, {
+      }, this.renderHeaderComponent(), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_ModalBody, {
         viewportScrolling: viewportScrolling
       }, children), this.renderFooterComponent())));
     }
@@ -33842,16 +35087,16 @@ var ActionModal_ActionModal = function ActionModal(props) {
       viewportScrolling = props.viewportScrolling,
       withHeader = props.withHeader;
   var withFooter = true;
-  var body = requestStateComponents[build["RequestStates"].STANDBY] || external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, "Are you sure?");
+  var body = requestStateComponents[build["RequestStates"].STANDBY] || /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, "Are you sure?");
 
   if (requestState === build["RequestStates"].FAILURE) {
-    body = requestStateComponents[build["RequestStates"].FAILURE] || external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, "Failure. Please try again.");
+    body = requestStateComponents[build["RequestStates"].FAILURE] || /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, "Failure. Please try again.");
   } else if (requestState === build["RequestStates"].SUCCESS) {
-    body = requestStateComponents[build["RequestStates"].SUCCESS] || external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, "Success!");
+    body = requestStateComponents[build["RequestStates"].SUCCESS] || /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, "Success!");
   }
 
   if (requestState === build["RequestStates"].PENDING) {
-    withFooter = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalFooter_ModalFooter, {
+    withFooter = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalFooter_ModalFooter, {
       isPendingPrimary: true,
       isDisabledSecondary: true,
       shouldStretchButtons: shouldStretchButtons,
@@ -33860,7 +35105,7 @@ var ActionModal_ActionModal = function ActionModal(props) {
       withFooter: true
     });
   } else if (requestState === build["RequestStates"].FAILURE || requestState === build["RequestStates"].SUCCESS) {
-    withFooter = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalFooter_ModalFooter, {
+    withFooter = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalFooter_ModalFooter, {
       onClickPrimary: onClose,
       shouldStretchButtons: shouldStretchButtons,
       textPrimary: "Close",
@@ -33868,7 +35113,7 @@ var ActionModal_ActionModal = function ActionModal(props) {
     });
   }
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Modal_Modal, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Modal_Modal, {
     isVisible: isVisible,
     modalRef: modalRef,
     onClickPrimary: onClickPrimary,
@@ -33961,10 +35206,10 @@ var StepperWrapper = external_amd_styled_components_commonjs_styled_components_c
 })(["align-items:center;display:flex;width:100%;", ";"], styled_getStepperOrientationStyles);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faCircle.js
-var pro_solid_svg_icons_faCircle = __webpack_require__(78);
+var pro_solid_svg_icons_faCircle = __webpack_require__(81);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faCheck.js
-var faCheck = __webpack_require__(79);
+var faCheck = __webpack_require__(82);
 
 // CONCATENATED MODULE: ./src/stepper/src/components/StepIcon.js
 
@@ -33980,16 +35225,16 @@ var StepIcon_StepIcon = function StepIcon(_ref) {
       complete = _ref.complete,
       index = _ref.index;
   var styledClassName = className ? "".concat(className, " fa-layers") : 'fa-layers';
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconLayer, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconLayer, {
     className: styledClassName
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
     icon: pro_solid_svg_icons_faCircle["faCircle"],
     color: active || complete ? PURPLES[2] : NEUTRALS[1]
-  }), complete ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+  }), complete ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
     icon: faCheck["faCheck"],
     color: WHITE,
     transform: "shrink-7"
-  }) : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepIndex, {
+  }) : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepIndex, {
     className: "fa-layers-text fa-inverse"
   }, index));
 };
@@ -34009,13 +35254,13 @@ var Step_Step = function Step(props) {
       complete = props.complete,
       index = props.index,
       onClick = props.onClick;
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepWrapper, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepWrapper, {
     onClick: onClick
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_StepIcon, {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_StepIcon, {
     active: active,
     complete: complete,
     index: index
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepLabel, {
+  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepLabel, {
     active: active
   }, children));
 };
@@ -34043,11 +35288,11 @@ var Stepper_Stepper = function Stepper(_ref) {
       disabled: sequential && activeStep < index,
       index: index + 1
     };
-    return [index !== 0 && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepDivider, {
+    return [index !== 0 && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepDivider, {
       vertical: vertical
-    }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(child, Stepper_objectSpread({}, state, {}, child.props))];
+    }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(child, Stepper_objectSpread(Stepper_objectSpread({}, state), child.props))];
   });
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepperWrapper, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepperWrapper, {
     vertical: vertical
   }, steps);
 };
@@ -34104,9 +35349,9 @@ var SearchIcon = external_amd_styled_components_commonjs_styled_components_commo
 
 /* eslint-disable react/jsx-props-no-spreading */
 var SearchInput_SearchInput = function SearchInput(props) {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SearchInputWrapper, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SearchIcon, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SearchInputWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SearchIcon, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
     icon: faSearch["faSearch"]
-  })), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SearchInput_Input, extends_default()({}, props, {
+  })), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SearchInput_Input, extends_default()({}, props, {
     type: "search"
   })));
 };
@@ -34203,10 +35448,10 @@ var AppContentWrapper_AppContentWrapper = function AppContentWrapper(_ref) {
       children = _ref.children,
       className = _ref.className,
       contentWidth = _ref.contentWidth;
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppContentOuterWrapper, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppContentOuterWrapper, {
     bgColor: bgColor,
     className: className
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppContentInnerWrapper, {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppContentInnerWrapper, {
     contentWidth: contentWidth
   }, children));
 };
@@ -34222,11 +35467,11 @@ var isArray = __webpack_require__(50);
 var isArray_default = /*#__PURE__*/__webpack_require__.n(isArray);
 
 // EXTERNAL MODULE: ./node_modules/lodash/isPlainObject.js
-var isPlainObject = __webpack_require__(38);
-var isPlainObject_default = /*#__PURE__*/__webpack_require__.n(isPlainObject);
+var lodash_isPlainObject = __webpack_require__(38);
+var isPlainObject_default = /*#__PURE__*/__webpack_require__.n(lodash_isPlainObject);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faBars.js
-var faBars = __webpack_require__(81);
+var faBars = __webpack_require__(84);
 
 // CONCATENATED MODULE: ./node_modules/immutable/dist/immutable.es.js
 /**
@@ -36314,7 +37559,7 @@ function updateIn$1(keyPath, notSetValue, updater) {
   return updateIn(this, keyPath, notSetValue, updater);
 }
 
-function merge() {
+function immutable_es_merge() {
   var iters = [], len = arguments.length;
   while ( len-- ) iters[ len ] = arguments[ len ];
 
@@ -36633,7 +37878,7 @@ MapPrototype.setIn = setIn$$1;
 MapPrototype.removeIn = MapPrototype.deleteIn = deleteIn;
 MapPrototype.update = update$$1;
 MapPrototype.updateIn = updateIn$1;
-MapPrototype.merge = merge;
+MapPrototype.merge = immutable_es_merge;
 MapPrototype.mergeWith = mergeWith;
 MapPrototype.mergeDeep = mergeDeep;
 MapPrototype.mergeDeepWith = mergeDeepWith;
@@ -39737,7 +40982,7 @@ RecordPrototype[DELETE] = RecordPrototype.remove;
 RecordPrototype.deleteIn = RecordPrototype.removeIn = deleteIn;
 RecordPrototype.getIn = getIn$$1;
 RecordPrototype.hasIn = CollectionPrototype.hasIn;
-RecordPrototype.merge = merge;
+RecordPrototype.merge = immutable_es_merge;
 RecordPrototype.mergeWith = mergeWith;
 RecordPrototype.mergeIn = mergeIn;
 RecordPrototype.mergeDeep = mergeDeep;
@@ -40065,6 +41310,11 @@ var NavigationWrapper = external_amd_styled_components_commonjs_styled_component
 
 
 
+function AppNavigationWrapper_createSuper(Derived) { var hasNativeReflectConstruct = AppNavigationWrapper_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function AppNavigationWrapper_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 
 
@@ -40074,15 +41324,15 @@ var NavigationWrapper = external_amd_styled_components_commonjs_styled_component
 var AppNavigationWrapper_WHITE = WHITE; // have to use the optional prop syntax because of React.forwardRef below
 // https://github.com/facebook/flow/issues/7467
 
-var AppNavigationWrapper_AppNavigationWrapper =
-/*#__PURE__*/
-function (_Component) {
+var AppNavigationWrapper_AppNavigationWrapper = /*#__PURE__*/function (_Component) {
   inherits_default()(AppNavigationWrapper, _Component);
+
+  var _super = AppNavigationWrapper_createSuper(AppNavigationWrapper);
 
   function AppNavigationWrapper() {
     classCallCheck_default()(this, AppNavigationWrapper);
 
-    return possibleConstructorReturn_default()(this, getPrototypeOf_default()(AppNavigationWrapper).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   createClass_default()(AppNavigationWrapper, [{
@@ -40097,22 +41347,22 @@ function (_Component) {
           onClose = _this$props.onClose;
 
       if (drawer) {
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppNavigationOuterWrapper, {
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppNavigationOuterWrapper, {
           borderless: true,
           className: className
-        }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppNavigationInnerWrapper, {
+        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppNavigationInnerWrapper, {
           vertical: true
-        }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Drawer, {
+        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Drawer, {
           isOpen: isOpen,
           onClose: onClose,
           side: "right"
-        }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_NavigationDrawer, null, children))));
+        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_NavigationDrawer, null, children))));
       }
 
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppNavigationOuterWrapper, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppNavigationOuterWrapper, {
         bgColor: AppNavigationWrapper_WHITE,
         className: className
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppNavigationInnerWrapper, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_NavigationWrapper, {
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppNavigationInnerWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_NavigationWrapper, {
         ref: forwardedRef
       }, children)));
     }
@@ -40131,7 +41381,7 @@ defineProperty_default()(AppNavigationWrapper_AppNavigationWrapper, "defaultProp
 });
 
 /* harmony default export */ var App_AppNavigationWrapper = (external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(AppNavigationWrapper_AppNavigationWrapper, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(AppNavigationWrapper_AppNavigationWrapper, {
     className: props.className,
     drawer: props.drawer,
     forwardedRef: ref,
@@ -40139,58 +41389,6 @@ defineProperty_default()(AppNavigationWrapper_AppNavigationWrapper, "defaultProp
     onClose: props.onClose
   }, props.children);
 }));
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread.js
-
-function objectSpread_objectSpread(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? Object(arguments[i]) : {};
-    var ownKeys = Object.keys(source);
-
-    if (typeof Object.getOwnPropertySymbols === 'function') {
-      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
-        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-      }));
-    }
-
-    ownKeys.forEach(function (key) {
-      _defineProperty(target, key, source[key]);
-    });
-  }
-
-  return target;
-}
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js
-
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (typeof_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return _assertThisInitialized(self);
-}
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/inherits.js
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) _setPrototypeOf(subClass, superClass);
-}
 // CONCATENATED MODULE: ./node_modules/memoize-one/dist/memoize-one.esm.js
 function areInputsEqual(newInputs, lastInputs) {
     if (newInputs.length !== lastInputs.length) {
@@ -40230,7 +41428,7 @@ function memoizeOne(resultFn, isEqual) {
 /* harmony default export */ var memoize_one_esm = (memoizeOne);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/inheritsLoose.js
-var inheritsLoose = __webpack_require__(80);
+var inheritsLoose = __webpack_require__(83);
 var inheritsLoose_default = /*#__PURE__*/__webpack_require__.n(inheritsLoose);
 
 // CONCATENATED MODULE: ./node_modules/@emotion/sheet/dist/sheet.browser.esm.js
@@ -41201,24 +42399,37 @@ var insertStyles = function insertStyles(cache, serialized, isStringTag) {
 
 // CONCATENATED MODULE: ./node_modules/@emotion/hash/dist/hash.browser.esm.js
 /* eslint-disable */
-// murmurhash2 via https://github.com/garycourt/murmurhash-js/blob/master/murmurhash2_gc.js
-function murmurhash2_32_gc(str) {
-  var l = str.length,
-      h = l ^ l,
+// Inspired by https://github.com/garycourt/murmurhash-js
+// Ported from https://github.com/aappleby/smhasher/blob/61a0530f28277f2e850bfc39600ce61d02b518de/src/MurmurHash2.cpp#L37-L86
+function murmur2(str) {
+  // 'm' and 'r' are mixing constants generated offline.
+  // They're not really 'magic', they just happen to work well.
+  // const m = 0x5bd1e995;
+  // const r = 24;
+  // Initialize the hash
+  var h = 0; // Mix 4 bytes at a time into the hash
+
+  var k,
       i = 0,
-      k;
+      len = str.length;
 
-  while (l >= 4) {
+  for (; len >= 4; ++i, len -= 4) {
     k = str.charCodeAt(i) & 0xff | (str.charCodeAt(++i) & 0xff) << 8 | (str.charCodeAt(++i) & 0xff) << 16 | (str.charCodeAt(++i) & 0xff) << 24;
-    k = (k & 0xffff) * 0x5bd1e995 + (((k >>> 16) * 0x5bd1e995 & 0xffff) << 16);
-    k ^= k >>> 24;
-    k = (k & 0xffff) * 0x5bd1e995 + (((k >>> 16) * 0x5bd1e995 & 0xffff) << 16);
-    h = (h & 0xffff) * 0x5bd1e995 + (((h >>> 16) * 0x5bd1e995 & 0xffff) << 16) ^ k;
-    l -= 4;
-    ++i;
-  }
+    k =
+    /* Math.imul(k, m): */
+    (k & 0xffff) * 0x5bd1e995 + ((k >>> 16) * 0xe995 << 16);
+    k ^=
+    /* k >>> r: */
+    k >>> 24;
+    h =
+    /* Math.imul(k, m): */
+    (k & 0xffff) * 0x5bd1e995 + ((k >>> 16) * 0xe995 << 16) ^
+    /* Math.imul(h, m): */
+    (h & 0xffff) * 0x5bd1e995 + ((h >>> 16) * 0xe995 << 16);
+  } // Handle the last few bytes of the input array
 
-  switch (l) {
+
+  switch (len) {
     case 3:
       h ^= (str.charCodeAt(i + 2) & 0xff) << 16;
 
@@ -41227,16 +42438,21 @@ function murmurhash2_32_gc(str) {
 
     case 1:
       h ^= str.charCodeAt(i) & 0xff;
-      h = (h & 0xffff) * 0x5bd1e995 + (((h >>> 16) * 0x5bd1e995 & 0xffff) << 16);
-  }
+      h =
+      /* Math.imul(h, m): */
+      (h & 0xffff) * 0x5bd1e995 + ((h >>> 16) * 0xe995 << 16);
+  } // Do a few final mixes of the hash to ensure the last few
+  // bytes are well-incorporated.
+
 
   h ^= h >>> 13;
-  h = (h & 0xffff) * 0x5bd1e995 + (((h >>> 16) * 0x5bd1e995 & 0xffff) << 16);
-  h ^= h >>> 15;
-  return (h >>> 0).toString(36);
+  h =
+  /* Math.imul(h, m): */
+  (h & 0xffff) * 0x5bd1e995 + ((h >>> 16) * 0xe995 << 16);
+  return ((h ^ h >>> 15) >>> 0).toString(36);
 }
 
-/* harmony default export */ var hash_browser_esm = (murmurhash2_32_gc);
+/* harmony default export */ var hash_browser_esm = (murmur2);
 
 // CONCATENATED MODULE: ./node_modules/@emotion/unitless/dist/unitless.browser.esm.js
 var unitlessKeys = {
@@ -41913,13 +43129,11 @@ var ClassNames = core_browser_esm_withEmotionCache(function (props, context) {
 
 
 
-// CONCATENATED MODULE: ./node_modules/react-select/dist/chunk-39d3fda8.browser.esm.js
-
-
+// CONCATENATED MODULE: ./node_modules/react-select/dist/utils-06b0d5a4.browser.esm.js
 // ==============================
 // NO OP
 // ==============================
-var chunk_39d3fda8_browser_esm_noop = function noop() {};
+var utils_06b0d5a4_browser_esm_noop = function noop() {};
 // Class Name Prefixer
 // ==============================
 
@@ -41949,7 +43163,7 @@ function classNames(prefix, state, className) {
   if (state && prefix) {
     for (var key in state) {
       if (state.hasOwnProperty(key) && state[key]) {
-        arr.push("".concat(applyPrefixToName(prefix, key)));
+        arr.push("" + applyPrefixToName(prefix, key));
       }
     }
   }
@@ -41963,9 +43177,9 @@ function classNames(prefix, state, className) {
 // Clean Value
 // ==============================
 
-var chunk_39d3fda8_browser_esm_cleanValue = function cleanValue(value) {
+var cleanValue = function cleanValue(value) {
   if (Array.isArray(value)) return value.filter(Boolean);
-  if (typeof_typeof(value) === 'object' && value !== null) return [value];
+  if (typeof value === 'object' && value !== null) return [value];
   return [];
 }; // ==============================
 // Handle Input Change
@@ -42040,9 +43254,15 @@ function easeOutCubic(t, b, c, d) {
   return c * ((t = t / d - 1) * t * t + 1) + b;
 }
 
-function animatedScrollTo(element, to) {
-  var duration = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 200;
-  var callback = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : chunk_39d3fda8_browser_esm_noop;
+function animatedScrollTo(element, to, duration, callback) {
+  if (duration === void 0) {
+    duration = 200;
+  }
+
+  if (callback === void 0) {
+    callback = utils_06b0d5a4_browser_esm_noop;
+  }
+
   var start = getScrollTop(element);
   var change = to - start;
   var increment = 10;
@@ -42114,23 +43334,11 @@ function isMobileDevice() {
 
 
 
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-
-  return Object.freeze(Object.defineProperties(strings, {
-    raw: {
-      value: Object.freeze(raw)
-    }
-  }));
-}
 // EXTERNAL MODULE: ./node_modules/react-input-autosize/lib/AutosizeInput.js
 var AutosizeInput = __webpack_require__(35);
 var AutosizeInput_default = /*#__PURE__*/__webpack_require__.n(AutosizeInput);
 
-// CONCATENATED MODULE: ./node_modules/react-select/dist/chunk-80640036.browser.esm.js
+// CONCATENATED MODULE: ./node_modules/react-select/dist/index-4322c0ed.browser.esm.js
 
 
 
@@ -42139,18 +43347,9 @@ var AutosizeInput_default = /*#__PURE__*/__webpack_require__.n(AutosizeInput);
 
 
 
+function index_4322c0ed_browser_esm_extends() { index_4322c0ed_browser_esm_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return index_4322c0ed_browser_esm_extends.apply(this, arguments); }
 
-
-
-
-
-
-
-
-
-
-
-
+function index_4322c0ed_browser_esm_inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
 function getMenuPlacement(_ref) {
   var maxHeight = _ref.maxHeight,
       menuEl = _ref.menuEl,
@@ -42307,7 +43506,7 @@ function getMenuPlacement(_ref) {
       };
 
     default:
-      throw new Error("Invalid placement provided \"".concat(placement, "\"."));
+      throw new Error("Invalid placement provided \"" + placement + "\".");
   } // fulfil contract with flow: implicit return value of undefined
 
 
@@ -42327,7 +43526,7 @@ var coercePlacement = function coercePlacement(p) {
   return p === 'auto' ? 'bottom' : p;
 };
 
-var chunk_80640036_browser_esm_menuCSS = function menuCSS(_ref2) {
+var menuCSS = function menuCSS(_ref2) {
   var _ref3;
 
   var placement = _ref2.placement,
@@ -42337,33 +43536,28 @@ var chunk_80640036_browser_esm_menuCSS = function menuCSS(_ref2) {
       colors = _ref2$theme.colors;
   return _ref3 = {
     label: 'menu'
-  }, _defineProperty(_ref3, alignToControl(placement), '100%'), _defineProperty(_ref3, "backgroundColor", colors.neutral0), _defineProperty(_ref3, "borderRadius", borderRadius), _defineProperty(_ref3, "boxShadow", '0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 11px hsla(0, 0%, 0%, 0.1)'), _defineProperty(_ref3, "marginBottom", spacing.menuGutter), _defineProperty(_ref3, "marginTop", spacing.menuGutter), _defineProperty(_ref3, "position", 'absolute'), _defineProperty(_ref3, "width", '100%'), _defineProperty(_ref3, "zIndex", 1), _ref3;
+  }, _ref3[alignToControl(placement)] = '100%', _ref3.backgroundColor = colors.neutral0, _ref3.borderRadius = borderRadius, _ref3.boxShadow = '0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 11px hsla(0, 0%, 0%, 0.1)', _ref3.marginBottom = spacing.menuGutter, _ref3.marginTop = spacing.menuGutter, _ref3.position = 'absolute', _ref3.width = '100%', _ref3.zIndex = 1, _ref3;
 }; // NOTE: internal only
 
-var chunk_80640036_browser_esm_MenuPlacer =
+var MenuPlacer =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(MenuPlacer, _Component);
+  index_4322c0ed_browser_esm_inheritsLoose(MenuPlacer, _Component);
 
   function MenuPlacer() {
-    var _getPrototypeOf2;
-
     var _this;
-
-    _classCallCheck(this, MenuPlacer);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(MenuPlacer)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
+    _this = _Component.call.apply(_Component, [this].concat(args)) || this;
+    _this.state = {
       maxHeight: _this.props.maxMenuHeight,
       placement: null
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getPlacement", function (ref) {
+    _this.getPlacement = function (ref) {
       var _this$props = _this.props,
           minMenuHeight = _this$props.minMenuHeight,
           maxMenuHeight = _this$props.maxMenuHeight,
@@ -42388,46 +43582,44 @@ function (_Component) {
       if (getPortalPlacement) getPortalPlacement(state);
 
       _this.setState(state);
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getUpdatedProps", function () {
+    _this.getUpdatedProps = function () {
       var menuPlacement = _this.props.menuPlacement;
       var placement = _this.state.placement || coercePlacement(menuPlacement);
-      return objectSpread_objectSpread({}, _this.props, {
+      return index_4322c0ed_browser_esm_extends({}, _this.props, {
         placement: placement,
         maxHeight: _this.state.maxHeight
       });
-    });
+    };
 
     return _this;
   }
 
-  _createClass(MenuPlacer, [{
-    key: "render",
-    value: function render() {
-      var children = this.props.children;
-      return children({
-        ref: this.getPlacement,
-        placerProps: this.getUpdatedProps()
-      });
-    }
-  }]);
+  var _proto = MenuPlacer.prototype;
+
+  _proto.render = function render() {
+    var children = this.props.children;
+    return children({
+      ref: this.getPlacement,
+      placerProps: this.getUpdatedProps()
+    });
+  };
 
   return MenuPlacer;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
-
-_defineProperty(chunk_80640036_browser_esm_MenuPlacer, "contextTypes", {
+MenuPlacer.contextTypes = {
   getPortalPlacement: prop_types_default.a.func
-});
+};
 
-var chunk_80640036_browser_esm_Menu = function Menu(props) {
+var index_4322c0ed_browser_esm_Menu = function Menu(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerRef = props.innerRef,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends({
+  return core_browser_esm_jsx("div", index_4322c0ed_browser_esm_extends({
     css: getStyles('menu', props),
     className: cx({
       menu: true
@@ -42452,7 +43644,7 @@ var menuListCSS = function menuListCSS(_ref4) {
     WebkitOverflowScrolling: 'touch'
   };
 };
-var chunk_80640036_browser_esm_MenuList = function MenuList(props) {
+var index_4322c0ed_browser_esm_MenuList = function MenuList(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
@@ -42477,20 +43669,20 @@ var noticeCSS = function noticeCSS(_ref5) {
       colors = _ref5$theme.colors;
   return {
     color: colors.neutral40,
-    padding: "".concat(baseUnit * 2, "px ").concat(baseUnit * 3, "px"),
+    padding: baseUnit * 2 + "px " + baseUnit * 3 + "px",
     textAlign: 'center'
   };
 };
 
 var noOptionsMessageCSS = noticeCSS;
 var loadingMessageCSS = noticeCSS;
-var chunk_80640036_browser_esm_NoOptionsMessage = function NoOptionsMessage(props) {
+var index_4322c0ed_browser_esm_NoOptionsMessage = function NoOptionsMessage(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends({
+  return core_browser_esm_jsx("div", index_4322c0ed_browser_esm_extends({
     css: getStyles('noOptionsMessage', props),
     className: cx({
       'menu-notice': true,
@@ -42498,16 +43690,16 @@ var chunk_80640036_browser_esm_NoOptionsMessage = function NoOptionsMessage(prop
     }, className)
   }, innerProps), children);
 };
-chunk_80640036_browser_esm_NoOptionsMessage.defaultProps = {
+index_4322c0ed_browser_esm_NoOptionsMessage.defaultProps = {
   children: 'No options'
 };
-var chunk_80640036_browser_esm_LoadingMessage = function LoadingMessage(props) {
+var index_4322c0ed_browser_esm_LoadingMessage = function LoadingMessage(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends({
+  return core_browser_esm_jsx("div", index_4322c0ed_browser_esm_extends({
     css: getStyles('loadingMessage', props),
     className: cx({
       'menu-notice': true,
@@ -42515,7 +43707,7 @@ var chunk_80640036_browser_esm_LoadingMessage = function LoadingMessage(props) {
     }, className)
   }, innerProps), children);
 };
-chunk_80640036_browser_esm_LoadingMessage.defaultProps = {
+index_4322c0ed_browser_esm_LoadingMessage.defaultProps = {
   children: 'Loading...'
 }; // ==============================
 // Menu Portal
@@ -42533,29 +43725,24 @@ var menuPortalCSS = function menuPortalCSS(_ref6) {
     zIndex: 1
   };
 };
-var chunk_80640036_browser_esm_MenuPortal =
+var index_4322c0ed_browser_esm_MenuPortal =
 /*#__PURE__*/
 function (_Component2) {
-  _inherits(MenuPortal, _Component2);
+  index_4322c0ed_browser_esm_inheritsLoose(MenuPortal, _Component2);
 
   function MenuPortal() {
-    var _getPrototypeOf3;
-
     var _this2;
-
-    _classCallCheck(this, MenuPortal);
 
     for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
       args[_key2] = arguments[_key2];
     }
 
-    _this2 = _possibleConstructorReturn(this, (_getPrototypeOf3 = _getPrototypeOf(MenuPortal)).call.apply(_getPrototypeOf3, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this2)), "state", {
+    _this2 = _Component2.call.apply(_Component2, [this].concat(args)) || this;
+    _this2.state = {
       placement: null
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this2)), "getPortalPlacement", function (_ref7) {
+    _this2.getPortalPlacement = function (_ref7) {
       var placement = _ref7.placement;
       var initialPlacement = coercePlacement(_this2.props.menuPlacement); // avoid re-renders if the placement has not changed
 
@@ -42564,60 +43751,57 @@ function (_Component2) {
           placement: placement
         });
       }
-    });
+    };
 
     return _this2;
   }
 
-  _createClass(MenuPortal, [{
-    key: "getChildContext",
-    value: function getChildContext() {
-      return {
-        getPortalPlacement: this.getPortalPlacement
-      };
-    } // callback for occassions where the menu must "flip"
+  var _proto2 = MenuPortal.prototype;
 
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props2 = this.props,
-          appendTo = _this$props2.appendTo,
-          children = _this$props2.children,
-          controlElement = _this$props2.controlElement,
-          menuPlacement = _this$props2.menuPlacement,
-          position = _this$props2.menuPosition,
-          getStyles = _this$props2.getStyles;
-      var isFixed = position === 'fixed'; // bail early if required elements aren't present
+  _proto2.getChildContext = function getChildContext() {
+    return {
+      getPortalPlacement: this.getPortalPlacement
+    };
+  } // callback for occassions where the menu must "flip"
+  ;
 
-      if (!appendTo && !isFixed || !controlElement) {
-        return null;
-      }
+  _proto2.render = function render() {
+    var _this$props2 = this.props,
+        appendTo = _this$props2.appendTo,
+        children = _this$props2.children,
+        controlElement = _this$props2.controlElement,
+        menuPlacement = _this$props2.menuPlacement,
+        position = _this$props2.menuPosition,
+        getStyles = _this$props2.getStyles;
+    var isFixed = position === 'fixed'; // bail early if required elements aren't present
 
-      var placement = this.state.placement || coercePlacement(menuPlacement);
-      var rect = getBoundingClientObj(controlElement);
-      var scrollDistance = isFixed ? 0 : window.pageYOffset;
-      var offset = rect[placement] + scrollDistance;
-      var state = {
-        offset: offset,
-        position: position,
-        rect: rect
-      }; // same wrapper element whether fixed or portalled
-
-      var menuWrapper = core_browser_esm_jsx("div", {
-        css: getStyles('menuPortal', state)
-      }, children);
-      return appendTo ? Object(external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["createPortal"])(menuWrapper, appendTo) : menuWrapper;
+    if (!appendTo && !isFixed || !controlElement) {
+      return null;
     }
-  }]);
+
+    var placement = this.state.placement || coercePlacement(menuPlacement);
+    var rect = getBoundingClientObj(controlElement);
+    var scrollDistance = isFixed ? 0 : window.pageYOffset;
+    var offset = rect[placement] + scrollDistance;
+    var state = {
+      offset: offset,
+      position: position,
+      rect: rect
+    }; // same wrapper element whether fixed or portalled
+
+    var menuWrapper = core_browser_esm_jsx("div", {
+      css: getStyles('menuPortal', state)
+    }, children);
+    return appendTo ? Object(external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["createPortal"])(menuWrapper, appendTo) : menuWrapper;
+  };
 
   return MenuPortal;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
-
-_defineProperty(chunk_80640036_browser_esm_MenuPortal, "childContextTypes", {
+index_4322c0ed_browser_esm_MenuPortal.childContextTypes = {
   getPortalPlacement: prop_types_default.a.func
-});
+};
 
-var chunk_80640036_browser_esm_isArray = Array.isArray;
+var index_4322c0ed_browser_esm_isArray = Array.isArray;
 var keyList = Object.keys;
 var hasProp = Object.prototype.hasOwnProperty;
 
@@ -42625,9 +43809,9 @@ function equal(a, b) {
   // fast-deep-equal index.js 2.0.1
   if (a === b) return true;
 
-  if (a && b && typeof_typeof(a) == 'object' && typeof_typeof(b) == 'object') {
-    var arrA = chunk_80640036_browser_esm_isArray(a),
-        arrB = chunk_80640036_browser_esm_isArray(b),
+  if (a && b && typeof a == 'object' && typeof b == 'object') {
+    var arrA = index_4322c0ed_browser_esm_isArray(a),
+        arrB = index_4322c0ed_browser_esm_isArray(b),
         i,
         length,
         key;
@@ -42707,6 +43891,7 @@ function exportedEqual(a, b) {
   }
 }
 
+function _extends$1() { _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$1.apply(this, arguments); }
 var containerCSS = function containerCSS(_ref) {
   var isDisabled = _ref.isDisabled,
       isRtl = _ref.isRtl;
@@ -42718,7 +43903,7 @@ var containerCSS = function containerCSS(_ref) {
     position: 'relative'
   };
 };
-var chunk_80640036_browser_esm_SelectContainer = function SelectContainer(props) {
+var index_4322c0ed_browser_esm_SelectContainer = function SelectContainer(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
@@ -42726,7 +43911,7 @@ var chunk_80640036_browser_esm_SelectContainer = function SelectContainer(props)
       innerProps = props.innerProps,
       isDisabled = props.isDisabled,
       isRtl = props.isRtl;
-  return core_browser_esm_jsx("div", _extends({
+  return core_browser_esm_jsx("div", _extends$1({
     css: getStyles('container', props),
     className: cx({
       '--is-disabled': isDisabled,
@@ -42744,46 +43929,28 @@ var valueContainerCSS = function valueContainerCSS(_ref2) {
     display: 'flex',
     flex: 1,
     flexWrap: 'wrap',
-    padding: "".concat(spacing.baseUnit / 2, "px ").concat(spacing.baseUnit * 2, "px"),
+    padding: spacing.baseUnit / 2 + "px " + spacing.baseUnit * 2 + "px",
     WebkitOverflowScrolling: 'touch',
     position: 'relative',
     overflow: 'hidden'
   };
 };
-var chunk_80640036_browser_esm_ValueContainer =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(ValueContainer, _Component);
-
-  function ValueContainer() {
-    _classCallCheck(this, ValueContainer);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(ValueContainer).apply(this, arguments));
-  }
-
-  _createClass(ValueContainer, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          children = _this$props.children,
-          className = _this$props.className,
-          cx = _this$props.cx,
-          isMulti = _this$props.isMulti,
-          getStyles = _this$props.getStyles,
-          hasValue = _this$props.hasValue;
-      return core_browser_esm_jsx("div", {
-        css: getStyles('valueContainer', this.props),
-        className: cx({
-          'value-container': true,
-          'value-container--is-multi': isMulti,
-          'value-container--has-value': hasValue
-        }, className)
-      }, children);
-    }
-  }]);
-
-  return ValueContainer;
-}(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]); // ==============================
+var index_4322c0ed_browser_esm_ValueContainer = function ValueContainer(props) {
+  var children = props.children,
+      className = props.className,
+      cx = props.cx,
+      isMulti = props.isMulti,
+      getStyles = props.getStyles,
+      hasValue = props.hasValue;
+  return core_browser_esm_jsx("div", {
+    css: getStyles('valueContainer', props),
+    className: cx({
+      'value-container': true,
+      'value-container--is-multi': isMulti,
+      'value-container--has-value': hasValue
+    }, className)
+  }, children);
+}; // ==============================
 // Indicator Container
 // ==============================
 
@@ -42795,7 +43962,7 @@ var indicatorsContainerCSS = function indicatorsContainerCSS() {
     flexShrink: 0
   };
 };
-var chunk_80640036_browser_esm_IndicatorsContainer = function IndicatorsContainer(props) {
+var index_4322c0ed_browser_esm_IndicatorsContainer = function IndicatorsContainer(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
@@ -42808,17 +43975,23 @@ var chunk_80640036_browser_esm_IndicatorsContainer = function IndicatorsContaine
   }, children);
 };
 
-function chunk_80640036_browser_esm_templateObject() {
-  var data = _taggedTemplateLiteral(["\n  0%, 80%, 100% { opacity: 0; }\n  40% { opacity: 1; }\n"]);
+function index_4322c0ed_browser_esm_templateObject() {
+  var data = index_4322c0ed_browser_esm_taggedTemplateLiteralLoose(["\n  0%, 80%, 100% { opacity: 0; }\n  40% { opacity: 1; }\n"]);
 
-  chunk_80640036_browser_esm_templateObject = function _templateObject() {
+  index_4322c0ed_browser_esm_templateObject = function _templateObject() {
     return data;
   };
 
   return data;
 }
 
-var chunk_80640036_browser_esm_ref2 =  true ? {
+function index_4322c0ed_browser_esm_taggedTemplateLiteralLoose(strings, raw) { if (!raw) { raw = strings.slice(0); } strings.raw = raw; return strings; }
+
+function _extends$2() { _extends$2 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$2.apply(this, arguments); }
+
+function index_4322c0ed_browser_esm_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+var index_4322c0ed_browser_esm_ref2 =  true ? {
   name: "19bqh2r",
   styles: "display:inline-block;fill:currentColor;line-height:1;stroke:currentColor;stroke-width:0;"
 } : undefined;
@@ -42826,29 +43999,29 @@ var chunk_80640036_browser_esm_ref2 =  true ? {
 // ==============================
 // Dropdown & Clear Icons
 // ==============================
-var chunk_80640036_browser_esm_Svg = function Svg(_ref) {
+var index_4322c0ed_browser_esm_Svg = function Svg(_ref) {
   var size = _ref.size,
-      props = _objectWithoutProperties(_ref, ["size"]);
+      props = index_4322c0ed_browser_esm_objectWithoutPropertiesLoose(_ref, ["size"]);
 
-  return core_browser_esm_jsx("svg", _extends({
+  return core_browser_esm_jsx("svg", _extends$2({
     height: size,
     width: size,
     viewBox: "0 0 20 20",
     "aria-hidden": "true",
     focusable: "false",
-    css: chunk_80640036_browser_esm_ref2
+    css: index_4322c0ed_browser_esm_ref2
   }, props));
 };
 
-var chunk_80640036_browser_esm_CrossIcon = function CrossIcon(props) {
-  return core_browser_esm_jsx(chunk_80640036_browser_esm_Svg, _extends({
+var index_4322c0ed_browser_esm_CrossIcon = function CrossIcon(props) {
+  return core_browser_esm_jsx(index_4322c0ed_browser_esm_Svg, _extends$2({
     size: 20
   }, props), core_browser_esm_jsx("path", {
     d: "M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"
   }));
 };
-var chunk_80640036_browser_esm_DownChevron = function DownChevron(props) {
-  return core_browser_esm_jsx(chunk_80640036_browser_esm_Svg, _extends({
+var index_4322c0ed_browser_esm_DownChevron = function DownChevron(props) {
+  return core_browser_esm_jsx(index_4322c0ed_browser_esm_Svg, _extends$2({
     size: 20
   }, props), core_browser_esm_jsx("path", {
     d: "M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
@@ -42875,34 +44048,34 @@ var baseCSS = function baseCSS(_ref3) {
 };
 
 var dropdownIndicatorCSS = baseCSS;
-var chunk_80640036_browser_esm_DropdownIndicator = function DropdownIndicator(props) {
+var index_4322c0ed_browser_esm_DropdownIndicator = function DropdownIndicator(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends({}, innerProps, {
+  return core_browser_esm_jsx("div", _extends$2({}, innerProps, {
     css: getStyles('dropdownIndicator', props),
     className: cx({
       indicator: true,
       'dropdown-indicator': true
     }, className)
-  }), children || core_browser_esm_jsx(chunk_80640036_browser_esm_DownChevron, null));
+  }), children || core_browser_esm_jsx(index_4322c0ed_browser_esm_DownChevron, null));
 };
 var clearIndicatorCSS = baseCSS;
-var chunk_80640036_browser_esm_ClearIndicator = function ClearIndicator(props) {
+var index_4322c0ed_browser_esm_ClearIndicator = function ClearIndicator(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends({}, innerProps, {
+  return core_browser_esm_jsx("div", _extends$2({}, innerProps, {
     css: getStyles('clearIndicator', props),
     className: cx({
       indicator: true,
       'clear-indicator': true
     }, className)
-  }), children || core_browser_esm_jsx(chunk_80640036_browser_esm_CrossIcon, null));
+  }), children || core_browser_esm_jsx(index_4322c0ed_browser_esm_CrossIcon, null));
 }; // ==============================
 // Separator
 // ==============================
@@ -42921,12 +44094,12 @@ var indicatorSeparatorCSS = function indicatorSeparatorCSS(_ref4) {
     width: 1
   };
 };
-var chunk_80640036_browser_esm_IndicatorSeparator = function IndicatorSeparator(props) {
+var index_4322c0ed_browser_esm_IndicatorSeparator = function IndicatorSeparator(props) {
   var className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("span", _extends({}, innerProps, {
+  return core_browser_esm_jsx("span", _extends$2({}, innerProps, {
     css: getStyles('indicatorSeparator', props),
     className: cx({
       'indicator-separator': true
@@ -42936,7 +44109,7 @@ var chunk_80640036_browser_esm_IndicatorSeparator = function IndicatorSeparator(
 // Loading
 // ==============================
 
-var loadingDotAnimations = core_browser_esm_keyframes(chunk_80640036_browser_esm_templateObject());
+var loadingDotAnimations = core_browser_esm_keyframes(index_4322c0ed_browser_esm_templateObject());
 var loadingIndicatorCSS = function loadingIndicatorCSS(_ref5) {
   var isFocused = _ref5.isFocused,
       size = _ref5.size,
@@ -42958,14 +44131,14 @@ var loadingIndicatorCSS = function loadingIndicatorCSS(_ref5) {
   };
 };
 
-var chunk_80640036_browser_esm_LoadingDot = function LoadingDot(_ref6) {
+var index_4322c0ed_browser_esm_LoadingDot = function LoadingDot(_ref6) {
   var delay = _ref6.delay,
       offset = _ref6.offset;
   return core_browser_esm_jsx("span", {
     css:
     /*#__PURE__*/
     css_browser_esm({
-      animation: "".concat(loadingDotAnimations, " 1s ease-in-out ").concat(delay, "ms infinite;"),
+      animation: loadingDotAnimations + " 1s ease-in-out " + delay + "ms infinite;",
       backgroundColor: 'currentColor',
       borderRadius: '1em',
       display: 'inline-block',
@@ -42977,34 +44150,35 @@ var chunk_80640036_browser_esm_LoadingDot = function LoadingDot(_ref6) {
   });
 };
 
-var chunk_80640036_browser_esm_LoadingIndicator = function LoadingIndicator(props) {
+var index_4322c0ed_browser_esm_LoadingIndicator = function LoadingIndicator(props) {
   var className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps,
       isRtl = props.isRtl;
-  return core_browser_esm_jsx("div", _extends({}, innerProps, {
+  return core_browser_esm_jsx("div", _extends$2({}, innerProps, {
     css: getStyles('loadingIndicator', props),
     className: cx({
       indicator: true,
       'loading-indicator': true
     }, className)
-  }), core_browser_esm_jsx(chunk_80640036_browser_esm_LoadingDot, {
+  }), core_browser_esm_jsx(index_4322c0ed_browser_esm_LoadingDot, {
     delay: 0,
     offset: isRtl
-  }), core_browser_esm_jsx(chunk_80640036_browser_esm_LoadingDot, {
+  }), core_browser_esm_jsx(index_4322c0ed_browser_esm_LoadingDot, {
     delay: 160,
     offset: true
-  }), core_browser_esm_jsx(chunk_80640036_browser_esm_LoadingDot, {
+  }), core_browser_esm_jsx(index_4322c0ed_browser_esm_LoadingDot, {
     delay: 320,
     offset: !isRtl
   }));
 };
-chunk_80640036_browser_esm_LoadingIndicator.defaultProps = {
+index_4322c0ed_browser_esm_LoadingIndicator.defaultProps = {
   size: 4
 };
 
-var chunk_80640036_browser_esm_css = function css(_ref) {
+function _extends$3() { _extends$3 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$3.apply(this, arguments); }
+var index_4322c0ed_browser_esm_css = function css(_ref) {
   var isDisabled = _ref.isDisabled,
       isFocused = _ref.isFocused,
       _ref$theme = _ref.theme,
@@ -43019,7 +44193,7 @@ var chunk_80640036_browser_esm_css = function css(_ref) {
     borderRadius: borderRadius,
     borderStyle: 'solid',
     borderWidth: 1,
-    boxShadow: isFocused ? "0 0 0 1px ".concat(colors.primary) : null,
+    boxShadow: isFocused ? "0 0 0 1px " + colors.primary : null,
     cursor: 'default',
     display: 'flex',
     flexWrap: 'wrap',
@@ -43034,7 +44208,7 @@ var chunk_80640036_browser_esm_css = function css(_ref) {
   };
 };
 
-var chunk_80640036_browser_esm_Control = function Control(props) {
+var index_4322c0ed_browser_esm_Control = function Control(props) {
   var children = props.children,
       cx = props.cx,
       getStyles = props.getStyles,
@@ -43044,7 +44218,7 @@ var chunk_80640036_browser_esm_Control = function Control(props) {
       innerRef = props.innerRef,
       innerProps = props.innerProps,
       menuIsOpen = props.menuIsOpen;
-  return core_browser_esm_jsx("div", _extends({
+  return core_browser_esm_jsx("div", _extends$3({
     ref: innerRef,
     css: getStyles('control', props),
     className: cx({
@@ -43056,6 +44230,9 @@ var chunk_80640036_browser_esm_Control = function Control(props) {
   }, innerProps), children);
 };
 
+function _objectWithoutPropertiesLoose$1(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function _extends$4() { _extends$4 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$4.apply(this, arguments); }
 var groupCSS = function groupCSS(_ref) {
   var spacing = _ref.theme.spacing;
   return {
@@ -43064,7 +44241,7 @@ var groupCSS = function groupCSS(_ref) {
   };
 };
 
-var chunk_80640036_browser_esm_Group = function Group(props) {
+var index_4322c0ed_browser_esm_Group = function Group(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
@@ -43079,7 +44256,7 @@ var chunk_80640036_browser_esm_Group = function Group(props) {
     className: cx({
       group: true
     }, className)
-  }, core_browser_esm_jsx(Heading, _extends({}, headingProps, {
+  }, core_browser_esm_jsx(Heading, _extends$4({}, headingProps, {
     selectProps: selectProps,
     theme: theme,
     getStyles: getStyles,
@@ -43102,16 +44279,16 @@ var groupHeadingCSS = function groupHeadingCSS(_ref2) {
     textTransform: 'uppercase'
   };
 };
-var chunk_80640036_browser_esm_GroupHeading = function GroupHeading(props) {
+var index_4322c0ed_browser_esm_GroupHeading = function GroupHeading(props) {
   var className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       theme = props.theme,
       selectProps = props.selectProps,
-      cleanProps = _objectWithoutProperties(props, ["className", "cx", "getStyles", "theme", "selectProps"]);
+      cleanProps = _objectWithoutPropertiesLoose$1(props, ["className", "cx", "getStyles", "theme", "selectProps"]);
 
-  return core_browser_esm_jsx("div", _extends({
-    css: getStyles('groupHeading', objectSpread_objectSpread({
+  return core_browser_esm_jsx("div", _extends$4({
+    css: getStyles('groupHeading', _extends$4({
       theme: theme
     }, cleanProps)),
     className: cx({
@@ -43120,6 +44297,9 @@ var chunk_80640036_browser_esm_GroupHeading = function GroupHeading(props) {
   }, cleanProps));
 };
 
+function _extends$5() { _extends$5 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$5.apply(this, arguments); }
+
+function _objectWithoutPropertiesLoose$2(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 var inputCSS = function inputCSS(_ref) {
   var isDisabled = _ref.isDisabled,
       _ref$theme = _ref.theme,
@@ -43147,7 +44327,7 @@ var inputStyle = function inputStyle(isHidden) {
   };
 };
 
-var chunk_80640036_browser_esm_Input = function Input(_ref2) {
+var index_4322c0ed_browser_esm_Input = function Input(_ref2) {
   var className = _ref2.className,
       cx = _ref2.cx,
       getStyles = _ref2.getStyles,
@@ -43156,13 +44336,13 @@ var chunk_80640036_browser_esm_Input = function Input(_ref2) {
       isDisabled = _ref2.isDisabled,
       theme = _ref2.theme,
       selectProps = _ref2.selectProps,
-      props = _objectWithoutProperties(_ref2, ["className", "cx", "getStyles", "innerRef", "isHidden", "isDisabled", "theme", "selectProps"]);
+      props = _objectWithoutPropertiesLoose$2(_ref2, ["className", "cx", "getStyles", "innerRef", "isHidden", "isDisabled", "theme", "selectProps"]);
 
   return core_browser_esm_jsx("div", {
-    css: getStyles('input', objectSpread_objectSpread({
+    css: getStyles('input', _extends$5({
       theme: theme
     }, props))
-  }, core_browser_esm_jsx(AutosizeInput_default.a, _extends({
+  }, core_browser_esm_jsx(AutosizeInput_default.a, _extends$5({
     className: cx({
       input: true
     }, className),
@@ -43172,6 +44352,7 @@ var chunk_80640036_browser_esm_Input = function Input(_ref2) {
   }, props)));
 };
 
+function _extends$6() { _extends$6 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$6.apply(this, arguments); }
 var multiValueCSS = function multiValueCSS(_ref) {
   var _ref$theme = _ref.theme,
       spacing = _ref$theme.spacing,
@@ -43222,109 +44403,72 @@ var multiValueRemoveCSS = function multiValueRemoveCSS(_ref3) {
     }
   };
 };
-var chunk_80640036_browser_esm_MultiValueGeneric = function MultiValueGeneric(_ref4) {
+var index_4322c0ed_browser_esm_MultiValueGeneric = function MultiValueGeneric(_ref4) {
   var children = _ref4.children,
       innerProps = _ref4.innerProps;
   return core_browser_esm_jsx("div", innerProps, children);
 };
-var chunk_80640036_browser_esm_MultiValueContainer = chunk_80640036_browser_esm_MultiValueGeneric;
-var chunk_80640036_browser_esm_MultiValueLabel = chunk_80640036_browser_esm_MultiValueGeneric;
-var chunk_80640036_browser_esm_MultiValueRemove =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(MultiValueRemove, _Component);
+var index_4322c0ed_browser_esm_MultiValueContainer = index_4322c0ed_browser_esm_MultiValueGeneric;
+var index_4322c0ed_browser_esm_MultiValueLabel = index_4322c0ed_browser_esm_MultiValueGeneric;
+function index_4322c0ed_browser_esm_MultiValueRemove(_ref5) {
+  var children = _ref5.children,
+      innerProps = _ref5.innerProps;
+  return core_browser_esm_jsx("div", innerProps, children || core_browser_esm_jsx(index_4322c0ed_browser_esm_CrossIcon, {
+    size: 14
+  }));
+}
 
-  function MultiValueRemove() {
-    _classCallCheck(this, MultiValueRemove);
+var index_4322c0ed_browser_esm_MultiValue = function MultiValue(props) {
+  var children = props.children,
+      className = props.className,
+      components = props.components,
+      cx = props.cx,
+      data = props.data,
+      getStyles = props.getStyles,
+      innerProps = props.innerProps,
+      isDisabled = props.isDisabled,
+      removeProps = props.removeProps,
+      selectProps = props.selectProps;
+  var Container = components.Container,
+      Label = components.Label,
+      Remove = components.Remove;
+  return core_browser_esm_jsx(ClassNames, null, function (_ref6) {
+    var css = _ref6.css,
+        emotionCx = _ref6.cx;
+    return core_browser_esm_jsx(Container, {
+      data: data,
+      innerProps: _extends$6({}, innerProps, {
+        className: emotionCx(css(getStyles('multiValue', props)), cx({
+          'multi-value': true,
+          'multi-value--is-disabled': isDisabled
+        }, className))
+      }),
+      selectProps: selectProps
+    }, core_browser_esm_jsx(Label, {
+      data: data,
+      innerProps: {
+        className: emotionCx(css(getStyles('multiValueLabel', props)), cx({
+          'multi-value__label': true
+        }, className))
+      },
+      selectProps: selectProps
+    }, children), core_browser_esm_jsx(Remove, {
+      data: data,
+      innerProps: _extends$6({
+        className: emotionCx(css(getStyles('multiValueRemove', props)), cx({
+          'multi-value__remove': true
+        }, className))
+      }, removeProps),
+      selectProps: selectProps
+    }));
+  });
+};
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(MultiValueRemove).apply(this, arguments));
-  }
-
-  _createClass(MultiValueRemove, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          children = _this$props.children,
-          innerProps = _this$props.innerProps;
-      return core_browser_esm_jsx("div", innerProps, children || core_browser_esm_jsx(chunk_80640036_browser_esm_CrossIcon, {
-        size: 14
-      }));
-    }
-  }]);
-
-  return MultiValueRemove;
-}(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
-
-var chunk_80640036_browser_esm_MultiValue =
-/*#__PURE__*/
-function (_Component2) {
-  _inherits(MultiValue, _Component2);
-
-  function MultiValue() {
-    _classCallCheck(this, MultiValue);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(MultiValue).apply(this, arguments));
-  }
-
-  _createClass(MultiValue, [{
-    key: "render",
-    value: function render() {
-      var _this = this;
-
-      var _this$props2 = this.props,
-          children = _this$props2.children,
-          className = _this$props2.className,
-          components = _this$props2.components,
-          cx = _this$props2.cx,
-          data = _this$props2.data,
-          getStyles = _this$props2.getStyles,
-          innerProps = _this$props2.innerProps,
-          isDisabled = _this$props2.isDisabled,
-          removeProps = _this$props2.removeProps,
-          selectProps = _this$props2.selectProps;
-      var Container = components.Container,
-          Label = components.Label,
-          Remove = components.Remove;
-      return core_browser_esm_jsx(ClassNames, null, function (_ref5) {
-        var css = _ref5.css,
-            emotionCx = _ref5.cx;
-        return core_browser_esm_jsx(Container, {
-          data: data,
-          innerProps: objectSpread_objectSpread({}, innerProps, {
-            className: emotionCx(css(getStyles('multiValue', _this.props)), cx({
-              'multi-value': true,
-              'multi-value--is-disabled': isDisabled
-            }, className))
-          }),
-          selectProps: selectProps
-        }, core_browser_esm_jsx(Label, {
-          data: data,
-          innerProps: {
-            className: emotionCx(css(getStyles('multiValueLabel', _this.props)), cx({
-              'multi-value__label': true
-            }, className))
-          },
-          selectProps: selectProps
-        }, children), core_browser_esm_jsx(Remove, {
-          data: data,
-          innerProps: objectSpread_objectSpread({
-            className: emotionCx(css(getStyles('multiValueRemove', _this.props)), cx({
-              'multi-value__remove': true
-            }, className))
-          }, removeProps),
-          selectProps: selectProps
-        }));
-      });
-    }
-  }]);
-
-  return MultiValue;
-}(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
-
-_defineProperty(chunk_80640036_browser_esm_MultiValue, "defaultProps", {
+index_4322c0ed_browser_esm_MultiValue.defaultProps = {
   cropWithEllipsis: true
-});
+};
 
+function _extends$7() { _extends$7 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$7.apply(this, arguments); }
 var optionCSS = function optionCSS(_ref) {
   var isDisabled = _ref.isDisabled,
       isFocused = _ref.isFocused,
@@ -43339,7 +44483,7 @@ var optionCSS = function optionCSS(_ref) {
     cursor: 'default',
     display: 'block',
     fontSize: 'inherit',
-    padding: "".concat(spacing.baseUnit * 2, "px ").concat(spacing.baseUnit * 3, "px"),
+    padding: spacing.baseUnit * 2 + "px " + spacing.baseUnit * 3 + "px",
     width: '100%',
     userSelect: 'none',
     WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
@@ -43350,7 +44494,7 @@ var optionCSS = function optionCSS(_ref) {
   };
 };
 
-var chunk_80640036_browser_esm_Option = function Option(props) {
+var index_4322c0ed_browser_esm_Option = function Option(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
@@ -43360,7 +44504,7 @@ var chunk_80640036_browser_esm_Option = function Option(props) {
       isSelected = props.isSelected,
       innerRef = props.innerRef,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends({
+  return core_browser_esm_jsx("div", _extends$7({
     css: getStyles('option', props),
     className: cx({
       option: true,
@@ -43372,6 +44516,7 @@ var chunk_80640036_browser_esm_Option = function Option(props) {
   }, innerProps), children);
 };
 
+function _extends$8() { _extends$8 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$8.apply(this, arguments); }
 var placeholderCSS = function placeholderCSS(_ref) {
   var _ref$theme = _ref.theme,
       spacing = _ref$theme.spacing,
@@ -43387,13 +44532,13 @@ var placeholderCSS = function placeholderCSS(_ref) {
   };
 };
 
-var chunk_80640036_browser_esm_Placeholder = function Placeholder(props) {
+var index_4322c0ed_browser_esm_Placeholder = function Placeholder(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends({
+  return core_browser_esm_jsx("div", _extends$8({
     css: getStyles('placeholder', props),
     className: cx({
       placeholder: true
@@ -43401,6 +44546,7 @@ var chunk_80640036_browser_esm_Placeholder = function Placeholder(props) {
   }, innerProps), children);
 };
 
+function _extends$9() { _extends$9 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$9.apply(this, arguments); }
 var css$1 = function css(_ref) {
   var isDisabled = _ref.isDisabled,
       _ref$theme = _ref.theme,
@@ -43411,7 +44557,7 @@ var css$1 = function css(_ref) {
     color: isDisabled ? colors.neutral40 : colors.neutral80,
     marginLeft: spacing.baseUnit / 2,
     marginRight: spacing.baseUnit / 2,
-    maxWidth: "calc(100% - ".concat(spacing.baseUnit * 2, "px)"),
+    maxWidth: "calc(100% - " + spacing.baseUnit * 2 + "px)",
     overflow: 'hidden',
     position: 'absolute',
     textOverflow: 'ellipsis',
@@ -43421,14 +44567,14 @@ var css$1 = function css(_ref) {
   };
 };
 
-var chunk_80640036_browser_esm_SingleValue = function SingleValue(props) {
+var index_4322c0ed_browser_esm_SingleValue = function SingleValue(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       isDisabled = props.isDisabled,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends({
+  return core_browser_esm_jsx("div", _extends$9({
     css: getStyles('singleValue', props),
     className: cx({
       'single-value': true,
@@ -43437,51 +44583,41 @@ var chunk_80640036_browser_esm_SingleValue = function SingleValue(props) {
   }, innerProps), children);
 };
 
-var chunk_80640036_browser_esm_components = {
-  ClearIndicator: chunk_80640036_browser_esm_ClearIndicator,
-  Control: chunk_80640036_browser_esm_Control,
-  DropdownIndicator: chunk_80640036_browser_esm_DropdownIndicator,
-  DownChevron: chunk_80640036_browser_esm_DownChevron,
-  CrossIcon: chunk_80640036_browser_esm_CrossIcon,
-  Group: chunk_80640036_browser_esm_Group,
-  GroupHeading: chunk_80640036_browser_esm_GroupHeading,
-  IndicatorsContainer: chunk_80640036_browser_esm_IndicatorsContainer,
-  IndicatorSeparator: chunk_80640036_browser_esm_IndicatorSeparator,
-  Input: chunk_80640036_browser_esm_Input,
-  LoadingIndicator: chunk_80640036_browser_esm_LoadingIndicator,
-  Menu: chunk_80640036_browser_esm_Menu,
-  MenuList: chunk_80640036_browser_esm_MenuList,
-  MenuPortal: chunk_80640036_browser_esm_MenuPortal,
-  LoadingMessage: chunk_80640036_browser_esm_LoadingMessage,
-  NoOptionsMessage: chunk_80640036_browser_esm_NoOptionsMessage,
-  MultiValue: chunk_80640036_browser_esm_MultiValue,
-  MultiValueContainer: chunk_80640036_browser_esm_MultiValueContainer,
-  MultiValueLabel: chunk_80640036_browser_esm_MultiValueLabel,
-  MultiValueRemove: chunk_80640036_browser_esm_MultiValueRemove,
-  Option: chunk_80640036_browser_esm_Option,
-  Placeholder: chunk_80640036_browser_esm_Placeholder,
-  SelectContainer: chunk_80640036_browser_esm_SelectContainer,
-  SingleValue: chunk_80640036_browser_esm_SingleValue,
-  ValueContainer: chunk_80640036_browser_esm_ValueContainer
+function _extends$a() { _extends$a = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$a.apply(this, arguments); }
+var index_4322c0ed_browser_esm_components = {
+  ClearIndicator: index_4322c0ed_browser_esm_ClearIndicator,
+  Control: index_4322c0ed_browser_esm_Control,
+  DropdownIndicator: index_4322c0ed_browser_esm_DropdownIndicator,
+  DownChevron: index_4322c0ed_browser_esm_DownChevron,
+  CrossIcon: index_4322c0ed_browser_esm_CrossIcon,
+  Group: index_4322c0ed_browser_esm_Group,
+  GroupHeading: index_4322c0ed_browser_esm_GroupHeading,
+  IndicatorsContainer: index_4322c0ed_browser_esm_IndicatorsContainer,
+  IndicatorSeparator: index_4322c0ed_browser_esm_IndicatorSeparator,
+  Input: index_4322c0ed_browser_esm_Input,
+  LoadingIndicator: index_4322c0ed_browser_esm_LoadingIndicator,
+  Menu: index_4322c0ed_browser_esm_Menu,
+  MenuList: index_4322c0ed_browser_esm_MenuList,
+  MenuPortal: index_4322c0ed_browser_esm_MenuPortal,
+  LoadingMessage: index_4322c0ed_browser_esm_LoadingMessage,
+  NoOptionsMessage: index_4322c0ed_browser_esm_NoOptionsMessage,
+  MultiValue: index_4322c0ed_browser_esm_MultiValue,
+  MultiValueContainer: index_4322c0ed_browser_esm_MultiValueContainer,
+  MultiValueLabel: index_4322c0ed_browser_esm_MultiValueLabel,
+  MultiValueRemove: index_4322c0ed_browser_esm_MultiValueRemove,
+  Option: index_4322c0ed_browser_esm_Option,
+  Placeholder: index_4322c0ed_browser_esm_Placeholder,
+  SelectContainer: index_4322c0ed_browser_esm_SelectContainer,
+  SingleValue: index_4322c0ed_browser_esm_SingleValue,
+  ValueContainer: index_4322c0ed_browser_esm_ValueContainer
 };
-var chunk_80640036_browser_esm_defaultComponents = function defaultComponents(props) {
-  return objectSpread_objectSpread({}, chunk_80640036_browser_esm_components, props.components);
+var index_4322c0ed_browser_esm_defaultComponents = function defaultComponents(props) {
+  return _extends$a({}, index_4322c0ed_browser_esm_components, props.components);
 };
 
 
 
-// CONCATENATED MODULE: ./node_modules/react-select/dist/base/dist/react-select-cac0a5ae.browser.esm.js
-
-
-
-
-
-
-
-
-
-
-
+// CONCATENATED MODULE: ./node_modules/react-select/dist/Select-9fdb8cd0.browser.esm.js
 
 
 
@@ -43751,17 +44887,19 @@ var stripDiacritics = function stripDiacritics(str) {
   return str;
 };
 
+function Select_9fdb8cd0_browser_esm_extends() { Select_9fdb8cd0_browser_esm_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Select_9fdb8cd0_browser_esm_extends.apply(this, arguments); }
+
 var trimString = function trimString(str) {
   return str.replace(/^\s+|\s+$/g, '');
 };
 
 var defaultStringify = function defaultStringify(option) {
-  return "".concat(option.label, " ").concat(option.value);
+  return option.label + " " + option.value;
 };
 
-var react_select_cac0a5ae_browser_esm_createFilter = function createFilter(config) {
+var createFilter = function createFilter(config) {
   return function (option, rawInput) {
-    var _ignoreCase$ignoreAcc = objectSpread_objectSpread({
+    var _ignoreCase$ignoreAcc = Select_9fdb8cd0_browser_esm_extends({
       ignoreCase: true,
       ignoreAccents: true,
       stringify: defaultStringify,
@@ -43791,99 +44929,83 @@ var react_select_cac0a5ae_browser_esm_createFilter = function createFilter(confi
   };
 };
 
-var react_select_cac0a5ae_browser_esm_ref =  true ? {
+function Select_9fdb8cd0_browser_esm_extends$1() { Select_9fdb8cd0_browser_esm_extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Select_9fdb8cd0_browser_esm_extends$1.apply(this, arguments); }
+
+var Select_9fdb8cd0_browser_esm_ref =  true ? {
   name: "1laao21-a11yText",
   styles: "label:a11yText;z-index:9999;border:0;clip:rect(1px, 1px, 1px, 1px);height:1px;width:1px;position:absolute;overflow:hidden;padding:0;white-space:nowrap;"
 } : undefined;
 
-var react_select_cac0a5ae_browser_esm_A11yText = function A11yText(props) {
-  return core_browser_esm_jsx("span", _extends({
-    css: react_select_cac0a5ae_browser_esm_ref
+var Select_9fdb8cd0_browser_esm_A11yText = function A11yText(props) {
+  return core_browser_esm_jsx("span", Select_9fdb8cd0_browser_esm_extends$1({
+    css: Select_9fdb8cd0_browser_esm_ref
   }, props));
 };
 
-var react_select_cac0a5ae_browser_esm_DummyInput =
+function Select_9fdb8cd0_browser_esm_extends$2() { Select_9fdb8cd0_browser_esm_extends$2 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Select_9fdb8cd0_browser_esm_extends$2.apply(this, arguments); }
+
+function Select_9fdb8cd0_browser_esm_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function DummyInput(_ref) {
+  var inProp = _ref.in,
+      out = _ref.out,
+      onExited = _ref.onExited,
+      appear = _ref.appear,
+      enter = _ref.enter,
+      exit = _ref.exit,
+      innerRef = _ref.innerRef,
+      emotion = _ref.emotion,
+      props = Select_9fdb8cd0_browser_esm_objectWithoutPropertiesLoose(_ref, ["in", "out", "onExited", "appear", "enter", "exit", "innerRef", "emotion"]);
+
+  return core_browser_esm_jsx("input", Select_9fdb8cd0_browser_esm_extends$2({
+    ref: innerRef
+  }, props, {
+    css:
+    /*#__PURE__*/
+    css_browser_esm({
+      label: 'dummyInput',
+      // get rid of any default styles
+      background: 0,
+      border: 0,
+      fontSize: 'inherit',
+      outline: 0,
+      padding: 0,
+      // important! without `width` browsers won't allow focus
+      width: 1,
+      // remove cursor on desktop
+      color: 'transparent',
+      // remove cursor on mobile whilst maintaining "scroll into view" behaviour
+      left: -100,
+      opacity: 0,
+      position: 'relative',
+      transform: 'scale(0)'
+    },  true ? "" : undefined)
+  }));
+}
+
+function Select_9fdb8cd0_browser_esm_inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+
+var Select_9fdb8cd0_browser_esm_NodeResolver =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(DummyInput, _Component);
-
-  function DummyInput() {
-    _classCallCheck(this, DummyInput);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(DummyInput).apply(this, arguments));
-  }
-
-  _createClass(DummyInput, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          inProp = _this$props.in,
-          out = _this$props.out,
-          onExited = _this$props.onExited,
-          appear = _this$props.appear,
-          enter = _this$props.enter,
-          exit = _this$props.exit,
-          innerRef = _this$props.innerRef,
-          emotion = _this$props.emotion,
-          props = _objectWithoutProperties(_this$props, ["in", "out", "onExited", "appear", "enter", "exit", "innerRef", "emotion"]);
-
-      return core_browser_esm_jsx("input", _extends({
-        ref: innerRef
-      }, props, {
-        css:
-        /*#__PURE__*/
-        css_browser_esm({
-          label: 'dummyInput',
-          // get rid of any default styles
-          background: 0,
-          border: 0,
-          fontSize: 'inherit',
-          outline: 0,
-          padding: 0,
-          // important! without `width` browsers won't allow focus
-          width: 1,
-          // remove cursor on desktop
-          color: 'transparent',
-          // remove cursor on mobile whilst maintaining "scroll into view" behaviour
-          left: -100,
-          opacity: 0,
-          position: 'relative',
-          transform: 'scale(0)'
-        },  true ? "" : undefined)
-      }));
-    }
-  }]);
-
-  return DummyInput;
-}(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
-
-var react_select_cac0a5ae_browser_esm_NodeResolver =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(NodeResolver, _Component);
+  Select_9fdb8cd0_browser_esm_inheritsLoose(NodeResolver, _Component);
 
   function NodeResolver() {
-    _classCallCheck(this, NodeResolver);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(NodeResolver).apply(this, arguments));
+    return _Component.apply(this, arguments) || this;
   }
 
-  _createClass(NodeResolver, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.innerRef(Object(external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["findDOMNode"])(this));
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.props.innerRef(null);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return this.props.children;
-    }
-  }]);
+  var _proto = NodeResolver.prototype;
+
+  _proto.componentDidMount = function componentDidMount() {
+    this.props.innerRef(Object(external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["findDOMNode"])(this));
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    this.props.innerRef(null);
+  };
+
+  _proto.render = function render() {
+    return this.props.children;
+  };
 
   return NodeResolver;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
@@ -43920,136 +45042,129 @@ function isTouchDevice() {
   return 'ontouchstart' in window || navigator.maxTouchPoints;
 }
 
-var canUseDOM = !!(window.document && window.document.createElement);
+function _inheritsLoose$1(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+var canUseDOM = !!( window.document && window.document.createElement);
 var activeScrollLocks = 0;
 
-var react_select_cac0a5ae_browser_esm_ScrollLock =
+var ScrollLock =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(ScrollLock, _Component);
+  _inheritsLoose$1(ScrollLock, _Component);
 
   function ScrollLock() {
-    var _getPrototypeOf2;
-
     var _this;
-
-    _classCallCheck(this, ScrollLock);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(ScrollLock)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "originalStyles", {});
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "listenerOptions", {
+    _this = _Component.call.apply(_Component, [this].concat(args)) || this;
+    _this.originalStyles = {};
+    _this.listenerOptions = {
       capture: false,
       passive: false
-    });
-
+    };
     return _this;
   }
 
-  _createClass(ScrollLock, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
+  var _proto = ScrollLock.prototype;
 
-      if (!canUseDOM) return;
-      var _this$props = this.props,
-          accountForScrollbars = _this$props.accountForScrollbars,
-          touchScrollTarget = _this$props.touchScrollTarget;
-      var target = document.body;
-      var targetStyle = target && target.style;
+  _proto.componentDidMount = function componentDidMount() {
+    var _this2 = this;
 
-      if (accountForScrollbars) {
-        // store any styles already applied to the body
-        STYLE_KEYS.forEach(function (key) {
-          var val = targetStyle && targetStyle[key];
-          _this2.originalStyles[key] = val;
-        });
-      } // apply the lock styles and padding if this is the first scroll lock
+    if (!canUseDOM) return;
+    var _this$props = this.props,
+        accountForScrollbars = _this$props.accountForScrollbars,
+        touchScrollTarget = _this$props.touchScrollTarget;
+    var target = document.body;
+    var targetStyle = target && target.style;
+
+    if (accountForScrollbars) {
+      // store any styles already applied to the body
+      STYLE_KEYS.forEach(function (key) {
+        var val = targetStyle && targetStyle[key];
+        _this2.originalStyles[key] = val;
+      });
+    } // apply the lock styles and padding if this is the first scroll lock
 
 
-      if (accountForScrollbars && activeScrollLocks < 1) {
-        var currentPadding = parseInt(this.originalStyles.paddingRight, 10) || 0;
-        var clientWidth = document.body ? document.body.clientWidth : 0;
-        var adjustedPadding = window.innerWidth - clientWidth + currentPadding || 0;
-        Object.keys(LOCK_STYLES).forEach(function (key) {
-          var val = LOCK_STYLES[key];
-
-          if (targetStyle) {
-            targetStyle[key] = val;
-          }
-        });
+    if (accountForScrollbars && activeScrollLocks < 1) {
+      var currentPadding = parseInt(this.originalStyles.paddingRight, 10) || 0;
+      var clientWidth = document.body ? document.body.clientWidth : 0;
+      var adjustedPadding = window.innerWidth - clientWidth + currentPadding || 0;
+      Object.keys(LOCK_STYLES).forEach(function (key) {
+        var val = LOCK_STYLES[key];
 
         if (targetStyle) {
-          targetStyle.paddingRight = "".concat(adjustedPadding, "px");
+          targetStyle[key] = val;
         }
-      } // account for touch devices
+      });
+
+      if (targetStyle) {
+        targetStyle.paddingRight = adjustedPadding + "px";
+      }
+    } // account for touch devices
 
 
-      if (target && isTouchDevice()) {
-        // Mobile Safari ignores { overflow: hidden } declaration on the body.
-        target.addEventListener('touchmove', preventTouchMove, this.listenerOptions); // Allow scroll on provided target
+    if (target && isTouchDevice()) {
+      // Mobile Safari ignores { overflow: hidden } declaration on the body.
+      target.addEventListener('touchmove', preventTouchMove, this.listenerOptions); // Allow scroll on provided target
 
-        if (touchScrollTarget) {
-          touchScrollTarget.addEventListener('touchstart', preventInertiaScroll, this.listenerOptions);
-          touchScrollTarget.addEventListener('touchmove', allowTouchMove, this.listenerOptions);
+      if (touchScrollTarget) {
+        touchScrollTarget.addEventListener('touchstart', preventInertiaScroll, this.listenerOptions);
+        touchScrollTarget.addEventListener('touchmove', allowTouchMove, this.listenerOptions);
+      }
+    } // increment active scroll locks
+
+
+    activeScrollLocks += 1;
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    var _this3 = this;
+
+    if (!canUseDOM) return;
+    var _this$props2 = this.props,
+        accountForScrollbars = _this$props2.accountForScrollbars,
+        touchScrollTarget = _this$props2.touchScrollTarget;
+    var target = document.body;
+    var targetStyle = target && target.style; // safely decrement active scroll locks
+
+    activeScrollLocks = Math.max(activeScrollLocks - 1, 0); // reapply original body styles, if any
+
+    if (accountForScrollbars && activeScrollLocks < 1) {
+      STYLE_KEYS.forEach(function (key) {
+        var val = _this3.originalStyles[key];
+
+        if (targetStyle) {
+          targetStyle[key] = val;
         }
-      } // increment active scroll locks
+      });
+    } // remove touch listeners
 
 
-      activeScrollLocks += 1;
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      var _this3 = this;
+    if (target && isTouchDevice()) {
+      target.removeEventListener('touchmove', preventTouchMove, this.listenerOptions);
 
-      if (!canUseDOM) return;
-      var _this$props2 = this.props,
-          accountForScrollbars = _this$props2.accountForScrollbars,
-          touchScrollTarget = _this$props2.touchScrollTarget;
-      var target = document.body;
-      var targetStyle = target && target.style; // safely decrement active scroll locks
-
-      activeScrollLocks = Math.max(activeScrollLocks - 1, 0); // reapply original body styles, if any
-
-      if (accountForScrollbars && activeScrollLocks < 1) {
-        STYLE_KEYS.forEach(function (key) {
-          var val = _this3.originalStyles[key];
-
-          if (targetStyle) {
-            targetStyle[key] = val;
-          }
-        });
-      } // remove touch listeners
-
-
-      if (target && isTouchDevice()) {
-        target.removeEventListener('touchmove', preventTouchMove, this.listenerOptions);
-
-        if (touchScrollTarget) {
-          touchScrollTarget.removeEventListener('touchstart', preventInertiaScroll, this.listenerOptions);
-          touchScrollTarget.removeEventListener('touchmove', allowTouchMove, this.listenerOptions);
-        }
+      if (touchScrollTarget) {
+        touchScrollTarget.removeEventListener('touchstart', preventInertiaScroll, this.listenerOptions);
+        touchScrollTarget.removeEventListener('touchmove', allowTouchMove, this.listenerOptions);
       }
     }
-  }, {
-    key: "render",
-    value: function render() {
-      return null;
-    }
-  }]);
+  };
+
+  _proto.render = function render() {
+    return null;
+  };
 
   return ScrollLock;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
 
-_defineProperty(react_select_cac0a5ae_browser_esm_ScrollLock, "defaultProps", {
+ScrollLock.defaultProps = {
   accountForScrollbars: true
-});
+};
+
+function _inheritsLoose$2(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
 
 var _ref$1 =  true ? {
   name: "1dsbpcp",
@@ -44060,113 +45175,103 @@ var _ref$1 =  true ? {
 // We shouldn't need this after updating to React v16.3.0, which introduces:
 // - createRef() https://reactjs.org/docs/react-api.html#reactcreateref
 // - forwardRef() https://reactjs.org/docs/react-api.html#reactforwardref
-var react_select_cac0a5ae_browser_esm_ScrollBlock =
+var Select_9fdb8cd0_browser_esm_ScrollBlock =
 /*#__PURE__*/
 function (_PureComponent) {
-  _inherits(ScrollBlock, _PureComponent);
+  _inheritsLoose$2(ScrollBlock, _PureComponent);
 
   function ScrollBlock() {
-    var _getPrototypeOf2;
-
     var _this;
-
-    _classCallCheck(this, ScrollBlock);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(ScrollBlock)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
+    _this = _PureComponent.call.apply(_PureComponent, [this].concat(args)) || this;
+    _this.state = {
       touchScrollTarget: null
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getScrollTarget", function (ref) {
+    _this.getScrollTarget = function (ref) {
       if (ref === _this.state.touchScrollTarget) return;
 
       _this.setState({
         touchScrollTarget: ref
       });
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "blurSelectInput", function () {
+    _this.blurSelectInput = function () {
       if (document.activeElement) {
         document.activeElement.blur();
       }
-    });
+    };
 
     return _this;
   }
 
-  _createClass(ScrollBlock, [{
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          children = _this$props.children,
-          isEnabled = _this$props.isEnabled;
-      var touchScrollTarget = this.state.touchScrollTarget; // bail early if not enabled
+  var _proto = ScrollBlock.prototype;
 
-      if (!isEnabled) return children;
-      /*
-       * Div
-       * ------------------------------
-       * blocks scrolling on non-body elements behind the menu
-        * NodeResolver
-       * ------------------------------
-       * we need a reference to the scrollable element to "unlock" scroll on
-       * mobile devices
-        * ScrollLock
-       * ------------------------------
-       * actually does the scroll locking
-       */
+  _proto.render = function render() {
+    var _this$props = this.props,
+        children = _this$props.children,
+        isEnabled = _this$props.isEnabled;
+    var touchScrollTarget = this.state.touchScrollTarget; // bail early if not enabled
 
-      return core_browser_esm_jsx("div", null, core_browser_esm_jsx("div", {
-        onClick: this.blurSelectInput,
-        css: _ref$1
-      }), core_browser_esm_jsx(react_select_cac0a5ae_browser_esm_NodeResolver, {
-        innerRef: this.getScrollTarget
-      }, children), touchScrollTarget ? core_browser_esm_jsx(react_select_cac0a5ae_browser_esm_ScrollLock, {
-        touchScrollTarget: touchScrollTarget
-      }) : null);
-    }
-  }]);
+    if (!isEnabled) return children;
+    /*
+     * Div
+     * ------------------------------
+     * blocks scrolling on non-body elements behind the menu
+      * NodeResolver
+     * ------------------------------
+     * we need a reference to the scrollable element to "unlock" scroll on
+     * mobile devices
+      * ScrollLock
+     * ------------------------------
+     * actually does the scroll locking
+     */
+
+    return core_browser_esm_jsx("div", null, core_browser_esm_jsx("div", {
+      onClick: this.blurSelectInput,
+      css: _ref$1
+    }), core_browser_esm_jsx(Select_9fdb8cd0_browser_esm_NodeResolver, {
+      innerRef: this.getScrollTarget
+    }, children), touchScrollTarget ? core_browser_esm_jsx(ScrollLock, {
+      touchScrollTarget: touchScrollTarget
+    }) : null);
+  };
 
   return ScrollBlock;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_["PureComponent"]);
 
-var react_select_cac0a5ae_browser_esm_ScrollCaptor =
+function Select_9fdb8cd0_browser_esm_objectWithoutPropertiesLoose$1(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function _inheritsLoose$3(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+
+var Select_9fdb8cd0_browser_esm_ScrollCaptor =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(ScrollCaptor, _Component);
+  _inheritsLoose$3(ScrollCaptor, _Component);
 
   function ScrollCaptor() {
-    var _getPrototypeOf2;
-
     var _this;
-
-    _classCallCheck(this, ScrollCaptor);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(ScrollCaptor)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _Component.call.apply(_Component, [this].concat(args)) || this;
+    _this.isBottom = false;
+    _this.isTop = false;
+    _this.scrollTarget = void 0;
+    _this.touchStart = void 0;
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "isBottom", false);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "isTop", false);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "scrollTarget", void 0);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "touchStart", void 0);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "cancelScroll", function (event) {
+    _this.cancelScroll = function (event) {
       event.preventDefault();
       event.stopPropagation();
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleEventDelta", function (event, delta) {
+    _this.handleEventDelta = function (event, delta) {
       var _this$props = _this.props,
           onBottomArrive = _this$props.onBottomArrive,
           onBottomLeave = _this$props.onBottomLeave,
@@ -44214,128 +45319,106 @@ function (_Component) {
       if (shouldCancelScroll) {
         _this.cancelScroll(event);
       }
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onWheel", function (event) {
+    _this.onWheel = function (event) {
       _this.handleEventDelta(event, event.deltaY);
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onTouchStart", function (event) {
+    _this.onTouchStart = function (event) {
       // set touch start so we can calculate touchmove delta
       _this.touchStart = event.changedTouches[0].clientY;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onTouchMove", function (event) {
+    _this.onTouchMove = function (event) {
       var deltaY = _this.touchStart - event.changedTouches[0].clientY;
 
       _this.handleEventDelta(event, deltaY);
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getScrollTarget", function (ref) {
+    _this.getScrollTarget = function (ref) {
       _this.scrollTarget = ref;
-    });
+    };
 
     return _this;
   }
 
-  _createClass(ScrollCaptor, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.startListening(this.scrollTarget);
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.stopListening(this.scrollTarget);
-    }
-  }, {
-    key: "startListening",
-    value: function startListening(el) {
-      // bail early if no element is available to attach to
-      if (!el) return; // all the if statements are to appease Flow 😢
+  var _proto = ScrollCaptor.prototype;
 
-      if (typeof el.addEventListener === 'function') {
-        el.addEventListener('wheel', this.onWheel, false);
-      }
+  _proto.componentDidMount = function componentDidMount() {
+    this.startListening(this.scrollTarget);
+  };
 
-      if (typeof el.addEventListener === 'function') {
-        el.addEventListener('touchstart', this.onTouchStart, false);
-      }
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    this.stopListening(this.scrollTarget);
+  };
 
-      if (typeof el.addEventListener === 'function') {
-        el.addEventListener('touchmove', this.onTouchMove, false);
-      }
+  _proto.startListening = function startListening(el) {
+    // bail early if no element is available to attach to
+    if (!el) return; // all the if statements are to appease Flow 😢
+
+    if (typeof el.addEventListener === 'function') {
+      el.addEventListener('wheel', this.onWheel, false);
     }
-  }, {
-    key: "stopListening",
-    value: function stopListening(el) {
-      // all the if statements are to appease Flow 😢
-      if (typeof el.removeEventListener === 'function') {
-        el.removeEventListener('wheel', this.onWheel, false);
-      }
 
-      if (typeof el.removeEventListener === 'function') {
-        el.removeEventListener('touchstart', this.onTouchStart, false);
-      }
+    if (typeof el.addEventListener === 'function') {
+      el.addEventListener('touchstart', this.onTouchStart, false);
+    }
 
-      if (typeof el.removeEventListener === 'function') {
-        el.removeEventListener('touchmove', this.onTouchMove, false);
-      }
+    if (typeof el.addEventListener === 'function') {
+      el.addEventListener('touchmove', this.onTouchMove, false);
     }
-  }, {
-    key: "render",
-    value: function render() {
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(react_select_cac0a5ae_browser_esm_NodeResolver, {
-        innerRef: this.getScrollTarget
-      }, this.props.children);
+  };
+
+  _proto.stopListening = function stopListening(el) {
+    // all the if statements are to appease Flow 😢
+    if (typeof el.removeEventListener === 'function') {
+      el.removeEventListener('wheel', this.onWheel, false);
     }
-  }]);
+
+    if (typeof el.removeEventListener === 'function') {
+      el.removeEventListener('touchstart', this.onTouchStart, false);
+    }
+
+    if (typeof el.removeEventListener === 'function') {
+      el.removeEventListener('touchmove', this.onTouchMove, false);
+    }
+  };
+
+  _proto.render = function render() {
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Select_9fdb8cd0_browser_esm_NodeResolver, {
+      innerRef: this.getScrollTarget
+    }, this.props.children);
+  };
 
   return ScrollCaptor;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
 
-var react_select_cac0a5ae_browser_esm_ScrollCaptorSwitch =
-/*#__PURE__*/
-function (_Component2) {
-  _inherits(ScrollCaptorSwitch, _Component2);
+function ScrollCaptorSwitch(_ref) {
+  var _ref$isEnabled = _ref.isEnabled,
+      isEnabled = _ref$isEnabled === void 0 ? true : _ref$isEnabled,
+      props = Select_9fdb8cd0_browser_esm_objectWithoutPropertiesLoose$1(_ref, ["isEnabled"]);
 
-  function ScrollCaptorSwitch() {
-    _classCallCheck(this, ScrollCaptorSwitch);
+  return isEnabled ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Select_9fdb8cd0_browser_esm_ScrollCaptor, props) : props.children;
+}
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(ScrollCaptorSwitch).apply(this, arguments));
+var instructionsAriaMessage = function instructionsAriaMessage(event, context) {
+  if (context === void 0) {
+    context = {};
   }
 
-  _createClass(ScrollCaptorSwitch, [{
-    key: "render",
-    value: function render() {
-      var _this$props2 = this.props,
-          isEnabled = _this$props2.isEnabled,
-          props = _objectWithoutProperties(_this$props2, ["isEnabled"]);
-
-      return isEnabled ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(react_select_cac0a5ae_browser_esm_ScrollCaptor, props) : this.props.children;
-    }
-  }]);
-
-  return ScrollCaptorSwitch;
-}(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
-
-_defineProperty(react_select_cac0a5ae_browser_esm_ScrollCaptorSwitch, "defaultProps", {
-  isEnabled: true
-});
-
-var instructionsAriaMessage = function instructionsAriaMessage(event) {
-  var context = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  var isSearchable = context.isSearchable,
-      isMulti = context.isMulti,
-      label = context.label,
-      isDisabled = context.isDisabled;
+  var _context = context,
+      isSearchable = _context.isSearchable,
+      isMulti = _context.isMulti,
+      label = _context.label,
+      isDisabled = _context.isDisabled;
 
   switch (event) {
     case 'menu':
-      return "Use Up and Down to choose options".concat(isDisabled ? '' : ', press Enter to select the currently focused option', ", press Escape to exit the menu, press Tab to select the option and exit the menu.");
+      return "Use Up and Down to choose options" + (isDisabled ? '' : ', press Enter to select the currently focused option') + ", press Escape to exit the menu, press Tab to select the option and exit the menu.";
 
     case 'input':
-      return "".concat(label ? label : 'Select', " is focused ").concat(isSearchable ? ',type to refine list' : '', ", press Down to open the menu, ").concat(isMulti ? ' press left to focus selected values' : '');
+      return (label ? label : 'Select') + " is focused " + (isSearchable ? ',type to refine list' : '') + ", press Down to open the menu, " + (isMulti ? ' press left to focus selected values' : '');
 
     case 'value':
       return 'Use left and right to toggle between focused values, press Backspace to remove the currently focused value';
@@ -44350,28 +45433,28 @@ var valueEventAriaMessage = function valueEventAriaMessage(event, context) {
     case 'deselect-option':
     case 'pop-value':
     case 'remove-value':
-      return "option ".concat(value, ", deselected.");
+      return "option " + value + ", deselected.";
 
     case 'select-option':
-      return isDisabled ? "option ".concat(value, " is disabled. Select another option.") : "option ".concat(value, ", selected.");
+      return isDisabled ? "option " + value + " is disabled. Select another option." : "option " + value + ", selected.";
   }
 };
 var valueFocusAriaMessage = function valueFocusAriaMessage(_ref) {
   var focusedValue = _ref.focusedValue,
       getOptionLabel = _ref.getOptionLabel,
       selectValue = _ref.selectValue;
-  return "value ".concat(getOptionLabel(focusedValue), " focused, ").concat(selectValue.indexOf(focusedValue) + 1, " of ").concat(selectValue.length, ".");
+  return "value " + getOptionLabel(focusedValue) + " focused, " + (selectValue.indexOf(focusedValue) + 1) + " of " + selectValue.length + ".";
 };
 var optionFocusAriaMessage = function optionFocusAriaMessage(_ref2) {
   var focusedOption = _ref2.focusedOption,
       getOptionLabel = _ref2.getOptionLabel,
       options = _ref2.options;
-  return "option ".concat(getOptionLabel(focusedOption), " focused").concat(focusedOption.isDisabled ? ' disabled' : '', ", ").concat(options.indexOf(focusedOption) + 1, " of ").concat(options.length, ".");
+  return "option " + getOptionLabel(focusedOption) + " focused" + (focusedOption.isDisabled ? ' disabled' : '') + ", " + (options.indexOf(focusedOption) + 1) + " of " + options.length + ".";
 };
 var resultsAriaMessage = function resultsAriaMessage(_ref3) {
   var inputValue = _ref3.inputValue,
       screenReaderMessage = _ref3.screenReaderMessage;
-  return "".concat(screenReaderMessage).concat(inputValue ? ' for search term ' + inputValue : '', ".");
+  return "" + screenReaderMessage + (inputValue ? ' for search term ' + inputValue : '') + ".";
 };
 
 var formatGroupLabel = function formatGroupLabel(group) {
@@ -44387,10 +45470,11 @@ var isOptionDisabled = function isOptionDisabled(option) {
   return !!option.isDisabled;
 };
 
+function Select_9fdb8cd0_browser_esm_extends$3() { Select_9fdb8cd0_browser_esm_extends$3 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Select_9fdb8cd0_browser_esm_extends$3.apply(this, arguments); }
 var defaultStyles = {
   clearIndicator: clearIndicatorCSS,
   container: containerCSS,
-  control: chunk_80640036_browser_esm_css,
+  control: index_4322c0ed_browser_esm_css,
   dropdownIndicator: dropdownIndicatorCSS,
   group: groupCSS,
   groupHeading: groupHeadingCSS,
@@ -44399,7 +45483,7 @@ var defaultStyles = {
   input: inputCSS,
   loadingIndicator: loadingIndicatorCSS,
   loadingMessage: loadingMessageCSS,
-  menu: chunk_80640036_browser_esm_menuCSS,
+  menu: menuCSS,
   menuList: menuListCSS,
   menuPortal: menuPortalCSS,
   multiValue: multiValueCSS,
@@ -44413,11 +45497,13 @@ var defaultStyles = {
 }; // Merge Utility
 // Allows consumers to extend a base Select with additional styles
 
-function mergeStyles(source) {
-  var target = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+function mergeStyles(source, target) {
+  if (target === void 0) {
+    target = {};
+  }
 
   // initialize with source styles
-  var styles = objectSpread_objectSpread({}, source); // massage in target styles
+  var styles = Select_9fdb8cd0_browser_esm_extends$3({}, source); // massage in target styles
 
 
   Object.keys(target).forEach(function (key) {
@@ -44432,7 +45518,7 @@ function mergeStyles(source) {
   return styles;
 }
 
-var react_select_cac0a5ae_browser_esm_colors = {
+var colors = {
   primary: '#2684FF',
   primary75: '#4C9AFF',
   primary50: '#B2D4FF',
@@ -44451,25 +45537,32 @@ var react_select_cac0a5ae_browser_esm_colors = {
   neutral80: 'hsl(0, 0%, 20%)',
   neutral90: 'hsl(0, 0%, 10%)'
 };
-var react_select_cac0a5ae_browser_esm_borderRadius = 4; // Used to calculate consistent margin/padding on elements
+var Select_9fdb8cd0_browser_esm_borderRadius = 4; // Used to calculate consistent margin/padding on elements
 
 var baseUnit = 4; // The minimum height of the control
 
 var controlHeight = 38; // The amount of space between the control and menu */
 
 var menuGutter = baseUnit * 2;
-var react_select_cac0a5ae_browser_esm_spacing = {
+var Select_9fdb8cd0_browser_esm_spacing = {
   baseUnit: baseUnit,
   controlHeight: controlHeight,
   menuGutter: menuGutter
 };
-var react_select_cac0a5ae_browser_esm_defaultTheme = {
-  borderRadius: react_select_cac0a5ae_browser_esm_borderRadius,
-  colors: react_select_cac0a5ae_browser_esm_colors,
-  spacing: react_select_cac0a5ae_browser_esm_spacing
+var Select_9fdb8cd0_browser_esm_defaultTheme = {
+  borderRadius: Select_9fdb8cd0_browser_esm_borderRadius,
+  colors: colors,
+  spacing: Select_9fdb8cd0_browser_esm_spacing
 };
 
-var react_select_cac0a5ae_browser_esm_defaultProps = {
+function Select_9fdb8cd0_browser_esm_objectWithoutPropertiesLoose$2(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function Select_9fdb8cd0_browser_esm_extends$4() { Select_9fdb8cd0_browser_esm_extends$4 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Select_9fdb8cd0_browser_esm_extends$4.apply(this, arguments); }
+
+function _inheritsLoose$4(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+
+function Select_9fdb8cd0_browser_esm_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+var Select_9fdb8cd0_browser_esm_defaultProps = {
   backspaceRemovesValue: true,
   blurInputOnSelect: isTouchCapable(),
   captureMenuScroll: !isTouchCapable(),
@@ -44478,7 +45571,7 @@ var react_select_cac0a5ae_browser_esm_defaultProps = {
   components: {},
   controlShouldRenderValue: true,
   escapeClearsValue: false,
-  filterOption: react_select_cac0a5ae_browser_esm_createFilter(),
+  filterOption: createFilter(),
   formatGroupLabel: formatGroupLabel,
   getOptionLabel: getOptionLabel,
   getOptionValue: getOptionValue,
@@ -44508,7 +45601,7 @@ var react_select_cac0a5ae_browser_esm_defaultProps = {
   placeholder: 'Select...',
   screenReaderStatus: function screenReaderStatus(_ref) {
     var count = _ref.count;
-    return "".concat(count, " result").concat(count !== 1 ? 's' : '', " available");
+    return count + " result" + (count !== 1 ? 's' : '') + " available";
   },
   styles: {},
   tabIndex: '0',
@@ -44516,10 +45609,10 @@ var react_select_cac0a5ae_browser_esm_defaultProps = {
 };
 var instanceId = 1;
 
-var react_select_cac0a5ae_browser_esm_Select =
+var Select_9fdb8cd0_browser_esm_Select =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(Select, _Component);
+  _inheritsLoose$4(Select, _Component);
 
   // Misc. Instance Properties
   // ------------------------------
@@ -44531,11 +45624,8 @@ function (_Component) {
   function Select(_props) {
     var _this;
 
-    _classCallCheck(this, Select);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Select).call(this, _props));
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
+    _this = _Component.call(this, _props) || this;
+    _this.state = {
       ariaLiveSelection: '',
       ariaLiveContext: '',
       focusedOption: null,
@@ -44547,80 +45637,67 @@ function (_Component) {
         focusable: []
       },
       selectValue: []
-    });
+    };
+    _this.blockOptionHover = false;
+    _this.isComposing = false;
+    _this.clearFocusValueOnUpdate = false;
+    _this.commonProps = void 0;
+    _this.components = void 0;
+    _this.hasGroups = false;
+    _this.initialTouchX = 0;
+    _this.initialTouchY = 0;
+    _this.inputIsHiddenAfterUpdate = void 0;
+    _this.instancePrefix = '';
+    _this.openAfterFocus = false;
+    _this.scrollToFocusedOptionOnUpdate = false;
+    _this.userIsDragging = void 0;
+    _this.controlRef = null;
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "blockOptionHover", false);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "isComposing", false);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "clearFocusValueOnUpdate", false);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "commonProps", void 0);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "components", void 0);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "hasGroups", false);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "initialTouchX", 0);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "initialTouchY", 0);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "inputIsHiddenAfterUpdate", void 0);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "instancePrefix", '');
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "openAfterFocus", false);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "scrollToFocusedOptionOnUpdate", false);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "userIsDragging", void 0);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "controlRef", null);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getControlRef", function (ref) {
+    _this.getControlRef = function (ref) {
       _this.controlRef = ref;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "focusedOptionRef", null);
+    _this.focusedOptionRef = null;
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getFocusedOptionRef", function (ref) {
+    _this.getFocusedOptionRef = function (ref) {
       _this.focusedOptionRef = ref;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "menuListRef", null);
+    _this.menuListRef = null;
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getMenuListRef", function (ref) {
+    _this.getMenuListRef = function (ref) {
       _this.menuListRef = ref;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "inputRef", null);
+    _this.inputRef = null;
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getInputRef", function (ref) {
+    _this.getInputRef = function (ref) {
       _this.inputRef = ref;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "cacheComponents", function (components) {
-      _this.components = chunk_80640036_browser_esm_defaultComponents({
+    _this.cacheComponents = function (components) {
+      _this.components = index_4322c0ed_browser_esm_defaultComponents({
         components: components
       });
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "focus", _this.focusInput);
+    _this.focus = _this.focusInput;
+    _this.blur = _this.blurInput;
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "blur", _this.blurInput);
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onChange", function (newValue, actionMeta) {
+    _this.onChange = function (newValue, actionMeta) {
       var _this$props = _this.props,
           onChange = _this$props.onChange,
           name = _this$props.name;
-      onChange(newValue, objectSpread_objectSpread({}, actionMeta, {
+      onChange(newValue, Select_9fdb8cd0_browser_esm_extends$4({}, actionMeta, {
         name: name
       }));
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "setValue", function (newValue) {
-      var action = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'set-value';
-      var option = arguments.length > 2 ? arguments[2] : undefined;
+    _this.setValue = function (newValue, action, option) {
+      if (action === void 0) {
+        action = 'set-value';
+      }
+
       var _this$props2 = _this.props,
           closeMenuOnSelect = _this$props2.closeMenuOnSelect,
           isMulti = _this$props2.isMulti;
@@ -44642,9 +45719,9 @@ function (_Component) {
         action: action,
         option: option
       });
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "selectOption", function (newValue) {
+    _this.selectOption = function (newValue) {
       var _this$props3 = _this.props,
           blurInputOnSelect = _this$props3.blurInputOnSelect,
           isMulti = _this$props3.isMulti;
@@ -44666,7 +45743,7 @@ function (_Component) {
           });
         } else {
           if (!_this.isOptionDisabled(newValue, selectValue)) {
-            _this.setValue([].concat(_toConsumableArray(selectValue), [newValue]), 'select-option', newValue);
+            _this.setValue([].concat(selectValue, [newValue]), 'select-option', newValue);
 
             _this.announceAriaLiveSelection({
               event: 'select-option',
@@ -44710,9 +45787,9 @@ function (_Component) {
       if (blurInputOnSelect) {
         _this.blurInput();
       }
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "removeValue", function (removedValue) {
+    _this.removeValue = function (removedValue) {
       var selectValue = _this.state.selectValue;
 
       var candidate = _this.getOptionValue(removedValue);
@@ -44734,17 +45811,17 @@ function (_Component) {
       });
 
       _this.focusInput();
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "clearValue", function () {
+    _this.clearValue = function () {
       var isMulti = _this.props.isMulti;
 
       _this.onChange(isMulti ? [] : null, {
         action: 'clear'
       });
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "popValue", function () {
+    _this.popValue = function () {
       var selectValue = _this.state.selectValue;
       var lastSelectedValue = selectValue[selectValue.length - 1];
       var newValue = selectValue.slice(0, selectValue.length - 1);
@@ -44760,28 +45837,28 @@ function (_Component) {
         action: 'pop-value',
         removedValue: lastSelectedValue
       });
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getOptionLabel", function (data) {
+    _this.getOptionLabel = function (data) {
       return _this.props.getOptionLabel(data);
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getOptionValue", function (data) {
+    _this.getOptionValue = function (data) {
       return _this.props.getOptionValue(data);
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getStyles", function (key, props) {
+    _this.getStyles = function (key, props) {
       var base = defaultStyles[key](props);
       base.boxSizing = 'border-box';
       var custom = _this.props.styles[key];
       return custom ? custom(base, props) : base;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getElementId", function (element) {
-      return "".concat(_this.instancePrefix, "-").concat(element);
-    });
+    _this.getElementId = function (element) {
+      return _this.instancePrefix + "-" + element;
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getActiveDescendentId", function () {
+    _this.getActiveDescendentId = function () {
       var menuIsOpen = _this.props.menuIsOpen;
       var _this$state = _this.state,
           menuOptions = _this$state.menuOptions,
@@ -44790,29 +45867,29 @@ function (_Component) {
       var index = menuOptions.focusable.indexOf(focusedOption);
       var option = menuOptions.render[index];
       return option && option.key;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "announceAriaLiveSelection", function (_ref2) {
+    _this.announceAriaLiveSelection = function (_ref2) {
       var event = _ref2.event,
           context = _ref2.context;
 
       _this.setState({
         ariaLiveSelection: valueEventAriaMessage(event, context)
       });
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "announceAriaLiveContext", function (_ref3) {
+    _this.announceAriaLiveContext = function (_ref3) {
       var event = _ref3.event,
           context = _ref3.context;
 
       _this.setState({
-        ariaLiveContext: instructionsAriaMessage(event, objectSpread_objectSpread({}, context, {
+        ariaLiveContext: instructionsAriaMessage(event, Select_9fdb8cd0_browser_esm_extends$4({}, context, {
           label: _this.props['aria-label']
         }))
       });
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onMenuMouseDown", function (event) {
+    _this.onMenuMouseDown = function (event) {
       if (event.button !== 0) {
         return;
       }
@@ -44821,13 +45898,13 @@ function (_Component) {
       event.preventDefault();
 
       _this.focusInput();
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onMenuMouseMove", function (event) {
+    _this.onMenuMouseMove = function (event) {
       _this.blockOptionHover = false;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onControlMouseDown", function (event) {
+    _this.onControlMouseDown = function (event) {
       var openMenuOnClick = _this.props.openMenuOnClick;
 
       if (!_this.state.isFocused) {
@@ -44841,19 +45918,19 @@ function (_Component) {
           _this.openMenu('first');
         }
       } else {
-        //$FlowFixMe
-        if (event.target.tagName !== 'INPUT') {
+        if ( // $FlowFixMe
+        event.target.tagName !== 'INPUT' && event.target.tagName !== 'TEXTAREA') {
           _this.onMenuClose();
         }
-      } //$FlowFixMe
+      }
 
-
-      if (event.target.tagName !== 'INPUT') {
+      if ( // $FlowFixMe
+      event.target.tagName !== 'INPUT' && event.target.tagName !== 'TEXTAREA') {
         event.preventDefault();
       }
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onDropdownIndicatorMouseDown", function (event) {
+    _this.onDropdownIndicatorMouseDown = function (event) {
       // ignore mouse events that weren't triggered by the primary button
       if (event && event.type === 'mousedown' && event.button !== 0) {
         return;
@@ -44876,9 +45953,9 @@ function (_Component) {
 
       event.preventDefault();
       event.stopPropagation();
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onClearIndicatorMouseDown", function (event) {
+    _this.onClearIndicatorMouseDown = function (event) {
       // ignore mouse events that weren't triggered by the primary button
       if (event && event.type === 'mousedown' && event.button !== 0) {
         return;
@@ -44896,9 +45973,9 @@ function (_Component) {
           return _this.focusInput();
         });
       }
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onScroll", function (event) {
+    _this.onScroll = function (event) {
       if (typeof _this.props.closeMenuOnScroll === 'boolean') {
         if (event.target instanceof HTMLElement && isDocumentElement(event.target)) {
           _this.props.onMenuClose();
@@ -44908,17 +45985,17 @@ function (_Component) {
           _this.props.onMenuClose();
         }
       }
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onCompositionStart", function () {
+    _this.onCompositionStart = function () {
       _this.isComposing = true;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onCompositionEnd", function () {
+    _this.onCompositionEnd = function () {
       _this.isComposing = false;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onTouchStart", function (_ref4) {
+    _this.onTouchStart = function (_ref4) {
       var touches = _ref4.touches;
       var touch = touches.item(0);
 
@@ -44929,9 +46006,9 @@ function (_Component) {
       _this.initialTouchX = touch.clientX;
       _this.initialTouchY = touch.clientY;
       _this.userIsDragging = false;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onTouchMove", function (_ref5) {
+    _this.onTouchMove = function (_ref5) {
       var touches = _ref5.touches;
       var touch = touches.item(0);
 
@@ -44943,9 +46020,9 @@ function (_Component) {
       var deltaY = Math.abs(touch.clientY - _this.initialTouchY);
       var moveThreshold = 5;
       _this.userIsDragging = deltaX > moveThreshold || deltaY > moveThreshold;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onTouchEnd", function (event) {
+    _this.onTouchEnd = function (event) {
       if (_this.userIsDragging) return; // close the menu if the user taps outside
       // we're checking on event.target here instead of event.currentTarget, because we want to assert information
       // on events on child elements, not the document (which we've attached this handler to).
@@ -44957,27 +46034,27 @@ function (_Component) {
 
       _this.initialTouchX = 0;
       _this.initialTouchY = 0;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onControlTouchEnd", function (event) {
+    _this.onControlTouchEnd = function (event) {
       if (_this.userIsDragging) return;
 
       _this.onControlMouseDown(event);
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onClearIndicatorTouchEnd", function (event) {
+    _this.onClearIndicatorTouchEnd = function (event) {
       if (_this.userIsDragging) return;
 
       _this.onClearIndicatorMouseDown(event);
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onDropdownIndicatorTouchEnd", function (event) {
+    _this.onDropdownIndicatorTouchEnd = function (event) {
       if (_this.userIsDragging) return;
 
       _this.onDropdownIndicatorMouseDown(event);
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleInputChange", function (event) {
+    _this.handleInputChange = function (event) {
       var inputValue = event.currentTarget.value;
       _this.inputIsHiddenAfterUpdate = false;
 
@@ -44986,9 +46063,9 @@ function (_Component) {
       });
 
       _this.onMenuOpen();
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onInputFocus", function (event) {
+    _this.onInputFocus = function (event) {
       var _this$props5 = _this.props,
           isSearchable = _this$props5.isSearchable,
           isMulti = _this$props5.isMulti;
@@ -45016,9 +46093,9 @@ function (_Component) {
       }
 
       _this.openAfterFocus = false;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onInputBlur", function (event) {
+    _this.onInputBlur = function (event) {
       if (_this.menuListRef && _this.menuListRef.contains(document.activeElement)) {
         _this.inputRef.focus();
 
@@ -45039,9 +46116,9 @@ function (_Component) {
         focusedValue: null,
         isFocused: false
       });
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onOptionHover", function (focusedOption) {
+    _this.onOptionHover = function (focusedOption) {
       if (_this.blockOptionHover || _this.state.focusedOption === focusedOption) {
         return;
       }
@@ -45049,17 +46126,17 @@ function (_Component) {
       _this.setState({
         focusedOption: focusedOption
       });
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "shouldHideSelectedOptions", function () {
+    _this.shouldHideSelectedOptions = function () {
       var _this$props6 = _this.props,
           hideSelectedOptions = _this$props6.hideSelectedOptions,
           isMulti = _this$props6.isMulti;
       if (hideSelectedOptions === undefined) return isMulti;
       return hideSelectedOptions;
-    });
+    };
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onKeyDown", function (event) {
+    _this.onKeyDown = function (event) {
       var _this$props7 = _this.props,
           isMulti = _this$props7.isMulti,
           backspaceRemovesValue = _this$props7.backspaceRemovesValue,
@@ -45236,522 +46313,23 @@ function (_Component) {
       }
 
       event.preventDefault();
-    });
-
-    var value = _props.value;
-    _this.cacheComponents = memoize_one_esm(_this.cacheComponents, exportedEqual).bind(_assertThisInitialized(_assertThisInitialized(_this)));
-
-    _this.cacheComponents(_props.components);
-
-    _this.instancePrefix = 'react-select-' + (_this.props.instanceId || ++instanceId);
-
-    var _selectValue = chunk_39d3fda8_browser_esm_cleanValue(value);
-
-    var _menuOptions = _props.menuIsOpen ? _this.buildMenuOptions(_props, _selectValue) : {
-      render: [],
-      focusable: []
     };
 
-    _this.state.menuOptions = _menuOptions;
-    _this.state.selectValue = _selectValue;
-    return _this;
-  }
-
-  _createClass(Select, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.startListeningComposition();
-      this.startListeningToTouch();
-
-      if (this.props.closeMenuOnScroll && document && document.addEventListener) {
-        // Listen to all scroll events, and filter them out inside of 'onScroll'
-        document.addEventListener('scroll', this.onScroll, true);
-      }
-
-      if (this.props.autoFocus) {
-        this.focusInput();
-      }
-    }
-  }, {
-    key: "UNSAFE_componentWillReceiveProps",
-    value: function UNSAFE_componentWillReceiveProps(nextProps) {
-      var _this$props8 = this.props,
-          options = _this$props8.options,
-          value = _this$props8.value,
-          menuIsOpen = _this$props8.menuIsOpen,
-          inputValue = _this$props8.inputValue; // re-cache custom components
-
-      this.cacheComponents(nextProps.components); // rebuild the menu options
-
-      if (nextProps.value !== value || nextProps.options !== options || nextProps.menuIsOpen !== menuIsOpen || nextProps.inputValue !== inputValue) {
-        var selectValue = chunk_39d3fda8_browser_esm_cleanValue(nextProps.value);
-        var menuOptions = nextProps.menuIsOpen ? this.buildMenuOptions(nextProps, selectValue) : {
-          render: [],
-          focusable: []
-        };
-        var focusedValue = this.getNextFocusedValue(selectValue);
-        var focusedOption = this.getNextFocusedOption(menuOptions.focusable);
-        this.setState({
-          menuOptions: menuOptions,
-          selectValue: selectValue,
-          focusedOption: focusedOption,
-          focusedValue: focusedValue
-        });
-      } // some updates should toggle the state of the input visibility
-
-
-      if (this.inputIsHiddenAfterUpdate != null) {
-        this.setState({
-          inputIsHidden: this.inputIsHiddenAfterUpdate
-        });
-        delete this.inputIsHiddenAfterUpdate;
-      }
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps) {
-      var _this$props9 = this.props,
-          isDisabled = _this$props9.isDisabled,
-          menuIsOpen = _this$props9.menuIsOpen;
-      var isFocused = this.state.isFocused;
-
-      if ( // ensure focus is restored correctly when the control becomes enabled
-      isFocused && !isDisabled && prevProps.isDisabled || // ensure focus is on the Input when the menu opens
-      isFocused && menuIsOpen && !prevProps.menuIsOpen) {
-        this.focusInput();
-      } // scroll the focused option into view if necessary
-
-
-      if (this.menuListRef && this.focusedOptionRef && this.scrollToFocusedOptionOnUpdate) {
-        scrollIntoView(this.menuListRef, this.focusedOptionRef);
-      }
-
-      this.scrollToFocusedOptionOnUpdate = false;
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.stopListeningComposition();
-      this.stopListeningToTouch();
-      document.removeEventListener('scroll', this.onScroll, true);
-    }
-  }, {
-    key: "onMenuOpen",
-    // ==============================
-    // Consumer Handlers
-    // ==============================
-    value: function onMenuOpen() {
-      this.props.onMenuOpen();
-    }
-  }, {
-    key: "onMenuClose",
-    value: function onMenuClose() {
-      var _this$props10 = this.props,
-          isSearchable = _this$props10.isSearchable,
-          isMulti = _this$props10.isMulti;
-      this.announceAriaLiveContext({
-        event: 'input',
-        context: {
-          isSearchable: isSearchable,
-          isMulti: isMulti
-        }
-      });
-      this.onInputChange('', {
-        action: 'menu-close'
-      });
-      this.props.onMenuClose();
-    }
-  }, {
-    key: "onInputChange",
-    value: function onInputChange(newValue, actionMeta) {
-      this.props.onInputChange(newValue, actionMeta);
-    } // ==============================
-    // Methods
-    // ==============================
-
-  }, {
-    key: "focusInput",
-    value: function focusInput() {
-      if (!this.inputRef) return;
-      this.inputRef.focus();
-    }
-  }, {
-    key: "blurInput",
-    value: function blurInput() {
-      if (!this.inputRef) return;
-      this.inputRef.blur();
-    } // aliased for consumers
-
-  }, {
-    key: "openMenu",
-    value: function openMenu(focusOption) {
-      var _this$state3 = this.state,
-          menuOptions = _this$state3.menuOptions,
-          selectValue = _this$state3.selectValue,
-          isFocused = _this$state3.isFocused;
-      var isMulti = this.props.isMulti;
-      var openAtIndex = focusOption === 'first' ? 0 : menuOptions.focusable.length - 1;
-
-      if (!isMulti) {
-        var selectedIndex = menuOptions.focusable.indexOf(selectValue[0]);
-
-        if (selectedIndex > -1) {
-          openAtIndex = selectedIndex;
-        }
-      } // only scroll if the menu isn't already open
-
-
-      this.scrollToFocusedOptionOnUpdate = !(isFocused && this.menuListRef);
-      this.inputIsHiddenAfterUpdate = false;
-      this.onMenuOpen();
-      this.setState({
-        focusedValue: null,
-        focusedOption: menuOptions.focusable[openAtIndex]
-      });
-      this.announceAriaLiveContext({
-        event: 'menu'
-      });
-    }
-  }, {
-    key: "focusValue",
-    value: function focusValue(direction) {
-      var _this$props11 = this.props,
-          isMulti = _this$props11.isMulti,
-          isSearchable = _this$props11.isSearchable;
-      var _this$state4 = this.state,
-          selectValue = _this$state4.selectValue,
-          focusedValue = _this$state4.focusedValue; // Only multiselects support value focusing
-
-      if (!isMulti) return;
-      this.setState({
-        focusedOption: null
-      });
-      var focusedIndex = selectValue.indexOf(focusedValue);
-
-      if (!focusedValue) {
-        focusedIndex = -1;
-        this.announceAriaLiveContext({
-          event: 'value'
-        });
-      }
-
-      var lastIndex = selectValue.length - 1;
-      var nextFocus = -1;
-      if (!selectValue.length) return;
-
-      switch (direction) {
-        case 'previous':
-          if (focusedIndex === 0) {
-            // don't cycle from the start to the end
-            nextFocus = 0;
-          } else if (focusedIndex === -1) {
-            // if nothing is focused, focus the last value first
-            nextFocus = lastIndex;
-          } else {
-            nextFocus = focusedIndex - 1;
-          }
-
-          break;
-
-        case 'next':
-          if (focusedIndex > -1 && focusedIndex < lastIndex) {
-            nextFocus = focusedIndex + 1;
-          }
-
-          break;
-      }
-
-      if (nextFocus === -1) {
-        this.announceAriaLiveContext({
-          event: 'input',
-          context: {
-            isSearchable: isSearchable,
-            isMulti: isMulti
-          }
-        });
-      }
-
-      this.setState({
-        inputIsHidden: nextFocus !== -1,
-        focusedValue: selectValue[nextFocus]
-      });
-    }
-  }, {
-    key: "focusOption",
-    value: function focusOption() {
-      var direction = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'first';
-      var pageSize = this.props.pageSize;
-      var _this$state5 = this.state,
-          focusedOption = _this$state5.focusedOption,
-          menuOptions = _this$state5.menuOptions;
-      var options = menuOptions.focusable;
-      if (!options.length) return;
-      var nextFocus = 0; // handles 'first'
-
-      var focusedIndex = options.indexOf(focusedOption);
-
-      if (!focusedOption) {
-        focusedIndex = -1;
-        this.announceAriaLiveContext({
-          event: 'menu'
-        });
-      }
-
-      if (direction === 'up') {
-        nextFocus = focusedIndex > 0 ? focusedIndex - 1 : options.length - 1;
-      } else if (direction === 'down') {
-        nextFocus = (focusedIndex + 1) % options.length;
-      } else if (direction === 'pageup') {
-        nextFocus = focusedIndex - pageSize;
-        if (nextFocus < 0) nextFocus = 0;
-      } else if (direction === 'pagedown') {
-        nextFocus = focusedIndex + pageSize;
-        if (nextFocus > options.length - 1) nextFocus = options.length - 1;
-      } else if (direction === 'last') {
-        nextFocus = options.length - 1;
-      }
-
-      this.scrollToFocusedOptionOnUpdate = true;
-      this.setState({
-        focusedOption: options[nextFocus],
-        focusedValue: null
-      });
-      this.announceAriaLiveContext({
-        event: 'menu',
-        context: {
-          isDisabled: isOptionDisabled(options[nextFocus])
-        }
-      });
-    }
-  }, {
-    key: "getTheme",
-    // ==============================
-    // Getters
-    // ==============================
-    value: function getTheme() {
-      // Use the default theme if there are no customizations.
-      if (!this.props.theme) {
-        return react_select_cac0a5ae_browser_esm_defaultTheme;
-      } // If the theme prop is a function, assume the function
-      // knows how to merge the passed-in default theme with
-      // its own modifications.
-
-
-      if (typeof this.props.theme === 'function') {
-        return this.props.theme(react_select_cac0a5ae_browser_esm_defaultTheme);
-      } // Otherwise, if a plain theme object was passed in,
-      // overlay it with the default theme.
-
-
-      return objectSpread_objectSpread({}, react_select_cac0a5ae_browser_esm_defaultTheme, this.props.theme);
-    }
-  }, {
-    key: "getCommonProps",
-    value: function getCommonProps() {
-      var clearValue = this.clearValue,
-          getStyles = this.getStyles,
-          setValue = this.setValue,
-          selectOption = this.selectOption,
-          props = this.props;
-      var classNamePrefix = props.classNamePrefix,
-          isMulti = props.isMulti,
-          isRtl = props.isRtl,
-          options = props.options;
-      var selectValue = this.state.selectValue;
-      var hasValue = this.hasValue();
-
-      var getValue = function getValue() {
-        return selectValue;
-      };
-
-      var cx = classNames.bind(null, classNamePrefix);
-      return {
-        cx: cx,
-        clearValue: clearValue,
-        getStyles: getStyles,
-        getValue: getValue,
-        hasValue: hasValue,
-        isMulti: isMulti,
-        isRtl: isRtl,
-        options: options,
-        selectOption: selectOption,
-        setValue: setValue,
-        selectProps: props,
-        theme: this.getTheme()
-      };
-    }
-  }, {
-    key: "getNextFocusedValue",
-    value: function getNextFocusedValue(nextSelectValue) {
-      if (this.clearFocusValueOnUpdate) {
-        this.clearFocusValueOnUpdate = false;
-        return null;
-      }
-
-      var _this$state6 = this.state,
-          focusedValue = _this$state6.focusedValue,
-          lastSelectValue = _this$state6.selectValue;
-      var lastFocusedIndex = lastSelectValue.indexOf(focusedValue);
-
-      if (lastFocusedIndex > -1) {
-        var nextFocusedIndex = nextSelectValue.indexOf(focusedValue);
-
-        if (nextFocusedIndex > -1) {
-          // the focused value is still in the selectValue, return it
-          return focusedValue;
-        } else if (lastFocusedIndex < nextSelectValue.length) {
-          // the focusedValue is not present in the next selectValue array by
-          // reference, so return the new value at the same index
-          return nextSelectValue[lastFocusedIndex];
-        }
-      }
-
-      return null;
-    }
-  }, {
-    key: "getNextFocusedOption",
-    value: function getNextFocusedOption(options) {
-      var lastFocusedOption = this.state.focusedOption;
-      return lastFocusedOption && options.indexOf(lastFocusedOption) > -1 ? lastFocusedOption : options[0];
-    }
-  }, {
-    key: "hasValue",
-    value: function hasValue() {
-      var selectValue = this.state.selectValue;
-      return selectValue.length > 0;
-    }
-  }, {
-    key: "hasOptions",
-    value: function hasOptions() {
-      return !!this.state.menuOptions.render.length;
-    }
-  }, {
-    key: "countOptions",
-    value: function countOptions() {
-      return this.state.menuOptions.focusable.length;
-    }
-  }, {
-    key: "isClearable",
-    value: function isClearable() {
-      var _this$props12 = this.props,
-          isClearable = _this$props12.isClearable,
-          isMulti = _this$props12.isMulti; // single select, by default, IS NOT clearable
-      // multi select, by default, IS clearable
-
-      if (isClearable === undefined) return isMulti;
-      return isClearable;
-    }
-  }, {
-    key: "isOptionDisabled",
-    value: function isOptionDisabled(option, selectValue) {
-      return typeof this.props.isOptionDisabled === 'function' ? this.props.isOptionDisabled(option, selectValue) : false;
-    }
-  }, {
-    key: "isOptionSelected",
-    value: function isOptionSelected(option, selectValue) {
-      var _this2 = this;
-
-      if (selectValue.indexOf(option) > -1) return true;
-
-      if (typeof this.props.isOptionSelected === 'function') {
-        return this.props.isOptionSelected(option, selectValue);
-      }
-
-      var candidate = this.getOptionValue(option);
-      return selectValue.some(function (i) {
-        return _this2.getOptionValue(i) === candidate;
-      });
-    }
-  }, {
-    key: "filterOption",
-    value: function filterOption(option, inputValue) {
-      return this.props.filterOption ? this.props.filterOption(option, inputValue) : true;
-    }
-  }, {
-    key: "formatOptionLabel",
-    value: function formatOptionLabel(data, context) {
-      if (typeof this.props.formatOptionLabel === 'function') {
-        var inputValue = this.props.inputValue;
-        var selectValue = this.state.selectValue;
-        return this.props.formatOptionLabel(data, {
-          context: context,
-          inputValue: inputValue,
-          selectValue: selectValue
-        });
-      } else {
-        return this.getOptionLabel(data);
-      }
-    }
-  }, {
-    key: "formatGroupLabel",
-    value: function formatGroupLabel(data) {
-      return this.props.formatGroupLabel(data);
-    } // ==============================
-    // Mouse Handlers
-    // ==============================
-
-  }, {
-    key: "startListeningComposition",
-    // ==============================
-    // Composition Handlers
-    // ==============================
-    value: function startListeningComposition() {
-      if (document && document.addEventListener) {
-        document.addEventListener('compositionstart', this.onCompositionStart, false);
-        document.addEventListener('compositionend', this.onCompositionEnd, false);
-      }
-    }
-  }, {
-    key: "stopListeningComposition",
-    value: function stopListeningComposition() {
-      if (document && document.removeEventListener) {
-        document.removeEventListener('compositionstart', this.onCompositionStart);
-        document.removeEventListener('compositionend', this.onCompositionEnd);
-      }
-    }
-  }, {
-    key: "startListeningToTouch",
-    // ==============================
-    // Touch Handlers
-    // ==============================
-    value: function startListeningToTouch() {
-      if (document && document.addEventListener) {
-        document.addEventListener('touchstart', this.onTouchStart, false);
-        document.addEventListener('touchmove', this.onTouchMove, false);
-        document.addEventListener('touchend', this.onTouchEnd, false);
-      }
-    }
-  }, {
-    key: "stopListeningToTouch",
-    value: function stopListeningToTouch() {
-      if (document && document.removeEventListener) {
-        document.removeEventListener('touchstart', this.onTouchStart);
-        document.removeEventListener('touchmove', this.onTouchMove);
-        document.removeEventListener('touchend', this.onTouchEnd);
-      }
-    }
-  }, {
-    key: "buildMenuOptions",
-    // ==============================
-    // Menu Options
-    // ==============================
-    value: function buildMenuOptions(props, selectValue) {
-      var _this3 = this;
-
+    _this.buildMenuOptions = function (props, selectValue) {
       var _props$inputValue = props.inputValue,
           inputValue = _props$inputValue === void 0 ? '' : _props$inputValue,
           options = props.options;
 
       var toOption = function toOption(option, id) {
-        var isDisabled = _this3.isOptionDisabled(option, selectValue);
+        var isDisabled = _this.isOptionDisabled(option, selectValue);
 
-        var isSelected = _this3.isOptionSelected(option, selectValue);
+        var isSelected = _this.isOptionSelected(option, selectValue);
 
-        var label = _this3.getOptionLabel(option);
+        var label = _this.getOptionLabel(option);
 
-        var value = _this3.getOptionValue(option);
+        var value = _this.getOptionValue(option);
 
-        if (_this3.shouldHideSelectedOptions() && isSelected || !_this3.filterOption({
+        if (_this.shouldHideSelectedOptions() && isSelected || !_this.filterOption({
           label: label,
           value: value,
           data: option
@@ -45760,12 +46338,12 @@ function (_Component) {
         }
 
         var onHover = isDisabled ? undefined : function () {
-          return _this3.onOptionHover(option);
+          return _this.onOptionHover(option);
         };
         var onSelect = isDisabled ? undefined : function () {
-          return _this3.selectOption(option);
+          return _this.selectOption(option);
         };
-        var optionId = "".concat(_this3.getElementId('option'), "-").concat(id);
+        var optionId = _this.getElementId('option') + "-" + id;
         return {
           innerProps: {
             id: optionId,
@@ -45787,16 +46365,16 @@ function (_Component) {
       return options.reduce(function (acc, item, itemIndex) {
         if (item.options) {
           // TODO needs a tidier implementation
-          if (!_this3.hasGroups) _this3.hasGroups = true;
+          if (!_this.hasGroups) _this.hasGroups = true;
           var items = item.options;
           var children = items.map(function (child, i) {
-            var option = toOption(child, "".concat(itemIndex, "-").concat(i));
+            var option = toOption(child, itemIndex + "-" + i);
             if (option) acc.focusable.push(child);
             return option;
           }).filter(Boolean);
 
           if (children.length) {
-            var groupId = "".concat(_this3.getElementId('group'), "-").concat(itemIndex);
+            var groupId = _this.getElementId('group') + "-" + itemIndex;
             acc.render.push({
               type: 'group',
               key: groupId,
@@ -45805,7 +46383,7 @@ function (_Component) {
             });
           }
         } else {
-          var option = toOption(item, "".concat(itemIndex));
+          var option = toOption(item, "" + itemIndex);
 
           if (option) {
             acc.render.push(option);
@@ -45818,541 +46396,1001 @@ function (_Component) {
         render: [],
         focusable: []
       });
-    } // ==============================
-    // Renderers
-    // ==============================
+    };
 
-  }, {
-    key: "constructAriaLiveMessage",
-    value: function constructAriaLiveMessage() {
-      var _this$state7 = this.state,
-          ariaLiveContext = _this$state7.ariaLiveContext,
-          selectValue = _this$state7.selectValue,
-          focusedValue = _this$state7.focusedValue,
-          focusedOption = _this$state7.focusedOption;
-      var _this$props13 = this.props,
-          options = _this$props13.options,
-          menuIsOpen = _this$props13.menuIsOpen,
-          inputValue = _this$props13.inputValue,
-          screenReaderStatus = _this$props13.screenReaderStatus; // An aria live message representing the currently focused value in the select.
+    var _value = _props.value;
+    _this.cacheComponents = memoize_one_esm(_this.cacheComponents, exportedEqual).bind(Select_9fdb8cd0_browser_esm_assertThisInitialized(Select_9fdb8cd0_browser_esm_assertThisInitialized(_this)));
 
-      var focusedValueMsg = focusedValue ? valueFocusAriaMessage({
-        focusedValue: focusedValue,
-        getOptionLabel: this.getOptionLabel,
-        selectValue: selectValue
-      }) : ''; // An aria live message representing the currently focused option in the select.
+    _this.cacheComponents(_props.components);
 
-      var focusedOptionMsg = focusedOption && menuIsOpen ? optionFocusAriaMessage({
-        focusedOption: focusedOption,
-        getOptionLabel: this.getOptionLabel,
-        options: options
-      }) : ''; // An aria live message representing the set of focusable results and current searchterm/inputvalue.
+    _this.instancePrefix = 'react-select-' + (_this.props.instanceId || ++instanceId);
 
-      var resultsMsg = resultsAriaMessage({
-        inputValue: inputValue,
-        screenReaderMessage: screenReaderStatus({
-          count: this.countOptions()
-        })
-      });
-      return "".concat(focusedValueMsg, " ").concat(focusedOptionMsg, " ").concat(resultsMsg, " ").concat(ariaLiveContext);
+    var _selectValue = cleanValue(_value);
+
+    _this.buildMenuOptions = memoize_one_esm(_this.buildMenuOptions, function (newArgs, lastArgs) {
+      var _ref6 = newArgs,
+          newProps = _ref6[0],
+          newSelectValue = _ref6[1];
+      var _ref7 = lastArgs,
+          lastProps = _ref7[0],
+          lastSelectValue = _ref7[1];
+      return exportedEqual(newSelectValue, lastSelectValue) && exportedEqual(newProps.inputValue, lastProps.inputValue) && exportedEqual(newProps.options, lastProps.options);
+    }).bind(Select_9fdb8cd0_browser_esm_assertThisInitialized(Select_9fdb8cd0_browser_esm_assertThisInitialized(_this)));
+
+    var _menuOptions = _props.menuIsOpen ? _this.buildMenuOptions(_props, _selectValue) : {
+      render: [],
+      focusable: []
+    };
+
+    _this.state.menuOptions = _menuOptions;
+    _this.state.selectValue = _selectValue;
+    return _this;
+  }
+
+  var _proto = Select.prototype;
+
+  _proto.componentDidMount = function componentDidMount() {
+    this.startListeningComposition();
+    this.startListeningToTouch();
+
+    if (this.props.closeMenuOnScroll && document && document.addEventListener) {
+      // Listen to all scroll events, and filter them out inside of 'onScroll'
+      document.addEventListener('scroll', this.onScroll, true);
     }
-  }, {
-    key: "renderInput",
-    value: function renderInput() {
-      var _this$props14 = this.props,
-          isDisabled = _this$props14.isDisabled,
-          isSearchable = _this$props14.isSearchable,
-          inputId = _this$props14.inputId,
-          inputValue = _this$props14.inputValue,
-          tabIndex = _this$props14.tabIndex;
-      var Input = this.components.Input;
-      var inputIsHidden = this.state.inputIsHidden;
-      var id = inputId || this.getElementId('input');
 
-      if (!isSearchable) {
-        // use a dummy input to maintain focus/blur functionality
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(react_select_cac0a5ae_browser_esm_DummyInput, {
-          id: id,
-          innerRef: this.getInputRef,
-          onBlur: this.onInputBlur,
-          onChange: chunk_39d3fda8_browser_esm_noop,
-          onFocus: this.onInputFocus,
-          readOnly: true,
-          disabled: isDisabled,
-          tabIndex: tabIndex,
-          value: ""
-        });
-      } // aria attributes makes the JSX "noisy", separated for clarity
+    if (this.props.autoFocus) {
+      this.focusInput();
+    }
+  };
 
+  _proto.UNSAFE_componentWillReceiveProps = function UNSAFE_componentWillReceiveProps(nextProps) {
+    var _this$props8 = this.props,
+        options = _this$props8.options,
+        value = _this$props8.value,
+        menuIsOpen = _this$props8.menuIsOpen,
+        inputValue = _this$props8.inputValue; // re-cache custom components
 
-      var ariaAttributes = {
-        'aria-autocomplete': 'list',
-        'aria-label': this.props['aria-label'],
-        'aria-labelledby': this.props['aria-labelledby']
+    this.cacheComponents(nextProps.components); // rebuild the menu options
+
+    if (nextProps.value !== value || nextProps.options !== options || nextProps.menuIsOpen !== menuIsOpen || nextProps.inputValue !== inputValue) {
+      var selectValue = cleanValue(nextProps.value);
+      var menuOptions = nextProps.menuIsOpen ? this.buildMenuOptions(nextProps, selectValue) : {
+        render: [],
+        focusable: []
       };
-      var _this$commonProps = this.commonProps,
-          cx = _this$commonProps.cx,
-          theme = _this$commonProps.theme,
-          selectProps = _this$commonProps.selectProps;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Input, _extends({
-        autoCapitalize: "none",
-        autoComplete: "off",
-        autoCorrect: "off",
-        cx: cx,
-        getStyles: this.getStyles,
+      var focusedValue = this.getNextFocusedValue(selectValue);
+      var focusedOption = this.getNextFocusedOption(menuOptions.focusable);
+      this.setState({
+        menuOptions: menuOptions,
+        selectValue: selectValue,
+        focusedOption: focusedOption,
+        focusedValue: focusedValue
+      });
+    } // some updates should toggle the state of the input visibility
+
+
+    if (this.inputIsHiddenAfterUpdate != null) {
+      this.setState({
+        inputIsHidden: this.inputIsHiddenAfterUpdate
+      });
+      delete this.inputIsHiddenAfterUpdate;
+    }
+  };
+
+  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
+    var _this$props9 = this.props,
+        isDisabled = _this$props9.isDisabled,
+        menuIsOpen = _this$props9.menuIsOpen;
+    var isFocused = this.state.isFocused;
+
+    if ( // ensure focus is restored correctly when the control becomes enabled
+    isFocused && !isDisabled && prevProps.isDisabled || // ensure focus is on the Input when the menu opens
+    isFocused && menuIsOpen && !prevProps.menuIsOpen) {
+      this.focusInput();
+    } // scroll the focused option into view if necessary
+
+
+    if (this.menuListRef && this.focusedOptionRef && this.scrollToFocusedOptionOnUpdate) {
+      scrollIntoView(this.menuListRef, this.focusedOptionRef);
+      this.scrollToFocusedOptionOnUpdate = false;
+    }
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    this.stopListeningComposition();
+    this.stopListeningToTouch();
+    document.removeEventListener('scroll', this.onScroll, true);
+  };
+
+  // ==============================
+  // Consumer Handlers
+  // ==============================
+  _proto.onMenuOpen = function onMenuOpen() {
+    this.props.onMenuOpen();
+  };
+
+  _proto.onMenuClose = function onMenuClose() {
+    var _this$props10 = this.props,
+        isSearchable = _this$props10.isSearchable,
+        isMulti = _this$props10.isMulti;
+    this.announceAriaLiveContext({
+      event: 'input',
+      context: {
+        isSearchable: isSearchable,
+        isMulti: isMulti
+      }
+    });
+    this.onInputChange('', {
+      action: 'menu-close'
+    });
+    this.props.onMenuClose();
+  };
+
+  _proto.onInputChange = function onInputChange(newValue, actionMeta) {
+    this.props.onInputChange(newValue, actionMeta);
+  } // ==============================
+  // Methods
+  // ==============================
+  ;
+
+  _proto.focusInput = function focusInput() {
+    if (!this.inputRef) return;
+    this.inputRef.focus();
+  };
+
+  _proto.blurInput = function blurInput() {
+    if (!this.inputRef) return;
+    this.inputRef.blur();
+  } // aliased for consumers
+  ;
+
+  _proto.openMenu = function openMenu(focusOption) {
+    var _this2 = this;
+
+    var _this$state3 = this.state,
+        selectValue = _this$state3.selectValue,
+        isFocused = _this$state3.isFocused;
+    var menuOptions = this.buildMenuOptions(this.props, selectValue);
+    var isMulti = this.props.isMulti;
+    var openAtIndex = focusOption === 'first' ? 0 : menuOptions.focusable.length - 1;
+
+    if (!isMulti) {
+      var selectedIndex = menuOptions.focusable.indexOf(selectValue[0]);
+
+      if (selectedIndex > -1) {
+        openAtIndex = selectedIndex;
+      }
+    } // only scroll if the menu isn't already open
+
+
+    this.scrollToFocusedOptionOnUpdate = !(isFocused && this.menuListRef);
+    this.inputIsHiddenAfterUpdate = false;
+    this.setState({
+      menuOptions: menuOptions,
+      focusedValue: null,
+      focusedOption: menuOptions.focusable[openAtIndex]
+    }, function () {
+      _this2.onMenuOpen();
+
+      _this2.announceAriaLiveContext({
+        event: 'menu'
+      });
+    });
+  };
+
+  _proto.focusValue = function focusValue(direction) {
+    var _this$props11 = this.props,
+        isMulti = _this$props11.isMulti,
+        isSearchable = _this$props11.isSearchable;
+    var _this$state4 = this.state,
+        selectValue = _this$state4.selectValue,
+        focusedValue = _this$state4.focusedValue; // Only multiselects support value focusing
+
+    if (!isMulti) return;
+    this.setState({
+      focusedOption: null
+    });
+    var focusedIndex = selectValue.indexOf(focusedValue);
+
+    if (!focusedValue) {
+      focusedIndex = -1;
+      this.announceAriaLiveContext({
+        event: 'value'
+      });
+    }
+
+    var lastIndex = selectValue.length - 1;
+    var nextFocus = -1;
+    if (!selectValue.length) return;
+
+    switch (direction) {
+      case 'previous':
+        if (focusedIndex === 0) {
+          // don't cycle from the start to the end
+          nextFocus = 0;
+        } else if (focusedIndex === -1) {
+          // if nothing is focused, focus the last value first
+          nextFocus = lastIndex;
+        } else {
+          nextFocus = focusedIndex - 1;
+        }
+
+        break;
+
+      case 'next':
+        if (focusedIndex > -1 && focusedIndex < lastIndex) {
+          nextFocus = focusedIndex + 1;
+        }
+
+        break;
+    }
+
+    if (nextFocus === -1) {
+      this.announceAriaLiveContext({
+        event: 'input',
+        context: {
+          isSearchable: isSearchable,
+          isMulti: isMulti
+        }
+      });
+    }
+
+    this.setState({
+      inputIsHidden: nextFocus !== -1,
+      focusedValue: selectValue[nextFocus]
+    });
+  };
+
+  _proto.focusOption = function focusOption(direction) {
+    if (direction === void 0) {
+      direction = 'first';
+    }
+
+    var pageSize = this.props.pageSize;
+    var _this$state5 = this.state,
+        focusedOption = _this$state5.focusedOption,
+        menuOptions = _this$state5.menuOptions;
+    var options = menuOptions.focusable;
+    if (!options.length) return;
+    var nextFocus = 0; // handles 'first'
+
+    var focusedIndex = options.indexOf(focusedOption);
+
+    if (!focusedOption) {
+      focusedIndex = -1;
+      this.announceAriaLiveContext({
+        event: 'menu'
+      });
+    }
+
+    if (direction === 'up') {
+      nextFocus = focusedIndex > 0 ? focusedIndex - 1 : options.length - 1;
+    } else if (direction === 'down') {
+      nextFocus = (focusedIndex + 1) % options.length;
+    } else if (direction === 'pageup') {
+      nextFocus = focusedIndex - pageSize;
+      if (nextFocus < 0) nextFocus = 0;
+    } else if (direction === 'pagedown') {
+      nextFocus = focusedIndex + pageSize;
+      if (nextFocus > options.length - 1) nextFocus = options.length - 1;
+    } else if (direction === 'last') {
+      nextFocus = options.length - 1;
+    }
+
+    this.scrollToFocusedOptionOnUpdate = true;
+    this.setState({
+      focusedOption: options[nextFocus],
+      focusedValue: null
+    });
+    this.announceAriaLiveContext({
+      event: 'menu',
+      context: {
+        isDisabled: isOptionDisabled(options[nextFocus])
+      }
+    });
+  };
+
+  // ==============================
+  // Getters
+  // ==============================
+  _proto.getTheme = function getTheme() {
+    // Use the default theme if there are no customizations.
+    if (!this.props.theme) {
+      return Select_9fdb8cd0_browser_esm_defaultTheme;
+    } // If the theme prop is a function, assume the function
+    // knows how to merge the passed-in default theme with
+    // its own modifications.
+
+
+    if (typeof this.props.theme === 'function') {
+      return this.props.theme(Select_9fdb8cd0_browser_esm_defaultTheme);
+    } // Otherwise, if a plain theme object was passed in,
+    // overlay it with the default theme.
+
+
+    return Select_9fdb8cd0_browser_esm_extends$4({}, Select_9fdb8cd0_browser_esm_defaultTheme, this.props.theme);
+  };
+
+  _proto.getCommonProps = function getCommonProps() {
+    var clearValue = this.clearValue,
+        getStyles = this.getStyles,
+        setValue = this.setValue,
+        selectOption = this.selectOption,
+        props = this.props;
+    var classNamePrefix = props.classNamePrefix,
+        isMulti = props.isMulti,
+        isRtl = props.isRtl,
+        options = props.options;
+    var selectValue = this.state.selectValue;
+    var hasValue = this.hasValue();
+
+    var getValue = function getValue() {
+      return selectValue;
+    };
+
+    var cx = classNames.bind(null, classNamePrefix);
+    return {
+      cx: cx,
+      clearValue: clearValue,
+      getStyles: getStyles,
+      getValue: getValue,
+      hasValue: hasValue,
+      isMulti: isMulti,
+      isRtl: isRtl,
+      options: options,
+      selectOption: selectOption,
+      setValue: setValue,
+      selectProps: props,
+      theme: this.getTheme()
+    };
+  };
+
+  _proto.getNextFocusedValue = function getNextFocusedValue(nextSelectValue) {
+    if (this.clearFocusValueOnUpdate) {
+      this.clearFocusValueOnUpdate = false;
+      return null;
+    }
+
+    var _this$state6 = this.state,
+        focusedValue = _this$state6.focusedValue,
+        lastSelectValue = _this$state6.selectValue;
+    var lastFocusedIndex = lastSelectValue.indexOf(focusedValue);
+
+    if (lastFocusedIndex > -1) {
+      var nextFocusedIndex = nextSelectValue.indexOf(focusedValue);
+
+      if (nextFocusedIndex > -1) {
+        // the focused value is still in the selectValue, return it
+        return focusedValue;
+      } else if (lastFocusedIndex < nextSelectValue.length) {
+        // the focusedValue is not present in the next selectValue array by
+        // reference, so return the new value at the same index
+        return nextSelectValue[lastFocusedIndex];
+      }
+    }
+
+    return null;
+  };
+
+  _proto.getNextFocusedOption = function getNextFocusedOption(options) {
+    var lastFocusedOption = this.state.focusedOption;
+    return lastFocusedOption && options.indexOf(lastFocusedOption) > -1 ? lastFocusedOption : options[0];
+  };
+
+  _proto.hasValue = function hasValue() {
+    var selectValue = this.state.selectValue;
+    return selectValue.length > 0;
+  };
+
+  _proto.hasOptions = function hasOptions() {
+    return !!this.state.menuOptions.render.length;
+  };
+
+  _proto.countOptions = function countOptions() {
+    return this.state.menuOptions.focusable.length;
+  };
+
+  _proto.isClearable = function isClearable() {
+    var _this$props12 = this.props,
+        isClearable = _this$props12.isClearable,
+        isMulti = _this$props12.isMulti; // single select, by default, IS NOT clearable
+    // multi select, by default, IS clearable
+
+    if (isClearable === undefined) return isMulti;
+    return isClearable;
+  };
+
+  _proto.isOptionDisabled = function isOptionDisabled(option, selectValue) {
+    return typeof this.props.isOptionDisabled === 'function' ? this.props.isOptionDisabled(option, selectValue) : false;
+  };
+
+  _proto.isOptionSelected = function isOptionSelected(option, selectValue) {
+    var _this3 = this;
+
+    if (selectValue.indexOf(option) > -1) return true;
+
+    if (typeof this.props.isOptionSelected === 'function') {
+      return this.props.isOptionSelected(option, selectValue);
+    }
+
+    var candidate = this.getOptionValue(option);
+    return selectValue.some(function (i) {
+      return _this3.getOptionValue(i) === candidate;
+    });
+  };
+
+  _proto.filterOption = function filterOption(option, inputValue) {
+    return this.props.filterOption ? this.props.filterOption(option, inputValue) : true;
+  };
+
+  _proto.formatOptionLabel = function formatOptionLabel(data, context) {
+    if (typeof this.props.formatOptionLabel === 'function') {
+      var inputValue = this.props.inputValue;
+      var selectValue = this.state.selectValue;
+      return this.props.formatOptionLabel(data, {
+        context: context,
+        inputValue: inputValue,
+        selectValue: selectValue
+      });
+    } else {
+      return this.getOptionLabel(data);
+    }
+  };
+
+  _proto.formatGroupLabel = function formatGroupLabel(data) {
+    return this.props.formatGroupLabel(data);
+  } // ==============================
+  // Mouse Handlers
+  // ==============================
+  ;
+
+  // ==============================
+  // Composition Handlers
+  // ==============================
+  _proto.startListeningComposition = function startListeningComposition() {
+    if (document && document.addEventListener) {
+      document.addEventListener('compositionstart', this.onCompositionStart, false);
+      document.addEventListener('compositionend', this.onCompositionEnd, false);
+    }
+  };
+
+  _proto.stopListeningComposition = function stopListeningComposition() {
+    if (document && document.removeEventListener) {
+      document.removeEventListener('compositionstart', this.onCompositionStart);
+      document.removeEventListener('compositionend', this.onCompositionEnd);
+    }
+  };
+
+  // ==============================
+  // Touch Handlers
+  // ==============================
+  _proto.startListeningToTouch = function startListeningToTouch() {
+    if (document && document.addEventListener) {
+      document.addEventListener('touchstart', this.onTouchStart, false);
+      document.addEventListener('touchmove', this.onTouchMove, false);
+      document.addEventListener('touchend', this.onTouchEnd, false);
+    }
+  };
+
+  _proto.stopListeningToTouch = function stopListeningToTouch() {
+    if (document && document.removeEventListener) {
+      document.removeEventListener('touchstart', this.onTouchStart);
+      document.removeEventListener('touchmove', this.onTouchMove);
+      document.removeEventListener('touchend', this.onTouchEnd);
+    }
+  };
+
+  // ==============================
+  // Renderers
+  // ==============================
+  _proto.constructAriaLiveMessage = function constructAriaLiveMessage() {
+    var _this$state7 = this.state,
+        ariaLiveContext = _this$state7.ariaLiveContext,
+        selectValue = _this$state7.selectValue,
+        focusedValue = _this$state7.focusedValue,
+        focusedOption = _this$state7.focusedOption;
+    var _this$props13 = this.props,
+        options = _this$props13.options,
+        menuIsOpen = _this$props13.menuIsOpen,
+        inputValue = _this$props13.inputValue,
+        screenReaderStatus = _this$props13.screenReaderStatus; // An aria live message representing the currently focused value in the select.
+
+    var focusedValueMsg = focusedValue ? valueFocusAriaMessage({
+      focusedValue: focusedValue,
+      getOptionLabel: this.getOptionLabel,
+      selectValue: selectValue
+    }) : ''; // An aria live message representing the currently focused option in the select.
+
+    var focusedOptionMsg = focusedOption && menuIsOpen ? optionFocusAriaMessage({
+      focusedOption: focusedOption,
+      getOptionLabel: this.getOptionLabel,
+      options: options
+    }) : ''; // An aria live message representing the set of focusable results and current searchterm/inputvalue.
+
+    var resultsMsg = resultsAriaMessage({
+      inputValue: inputValue,
+      screenReaderMessage: screenReaderStatus({
+        count: this.countOptions()
+      })
+    });
+    return focusedValueMsg + " " + focusedOptionMsg + " " + resultsMsg + " " + ariaLiveContext;
+  };
+
+  _proto.renderInput = function renderInput() {
+    var _this$props14 = this.props,
+        isDisabled = _this$props14.isDisabled,
+        isSearchable = _this$props14.isSearchable,
+        inputId = _this$props14.inputId,
+        inputValue = _this$props14.inputValue,
+        tabIndex = _this$props14.tabIndex;
+    var Input = this.components.Input;
+    var inputIsHidden = this.state.inputIsHidden;
+    var id = inputId || this.getElementId('input'); // aria attributes makes the JSX "noisy", separated for clarity
+
+    var ariaAttributes = {
+      'aria-autocomplete': 'list',
+      'aria-label': this.props['aria-label'],
+      'aria-labelledby': this.props['aria-labelledby']
+    };
+
+    if (!isSearchable) {
+      // use a dummy input to maintain focus/blur functionality
+      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(DummyInput, Select_9fdb8cd0_browser_esm_extends$4({
         id: id,
         innerRef: this.getInputRef,
-        isDisabled: isDisabled,
-        isHidden: inputIsHidden,
         onBlur: this.onInputBlur,
-        onChange: this.handleInputChange,
+        onChange: utils_06b0d5a4_browser_esm_noop,
         onFocus: this.onInputFocus,
-        selectProps: selectProps,
-        spellCheck: "false",
+        readOnly: true,
+        disabled: isDisabled,
         tabIndex: tabIndex,
-        theme: theme,
-        type: "text",
-        value: inputValue
+        value: ""
       }, ariaAttributes));
     }
-  }, {
-    key: "renderPlaceholderOrValue",
-    value: function renderPlaceholderOrValue() {
-      var _this4 = this;
 
-      var _this$components = this.components,
-          MultiValue = _this$components.MultiValue,
-          MultiValueContainer = _this$components.MultiValueContainer,
-          MultiValueLabel = _this$components.MultiValueLabel,
-          MultiValueRemove = _this$components.MultiValueRemove,
-          SingleValue = _this$components.SingleValue,
-          Placeholder = _this$components.Placeholder;
-      var commonProps = this.commonProps;
-      var _this$props15 = this.props,
-          controlShouldRenderValue = _this$props15.controlShouldRenderValue,
-          isDisabled = _this$props15.isDisabled,
-          isMulti = _this$props15.isMulti,
-          inputValue = _this$props15.inputValue,
-          placeholder = _this$props15.placeholder;
-      var _this$state8 = this.state,
-          selectValue = _this$state8.selectValue,
-          focusedValue = _this$state8.focusedValue,
-          isFocused = _this$state8.isFocused;
+    var _this$commonProps = this.commonProps,
+        cx = _this$commonProps.cx,
+        theme = _this$commonProps.theme,
+        selectProps = _this$commonProps.selectProps;
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Input, Select_9fdb8cd0_browser_esm_extends$4({
+      autoCapitalize: "none",
+      autoComplete: "off",
+      autoCorrect: "off",
+      cx: cx,
+      getStyles: this.getStyles,
+      id: id,
+      innerRef: this.getInputRef,
+      isDisabled: isDisabled,
+      isHidden: inputIsHidden,
+      onBlur: this.onInputBlur,
+      onChange: this.handleInputChange,
+      onFocus: this.onInputFocus,
+      selectProps: selectProps,
+      spellCheck: "false",
+      tabIndex: tabIndex,
+      theme: theme,
+      type: "text",
+      value: inputValue
+    }, ariaAttributes));
+  };
 
-      if (!this.hasValue() || !controlShouldRenderValue) {
-        return inputValue ? null : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Placeholder, _extends({}, commonProps, {
-          key: "placeholder",
-          isDisabled: isDisabled,
-          isFocused: isFocused
-        }), placeholder);
-      }
+  _proto.renderPlaceholderOrValue = function renderPlaceholderOrValue() {
+    var _this4 = this;
 
-      if (isMulti) {
-        var selectValues = selectValue.map(function (opt, index) {
-          var isOptionFocused = opt === focusedValue;
-          return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MultiValue, _extends({}, commonProps, {
-            components: {
-              Container: MultiValueContainer,
-              Label: MultiValueLabel,
-              Remove: MultiValueRemove
-            },
-            isFocused: isOptionFocused,
-            isDisabled: isDisabled,
-            key: _this4.getOptionValue(opt),
-            index: index,
-            removeProps: {
-              onClick: function onClick() {
-                return _this4.removeValue(opt);
-              },
-              onTouchEnd: function onTouchEnd() {
-                return _this4.removeValue(opt);
-              },
-              onMouseDown: function onMouseDown(e) {
-                e.preventDefault();
-                e.stopPropagation();
-              }
-            },
-            data: opt
-          }), _this4.formatOptionLabel(opt, 'value'));
-        });
-        return selectValues;
-      }
+    var _this$components = this.components,
+        MultiValue = _this$components.MultiValue,
+        MultiValueContainer = _this$components.MultiValueContainer,
+        MultiValueLabel = _this$components.MultiValueLabel,
+        MultiValueRemove = _this$components.MultiValueRemove,
+        SingleValue = _this$components.SingleValue,
+        Placeholder = _this$components.Placeholder;
+    var commonProps = this.commonProps;
+    var _this$props15 = this.props,
+        controlShouldRenderValue = _this$props15.controlShouldRenderValue,
+        isDisabled = _this$props15.isDisabled,
+        isMulti = _this$props15.isMulti,
+        inputValue = _this$props15.inputValue,
+        placeholder = _this$props15.placeholder;
+    var _this$state8 = this.state,
+        selectValue = _this$state8.selectValue,
+        focusedValue = _this$state8.focusedValue,
+        isFocused = _this$state8.isFocused;
 
-      if (inputValue) {
-        return null;
-      }
-
-      var singleValue = selectValue[0];
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SingleValue, _extends({}, commonProps, {
-        data: singleValue,
-        isDisabled: isDisabled
-      }), this.formatOptionLabel(singleValue, 'value'));
-    }
-  }, {
-    key: "renderClearIndicator",
-    value: function renderClearIndicator() {
-      var ClearIndicator = this.components.ClearIndicator;
-      var commonProps = this.commonProps;
-      var _this$props16 = this.props,
-          isDisabled = _this$props16.isDisabled,
-          isLoading = _this$props16.isLoading;
-      var isFocused = this.state.isFocused;
-
-      if (!this.isClearable() || !ClearIndicator || isDisabled || !this.hasValue() || isLoading) {
-        return null;
-      }
-
-      var innerProps = {
-        onMouseDown: this.onClearIndicatorMouseDown,
-        onTouchEnd: this.onClearIndicatorTouchEnd,
-        'aria-hidden': 'true'
-      };
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ClearIndicator, _extends({}, commonProps, {
-        innerProps: innerProps,
-        isFocused: isFocused
-      }));
-    }
-  }, {
-    key: "renderLoadingIndicator",
-    value: function renderLoadingIndicator() {
-      var LoadingIndicator = this.components.LoadingIndicator;
-      var commonProps = this.commonProps;
-      var _this$props17 = this.props,
-          isDisabled = _this$props17.isDisabled,
-          isLoading = _this$props17.isLoading;
-      var isFocused = this.state.isFocused;
-      if (!LoadingIndicator || !isLoading) return null;
-      var innerProps = {
-        'aria-hidden': 'true'
-      };
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LoadingIndicator, _extends({}, commonProps, {
-        innerProps: innerProps,
+    if (!this.hasValue() || !controlShouldRenderValue) {
+      return inputValue ? null : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Placeholder, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+        key: "placeholder",
         isDisabled: isDisabled,
         isFocused: isFocused
-      }));
+      }), placeholder);
     }
-  }, {
-    key: "renderIndicatorSeparator",
-    value: function renderIndicatorSeparator() {
-      var _this$components2 = this.components,
-          DropdownIndicator = _this$components2.DropdownIndicator,
-          IndicatorSeparator = _this$components2.IndicatorSeparator; // separator doesn't make sense without the dropdown indicator
 
-      if (!DropdownIndicator || !IndicatorSeparator) return null;
-      var commonProps = this.commonProps;
-      var isDisabled = this.props.isDisabled;
-      var isFocused = this.state.isFocused;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IndicatorSeparator, _extends({}, commonProps, {
-        isDisabled: isDisabled,
-        isFocused: isFocused
-      }));
-    }
-  }, {
-    key: "renderDropdownIndicator",
-    value: function renderDropdownIndicator() {
-      var DropdownIndicator = this.components.DropdownIndicator;
-      if (!DropdownIndicator) return null;
-      var commonProps = this.commonProps;
-      var isDisabled = this.props.isDisabled;
-      var isFocused = this.state.isFocused;
-      var innerProps = {
-        onMouseDown: this.onDropdownIndicatorMouseDown,
-        onTouchEnd: this.onDropdownIndicatorTouchEnd,
-        'aria-hidden': 'true'
-      };
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(DropdownIndicator, _extends({}, commonProps, {
-        innerProps: innerProps,
-        isDisabled: isDisabled,
-        isFocused: isFocused
-      }));
-    }
-  }, {
-    key: "renderMenu",
-    value: function renderMenu() {
-      var _this5 = this;
-
-      var _this$components3 = this.components,
-          Group = _this$components3.Group,
-          GroupHeading = _this$components3.GroupHeading,
-          Menu = _this$components3.Menu,
-          MenuList = _this$components3.MenuList,
-          MenuPortal = _this$components3.MenuPortal,
-          LoadingMessage = _this$components3.LoadingMessage,
-          NoOptionsMessage = _this$components3.NoOptionsMessage,
-          Option = _this$components3.Option;
-      var commonProps = this.commonProps;
-      var _this$state9 = this.state,
-          focusedOption = _this$state9.focusedOption,
-          menuOptions = _this$state9.menuOptions;
-      var _this$props18 = this.props,
-          captureMenuScroll = _this$props18.captureMenuScroll,
-          inputValue = _this$props18.inputValue,
-          isLoading = _this$props18.isLoading,
-          loadingMessage = _this$props18.loadingMessage,
-          minMenuHeight = _this$props18.minMenuHeight,
-          maxMenuHeight = _this$props18.maxMenuHeight,
-          menuIsOpen = _this$props18.menuIsOpen,
-          menuPlacement = _this$props18.menuPlacement,
-          menuPosition = _this$props18.menuPosition,
-          menuPortalTarget = _this$props18.menuPortalTarget,
-          menuShouldBlockScroll = _this$props18.menuShouldBlockScroll,
-          menuShouldScrollIntoView = _this$props18.menuShouldScrollIntoView,
-          noOptionsMessage = _this$props18.noOptionsMessage,
-          onMenuScrollToTop = _this$props18.onMenuScrollToTop,
-          onMenuScrollToBottom = _this$props18.onMenuScrollToBottom;
-      if (!menuIsOpen) return null; // TODO: Internal Option Type here
-
-      var render = function render(props) {
-        // for performance, the menu options in state aren't changed when the
-        // focused option changes so we calculate additional props based on that
-        var isFocused = focusedOption === props.data;
-        props.innerRef = isFocused ? _this5.getFocusedOptionRef : undefined;
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Option, _extends({}, commonProps, props, {
-          isFocused: isFocused
-        }), _this5.formatOptionLabel(props.data, 'menu'));
-      };
-
-      var menuUI;
-
-      if (this.hasOptions()) {
-        menuUI = menuOptions.render.map(function (item) {
-          if (item.type === 'group') {
-            var type = item.type,
-                group = _objectWithoutProperties(item, ["type"]);
-
-            var headingId = "".concat(item.key, "-heading");
-            return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Group, _extends({}, commonProps, group, {
-              Heading: GroupHeading,
-              headingProps: {
-                id: headingId
-              },
-              label: _this5.formatGroupLabel(item.data)
-            }), item.options.map(function (option) {
-              return render(option);
-            }));
-          } else if (item.type === 'option') {
-            return render(item);
-          }
-        });
-      } else if (isLoading) {
-        var message = loadingMessage({
-          inputValue: inputValue
-        });
-        if (message === null) return null;
-        menuUI = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LoadingMessage, commonProps, message);
-      } else {
-        var _message = noOptionsMessage({
-          inputValue: inputValue
-        });
-
-        if (_message === null) return null;
-        menuUI = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(NoOptionsMessage, commonProps, _message);
-      }
-
-      var menuPlacementProps = {
-        minMenuHeight: minMenuHeight,
-        maxMenuHeight: maxMenuHeight,
-        menuPlacement: menuPlacement,
-        menuPosition: menuPosition,
-        menuShouldScrollIntoView: menuShouldScrollIntoView
-      };
-      var menuElement = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(chunk_80640036_browser_esm_MenuPlacer, _extends({}, commonProps, menuPlacementProps), function (_ref6) {
-        var ref = _ref6.ref,
-            _ref6$placerProps = _ref6.placerProps,
-            placement = _ref6$placerProps.placement,
-            maxHeight = _ref6$placerProps.maxHeight;
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Menu, _extends({}, commonProps, menuPlacementProps, {
-          innerRef: ref,
-          innerProps: {
-            onMouseDown: _this5.onMenuMouseDown,
-            onMouseMove: _this5.onMenuMouseMove
+    if (isMulti) {
+      var selectValues = selectValue.map(function (opt, index) {
+        var isOptionFocused = opt === focusedValue;
+        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MultiValue, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+          components: {
+            Container: MultiValueContainer,
+            Label: MultiValueLabel,
+            Remove: MultiValueRemove
           },
-          isLoading: isLoading,
-          placement: placement
-        }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(react_select_cac0a5ae_browser_esm_ScrollCaptorSwitch, {
-          isEnabled: captureMenuScroll,
-          onTopArrive: onMenuScrollToTop,
-          onBottomArrive: onMenuScrollToBottom
-        }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(react_select_cac0a5ae_browser_esm_ScrollBlock, {
-          isEnabled: menuShouldBlockScroll
-        }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MenuList, _extends({}, commonProps, {
-          innerRef: _this5.getMenuListRef,
-          isLoading: isLoading,
-          maxHeight: maxHeight
-        }), menuUI))));
-      }); // positioning behaviour is almost identical for portalled and fixed,
-      // so we use the same component. the actual portalling logic is forked
-      // within the component based on `menuPosition`
-
-      return menuPortalTarget || menuPosition === 'fixed' ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MenuPortal, _extends({}, commonProps, {
-        appendTo: menuPortalTarget,
-        controlElement: this.controlRef,
-        menuPlacement: menuPlacement,
-        menuPosition: menuPosition
-      }), menuElement) : menuElement;
+          isFocused: isOptionFocused,
+          isDisabled: isDisabled,
+          key: _this4.getOptionValue(opt),
+          index: index,
+          removeProps: {
+            onClick: function onClick() {
+              return _this4.removeValue(opt);
+            },
+            onTouchEnd: function onTouchEnd() {
+              return _this4.removeValue(opt);
+            },
+            onMouseDown: function onMouseDown(e) {
+              e.preventDefault();
+              e.stopPropagation();
+            }
+          },
+          data: opt
+        }), _this4.formatOptionLabel(opt, 'value'));
+      });
+      return selectValues;
     }
-  }, {
-    key: "renderFormField",
-    value: function renderFormField() {
-      var _this6 = this;
 
-      var _this$props19 = this.props,
-          delimiter = _this$props19.delimiter,
-          isDisabled = _this$props19.isDisabled,
-          isMulti = _this$props19.isMulti,
-          name = _this$props19.name;
-      var selectValue = this.state.selectValue;
-      if (!name || isDisabled) return;
+    if (inputValue) {
+      return null;
+    }
 
-      if (isMulti) {
-        if (delimiter) {
-          var value = selectValue.map(function (opt) {
-            return _this6.getOptionValue(opt);
-          }).join(delimiter);
-          return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
-            name: name,
-            type: "hidden",
-            value: value
-          });
-        } else {
-          var input = selectValue.length > 0 ? selectValue.map(function (opt, i) {
-            return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
-              key: "i-".concat(i),
-              name: name,
-              type: "hidden",
-              value: _this6.getOptionValue(opt)
-            });
-          }) : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
-            name: name,
-            type: "hidden"
-          });
-          return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, input);
+    var singleValue = selectValue[0];
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SingleValue, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+      data: singleValue,
+      isDisabled: isDisabled
+    }), this.formatOptionLabel(singleValue, 'value'));
+  };
+
+  _proto.renderClearIndicator = function renderClearIndicator() {
+    var ClearIndicator = this.components.ClearIndicator;
+    var commonProps = this.commonProps;
+    var _this$props16 = this.props,
+        isDisabled = _this$props16.isDisabled,
+        isLoading = _this$props16.isLoading;
+    var isFocused = this.state.isFocused;
+
+    if (!this.isClearable() || !ClearIndicator || isDisabled || !this.hasValue() || isLoading) {
+      return null;
+    }
+
+    var innerProps = {
+      onMouseDown: this.onClearIndicatorMouseDown,
+      onTouchEnd: this.onClearIndicatorTouchEnd,
+      'aria-hidden': 'true'
+    };
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ClearIndicator, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+      innerProps: innerProps,
+      isFocused: isFocused
+    }));
+  };
+
+  _proto.renderLoadingIndicator = function renderLoadingIndicator() {
+    var LoadingIndicator = this.components.LoadingIndicator;
+    var commonProps = this.commonProps;
+    var _this$props17 = this.props,
+        isDisabled = _this$props17.isDisabled,
+        isLoading = _this$props17.isLoading;
+    var isFocused = this.state.isFocused;
+    if (!LoadingIndicator || !isLoading) return null;
+    var innerProps = {
+      'aria-hidden': 'true'
+    };
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LoadingIndicator, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+      innerProps: innerProps,
+      isDisabled: isDisabled,
+      isFocused: isFocused
+    }));
+  };
+
+  _proto.renderIndicatorSeparator = function renderIndicatorSeparator() {
+    var _this$components2 = this.components,
+        DropdownIndicator = _this$components2.DropdownIndicator,
+        IndicatorSeparator = _this$components2.IndicatorSeparator; // separator doesn't make sense without the dropdown indicator
+
+    if (!DropdownIndicator || !IndicatorSeparator) return null;
+    var commonProps = this.commonProps;
+    var isDisabled = this.props.isDisabled;
+    var isFocused = this.state.isFocused;
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IndicatorSeparator, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+      isDisabled: isDisabled,
+      isFocused: isFocused
+    }));
+  };
+
+  _proto.renderDropdownIndicator = function renderDropdownIndicator() {
+    var DropdownIndicator = this.components.DropdownIndicator;
+    if (!DropdownIndicator) return null;
+    var commonProps = this.commonProps;
+    var isDisabled = this.props.isDisabled;
+    var isFocused = this.state.isFocused;
+    var innerProps = {
+      onMouseDown: this.onDropdownIndicatorMouseDown,
+      onTouchEnd: this.onDropdownIndicatorTouchEnd,
+      'aria-hidden': 'true'
+    };
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(DropdownIndicator, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+      innerProps: innerProps,
+      isDisabled: isDisabled,
+      isFocused: isFocused
+    }));
+  };
+
+  _proto.renderMenu = function renderMenu() {
+    var _this5 = this;
+
+    var _this$components3 = this.components,
+        Group = _this$components3.Group,
+        GroupHeading = _this$components3.GroupHeading,
+        Menu = _this$components3.Menu,
+        MenuList = _this$components3.MenuList,
+        MenuPortal = _this$components3.MenuPortal,
+        LoadingMessage = _this$components3.LoadingMessage,
+        NoOptionsMessage = _this$components3.NoOptionsMessage,
+        Option = _this$components3.Option;
+    var commonProps = this.commonProps;
+    var _this$state9 = this.state,
+        focusedOption = _this$state9.focusedOption,
+        menuOptions = _this$state9.menuOptions;
+    var _this$props18 = this.props,
+        captureMenuScroll = _this$props18.captureMenuScroll,
+        inputValue = _this$props18.inputValue,
+        isLoading = _this$props18.isLoading,
+        loadingMessage = _this$props18.loadingMessage,
+        minMenuHeight = _this$props18.minMenuHeight,
+        maxMenuHeight = _this$props18.maxMenuHeight,
+        menuIsOpen = _this$props18.menuIsOpen,
+        menuPlacement = _this$props18.menuPlacement,
+        menuPosition = _this$props18.menuPosition,
+        menuPortalTarget = _this$props18.menuPortalTarget,
+        menuShouldBlockScroll = _this$props18.menuShouldBlockScroll,
+        menuShouldScrollIntoView = _this$props18.menuShouldScrollIntoView,
+        noOptionsMessage = _this$props18.noOptionsMessage,
+        onMenuScrollToTop = _this$props18.onMenuScrollToTop,
+        onMenuScrollToBottom = _this$props18.onMenuScrollToBottom;
+    if (!menuIsOpen) return null; // TODO: Internal Option Type here
+
+    var render = function render(props) {
+      // for performance, the menu options in state aren't changed when the
+      // focused option changes so we calculate additional props based on that
+      var isFocused = focusedOption === props.data;
+      props.innerRef = isFocused ? _this5.getFocusedOptionRef : undefined;
+      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Option, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, props, {
+        isFocused: isFocused
+      }), _this5.formatOptionLabel(props.data, 'menu'));
+    };
+
+    var menuUI;
+
+    if (this.hasOptions()) {
+      menuUI = menuOptions.render.map(function (item) {
+        if (item.type === 'group') {
+          var type = item.type,
+              group = Select_9fdb8cd0_browser_esm_objectWithoutPropertiesLoose$2(item, ["type"]);
+
+          var headingId = item.key + "-heading";
+          return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Group, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, group, {
+            Heading: GroupHeading,
+            headingProps: {
+              id: headingId
+            },
+            label: _this5.formatGroupLabel(item.data)
+          }), item.options.map(function (option) {
+            return render(option);
+          }));
+        } else if (item.type === 'option') {
+          return render(item);
         }
-      } else {
-        var _value = selectValue[0] ? this.getOptionValue(selectValue[0]) : '';
+      });
+    } else if (isLoading) {
+      var message = loadingMessage({
+        inputValue: inputValue
+      });
+      if (message === null) return null;
+      menuUI = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LoadingMessage, commonProps, message);
+    } else {
+      var _message = noOptionsMessage({
+        inputValue: inputValue
+      });
 
+      if (_message === null) return null;
+      menuUI = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(NoOptionsMessage, commonProps, _message);
+    }
+
+    var menuPlacementProps = {
+      minMenuHeight: minMenuHeight,
+      maxMenuHeight: maxMenuHeight,
+      menuPlacement: menuPlacement,
+      menuPosition: menuPosition,
+      menuShouldScrollIntoView: menuShouldScrollIntoView
+    };
+    var menuElement = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MenuPlacer, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, menuPlacementProps), function (_ref8) {
+      var ref = _ref8.ref,
+          _ref8$placerProps = _ref8.placerProps,
+          placement = _ref8$placerProps.placement,
+          maxHeight = _ref8$placerProps.maxHeight;
+      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Menu, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, menuPlacementProps, {
+        innerRef: ref,
+        innerProps: {
+          onMouseDown: _this5.onMenuMouseDown,
+          onMouseMove: _this5.onMenuMouseMove
+        },
+        isLoading: isLoading,
+        placement: placement
+      }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ScrollCaptorSwitch, {
+        isEnabled: captureMenuScroll,
+        onTopArrive: onMenuScrollToTop,
+        onBottomArrive: onMenuScrollToBottom
+      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Select_9fdb8cd0_browser_esm_ScrollBlock, {
+        isEnabled: menuShouldBlockScroll
+      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MenuList, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+        innerRef: _this5.getMenuListRef,
+        isLoading: isLoading,
+        maxHeight: maxHeight
+      }), menuUI))));
+    }); // positioning behaviour is almost identical for portalled and fixed,
+    // so we use the same component. the actual portalling logic is forked
+    // within the component based on `menuPosition`
+
+    return menuPortalTarget || menuPosition === 'fixed' ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MenuPortal, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+      appendTo: menuPortalTarget,
+      controlElement: this.controlRef,
+      menuPlacement: menuPlacement,
+      menuPosition: menuPosition
+    }), menuElement) : menuElement;
+  };
+
+  _proto.renderFormField = function renderFormField() {
+    var _this6 = this;
+
+    var _this$props19 = this.props,
+        delimiter = _this$props19.delimiter,
+        isDisabled = _this$props19.isDisabled,
+        isMulti = _this$props19.isMulti,
+        name = _this$props19.name;
+    var selectValue = this.state.selectValue;
+    if (!name || isDisabled) return;
+
+    if (isMulti) {
+      if (delimiter) {
+        var value = selectValue.map(function (opt) {
+          return _this6.getOptionValue(opt);
+        }).join(delimiter);
         return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
           name: name,
           type: "hidden",
-          value: _value
+          value: value
         });
+      } else {
+        var input = selectValue.length > 0 ? selectValue.map(function (opt, i) {
+          return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
+            key: "i-" + i,
+            name: name,
+            type: "hidden",
+            value: _this6.getOptionValue(opt)
+          });
+        }) : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
+          name: name,
+          type: "hidden"
+        });
+        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, input);
       }
+    } else {
+      var _value2 = selectValue[0] ? this.getOptionValue(selectValue[0]) : '';
+
+      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
+        name: name,
+        type: "hidden",
+        value: _value2
+      });
     }
-  }, {
-    key: "renderLiveRegion",
-    value: function renderLiveRegion() {
-      if (!this.state.isFocused) return null;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(react_select_cac0a5ae_browser_esm_A11yText, {
-        "aria-live": "polite"
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", {
-        id: "aria-selection-event"
-      }, "\xA0", this.state.ariaLiveSelection), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", {
-        id: "aria-context"
-      }, "\xA0", this.constructAriaLiveMessage()));
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$components4 = this.components,
-          Control = _this$components4.Control,
-          IndicatorsContainer = _this$components4.IndicatorsContainer,
-          SelectContainer = _this$components4.SelectContainer,
-          ValueContainer = _this$components4.ValueContainer;
-      var _this$props20 = this.props,
-          className = _this$props20.className,
-          id = _this$props20.id,
-          isDisabled = _this$props20.isDisabled,
-          menuIsOpen = _this$props20.menuIsOpen;
-      var isFocused = this.state.isFocused;
-      var commonProps = this.commonProps = this.getCommonProps();
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SelectContainer, _extends({}, commonProps, {
-        className: className,
-        innerProps: {
-          id: id,
-          onKeyDown: this.onKeyDown
-        },
-        isDisabled: isDisabled,
-        isFocused: isFocused
-      }), this.renderLiveRegion(), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Control, _extends({}, commonProps, {
-        innerRef: this.getControlRef,
-        innerProps: {
-          onMouseDown: this.onControlMouseDown,
-          onTouchEnd: this.onControlTouchEnd
-        },
-        isDisabled: isDisabled,
-        isFocused: isFocused,
-        menuIsOpen: menuIsOpen
-      }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ValueContainer, _extends({}, commonProps, {
-        isDisabled: isDisabled
-      }), this.renderPlaceholderOrValue(), this.renderInput()), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IndicatorsContainer, _extends({}, commonProps, {
-        isDisabled: isDisabled
-      }), this.renderClearIndicator(), this.renderLoadingIndicator(), this.renderIndicatorSeparator(), this.renderDropdownIndicator())), this.renderMenu(), this.renderFormField());
-    }
-  }]);
+  };
+
+  _proto.renderLiveRegion = function renderLiveRegion() {
+    if (!this.state.isFocused) return null;
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Select_9fdb8cd0_browser_esm_A11yText, {
+      "aria-live": "polite"
+    }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", {
+      id: "aria-selection-event"
+    }, "\xA0", this.state.ariaLiveSelection), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", {
+      id: "aria-context"
+    }, "\xA0", this.constructAriaLiveMessage()));
+  };
+
+  _proto.render = function render() {
+    var _this$components4 = this.components,
+        Control = _this$components4.Control,
+        IndicatorsContainer = _this$components4.IndicatorsContainer,
+        SelectContainer = _this$components4.SelectContainer,
+        ValueContainer = _this$components4.ValueContainer;
+    var _this$props20 = this.props,
+        className = _this$props20.className,
+        id = _this$props20.id,
+        isDisabled = _this$props20.isDisabled,
+        menuIsOpen = _this$props20.menuIsOpen;
+    var isFocused = this.state.isFocused;
+    var commonProps = this.commonProps = this.getCommonProps();
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SelectContainer, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+      className: className,
+      innerProps: {
+        id: id,
+        onKeyDown: this.onKeyDown
+      },
+      isDisabled: isDisabled,
+      isFocused: isFocused
+    }), this.renderLiveRegion(), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Control, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+      innerRef: this.getControlRef,
+      innerProps: {
+        onMouseDown: this.onControlMouseDown,
+        onTouchEnd: this.onControlTouchEnd
+      },
+      isDisabled: isDisabled,
+      isFocused: isFocused,
+      menuIsOpen: menuIsOpen
+    }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ValueContainer, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+      isDisabled: isDisabled
+    }), this.renderPlaceholderOrValue(), this.renderInput()), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IndicatorsContainer, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
+      isDisabled: isDisabled
+    }), this.renderClearIndicator(), this.renderLoadingIndicator(), this.renderIndicatorSeparator(), this.renderDropdownIndicator())), this.renderMenu(), this.renderFormField());
+  };
 
   return Select;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
 
-_defineProperty(react_select_cac0a5ae_browser_esm_Select, "defaultProps", react_select_cac0a5ae_browser_esm_defaultProps);
+Select_9fdb8cd0_browser_esm_Select.defaultProps = Select_9fdb8cd0_browser_esm_defaultProps;
 
 
 
-// CONCATENATED MODULE: ./node_modules/react-select/dist/chunk-b36baf1a.browser.esm.js
+// CONCATENATED MODULE: ./node_modules/react-select/dist/stateManager-04f734a2.browser.esm.js
 
 
+function stateManager_04f734a2_browser_esm_extends() { stateManager_04f734a2_browser_esm_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return stateManager_04f734a2_browser_esm_extends.apply(this, arguments); }
 
+function stateManager_04f734a2_browser_esm_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-
-
-
-
-
-
-
-var chunk_b36baf1a_browser_esm_defaultProps = {
+function stateManager_04f734a2_browser_esm_inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+var stateManager_04f734a2_browser_esm_defaultProps = {
   defaultInputValue: '',
   defaultMenuIsOpen: false,
   defaultValue: null
 };
 
-var chunk_b36baf1a_browser_esm_manageState = function manageState(SelectComponent) {
+var stateManager_04f734a2_browser_esm_manageState = function manageState(SelectComponent) {
   var _class, _temp;
 
   return _temp = _class =
   /*#__PURE__*/
   function (_Component) {
-    _inherits(StateManager, _Component);
+    stateManager_04f734a2_browser_esm_inheritsLoose(StateManager, _Component);
 
     function StateManager() {
-      var _getPrototypeOf2;
-
       var _this;
-
-      _classCallCheck(this, StateManager);
 
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
 
-      _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(StateManager)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-      _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "select", void 0);
-
-      _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
+      _this = _Component.call.apply(_Component, [this].concat(args)) || this;
+      _this.select = void 0;
+      _this.state = {
         inputValue: _this.props.inputValue !== undefined ? _this.props.inputValue : _this.props.defaultInputValue,
         menuIsOpen: _this.props.menuIsOpen !== undefined ? _this.props.menuIsOpen : _this.props.defaultMenuIsOpen,
         value: _this.props.value !== undefined ? _this.props.value : _this.props.defaultValue
-      });
+      };
 
-      _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onChange", function (value, actionMeta) {
+      _this.onChange = function (value, actionMeta) {
         _this.callProp('onChange', value, actionMeta);
 
         _this.setState({
           value: value
         });
-      });
+      };
 
-      _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onInputChange", function (value, actionMeta) {
+      _this.onInputChange = function (value, actionMeta) {
         // TODO: for backwards compatibility, we allow the prop to return a new
         // value, but now inputValue is a controllable prop we probably shouldn't
         var newValue = _this.callProp('onInputChange', value, actionMeta);
@@ -46360,85 +47398,80 @@ var chunk_b36baf1a_browser_esm_manageState = function manageState(SelectComponen
         _this.setState({
           inputValue: newValue !== undefined ? newValue : value
         });
-      });
+      };
 
-      _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onMenuOpen", function () {
+      _this.onMenuOpen = function () {
         _this.callProp('onMenuOpen');
 
         _this.setState({
           menuIsOpen: true
         });
-      });
+      };
 
-      _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onMenuClose", function () {
+      _this.onMenuClose = function () {
         _this.callProp('onMenuClose');
 
         _this.setState({
           menuIsOpen: false
         });
-      });
+      };
 
       return _this;
     }
 
-    _createClass(StateManager, [{
-      key: "focus",
-      value: function focus() {
-        this.select.focus();
-      }
-    }, {
-      key: "blur",
-      value: function blur() {
-        this.select.blur();
-      } // FIXME: untyped flow code, return any
+    var _proto = StateManager.prototype;
 
-    }, {
-      key: "getProp",
-      value: function getProp(key) {
-        return this.props[key] !== undefined ? this.props[key] : this.state[key];
-      } // FIXME: untyped flow code, return any
+    _proto.focus = function focus() {
+      this.select.focus();
+    };
 
-    }, {
-      key: "callProp",
-      value: function callProp(name) {
-        if (typeof this.props[name] === 'function') {
-          var _this$props;
+    _proto.blur = function blur() {
+      this.select.blur();
+    } // FIXME: untyped flow code, return any
+    ;
 
-          for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-            args[_key2 - 1] = arguments[_key2];
-          }
+    _proto.getProp = function getProp(key) {
+      return this.props[key] !== undefined ? this.props[key] : this.state[key];
+    } // FIXME: untyped flow code, return any
+    ;
 
-          return (_this$props = this.props)[name].apply(_this$props, args);
+    _proto.callProp = function callProp(name) {
+      if (typeof this.props[name] === 'function') {
+        var _this$props;
+
+        for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+          args[_key2 - 1] = arguments[_key2];
         }
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        var _this2 = this;
 
-        var _this$props2 = this.props,
-            defaultInputValue = _this$props2.defaultInputValue,
-            defaultMenuIsOpen = _this$props2.defaultMenuIsOpen,
-            defaultValue = _this$props2.defaultValue,
-            props = _objectWithoutProperties(_this$props2, ["defaultInputValue", "defaultMenuIsOpen", "defaultValue"]);
-
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SelectComponent, _extends({}, props, {
-          ref: function ref(_ref) {
-            _this2.select = _ref;
-          },
-          inputValue: this.getProp('inputValue'),
-          menuIsOpen: this.getProp('menuIsOpen'),
-          onChange: this.onChange,
-          onInputChange: this.onInputChange,
-          onMenuClose: this.onMenuClose,
-          onMenuOpen: this.onMenuOpen,
-          value: this.getProp('value')
-        }));
+        return (_this$props = this.props)[name].apply(_this$props, args);
       }
-    }]);
+    };
+
+    _proto.render = function render() {
+      var _this2 = this;
+
+      var _this$props2 = this.props,
+          defaultInputValue = _this$props2.defaultInputValue,
+          defaultMenuIsOpen = _this$props2.defaultMenuIsOpen,
+          defaultValue = _this$props2.defaultValue,
+          props = stateManager_04f734a2_browser_esm_objectWithoutPropertiesLoose(_this$props2, ["defaultInputValue", "defaultMenuIsOpen", "defaultValue"]);
+
+      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SelectComponent, stateManager_04f734a2_browser_esm_extends({}, props, {
+        ref: function ref(_ref) {
+          _this2.select = _ref;
+        },
+        inputValue: this.getProp('inputValue'),
+        menuIsOpen: this.getProp('menuIsOpen'),
+        onChange: this.onChange,
+        onInputChange: this.onInputChange,
+        onMenuClose: this.onMenuClose,
+        onMenuOpen: this.onMenuOpen,
+        value: this.getProp('value')
+      }));
+    };
 
     return StateManager;
-  }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]), _defineProperty(_class, "defaultProps", chunk_b36baf1a_browser_esm_defaultProps), _temp;
+  }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]), _class.defaultProps = stateManager_04f734a2_browser_esm_defaultProps, _temp;
 };
 
 
@@ -46458,55 +47491,41 @@ var chunk_b36baf1a_browser_esm_manageState = function manageState(SelectComponen
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+function react_select_browser_esm_inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
 
 var react_select_browser_esm_NonceProvider =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(NonceProvider, _Component);
+  react_select_browser_esm_inheritsLoose(NonceProvider, _Component);
 
   function NonceProvider(props) {
     var _this;
 
-    _classCallCheck(this, NonceProvider);
+    _this = _Component.call(this, props) || this;
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(NonceProvider).call(this, props));
-
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "createEmotionCache", function (nonce) {
+    _this.createEmotionCache = function (nonce) {
       return cache_browser_esm({
         nonce: nonce
       });
-    });
+    };
 
     _this.createEmotionCache = memoize_one_esm(_this.createEmotionCache);
     return _this;
   }
 
-  _createClass(NonceProvider, [{
-    key: "render",
-    value: function render() {
-      var emotionCache = this.createEmotionCache(this.props.nonce);
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CacheProvider, {
-        value: emotionCache
-      }, this.props.children);
-    }
-  }]);
+  var _proto = NonceProvider.prototype;
+
+  _proto.render = function render() {
+    var emotionCache = this.createEmotionCache(this.props.nonce);
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CacheProvider, {
+      value: emotionCache
+    }, this.props.children);
+  };
 
   return NonceProvider;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
 
-var react_select_browser_esm_index = chunk_b36baf1a_browser_esm_manageState(react_select_cac0a5ae_browser_esm_Select);
+var react_select_browser_esm_index = stateManager_04f734a2_browser_esm_manageState(Select_9fdb8cd0_browser_esm_Select);
 
 /* harmony default export */ var react_select_browser_esm = (react_select_browser_esm_index);
 
@@ -46516,7 +47535,7 @@ var react_select_browser_esm_index = chunk_b36baf1a_browser_esm_manageState(reac
 
 
 
-var RSDropdownIndicator = chunk_80640036_browser_esm_components.DropdownIndicator;
+var RSDropdownIndicator = index_4322c0ed_browser_esm_components.DropdownIndicator;
 
 var DropdownIndicator_LUKDropdownIndicator = function LUKDropdownIndicator(props) {
   var _props$selectProps = props.selectProps,
@@ -46534,13 +47553,15 @@ var DropdownIndicator_LUKDropdownIndicator = function LUKDropdownIndicator(props
   if (typeof icon === 'function') {
     finalIcon = icon();
   } else if (isPlainObject_default()(icon)) {
-    finalIcon = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+    finalIcon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
       icon: icon,
       fixedWidth: true
     });
   }
 
-  return (// eslint-disable-next-line react/jsx-props-no-spreading
+  return (
+    /*#__PURE__*/
+    // eslint-disable-next-line react/jsx-props-no-spreading
     external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(RSDropdownIndicator, props, finalIcon)
   );
 };
@@ -46567,7 +47588,7 @@ var SelectOption_SelectOption = function SelectOption(_ref) {
   var finalProps = Object.assign(props, {
     innerProps: finalInnerProps
   });
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(chunk_80640036_browser_esm_components.Option, finalProps, children);
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(index_4322c0ed_browser_esm_components.Option, finalProps, children);
 };
 /* eslint-enable */
 
@@ -46591,10 +47612,12 @@ var ValueContainer_ValueContainer = function ValueContainer(_ref) {
       props = objectWithoutProperties_default()(_ref, ["children", "selectProps"]);
 
   var inputIcon = selectProps.inputIcon;
-  return chunk_80640036_browser_esm_components.ValueContainer && // eslint-disable-next-line react/jsx-props-no-spreading
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(chunk_80640036_browser_esm_components.ValueContainer, extends_default()({
+  return index_4322c0ed_browser_esm_components.ValueContainer &&
+  /*#__PURE__*/
+  // eslint-disable-next-line react/jsx-props-no-spreading
+  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(index_4322c0ed_browser_esm_components.ValueContainer, extends_default()({
     selectProps: selectProps
-  }, props), inputIcon && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ValueContainer_IconWrapper, null, inputIcon), children);
+  }, props), inputIcon && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ValueContainer_IconWrapper, null, inputIcon), children);
 };
 
 ValueContainer_ValueContainer.defaultProps = {
@@ -46615,20 +47638,22 @@ function SelectController_ownKeys(object, enumerableOnly) { var keys = Object.ke
 
 function SelectController_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { SelectController_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { SelectController_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
+function SelectController_createSuper(Derived) { var hasNativeReflectConstruct = SelectController_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function SelectController_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
 
 
 
-var SelectController_SelectController =
-/*#__PURE__*/
-function (_Component) {
+
+var SelectController_SelectController = /*#__PURE__*/function (_Component) {
   inherits_default()(SelectController, _Component);
 
-  function SelectController() {
-    var _getPrototypeOf2;
+  var _super = SelectController_createSuper(SelectController);
 
+  function SelectController() {
     var _this;
 
     classCallCheck_default()(this, SelectController);
@@ -46637,7 +47662,7 @@ function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(SelectController)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     defineProperty_default()(assertThisInitialized_default()(_this), "handleChangeRawValues", function (selectedOption, event) {
       var onChange = _this.props.onChange;
@@ -46706,9 +47731,9 @@ function (_Component) {
         DropdownIndicator: styled_DropdownIndicator
       };
 
-      var components = SelectController_objectSpread({}, defaultComponents, {}, props.components);
+      var components = SelectController_objectSpread(SelectController_objectSpread({}, defaultComponents), props.components);
 
-      return SelectController_objectSpread({}, props, {
+      return SelectController_objectSpread(SelectController_objectSpread({}, props), {}, {
         components: components
       });
     });
@@ -46721,7 +47746,7 @@ function (_Component) {
           value = _this$props2.value,
           rest = objectWithoutProperties_default()(_this$props2, ["onChange", "render", "useRawValues", "value"]);
 
-      var overrideProps = SelectController_objectSpread({}, rest, {
+      var overrideProps = SelectController_objectSpread(SelectController_objectSpread({}, rest), {}, {
         onChange: _this.handleChangeRawValues
       });
 
@@ -46746,7 +47771,7 @@ function (_Component) {
           rest = objectWithoutProperties_default()(_this$props3, ["useRawValues", "render"]);
 
       var composedProps = this.composeProps(SelectController_objectSpread({}, rest));
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, useRawValues ? this.renderWithDataOverrides() : render(composedProps));
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, useRawValues ? this.renderWithDataOverrides() : render(composedProps));
     }
   }]);
 
@@ -46768,7 +47793,7 @@ defineProperty_default()(SelectController_SelectController, "defaultProps", {
 
 
 var Select_defaultProps = {
-  filterOption: react_select_cac0a5ae_browser_esm_createFilter({
+  filterOption: createFilter({
     ignoreAccents: false
   }),
   menuPlacement: 'auto',
@@ -46777,10 +47802,10 @@ var Select_defaultProps = {
 /* eslint-disable react/jsx-props-no-spreading */
 
 var Select_Select = function Select(props) {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_SelectController, extends_default()({}, props, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_SelectController, extends_default()({}, props, {
     // eslint-disable-line indent
     render: function render(selectProps) {
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(react_select_browser_esm, mergeDeep$1(Select_defaultProps, selectProps));
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(react_select_browser_esm, mergeDeep$1(Select_defaultProps, selectProps));
     }
   }));
 };
@@ -46801,22 +47826,15 @@ var Select_Select = function Select(props) {
 
 
 
+function dist_react_select_browser_esm_inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
 
+function react_select_browser_esm_extends() { react_select_browser_esm_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return react_select_browser_esm_extends.apply(this, arguments); }
 
+var compareOption = function compareOption(inputValue, option) {
+  if (inputValue === void 0) {
+    inputValue = '';
+  }
 
-
-
-
-
-
-
-
-
-
-
-var compareOption = function compareOption() {
-  var inputValue = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-  var option = arguments.length > 1 ? arguments[1] : undefined;
   var candidate = String(inputValue).toLowerCase();
   var optionValue = String(option.value).toLowerCase();
   var optionLabel = String(option.label).toLowerCase();
@@ -46825,7 +47843,7 @@ var compareOption = function compareOption() {
 
 var builtins = {
   formatCreateLabel: function formatCreateLabel(inputValue) {
-    return "Create \"".concat(inputValue, "\"");
+    return "Create \"" + inputValue + "\"";
   },
   isValidNewOption: function isValidNewOption(inputValue, selectValue, selectOptions) {
     return !(!inputValue || selectValue.some(function (option) {
@@ -46842,7 +47860,7 @@ var builtins = {
     };
   }
 };
-var react_select_browser_esm_defaultProps = objectSpread_objectSpread({
+var react_select_browser_esm_defaultProps = react_select_browser_esm_extends({
   allowCreateWhileLoading: false,
   createOptionPosition: 'last'
 }, builtins);
@@ -46852,18 +47870,15 @@ var react_select_browser_esm_makeCreatableSelect = function makeCreatableSelect(
   return _temp = _class =
   /*#__PURE__*/
   function (_Component) {
-    _inherits(Creatable, _Component);
+    dist_react_select_browser_esm_inheritsLoose(Creatable, _Component);
 
     function Creatable(props) {
       var _this;
 
-      _classCallCheck(this, Creatable);
+      _this = _Component.call(this, props) || this;
+      _this.select = void 0;
 
-      _this = _possibleConstructorReturn(this, _getPrototypeOf(Creatable).call(this, props));
-
-      _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "select", void 0);
-
-      _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onChange", function (newValue, actionMeta) {
+      _this.onChange = function (newValue, actionMeta) {
         var _this$props = _this.props,
             getNewOptionData = _this$props.getNewOptionData,
             inputValue = _this$props.inputValue,
@@ -46889,7 +47904,7 @@ var react_select_browser_esm_makeCreatableSelect = function makeCreatableSelect(
             };
 
             if (isMulti) {
-              onChange([].concat(_toConsumableArray(chunk_39d3fda8_browser_esm_cleanValue(value)), [newOptionData]), newActionMeta);
+              onChange([].concat(cleanValue(value), [newOptionData]), newActionMeta);
             } else {
               onChange(newOptionData, newActionMeta);
             }
@@ -46898,7 +47913,7 @@ var react_select_browser_esm_makeCreatableSelect = function makeCreatableSelect(
         }
 
         onChange(newValue, actionMeta);
-      });
+      };
 
       var options = props.options || [];
       _this.state = {
@@ -46908,63 +47923,59 @@ var react_select_browser_esm_makeCreatableSelect = function makeCreatableSelect(
       return _this;
     }
 
-    _createClass(Creatable, [{
-      key: "UNSAFE_componentWillReceiveProps",
-      value: function UNSAFE_componentWillReceiveProps(nextProps) {
-        var allowCreateWhileLoading = nextProps.allowCreateWhileLoading,
-            createOptionPosition = nextProps.createOptionPosition,
-            formatCreateLabel = nextProps.formatCreateLabel,
-            getNewOptionData = nextProps.getNewOptionData,
-            inputValue = nextProps.inputValue,
-            isLoading = nextProps.isLoading,
-            isValidNewOption = nextProps.isValidNewOption,
-            value = nextProps.value;
-        var options = nextProps.options || [];
-        var newOption = this.state.newOption;
+    var _proto = Creatable.prototype;
 
-        if (isValidNewOption(inputValue, chunk_39d3fda8_browser_esm_cleanValue(value), options)) {
-          newOption = getNewOptionData(inputValue, formatCreateLabel(inputValue));
-        } else {
-          newOption = undefined;
-        }
+    _proto.UNSAFE_componentWillReceiveProps = function UNSAFE_componentWillReceiveProps(nextProps) {
+      var allowCreateWhileLoading = nextProps.allowCreateWhileLoading,
+          createOptionPosition = nextProps.createOptionPosition,
+          formatCreateLabel = nextProps.formatCreateLabel,
+          getNewOptionData = nextProps.getNewOptionData,
+          inputValue = nextProps.inputValue,
+          isLoading = nextProps.isLoading,
+          isValidNewOption = nextProps.isValidNewOption,
+          value = nextProps.value;
+      var options = nextProps.options || [];
+      var newOption = this.state.newOption;
 
-        this.setState({
-          newOption: newOption,
-          options: (allowCreateWhileLoading || !isLoading) && newOption ? createOptionPosition === 'first' ? [newOption].concat(_toConsumableArray(options)) : [].concat(_toConsumableArray(options), [newOption]) : options
-        });
+      if (isValidNewOption(inputValue, cleanValue(value), options)) {
+        newOption = getNewOptionData(inputValue, formatCreateLabel(inputValue));
+      } else {
+        newOption = undefined;
       }
-    }, {
-      key: "focus",
-      value: function focus() {
-        this.select.focus();
-      }
-    }, {
-      key: "blur",
-      value: function blur() {
-        this.select.blur();
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        var _this2 = this;
 
-        var options = this.state.options;
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SelectComponent, _extends({}, this.props, {
-          ref: function ref(_ref) {
-            _this2.select = _ref;
-          },
-          options: options,
-          onChange: this.onChange
-        }));
-      }
-    }]);
+      this.setState({
+        newOption: newOption,
+        options: (allowCreateWhileLoading || !isLoading) && newOption ? createOptionPosition === 'first' ? [newOption].concat(options) : [].concat(options, [newOption]) : options
+      });
+    };
+
+    _proto.focus = function focus() {
+      this.select.focus();
+    };
+
+    _proto.blur = function blur() {
+      this.select.blur();
+    };
+
+    _proto.render = function render() {
+      var _this2 = this;
+
+      var options = this.state.options;
+      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SelectComponent, react_select_browser_esm_extends({}, this.props, {
+        ref: function ref(_ref) {
+          _this2.select = _ref;
+        },
+        options: options,
+        onChange: this.onChange
+      }));
+    };
 
     return Creatable;
-  }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]), _defineProperty(_class, "defaultProps", react_select_browser_esm_defaultProps), _temp;
+  }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]), _class.defaultProps = react_select_browser_esm_defaultProps, _temp;
 }; // TODO: do this in package entrypoint
 
-var SelectCreatable = react_select_browser_esm_makeCreatableSelect(react_select_cac0a5ae_browser_esm_Select);
-var react_select_browser_esm_Creatable = chunk_b36baf1a_browser_esm_manageState(SelectCreatable);
+var SelectCreatable = react_select_browser_esm_makeCreatableSelect(Select_9fdb8cd0_browser_esm_Select);
+var react_select_browser_esm_Creatable = stateManager_04f734a2_browser_esm_manageState(SelectCreatable);
 
 /* harmony default export */ var dist_react_select_browser_esm = (react_select_browser_esm_Creatable);
 
@@ -46978,7 +47989,7 @@ var react_select_browser_esm_Creatable = chunk_b36baf1a_browser_esm_manageState(
 
 
 var Creatable_defaultProps = {
-  filterOption: react_select_cac0a5ae_browser_esm_createFilter({
+  filterOption: createFilter({
     ignoreAccents: false
   }),
   menuPlacement: 'auto',
@@ -46987,10 +47998,10 @@ var Creatable_defaultProps = {
 /* eslint-disable react/jsx-props-no-spreading */
 
 var Creatable_Creatable = function Creatable(props) {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_SelectController, extends_default()({}, props, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_SelectController, extends_default()({}, props, {
     // eslint-disable-line indent
     render: function render(selectProps) {
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(dist_react_select_browser_esm, mergeDeep$1(Creatable_defaultProps, selectProps));
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(dist_react_select_browser_esm, mergeDeep$1(Creatable_defaultProps, selectProps));
     }
   }));
 };
@@ -47010,9 +48021,9 @@ var CheckboxOption_Option = function Option(props) {
       label = props.label;
   /* eslint-disable react/jsx-props-no-spreading */
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_SelectOption, extends_default()({}, props, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_SelectOption, extends_default()({}, props, {
     isCheckBoxOption: true
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Checkbox, {
+  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Checkbox, {
     checked: isSelected,
     label: label,
     disabled: isDisabled,
@@ -47039,7 +48050,7 @@ var CheckboxSelect_defaultProps = {
     ValueContainer: styled_ValueContainer
   },
   closeMenuOnSelect: false,
-  filterOption: react_select_cac0a5ae_browser_esm_createFilter({
+  filterOption: createFilter({
     ignoreAccents: false
   }),
   hideSelectedOptions: false,
@@ -47050,10 +48061,10 @@ var CheckboxSelect_defaultProps = {
 /* eslint-disable react/jsx-props-no-spreading */
 
 var CheckboxSelect_CheckboxSelect = function CheckboxSelect(props) {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_SelectController, extends_default()({}, props, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_SelectController, extends_default()({}, props, {
     // eslint-disable-line indent
     render: function render(selectProps) {
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(react_select_browser_esm, mergeDeep$1(selectProps, CheckboxSelect_defaultProps));
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(react_select_browser_esm, mergeDeep$1(selectProps, CheckboxSelect_defaultProps));
     }
   }));
 };
@@ -47074,9 +48085,14 @@ var CheckboxSelect_CheckboxSelect = function CheckboxSelect(props) {
 
 
 
+function AppHeaderWrapper_createSuper(Derived) { var hasNativeReflectConstruct = AppHeaderWrapper_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function AppHeaderWrapper_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
 function AppHeaderWrapper_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function AppHeaderWrapper_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { AppHeaderWrapper_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { AppHeaderWrapper_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 
 
 
@@ -47112,9 +48128,9 @@ var NavigationToggleWrapper = external_amd_styled_components_commonjs_styled_com
   componentId: "krtes7-2"
 })(["align-items:center;color:", ";cursor:pointer;display:flex;font-size:16px;height:32px;justify-content:center;margin-left:21px;margin-right:-9px;width:32px;&:hover{color:", ";}"], AppHeaderWrapper_NEUTRALS[1], AppHeaderWrapper_NEUTRALS[0]);
 
-var organizationsSelectStyles = AppHeaderWrapper_objectSpread({}, selectStyles, {
+var organizationsSelectStyles = AppHeaderWrapper_objectSpread(AppHeaderWrapper_objectSpread({}, selectStyles), {}, {
   container: function container(base, state) {
-    return AppHeaderWrapper_objectSpread({}, select_containerStyles(base, state), {
+    return AppHeaderWrapper_objectSpread(AppHeaderWrapper_objectSpread({}, select_containerStyles(base, state)), {}, {
       // the following are not ideal, but it's tricky figuring out how to make it flex perfectly in all cases
       flex: '1 1 auto',
       maxWidth: '300px',
@@ -47122,7 +48138,7 @@ var organizationsSelectStyles = AppHeaderWrapper_objectSpread({}, selectStyles, 
     });
   },
   control: function control(base, state) {
-    return AppHeaderWrapper_objectSpread({}, select_controlStyles(base, state), {
+    return AppHeaderWrapper_objectSpread(AppHeaderWrapper_objectSpread({}, select_controlStyles(base, state)), {}, {
       fontSize: '12px',
       lineHeight: 1.5,
       minHeight: '36px' // to match log out button total height
@@ -47130,7 +48146,7 @@ var organizationsSelectStyles = AppHeaderWrapper_objectSpread({}, selectStyles, 
     });
   },
   option: function option(base, state) {
-    return AppHeaderWrapper_objectSpread({}, select_optionStyles(base, state), {
+    return AppHeaderWrapper_objectSpread(AppHeaderWrapper_objectSpread({}, select_optionStyles(base, state)), {}, {
       fontSize: '12px'
     });
   }
@@ -47138,7 +48154,7 @@ var organizationsSelectStyles = AppHeaderWrapper_objectSpread({}, selectStyles, 
 
 var AppHeaderWrapper_AppIcon = function AppIcon(_ref2) {
   var icon = _ref2.icon;
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("img", {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("img", {
     alt: "OpenLattice Application Icon",
     src: icon
   });
@@ -47147,20 +48163,20 @@ var AppHeaderWrapper_AppIcon = function AppIcon(_ref2) {
 var AppHeaderWrapper_AppTitle = function AppTitle(_ref3) {
   var _ref3$title = _ref3.title,
       title = _ref3$title === void 0 ? 'OpenLattice' : _ref3$title;
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("h1", null, title);
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("h1", null, title);
 };
 
-var AppHeaderWrapper_AppHeaderWrapper =
-/*#__PURE__*/
-function (_Component) {
+var AppHeaderWrapper_AppHeaderWrapper = /*#__PURE__*/function (_Component) {
   inherits_default()(AppHeaderWrapper, _Component);
+
+  var _super = AppHeaderWrapper_createSuper(AppHeaderWrapper);
 
   function AppHeaderWrapper(props) {
     var _this;
 
     classCallCheck_default()(this, AppHeaderWrapper);
 
-    _this = possibleConstructorReturn_default()(this, getPrototypeOf_default()(AppHeaderWrapper).call(this, props));
+    _this = _super.call(this, props);
 
     defineProperty_default()(assertThisInitialized_default()(_this), "headerRef", external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createRef());
 
@@ -47313,10 +48329,10 @@ function (_Component) {
       var selectedOrganizationOption = organizationOptions.find(function (option) {
         return option.value === organizationsSelect.selectedOrganizationId;
       });
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(HeaderSectionContentWrapper, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(HeaderSectionContentWrapper, {
         align: "right",
         ref: _this.rightRef
-      }, user && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, user), organizationOptions.length > 0 && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Select, {
+      }, user && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, user), organizationOptions.length > 0 && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Select, {
         isClearable: false,
         isDisabled: organizationsSelect.isDisabled,
         isLoading: organizationsSelect.isLoading,
@@ -47327,11 +48343,11 @@ function (_Component) {
         placeholder: "Select an organization...",
         styles: organizationsSelectStyles,
         value: selectedOrganizationOption
-      }), renderLogOutButton ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LogoutButton, {
+      }), renderLogOutButton && isFunction_default()(logout) && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LogoutButton, {
         onClick: logout
-      }, "Log Out") : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(NavigationToggleWrapper, {
+      }, "Log Out"), !renderLogOutButton && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(NavigationToggleWrapper, {
         onClick: _this.toggleNavigation
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
         icon: faBars["faBars"]
       })));
     });
@@ -47384,11 +48400,11 @@ function (_Component) {
         headerBounds = this.headerRef.current.getBoundingClientRect();
       }
 
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppHeaderOuterWrapper, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppHeaderOuterWrapper, {
         className: className,
         ref: this.headerRef,
         onClick: this.handleOnClickHeader
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppHeaderInnerWrapper, null,
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppHeaderInnerWrapper, null,
       /*
        * this block is expected to handle the following examples:
        *
@@ -47400,12 +48416,12 @@ function (_Component) {
        *       <AppNavigationWrapper />
        *     </AppHeaderWrapper>
        */
-      navigationChildrenCount === 0 && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_NavigationWrapper, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("a", {
+      navigationChildrenCount === 0 && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_NavigationWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("a", {
         href: window.location.href,
         className: APP_NAV_ROOT
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(AppHeaderWrapper_AppIcon, {
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(AppHeaderWrapper_AppIcon, {
         icon: appIcon
-      }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(AppHeaderWrapper_AppTitle, {
+      }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(AppHeaderWrapper_AppTitle, {
         title: appTitle
       }))),
       /*
@@ -47435,12 +48451,12 @@ function (_Component) {
       navigationChildrenCount > 0 && external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
         // the 1st child is expected to be <AppNavigationWrapper />
         if (index === 0 && child.type.name === App_AppNavigationWrapper.name) {
-          return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_NavigationWrapper, {
+          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_NavigationWrapper, {
             ref: _this2.nav1Ref
           }, external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(child.props.children, function (navChild, navIndex) {
             // the 1st child is expected to be the root route, i.e. the app icon + app title
             if (navIndex === 0) {
-              return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(navChild, AppHeaderWrapper_objectSpread({}, navChild.props, {
+              return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(navChild, AppHeaderWrapper_objectSpread(AppHeaderWrapper_objectSpread({}, navChild.props), {}, {
                 className: APP_NAV_ROOT
               }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(AppHeaderWrapper_AppIcon, {
                 icon: appIcon
@@ -47470,7 +48486,7 @@ function (_Component) {
        *     </AppNavigationWrapper>
        *   </AppHeaderWrapper>
        */
-      handleNavigationWrapping && navigationChildrenCount > 1 && shouldWrapNavigation && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(App_AppNavigationWrapper, {
+      handleNavigationWrapping && navigationChildrenCount > 1 && shouldWrapNavigation && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(App_AppNavigationWrapper, {
         className: className,
         ref: this.nav2Ref
       }, external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
@@ -47502,7 +48518,7 @@ function (_Component) {
       !handleNavigationWrapping && navigationChildrenCount > 0 && external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
         // the 1st child is expected to be <AppNavigationWrapper ... />
         if (index === 0) {
-          return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(App_AppNavigationWrapper, {
+          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(App_AppNavigationWrapper, {
             drawer: child.props.drawer,
             headerBounds: headerBounds,
             isOpen: isNavigationOpen,
@@ -47510,7 +48526,7 @@ function (_Component) {
           }, external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(child.props.children, function (navChild, navIndex) {
             return (// the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
               // processed above and moved into the header, so we want to return null here
-              navIndex === 0 ? null : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(navChild, AppHeaderWrapper_objectSpread({}, navChild.props, {
+              navIndex === 0 ? null : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(navChild, AppHeaderWrapper_objectSpread(AppHeaderWrapper_objectSpread({}, navChild.props), {}, {
                 onClick: _this2.closeNavigation
               }))
             );
@@ -47528,7 +48544,7 @@ function (_Component) {
 
 defineProperty_default()(AppHeaderWrapper_AppHeaderWrapper, "defaultProps", {
   className: undefined,
-  logout: function logout() {},
+  logout: undefined,
   organizationsSelect: {},
   user: undefined
 });
@@ -47666,13 +48682,13 @@ var CardStack = external_amd_styled_components_commonjs_styled_components_common
 
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-duotone-svg-icons/faSort.js
-var faSort = __webpack_require__(82);
+var faSort = __webpack_require__(85);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-duotone-svg-icons/faSortUp.js
-var faSortUp = __webpack_require__(83);
+var faSortUp = __webpack_require__(86);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-duotone-svg-icons/faSortDown.js
-var faSortDown = __webpack_require__(84);
+var faSortDown = __webpack_require__(87);
 
 // CONCATENATED MODULE: ./src/table/src/components/styled/index.js
 
@@ -47732,12 +48748,12 @@ var HeadCell_HeadCell = function HeadCell(props) {
   var icon = faSort["faSort"];
   if (order === 'asc') icon = faSortUp["faSortUp"];
   if (order === 'desc') icon = faSortDown["faSortDown"];
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Cell, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Cell, {
     as: "th",
     cellStyle: cellStyle,
     className: className,
     onClick: onClick
-  }, children, sortable && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+  }, children, sortable && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
     icon: icon,
     fixedWidth: true
   })));
@@ -47752,13 +48768,13 @@ HeadCell_HeadCell.defaultProps = {
 };
 /* harmony default export */ var components_HeadCell = (HeadCell_HeadCell);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faChevronLeft.js
-var faChevronLeft = __webpack_require__(86);
+var faChevronLeft = __webpack_require__(89);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faChevronRight.js
 var faChevronRight = __webpack_require__(39);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/toConsumableArray.js
-var toConsumableArray = __webpack_require__(85);
+var toConsumableArray = __webpack_require__(88);
 var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableArray);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/typeof.js
@@ -47901,29 +48917,29 @@ var PaginationToolbar_PaginationToolbar = function PaginationToolbar(props) {
     }, event);
   };
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(PaginationWrapper, null, options.length > 1 && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(PaginationWrapper, null, options.length > 1 && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
     subtle: true
-  }, "Rows per page"), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(RowPerPageWrapper, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Select, {
+  }, "Rows per page"), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(RowPerPageWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Select, {
     borderless: true,
     defaultValue: options[0],
     onChange: handleRowsPerPage,
     options: options,
     value: rowsPerPage,
     useRawValues: true
-  }))), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
+  }))), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
     id: "row-range",
     subtle: true
-  }, rowRange), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, {
+  }, rowRange), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, {
     mode: "subtle",
-    icon: external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+    icon: /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
       icon: faChevronLeft["faChevronLeft"],
       fixedWidth: true
     }),
     disabled: page <= 0,
     onClick: getPageChanger(-1)
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, {
+  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, {
     mode: "subtle",
-    icon: external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+    icon: /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
       icon: faChevronRight["faChevronRight"],
       fixedWidth: true
     }),
@@ -47963,9 +48979,9 @@ var TableHeader_TableHeader = function TableHeader(props) {
     };
   };
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("thead", {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("thead", {
     className: className
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledRow, {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledRow, {
     sticky: sticky
   }, headers && headers.map(function (header) {
     var cellStyle = header.cellStyle,
@@ -47973,7 +48989,7 @@ var TableHeader_TableHeader = function TableHeader(props) {
         label = header.label,
         _header$sortable = header.sortable,
         sortable = _header$sortable === void 0 ? true : _header$sortable;
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.HeadCell, {
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.HeadCell, {
       key: key,
       components: components,
       cellStyle: cellStyle,
@@ -48019,34 +49035,34 @@ var TableBody_TableBody = function TableBody(props) {
 
   if (isLoading) {
     emptyHeight = "".concat(rowsPerPage * 24 + (rowsPerPage - 1) * 21, "px");
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("tbody", {
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("tbody", {
       className: className
-    }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledRow, {
+    }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledRow, {
       id: "empty-row-filler"
-    }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Cell, {
+    }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Cell, {
       colSpan: headers.length,
       cellStyle: {
         height: emptyHeight,
         textAlign: 'center'
       }
-    }, isLoading && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, {
+    }, isLoading && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, {
       size: "2x"
     }))));
   }
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("tbody", {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("tbody", {
     className: className
   }, dataByPage.map(function (rowData) {
     var id = rowData.id;
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Row, {
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Row, {
       key: id,
       data: rowData,
       headers: headers,
       components: components
     });
-  }), !!emptyRowCount && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledRow, {
+  }), !!emptyRowCount && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledRow, {
     id: "empty-row-filler"
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Cell, {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Cell, {
     colSpan: headers.length,
     cellStyle: {
       height: emptyHeight
@@ -48074,11 +49090,11 @@ var TableRow_TableRow = function TableRow(props) {
       headers = props.headers;
   var id = data.id;
   var cells = headers.map(function (header) {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Cell, {
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Cell, {
       key: "".concat(id, "_cell_").concat(header.key)
     }, data[header.key]);
   });
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledRow, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledRow, {
     className: className
   }, cells);
 };
@@ -48177,29 +49193,29 @@ var Table_Table = function Table(props) {
     setRowsPerPage(newRowsPerPage);
 
     if (isFunction_default()(onPageChange)) {
-      onPageChange(Table_objectSpread({}, payload, {
+      onPageChange(Table_objectSpread(Table_objectSpread({}, payload), {}, {
         column: orderBy,
         order: order
       }), event);
     }
   }, [onPageChange, order, orderBy]);
 
-  var components = Table_objectSpread({}, Table_defaultComponents, {}, propComponents);
+  var components = Table_objectSpread(Table_objectSpread({}, Table_defaultComponents), propComponents);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, paginated && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Pagination, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, paginated && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Pagination, {
     count: rowCount,
     onPageChange: handlePageChange,
     page: currentPage,
     rowsPerPage: rowsPerPage,
     rowsPerPageOptions: rowsPerPageOptions
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledTable, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Header, {
+  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledTable, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Header, {
     components: components,
     headers: headers,
     order: order,
     orderBy: orderBy,
     onSort: handleSort,
     sticky: true
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Body, {
+  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Body, {
     components: components,
     data: data,
     headers: headers,
@@ -48209,7 +49225,7 @@ var Table_Table = function Table(props) {
     orderBy: orderBy,
     rowsPerPage: rowsPerPage,
     page: currentPage
-  })), paginated && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Pagination, {
+  })), paginated && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Pagination, {
     count: rowCount,
     onPageChange: handlePageChange,
     page: currentPage,
@@ -48284,18 +49300,21 @@ var Image = external_amd_styled_components_commonjs_styled_components_commonjs2_
 
 
 
+function DataGrid_createSuper(Derived) { var hasNativeReflectConstruct = DataGrid_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function DataGrid_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
 
-var DataGrid_DataGrid =
-/*#__PURE__*/
-function (_Component) {
+
+
+var DataGrid_DataGrid = /*#__PURE__*/function (_Component) {
   inherits_default()(DataGrid, _Component);
 
-  function DataGrid() {
-    var _getPrototypeOf2;
+  var _super = DataGrid_createSuper(DataGrid);
 
+  function DataGrid() {
     var _this;
 
     classCallCheck_default()(this, DataGrid);
@@ -48304,7 +49323,7 @@ function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(DataGrid)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     defineProperty_default()(assertThisInitialized_default()(_this), "transformDataToDetailsList", function () {
       var _this$props = _this.props,
@@ -48345,15 +49364,15 @@ function (_Component) {
           columns = _this$props2.columns,
           truncate = _this$props2.truncate;
       var details = this.transformDataToDetailsList();
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultGrid, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultGrid, {
         className: className,
         columns: columns
       }, details && details.map(function (detail, index) {
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
           key: index.toString()
-        }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
+        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
           subtle: true
-        }, detail.get('label', '')), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Text, {
+        }, detail.get('label', '')), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Text, {
           truncate: truncate
         }, detail.get('value', '')));
       }));
@@ -48381,20 +49400,23 @@ defineProperty_default()(DataGrid_DataGrid, "defaultProps", {
 
 
 
+function Result_createSuper(Derived) { var hasNativeReflectConstruct = Result_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function Result_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
 
 
 
-var Result_Result =
-/*#__PURE__*/
-function (_Component) {
+
+
+var Result_Result = /*#__PURE__*/function (_Component) {
   inherits_default()(Result, _Component);
 
-  function Result() {
-    var _getPrototypeOf2;
+  var _super = Result_createSuper(Result);
 
+  function Result() {
     var _this;
 
     classCallCheck_default()(this, Result);
@@ -48403,7 +49425,7 @@ function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(Result)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     defineProperty_default()(assertThisInitialized_default()(_this), "handleClick", function () {
       var _this$props = _this.props,
@@ -48426,10 +49448,10 @@ function (_Component) {
           result = _this$props2.result,
           resultColumns = _this$props2.resultColumns,
           resultLabels = _this$props2.resultLabels;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Card_Card, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Card_Card, {
         className: className,
         onClick: this.handleClick
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultWrapper, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultDetails, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_DataGrid, {
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultDetails, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_DataGrid, {
         columns: resultColumns,
         data: result,
         labelMap: resultLabels
@@ -48449,7 +49471,7 @@ defineProperty_default()(Result_Result, "defaultProps", {
 
 /* harmony default export */ var components_Result = (Result_Result);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faSearchMinus.js
-var faSearchMinus = __webpack_require__(87);
+var faSearchMinus = __webpack_require__(90);
 
 // CONCATENATED MODULE: ./src/components/search/src/components/IconSplash.js
 
@@ -48458,6 +49480,11 @@ var faSearchMinus = __webpack_require__(87);
 
 
 
+
+
+function IconSplash_createSuper(Derived) { var hasNativeReflectConstruct = IconSplash_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function IconSplash_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -48469,14 +49496,12 @@ var FigureWrapper = external_amd_styled_components_commonjs_styled_components_co
   componentId: "sc-1cajf7r-0"
 })(["display:flex;flex-direction:column;justify-content:center;margin:10px auto;text-align:center;> div:first-child{margin-bottom:10px;}figcaption{color:", ";font-size:16px;font-weight:600;line-height:22px;margin:0 auto;text-align:center;width:100%;}"], NEUTRALS[1]);
 
-var IconSplash_IconSplash =
-/*#__PURE__*/
-function (_Component) {
+var IconSplash_IconSplash = /*#__PURE__*/function (_Component) {
   inherits_default()(IconSplash, _Component);
 
-  function IconSplash() {
-    var _getPrototypeOf2;
+  var _super = IconSplash_createSuper(IconSplash);
 
+  function IconSplash() {
     var _this;
 
     classCallCheck_default()(this, IconSplash);
@@ -48485,7 +49510,7 @@ function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(IconSplash)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     defineProperty_default()(assertThisInitialized_default()(_this), "renderIcon", function () {
       var _this$props = _this.props,
@@ -48493,12 +49518,12 @@ function (_Component) {
           size = _this$props.size;
 
       if (icon) {
-        var content = typeof icon === 'function' ? icon(size) : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+        var content = typeof icon === 'function' ? icon(size) : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
           icon: icon,
           size: size,
           fixedWidth: true
         });
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, content);
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, content);
       }
 
       return null;
@@ -48513,9 +49538,9 @@ function (_Component) {
       var _this$props2 = this.props,
           className = _this$props2.className,
           caption = _this$props2.caption;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FigureWrapper, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FigureWrapper, {
         className: className
-      }, this.renderIcon(), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("figcaption", null, caption));
+      }, this.renderIcon(), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("figcaption", null, caption));
     }
   }]);
 
@@ -48539,6 +49564,9 @@ defineProperty_default()(IconSplash_IconSplash, "defaultProps", {
 
 
 
+function SearchResults_createSuper(Derived) { var hasNativeReflectConstruct = SearchResults_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function SearchResults_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -48546,14 +49574,14 @@ defineProperty_default()(IconSplash_IconSplash, "defaultProps", {
 
 
 
-var SearchResults_SearchResults =
-/*#__PURE__*/
-function (_Component) {
+
+
+var SearchResults_SearchResults = /*#__PURE__*/function (_Component) {
   inherits_default()(SearchResults, _Component);
 
-  function SearchResults() {
-    var _getPrototypeOf2;
+  var _super = SearchResults_createSuper(SearchResults);
 
+  function SearchResults() {
     var _this;
 
     classCallCheck_default()(this, SearchResults);
@@ -48562,7 +49590,7 @@ function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(SearchResults)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     defineProperty_default()(assertThisInitialized_default()(_this), "renderResults", function () {
       var _this$props = _this.props,
@@ -48573,13 +49601,13 @@ function (_Component) {
           ResultComponent = _this$props.resultComponent,
           resultLabels = _this$props.resultLabels,
           results = _this$props.results;
-      if (isLoading) return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, {
+      if (isLoading) return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, {
         size: "2x"
       });
 
       if (immutable_es_List.isList(results) && results.count() && ResultComponent) {
         return results.map(function (result, index) {
-          return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultComponent, {
+          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultComponent, {
             key: index.toString(),
             onClick: onResultClick,
             result: result,
@@ -48590,7 +49618,7 @@ function (_Component) {
       }
 
       if (hasSearched && NoResults) {
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(NoResults, null);
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(NoResults, null);
       }
 
       return null;
@@ -48603,7 +49631,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       var className = this.props.className;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CardStack_CardStack, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CardStack_CardStack, {
         className: className
       }, this.renderResults());
     }
@@ -48617,7 +49645,7 @@ defineProperty_default()(SearchResults_SearchResults, "defaultProps", {
   hasSearched: false,
   isLoading: false,
   noResults: function noResults() {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconSplash, {
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconSplash, {
       icon: faSearchMinus["faSearchMinus"],
       caption: "No results"
     });
@@ -48633,14 +49661,14 @@ defineProperty_default()(SearchResults_SearchResults, "defaultProps", {
 
 
 
-function styles_makeStyles_makeStyles(stylesOrCreator) {
+function makeStyles_makeStyles(stylesOrCreator) {
   var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  return makeStyles_makeStyles(stylesOrCreator, _extends({
+  return makeStyles(stylesOrCreator, _extends({
     defaultTheme: styles_defaultTheme
   }, options));
 }
 
-/* harmony default export */ var styles_makeStyles = (styles_makeStyles_makeStyles);
+/* harmony default export */ var styles_makeStyles = (makeStyles_makeStyles);
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Typography/Typography.js
 
 
@@ -48793,7 +49821,7 @@ var defaultVariantMapping = {
   body1: 'p',
   body2: 'p'
 };
-var Typography_Typography = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Typography(props, ref) {
+var Typography_Typography = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Typography(props, ref) {
   var _props$align = props.align,
       align = _props$align === void 0 ? 'inherit' : _props$align,
       classes = props.classes,
@@ -48816,7 +49844,7 @@ var Typography_Typography = external_root_React_commonjs2_react_commonjs_react_a
       other = _objectWithoutProperties(props, ["align", "classes", "className", "color", "component", "display", "gutterBottom", "noWrap", "paragraph", "variant", "variantMapping"]);
 
   var Component = component || (paragraph ? 'p' : variantMapping[variant] || defaultVariantMapping[variant]) || 'span';
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
     className: clsx_m(classes.root, className, variant !== 'inherit' && classes[variant], color !== 'initial' && classes["color".concat(capitalize(color))], noWrap && classes.noWrap, gutterBottom && classes.gutterBottom, paragraph && classes.paragraph, align !== 'inherit' && classes["align".concat(capitalize(align))], display !== 'initial' && classes["display".concat(capitalize(display))]),
     ref: ref
   }, other));
@@ -48925,7 +49953,7 @@ var Button_styles = function styles(theme) {
       padding: '5px 15px',
       border: "1px solid ".concat(theme.palette.type === 'light' ? 'rgba(0, 0, 0, 0.23)' : 'rgba(255, 255, 255, 0.23)'),
       '&$disabled': {
-        border: "1px solid ".concat(theme.palette.action.disabled)
+        border: "1px solid ".concat(theme.palette.action.disabledBackground)
       }
     },
 
@@ -49134,7 +50162,7 @@ var Button_styles = function styles(theme) {
     }
   };
 };
-var Button_Button_Button = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Button(props, ref) {
+var Button_Button_Button = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Button(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -49161,13 +50189,13 @@ var Button_Button_Button = external_root_React_commonjs2_react_commonjs_react_am
       variant = _props$variant === void 0 ? 'text' : _props$variant,
       other = _objectWithoutProperties(props, ["children", "classes", "className", "color", "component", "disabled", "disableElevation", "disableFocusRipple", "endIcon", "focusVisibleClassName", "fullWidth", "size", "startIcon", "type", "variant"]);
 
-  var startIcon = startIconProp && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+  var startIcon = startIconProp && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
     className: clsx_m(classes.startIcon, classes["iconSize".concat(capitalize(size))])
   }, startIconProp);
-  var endIcon = endIconProp && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+  var endIcon = endIconProp && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
     className: clsx_m(classes.endIcon, classes["iconSize".concat(capitalize(size))])
   }, endIconProp);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_ButtonBase_ButtonBase, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_ButtonBase_ButtonBase, _extends({
     className: clsx_m(classes.root, classes[variant], className, color === 'inherit' ? classes.colorInherit : color !== 'default' && classes["".concat(variant).concat(capitalize(color))], size !== 'medium' && [classes["".concat(variant, "Size").concat(capitalize(size))], classes["size".concat(capitalize(size))]], disableElevation && classes.disableElevation, disabled && classes.disabled, fullWidth && classes.fullWidth),
     component: component,
     disabled: disabled,
@@ -49175,7 +50203,7 @@ var Button_Button_Button = external_root_React_commonjs2_react_commonjs_react_am
     focusVisibleClassName: clsx_m(classes.focusVisible, focusVisibleClassName),
     ref: ref,
     type: type
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
     className: classes.label
   }, startIcon, children, endIcon));
 });
@@ -49218,7 +50246,7 @@ var Toolbar_styles = function styles(theme) {
     }
   };
 };
-var Toolbar_Toolbar = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Toolbar(props, ref) {
+var Toolbar_Toolbar = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Toolbar(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
@@ -49229,7 +50257,7 @@ var Toolbar_Toolbar = external_root_React_commonjs2_react_commonjs_react_amd_rea
       variant = _props$variant === void 0 ? 'regular' : _props$variant,
       other = _objectWithoutProperties(props, ["classes", "className", "component", "disableGutters", "variant"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
     className: clsx_m(classes.root, classes[variant], className, !disableGutters && classes.gutters),
     ref: ref
   }, other));
@@ -49262,14 +50290,14 @@ var DialogActions_styles = {
     }
   }
 };
-var DialogActions_DialogActions = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function DialogActions(props, ref) {
+var DialogActions_DialogActions = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function DialogActions(props, ref) {
   var _props$disableSpacing = props.disableSpacing,
       disableSpacing = _props$disableSpacing === void 0 ? false : _props$disableSpacing,
       classes = props.classes,
       className = props.className,
       other = _objectWithoutProperties(props, ["disableSpacing", "classes", "className"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", _extends({
     className: clsx_m(classes.root, className, !disableSpacing && classes.spacing),
     ref: ref
   }, other));
@@ -49308,14 +50336,14 @@ var DialogContent_styles = function styles(theme) {
     }
   };
 };
-var DialogContent_DialogContent = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function DialogContent(props, ref) {
+var DialogContent_DialogContent = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function DialogContent(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$dividers = props.dividers,
       dividers = _props$dividers === void 0 ? false : _props$dividers,
       other = _objectWithoutProperties(props, ["classes", "className", "dividers"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", _extends({
     className: clsx_m(classes.root, className, dividers && classes.dividers),
     ref: ref
   }, other));
@@ -49327,6 +50355,12 @@ var DialogContent_DialogContent = external_root_React_commonjs2_react_commonjs_r
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/utils/ownerDocument.js
 function ownerDocument(node) {
   return node && node.ownerDocument || document;
+}
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
 }
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/utils/getScrollbarSize.js
 // A change of the browser zoom change the scrollbar size.
@@ -49488,9 +50522,7 @@ function getHiddenSiblings(container) {
  */
 
 
-var ModalManager_ModalManager =
-/*#__PURE__*/
-function () {
+var ModalManager_ModalManager = /*#__PURE__*/function () {
   function ModalManager() {
     _classCallCheck(this, ModalManager);
 
@@ -49626,20 +50658,20 @@ function TrapFocus(props) {
       getDoc = props.getDoc,
       isEnabled = props.isEnabled,
       open = props.open;
-  var ignoreNextEnforceFocus = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
-  var sentinelStart = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
-  var sentinelEnd = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
-  var nodeToRestore = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
-  var rootRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null); // can be removed once we drop support for non ref forwarding class components
+  var ignoreNextEnforceFocus = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
+  var sentinelStart = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
+  var sentinelEnd = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
+  var nodeToRestore = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
+  var rootRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null); // can be removed once we drop support for non ref forwarding class components
 
-  var handleOwnRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (instance) {
+  var handleOwnRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (instance) {
     // #StrictMode ready
-    rootRef.current = external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_default.a.findDOMNode(instance);
+    rootRef.current = external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["findDOMNode"](instance);
   }, []);
   var handleRef = useForkRef(children.ref, handleOwnRef); // ⚠️ You may rely on React.useMemo as a performance optimization, not as a semantic guarantee.
   // https://reactjs.org/docs/hooks-reference.html#usememo
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useMemo(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useMemo"](function () {
     if (!open || typeof window === 'undefined') {
       return;
     }
@@ -49647,7 +50679,7 @@ function TrapFocus(props) {
     nodeToRestore.current = getDoc().activeElement;
   }, [open]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     if (!open) {
       return;
     }
@@ -49665,7 +50697,7 @@ function TrapFocus(props) {
     }
 
     var contain = function contain() {
-      if (disableEnforceFocus || !isEnabled() || ignoreNextEnforceFocus.current) {
+      if (!doc.hasFocus() || disableEnforceFocus || !isEnabled() || ignoreNextEnforceFocus.current) {
         ignoreNextEnforceFocus.current = false;
         return;
       }
@@ -49723,13 +50755,13 @@ function TrapFocus(props) {
       }
     };
   }, [disableAutoFocus, disableEnforceFocus, disableRestoreFocus, isEnabled, open]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](external_root_React_commonjs2_react_commonjs_react_amd_react_["Fragment"], null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
     tabIndex: 0,
     ref: sentinelStart,
     "data-test": "sentinelStart"
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(children, {
+  }), external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](children, {
     ref: handleRef
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
     tabIndex: 0,
     ref: sentinelEnd,
     "data-test": "sentinelEnd"
@@ -49800,13 +50832,13 @@ var SimpleBackdrop_styles = {
  * @ignore - internal component.
  */
 
-var SimpleBackdrop_SimpleBackdrop = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function SimpleBackdrop(props, ref) {
+var SimpleBackdrop_SimpleBackdrop = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function SimpleBackdrop(props, ref) {
   var _props$invisible = props.invisible,
       invisible = _props$invisible === void 0 ? false : _props$invisible,
       open = props.open,
       other = _objectWithoutProperties(props, ["invisible", "open"]);
 
-  return open ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", _extends({
+  return open ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", _extends({
     "aria-hidden": true,
     ref: ref
   }, other, {
@@ -49835,7 +50867,7 @@ var SimpleBackdrop_SimpleBackdrop = external_root_React_commonjs2_react_commonjs
 
 function Modal_getContainer(container) {
   container = typeof container === 'function' ? container() : container;
-  return external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_default.a.findDOMNode(container);
+  return external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["findDOMNode"](container);
 }
 
 function getHasTransition(props) {
@@ -49877,9 +50909,9 @@ var Modal_styles = function styles(theme) {
  * This component shares many concepts with [react-overlays](https://react-bootstrap.github.io/react-overlays/#modals).
  */
 
-var Modal_Modal_Modal = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Modal(inProps, ref) {
+var Modal_Modal_Modal = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Modal(inProps, ref) {
   var theme = useTheme();
-  var props = getThemeProps_getThemeProps({
+  var props = getThemeProps({
     name: 'MuiModal',
     props: _extends({}, inProps),
     theme: theme
@@ -49919,13 +50951,13 @@ var Modal_Modal_Modal = external_root_React_commonjs2_react_commonjs_react_amd_r
       open = props.open,
       other = _objectWithoutProperties(props, ["BackdropComponent", "BackdropProps", "children", "closeAfterTransition", "container", "disableAutoFocus", "disableBackdropClick", "disableEnforceFocus", "disableEscapeKeyDown", "disablePortal", "disableRestoreFocus", "disableScrollLock", "hideBackdrop", "keepMounted", "manager", "onBackdropClick", "onClose", "onEscapeKeyDown", "onRendered", "open"]);
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(true),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](true),
       exited = _React$useState[0],
       setExited = _React$useState[1];
 
-  var modal = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef({});
-  var mountNodeRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
-  var modalRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
+  var modal = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]({});
+  var mountNodeRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
+  var modalRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
   var handleRef = useForkRef(modalRef, ref);
   var hasTransition = getHasTransition(props);
 
@@ -49955,7 +50987,7 @@ var Modal_Modal_Modal = external_root_React_commonjs2_react_commonjs_react_amd_r
       handleMounted();
     }
   });
-  var isTopModal = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function () {
+  var isTopModal = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function () {
     return manager.isTopModal(getModal());
   }, [manager]);
   var handlePortalRef = useEventCallback(function (node) {
@@ -49975,15 +51007,15 @@ var Modal_Modal_Modal = external_root_React_commonjs2_react_commonjs_react_amd_r
       ariaHidden(modalRef.current, true);
     }
   });
-  var handleClose = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function () {
+  var handleClose = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function () {
     manager.remove(getModal());
   }, [manager]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     return function () {
       handleClose();
     };
   }, [handleClose]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     if (open) {
       handleOpen();
     } else if (!hasTransition || !closeAfterTransition) {
@@ -50059,27 +51091,27 @@ var Modal_Modal_Modal = external_root_React_commonjs2_react_commonjs_react_amd_r
     childProps.onExited = createChainedFunction(handleExited, children.props.onExited);
   }
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Portal_Portal, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Portal_Portal, {
     ref: handlePortalRef,
     container: container,
     disablePortal: disablePortal
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", _extends({
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", _extends({
     ref: handleRef,
     onKeyDown: handleKeyDown,
     role: "presentation"
   }, other, {
     style: _extends({}, inlineStyle.root, {}, !open && exited ? inlineStyle.hidden : {}, {}, other.style)
-  }), hideBackdrop ? null : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(BackdropComponent, _extends({
+  }), hideBackdrop ? null : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](BackdropComponent, _extends({
     open: open,
     onClick: handleBackdropClick
-  }, BackdropProps)), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Modal_TrapFocus, {
+  }, BackdropProps)), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Modal_TrapFocus, {
     disableEnforceFocus: disableEnforceFocus,
     disableAutoFocus: disableAutoFocus,
     disableRestoreFocus: disableRestoreFocus,
     getDoc: getDoc,
     isEnabled: isTopModal,
     open: open
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(children, childProps))));
+  }, external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](children, childProps))));
 });
  false ? undefined : void 0;
 /* harmony default export */ var esm_Modal_Modal = (Modal_Modal_Modal);
@@ -50110,15 +51142,17 @@ var Fade_defaultTimeout = {
  * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
  */
 
-var Fade_Fade = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Fade(props, ref) {
+var Fade_Fade = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Fade(props, ref) {
   var children = props.children,
       inProp = props.in,
       onEnter = props.onEnter,
       onExit = props.onExit,
       style = props.style,
+      _props$TransitionComp = props.TransitionComponent,
+      TransitionComponent = _props$TransitionComp === void 0 ? esm_Transition : _props$TransitionComp,
       _props$timeout = props.timeout,
       timeout = _props$timeout === void 0 ? Fade_defaultTimeout : _props$timeout,
-      other = _objectWithoutProperties(props, ["children", "in", "onEnter", "onExit", "style", "timeout"]);
+      other = _objectWithoutProperties(props, ["children", "in", "onEnter", "onExit", "style", "TransitionComponent", "timeout"]);
 
   var theme = useTheme_useTheme();
   var handleRef = useForkRef(children.ref, ref);
@@ -50155,14 +51189,14 @@ var Fade_Fade = external_root_React_commonjs2_react_commonjs_react_amd_react_def
     }
   };
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Transition, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](TransitionComponent, _extends({
     appear: true,
     in: inProp,
     onEnter: handleEnter,
     onExit: handleExit,
     timeout: timeout
   }, other), function (state, childProps) {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(children, _extends({
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](children, _extends({
       style: _extends({
         opacity: 0,
         visibility: state === 'exited' && !inProp ? 'hidden' : undefined
@@ -50203,7 +51237,7 @@ var Backdrop_styles = {
     backgroundColor: 'transparent'
   }
 };
-var Backdrop_Backdrop = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Backdrop(props, ref) {
+var Backdrop_Backdrop = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Backdrop(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -50211,12 +51245,14 @@ var Backdrop_Backdrop = external_root_React_commonjs2_react_commonjs_react_amd_r
       invisible = _props$invisible === void 0 ? false : _props$invisible,
       open = props.open,
       transitionDuration = props.transitionDuration,
-      other = _objectWithoutProperties(props, ["children", "classes", "className", "invisible", "open", "transitionDuration"]);
+      _props$TransitionComp = props.TransitionComponent,
+      TransitionComponent = _props$TransitionComp === void 0 ? esm_Fade_Fade : _props$TransitionComp,
+      other = _objectWithoutProperties(props, ["children", "classes", "className", "invisible", "open", "transitionDuration", "TransitionComponent"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Fade_Fade, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](TransitionComponent, _extends({
     in: open,
     timeout: transitionDuration
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
     className: clsx_m(classes.root, className, invisible && classes.invisible),
     "aria-hidden": true,
     ref: ref
@@ -50227,6 +51263,7 @@ var Backdrop_Backdrop = external_root_React_commonjs2_react_commonjs_react_amd_r
   name: 'MuiBackdrop'
 })(Backdrop_Backdrop));
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Paper/Paper.js
+
 
 
 
@@ -50259,7 +51296,7 @@ var Paper_styles = function styles(theme) {
     }
   }, elevations);
 };
-var Paper_Paper = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Paper(props, ref) {
+var Paper_Paper = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Paper(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
@@ -50272,9 +51309,7 @@ var Paper_Paper = external_root_React_commonjs2_react_commonjs_react_amd_react_d
       variant = _props$variant === void 0 ? 'elevation' : _props$variant,
       other = _objectWithoutProperties(props, ["classes", "className", "component", "square", "elevation", "variant"]);
 
-  if (false) {}
-
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
     className: clsx_m(classes.root, className, variant === 'outlined' ? classes.outlined : classes["elevation".concat(elevation)], !square && classes.rounded),
     ref: ref
   }, other));
@@ -50440,7 +51475,7 @@ var defaultTransitionDuration = {
  * Dialogs are overlaid modal paper based components with a backdrop.
  */
 
-var Dialog_Dialog = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Dialog(props, ref) {
+var Dialog_Dialog = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Dialog(props, ref) {
   var BackdropProps = props.BackdropProps,
       children = props.children,
       classes = props.classes,
@@ -50480,7 +51515,7 @@ var Dialog_Dialog = external_root_React_commonjs2_react_commonjs_react_amd_react
       ariaLabelledby = props['aria-labelledby'],
       other = _objectWithoutProperties(props, ["BackdropProps", "children", "classes", "className", "disableBackdropClick", "disableEscapeKeyDown", "fullScreen", "fullWidth", "maxWidth", "onBackdropClick", "onClose", "onEnter", "onEntered", "onEntering", "onEscapeKeyDown", "onExit", "onExited", "onExiting", "open", "PaperComponent", "PaperProps", "scroll", "TransitionComponent", "transitionDuration", "TransitionProps", "aria-describedby", "aria-labelledby"]);
 
-  var mouseDownTarget = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
+  var mouseDownTarget = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
 
   var handleMouseDown = function handleMouseDown(event) {
     mouseDownTarget.current = event.target;
@@ -50509,7 +51544,7 @@ var Dialog_Dialog = external_root_React_commonjs2_react_commonjs_react_amd_react
     }
   };
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Modal_Modal, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Modal_Modal, _extends({
     className: clsx_m(classes.root, className),
     BackdropComponent: esm_Backdrop_Backdrop,
     BackdropProps: _extends({
@@ -50522,7 +51557,7 @@ var Dialog_Dialog = external_root_React_commonjs2_react_commonjs_react_amd_react
     onClose: onClose,
     open: open,
     ref: ref
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(TransitionComponent, _extends({
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](TransitionComponent, _extends({
     appear: true,
     in: open,
     timeout: transitionDuration,
@@ -50533,11 +51568,11 @@ var Dialog_Dialog = external_root_React_commonjs2_react_commonjs_react_amd_react
     onExiting: onExiting,
     onExited: onExited,
     role: "none presentation"
-  }, TransitionProps), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+  }, TransitionProps), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
     className: clsx_m(classes.container, classes["scroll".concat(capitalize(scroll))]),
     onClick: handleBackdropClick,
     onMouseDown: handleMouseDown
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(PaperComponent, _extends({
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](PaperComponent, _extends({
     elevation: 24,
     role: "dialog",
     "aria-describedby": ariaDescribedby,
@@ -50664,7 +51699,7 @@ var Popover_styles = {
     outline: 0
   }
 };
-var Popover_Popover = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Popover(props, ref) {
+var Popover_Popover = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Popover(props, ref) {
   var action = props.action,
       anchorEl = props.anchorEl,
       _props$anchorOrigin = props.anchorOrigin,
@@ -50706,20 +51741,19 @@ var Popover_Popover = external_root_React_commonjs2_react_commonjs_react_amd_rea
       TransitionProps = _props$TransitionProp === void 0 ? {} : _props$TransitionProp,
       other = _objectWithoutProperties(props, ["action", "anchorEl", "anchorOrigin", "anchorPosition", "anchorReference", "children", "classes", "className", "container", "elevation", "getContentAnchorEl", "marginThreshold", "onEnter", "onEntered", "onEntering", "onExit", "onExited", "onExiting", "open", "PaperProps", "transformOrigin", "TransitionComponent", "transitionDuration", "TransitionProps"]);
 
-  var paperRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(); // Returns the top/left offset of the position
+  var paperRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](); // Returns the top/left offset of the position
   // to attach to on the anchor element (or body if none is provided)
 
-  var getAnchorOffset = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (contentAnchorOffset) {
+  var getAnchorOffset = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (contentAnchorOffset) {
     if (anchorReference === 'anchorPosition') {
       if (false) {}
 
       return anchorPosition;
     }
 
-    var resolvedAnchorEl = Popover_getAnchorEl(anchorEl);
-    var containerWindow = ownerWindow(resolvedAnchorEl); // If an anchor element wasn't provided, just use the parent body element of this Popover
+    var resolvedAnchorEl = Popover_getAnchorEl(anchorEl); // If an anchor element wasn't provided, just use the parent body element of this Popover
 
-    var anchorElement = resolvedAnchorEl instanceof containerWindow.Element ? resolvedAnchorEl : ownerDocument(paperRef.current).body;
+    var anchorElement = resolvedAnchorEl && resolvedAnchorEl.nodeType === 1 ? resolvedAnchorEl : ownerDocument(paperRef.current).body;
     var anchorRect = anchorElement.getBoundingClientRect();
 
     if (false) { var box; }
@@ -50731,7 +51765,7 @@ var Popover_Popover = external_root_React_commonjs2_react_commonjs_react_amd_rea
     };
   }, [anchorEl, anchorOrigin.horizontal, anchorOrigin.vertical, anchorPosition, anchorReference]); // Returns the vertical offset of inner content to anchor the transform on if provided
 
-  var getContentAnchorOffset = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (element) {
+  var getContentAnchorOffset = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (element) {
     var contentAnchorOffset = 0;
 
     if (getContentAnchorEl && anchorReference === 'anchorEl') {
@@ -50750,14 +51784,14 @@ var Popover_Popover = external_root_React_commonjs2_react_commonjs_react_amd_rea
   }, [anchorOrigin.vertical, anchorReference, getContentAnchorEl]); // Return the base transform origin using the element
   // and taking the content anchor offset into account if in use
 
-  var getTransformOrigin = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (elemRect) {
+  var getTransformOrigin = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (elemRect) {
     var contentAnchorOffset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
     return {
       vertical: getOffsetTop(elemRect, transformOrigin.vertical) + contentAnchorOffset,
       horizontal: getOffsetLeft(elemRect, transformOrigin.horizontal)
     };
   }, [transformOrigin.horizontal, transformOrigin.vertical]);
-  var getPositioningStyle = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (element) {
+  var getPositioningStyle = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (element) {
     // Check if the parent has requested anchoring on an inner content node
     var contentAnchorOffset = getContentAnchorOffset(element);
     var elemRect = {
@@ -50820,7 +51854,7 @@ var Popover_Popover = external_root_React_commonjs2_react_commonjs_react_amd_rea
       transformOrigin: getTransformOriginValue(elemTransformOrigin)
     };
   }, [anchorEl, anchorReference, getAnchorOffset, getContentAnchorOffset, getTransformOrigin, marginThreshold]);
-  var setPositioningStyles = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function () {
+  var setPositioningStyles = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function () {
     var element = paperRef.current;
 
     if (!element) {
@@ -50848,23 +51882,23 @@ var Popover_Popover = external_root_React_commonjs2_react_commonjs_react_amd_rea
     setPositioningStyles();
   };
 
-  var handlePaperRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (instance) {
+  var handlePaperRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (instance) {
     // #StrictMode ready
-    paperRef.current = external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_default.a.findDOMNode(instance);
+    paperRef.current = external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["findDOMNode"](instance);
   }, []);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     if (open) {
       setPositioningStyles();
     }
   });
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useImperativeHandle(action, function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useImperativeHandle"](action, function () {
     return open ? {
       updatePosition: function updatePosition() {
         setPositioningStyles();
       }
     } : null;
   }, [open, setPositioningStyles]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     if (!open) {
       return undefined;
     }
@@ -50875,7 +51909,7 @@ var Popover_Popover = external_root_React_commonjs2_react_commonjs_react_amd_rea
     window.addEventListener('resize', handleResize);
     return function () {
       handleResize.clear();
-      window.removeEventListener('rezise', handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, [open, setPositioningStyles]);
   var transitionDuration = transitionDurationProp;
@@ -50888,7 +51922,7 @@ var Popover_Popover = external_root_React_commonjs2_react_commonjs_react_amd_rea
 
 
   var container = containerProp || (anchorEl ? ownerDocument(Popover_getAnchorEl(anchorEl)).body : undefined);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Modal_Modal, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Modal_Modal, _extends({
     container: container,
     open: open,
     ref: ref,
@@ -50896,7 +51930,7 @@ var Popover_Popover = external_root_React_commonjs2_react_commonjs_react_amd_rea
       invisible: true
     },
     className: clsx_m(classes.root, className)
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(TransitionComponent, _extends({
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](TransitionComponent, _extends({
     appear: true,
     in: open,
     onEnter: onEnter,
@@ -50907,7 +51941,7 @@ var Popover_Popover = external_root_React_commonjs2_react_commonjs_react_amd_rea
     timeout: transitionDuration
   }, TransitionProps, {
     onEntering: createChainedFunction(handleEntering, TransitionProps.onEntering)
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Paper_Paper, _extends({
+  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Paper_Paper, _extends({
     elevation: elevation,
     ref: handlePaperRef
   }, PaperProps, {
@@ -51201,12 +52235,12 @@ function formControlState(_ref) {
  * @ignore - internal component.
  */
 
-var FormControlContext = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createContext();
+var FormControlContext = external_root_React_commonjs2_react_commonjs_react_amd_react_["createContext"]();
 
 if (false) {}
 
 function useFormControl() {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useContext(FormControlContext);
+  return external_root_React_commonjs2_react_commonjs_react_amd_react_["useContext"](FormControlContext);
 }
 /* harmony default export */ var FormControl_FormControlContext = (FormControlContext);
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/TextareaAutosize/TextareaAutosize.js
@@ -51221,7 +52255,7 @@ function getStyleValue(computedStyle, property) {
   return parseInt(computedStyle[property], 10) || 0;
 }
 
-var TextareaAutosize_useEnhancedEffect = typeof window !== 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useLayoutEffect : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect;
+var TextareaAutosize_useEnhancedEffect = typeof window !== 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_["useLayoutEffect"] : external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"];
 var TextareaAutosize_styles = {
   /* Styles applied to the shadow textarea element. */
   shadow: {
@@ -51238,7 +52272,7 @@ var TextareaAutosize_styles = {
     transform: 'translateZ(0)'
   }
 };
-var TextareaAutosize_TextareaAutosize = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function TextareaAutosize(props, ref) {
+var TextareaAutosize_TextareaAutosize = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function TextareaAutosize(props, ref) {
   var onChange = props.onChange,
       rows = props.rows,
       rowsMax = props.rowsMax,
@@ -51250,23 +52284,32 @@ var TextareaAutosize_TextareaAutosize = external_root_React_commonjs2_react_comm
 
   var rowsMin = rows || rowsMinProp;
 
-  var _React$useRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(value != null),
+  var _React$useRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](value != null),
       isControlled = _React$useRef.current;
 
-  var inputRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
+  var inputRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
   var handleRef = useForkRef(ref, inputRef);
-  var shadowRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
+  var shadowRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
+  var renders = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](0);
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState({}),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"]({}),
       state = _React$useState[0],
       setState = _React$useState[1];
 
-  var syncHeight = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function () {
+  var syncHeight = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function () {
     var input = inputRef.current;
     var computedStyle = window.getComputedStyle(input);
     var inputShallow = shadowRef.current;
     inputShallow.style.width = computedStyle.width;
     inputShallow.value = input.value || props.placeholder || 'x';
+
+    if (inputShallow.value.slice(-1) === '\n') {
+      // Certain fonts which overflow the line height will cause the textarea
+      // to report a different scrollHeight depending on whether the last line
+      // is empty. Make it non-empty to avoid this issue.
+      inputShallow.value += ' ';
+    }
+
     var boxSizing = computedStyle['box-sizing'];
     var padding = getStyleValue(computedStyle, 'padding-bottom') + getStyleValue(computedStyle, 'padding-top');
     var border = getStyleValue(computedStyle, 'border-bottom-width') + getStyleValue(computedStyle, 'border-top-width'); // The height of the inner content
@@ -51291,20 +52334,24 @@ var TextareaAutosize_TextareaAutosize = external_root_React_commonjs2_react_comm
     var outerHeightStyle = outerHeight + (boxSizing === 'border-box' ? padding + border : 0);
     var overflow = Math.abs(outerHeight - innerHeight) <= 1;
     setState(function (prevState) {
-      // Need a large enough different to update the height.
+      // Need a large enough difference to update the height.
       // This prevents infinite rendering loop.
-      if (outerHeightStyle > 0 && Math.abs((prevState.outerHeightStyle || 0) - outerHeightStyle) > 1 || prevState.overflow !== overflow) {
+      if (renders.current < 20 && (outerHeightStyle > 0 && Math.abs((prevState.outerHeightStyle || 0) - outerHeightStyle) > 1 || prevState.overflow !== overflow)) {
+        renders.current += 1;
         return {
           overflow: overflow,
           outerHeightStyle: outerHeightStyle
         };
       }
 
+      if (false) {}
+
       return prevState;
     });
   }, [rowsMax, rowsMin, props.placeholder]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     var handleResize = debounce(function () {
+      renders.current = 0;
       syncHeight();
     });
     window.addEventListener('resize', handleResize);
@@ -51316,8 +52363,13 @@ var TextareaAutosize_TextareaAutosize = external_root_React_commonjs2_react_comm
   TextareaAutosize_useEnhancedEffect(function () {
     syncHeight();
   });
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
+    renders.current = 0;
+  }, [value]);
 
   var handleChange = function handleChange(event) {
+    renders.current = 0;
+
     if (!isControlled) {
       syncHeight();
     }
@@ -51327,7 +52379,7 @@ var TextareaAutosize_TextareaAutosize = external_root_React_commonjs2_react_comm
     }
   };
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("textarea", _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](external_root_React_commonjs2_react_commonjs_react_amd_react_["Fragment"], null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("textarea", _extends({
     value: value,
     onChange: handleChange,
     ref: handleRef // Apply the rows prop to get a "correct" first SSR paint
@@ -51335,11 +52387,11 @@ var TextareaAutosize_TextareaAutosize = external_root_React_commonjs2_react_comm
     rows: rowsMin,
     style: _extends({
       height: state.outerHeightStyle,
-      // Need a large enough different to allow scrolling.
+      // Need a large enough difference to allow scrolling.
       // This prevents infinite rendering loop.
       overflow: state.overflow ? 'hidden' : null
     }, style)
-  }, other)), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("textarea", {
+  }, other)), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("textarea", {
     "aria-hidden": true,
     className: props.className,
     readOnly: true,
@@ -51424,7 +52476,7 @@ var InputBase_styles = function styles(theme) {
     /* Styles applied to the root element. */
     root: _extends({}, theme.typography.body1, {
       color: theme.palette.text.primary,
-      lineHeight: '1.1875em',
+      lineHeight: '1.1876em',
       // Reset (19px), match the native input line-height
       boxSizing: 'border-box',
       // Prevent padding issue with fullWidth.
@@ -51483,7 +52535,7 @@ var InputBase_styles = function styles(theme) {
       border: 0,
       boxSizing: 'content-box',
       background: 'none',
-      height: '1.1875em',
+      height: '1.1876em',
       // Reset (19px), match the native input line-height
       margin: 0,
       // Reset for Safari
@@ -51568,14 +52620,14 @@ var InputBase_styles = function styles(theme) {
     inputHiddenLabel: {}
   };
 };
-var InputBase_useEnhancedEffect = typeof window === 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useLayoutEffect;
+var InputBase_useEnhancedEffect = typeof window === 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"] : external_root_React_commonjs2_react_commonjs_react_amd_react_["useLayoutEffect"];
 /**
  * `InputBase` contains as few styles as possible.
  * It aims to be a simple building block for creating an input.
  * It contains a load of style reset and some state logic.
  */
 
-var InputBase_InputBase = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function InputBase(props, ref) {
+var InputBase_InputBase = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function InputBase(props, ref) {
   var ariaDescribedby = props['aria-describedby'],
       autoComplete = props.autoComplete,
       autoFocus = props.autoFocus,
@@ -51618,18 +52670,18 @@ var InputBase_InputBase = external_root_React_commonjs2_react_commonjs_react_amd
 
   var value = inputPropsProp.value != null ? inputPropsProp.value : valueProp;
 
-  var _React$useRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(value != null),
+  var _React$useRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](value != null),
       isControlled = _React$useRef.current;
 
-  var inputRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
-  var handleInputRefWarning = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (instance) {
+  var inputRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
+  var handleInputRefWarning = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (instance) {
     if (false) {}
   }, []);
   var handleInputPropsRefProp = useForkRef(inputPropsProp.ref, handleInputRefWarning);
   var handleInputRefProp = useForkRef(inputRefProp, handleInputPropsRefProp);
   var handleInputRef = useForkRef(inputRef, handleInputRefProp);
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(false),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](false),
       focused = _React$useState[0],
       setFocused = _React$useState[1];
 
@@ -51645,7 +52697,7 @@ var InputBase_InputBase = external_root_React_commonjs2_react_commonjs_react_amd
   fcs.focused = muiFormControl ? muiFormControl.focused : focused; // The blur won't fire when the disabled state is set on a focused input.
   // We need to book keep the focused state manually.
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     if (!muiFormControl && disabled && focused) {
       setFocused(false);
 
@@ -51656,7 +52708,7 @@ var InputBase_InputBase = external_root_React_commonjs2_react_commonjs_react_amd
   }, [muiFormControl, disabled, focused, onBlur]);
   var onFilled = muiFormControl && muiFormControl.onFilled;
   var onEmpty = muiFormControl && muiFormControl.onEmpty;
-  var checkDirty = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (obj) {
+  var checkDirty = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (obj) {
     if (isFilled(obj)) {
       if (onFilled) {
         onFilled();
@@ -51741,7 +52793,7 @@ var InputBase_InputBase = external_root_React_commonjs2_react_commonjs_react_amd
   // or auto filled by the browser before the hydration (for SSR).
 
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     checkDirty(inputRef.current);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -51793,20 +52845,18 @@ var InputBase_InputBase = external_root_React_commonjs2_react_commonjs_react_amd
     });
   };
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     if (muiFormControl) {
       muiFormControl.setAdornedStart(Boolean(startAdornment));
     }
   }, [muiFormControl, startAdornment]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", _extends({
-    className: clsx_m(classes.root, classes["color".concat(capitalize(fcs.color || 'primary'))], className, fcs.disabled && classes.disabled, fcs.error && classes.error, fullWidth && classes.fullWidth, fcs.focused && classes.focused, muiFormControl && classes.formControl, multiline && classes.multiline, startAdornment && classes.adornedStart, endAdornment && classes.adornedEnd, {
-      dense: classes.marginDense
-    }[fcs.margin]),
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", _extends({
+    className: clsx_m(classes.root, classes["color".concat(capitalize(fcs.color || 'primary'))], className, fcs.disabled && classes.disabled, fcs.error && classes.error, fullWidth && classes.fullWidth, fcs.focused && classes.focused, muiFormControl && classes.formControl, multiline && classes.multiline, startAdornment && classes.adornedStart, endAdornment && classes.adornedEnd, fcs.margin === 'dense' && classes.marginDense),
     onClick: handleClick,
     ref: ref
-  }, other), startAdornment, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FormControl_FormControlContext.Provider, {
+  }, other), startAdornment, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](FormControl_FormControlContext.Provider, {
     value: null
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(InputComponent, _extends({
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](InputComponent, _extends({
     "aria-invalid": fcs.error,
     "aria-describedby": ariaDescribedby,
     autoComplete: autoComplete,
@@ -51824,11 +52874,7 @@ var InputBase_InputBase = external_root_React_commonjs2_react_commonjs_react_amd
     onKeyDown: onKeyDown,
     onKeyUp: onKeyUp
   }, inputProps, {
-    className: clsx_m(classes.input, inputPropsProp.className, fcs.disabled && classes.disabled, multiline && classes.inputMultiline, fcs.hiddenLabel && classes.inputHiddenLabel, startAdornment && classes.inputAdornedStart, endAdornment && classes.inputAdornedEnd, {
-      search: classes.inputTypeSearch
-    }[type], {
-      dense: classes.inputMarginDense
-    }[fcs.margin]),
+    className: clsx_m(classes.input, inputPropsProp.className, fcs.disabled && classes.disabled, multiline && classes.inputMultiline, fcs.hiddenLabel && classes.inputHiddenLabel, startAdornment && classes.inputAdornedStart, endAdornment && classes.inputAdornedEnd, type === 'search' && classes.inputTypeSearch, fcs.margin === 'dense' && classes.inputMarginDense),
     onBlur: handleBlur,
     onChange: handleChange,
     onFocus: handleFocus
@@ -51955,7 +53001,7 @@ var Input_styles = function styles(theme) {
     inputTypeSearch: {}
   };
 };
-var Input_Input_Input = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Input(props, ref) {
+var Input_Input_Input = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Input(props, ref) {
   var disableUnderline = props.disableUnderline,
       classes = props.classes,
       _props$fullWidth = props.fullWidth,
@@ -51968,7 +53014,7 @@ var Input_Input_Input = external_root_React_commonjs2_react_commonjs_react_amd_r
       type = _props$type === void 0 ? 'text' : _props$type,
       other = _objectWithoutProperties(props, ["disableUnderline", "classes", "fullWidth", "inputComponent", "multiline", "type"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_InputBase_InputBase, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_InputBase_InputBase, _extends({
     classes: _extends({}, classes, {
       root: clsx_m(classes.root, !disableUnderline && classes.underline),
       underline: null
@@ -52153,7 +53199,7 @@ var FilledInput_styles = function styles(theme) {
     }
   };
 };
-var FilledInput_FilledInput = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function FilledInput(props, ref) {
+var FilledInput_FilledInput = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function FilledInput(props, ref) {
   var disableUnderline = props.disableUnderline,
       classes = props.classes,
       _props$fullWidth = props.fullWidth,
@@ -52166,7 +53212,7 @@ var FilledInput_FilledInput = external_root_React_commonjs2_react_commonjs_react
       type = _props$type === void 0 ? 'text' : _props$type,
       other = _objectWithoutProperties(props, ["disableUnderline", "classes", "fullWidth", "inputComponent", "multiline", "type"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_InputBase_InputBase, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_InputBase_InputBase, _extends({
     classes: _extends({}, classes, {
       root: clsx_m(classes.root, !disableUnderline && classes.underline),
       underline: null
@@ -52203,12 +53249,12 @@ var NotchedOutline_styles = function styles(theme) {
       top: -5,
       left: 0,
       margin: 0,
-      padding: 0,
-      paddingLeft: 8,
+      padding: '0 8px',
       pointerEvents: 'none',
       borderRadius: 'inherit',
       borderStyle: 'solid',
-      borderWidth: 1
+      borderWidth: 1,
+      overflow: 'hidden'
     },
 
     /* Styles applied to the legend element when `labelWidth` is provided. */
@@ -52238,9 +53284,10 @@ var NotchedOutline_styles = function styles(theme) {
         duration: 50,
         easing: theme.transitions.easing.easeOut
       }),
-      '& span': {
+      '& > span': {
         paddingLeft: 5,
-        paddingRight: 5
+        paddingRight: 5,
+        display: 'inline-block'
       }
     },
 
@@ -52259,7 +53306,7 @@ var NotchedOutline_styles = function styles(theme) {
  * @ignore - internal component.
  */
 
-var NotchedOutline_NotchedOutline = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function NotchedOutline(props, ref) {
+var NotchedOutline_NotchedOutline = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function NotchedOutline(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -52273,14 +53320,14 @@ var NotchedOutline_NotchedOutline = external_root_React_commonjs2_react_commonjs
   var align = theme.direction === 'rtl' ? 'right' : 'left';
 
   if (label !== undefined) {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("fieldset", _extends({
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("fieldset", _extends({
       "aria-hidden": true,
       className: clsx_m(classes.root, className),
       ref: ref,
       style: style
-    }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("legend", {
+    }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("legend", {
       className: clsx_m(classes.legendLabelled, notched && classes.legendNotched)
-    }, label ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, label) : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+    }, label ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", null, label) : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
       dangerouslySetInnerHTML: {
         __html: '&#8203;'
       }
@@ -52288,12 +53335,12 @@ var NotchedOutline_NotchedOutline = external_root_React_commonjs2_react_commonjs
   }
 
   var labelWidth = labelWidthProp > 0 ? labelWidthProp * 0.75 + 8 : 0.01;
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("fieldset", _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("fieldset", _extends({
     "aria-hidden": true,
     style: _extends(_defineProperty({}, "padding".concat(capitalize(align)), 8), style),
     className: clsx_m(classes.root, className),
     ref: ref
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("legend", {
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("legend", {
     className: classes.legend,
     style: {
       // IE 11: fieldset with legend does not render
@@ -52301,7 +53348,7 @@ var NotchedOutline_NotchedOutline = external_root_React_commonjs2_react_commonjs
       // by always having a legend rendered
       width: notched ? labelWidth : 0.01
     }
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
     dangerouslySetInnerHTML: {
       __html: '&#8203;'
     }
@@ -52424,7 +53471,7 @@ var OutlinedInput_styles = function styles(theme) {
     }
   };
 };
-var OutlinedInput_OutlinedInput = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function OutlinedInput(props, ref) {
+var OutlinedInput_OutlinedInput = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function OutlinedInput(props, ref) {
   var classes = props.classes,
       _props$fullWidth = props.fullWidth,
       fullWidth = _props$fullWidth === void 0 ? false : _props$fullWidth,
@@ -52440,9 +53487,9 @@ var OutlinedInput_OutlinedInput = external_root_React_commonjs2_react_commonjs_r
       type = _props$type === void 0 ? 'text' : _props$type,
       other = _objectWithoutProperties(props, ["classes", "fullWidth", "inputComponent", "label", "labelWidth", "multiline", "notched", "type"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_InputBase_InputBase, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_InputBase_InputBase, _extends({
     renderSuffix: function renderSuffix(state) {
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(OutlinedInput_NotchedOutline, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](OutlinedInput_NotchedOutline, {
         className: classes.notchedOutline,
         label: label,
         labelWidth: labelWidth,
@@ -52469,7 +53516,7 @@ OutlinedInput_OutlinedInput.muiName = 'Input';
 
 
 function useFormControl_useFormControl() {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useContext(FormControl_FormControlContext);
+  return external_root_React_commonjs2_react_commonjs_react_amd_react_["useContext"](FormControl_FormControlContext);
 }
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/FormLabel/FormLabel.js
 
@@ -52530,7 +53577,7 @@ var FormLabel_styles = function styles(theme) {
     }
   };
 };
-var FormLabel_FormLabel = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function FormLabel(props, ref) {
+var FormLabel_FormLabel = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function FormLabel(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -52550,10 +53597,11 @@ var FormLabel_FormLabel = external_root_React_commonjs2_react_commonjs_react_amd
     muiFormControl: muiFormControl,
     states: ['color', 'required', 'focused', 'disabled', 'error', 'filled']
   });
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
     className: clsx_m(classes.root, classes["color".concat(capitalize(fcs.color || 'primary'))], className, fcs.disabled && classes.disabled, fcs.error && classes.error, fcs.filled && classes.filled, fcs.focused && classes.focused, fcs.required && classes.required),
     ref: ref
-  }, other), children, fcs.required && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+  }, other), children, fcs.required && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
+    "aria-hidden": true,
     className: clsx_m(classes.asterisk, fcs.error && classes.error)
   }, "\u2009", '*'));
 });
@@ -52658,7 +53706,7 @@ var InputLabel_styles = function styles(theme) {
     }
   };
 };
-var InputLabel_InputLabel = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function InputLabel(props, ref) {
+var InputLabel_InputLabel = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function InputLabel(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$disableAnimati = props.disableAnimation,
@@ -52680,13 +53728,11 @@ var InputLabel_InputLabel = external_root_React_commonjs2_react_commonjs_react_a
     muiFormControl: muiFormControl,
     states: ['margin', 'variant']
   });
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_FormLabel_FormLabel, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_FormLabel_FormLabel, _extends({
     "data-shrink": shrink,
-    className: clsx_m(classes.root, className, muiFormControl && classes.formControl, !disableAnimation && classes.animated, shrink && classes.shrink, {
-      dense: classes.marginDense
-    }[fcs.margin], {
-      filled: classes.filled,
-      outlined: classes.outlined
+    className: clsx_m(classes.root, className, muiFormControl && classes.formControl, !disableAnimation && classes.animated, shrink && classes.shrink, fcs.margin === 'dense' && classes.marginDense, {
+      'filled': classes.filled,
+      'outlined': classes.outlined
     }[fcs.variant]),
     classes: {
       focused: classes.focused,
@@ -52724,8 +53770,6 @@ var FormControl_styles = {
     padding: 0,
     margin: 0,
     border: 0,
-    zIndex: 0,
-    // Fix blur label text issue
     verticalAlign: 'top' // Fix alignment issue on Safari.
 
   },
@@ -52771,7 +53815,7 @@ var FormControl_styles = {
  * ⚠️Only one input can be used within a FormControl.
  */
 
-var FormControl_FormControl = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function FormControl(props, ref) {
+var FormControl_FormControl = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function FormControl(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -52785,6 +53829,7 @@ var FormControl_FormControl = external_root_React_commonjs2_react_commonjs_react
       error = _props$error === void 0 ? false : _props$error,
       _props$fullWidth = props.fullWidth,
       fullWidth = _props$fullWidth === void 0 ? false : _props$fullWidth,
+      visuallyFocused = props.focused,
       _props$hiddenLabel = props.hiddenLabel,
       hiddenLabel = _props$hiddenLabel === void 0 ? false : _props$hiddenLabel,
       _props$margin = props.margin,
@@ -52794,15 +53839,15 @@ var FormControl_FormControl = external_root_React_commonjs2_react_commonjs_react
       size = props.size,
       _props$variant = props.variant,
       variant = _props$variant === void 0 ? 'standard' : _props$variant,
-      other = _objectWithoutProperties(props, ["children", "classes", "className", "color", "component", "disabled", "error", "fullWidth", "hiddenLabel", "margin", "required", "size", "variant"]);
+      other = _objectWithoutProperties(props, ["children", "classes", "className", "color", "component", "disabled", "error", "fullWidth", "focused", "hiddenLabel", "margin", "required", "size", "variant"]);
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(function () {
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](function () {
     // We need to iterate through the children and find the Input in order
     // to fully support server-side rendering.
     var initialAdornedStart = false;
 
     if (children) {
-      external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Children.forEach(children, function (child) {
+      external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].forEach(children, function (child) {
         if (!isMuiElement(child, ['Input', 'Select'])) {
           return;
         }
@@ -52820,13 +53865,13 @@ var FormControl_FormControl = external_root_React_commonjs2_react_commonjs_react
       adornedStart = _React$useState[0],
       setAdornedStart = _React$useState[1];
 
-  var _React$useState2 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(function () {
+  var _React$useState2 = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](function () {
     // We need to iterate through the children and find the Input in order
     // to fully support server-side rendering.
     var initialFilled = false;
 
     if (children) {
-      external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Children.forEach(children, function (child) {
+      external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].forEach(children, function (child) {
         if (!isMuiElement(child, ['Input', 'Select'])) {
           return;
         }
@@ -52842,9 +53887,11 @@ var FormControl_FormControl = external_root_React_commonjs2_react_commonjs_react
       filled = _React$useState2[0],
       setFilled = _React$useState2[1];
 
-  var _React$useState3 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(false),
-      focused = _React$useState3[0],
+  var _React$useState3 = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](false),
+      _focused = _React$useState3[0],
       setFocused = _React$useState3[1];
+
+  var focused = visuallyFocused !== undefined ? visuallyFocused : _focused;
 
   if (disabled && focused) {
     setFocused(false);
@@ -52854,10 +53901,10 @@ var FormControl_FormControl = external_root_React_commonjs2_react_commonjs_react
 
   if (false) { var registeredInput; }
 
-  var onFilled = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function () {
+  var onFilled = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function () {
     setFilled(true);
   }, []);
-  var onEmpty = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function () {
+  var onEmpty = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function () {
     setFilled(false);
   }, []);
   var childContext = {
@@ -52883,9 +53930,9 @@ var FormControl_FormControl = external_root_React_commonjs2_react_commonjs_react
     required: required,
     variant: variant
   };
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FormControl_FormControlContext.Provider, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](FormControl_FormControlContext.Provider, {
     value: childContext
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
     className: clsx_m(classes.root, className, margin !== 'none' && classes["margin".concat(capitalize(margin))], fullWidth && classes.fullWidth),
     ref: ref
   }, other), children));
@@ -52947,7 +53994,7 @@ var FormHelperText_styles = function styles(theme) {
     required: {}
   };
 };
-var FormHelperText_FormHelperText = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function FormHelperText(props, ref) {
+var FormHelperText_FormHelperText = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function FormHelperText(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -52968,13 +54015,13 @@ var FormHelperText_FormHelperText = external_root_React_commonjs2_react_commonjs
     muiFormControl: muiFormControl,
     states: ['variant', 'margin', 'disabled', 'error', 'filled', 'focused', 'required']
   });
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
-    className: clsx_m(classes.root, (fcs.variant === 'filled' || fcs.variant === 'outlined') && classes.contained, className, fcs.disabled && classes.disabled, fcs.error && classes.error, fcs.filled && classes.filled, fcs.focused && classes.focused, fcs.required && classes.required, {
-      dense: classes.marginDense
-    }[fcs.margin]),
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
+    className: clsx_m(classes.root, (fcs.variant === 'filled' || fcs.variant === 'outlined') && classes.contained, className, fcs.disabled && classes.disabled, fcs.error && classes.error, fcs.filled && classes.filled, fcs.focused && classes.focused, fcs.required && classes.required, fcs.margin === 'dense' && classes.marginDense),
     ref: ref
-  }, other), children === ' ' ? // eslint-disable-next-line react/no-danger
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+  }, other), children === ' ' ?
+  /*#__PURE__*/
+  // eslint-disable-next-line react/no-danger
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
     dangerouslySetInnerHTML: {
       __html: '&#8203;'
     }
@@ -52990,7 +54037,7 @@ var FormHelperText_FormHelperText = external_root_React_commonjs2_react_commonjs
  * @ignore - internal component.
  */
 
-var ListContext = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createContext({});
+var ListContext = external_root_React_commonjs2_react_commonjs_react_amd_react_["createContext"]({});
 
 if (false) {}
 
@@ -53026,7 +54073,7 @@ var List_styles = {
     paddingTop: 0
   }
 };
-var List_List = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function List(props, ref) {
+var List_List = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function List(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -53039,14 +54086,14 @@ var List_List = external_root_React_commonjs2_react_commonjs_react_amd_react_def
       subheader = props.subheader,
       other = _objectWithoutProperties(props, ["children", "classes", "className", "component", "dense", "disablePadding", "subheader"]);
 
-  var context = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useMemo(function () {
+  var context = external_root_React_commonjs2_react_commonjs_react_amd_react_["useMemo"](function () {
     return {
       dense: dense
     };
   }, [dense]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(List_ListContext.Provider, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](List_ListContext.Provider, {
     value: context
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
     className: clsx_m(classes.root, className, dense && classes.dense, !disablePadding && classes.padding, subheader && classes.subheader),
     ref: ref
   }, other), subheader, children));
@@ -53116,7 +54163,7 @@ function textCriteriaMatches(nextFocus, textCriteria) {
   return text.indexOf(textCriteria.keys.join('')) === 0;
 }
 
-function moveFocus(list, currentFocus, disableListWrap, traversalFunction, textCriteria) {
+function moveFocus(list, currentFocus, disableListWrap, disabledItemsFocusable, traversalFunction, textCriteria) {
   var wrappedOnce = false;
   var nextFocus = traversalFunction(list, currentFocus, currentFocus ? disableListWrap : false);
 
@@ -53124,33 +54171,34 @@ function moveFocus(list, currentFocus, disableListWrap, traversalFunction, textC
     // Prevent infinite loop.
     if (nextFocus === list.firstChild) {
       if (wrappedOnce) {
-        return false;
+        return;
       }
 
       wrappedOnce = true;
-    } // Move to the next element.
+    } // Same logic as useAutocomplete.js
 
 
-    if (!nextFocus.hasAttribute('tabindex') || nextFocus.disabled || nextFocus.getAttribute('aria-disabled') === 'true' || !textCriteriaMatches(nextFocus, textCriteria)) {
+    var nextFocusDisabled = disabledItemsFocusable ? false : nextFocus.disabled || nextFocus.getAttribute('aria-disabled') === 'true';
+
+    if (!nextFocus.hasAttribute('tabindex') || !textCriteriaMatches(nextFocus, textCriteria) || nextFocusDisabled) {
+      // Move to the next element.
       nextFocus = traversalFunction(list, nextFocus, disableListWrap);
     } else {
       nextFocus.focus();
-      return true;
+      return;
     }
   }
-
-  return false;
 }
 
-var MenuList_useEnhancedEffect = typeof window === 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useLayoutEffect;
+var MenuList_useEnhancedEffect = typeof window === 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"] : external_root_React_commonjs2_react_commonjs_react_amd_react_["useLayoutEffect"];
 /**
- * A permanently displayed menu following https://www.w3.org/TR/wai-aria-practices/#menubutton
+ * A permanently displayed menu following https://www.w3.org/TR/wai-aria-practices/#menubutton.
  * It's exposed to help customization of the [`Menu`](/api/menu/) component. If you
  * use it separately you need to move focus into the component manually. Once
  * the focus is placed inside the component it is fully keyboard accessible.
  */
 
-var MenuList_MenuList = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function MenuList(props, ref) {
+var MenuList_MenuList = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function MenuList(props, ref) {
   var actions = props.actions,
       _props$autoFocus = props.autoFocus,
       autoFocus = _props$autoFocus === void 0 ? false : _props$autoFocus,
@@ -53158,15 +54206,17 @@ var MenuList_MenuList = external_root_React_commonjs2_react_commonjs_react_amd_r
       autoFocusItem = _props$autoFocusItem === void 0 ? false : _props$autoFocusItem,
       children = props.children,
       className = props.className,
-      onKeyDown = props.onKeyDown,
+      _props$disabledItemsF = props.disabledItemsFocusable,
+      disabledItemsFocusable = _props$disabledItemsF === void 0 ? false : _props$disabledItemsF,
       _props$disableListWra = props.disableListWrap,
       disableListWrap = _props$disableListWra === void 0 ? false : _props$disableListWra,
+      onKeyDown = props.onKeyDown,
       _props$variant = props.variant,
       variant = _props$variant === void 0 ? 'selectedMenu' : _props$variant,
-      other = _objectWithoutProperties(props, ["actions", "autoFocus", "autoFocusItem", "children", "className", "onKeyDown", "disableListWrap", "variant"]);
+      other = _objectWithoutProperties(props, ["actions", "autoFocus", "autoFocusItem", "children", "className", "disabledItemsFocusable", "disableListWrap", "onKeyDown", "variant"]);
 
-  var listRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
-  var textCriteriaRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef({
+  var listRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
+  var textCriteriaRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]({
     keys: [],
     repeating: true,
     previousKeyMatched: true,
@@ -53177,7 +54227,7 @@ var MenuList_MenuList = external_root_React_commonjs2_react_commonjs_react_amd_r
       listRef.current.focus();
     }
   }, [autoFocus]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useImperativeHandle(actions, function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useImperativeHandle"](actions, function () {
     return {
       adjustStyleForScrollbar: function adjustStyleForScrollbar(containerElement, theme) {
         // Let's ignore that piece of logic if users are already overriding the width
@@ -53210,16 +54260,16 @@ var MenuList_MenuList = external_root_React_commonjs2_react_commonjs_react_amd_r
     if (key === 'ArrowDown') {
       // Prevent scroll of the page
       event.preventDefault();
-      moveFocus(list, currentFocus, disableListWrap, nextItem);
+      moveFocus(list, currentFocus, disableListWrap, disabledItemsFocusable, nextItem);
     } else if (key === 'ArrowUp') {
       event.preventDefault();
-      moveFocus(list, currentFocus, disableListWrap, previousItem);
+      moveFocus(list, currentFocus, disableListWrap, disabledItemsFocusable, previousItem);
     } else if (key === 'Home') {
       event.preventDefault();
-      moveFocus(list, null, disableListWrap, nextItem);
+      moveFocus(list, null, disableListWrap, disabledItemsFocusable, nextItem);
     } else if (key === 'End') {
       event.preventDefault();
-      moveFocus(list, null, disableListWrap, previousItem);
+      moveFocus(list, null, disableListWrap, disabledItemsFocusable, previousItem);
     } else if (key.length === 1) {
       var criteria = textCriteriaRef.current;
       var lowerKey = key.toLowerCase();
@@ -53240,7 +54290,7 @@ var MenuList_MenuList = external_root_React_commonjs2_react_commonjs_react_amd_r
       criteria.keys.push(lowerKey);
       var keepFocusOnCurrent = currentFocus && !criteria.repeating && textCriteriaMatches(currentFocus, criteria);
 
-      if (criteria.previousKeyMatched && (keepFocusOnCurrent || moveFocus(list, currentFocus, false, nextItem, criteria))) {
+      if (criteria.previousKeyMatched && (keepFocusOnCurrent || moveFocus(list, currentFocus, false, disabledItemsFocusable, nextItem, criteria))) {
         event.preventDefault();
       } else {
         criteria.previousKeyMatched = false;
@@ -53252,9 +54302,9 @@ var MenuList_MenuList = external_root_React_commonjs2_react_commonjs_react_amd_r
     }
   };
 
-  var handleOwnRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (instance) {
+  var handleOwnRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (instance) {
     // #StrictMode ready
-    listRef.current = external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_default.a.findDOMNode(instance);
+    listRef.current = external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["findDOMNode"](instance);
   }, []);
   var handleRef = useForkRef(handleOwnRef, ref);
   /**
@@ -53267,8 +54317,8 @@ var MenuList_MenuList = external_root_React_commonjs2_react_commonjs_react_amd_r
   // to check if there is a `selected` item. We're looking for the last `selected`
   // item and use the first valid item as a fallback
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Children.forEach(children, function (child, index) {
-    if (!external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(child)) {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].forEach(children, function (child, index) {
+    if (!external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](child)) {
       return;
     }
 
@@ -53282,7 +54332,7 @@ var MenuList_MenuList = external_root_React_commonjs2_react_commonjs_react_amd_r
       }
     }
   });
-  var items = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Children.map(children, function (child, index) {
+  var items = external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
     if (index === activeItemIndex) {
       var newChildProps = {};
 
@@ -53294,14 +54344,12 @@ var MenuList_MenuList = external_root_React_commonjs2_react_commonjs_react_amd_r
         newChildProps.tabIndex = 0;
       }
 
-      if (newChildProps !== null) {
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(child, newChildProps);
-      }
+      return external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](child, newChildProps);
     }
 
     return child;
   });
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_List_List, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_List_List, _extends({
     role: "menu",
     ref: handleRef,
     className: className,
@@ -53312,6 +54360,7 @@ var MenuList_MenuList = external_root_React_commonjs2_react_commonjs_react_amd_r
  false ? undefined : void 0;
 /* harmony default export */ var esm_MenuList_MenuList = (MenuList_MenuList);
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Menu/Menu.js
+
 
 
 
@@ -53349,7 +54398,7 @@ var Menu_styles = {
     outline: 0
   }
 };
-var Menu_Menu = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Menu(props, ref) {
+var Menu_Menu = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Menu(props, ref) {
   var _props$autoFocus = props.autoFocus,
       autoFocus = _props$autoFocus === void 0 ? true : _props$autoFocus,
       children = props.children,
@@ -53372,8 +54421,8 @@ var Menu_Menu = external_root_React_commonjs2_react_commonjs_react_amd_react_def
 
   var theme = useTheme_useTheme();
   var autoFocusItem = autoFocus && !disableAutoFocusItem && open;
-  var menuListActionsRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
-  var contentAnchorRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
+  var menuListActionsRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
+  var contentAnchorRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
 
   var getContentAnchorEl = function getContentAnchorEl() {
     return contentAnchorRef.current;
@@ -53409,8 +54458,8 @@ var Menu_Menu = external_root_React_commonjs2_react_commonjs_react_amd_react_def
   // to check if there is a `selected` item. We're looking for the last `selected`
   // item and use the first valid item as a fallback
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Children.map(children, function (child, index) {
-    if (!external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(child)) {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
+    if (!external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](child)) {
       return;
     }
 
@@ -53424,12 +54473,12 @@ var Menu_Menu = external_root_React_commonjs2_react_commonjs_react_amd_react_def
       }
     }
   });
-  var items = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Children.map(children, function (child, index) {
+  var items = external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
     if (index === activeItemIndex) {
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(child, {
+      return external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](child, {
         ref: function ref(instance) {
           // #StrictMode ready
-          contentAnchorRef.current = external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_default.a.findDOMNode(instance);
+          contentAnchorRef.current = external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["findDOMNode"](instance);
           setRef(child.ref, instance);
         }
       });
@@ -53437,7 +54486,7 @@ var Menu_Menu = external_root_React_commonjs2_react_commonjs_react_amd_react_def
 
     return child;
   });
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Popover_Popover, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Popover_Popover, _extends({
     getContentAnchorEl: getContentAnchorEl,
     classes: PopoverClasses,
     onClose: onClose,
@@ -53452,7 +54501,7 @@ var Menu_Menu = external_root_React_commonjs2_react_commonjs_react_amd_react_def
     open: open,
     ref: ref,
     transitionDuration: transitionDuration
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_MenuList_MenuList, _extends({
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_MenuList_MenuList, _extends({
     onKeyDown: handleListKeyDown,
     actions: menuListActionsRef,
     autoFocus: autoFocus && (activeItemIndex === -1 || disableAutoFocusItem),
@@ -53499,8 +54548,9 @@ function SelectInput_isEmpty(display) {
  */
 
 
-var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function SelectInput(props, ref) {
-  var autoFocus = props.autoFocus,
+var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function SelectInput(props, ref) {
+  var ariaLabel = props['aria-label'],
+      autoFocus = props.autoFocus,
       autoWidth = props.autoWidth,
       children = props.children,
       classes = props.classes,
@@ -53531,7 +54581,7 @@ var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react
       valueProp = props.value,
       _props$variant = props.variant,
       variant = _props$variant === void 0 ? 'standard' : _props$variant,
-      other = _objectWithoutProperties(props, ["autoFocus", "autoWidth", "children", "classes", "className", "defaultValue", "disabled", "displayEmpty", "IconComponent", "inputRef", "labelId", "MenuProps", "multiple", "name", "onBlur", "onChange", "onClose", "onFocus", "onOpen", "open", "readOnly", "renderValue", "required", "SelectDisplayProps", "tabIndex", "type", "value", "variant"]);
+      other = _objectWithoutProperties(props, ["aria-label", "autoFocus", "autoWidth", "children", "classes", "className", "defaultValue", "disabled", "displayEmpty", "IconComponent", "inputRef", "labelId", "MenuProps", "multiple", "name", "onBlur", "onChange", "onClose", "onFocus", "onOpen", "open", "readOnly", "renderValue", "required", "SelectDisplayProps", "tabIndex", "type", "value", "variant"]);
 
   var _useControlled = useControlled({
     controlled: valueProp,
@@ -53542,25 +54592,25 @@ var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react
       value = _useControlled2[0],
       setValue = _useControlled2[1];
 
-  var inputRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
+  var inputRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(null),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](null),
       displayNode = _React$useState[0],
       setDisplayNode = _React$useState[1];
 
-  var _React$useRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(openProp != null),
+  var _React$useRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](openProp != null),
       isOpenControlled = _React$useRef.current;
 
-  var _React$useState2 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(),
+  var _React$useState2 = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](),
       menuMinWidthState = _React$useState2[0],
       setMenuMinWidthState = _React$useState2[1];
 
-  var _React$useState3 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(false),
+  var _React$useState3 = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](false),
       openState = _React$useState3[0],
       setOpenState = _React$useState3[1];
 
   var handleRef = useForkRef(ref, inputRefProp);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useImperativeHandle(handleRef, function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useImperativeHandle"](handleRef, function () {
     return {
       focus: function focus() {
         displayNode.focus();
@@ -53569,7 +54619,7 @@ var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react
       value: value
     };
   }, [displayNode, value]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     if (autoFocus && displayNode) {
       displayNode.focus();
     }
@@ -53591,8 +54641,11 @@ var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react
   };
 
   var handleMouseDown = function handleMouseDown(event) {
-    if (event.button !== 0) // ignore everything but left-click
-      return; // Hijack the default focus behavior.
+    // Ignore everything but left-click
+    if (event.button !== 0) {
+      return;
+    } // Hijack the default focus behavior.
+
 
     event.preventDefault();
     displayNode.focus();
@@ -53622,6 +54675,14 @@ var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react
         }
       } else {
         newValue = child.props.value;
+      }
+
+      if (child.props.onClick) {
+        child.props.onClick(event);
+      }
+
+      if (value === newValue) {
+        return;
       }
 
       setValue(newValue);
@@ -53689,8 +54750,8 @@ var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react
     }
   }
 
-  var items = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Children.map(children, function (child) {
-    if (!external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(child)) {
+  var items = external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child) {
+    if (!external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](child)) {
       return null;
     }
 
@@ -53722,7 +54783,7 @@ var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react
       foundMatch = true;
     }
 
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(child, {
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](child, {
       'aria-selected': selected ? 'true' : undefined,
       onClick: handleItemClick(child),
       onKeyUp: function onKeyUp(event) {
@@ -53733,10 +54794,8 @@ var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react
           event.preventDefault();
         }
 
-        var onKeyUp = child.props.onKeyUp;
-
-        if (typeof onKeyUp === 'function') {
-          onKeyUp(event);
+        if (child.props.onKeyUp) {
+          child.props.onKeyUp(event);
         }
       },
       role: 'option',
@@ -53770,15 +54829,17 @@ var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react
   }
 
   var buttonId = SelectDisplayProps.id || (name ? "mui-component-select-".concat(name) : undefined);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](external_root_React_commonjs2_react_commonjs_react_amd_react_["Fragment"], null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", _extends({
     className: clsx_m(classes.root, // TODO v5: merge root and select
     classes.select, classes.selectMenu, classes[variant], className, disabled && classes.disabled),
     ref: setDisplayNode,
     tabIndex: tabIndex,
     role: "button",
+    "aria-disabled": disabled ? 'true' : undefined,
     "aria-expanded": open ? 'true' : undefined,
-    "aria-labelledby": "".concat(labelId || '', " ").concat(buttonId || ''),
     "aria-haspopup": "listbox",
+    "aria-label": ariaLabel,
+    "aria-labelledby": [labelId, buttonId].filter(Boolean).join(' ') || undefined,
     onKeyDown: handleKeyDown,
     onMouseDown: disabled || readOnly ? null : handleMouseDown,
     onBlur: handleBlur,
@@ -53786,20 +54847,22 @@ var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react
   }, SelectDisplayProps, {
     // The id is required for proper a11y
     id: buttonId
-  }), SelectInput_isEmpty(display) ? // eslint-disable-next-line react/no-danger
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+  }), SelectInput_isEmpty(display) ?
+  /*#__PURE__*/
+  // eslint-disable-next-line react/no-danger
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
     dangerouslySetInnerHTML: {
       __html: '&#8203;'
     }
-  }) : display), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", _extends({
+  }) : display), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("input", _extends({
     value: Array.isArray(value) ? value.join(',') : value,
     name: name,
     ref: inputRef,
     type: "hidden",
     autoFocus: autoFocus
-  }, other)), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconComponent, {
-    className: clsx_m(classes.icon, classes["icon".concat(capitalize(variant))], open && classes.iconOpen)
-  }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Menu_Menu, _extends({
+  }, other)), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](IconComponent, {
+    className: clsx_m(classes.icon, classes["icon".concat(capitalize(variant))], open && classes.iconOpen, disabled && classes.disabled)
+  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Menu_Menu, _extends({
     id: "menu-".concat(name || ''),
     anchorEl: displayNode,
     open: open,
@@ -53819,22 +54882,6 @@ var SelectInput_SelectInput = external_root_React_commonjs2_react_commonjs_react
 });
  false ? undefined : void 0;
 /* harmony default export */ var Select_SelectInput = (SelectInput_SelectInput);
-// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/internal/svg-icons/createSvgIcon.js
-
-
-
-function createSvgIcon_createSvgIcon(path, displayName) {
-  var Component = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.memo(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_SvgIcon_SvgIcon, _extends({}, props, {
-      ref: ref
-    }), path);
-  }));
-
-  if (false) {}
-
-  Component.muiName = esm_SvgIcon_SvgIcon.muiName;
-  return Component;
-}
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/internal/svg-icons/ArrowDropDown.js
 
 
@@ -53842,7 +54889,7 @@ function createSvgIcon_createSvgIcon(path, displayName) {
  * @ignore - internal component.
  */
 
-/* harmony default export */ var ArrowDropDown = (createSvgIcon_createSvgIcon(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("path", {
+/* harmony default export */ var ArrowDropDown = (createSvgIcon( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("path", {
   d: "M7 10l5 5 5-5z"
 }), 'ArrowDropDown'));
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/NativeSelect/NativeSelectInput.js
@@ -53857,7 +54904,7 @@ function createSvgIcon_createSvgIcon(path, displayName) {
  * @ignore - internal component.
  */
 
-var NativeSelectInput_NativeSelectInput = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function NativeSelectInput(props, ref) {
+var NativeSelectInput_NativeSelectInput = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function NativeSelectInput(props, ref) {
   var classes = props.classes,
       className = props.className,
       disabled = props.disabled,
@@ -53867,13 +54914,13 @@ var NativeSelectInput_NativeSelectInput = external_root_React_commonjs2_react_co
       variant = _props$variant === void 0 ? 'standard' : _props$variant,
       other = _objectWithoutProperties(props, ["classes", "className", "disabled", "IconComponent", "inputRef", "variant"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("select", _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](external_root_React_commonjs2_react_commonjs_react_amd_react_["Fragment"], null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("select", _extends({
     className: clsx_m(classes.root, // TODO v5: merge root and select
     classes.select, classes[variant], className, disabled && classes.disabled),
     disabled: disabled,
     ref: inputRef || ref
-  }, other)), props.multiple ? null : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconComponent, {
-    className: clsx_m(classes.icon, classes["icon".concat(capitalize(variant))])
+  }, other)), props.multiple ? null : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](IconComponent, {
+    className: clsx_m(classes.icon, classes["icon".concat(capitalize(variant))], disabled && classes.disabled)
   }));
 });
  false ? undefined : void 0;
@@ -53949,8 +54996,6 @@ var NativeSelect_styles = function styles(theme) {
 
     /* Styles applied to the select component `selectMenu` class. */
     selectMenu: {
-      height: 'auto',
-      // Reset
       textOverflow: 'ellipsis',
       whiteSpace: 'nowrap',
       overflow: 'hidden'
@@ -53967,9 +55012,12 @@ var NativeSelect_styles = function styles(theme) {
       right: 0,
       top: 'calc(50% - 12px)',
       // Center vertically
+      pointerEvents: 'none',
+      // Don't block pointer events on the select under the icon.
       color: theme.palette.action.active,
-      pointerEvents: 'none' // Don't block pointer events on the select under the icon.
-
+      '&$disabled': {
+        color: theme.palette.action.disabled
+      }
     },
 
     /* Styles applied to the icon component if the popup is open. */
@@ -53988,12 +55036,12 @@ var NativeSelect_styles = function styles(theme) {
     }
   };
 };
-var defaultInput = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Input_Input, null);
+var defaultInput = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Input_Input, null);
 /**
  * An alternative to `<Select native />` with a much smaller bundle size footprint.
  */
 
-var NativeSelect_NativeSelect = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function NativeSelect(props, ref) {
+var NativeSelect_NativeSelect = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function NativeSelect(props, ref) {
   var children = props.children,
       classes = props.classes,
       _props$IconComponent = props.IconComponent,
@@ -54010,7 +55058,7 @@ var NativeSelect_NativeSelect = external_root_React_commonjs2_react_commonjs_rea
     muiFormControl: muiFormControl,
     states: ['variant']
   });
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(input, _extends({
+  return external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](input, _extends({
     // Most of the logic is implemented in `NativeSelectInput`.
     // The `Select` component is a simple API wrapper to expose something better to play with.
     inputComponent: NativeSelect_NativeSelectInput,
@@ -54047,11 +55095,11 @@ NativeSelect_NativeSelect.muiName = 'Select';
 
 var Select_styles = NativeSelect_styles;
 
-var Select_ref = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Input_Input, null);
+var Select_ref = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Input_Input, null);
 
-var Select_ref2 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_FilledInput_FilledInput, null);
+var Select_ref2 = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_FilledInput_FilledInput, null);
 
-var Select_Select_Select = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Select(props, ref) {
+var Select_Select_Select = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Select(props, ref) {
   var _props$autoWidth = props.autoWidth,
       autoWidth = _props$autoWidth === void 0 ? false : _props$autoWidth,
       children = props.children,
@@ -54091,13 +55139,13 @@ var Select_Select_Select = external_root_React_commonjs2_react_commonjs_react_am
   var variant = fcs.variant || variantProps;
   var InputComponent = input || {
     standard: Select_ref,
-    outlined: external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_OutlinedInput_OutlinedInput, {
+    outlined: /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_OutlinedInput_OutlinedInput, {
       label: label,
       labelWidth: labelWidth
     }),
     filled: Select_ref2
   }[variant];
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(InputComponent, _extends({
+  return external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](InputComponent, _extends({
     // Most of the logic is implemented in `SelectInput`.
     // The `Select` component is a simple API wrapper to expose something better to play with.
     inputComponent: inputComponent,
@@ -54123,7 +55171,7 @@ var Select_Select_Select = external_root_React_commonjs2_react_commonjs_react_am
         id: id
       }, SelectDisplayProps)
     }, {}, inputProps, {
-      classes: inputProps ? mergeClasses_mergeClasses({
+      classes: inputProps ? mergeClasses({
         baseClasses: classes,
         newClasses: inputProps.classes,
         Component: Select
@@ -54194,7 +55242,7 @@ var TextField_styles = {
  * - using the underlying components directly as shown in the demos
  */
 
-var TextField_TextField = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function TextField(props, ref) {
+var TextField_TextField = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function TextField(props, ref) {
   var autoComplete = props.autoComplete,
       _props$autoFocus = props.autoFocus,
       autoFocus = _props$autoFocus === void 0 ? false : _props$autoFocus,
@@ -54248,7 +55296,12 @@ var TextField_TextField = external_root_React_commonjs2_react_commonjs_react_amd
       InputMore.notched = InputLabelProps.shrink;
     }
 
-    InputMore.label = label ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, label, required && "\xA0*") : label;
+    if (label) {
+      var _InputLabelProps$requ;
+
+      var displayRequired = (_InputLabelProps$requ = InputLabelProps === null || InputLabelProps === void 0 ? void 0 : InputLabelProps.required) !== null && _InputLabelProps$requ !== void 0 ? _InputLabelProps$requ : required;
+      InputMore.label = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](external_root_React_commonjs2_react_commonjs_react_amd_react_["Fragment"], null, label, displayRequired && "\xA0*");
+    }
   }
 
   if (select) {
@@ -54263,7 +55316,7 @@ var TextField_TextField = external_root_React_commonjs2_react_commonjs_react_amd
   var helperTextId = helperText && id ? "".concat(id, "-helper-text") : undefined;
   var inputLabelId = label && id ? "".concat(id, "-label") : undefined;
   var InputComponent = variantComponent[variant];
-  var InputElement = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(InputComponent, _extends({
+  var InputElement = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](InputComponent, _extends({
     "aria-describedby": helperTextId,
     autoComplete: autoComplete,
     autoFocus: autoFocus,
@@ -54283,7 +55336,7 @@ var TextField_TextField = external_root_React_commonjs2_react_commonjs_react_amd
     placeholder: placeholder,
     inputProps: inputProps
   }, InputMore, InputProps));
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_FormControl_FormControl, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_FormControl_FormControl, _extends({
     className: clsx_m(classes.root, className),
     disabled: disabled,
     error: error,
@@ -54293,16 +55346,16 @@ var TextField_TextField = external_root_React_commonjs2_react_commonjs_react_amd
     required: required,
     color: color,
     variant: variant
-  }, other), label && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_InputLabel_InputLabel, _extends({
+  }, other), label && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_InputLabel_InputLabel, _extends({
     htmlFor: id,
     id: inputLabelId
-  }, InputLabelProps), label), select ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Select_Select, _extends({
+  }, InputLabelProps), label), select ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Select_Select, _extends({
     "aria-describedby": helperTextId,
     id: id,
     labelId: inputLabelId,
     value: value,
     input: InputElement
-  }, SelectProps), children) : InputElement, helperText && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_FormHelperText_FormHelperText, _extends({
+  }, SelectProps), children) : InputElement, helperText && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_FormHelperText_FormHelperText, _extends({
     id: helperTextId
   }, FormHelperTextProps), helperText));
 });
@@ -54417,7 +55470,7 @@ var IconButton_styles = function styles(theme) {
  * regarding the available icon options.
  */
 
-var IconButton_IconButton_IconButton = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function IconButton(props, ref) {
+var IconButton_IconButton_IconButton = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function IconButton(props, ref) {
   var _props$edge = props.edge,
       edge = _props$edge === void 0 ? false : _props$edge,
       children = props.children,
@@ -54433,18 +55486,16 @@ var IconButton_IconButton_IconButton = external_root_React_commonjs2_react_commo
       size = _props$size === void 0 ? 'medium' : _props$size,
       other = _objectWithoutProperties(props, ["edge", "children", "classes", "className", "color", "disabled", "disableFocusRipple", "size"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_ButtonBase_ButtonBase, _extends({
-    className: clsx_m(classes.root, className, color !== 'default' && classes["color".concat(capitalize(color))], disabled && classes.disabled, {
-      small: classes["size".concat(capitalize(size))]
-    }[size], {
-      start: classes.edgeStart,
-      end: classes.edgeEnd
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_ButtonBase_ButtonBase, _extends({
+    className: clsx_m(classes.root, className, color !== 'default' && classes["color".concat(capitalize(color))], disabled && classes.disabled, size === "small" && classes["size".concat(capitalize(size))], {
+      'start': classes.edgeStart,
+      'end': classes.edgeEnd
     }[edge]),
     centerRipple: true,
     focusRipple: !disableFocusRipple,
     disabled: disabled,
     ref: ref
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
     className: classes.label
   }, children));
 });
@@ -54500,7 +55551,7 @@ var InputAdornment_styles = {
   /* Styles applied if the adornment is used inside <FormControl margin="dense" />. */
   marginDense: {}
 };
-var InputAdornment_InputAdornment = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function InputAdornment(props, ref) {
+var InputAdornment_InputAdornment = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function InputAdornment(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -54525,19 +55576,15 @@ var InputAdornment_InputAdornment = external_root_React_commonjs2_react_commonjs
     variant = muiFormControl.variant;
   }
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FormControl_FormControlContext.Provider, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](FormControl_FormControlContext.Provider, {
     value: null
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
-    className: clsx_m(classes.root, className, disablePointerEvents && classes.disablePointerEvents, muiFormControl.hiddenLabel && classes.hiddenLabel, {
-      filled: classes.filled
-    }[variant], {
-      start: classes.positionStart,
-      end: classes.positionEnd
-    }[position], {
-      dense: classes.marginDense
-    }[muiFormControl.margin]),
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
+    className: clsx_m(classes.root, className, disablePointerEvents && classes.disablePointerEvents, muiFormControl.hiddenLabel && classes.hiddenLabel, variant === 'filled' && classes.filled, {
+      'start': classes.positionStart,
+      'end': classes.positionEnd
+    }[position], muiFormControl.margin === 'dense' && classes.marginDense),
     ref: ref
-  }, other), typeof children === 'string' && !disableTypography ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Typography_Typography, {
+  }, other), typeof children === 'string' && !disableTypography ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Typography_Typography, {
     color: "textSecondary"
   }, children) : children));
 });
@@ -54691,6 +55738,32 @@ function (_React$Component) {
 
 
 
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js
+
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (typeof_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/inherits.js
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
 // CONCATENATED MODULE: ./node_modules/@material-ui/pickers/esm/Day.js
 
 
@@ -54880,7 +55953,7 @@ var CircularProgress_styles = function styles(theme) {
  * attribute to `true` on that region until it has finished loading.
  */
 
-var CircularProgress_CircularProgress = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function CircularProgress(props, ref) {
+var CircularProgress_CircularProgress = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function CircularProgress(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$color = props.color,
@@ -54916,10 +55989,10 @@ var CircularProgress_CircularProgress = external_root_React_commonjs2_react_comm
     }
   }
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", _extends({
     className: clsx_m(classes.root, className, color !== 'inherit' && classes["color".concat(capitalize(color))], {
-      indeterminate: classes.indeterminate,
-      static: classes.static
+      'indeterminate': classes.indeterminate,
+      'static': classes.static
     }[variant]),
     style: _extends({
       width: size,
@@ -54927,13 +56000,13 @@ var CircularProgress_CircularProgress = external_root_React_commonjs2_react_comm
     }, rootStyle, {}, style),
     ref: ref,
     role: "progressbar"
-  }, rootProps, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("svg", {
+  }, rootProps, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("svg", {
     className: classes.svg,
     viewBox: "".concat(CircularProgress_SIZE / 2, " ").concat(CircularProgress_SIZE / 2, " ").concat(CircularProgress_SIZE, " ").concat(CircularProgress_SIZE)
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("circle", {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("circle", {
     className: clsx_m(classes.circle, disableShrink && classes.circleDisableShrink, {
-      indeterminate: classes.circleIndeterminate,
-      static: classes.circleStatic
+      'indeterminate': classes.circleIndeterminate,
+      'static': classes.circleStatic
     }[variant]),
     style: circleStyle,
     cx: CircularProgress_SIZE,
@@ -57532,16 +58605,15 @@ var components_DatePicker_DatePicker = function DatePicker(props) {
       }
 
       if (date && date.isValid) {
-        var _dateIso = date.toISODate();
-
-        onChange(_dateIso);
+        var dateIso = date.toISODate();
+        onChange(dateIso);
         setLastValidDate(date);
       }
     }
 
     setSelectedDate(date);
   }, [onChange]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(KeyboardDatePicker, extends_default()({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(KeyboardDatePicker, extends_default()({
     disabled: disabled,
     format: format,
     fullWidth: fullWidth,
@@ -57551,8 +58623,7 @@ var components_DatePicker_DatePicker = function DatePicker(props) {
     onChange: handleDateChange,
     placeholder: placeholder,
     value: selectedDate,
-    variant: "inline" // $FlowFixMe inexact pattern
-
+    variant: "inline"
   }, other));
 };
 
@@ -57597,6 +58668,9 @@ var Title = external_amd_styled_components_commonjs_styled_components_commonjs2_
 
 
 
+function Search_createSuper(Derived) { var hasNativeReflectConstruct = Search_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function Search_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -57609,17 +58683,19 @@ var Title = external_amd_styled_components_commonjs_styled_components_commonjs2_
 
 
 
-var Search_Search =
-/*#__PURE__*/
-function (_Component) {
+
+
+var Search_Search = /*#__PURE__*/function (_Component) {
   inherits_default()(Search, _Component);
+
+  var _super = Search_createSuper(Search);
 
   function Search(props) {
     var _this;
 
     classCallCheck_default()(this, Search);
 
-    _this = possibleConstructorReturn_default()(this, getPrototypeOf_default()(Search).call(this, props));
+    _this = _super.call(this, props);
 
     defineProperty_default()(assertThisInitialized_default()(_this), "handleOnChangeInput", function (e) {
       var searchFieldValues = _this.state.searchFieldValues;
@@ -57700,7 +58776,7 @@ function (_Component) {
       }
 
       if (SearchResultsComponent) {
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SearchResultsComponent, {
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SearchResultsComponent, {
           hasSearched: hasSearched,
           isLoading: isLoading,
           onResultClick: onResultClick,
@@ -57721,7 +58797,7 @@ function (_Component) {
       var searchFieldValues = _this.state.searchFieldValues; // $FlowFixMe optional not recognizing defaultProps
 
       var searchFieldComponents = searchFields.map(function (field) {
-        var fieldComponent = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Input, {
+        var fieldComponent = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Input, {
           id: "luk-search-".concat(field.id),
           name: field.id,
           onChange: _this.handleOnChangeInput,
@@ -57729,7 +58805,7 @@ function (_Component) {
         }); // TODO: More flexible method for handling checkboxes, dropdowns, etc.
 
         if (field.type === 'date') {
-          fieldComponent = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_DatePicker, {
+          fieldComponent = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_DatePicker, {
             id: "luk-search-".concat(field.id),
             name: field.id,
             onChange: _this.getOnChangeDate(field.id),
@@ -57737,20 +58813,20 @@ function (_Component) {
           });
         }
 
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
           key: "luk-search-key-".concat(field.id)
-        }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
+        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
           htmlFor: "luk-search-".concat(field.id)
         }, field.label), fieldComponent);
       });
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CardSegment_CardSegment, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CardSegment_CardSegment, {
         vertical: true
-      }, title && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Title, null, title), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("form", null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(InputGrid, {
+      }, title && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Title, null, title), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("form", null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(InputGrid, {
         columns: searchFields.length + 1,
         align: "flex-start"
-      }, searchFieldComponents, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
+      }, searchFieldComponents, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
         stealth: true
-      }, "Submit"), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Button, {
+      }, "Submit"), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Button, {
         type: "submit",
         fullWidth: true,
         isLoading: isLoading,
@@ -57770,13 +58846,13 @@ function (_Component) {
               value: v
             };
           });
-          return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
             key: "luk-filter-key-".concat(filter.id)
-          }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
+          }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
             bold: true,
             key: filter.id,
             htmlFor: "luk-filter-".concat(filter.id)
-          }, filter.label), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_CheckboxSelect, {
+          }, filter.label), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_CheckboxSelect, {
             name: filter.id,
             id: "luk-filter-".concat(filter.id),
             borderless: true,
@@ -57785,10 +58861,10 @@ function (_Component) {
             options: options
           }));
         });
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CardSegment_CardSegment, {
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CardSegment_CardSegment, {
           vertical: true,
           padding: "sm"
-        }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(InputGrid, {
+        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(InputGrid, {
           columns: filterFields.length,
           align: "flex-start"
         }, filterFieldComponents));
@@ -57815,9 +58891,9 @@ function (_Component) {
     key: "render",
     value: function render() {
       var className = this.props.className;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CardStack_CardStack, {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CardStack_CardStack, {
         className: className
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Card_Card, null, this.renderSearchFieldsSegment(), this.renderFiltersSegment()), this.renderFilteredSearchResults());
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Card_Card, null, this.renderSearchFieldsSegment(), this.renderFiltersSegment()), this.renderFilteredSearchResults());
     }
   }]);
 
@@ -57856,6 +58932,11 @@ defineProperty_default()(Search_Search, "defaultProps", {
 
 
 
+function PersonResult_createSuper(Derived) { var hasNativeReflectConstruct = PersonResult_isNativeReflectConstruct(); return function () { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
+
+function PersonResult_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 
 
@@ -57866,14 +58947,12 @@ var StyledResultGrid = external_amd_styled_components_commonjs_styled_components
   componentId: "sc-4sveql-0"
 })(["grid-template-columns:minmax(80px,2fr) minmax(80px,2fr) minmax(80px,2fr) 1fr 1fr;> div:last-child{grid-column:3 / -1;}"]);
 
-var PersonResult_PersonResult =
-/*#__PURE__*/
-function (_Component) {
+var PersonResult_PersonResult = /*#__PURE__*/function (_Component) {
   inherits_default()(PersonResult, _Component);
 
-  function PersonResult() {
-    var _getPrototypeOf2;
+  var _super = PersonResult_createSuper(PersonResult);
 
+  function PersonResult() {
     var _this;
 
     classCallCheck_default()(this, PersonResult);
@@ -57882,7 +58961,7 @@ function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(PersonResult)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _super.call.apply(_super, [this].concat(args));
 
     defineProperty_default()(assertThisInitialized_default()(_this), "transformResultToDetailsList", function (result) {
       var resultLabels = _this.props.resultLabels;
@@ -57910,12 +58989,12 @@ function (_Component) {
     value: function render() {
       var result = this.props.result;
       var details = this.transformResultToDetailsList(result);
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Card_Card, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultWrapper, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultDetails, null, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledResultGrid, null, details && details.map(function (detail, index) {
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Card_Card, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultDetails, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledResultGrid, null, details && details.map(function (detail, index) {
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
           key: index.toString()
-        }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
+        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
           bold: true
-        }, detail.get('label', '')), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Text, null, detail.get('value', '')));
+        }, detail.get('label', '')), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Text, null, detail.get('value', '')));
       })))));
     }
   }]);
@@ -57938,7 +59017,7 @@ defineProperty_default()(PersonResult_PersonResult, "defaultProps", {
 
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faClock.js
-var faClock = __webpack_require__(89);
+var faClock = __webpack_require__(92);
 
 // CONCATENATED MODULE: ./node_modules/@material-ui/pickers/esm/TimePickerToolbar-81100fab.js
 
@@ -58181,7 +59260,7 @@ KeyboardTimePicker.defaultProps = TimePicker_defaultProps;
 
 
 
-var ClockIcon = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+var ClockIcon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
   icon: faClock["faClock"]
 });
 
@@ -58225,16 +59304,15 @@ var components_TimePicker_TimePicker = function TimePicker(props) {
       }
 
       if (date && date.isValid) {
-        var _timeIso = date.toLocaleString(luxon["DateTime"].TIME_24_SIMPLE);
-
-        onChange(_timeIso);
+        var timeIso = date.toLocaleString(luxon["DateTime"].TIME_24_SIMPLE);
+        onChange(timeIso);
         setLastValidDate(date);
       }
     }
 
     setSelectedDate(date);
   }, [onChange]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(KeyboardTimePicker, extends_default()({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(KeyboardTimePicker, extends_default()({
     ampm: true,
     InputProps: inputProps,
     disabled: disabled,
@@ -58246,8 +59324,7 @@ var components_TimePicker_TimePicker = function TimePicker(props) {
     onChange: handleDateChange,
     placeholder: placeholder,
     value: selectedDate,
-    variant: "inline" // $FlowFixMe inexact pattern
-
+    variant: "inline"
   }, other));
 };
 
@@ -58390,7 +59467,7 @@ var Grid_styles = function styles(theme) {
       flexDirection: 'column-reverse'
     },
 
-    /* Styles applied to the root element if `direction="rwo-reverse"`. */
+    /* Styles applied to the root element if `direction="row-reverse"`. */
     'direction-xs-row-reverse': {
       flexDirection: 'row-reverse'
     },
@@ -58480,7 +59557,7 @@ var Grid_styles = function styles(theme) {
     return accumulator;
   }, {}));
 };
-var Grid_Grid = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Grid(props, ref) {
+var Grid_Grid = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Grid(props, ref) {
   var _props$alignContent = props.alignContent,
       alignContent = _props$alignContent === void 0 ? 'stretch' : _props$alignContent,
       _props$alignItems = props.alignItems,
@@ -58516,7 +59593,7 @@ var Grid_Grid = external_root_React_commonjs2_react_commonjs_react_amd_react_def
       other = _objectWithoutProperties(props, ["alignContent", "alignItems", "classes", "className", "component", "container", "direction", "item", "justify", "lg", "md", "sm", "spacing", "wrap", "xl", "xs", "zeroMinWidth"]);
 
   var className = clsx_m(classes.root, classNameProp, container && [classes.container, spacing !== 0 && classes["spacing-xs-".concat(String(spacing))]], item && classes.item, zeroMinWidth && classes.zeroMinWidth, direction !== 'row' && classes["direction-xs-".concat(String(direction))], wrap !== 'wrap' && classes["wrap-xs-".concat(String(wrap))], alignItems !== 'stretch' && classes["align-items-xs-".concat(String(alignItems))], alignContent !== 'stretch' && classes["align-content-xs-".concat(String(alignContent))], justify !== 'flex-start' && classes["justify-xs-".concat(String(justify))], xs !== false && classes["grid-xs-".concat(String(xs))], sm !== false && classes["grid-sm-".concat(String(sm))], md !== false && classes["grid-md-".concat(String(md))], lg !== false && classes["grid-lg-".concat(String(lg))], xl !== false && classes["grid-xl-".concat(String(xl))]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
     className: className,
     ref: ref
   }, other));
@@ -58632,7 +59709,7 @@ var Tab_styles = function styles(theme) {
     }
   };
 };
-var Tab_Tab = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Tab(props, ref) {
+var Tab_Tab = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Tab(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$disabled = props.disabled,
@@ -58663,7 +59740,7 @@ var Tab_Tab = external_root_React_commonjs2_react_commonjs_react_amd_react_defau
     }
   };
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_ButtonBase_ButtonBase, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_ButtonBase_ButtonBase, _extends({
     focusRipple: !disableFocusRipple,
     className: clsx_m(classes.root, classes["textColor".concat(capitalize(textColor))], className, disabled && classes.disabled, selected && classes.selected, label && icon && classes.labelIcon, fullWidth && classes.fullWidth, wrapped && classes.wrapped),
     ref: ref,
@@ -58671,7 +59748,7 @@ var Tab_Tab = external_root_React_commonjs2_react_commonjs_react_amd_react_defau
     "aria-selected": selected,
     disabled: disabled,
     onClick: handleChange
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
     className: classes.wrapper
   }, icon, label), indicator);
 });
@@ -58679,86 +59756,72 @@ var Tab_Tab = external_root_React_commonjs2_react_commonjs_react_amd_react_defau
 /* harmony default export */ var esm_Tab_Tab = (styles_withStyles(Tab_styles, {
   name: 'MuiTab'
 })(Tab_Tab));
-// CONCATENATED MODULE: ./node_modules/normalize-scroll-left/esm/main.js
-// Based on https://github.com/react-bootstrap/dom-helpers/blob/master/src/util/inDOM.js
-var inDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/utils/scrollLeft.js
+// Source from https://github.com/alitaheri/normalize-scroll-left
 var cachedType;
-function _setScrollType(type) {
-    cachedType = type;
-}
-// Based on the jquery plugin https://github.com/othree/jquery.rtl-scroll-type
-function detectScrollType() {
-    if (cachedType) {
-        return cachedType;
-    }
-    if (!inDOM || !window.document.body) {
-        return 'indeterminate';
-    }
-    var dummy = window.document.createElement('div');
-    dummy.appendChild(document.createTextNode('ABCD'));
-    dummy.dir = 'rtl';
-    dummy.style.fontSize = '14px';
-    dummy.style.width = '4px';
-    dummy.style.height = '1px';
-    dummy.style.position = 'absolute';
-    dummy.style.top = '-1000px';
-    dummy.style.overflow = 'scroll';
-    document.body.appendChild(dummy);
-    cachedType = 'reverse';
-    if (dummy.scrollLeft > 0) {
-        cachedType = 'default';
-    }
-    else {
-        dummy.scrollLeft = 1;
-        if (dummy.scrollLeft === 0) {
-            cachedType = 'negative';
-        }
-    }
-    document.body.removeChild(dummy);
-    return cachedType;
-}
-// Based on https://stackoverflow.com/a/24394376
-function getNormalizedScrollLeft(element, direction) {
-    var scrollLeft = element.scrollLeft;
-    // Perform the calculations only when direction is rtl to avoid messing up the ltr bahavior
-    if (direction !== 'rtl') {
-        return scrollLeft;
-    }
-    var type = detectScrollType();
-    if (type === 'indeterminate') {
-        return Number.NaN;
-    }
-    switch (type) {
-        case 'negative':
-            return element.scrollWidth - element.clientWidth + scrollLeft;
-        case 'reverse':
-            return element.scrollWidth - element.clientWidth - scrollLeft;
-    }
-    return scrollLeft;
-}
-function setNormalizedScrollLeft(element, scrollLeft, direction) {
-    // Perform the calculations only when direction is rtl to avoid messing up the ltr bahavior
-    if (direction !== 'rtl') {
-        element.scrollLeft = scrollLeft;
-        return;
-    }
-    var type = detectScrollType();
-    if (type === 'indeterminate') {
-        return;
-    }
-    switch (type) {
-        case 'negative':
-            element.scrollLeft = element.clientWidth - element.scrollWidth + scrollLeft;
-            break;
-        case 'reverse':
-            element.scrollLeft = element.scrollWidth - element.clientWidth - scrollLeft;
-            break;
-        default:
-            element.scrollLeft = scrollLeft;
-            break;
-    }
-}
+/**
+ * Based on the jquery plugin https://github.com/othree/jquery.rtl-scroll-type
+ *
+ * Types of scrollLeft, assiming scrollWidth=100 and direction is rtl.
+ *
+ * Browser        | Type          | <- Most Left | Most Right -> | Initial
+ * -------------- | ------------- | ------------ | ------------- | -------
+ * WebKit         | default       | 0            | 100           | 100
+ * Firefox/Opera  | negative      | -100         | 0             | 0
+ * IE/Edge        | reverse       | 100          | 0             | 0
+ */
 
+function detectScrollType() {
+  if (cachedType) {
+    return cachedType;
+  }
+
+  var dummy = document.createElement('div');
+  dummy.appendChild(document.createTextNode('ABCD'));
+  dummy.dir = 'rtl';
+  dummy.style.fontSize = '14px';
+  dummy.style.width = '4px';
+  dummy.style.height = '1px';
+  dummy.style.position = 'absolute';
+  dummy.style.top = '-1000px';
+  dummy.style.overflow = 'scroll';
+  document.body.appendChild(dummy);
+  cachedType = 'reverse';
+
+  if (dummy.scrollLeft > 0) {
+    cachedType = 'default';
+  } else {
+    dummy.scrollLeft = 1;
+
+    if (dummy.scrollLeft === 0) {
+      cachedType = 'negative';
+    }
+  }
+
+  document.body.removeChild(dummy);
+  return cachedType;
+} // Based on https://stackoverflow.com/a/24394376
+
+function getNormalizedScrollLeft(element, direction) {
+  var scrollLeft = element.scrollLeft; // Perform the calculations only when direction is rtl to avoid messing up the ltr bahavior
+
+  if (direction !== 'rtl') {
+    return scrollLeft;
+  }
+
+  var type = detectScrollType();
+
+  switch (type) {
+    case 'negative':
+      return element.scrollWidth - element.clientWidth + scrollLeft;
+
+    case 'reverse':
+      return element.scrollWidth - element.clientWidth - scrollLeft;
+
+    default:
+      return scrollLeft;
+  }
+}
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/internal/animate.js
 function easeInOutSin(time) {
   return (1 + Math.sin(Math.PI * time - Math.PI / 2)) / 2;
@@ -58833,14 +59896,14 @@ function ScrollbarSize(props) {
   var onChange = props.onChange,
       other = _objectWithoutProperties(props, ["onChange"]);
 
-  var scrollbarHeight = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef();
-  var nodeRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
+  var scrollbarHeight = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
+  var nodeRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
 
   var setMeasurements = function setMeasurements() {
     scrollbarHeight.current = nodeRef.current.offsetHeight - nodeRef.current.clientHeight;
   };
 
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     var handleResize = debounce(function () {
       var prevHeight = scrollbarHeight.current;
       setMeasurements();
@@ -58855,11 +59918,11 @@ function ScrollbarSize(props) {
       window.removeEventListener('resize', handleResize);
     };
   }, [onChange]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     setMeasurements();
     onChange(scrollbarHeight.current);
   }, [onChange]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", _extends({
     style: ScrollbarSize_styles,
     ref: nodeRef
   }, other));
@@ -58899,17 +59962,15 @@ var TabIndicator_styles = function styles(theme) {
  * @ignore - internal component.
  */
 
-var TabIndicator_TabIndicator = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function TabIndicator(props, ref) {
+var TabIndicator_TabIndicator = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function TabIndicator(props, ref) {
   var classes = props.classes,
       className = props.className,
       color = props.color,
       orientation = props.orientation,
       other = _objectWithoutProperties(props, ["classes", "className", "color", "orientation"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", _extends({
-    className: clsx_m(classes.root, classes["color".concat(capitalize(color))], className, {
-      vertical: classes.vertical
-    }[orientation]),
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", _extends({
+    className: clsx_m(classes.root, classes["color".concat(capitalize(color))], className, orientation === 'vertical' && classes.vertical),
     ref: ref
   }, other));
 });
@@ -58924,7 +59985,7 @@ var TabIndicator_TabIndicator = external_root_React_commonjs2_react_commonjs_rea
  * @ignore - internal component.
  */
 
-/* harmony default export */ var KeyboardArrowLeft = (createSvgIcon_createSvgIcon(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("path", {
+/* harmony default export */ var KeyboardArrowLeft = (createSvgIcon( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("path", {
   d: "M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
 }), 'KeyboardArrowLeft'));
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/internal/svg-icons/KeyboardArrowRight.js
@@ -58934,7 +59995,7 @@ var TabIndicator_TabIndicator = external_root_React_commonjs2_react_commonjs_rea
  * @ignore - internal component.
  */
 
-/* harmony default export */ var KeyboardArrowRight = (createSvgIcon_createSvgIcon(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("path", {
+/* harmony default export */ var KeyboardArrowRight = (createSvgIcon( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("path", {
   d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
 }), 'KeyboardArrowRight'));
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Tabs/TabScrollButton.js
@@ -58966,15 +60027,15 @@ var TabScrollButton_styles = {
  * @ignore - internal component.
  */
 
-var TabScrollButton_ref = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(KeyboardArrowLeft, {
+var TabScrollButton_ref = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](KeyboardArrowLeft, {
   fontSize: "small"
 });
 
-var TabScrollButton_ref2 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(KeyboardArrowRight, {
+var TabScrollButton_ref2 = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](KeyboardArrowRight, {
   fontSize: "small"
 });
 
-var TabScrollButton_TabScrollButton = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function TabScrollButton(props, ref) {
+var TabScrollButton_TabScrollButton = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function TabScrollButton(props, ref) {
   var classes = props.classes,
       classNameProp = props.className,
       direction = props.direction,
@@ -58982,17 +60043,15 @@ var TabScrollButton_TabScrollButton = external_root_React_commonjs2_react_common
       visible = props.visible,
       other = _objectWithoutProperties(props, ["classes", "className", "direction", "orientation", "visible"]);
 
-  var className = clsx_m(classes.root, classNameProp, {
-    vertical: classes.vertical
-  }[orientation]);
+  var className = clsx_m(classes.root, classNameProp, orientation === 'vertical' && classes.vertical);
 
   if (!visible) {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
       className: className
     });
   }
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_ButtonBase_ButtonBase, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_ButtonBase_ButtonBase, _extends({
     component: "div",
     className: className,
     ref: ref,
@@ -59092,7 +60151,7 @@ var Tabs_styles = function styles(theme) {
     indicator: {}
   };
 };
-var Tabs_Tabs = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Tabs(props, ref) {
+var Tabs_Tabs = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Tabs(props, ref) {
   var action = props.action,
       _props$centered = props.centered,
       centered = _props$centered === void 0 ? false : _props$centered,
@@ -59131,22 +60190,22 @@ var Tabs_Tabs = external_root_React_commonjs2_react_commonjs_react_amd_react_def
 
   if (false) {}
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(false),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](false),
       mounted = _React$useState[0],
       setMounted = _React$useState[1];
 
-  var _React$useState2 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState({}),
+  var _React$useState2 = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"]({}),
       indicatorStyle = _React$useState2[0],
       setIndicatorStyle = _React$useState2[1];
 
-  var _React$useState3 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState({
+  var _React$useState3 = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"]({
     start: false,
     end: false
   }),
       displayScroll = _React$useState3[0],
       setDisplayScroll = _React$useState3[1];
 
-  var _React$useState4 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState({
+  var _React$useState4 = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"]({
     overflow: 'hidden',
     marginBottom: null
   }),
@@ -59154,8 +60213,8 @@ var Tabs_Tabs = external_root_React_commonjs2_react_commonjs_react_amd_react_def
       setScrollerStyle = _React$useState4[1];
 
   var valueToIndex = new Map();
-  var tabsRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
-  var childrenWrapperRef = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useRef(null);
+  var tabsRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
+  var childrenWrapperRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
 
   var getTabsMeta = function getTabsMeta() {
     var tabsNode = tabsRef.current;
@@ -59255,7 +60314,7 @@ var Tabs_Tabs = external_root_React_commonjs2_react_commonjs_react_amd_react_def
     moveTabsScroll(tabsRef.current[clientSize]);
   };
 
-  var handleScrollbarSizeChange = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (scrollbarHeight) {
+  var handleScrollbarSizeChange = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (scrollbarHeight) {
     setScrollerStyle({
       overflow: null,
       marginBottom: -scrollbarHeight
@@ -59264,20 +60323,20 @@ var Tabs_Tabs = external_root_React_commonjs2_react_commonjs_react_amd_react_def
 
   var getConditionalElements = function getConditionalElements() {
     var conditionalElements = {};
-    conditionalElements.scrollbarSizeListener = scrollable ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ScrollbarSize, {
+    conditionalElements.scrollbarSizeListener = scrollable ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](ScrollbarSize, {
       className: classes.scrollable,
       onChange: handleScrollbarSizeChange
     }) : null;
     var scrollButtonsActive = displayScroll.start || displayScroll.end;
     var showScrollButtons = scrollable && (scrollButtons === 'auto' && scrollButtonsActive || scrollButtons === 'desktop' || scrollButtons === 'on');
-    conditionalElements.scrollButtonStart = showScrollButtons ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ScrollButtonComponent, {
+    conditionalElements.scrollButtonStart = showScrollButtons ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](ScrollButtonComponent, {
       orientation: orientation,
       direction: isRtl ? 'right' : 'left',
       onClick: handleStartScrollClick,
       visible: displayScroll.start,
       className: clsx_m(classes.scrollButtons, scrollButtons !== 'on' && classes.scrollButtonsDesktop)
     }) : null;
-    conditionalElements.scrollButtonEnd = showScrollButtons ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ScrollButtonComponent, {
+    conditionalElements.scrollButtonEnd = showScrollButtons ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](ScrollButtonComponent, {
       orientation: orientation,
       direction: isRtl ? 'left' : 'right',
       onClick: handleEndScrollClick,
@@ -59336,7 +60395,7 @@ var Tabs_Tabs = external_root_React_commonjs2_react_commonjs_react_amd_react_def
       }
     }
   });
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     var handleResize = debounce(function () {
       updateIndicatorState();
       updateScrollButtonState();
@@ -59348,31 +60407,31 @@ var Tabs_Tabs = external_root_React_commonjs2_react_commonjs_react_amd_react_def
       win.removeEventListener('resize', handleResize);
     };
   }, [updateIndicatorState, updateScrollButtonState]);
-  var handleTabsScroll = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(debounce(function () {
+  var handleTabsScroll = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](debounce(function () {
     updateScrollButtonState();
   }));
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     return function () {
       handleTabsScroll.clear();
     };
   }, [handleTabsScroll]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     setMounted(true);
   }, []);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     updateIndicatorState();
     updateScrollButtonState();
   });
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useEffect(function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"](function () {
     scrollSelectedIntoView();
   }, [scrollSelectedIntoView, indicatorStyle]);
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useImperativeHandle(action, function () {
+  external_root_React_commonjs2_react_commonjs_react_amd_react_["useImperativeHandle"](action, function () {
     return {
       updateIndicator: updateIndicatorState,
       updateScrollButtons: updateScrollButtonState
     };
   }, [updateIndicatorState, updateScrollButtonState]);
-  var indicator = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Tabs_TabIndicator, _extends({
+  var indicator = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Tabs_TabIndicator, _extends({
     className: classes.indicator,
     orientation: orientation,
     color: indicatorColor
@@ -59380,8 +60439,8 @@ var Tabs_Tabs = external_root_React_commonjs2_react_commonjs_react_amd_react_def
     style: _extends({}, indicatorStyle, {}, TabIndicatorProps.style)
   }));
   var childIndex = 0;
-  var children = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Children.map(childrenProp, function (child) {
-    if (!external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(child)) {
+  var children = external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(childrenProp, function (child) {
+    if (!external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](child)) {
       return null;
     }
 
@@ -59391,7 +60450,7 @@ var Tabs_Tabs = external_root_React_commonjs2_react_commonjs_react_amd_react_def
     valueToIndex.set(childValue, childIndex);
     var selected = childValue === value;
     childIndex += 1;
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(child, {
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](child, {
       fullWidth: variant === 'fullWidth',
       indicator: selected && !mounted && indicator,
       selected: selected,
@@ -59401,15 +60460,15 @@ var Tabs_Tabs = external_root_React_commonjs2_react_commonjs_react_amd_react_def
     });
   });
   var conditionalElements = getConditionalElements();
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
     className: clsx_m(classes.root, className, vertical && classes.vertical),
     ref: ref
-  }, other), conditionalElements.scrollButtonStart, conditionalElements.scrollbarSizeListener, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+  }, other), conditionalElements.scrollButtonStart, conditionalElements.scrollbarSizeListener, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
     className: clsx_m(classes.scroller, scrollable ? classes.scrollable : classes.fixed),
     style: scrollerStyle,
     ref: tabsRef,
     onScroll: handleTabsScroll
-  }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
     className: clsx_m(classes.flexContainer, vertical && classes.flexContainerVertical, centered && !scrollable && classes.centered),
     ref: childrenWrapperRef,
     role: "tablist"
@@ -59768,7 +60827,7 @@ var components_DateTimePicker_DateTimePicker = function DateTimePicker(props) {
 
     setSelectedDate(date);
   }, [onChange]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(KeyboardDateTimePicker, extends_default()({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(KeyboardDateTimePicker, extends_default()({
     ampm: true,
     disabled: disabled,
     format: format,
@@ -59779,8 +60838,7 @@ var components_DateTimePicker_DateTimePicker = function DateTimePicker(props) {
     onChange: handleDateTimeChange,
     placeholder: placeholder,
     value: selectedDate,
-    variant: "inline" // $FlowFixMe inexact pattern
-
+    variant: "inline"
   }, other));
 };
 
@@ -59856,7 +60914,7 @@ var Skeleton_styles = function styles(theme) {
       overflow: 'hidden',
       '&::after': {
         animation: '$wave 1.6s linear 0.5s infinite',
-        background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent)',
+        background: "linear-gradient(90deg, transparent, ".concat(theme.palette.action.hover, ", transparent)"),
         content: '""',
         position: 'absolute',
         transform: 'translateX(-100%)',
@@ -59882,7 +60940,7 @@ var Skeleton_styles = function styles(theme) {
     }
   };
 };
-var Skeleton_Skeleton = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Skeleton(props, ref) {
+var Skeleton_Skeleton = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Skeleton(props, ref) {
   var _props$animation = props.animation,
       animation = _props$animation === void 0 ? 'pulse' : _props$animation,
       classes = props.classes,
@@ -59895,7 +60953,7 @@ var Skeleton_Skeleton = external_root_React_commonjs2_react_commonjs_react_amd_r
       width = props.width,
       other = _objectWithoutProperties(props, ["animation", "classes", "className", "component", "height", "variant", "width"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
     ref: ref,
     className: clsx_m(classes.root, classes[variant], className, animation !== false && classes[animation])
   }, other, {
@@ -59922,7 +60980,7 @@ var Skeleton_Skeleton = external_root_React_commonjs2_react_commonjs_react_amd_r
  * @ignore - internal component.
  */
 
-/* harmony default export */ var MoreHoriz = (createSvgIcon_createSvgIcon(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("path", {
+/* harmony default export */ var MoreHoriz = (createSvgIcon( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("path", {
   d: "M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
 }), 'MoreHoriz'));
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Breadcrumbs/BreadcrumbCollapsed.js
@@ -59934,19 +60992,16 @@ var Skeleton_Skeleton = external_root_React_commonjs2_react_commonjs_react_amd_r
 
 
 
+
 var BreadcrumbCollapsed_styles = function styles(theme) {
   return {
     root: {
-      display: 'flex'
-    },
-    icon: {
-      width: 24,
-      height: 16,
+      display: 'flex',
+      marginLeft: theme.spacing(0.5),
+      marginRight: theme.spacing(0.5),
       backgroundColor: theme.palette.grey[100],
       color: theme.palette.grey[700],
       borderRadius: 2,
-      marginLeft: theme.spacing(0.5),
-      marginRight: theme.spacing(0.5),
       cursor: 'pointer',
       '&:hover, &:focus': {
         backgroundColor: theme.palette.grey[200]
@@ -59955,6 +61010,10 @@ var BreadcrumbCollapsed_styles = function styles(theme) {
         boxShadow: theme.shadows[0],
         backgroundColor: emphasize(theme.palette.grey[200], 0.12)
       }
+    },
+    icon: {
+      width: 24,
+      height: 16
     }
   };
 };
@@ -59967,9 +61026,11 @@ function BreadcrumbCollapsed(props) {
   var classes = props.classes,
       other = _objectWithoutProperties(props, ["classes"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("li", _extends({
-    className: classes.root
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MoreHoriz, {
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_ButtonBase_ButtonBase, _extends({
+    component: "li",
+    className: classes.root,
+    focusRipple: true
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](MoreHoriz, {
     className: classes.icon
   }));
 }
@@ -59999,9 +61060,7 @@ var Breadcrumbs_styles = {
     flexWrap: 'wrap',
     alignItems: 'center',
     padding: 0,
-    // Reset
     margin: 0,
-    // Reset
     listStyle: 'none'
   },
 
@@ -60020,7 +61079,7 @@ var Breadcrumbs_styles = {
 function insertSeparators(items, className, separator) {
   return items.reduce(function (acc, current, index) {
     if (index < items.length - 1) {
-      acc = acc.concat(current, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("li", {
+      acc = acc.concat(current, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("li", {
         "aria-hidden": true,
         key: "separator-".concat(index),
         className: className
@@ -60033,12 +61092,14 @@ function insertSeparators(items, className, separator) {
   }, []);
 }
 
-var Breadcrumbs_Breadcrumbs = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function Breadcrumbs(props, ref) {
+var Breadcrumbs_Breadcrumbs = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Breadcrumbs(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
       _props$component = props.component,
       Component = _props$component === void 0 ? 'nav' : _props$component,
+      _props$expandText = props.expandText,
+      expandText = _props$expandText === void 0 ? 'Show path' : _props$expandText,
       _props$itemsAfterColl = props.itemsAfterCollapse,
       itemsAfterCollapse = _props$itemsAfterColl === void 0 ? 1 : _props$itemsAfterColl,
       _props$itemsBeforeCol = props.itemsBeforeCollapse,
@@ -60047,15 +61108,22 @@ var Breadcrumbs_Breadcrumbs = external_root_React_commonjs2_react_commonjs_react
       maxItems = _props$maxItems === void 0 ? 8 : _props$maxItems,
       _props$separator = props.separator,
       separator = _props$separator === void 0 ? '/' : _props$separator,
-      other = _objectWithoutProperties(props, ["children", "classes", "className", "component", "itemsAfterCollapse", "itemsBeforeCollapse", "maxItems", "separator"]);
+      other = _objectWithoutProperties(props, ["children", "classes", "className", "component", "expandText", "itemsAfterCollapse", "itemsBeforeCollapse", "maxItems", "separator"]);
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(false),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](false),
       expanded = _React$useState[0],
       setExpanded = _React$useState[1];
 
   var renderItemsBeforeAndAfter = function renderItemsBeforeAndAfter(allItems) {
-    var handleClickExpand = function handleClickExpand() {
-      setExpanded(true);
+    var handleClickExpand = function handleClickExpand(event) {
+      setExpanded(true); // The clicked element received the focus but gets removed from the DOM.
+      // Let's keep the focus in the component after expanding.
+
+      var focusable = event.currentTarget.parentNode.querySelector('a[href],button,[tabindex]');
+
+      if (focusable) {
+        focusable.focus();
+      }
     }; // This defends against someone passing weird input, to ensure that if all
     // items would be shown anyway, we just show all items without the EllipsisItem
 
@@ -60066,28 +61134,29 @@ var Breadcrumbs_Breadcrumbs = external_root_React_commonjs2_react_commonjs_react
       return allItems;
     }
 
-    return [].concat(_toConsumableArray(allItems.slice(0, itemsBeforeCollapse)), [external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Breadcrumbs_BreadcrumbCollapsed, {
+    return [].concat(_toConsumableArray(allItems.slice(0, itemsBeforeCollapse)), [/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Breadcrumbs_BreadcrumbCollapsed, {
+      "aria-label": expandText,
       key: "ellipsis",
       onClick: handleClickExpand
     })], _toConsumableArray(allItems.slice(allItems.length - itemsAfterCollapse, allItems.length)));
   };
 
-  var allItems = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Children.toArray(children).filter(function (child) {
+  var allItems = external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].toArray(children).filter(function (child) {
     if (false) {}
 
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(child);
+    return external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](child);
   }).map(function (child, index) {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("li", {
+    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("li", {
       className: classes.li,
       key: "child-".concat(index)
     }, child);
   });
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Typography_Typography, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Typography_Typography, _extends({
     ref: ref,
     component: Component,
     color: "textSecondary",
     className: clsx_m(classes.root, className)
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("ol", {
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("ol", {
     className: classes.ol
   }, insertSeparators(expanded || maxItems && allItems.length <= maxItems ? allItems : renderItemsBeforeAndAfter(allItems), classes.separator, separator)));
 });
@@ -60103,11 +61172,11 @@ var Breadcrumbs_Breadcrumbs = external_root_React_commonjs2_react_commonjs_react
 
 
 var components_Breadcrumbs_Breadcrumbs = function Breadcrumbs(props) {
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Breadcrumbs_Breadcrumbs, props);
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Breadcrumbs_Breadcrumbs, props);
 };
 
 components_Breadcrumbs_Breadcrumbs.defaultProps = {
-  separator: external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+  separator: /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
     icon: faChevronRight["faChevronRight"],
     fixedWidth: true
   })
@@ -60120,8 +61189,9 @@ components_Breadcrumbs_Breadcrumbs.defaultProps = {
 
 
 
+
 function _toArray(arr) {
-  return _arrayWithHoles(arr) || _iterableToArray(arr) || _nonIterableRest();
+  return _arrayWithHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableRest();
 }
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/ExpansionPanel/ExpansionPanelContext.js
 
@@ -60130,7 +61200,7 @@ function _toArray(arr) {
  * @type {React.Context<{} | {expanded: boolean, disabled: boolean, toggle: () => void}>}
  */
 
-var ExpansionPanelContext = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createContext({});
+var ExpansionPanelContext = external_root_React_commonjs2_react_commonjs_react_amd_react_["createContext"]({});
 
 if (false) {}
 
@@ -60222,7 +61292,7 @@ var ExpansionPanel_styles = function styles(theme) {
     disabled: {}
   };
 };
-var ExpansionPanel_ExpansionPanel = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function ExpansionPanel(props, ref) {
+var ExpansionPanel_ExpansionPanel = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function ExpansionPanel(props, ref) {
   var childrenProp = props.children,
       classes = props.classes,
       className = props.className,
@@ -60242,13 +61312,14 @@ var ExpansionPanel_ExpansionPanel = external_root_React_commonjs2_react_commonjs
   var _useControlled = useControlled({
     controlled: expandedProp,
     default: defaultExpanded,
-    name: 'ExpansionPanel'
+    name: 'ExpansionPanel',
+    state: 'expanded'
   }),
       _useControlled2 = _slicedToArray(_useControlled, 2),
       expanded = _useControlled2[0],
       setExpandedState = _useControlled2[1];
 
-  var handleChange = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useCallback(function (event) {
+  var handleChange = external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"](function (event) {
     setExpandedState(!expanded);
 
     if (onChange) {
@@ -60256,28 +61327,28 @@ var ExpansionPanel_ExpansionPanel = external_root_React_commonjs2_react_commonjs
     }
   }, [expanded, onChange, setExpandedState]);
 
-  var _React$Children$toArr = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Children.toArray(childrenProp),
+  var _React$Children$toArr = external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].toArray(childrenProp),
       _React$Children$toArr2 = _toArray(_React$Children$toArr),
       summary = _React$Children$toArr2[0],
       children = _React$Children$toArr2.slice(1);
 
-  var contextValue = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useMemo(function () {
+  var contextValue = external_root_React_commonjs2_react_commonjs_react_amd_react_["useMemo"](function () {
     return {
       expanded: expanded,
       disabled: disabled,
       toggle: handleChange
     };
   }, [expanded, disabled, handleChange]);
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Paper_Paper, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_Paper_Paper, _extends({
     className: clsx_m(classes.root, className, expanded && classes.expanded, disabled && classes.disabled, !square && classes.rounded),
     ref: ref,
     square: square
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ExpansionPanel_ExpansionPanelContext.Provider, {
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](ExpansionPanel_ExpansionPanelContext.Provider, {
     value: contextValue
-  }, summary), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(TransitionComponent, _extends({
+  }, summary), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](TransitionComponent, _extends({
     in: expanded,
     timeout: "auto"
-  }, TransitionProps), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+  }, TransitionProps), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
     "aria-labelledby": summary.props.id,
     id: summary.props['aria-controls'],
     role: "region"
@@ -60319,19 +61390,21 @@ var components_ExpansionPanel_ExpansionPanel = styles_withStyles(function (theme
 
 
 
-var ExpansionPanelDetails_styles = {
-  /* Styles applied to the root element. */
-  root: {
-    display: 'flex',
-    padding: '8px 24px 24px'
-  }
+var ExpansionPanelDetails_styles = function styles(theme) {
+  return {
+    /* Styles applied to the root element. */
+    root: {
+      display: 'flex',
+      padding: theme.spacing(1, 2, 2)
+    }
+  };
 };
-var ExpansionPanelDetails_ExpansionPanelDetails = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function ExpansionPanelDetails(props, ref) {
+var ExpansionPanelDetails_ExpansionPanelDetails = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function ExpansionPanelDetails(props, ref) {
   var classes = props.classes,
       className = props.className,
       other = _objectWithoutProperties(props, ["classes", "className"]);
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", _extends({
     className: clsx_m(classes.root, className),
     ref: ref
   }, other));
@@ -60374,7 +61447,7 @@ var ExpansionPanelSummary_styles = function styles(theme) {
       display: 'flex',
       minHeight: 8 * 6,
       transition: theme.transitions.create(['min-height', 'background-color'], transition),
-      padding: '0 24px 0 24px',
+      padding: theme.spacing(0, 2),
       '&:hover:not($disabled)': {
         cursor: 'pointer'
       },
@@ -60382,10 +61455,10 @@ var ExpansionPanelSummary_styles = function styles(theme) {
         minHeight: 64
       },
       '&$focused': {
-        backgroundColor: theme.palette.grey[300]
+        backgroundColor: theme.palette.action.focus
       },
       '&$disabled': {
-        opacity: 0.38
+        opacity: theme.palette.action.disabledOpacity
       }
     },
 
@@ -60425,7 +61498,7 @@ var ExpansionPanelSummary_styles = function styles(theme) {
     }
   };
 };
-var ExpansionPanelSummary_ExpansionPanelSummary = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function ExpansionPanelSummary(props, ref) {
+var ExpansionPanelSummary_ExpansionPanelSummary = external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function ExpansionPanelSummary(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -60436,7 +61509,7 @@ var ExpansionPanelSummary_ExpansionPanelSummary = external_root_React_commonjs2_
       onFocusVisible = props.onFocusVisible,
       other = _objectWithoutProperties(props, ["children", "classes", "className", "expandIcon", "IconButtonProps", "onBlur", "onClick", "onFocusVisible"]);
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(false),
+  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](false),
       focusedState = _React$useState[0],
       setFocusedState = _React$useState[1];
 
@@ -60456,7 +61529,7 @@ var ExpansionPanelSummary_ExpansionPanelSummary = external_root_React_commonjs2_
     }
   };
 
-  var _React$useContext = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useContext(ExpansionPanel_ExpansionPanelContext),
+  var _React$useContext = external_root_React_commonjs2_react_commonjs_react_amd_react_["useContext"](ExpansionPanel_ExpansionPanelContext),
       _React$useContext$dis = _React$useContext.disabled,
       disabled = _React$useContext$dis === void 0 ? false : _React$useContext$dis,
       expanded = _React$useContext.expanded,
@@ -60472,7 +61545,7 @@ var ExpansionPanelSummary_ExpansionPanelSummary = external_root_React_commonjs2_
     }
   };
 
-  return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_ButtonBase_ButtonBase, _extends({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_ButtonBase_ButtonBase, _extends({
     focusRipple: false,
     disableRipple: true,
     disabled: disabled,
@@ -60483,9 +61556,9 @@ var ExpansionPanelSummary_ExpansionPanelSummary = external_root_React_commonjs2_
     onBlur: handleBlur,
     onClick: handleChange,
     ref: ref
-  }, other), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("div", {
     className: clsx_m(classes.content, expanded && classes.expanded)
-  }, children), expandIcon && external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_IconButton_IconButton, _extends({
+  }, children), expandIcon && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_IconButton_IconButton, _extends({
     className: clsx_m(classes.expandIcon, expanded && classes.expanded),
     edge: "end",
     component: "div",
@@ -60711,85 +61784,6 @@ var darkTheme = styles_createMuiTheme({
 });
 
 // CONCATENATED MODULE: ./src/index.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "version", function() { return src_version; });
-/* concated harmony reexport Colors */__webpack_require__.d(__webpack_exports__, "Colors", function() { return colors_namespaceObject; });
-/* concated harmony reexport Hooks */__webpack_require__.d(__webpack_exports__, "Hooks", function() { return hooks_namespaceObject; });
-/* concated harmony reexport Sizes */__webpack_require__.d(__webpack_exports__, "Sizes", function() { return Sizes_namespaceObject; });
-/* concated harmony reexport StyleUtils */__webpack_require__.d(__webpack_exports__, "StyleUtils", function() { return StyleUtils_namespaceObject; });
-/* concated harmony reexport Badge */__webpack_require__.d(__webpack_exports__, "Badge", function() { return badge; });
-/* concated harmony reexport Banner */__webpack_require__.d(__webpack_exports__, "Banner", function() { return banner; });
-/* concated harmony reexport Drawer */__webpack_require__.d(__webpack_exports__, "Drawer", function() { return src_drawer; });
-/* concated harmony reexport Label */__webpack_require__.d(__webpack_exports__, "Label", function() { return src_label; });
-/* concated harmony reexport Overlay */__webpack_require__.d(__webpack_exports__, "Overlay", function() { return Overlay_Overlay; });
-/* concated harmony reexport Portal */__webpack_require__.d(__webpack_exports__, "Portal", function() { return components_Portal_Portal; });
-/* concated harmony reexport Spinner */__webpack_require__.d(__webpack_exports__, "Spinner", function() { return components_Spinner; });
-/* concated harmony reexport Tag */__webpack_require__.d(__webpack_exports__, "Tag", function() { return tag; });
-/* concated harmony reexport selectStyles */__webpack_require__.d(__webpack_exports__, "selectStyles", function() { return selectStyles; });
-/* concated harmony reexport Button */__webpack_require__.d(__webpack_exports__, "Button", function() { return components_Button; });
-/* concated harmony reexport CopyButton */__webpack_require__.d(__webpack_exports__, "CopyButton", function() { return components_CopyButton; });
-/* concated harmony reexport EditButton */__webpack_require__.d(__webpack_exports__, "EditButton", function() { return components_EditButton; });
-/* concated harmony reexport IconButton */__webpack_require__.d(__webpack_exports__, "IconButton", function() { return components_IconButton; });
-/* concated harmony reexport MinusButton */__webpack_require__.d(__webpack_exports__, "MinusButton", function() { return components_MinusButton; });
-/* concated harmony reexport PlusButton */__webpack_require__.d(__webpack_exports__, "PlusButton", function() { return components_PlusButton; });
-/* concated harmony reexport SearchButton */__webpack_require__.d(__webpack_exports__, "SearchButton", function() { return components_SearchButton; });
-/* concated harmony reexport Checkbox */__webpack_require__.d(__webpack_exports__, "Checkbox", function() { return components_Checkbox; });
-/* concated harmony reexport ChoiceGroup */__webpack_require__.d(__webpack_exports__, "ChoiceGroup", function() { return styled_ChoiceGroup; });
-/* concated harmony reexport Radio */__webpack_require__.d(__webpack_exports__, "Radio", function() { return components_Radio; });
-/* concated harmony reexport ActionModal */__webpack_require__.d(__webpack_exports__, "ActionModal", function() { return components_ActionModal; });
-/* concated harmony reexport Modal */__webpack_require__.d(__webpack_exports__, "Modal", function() { return Modal_Modal; });
-/* concated harmony reexport ModalFooter */__webpack_require__.d(__webpack_exports__, "ModalFooter", function() { return ModalFooter_ModalFooter; });
-/* concated harmony reexport ModalHeader */__webpack_require__.d(__webpack_exports__, "ModalHeader", function() { return ModalHeader_ModalHeader; });
-/* concated harmony reexport Stepper */__webpack_require__.d(__webpack_exports__, "Stepper", function() { return components_Stepper; });
-/* concated harmony reexport StepLabel */__webpack_require__.d(__webpack_exports__, "StepLabel", function() { return StepLabel; });
-/* concated harmony reexport StepIcon */__webpack_require__.d(__webpack_exports__, "StepIcon", function() { return components_StepIcon; });
-/* concated harmony reexport Step */__webpack_require__.d(__webpack_exports__, "Step", function() { return components_Step; });
-/* concated harmony reexport Input */__webpack_require__.d(__webpack_exports__, "Input", function() { return components_Input; });
-/* concated harmony reexport SearchInput */__webpack_require__.d(__webpack_exports__, "SearchInput", function() { return components_SearchInput; });
-/* concated harmony reexport TextArea */__webpack_require__.d(__webpack_exports__, "TextArea", function() { return components_TextArea; });
-/* concated harmony reexport AppContainerWrapper */__webpack_require__.d(__webpack_exports__, "AppContainerWrapper", function() { return App_AppContainerWrapper; });
-/* concated harmony reexport AppContentWrapper */__webpack_require__.d(__webpack_exports__, "AppContentWrapper", function() { return App_AppContentWrapper; });
-/* concated harmony reexport AppHeaderWrapper */__webpack_require__.d(__webpack_exports__, "AppHeaderWrapper", function() { return App_AppHeaderWrapper; });
-/* concated harmony reexport AppNavigationWrapper */__webpack_require__.d(__webpack_exports__, "AppNavigationWrapper", function() { return App_AppNavigationWrapper; });
-/* concated harmony reexport Card */__webpack_require__.d(__webpack_exports__, "Card", function() { return Card_Card; });
-/* concated harmony reexport CardHeader */__webpack_require__.d(__webpack_exports__, "CardHeader", function() { return CardHeader_CardHeader; });
-/* concated harmony reexport CardSegment */__webpack_require__.d(__webpack_exports__, "CardSegment", function() { return CardSegment_CardSegment; });
-/* concated harmony reexport CardStack */__webpack_require__.d(__webpack_exports__, "CardStack", function() { return CardStack_CardStack; });
-/* concated harmony reexport Creatable */__webpack_require__.d(__webpack_exports__, "Creatable", function() { return components_Creatable; });
-/* concated harmony reexport Select */__webpack_require__.d(__webpack_exports__, "Select", function() { return components_Select; });
-/* concated harmony reexport CheckboxSelect */__webpack_require__.d(__webpack_exports__, "CheckboxSelect", function() { return components_CheckboxSelect; });
-/* concated harmony reexport Cell */__webpack_require__.d(__webpack_exports__, "Cell", function() { return Cell; });
-/* concated harmony reexport HeadCell */__webpack_require__.d(__webpack_exports__, "HeadCell", function() { return components_HeadCell; });
-/* concated harmony reexport PaginationToolbar */__webpack_require__.d(__webpack_exports__, "PaginationToolbar", function() { return components_PaginationToolbar; });
-/* concated harmony reexport Table */__webpack_require__.d(__webpack_exports__, "Table", function() { return components_Table; });
-/* concated harmony reexport TableBody */__webpack_require__.d(__webpack_exports__, "TableBody", function() { return components_TableBody; });
-/* concated harmony reexport TableHeader */__webpack_require__.d(__webpack_exports__, "TableHeader", function() { return components_TableHeader; });
-/* concated harmony reexport TableRow */__webpack_require__.d(__webpack_exports__, "TableRow", function() { return components_TableRow; });
-/* concated harmony reexport TableUtils */__webpack_require__.d(__webpack_exports__, "TableUtils", function() { return TableUtils_namespaceObject; });
-/* concated harmony reexport Search */__webpack_require__.d(__webpack_exports__, "Search", function() { return components_Search; });
-/* concated harmony reexport DataGrid */__webpack_require__.d(__webpack_exports__, "DataGrid", function() { return components_DataGrid; });
-/* concated harmony reexport IconSplash */__webpack_require__.d(__webpack_exports__, "IconSplash", function() { return components_IconSplash; });
-/* concated harmony reexport PersonResult */__webpack_require__.d(__webpack_exports__, "PersonResult", function() { return components_PersonResult; });
-/* concated harmony reexport Result */__webpack_require__.d(__webpack_exports__, "Result", function() { return components_Result; });
-/* concated harmony reexport SearchResults */__webpack_require__.d(__webpack_exports__, "SearchResults", function() { return components_SearchResults; });
-/* concated harmony reexport DatePicker */__webpack_require__.d(__webpack_exports__, "DatePicker", function() { return components_DatePicker; });
-/* concated harmony reexport TimePicker */__webpack_require__.d(__webpack_exports__, "TimePicker", function() { return components_TimePicker; });
-/* concated harmony reexport DateTimePicker */__webpack_require__.d(__webpack_exports__, "DateTimePicker", function() { return components_DateTimePicker; });
-/* concated harmony reexport Skeleton */__webpack_require__.d(__webpack_exports__, "Skeleton", function() { return skeleton; });
-/* concated harmony reexport Tooltip */__webpack_require__.d(__webpack_exports__, "Tooltip", function() { return tooltip; });
-/* concated harmony reexport Collapse */__webpack_require__.d(__webpack_exports__, "Collapse", function() { return esm_Collapse_Collapse; });
-/* concated harmony reexport Fab */__webpack_require__.d(__webpack_exports__, "Fab", function() { return esm_Fab_Fab; });
-/* concated harmony reexport MuiPickersUtilsProvider */__webpack_require__.d(__webpack_exports__, "MuiPickersUtilsProvider", function() { return useUtils_cfb96ac9_MuiPickersUtilsProvider; });
-/* concated harmony reexport SpeedDial */__webpack_require__.d(__webpack_exports__, "SpeedDial", function() { return esm_SpeedDial_SpeedDial; });
-/* concated harmony reexport SpeedDialAction */__webpack_require__.d(__webpack_exports__, "SpeedDialAction", function() { return esm_SpeedDialAction_SpeedDialAction; });
-/* concated harmony reexport SpeedDialIcon */__webpack_require__.d(__webpack_exports__, "SpeedDialIcon", function() { return esm_SpeedDialIcon_SpeedDialIcon; });
-/* concated harmony reexport ThemeProvider */__webpack_require__.d(__webpack_exports__, "ThemeProvider", function() { return ThemeProvider_ThemeProvider; });
-/* concated harmony reexport LatticeLuxonUtils */__webpack_require__.d(__webpack_exports__, "LatticeLuxonUtils", function() { return utils_LatticeLuxonUtils; });
-/* concated harmony reexport Breadcrumbs */__webpack_require__.d(__webpack_exports__, "Breadcrumbs", function() { return breadcrumbs; });
-/* concated harmony reexport ExpansionPanel */__webpack_require__.d(__webpack_exports__, "ExpansionPanel", function() { return components_ExpansionPanel; });
-/* concated harmony reexport ExpansionPanelDetails */__webpack_require__.d(__webpack_exports__, "ExpansionPanelDetails", function() { return components_ExpansionPanelDetails; });
-/* concated harmony reexport ExpansionPanelSummary */__webpack_require__.d(__webpack_exports__, "ExpansionPanelSummary", function() { return components_ExpansionPanelSummary; });
-/* concated harmony reexport darkTheme */__webpack_require__.d(__webpack_exports__, "darkTheme", function() { return darkTheme; });
-/* concated harmony reexport lightTheme */__webpack_require__.d(__webpack_exports__, "lightTheme", function() { return lightTheme; });
 
 
 
@@ -60799,7 +61793,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.30.1";
+var src_version = "v0.30.2";
 
 
 
