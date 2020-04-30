@@ -6,6 +6,7 @@ import React, { Children, Component } from 'react';
 import type { Node } from 'react';
 
 import isArray from 'lodash/isArray';
+import isFunction from 'lodash/isFunction';
 import isPlainObject from 'lodash/isPlainObject';
 import styled from 'styled-components';
 import { faBars } from '@fortawesome/pro-solid-svg-icons';
@@ -129,7 +130,7 @@ class AppHeaderWrapper extends Component<Props, State> {
 
   static defaultProps = {
     className: undefined,
-    logout: () => {},
+    logout: undefined,
     organizationsSelect: {},
     user: undefined,
   }
@@ -313,15 +314,16 @@ class AppHeaderWrapper extends Component<Props, State> {
           )
         }
         {
-          renderLogOutButton
-            ? (
-              <LogoutButton onClick={logout}>Log Out</LogoutButton>
-            )
-            : (
-              <NavigationToggleWrapper onClick={this.toggleNavigation}>
-                <FontAwesomeIcon icon={faBars} />
-              </NavigationToggleWrapper>
-            )
+          renderLogOutButton && isFunction(logout) && (
+            <LogoutButton onClick={logout}>Log Out</LogoutButton>
+          )
+        }
+        {
+          !renderLogOutButton && (
+            <NavigationToggleWrapper onClick={this.toggleNavigation}>
+              <FontAwesomeIcon icon={faBars} />
+            </NavigationToggleWrapper>
+          )
         }
       </HeaderSectionContentWrapper>
     );

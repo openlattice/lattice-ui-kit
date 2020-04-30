@@ -17,6 +17,29 @@ exports[`AppHeaderWrapper snapshots default 1`] = `
       </NavigationWrapper>
       <AppHeaderWrapper__HeaderSectionContentWrapper
         align="right"
+      />
+    </AppHeaderInnerWrapper>
+  </AppHeaderOuterWrapper>
+</Fragment>
+`;
+
+exports[`AppHeaderWrapper snapshots logout 1`] = `
+<Fragment>
+  <AppHeaderOuterWrapper
+    onClick={[Function]}
+  >
+    <AppHeaderInnerWrapper>
+      <NavigationWrapper>
+        <a
+          className="app-nav-root"
+          href="http://localhost/"
+        >
+          <AppIcon />
+          <AppTitle />
+        </a>
+      </NavigationWrapper>
+      <AppHeaderWrapper__HeaderSectionContentWrapper
+        align="right"
       >
         <AppHeaderWrapper__LogoutButton
           onClick={[Function]}
