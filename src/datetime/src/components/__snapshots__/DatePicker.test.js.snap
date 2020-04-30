@@ -494,7 +494,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                 Object {
                   "current": <input
                     aria-invalid="false"
-                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                     placeholder="MM/DD/YYYY"
                     type="text"
                     value=""
@@ -542,7 +542,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                     Object {
                       "current": <input
                         aria-invalid="false"
-                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                         placeholder="MM/DD/YYYY"
                         type="text"
                         value=""
@@ -584,7 +584,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                       Object {
                         "current": <input
                           aria-invalid="false"
-                          class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                          class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                           placeholder="MM/DD/YYYY"
                           type="text"
                           value=""
@@ -619,6 +619,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                         disabled={false}
                         error={false}
                         fullWidth={true}
+                        hiddenLabel={true}
                         required={false}
                         variant="outlined"
                       >
@@ -644,7 +645,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                               Object {
                                 "current": <input
                                   aria-invalid="false"
-                                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                   placeholder="MM/DD/YYYY"
                                   type="text"
                                   value=""
@@ -696,7 +697,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                 Object {
                                   "current": <input
                                     aria-invalid="false"
-                                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                     placeholder="MM/DD/YYYY"
                                     type="text"
                                     value=""
@@ -704,6 +705,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                 }
                               }
                               multiline={false}
+                              notched={false}
                               onBlur={[Function]}
                               onChange={[Function]}
                               onKeyDown={[Function]}
@@ -749,7 +751,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                   Object {
                                     "current": <input
                                       aria-invalid="false"
-                                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                       placeholder="MM/DD/YYYY"
                                       type="text"
                                       value=""
@@ -807,7 +809,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                     Object {
                                       "current": <input
                                         aria-invalid="false"
-                                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                         placeholder="MM/DD/YYYY"
                                         type="text"
                                         value=""
@@ -830,7 +832,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                     <input
                                       aria-invalid={false}
                                       autoFocus={false}
-                                      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                       disabled={false}
                                       onAnimationStart={[Function]}
                                       onBlur={[Function]}
@@ -860,7 +862,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                         position="end"
                                       >
                                         <div
-                                          className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+                                          className="MuiInputAdornment-root MuiInputAdornment-hiddenLabel MuiInputAdornment-positionEnd"
                                         >
                                           <WithStyles(ForwardRef(IconButton))
                                             disabled={false}

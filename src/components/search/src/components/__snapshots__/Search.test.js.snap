@@ -1199,7 +1199,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                               Object {
                                                 "current": <input
                                                   aria-invalid="false"
-                                                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                                   id="luk-search-dob"
                                                   name="dob"
                                                   placeholder="MM/DD/YYYY"
@@ -1251,7 +1251,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                   Object {
                                                     "current": <input
                                                       aria-invalid="false"
-                                                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                                       id="luk-search-dob"
                                                       name="dob"
                                                       placeholder="MM/DD/YYYY"
@@ -1297,7 +1297,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                     Object {
                                                       "current": <input
                                                         aria-invalid="false"
-                                                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                                         id="luk-search-dob"
                                                         name="dob"
                                                         placeholder="MM/DD/YYYY"
@@ -1335,6 +1335,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                       disabled={false}
                                                       error={false}
                                                       fullWidth={true}
+                                                      hiddenLabel={true}
                                                       required={false}
                                                       variant="outlined"
                                                     >
@@ -1361,7 +1362,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                             Object {
                                                               "current": <input
                                                                 aria-invalid="false"
-                                                                class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                                                class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                                                 id="luk-search-dob"
                                                                 name="dob"
                                                                 placeholder="MM/DD/YYYY"
@@ -1417,7 +1418,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                               Object {
                                                                 "current": <input
                                                                   aria-invalid="false"
-                                                                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                                                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                                                   id="luk-search-dob"
                                                                   name="dob"
                                                                   placeholder="MM/DD/YYYY"
@@ -1428,6 +1429,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                             }
                                                             multiline={false}
                                                             name="dob"
+                                                            notched={false}
                                                             onBlur={[Function]}
                                                             onChange={[Function]}
                                                             onKeyDown={[Function]}
@@ -1474,7 +1476,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                                 Object {
                                                                   "current": <input
                                                                     aria-invalid="false"
-                                                                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                                                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                                                     id="luk-search-dob"
                                                                     name="dob"
                                                                     placeholder="MM/DD/YYYY"
@@ -1536,7 +1538,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                                   Object {
                                                                     "current": <input
                                                                       aria-invalid="false"
-                                                                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                                                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                                                       id="luk-search-dob"
                                                                       name="dob"
                                                                       placeholder="MM/DD/YYYY"
@@ -1562,7 +1564,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                                   <input
                                                                     aria-invalid={false}
                                                                     autoFocus={false}
-                                                                    className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                                                    className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
                                                                     disabled={false}
                                                                     id="luk-search-dob"
                                                                     name="dob"
@@ -1594,7 +1596,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                                       position="end"
                                                                     >
                                                                       <div
-                                                                        className="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+                                                                        className="MuiInputAdornment-root MuiInputAdornment-hiddenLabel MuiInputAdornment-positionEnd"
                                                                       >
                                                                         <WithStyles(ForwardRef(IconButton))
                                                                           disabled={false}
