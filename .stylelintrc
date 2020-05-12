@@ -6,5 +6,8 @@
   "processors": [
     "stylelint-processor-styled-components"
   ],
-  "syntax": "scss"
+  "syntax": "scss",
+  "rules": {
+    "value-keyword-case": ["lower", { "ignoreKeywords": ["dummyValue"] }]
+  }
 }

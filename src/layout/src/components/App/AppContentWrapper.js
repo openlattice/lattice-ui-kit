@@ -10,19 +10,21 @@ import AppContentOuterWrapper from './styled/AppContentOuterWrapper';
 
 type Props = {
   bgColor :?string;
+  borderless :boolean;
   children :Node;
   className :?string;
-  contentWidth :?number;
+  padding :?string;
 };
 
 const AppContentWrapper = ({
   bgColor,
+  borderless,
   children,
   className,
-  contentWidth,
+  padding,
 } :Props) => (
-  <AppContentOuterWrapper bgColor={bgColor} className={className}>
-    <AppContentInnerWrapper contentWidth={contentWidth}>
+  <AppContentOuterWrapper bgColor={bgColor} borderless={borderless} className={className}>
+    <AppContentInnerWrapper padding={padding}>
       {children}
     </AppContentInnerWrapper>
   </AppContentOuterWrapper>
@@ -31,8 +33,9 @@ const AppContentWrapper = ({
 
 AppContentWrapper.defaultProps = {
   bgColor: undefined,
+  borderless: false,
   className: undefined,
-  contentWidth: undefined,
+  padding: undefined,
 };
 
 export default AppContentWrapper;

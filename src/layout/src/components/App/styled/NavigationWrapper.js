@@ -28,7 +28,7 @@ const NavigationWrapper = styled.nav`
     line-height: 1.5;
     margin: 0 0 0 30px;
     outline: none;
-    padding: 3px 3px 0px 3px;
+    padding: 3px 3px 0 3px;
     text-align: center;
     text-decoration: none;
 
@@ -62,13 +62,12 @@ const NavigationWrapper = styled.nav`
         font-size: 14px;
         font-weight: 600;
         letter-spacing: normal;
-        margin: 0;
+        margin: 0 0 0 10px;
         padding: 0;
       }
 
       > img {
         height: 26px;
-        margin-right: 10px;
       }
     }
   }
