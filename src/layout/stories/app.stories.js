@@ -1,11 +1,13 @@
 import React from 'react';
+
 import styled from 'styled-components';
-import { Map } from 'immutable';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { storiesOf } from '@storybook/react';
+import { Map } from 'immutable';
 import { HashRouter, NavLink } from 'react-router-dom';
 
 import OpenLatticeLogo from './logo_v2.png';
+
 import { DataGrid } from '../../components/search';
 import { SearchInput } from '../../text';
 import {
@@ -17,7 +19,6 @@ import {
   CardSegment,
   CardStack,
 } from '../index';
-import { NEUTRALS } from '../../colors';
 
 const StoryAppContainerWrapper = styled(AppContainerWrapper)`
   min-width: 600px; /* overriding only for the story */
@@ -41,53 +42,10 @@ const StoryAppNavigationWrapper = styled(AppNavigationWrapper)`
   }
 `;
 
-const SearchContentWrapper = styled(StoryAppContentWrapper)`
-  border-bottom: 1px solid ${NEUTRALS[5]};
-  > div {
-    min-width: 600px; /* overriding only for the story */
-  }
-`;
-
 const SearchWrapper = styled.div`
   align-self: center;
   padding: 50px 0;
   width: 300px;
-`;
-
-const ProfileGrid = styled.div`
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(12, 1fr);
-
-  .a {
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 3;
-  }
-
-  .b {
-    grid-column: 1 / span 4;
-    grid-row: 4 / span 1;
-  }
-
-  .c {
-    grid-column: 5 / span 8;
-    grid-row: 1;
-  }
-
-  .d {
-    grid-column: 5 / span 8;
-    grid-row: 2;
-  }
-
-  .e {
-    grid-column: 5 / span 8;
-    grid-row: 3;
-  }
-
-  .f {
-    grid-column: 5 / span 8;
-    grid-row: 4;
-  }
 `;
 
 const mockMetallica = [
@@ -160,68 +118,6 @@ storiesOf('App', module)
       </StoryAppContainerWrapper>
     </HashRouter>
   ))
-  .add('search section', () => (
-    <HashRouter>
-      <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} logout={() => {}} user={mockUser}>
-          <StoryAppNavigationWrapper>
-            <NavLink to="/home" />
-            <NavLink to="/tab1">Tab 1</NavLink>
-            <NavLink to="/tab2">Tab 2</NavLink>
-          </StoryAppNavigationWrapper>
-        </StoryAppHeaderWrapper>
-        <SearchContentWrapper bgColor="#fff">
-          <SearchWrapper>
-            <SearchInput value="Metallica" />
-          </SearchWrapper>
-        </SearchContentWrapper>
-        <StoryAppContentWrapper contentWidth={1200}>
-          <CardStack>
-            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockMetallica[0]} /></CardSegment></Card>
-            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockMetallica[1]} /></CardSegment></Card>
-            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockMetallica[2]} /></CardSegment></Card>
-            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockMetallica[3]} /></CardSegment></Card>
-          </CardStack>
-        </StoryAppContentWrapper>
-      </StoryAppContainerWrapper>
-    </HashRouter>
-  ))
-  .add('profile grid', () => (
-    <HashRouter>
-      <StoryAppContainerWrapper>
-        <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} logout={() => {}} user={mockUser}>
-          <StoryAppNavigationWrapper>
-            <NavLink to="/home" />
-            <NavLink to="/tab1">Tab 1</NavLink>
-            <NavLink to="/tab2">Tab 2</NavLink>
-          </StoryAppNavigationWrapper>
-        </StoryAppHeaderWrapper>
-        <StoryAppContentWrapper>
-          <ProfileGrid>
-            <Card className="a">
-              <CardSegment style={{ justifyContent: 'center' }}>
-                <img alt="" src={OpenLatticeLogo} height={200} />
-              </CardSegment>
-              <CardSegment>OpenLattice</CardSegment>
-            </Card>
-            <Card className="b"><CardSegment /></Card>
-            <Card className="c">
-              <CardSegment vertical>
-                <DataGrid columns={3} data={Map({ status: 'Active', score: 0, something: 100 })} />
-              </CardSegment>
-            </Card>
-            <Card className="d"><CardSegment /></Card>
-            <Card className="e"><CardSegment /></Card>
-            <Card className="f">
-              <CardSegment vertical>
-                <span>hello world</span>
-              </CardSegment>
-            </Card>
-          </ProfileGrid>
-        </StoryAppContentWrapper>
-      </StoryAppContainerWrapper>
-    </HashRouter>
-  ))
   .add('navigation default', () => (
     <>
       <HashRouter>
@@ -279,6 +175,49 @@ storiesOf('App', module)
             <NavLink to="/sign-out">Sign Out</NavLink>
           </StoryAppNavigationWrapper>
         </StoryAppHeaderWrapper>
+      </StoryAppContainerWrapper>
+    </HashRouter>
+  ))
+  .add('Example Page', () => (
+    <HashRouter>
+      <StoryAppContainerWrapper>
+        <StoryAppHeaderWrapper
+            appIcon={OpenLatticeLogo}
+            logout={() => {}}
+            organizationsSelect={mockOrgSelect}
+            user={mockUser}>
+          <StoryAppNavigationWrapper>
+            <NavLink to="/home" />
+            <NavLink to="/tab1">Tab 1</NavLink>
+            <NavLink to="/tab2">Tab 2</NavLink>
+            <NavLink to="/tab3">Tab 3</NavLink>
+          </StoryAppNavigationWrapper>
+        </StoryAppHeaderWrapper>
+        <StoryAppNavigationWrapper>
+          <NavLink to="/subtab1">SubTab 1</NavLink>
+          <NavLink to="/subtab2">SubTab 2</NavLink>
+          <NavLink to="/subtab3">SubTab 3</NavLink>
+        </StoryAppNavigationWrapper>
+        <StoryAppContentWrapper bgColor="#fff" borderless>
+          <SearchWrapper>
+            <SearchInput value="Metallica" />
+          </SearchWrapper>
+        </StoryAppContentWrapper>
+        <StoryAppContentWrapper bgColor="#fff" padding="0">
+          <StoryAppNavigationWrapper borderless>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/search">Search</NavLink>
+            <NavLink to="/permission">Permissions</NavLink>
+          </StoryAppNavigationWrapper>
+        </StoryAppContentWrapper>
+        <StoryAppContentWrapper>
+          <CardStack>
+            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockMetallica[0]} /></CardSegment></Card>
+            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockMetallica[1]} /></CardSegment></Card>
+            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockMetallica[2]} /></CardSegment></Card>
+            <Card><CardSegment padding="sm"><DataGrid columns={4} data={mockMetallica[3]} /></CardSegment></Card>
+          </CardStack>
+        </StoryAppContentWrapper>
       </StoryAppContainerWrapper>
     </HashRouter>
   ));

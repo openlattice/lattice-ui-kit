@@ -4,19 +4,29 @@
 
 import styled, { css } from 'styled-components';
 
+import { NEUTRALS } from '../../../../../colors';
+
 type Props = {
   bgColor :?string;
+  borderless :boolean;
 };
 
-const getOuterComputedStyles = ({ bgColor } :Props) => {
+const getComputedStyles = ({ bgColor, borderless } :Props) => {
 
-  let finalBackgroundColor = '';
-  if (bgColor) {
+  let finalBackgroundColor;
+  let finalBorderBottom;
+  if (typeof bgColor === 'string') {
     finalBackgroundColor = bgColor;
+    finalBorderBottom = `1px solid ${NEUTRALS[5]}`;
+  }
+
+  if (borderless === true) {
+    finalBorderBottom = undefined;
   }
 
   return css`
     background-color: ${finalBackgroundColor};
+    border-bottom: ${finalBorderBottom};
   `;
 };
 
@@ -25,9 +35,8 @@ const AppContentOuterWrapper = styled.div`
   flex-direction: row;
   flex: 0 0 auto;
   justify-content: center;
-  /*overflow: hidden;*/ /* TODO: make it work with overflow hidden */
   position: relative;
-  ${getOuterComputedStyles}
+  ${getComputedStyles}
 `;
 
 export default AppContentOuterWrapper;

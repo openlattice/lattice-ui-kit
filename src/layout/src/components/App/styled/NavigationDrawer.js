@@ -13,6 +13,18 @@ const NavigationDrawer = styled.nav`
   justify-content: flex-start;
   padding: 15px 0;
 
+  > span {
+    background-color: ${WHITE};
+    color: ${NEUTRALS[0]};
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    padding: 15px 30px;
+    text-decoration: none;
+  }
+
   > a {
     background-color: ${WHITE};
     color: ${NEUTRALS[0]};

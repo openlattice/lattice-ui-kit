@@ -9,14 +9,17 @@ import AppNavigationInnerWrapper from './styled/AppNavigationInnerWrapper';
 import AppNavigationOuterWrapper from './styled/AppNavigationOuterWrapper';
 import NavigationDrawer from './styled/NavigationDrawer';
 import NavigationWrapper from './styled/NavigationWrapper';
-import * as Colors from '../../../../colors';
+
 import Drawer from '../../../../drawer/src/components/Drawer';
+import * as Colors from '../../../../colors';
 
 const { WHITE } = Colors;
 
 // have to use the optional prop syntax because of React.forwardRef below
 // https://github.com/facebook/flow/issues/7467
 type Props = {
+  bgColor ?:string;
+  borderless ?:boolean;
   children :Node;
   className ?:string;
   drawer ?:boolean;
@@ -28,6 +31,8 @@ type Props = {
 class AppNavigationWrapper extends Component<Props> {
 
   static defaultProps = {
+    bgColor: WHITE,
+    borderless: false,
     className: undefined,
     drawer: false,
     forwardedRef: undefined,
@@ -38,6 +43,8 @@ class AppNavigationWrapper extends Component<Props> {
   render() {
 
     const {
+      bgColor,
+      borderless,
       children,
       className,
       drawer,
@@ -47,7 +54,6 @@ class AppNavigationWrapper extends Component<Props> {
     } = this.props;
 
     if (drawer) {
-
       return (
         <AppNavigationOuterWrapper borderless className={className}>
           <AppNavigationInnerWrapper vertical>
@@ -62,7 +68,7 @@ class AppNavigationWrapper extends Component<Props> {
     }
 
     return (
-      <AppNavigationOuterWrapper bgColor={WHITE} className={className}>
+      <AppNavigationOuterWrapper borderless={borderless} bgColor={bgColor} className={className}>
         <AppNavigationInnerWrapper>
           <NavigationWrapper ref={forwardedRef}>
             {children}
@@ -76,6 +82,8 @@ class AppNavigationWrapper extends Component<Props> {
 // https://github.com/facebook/flow/issues/7467
 export default React.forwardRef<Props, HTMLElement>((props, ref) => (
   <AppNavigationWrapper
+      borderless={props.borderless}
+      bgColor={props.bgColor}
       className={props.className}
       drawer={props.drawer}
       forwardedRef={ref}

@@ -97,6 +97,16 @@ describe('AppHeaderWrapper', () => {
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
+    test('force drawer', () => {
+      const wrapper = shallow(
+        <AppHeaderWrapper logout={logout} organizationsSelect={{ organizations: mockOrgs }} user="jest@openlattice.com">
+          <div>{mockTabs}</div>
+        </AppHeaderWrapper>
+      );
+      wrapper.setState({ shouldForceDrawer: true });
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
+
   });
 
 });
