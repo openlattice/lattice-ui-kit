@@ -8,7 +8,9 @@ import type { Node } from 'react';
 import isArray from 'lodash/isArray';
 import isFunction from 'lodash/isFunction';
 import isPlainObject from 'lodash/isPlainObject';
+import isString from 'lodash/isString';
 import styled from 'styled-components';
+import { faSignOut } from '@fortawesome/pro-regular-svg-icons';
 import { faBars } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { get, isCollection } from 'immutable';
@@ -17,6 +19,7 @@ import AppHeaderInnerWrapper from './styled/AppHeaderInnerWrapper';
 import AppHeaderOuterWrapper from './styled/AppHeaderOuterWrapper';
 import AppNavigationWrapper from './AppNavigationWrapper';
 import NavigationWrapper, { APP_NAV_ROOT } from './styled/NavigationWrapper';
+
 import * as Colors from '../../../../colors';
 import { Button } from '../../../../button';
 import { Select } from '../../../../select';
@@ -26,6 +29,7 @@ import {
   optionStyles,
   selectStyles,
 } from '../../../../style/select';
+import { media } from '../../../../utils/StyleUtils';
 
 const { NEUTRALS } = Colors;
 
@@ -39,6 +43,8 @@ const LogoutButton = styled(Button)`
   width: 100px;
 `;
 
+const LogOutAnchor = styled.a``;
+
 const HeaderSectionContentWrapper = styled.div`
   align-items: center;
   display: flex;
@@ -51,6 +57,9 @@ const HeaderSectionContentWrapper = styled.div`
 
   > * {
     margin-left: 30px;
+    ${media.phone`
+      margin-left: 20px;
+    `}
   }
 `;
 
@@ -65,6 +74,10 @@ const NavigationToggleWrapper = styled.div`
   margin-left: 21px; /* the icon is 14px wide, this div is 32px wide, so there's 9px on each side of the icon */
   margin-right: -9px; /* to offset the extra space around icon */
   width: 32px;
+  ${media.phone`
+    margin-left: 11px;
+    margin-right: -6px;
+  `}
 
   &:hover {
     color: ${NEUTRALS[0]};
@@ -78,7 +91,7 @@ const organizationsSelectStyles = {
     // the following are not ideal, but it's tricky figuring out how to make it flex perfectly in all cases
     flex: '1 1 auto',
     maxWidth: '300px',
-    minWidth: '200px',
+    minWidth: '180px',
   }),
   control: (base, state) => ({
     ...controlStyles(base, state),
@@ -117,7 +130,11 @@ type Props = {
 };
 
 type State = {
+  forceDrawerWidth :number;
+  handleNavigationWrapping :boolean;
   isNavigationOpen :boolean;
+  navigationChildrenCount :number;
+  shouldForceDrawer :boolean;
   shouldWrapNavigation :boolean;
 };
 
@@ -138,8 +155,15 @@ class AppHeaderWrapper extends Component<Props, State> {
   constructor(props :Props) {
 
     super(props);
+
+    const { handleNavigationWrapping, navigationChildrenCount } = this.processChildren(props.children);
+
     this.state = {
+      handleNavigationWrapping,
+      navigationChildrenCount,
+      forceDrawerWidth: -1,
       isNavigationOpen: false,
+      shouldForceDrawer: false,
       shouldWrapNavigation: false,
     };
   }
@@ -148,13 +172,20 @@ class AppHeaderWrapper extends Component<Props, State> {
 
     // from the gods themselves... https://stackoverflow.com/a/19014495/196921
     window.addEventListener('resize', this.handleOnResize.bind(this));
-
-    this.wrapNavIfNecessary();
+    this.handleOnResize();
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(props :Props, state :State) {
 
-    this.wrapNavIfNecessary();
+    const { children } = this.props;
+    const { handleNavigationWrapping, navigationChildrenCount } = this.processChildren(children);
+
+    if (state.handleNavigationWrapping !== handleNavigationWrapping) {
+      this.setState({ handleNavigationWrapping });
+    }
+    if (state.navigationChildrenCount !== navigationChildrenCount) {
+      this.setState({ navigationChildrenCount });
+    }
   }
 
   componentWillUnmount() {
@@ -183,7 +214,14 @@ class AppHeaderWrapper extends Component<Props, State> {
 
   handleOnResize = () => {
 
-    const { handleNavigationWrapping, navigationChildrenCount } = this.processChildren();
+    const {
+      forceDrawerWidth,
+      handleNavigationWrapping,
+      navigationChildrenCount,
+      shouldForceDrawer,
+      shouldWrapNavigation,
+    } = this.state;
+
     if (!handleNavigationWrapping || navigationChildrenCount <= 1) {
       // there's nothing to wrap if there's no children or if there's only 1 child, which is treated as the the
       // header's app icon + app title section
@@ -195,55 +233,90 @@ class AppHeaderWrapper extends Component<Props, State> {
     const nav1 = this.nav1Ref.current;
     const nav2 = this.nav2Ref.current;
 
-    // the lower nav ref will be null if it is not rendered, so this is to check if we should wrap the nav
-    if (header && !nav2) {
-      if (header.offsetWidth < header.scrollWidth) {
-        this.setState({ shouldWrapNavigation: true });
+    if (header) {
+
+      let headerWidthEstimate = 60; // 2*30px for header left-right padding
+      let nav1WidthEstimate = 0;
+      let nav1WidthEstimateAfterWrap = 0;
+      if (nav1 && nav1.children.length) {
+        for (let i = 0; i < nav1.children.length; i += 1) {
+          nav1WidthEstimate += nav1.children[i].offsetWidth;
+          nav1WidthEstimate += 30; // 30px margin for every child
+          if (i === 0) {
+            nav1WidthEstimateAfterWrap = nav1WidthEstimate;
+          }
+        }
       }
-    }
-    // check if the nav can fit in the header and undo the wrap if it can
-    else if (header && nav1 && nav2 && right) {
-      // this is a *super* basic estimate for checking if all header content will fit in a single row
-      let headerWidthEstimate = 0;
-      for (let i = 0; i < right.children.length; i += 1) {
-        headerWidthEstimate += right.children[i].offsetWidth;
+      headerWidthEstimate += nav1WidthEstimate;
+
+      if (right && right.children.length) {
+        for (let i = 0; i < right.children.length; i += 1) {
+          headerWidthEstimate += right.children[i].offsetWidth;
+          headerWidthEstimate += 30; // 30px margin for every child
+        }
       }
-      headerWidthEstimate += nav1.offsetWidth;
-      headerWidthEstimate += nav2.offsetWidth;
-      if (headerWidthEstimate < header.offsetWidth) {
-        this.setState({ shouldWrapNavigation: false });
+
+      let nav2WidthEstimate = 0;
+      if (nav2 && nav2.children.length) {
+        for (let i = 0; i < nav2.children.length; i += 1) {
+          nav2WidthEstimate += nav2.children[i].offsetWidth;
+          nav2WidthEstimate += 30; // 30px margin for every child
+        }
       }
-    }
-    // I don't think this is possible, but it's here for just in case
-    else {
-      this.setState({ shouldWrapNavigation: false });
+
+      // not wrapping and not forcing
+      if (!shouldWrapNavigation && !shouldForceDrawer) {
+
+        const newHeaderWidthEstimate = (headerWidthEstimate - nav1WidthEstimate) + nav1WidthEstimateAfterWrap;
+        const force = (
+          header.offsetWidth < header.scrollWidth
+          && header.offsetWidth < headerWidthEstimate
+          && header.offsetWidth < newHeaderWidthEstimate
+        );
+
+        if (force) {
+          this.setState({
+            forceDrawerWidth: headerWidthEstimate, // has to be headerWidthEstimate
+            shouldForceDrawer: true,
+            shouldWrapNavigation: false,
+          });
+        }
+        else if (header.offsetWidth < headerWidthEstimate) {
+          this.setState({
+            shouldForceDrawer: false,
+            shouldWrapNavigation: true,
+          });
+        }
+      }
+      // wrapping but not forcing
+      else if (shouldWrapNavigation) {
+        if (header.offsetWidth < headerWidthEstimate) {
+          this.setState({
+            forceDrawerWidth: header.offsetWidth,
+            shouldForceDrawer: true,
+            shouldWrapNavigation: false,
+          });
+        }
+        else if (header.offsetWidth > (headerWidthEstimate + nav2WidthEstimate)) {
+          this.setState({
+            shouldForceDrawer: false,
+            shouldWrapNavigation: false,
+          });
+        }
+      }
+      // forcing
+      else if (shouldForceDrawer) {
+        if (header.offsetWidth > forceDrawerWidth && header.offsetWidth > headerWidthEstimate) {
+          this.setState({
+            shouldForceDrawer: false,
+            shouldWrapNavigation: true,
+          });
+        }
+      }
     }
   }
 
-  wrapNavIfNecessary = () => {
-
-    const { handleNavigationWrapping, navigationChildrenCount } = this.processChildren();
-    if (!handleNavigationWrapping || navigationChildrenCount <= 1) {
-      // there's nothing to wrap if there's no children or if there's only 1 child, which is treated as the the
-      // header's app icon + app title section
-      return;
-    }
-
-    // initially on mount, we know the lower nav will not render and the ref will be null
-    const header = this.headerRef.current;
-    if (header && header.offsetWidth < header.scrollWidth) {
-      // ensure "shouldWrapNavigation" has not already been set to true to prevent infinite renders in the case where
-      // the nav has already been wrapped but there's still overflow in the header (when the window is very small)
-      const { shouldWrapNavigation } = this.state;
-      if (!shouldWrapNavigation) {
-        this.setState({ shouldWrapNavigation: true });
-      }
-    }
-  }
-
-  processChildren = () => {
-
-    const { children } = this.props;
+  processChildren = (children :Node) => {
 
     let handleNavigationWrapping :boolean = true;
     let navigationChildrenCount :number = 0;
@@ -267,9 +340,10 @@ class AppHeaderWrapper extends Component<Props, State> {
     };
   }
 
-  renderHeaderRight = (renderLogOutButton :boolean) => {
+  renderHeaderRight = () => {
 
     const { logout, organizationsSelect, user } = this.props;
+    const { handleNavigationWrapping, shouldForceDrawer } = this.state;
 
     let organizations = [];
     if (isArray(organizationsSelect.organizations) || isPlainObject(organizationsSelect.organizations)) {
@@ -290,6 +364,31 @@ class AppHeaderWrapper extends Component<Props, State> {
     const selectedOrganizationOption = organizationOptions.find((option) => (
       option.value === organizationsSelect.selectedOrganizationId
     ));
+
+    if (!handleNavigationWrapping || shouldForceDrawer) {
+      return (
+        <HeaderSectionContentWrapper align="right" ref={this.rightRef}>
+          {
+            organizationOptions.length > 0 && (
+              <Select
+                  isClearable={false}
+                  isDisabled={organizationsSelect.isDisabled}
+                  isLoading={organizationsSelect.isLoading}
+                  isMulti={false}
+                  menuPortalTarget={document.body}
+                  onChange={organizationsSelect.onChange}
+                  options={organizationOptions}
+                  placeholder="Select an organization..."
+                  styles={organizationsSelectStyles}
+                  value={selectedOrganizationOption} />
+            )
+          }
+          <NavigationToggleWrapper onClick={this.toggleNavigation}>
+            <FontAwesomeIcon icon={faBars} />
+          </NavigationToggleWrapper>
+        </HeaderSectionContentWrapper>
+      );
+    }
 
     return (
       <HeaderSectionContentWrapper align="right" ref={this.rightRef}>
@@ -314,19 +413,42 @@ class AppHeaderWrapper extends Component<Props, State> {
           )
         }
         {
-          renderLogOutButton && isFunction(logout) && (
+          isFunction(logout) && (
             <LogoutButton onClick={logout}>Log Out</LogoutButton>
-          )
-        }
-        {
-          !renderLogOutButton && (
-            <NavigationToggleWrapper onClick={this.toggleNavigation}>
-              <FontAwesomeIcon icon={faBars} />
-            </NavigationToggleWrapper>
           )
         }
       </HeaderSectionContentWrapper>
     );
+  }
+
+  renderLogOutButtonInDrawer = () => {
+
+    const { logout } = this.props;
+
+    const LogOutBody = (
+      <>
+        <FontAwesomeIcon size="lg" fixedWidth icon={faSignOut} />
+        <span style={{ marginLeft: '20px' }}>Log Out</span>
+      </>
+    );
+
+    if (isFunction(logout)) {
+      return (
+        <LogOutAnchor onClick={logout}>
+          {LogOutBody}
+        </LogOutAnchor>
+      );
+    }
+
+    if (isString(logout)) {
+      return (
+        <LogOutAnchor href={logout}>
+          {LogOutBody}
+        </LogOutAnchor>
+      );
+    }
+
+    return null;
   }
 
   render() {
@@ -336,9 +458,15 @@ class AppHeaderWrapper extends Component<Props, State> {
       appTitle,
       children,
       className,
+      user,
     } = this.props;
-    const { isNavigationOpen, shouldWrapNavigation } = this.state;
-    const { handleNavigationWrapping, navigationChildrenCount } = this.processChildren();
+    const {
+      handleNavigationWrapping,
+      isNavigationOpen,
+      navigationChildrenCount,
+      shouldForceDrawer,
+      shouldWrapNavigation,
+    } = this.state;
 
     let headerBounds;
     if (this.headerRef.current) {
@@ -404,17 +532,23 @@ class AppHeaderWrapper extends Component<Props, State> {
                         Children.map(child.props.children, (navChild, navIndex) => {
                           // the 1st child is expected to be the root route, i.e. the app icon + app title
                           if (navIndex === 0) {
+                            const appTitleElement = shouldForceDrawer
+                              ? null
+                              : React.createElement(AppTitle, { title: navChild.props.children || appTitle });
                             return React.cloneElement(
                               navChild,
                               { ...navChild.props, className: APP_NAV_ROOT },
                               React.createElement(AppIcon, { icon: appIcon }),
-                              React.createElement(AppTitle, { title: navChild.props.children || appTitle }),
+                              appTitleElement,
                             );
                           }
                           // return null if...
                           //   - the header is not responsible for navigation wrapping (i.e. if the nav is a drawer)
                           //   - the header has computed that the nav items won't fit and need to wrap around
-                          return (!handleNavigationWrapping || shouldWrapNavigation) ? null : navChild;
+                          //   - the header has computed that the screen is too small and will force the drawer
+                          return (!handleNavigationWrapping || shouldWrapNavigation || shouldForceDrawer)
+                            ? null
+                            : navChild;
                         })
                       }
                     </NavigationWrapper>
@@ -423,7 +557,7 @@ class AppHeaderWrapper extends Component<Props, State> {
                 return child;
               })
             }
-            {this.renderHeaderRight(handleNavigationWrapping)}
+            {this.renderHeaderRight()}
           </AppHeaderInnerWrapper>
         </AppHeaderOuterWrapper>
         {
@@ -439,7 +573,7 @@ class AppHeaderWrapper extends Component<Props, State> {
            *     </AppNavigationWrapper>
            *   </AppHeaderWrapper>
            */
-          handleNavigationWrapping && navigationChildrenCount > 1 && shouldWrapNavigation && (
+          handleNavigationWrapping && navigationChildrenCount > 1 && shouldWrapNavigation && !shouldForceDrawer && (
             <AppNavigationWrapper className={className} ref={this.nav2Ref}>
               {
                 Children.map(children, (child, index) => {
@@ -471,16 +605,24 @@ class AppHeaderWrapper extends Component<Props, State> {
            *     </AppNavigationWrapper>
            *   </AppHeaderWrapper>
            */
-          !handleNavigationWrapping && navigationChildrenCount > 0 && (
+          (!handleNavigationWrapping || shouldForceDrawer) && navigationChildrenCount > 0 && (
             Children.map(children, (child, index) => {
               // the 1st child is expected to be <AppNavigationWrapper ... />
               if (index === 0) {
                 return (
                   <AppNavigationWrapper
-                      drawer={child.props.drawer}
+                      drawer={child.props.drawer || shouldForceDrawer}
                       headerBounds={headerBounds}
                       isOpen={isNavigationOpen}
                       onClose={this.closeNavigation}>
+                    {
+                      shouldForceDrawer && user && (
+                        <>
+                          <span>{user}</span>
+                          <hr />
+                        </>
+                      )
+                    }
                     {
                       Children.map(child.props.children, (navChild, navIndex) => (
                         // the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
@@ -489,6 +631,9 @@ class AppHeaderWrapper extends Component<Props, State> {
                           ? null
                           : React.cloneElement(navChild, { ...navChild.props, onClick: this.closeNavigation })
                       ))
+                    }
+                    {
+                      shouldForceDrawer && this.renderLogOutButtonInDrawer()
                     }
                   </AppNavigationWrapper>
                 );
