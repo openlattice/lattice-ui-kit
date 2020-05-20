@@ -9,9 +9,9 @@ import { NEUTRALS } from '../../../../colors';
 
 type ComputedSegmentProps = {
   bgColor ?:string;
+  borderless ?:boolean;
   indent ?:number;
   noBleed ?:boolean;
-  noBorder ?:boolean;
   onClick ?:() => void;
   padding ?:string;
   vertical ?:boolean;
@@ -21,9 +21,9 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
 
   const {
     bgColor,
+    borderless,
     indent,
     noBleed,
-    noBorder,
     onClick,
     padding,
     vertical,
@@ -73,7 +73,7 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
   }
 
   let borderBottom;
-  if (!noBorder) {
+  if (!borderless) {
     borderBottom = `1px solid ${NEUTRALS[4]}`;
   }
 
