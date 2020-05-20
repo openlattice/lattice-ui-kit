@@ -26,7 +26,7 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
     noBleed,
     onClick,
     padding,
-    vertical,
+    vertical = true,
   } = props;
 
   let backgroundColor = 'transparent';

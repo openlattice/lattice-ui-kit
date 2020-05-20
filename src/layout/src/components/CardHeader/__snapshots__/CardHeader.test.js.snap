@@ -12,9 +12,9 @@ exports[`CardHeader snapshots with children 1`] = `
   position: relative;
   border-bottom: 1px solid #dcdce7;
   background-color: transparent;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0;
   padding: 30px 30px 30px 30px;
   -webkit-align-items: baseline;
@@ -101,9 +101,9 @@ exports[`CardHeader snapshots without children 1`] = `
   position: relative;
   border-bottom: 1px solid #dcdce7;
   background-color: transparent;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0;
   padding: 30px 30px 30px 30px;
   -webkit-align-items: baseline;

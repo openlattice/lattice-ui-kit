@@ -82,13 +82,13 @@ storiesOf('Card', module)
         <CardSegment>
           <Button mode="primary">default</Button>
           <Button mode="secondary">flex</Button>
-          <Button>row</Button>
+          <Button>column</Button>
         </CardSegment>
       </Card>
 
       <Card>
-        <CardSegment vertical>
-          <Button mode="primary">vertical</Button>
+        <CardSegment vertical={false}>
+          <Button mode="primary">vertical=false</Button>
           <Button mode="secondary">card</Button>
           <Button>segment</Button>
         </CardSegment>
