@@ -5,12 +5,11 @@
 import isFunction from 'lodash/isFunction';
 import styled, { css } from 'styled-components';
 
-import * as Colors from '../../../../colors';
-
-const { NEUTRALS } = Colors;
+import { NEUTRALS } from '../../../../colors';
 
 type ComputedSegmentProps = {
   bgColor ?:string;
+  borderless ?:boolean;
   indent ?:number;
   noBleed ?:boolean;
   onClick ?:() => void;
@@ -19,13 +18,15 @@ type ComputedSegmentProps = {
 };
 
 const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
+
   const {
     bgColor,
+    borderless,
     indent,
     noBleed,
     onClick,
     padding,
-    vertical,
+    vertical = true,
   } = props;
 
   let backgroundColor = 'transparent';
@@ -71,11 +72,18 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
     flexDirection = 'column';
   }
 
+  let borderBottom;
+  if (!borderless) {
+    borderBottom = `1px solid ${NEUTRALS[4]}`;
+  }
+
   const styles = css`
+    border-bottom: ${borderBottom};
     background-color: ${backgroundColor};
     flex-direction: ${flexDirection};
     margin: ${finalMargin};
     padding: ${finalPadding};
+
     &:hover {
       cursor: ${cursor};
     }
@@ -90,15 +98,11 @@ const CardSegment = styled.div`
   position: relative;
   ${getSegmentComputedStyles}
 
-  & & {
-    border-bottom: 1px solid ${NEUTRALS[4]};
-  }
-
-  & &:first-child {
+  &:first-child {
     border-radius: 3px 3px 0 0;
   }
 
-  & &:last-child {
+  &:last-child {
     border-bottom: 0;
     border-radius: 0 0 3px 3px;
   }

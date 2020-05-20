@@ -3,6 +3,7 @@ import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import CardSegment from './CardSegment';
+import { NEUTRALS } from '../../../../colors';
 
 describe('CardSegment', () => {
 
@@ -59,6 +60,20 @@ describe('CardSegment', () => {
   });
 
   describe('props', () => {
+
+    describe('borderless', () => {
+
+      test('should set border-bottom with "borderless=false"', () => {
+        const wrapper = mount(<CardSegment />);
+        expect(wrapper).toHaveStyleRule('border-bottom', `1px solid ${NEUTRALS[4]}`);
+      });
+
+      test('should not set border-bottom with "borderless=true"', () => {
+        const wrapper = mount(<CardSegment borderless />);
+        expect(wrapper).not.toHaveStyleRule('border-bottom');
+      });
+
+    });
 
     describe('indent', () => {
 
