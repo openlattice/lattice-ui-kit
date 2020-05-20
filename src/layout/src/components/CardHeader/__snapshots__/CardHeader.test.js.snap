@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardHeader snapshots with children 1`] = `
-.c1 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10,6 +10,7 @@ exports[`CardHeader snapshots with children 1`] = `
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   position: relative;
+  border-bottom: 1px solid #dcdce7;
   background-color: transparent;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -27,19 +28,15 @@ exports[`CardHeader snapshots with children 1`] = `
   transition: background-color 200ms ease-out,color 200ms ease-out;
 }
 
-.c1:hover {
+.c0:hover {
   cursor: inherit;
 }
 
-.c1 .c0 {
-  border-bottom: 1px solid #dcdce7;
-}
-
-.c1 .c0:first-child {
+.c0:first-child {
   border-radius: 3px 3px 0 0;
 }
 
-.c1 .c0:last-child {
+.c0:last-child {
   border-bottom: 0;
   border-radius: 0 0 3px 3px;
 }
@@ -53,15 +50,13 @@ exports[`CardHeader snapshots with children 1`] = `
           [Function],
         ],
         "componentStyle": ComponentStyle {
-          "componentId": "c0",
+          "componentId": "CardHeader-ez5xes-0",
           "isStatic": false,
-          "lastClassName": "c1",
+          "lastClassName": "c0",
           "rules": Array [
             "display:flex;flex:1 0 auto;position:relative;",
             [Function],
-            " & &{border-bottom:1px solid ",
-            "#dcdce7",
-            ";}& &:first-child{border-radius:3px 3px 0 0;}& &:last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
+            " &:first-child{border-radius:3px 3px 0 0;}&:last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
             "align-items:baseline;background-color:",
             [Function],
             ";color:",
@@ -78,7 +73,7 @@ exports[`CardHeader snapshots with children 1`] = `
           "CardSegment-sc-44tqm2-0",
         ],
         "render": [Function],
-        "styledComponentId": "c0",
+        "styledComponentId": "CardHeader-ez5xes-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -88,14 +83,14 @@ exports[`CardHeader snapshots with children 1`] = `
     forwardedRef={null}
   >
     <header
-      className="c0 c1"
+      className="c0"
     />
   </StyledComponent>
 </CardHeader>
 `;
 
 exports[`CardHeader snapshots without children 1`] = `
-.c1 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -104,6 +99,7 @@ exports[`CardHeader snapshots without children 1`] = `
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   position: relative;
+  border-bottom: 1px solid #dcdce7;
   background-color: transparent;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -121,19 +117,15 @@ exports[`CardHeader snapshots without children 1`] = `
   transition: background-color 200ms ease-out,color 200ms ease-out;
 }
 
-.c1:hover {
+.c0:hover {
   cursor: inherit;
 }
 
-.c1 .c0 {
-  border-bottom: 1px solid #dcdce7;
-}
-
-.c1 .c0:first-child {
+.c0:first-child {
   border-radius: 3px 3px 0 0;
 }
 
-.c1 .c0:last-child {
+.c0:last-child {
   border-bottom: 0;
   border-radius: 0 0 3px 3px;
 }
@@ -147,15 +139,13 @@ exports[`CardHeader snapshots without children 1`] = `
           [Function],
         ],
         "componentStyle": ComponentStyle {
-          "componentId": "c0",
+          "componentId": "CardHeader-ez5xes-0",
           "isStatic": false,
-          "lastClassName": "c1",
+          "lastClassName": "c0",
           "rules": Array [
             "display:flex;flex:1 0 auto;position:relative;",
             [Function],
-            " & &{border-bottom:1px solid ",
-            "#dcdce7",
-            ";}& &:first-child{border-radius:3px 3px 0 0;}& &:last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
+            " &:first-child{border-radius:3px 3px 0 0;}&:last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
             "align-items:baseline;background-color:",
             [Function],
             ";color:",
@@ -172,7 +162,7 @@ exports[`CardHeader snapshots without children 1`] = `
           "CardSegment-sc-44tqm2-0",
         ],
         "render": [Function],
-        "styledComponentId": "c0",
+        "styledComponentId": "CardHeader-ez5xes-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -182,7 +172,7 @@ exports[`CardHeader snapshots without children 1`] = `
     forwardedRef={null}
   >
     <header
-      className="c0 c1"
+      className="c0"
     />
   </StyledComponent>
 </CardHeader>

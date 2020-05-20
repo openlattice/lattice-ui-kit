@@ -3,6 +3,7 @@ import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import CardSegment from './CardSegment';
+import { NEUTRALS } from '../../../../colors';
 
 describe('CardSegment', () => {
 
@@ -106,6 +107,20 @@ describe('CardSegment', () => {
         const wrapper = mount(<CardSegment noBleed />);
         expect(wrapper).toHaveStyleRule('margin', '0 30px 0 30px');
         expect(wrapper).toHaveStyleRule('padding', '30px 0 30px 0');
+      });
+
+    });
+
+    describe('noBorder', () => {
+
+      test('should set border-bottom with "noBorder=false"', () => {
+        const wrapper = mount(<CardSegment />);
+        expect(wrapper).toHaveStyleRule('border-bottom', `1px solid ${NEUTRALS[4]}`);
+      });
+
+      test('should not set border-bottom with "noBorder=true"', () => {
+        const wrapper = mount(<CardSegment noBorder />);
+        expect(wrapper).not.toHaveStyleRule('border-bottom');
       });
 
     });

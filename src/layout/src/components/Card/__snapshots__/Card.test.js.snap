@@ -18,19 +18,6 @@ exports[`Card snapshots With child divs 1`] = `
   position: relative;
 }
 
-.c0 > .c1 {
-  border-bottom: 1px solid #dcdce7;
-}
-
-.c0 > .c1:first-child {
-  border-radius: 3px 3px 0 0;
-}
-
-.c0 > .c1:last-child {
-  border-bottom: 0;
-  border-radius: 0 0 3px 3px;
-}
-
 <Card>
   <StyledComponent
     forwardedComponent={
@@ -46,15 +33,7 @@ exports[`Card snapshots With child divs 1`] = `
             "#ffffff",
             ";border:1px solid ",
             "#dcdce7",
-            ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ",
-            ".c1",
-            "{border-bottom:1px solid ",
-            "#dcdce7",
-            ";}& > ",
-            ".c1",
-            ":first-child{border-radius:3px 3px 0 0;}& > ",
-            ".c1",
-            ":last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
+            ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;",
             [Function],
             ";",
           ],
@@ -106,19 +85,6 @@ exports[`Card snapshots Without Children 1`] = `
   position: relative;
 }
 
-.c0 > .c1 {
-  border-bottom: 1px solid #dcdce7;
-}
-
-.c0 > .c1:first-child {
-  border-radius: 3px 3px 0 0;
-}
-
-.c0 > .c1:last-child {
-  border-bottom: 0;
-  border-radius: 0 0 3px 3px;
-}
-
 <Card>
   <StyledComponent
     forwardedComponent={
@@ -134,15 +100,7 @@ exports[`Card snapshots Without Children 1`] = `
             "#ffffff",
             ";border:1px solid ",
             "#dcdce7",
-            ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ",
-            ".c1",
-            "{border-bottom:1px solid ",
-            "#dcdce7",
-            ";}& > ",
-            ".c1",
-            ":first-child{border-radius:3px 3px 0 0;}& > ",
-            ".c1",
-            ":last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
+            ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;",
             [Function],
             ";",
           ],
