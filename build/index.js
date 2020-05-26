@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.31.0
+ * lattice-ui-kit - v0.32.0
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -48798,19 +48798,31 @@ defineProperty_default()(AppHeaderWrapper_AppHeaderWrapper, "defaultProps", {
 });
 
 /* harmony default export */ var App_AppHeaderWrapper = (AppHeaderWrapper_AppHeaderWrapper);
+// CONCATENATED MODULE: ./src/layout/src/components/Card/Card.js
+
+
+
+var Card_NEUTRALS = NEUTRALS,
+    Card_WHITE = WHITE;
+var Card = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
+  displayName: "Card",
+  componentId: "sc-3vnjrr-0"
+})(["background-color:", ";border:1px solid ", ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;", ";"], Card_WHITE, Card_NEUTRALS[4], StyleUtils_getHoverStyles);
+/* harmony default export */ var Card_Card = (Card);
 // CONCATENATED MODULE: ./src/layout/src/components/CardSegment/CardSegment.js
 
 
 
-var CardSegment_NEUTRALS = NEUTRALS;
 
 var CardSegment_getSegmentComputedStyles = function getSegmentComputedStyles(props) {
   var bgColor = props.bgColor,
+      borderless = props.borderless,
       indent = props.indent,
       noBleed = props.noBleed,
       onClick = props.onClick,
       padding = props.padding,
-      vertical = props.vertical;
+      _props$vertical = props.vertical,
+      vertical = _props$vertical === void 0 ? true : _props$vertical;
   var backgroundColor = 'transparent';
 
   if (bgColor) {
@@ -48859,28 +48871,22 @@ var CardSegment_getSegmentComputedStyles = function getSegmentComputedStyles(pro
     flexDirection = 'column';
   }
 
-  var styles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["background-color:", ";flex-direction:", ";margin:", ";padding:", ";&:hover{cursor:", ";}"], backgroundColor, flexDirection, finalMargin, finalPadding, cursor);
+  var borderBottom;
+
+  if (!borderless) {
+    borderBottom = "1px solid ".concat(NEUTRALS[4]);
+  }
+
+  var styles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["border-bottom:", ";background-color:", ";flex-direction:", ";margin:", ";padding:", ";&:hover{cursor:", ";}"], borderBottom, backgroundColor, flexDirection, finalMargin, finalPadding, cursor);
   return styles;
 };
 
 var CardSegment = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
   displayName: "CardSegment",
   componentId: "sc-44tqm2-0"
-})(["display:flex;flex:1 0 auto;position:relative;", " & &{border-bottom:1px solid ", ";}& &:first-child{border-radius:3px 3px 0 0;}& &:last-child{border-bottom:0;border-radius:0 0 3px 3px;}"], CardSegment_getSegmentComputedStyles, CardSegment_NEUTRALS[4]);
+})(["display:flex;flex:1 0 auto;position:relative;", " &:first-child{border-radius:3px 3px 0 0;}&:last-child{border-bottom:0;border-radius:0 0 3px 3px;}"], CardSegment_getSegmentComputedStyles);
 /* harmony default export */ var CardSegment_CardSegment = (CardSegment);
 
-// CONCATENATED MODULE: ./src/layout/src/components/Card/Card.js
-
-
-
-
-var Card_NEUTRALS = NEUTRALS,
-    Card_WHITE = WHITE;
-var Card = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "Card",
-  componentId: "sc-3vnjrr-0"
-})(["background-color:", ";border:1px solid ", ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ", "{border-bottom:1px solid ", ";}& > ", ":first-child{border-radius:3px 3px 0 0;}& > ", ":last-child{border-bottom:0;border-radius:0 0 3px 3px;}", ";"], Card_WHITE, Card_NEUTRALS[4], CardSegment_CardSegment, Card_NEUTRALS[4], CardSegment_CardSegment, CardSegment_CardSegment, StyleUtils_getHoverStyles);
-/* harmony default export */ var Card_Card = (Card);
 // CONCATENATED MODULE: ./src/layout/src/components/CardHeader/CardHeader.js
 
 
@@ -62041,7 +62047,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.31.0";
+var src_version = "v0.32.0";
 
 
 
