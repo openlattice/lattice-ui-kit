@@ -46,19 +46,6 @@ exports[`Result snapshots should match snapshot 1`] = `
   position: relative;
 }
 
-.c0 > .c4 {
-  border-bottom: 1px solid #dcdce7;
-}
-
-.c0 > .c4:first-child {
-  border-radius: 3px 3px 0 0;
-}
-
-.c0 > .c4:last-child {
-  border-bottom: 0;
-  border-radius: 0 0 3px 3px;
-}
-
 .c0:hover,
 .c0:focus {
   box-shadow: 0 2px 8px -2px rgba(0,0,0,0.15);
@@ -98,15 +85,7 @@ exports[`Result snapshots should match snapshot 1`] = `
               "#ffffff",
               ";border:1px solid ",
               "#dcdce7",
-              ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;& > ",
-              ".c4",
-              "{border-bottom:1px solid ",
-              "#dcdce7",
-              ";}& > ",
-              ".c4",
-              ":first-child{border-radius:3px 3px 0 0;}& > ",
-              ".c4",
-              ":last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
+              ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;",
               [Function],
               ";",
             ],

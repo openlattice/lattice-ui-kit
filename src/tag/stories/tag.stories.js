@@ -9,7 +9,7 @@ storiesOf('Tag', module)
     <>
       <h1>Tags</h1>
       <Card>
-        <CardSegment>
+        <CardSegment vertical={false}>
           <Tag>undefined</Tag>
           <Tag mode="neutral">neutral</Tag>
           <Tag mode="success">success</Tag>

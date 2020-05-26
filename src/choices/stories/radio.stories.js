@@ -15,7 +15,7 @@ storiesOf('Radio', module)
         Uncontrolled Radio
       </h1>
       <Card>
-        <CardSegment>
+        <CardSegment vertical={false}>
           <form style={{
             display: 'flex',
             flex: '0 1 100%',

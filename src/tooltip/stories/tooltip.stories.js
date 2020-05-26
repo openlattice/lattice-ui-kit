@@ -35,7 +35,7 @@ storiesOf('Tooltip', module)
   ))
   .add('Info icon', () => (
     <Card>
-      <CardSegment padding="sm">
+      <CardSegment padding="sm" vertical={false}>
         <span>Hover for information</span>
         <MarginWrapper>
           <Tooltip
