@@ -1,22 +1,23 @@
 // @flow
 import React from 'react';
+
 import styled from 'styled-components';
 
 import * as Colors from '../../../colors';
 import { getStyleVariation } from '../../../utils/StyleUtils';
 
-const { NEUTRALS, PURPLES, WHITE } = Colors;
+const { NEUTRALS, PURPLE } = Colors;
 
 const getBackgroundColor = getStyleVariation('mode', {
-  primary: PURPLES[2],
-  secondary: PURPLES[5],
-  subtle: WHITE,
+  primary: PURPLE.P300,
+  secondary: PURPLE.P100,
+  subtle: 'white',
 }, NEUTRALS[6]);
 
 const getFontColor = getStyleVariation('mode', {
-  primary: WHITE,
-  secondary: PURPLES[1],
-  subtle: PURPLES[2],
+  primary: 'white',
+  secondary: PURPLE.P300,
+  subtle: PURPLE.P300,
 }, NEUTRALS[0]);
 
 const BadgeWrapper = styled.span`

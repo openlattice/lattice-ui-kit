@@ -80,7 +80,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
-  color: #6124e2;
+  color: #7654FF;
 }
 
 .c2:hover {

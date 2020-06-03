@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, PURPLES, RED_1 } from '../../../../colors';
+import { NEUTRALS, PURPLE, PURPLES, RED_1 } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
 
 const inputStyles = css`
@@ -25,7 +25,7 @@ const inputStyles = css`
   }
 
   :focus {
-    border: solid 1px ${PURPLES[1]};
+    border: solid 1px ${PURPLE.P300};
     background-color: white;
     outline: none;
   }

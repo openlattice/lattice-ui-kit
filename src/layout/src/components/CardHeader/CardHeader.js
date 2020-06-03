@@ -4,6 +4,7 @@ import CardSegment from '../CardSegment/CardSegment';
 import {
   GREEN_1,
   NEUTRALS,
+  PURPLE,
   PURPLES,
   RED_1,
   WHITE,
@@ -16,7 +17,7 @@ const backgroundColor = getStyleVariation('mode', {
   danger: RED_1,
   default: NEUTRALS[0],
   primary: PURPLES[2],
-  secondary: PURPLES[5],
+  secondary: PURPLE.P100,
   success: GREEN_1,
   warning: YELLOW_1
 });
@@ -25,7 +26,7 @@ const getFontColor = getStyleVariation('mode', {
   danger: WHITE,
   default: WHITE,
   primary: WHITE,
-  secondary: PURPLES[1],
+  secondary: PURPLE.P300,
   success: WHITE,
   warning: NEUTRALS[0],
 });

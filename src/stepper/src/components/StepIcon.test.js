@@ -1,12 +1,14 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+
 import toJson from 'enzyme-to-json';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/pro-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { mount, shallow } from 'enzyme';
 
 import StepIcon from './StepIcon';
-import { PURPLES } from '../../../colors';
 import { StepIndex } from './styled';
+
+import { PURPLE, PURPLES } from '../../../colors';
 
 describe('StepIcon', () => {
 

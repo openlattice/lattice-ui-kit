@@ -37,7 +37,7 @@ input:hover ~ .c4 {
 }
 
 input:focus ~ .c4 {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #4F3FA7 0 0 0 2px;
 }
 
 input:checked ~ .c4,
@@ -47,7 +47,7 @@ input[readonly]:checked:hover ~ .c4 {
 }
 
 input:checked:hover ~ .c4 {
-  background-color: #6124e2;
+  background-color: #7654FF;
 }
 
 input:disabled ~ .c4 {
@@ -68,7 +68,7 @@ input[readonly] ~ .c4 {
 input:not(:checked) ~ .c4:after,
 input:checked ~ .c4:after {
   content: '';
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 50%;
   height: 8px;
   left: 0;

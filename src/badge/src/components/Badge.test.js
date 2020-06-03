@@ -1,11 +1,13 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
-import * as Colors from '../../../colors';
 import Badge from './Badge';
 
-const { NEUTRALS, PURPLES, WHITE } = Colors;
+import * as Colors from '../../../colors';
+
+const { NEUTRALS, PURPLE } = Colors;
 
 describe('Badge', () => {
   describe('snapshots', () => {
@@ -42,14 +44,14 @@ describe('Badge', () => {
 
     test('primary', () => {
       const wrapper = mount(<Badge mode="primary" count="10" />);
-      expect(wrapper.find(Badge)).toHaveStyleRule('color', WHITE);
-      expect(wrapper.find(Badge)).toHaveStyleRule('background-color', PURPLES[2]);
+      expect(wrapper.find(Badge)).toHaveStyleRule('color', 'white');
+      expect(wrapper.find(Badge)).toHaveStyleRule('background-color', PURPLE.P300);
     });
 
     test('secondary', () => {
       const wrapper = mount(<Badge mode="secondary" count="10" />);
-      expect(wrapper.find(Badge)).toHaveStyleRule('color', PURPLES[1]);
-      expect(wrapper.find(Badge)).toHaveStyleRule('background-color', PURPLES[5]);
+      expect(wrapper.find(Badge)).toHaveStyleRule('color', PURPLE.P300);
+      expect(wrapper.find(Badge)).toHaveStyleRule('background-color', PURPLE.P100);
     });
 
   });

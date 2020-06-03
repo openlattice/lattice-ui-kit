@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, PURPLES } from '../../../../colors';
+import { NEUTRALS, PURPLE, PURPLES } from '../../../../colors';
 
 const choiceIndicatorStyles = css`
   input:hover ~ & {
@@ -8,7 +8,7 @@ const choiceIndicatorStyles = css`
   }
 
   input:focus ~ & {
-    box-shadow: ${PURPLES[0]} 0 0 0 2px;
+    box-shadow: ${PURPLE.P400} 0 0 0 2px;
   }
 
   input:checked ~ &,
@@ -18,7 +18,7 @@ const choiceIndicatorStyles = css`
   }
 
   input:checked:hover ~ & {
-    background-color: ${PURPLES[1]};
+    background-color: ${PURPLE.P300};
   }
 
   input:disabled ~ & {

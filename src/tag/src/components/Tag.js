@@ -1,12 +1,13 @@
 // @flow
 import styled from 'styled-components';
+
 import * as Colors from '../../../colors';
 import { getStyleVariation } from '../../../utils/StyleUtils';
 
 const {
   GREEN_1,
   NEUTRALS,
-  PURPLES,
+  PURPLES, PURPLE,
   RED_1,
   WHITE,
   YELLOW_1,
@@ -16,7 +17,7 @@ const getBackgroundColor = getStyleVariation('mode', {
   danger: RED_1,
   neutral: NEUTRALS[0],
   primary: PURPLES[2],
-  secondary: PURPLES[5],
+  secondary: PURPLE.P100,
   success: GREEN_1,
   warning: YELLOW_1
 }, NEUTRALS[6]);
@@ -25,7 +26,7 @@ const getFontColor = getStyleVariation('mode', {
   danger: WHITE,
   neutral: WHITE,
   primary: WHITE,
-  secondary: PURPLES[1],
+  secondary: PURPLE.P300,
   success: WHITE,
   warning: NEUTRALS[0]
 }, NEUTRALS[0]);

@@ -7,10 +7,10 @@ import styled from 'styled-components';
 import * as Colors from '../../../../colors';
 import { getHoverStyles } from '../../../../utils/StyleUtils';
 
-const { NEUTRALS, WHITE } = Colors;
+const { NEUTRALS } = Colors;
 
 const Card = styled.div`
-  background-color: ${WHITE};
+  background-color: white;
   border: 1px solid ${NEUTRALS[4]};
   border-radius: 3px;
   display: flex;

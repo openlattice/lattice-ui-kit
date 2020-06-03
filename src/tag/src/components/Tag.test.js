@@ -1,14 +1,16 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
-import * as Colors from '../../../colors';
 import Tag from './Tag';
+
+import * as Colors from '../../../colors';
 
 const {
   GREEN_1,
   NEUTRALS,
-  PURPLES,
+  PURPLES, PURPLE,
   RED_1,
   WHITE,
   YELLOW_1,
@@ -53,8 +55,8 @@ describe('Tag', () => {
 
     test('secondary', () => {
       const wrapper = mount(<Tag mode="secondary">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', PURPLES[1]);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', PURPLES[5]);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', PURPLE.P300);
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', PURPLE.P100);
     });
 
     test('success', () => {

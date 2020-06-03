@@ -2,7 +2,7 @@
 
 exports[`Card snapshots With child divs 1`] = `
 .c0 {
-  background-color: #ffffff;
+  background-color: white;
   border: 1px solid #dcdce7;
   border-radius: 3px;
   display: -webkit-box;
@@ -29,9 +29,7 @@ exports[`Card snapshots With child divs 1`] = `
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
-            "background-color:",
-            "#ffffff",
-            ";border:1px solid ",
+            "background-color:white;border:1px solid ",
             "#dcdce7",
             ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;",
             [Function],
@@ -69,7 +67,7 @@ exports[`Card snapshots With child divs 1`] = `
 
 exports[`Card snapshots Without Children 1`] = `
 .c0 {
-  background-color: #ffffff;
+  background-color: white;
   border: 1px solid #dcdce7;
   border-radius: 3px;
   display: -webkit-box;
@@ -96,9 +94,7 @@ exports[`Card snapshots Without Children 1`] = `
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
-            "background-color:",
-            "#ffffff",
-            ";border:1px solid ",
+            "background-color:white;border:1px solid ",
             "#dcdce7",
             ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;",
             [Function],

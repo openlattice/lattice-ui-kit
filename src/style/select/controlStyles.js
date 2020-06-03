@@ -1,5 +1,6 @@
 import {
   NEUTRALS,
+  PURPLE,
   PURPLES,
   RED_1,
   WHITE
@@ -14,7 +15,7 @@ const controlStyles = (base, state) => {
   } = state;
 
   let backgroundColor = isFocused ? WHITE : NEUTRALS[8];
-  let border = isFocused ? `solid 1px ${PURPLES[1]}` : `solid 1px ${NEUTRALS[4]}`;
+  let border = isFocused ? `solid 1px ${PURPLE.P300}` : `solid 1px ${NEUTRALS[4]}`;
 
   if (selectProps && selectProps.borderless) {
     backgroundColor = 'transparent';

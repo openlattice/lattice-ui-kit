@@ -39,7 +39,7 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
 }
 
 .c2:focus {
-  border: solid 1px #6124e2;
+  border: solid 1px #7654FF;
   background-color: white;
   outline: none;
 }
@@ -224,7 +224,7 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                     ";:hover{background-color:",
                     "#f0f0f7",
                     ";}:focus{border:solid 1px ",
-                    "#6124e2",
+                    "#7654FF",
                     ";background-color:white;outline:none;}:disabled{background-color:",
                     "#f9f9fd",
                     ";color:",

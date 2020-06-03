@@ -1,4 +1,4 @@
-import { NEUTRALS, PURPLES, WHITE } from '../../colors/src/Colors';
+import { NEUTRALS, PURPLE, PURPLES, WHITE } from '../../colors/src/Colors';
 
 const optionStyles = (base, state) => {
 
@@ -9,7 +9,7 @@ const optionStyles = (base, state) => {
     isSelected,
   } = state;
 
-  let color = isSelected ? PURPLES[1] : NEUTRALS[0];
+  let color = isSelected ? PURPLE.P300 : NEUTRALS[0];
   if (isDisabled) {
     color = NEUTRALS[2];
   }
@@ -22,7 +22,7 @@ const optionStyles = (base, state) => {
     backgroundColor = NEUTRALS[6];
   }
 
-  const activeBgColor = isDisabled ? WHITE : PURPLES[5];
+  const activeBgColor = isDisabled ? WHITE : PURPLE.P100;
   const hoverBgColor = isDisabled ? WHITE : NEUTRALS[6];
 
   let style = {

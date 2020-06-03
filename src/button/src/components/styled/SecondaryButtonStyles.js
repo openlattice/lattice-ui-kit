@@ -1,11 +1,11 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, PURPLES } from '../../../../colors';
+import { NEUTRALS, PURPLE, PURPLES } from '../../../../colors';
 
 const secondaryStyle = css`
-  background-color: ${PURPLES[5]};
-  border-color: ${PURPLES[5]};
-  color: ${PURPLES[1]};
+  background-color: ${PURPLE.P100};
+  border-color: ${PURPLE.P100};
+  color: ${PURPLE.P300};
 `;
 
 const secondaryHover = css`

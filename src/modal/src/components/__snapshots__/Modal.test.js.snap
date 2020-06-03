@@ -130,7 +130,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
   box-shadow: 0 2px 8px -2px #555e6f;
   display: -webkit-box;
@@ -268,24 +268,24 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654FF;
+  border-color: #7654FF;
+  color: white;
 }
 
 .c10:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4F3FA7;
+  border-color: #4F3FA7;
 }
 
 .c10:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261E52;
+  border-color: #261E52;
 }
 
 .c10:disabled {
@@ -298,7 +298,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c10:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261E52 0 0 0 2px;
 }
 
 .c14 {
@@ -518,7 +518,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
   box-shadow: 0 2px 8px -2px #555e6f;
   display: -webkit-box;
@@ -656,24 +656,24 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654FF;
+  border-color: #7654FF;
+  color: white;
 }
 
 .c9:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4F3FA7;
+  border-color: #4F3FA7;
 }
 
 .c9:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261E52;
+  border-color: #261E52;
 }
 
 .c9:disabled {
@@ -686,7 +686,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c9:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261E52 0 0 0 2px;
 }
 
 .c13 {
@@ -1032,9 +1032,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                   "rules": Array [
                                                     "align-self:",
                                                     [Function],
-                                                    ";background-color:",
-                                                    "#ffffff",
-                                                    ";border-radius:3px;box-shadow:0 2px 8px -2px ",
+                                                    ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ",
                                                     "#555e6f",
                                                     ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                     [Function],

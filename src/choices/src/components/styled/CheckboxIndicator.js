@@ -3,12 +3,12 @@ import styled, { css } from 'styled-components';
 import choiceButtonStyles from './ChoiceButtonStyles';
 import choiceIndicatorStyles from './ChoiceIndicatorStyles';
 
-import { PURPLES, WHITE } from '../../../../colors';
+import { PURPLES } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
 import { getStyleVariation } from '../../../../utils/StyleUtils';
 
 const afterStyles = css`
-  border-color: ${WHITE};
+  border-color: white;
   border-style: solid;
   border-width: 0 2px 2px 0;
   box-sizing: border-box;

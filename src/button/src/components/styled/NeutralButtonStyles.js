@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, WHITE } from '../../../../colors';
+import { NEUTRALS } from '../../../../colors';
 
 const getFontColor = (props) => {
   const { fontColor } = props;
@@ -11,7 +11,7 @@ const getFontColor = (props) => {
   }
 
   return css`
-    color: ${WHITE};
+    color: white;
   `;
 };
 

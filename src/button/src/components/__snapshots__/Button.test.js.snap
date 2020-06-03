@@ -780,7 +780,7 @@ exports[`button mode="neutral" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "eSoZZx",
+            "lastClassName": "cYyLtr",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1004,7 +1004,7 @@ exports[`button mode="neutral" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "eSoZZx",
+            "lastClassName": "cYyLtr",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1231,7 +1231,7 @@ exports[`button mode="positive" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "kCGvMa",
+            "lastClassName": "FYlQN",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1398,24 +1398,24 @@ exports[`button mode="primary" should match snapshot 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654FF;
+  border-color: #7654FF;
+  color: white;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4F3FA7;
+  border-color: #4F3FA7;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261E52;
+  border-color: #261E52;
 }
 
 .c0:disabled {
@@ -1428,7 +1428,7 @@ exports[`button mode="primary" should match snapshot 1`] = `
 }
 
 .c0:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261E52 0 0 0 2px;
 }
 
 <Button
@@ -1623,9 +1623,9 @@ exports[`button mode="secondary" should match snapshot 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #e4d8ff;
-  border-color: #e4d8ff;
-  color: #6124e2;
+  background-color: #CAC0FF;
+  border-color: #CAC0FF;
+  color: #7654FF;
 }
 
 .c0:hover {
@@ -1681,7 +1681,7 @@ exports[`button mode="secondary" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "iHfePs",
+            "lastClassName": "dhQYBP",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1850,7 +1850,7 @@ exports[`button mode="subtle" should match snapshot 1`] = `
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
-  color: #6124e2;
+  color: #7654FF;
 }
 
 .c0:hover {

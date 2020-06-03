@@ -3,9 +3,8 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 import {
   NEUTRALS,
-  PURPLES,
+  PURPLE,
   RED_1,
-  WHITE,
 } from '../colors';
 import { duration } from '../style/transitions';
 
@@ -37,7 +36,7 @@ const lightTheme = createMuiTheme({
           backgroundColor: NEUTRALS[6]
         },
         '&$focused:not($disabled)': {
-          backgroundColor: WHITE
+          backgroundColor: 'white'
         },
         '&$disabled': {
           cursor: 'not-allowed'
@@ -60,7 +59,7 @@ const lightTheme = createMuiTheme({
       root: {
         border: `1px solid ${NEUTRALS[4]}`,
         '&$focused': {
-          borderColor: PURPLES[1],
+          borderColor: PURPLE.P300,
         },
         '&$error': {
           borderColor: RED_1
@@ -72,6 +71,27 @@ const lightTheme = createMuiTheme({
       notchedOutline: {
         visibility: 'hidden'
       }
+    },
+    MuiTouchRipple: {
+      child: {
+        borderRadius: 0,
+      },
+      childLeaving: {
+        animationDuration: '200ms'
+      },
+      rippleVisible: {
+        animationDuration: '200ms'
+      },
+      '@keyframes enter': {
+        '0%': {
+          transform: 'scale(1)',
+          opacity: 0.1,
+        },
+        '100%': {
+          transform: 'scale(1)',
+          opacity: 0.3,
+        },
+      },
     }
   },
   palette: {
@@ -91,7 +111,7 @@ const lightTheme = createMuiTheme({
     },
     MuiOutlinedInput: {
       notched: false
-    }
+    },
   }
 });
 
@@ -157,6 +177,27 @@ const darkTheme = createMuiTheme({
       notchedOutline: {
         visibility: 'hidden'
       }
+    },
+    MuiTouchRipple: {
+      child: {
+        borderRadius: 0,
+      },
+      childLeaving: {
+        animationDuration: '200ms'
+      },
+      rippleVisible: {
+        animationDuration: '200ms'
+      },
+      '@keyframes enter': {
+        '0%': {
+          transform: 'scale(1)',
+          opacity: 0.1,
+        },
+        '100%': {
+          transform: 'scale(1)',
+          opacity: 0.3,
+        },
+      },
     }
   },
   palette: {

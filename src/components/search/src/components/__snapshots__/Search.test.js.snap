@@ -74,24 +74,24 @@ exports[`Search snapshots should match snapshot 1`] = `
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   width: 100%;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654FF;
+  border-color: #7654FF;
+  color: white;
 }
 
 .c7:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4F3FA7;
+  border-color: #4F3FA7;
 }
 
 .c7:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261E52;
+  border-color: #261E52;
 }
 
 .c7:disabled {
@@ -104,11 +104,11 @@ exports[`Search snapshots should match snapshot 1`] = `
 }
 
 .c7:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261E52 0 0 0 2px;
 }
 
 .c1 {
-  background-color: #ffffff;
+  background-color: white;
   border: 1px solid #dcdce7;
   border-radius: 3px;
   display: -webkit-box;
@@ -206,7 +206,7 @@ exports[`Search snapshots should match snapshot 1`] = `
 }
 
 .c5:focus {
-  border: solid 1px #6124e2;
+  border: solid 1px #7654FF;
   background-color: white;
   outline: none;
 }
@@ -298,7 +298,7 @@ exports[`Search snapshots should match snapshot 1`] = `
               "cursor": "not-allowed",
             },
             "&$focused:not($disabled)": Object {
-              "backgroundColor": "#ffffff",
+              "backgroundColor": "white",
             },
             "&:hover:not($disabled):not($focused):not($error)": Object {
               "backgroundColor": "#f0f0f7",
@@ -325,9 +325,30 @@ exports[`Search snapshots should match snapshot 1`] = `
               "borderColor": "#ff3c5d",
             },
             "&$focused": Object {
-              "borderColor": "#6124e2",
+              "borderColor": "#7654FF",
             },
             "border": "1px solid #dcdce7",
+          },
+        },
+        "MuiTouchRipple": Object {
+          "@keyframes enter": Object {
+            "0%": Object {
+              "opacity": 0.1,
+              "transform": "scale(1)",
+            },
+            "100%": Object {
+              "opacity": 0.3,
+              "transform": "scale(1)",
+            },
+          },
+          "child": Object {
+            "borderRadius": 0,
+          },
+          "childLeaving": Object {
+            "animationDuration": "200ms",
+          },
+          "rippleVisible": Object {
+            "animationDuration": "200ms",
           },
         },
       },
@@ -676,9 +697,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                       "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
-                        "background-color:",
-                        "#ffffff",
-                        ";border:1px solid ",
+                        "background-color:white;border:1px solid ",
                         "#dcdce7",
                         ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;",
                         [Function],
@@ -853,7 +872,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                               ";:hover{background-color:",
                                               "#f0f0f7",
                                               ";}:focus{border:solid 1px ",
-                                              "#6124e2",
+                                              "#7654FF",
                                               ";background-color:white;outline:none;}:disabled{background-color:",
                                               "#f9f9fd",
                                               ";color:",
@@ -968,7 +987,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                               ";:hover{background-color:",
                                               "#f0f0f7",
                                               ";}:focus{border:solid 1px ",
-                                              "#6124e2",
+                                              "#7654FF",
                                               ";background-color:white;outline:none;}:disabled{background-color:",
                                               "#f9f9fd",
                                               ";color:",

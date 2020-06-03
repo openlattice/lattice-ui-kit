@@ -5,7 +5,7 @@ import { NEUTRALS, WHITE } from '../../../../colors';
 import { getStickyPosition } from '../../../../utils/StyleUtils';
 
 const StyledTable = styled.table`
-  background-color: ${WHITE};
+  background-color: white;
   border-collapse: collapse;
   border: none;
   table-layout: fixed;
@@ -31,7 +31,7 @@ const Cell = styled.td((props :Object) => ({
 Cell.displayName = 'Cell';
 
 const StyledRow = styled.tr`
-  background-color: ${WHITE};
+  background-color: white;
   border-bottom: 1px solid ${NEUTRALS[4]};
 
   /* position: sticky doesn't work with thead/tr. Move to all cells within */

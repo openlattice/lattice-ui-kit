@@ -69,7 +69,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
               "cursor": "not-allowed",
             },
             "&$focused:not($disabled)": Object {
-              "backgroundColor": "#ffffff",
+              "backgroundColor": "white",
             },
             "&:hover:not($disabled):not($focused):not($error)": Object {
               "backgroundColor": "#f0f0f7",
@@ -96,9 +96,30 @@ exports[`DateTimePicker render matches snapshot 1`] = `
               "borderColor": "#ff3c5d",
             },
             "&$focused": Object {
-              "borderColor": "#6124e2",
+              "borderColor": "#7654FF",
             },
             "border": "1px solid #dcdce7",
+          },
+        },
+        "MuiTouchRipple": Object {
+          "@keyframes enter": Object {
+            "0%": Object {
+              "opacity": 0.1,
+              "transform": "scale(1)",
+            },
+            "100%": Object {
+              "opacity": 0.3,
+              "transform": "scale(1)",
+            },
+          },
+          "child": Object {
+            "borderRadius": 0,
+          },
+          "childLeaving": Object {
+            "animationDuration": "200ms",
+          },
+          "rippleVisible": Object {
+            "animationDuration": "200ms",
           },
         },
       },

@@ -1,14 +1,16 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import CardHeader from './CardHeader';
+
 import * as Colors from '../../../../colors';
 
 const {
   GREEN_1,
   NEUTRALS,
-  PURPLES,
+  PURPLES, PURPLE,
   RED_1,
   WHITE,
   YELLOW_1,
@@ -72,8 +74,8 @@ describe('CardHeader', () => {
       test('should render secondary mode', () => {
         const wrapper = mount(<CardHeader mode="secondary" />);
         expect(wrapper.prop('mode')).toEqual('secondary');
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', PURPLES[5]);
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', PURPLES[1]);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', PURPLE.P100);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', PURPLE.P300);
       });
 
       test('should render success mode', () => {

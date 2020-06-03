@@ -1,18 +1,19 @@
 // @flow
 
 import React from 'react';
+
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faUsers,
+  faCommentAltLines,
   faFileAlt,
   faInbox,
-  faUserCircle,
-  faCommentAltLines,
   faSignOut,
+  faUserCircle,
+  faUsers,
 } from '@fortawesome/pro-light-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { PURPLES } from '../../../colors';
+import { PURPLE, PURPLES } from '../../../colors';
 
 const Icon = styled(FontAwesomeIcon)`
   margin-right: 20px;
@@ -23,8 +24,8 @@ const MenuItemWrapper = styled.div`
   padding: 15px 30px;
 
   :hover {
-    background-color: ${PURPLES[5]};
-    color: ${PURPLES[1]};
+    background-color: ${PURPLE.P100};
+    color: ${PURPLE.P300};
     cursor: pointer;
   }
 `;

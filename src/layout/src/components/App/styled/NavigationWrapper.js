@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 import * as Colors from '../../../../../colors';
 
-const { NEUTRALS, PURPLES } = Colors;
+const { NEUTRALS, PURPLES, PURPLE} = Colors;
 const APP_NAV_ROOT :string = 'app-nav-root';
 
 const NavigationWrapper = styled.nav`
@@ -48,8 +48,8 @@ const NavigationWrapper = styled.nav`
     }
 
     &.active {
-      border-bottom: 3px solid ${PURPLES[1]};
-      color: ${PURPLES[1]};
+      border-bottom: 3px solid ${PURPLE.P300};
+      color: ${PURPLE.P300};
     }
 
     &.${APP_NAV_ROOT} {
