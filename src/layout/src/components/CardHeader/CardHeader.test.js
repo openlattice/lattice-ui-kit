@@ -10,7 +10,7 @@ import * as Colors from '../../../../colors';
 const {
   GREEN_1,
   NEUTRALS,
-  PURPLES, PURPLE,
+  PURPLE,
   RED_1,
   WHITE,
   YELLOW_1,
@@ -67,7 +67,7 @@ describe('CardHeader', () => {
       test('should render primary mode', () => {
         const wrapper = mount(<CardHeader mode="primary" />);
         expect(wrapper.prop('mode')).toEqual('primary');
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', PURPLES[2]);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', PURPLE.P300);
         expect(wrapper.find(CardHeader)).toHaveStyleRule('color', WHITE);
       });
 

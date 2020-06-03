@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 
 import { Button } from '../../button';
-import { PURPLE, PURPLES } from '../../colors';
+import { PURPLE } from '../../colors';
 import {
   Card,
   CardHeader,
@@ -96,9 +96,9 @@ storiesOf('Card', module)
       </Card>
 
       <Card>
-        <CardSegment bgColor={PURPLES[2]}>bgColor</CardSegment>
-        <CardSegment bgColor={PURPLES[3]}>bgColor</CardSegment>
-        <CardSegment bgColor={PURPLES[4]}>bgColor</CardSegment>
+        <CardSegment bgColor={PURPLE.P300}>bgColor</CardSegment>
+        <CardSegment bgColor={PURPLE.P300}>bgColor</CardSegment>
+        <CardSegment bgColor={PURPLE.P200}>bgColor</CardSegment>
       </Card>
     </CardStack>
   ))

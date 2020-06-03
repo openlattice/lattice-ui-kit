@@ -10,7 +10,7 @@ import * as Colors from '../../../colors';
 const {
   GREEN_1,
   NEUTRALS,
-  PURPLES, PURPLE,
+  PURPLE,
   RED_1,
   WHITE,
   YELLOW_1,
@@ -50,7 +50,7 @@ describe('Tag', () => {
     test('primary', () => {
       const wrapper = mount(<Tag mode="primary">tag</Tag>);
       expect(wrapper.find(Tag)).toHaveStyleRule('color', WHITE);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', PURPLES[2]);
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', PURPLE.P300);
     });
 
     test('secondary', () => {

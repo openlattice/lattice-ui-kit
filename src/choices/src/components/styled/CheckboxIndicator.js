@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import choiceButtonStyles from './ChoiceButtonStyles';
 import choiceIndicatorStyles from './ChoiceIndicatorStyles';
 
-import { PURPLES } from '../../../../colors';
+import { NEUTRAL } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
 import { getStyleVariation } from '../../../../utils/StyleUtils';
 
@@ -24,7 +24,7 @@ const afterStyles = css`
 `;
 
 const checkboxWithAfterStyles = css`
-  background-color: ${PURPLES[6]};
+  background-color: ${NEUTRAL.N50};
   border-radius: 3px;
   display: inline-block;
   height: 20px;

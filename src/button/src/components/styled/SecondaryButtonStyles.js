@@ -1,21 +1,22 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, PURPLE, PURPLES } from '../../../../colors';
+import { NEUTRALS, PURPLE } from '../../../../colors';
 
 const secondaryStyle = css`
   background-color: ${PURPLE.P100};
   border-color: ${PURPLE.P100};
-  color: ${PURPLE.P300};
+  color: ${PURPLE.P400};
 `;
 
 const secondaryHover = css`
-  background-color: ${PURPLES[4]};
-  border-color: ${PURPLES[4]};
+  background-color: ${PURPLE.P200};
+  border-color: ${PURPLE.P200};
 `;
 
 const secondaryActive = css`
-  background-color: ${PURPLES[3]};
-  border-color: ${PURPLES[3]};
+  background-color: ${PURPLE.P300};
+  border-color: ${PURPLE.P300};
+  color: white;
 `;
 
 const secondaryDisabled = css`
@@ -25,7 +26,7 @@ const secondaryDisabled = css`
 `;
 
 const secondaryFocus = css`
-  box-shadow: ${PURPLES[3]} 0 0 0 2px;
+  box-shadow: ${PURPLE.P300} 0 0 0 2px;
 `;
 
 export {

@@ -25,7 +25,7 @@ exports[`Radio render matches snapshot 1`] = `
 .c4 {
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out,color 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out,color 100ms ease-out;
-  background-color: #e6e6f7;
+  background-color: #F2F2F4;
   border-radius: 100%;
   display: inline-block;
   height: 20px;
@@ -43,15 +43,15 @@ input:focus ~ .c4 {
 input:checked ~ .c4,
 input[readonly]:checked:disabled ~ .c4,
 input[readonly]:checked:hover ~ .c4 {
-  background-color: #8045ff;
-}
-
-input:checked:hover ~ .c4 {
   background-color: #7654FF;
 }
 
+input:checked:hover ~ .c4 {
+  background-color: #4F3FA7;
+}
+
 input:disabled ~ .c4 {
-  background-color: #e6e6f7;
+  background-color: #F2F2F4;
   cursor: not-allowed;
 }
 

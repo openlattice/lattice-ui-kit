@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 import * as Colors from '../../../../../colors';
 
-const { NEUTRALS, PURPLES, PURPLE} = Colors;
+const { NEUTRALS, PURPLE } = Colors;
 const APP_NAV_ROOT :string = 'app-nav-root';
 
 const NavigationWrapper = styled.nav`

@@ -8,7 +8,7 @@ import { mount, shallow } from 'enzyme';
 import StepIcon from './StepIcon';
 import { StepIndex } from './styled';
 
-import { PURPLE, PURPLES } from '../../../colors';
+import { PURPLE } from '../../../colors';
 
 describe('StepIcon', () => {
 
@@ -20,7 +20,7 @@ describe('StepIcon', () => {
 
     test('active should set color', () => {
       const wrapper = shallow(<StepIcon index={0} active />);
-      expect(wrapper.find(FontAwesomeIcon).prop('color')).toBe(PURPLES[2]);
+      expect(wrapper.find(FontAwesomeIcon).prop('color')).toBe(PURPLE.P300);
     });
 
     test('render index + 1', () => {
@@ -41,7 +41,7 @@ describe('StepIcon', () => {
     });
 
     test('complete should set color', () => {
-      expect(wrapper.find(FontAwesomeIcon).first().prop('color')).toBe(PURPLES[2]);
+      expect(wrapper.find(FontAwesomeIcon).first().prop('color')).toBe(PURPLE.P300);
     });
 
     test('should should render icon instead of index', () => {

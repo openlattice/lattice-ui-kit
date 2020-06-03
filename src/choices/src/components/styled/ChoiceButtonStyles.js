@@ -6,7 +6,7 @@ import {
   defaultHover,
   defaultStyle,
 } from '../../../../button/src/components/styled/DefaultButtonStyles';
-import { PURPLE, PURPLES } from '../../../../colors';
+import { NEUTRAL, PURPLE } from '../../../../colors';
 
 const choiceButtonStyles = css`
   align-items: center;
@@ -38,7 +38,7 @@ const choiceButtonStyles = css`
   input:checked ~ &,
   input[readonly]:checked:disabled ~ &,
   input[readonly]:checked:hover ~ & {
-    background-color: ${PURPLES[6]};
+    background-color: ${NEUTRAL.N50};
     border: solid 1px ${PURPLE.P300};
     color: ${PURPLE.P300};
   }

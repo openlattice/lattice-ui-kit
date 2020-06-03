@@ -1231,7 +1231,7 @@ exports[`button mode="positive" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "FYlQN",
+            "lastClassName": "cpcsIm",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1625,22 +1625,23 @@ exports[`button mode="secondary" should match snapshot 1`] = `
   white-space: nowrap;
   background-color: #CAC0FF;
   border-color: #CAC0FF;
-  color: #7654FF;
+  color: #4F3FA7;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #d0bbff;
-  border-color: #d0bbff;
+  background-color: #A291FF;
+  border-color: #A291FF;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b898ff;
-  border-color: #b898ff;
+  background-color: #7654FF;
+  border-color: #7654FF;
+  color: white;
 }
 
 .c0:disabled {
@@ -1653,7 +1654,7 @@ exports[`button mode="secondary" should match snapshot 1`] = `
 }
 
 .c0:focus {
-  box-shadow: #b898ff 0 0 0 2px;
+  box-shadow: #7654FF 0 0 0 2px;
 }
 
 <Button

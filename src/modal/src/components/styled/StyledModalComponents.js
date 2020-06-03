@@ -4,7 +4,7 @@
 
 import styled, { css } from 'styled-components';
 
-import { NEUTRALS, WHITE } from '../../../../colors';
+import { NEUTRALS } from '../../../../colors';
 import { media } from '../../../../utils/StyleUtils';
 
 const DEFAULT_PADDING :string = '30px';

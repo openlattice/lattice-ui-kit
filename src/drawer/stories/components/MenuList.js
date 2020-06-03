@@ -13,7 +13,7 @@ import {
 } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { PURPLE, PURPLES } from '../../../colors';
+import { PURPLE } from '../../../colors';
 
 const Icon = styled(FontAwesomeIcon)`
   margin-right: 20px;

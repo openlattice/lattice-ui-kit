@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, PURPLE, PURPLES } from '../../../../colors';
+import { NEUTRALS, PURPLE } from '../../../../colors';
 
 const subtleStyle = css`
   background-color: transparent;

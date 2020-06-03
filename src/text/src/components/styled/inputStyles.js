@@ -1,6 +1,10 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, PURPLE, PURPLES, RED_1 } from '../../../../colors';
+import {
+  NEUTRALS,
+  PURPLE,
+  RED_1
+} from '../../../../colors';
 import { duration } from '../../../../style/transitions';
 
 const inputStyles = css`

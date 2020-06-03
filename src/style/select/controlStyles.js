@@ -1,7 +1,6 @@
 import {
   NEUTRALS,
   PURPLE,
-  PURPLES,
   RED_1,
   WHITE
 } from '../../colors/src/Colors';

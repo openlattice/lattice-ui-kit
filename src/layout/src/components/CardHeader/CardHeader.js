@@ -5,7 +5,6 @@ import {
   GREEN_1,
   NEUTRALS,
   PURPLE,
-  PURPLES,
   RED_1,
   WHITE,
   YELLOW_1,
@@ -16,7 +15,7 @@ import { getStyleVariation } from '../../../../utils/StyleUtils';
 const backgroundColor = getStyleVariation('mode', {
   danger: RED_1,
   default: NEUTRALS[0],
-  primary: PURPLES[2],
+  primary: PURPLE.P300,
   secondary: PURPLE.P100,
   success: GREEN_1,
   warning: YELLOW_1
