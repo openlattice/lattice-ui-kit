@@ -1,6 +1,6 @@
 import {
   NEUTRAL,
-  RED_1,
+  RED,
 } from '../../colors/src/Colors';
 
 const controlStyles = (base, state) => {
@@ -20,7 +20,7 @@ const controlStyles = (base, state) => {
   }
 
   if (selectProps && selectProps.invalid) {
-    border = selectProps.invalid ? `solid 1px ${RED_1}` : border;
+    border = selectProps.invalid ? `solid 1px ${RED.R300}` : border;
   }
 
   const hoverBgColor = (isDisabled || isFocused) ? NEUTRAL.N00 : NEUTRAL.N100;

@@ -6,17 +6,17 @@ import { mount } from 'enzyme';
 import { getStyleVariation } from './StyleUtils';
 
 import {
-  GREEN_1,
+  GREEN,
   NEUTRAL,
-  RED_1,
-  YELLOW_1,
+  RED,
+  YELLOW,
 } from '../colors';
 
 const mockVariations = {
   default: NEUTRAL.N700,
-  success: GREEN_1,
-  danger: RED_1,
-  warning: YELLOW_1
+  success: GREEN.G300,
+  danger: RED.R300,
+  warning: YELLOW.Y300,
 };
 
 const mockProps = {

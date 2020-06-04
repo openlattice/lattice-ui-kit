@@ -2,14 +2,14 @@ import { css } from 'styled-components';
 
 import {
   NEUTRAL,
-  RED_1
+  RED
 } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
 
 const inputStyles = css`
   background-color: ${NEUTRAL.N50};
   border-radius: 3px;
-  border: 1px solid ${(props) => (props.invalid ? RED_1 : NEUTRAL.N50)};
+  border: 1px solid ${(props) => (props.invalid ? RED.R300 : NEUTRAL.N50)};
   box-shadow: none;
   box-sizing: border-box;
   color: ${NEUTRAL.N900};

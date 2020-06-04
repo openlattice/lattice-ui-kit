@@ -1,8 +1,11 @@
 import React from 'react';
-import { mount } from 'enzyme';
+
 import toJson from 'enzyme-to-json';
+import { mount } from 'enzyme';
+
 import Input from './Input';
-import { RED_1 } from '../../../colors';
+
+import { RED } from '../../../colors';
 
 describe('Input', () => {
 
@@ -40,7 +43,7 @@ describe('Input', () => {
 
     test('invalid', () => {
       const wrapper = mount(<Input invalid />);
-      expect(wrapper).toHaveStyleRule('border', `1px solid ${RED_1}`);
+      expect(wrapper).toHaveStyleRule('border', `1px solid ${RED.R300}`);
     });
 
   });

@@ -496,26 +496,26 @@ exports[`button mode="negative" should match snapshot 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #ffd0cb;
-  border-color: #ffd0cb;
-  color: #e43424;
+  background-color: #FFECEB;
+  border-color: #FFECEB;
+  color: #ED4545;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #ffbeb7;
-  border-color: #ffbeb7;
-  color: #d02010;
+  background-color: #FABBB6;
+  border-color: #FABBB6;
+  color: #9C2D23;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #fb9f95;
-  border-color: #fb9f95;
-  color: #bd0000;
+  background-color: #F4857E;
+  border-color: #F4857E;
+  color: #4D0600;
 }
 
 .c0:disabled {
@@ -528,7 +528,7 @@ exports[`button mode="negative" should match snapshot 1`] = `
 }
 
 .c0:focus {
-  box-shadow: #fb9f95 0 0 0 2px;
+  box-shadow: #F4857E 0 0 0 2px;
 }
 
 <Button
@@ -1905,7 +1905,7 @@ exports[`button mode="subtle" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "XdGmQ",
+            "lastClassName": "JcnUO",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",

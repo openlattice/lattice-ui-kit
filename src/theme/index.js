@@ -4,7 +4,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import {
   NEUTRAL,
   PURPLE,
-  RED_1,
+  RED,
 } from '../colors';
 import { duration } from '../style/transitions';
 
@@ -15,7 +15,7 @@ const lightTheme = createMuiTheme({
         fontFamily: 'inherit',
         fontSize: '12px',
         '&$error': {
-          color: RED_1
+          color: RED.R300
         },
       },
       contained: {
@@ -62,7 +62,7 @@ const lightTheme = createMuiTheme({
           borderColor: PURPLE.P300,
         },
         '&$error': {
-          borderColor: RED_1
+          borderColor: RED.R300
         },
       },
       input: {
@@ -122,7 +122,7 @@ const darkTheme = createMuiTheme({
         fontFamily: 'inherit',
         fontSize: '12px',
         '&$error': {
-          color: RED_1
+          color: RED.R300
         },
       },
       contained: {
@@ -168,7 +168,7 @@ const darkTheme = createMuiTheme({
           borderColor: '#98979D',
         },
         '&$error': {
-          borderColor: RED_1
+          borderColor: RED.R300
         },
       },
       input: {

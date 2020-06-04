@@ -45,7 +45,7 @@ exports[`TimePicker render matches snapshot 1`] = `
           },
           "root": Object {
             "&$error": Object {
-              "color": "#ff3c5d",
+              "color": "#ED4545",
             },
             "fontFamily": "inherit",
             "fontSize": "12px",
@@ -93,7 +93,7 @@ exports[`TimePicker render matches snapshot 1`] = `
           },
           "root": Object {
             "&$error": Object {
-              "borderColor": "#ff3c5d",
+              "borderColor": "#ED4545",
             },
             "&$focused": Object {
               "borderColor": "#7654FF",

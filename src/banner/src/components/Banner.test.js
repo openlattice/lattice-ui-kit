@@ -14,11 +14,10 @@ import Banner from './Banner';
 import { Container } from './styled/StyledBannerComponents';
 
 import {
-  GREEN_1,
+  GREEN,
   NEUTRAL,
-  RED_1,
-  WHITE,
-  YELLOW_1,
+  RED,
+  YELLOW,
 } from '../../../colors';
 
 describe('Banner', () => {
@@ -41,31 +40,31 @@ describe('Banner', () => {
       test('should render default mode', () => {
         const wrapper = mount(<Banner mode="default" />);
         expect(wrapper.prop('mode')).toEqual('default');
-        expect(wrapper.find(Container)).toHaveStyleRule('background-color', NEUTRAL.N700);
-        expect(wrapper.find(Container)).toHaveStyleRule('color', WHITE);
+        expect(wrapper.find(Container)).toHaveStyleRule('background-color', NEUTRAL.N100);
+        expect(wrapper.find(Container)).toHaveStyleRule('color', NEUTRAL.N900);
       });
 
       test('should render success mode', () => {
         const wrapper = mount(<Banner mode="success" />);
         expect(wrapper.prop('mode')).toEqual('success');
-        expect(wrapper.find(Container)).toHaveStyleRule('background-color', GREEN_1);
-        expect(wrapper.find(Container)).toHaveStyleRule('color', WHITE);
+        expect(wrapper.find(Container)).toHaveStyleRule('background-color', GREEN.G100);
+        expect(wrapper.find(Container)).toHaveStyleRule('color', GREEN.G400);
         expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faCheckCircle);
       });
 
       test('should render danger mode', () => {
         const wrapper = mount(<Banner mode="danger" />);
         expect(wrapper.prop('mode')).toEqual('danger');
-        expect(wrapper.find(Container)).toHaveStyleRule('background-color', RED_1);
-        expect(wrapper.find(Container)).toHaveStyleRule('color', WHITE);
+        expect(wrapper.find(Container)).toHaveStyleRule('background-color', RED.R100);
+        expect(wrapper.find(Container)).toHaveStyleRule('color', RED.R400);
         expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faTimesOctagon);
       });
 
       test('should render warning mode', () => {
         const wrapper = mount(<Banner mode="warning" />);
         expect(wrapper.prop('mode')).toEqual('warning');
-        expect(wrapper.find(Container)).toHaveStyleRule('background-color', YELLOW_1);
-        expect(wrapper.find(Container)).toHaveStyleRule('color', NEUTRAL.N700);
+        expect(wrapper.find(Container)).toHaveStyleRule('background-color', YELLOW.Y100);
+        expect(wrapper.find(Container)).toHaveStyleRule('color', YELLOW.Y400);
         expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faExclamationTriangle);
       });
 

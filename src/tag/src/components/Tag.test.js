@@ -8,12 +8,11 @@ import Tag from './Tag';
 import * as Colors from '../../../colors';
 
 const {
-  GREEN_1,
+  GREEN,
   NEUTRAL,
   PURPLE,
-  RED_1,
-  WHITE,
-  YELLOW_1,
+  RED,
+  YELLOW,
 } = Colors;
 
 
@@ -37,19 +36,19 @@ describe('Tag', () => {
 
     test('danger', () => {
       const wrapper = mount(<Tag mode="danger">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', WHITE);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', RED_1);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', 'white');
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', RED.R300);
     });
 
     test('neutral', () => {
       const wrapper = mount(<Tag mode="neutral">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', WHITE);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', 'white');
       expect(wrapper.find(Tag)).toHaveStyleRule('background-color', NEUTRAL.N700);
     });
 
     test('primary', () => {
       const wrapper = mount(<Tag mode="primary">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', WHITE);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', 'white');
       expect(wrapper.find(Tag)).toHaveStyleRule('background-color', PURPLE.P300);
     });
 
@@ -61,14 +60,14 @@ describe('Tag', () => {
 
     test('success', () => {
       const wrapper = mount(<Tag mode="success">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', WHITE);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', GREEN_1);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', 'white');
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', GREEN.G300);
     });
 
     test('warning', () => {
       const wrapper = mount(<Tag mode="warning">tag</Tag>);
       expect(wrapper.find(Tag)).toHaveStyleRule('color', NEUTRAL.N700);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', YELLOW_1);
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', YELLOW.Y300);
     });
 
   });
