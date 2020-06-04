@@ -99,7 +99,7 @@ exports[`Step should match snapshot 1`] = `
                 <FontAwesomeIcon
                   border={false}
                   className=""
-                  color="#8e929b"
+                  color="#8B8B90"
                   fixedWidth={false}
                   flip={null}
                   icon={
@@ -131,7 +131,7 @@ exports[`Step should match snapshot 1`] = `
                   <svg
                     aria-hidden="true"
                     className="svg-inline--fa fa-circle fa-w-16 "
-                    color="#8e929b"
+                    color="#8B8B90"
                     data-icon="circle"
                     data-prefix="fas"
                     focusable="false"

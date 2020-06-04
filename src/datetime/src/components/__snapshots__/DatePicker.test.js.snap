@@ -59,10 +59,10 @@ exports[`DatePicker render matches snapshot 1`] = `
         "MuiInputBase": Object {
           "input": Object {
             "&$disabled": Object {
-              "color": "#8e929b",
+              "color": "#8B8B90",
               "cursor": "not-allowed",
             },
-            "color": "#555e6f",
+            "color": "#56565A",
           },
           "root": Object {
             "&$disabled": Object {
@@ -72,9 +72,9 @@ exports[`DatePicker render matches snapshot 1`] = `
               "backgroundColor": "white",
             },
             "&:hover:not($disabled):not($focused):not($error)": Object {
-              "backgroundColor": "#f0f0f7",
+              "backgroundColor": "#DFDFE3",
             },
-            "backgroundColor": "#f9f9fd",
+            "backgroundColor": "#F2F2F4",
             "borderRadius": "3px",
             "fontFamily": "inherit",
             "fontSize": "14px",
@@ -98,7 +98,7 @@ exports[`DatePicker render matches snapshot 1`] = `
             "&$focused": Object {
               "borderColor": "#7654FF",
             },
-            "border": "1px solid #dcdce7",
+            "border": "1px solid #DFDFE3",
           },
         },
         "MuiTouchRipple": Object {
@@ -140,7 +140,7 @@ exports[`DatePicker render matches snapshot 1`] = `
         "augmentColor": [Function],
         "background": Object {
           "default": "#fafafa",
-          "header": "#f0f0f7",
+          "header": "#F2F2F4",
           "paper": "#fff",
         },
         "common": Object {
@@ -148,7 +148,7 @@ exports[`DatePicker render matches snapshot 1`] = `
           "white": "#fff",
         },
         "contrastThreshold": 3,
-        "divider": "#E1E1EB",
+        "divider": "#DFDFE3",
         "error": Object {
           "contrastText": "#fff",
           "dark": "#d32f2f",
@@ -213,7 +213,7 @@ exports[`DatePicker render matches snapshot 1`] = `
         "text": Object {
           "disabled": "rgba(0, 0, 0, 0.38)",
           "hint": "rgba(0, 0, 0, 0.38)",
-          "primary": "#555e6f",
+          "primary": "#56565A",
           "secondary": "rgba(0, 0, 0, 0.54)",
         },
         "tonalOffset": 0.2,

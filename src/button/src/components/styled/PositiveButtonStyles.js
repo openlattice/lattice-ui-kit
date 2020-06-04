@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-import { GREENS, NEUTRALS } from '../../../../colors';
+import { GREENS, NEUTRAL } from '../../../../colors';
 
 const positiveStyle = css`
   background-color: ${GREENS[0]};
@@ -21,9 +21,9 @@ const positiveActive = css`
 `;
 
 const positiveDisabled = css`
-  background-color: ${NEUTRALS[6]};
-  border-color: ${NEUTRALS[6]};
-  color: ${NEUTRALS[2]};
+  background-color: ${NEUTRAL.N00};
+  border-color: ${NEUTRAL.N00};
+  color: ${NEUTRAL.N500};
 `;
 
 const positiveFocus = css`

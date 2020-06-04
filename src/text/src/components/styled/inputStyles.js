@@ -1,19 +1,19 @@
 import { css } from 'styled-components';
 
 import {
-  NEUTRALS,
+  NEUTRAL,
   PURPLE,
   RED_1
 } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
 
 const inputStyles = css`
-  background-color: ${NEUTRALS[8]};
+  background-color: white;
   border-radius: 3px;
-  border: 1px solid ${(props) => (props.invalid ? RED_1 : NEUTRALS[4])};
+  border: 1px solid ${(props) => (props.invalid ? RED_1 : NEUTRAL.N100)};
   box-shadow: none;
   box-sizing: border-box;
-  color: ${NEUTRALS[0]};
+  color: ${NEUTRAL.N700};
   display: flex;
   flex: 0 1 auto;
   font-size: 14px;
@@ -25,18 +25,18 @@ const inputStyles = css`
   width: ${(props) => (props.width || '100%')};
 
   :hover {
-    background-color: ${NEUTRALS[6]};
+    background-color: ${NEUTRAL.N50};
   }
 
   :focus {
-    border: solid 1px ${PURPLE.P300};
+    border: solid 1px ${NEUTRAL.N700};
     background-color: white;
     outline: none;
   }
 
   :disabled {
-    background-color: ${NEUTRALS[8]};
-    color: ${NEUTRALS[1]};
+    background-color: ${NEUTRAL.N50};
+    color: ${NEUTRAL.N500};
     cursor: not-allowed;
   }
 `;

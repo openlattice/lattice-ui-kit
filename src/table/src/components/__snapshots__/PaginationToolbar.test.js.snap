@@ -18,7 +18,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
 }
 
 .c1 {
-  color: #555e6f;
+  color: #56565A;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -29,7 +29,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8e929b;
+  color: #8B8B90;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -102,7 +102,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
   text-decoration: none;
   background-color: transparent;
   border-color: transparent;
-  color: #b6bbc7;
+  color: #8B8B90;
 }
 
 .c2:focus {
@@ -157,7 +157,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                   "lastClassName": "c1",
                   "rules": Array [
                     "color:",
-                    "#555e6f",
+                    "#56565A",
                     ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                     [Function],
                     ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",

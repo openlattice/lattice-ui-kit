@@ -31,7 +31,7 @@ exports[`Result snapshots should match snapshot 1`] = `
 
 .c0 {
   background-color: white;
-  border: 1px solid #dcdce7;
+  border: 1px solid #DFDFE3;
   border-radius: 3px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -82,7 +82,7 @@ exports[`Result snapshots should match snapshot 1`] = `
             "lastClassName": "c0",
             "rules": Array [
               "background-color:white;border:1px solid ",
-              "#dcdce7",
+              "#DFDFE3",
               ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;",
               [Function],
               ";",

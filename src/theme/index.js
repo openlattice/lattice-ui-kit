@@ -2,7 +2,7 @@ import deepPurple from '@material-ui/core/colors/deepPurple';
 import { createMuiTheme } from '@material-ui/core/styles';
 
 import {
-  NEUTRALS,
+  NEUTRAL,
   PURPLE,
   RED_1,
 } from '../colors';
@@ -24,7 +24,7 @@ const lightTheme = createMuiTheme({
     },
     MuiInputBase: {
       root: {
-        backgroundColor: NEUTRALS[8],
+        backgroundColor: NEUTRAL.N50,
         borderRadius: '3px',
         fontFamily: 'inherit',
         fontSize: '14px',
@@ -33,7 +33,7 @@ const lightTheme = createMuiTheme({
         transition: `background-color ${duration.standard} ease-out,
         border-color ${duration.standard} ease-out`,
         '&:hover:not($disabled):not($focused):not($error)': {
-          backgroundColor: NEUTRALS[6]
+          backgroundColor: NEUTRAL.N100
         },
         '&$focused:not($disabled)': {
           backgroundColor: 'white'
@@ -43,9 +43,9 @@ const lightTheme = createMuiTheme({
         }
       },
       input: {
-        color: NEUTRALS[0],
+        color: NEUTRAL.N700,
         '&$disabled': {
-          color: NEUTRALS[1],
+          color: NEUTRAL.N500,
           cursor: 'not-allowed'
         }
       }
@@ -57,7 +57,7 @@ const lightTheme = createMuiTheme({
     },
     MuiOutlinedInput: {
       root: {
-        border: `1px solid ${NEUTRALS[4]}`,
+        border: `1px solid ${NEUTRAL.N100}`,
         '&$focused': {
           borderColor: PURPLE.P300,
         },
@@ -97,12 +97,12 @@ const lightTheme = createMuiTheme({
   palette: {
     primary: deepPurple,
     text: {
-      primary: NEUTRALS[0]
+      primary: NEUTRAL.N700
     },
     background: {
-      header: NEUTRALS[6]
+      header: NEUTRAL.N50
     },
-    divider: '#E1E1EB'
+    divider: NEUTRAL.N100
   },
   props: {
     MuiFormControl: {

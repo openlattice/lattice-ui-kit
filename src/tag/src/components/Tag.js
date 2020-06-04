@@ -6,7 +6,7 @@ import { getStyleVariation } from '../../../utils/StyleUtils';
 
 const {
   GREEN_1,
-  NEUTRALS,
+  NEUTRAL,
   PURPLE,
   RED_1,
   WHITE,
@@ -15,12 +15,12 @@ const {
 
 const getBackgroundColor = getStyleVariation('mode', {
   danger: RED_1,
-  neutral: NEUTRALS[0],
+  neutral: NEUTRAL.N700,
   primary: PURPLE.P300,
   secondary: PURPLE.P100,
   success: GREEN_1,
   warning: YELLOW_1
-}, NEUTRALS[6]);
+}, NEUTRAL.N100);
 
 const getFontColor = getStyleVariation('mode', {
   danger: WHITE,
@@ -28,8 +28,8 @@ const getFontColor = getStyleVariation('mode', {
   primary: WHITE,
   secondary: PURPLE.P300,
   success: WHITE,
-  warning: NEUTRALS[0]
-}, NEUTRALS[0]);
+  warning: NEUTRAL.N700
+}, NEUTRAL.N700);
 
 const Tag = styled.span`
   border-radius: 3px;

@@ -9,7 +9,7 @@ import * as Colors from '../../../colors';
 
 const {
   GREEN_1,
-  NEUTRALS,
+  NEUTRAL,
   PURPLE,
   RED_1,
   WHITE,
@@ -31,8 +31,8 @@ describe('Tag', () => {
 
     test('default', () => {
       const wrapper = mount(<Tag>tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', NEUTRALS[0]);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', NEUTRALS[6]);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', NEUTRAL.N700);
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', NEUTRAL.N100);
     });
 
     test('danger', () => {
@@ -44,7 +44,7 @@ describe('Tag', () => {
     test('neutral', () => {
       const wrapper = mount(<Tag mode="neutral">tag</Tag>);
       expect(wrapper.find(Tag)).toHaveStyleRule('color', WHITE);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', NEUTRALS[0]);
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', NEUTRAL.N700);
     });
 
     test('primary', () => {
@@ -67,7 +67,7 @@ describe('Tag', () => {
 
     test('warning', () => {
       const wrapper = mount(<Tag mode="warning">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', NEUTRALS[0]);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', NEUTRAL.N700);
       expect(wrapper.find(Tag)).toHaveStyleRule('background-color', YELLOW_1);
     });
 

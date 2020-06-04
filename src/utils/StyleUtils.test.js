@@ -1,16 +1,19 @@
 import React from 'react';
+
 import styled from 'styled-components';
 import { mount } from 'enzyme';
+
 import { getStyleVariation } from './StyleUtils';
+
 import {
   GREEN_1,
-  NEUTRALS,
+  NEUTRAL,
   RED_1,
   YELLOW_1,
 } from '../colors';
 
 const mockVariations = {
-  default: NEUTRALS[0],
+  default: NEUTRAL.N700,
   success: GREEN_1,
   danger: RED_1,
   warning: YELLOW_1
@@ -34,7 +37,7 @@ describe('StyleUtils', () => {
 
     test('should return value for matching prop and variation', () => {
       const backgroundColor = getStyleVariation('mode', mockVariations);
-      expect(backgroundColor(mockProps)).toEqual(NEUTRALS[0]);
+      expect(backgroundColor(mockProps)).toEqual(NEUTRAL.N700);
     });
 
     test('should return undefined for non matching variation', () => {

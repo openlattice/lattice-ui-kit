@@ -10,12 +10,12 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
 }
 
 .c2 {
-  background-color: #f9f9fd;
+  background-color: white;
   border-radius: 3px;
-  border: 1px solid #dcdce7;
+  border: 1px solid #DFDFE3;
   box-shadow: none;
   box-sizing: border-box;
-  color: #555e6f;
+  color: #56565A;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,47 +30,47 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
   -webkit-transition: background-color 200ms ease-out,border-color 200ms ease-out;
   transition: background-color 200ms ease-out,border-color 200ms ease-out;
   width: 100%;
-  color: #555e6f;
+  color: #56565A;
   padding-left: 32px;
 }
 
 .c2:hover {
-  background-color: #f0f0f7;
+  background-color: #F2F2F4;
 }
 
 .c2:focus {
-  border: solid 1px #7654FF;
+  border: solid 1px #56565A;
   background-color: white;
   outline: none;
 }
 
 .c2:disabled {
-  background-color: #f9f9fd;
-  color: #8e929b;
+  background-color: #F2F2F4;
+  color: #8B8B90;
   cursor: not-allowed;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #8e929b;
+  color: #8B8B90;
 }
 
 .c2::-moz-placeholder {
-  color: #8e929b;
+  color: #8B8B90;
 }
 
 .c2:-ms-input-placeholder {
-  color: #8e929b;
+  color: #8B8B90;
 }
 
 .c2::placeholder {
-  color: #8e929b;
+  color: #8B8B90;
 }
 
 .c1 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  color: #8e929b;
+  color: #8B8B90;
   margin-left: 11px;
   font-size: 14px;
   line-height: 14px;
@@ -122,7 +122,7 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                   "lastClassName": "c1",
                   "rules": Array [
                     "align-self:center;color:",
-                    "#8e929b",
+                    "#8B8B90",
                     ";margin-left:11px;font-size:14px;line-height:14px;position:absolute;",
                   ],
                 },
@@ -209,12 +209,10 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                   "isStatic": false,
                   "lastClassName": "c2",
                   "rules": Array [
-                    "background-color:",
-                    "#f9f9fd",
-                    ";border-radius:3px;border:1px solid ",
+                    "background-color:white;border-radius:3px;border:1px solid ",
                     [Function],
                     ";box-shadow:none;box-sizing:border-box;color:",
-                    "#555e6f",
+                    "#56565A",
                     ";display:flex;flex:0 1 auto;font-size:14px;min-height:40px;padding:10px;text-overflow:ellipsis;transition:background-color ",
                     "200ms",
                     " ease-out,border-color ",
@@ -222,18 +220,18 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                     " ease-out;width:",
                     [Function],
                     ";:hover{background-color:",
-                    "#f0f0f7",
+                    "#F2F2F4",
                     ";}:focus{border:solid 1px ",
-                    "#7654FF",
+                    "#56565A",
                     ";background-color:white;outline:none;}:disabled{background-color:",
-                    "#f9f9fd",
+                    "#F2F2F4",
                     ";color:",
-                    "#8e929b",
+                    "#8B8B90",
                     ";cursor:not-allowed;}",
                     " color:",
-                    "#555e6f",
+                    "#56565A",
                     ";padding-left:32px;&::placeholder{color:",
-                    "#8e929b",
+                    "#8B8B90",
                     ";}",
                   ],
                 },

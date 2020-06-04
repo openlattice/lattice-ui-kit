@@ -1,6 +1,7 @@
 // @flow
 import styled, { css } from 'styled-components';
-import { NEUTRALS } from '../../../../colors';
+
+import { NEUTRAL } from '../../../../colors';
 
 const IconLayer = styled.span`
   font-size: 24px;
@@ -11,14 +12,14 @@ const getDividerOrientationStyles = ({ vertical }) => {
   if (vertical) {
     return css`
       min-height: 20px;
-      border-left: 2px solid ${NEUTRALS[4]};
+      border-left: 2px solid ${NEUTRAL.N100};
       /* step padding + half icon - 1 */
       margin-left: 21px;
     `;
   }
 
   return css`
-    border-top: 2px solid ${NEUTRALS[4]};
+    border-top: 2px solid ${NEUTRAL.N100};
   `;
 };
 

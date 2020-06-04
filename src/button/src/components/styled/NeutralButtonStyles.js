@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS } from '../../../../colors';
+import { NEUTRAL } from '../../../../colors';
 
 const getFontColor = (props) => {
   const { fontColor } = props;
@@ -38,7 +38,7 @@ const neutralDisabled = css`
 `;
 
 const neutralFocus = css`
-  box-shadow: ${NEUTRALS[2]} 0 0 0 2px;
+  box-shadow: ${NEUTRAL.N500} 0 0 0 2px;
 `;
 
 export {

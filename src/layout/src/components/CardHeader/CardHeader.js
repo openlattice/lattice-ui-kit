@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import CardSegment from '../CardSegment/CardSegment';
 import {
   GREEN_1,
-  NEUTRALS,
+  NEUTRAL,
   PURPLE,
   RED_1,
   WHITE,
@@ -14,7 +14,7 @@ import { getStyleVariation } from '../../../../utils/StyleUtils';
 
 const backgroundColor = getStyleVariation('mode', {
   danger: RED_1,
-  default: NEUTRALS[0],
+  default: NEUTRAL.N700,
   primary: PURPLE.P300,
   secondary: PURPLE.P100,
   success: GREEN_1,
@@ -27,7 +27,7 @@ const getFontColor = getStyleVariation('mode', {
   primary: WHITE,
   secondary: PURPLE.P300,
   success: WHITE,
-  warning: NEUTRALS[0],
+  warning: NEUTRAL.N700,
 });
 
 const CardHeader = styled(CardSegment).attrs(() => ({

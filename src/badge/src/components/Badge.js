@@ -6,19 +6,19 @@ import styled from 'styled-components';
 import * as Colors from '../../../colors';
 import { getStyleVariation } from '../../../utils/StyleUtils';
 
-const { NEUTRALS, PURPLE } = Colors;
+const { NEUTRAL, PURPLE } = Colors;
 
 const getBackgroundColor = getStyleVariation('mode', {
   primary: PURPLE.P300,
   secondary: PURPLE.P100,
   subtle: 'white',
-}, NEUTRALS[6]);
+}, NEUTRAL.N100);
 
 const getFontColor = getStyleVariation('mode', {
   primary: 'white',
   secondary: PURPLE.P300,
   subtle: PURPLE.P300,
-}, NEUTRALS[0]);
+}, NEUTRAL.N700);
 
 const BadgeWrapper = styled.span`
   background-color: ${getBackgroundColor};

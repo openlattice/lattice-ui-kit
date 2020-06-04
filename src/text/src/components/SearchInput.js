@@ -9,7 +9,8 @@ import { faSearch } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import inputStyles from './styled/inputStyles';
-import { NEUTRALS } from '../../../colors';
+
+import { NEUTRAL } from '../../../colors';
 
 const SearchInputWrapper = styled.div`
   display: flex;
@@ -18,17 +19,17 @@ const SearchInputWrapper = styled.div`
 
 const Input = styled.input`
   ${inputStyles}
-  color: ${NEUTRALS[0]};
+  color: ${NEUTRAL.N700};
   padding-left: 32px;
 
   &::placeholder {
-    color: ${NEUTRALS[1]};
+    color: ${NEUTRAL.N500};
   }
 `;
 
 const SearchIcon = styled.div`
   align-self: center;
-  color: ${NEUTRALS[1]};
+  color: ${NEUTRAL.N500};
   margin-left: 11px;
   font-size: 14px;
   line-height: 14px;

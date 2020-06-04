@@ -8,12 +8,12 @@ import { addDecorator, configure } from '@storybook/react';
 
 import LatticeLuxonUtils from '../../src/datetime/src/components/utils/LatticeLuxonUtils';
 import { Button } from '../../src/button';
-import { NEUTRALS } from '../../src/colors';
+import { NEUTRAL } from '../../src/colors';
 import { darkTheme, lightTheme } from '../../src/theme';
 
 const StoryOuterWrapper = styled.div`
-  background-color: ${NEUTRALS[7]};
-  color: ${NEUTRALS[0]};
+  background-color: ${NEUTRAL.N00};
+  color: ${NEUTRAL.N700};
   display: flex;
   font-family: 'Inter', Arial, sans-serif;
   font-stretch: normal;

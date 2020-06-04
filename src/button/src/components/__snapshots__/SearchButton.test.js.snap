@@ -44,38 +44,38 @@ exports[`SearchButton icon with text should match snapshot 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
+  background-color: #F2F2F4;
+  border-color: #F2F2F4;
+  color: #56565A;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
+  background-color: #DFDFE3;
+  border-color: #DFDFE3;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
+  background-color: #D1D1D6;
+  border-color: #D1D1D6;
+  color: #56565A;
 }
 
 .c0:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
+  background-color: #F9F9FC;
+  border-color: #F9F9FC;
+  color: #8B8B90;
 }
 
 .c0:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
+  box-shadow: #D1D1D6 0 0 0 2px;
 }
 
 .c3 {
@@ -389,38 +389,38 @@ exports[`SearchButton icon without text should match snapshot 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
+  background-color: #F2F2F4;
+  border-color: #F2F2F4;
+  color: #56565A;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
+  background-color: #DFDFE3;
+  border-color: #DFDFE3;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
+  background-color: #D1D1D6;
+  border-color: #D1D1D6;
+  color: #56565A;
 }
 
 .c0:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
+  background-color: #F9F9FC;
+  border-color: #F9F9FC;
+  color: #8B8B90;
 }
 
 .c0:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
+  box-shadow: #D1D1D6 0 0 0 2px;
 }
 
 <SearchButton>

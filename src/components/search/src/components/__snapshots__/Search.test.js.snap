@@ -2,7 +2,7 @@
 
 exports[`Search snapshots should match snapshot 1`] = `
 .c4 {
-  color: #555e6f;
+  color: #56565A;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -16,7 +16,7 @@ exports[`Search snapshots should match snapshot 1`] = `
 }
 
 .c6 {
-  color: #555e6f;
+  color: #56565A;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -98,9 +98,9 @@ exports[`Search snapshots should match snapshot 1`] = `
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #F9F9FC;
+  border-color: #F9F9FC;
+  color: #8B8B90;
 }
 
 .c7:focus {
@@ -109,7 +109,7 @@ exports[`Search snapshots should match snapshot 1`] = `
 
 .c1 {
   background-color: white;
-  border: 1px solid #dcdce7;
+  border: 1px solid #DFDFE3;
   border-radius: 3px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -133,7 +133,7 @@ exports[`Search snapshots should match snapshot 1`] = `
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   position: relative;
-  border-bottom: 1px solid #dcdce7;
+  border-bottom: 1px solid #DFDFE3;
   background-color: transparent;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -179,12 +179,12 @@ exports[`Search snapshots should match snapshot 1`] = `
 }
 
 .c5 {
-  background-color: #f9f9fd;
+  background-color: white;
   border-radius: 3px;
-  border: 1px solid #dcdce7;
+  border: 1px solid #DFDFE3;
   box-shadow: none;
   box-sizing: border-box;
-  color: #555e6f;
+  color: #56565A;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -202,18 +202,18 @@ exports[`Search snapshots should match snapshot 1`] = `
 }
 
 .c5:hover {
-  background-color: #f0f0f7;
+  background-color: #F2F2F4;
 }
 
 .c5:focus {
-  border: solid 1px #7654FF;
+  border: solid 1px #56565A;
   background-color: white;
   outline: none;
 }
 
 .c5:disabled {
-  background-color: #f9f9fd;
-  color: #8e929b;
+  background-color: #F2F2F4;
+  color: #8B8B90;
   cursor: not-allowed;
 }
 
@@ -288,10 +288,10 @@ exports[`Search snapshots should match snapshot 1`] = `
         "MuiInputBase": Object {
           "input": Object {
             "&$disabled": Object {
-              "color": "#8e929b",
+              "color": "#8B8B90",
               "cursor": "not-allowed",
             },
-            "color": "#555e6f",
+            "color": "#56565A",
           },
           "root": Object {
             "&$disabled": Object {
@@ -301,9 +301,9 @@ exports[`Search snapshots should match snapshot 1`] = `
               "backgroundColor": "white",
             },
             "&:hover:not($disabled):not($focused):not($error)": Object {
-              "backgroundColor": "#f0f0f7",
+              "backgroundColor": "#DFDFE3",
             },
-            "backgroundColor": "#f9f9fd",
+            "backgroundColor": "#F2F2F4",
             "borderRadius": "3px",
             "fontFamily": "inherit",
             "fontSize": "14px",
@@ -327,7 +327,7 @@ exports[`Search snapshots should match snapshot 1`] = `
             "&$focused": Object {
               "borderColor": "#7654FF",
             },
-            "border": "1px solid #dcdce7",
+            "border": "1px solid #DFDFE3",
           },
         },
         "MuiTouchRipple": Object {
@@ -369,7 +369,7 @@ exports[`Search snapshots should match snapshot 1`] = `
         "augmentColor": [Function],
         "background": Object {
           "default": "#fafafa",
-          "header": "#f0f0f7",
+          "header": "#F2F2F4",
           "paper": "#fff",
         },
         "common": Object {
@@ -377,7 +377,7 @@ exports[`Search snapshots should match snapshot 1`] = `
           "white": "#fff",
         },
         "contrastThreshold": 3,
-        "divider": "#E1E1EB",
+        "divider": "#DFDFE3",
         "error": Object {
           "contrastText": "#fff",
           "dark": "#d32f2f",
@@ -442,7 +442,7 @@ exports[`Search snapshots should match snapshot 1`] = `
         "text": Object {
           "disabled": "rgba(0, 0, 0, 0.38)",
           "hint": "rgba(0, 0, 0, 0.38)",
-          "primary": "#555e6f",
+          "primary": "#56565A",
           "secondary": "rgba(0, 0, 0, 0.54)",
         },
         "tonalOffset": 0.2,
@@ -698,7 +698,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "background-color:white;border:1px solid ",
-                        "#dcdce7",
+                        "#DFDFE3",
                         ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;",
                         [Function],
                         ";",
@@ -808,7 +808,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                             "lastClassName": "c6",
                                             "rules": Array [
                                               "color:",
-                                              "#555e6f",
+                                              "#56565A",
                                               ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                                               [Function],
                                               ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -857,12 +857,10 @@ exports[`Search snapshots should match snapshot 1`] = `
                                             "isStatic": false,
                                             "lastClassName": "c5",
                                             "rules": Array [
-                                              "background-color:",
-                                              "#f9f9fd",
-                                              ";border-radius:3px;border:1px solid ",
+                                              "background-color:white;border-radius:3px;border:1px solid ",
                                               [Function],
                                               ";box-shadow:none;box-sizing:border-box;color:",
-                                              "#555e6f",
+                                              "#56565A",
                                               ";display:flex;flex:0 1 auto;font-size:14px;min-height:40px;padding:10px;text-overflow:ellipsis;transition:background-color ",
                                               "200ms",
                                               " ease-out,border-color ",
@@ -870,13 +868,13 @@ exports[`Search snapshots should match snapshot 1`] = `
                                               " ease-out;width:",
                                               [Function],
                                               ";:hover{background-color:",
-                                              "#f0f0f7",
+                                              "#F2F2F4",
                                               ";}:focus{border:solid 1px ",
-                                              "#7654FF",
+                                              "#56565A",
                                               ";background-color:white;outline:none;}:disabled{background-color:",
-                                              "#f9f9fd",
+                                              "#F2F2F4",
                                               ";color:",
-                                              "#8e929b",
+                                              "#8B8B90",
                                               ";cursor:not-allowed;}",
                                             ],
                                           },
@@ -923,7 +921,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                             "lastClassName": "c6",
                                             "rules": Array [
                                               "color:",
-                                              "#555e6f",
+                                              "#56565A",
                                               ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                                               [Function],
                                               ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -972,12 +970,10 @@ exports[`Search snapshots should match snapshot 1`] = `
                                             "isStatic": false,
                                             "lastClassName": "c5",
                                             "rules": Array [
-                                              "background-color:",
-                                              "#f9f9fd",
-                                              ";border-radius:3px;border:1px solid ",
+                                              "background-color:white;border-radius:3px;border:1px solid ",
                                               [Function],
                                               ";box-shadow:none;box-sizing:border-box;color:",
-                                              "#555e6f",
+                                              "#56565A",
                                               ";display:flex;flex:0 1 auto;font-size:14px;min-height:40px;padding:10px;text-overflow:ellipsis;transition:background-color ",
                                               "200ms",
                                               " ease-out,border-color ",
@@ -985,13 +981,13 @@ exports[`Search snapshots should match snapshot 1`] = `
                                               " ease-out;width:",
                                               [Function],
                                               ";:hover{background-color:",
-                                              "#f0f0f7",
+                                              "#F2F2F4",
                                               ";}:focus{border:solid 1px ",
-                                              "#7654FF",
+                                              "#56565A",
                                               ";background-color:white;outline:none;}:disabled{background-color:",
-                                              "#f9f9fd",
+                                              "#F2F2F4",
                                               ";color:",
-                                              "#8e929b",
+                                              "#8B8B90",
                                               ";cursor:not-allowed;}",
                                             ],
                                           },
@@ -1038,7 +1034,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                             "lastClassName": "c6",
                                             "rules": Array [
                                               "color:",
-                                              "#555e6f",
+                                              "#56565A",
                                               ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                                               [Function],
                                               ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -1853,7 +1849,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                             "lastClassName": "c6",
                                             "rules": Array [
                                               "color:",
-                                              "#555e6f",
+                                              "#56565A",
                                               ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                                               [Function],
                                               ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",

@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, PURPLE } from '../../../../colors';
+import { NEUTRAL, PURPLE } from '../../../../colors';
 
 const primaryStyle = css`
   background-color: ${PURPLE.P300};
@@ -19,9 +19,9 @@ const primaryActive = css`
 `;
 
 const primaryDisabled = css`
-  background-color: ${NEUTRALS[6]};
-  border-color: ${NEUTRALS[6]};
-  color: ${NEUTRALS[2]};
+  background-color: ${NEUTRAL.N00};
+  border-color: ${NEUTRAL.N00};
+  color: ${NEUTRAL.N500};
 `;
 
 const primaryFocus = css`

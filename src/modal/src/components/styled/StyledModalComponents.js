@@ -4,7 +4,7 @@
 
 import styled, { css } from 'styled-components';
 
-import { NEUTRALS } from '../../../../colors';
+import { NEUTRAL } from '../../../../colors';
 import { media } from '../../../../utils/StyleUtils';
 
 const DEFAULT_PADDING :string = '30px';
@@ -73,7 +73,7 @@ export const ModalInnerContainer = styled.div`
   align-self: ${({ center }) => (center ? 'center' : 'flex-start')};
   background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px ${NEUTRALS[0]};
+  box-shadow: 0 2px 8px -2px ${NEUTRAL.N700};
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
@@ -89,7 +89,7 @@ export const ModalInnerContainer = styled.div`
  * "min-height" 40px + "padding" 30px = 100px of total height
  */
 export const ModalSection = styled.div`
-  color: ${NEUTRALS[0]};
+  color: ${NEUTRAL.N700};
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;

@@ -7,7 +7,7 @@ import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 
-import { NEUTRALS, YELLOW_1 } from '../../colors';
+import { NEUTRAL, YELLOW_1 } from '../../colors';
 import { useBoolean } from '../../hooks';
 import { Card, CardSegment } from '../../layout';
 import {
@@ -43,7 +43,7 @@ const LaunchIcon = (
 );
 
 const DarkColoredButtonRow = styled(ButtonRow)`
-  background-color: ${NEUTRALS[0]};
+  background-color: ${NEUTRAL.N700};
   display: flex;
   flex: 1;
   justify-content: center;
@@ -74,7 +74,7 @@ storiesOf('Button', module)
             <Button mode="neutral" onClick={action('button clicked')}>Neutral</Button>
           </DarkColoredButtonRow>
           <LightColoredButtonRow>
-            <Button mode="neutral" fontColor={NEUTRALS[0]} onClick={action('button clicked')}>Neutral</Button>
+            <Button mode="neutral" fontColor={NEUTRAL.N700} onClick={action('button clicked')}>Neutral</Button>
           </LightColoredButtonRow>
         </ButtonRow>
       </CardSegment>
@@ -94,7 +94,7 @@ storiesOf('Button', module)
         <ButtonRow>
           <Button disabled onClick={action('button clicked')}>Default</Button>
           <Button mode="subtle" disabled onClick={action('button clicked')}>Subtle</Button>
-          <Button mode="neutral" disabled fontColor={NEUTRALS[0]} onClick={action('button clicked')}>Neutral</Button>
+          <Button mode="neutral" disabled fontColor={NEUTRAL.N700} onClick={action('button clicked')}>Neutral</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
@@ -116,7 +116,7 @@ storiesOf('Button', module)
           <Button mode="subtle" onClick={action('button clicked')}>TextTextTextTextTextTextTextTextTextText</Button>
           <Button
               mode="neutral"
-              fontColor={NEUTRALS[0]}
+              fontColor={NEUTRAL.N700}
               onClick={action('button clicked')}>
             TextTextTextTextTextTextTextTextTextText
           </Button>

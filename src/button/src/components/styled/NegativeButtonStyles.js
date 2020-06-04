@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, REDS } from '../../../../colors';
+import { NEUTRAL, REDS } from '../../../../colors';
 
 const negativeStyle = css`
   background-color: ${REDS[0]};
@@ -21,9 +21,9 @@ const negativeActive = css`
 `;
 
 const negativeDisabled = css`
-  background-color: ${NEUTRALS[6]};
-  border-color: ${NEUTRALS[6]};
-  color: ${NEUTRALS[2]};
+  background-color: ${NEUTRAL.N00};
+  border-color: ${NEUTRAL.N00};
+  color: ${NEUTRAL.N500};
 `;
 
 const negativeFocus = css`

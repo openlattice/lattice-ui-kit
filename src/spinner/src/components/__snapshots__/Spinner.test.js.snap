@@ -8,7 +8,7 @@ exports[`Spinner snapshot 1`] = `
   <FontAwesomeIcon
     border={false}
     className=""
-    color="#cdd1db"
+    color="#C3C3C8"
     fixedWidth={false}
     flip={null}
     icon={
@@ -41,7 +41,7 @@ exports[`Spinner snapshot 1`] = `
   <FontAwesomeIcon
     border={false}
     className=""
-    color="#555e6f"
+    color="#56565A"
     fixedWidth={false}
     flip={null}
     icon={

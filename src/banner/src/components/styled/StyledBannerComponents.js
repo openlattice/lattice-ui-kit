@@ -4,13 +4,13 @@ import styled from 'styled-components';
 
 import {
   GREEN_1,
-  NEUTRALS,
+  NEUTRAL,
   RED_1,
   WHITE,
   YELLOW_1,
 } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
-import { getStyleVariation, getStickyPosition } from '../../../../utils/StyleUtils';
+import { getStickyPosition, getStyleVariation } from '../../../../utils/StyleUtils';
 
 type ContainerProps = {
   maxHeight ? :string;
@@ -19,7 +19,7 @@ type ContainerProps = {
 }
 
 const backgroundColor = getStyleVariation('mode', {
-  default: NEUTRALS[0],
+  default: NEUTRAL.N700,
   success: GREEN_1,
   danger: RED_1,
   warning: YELLOW_1
@@ -29,7 +29,7 @@ const getFontColor = getStyleVariation('mode', {
   default: WHITE,
   success: WHITE,
   danger: WHITE,
-  warning: NEUTRALS[0]
+  warning: NEUTRAL.N700
 });
 
 const getMaxHeight = (props :ContainerProps) => {

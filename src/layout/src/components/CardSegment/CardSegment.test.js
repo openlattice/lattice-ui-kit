@@ -1,9 +1,11 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import CardSegment from './CardSegment';
-import { NEUTRALS } from '../../../../colors';
+
+import { NEUTRAL } from '../../../../colors';
 
 describe('CardSegment', () => {
 
@@ -65,7 +67,7 @@ describe('CardSegment', () => {
 
       test('should set border-bottom with "borderless=false"', () => {
         const wrapper = mount(<CardSegment />);
-        expect(wrapper).toHaveStyleRule('border-bottom', `1px solid ${NEUTRALS[4]}`);
+        expect(wrapper).toHaveStyleRule('border-bottom', `1px solid ${NEUTRAL.N100}`);
       });
 
       test('should not set border-bottom with "borderless=true"', () => {

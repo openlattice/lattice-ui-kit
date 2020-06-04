@@ -1,4 +1,4 @@
-import { NEUTRALS } from '../../colors/src/Colors';
+import { NEUTRAL } from '../../colors/src/Colors';
 
-const indicatorsContainerStyles = (base) => ({ ...base, color: NEUTRALS[2], marginRight: '5px' });
+const indicatorsContainerStyles = (base) => ({ ...base, color: NEUTRAL.N500, marginRight: '5px' });
 export default indicatorsContainerStyles;

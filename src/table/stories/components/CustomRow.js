@@ -5,11 +5,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Checkbox } from '../../../choices';
-import { NEUTRALS } from '../../../colors';
+import { NEUTRAL } from '../../../colors';
 import { getHoverStyles } from '../../../utils/StyleUtils';
 
 const CustomRowWrapper = styled.tr.attrs(() => ({ tabIndex: '1' }))`
-  border-bottom: 1px solid ${NEUTRALS[4]};
+  border-bottom: 1px solid ${NEUTRAL.N100};
 
   ${getHoverStyles};
 `;

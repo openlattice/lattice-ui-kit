@@ -123,7 +123,7 @@ export const TEAL = {
   T200: '#69D4D8',
   T300: '#23C3C9',
   T400: '#0D858A',
-  T500: '',
+  T500: '#0C3C3E',
 };
 
 export const GREEN = {

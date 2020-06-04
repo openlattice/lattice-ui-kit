@@ -9,7 +9,7 @@ import * as Colors from '../../../../colors';
 
 const {
   GREEN_1,
-  NEUTRALS,
+  NEUTRAL,
   PURPLE,
   RED_1,
   WHITE,
@@ -60,7 +60,7 @@ describe('CardHeader', () => {
       test('should render default mode', () => {
         const wrapper = mount(<CardHeader mode="default" />);
         expect(wrapper.prop('mode')).toEqual('default');
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', NEUTRALS[0]);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', NEUTRAL.N700);
         expect(wrapper.find(CardHeader)).toHaveStyleRule('color', WHITE);
       });
 
@@ -96,7 +96,7 @@ describe('CardHeader', () => {
         const wrapper = mount(<CardHeader mode="warning" />);
         expect(wrapper.prop('mode')).toEqual('warning');
         expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', YELLOW_1);
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', NEUTRALS[0]);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', NEUTRAL.N700);
       });
     });
 

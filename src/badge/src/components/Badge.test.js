@@ -7,7 +7,7 @@ import Badge from './Badge';
 
 import * as Colors from '../../../colors';
 
-const { NEUTRALS, PURPLE } = Colors;
+const { NEUTRAL, PURPLE } = Colors;
 
 describe('Badge', () => {
   describe('snapshots', () => {
@@ -38,8 +38,8 @@ describe('Badge', () => {
 
     test('default', () => {
       const wrapper = mount(<Badge count="10" />);
-      expect(wrapper.find(Badge)).toHaveStyleRule('color', NEUTRALS[0]);
-      expect(wrapper.find(Badge)).toHaveStyleRule('background-color', NEUTRALS[6]);
+      expect(wrapper.find(Badge)).toHaveStyleRule('color', NEUTRAL.N700);
+      expect(wrapper.find(Badge)).toHaveStyleRule('background-color', NEUTRAL.N100);
     });
 
     test('primary', () => {

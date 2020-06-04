@@ -5,7 +5,7 @@
 import isFunction from 'lodash/isFunction';
 import styled, { css } from 'styled-components';
 
-import { NEUTRALS } from '../../../../colors';
+import { NEUTRAL } from '../../../../colors';
 
 type ComputedSegmentProps = {
   bgColor ?:string;
@@ -74,7 +74,7 @@ const getSegmentComputedStyles = (props :ComputedSegmentProps) => {
 
   let borderBottom;
   if (!borderless) {
-    borderBottom = `1px solid ${NEUTRALS[4]}`;
+    borderBottom = `1px solid ${NEUTRAL.N100}`;
   }
 
   const styles = css`

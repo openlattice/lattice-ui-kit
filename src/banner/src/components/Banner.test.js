@@ -15,7 +15,7 @@ import { Container } from './styled/StyledBannerComponents';
 
 import {
   GREEN_1,
-  NEUTRALS,
+  NEUTRAL,
   RED_1,
   WHITE,
   YELLOW_1,
@@ -41,7 +41,7 @@ describe('Banner', () => {
       test('should render default mode', () => {
         const wrapper = mount(<Banner mode="default" />);
         expect(wrapper.prop('mode')).toEqual('default');
-        expect(wrapper.find(Container)).toHaveStyleRule('background-color', NEUTRALS[0]);
+        expect(wrapper.find(Container)).toHaveStyleRule('background-color', NEUTRAL.N700);
         expect(wrapper.find(Container)).toHaveStyleRule('color', WHITE);
       });
 
@@ -65,7 +65,7 @@ describe('Banner', () => {
         const wrapper = mount(<Banner mode="warning" />);
         expect(wrapper.prop('mode')).toEqual('warning');
         expect(wrapper.find(Container)).toHaveStyleRule('background-color', YELLOW_1);
-        expect(wrapper.find(Container)).toHaveStyleRule('color', NEUTRALS[0]);
+        expect(wrapper.find(Container)).toHaveStyleRule('color', NEUTRAL.N700);
         expect(wrapper.find(FontAwesomeIcon).prop('icon')).toEqual(faExclamationTriangle);
       });
 

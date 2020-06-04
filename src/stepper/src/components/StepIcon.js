@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconLayer, StepIndex } from './styled';
 
 import {
-  NEUTRALS,
+  NEUTRAL,
   PURPLE,
   WHITE
 } from '../../../colors';
@@ -29,7 +29,7 @@ const StepIcon = ({
   const styledClassName = className ? `${className} fa-layers` : 'fa-layers';
   return (
     <IconLayer className={styledClassName}>
-      <FontAwesomeIcon icon={faCircle} color={(active || complete) ? PURPLE.P300 : NEUTRALS[1]} />
+      <FontAwesomeIcon icon={faCircle} color={(active || complete) ? PURPLE.P300 : NEUTRAL.N500} />
       {
         complete
           ? <FontAwesomeIcon icon={faCheck} color={WHITE} transform="shrink-7" />

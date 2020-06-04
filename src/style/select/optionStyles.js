@@ -1,7 +1,5 @@
 import {
   NEUTRAL,
-  NEUTRALS,
-  PURPLE,
 } from '../../colors/src/Colors';
 
 const optionStyles = (base, state) => {
@@ -13,9 +11,9 @@ const optionStyles = (base, state) => {
     isSelected,
   } = state;
 
-  let color = isSelected ? PURPLE.P300 : NEUTRALS[0];
+  let color = NEUTRAL.N700;
   if (isDisabled) {
-    color = NEUTRALS[2];
+    color = NEUTRAL.N500;
   }
 
   let backgroundColor = 'white';
@@ -23,11 +21,11 @@ const optionStyles = (base, state) => {
     backgroundColor = NEUTRAL.N50;
   }
   else if (isFocused) {
-    backgroundColor = NEUTRALS[6];
+    backgroundColor = NEUTRAL.N100;
   }
 
-  const activeBgColor = isDisabled ? 'white' : PURPLE.P100;
-  const hoverBgColor = isDisabled ? 'white' : NEUTRALS[6];
+  const activeBgColor = isDisabled ? 'white' : NEUTRAL.N200;
+  const hoverBgColor = isDisabled ? 'white' : NEUTRAL.N100;
 
   let style = {
     color,

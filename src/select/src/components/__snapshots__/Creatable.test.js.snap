@@ -421,12 +421,12 @@ exports[`Creatable render matches snapshot 1`] = `
                           "borderColor": "hsl(0, 0%, 70%)",
                         },
                         ":hover": Object {
-                          "backgroundColor": "#f0f0f7",
-                          "border": "solid 1px #dcdce7",
+                          "backgroundColor": "#F2F2F4",
+                          "border": "solid 1px #DFDFE3",
                         },
                         "alignItems": "center",
-                        "backgroundColor": "#f9f9fd",
-                        "border": "solid 1px #dcdce7",
+                        "backgroundColor": "white",
+                        "border": "solid 1px #DFDFE3",
                         "borderColor": "hsl(0, 0%, 80%)",
                         "borderRadius": "3px",
                         "borderStyle": "solid",
@@ -451,7 +451,7 @@ exports[`Creatable render matches snapshot 1`] = `
                     onTouchEnd={[Function]}
                   >
                     <div
-                      className=" css-wo44iz-control"
+                      className=" css-1c2kfib-control"
                       onMouseDown={[Function]}
                       onTouchEnd={[Function]}
                     >
@@ -1191,7 +1191,7 @@ exports[`Creatable render matches snapshot 1`] = `
                               "alignItems": "center",
                               "alignSelf": "stretch",
                               "boxSizing": "border-box",
-                              "color": "#b6bbc7",
+                              "color": "#8B8B90",
                               "display": "flex",
                               "flexShrink": 0,
                               "marginRight": "5px",
@@ -1199,7 +1199,7 @@ exports[`Creatable render matches snapshot 1`] = `
                           }
                         >
                           <div
-                            className=" css-1y4h2k2-IndicatorsContainer"
+                            className=" css-1cvyl2v-IndicatorsContainer"
                           >
                             <IndicatorSeparator
                               clearValue={[Function]}
@@ -1579,7 +1579,7 @@ exports[`Creatable render matches snapshot 1`] = `
                                   className=""
                                   css={
                                     Object {
-                                      "color": "#b6bbc7",
+                                      "color": "#8B8B90",
                                       "display": "flex",
                                       "margin": "5px",
                                       "padding": "0",
@@ -1590,7 +1590,7 @@ exports[`Creatable render matches snapshot 1`] = `
                                 >
                                   <div
                                     aria-hidden="true"
-                                    className=" css-1vd5qh6-DropdownIndicator"
+                                    className=" css-1aa8tbn-DropdownIndicator"
                                     onMouseDown={[Function]}
                                     onTouchEnd={[Function]}
                                   >

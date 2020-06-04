@@ -31,12 +31,12 @@ import {
 } from '../../../../style/select';
 import { media } from '../../../../utils/StyleUtils';
 
-const { NEUTRALS } = Colors;
+const { NEUTRAL } = Colors;
 
 // button line-height = font-size (12px) * desired line-height (1.5) = 18px
 // total button height = line-height (18px) + padding (2*8px) + border (2*1px) = 36px
 const LogoutButton = styled(Button)`
-  border: solid 1px ${NEUTRALS[4]};
+  border: solid 1px ${NEUTRAL.N100};
   font-size: 12px;
   line-height: 18px;
   padding: 8px 16px;
@@ -65,7 +65,7 @@ const HeaderSectionContentWrapper = styled.div`
 
 const NavigationToggleWrapper = styled.div`
   align-items: center;
-  color: ${NEUTRALS[1]};
+  color: ${NEUTRAL.N500};
   cursor: pointer;
   display: flex;
   font-size: 16px;
@@ -80,7 +80,7 @@ const NavigationToggleWrapper = styled.div`
   `}
 
   &:hover {
-    color: ${NEUTRALS[0]};
+    color: ${NEUTRAL.N700};
   }
 `;
 
