@@ -16,7 +16,7 @@ const optionStyles = (base, state) => {
     color = NEUTRAL.N500;
   }
 
-  let backgroundColor = NEUTRAL.N50;
+  let backgroundColor = 'white';
   if (isSelected) {
     backgroundColor = NEUTRAL.N100;
   }
