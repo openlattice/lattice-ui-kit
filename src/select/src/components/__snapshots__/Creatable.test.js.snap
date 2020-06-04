@@ -421,12 +421,12 @@ exports[`Creatable render matches snapshot 1`] = `
                           "borderColor": "hsl(0, 0%, 70%)",
                         },
                         ":hover": Object {
-                          "backgroundColor": "#F2F2F4",
-                          "border": "solid 1px #DFDFE3",
+                          "backgroundColor": "#DFDFE3",
+                          "border": "solid 1px #F2F2F4",
                         },
                         "alignItems": "center",
-                        "backgroundColor": "white",
-                        "border": "solid 1px #DFDFE3",
+                        "backgroundColor": "#F2F2F4",
+                        "border": "solid 1px #F2F2F4",
                         "borderColor": "hsl(0, 0%, 80%)",
                         "borderRadius": "3px",
                         "borderStyle": "solid",
@@ -451,7 +451,7 @@ exports[`Creatable render matches snapshot 1`] = `
                     onTouchEnd={[Function]}
                   >
                     <div
-                      className=" css-1c2kfib-control"
+                      className=" css-17h15a1-control"
                       onMouseDown={[Function]}
                       onTouchEnd={[Function]}
                     >

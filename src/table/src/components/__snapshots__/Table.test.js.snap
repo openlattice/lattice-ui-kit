@@ -5371,7 +5371,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                           "borderColor": "hsl(0, 0%, 70%)",
                                         },
                                         ":hover": Object {
-                                          "backgroundColor": "#F2F2F4",
+                                          "backgroundColor": "#DFDFE3",
                                           "border": "none",
                                         },
                                         "alignItems": "center",
@@ -5401,7 +5401,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                     onTouchEnd={[Function]}
                                   >
                                     <div
-                                      className=" css-d2w8l6-control"
+                                      className=" css-1y0r6r7-control"
                                       onMouseDown={[Function]}
                                       onTouchEnd={[Function]}
                                     >
@@ -10391,7 +10391,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                           "borderColor": "hsl(0, 0%, 70%)",
                                         },
                                         ":hover": Object {
-                                          "backgroundColor": "#F2F2F4",
+                                          "backgroundColor": "#DFDFE3",
                                           "border": "none",
                                         },
                                         "alignItems": "center",
@@ -10421,7 +10421,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                     onTouchEnd={[Function]}
                                   >
                                     <div
-                                      className=" css-d2w8l6-control"
+                                      className=" css-1y0r6r7-control"
                                       onMouseDown={[Function]}
                                       onTouchEnd={[Function]}
                                     >

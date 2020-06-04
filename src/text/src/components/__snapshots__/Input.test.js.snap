@@ -2,12 +2,12 @@
 
 exports[`Input render matches snapshot 1`] = `
 .c0 {
-  background-color: white;
+  background-color: #F2F2F4;
   border-radius: 3px;
-  border: 1px solid #DFDFE3;
+  border: 1px solid #F2F2F4;
   box-shadow: none;
   box-sizing: border-box;
-  color: #56565A;
+  color: #1F1F22;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25,12 +25,12 @@ exports[`Input render matches snapshot 1`] = `
 }
 
 .c0:hover {
-  background-color: #F2F2F4;
+  background-color: #DFDFE3;
 }
 
 .c0:focus {
   border: solid 1px #56565A;
-  background-color: white;
+  background-color: #F9F9FC;
   outline: none;
 }
 
@@ -51,10 +51,12 @@ exports[`Input render matches snapshot 1`] = `
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
-            "background-color:white;border-radius:3px;border:1px solid ",
+            "background-color:",
+            "#F2F2F4",
+            ";border-radius:3px;border:1px solid ",
             [Function],
             ";box-shadow:none;box-sizing:border-box;color:",
-            "#56565A",
+            "#1F1F22",
             ";display:flex;flex:0 1 auto;font-size:14px;min-height:40px;padding:10px;text-overflow:ellipsis;transition:background-color ",
             "200ms",
             " ease-out,border-color ",
@@ -62,10 +64,12 @@ exports[`Input render matches snapshot 1`] = `
             " ease-out;width:",
             [Function],
             ";:hover{background-color:",
-            "#F2F2F4",
+            "#DFDFE3",
             ";}:focus{border:solid 1px ",
             "#56565A",
-            ";background-color:white;outline:none;}:disabled{background-color:",
+            ";background-color:",
+            "#F9F9FC",
+            ";outline:none;}:disabled{background-color:",
             "#F2F2F4",
             ";color:",
             "#8B8B90",
