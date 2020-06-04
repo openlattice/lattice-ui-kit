@@ -12,8 +12,8 @@ import { NEUTRAL } from '../../src/colors';
 import { darkTheme, lightTheme } from '../../src/theme';
 
 const StoryOuterWrapper = styled.div`
-  background-color: ${NEUTRAL.N00};
-  color: ${NEUTRAL.N700};
+  background-color: 'white';
+  color: ${NEUTRAL.N900};
   display: flex;
   font-family: 'Inter', Arial, sans-serif;
   font-stretch: normal;

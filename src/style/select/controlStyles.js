@@ -11,8 +11,8 @@ const controlStyles = (base, state) => {
     selectProps
   } = state;
 
-  let backgroundColor = 'white';
-  let border = isFocused ? `solid 1px ${NEUTRAL.N700}` : `solid 1px ${NEUTRAL.N100}`;
+  let backgroundColor = NEUTRAL.N50;
+  let border = isFocused ? `solid 1px ${NEUTRAL.N700}` : `solid 1px ${NEUTRAL.N50}`;
 
   if (selectProps && selectProps.borderless) {
     backgroundColor = 'transparent';
@@ -23,7 +23,7 @@ const controlStyles = (base, state) => {
     border = selectProps.invalid ? `solid 1px ${RED_1}` : border;
   }
 
-  const hoverBgColor = (isDisabled || isFocused) ? 'white' : NEUTRAL.N50;
+  const hoverBgColor = (isDisabled || isFocused) ? NEUTRAL.N00 : NEUTRAL.N100;
 
   const style = {
     backgroundColor,

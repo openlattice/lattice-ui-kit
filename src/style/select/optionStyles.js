@@ -11,21 +11,21 @@ const optionStyles = (base, state) => {
     isSelected,
   } = state;
 
-  let color = NEUTRAL.N700;
+  let color = NEUTRAL.N900;
   if (isDisabled) {
     color = NEUTRAL.N500;
   }
 
-  let backgroundColor = 'white';
+  let backgroundColor = NEUTRAL.N50;
   if (isSelected) {
-    backgroundColor = NEUTRAL.N50;
+    backgroundColor = NEUTRAL.N100;
   }
   else if (isFocused) {
     backgroundColor = NEUTRAL.N100;
   }
 
-  const activeBgColor = isDisabled ? 'white' : NEUTRAL.N200;
-  const hoverBgColor = isDisabled ? 'white' : NEUTRAL.N100;
+  const activeBgColor = isDisabled ? NEUTRAL.N50 : NEUTRAL.N200;
+  const hoverBgColor = isDisabled ? NEUTRAL.N50 : NEUTRAL.N100;
 
   let style = {
     color,

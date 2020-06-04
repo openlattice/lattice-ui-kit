@@ -2,18 +2,17 @@ import { css } from 'styled-components';
 
 import {
   NEUTRAL,
-  PURPLE,
   RED_1
 } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
 
 const inputStyles = css`
-  background-color: white;
+  background-color: ${NEUTRAL.N50};
   border-radius: 3px;
-  border: 1px solid ${(props) => (props.invalid ? RED_1 : NEUTRAL.N100)};
+  border: 1px solid ${(props) => (props.invalid ? RED_1 : NEUTRAL.N50)};
   box-shadow: none;
   box-sizing: border-box;
-  color: ${NEUTRAL.N700};
+  color: ${NEUTRAL.N900};
   display: flex;
   flex: 0 1 auto;
   font-size: 14px;
@@ -25,12 +24,12 @@ const inputStyles = css`
   width: ${(props) => (props.width || '100%')};
 
   :hover {
-    background-color: ${NEUTRAL.N50};
+    background-color: ${NEUTRAL.N100};
   }
 
   :focus {
     border: solid 1px ${NEUTRAL.N700};
-    background-color: white;
+    background-color: ${NEUTRAL.N00};
     outline: none;
   }
 
