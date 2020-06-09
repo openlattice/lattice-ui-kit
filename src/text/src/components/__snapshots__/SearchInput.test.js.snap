@@ -10,12 +10,12 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
 }
 
 .c2 {
-  background-color: #F2F2F4;
+  background-color: #f2f2f4;
   border-radius: 3px;
-  border: 1px solid #F2F2F4;
+  border: 1px solid #f2f2f4;
   box-shadow: none;
   box-sizing: border-box;
-  color: #1F1F22;
+  color: #1f1f22;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,47 +30,47 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
   -webkit-transition: background-color 200ms ease-out,border-color 200ms ease-out;
   transition: background-color 200ms ease-out,border-color 200ms ease-out;
   width: 100%;
-  color: #56565A;
+  color: #56565a;
   padding-left: 32px;
 }
 
 .c2:hover {
-  background-color: #DFDFE3;
+  background-color: #dfdfe3;
 }
 
 .c2:focus {
-  border: solid 1px #56565A;
-  background-color: #F9F9FC;
+  border: solid 1px #56565a;
+  background-color: #f9f9fc;
   outline: none;
 }
 
 .c2:disabled {
-  background-color: #F2F2F4;
-  color: #8B8B90;
+  background-color: #f2f2f4;
+  color: #8b8b90;
   cursor: not-allowed;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #8B8B90;
+  color: #8b8b90;
 }
 
 .c2::-moz-placeholder {
-  color: #8B8B90;
+  color: #8b8b90;
 }
 
 .c2:-ms-input-placeholder {
-  color: #8B8B90;
+  color: #8b8b90;
 }
 
 .c2::placeholder {
-  color: #8B8B90;
+  color: #8b8b90;
 }
 
 .c1 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  color: #8B8B90;
+  color: #8b8b90;
   margin-left: 11px;
   font-size: 14px;
   line-height: 14px;
@@ -122,7 +122,7 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                   "lastClassName": "c1",
                   "rules": Array [
                     "align-self:center;color:",
-                    "#8B8B90",
+                    "#8b8b90",
                     ";margin-left:11px;font-size:14px;line-height:14px;position:absolute;",
                   ],
                 },
@@ -210,11 +210,11 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                   "lastClassName": "c2",
                   "rules": Array [
                     "background-color:",
-                    "#F2F2F4",
+                    "#f2f2f4",
                     ";border-radius:3px;border:1px solid ",
                     [Function],
                     ";box-shadow:none;box-sizing:border-box;color:",
-                    "#1F1F22",
+                    "#1f1f22",
                     ";display:flex;flex:0 1 auto;font-size:14px;min-height:40px;padding:10px;text-overflow:ellipsis;transition:background-color ",
                     "200ms",
                     " ease-out,border-color ",
@@ -222,20 +222,20 @@ exports[`SearchInput snapshots should match snapshot 1`] = `
                     " ease-out;width:",
                     [Function],
                     ";:hover{background-color:",
-                    "#DFDFE3",
+                    "#dfdfe3",
                     ";}:focus{border:solid 1px ",
-                    "#56565A",
+                    "#56565a",
                     ";background-color:",
-                    "#F9F9FC",
+                    "#f9f9fc",
                     ";outline:none;}:disabled{background-color:",
-                    "#F2F2F4",
+                    "#f2f2f4",
                     ";color:",
-                    "#8B8B90",
+                    "#8b8b90",
                     ";cursor:not-allowed;}",
                     " color:",
-                    "#56565A",
+                    "#56565a",
                     ";padding-left:32px;&::placeholder{color:",
-                    "#8B8B90",
+                    "#8b8b90",
                     ";}",
                   ],
                 },

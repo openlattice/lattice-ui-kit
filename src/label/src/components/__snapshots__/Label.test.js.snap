@@ -2,7 +2,7 @@
 
 exports[`Label snapshots should match snapshot 1`] = `
 .c0 {
-  color: #56565A;
+  color: #56565a;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -27,7 +27,7 @@ exports[`Label snapshots should match snapshot 1`] = `
           "lastClassName": "c0",
           "rules": Array [
             "color:",
-            "#56565A",
+            "#56565a",
             ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
             [Function],
             ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",

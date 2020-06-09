@@ -4,7 +4,7 @@ exports[`Checkbox render matches snapshot 1`] = `
 .c4 {
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out,color 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out,color 100ms ease-out;
-  background-color: #F2F2F4;
+  background-color: #f2f2f4;
   border-radius: 3px;
   display: inline-block;
   height: 20px;
@@ -12,31 +12,31 @@ exports[`Checkbox render matches snapshot 1`] = `
 }
 
 input:hover ~ .c4 {
-  background-color: #8B8B90;
+  background-color: #8b8b90;
 }
 
 input:focus ~ .c4 {
-  box-shadow: #4F3FA7 0 0 0 2px;
+  box-shadow: #4f3fa7 0 0 0 2px;
 }
 
 input:checked ~ .c4,
 input[readonly]:checked:disabled ~ .c4,
 input[readonly]:checked:hover ~ .c4 {
-  background-color: #7654FF;
+  background-color: #7654ff;
 }
 
 input:checked:hover ~ .c4 {
-  background-color: #4F3FA7;
+  background-color: #4f3fa7;
 }
 
 input:disabled ~ .c4 {
-  background-color: #F2F2F4;
+  background-color: #f2f2f4;
   cursor: not-allowed;
 }
 
 input:checked:disabled ~ .c4 {
   cursor: not-allowed;
-  background-color: #8B8B90;
+  background-color: #8b8b90;
 }
 
 input[readonly] ~ .c4 {
@@ -83,7 +83,7 @@ input:checked ~ .c4:after {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #56565A;
+  color: #56565a;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

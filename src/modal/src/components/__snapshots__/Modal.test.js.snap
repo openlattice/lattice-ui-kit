@@ -132,7 +132,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   align-self: center;
   background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #56565A;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -151,7 +151,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c7 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -174,7 +174,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c8 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -198,7 +198,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c4 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -268,8 +268,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #7654FF;
-  border-color: #7654FF;
+  background-color: #7654ff;
+  border-color: #7654ff;
   color: white;
 }
 
@@ -277,28 +277,28 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #4F3FA7;
-  border-color: #4F3FA7;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c10:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #261E52;
-  border-color: #261E52;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c10:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c10:focus {
-  box-shadow: #261E52 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c14 {
@@ -317,38 +317,38 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #F2F2F4;
-  border-color: #F2F2F4;
-  color: #56565A;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c14:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #DFDFE3;
-  border-color: #DFDFE3;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c14:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #D1D1D6;
-  border-color: #D1D1D6;
-  color: #56565A;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c14:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c14:focus {
-  box-shadow: #D1D1D6 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c9 {
@@ -365,7 +365,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c5 {
-  color: #56565A;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -520,7 +520,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   align-self: center;
   background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #56565A;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -539,7 +539,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c7 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -562,7 +562,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c8 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -586,7 +586,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c4 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -656,8 +656,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #7654FF;
-  border-color: #7654FF;
+  background-color: #7654ff;
+  border-color: #7654ff;
   color: white;
 }
 
@@ -665,28 +665,28 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #4F3FA7;
-  border-color: #4F3FA7;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c9:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #261E52;
-  border-color: #261E52;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c9:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c9:focus {
-  box-shadow: #261E52 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c13 {
@@ -705,38 +705,38 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #F2F2F4;
-  border-color: #F2F2F4;
-  color: #56565A;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c13:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #DFDFE3;
-  border-color: #DFDFE3;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c13:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #D1D1D6;
-  border-color: #D1D1D6;
-  color: #56565A;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c13:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c13:focus {
-  box-shadow: #D1D1D6 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c10 {
@@ -753,7 +753,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c5 {
-  color: #56565A;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -1033,7 +1033,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                     "align-self:",
                                                     [Function],
                                                     ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ",
-                                                    "#56565A",
+                                                    "#56565a",
                                                     ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                     [Function],
                                                   ],
@@ -1071,7 +1071,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           "lastClassName": "c4",
                                                           "rules": Array [
                                                             "color:",
-                                                            "#56565A",
+                                                            "#56565a",
                                                             ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                             "30px",
                                                             ";position:relative;",
@@ -1107,7 +1107,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                 "lastClassName": "c5",
                                                                 "rules": Array [
                                                                   "color:",
-                                                                  "#56565A",
+                                                                  "#56565a",
                                                                   ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                 ],
                                                               },
@@ -1236,7 +1236,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           "lastClassName": "c7",
                                                           "rules": Array [
                                                             "color:",
-                                                            "#56565A",
+                                                            "#56565a",
                                                             ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                             "30px",
                                                             ";position:relative;",
@@ -1295,7 +1295,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           "lastClassName": "c8",
                                                           "rules": Array [
                                                             "color:",
-                                                            "#56565A",
+                                                            "#56565a",
                                                             ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                             "30px",
                                                             ";position:relative;",

@@ -73,8 +73,8 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #7654FF;
-  border-color: #7654FF;
+  background-color: #7654ff;
+  border-color: #7654ff;
   color: white;
 }
 
@@ -82,28 +82,28 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #4F3FA7;
-  border-color: #4F3FA7;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #261E52;
-  border-color: #261E52;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c2:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c2:focus {
-  box-shadow: #261E52 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c6 {
@@ -122,42 +122,42 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #F2F2F4;
-  border-color: #F2F2F4;
-  color: #56565A;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c6:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #DFDFE3;
-  border-color: #DFDFE3;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c6:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #D1D1D6;
-  border-color: #D1D1D6;
-  color: #56565A;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c6:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c6:focus {
-  box-shadow: #D1D1D6 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c0 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -217,7 +217,7 @@ exports[`ModalFooter snapshots should match snapshot with primary and secondary 
             "lastClassName": "c0",
             "rules": Array [
               "color:",
-              "#56565A",
+              "#56565a",
               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
               "30px",
               ";position:relative;",
@@ -684,8 +684,8 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #7654FF;
-  border-color: #7654FF;
+  background-color: #7654ff;
+  border-color: #7654ff;
   color: white;
 }
 
@@ -693,28 +693,28 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #4F3FA7;
-  border-color: #4F3FA7;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #261E52;
-  border-color: #261E52;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c2:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c2:focus {
-  box-shadow: #261E52 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c6 {
@@ -733,42 +733,42 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #F2F2F4;
-  border-color: #F2F2F4;
-  color: #56565A;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c6:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #DFDFE3;
-  border-color: #DFDFE3;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c6:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #D1D1D6;
-  border-color: #D1D1D6;
-  color: #56565A;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c6:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c6:focus {
-  box-shadow: #D1D1D6 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c0 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -828,7 +828,7 @@ exports[`ModalFooter snapshots should match snapshot with primary button disable
             "lastClassName": "c0",
             "rules": Array [
               "color:",
-              "#56565A",
+              "#56565a",
               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
               "30px",
               ";position:relative;",
@@ -1295,8 +1295,8 @@ exports[`ModalFooter snapshots should match snapshot with primary button only 1`
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #7654FF;
-  border-color: #7654FF;
+  background-color: #7654ff;
+  border-color: #7654ff;
   color: white;
 }
 
@@ -1304,32 +1304,32 @@ exports[`ModalFooter snapshots should match snapshot with primary button only 1`
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #4F3FA7;
-  border-color: #4F3FA7;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #261E52;
-  border-color: #261E52;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c2:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c2:focus {
-  box-shadow: #261E52 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c0 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1383,7 +1383,7 @@ exports[`ModalFooter snapshots should match snapshot with primary button only 1`
             "lastClassName": "c0",
             "rules": Array [
               "color:",
-              "#56565A",
+              "#56565a",
               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
               "30px",
               ";position:relative;",
@@ -1688,8 +1688,8 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #7654FF;
-  border-color: #7654FF;
+  background-color: #7654ff;
+  border-color: #7654ff;
   color: white;
 }
 
@@ -1697,28 +1697,28 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #4F3FA7;
-  border-color: #4F3FA7;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #261E52;
-  border-color: #261E52;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c2:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c2:focus {
-  box-shadow: #261E52 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c8 {
@@ -1737,42 +1737,42 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #F2F2F4;
-  border-color: #F2F2F4;
-  color: #56565A;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c8:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #DFDFE3;
-  border-color: #DFDFE3;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c8:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #D1D1D6;
-  border-color: #D1D1D6;
-  color: #56565A;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c8:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c8:focus {
-  box-shadow: #D1D1D6 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c0 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1832,7 +1832,7 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
             "lastClassName": "c0",
             "rules": Array [
               "color:",
-              "#56565A",
+              "#56565a",
               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
               "30px",
               ";position:relative;",
@@ -2040,10 +2040,10 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                                   className="c4"
                                 >
                                   <Spinner
-                                    bottomColor="#C3C3C8"
+                                    bottomColor="#c3c3c8"
                                     centered={true}
                                     size="1x"
-                                    topColor="#56565A"
+                                    topColor="#56565a"
                                   >
                                     <Rotate
                                       centered={true}
@@ -2086,7 +2086,7 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                                           <FontAwesomeIcon
                                             border={false}
                                             className=""
-                                            color="#C3C3C8"
+                                            color="#c3c3c8"
                                             fixedWidth={false}
                                             flip={null}
                                             icon={
@@ -2119,7 +2119,7 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                                             <svg
                                               aria-hidden="true"
                                               className="svg-inline--fa fa-circle fa-w-16 "
-                                              color="#C3C3C8"
+                                              color="#c3c3c8"
                                               data-icon="circle"
                                               data-prefix="fal"
                                               focusable="false"
@@ -2139,7 +2139,7 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                                           <FontAwesomeIcon
                                             border={false}
                                             className=""
-                                            color="#56565A"
+                                            color="#56565a"
                                             fixedWidth={false}
                                             flip={null}
                                             icon={
@@ -2172,7 +2172,7 @@ exports[`ModalFooter snapshots should match snapshot with primary button pending
                                             <svg
                                               aria-hidden="true"
                                               className="svg-inline--fa fa-spinner-third fa-w-16 "
-                                              color="#56565A"
+                                              color="#56565a"
                                               data-icon="spinner-third"
                                               data-prefix="fal"
                                               focusable="false"
@@ -2487,8 +2487,8 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #7654FF;
-  border-color: #7654FF;
+  background-color: #7654ff;
+  border-color: #7654ff;
   color: white;
 }
 
@@ -2496,28 +2496,28 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #4F3FA7;
-  border-color: #4F3FA7;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #261E52;
-  border-color: #261E52;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c2:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c2:focus {
-  box-shadow: #261E52 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c6 {
@@ -2536,42 +2536,42 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #F2F2F4;
-  border-color: #F2F2F4;
-  color: #56565A;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c6:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #DFDFE3;
-  border-color: #DFDFE3;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c6:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #D1D1D6;
-  border-color: #D1D1D6;
-  color: #56565A;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c6:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c6:focus {
-  box-shadow: #D1D1D6 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c0 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2631,7 +2631,7 @@ exports[`ModalFooter snapshots should match snapshot with secondary button disab
             "lastClassName": "c0",
             "rules": Array [
               "color:",
-              "#56565A",
+              "#56565a",
               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
               "30px",
               ";position:relative;",
@@ -3098,42 +3098,42 @@ exports[`ModalFooter snapshots should match snapshot with secondary button only 
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #F2F2F4;
-  border-color: #F2F2F4;
-  color: #56565A;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c2:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #DFDFE3;
-  border-color: #DFDFE3;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #D1D1D6;
-  border-color: #D1D1D6;
-  color: #56565A;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c2:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c2:focus {
-  box-shadow: #D1D1D6 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c0 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3186,7 +3186,7 @@ exports[`ModalFooter snapshots should match snapshot with secondary button only 
             "lastClassName": "c0",
             "rules": Array [
               "color:",
-              "#56565A",
+              "#56565a",
               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
               "30px",
               ";position:relative;",
@@ -3484,8 +3484,8 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #7654FF;
-  border-color: #7654FF;
+  background-color: #7654ff;
+  border-color: #7654ff;
   color: white;
 }
 
@@ -3493,28 +3493,28 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #4F3FA7;
-  border-color: #4F3FA7;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #261E52;
-  border-color: #261E52;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c2:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c2:focus {
-  box-shadow: #261E52 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c6 {
@@ -3533,42 +3533,42 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #F2F2F4;
-  border-color: #F2F2F4;
-  color: #56565A;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c6:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #DFDFE3;
-  border-color: #DFDFE3;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c6:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #D1D1D6;
-  border-color: #D1D1D6;
-  color: #56565A;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c6:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c6:focus {
-  box-shadow: #D1D1D6 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c0 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3628,7 +3628,7 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
             "lastClassName": "c0",
             "rules": Array [
               "color:",
-              "#56565A",
+              "#56565a",
               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
               "30px",
               ";position:relative;",
@@ -4029,10 +4029,10 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                                   className="c7"
                                 >
                                   <Spinner
-                                    bottomColor="#C3C3C8"
+                                    bottomColor="#c3c3c8"
                                     centered={true}
                                     size="1x"
-                                    topColor="#56565A"
+                                    topColor="#56565a"
                                   >
                                     <Rotate
                                       centered={true}
@@ -4075,7 +4075,7 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                                           <FontAwesomeIcon
                                             border={false}
                                             className=""
-                                            color="#C3C3C8"
+                                            color="#c3c3c8"
                                             fixedWidth={false}
                                             flip={null}
                                             icon={
@@ -4108,7 +4108,7 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                                             <svg
                                               aria-hidden="true"
                                               className="svg-inline--fa fa-circle fa-w-16 "
-                                              color="#C3C3C8"
+                                              color="#c3c3c8"
                                               data-icon="circle"
                                               data-prefix="fal"
                                               focusable="false"
@@ -4128,7 +4128,7 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                                           <FontAwesomeIcon
                                             border={false}
                                             className=""
-                                            color="#56565A"
+                                            color="#56565a"
                                             fixedWidth={false}
                                             flip={null}
                                             icon={
@@ -4161,7 +4161,7 @@ exports[`ModalFooter snapshots should match snapshot with secondary button pendi
                                             <svg
                                               aria-hidden="true"
                                               className="svg-inline--fa fa-spinner-third fa-w-16 "
-                                              color="#56565A"
+                                              color="#56565a"
                                               data-icon="spinner-third"
                                               data-prefix="fal"
                                               focusable="false"
@@ -4283,8 +4283,8 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #7654FF;
-  border-color: #7654FF;
+  background-color: #7654ff;
+  border-color: #7654ff;
   color: white;
 }
 
@@ -4292,28 +4292,28 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #4F3FA7;
-  border-color: #4F3FA7;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #261E52;
-  border-color: #261E52;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c2:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c2:focus {
-  box-shadow: #261E52 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c6 {
@@ -4332,42 +4332,42 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #F2F2F4;
-  border-color: #F2F2F4;
-  color: #56565A;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c6:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #DFDFE3;
-  border-color: #DFDFE3;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c6:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #D1D1D6;
-  border-color: #D1D1D6;
-  color: #56565A;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c6:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c6:focus {
-  box-shadow: #D1D1D6 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c0 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4427,7 +4427,7 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary and s
             "lastClassName": "c0",
             "rules": Array [
               "color:",
-              "#56565A",
+              "#56565a",
               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
               "30px",
               ";position:relative;",
@@ -4894,8 +4894,8 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary butto
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #7654FF;
-  border-color: #7654FF;
+  background-color: #7654ff;
+  border-color: #7654ff;
   color: white;
 }
 
@@ -4903,32 +4903,32 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary butto
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #4F3FA7;
-  border-color: #4F3FA7;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #261E52;
-  border-color: #261E52;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c2:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c2:focus {
-  box-shadow: #261E52 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c0 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4982,7 +4982,7 @@ exports[`ModalFooter snapshots should match snapshot with stretchy primary butto
             "lastClassName": "c0",
             "rules": Array [
               "color:",
-              "#56565A",
+              "#56565a",
               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
               "30px",
               ";position:relative;",
@@ -5256,42 +5256,42 @@ exports[`ModalFooter snapshots should match snapshot with stretchy secondary but
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #F2F2F4;
-  border-color: #F2F2F4;
-  color: #56565A;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c2:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #DFDFE3;
-  border-color: #DFDFE3;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c2:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #D1D1D6;
-  border-color: #D1D1D6;
-  color: #56565A;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c2:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c2:focus {
-  box-shadow: #D1D1D6 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c0 {
-  color: #56565A;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5344,7 +5344,7 @@ exports[`ModalFooter snapshots should match snapshot with stretchy secondary but
             "lastClassName": "c0",
             "rules": Array [
               "color:",
-              "#56565A",
+              "#56565a",
               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
               "30px",
               ";position:relative;",

@@ -2,9 +2,9 @@
 
 exports[`Badge snapshots default max value should be displayed 1`] = `
 .c0 {
-  background-color: #DFDFE3;
+  background-color: #dfdfe3;
   border-radius: 2em;
-  color: #56565A;
+  color: #56565a;
   font-size: 12px;
   font-weight: 600;
   padding: 0.1875em 0.5em;
@@ -62,9 +62,9 @@ exports[`Badge snapshots default max value should be displayed 1`] = `
 
 exports[`Badge snapshots should match snapshot 1`] = `
 .c0 {
-  background-color: #DFDFE3;
+  background-color: #dfdfe3;
   border-radius: 2em;
-  color: #56565A;
+  color: #56565a;
   font-size: 12px;
   font-weight: 600;
   padding: 0.1875em 0.5em;
@@ -122,9 +122,9 @@ exports[`Badge snapshots should match snapshot 1`] = `
 
 exports[`Badge snapshots text should show count and not max 1`] = `
 .c0 {
-  background-color: #DFDFE3;
+  background-color: #dfdfe3;
   border-radius: 2em;
-  color: #56565A;
+  color: #56565a;
   font-size: 12px;
   font-weight: 600;
   padding: 0.1875em 0.5em;
@@ -182,9 +182,9 @@ exports[`Badge snapshots text should show count and not max 1`] = `
 
 exports[`Badge snapshots text should show max and not count 1`] = `
 .c0 {
-  background-color: #DFDFE3;
+  background-color: #dfdfe3;
   border-radius: 2em;
-  color: #56565A;
+  color: #56565a;
   font-size: 12px;
   font-weight: 600;
   padding: 0.1875em 0.5em;

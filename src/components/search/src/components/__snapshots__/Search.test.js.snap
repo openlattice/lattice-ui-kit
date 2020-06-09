@@ -2,7 +2,7 @@
 
 exports[`Search snapshots should match snapshot 1`] = `
 .c4 {
-  color: #56565A;
+  color: #56565a;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -16,7 +16,7 @@ exports[`Search snapshots should match snapshot 1`] = `
 }
 
 .c5 {
-  color: #56565A;
+  color: #56565a;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -74,8 +74,8 @@ exports[`Search snapshots should match snapshot 1`] = `
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   width: 100%;
   white-space: nowrap;
-  background-color: #7654FF;
-  border-color: #7654FF;
+  background-color: #7654ff;
+  border-color: #7654ff;
   color: white;
 }
 
@@ -83,33 +83,33 @@ exports[`Search snapshots should match snapshot 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #4F3FA7;
-  border-color: #4F3FA7;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c6:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #261E52;
-  border-color: #261E52;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c6:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c6:focus {
-  box-shadow: #261E52 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c1 {
   background-color: white;
-  border: 1px solid #DFDFE3;
+  border: 1px solid #dfdfe3;
   border-radius: 3px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -133,7 +133,7 @@ exports[`Search snapshots should match snapshot 1`] = `
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   position: relative;
-  border-bottom: 1px solid #DFDFE3;
+  border-bottom: 1px solid #dfdfe3;
   background-color: transparent;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -232,7 +232,7 @@ exports[`Search snapshots should match snapshot 1`] = `
         "MuiFilledInput": Object {
           "input": Object {
             "&$disabled": Object {
-              "backgroundColor": "#F2F2F4",
+              "backgroundColor": "#f2f2f4",
               "cursor": "not-allowed",
             },
             "padding": "10px",
@@ -246,22 +246,22 @@ exports[`Search snapshots should match snapshot 1`] = `
           },
           "root": Object {
             "&$disabled": Object {
-              "backgroundColor": "#F2F2F4",
+              "backgroundColor": "#f2f2f4",
               "cursor": "not-allowed",
             },
             "&$error": Object {
-              "borderColor": "#ED4545",
+              "borderColor": "#ed4545",
             },
             "&$focused": Object {
-              "backgroundColor": "#F9F9FC",
-              "borderColor": "#56565A",
+              "backgroundColor": "#f9f9fc",
+              "borderColor": "#56565a",
             },
             "&:hover:not($disabled):not($focused):not($error)": Object {
-              "backgroundColor": "#DFDFE3",
-              "border": "1px solid #DFDFE3",
+              "backgroundColor": "#dfdfe3",
+              "border": "1px solid #dfdfe3",
             },
-            "backgroundColor": "#F2F2F4",
-            "border": "1px solid #F2F2F4",
+            "backgroundColor": "#f2f2f4",
+            "border": "1px solid #f2f2f4",
           },
         },
         "MuiFormHelperText": Object {
@@ -270,7 +270,7 @@ exports[`Search snapshots should match snapshot 1`] = `
           },
           "root": Object {
             "&$error": Object {
-              "color": "#ED4545",
+              "color": "#ed4545",
             },
             "fontFamily": "inherit",
             "fontSize": "12px",
@@ -284,7 +284,7 @@ exports[`Search snapshots should match snapshot 1`] = `
         "MuiInputBase": Object {
           "input": Object {
             "&$disabled": Object {
-              "color": "#8B8B90",
+              "color": "#8b8b90",
               "cursor": "not-allowed",
             },
             "padding": "10px",
@@ -297,10 +297,10 @@ exports[`Search snapshots should match snapshot 1`] = `
               "cursor": "not-allowed",
             },
             "&:hover:not($disabled):not($focused):not($error)": Object {
-              "backgroundColor": "#DFDFE3",
+              "backgroundColor": "#dfdfe3",
             },
             "borderRadius": "3px",
-            "color": "#1F1F22",
+            "color": "#1f1f22",
             "fontFamily": "inherit",
             "fontSize": "14px",
             "lineHeight": "1.5",
@@ -322,17 +322,17 @@ exports[`Search snapshots should match snapshot 1`] = `
           },
           "root": Object {
             "&$error": Object {
-              "borderColor": "#ED4545",
+              "borderColor": "#ed4545",
             },
             "&$focused": Object {
               "backgroundColor": "white",
-              "borderColor": "#56565A",
+              "borderColor": "#56565a",
             },
             "&:hover:not($disabled):not($focused):not($error)": Object {
-              "backgroundColor": "#F9F9FC",
+              "backgroundColor": "#f9f9fc",
             },
             "backgroundColor": "white",
-            "border": "1px solid #DFDFE3",
+            "border": "1px solid #dfdfe3",
           },
         },
         "MuiTouchRipple": Object {
@@ -374,7 +374,7 @@ exports[`Search snapshots should match snapshot 1`] = `
         "augmentColor": [Function],
         "background": Object {
           "default": "#fafafa",
-          "header": "#F2F2F4",
+          "header": "#f2f2f4",
           "paper": "#fff",
         },
         "common": Object {
@@ -382,7 +382,7 @@ exports[`Search snapshots should match snapshot 1`] = `
           "white": "#fff",
         },
         "contrastThreshold": 3,
-        "divider": "#DFDFE3",
+        "divider": "#dfdfe3",
         "error": Object {
           "contrastText": "#fff",
           "dark": "#d32f2f",
@@ -447,7 +447,7 @@ exports[`Search snapshots should match snapshot 1`] = `
         "text": Object {
           "disabled": "rgba(0, 0, 0, 0.38)",
           "hint": "rgba(0, 0, 0, 0.38)",
-          "primary": "#56565A",
+          "primary": "#56565a",
           "secondary": "rgba(0, 0, 0, 0.54)",
         },
         "tonalOffset": 0.2,
@@ -706,7 +706,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "background-color:white;border:1px solid ",
-                        "#DFDFE3",
+                        "#dfdfe3",
                         ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;",
                         [Function],
                         ";",
@@ -816,7 +816,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                             "lastClassName": "c5",
                                             "rules": Array [
                                               "color:",
-                                              "#56565A",
+                                              "#56565a",
                                               ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                                               [Function],
                                               ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -1057,7 +1057,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                             "lastClassName": "c5",
                                             "rules": Array [
                                               "color:",
-                                              "#56565A",
+                                              "#56565a",
                                               ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                                               [Function],
                                               ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -1298,7 +1298,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                             "lastClassName": "c5",
                                             "rules": Array [
                                               "color:",
-                                              "#56565A",
+                                              "#56565a",
                                               ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                                               [Function],
                                               ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -2067,7 +2067,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                             "lastClassName": "c5",
                                             "rules": Array [
                                               "color:",
-                                              "#56565A",
+                                              "#56565a",
                                               ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                                               [Function],
                                               ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",

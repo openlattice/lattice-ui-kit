@@ -44,38 +44,38 @@ exports[`MinusButton icon with text should match snapshot 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #F2F2F4;
-  border-color: #F2F2F4;
-  color: #56565A;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #DFDFE3;
-  border-color: #DFDFE3;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #D1D1D6;
-  border-color: #D1D1D6;
-  color: #56565A;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c0:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c0:focus {
-  box-shadow: #D1D1D6 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c3 {
@@ -389,38 +389,38 @@ exports[`MinusButton icon without text should match snapshot 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #F2F2F4;
-  border-color: #F2F2F4;
-  color: #56565A;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #DFDFE3;
-  border-color: #DFDFE3;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #D1D1D6;
-  border-color: #D1D1D6;
-  color: #56565A;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c0:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #F9F9FC;
-  border-color: #F9F9FC;
-  color: #8B8B90;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c0:focus {
-  box-shadow: #D1D1D6 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 <MinusButton>

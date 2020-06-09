@@ -8,8 +8,8 @@ exports[`Tag snapshots should match snapshot 1`] = `
   margin: 0 5px;
   padding: 0 5px;
   text-transform: uppercase;
-  background-color: #DFDFE3;
-  color: #56565A;
+  background-color: #dfdfe3;
+  color: #56565a;
 }
 
 <Tag>
