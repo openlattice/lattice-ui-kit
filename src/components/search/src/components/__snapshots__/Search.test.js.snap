@@ -15,7 +15,7 @@ exports[`Search snapshots should match snapshot 1`] = `
   margin: 5px 5px 5px 0;
 }
 
-.c6 {
+.c5 {
   color: #56565A;
   display: inline-block;
   font-size: 14px;
@@ -30,7 +30,7 @@ exports[`Search snapshots should match snapshot 1`] = `
   visibility: hidden;
 }
 
-.c9 {
+.c8 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -40,7 +40,7 @@ exports[`Search snapshots should match snapshot 1`] = `
   white-space: nowrap;
 }
 
-.c8 {
+.c7 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -57,7 +57,7 @@ exports[`Search snapshots should match snapshot 1`] = `
   min-width: 14px;
 }
 
-.c7 {
+.c6 {
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
@@ -79,7 +79,7 @@ exports[`Search snapshots should match snapshot 1`] = `
   color: white;
 }
 
-.c7:hover {
+.c6:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -87,14 +87,14 @@ exports[`Search snapshots should match snapshot 1`] = `
   border-color: #4F3FA7;
 }
 
-.c7:active {
+.c6:active {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #261E52;
   border-color: #261E52;
 }
 
-.c7:disabled {
+.c6:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -103,7 +103,7 @@ exports[`Search snapshots should match snapshot 1`] = `
   color: #8B8B90;
 }
 
-.c7:focus {
+.c6:focus {
   box-shadow: #261E52 0 0 0 2px;
 }
 
@@ -178,45 +178,6 @@ exports[`Search snapshots should match snapshot 1`] = `
   margin-bottom: 0;
 }
 
-.c5 {
-  background-color: #F2F2F4;
-  border-radius: 3px;
-  border: 1px solid #F2F2F4;
-  box-shadow: none;
-  box-sizing: border-box;
-  color: #1F1F22;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  font-size: 14px;
-  min-height: 40px;
-  padding: 10px;
-  text-overflow: ellipsis;
-  -webkit-transition: background-color 200ms ease-out,border-color 200ms ease-out;
-  transition: background-color 200ms ease-out,border-color 200ms ease-out;
-  width: 100%;
-}
-
-.c5:hover {
-  background-color: #DFDFE3;
-}
-
-.c5:focus {
-  border: solid 1px #56565A;
-  background-color: #F9F9FC;
-  outline: none;
-}
-
-.c5:disabled {
-  background-color: #F2F2F4;
-  color: #8B8B90;
-  cursor: not-allowed;
-}
-
 .c3 {
   display: grid;
   -webkit-flex: 1 1 100%;
@@ -280,6 +241,9 @@ exports[`Search snapshots should match snapshot 1`] = `
             "paddingBottom": 10,
             "paddingTop": 10,
           },
+          "multiline": Object {
+            "padding": "10px",
+          },
           "root": Object {
             "&$disabled": Object {
               "backgroundColor": "#F2F2F4",
@@ -339,8 +303,8 @@ exports[`Search snapshots should match snapshot 1`] = `
             "color": "#1F1F22",
             "fontFamily": "inherit",
             "fontSize": "14px",
-            "height": "40px",
             "lineHeight": "1.5",
+            "minHeight": "40px",
             "transition": "background-color 200ms ease-out,
         border-color 200ms ease-out",
           },
@@ -849,7 +813,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "Label-sc-130fyca-0",
                                             "isStatic": false,
-                                            "lastClassName": "c6",
+                                            "lastClassName": "c5",
                                             "rules": Array [
                                               "color:",
                                               "#56565A",
@@ -885,72 +849,196 @@ exports[`Search snapshots should match snapshot 1`] = `
                                       </label>
                                     </StyledComponent>
                                   </Label>
-                                  <Input
+                                  <ForwardRef
                                     id="luk-search-firstname"
                                     name="firstname"
                                     onChange={[Function]}
                                     value=""
                                   >
-                                    <StyledComponent
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "Input-ttuish-0",
-                                            "isStatic": false,
-                                            "lastClassName": "c5",
-                                            "rules": Array [
-                                              "background-color:",
-                                              "#F2F2F4",
-                                              ";border-radius:3px;border:1px solid ",
-                                              [Function],
-                                              ";box-shadow:none;box-sizing:border-box;color:",
-                                              "#1F1F22",
-                                              ";display:flex;flex:0 1 auto;font-size:14px;min-height:40px;padding:10px;text-overflow:ellipsis;transition:background-color ",
-                                              "200ms",
-                                              " ease-out,border-color ",
-                                              "200ms",
-                                              " ease-out;width:",
-                                              [Function],
-                                              ";:hover{background-color:",
-                                              "#DFDFE3",
-                                              ";}:focus{border:solid 1px ",
-                                              "#56565A",
-                                              ";background-color:",
-                                              "#F9F9FC",
-                                              ";outline:none;}:disabled{background-color:",
-                                              "#F2F2F4",
-                                              ";color:",
-                                              "#8B8B90",
-                                              ";cursor:not-allowed;}",
-                                            ],
-                                          },
-                                          "displayName": "Input",
-                                          "foldedComponentIds": Array [],
-                                          "render": [Function],
-                                          "styledComponentId": "Input-ttuish-0",
-                                          "target": "input",
-                                          "toString": [Function],
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
+                                    <WithStyles(ForwardRef(TextField))
+                                      fullWidth={true}
                                       id="luk-search-firstname"
                                       name="firstname"
                                       onChange={[Function]}
                                       value=""
+                                      variant="filled"
                                     >
-                                      <input
-                                        className="c5"
+                                      <ForwardRef(TextField)
+                                        classes={
+                                          Object {
+                                            "root": "MuiTextField-root",
+                                          }
+                                        }
+                                        fullWidth={true}
                                         id="luk-search-firstname"
                                         name="firstname"
                                         onChange={[Function]}
                                         value=""
-                                      />
-                                    </StyledComponent>
-                                  </Input>
+                                        variant="filled"
+                                      >
+                                        <WithStyles(ForwardRef(FormControl))
+                                          className="MuiTextField-root"
+                                          color="primary"
+                                          disabled={false}
+                                          error={false}
+                                          fullWidth={true}
+                                          required={false}
+                                          variant="filled"
+                                        >
+                                          <ForwardRef(FormControl)
+                                            className="MuiTextField-root"
+                                            classes={
+                                              Object {
+                                                "fullWidth": "MuiFormControl-fullWidth",
+                                                "marginDense": "MuiFormControl-marginDense",
+                                                "marginNormal": "MuiFormControl-marginNormal",
+                                                "root": "MuiFormControl-root",
+                                              }
+                                            }
+                                            color="primary"
+                                            disabled={false}
+                                            error={false}
+                                            fullWidth={true}
+                                            hiddenLabel={true}
+                                            required={false}
+                                            variant="filled"
+                                          >
+                                            <div
+                                              className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                                            >
+                                              <WithStyles(ForwardRef(FilledInput))
+                                                autoFocus={false}
+                                                fullWidth={true}
+                                                id="luk-search-firstname"
+                                                multiline={false}
+                                                name="firstname"
+                                                onChange={[Function]}
+                                                value=""
+                                              >
+                                                <ForwardRef(FilledInput)
+                                                  autoFocus={false}
+                                                  classes={
+                                                    Object {
+                                                      "adornedEnd": "MuiFilledInput-adornedEnd",
+                                                      "adornedStart": "MuiFilledInput-adornedStart",
+                                                      "colorSecondary": "MuiFilledInput-colorSecondary",
+                                                      "disabled": "Mui-disabled",
+                                                      "error": "Mui-error",
+                                                      "focused": "Mui-focused",
+                                                      "input": "MuiFilledInput-input",
+                                                      "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd",
+                                                      "inputAdornedStart": "MuiFilledInput-inputAdornedStart",
+                                                      "inputHiddenLabel": "MuiFilledInput-inputHiddenLabel",
+                                                      "inputMarginDense": "MuiFilledInput-inputMarginDense",
+                                                      "inputMultiline": "MuiFilledInput-inputMultiline",
+                                                      "marginDense": "MuiFilledInput-marginDense",
+                                                      "multiline": "MuiFilledInput-multiline",
+                                                      "root": "MuiFilledInput-root",
+                                                      "underline": "MuiFilledInput-underline",
+                                                    }
+                                                  }
+                                                  disableUnderline={true}
+                                                  fullWidth={true}
+                                                  id="luk-search-firstname"
+                                                  multiline={false}
+                                                  name="firstname"
+                                                  onChange={[Function]}
+                                                  value=""
+                                                >
+                                                  <WithStyles(ForwardRef(InputBase))
+                                                    autoFocus={false}
+                                                    classes={
+                                                      Object {
+                                                        "adornedEnd": "MuiFilledInput-adornedEnd",
+                                                        "adornedStart": "MuiFilledInput-adornedStart",
+                                                        "colorSecondary": "MuiFilledInput-colorSecondary",
+                                                        "disabled": "Mui-disabled",
+                                                        "error": "Mui-error",
+                                                        "focused": "Mui-focused",
+                                                        "input": "MuiFilledInput-input",
+                                                        "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd",
+                                                        "inputAdornedStart": "MuiFilledInput-inputAdornedStart",
+                                                        "inputHiddenLabel": "MuiFilledInput-inputHiddenLabel",
+                                                        "inputMarginDense": "MuiFilledInput-inputMarginDense",
+                                                        "inputMultiline": "MuiFilledInput-inputMultiline",
+                                                        "marginDense": "MuiFilledInput-marginDense",
+                                                        "multiline": "MuiFilledInput-multiline",
+                                                        "root": "MuiFilledInput-root",
+                                                        "underline": null,
+                                                      }
+                                                    }
+                                                    fullWidth={true}
+                                                    id="luk-search-firstname"
+                                                    inputComponent="input"
+                                                    multiline={false}
+                                                    name="firstname"
+                                                    onChange={[Function]}
+                                                    type="text"
+                                                    value=""
+                                                  >
+                                                    <ForwardRef(InputBase)
+                                                      autoFocus={false}
+                                                      classes={
+                                                        Object {
+                                                          "adornedEnd": "MuiInputBase-adornedEnd MuiFilledInput-adornedEnd",
+                                                          "adornedStart": "MuiInputBase-adornedStart MuiFilledInput-adornedStart",
+                                                          "colorSecondary": "MuiInputBase-colorSecondary MuiFilledInput-colorSecondary",
+                                                          "disabled": "Mui-disabled Mui-disabled",
+                                                          "error": "Mui-error Mui-error",
+                                                          "focused": "Mui-focused Mui-focused",
+                                                          "formControl": "MuiInputBase-formControl",
+                                                          "fullWidth": "MuiInputBase-fullWidth",
+                                                          "input": "MuiInputBase-input MuiFilledInput-input",
+                                                          "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd",
+                                                          "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiFilledInput-inputAdornedStart",
+                                                          "inputHiddenLabel": "MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel",
+                                                          "inputMarginDense": "MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense",
+                                                          "inputMultiline": "MuiInputBase-inputMultiline MuiFilledInput-inputMultiline",
+                                                          "inputTypeSearch": "MuiInputBase-inputTypeSearch",
+                                                          "marginDense": "MuiInputBase-marginDense MuiFilledInput-marginDense",
+                                                          "multiline": "MuiInputBase-multiline MuiFilledInput-multiline",
+                                                          "root": "MuiInputBase-root MuiFilledInput-root",
+                                                        }
+                                                      }
+                                                      fullWidth={true}
+                                                      id="luk-search-firstname"
+                                                      inputComponent="input"
+                                                      multiline={false}
+                                                      name="firstname"
+                                                      onChange={[Function]}
+                                                      type="text"
+                                                      value=""
+                                                    >
+                                                      <div
+                                                        className="MuiInputBase-root MuiFilledInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                                                        onClick={[Function]}
+                                                      >
+                                                        <input
+                                                          aria-invalid={false}
+                                                          autoFocus={false}
+                                                          className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel"
+                                                          disabled={false}
+                                                          id="luk-search-firstname"
+                                                          name="firstname"
+                                                          onAnimationStart={[Function]}
+                                                          onBlur={[Function]}
+                                                          onChange={[Function]}
+                                                          onFocus={[Function]}
+                                                          required={false}
+                                                          type="text"
+                                                          value=""
+                                                        />
+                                                      </div>
+                                                    </ForwardRef(InputBase)>
+                                                  </WithStyles(ForwardRef(InputBase))>
+                                                </ForwardRef(FilledInput)>
+                                              </WithStyles(ForwardRef(FilledInput))>
+                                            </div>
+                                          </ForwardRef(FormControl)>
+                                        </WithStyles(ForwardRef(FormControl))>
+                                      </ForwardRef(TextField)>
+                                    </WithStyles(ForwardRef(TextField))>
+                                  </ForwardRef>
                                 </div>
                                 <div
                                   key="luk-search-key-lastname"
@@ -966,7 +1054,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "Label-sc-130fyca-0",
                                             "isStatic": false,
-                                            "lastClassName": "c6",
+                                            "lastClassName": "c5",
                                             "rules": Array [
                                               "color:",
                                               "#56565A",
@@ -1002,72 +1090,196 @@ exports[`Search snapshots should match snapshot 1`] = `
                                       </label>
                                     </StyledComponent>
                                   </Label>
-                                  <Input
+                                  <ForwardRef
                                     id="luk-search-lastname"
                                     name="lastname"
                                     onChange={[Function]}
                                     value=""
                                   >
-                                    <StyledComponent
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "Input-ttuish-0",
-                                            "isStatic": false,
-                                            "lastClassName": "c5",
-                                            "rules": Array [
-                                              "background-color:",
-                                              "#F2F2F4",
-                                              ";border-radius:3px;border:1px solid ",
-                                              [Function],
-                                              ";box-shadow:none;box-sizing:border-box;color:",
-                                              "#1F1F22",
-                                              ";display:flex;flex:0 1 auto;font-size:14px;min-height:40px;padding:10px;text-overflow:ellipsis;transition:background-color ",
-                                              "200ms",
-                                              " ease-out,border-color ",
-                                              "200ms",
-                                              " ease-out;width:",
-                                              [Function],
-                                              ";:hover{background-color:",
-                                              "#DFDFE3",
-                                              ";}:focus{border:solid 1px ",
-                                              "#56565A",
-                                              ";background-color:",
-                                              "#F9F9FC",
-                                              ";outline:none;}:disabled{background-color:",
-                                              "#F2F2F4",
-                                              ";color:",
-                                              "#8B8B90",
-                                              ";cursor:not-allowed;}",
-                                            ],
-                                          },
-                                          "displayName": "Input",
-                                          "foldedComponentIds": Array [],
-                                          "render": [Function],
-                                          "styledComponentId": "Input-ttuish-0",
-                                          "target": "input",
-                                          "toString": [Function],
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
+                                    <WithStyles(ForwardRef(TextField))
+                                      fullWidth={true}
                                       id="luk-search-lastname"
                                       name="lastname"
                                       onChange={[Function]}
                                       value=""
+                                      variant="filled"
                                     >
-                                      <input
-                                        className="c5"
+                                      <ForwardRef(TextField)
+                                        classes={
+                                          Object {
+                                            "root": "MuiTextField-root",
+                                          }
+                                        }
+                                        fullWidth={true}
                                         id="luk-search-lastname"
                                         name="lastname"
                                         onChange={[Function]}
                                         value=""
-                                      />
-                                    </StyledComponent>
-                                  </Input>
+                                        variant="filled"
+                                      >
+                                        <WithStyles(ForwardRef(FormControl))
+                                          className="MuiTextField-root"
+                                          color="primary"
+                                          disabled={false}
+                                          error={false}
+                                          fullWidth={true}
+                                          required={false}
+                                          variant="filled"
+                                        >
+                                          <ForwardRef(FormControl)
+                                            className="MuiTextField-root"
+                                            classes={
+                                              Object {
+                                                "fullWidth": "MuiFormControl-fullWidth",
+                                                "marginDense": "MuiFormControl-marginDense",
+                                                "marginNormal": "MuiFormControl-marginNormal",
+                                                "root": "MuiFormControl-root",
+                                              }
+                                            }
+                                            color="primary"
+                                            disabled={false}
+                                            error={false}
+                                            fullWidth={true}
+                                            hiddenLabel={true}
+                                            required={false}
+                                            variant="filled"
+                                          >
+                                            <div
+                                              className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                                            >
+                                              <WithStyles(ForwardRef(FilledInput))
+                                                autoFocus={false}
+                                                fullWidth={true}
+                                                id="luk-search-lastname"
+                                                multiline={false}
+                                                name="lastname"
+                                                onChange={[Function]}
+                                                value=""
+                                              >
+                                                <ForwardRef(FilledInput)
+                                                  autoFocus={false}
+                                                  classes={
+                                                    Object {
+                                                      "adornedEnd": "MuiFilledInput-adornedEnd",
+                                                      "adornedStart": "MuiFilledInput-adornedStart",
+                                                      "colorSecondary": "MuiFilledInput-colorSecondary",
+                                                      "disabled": "Mui-disabled",
+                                                      "error": "Mui-error",
+                                                      "focused": "Mui-focused",
+                                                      "input": "MuiFilledInput-input",
+                                                      "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd",
+                                                      "inputAdornedStart": "MuiFilledInput-inputAdornedStart",
+                                                      "inputHiddenLabel": "MuiFilledInput-inputHiddenLabel",
+                                                      "inputMarginDense": "MuiFilledInput-inputMarginDense",
+                                                      "inputMultiline": "MuiFilledInput-inputMultiline",
+                                                      "marginDense": "MuiFilledInput-marginDense",
+                                                      "multiline": "MuiFilledInput-multiline",
+                                                      "root": "MuiFilledInput-root",
+                                                      "underline": "MuiFilledInput-underline",
+                                                    }
+                                                  }
+                                                  disableUnderline={true}
+                                                  fullWidth={true}
+                                                  id="luk-search-lastname"
+                                                  multiline={false}
+                                                  name="lastname"
+                                                  onChange={[Function]}
+                                                  value=""
+                                                >
+                                                  <WithStyles(ForwardRef(InputBase))
+                                                    autoFocus={false}
+                                                    classes={
+                                                      Object {
+                                                        "adornedEnd": "MuiFilledInput-adornedEnd",
+                                                        "adornedStart": "MuiFilledInput-adornedStart",
+                                                        "colorSecondary": "MuiFilledInput-colorSecondary",
+                                                        "disabled": "Mui-disabled",
+                                                        "error": "Mui-error",
+                                                        "focused": "Mui-focused",
+                                                        "input": "MuiFilledInput-input",
+                                                        "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd",
+                                                        "inputAdornedStart": "MuiFilledInput-inputAdornedStart",
+                                                        "inputHiddenLabel": "MuiFilledInput-inputHiddenLabel",
+                                                        "inputMarginDense": "MuiFilledInput-inputMarginDense",
+                                                        "inputMultiline": "MuiFilledInput-inputMultiline",
+                                                        "marginDense": "MuiFilledInput-marginDense",
+                                                        "multiline": "MuiFilledInput-multiline",
+                                                        "root": "MuiFilledInput-root",
+                                                        "underline": null,
+                                                      }
+                                                    }
+                                                    fullWidth={true}
+                                                    id="luk-search-lastname"
+                                                    inputComponent="input"
+                                                    multiline={false}
+                                                    name="lastname"
+                                                    onChange={[Function]}
+                                                    type="text"
+                                                    value=""
+                                                  >
+                                                    <ForwardRef(InputBase)
+                                                      autoFocus={false}
+                                                      classes={
+                                                        Object {
+                                                          "adornedEnd": "MuiInputBase-adornedEnd MuiFilledInput-adornedEnd",
+                                                          "adornedStart": "MuiInputBase-adornedStart MuiFilledInput-adornedStart",
+                                                          "colorSecondary": "MuiInputBase-colorSecondary MuiFilledInput-colorSecondary",
+                                                          "disabled": "Mui-disabled Mui-disabled",
+                                                          "error": "Mui-error Mui-error",
+                                                          "focused": "Mui-focused Mui-focused",
+                                                          "formControl": "MuiInputBase-formControl",
+                                                          "fullWidth": "MuiInputBase-fullWidth",
+                                                          "input": "MuiInputBase-input MuiFilledInput-input",
+                                                          "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd",
+                                                          "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiFilledInput-inputAdornedStart",
+                                                          "inputHiddenLabel": "MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel",
+                                                          "inputMarginDense": "MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense",
+                                                          "inputMultiline": "MuiInputBase-inputMultiline MuiFilledInput-inputMultiline",
+                                                          "inputTypeSearch": "MuiInputBase-inputTypeSearch",
+                                                          "marginDense": "MuiInputBase-marginDense MuiFilledInput-marginDense",
+                                                          "multiline": "MuiInputBase-multiline MuiFilledInput-multiline",
+                                                          "root": "MuiInputBase-root MuiFilledInput-root",
+                                                        }
+                                                      }
+                                                      fullWidth={true}
+                                                      id="luk-search-lastname"
+                                                      inputComponent="input"
+                                                      multiline={false}
+                                                      name="lastname"
+                                                      onChange={[Function]}
+                                                      type="text"
+                                                      value=""
+                                                    >
+                                                      <div
+                                                        className="MuiInputBase-root MuiFilledInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                                                        onClick={[Function]}
+                                                      >
+                                                        <input
+                                                          aria-invalid={false}
+                                                          autoFocus={false}
+                                                          className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel"
+                                                          disabled={false}
+                                                          id="luk-search-lastname"
+                                                          name="lastname"
+                                                          onAnimationStart={[Function]}
+                                                          onBlur={[Function]}
+                                                          onChange={[Function]}
+                                                          onFocus={[Function]}
+                                                          required={false}
+                                                          type="text"
+                                                          value=""
+                                                        />
+                                                      </div>
+                                                    </ForwardRef(InputBase)>
+                                                  </WithStyles(ForwardRef(InputBase))>
+                                                </ForwardRef(FilledInput)>
+                                              </WithStyles(ForwardRef(FilledInput))>
+                                            </div>
+                                          </ForwardRef(FormControl)>
+                                        </WithStyles(ForwardRef(FormControl))>
+                                      </ForwardRef(TextField)>
+                                    </WithStyles(ForwardRef(TextField))>
+                                  </ForwardRef>
                                 </div>
                                 <div
                                   key="luk-search-key-dob"
@@ -1083,7 +1295,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "Label-sc-130fyca-0",
                                             "isStatic": false,
-                                            "lastClassName": "c6",
+                                            "lastClassName": "c5",
                                             "rules": Array [
                                               "color:",
                                               "#56565A",
@@ -1852,7 +2064,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                           "componentStyle": ComponentStyle {
                                             "componentId": "Label-sc-130fyca-0",
                                             "isStatic": false,
-                                            "lastClassName": "c6",
+                                            "lastClassName": "c5",
                                             "rules": Array [
                                               "color:",
                                               "#56565A",
@@ -1881,7 +2093,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                       stealth={true}
                                     >
                                       <label
-                                        className="c6"
+                                        className="c5"
                                       >
                                         Submit
                                       </label>
@@ -1914,7 +2126,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                             "componentStyle": ComponentStyle {
                                               "componentId": "StyledButton-sc-1etazn9-0",
                                               "isStatic": false,
-                                              "lastClassName": "c7",
+                                              "lastClassName": "c6",
                                               "rules": Array [
                                                 "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
                                                 "100ms",
@@ -1956,7 +2168,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                         type="submit"
                                       >
                                         <button
-                                          className="c7"
+                                          className="c6"
                                           disabled={false}
                                           mode="primary"
                                           onClick={[Function]}
@@ -1971,7 +2183,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "ContentWrapper-sc-36hfub-0",
                                                     "isStatic": false,
-                                                    "lastClassName": "c8",
+                                                    "lastClassName": "c7",
                                                     "rules": Array [
                                                       "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
                                                     ],
@@ -1989,7 +2201,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                               forwardedRef={null}
                                             >
                                               <span
-                                                className="c8"
+                                                className="c7"
                                               >
                                                 <Content
                                                   isLoading={false}
@@ -2002,7 +2214,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "Content-sc-18psqsj-0",
                                                           "isStatic": false,
-                                                          "lastClassName": "c9",
+                                                          "lastClassName": "c8",
                                                           "rules": Array [
                                                             "flex:1 1 auto;opacity:",
                                                             [Function],
@@ -2023,7 +2235,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                     isLoading={false}
                                                   >
                                                     <span
-                                                      className="c9"
+                                                      className="c8"
                                                     >
                                                       Search
                                                     </span>

@@ -51,6 +51,9 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "paddingBottom": 10,
             "paddingTop": 10,
           },
+          "multiline": Object {
+            "padding": "10px",
+          },
           "root": Object {
             "&$disabled": Object {
               "backgroundColor": "#F2F2F4",
@@ -110,8 +113,8 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "color": "#1F1F22",
             "fontFamily": "inherit",
             "fontSize": "14px",
-            "height": "40px",
             "lineHeight": "1.5",
+            "minHeight": "40px",
             "transition": "background-color 200ms ease-out,
         border-color 200ms ease-out",
           },

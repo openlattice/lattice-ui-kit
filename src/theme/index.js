@@ -27,7 +27,7 @@ const lightTheme = createMuiTheme({
         borderRadius: '3px',
         fontFamily: 'inherit',
         fontSize: '14px',
-        height: '40px',
+        minHeight: '40px',
         lineHeight: '1.5',
         transition: `background-color ${duration.standard} ease-out,
         border-color ${duration.standard} ease-out`,
@@ -80,6 +80,9 @@ const lightTheme = createMuiTheme({
           cursor: 'not-allowed',
           backgroundColor: NEUTRAL.N50,
         }
+      },
+      multiline: {
+        padding: '10px'
       },
       inputHiddenLabel: {
         paddingTop: 10,

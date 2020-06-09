@@ -1,7 +1,8 @@
 import React from 'react';
+
 import styled from 'styled-components';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { storiesOf } from '@storybook/react';
 
 import Label from '../../label';
 import { Card, CardSegment } from '../../layout';
@@ -35,7 +36,7 @@ storiesOf('Text', module)
             <Input id="story-defaultvalue" defaultValue="OpenLattice" />
 
             <Label htmlFor="story-invalid">Invalid value</Label>
-            <Input invalid id="story-invalid" defaultValue="ecittaLnepO" />
+            <Input error id="story-invalid" defaultValue="ecittaLnepO" />
 
             <Label htmlFor="story-width">Width</Label>
             <Input id="story-width" defaultValue="ecittaLnepO" width="200px" />
@@ -72,7 +73,7 @@ storiesOf('Text', module)
             <TextArea id="story-defaultvalue" defaultValue="OpenLattice" />
 
             <Label htmlFor="story-invalid">Invalid value</Label>
-            <TextArea invalid id="story-invalid" defaultValue="ecittaLnepO" />
+            <TextArea error id="story-invalid" defaultValue="ecittaLnepO" />
 
             <Label htmlFor="story-width">Width</Label>
             <TextArea id="story-width" defaultValue="ecittaLnepO" width="200px" />
