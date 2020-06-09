@@ -3,7 +3,6 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 import {
   NEUTRAL,
-  PURPLE,
   RED,
 } from '../colors';
 import { duration } from '../style/transitions';
@@ -24,7 +23,7 @@ const lightTheme = createMuiTheme({
     },
     MuiInputBase: {
       root: {
-        backgroundColor: NEUTRAL.N50,
+        color: NEUTRAL.N900,
         borderRadius: '3px',
         fontFamily: 'inherit',
         fontSize: '14px',
@@ -35,19 +34,19 @@ const lightTheme = createMuiTheme({
         '&:hover:not($disabled):not($focused):not($error)': {
           backgroundColor: NEUTRAL.N100
         },
-        '&$focused:not($disabled)': {
-          backgroundColor: 'white'
-        },
         '&$disabled': {
-          cursor: 'not-allowed'
+          cursor: 'not-allowed',
         }
       },
       input: {
-        color: NEUTRAL.N700,
+        padding: '10px',
         '&$disabled': {
           color: NEUTRAL.N500,
-          cursor: 'not-allowed'
+          cursor: 'not-allowed',
         }
+      },
+      inputHiddenLabel: {
+        padding: 0
       }
     },
     MuiIconButton: {
@@ -55,11 +54,48 @@ const lightTheme = createMuiTheme({
         padding: '5px'
       }
     },
+    MuiFilledInput: {
+      root: {
+        backgroundColor: NEUTRAL.N50,
+        border: `1px solid ${NEUTRAL.N50}`,
+        '&:hover:not($disabled):not($focused):not($error)': {
+          backgroundColor: NEUTRAL.N100,
+          border: `1px solid ${NEUTRAL.N100}`,
+        },
+        '&$focused': {
+          borderColor: NEUTRAL.N700,
+          backgroundColor: NEUTRAL.N00,
+        },
+        '&$error': {
+          borderColor: RED.R300
+        },
+        '&$disabled': {
+          cursor: 'not-allowed',
+          backgroundColor: NEUTRAL.N50,
+        }
+      },
+      input: {
+        padding: '10px',
+        '&$disabled': {
+          cursor: 'not-allowed',
+          backgroundColor: NEUTRAL.N50,
+        }
+      },
+      inputHiddenLabel: {
+        paddingTop: 10,
+        paddingBottom: 10,
+      }
+    },
     MuiOutlinedInput: {
       root: {
+        backgroundColor: 'white',
         border: `1px solid ${NEUTRAL.N100}`,
+        '&:hover:not($disabled):not($focused):not($error)': {
+          backgroundColor: NEUTRAL.N00
+        },
         '&$focused': {
-          borderColor: PURPLE.P300,
+          borderColor: NEUTRAL.N700,
+          backgroundColor: 'white',
         },
         '&$error': {
           borderColor: RED.R300
@@ -67,6 +103,10 @@ const lightTheme = createMuiTheme({
       },
       input: {
         padding: '10px'
+      },
+      inputHiddenLabel: {
+        paddingTop: 10,
+        paddingBottom: 10,
       },
       notchedOutline: {
         visibility: 'hidden'
@@ -112,6 +152,9 @@ const lightTheme = createMuiTheme({
     MuiOutlinedInput: {
       notched: false
     },
+    MuiFilledInput: {
+      disableUnderline: true
+    }
   }
 });
 
@@ -151,6 +194,7 @@ const darkTheme = createMuiTheme({
         }
       },
       input: {
+        padding: '10px',
         '&$disabled': {
           cursor: 'not-allowed'
         }
@@ -214,6 +258,9 @@ const darkTheme = createMuiTheme({
     },
     MuiOutlinedInput: {
       notched: false
+    },
+    MuiFilledInput: {
+      disableUnderline: true
     }
   },
   typography: {
