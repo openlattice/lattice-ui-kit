@@ -39,13 +39,48 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         },
       },
       "overrides": Object {
+        "MuiFilledInput": Object {
+          "input": Object {
+            "&$disabled": Object {
+              "backgroundColor": "#f2f2f4",
+              "cursor": "not-allowed",
+            },
+            "padding": "10px",
+          },
+          "inputHiddenLabel": Object {
+            "paddingBottom": 10,
+            "paddingTop": 10,
+          },
+          "multiline": Object {
+            "padding": "10px",
+          },
+          "root": Object {
+            "&$disabled": Object {
+              "backgroundColor": "#f2f2f4",
+              "cursor": "not-allowed",
+            },
+            "&$error": Object {
+              "borderColor": "#ed4545",
+            },
+            "&$focused": Object {
+              "backgroundColor": "#f9f9fc",
+              "borderColor": "#56565a",
+            },
+            "&:hover:not($disabled):not($focused):not($error)": Object {
+              "backgroundColor": "#dfdfe3",
+              "border": "1px solid #dfdfe3",
+            },
+            "backgroundColor": "#f2f2f4",
+            "border": "1px solid #f2f2f4",
+          },
+        },
         "MuiFormHelperText": Object {
           "contained": Object {
             "margin": "5px 10px 0",
           },
           "root": Object {
             "&$error": Object {
-              "color": "#ff3c5d",
+              "color": "#ed4545",
             },
             "fontFamily": "inherit",
             "fontSize": "12px",
@@ -59,27 +94,27 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         "MuiInputBase": Object {
           "input": Object {
             "&$disabled": Object {
-              "color": "#8e929b",
+              "color": "#8b8b90",
               "cursor": "not-allowed",
             },
-            "color": "#555e6f",
+            "padding": "10px",
+          },
+          "inputHiddenLabel": Object {
+            "padding": 0,
           },
           "root": Object {
             "&$disabled": Object {
               "cursor": "not-allowed",
             },
-            "&$focused:not($disabled)": Object {
-              "backgroundColor": "#ffffff",
-            },
             "&:hover:not($disabled):not($focused):not($error)": Object {
-              "backgroundColor": "#f0f0f7",
+              "backgroundColor": "#dfdfe3",
             },
-            "backgroundColor": "#f9f9fd",
             "borderRadius": "3px",
+            "color": "#1f1f22",
             "fontFamily": "inherit",
             "fontSize": "14px",
-            "height": "40px",
             "lineHeight": "1.5",
+            "minHeight": "40px",
             "transition": "background-color 200ms ease-out,
         border-color 200ms ease-out",
           },
@@ -88,17 +123,47 @@ exports[`DateTimePicker render matches snapshot 1`] = `
           "input": Object {
             "padding": "10px",
           },
+          "inputHiddenLabel": Object {
+            "paddingBottom": 10,
+            "paddingTop": 10,
+          },
           "notchedOutline": Object {
             "visibility": "hidden",
           },
           "root": Object {
             "&$error": Object {
-              "borderColor": "#ff3c5d",
+              "borderColor": "#ed4545",
             },
             "&$focused": Object {
-              "borderColor": "#6124e2",
+              "backgroundColor": "white",
+              "borderColor": "#56565a",
             },
-            "border": "1px solid #dcdce7",
+            "&:hover:not($disabled):not($focused):not($error)": Object {
+              "backgroundColor": "#f9f9fc",
+            },
+            "backgroundColor": "white",
+            "border": "1px solid #dfdfe3",
+          },
+        },
+        "MuiTouchRipple": Object {
+          "@keyframes enter": Object {
+            "0%": Object {
+              "opacity": 0.1,
+              "transform": "scale(1)",
+            },
+            "100%": Object {
+              "opacity": 0.3,
+              "transform": "scale(1)",
+            },
+          },
+          "child": Object {
+            "borderRadius": 0,
+          },
+          "childLeaving": Object {
+            "animationDuration": "200ms",
+          },
+          "rippleVisible": Object {
+            "animationDuration": "200ms",
           },
         },
       },
@@ -119,7 +184,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         "augmentColor": [Function],
         "background": Object {
           "default": "#fafafa",
-          "header": "#f0f0f7",
+          "header": "#f2f2f4",
           "paper": "#fff",
         },
         "common": Object {
@@ -127,7 +192,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
           "white": "#fff",
         },
         "contrastThreshold": 3,
-        "divider": "#E1E1EB",
+        "divider": "#dfdfe3",
         "error": Object {
           "contrastText": "#fff",
           "dark": "#d32f2f",
@@ -192,7 +257,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         "text": Object {
           "disabled": "rgba(0, 0, 0, 0.38)",
           "hint": "rgba(0, 0, 0, 0.38)",
-          "primary": "#555e6f",
+          "primary": "#56565a",
           "secondary": "rgba(0, 0, 0, 0.54)",
         },
         "tonalOffset": 0.2,
@@ -205,6 +270,9 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         },
       },
       "props": Object {
+        "MuiFilledInput": Object {
+          "disableUnderline": true,
+        },
         "MuiFormControl": Object {
           "fullWidth": true,
           "hiddenLabel": true,
@@ -403,7 +471,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         disabled={false}
         format="MM/dd/yyyy hh:mm a"
         fullWidth={true}
-        inputVariant="outlined"
+        inputVariant="filled"
         invalidDateMessage="Invalid Date Format"
         mask="__/__/____ __:__ _M"
         maxDate={2100-01-01T00:00:00.000Z}
@@ -447,7 +515,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
           disabled={false}
           format="MM/dd/yyyy hh:mm a"
           fullWidth={true}
-          inputVariant="outlined"
+          inputVariant="filled"
           mask="__/__/____ __:__ _M"
           onAccept={[Function]}
           onClear={[Function]}
@@ -480,7 +548,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             disabled={false}
             format="MM/dd/yyyy hh:mm a"
             fullWidth={true}
-            inputVariant="outlined"
+            inputVariant="filled"
             mask="__/__/____ __:__ _M"
             onAccept={[Function]}
             onClear={[Function]}
@@ -506,7 +574,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                 Object {
                   "current": <input
                     aria-invalid="false"
-                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                    class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                     placeholder="MM/DD/YYYY HH:MM AM"
                     type="text"
                     value=""
@@ -514,7 +582,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                 }
               }
               inputValue=""
-              inputVariant="outlined"
+              inputVariant="filled"
               keyboardIcon={<KeyboardIcon />}
               mask="__/__/____ __:__ _M"
               onChange={[Function]}
@@ -555,7 +623,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                     Object {
                       "current": <input
                         aria-invalid="false"
-                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                         placeholder="MM/DD/YYYY HH:MM AM"
                         type="text"
                         value=""
@@ -565,7 +633,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                   onChange={[Function]}
                   placeholder="MM/DD/YYYY HH:MM AM"
                   value=""
-                  variant="outlined"
+                  variant="filled"
                 >
                   <ForwardRef(TextField)
                     InputProps={
@@ -597,7 +665,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                       Object {
                         "current": <input
                           aria-invalid="false"
-                          class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                          class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                           placeholder="MM/DD/YYYY HH:MM AM"
                           type="text"
                           value=""
@@ -607,7 +675,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                     onChange={[Function]}
                     placeholder="MM/DD/YYYY HH:MM AM"
                     value=""
-                    variant="outlined"
+                    variant="filled"
                   >
                     <WithStyles(ForwardRef(FormControl))
                       className="MuiTextField-root"
@@ -616,7 +684,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                       error={false}
                       fullWidth={true}
                       required={false}
-                      variant="outlined"
+                      variant="filled"
                     >
                       <ForwardRef(FormControl)
                         className="MuiTextField-root"
@@ -634,12 +702,12 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                         fullWidth={true}
                         hiddenLabel={true}
                         required={false}
-                        variant="outlined"
+                        variant="filled"
                       >
                         <div
                           className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
                         >
-                          <WithStyles(ForwardRef(OutlinedInput))
+                          <WithStyles(ForwardRef(FilledInput))
                             autoFocus={false}
                             endAdornment={
                               <WithStyles(ForwardRef(InputAdornment))
@@ -658,7 +726,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                               Object {
                                 "current": <input
                                   aria-invalid="false"
-                                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                  class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                                   placeholder="MM/DD/YYYY HH:MM AM"
                                   type="text"
                                   value=""
@@ -672,27 +740,29 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                             placeholder="MM/DD/YYYY HH:MM AM"
                             value=""
                           >
-                            <ForwardRef(OutlinedInput)
+                            <ForwardRef(FilledInput)
                               autoFocus={false}
                               classes={
                                 Object {
-                                  "adornedEnd": "MuiOutlinedInput-adornedEnd",
-                                  "adornedStart": "MuiOutlinedInput-adornedStart",
-                                  "colorSecondary": "MuiOutlinedInput-colorSecondary",
+                                  "adornedEnd": "MuiFilledInput-adornedEnd",
+                                  "adornedStart": "MuiFilledInput-adornedStart",
+                                  "colorSecondary": "MuiFilledInput-colorSecondary",
                                   "disabled": "Mui-disabled",
                                   "error": "Mui-error",
                                   "focused": "Mui-focused",
-                                  "input": "MuiOutlinedInput-input",
-                                  "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
-                                  "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
-                                  "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
-                                  "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                  "marginDense": "MuiOutlinedInput-marginDense",
-                                  "multiline": "MuiOutlinedInput-multiline",
-                                  "notchedOutline": "MuiOutlinedInput-notchedOutline",
-                                  "root": "MuiOutlinedInput-root",
+                                  "input": "MuiFilledInput-input",
+                                  "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd",
+                                  "inputAdornedStart": "MuiFilledInput-inputAdornedStart",
+                                  "inputHiddenLabel": "MuiFilledInput-inputHiddenLabel",
+                                  "inputMarginDense": "MuiFilledInput-inputMarginDense",
+                                  "inputMultiline": "MuiFilledInput-inputMultiline",
+                                  "marginDense": "MuiFilledInput-marginDense",
+                                  "multiline": "MuiFilledInput-multiline",
+                                  "root": "MuiFilledInput-root",
+                                  "underline": "MuiFilledInput-underline",
                                 }
                               }
+                              disableUnderline={true}
                               endAdornment={
                                 <WithStyles(ForwardRef(InputAdornment))
                                   position="end"
@@ -710,7 +780,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                 Object {
                                   "current": <input
                                     aria-invalid="false"
-                                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                    class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                                     placeholder="MM/DD/YYYY HH:MM AM"
                                     type="text"
                                     value=""
@@ -718,7 +788,6 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                 }
                               }
                               multiline={false}
-                              notched={false}
                               onBlur={[Function]}
                               onChange={[Function]}
                               onKeyDown={[Function]}
@@ -729,21 +798,22 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                 autoFocus={false}
                                 classes={
                                   Object {
-                                    "adornedEnd": "MuiOutlinedInput-adornedEnd",
-                                    "adornedStart": "MuiOutlinedInput-adornedStart",
-                                    "colorSecondary": "MuiOutlinedInput-colorSecondary",
+                                    "adornedEnd": "MuiFilledInput-adornedEnd",
+                                    "adornedStart": "MuiFilledInput-adornedStart",
+                                    "colorSecondary": "MuiFilledInput-colorSecondary",
                                     "disabled": "Mui-disabled",
                                     "error": "Mui-error",
                                     "focused": "Mui-focused",
-                                    "input": "MuiOutlinedInput-input",
-                                    "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
-                                    "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
-                                    "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
-                                    "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                    "marginDense": "MuiOutlinedInput-marginDense",
-                                    "multiline": "MuiOutlinedInput-multiline",
-                                    "notchedOutline": null,
-                                    "root": "MuiOutlinedInput-root",
+                                    "input": "MuiFilledInput-input",
+                                    "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd",
+                                    "inputAdornedStart": "MuiFilledInput-inputAdornedStart",
+                                    "inputHiddenLabel": "MuiFilledInput-inputHiddenLabel",
+                                    "inputMarginDense": "MuiFilledInput-inputMarginDense",
+                                    "inputMultiline": "MuiFilledInput-inputMultiline",
+                                    "marginDense": "MuiFilledInput-marginDense",
+                                    "multiline": "MuiFilledInput-multiline",
+                                    "root": "MuiFilledInput-root",
+                                    "underline": null,
                                   }
                                 }
                                 endAdornment={
@@ -764,7 +834,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                   Object {
                                     "current": <input
                                       aria-invalid="false"
-                                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                      class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                                       placeholder="MM/DD/YYYY HH:MM AM"
                                       type="text"
                                       value=""
@@ -776,7 +846,6 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                 onChange={[Function]}
                                 onKeyDown={[Function]}
                                 placeholder="MM/DD/YYYY HH:MM AM"
-                                renderSuffix={[Function]}
                                 type="text"
                                 value=""
                               >
@@ -784,24 +853,24 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                   autoFocus={false}
                                   classes={
                                     Object {
-                                      "adornedEnd": "MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd",
-                                      "adornedStart": "MuiInputBase-adornedStart MuiOutlinedInput-adornedStart",
-                                      "colorSecondary": "MuiInputBase-colorSecondary MuiOutlinedInput-colorSecondary",
+                                      "adornedEnd": "MuiInputBase-adornedEnd MuiFilledInput-adornedEnd",
+                                      "adornedStart": "MuiInputBase-adornedStart MuiFilledInput-adornedStart",
+                                      "colorSecondary": "MuiInputBase-colorSecondary MuiFilledInput-colorSecondary",
                                       "disabled": "Mui-disabled Mui-disabled",
                                       "error": "Mui-error Mui-error",
                                       "focused": "Mui-focused Mui-focused",
                                       "formControl": "MuiInputBase-formControl",
                                       "fullWidth": "MuiInputBase-fullWidth",
-                                      "input": "MuiInputBase-input MuiOutlinedInput-input",
-                                      "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd",
-                                      "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
-                                      "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
-                                      "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
-                                      "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                      "input": "MuiInputBase-input MuiFilledInput-input",
+                                      "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd",
+                                      "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiFilledInput-inputAdornedStart",
+                                      "inputHiddenLabel": "MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel",
+                                      "inputMarginDense": "MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense",
+                                      "inputMultiline": "MuiInputBase-inputMultiline MuiFilledInput-inputMultiline",
                                       "inputTypeSearch": "MuiInputBase-inputTypeSearch",
-                                      "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
-                                      "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
-                                      "root": "MuiInputBase-root MuiOutlinedInput-root",
+                                      "marginDense": "MuiInputBase-marginDense MuiFilledInput-marginDense",
+                                      "multiline": "MuiInputBase-multiline MuiFilledInput-multiline",
+                                      "root": "MuiInputBase-root MuiFilledInput-root",
                                     }
                                   }
                                   endAdornment={
@@ -822,7 +891,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                     Object {
                                       "current": <input
                                         aria-invalid="false"
-                                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                                         placeholder="MM/DD/YYYY HH:MM AM"
                                         type="text"
                                         value=""
@@ -834,18 +903,17 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                   onChange={[Function]}
                                   onKeyDown={[Function]}
                                   placeholder="MM/DD/YYYY HH:MM AM"
-                                  renderSuffix={[Function]}
                                   type="text"
                                   value=""
                                 >
                                   <div
-                                    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                                    className="MuiInputBase-root MuiFilledInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
                                     onClick={[Function]}
                                   >
                                     <input
                                       aria-invalid={false}
                                       autoFocus={false}
-                                      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                      className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                                       disabled={false}
                                       onAnimationStart={[Function]}
                                       onBlur={[Function]}
@@ -875,7 +943,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                         position="end"
                                       >
                                         <div
-                                          className="MuiInputAdornment-root MuiInputAdornment-hiddenLabel MuiInputAdornment-positionEnd"
+                                          className="MuiInputAdornment-root MuiInputAdornment-hiddenLabel MuiInputAdornment-filled MuiInputAdornment-positionEnd"
                                         >
                                           <WithStyles(ForwardRef(IconButton))
                                             disabled={false}
@@ -1011,57 +1079,11 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                         </div>
                                       </ForwardRef(InputAdornment)>
                                     </WithStyles(ForwardRef(InputAdornment))>
-                                    <WithStyles(ForwardRef(NotchedOutline))
-                                      className="MuiOutlinedInput-notchedOutline"
-                                      labelWidth={0}
-                                      notched={false}
-                                    >
-                                      <ForwardRef(NotchedOutline)
-                                        className="MuiOutlinedInput-notchedOutline"
-                                        classes={
-                                          Object {
-                                            "legend": "PrivateNotchedOutline-legend-68",
-                                            "legendLabelled": "PrivateNotchedOutline-legendLabelled-69",
-                                            "legendNotched": "PrivateNotchedOutline-legendNotched-70",
-                                            "root": "PrivateNotchedOutline-root-67",
-                                          }
-                                        }
-                                        labelWidth={0}
-                                        notched={false}
-                                      >
-                                        <fieldset
-                                          aria-hidden={true}
-                                          className="PrivateNotchedOutline-root-67 MuiOutlinedInput-notchedOutline"
-                                          style={
-                                            Object {
-                                              "paddingLeft": 8,
-                                            }
-                                          }
-                                        >
-                                          <legend
-                                            className="PrivateNotchedOutline-legend-68"
-                                            style={
-                                              Object {
-                                                "width": 0.01,
-                                              }
-                                            }
-                                          >
-                                            <span
-                                              dangerouslySetInnerHTML={
-                                                Object {
-                                                  "__html": "&#8203;",
-                                                }
-                                              }
-                                            />
-                                          </legend>
-                                        </fieldset>
-                                      </ForwardRef(NotchedOutline)>
-                                    </WithStyles(ForwardRef(NotchedOutline))>
                                   </div>
                                 </ForwardRef(InputBase)>
                               </WithStyles(ForwardRef(InputBase))>
-                            </ForwardRef(OutlinedInput)>
-                          </WithStyles(ForwardRef(OutlinedInput))>
+                            </ForwardRef(FilledInput)>
+                          </WithStyles(ForwardRef(FilledInput))>
                         </div>
                       </ForwardRef(FormControl)>
                     </WithStyles(ForwardRef(FormControl))>

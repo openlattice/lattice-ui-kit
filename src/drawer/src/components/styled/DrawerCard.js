@@ -1,11 +1,11 @@
 // @flow
 import React from 'react';
-import styled, { css } from 'styled-components';
 import type { Element } from 'react';
 
-import { slideTransitionStyles } from '../../../../transitions';
-import { WHITE } from '../../../../colors';
+import styled, { css } from 'styled-components';
+
 import { useKeyDownListener } from '../../../../hooks';
+import { slideTransitionStyles } from '../../../../transitions';
 import { ESC_KEY_CODE } from '../../../../utils/keycodes';
 
 type Props = {
@@ -32,7 +32,7 @@ const getScreenPosition = (props :Props) => {
 };
 
 const DrawerCardWrapper = styled.div`
-  background-color: ${WHITE};
+  background-color: white;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;

@@ -63,7 +63,7 @@ const TimePicker = (props :typeof KeyboardTimePicker) => {
         disabled={disabled}
         format={format}
         fullWidth={fullWidth}
-        inputVariant="outlined"
+        inputVariant="filled"
         keyboardIcon={ClockIcon}
         mask={mask}
         onChange={handleDateChange}

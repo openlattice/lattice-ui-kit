@@ -1,7 +1,7 @@
 // @flow
 import styled, { css } from 'styled-components';
 
-import { NEUTRALS } from '../../../colors';
+import { NEUTRAL } from '../../../colors';
 
 type LabelProps = {
   bold :boolean;
@@ -13,7 +13,7 @@ type LabelProps = {
 const getSubtleStyles = ({ subtle } :LabelProps) => {
   if (subtle) {
     return css`
-      color: ${NEUTRALS[1]};
+      color: ${NEUTRAL.N500};
       font-size: 0.75rem;
       font-weight: 600;
       text-transform: uppercase;
@@ -36,7 +36,7 @@ const getRequiredStyles = ({ required } :LabelProps) => {
 };
 
 const Label = styled.label`
-  color: ${NEUTRALS[0]};
+  color: ${NEUTRAL.N700};
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;

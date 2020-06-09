@@ -4,7 +4,7 @@
 
 import styled, { css } from 'styled-components';
 
-import { NEUTRALS } from '../../../../../colors';
+import { NEUTRAL } from '../../../../../colors';
 
 type Props = {
   bgColor :?string;
@@ -17,7 +17,7 @@ const getComputedStyles = ({ bgColor, borderless } :Props) => {
   let finalBorderBottom;
   if (typeof bgColor === 'string') {
     finalBackgroundColor = bgColor;
-    finalBorderBottom = `1px solid ${NEUTRALS[5]}`;
+    finalBorderBottom = `1px solid ${NEUTRAL.N100}`;
   }
 
   if (borderless === true) {

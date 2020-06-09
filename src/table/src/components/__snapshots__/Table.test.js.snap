@@ -27,7 +27,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
 
 exports[`Table handlePageChange should invoke onPageChange on pagination button click 2`] = `
 .c5 {
-  background-color: #ffffff;
+  background-color: white;
   border-collapse: collapse;
   border: none;
   table-layout: fixed;
@@ -51,7 +51,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
 }
 
 .c7 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: pointer;
   padding: 10px 10px;
   text-align: left;
@@ -60,7 +60,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
 }
 
 .c8 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: pointer;
   padding: 10px 10px;
   text-align: left;
@@ -68,7 +68,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
 }
 
 .c9 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: auto;
   padding: 10px 10px;
   text-align: left;
@@ -84,8 +84,8 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
 }
 
 .c6 {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dcdce7;
+  background-color: white;
+  border-bottom: 1px solid #dfdfe3;
 }
 
 .c6 td,
@@ -97,12 +97,12 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
 }
 
 .c10 {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dcdce7;
+  background-color: white;
+  border-bottom: 1px solid #dfdfe3;
 }
 
 .c1 {
-  color: #555e6f;
+  color: #56565a;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -113,7 +113,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8e929b;
+  color: #8b8b90;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -164,7 +164,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
-  color: #6124e2;
+  color: #7654ff;
 }
 
 .c2:hover {
@@ -186,7 +186,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
   text-decoration: none;
   background-color: transparent;
   border-color: transparent;
-  color: #b6bbc7;
+  color: #8b8b90;
 }
 
 .c2:focus {
@@ -353,7 +353,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#555e6f",
+                        "#56565a",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -868,9 +868,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
               "isStatic": false,
               "lastClassName": "c5",
               "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-collapse:collapse;border:none;table-layout:fixed;width:100%;",
+                "background-color:white;border-collapse:collapse;border:none;table-layout:fixed;width:100%;",
               ],
             },
             "displayName": "styled__StyledTable",
@@ -972,10 +970,8 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                         "isStatic": false,
                         "lastClassName": "c10",
                         "rules": Array [
-                          "background-color:",
-                          "#ffffff",
-                          ";border-bottom:1px solid ",
-                          "#dcdce7",
+                          "background-color:white;border-bottom:1px solid ",
+                          "#dfdfe3",
                           ";td,th{",
                           [Function],
                           "};",
@@ -1916,10 +1912,8 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -2207,10 +2201,8 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -2496,10 +2488,8 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -2787,10 +2777,8 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -3078,10 +3066,8 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -3369,10 +3355,8 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -3658,10 +3642,8 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -3917,7 +3899,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#555e6f",
+                        "#56565a",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -4452,7 +4434,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
 
 exports[`Table handlePageChange should invoke onPageChange on rows per page select 2`] = `
 .c6 {
-  background-color: #ffffff;
+  background-color: white;
   border-collapse: collapse;
   border: none;
   table-layout: fixed;
@@ -4476,7 +4458,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
 }
 
 .c8 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: pointer;
   padding: 10px 10px;
   text-align: left;
@@ -4485,7 +4467,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
 }
 
 .c9 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: pointer;
   padding: 10px 10px;
   text-align: left;
@@ -4493,7 +4475,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
 }
 
 .c10 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: auto;
   padding: 10px 10px;
   text-align: left;
@@ -4509,8 +4491,8 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
 }
 
 .c7 {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dcdce7;
+  background-color: white;
+  border-bottom: 1px solid #dfdfe3;
 }
 
 .c7 td,
@@ -4522,8 +4504,8 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
 }
 
 .c11 {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dcdce7;
+  background-color: white;
+  border-bottom: 1px solid #dfdfe3;
 }
 
 .c2 {
@@ -4533,7 +4515,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
 }
 
 .c1 {
-  color: #555e6f;
+  color: #56565a;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -4544,7 +4526,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8e929b;
+  color: #8b8b90;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -4595,7 +4577,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
-  color: #6124e2;
+  color: #7654ff;
 }
 
 .c3:hover {
@@ -4617,7 +4599,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
   text-decoration: none;
   background-color: transparent;
   border-color: transparent;
-  color: #b6bbc7;
+  color: #8b8b90;
 }
 
 .c3:focus {
@@ -4796,7 +4778,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#555e6f",
+                        "#56565a",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -5389,7 +5371,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                           "borderColor": "hsl(0, 0%, 70%)",
                                         },
                                         ":hover": Object {
-                                          "backgroundColor": "#f0f0f7",
+                                          "backgroundColor": "#dfdfe3",
                                           "border": "none",
                                         },
                                         "alignItems": "center",
@@ -5419,7 +5401,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                     onTouchEnd={[Function]}
                                   >
                                     <div
-                                      className=" css-1ugvnb2-control"
+                                      className=" css-1cyemx2-control"
                                       onMouseDown={[Function]}
                                       onTouchEnd={[Function]}
                                     >
@@ -6287,7 +6269,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                               "alignItems": "center",
                                               "alignSelf": "stretch",
                                               "boxSizing": "border-box",
-                                              "color": "#b6bbc7",
+                                              "color": "#8b8b90",
                                               "display": "flex",
                                               "flexShrink": 0,
                                               "marginRight": "5px",
@@ -6295,7 +6277,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                           }
                                         >
                                           <div
-                                            className=" css-1y4h2k2-IndicatorsContainer"
+                                            className=" css-78af7f-IndicatorsContainer"
                                           >
                                             <IndicatorSeparator
                                               clearValue={[Function]}
@@ -6756,7 +6738,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                   className=""
                                                   css={
                                                     Object {
-                                                      "color": "#b6bbc7",
+                                                      "color": "#8b8b90",
                                                       "display": "flex",
                                                       "margin": "5px",
                                                       "padding": "0",
@@ -6767,7 +6749,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                 >
                                                   <div
                                                     aria-hidden="true"
-                                                    className=" css-1vd5qh6-DropdownIndicator"
+                                                    className=" css-144p37m-DropdownIndicator"
                                                     onMouseDown={[Function]}
                                                     onTouchEnd={[Function]}
                                                   >
@@ -6841,7 +6823,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#555e6f",
+                        "#56565a",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -7356,9 +7338,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
               "isStatic": false,
               "lastClassName": "c6",
               "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-collapse:collapse;border:none;table-layout:fixed;width:100%;",
+                "background-color:white;border-collapse:collapse;border:none;table-layout:fixed;width:100%;",
               ],
             },
             "displayName": "styled__StyledTable",
@@ -7460,10 +7440,8 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                         "isStatic": false,
                         "lastClassName": "c11",
                         "rules": Array [
-                          "background-color:",
-                          "#ffffff",
-                          ";border-bottom:1px solid ",
-                          "#dcdce7",
+                          "background-color:white;border-bottom:1px solid ",
+                          "#dfdfe3",
                           ";td,th{",
                           [Function],
                           "};",
@@ -8404,10 +8382,8 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                           "isStatic": false,
                           "lastClassName": "c11",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -8695,10 +8671,8 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                           "isStatic": false,
                           "lastClassName": "c11",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -8984,10 +8958,8 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                           "isStatic": false,
                           "lastClassName": "c11",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -9275,10 +9247,8 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                           "isStatic": false,
                           "lastClassName": "c11",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -9566,10 +9536,8 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                           "isStatic": false,
                           "lastClassName": "c11",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -9830,7 +9798,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#555e6f",
+                        "#56565a",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -10423,7 +10391,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                           "borderColor": "hsl(0, 0%, 70%)",
                                         },
                                         ":hover": Object {
-                                          "backgroundColor": "#f0f0f7",
+                                          "backgroundColor": "#dfdfe3",
                                           "border": "none",
                                         },
                                         "alignItems": "center",
@@ -10453,7 +10421,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                     onTouchEnd={[Function]}
                                   >
                                     <div
-                                      className=" css-1ugvnb2-control"
+                                      className=" css-1cyemx2-control"
                                       onMouseDown={[Function]}
                                       onTouchEnd={[Function]}
                                     >
@@ -11321,7 +11289,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                               "alignItems": "center",
                                               "alignSelf": "stretch",
                                               "boxSizing": "border-box",
-                                              "color": "#b6bbc7",
+                                              "color": "#8b8b90",
                                               "display": "flex",
                                               "flexShrink": 0,
                                               "marginRight": "5px",
@@ -11329,7 +11297,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                           }
                                         >
                                           <div
-                                            className=" css-1y4h2k2-IndicatorsContainer"
+                                            className=" css-78af7f-IndicatorsContainer"
                                           >
                                             <IndicatorSeparator
                                               clearValue={[Function]}
@@ -11790,7 +11758,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                   className=""
                                                   css={
                                                     Object {
-                                                      "color": "#b6bbc7",
+                                                      "color": "#8b8b90",
                                                       "display": "flex",
                                                       "margin": "5px",
                                                       "padding": "0",
@@ -11801,7 +11769,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                 >
                                                   <div
                                                     aria-hidden="true"
-                                                    className=" css-1vd5qh6-DropdownIndicator"
+                                                    className=" css-144p37m-DropdownIndicator"
                                                     onMouseDown={[Function]}
                                                     onTouchEnd={[Function]}
                                                   >
@@ -11875,7 +11843,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#555e6f",
+                        "#56565a",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -12385,7 +12353,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
 
 exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`] = `
 .c5 {
-  background-color: #ffffff;
+  background-color: white;
   border-collapse: collapse;
   border: none;
   table-layout: fixed;
@@ -12409,7 +12377,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
 }
 
 .c7 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: pointer;
   padding: 10px 10px;
   text-align: left;
@@ -12418,7 +12386,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
 }
 
 .c8 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: pointer;
   padding: 10px 10px;
   text-align: left;
@@ -12426,7 +12394,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
 }
 
 .c9 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: auto;
   padding: 10px 10px;
   text-align: left;
@@ -12442,8 +12410,8 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
 }
 
 .c6 {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dcdce7;
+  background-color: white;
+  border-bottom: 1px solid #dfdfe3;
 }
 
 .c6 td,
@@ -12455,12 +12423,12 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
 }
 
 .c10 {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dcdce7;
+  background-color: white;
+  border-bottom: 1px solid #dfdfe3;
 }
 
 .c1 {
-  color: #555e6f;
+  color: #56565a;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -12471,7 +12439,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8e929b;
+  color: #8b8b90;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -12522,7 +12490,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
-  color: #6124e2;
+  color: #7654ff;
 }
 
 .c2:hover {
@@ -12544,7 +12512,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
   text-decoration: none;
   background-color: transparent;
   border-color: transparent;
-  color: #b6bbc7;
+  color: #8b8b90;
 }
 
 .c2:focus {
@@ -12687,7 +12655,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#555e6f",
+                        "#56565a",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -13202,9 +13170,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
               "isStatic": false,
               "lastClassName": "c5",
               "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-collapse:collapse;border:none;table-layout:fixed;width:100%;",
+                "background-color:white;border-collapse:collapse;border:none;table-layout:fixed;width:100%;",
               ],
             },
             "displayName": "styled__StyledTable",
@@ -13306,10 +13272,8 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                         "isStatic": false,
                         "lastClassName": "c10",
                         "rules": Array [
-                          "background-color:",
-                          "#ffffff",
-                          ";border-bottom:1px solid ",
-                          "#dcdce7",
+                          "background-color:white;border-bottom:1px solid ",
+                          "#dfdfe3",
                           ";td,th{",
                           [Function],
                           "};",
@@ -14250,10 +14214,8 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -14541,10 +14503,8 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -14830,10 +14790,8 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -15121,10 +15079,8 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -15412,10 +15368,8 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -15703,10 +15657,8 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -15992,10 +15944,8 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -16251,7 +16201,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#555e6f",
+                        "#56565a",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -16786,7 +16736,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 1`] = `
 
 exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
 .c5 {
-  background-color: #ffffff;
+  background-color: white;
   border-collapse: collapse;
   border: none;
   table-layout: fixed;
@@ -16810,7 +16760,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
 }
 
 .c7 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: pointer;
   padding: 10px 10px;
   text-align: left;
@@ -16819,7 +16769,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
 }
 
 .c8 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: pointer;
   padding: 10px 10px;
   text-align: left;
@@ -16827,7 +16777,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
 }
 
 .c9 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: auto;
   padding: 10px 10px;
   text-align: left;
@@ -16843,8 +16793,8 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
 }
 
 .c6 {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dcdce7;
+  background-color: white;
+  border-bottom: 1px solid #dfdfe3;
 }
 
 .c6 td,
@@ -16856,12 +16806,12 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
 }
 
 .c10 {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dcdce7;
+  background-color: white;
+  border-bottom: 1px solid #dfdfe3;
 }
 
 .c1 {
-  color: #555e6f;
+  color: #56565a;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -16872,7 +16822,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8e929b;
+  color: #8b8b90;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -16923,7 +16873,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
-  color: #6124e2;
+  color: #7654ff;
 }
 
 .c2:hover {
@@ -16945,7 +16895,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
   text-decoration: none;
   background-color: transparent;
   border-color: transparent;
-  color: #b6bbc7;
+  color: #8b8b90;
 }
 
 .c2:focus {
@@ -17112,7 +17062,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#555e6f",
+                        "#56565a",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -17627,9 +17577,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
               "isStatic": false,
               "lastClassName": "c5",
               "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-collapse:collapse;border:none;table-layout:fixed;width:100%;",
+                "background-color:white;border-collapse:collapse;border:none;table-layout:fixed;width:100%;",
               ],
             },
             "displayName": "styled__StyledTable",
@@ -17731,10 +17679,8 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                         "isStatic": false,
                         "lastClassName": "c10",
                         "rules": Array [
-                          "background-color:",
-                          "#ffffff",
-                          ";border-bottom:1px solid ",
-                          "#dcdce7",
+                          "background-color:white;border-bottom:1px solid ",
+                          "#dfdfe3",
                           ";td,th{",
                           [Function],
                           "};",
@@ -18675,10 +18621,8 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -18966,10 +18910,8 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -19255,10 +19197,8 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -19546,10 +19486,8 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -19837,10 +19775,8 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -20128,10 +20064,8 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -20417,10 +20351,8 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -20676,7 +20608,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#555e6f",
+                        "#56565a",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -21186,7 +21118,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
 
 exports[`Table handleSort should set order and orderBy when invoked 1`] = `
 .c5 {
-  background-color: #ffffff;
+  background-color: white;
   border-collapse: collapse;
   border: none;
   table-layout: fixed;
@@ -21210,7 +21142,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
 }
 
 .c7 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: pointer;
   padding: 10px 10px;
   text-align: left;
@@ -21219,7 +21151,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
 }
 
 .c8 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: pointer;
   padding: 10px 10px;
   text-align: left;
@@ -21227,7 +21159,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
 }
 
 .c9 {
-  background-color: #f0f0f7;
+  background-color: #f9f9fc;
   cursor: auto;
   padding: 10px 10px;
   text-align: left;
@@ -21243,8 +21175,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
 }
 
 .c6 {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dcdce7;
+  background-color: white;
+  border-bottom: 1px solid #dfdfe3;
 }
 
 .c6 td,
@@ -21256,12 +21188,12 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
 }
 
 .c10 {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dcdce7;
+  background-color: white;
+  border-bottom: 1px solid #dfdfe3;
 }
 
 .c1 {
-  color: #555e6f;
+  color: #56565a;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -21272,7 +21204,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8e929b;
+  color: #8b8b90;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -21323,7 +21255,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
-  color: #6124e2;
+  color: #7654ff;
 }
 
 .c2:hover {
@@ -21345,7 +21277,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   text-decoration: none;
   background-color: transparent;
   border-color: transparent;
-  color: #b6bbc7;
+  color: #8b8b90;
 }
 
 .c2:focus {
@@ -21488,7 +21420,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#555e6f",
+                        "#56565a",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -22003,9 +21935,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               "isStatic": false,
               "lastClassName": "c5",
               "rules": Array [
-                "background-color:",
-                "#ffffff",
-                ";border-collapse:collapse;border:none;table-layout:fixed;width:100%;",
+                "background-color:white;border-collapse:collapse;border:none;table-layout:fixed;width:100%;",
               ],
             },
             "displayName": "styled__StyledTable",
@@ -22107,10 +22037,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         "isStatic": false,
                         "lastClassName": "c10",
                         "rules": Array [
-                          "background-color:",
-                          "#ffffff",
-                          ";border-bottom:1px solid ",
-                          "#dcdce7",
+                          "background-color:white;border-bottom:1px solid ",
+                          "#dfdfe3",
                           ";td,th{",
                           [Function],
                           "};",
@@ -23051,10 +22979,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -23342,10 +23268,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -23631,10 +23555,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -23922,10 +23844,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -24213,10 +24133,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -24504,10 +24422,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -24793,10 +24709,8 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                           "isStatic": false,
                           "lastClassName": "c10",
                           "rules": Array [
-                            "background-color:",
-                            "#ffffff",
-                            ";border-bottom:1px solid ",
-                            "#dcdce7",
+                            "background-color:white;border-bottom:1px solid ",
+                            "#dfdfe3",
                             ";td,th{",
                             [Function],
                             "};",
@@ -25052,7 +24966,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#555e6f",
+                        "#56565a",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",

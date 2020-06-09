@@ -366,12 +366,12 @@ exports[`Select snapshot render matches snapshot 1`] = `
                         "borderColor": "hsl(0, 0%, 70%)",
                       },
                       ":hover": Object {
-                        "backgroundColor": "#f0f0f7",
-                        "border": "solid 1px #dcdce7",
+                        "backgroundColor": "#dfdfe3",
+                        "border": "solid 1px #f2f2f4",
                       },
                       "alignItems": "center",
-                      "backgroundColor": "#f9f9fd",
-                      "border": "solid 1px #dcdce7",
+                      "backgroundColor": "#f2f2f4",
+                      "border": "solid 1px #f2f2f4",
                       "borderColor": "hsl(0, 0%, 80%)",
                       "borderRadius": "3px",
                       "borderStyle": "solid",
@@ -396,7 +396,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                   onTouchEnd={[Function]}
                 >
                   <div
-                    className=" css-wo44iz-control"
+                    className=" css-1sy82wn-control"
                     onMouseDown={[Function]}
                     onTouchEnd={[Function]}
                   >
@@ -1111,7 +1111,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                             "alignItems": "center",
                             "alignSelf": "stretch",
                             "boxSizing": "border-box",
-                            "color": "#b6bbc7",
+                            "color": "#8b8b90",
                             "display": "flex",
                             "flexShrink": 0,
                             "marginRight": "5px",
@@ -1119,7 +1119,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                         }
                       >
                         <div
-                          className=" css-1y4h2k2-IndicatorsContainer"
+                          className=" css-78af7f-IndicatorsContainer"
                         >
                           <IndicatorSeparator
                             clearValue={[Function]}
@@ -1484,7 +1484,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                 className=""
                                 css={
                                   Object {
-                                    "color": "#b6bbc7",
+                                    "color": "#8b8b90",
                                     "display": "flex",
                                     "margin": "5px",
                                     "padding": "0",
@@ -1495,7 +1495,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                               >
                                 <div
                                   aria-hidden="true"
-                                  className=" css-1vd5qh6-DropdownIndicator"
+                                  className=" css-144p37m-DropdownIndicator"
                                   onMouseDown={[Function]}
                                   onTouchEnd={[Function]}
                                 >

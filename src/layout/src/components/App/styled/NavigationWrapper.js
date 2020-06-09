@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 import * as Colors from '../../../../../colors';
 
-const { NEUTRALS, PURPLES } = Colors;
+const { NEUTRAL, PURPLE } = Colors;
 const APP_NAV_ROOT :string = 'app-nav-root';
 
 const NavigationWrapper = styled.nav`
@@ -19,7 +19,7 @@ const NavigationWrapper = styled.nav`
   > a {
     align-items: center;
     border-bottom: 3px solid transparent;
-    color: ${NEUTRALS[1]};
+    color: ${NEUTRAL.N500};
     display: flex;
     font-size: 12px;
     font-weight: normal;
@@ -42,14 +42,14 @@ const NavigationWrapper = styled.nav`
     }
 
     &:hover {
-      border-bottom: 3px solid ${NEUTRALS[2]};
-      color: ${NEUTRALS[0]};
+      border-bottom: 3px solid ${NEUTRAL.N500};
+      color: ${NEUTRAL.N700};
       cursor: pointer;
     }
 
     &.active {
-      border-bottom: 3px solid ${PURPLES[1]};
-      color: ${PURPLES[1]};
+      border-bottom: 3px solid ${PURPLE.P300};
+      color: ${PURPLE.P300};
     }
 
     &.${APP_NAV_ROOT} {
@@ -58,7 +58,7 @@ const NavigationWrapper = styled.nav`
       padding: 0;
 
       > h1 {
-        color: ${NEUTRALS[0]};
+        color: ${NEUTRAL.N700};
         font-size: 14px;
         font-weight: 600;
         letter-spacing: normal;
@@ -74,7 +74,7 @@ const NavigationWrapper = styled.nav`
 
   > hr {
     border: none;
-    border-left: 1px solid ${NEUTRALS[5]};
+    border-left: 1px solid ${NEUTRAL.N100};
     margin: 0 0 0 30px;
   }
 `;

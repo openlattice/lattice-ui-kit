@@ -1,34 +1,34 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, PURPLES } from '../../../../colors';
+import { NEUTRAL, PURPLE } from '../../../../colors';
 
 const choiceIndicatorStyles = css`
   input:hover ~ & {
-    background-color: ${NEUTRALS[1]};
+    background-color: ${NEUTRAL.N500};
   }
 
   input:focus ~ & {
-    box-shadow: ${PURPLES[0]} 0 0 0 2px;
+    box-shadow: ${PURPLE.P400} 0 0 0 2px;
   }
 
   input:checked ~ &,
   input[readonly]:checked:disabled ~ &,
   input[readonly]:checked:hover ~ & {
-    background-color: ${PURPLES[2]};
+    background-color: ${PURPLE.P300};
   }
 
   input:checked:hover ~ & {
-    background-color: ${PURPLES[1]};
+    background-color: ${PURPLE.P400};
   }
 
   input:disabled ~ & {
-    background-color: ${PURPLES[6]};
+    background-color: ${NEUTRAL.N50};
     cursor: not-allowed;
   }
 
   input:checked:disabled ~ & {
     cursor: not-allowed;
-    background-color: ${NEUTRALS[2]};
+    background-color: ${NEUTRAL.N500};
   }
 
   input[readonly] ~ & {

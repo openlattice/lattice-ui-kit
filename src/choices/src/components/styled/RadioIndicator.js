@@ -3,13 +3,13 @@ import styled, { css } from 'styled-components';
 import choiceButtonStyles from './ChoiceButtonStyles';
 import choiceIndicatorStyles from './ChoiceIndicatorStyles';
 
-import { PURPLES, WHITE } from '../../../../colors';
+import { NEUTRAL } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
 import { getStyleVariation } from '../../../../utils/StyleUtils';
 
 const afterStyles = css`
   content: '';
-  background-color: ${WHITE};
+  background-color: white;
   border-radius: 50%;
   height: 8px;
   left: 0;
@@ -24,7 +24,7 @@ const afterStyles = css`
 `;
 
 const radioWithAfterStyles = css`
-  background-color: ${PURPLES[6]};
+  background-color: ${NEUTRAL.N50};
   border-radius: 100%;
   display: inline-block;
   height: 20px;

@@ -144,9 +144,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -165,7 +165,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -188,7 +188,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -212,7 +212,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -282,37 +282,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c10:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c10:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c10:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c10:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c9 {
@@ -323,7 +323,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -501,9 +501,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -522,7 +522,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -545,7 +545,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -569,7 +569,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -639,37 +639,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c9:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c9:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c9:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c9:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c10 {
@@ -680,7 +680,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -944,10 +944,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                     "rules": Array [
                                                       "align-self:",
                                                       [Function],
-                                                      ";background-color:",
-                                                      "#ffffff",
-                                                      ";border-radius:3px;box-shadow:0 2px 8px -2px ",
-                                                      "#555e6f",
+                                                      ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ",
+                                                      "#56565a",
                                                       ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                       [Function],
                                                     ],
@@ -985,7 +983,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                             "lastClassName": "c4",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -1021,7 +1019,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                   "lastClassName": "c5",
                                                                   "rules": Array [
                                                                     "color:",
-                                                                    "#555e6f",
+                                                                    "#56565a",
                                                                     ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                   ],
                                                                 },
@@ -1150,7 +1148,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                             "lastClassName": "c7",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -1208,7 +1206,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                             "lastClassName": "c8",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -1541,9 +1539,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1562,7 +1560,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1585,7 +1583,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1609,7 +1607,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1679,37 +1677,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c10:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c10:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c10:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c10:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c9 {
@@ -1720,7 +1718,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -1922,9 +1920,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1943,7 +1941,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1966,7 +1964,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1990,7 +1988,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2060,37 +2058,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c9:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c9:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c9:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c9:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c10 {
@@ -2101,7 +2099,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -2365,10 +2363,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                     "rules": Array [
                                                       "align-self:",
                                                       [Function],
-                                                      ";background-color:",
-                                                      "#ffffff",
-                                                      ";border-radius:3px;box-shadow:0 2px 8px -2px ",
-                                                      "#555e6f",
+                                                      ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ",
+                                                      "#56565a",
                                                       ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                       [Function],
                                                     ],
@@ -2406,7 +2402,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                             "lastClassName": "c4",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -2442,7 +2438,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                   "lastClassName": "c5",
                                                                   "rules": Array [
                                                                     "color:",
-                                                                    "#555e6f",
+                                                                    "#56565a",
                                                                     ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                   ],
                                                                 },
@@ -2571,7 +2567,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                             "lastClassName": "c7",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -2629,7 +2625,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                             "lastClassName": "c8",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -2962,9 +2958,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2983,7 +2979,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3006,7 +3002,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3030,7 +3026,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3131,37 +3127,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c10:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c10:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c10:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c10:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c16 {
@@ -3180,38 +3176,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c16:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c16:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c16:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c16:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c9 {
@@ -3228,7 +3224,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -3405,9 +3401,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3426,7 +3422,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3449,7 +3445,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3473,7 +3469,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3574,37 +3570,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c9:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c9:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c9:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c9:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c15 {
@@ -3623,38 +3619,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c15:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c15:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c15:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c15:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c10 {
@@ -3671,7 +3667,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -3769,7 +3765,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                     <svg
                                       aria-hidden="true"
                                       class="svg-inline--fa fa-circle fa-w-16 "
-                                      color="#cdd1db"
+                                      color="#c3c3c8"
                                       data-icon="circle"
                                       data-prefix="fal"
                                       focusable="false"
@@ -3786,7 +3782,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                     <svg
                                       aria-hidden="true"
                                       class="svg-inline--fa fa-spinner-third fa-w-16 "
-                                      color="#555e6f"
+                                      color="#56565a"
                                       data-icon="spinner-third"
                                       data-prefix="fal"
                                       focusable="false"
@@ -3994,10 +3990,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                     "rules": Array [
                                                       "align-self:",
                                                       [Function],
-                                                      ";background-color:",
-                                                      "#ffffff",
-                                                      ";border-radius:3px;box-shadow:0 2px 8px -2px ",
-                                                      "#555e6f",
+                                                      ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ",
+                                                      "#56565a",
                                                       ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                       [Function],
                                                     ],
@@ -4035,7 +4029,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                             "lastClassName": "c4",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -4071,7 +4065,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                   "lastClassName": "c5",
                                                                   "rules": Array [
                                                                     "color:",
-                                                                    "#555e6f",
+                                                                    "#56565a",
                                                                     ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                   ],
                                                                 },
@@ -4200,7 +4194,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                             "lastClassName": "c7",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -4257,7 +4251,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                             "lastClassName": "c8",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -4459,10 +4453,10 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                   className="c12"
                                                                                 >
                                                                                   <Spinner
-                                                                                    bottomColor="#cdd1db"
+                                                                                    bottomColor="#c3c3c8"
                                                                                     centered={true}
                                                                                     size="1x"
-                                                                                    topColor="#555e6f"
+                                                                                    topColor="#56565a"
                                                                                   >
                                                                                     <Rotate
                                                                                       centered={true}
@@ -4505,7 +4499,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                           <FontAwesomeIcon
                                                                                             border={false}
                                                                                             className=""
-                                                                                            color="#cdd1db"
+                                                                                            color="#c3c3c8"
                                                                                             fixedWidth={false}
                                                                                             flip={null}
                                                                                             icon={
@@ -4538,7 +4532,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                             <svg
                                                                                               aria-hidden="true"
                                                                                               className="svg-inline--fa fa-circle fa-w-16 "
-                                                                                              color="#cdd1db"
+                                                                                              color="#c3c3c8"
                                                                                               data-icon="circle"
                                                                                               data-prefix="fal"
                                                                                               focusable="false"
@@ -4558,7 +4552,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                           <FontAwesomeIcon
                                                                                             border={false}
                                                                                             className=""
-                                                                                            color="#555e6f"
+                                                                                            color="#56565a"
                                                                                             fixedWidth={false}
                                                                                             flip={null}
                                                                                             icon={
@@ -4591,7 +4585,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                             <svg
                                                                                               aria-hidden="true"
                                                                                               className="svg-inline--fa fa-spinner-third fa-w-16 "
-                                                                                              color="#555e6f"
+                                                                                              color="#56565a"
                                                                                               data-icon="spinner-third"
                                                                                               data-prefix="fal"
                                                                                               focusable="false"
@@ -4959,9 +4953,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4980,7 +4974,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5003,7 +4997,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5027,7 +5021,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5128,37 +5122,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c10:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c10:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c10:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c10:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c16 {
@@ -5177,38 +5171,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c16:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c16:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c16:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c16:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c9 {
@@ -5225,7 +5219,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -5426,9 +5420,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5447,7 +5441,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5470,7 +5464,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5494,7 +5488,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5595,37 +5589,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c9:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c9:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c9:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c9:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c15 {
@@ -5644,38 +5638,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c15:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c15:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c15:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c15:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c10 {
@@ -5692,7 +5686,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -5790,7 +5784,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                     <svg
                                       aria-hidden="true"
                                       class="svg-inline--fa fa-circle fa-w-16 "
-                                      color="#cdd1db"
+                                      color="#c3c3c8"
                                       data-icon="circle"
                                       data-prefix="fal"
                                       focusable="false"
@@ -5807,7 +5801,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                     <svg
                                       aria-hidden="true"
                                       class="svg-inline--fa fa-spinner-third fa-w-16 "
-                                      color="#555e6f"
+                                      color="#56565a"
                                       data-icon="spinner-third"
                                       data-prefix="fal"
                                       focusable="false"
@@ -6015,10 +6009,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                     "rules": Array [
                                                       "align-self:",
                                                       [Function],
-                                                      ";background-color:",
-                                                      "#ffffff",
-                                                      ";border-radius:3px;box-shadow:0 2px 8px -2px ",
-                                                      "#555e6f",
+                                                      ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ",
+                                                      "#56565a",
                                                       ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                       [Function],
                                                     ],
@@ -6056,7 +6048,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                             "lastClassName": "c4",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -6092,7 +6084,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                   "lastClassName": "c5",
                                                                   "rules": Array [
                                                                     "color:",
-                                                                    "#555e6f",
+                                                                    "#56565a",
                                                                     ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                   ],
                                                                 },
@@ -6221,7 +6213,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                             "lastClassName": "c7",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -6278,7 +6270,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                             "lastClassName": "c8",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -6480,10 +6472,10 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                   className="c12"
                                                                                 >
                                                                                   <Spinner
-                                                                                    bottomColor="#cdd1db"
+                                                                                    bottomColor="#c3c3c8"
                                                                                     centered={true}
                                                                                     size="1x"
-                                                                                    topColor="#555e6f"
+                                                                                    topColor="#56565a"
                                                                                   >
                                                                                     <Rotate
                                                                                       centered={true}
@@ -6526,7 +6518,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                           <FontAwesomeIcon
                                                                                             border={false}
                                                                                             className=""
-                                                                                            color="#cdd1db"
+                                                                                            color="#c3c3c8"
                                                                                             fixedWidth={false}
                                                                                             flip={null}
                                                                                             icon={
@@ -6559,7 +6551,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                             <svg
                                                                                               aria-hidden="true"
                                                                                               className="svg-inline--fa fa-circle fa-w-16 "
-                                                                                              color="#cdd1db"
+                                                                                              color="#c3c3c8"
                                                                                               data-icon="circle"
                                                                                               data-prefix="fal"
                                                                                               focusable="false"
@@ -6579,7 +6571,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                           <FontAwesomeIcon
                                                                                             border={false}
                                                                                             className=""
-                                                                                            color="#555e6f"
+                                                                                            color="#56565a"
                                                                                             fixedWidth={false}
                                                                                             flip={null}
                                                                                             icon={
@@ -6612,7 +6604,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                             <svg
                                                                                               aria-hidden="true"
                                                                                               className="svg-inline--fa fa-spinner-third fa-w-16 "
-                                                                                              color="#555e6f"
+                                                                                              color="#56565a"
                                                                                               data-icon="spinner-third"
                                                                                               data-prefix="fal"
                                                                                               focusable="false"
@@ -6980,9 +6972,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7001,7 +6993,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7024,7 +7016,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7048,7 +7040,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7118,37 +7110,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c10:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c10:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c10:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c10:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c14 {
@@ -7167,38 +7159,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c14:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c14:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c14:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c14:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c9 {
@@ -7215,7 +7207,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -7381,9 +7373,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7402,7 +7394,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7425,7 +7417,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7449,7 +7441,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7519,37 +7511,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c9:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c9:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c9:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c9:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c13 {
@@ -7568,38 +7560,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c13:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c13:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c13:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c13:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c10 {
@@ -7616,7 +7608,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -7895,10 +7887,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                     "rules": Array [
                                                       "align-self:",
                                                       [Function],
-                                                      ";background-color:",
-                                                      "#ffffff",
-                                                      ";border-radius:3px;box-shadow:0 2px 8px -2px ",
-                                                      "#555e6f",
+                                                      ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ",
+                                                      "#56565a",
                                                       ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                       [Function],
                                                     ],
@@ -7936,7 +7926,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                             "lastClassName": "c4",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -7972,7 +7962,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                   "lastClassName": "c5",
                                                                   "rules": Array [
                                                                     "color:",
-                                                                    "#555e6f",
+                                                                    "#56565a",
                                                                     ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                   ],
                                                                 },
@@ -8101,7 +8091,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                             "lastClassName": "c7",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -8160,7 +8150,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                             "lastClassName": "c8",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -8686,9 +8676,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8707,7 +8697,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8730,7 +8720,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8754,7 +8744,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8824,37 +8814,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c10:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c10:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c10:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c10:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c14 {
@@ -8873,38 +8863,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c14:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c14:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c14:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c14:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c9 {
@@ -8921,7 +8911,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -9111,9 +9101,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9132,7 +9122,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9155,7 +9145,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9179,7 +9169,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9249,37 +9239,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c9:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c9:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c9:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c9:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c13 {
@@ -9298,38 +9288,38 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c13:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c13:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c13:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c13:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 .c10 {
@@ -9346,7 +9336,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -9625,10 +9615,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                     "rules": Array [
                                                       "align-self:",
                                                       [Function],
-                                                      ";background-color:",
-                                                      "#ffffff",
-                                                      ";border-radius:3px;box-shadow:0 2px 8px -2px ",
-                                                      "#555e6f",
+                                                      ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ",
+                                                      "#56565a",
                                                       ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                       [Function],
                                                     ],
@@ -9666,7 +9654,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                             "lastClassName": "c4",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -9702,7 +9690,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                   "lastClassName": "c5",
                                                                   "rules": Array [
                                                                     "color:",
-                                                                    "#555e6f",
+                                                                    "#56565a",
                                                                     ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                   ],
                                                                 },
@@ -9831,7 +9819,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                             "lastClassName": "c7",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -9890,7 +9878,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                             "lastClassName": "c8",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -10416,9 +10404,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10437,7 +10425,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10460,7 +10448,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10484,7 +10472,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10554,37 +10542,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c10:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c10:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c10:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c10:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c9 {
@@ -10595,7 +10583,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -10773,9 +10761,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10794,7 +10782,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10817,7 +10805,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10841,7 +10829,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10911,37 +10899,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c9:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c9:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c9:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c9:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c10 {
@@ -10952,7 +10940,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -11216,10 +11204,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                     "rules": Array [
                                                       "align-self:",
                                                       [Function],
-                                                      ";background-color:",
-                                                      "#ffffff",
-                                                      ";border-radius:3px;box-shadow:0 2px 8px -2px ",
-                                                      "#555e6f",
+                                                      ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ",
+                                                      "#56565a",
                                                       ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                       [Function],
                                                     ],
@@ -11257,7 +11243,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                             "lastClassName": "c4",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -11293,7 +11279,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                   "lastClassName": "c5",
                                                                   "rules": Array [
                                                                     "color:",
-                                                                    "#555e6f",
+                                                                    "#56565a",
                                                                     ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                   ],
                                                                 },
@@ -11422,7 +11408,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                             "lastClassName": "c7",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -11480,7 +11466,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                             "lastClassName": "c8",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -11813,9 +11799,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11834,7 +11820,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11857,7 +11843,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11881,7 +11867,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11951,37 +11937,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c10:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c10:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c10:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c10:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c9 {
@@ -11992,7 +11978,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -12194,9 +12180,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12215,7 +12201,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12238,7 +12224,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12262,7 +12248,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12332,37 +12318,37 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c9:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c9:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c9:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c9:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 .c10 {
@@ -12373,7 +12359,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
 }
 
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -12637,10 +12623,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                     "rules": Array [
                                                       "align-self:",
                                                       [Function],
-                                                      ";background-color:",
-                                                      "#ffffff",
-                                                      ";border-radius:3px;box-shadow:0 2px 8px -2px ",
-                                                      "#555e6f",
+                                                      ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ",
+                                                      "#56565a",
                                                       ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                       [Function],
                                                     ],
@@ -12678,7 +12662,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                             "lastClassName": "c4",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -12714,7 +12698,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                   "lastClassName": "c5",
                                                                   "rules": Array [
                                                                     "color:",
-                                                                    "#555e6f",
+                                                                    "#56565a",
                                                                     ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                   ],
                                                                 },
@@ -12843,7 +12827,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                             "lastClassName": "c7",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
@@ -12901,7 +12885,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                             "lastClassName": "c8",
                                                             "rules": Array [
                                                               "color:",
-                                                              "#555e6f",
+                                                              "#56565a",
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
