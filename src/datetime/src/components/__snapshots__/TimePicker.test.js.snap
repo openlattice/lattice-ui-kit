@@ -39,6 +39,38 @@ exports[`TimePicker render matches snapshot 1`] = `
         },
       },
       "overrides": Object {
+        "MuiFilledInput": Object {
+          "input": Object {
+            "&$disabled": Object {
+              "backgroundColor": "#F2F2F4",
+              "cursor": "not-allowed",
+            },
+            "padding": "10px",
+          },
+          "inputHiddenLabel": Object {
+            "paddingBottom": 10,
+            "paddingTop": 10,
+          },
+          "root": Object {
+            "&$disabled": Object {
+              "backgroundColor": "#F2F2F4",
+              "cursor": "not-allowed",
+            },
+            "&$error": Object {
+              "borderColor": "#ED4545",
+            },
+            "&$focused": Object {
+              "backgroundColor": "#F9F9FC",
+              "borderColor": "#56565A",
+            },
+            "&:hover:not($disabled):not($focused):not($error)": Object {
+              "backgroundColor": "#DFDFE3",
+              "border": "1px solid #DFDFE3",
+            },
+            "backgroundColor": "#F2F2F4",
+            "border": "1px solid #F2F2F4",
+          },
+        },
         "MuiFormHelperText": Object {
           "contained": Object {
             "margin": "5px 10px 0",
@@ -62,20 +94,20 @@ exports[`TimePicker render matches snapshot 1`] = `
               "color": "#8B8B90",
               "cursor": "not-allowed",
             },
-            "color": "#56565A",
+            "padding": "10px",
+          },
+          "inputHiddenLabel": Object {
+            "padding": 0,
           },
           "root": Object {
             "&$disabled": Object {
               "cursor": "not-allowed",
             },
-            "&$focused:not($disabled)": Object {
-              "backgroundColor": "white",
-            },
             "&:hover:not($disabled):not($focused):not($error)": Object {
               "backgroundColor": "#DFDFE3",
             },
-            "backgroundColor": "#F2F2F4",
             "borderRadius": "3px",
+            "color": "#1F1F22",
             "fontFamily": "inherit",
             "fontSize": "14px",
             "height": "40px",
@@ -88,6 +120,10 @@ exports[`TimePicker render matches snapshot 1`] = `
           "input": Object {
             "padding": "10px",
           },
+          "inputHiddenLabel": Object {
+            "paddingBottom": 10,
+            "paddingTop": 10,
+          },
           "notchedOutline": Object {
             "visibility": "hidden",
           },
@@ -96,8 +132,13 @@ exports[`TimePicker render matches snapshot 1`] = `
               "borderColor": "#ED4545",
             },
             "&$focused": Object {
-              "borderColor": "#7654FF",
+              "backgroundColor": "white",
+              "borderColor": "#56565A",
             },
+            "&:hover:not($disabled):not($focused):not($error)": Object {
+              "backgroundColor": "#F9F9FC",
+            },
+            "backgroundColor": "white",
             "border": "1px solid #DFDFE3",
           },
         },
@@ -226,6 +267,9 @@ exports[`TimePicker render matches snapshot 1`] = `
         },
       },
       "props": Object {
+        "MuiFilledInput": Object {
+          "disableUnderline": true,
+        },
         "MuiFormControl": Object {
           "fullWidth": true,
           "hiddenLabel": true,
@@ -423,7 +467,7 @@ exports[`TimePicker render matches snapshot 1`] = `
         disabled={false}
         format="hh:mm a"
         fullWidth={true}
-        inputVariant="outlined"
+        inputVariant="filled"
         invalidDateMessage="Invalid Time Format"
         keyboardIcon={
           <FontAwesomeIcon
@@ -491,7 +535,7 @@ exports[`TimePicker render matches snapshot 1`] = `
           disabled={false}
           format="hh:mm a"
           fullWidth={true}
-          inputVariant="outlined"
+          inputVariant="filled"
           keyboardIcon={
             <FontAwesomeIcon
               border={false}
@@ -555,7 +599,7 @@ exports[`TimePicker render matches snapshot 1`] = `
             disabled={false}
             format="hh:mm a"
             fullWidth={true}
-            inputVariant="outlined"
+            inputVariant="filled"
             keyboardIcon={
               <FontAwesomeIcon
                 border={false}
@@ -612,7 +656,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                 Object {
                   "current": <input
                     aria-invalid="false"
-                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                    class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                     placeholder="HH:MM AM"
                     type="text"
                     value=""
@@ -620,7 +664,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                 }
               }
               inputValue=""
-              inputVariant="outlined"
+              inputVariant="filled"
               keyboardIcon={
                 <FontAwesomeIcon
                   border={false}
@@ -723,7 +767,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                     Object {
                       "current": <input
                         aria-invalid="false"
-                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                         placeholder="HH:MM AM"
                         type="text"
                         value=""
@@ -733,7 +777,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                   onChange={[Function]}
                   placeholder="HH:MM AM"
                   value=""
-                  variant="outlined"
+                  variant="filled"
                 >
                   <ForwardRef(TextField)
                     InputProps={
@@ -795,7 +839,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                       Object {
                         "current": <input
                           aria-invalid="false"
-                          class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                          class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                           placeholder="HH:MM AM"
                           type="text"
                           value=""
@@ -805,7 +849,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                     onChange={[Function]}
                     placeholder="HH:MM AM"
                     value=""
-                    variant="outlined"
+                    variant="filled"
                   >
                     <WithStyles(ForwardRef(FormControl))
                       className="MuiTextField-root"
@@ -814,7 +858,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                       error={false}
                       fullWidth={true}
                       required={false}
-                      variant="outlined"
+                      variant="filled"
                     >
                       <ForwardRef(FormControl)
                         className="MuiTextField-root"
@@ -832,12 +876,12 @@ exports[`TimePicker render matches snapshot 1`] = `
                         fullWidth={true}
                         hiddenLabel={true}
                         required={false}
-                        variant="outlined"
+                        variant="filled"
                       >
                         <div
                           className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
                         >
-                          <WithStyles(ForwardRef(OutlinedInput))
+                          <WithStyles(ForwardRef(FilledInput))
                             autoFocus={false}
                             endAdornment={
                               <WithStyles(ForwardRef(InputAdornment))
@@ -886,7 +930,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                               Object {
                                 "current": <input
                                   aria-invalid="false"
-                                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                  class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                                   placeholder="HH:MM AM"
                                   type="text"
                                   value=""
@@ -900,27 +944,29 @@ exports[`TimePicker render matches snapshot 1`] = `
                             placeholder="HH:MM AM"
                             value=""
                           >
-                            <ForwardRef(OutlinedInput)
+                            <ForwardRef(FilledInput)
                               autoFocus={false}
                               classes={
                                 Object {
-                                  "adornedEnd": "MuiOutlinedInput-adornedEnd",
-                                  "adornedStart": "MuiOutlinedInput-adornedStart",
-                                  "colorSecondary": "MuiOutlinedInput-colorSecondary",
+                                  "adornedEnd": "MuiFilledInput-adornedEnd",
+                                  "adornedStart": "MuiFilledInput-adornedStart",
+                                  "colorSecondary": "MuiFilledInput-colorSecondary",
                                   "disabled": "Mui-disabled",
                                   "error": "Mui-error",
                                   "focused": "Mui-focused",
-                                  "input": "MuiOutlinedInput-input",
-                                  "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
-                                  "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
-                                  "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
-                                  "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                  "marginDense": "MuiOutlinedInput-marginDense",
-                                  "multiline": "MuiOutlinedInput-multiline",
-                                  "notchedOutline": "MuiOutlinedInput-notchedOutline",
-                                  "root": "MuiOutlinedInput-root",
+                                  "input": "MuiFilledInput-input",
+                                  "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd",
+                                  "inputAdornedStart": "MuiFilledInput-inputAdornedStart",
+                                  "inputHiddenLabel": "MuiFilledInput-inputHiddenLabel",
+                                  "inputMarginDense": "MuiFilledInput-inputMarginDense",
+                                  "inputMultiline": "MuiFilledInput-inputMultiline",
+                                  "marginDense": "MuiFilledInput-marginDense",
+                                  "multiline": "MuiFilledInput-multiline",
+                                  "root": "MuiFilledInput-root",
+                                  "underline": "MuiFilledInput-underline",
                                 }
                               }
+                              disableUnderline={true}
                               endAdornment={
                                 <WithStyles(ForwardRef(InputAdornment))
                                   position="end"
@@ -968,7 +1014,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                 Object {
                                   "current": <input
                                     aria-invalid="false"
-                                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                    class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                                     placeholder="HH:MM AM"
                                     type="text"
                                     value=""
@@ -976,7 +1022,6 @@ exports[`TimePicker render matches snapshot 1`] = `
                                 }
                               }
                               multiline={false}
-                              notched={false}
                               onBlur={[Function]}
                               onChange={[Function]}
                               onKeyDown={[Function]}
@@ -987,21 +1032,22 @@ exports[`TimePicker render matches snapshot 1`] = `
                                 autoFocus={false}
                                 classes={
                                   Object {
-                                    "adornedEnd": "MuiOutlinedInput-adornedEnd",
-                                    "adornedStart": "MuiOutlinedInput-adornedStart",
-                                    "colorSecondary": "MuiOutlinedInput-colorSecondary",
+                                    "adornedEnd": "MuiFilledInput-adornedEnd",
+                                    "adornedStart": "MuiFilledInput-adornedStart",
+                                    "colorSecondary": "MuiFilledInput-colorSecondary",
                                     "disabled": "Mui-disabled",
                                     "error": "Mui-error",
                                     "focused": "Mui-focused",
-                                    "input": "MuiOutlinedInput-input",
-                                    "inputAdornedEnd": "MuiOutlinedInput-inputAdornedEnd",
-                                    "inputAdornedStart": "MuiOutlinedInput-inputAdornedStart",
-                                    "inputMarginDense": "MuiOutlinedInput-inputMarginDense",
-                                    "inputMultiline": "MuiOutlinedInput-inputMultiline",
-                                    "marginDense": "MuiOutlinedInput-marginDense",
-                                    "multiline": "MuiOutlinedInput-multiline",
-                                    "notchedOutline": null,
-                                    "root": "MuiOutlinedInput-root",
+                                    "input": "MuiFilledInput-input",
+                                    "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd",
+                                    "inputAdornedStart": "MuiFilledInput-inputAdornedStart",
+                                    "inputHiddenLabel": "MuiFilledInput-inputHiddenLabel",
+                                    "inputMarginDense": "MuiFilledInput-inputMarginDense",
+                                    "inputMultiline": "MuiFilledInput-inputMultiline",
+                                    "marginDense": "MuiFilledInput-marginDense",
+                                    "multiline": "MuiFilledInput-multiline",
+                                    "root": "MuiFilledInput-root",
+                                    "underline": null,
                                   }
                                 }
                                 endAdornment={
@@ -1052,7 +1098,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                   Object {
                                     "current": <input
                                       aria-invalid="false"
-                                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                      class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                                       placeholder="HH:MM AM"
                                       type="text"
                                       value=""
@@ -1064,7 +1110,6 @@ exports[`TimePicker render matches snapshot 1`] = `
                                 onChange={[Function]}
                                 onKeyDown={[Function]}
                                 placeholder="HH:MM AM"
-                                renderSuffix={[Function]}
                                 type="text"
                                 value=""
                               >
@@ -1072,24 +1117,24 @@ exports[`TimePicker render matches snapshot 1`] = `
                                   autoFocus={false}
                                   classes={
                                     Object {
-                                      "adornedEnd": "MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd",
-                                      "adornedStart": "MuiInputBase-adornedStart MuiOutlinedInput-adornedStart",
-                                      "colorSecondary": "MuiInputBase-colorSecondary MuiOutlinedInput-colorSecondary",
+                                      "adornedEnd": "MuiInputBase-adornedEnd MuiFilledInput-adornedEnd",
+                                      "adornedStart": "MuiInputBase-adornedStart MuiFilledInput-adornedStart",
+                                      "colorSecondary": "MuiInputBase-colorSecondary MuiFilledInput-colorSecondary",
                                       "disabled": "Mui-disabled Mui-disabled",
                                       "error": "Mui-error Mui-error",
                                       "focused": "Mui-focused Mui-focused",
                                       "formControl": "MuiInputBase-formControl",
                                       "fullWidth": "MuiInputBase-fullWidth",
-                                      "input": "MuiInputBase-input MuiOutlinedInput-input",
-                                      "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd",
-                                      "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart",
-                                      "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
-                                      "inputMarginDense": "MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense",
-                                      "inputMultiline": "MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline",
+                                      "input": "MuiInputBase-input MuiFilledInput-input",
+                                      "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd",
+                                      "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiFilledInput-inputAdornedStart",
+                                      "inputHiddenLabel": "MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel",
+                                      "inputMarginDense": "MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense",
+                                      "inputMultiline": "MuiInputBase-inputMultiline MuiFilledInput-inputMultiline",
                                       "inputTypeSearch": "MuiInputBase-inputTypeSearch",
-                                      "marginDense": "MuiInputBase-marginDense MuiOutlinedInput-marginDense",
-                                      "multiline": "MuiInputBase-multiline MuiOutlinedInput-multiline",
-                                      "root": "MuiInputBase-root MuiOutlinedInput-root",
+                                      "marginDense": "MuiInputBase-marginDense MuiFilledInput-marginDense",
+                                      "multiline": "MuiInputBase-multiline MuiFilledInput-multiline",
+                                      "root": "MuiInputBase-root MuiFilledInput-root",
                                     }
                                   }
                                   endAdornment={
@@ -1140,7 +1185,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                     Object {
                                       "current": <input
                                         aria-invalid="false"
-                                        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                        class="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                                         placeholder="HH:MM AM"
                                         type="text"
                                         value=""
@@ -1152,18 +1197,17 @@ exports[`TimePicker render matches snapshot 1`] = `
                                   onChange={[Function]}
                                   onKeyDown={[Function]}
                                   placeholder="HH:MM AM"
-                                  renderSuffix={[Function]}
                                   type="text"
                                   value=""
                                 >
                                   <div
-                                    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                                    className="MuiInputBase-root MuiFilledInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
                                     onClick={[Function]}
                                   >
                                     <input
                                       aria-invalid={false}
                                       autoFocus={false}
-                                      className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                                      className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
                                       disabled={false}
                                       onAnimationStart={[Function]}
                                       onBlur={[Function]}
@@ -1193,7 +1237,7 @@ exports[`TimePicker render matches snapshot 1`] = `
                                         position="end"
                                       >
                                         <div
-                                          className="MuiInputAdornment-root MuiInputAdornment-hiddenLabel MuiInputAdornment-positionEnd"
+                                          className="MuiInputAdornment-root MuiInputAdornment-hiddenLabel MuiInputAdornment-filled MuiInputAdornment-positionEnd"
                                         >
                                           <WithStyles(ForwardRef(IconButton))
                                             disabled={false}
@@ -1344,57 +1388,11 @@ exports[`TimePicker render matches snapshot 1`] = `
                                         </div>
                                       </ForwardRef(InputAdornment)>
                                     </WithStyles(ForwardRef(InputAdornment))>
-                                    <WithStyles(ForwardRef(NotchedOutline))
-                                      className="MuiOutlinedInput-notchedOutline"
-                                      labelWidth={0}
-                                      notched={false}
-                                    >
-                                      <ForwardRef(NotchedOutline)
-                                        className="MuiOutlinedInput-notchedOutline"
-                                        classes={
-                                          Object {
-                                            "legend": "PrivateNotchedOutline-legend-59",
-                                            "legendLabelled": "PrivateNotchedOutline-legendLabelled-60",
-                                            "legendNotched": "PrivateNotchedOutline-legendNotched-61",
-                                            "root": "PrivateNotchedOutline-root-58",
-                                          }
-                                        }
-                                        labelWidth={0}
-                                        notched={false}
-                                      >
-                                        <fieldset
-                                          aria-hidden={true}
-                                          className="PrivateNotchedOutline-root-58 MuiOutlinedInput-notchedOutline"
-                                          style={
-                                            Object {
-                                              "paddingLeft": 8,
-                                            }
-                                          }
-                                        >
-                                          <legend
-                                            className="PrivateNotchedOutline-legend-59"
-                                            style={
-                                              Object {
-                                                "width": 0.01,
-                                              }
-                                            }
-                                          >
-                                            <span
-                                              dangerouslySetInnerHTML={
-                                                Object {
-                                                  "__html": "&#8203;",
-                                                }
-                                              }
-                                            />
-                                          </legend>
-                                        </fieldset>
-                                      </ForwardRef(NotchedOutline)>
-                                    </WithStyles(ForwardRef(NotchedOutline))>
                                   </div>
                                 </ForwardRef(InputBase)>
                               </WithStyles(ForwardRef(InputBase))>
-                            </ForwardRef(OutlinedInput)>
-                          </WithStyles(ForwardRef(OutlinedInput))>
+                            </ForwardRef(FilledInput)>
+                          </WithStyles(ForwardRef(FilledInput))>
                         </div>
                       </ForwardRef(FormControl)>
                     </WithStyles(ForwardRef(FormControl))>
