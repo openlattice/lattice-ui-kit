@@ -58,7 +58,7 @@ const DatePicker = (props :typeof KeyboardDatePicker) => {
         format={format}
         fullWidth={fullWidth}
         InputProps={inputProps}
-        inputVariant="outlined"
+        inputVariant="filled"
         mask={mask}
         onChange={handleDateChange}
         placeholder={placeholder}
