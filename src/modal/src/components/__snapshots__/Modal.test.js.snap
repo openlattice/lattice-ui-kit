@@ -225,132 +225,6 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   justify-content: space-between;
 }
 
-.c12 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c11 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  position: relative;
-  overflow: hidden;
-  min-width: 14px;
-}
-
-.c10 {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 18px;
-  outline: none;
-  padding: 10px 20px;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  white-space: nowrap;
-  background-color: #7654ff;
-  border-color: #7654ff;
-  color: white;
-}
-
-.c10:hover {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #4f3fa7;
-  border-color: #4f3fa7;
-}
-
-.c10:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #261e52;
-  border-color: #261e52;
-}
-
-.c10:disabled {
-  cursor: not-allowed;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #f9f9fc;
-  border-color: #f9f9fc;
-  color: #8b8b90;
-}
-
-.c10:focus {
-  box-shadow: #261e52 0 0 0 2px;
-}
-
-.c14 {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 18px;
-  outline: none;
-  padding: 10px 20px;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  white-space: nowrap;
-  background-color: #f2f2f4;
-  border-color: #f2f2f4;
-  color: #56565a;
-}
-
-.c14:hover {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #dfdfe3;
-  border-color: #dfdfe3;
-}
-
-.c14:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #d1d1d6;
-  border-color: #d1d1d6;
-  color: #56565a;
-}
-
-.c14:disabled {
-  cursor: not-allowed;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #f9f9fc;
-  border-color: #f9f9fc;
-  color: #8b8b90;
-}
-
-.c14:focus {
-  box-shadow: #d1d1d6 0 0 0 2px;
-}
-
 .c9 {
   margin: 0 0 0 20px;
   -webkit-flex: none;
@@ -358,7 +232,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   flex: none;
 }
 
-.c13 {
+.c10 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -613,140 +487,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   justify-content: space-between;
 }
 
-.c12 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c11 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  position: relative;
-  overflow: hidden;
-  min-width: 14px;
-}
-
 .c9 {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 18px;
-  outline: none;
-  padding: 10px 20px;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  white-space: nowrap;
-  background-color: #7654ff;
-  border-color: #7654ff;
-  color: white;
-}
-
-.c9:hover {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #4f3fa7;
-  border-color: #4f3fa7;
-}
-
-.c9:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #261e52;
-  border-color: #261e52;
-}
-
-.c9:disabled {
-  cursor: not-allowed;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #f9f9fc;
-  border-color: #f9f9fc;
-  color: #8b8b90;
-}
-
-.c9:focus {
-  box-shadow: #261e52 0 0 0 2px;
-}
-
-.c13 {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 18px;
-  outline: none;
-  padding: 10px 20px;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  white-space: nowrap;
-  background-color: #f2f2f4;
-  border-color: #f2f2f4;
-  color: #56565a;
-}
-
-.c13:hover {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #dfdfe3;
-  border-color: #dfdfe3;
-}
-
-.c13:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #d1d1d6;
-  border-color: #d1d1d6;
-  color: #56565a;
-}
-
-.c13:disabled {
-  cursor: not-allowed;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #f9f9fc;
-  border-color: #f9f9fc;
-  color: #8b8b90;
-}
-
-.c13:focus {
-  box-shadow: #d1d1d6 0 0 0 2px;
-}
-
-.c10 {
   margin: 0 0 0 20px;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
 
-.c14 {
+.c10 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
@@ -834,34 +582,34 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                           class="c8"
                         >
                           <button
-                            class="c9 c10"
+                            class="MuiButtonBase-root MuiButton-root Button-root-1 MuiButton-contained Button-contained-15 c9"
                             mode="primary"
+                            tabindex="0"
                             type="button"
                           >
                             <span
-                              class="c11"
+                              class="MuiButton-label Button-label-2"
                             >
-                              <span
-                                class="c12"
-                              >
-                                Confirm
-                              </span>
+                              Confirm
                             </span>
+                            <span
+                              class="MuiTouchRipple-root"
+                            />
                           </button>
                           <button
-                            class="c13 c14"
+                            class="MuiButtonBase-root MuiButton-root Button-root-1 MuiButton-contained Button-contained-15 c10"
                             mode="default"
+                            tabindex="0"
                             type="button"
                           >
                             <span
-                              class="c11"
+                              class="MuiButton-label Button-label-2"
                             >
-                              <span
-                                class="c12"
-                              >
-                                Cancel
-                              </span>
+                              Cancel
                             </span>
+                            <span
+                              class="MuiTouchRipple-root"
+                            />
                           </button>
                         </div>
                       </div>
@@ -1365,157 +1113,213 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           <Button
                                                             className="c9"
                                                             disabled={false}
-                                                            fontColor=""
                                                             isLoading={false}
                                                             isLonely={false}
                                                             mode="primary"
                                                             onClick={[Function]}
                                                             stretch={false}
-                                                            type="button"
                                                           >
-                                                            <StyledButton
+                                                            <WithStyles(WithStyles(ForwardRef(Button)))
                                                               className="c9"
                                                               disabled={false}
-                                                              fontColor=""
                                                               isLonely={false}
                                                               mode="primary"
                                                               onClick={[Function]}
                                                               stretch={false}
-                                                              type="button"
+                                                              variant="contained"
                                                             >
-                                                              <StyledComponent
+                                                              <WithStyles(ForwardRef(Button))
                                                                 className="c9"
-                                                                disabled={false}
-                                                                fontColor=""
-                                                                forwardedComponent={
+                                                                classes={
                                                                   Object {
-                                                                    "$$typeof": Symbol(react.forward_ref),
-                                                                    "attrs": Array [],
-                                                                    "componentStyle": ComponentStyle {
-                                                                      "componentId": "StyledButton-sc-1etazn9-0",
-                                                                      "isStatic": false,
-                                                                      "lastClassName": "c14",
-                                                                      "rules": Array [
-                                                                        "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
-                                                                        "100ms",
-                                                                        " ease-out,border-color ",
-                                                                        "100ms",
-                                                                        " ease-out,box-shadow ",
-                                                                        "100ms",
-                                                                        " ease-out;width:",
-                                                                        [Function],
-                                                                        ";white-space:nowrap;",
-                                                                        [Function],
-                                                                        ";",
-                                                                        [Function],
-                                                                        ";:hover{cursor:pointer;text-decoration:none;",
-                                                                        [Function],
-                                                                        "};:active{text-decoration:none;",
-                                                                        [Function],
-                                                                        "};:disabled{cursor:not-allowed;text-decoration:none;",
-                                                                        [Function],
-                                                                        "};:focus{",
-                                                                        [Function],
-                                                                        "}",
-                                                                      ],
-                                                                    },
-                                                                    "displayName": "StyledButton",
-                                                                    "foldedComponentIds": Array [],
-                                                                    "render": [Function],
-                                                                    "styledComponentId": "StyledButton-sc-1etazn9-0",
-                                                                    "target": "button",
-                                                                    "toString": [Function],
-                                                                    "warnTooManyClasses": [Function],
-                                                                    "withComponent": [Function],
+                                                                    "colorInherit": "Button-colorInherit-23",
+                                                                    "contained": "Button-contained-15",
+                                                                    "containedNegative": "Button-containedNegative-19",
+                                                                    "containedPositive": "Button-containedPositive-18",
+                                                                    "containedPrimary": "Button-containedPrimary-16",
+                                                                    "containedSecondary": "Button-containedSecondary-17",
+                                                                    "containedSizeLarge": "Button-containedSizeLarge-29",
+                                                                    "containedSizeSmall": "Button-containedSizeSmall-28",
+                                                                    "containedWarning": "Button-containedWarning-20",
+                                                                    "disabled": "Button-disabled-22",
+                                                                    "endIcon": "Button-endIcon-34",
+                                                                    "focusVisible": "Button-focusVisible-21",
+                                                                    "fullWidth": "Button-fullWidth-32",
+                                                                    "iconSizeLarge": "Button-iconSizeLarge-37",
+                                                                    "iconSizeMedium": "Button-iconSizeMedium-36",
+                                                                    "iconSizeSmall": "Button-iconSizeSmall-35",
+                                                                    "label": "Button-label-2",
+                                                                    "outlined": "Button-outlined-9",
+                                                                    "outlinedNegative": "Button-outlinedNegative-13",
+                                                                    "outlinedPositive": "Button-outlinedPositive-12",
+                                                                    "outlinedPrimary": "Button-outlinedPrimary-10",
+                                                                    "outlinedSecondary": "Button-outlinedSecondary-11",
+                                                                    "outlinedSizeLarge": "Button-outlinedSizeLarge-27",
+                                                                    "outlinedSizeSmall": "Button-outlinedSizeSmall-26",
+                                                                    "outlinedWarning": "Button-outlinedWarning-14",
+                                                                    "root": "Button-root-1",
+                                                                    "sizeLarge": "Button-sizeLarge-31",
+                                                                    "sizeSmall": "Button-sizeSmall-30",
+                                                                    "startIcon": "Button-startIcon-33",
+                                                                    "text": "Button-text-3",
+                                                                    "textNegative": "Button-textNegative-7",
+                                                                    "textPositive": "Button-textPositive-6",
+                                                                    "textPrimary": "Button-textPrimary-4",
+                                                                    "textSecondary": "Button-textSecondary-5",
+                                                                    "textSizeLarge": "Button-textSizeLarge-25",
+                                                                    "textSizeSmall": "Button-textSizeSmall-24",
+                                                                    "textWarning": "Button-textWarning-8",
                                                                   }
                                                                 }
-                                                                forwardedRef={null}
+                                                                disabled={false}
                                                                 isLonely={false}
                                                                 mode="primary"
                                                                 onClick={[Function]}
                                                                 stretch={false}
-                                                                type="button"
+                                                                variant="contained"
                                                               >
-                                                                <button
-                                                                  className="c10 c9"
+                                                                <ForwardRef(Button)
+                                                                  className="c9"
+                                                                  classes={
+                                                                    Object {
+                                                                      "colorInherit": "MuiButton-colorInherit Button-colorInherit-23",
+                                                                      "contained": "MuiButton-contained Button-contained-15",
+                                                                      "containedNegative": "undefined Button-containedNegative-19",
+                                                                      "containedPositive": "undefined Button-containedPositive-18",
+                                                                      "containedPrimary": "MuiButton-containedPrimary Button-containedPrimary-16",
+                                                                      "containedSecondary": "MuiButton-containedSecondary Button-containedSecondary-17",
+                                                                      "containedSizeLarge": "MuiButton-containedSizeLarge Button-containedSizeLarge-29",
+                                                                      "containedSizeSmall": "MuiButton-containedSizeSmall Button-containedSizeSmall-28",
+                                                                      "containedWarning": "undefined Button-containedWarning-20",
+                                                                      "disableElevation": "MuiButton-disableElevation",
+                                                                      "disabled": "Mui-disabled Button-disabled-22",
+                                                                      "endIcon": "MuiButton-endIcon Button-endIcon-34",
+                                                                      "focusVisible": "Mui-focusVisible Button-focusVisible-21",
+                                                                      "fullWidth": "MuiButton-fullWidth Button-fullWidth-32",
+                                                                      "iconSizeLarge": "MuiButton-iconSizeLarge Button-iconSizeLarge-37",
+                                                                      "iconSizeMedium": "MuiButton-iconSizeMedium Button-iconSizeMedium-36",
+                                                                      "iconSizeSmall": "MuiButton-iconSizeSmall Button-iconSizeSmall-35",
+                                                                      "label": "MuiButton-label Button-label-2",
+                                                                      "outlined": "MuiButton-outlined Button-outlined-9",
+                                                                      "outlinedNegative": "undefined Button-outlinedNegative-13",
+                                                                      "outlinedPositive": "undefined Button-outlinedPositive-12",
+                                                                      "outlinedPrimary": "MuiButton-outlinedPrimary Button-outlinedPrimary-10",
+                                                                      "outlinedSecondary": "MuiButton-outlinedSecondary Button-outlinedSecondary-11",
+                                                                      "outlinedSizeLarge": "MuiButton-outlinedSizeLarge Button-outlinedSizeLarge-27",
+                                                                      "outlinedSizeSmall": "MuiButton-outlinedSizeSmall Button-outlinedSizeSmall-26",
+                                                                      "outlinedWarning": "undefined Button-outlinedWarning-14",
+                                                                      "root": "MuiButton-root Button-root-1",
+                                                                      "sizeLarge": "MuiButton-sizeLarge Button-sizeLarge-31",
+                                                                      "sizeSmall": "MuiButton-sizeSmall Button-sizeSmall-30",
+                                                                      "startIcon": "MuiButton-startIcon Button-startIcon-33",
+                                                                      "text": "MuiButton-text Button-text-3",
+                                                                      "textNegative": "undefined Button-textNegative-7",
+                                                                      "textPositive": "undefined Button-textPositive-6",
+                                                                      "textPrimary": "MuiButton-textPrimary Button-textPrimary-4",
+                                                                      "textSecondary": "MuiButton-textSecondary Button-textSecondary-5",
+                                                                      "textSizeLarge": "MuiButton-textSizeLarge Button-textSizeLarge-25",
+                                                                      "textSizeSmall": "MuiButton-textSizeSmall Button-textSizeSmall-24",
+                                                                      "textWarning": "undefined Button-textWarning-8",
+                                                                    }
+                                                                  }
                                                                   disabled={false}
+                                                                  isLonely={false}
                                                                   mode="primary"
                                                                   onClick={[Function]}
-                                                                  type="button"
+                                                                  stretch={false}
+                                                                  variant="contained"
                                                                 >
-                                                                  <ContentWrapper>
-                                                                    <StyledComponent
-                                                                      forwardedComponent={
+                                                                  <WithStyles(ForwardRef(ButtonBase))
+                                                                    className="MuiButton-root Button-root-1 MuiButton-contained Button-contained-15 c9"
+                                                                    component="button"
+                                                                    disabled={false}
+                                                                    focusRipple={true}
+                                                                    focusVisibleClassName="Mui-focusVisible Button-focusVisible-21"
+                                                                    isLonely={false}
+                                                                    mode="primary"
+                                                                    onClick={[Function]}
+                                                                    stretch={false}
+                                                                    type="button"
+                                                                  >
+                                                                    <ForwardRef(ButtonBase)
+                                                                      className="MuiButton-root Button-root-1 MuiButton-contained Button-contained-15 c9"
+                                                                      classes={
                                                                         Object {
-                                                                          "$$typeof": Symbol(react.forward_ref),
-                                                                          "attrs": Array [],
-                                                                          "componentStyle": ComponentStyle {
-                                                                            "componentId": "ContentWrapper-sc-36hfub-0",
-                                                                            "isStatic": false,
-                                                                            "lastClassName": "c11",
-                                                                            "rules": Array [
-                                                                              "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
-                                                                            ],
-                                                                          },
-                                                                          "displayName": "ContentWrapper",
-                                                                          "foldedComponentIds": Array [],
-                                                                          "render": [Function],
-                                                                          "styledComponentId": "ContentWrapper-sc-36hfub-0",
-                                                                          "target": "span",
-                                                                          "toString": [Function],
-                                                                          "warnTooManyClasses": [Function],
-                                                                          "withComponent": [Function],
+                                                                          "disabled": "Mui-disabled",
+                                                                          "focusVisible": "Mui-focusVisible",
+                                                                          "root": "MuiButtonBase-root",
                                                                         }
                                                                       }
-                                                                      forwardedRef={null}
+                                                                      component="button"
+                                                                      disabled={false}
+                                                                      focusRipple={true}
+                                                                      focusVisibleClassName="Mui-focusVisible Button-focusVisible-21"
+                                                                      isLonely={false}
+                                                                      mode="primary"
+                                                                      onClick={[Function]}
+                                                                      stretch={false}
+                                                                      type="button"
                                                                     >
-                                                                      <span
-                                                                        className="c11"
+                                                                      <button
+                                                                        className="MuiButtonBase-root MuiButton-root Button-root-1 MuiButton-contained Button-contained-15 c9"
+                                                                        disabled={false}
+                                                                        isLonely={false}
+                                                                        mode="primary"
+                                                                        onBlur={[Function]}
+                                                                        onClick={[Function]}
+                                                                        onDragLeave={[Function]}
+                                                                        onFocus={[Function]}
+                                                                        onKeyDown={[Function]}
+                                                                        onKeyUp={[Function]}
+                                                                        onMouseDown={[Function]}
+                                                                        onMouseLeave={[Function]}
+                                                                        onMouseUp={[Function]}
+                                                                        onTouchEnd={[Function]}
+                                                                        onTouchMove={[Function]}
+                                                                        onTouchStart={[Function]}
+                                                                        stretch={false}
+                                                                        tabIndex={0}
+                                                                        type="button"
                                                                       >
-                                                                        <Content
-                                                                          isLoading={false}
+                                                                        <span
+                                                                          className="MuiButton-label Button-label-2"
                                                                         >
-                                                                          <StyledComponent
-                                                                            forwardedComponent={
+                                                                          Confirm
+                                                                        </span>
+                                                                        <WithStyles(memo)
+                                                                          center={false}
+                                                                        >
+                                                                          <ForwardRef(TouchRipple)
+                                                                            center={false}
+                                                                            classes={
                                                                               Object {
-                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                "attrs": Array [],
-                                                                                "componentStyle": ComponentStyle {
-                                                                                  "componentId": "Content-sc-18psqsj-0",
-                                                                                  "isStatic": false,
-                                                                                  "lastClassName": "c12",
-                                                                                  "rules": Array [
-                                                                                    "flex:1 1 auto;opacity:",
-                                                                                    [Function],
-                                                                                    ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
-                                                                                  ],
-                                                                                },
-                                                                                "displayName": "Content",
-                                                                                "foldedComponentIds": Array [],
-                                                                                "render": [Function],
-                                                                                "styledComponentId": "Content-sc-18psqsj-0",
-                                                                                "target": "span",
-                                                                                "toString": [Function],
-                                                                                "warnTooManyClasses": [Function],
-                                                                                "withComponent": [Function],
+                                                                                "child": "MuiTouchRipple-child",
+                                                                                "childLeaving": "MuiTouchRipple-childLeaving",
+                                                                                "childPulsate": "MuiTouchRipple-childPulsate",
+                                                                                "ripple": "MuiTouchRipple-ripple",
+                                                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                                                                "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                                                                "root": "MuiTouchRipple-root",
                                                                               }
                                                                             }
-                                                                            forwardedRef={null}
-                                                                            isLoading={false}
                                                                           >
                                                                             <span
-                                                                              className="c12"
+                                                                              className="MuiTouchRipple-root"
                                                                             >
-                                                                              Confirm
+                                                                              <TransitionGroup
+                                                                                childFactory={[Function]}
+                                                                                component={null}
+                                                                                exit={true}
+                                                                              />
                                                                             </span>
-                                                                          </StyledComponent>
-                                                                        </Content>
-                                                                      </span>
-                                                                    </StyledComponent>
-                                                                  </ContentWrapper>
-                                                                </button>
-                                                              </StyledComponent>
-                                                            </StyledButton>
+                                                                          </ForwardRef(TouchRipple)>
+                                                                        </WithStyles(memo)>
+                                                                      </button>
+                                                                    </ForwardRef(ButtonBase)>
+                                                                  </WithStyles(ForwardRef(ButtonBase))>
+                                                                </ForwardRef(Button)>
+                                                              </WithStyles(ForwardRef(Button))>
+                                                            </WithStyles(WithStyles(ForwardRef(Button)))>
                                                           </Button>
                                                         </StyledComponent>
                                                       </ModalFooter__PrimaryButton>
@@ -1536,7 +1340,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c13",
+                                                                "lastClassName": "c10",
                                                                 "rules": Array [
                                                                   "flex:",
                                                                   [Function],
@@ -1559,156 +1363,208 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           stretch={false}
                                                         >
                                                           <Button
-                                                            className="c13"
+                                                            className="c10"
                                                             disabled={false}
-                                                            fontColor=""
                                                             isLoading={false}
                                                             mode="default"
                                                             onClick={[Function]}
                                                             stretch={false}
-                                                            type="button"
                                                           >
-                                                            <StyledButton
-                                                              className="c13"
+                                                            <WithStyles(WithStyles(ForwardRef(Button)))
+                                                              className="c10"
                                                               disabled={false}
-                                                              fontColor=""
                                                               mode="default"
                                                               onClick={[Function]}
                                                               stretch={false}
-                                                              type="button"
+                                                              variant="contained"
                                                             >
-                                                              <StyledComponent
-                                                                className="c13"
-                                                                disabled={false}
-                                                                fontColor=""
-                                                                forwardedComponent={
+                                                              <WithStyles(ForwardRef(Button))
+                                                                className="c10"
+                                                                classes={
                                                                   Object {
-                                                                    "$$typeof": Symbol(react.forward_ref),
-                                                                    "attrs": Array [],
-                                                                    "componentStyle": ComponentStyle {
-                                                                      "componentId": "StyledButton-sc-1etazn9-0",
-                                                                      "isStatic": false,
-                                                                      "lastClassName": "c14",
-                                                                      "rules": Array [
-                                                                        "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
-                                                                        "100ms",
-                                                                        " ease-out,border-color ",
-                                                                        "100ms",
-                                                                        " ease-out,box-shadow ",
-                                                                        "100ms",
-                                                                        " ease-out;width:",
-                                                                        [Function],
-                                                                        ";white-space:nowrap;",
-                                                                        [Function],
-                                                                        ";",
-                                                                        [Function],
-                                                                        ";:hover{cursor:pointer;text-decoration:none;",
-                                                                        [Function],
-                                                                        "};:active{text-decoration:none;",
-                                                                        [Function],
-                                                                        "};:disabled{cursor:not-allowed;text-decoration:none;",
-                                                                        [Function],
-                                                                        "};:focus{",
-                                                                        [Function],
-                                                                        "}",
-                                                                      ],
-                                                                    },
-                                                                    "displayName": "StyledButton",
-                                                                    "foldedComponentIds": Array [],
-                                                                    "render": [Function],
-                                                                    "styledComponentId": "StyledButton-sc-1etazn9-0",
-                                                                    "target": "button",
-                                                                    "toString": [Function],
-                                                                    "warnTooManyClasses": [Function],
-                                                                    "withComponent": [Function],
+                                                                    "colorInherit": "Button-colorInherit-23",
+                                                                    "contained": "Button-contained-15",
+                                                                    "containedNegative": "Button-containedNegative-19",
+                                                                    "containedPositive": "Button-containedPositive-18",
+                                                                    "containedPrimary": "Button-containedPrimary-16",
+                                                                    "containedSecondary": "Button-containedSecondary-17",
+                                                                    "containedSizeLarge": "Button-containedSizeLarge-29",
+                                                                    "containedSizeSmall": "Button-containedSizeSmall-28",
+                                                                    "containedWarning": "Button-containedWarning-20",
+                                                                    "disabled": "Button-disabled-22",
+                                                                    "endIcon": "Button-endIcon-34",
+                                                                    "focusVisible": "Button-focusVisible-21",
+                                                                    "fullWidth": "Button-fullWidth-32",
+                                                                    "iconSizeLarge": "Button-iconSizeLarge-37",
+                                                                    "iconSizeMedium": "Button-iconSizeMedium-36",
+                                                                    "iconSizeSmall": "Button-iconSizeSmall-35",
+                                                                    "label": "Button-label-2",
+                                                                    "outlined": "Button-outlined-9",
+                                                                    "outlinedNegative": "Button-outlinedNegative-13",
+                                                                    "outlinedPositive": "Button-outlinedPositive-12",
+                                                                    "outlinedPrimary": "Button-outlinedPrimary-10",
+                                                                    "outlinedSecondary": "Button-outlinedSecondary-11",
+                                                                    "outlinedSizeLarge": "Button-outlinedSizeLarge-27",
+                                                                    "outlinedSizeSmall": "Button-outlinedSizeSmall-26",
+                                                                    "outlinedWarning": "Button-outlinedWarning-14",
+                                                                    "root": "Button-root-1",
+                                                                    "sizeLarge": "Button-sizeLarge-31",
+                                                                    "sizeSmall": "Button-sizeSmall-30",
+                                                                    "startIcon": "Button-startIcon-33",
+                                                                    "text": "Button-text-3",
+                                                                    "textNegative": "Button-textNegative-7",
+                                                                    "textPositive": "Button-textPositive-6",
+                                                                    "textPrimary": "Button-textPrimary-4",
+                                                                    "textSecondary": "Button-textSecondary-5",
+                                                                    "textSizeLarge": "Button-textSizeLarge-25",
+                                                                    "textSizeSmall": "Button-textSizeSmall-24",
+                                                                    "textWarning": "Button-textWarning-8",
                                                                   }
                                                                 }
-                                                                forwardedRef={null}
+                                                                disabled={false}
                                                                 mode="default"
                                                                 onClick={[Function]}
                                                                 stretch={false}
-                                                                type="button"
+                                                                variant="contained"
                                                               >
-                                                                <button
-                                                                  className="c14 c13"
+                                                                <ForwardRef(Button)
+                                                                  className="c10"
+                                                                  classes={
+                                                                    Object {
+                                                                      "colorInherit": "MuiButton-colorInherit Button-colorInherit-23",
+                                                                      "contained": "MuiButton-contained Button-contained-15",
+                                                                      "containedNegative": "undefined Button-containedNegative-19",
+                                                                      "containedPositive": "undefined Button-containedPositive-18",
+                                                                      "containedPrimary": "MuiButton-containedPrimary Button-containedPrimary-16",
+                                                                      "containedSecondary": "MuiButton-containedSecondary Button-containedSecondary-17",
+                                                                      "containedSizeLarge": "MuiButton-containedSizeLarge Button-containedSizeLarge-29",
+                                                                      "containedSizeSmall": "MuiButton-containedSizeSmall Button-containedSizeSmall-28",
+                                                                      "containedWarning": "undefined Button-containedWarning-20",
+                                                                      "disableElevation": "MuiButton-disableElevation",
+                                                                      "disabled": "Mui-disabled Button-disabled-22",
+                                                                      "endIcon": "MuiButton-endIcon Button-endIcon-34",
+                                                                      "focusVisible": "Mui-focusVisible Button-focusVisible-21",
+                                                                      "fullWidth": "MuiButton-fullWidth Button-fullWidth-32",
+                                                                      "iconSizeLarge": "MuiButton-iconSizeLarge Button-iconSizeLarge-37",
+                                                                      "iconSizeMedium": "MuiButton-iconSizeMedium Button-iconSizeMedium-36",
+                                                                      "iconSizeSmall": "MuiButton-iconSizeSmall Button-iconSizeSmall-35",
+                                                                      "label": "MuiButton-label Button-label-2",
+                                                                      "outlined": "MuiButton-outlined Button-outlined-9",
+                                                                      "outlinedNegative": "undefined Button-outlinedNegative-13",
+                                                                      "outlinedPositive": "undefined Button-outlinedPositive-12",
+                                                                      "outlinedPrimary": "MuiButton-outlinedPrimary Button-outlinedPrimary-10",
+                                                                      "outlinedSecondary": "MuiButton-outlinedSecondary Button-outlinedSecondary-11",
+                                                                      "outlinedSizeLarge": "MuiButton-outlinedSizeLarge Button-outlinedSizeLarge-27",
+                                                                      "outlinedSizeSmall": "MuiButton-outlinedSizeSmall Button-outlinedSizeSmall-26",
+                                                                      "outlinedWarning": "undefined Button-outlinedWarning-14",
+                                                                      "root": "MuiButton-root Button-root-1",
+                                                                      "sizeLarge": "MuiButton-sizeLarge Button-sizeLarge-31",
+                                                                      "sizeSmall": "MuiButton-sizeSmall Button-sizeSmall-30",
+                                                                      "startIcon": "MuiButton-startIcon Button-startIcon-33",
+                                                                      "text": "MuiButton-text Button-text-3",
+                                                                      "textNegative": "undefined Button-textNegative-7",
+                                                                      "textPositive": "undefined Button-textPositive-6",
+                                                                      "textPrimary": "MuiButton-textPrimary Button-textPrimary-4",
+                                                                      "textSecondary": "MuiButton-textSecondary Button-textSecondary-5",
+                                                                      "textSizeLarge": "MuiButton-textSizeLarge Button-textSizeLarge-25",
+                                                                      "textSizeSmall": "MuiButton-textSizeSmall Button-textSizeSmall-24",
+                                                                      "textWarning": "undefined Button-textWarning-8",
+                                                                    }
+                                                                  }
                                                                   disabled={false}
                                                                   mode="default"
                                                                   onClick={[Function]}
-                                                                  type="button"
+                                                                  stretch={false}
+                                                                  variant="contained"
                                                                 >
-                                                                  <ContentWrapper>
-                                                                    <StyledComponent
-                                                                      forwardedComponent={
+                                                                  <WithStyles(ForwardRef(ButtonBase))
+                                                                    className="MuiButton-root Button-root-1 MuiButton-contained Button-contained-15 c10"
+                                                                    component="button"
+                                                                    disabled={false}
+                                                                    focusRipple={true}
+                                                                    focusVisibleClassName="Mui-focusVisible Button-focusVisible-21"
+                                                                    mode="default"
+                                                                    onClick={[Function]}
+                                                                    stretch={false}
+                                                                    type="button"
+                                                                  >
+                                                                    <ForwardRef(ButtonBase)
+                                                                      className="MuiButton-root Button-root-1 MuiButton-contained Button-contained-15 c10"
+                                                                      classes={
                                                                         Object {
-                                                                          "$$typeof": Symbol(react.forward_ref),
-                                                                          "attrs": Array [],
-                                                                          "componentStyle": ComponentStyle {
-                                                                            "componentId": "ContentWrapper-sc-36hfub-0",
-                                                                            "isStatic": false,
-                                                                            "lastClassName": "c11",
-                                                                            "rules": Array [
-                                                                              "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
-                                                                            ],
-                                                                          },
-                                                                          "displayName": "ContentWrapper",
-                                                                          "foldedComponentIds": Array [],
-                                                                          "render": [Function],
-                                                                          "styledComponentId": "ContentWrapper-sc-36hfub-0",
-                                                                          "target": "span",
-                                                                          "toString": [Function],
-                                                                          "warnTooManyClasses": [Function],
-                                                                          "withComponent": [Function],
+                                                                          "disabled": "Mui-disabled",
+                                                                          "focusVisible": "Mui-focusVisible",
+                                                                          "root": "MuiButtonBase-root",
                                                                         }
                                                                       }
-                                                                      forwardedRef={null}
+                                                                      component="button"
+                                                                      disabled={false}
+                                                                      focusRipple={true}
+                                                                      focusVisibleClassName="Mui-focusVisible Button-focusVisible-21"
+                                                                      mode="default"
+                                                                      onClick={[Function]}
+                                                                      stretch={false}
+                                                                      type="button"
                                                                     >
-                                                                      <span
-                                                                        className="c11"
+                                                                      <button
+                                                                        className="MuiButtonBase-root MuiButton-root Button-root-1 MuiButton-contained Button-contained-15 c10"
+                                                                        disabled={false}
+                                                                        mode="default"
+                                                                        onBlur={[Function]}
+                                                                        onClick={[Function]}
+                                                                        onDragLeave={[Function]}
+                                                                        onFocus={[Function]}
+                                                                        onKeyDown={[Function]}
+                                                                        onKeyUp={[Function]}
+                                                                        onMouseDown={[Function]}
+                                                                        onMouseLeave={[Function]}
+                                                                        onMouseUp={[Function]}
+                                                                        onTouchEnd={[Function]}
+                                                                        onTouchMove={[Function]}
+                                                                        onTouchStart={[Function]}
+                                                                        stretch={false}
+                                                                        tabIndex={0}
+                                                                        type="button"
                                                                       >
-                                                                        <Content
-                                                                          isLoading={false}
+                                                                        <span
+                                                                          className="MuiButton-label Button-label-2"
                                                                         >
-                                                                          <StyledComponent
-                                                                            forwardedComponent={
+                                                                          Cancel
+                                                                        </span>
+                                                                        <WithStyles(memo)
+                                                                          center={false}
+                                                                        >
+                                                                          <ForwardRef(TouchRipple)
+                                                                            center={false}
+                                                                            classes={
                                                                               Object {
-                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                "attrs": Array [],
-                                                                                "componentStyle": ComponentStyle {
-                                                                                  "componentId": "Content-sc-18psqsj-0",
-                                                                                  "isStatic": false,
-                                                                                  "lastClassName": "c12",
-                                                                                  "rules": Array [
-                                                                                    "flex:1 1 auto;opacity:",
-                                                                                    [Function],
-                                                                                    ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
-                                                                                  ],
-                                                                                },
-                                                                                "displayName": "Content",
-                                                                                "foldedComponentIds": Array [],
-                                                                                "render": [Function],
-                                                                                "styledComponentId": "Content-sc-18psqsj-0",
-                                                                                "target": "span",
-                                                                                "toString": [Function],
-                                                                                "warnTooManyClasses": [Function],
-                                                                                "withComponent": [Function],
+                                                                                "child": "MuiTouchRipple-child",
+                                                                                "childLeaving": "MuiTouchRipple-childLeaving",
+                                                                                "childPulsate": "MuiTouchRipple-childPulsate",
+                                                                                "ripple": "MuiTouchRipple-ripple",
+                                                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                                                                "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                                                                "root": "MuiTouchRipple-root",
                                                                               }
                                                                             }
-                                                                            forwardedRef={null}
-                                                                            isLoading={false}
                                                                           >
                                                                             <span
-                                                                              className="c12"
+                                                                              className="MuiTouchRipple-root"
                                                                             >
-                                                                              Cancel
+                                                                              <TransitionGroup
+                                                                                childFactory={[Function]}
+                                                                                component={null}
+                                                                                exit={true}
+                                                                              />
                                                                             </span>
-                                                                          </StyledComponent>
-                                                                        </Content>
-                                                                      </span>
-                                                                    </StyledComponent>
-                                                                  </ContentWrapper>
-                                                                </button>
-                                                              </StyledComponent>
-                                                            </StyledButton>
+                                                                          </ForwardRef(TouchRipple)>
+                                                                        </WithStyles(memo)>
+                                                                      </button>
+                                                                    </ForwardRef(ButtonBase)>
+                                                                  </WithStyles(ForwardRef(ButtonBase))>
+                                                                </ForwardRef(Button)>
+                                                              </WithStyles(ForwardRef(Button))>
+                                                            </WithStyles(WithStyles(ForwardRef(Button)))>
                                                           </Button>
                                                         </StyledComponent>
                                                       </ModalFooter__SecondaryButton>

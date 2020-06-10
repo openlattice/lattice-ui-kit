@@ -1,121 +1,141 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card snapshots With child divs 1`] = `
-.c0 {
-  background-color: white;
-  border: 1px solid #dfdfe3;
-  border-radius: 3px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-}
-
-<Card>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "Card-sc-3vnjrr-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "background-color:white;border:1px solid ",
-            "#dfdfe3",
-            ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;",
-            [Function],
-            ";",
-          ],
-        },
-        "displayName": "Card",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "Card-sc-3vnjrr-0",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
+<ForwardRef>
+  <WithStyles(ForwardRef(Card))
+    variant="outlined"
   >
-    <div
-      className="c0"
+    <ForwardRef(Card)
+      classes={
+        Object {
+          "root": "MuiCard-root",
+        }
+      }
+      variant="outlined"
     >
-      <div>
-        1
-      </div>
-      <div>
-        2
-      </div>
-      <div>
-        3
-      </div>
-    </div>
-  </StyledComponent>
-</Card>
+      <WithStyles(ForwardRef(Paper))
+        className="MuiCard-root"
+        elevation={1}
+        variant="outlined"
+      >
+        <ForwardRef(Paper)
+          className="MuiCard-root"
+          classes={
+            Object {
+              "elevation0": "MuiPaper-elevation0",
+              "elevation1": "MuiPaper-elevation1",
+              "elevation10": "MuiPaper-elevation10",
+              "elevation11": "MuiPaper-elevation11",
+              "elevation12": "MuiPaper-elevation12",
+              "elevation13": "MuiPaper-elevation13",
+              "elevation14": "MuiPaper-elevation14",
+              "elevation15": "MuiPaper-elevation15",
+              "elevation16": "MuiPaper-elevation16",
+              "elevation17": "MuiPaper-elevation17",
+              "elevation18": "MuiPaper-elevation18",
+              "elevation19": "MuiPaper-elevation19",
+              "elevation2": "MuiPaper-elevation2",
+              "elevation20": "MuiPaper-elevation20",
+              "elevation21": "MuiPaper-elevation21",
+              "elevation22": "MuiPaper-elevation22",
+              "elevation23": "MuiPaper-elevation23",
+              "elevation24": "MuiPaper-elevation24",
+              "elevation3": "MuiPaper-elevation3",
+              "elevation4": "MuiPaper-elevation4",
+              "elevation5": "MuiPaper-elevation5",
+              "elevation6": "MuiPaper-elevation6",
+              "elevation7": "MuiPaper-elevation7",
+              "elevation8": "MuiPaper-elevation8",
+              "elevation9": "MuiPaper-elevation9",
+              "outlined": "MuiPaper-outlined",
+              "root": "MuiPaper-root",
+              "rounded": "MuiPaper-rounded",
+            }
+          }
+          elevation={1}
+          variant="outlined"
+        >
+          <div
+            className="MuiPaper-root MuiCard-root MuiPaper-outlined MuiPaper-rounded"
+          >
+            <div>
+              1
+            </div>
+            <div>
+              2
+            </div>
+            <div>
+              3
+            </div>
+          </div>
+        </ForwardRef(Paper)>
+      </WithStyles(ForwardRef(Paper))>
+    </ForwardRef(Card)>
+  </WithStyles(ForwardRef(Card))>
+</ForwardRef>
 `;
 
 exports[`Card snapshots Without Children 1`] = `
-.c0 {
-  background-color: white;
-  border: 1px solid #dfdfe3;
-  border-radius: 3px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-}
-
-<Card>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "Card-sc-3vnjrr-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "background-color:white;border:1px solid ",
-            "#dfdfe3",
-            ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;",
-            [Function],
-            ";",
-          ],
-        },
-        "displayName": "Card",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "Card-sc-3vnjrr-0",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
+<ForwardRef>
+  <WithStyles(ForwardRef(Card))
+    variant="outlined"
   >
-    <div
-      className="c0"
-    />
-  </StyledComponent>
-</Card>
+    <ForwardRef(Card)
+      classes={
+        Object {
+          "root": "MuiCard-root",
+        }
+      }
+      variant="outlined"
+    >
+      <WithStyles(ForwardRef(Paper))
+        className="MuiCard-root"
+        elevation={1}
+        variant="outlined"
+      >
+        <ForwardRef(Paper)
+          className="MuiCard-root"
+          classes={
+            Object {
+              "elevation0": "MuiPaper-elevation0",
+              "elevation1": "MuiPaper-elevation1",
+              "elevation10": "MuiPaper-elevation10",
+              "elevation11": "MuiPaper-elevation11",
+              "elevation12": "MuiPaper-elevation12",
+              "elevation13": "MuiPaper-elevation13",
+              "elevation14": "MuiPaper-elevation14",
+              "elevation15": "MuiPaper-elevation15",
+              "elevation16": "MuiPaper-elevation16",
+              "elevation17": "MuiPaper-elevation17",
+              "elevation18": "MuiPaper-elevation18",
+              "elevation19": "MuiPaper-elevation19",
+              "elevation2": "MuiPaper-elevation2",
+              "elevation20": "MuiPaper-elevation20",
+              "elevation21": "MuiPaper-elevation21",
+              "elevation22": "MuiPaper-elevation22",
+              "elevation23": "MuiPaper-elevation23",
+              "elevation24": "MuiPaper-elevation24",
+              "elevation3": "MuiPaper-elevation3",
+              "elevation4": "MuiPaper-elevation4",
+              "elevation5": "MuiPaper-elevation5",
+              "elevation6": "MuiPaper-elevation6",
+              "elevation7": "MuiPaper-elevation7",
+              "elevation8": "MuiPaper-elevation8",
+              "elevation9": "MuiPaper-elevation9",
+              "outlined": "MuiPaper-outlined",
+              "root": "MuiPaper-root",
+              "rounded": "MuiPaper-rounded",
+            }
+          }
+          elevation={1}
+          variant="outlined"
+        >
+          <div
+            className="MuiPaper-root MuiCard-root MuiPaper-outlined MuiPaper-rounded"
+          />
+        </ForwardRef(Paper)>
+      </WithStyles(ForwardRef(Paper))>
+    </ForwardRef(Card)>
+  </WithStyles(ForwardRef(Card))>
+</ForwardRef>
 `;

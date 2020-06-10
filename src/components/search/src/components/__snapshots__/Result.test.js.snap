@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Result snapshots should match snapshot 1`] = `
-.c3 {
+.c2 {
   display: grid;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -11,7 +11,7 @@ exports[`Result snapshots should match snapshot 1`] = `
   grid-gap: 20px 30px;
 }
 
-.c1 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22,136 +22,99 @@ exports[`Result snapshots should match snapshot 1`] = `
   padding: 10px;
 }
 
-.c2 {
+.c1 {
   padding: 10px 30px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 {
-  background-color: white;
-  border: 1px solid #dfdfe3;
-  border-radius: 3px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-}
-
-.c0:hover,
-.c0:focus {
-  box-shadow: 0 2px 8px -2px rgba(0,0,0,0.15);
-  outline: none;
-  cursor: pointer;
-}
-
-.c0:hover *,
-.c0:focus * {
-  cursor: inherit;
-  pointer-events: auto;
-}
-
-.c0:active {
-  box-shadow: 0 2px 4px -2px rgba(0,0,0,0.15);
-  cursor: pointer;
-}
-
 <Result
   result={Immutable.Map {}}
   resultColumns={4}
 >
-  <Card
+  <ForwardRef
     onClick={[Function]}
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Card-sc-3vnjrr-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "background-color:white;border:1px solid ",
-              "#dfdfe3",
-              ";border-radius:3px;display:flex;flex:0 0 auto;flex-direction:column;position:relative;",
-              [Function],
-              ";",
-            ],
-          },
-          "displayName": "Card",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Card-sc-3vnjrr-0",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <WithStyles(ForwardRef(Card))
       onClick={[Function]}
+      variant="outlined"
     >
-      <div
-        className="c0"
+      <ForwardRef(Card)
+        classes={
+          Object {
+            "root": "MuiCard-root",
+          }
+        }
         onClick={[Function]}
+        variant="outlined"
       >
-        <StyledResultComponents__ResultWrapper>
-          <StyledComponent
-            forwardedComponent={
+        <WithStyles(ForwardRef(Paper))
+          className="MuiCard-root"
+          elevation={1}
+          onClick={[Function]}
+          variant="outlined"
+        >
+          <ForwardRef(Paper)
+            className="MuiCard-root"
+            classes={
               Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "StyledResultComponents__ResultWrapper-drevdl-1",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "display:flex;flex-direction:row;padding:10px;",
-                  ],
-                },
-                "displayName": "StyledResultComponents__ResultWrapper",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "StyledResultComponents__ResultWrapper-drevdl-1",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                "elevation0": "MuiPaper-elevation0",
+                "elevation1": "MuiPaper-elevation1",
+                "elevation10": "MuiPaper-elevation10",
+                "elevation11": "MuiPaper-elevation11",
+                "elevation12": "MuiPaper-elevation12",
+                "elevation13": "MuiPaper-elevation13",
+                "elevation14": "MuiPaper-elevation14",
+                "elevation15": "MuiPaper-elevation15",
+                "elevation16": "MuiPaper-elevation16",
+                "elevation17": "MuiPaper-elevation17",
+                "elevation18": "MuiPaper-elevation18",
+                "elevation19": "MuiPaper-elevation19",
+                "elevation2": "MuiPaper-elevation2",
+                "elevation20": "MuiPaper-elevation20",
+                "elevation21": "MuiPaper-elevation21",
+                "elevation22": "MuiPaper-elevation22",
+                "elevation23": "MuiPaper-elevation23",
+                "elevation24": "MuiPaper-elevation24",
+                "elevation3": "MuiPaper-elevation3",
+                "elevation4": "MuiPaper-elevation4",
+                "elevation5": "MuiPaper-elevation5",
+                "elevation6": "MuiPaper-elevation6",
+                "elevation7": "MuiPaper-elevation7",
+                "elevation8": "MuiPaper-elevation8",
+                "elevation9": "MuiPaper-elevation9",
+                "outlined": "MuiPaper-outlined",
+                "root": "MuiPaper-root",
+                "rounded": "MuiPaper-rounded",
               }
             }
-            forwardedRef={null}
+            elevation={1}
+            onClick={[Function]}
+            variant="outlined"
           >
             <div
-              className="c1"
+              className="MuiPaper-root MuiCard-root MuiPaper-outlined MuiPaper-rounded"
+              onClick={[Function]}
             >
-              <StyledResultComponents__ResultDetails>
+              <StyledResultComponents__ResultWrapper>
                 <StyledComponent
                   forwardedComponent={
                     Object {
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "StyledResultComponents__ResultDetails-drevdl-2",
+                        "componentId": "StyledResultComponents__ResultWrapper-drevdl-1",
                         "isStatic": false,
-                        "lastClassName": "c2",
+                        "lastClassName": "c0",
                         "rules": Array [
-                          "padding:10px 30px;flex:1;",
+                          "display:flex;flex-direction:row;padding:10px;",
                         ],
                       },
-                      "displayName": "StyledResultComponents__ResultDetails",
+                      "displayName": "StyledResultComponents__ResultWrapper",
                       "foldedComponentIds": Array [],
                       "render": [Function],
-                      "styledComponentId": "StyledResultComponents__ResultDetails-drevdl-2",
+                      "styledComponentId": "StyledResultComponents__ResultWrapper-drevdl-1",
                       "target": "div",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -161,61 +124,93 @@ exports[`Result snapshots should match snapshot 1`] = `
                   forwardedRef={null}
                 >
                   <div
-                    className="c2"
+                    className="c0"
                   >
-                    <DataGrid
-                      columns={4}
-                      data={Immutable.Map {}}
-                      emptyString="---"
-                      truncate={false}
-                    >
-                      <StyledResultComponents__ResultGrid
-                        columns={4}
-                      >
-                        <StyledComponent
-                          columns={4}
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "StyledResultComponents__ResultGrid-drevdl-0",
-                                "isStatic": false,
-                                "lastClassName": "c3",
-                                "rules": Array [
-                                  "display:grid;flex:1;grid-auto-flow:row;grid-template-columns:",
-                                  [Function],
-                                  ";grid-gap:20px 30px;",
-                                ],
-                              },
-                              "displayName": "StyledResultComponents__ResultGrid",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "StyledResultComponents__ResultGrid-drevdl-0",
-                              "target": "div",
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
+                    <StyledResultComponents__ResultDetails>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "StyledResultComponents__ResultDetails-drevdl-2",
+                              "isStatic": false,
+                              "lastClassName": "c1",
+                              "rules": Array [
+                                "padding:10px 30px;flex:1;",
+                              ],
+                            },
+                            "displayName": "StyledResultComponents__ResultDetails",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "StyledResultComponents__ResultDetails-drevdl-2",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
                           }
-                          forwardedRef={null}
+                        }
+                        forwardedRef={null}
+                      >
+                        <div
+                          className="c1"
                         >
-                          <div
-                            className="c3"
+                          <DataGrid
+                            columns={4}
+                            data={Immutable.Map {}}
+                            emptyString="---"
+                            truncate={false}
                           >
-                            <Component />
-                          </div>
-                        </StyledComponent>
-                      </StyledResultComponents__ResultGrid>
-                    </DataGrid>
+                            <StyledResultComponents__ResultGrid
+                              columns={4}
+                            >
+                              <StyledComponent
+                                columns={4}
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "StyledResultComponents__ResultGrid-drevdl-0",
+                                      "isStatic": false,
+                                      "lastClassName": "c2",
+                                      "rules": Array [
+                                        "display:grid;flex:1;grid-auto-flow:row;grid-template-columns:",
+                                        [Function],
+                                        ";grid-gap:20px 30px;",
+                                      ],
+                                    },
+                                    "displayName": "StyledResultComponents__ResultGrid",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "StyledResultComponents__ResultGrid-drevdl-0",
+                                    "target": "div",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <div
+                                  className="c2"
+                                >
+                                  <Component />
+                                </div>
+                              </StyledComponent>
+                            </StyledResultComponents__ResultGrid>
+                          </DataGrid>
+                        </div>
+                      </StyledComponent>
+                    </StyledResultComponents__ResultDetails>
                   </div>
                 </StyledComponent>
-              </StyledResultComponents__ResultDetails>
+              </StyledResultComponents__ResultWrapper>
             </div>
-          </StyledComponent>
-        </StyledResultComponents__ResultWrapper>
-      </div>
-    </StyledComponent>
-  </Card>
+          </ForwardRef(Paper)>
+        </WithStyles(ForwardRef(Paper))>
+      </ForwardRef(Card)>
+    </WithStyles(ForwardRef(Card))>
+  </ForwardRef>
 </Result>
 `;
