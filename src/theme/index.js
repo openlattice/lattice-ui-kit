@@ -1,6 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
 import {
+  BLUE,
   GREEN,
   NEUTRAL,
   ORANGE,
@@ -16,6 +17,107 @@ const lightTheme = createMuiTheme({
         padding: '0 16px',
         minHeight: '40px',
         fontSize: '16px',
+      },
+      label: {
+        fontWeight: 600,
+        lineHeight: 1.2,
+      },
+      /* Pseudo-class applied to the ButtonBase root element if the button is keyboard focused. */
+      focusVisible: {},
+      /* Pseudo-class applied to the root element if `disabled={true}`. */
+      disabled: {},
+      /* Styles applied to the root element if `color="inherit"`. */
+      colorInherit: {
+        color: 'inherit',
+        borderColor: 'currentColor',
+      },
+      /* Styles applied to the root element `variant="text"`. */
+      text: {
+        padding: '0 16px',
+      },
+      /* Styles applied to the root element if `size="small"` and `variant="text"`. */
+      textSizeSmall: {
+        minHeight: '26px',
+        padding: '5px',
+        fontSize: '14px',
+      },
+      /* Styles applied to the root element if `size="large"` and `variant="text"`. */
+      textSizeLarge: {
+        minHeight: '46px',
+        padding: '0 40px',
+        fontSize: '18px',
+      },
+      /* Styles applied to the root element if `size="small"` and `variant="outlined"`. */
+      outlinedSizeSmall: {
+        minHeight: '26px',
+        padding: '4px',
+        fontSize: '14px',
+      },
+      /* Styles applied to the root element if `size="large"` and `variant="outlined"`. */
+      outlinedSizeLarge: {
+        minHeight: '46px',
+        padding: '0 38px',
+        fontSize: '18px',
+      },
+      /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
+      containedSizeSmall: {
+        minHeight: '26px',
+        padding: '5px',
+        fontSize: '14px',
+      },
+      /* Styles applied to the root element if `size="large"` and `variant="contained"`. */
+      containedSizeLarge: {
+        minHeight: '46px',
+        padding: '0 40px',
+        fontSize: '18px',
+      },
+      /* Styles applied to the root element if `size="small"`. */
+      sizeSmall: {
+        minWidth: '26px',
+      },
+      /* Styles applied to the root element if `size="large"`. */
+      sizeLarge: {
+        minWidth: '26px',
+      },
+      /* Styles applied to the root element if `fullWidth={true}`. */
+      fullWidth: {
+        width: '100%',
+      },
+      /* Styles applied to the startIcon element if supplied. */
+      startIcon: {
+        display: 'inherit',
+        marginRight: 8,
+        marginLeft: -4,
+        '&$iconSizeSmall': {
+          marginLeft: -2,
+        },
+      },
+      /* Styles applied to the endIcon element if supplied. */
+      endIcon: {
+        display: 'inherit',
+        marginRight: -4,
+        marginLeft: 8,
+        '&$iconSizeSmall': {
+          marginRight: -2,
+        },
+      },
+      /* Styles applied to the icon element if supplied and `size="small"`. */
+      iconSizeSmall: {
+        '& > *:first-child': {
+          fontSize: 'inherit',
+        },
+      },
+      /* Styles applied to the icon element if supplied and `size="medium"`. */
+      iconSizeMedium: {
+        '& > *:first-child': {
+          fontSize: 'inherit',
+        },
+      },
+      /* Styles applied to the icon element if supplied and `size="large"`. */
+      iconSizeLarge: {
+        '& > *:first-child': {
+          fontSize: 'inherit',
+        },
       },
     },
     MuiCard: {
@@ -165,6 +267,11 @@ const lightTheme = createMuiTheme({
       dark: RED.R400,
       contrastText: 'white'
     },
+    info: {
+      main: BLUE.B300,
+      dark: BLUE.B400,
+      contrastText: 'white'
+    },
     text: {
       primary: NEUTRAL.N900
     },
@@ -203,6 +310,107 @@ const darkTheme = createMuiTheme({
         padding: '0 16px',
         minHeight: '40px',
         fontSize: '16px',
+      },
+      label: {
+        fontWeight: 600,
+        lineHeight: 1.2,
+      },
+      /* Pseudo-class applied to the ButtonBase root element if the button is keyboard focused. */
+      focusVisible: {},
+      /* Pseudo-class applied to the root element if `disabled={true}`. */
+      disabled: {},
+      /* Styles applied to the root element if `color="inherit"`. */
+      colorInherit: {
+        color: 'inherit',
+        borderColor: 'currentColor',
+      },
+      /* Styles applied to the root element `variant="text"`. */
+      text: {
+        padding: '0 16px',
+      },
+      /* Styles applied to the root element if `size="small"` and `variant="text"`. */
+      textSizeSmall: {
+        minHeight: '26px',
+        padding: '5px',
+        fontSize: '14px',
+      },
+      /* Styles applied to the root element if `size="large"` and `variant="text"`. */
+      textSizeLarge: {
+        minHeight: '46px',
+        padding: '0 40px',
+        fontSize: '18px',
+      },
+      /* Styles applied to the root element if `size="small"` and `variant="outlined"`. */
+      outlinedSizeSmall: {
+        minHeight: '26px',
+        padding: '4px',
+        fontSize: '14px',
+      },
+      /* Styles applied to the root element if `size="large"` and `variant="outlined"`. */
+      outlinedSizeLarge: {
+        minHeight: '46px',
+        padding: '0 38px',
+        fontSize: '18px',
+      },
+      /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
+      containedSizeSmall: {
+        minHeight: '26px',
+        padding: '5px',
+        fontSize: '14px',
+      },
+      /* Styles applied to the root element if `size="large"` and `variant="contained"`. */
+      containedSizeLarge: {
+        minHeight: '46px',
+        padding: '0 40px',
+        fontSize: '18px',
+      },
+      /* Styles applied to the root element if `size="small"`. */
+      sizeSmall: {
+        minWidth: '26px',
+      },
+      /* Styles applied to the root element if `size="large"`. */
+      sizeLarge: {
+        minWidth: '26px',
+      },
+      /* Styles applied to the root element if `fullWidth={true}`. */
+      fullWidth: {
+        width: '100%',
+      },
+      /* Styles applied to the startIcon element if supplied. */
+      startIcon: {
+        display: 'inherit',
+        marginRight: 8,
+        marginLeft: -4,
+        '&$iconSizeSmall': {
+          marginLeft: -2,
+        },
+      },
+      /* Styles applied to the endIcon element if supplied. */
+      endIcon: {
+        display: 'inherit',
+        marginRight: -4,
+        marginLeft: 8,
+        '&$iconSizeSmall': {
+          marginRight: -2,
+        },
+      },
+      /* Styles applied to the icon element if supplied and `size="small"`. */
+      iconSizeSmall: {
+        '& > *:first-child': {
+          fontSize: 'inherit',
+        },
+      },
+      /* Styles applied to the icon element if supplied and `size="medium"`. */
+      iconSizeMedium: {
+        '& > *:first-child': {
+          fontSize: 'inherit',
+        },
+      },
+      /* Styles applied to the icon element if supplied and `size="large"`. */
+      iconSizeLarge: {
+        '& > *:first-child': {
+          fontSize: 'inherit',
+        },
       },
     },
     MuiCard: {
@@ -333,6 +541,11 @@ const darkTheme = createMuiTheme({
     error: {
       main: RED.R300,
       dark: RED.R400,
+      contrastText: 'white'
+    },
+    info: {
+      main: BLUE.B300,
+      dark: BLUE.B400,
       contrastText: 'white'
     },
     background: {
