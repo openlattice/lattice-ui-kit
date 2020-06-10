@@ -1,11 +1,12 @@
-import deepPurple from '@material-ui/core/colors/deepPurple';
 import { createMuiTheme } from '@material-ui/core/styles';
 
 import {
+  GREEN,
   NEUTRAL,
+  ORANGE,
+  PURPLE,
   RED,
 } from '../colors';
-import { duration } from '../style/transitions';
 
 const lightTheme = createMuiTheme({
   overrides: {
@@ -29,8 +30,6 @@ const lightTheme = createMuiTheme({
         fontSize: '14px',
         minHeight: '40px',
         lineHeight: '1.5',
-        transition: `background-color ${duration.standard} ease-out,
-        border-color ${duration.standard} ease-out`,
         '&:hover:not($disabled):not($focused):not($error)': {
           backgroundColor: NEUTRAL.N100
         },
@@ -48,6 +47,14 @@ const lightTheme = createMuiTheme({
       inputHiddenLabel: {
         padding: 0
       }
+    },
+    MuiButton: {
+      root: {
+        textTransform: 'none',
+        padding: '0 16px',
+        minHeight: '40px',
+        fontSize: '16px',
+      },
     },
     MuiIconButton: {
       root: {
@@ -116,15 +123,6 @@ const lightTheme = createMuiTheme({
       }
     },
     MuiTouchRipple: {
-      child: {
-        borderRadius: 0,
-      },
-      childLeaving: {
-        animationDuration: '200ms'
-      },
-      rippleVisible: {
-        animationDuration: '200ms'
-      },
       '@keyframes enter': {
         '0%': {
           transform: 'scale(1)',
@@ -138,9 +136,32 @@ const lightTheme = createMuiTheme({
     }
   },
   palette: {
-    primary: deepPurple,
+    primary: {
+      main: PURPLE.P300,
+      dark: PURPLE.P400,
+    },
+    secondary: {
+      main: PURPLE.P100,
+      dark: PURPLE.P200,
+      contrastText: PURPLE.P400,
+    },
+    success: {
+      main: GREEN.G300,
+      dark: GREEN.G400,
+      contrastText: 'white'
+    },
+    warning: {
+      main: ORANGE.O300,
+      dark: ORANGE.O400,
+      contrastText: 'white'
+    },
+    error: {
+      main: RED.R300,
+      dark: RED.R400,
+      contrastText: 'white'
+    },
     text: {
-      primary: NEUTRAL.N700
+      primary: NEUTRAL.N900
     },
     background: {
       header: NEUTRAL.N50
@@ -158,11 +179,25 @@ const lightTheme = createMuiTheme({
     MuiFilledInput: {
       disableUnderline: true
     }
+  },
+  typography: {
+    fontFamily: [
+      'Inter',
+      'Arial',
+      'sans-serif'
+    ].join(','),
+    color: 'inherit'
   }
 });
 
 const darkTheme = createMuiTheme({
   overrides: {
+    MuiButton: {
+      textTransform: 'none',
+      padding: '0 16px',
+      minHeight: '40px',
+      fontSize: '16px',
+    },
     MuiFormHelperText: {
       root: {
         fontFamily: 'inherit',
@@ -183,8 +218,6 @@ const darkTheme = createMuiTheme({
         fontSize: '14px',
         height: '40px',
         lineHeight: '1.5',
-        transition: `background-color ${duration.standard} ease-out,
-        border-color ${duration.standard} ease-out`,
         '&:hover:not($disabled):not($focused):not($error)': {
           backgroundColor: '#4F4E54',
           borderColor: '#4F4E54',
@@ -223,6 +256,23 @@ const darkTheme = createMuiTheme({
       },
       notchedOutline: {
         visibility: 'hidden'
+      },
+    },
+    MuiFilledInput: {
+      root: {
+        border: '1px solid #36353B',
+        '&$focused': {
+          borderColor: '#98979D',
+        },
+        '&$error': {
+          borderColor: RED.R300
+        },
+      },
+      input: {
+        padding: '10px'
+      },
+      notchedOutline: {
+        visibility: 'hidden'
       }
     },
     MuiTouchRipple: {
@@ -230,10 +280,10 @@ const darkTheme = createMuiTheme({
         borderRadius: 0,
       },
       childLeaving: {
-        animationDuration: '200ms'
+        animationDuration: '250ms'
       },
       rippleVisible: {
-        animationDuration: '200ms'
+        animationDuration: '250ms'
       },
       '@keyframes enter': {
         '0%': {
@@ -249,7 +299,30 @@ const darkTheme = createMuiTheme({
   },
   palette: {
     type: 'dark',
-    primary: deepPurple,
+    primary: {
+      main: PURPLE.P300,
+      dark: PURPLE.P400,
+    },
+    secondary: {
+      main: PURPLE.P100,
+      dark: PURPLE.P200,
+      contrastText: PURPLE.P400,
+    },
+    success: {
+      main: GREEN.G300,
+      dark: GREEN.G400,
+      contrastText: 'white'
+    },
+    warning: {
+      main: ORANGE.O300,
+      dark: ORANGE.O400,
+      contrastText: 'white'
+    },
+    error: {
+      main: RED.R300,
+      dark: RED.R400,
+      contrastText: 'white'
+    },
     background: {
       header: '#333'
     },
@@ -264,12 +337,11 @@ const darkTheme = createMuiTheme({
     },
     MuiFilledInput: {
       disableUnderline: true
-    }
+    },
   },
   typography: {
     fontFamily: [
       'Inter',
-      'Open Sans',
       'Arial',
       'sans-serif'
     ].join(','),
