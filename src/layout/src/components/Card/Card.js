@@ -1,23 +1,16 @@
-/*
- * @flow
- */
+// @flow
 
-import styled from 'styled-components';
+import React from 'react';
 
-import * as Colors from '../../../../colors';
-import { getHoverStyles } from '../../../../utils/StyleUtils';
+import { Card as MuiCard } from '@material-ui/core';
+import type { CardProps } from '@material-ui/core';
 
-const { NEUTRAL } = Colors;
-
-const Card = styled.div`
-  background-color: white;
-  border: 1px solid ${NEUTRAL.N100};
-  border-radius: 3px;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  position: relative;
-  ${getHoverStyles};
-`;
+const Card = React.forwardRef<CardProps, MuiCard>((props, ref) => (
+  <MuiCard
+      variant="outlined"
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...props}
+      ref={ref} />
+));
 
 export default Card;
