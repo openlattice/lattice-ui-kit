@@ -69,6 +69,7 @@ storiesOf('Button', module)
           <Button variant="outlined" color="error">Error</Button>
           <Button variant="outlined" color="warning">Warning</Button>
           <Button variant="outlined" color="info">Info</Button>
+          <Button variant="outlined" href="/?path=/story/button--buttons">href</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
@@ -81,6 +82,7 @@ storiesOf('Button', module)
           <Button variant="text" color="error">Error</Button>
           <Button variant="text" color="warning">Warning</Button>
           <Button variant="text" color="info">Info</Button>
+          <Button variant="text" href="/?path=/story/button--buttons">href</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
@@ -111,6 +113,7 @@ storiesOf('Button', module)
           <Button disabled color="error">Error</Button>
           <Button disabled color="warning">Warning</Button>
           <Button disabled color="info">Info</Button>
+          <Button disabled href="/?path=/story/button--buttons">href</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
