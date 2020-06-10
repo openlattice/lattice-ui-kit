@@ -40,11 +40,100 @@ exports[`TimePicker render matches snapshot 1`] = `
       },
       "overrides": Object {
         "MuiButton": Object {
+          "colorInherit": Object {
+            "borderColor": "currentColor",
+            "color": "inherit",
+          },
+          "containedSizeLarge": Object {
+            "fontSize": "18px",
+            "minHeight": "46px",
+            "padding": "0 40px",
+          },
+          "containedSizeSmall": Object {
+            "fontSize": "14px",
+            "minHeight": "26px",
+            "padding": "5px",
+          },
+          "disabled": Object {},
+          "endIcon": Object {
+            "&$iconSizeSmall": Object {
+              "marginRight": -2,
+            },
+            "display": "inherit",
+            "marginLeft": 8,
+            "marginRight": -4,
+          },
+          "focusVisible": Object {},
+          "fullWidth": Object {
+            "width": "100%",
+          },
+          "iconSizeLarge": Object {
+            "& > *:first-child": Object {
+              "fontSize": "inherit",
+            },
+          },
+          "iconSizeMedium": Object {
+            "& > *:first-child": Object {
+              "fontSize": "inherit",
+            },
+          },
+          "iconSizeSmall": Object {
+            "& > *:first-child": Object {
+              "fontSize": "inherit",
+            },
+          },
+          "label": Object {
+            "fontWeight": 600,
+            "lineHeight": 1.2,
+          },
+          "outlinedSizeLarge": Object {
+            "fontSize": "18px",
+            "minHeight": "46px",
+            "padding": "0 38px",
+          },
+          "outlinedSizeSmall": Object {
+            "fontSize": "14px",
+            "minHeight": "26px",
+            "padding": "4px",
+          },
           "root": Object {
+            "borderRadius": "3px",
             "fontSize": "16px",
             "minHeight": "40px",
             "padding": "0 16px",
             "textTransform": "none",
+          },
+          "sizeLarge": Object {
+            "minWidth": "26px",
+          },
+          "sizeSmall": Object {
+            "minWidth": "26px",
+          },
+          "startIcon": Object {
+            "&$iconSizeSmall": Object {
+              "marginLeft": -2,
+            },
+            "display": "inherit",
+            "marginLeft": -4,
+            "marginRight": 8,
+          },
+          "text": Object {
+            "padding": "0 16px",
+          },
+          "textSizeLarge": Object {
+            "fontSize": "18px",
+            "minHeight": "46px",
+            "padding": "0 40px",
+          },
+          "textSizeSmall": Object {
+            "fontSize": "14px",
+            "minHeight": "26px",
+            "padding": "5px",
+          },
+        },
+        "MuiCard": Object {
+          "root": Object {
+            "overflow": "visible",
           },
         },
         "MuiFilledInput": Object {
@@ -214,10 +303,10 @@ exports[`TimePicker render matches snapshot 1`] = `
           "A700": "#616161",
         },
         "info": Object {
-          "contrastText": "#fff",
-          "dark": "#1976d2",
-          "light": "#64b5f6",
-          "main": "#2196f3",
+          "contrastText": "white",
+          "dark": "#2161b7",
+          "light": "rgb(114, 174, 255)",
+          "main": "#4f9aff",
         },
         "primary": Object {
           "contrastText": "#fff",

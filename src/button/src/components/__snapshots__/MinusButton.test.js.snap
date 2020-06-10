@@ -42,258 +42,210 @@ exports[`MinusButton icon with text should match snapshot 1`] = `
     }
   >
     <Button>
-      <WithStyles(WithStyles(ForwardRef(Button)))
+      <WithStyles(ForwardRef(Button))
+        className=""
+        color="default"
+        disableElevation={true}
         variant="contained"
       >
-        <WithStyles(ForwardRef(Button))
+        <ForwardRef(Button)
+          className=""
           classes={
             Object {
-              "colorInherit": "Button-colorInherit-23",
-              "contained": "Button-contained-15",
-              "containedNegative": "Button-containedNegative-19",
-              "containedPositive": "Button-containedPositive-18",
-              "containedPrimary": "Button-containedPrimary-16",
-              "containedSecondary": "Button-containedSecondary-17",
-              "containedSizeLarge": "Button-containedSizeLarge-29",
-              "containedSizeSmall": "Button-containedSizeSmall-28",
-              "containedWarning": "Button-containedWarning-20",
-              "disabled": "Button-disabled-22",
-              "endIcon": "Button-endIcon-34",
-              "focusVisible": "Button-focusVisible-21",
-              "fullWidth": "Button-fullWidth-32",
-              "iconSizeLarge": "Button-iconSizeLarge-37",
-              "iconSizeMedium": "Button-iconSizeMedium-36",
-              "iconSizeSmall": "Button-iconSizeSmall-35",
-              "label": "Button-label-2",
-              "outlined": "Button-outlined-9",
-              "outlinedNegative": "Button-outlinedNegative-13",
-              "outlinedPositive": "Button-outlinedPositive-12",
-              "outlinedPrimary": "Button-outlinedPrimary-10",
-              "outlinedSecondary": "Button-outlinedSecondary-11",
-              "outlinedSizeLarge": "Button-outlinedSizeLarge-27",
-              "outlinedSizeSmall": "Button-outlinedSizeSmall-26",
-              "outlinedWarning": "Button-outlinedWarning-14",
-              "root": "Button-root-1",
-              "sizeLarge": "Button-sizeLarge-31",
-              "sizeSmall": "Button-sizeSmall-30",
-              "startIcon": "Button-startIcon-33",
-              "text": "Button-text-3",
-              "textNegative": "Button-textNegative-7",
-              "textPositive": "Button-textPositive-6",
-              "textPrimary": "Button-textPrimary-4",
-              "textSecondary": "Button-textSecondary-5",
-              "textSizeLarge": "Button-textSizeLarge-25",
-              "textSizeSmall": "Button-textSizeSmall-24",
-              "textWarning": "Button-textWarning-8",
+              "colorInherit": "MuiButton-colorInherit",
+              "contained": "MuiButton-contained",
+              "containedPrimary": "MuiButton-containedPrimary",
+              "containedSecondary": "MuiButton-containedSecondary",
+              "containedSizeLarge": "MuiButton-containedSizeLarge",
+              "containedSizeSmall": "MuiButton-containedSizeSmall",
+              "disableElevation": "MuiButton-disableElevation",
+              "disabled": "Mui-disabled",
+              "endIcon": "MuiButton-endIcon",
+              "focusVisible": "Mui-focusVisible",
+              "fullWidth": "MuiButton-fullWidth",
+              "iconSizeLarge": "MuiButton-iconSizeLarge",
+              "iconSizeMedium": "MuiButton-iconSizeMedium",
+              "iconSizeSmall": "MuiButton-iconSizeSmall",
+              "label": "MuiButton-label",
+              "outlined": "MuiButton-outlined",
+              "outlinedPrimary": "MuiButton-outlinedPrimary",
+              "outlinedSecondary": "MuiButton-outlinedSecondary",
+              "outlinedSizeLarge": "MuiButton-outlinedSizeLarge",
+              "outlinedSizeSmall": "MuiButton-outlinedSizeSmall",
+              "root": "MuiButton-root",
+              "sizeLarge": "MuiButton-sizeLarge",
+              "sizeSmall": "MuiButton-sizeSmall",
+              "startIcon": "MuiButton-startIcon",
+              "text": "MuiButton-text",
+              "textPrimary": "MuiButton-textPrimary",
+              "textSecondary": "MuiButton-textSecondary",
+              "textSizeLarge": "MuiButton-textSizeLarge",
+              "textSizeSmall": "MuiButton-textSizeSmall",
             }
           }
+          color="default"
+          disableElevation={true}
           variant="contained"
         >
-          <ForwardRef(Button)
-            classes={
-              Object {
-                "colorInherit": "MuiButton-colorInherit Button-colorInherit-23",
-                "contained": "MuiButton-contained Button-contained-15",
-                "containedNegative": "undefined Button-containedNegative-19",
-                "containedPositive": "undefined Button-containedPositive-18",
-                "containedPrimary": "MuiButton-containedPrimary Button-containedPrimary-16",
-                "containedSecondary": "MuiButton-containedSecondary Button-containedSecondary-17",
-                "containedSizeLarge": "MuiButton-containedSizeLarge Button-containedSizeLarge-29",
-                "containedSizeSmall": "MuiButton-containedSizeSmall Button-containedSizeSmall-28",
-                "containedWarning": "undefined Button-containedWarning-20",
-                "disableElevation": "MuiButton-disableElevation",
-                "disabled": "Mui-disabled Button-disabled-22",
-                "endIcon": "MuiButton-endIcon Button-endIcon-34",
-                "focusVisible": "Mui-focusVisible Button-focusVisible-21",
-                "fullWidth": "MuiButton-fullWidth Button-fullWidth-32",
-                "iconSizeLarge": "MuiButton-iconSizeLarge Button-iconSizeLarge-37",
-                "iconSizeMedium": "MuiButton-iconSizeMedium Button-iconSizeMedium-36",
-                "iconSizeSmall": "MuiButton-iconSizeSmall Button-iconSizeSmall-35",
-                "label": "MuiButton-label Button-label-2",
-                "outlined": "MuiButton-outlined Button-outlined-9",
-                "outlinedNegative": "undefined Button-outlinedNegative-13",
-                "outlinedPositive": "undefined Button-outlinedPositive-12",
-                "outlinedPrimary": "MuiButton-outlinedPrimary Button-outlinedPrimary-10",
-                "outlinedSecondary": "MuiButton-outlinedSecondary Button-outlinedSecondary-11",
-                "outlinedSizeLarge": "MuiButton-outlinedSizeLarge Button-outlinedSizeLarge-27",
-                "outlinedSizeSmall": "MuiButton-outlinedSizeSmall Button-outlinedSizeSmall-26",
-                "outlinedWarning": "undefined Button-outlinedWarning-14",
-                "root": "MuiButton-root Button-root-1",
-                "sizeLarge": "MuiButton-sizeLarge Button-sizeLarge-31",
-                "sizeSmall": "MuiButton-sizeSmall Button-sizeSmall-30",
-                "startIcon": "MuiButton-startIcon Button-startIcon-33",
-                "text": "MuiButton-text Button-text-3",
-                "textNegative": "undefined Button-textNegative-7",
-                "textPositive": "undefined Button-textPositive-6",
-                "textPrimary": "MuiButton-textPrimary Button-textPrimary-4",
-                "textSecondary": "MuiButton-textSecondary Button-textSecondary-5",
-                "textSizeLarge": "MuiButton-textSizeLarge Button-textSizeLarge-25",
-                "textSizeSmall": "MuiButton-textSizeSmall Button-textSizeSmall-24",
-                "textWarning": "undefined Button-textWarning-8",
-              }
-            }
-            variant="contained"
+          <WithStyles(ForwardRef(ButtonBase))
+            className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+            component="button"
+            disabled={false}
+            focusRipple={true}
+            focusVisibleClassName="Mui-focusVisible"
+            type="button"
           >
-            <WithStyles(ForwardRef(ButtonBase))
-              className="MuiButton-root Button-root-1 MuiButton-contained Button-contained-15"
+            <ForwardRef(ButtonBase)
+              className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+              classes={
+                Object {
+                  "disabled": "Mui-disabled",
+                  "focusVisible": "Mui-focusVisible",
+                  "root": "MuiButtonBase-root",
+                }
+              }
               component="button"
               disabled={false}
               focusRipple={true}
-              focusVisibleClassName="Mui-focusVisible Button-focusVisible-21"
+              focusVisibleClassName="Mui-focusVisible"
               type="button"
             >
-              <ForwardRef(ButtonBase)
-                className="MuiButton-root Button-root-1 MuiButton-contained Button-contained-15"
-                classes={
-                  Object {
-                    "disabled": "Mui-disabled",
-                    "focusVisible": "Mui-focusVisible",
-                    "root": "MuiButtonBase-root",
-                  }
-                }
-                component="button"
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
                 disabled={false}
-                focusRipple={true}
-                focusVisibleClassName="Mui-focusVisible Button-focusVisible-21"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
                 type="button"
               >
-                <button
-                  className="MuiButtonBase-root MuiButton-root Button-root-1 MuiButton-contained Button-contained-15"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
+                <span
+                  className="MuiButton-label"
                 >
-                  <span
-                    className="MuiButton-label Button-label-2"
-                  >
-                    <IconButton__IconMarginRight>
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "IconButton__IconMarginRight-g9q5gl-0",
-                              "isStatic": false,
-                              "lastClassName": "c0",
-                              "rules": Array [
-                                "margin:0 8px 0 0;",
-                              ],
-                            },
-                            "displayName": "IconButton__IconMarginRight",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "IconButton__IconMarginRight-g9q5gl-0",
-                            "target": "span",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <span
-                          className="c0"
-                        >
-                          <FontAwesomeIcon
-                            border={false}
-                            className=""
-                            fixedWidth={false}
-                            flip={null}
-                            icon={
-                              Object {
-                                "icon": Array [
-                                  384,
-                                  512,
-                                  Array [],
-                                  "f068",
-                                  "M368 224H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z",
-                                ],
-                                "iconName": "minus",
-                                "prefix": "far",
-                              }
-                            }
-                            inverse={false}
-                            listItem={false}
-                            mask={null}
-                            pull={null}
-                            pulse={false}
-                            rotation={null}
-                            size={null}
-                            spin={false}
-                            swapOpacity={false}
-                            symbol={false}
-                            title=""
-                            transform={null}
-                          >
-                            <svg
-                              aria-hidden="true"
-                              className="svg-inline--fa fa-minus fa-w-12 "
-                              data-icon="minus"
-                              data-prefix="far"
-                              focusable="false"
-                              role="img"
-                              style={Object {}}
-                              viewBox="0 0 384 512"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M368 224H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
-                                fill="currentColor"
-                                style={Object {}}
-                              />
-                            </svg>
-                          </FontAwesomeIcon>
-                        </span>
-                      </StyledComponent>
-                    </IconButton__IconMarginRight>
-                    Minus
-                  </span>
-                  <WithStyles(memo)
-                    center={false}
-                  >
-                    <ForwardRef(TouchRipple)
-                      center={false}
-                      classes={
+                  <IconButton__IconMarginRight>
+                    <StyledComponent
+                      forwardedComponent={
                         Object {
-                          "child": "MuiTouchRipple-child",
-                          "childLeaving": "MuiTouchRipple-childLeaving",
-                          "childPulsate": "MuiTouchRipple-childPulsate",
-                          "ripple": "MuiTouchRipple-ripple",
-                          "ripplePulsate": "MuiTouchRipple-ripplePulsate",
-                          "rippleVisible": "MuiTouchRipple-rippleVisible",
-                          "root": "MuiTouchRipple-root",
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "IconButton__IconMarginRight-g9q5gl-0",
+                            "isStatic": false,
+                            "lastClassName": "c0",
+                            "rules": Array [
+                              "margin:0 8px 0 0;",
+                            ],
+                          },
+                          "displayName": "IconButton__IconMarginRight",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "IconButton__IconMarginRight-g9q5gl-0",
+                          "target": "span",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
                         }
                       }
+                      forwardedRef={null}
                     >
                       <span
-                        className="MuiTouchRipple-root"
+                        className="c0"
                       >
-                        <TransitionGroup
-                          childFactory={[Function]}
-                          component={null}
-                          exit={true}
-                        />
+                        <FontAwesomeIcon
+                          border={false}
+                          className=""
+                          fixedWidth={false}
+                          flip={null}
+                          icon={
+                            Object {
+                              "icon": Array [
+                                384,
+                                512,
+                                Array [],
+                                "f068",
+                                "M368 224H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z",
+                              ],
+                              "iconName": "minus",
+                              "prefix": "far",
+                            }
+                          }
+                          inverse={false}
+                          listItem={false}
+                          mask={null}
+                          pull={null}
+                          pulse={false}
+                          rotation={null}
+                          size={null}
+                          spin={false}
+                          swapOpacity={false}
+                          symbol={false}
+                          title=""
+                          transform={null}
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className="svg-inline--fa fa-minus fa-w-12 "
+                            data-icon="minus"
+                            data-prefix="far"
+                            focusable="false"
+                            role="img"
+                            style={Object {}}
+                            viewBox="0 0 384 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M368 224H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                              fill="currentColor"
+                              style={Object {}}
+                            />
+                          </svg>
+                        </FontAwesomeIcon>
                       </span>
-                    </ForwardRef(TouchRipple)>
-                  </WithStyles(memo)>
-                </button>
-              </ForwardRef(ButtonBase)>
-            </WithStyles(ForwardRef(ButtonBase))>
-          </ForwardRef(Button)>
-        </WithStyles(ForwardRef(Button))>
-      </WithStyles(WithStyles(ForwardRef(Button)))>
+                    </StyledComponent>
+                  </IconButton__IconMarginRight>
+                  Minus
+                </span>
+                <WithStyles(memo)
+                  center={false}
+                >
+                  <ForwardRef(TouchRipple)
+                    center={false}
+                    classes={
+                      Object {
+                        "child": "MuiTouchRipple-child",
+                        "childLeaving": "MuiTouchRipple-childLeaving",
+                        "childPulsate": "MuiTouchRipple-childPulsate",
+                        "ripple": "MuiTouchRipple-ripple",
+                        "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                        "rippleVisible": "MuiTouchRipple-rippleVisible",
+                        "root": "MuiTouchRipple-root",
+                      }
+                    }
+                  >
+                    <span
+                      className="MuiTouchRipple-root"
+                    >
+                      <TransitionGroup
+                        childFactory={[Function]}
+                        component={null}
+                        exit={true}
+                      />
+                    </span>
+                  </ForwardRef(TouchRipple)>
+                </WithStyles(memo)>
+              </button>
+            </ForwardRef(ButtonBase)>
+          </WithStyles(ForwardRef(ButtonBase))>
+        </ForwardRef(Button)>
+      </WithStyles(ForwardRef(Button))>
     </Button>
   </IconButton>
 </MinusButton>
@@ -337,225 +289,177 @@ exports[`MinusButton icon without text should match snapshot 1`] = `
     }
   >
     <Button>
-      <WithStyles(WithStyles(ForwardRef(Button)))
+      <WithStyles(ForwardRef(Button))
+        className=""
+        color="default"
+        disableElevation={true}
         variant="contained"
       >
-        <WithStyles(ForwardRef(Button))
+        <ForwardRef(Button)
+          className=""
           classes={
             Object {
-              "colorInherit": "Button-colorInherit-23",
-              "contained": "Button-contained-15",
-              "containedNegative": "Button-containedNegative-19",
-              "containedPositive": "Button-containedPositive-18",
-              "containedPrimary": "Button-containedPrimary-16",
-              "containedSecondary": "Button-containedSecondary-17",
-              "containedSizeLarge": "Button-containedSizeLarge-29",
-              "containedSizeSmall": "Button-containedSizeSmall-28",
-              "containedWarning": "Button-containedWarning-20",
-              "disabled": "Button-disabled-22",
-              "endIcon": "Button-endIcon-34",
-              "focusVisible": "Button-focusVisible-21",
-              "fullWidth": "Button-fullWidth-32",
-              "iconSizeLarge": "Button-iconSizeLarge-37",
-              "iconSizeMedium": "Button-iconSizeMedium-36",
-              "iconSizeSmall": "Button-iconSizeSmall-35",
-              "label": "Button-label-2",
-              "outlined": "Button-outlined-9",
-              "outlinedNegative": "Button-outlinedNegative-13",
-              "outlinedPositive": "Button-outlinedPositive-12",
-              "outlinedPrimary": "Button-outlinedPrimary-10",
-              "outlinedSecondary": "Button-outlinedSecondary-11",
-              "outlinedSizeLarge": "Button-outlinedSizeLarge-27",
-              "outlinedSizeSmall": "Button-outlinedSizeSmall-26",
-              "outlinedWarning": "Button-outlinedWarning-14",
-              "root": "Button-root-1",
-              "sizeLarge": "Button-sizeLarge-31",
-              "sizeSmall": "Button-sizeSmall-30",
-              "startIcon": "Button-startIcon-33",
-              "text": "Button-text-3",
-              "textNegative": "Button-textNegative-7",
-              "textPositive": "Button-textPositive-6",
-              "textPrimary": "Button-textPrimary-4",
-              "textSecondary": "Button-textSecondary-5",
-              "textSizeLarge": "Button-textSizeLarge-25",
-              "textSizeSmall": "Button-textSizeSmall-24",
-              "textWarning": "Button-textWarning-8",
+              "colorInherit": "MuiButton-colorInherit",
+              "contained": "MuiButton-contained",
+              "containedPrimary": "MuiButton-containedPrimary",
+              "containedSecondary": "MuiButton-containedSecondary",
+              "containedSizeLarge": "MuiButton-containedSizeLarge",
+              "containedSizeSmall": "MuiButton-containedSizeSmall",
+              "disableElevation": "MuiButton-disableElevation",
+              "disabled": "Mui-disabled",
+              "endIcon": "MuiButton-endIcon",
+              "focusVisible": "Mui-focusVisible",
+              "fullWidth": "MuiButton-fullWidth",
+              "iconSizeLarge": "MuiButton-iconSizeLarge",
+              "iconSizeMedium": "MuiButton-iconSizeMedium",
+              "iconSizeSmall": "MuiButton-iconSizeSmall",
+              "label": "MuiButton-label",
+              "outlined": "MuiButton-outlined",
+              "outlinedPrimary": "MuiButton-outlinedPrimary",
+              "outlinedSecondary": "MuiButton-outlinedSecondary",
+              "outlinedSizeLarge": "MuiButton-outlinedSizeLarge",
+              "outlinedSizeSmall": "MuiButton-outlinedSizeSmall",
+              "root": "MuiButton-root",
+              "sizeLarge": "MuiButton-sizeLarge",
+              "sizeSmall": "MuiButton-sizeSmall",
+              "startIcon": "MuiButton-startIcon",
+              "text": "MuiButton-text",
+              "textPrimary": "MuiButton-textPrimary",
+              "textSecondary": "MuiButton-textSecondary",
+              "textSizeLarge": "MuiButton-textSizeLarge",
+              "textSizeSmall": "MuiButton-textSizeSmall",
             }
           }
+          color="default"
+          disableElevation={true}
           variant="contained"
         >
-          <ForwardRef(Button)
-            classes={
-              Object {
-                "colorInherit": "MuiButton-colorInherit Button-colorInherit-23",
-                "contained": "MuiButton-contained Button-contained-15",
-                "containedNegative": "undefined Button-containedNegative-19",
-                "containedPositive": "undefined Button-containedPositive-18",
-                "containedPrimary": "MuiButton-containedPrimary Button-containedPrimary-16",
-                "containedSecondary": "MuiButton-containedSecondary Button-containedSecondary-17",
-                "containedSizeLarge": "MuiButton-containedSizeLarge Button-containedSizeLarge-29",
-                "containedSizeSmall": "MuiButton-containedSizeSmall Button-containedSizeSmall-28",
-                "containedWarning": "undefined Button-containedWarning-20",
-                "disableElevation": "MuiButton-disableElevation",
-                "disabled": "Mui-disabled Button-disabled-22",
-                "endIcon": "MuiButton-endIcon Button-endIcon-34",
-                "focusVisible": "Mui-focusVisible Button-focusVisible-21",
-                "fullWidth": "MuiButton-fullWidth Button-fullWidth-32",
-                "iconSizeLarge": "MuiButton-iconSizeLarge Button-iconSizeLarge-37",
-                "iconSizeMedium": "MuiButton-iconSizeMedium Button-iconSizeMedium-36",
-                "iconSizeSmall": "MuiButton-iconSizeSmall Button-iconSizeSmall-35",
-                "label": "MuiButton-label Button-label-2",
-                "outlined": "MuiButton-outlined Button-outlined-9",
-                "outlinedNegative": "undefined Button-outlinedNegative-13",
-                "outlinedPositive": "undefined Button-outlinedPositive-12",
-                "outlinedPrimary": "MuiButton-outlinedPrimary Button-outlinedPrimary-10",
-                "outlinedSecondary": "MuiButton-outlinedSecondary Button-outlinedSecondary-11",
-                "outlinedSizeLarge": "MuiButton-outlinedSizeLarge Button-outlinedSizeLarge-27",
-                "outlinedSizeSmall": "MuiButton-outlinedSizeSmall Button-outlinedSizeSmall-26",
-                "outlinedWarning": "undefined Button-outlinedWarning-14",
-                "root": "MuiButton-root Button-root-1",
-                "sizeLarge": "MuiButton-sizeLarge Button-sizeLarge-31",
-                "sizeSmall": "MuiButton-sizeSmall Button-sizeSmall-30",
-                "startIcon": "MuiButton-startIcon Button-startIcon-33",
-                "text": "MuiButton-text Button-text-3",
-                "textNegative": "undefined Button-textNegative-7",
-                "textPositive": "undefined Button-textPositive-6",
-                "textPrimary": "MuiButton-textPrimary Button-textPrimary-4",
-                "textSecondary": "MuiButton-textSecondary Button-textSecondary-5",
-                "textSizeLarge": "MuiButton-textSizeLarge Button-textSizeLarge-25",
-                "textSizeSmall": "MuiButton-textSizeSmall Button-textSizeSmall-24",
-                "textWarning": "undefined Button-textWarning-8",
-              }
-            }
-            variant="contained"
+          <WithStyles(ForwardRef(ButtonBase))
+            className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+            component="button"
+            disabled={false}
+            focusRipple={true}
+            focusVisibleClassName="Mui-focusVisible"
+            type="button"
           >
-            <WithStyles(ForwardRef(ButtonBase))
-              className="MuiButton-root Button-root-1 MuiButton-contained Button-contained-15"
+            <ForwardRef(ButtonBase)
+              className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+              classes={
+                Object {
+                  "disabled": "Mui-disabled",
+                  "focusVisible": "Mui-focusVisible",
+                  "root": "MuiButtonBase-root",
+                }
+              }
               component="button"
               disabled={false}
               focusRipple={true}
-              focusVisibleClassName="Mui-focusVisible Button-focusVisible-21"
+              focusVisibleClassName="Mui-focusVisible"
               type="button"
             >
-              <ForwardRef(ButtonBase)
-                className="MuiButton-root Button-root-1 MuiButton-contained Button-contained-15"
-                classes={
-                  Object {
-                    "disabled": "Mui-disabled",
-                    "focusVisible": "Mui-focusVisible",
-                    "root": "MuiButtonBase-root",
-                  }
-                }
-                component="button"
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
                 disabled={false}
-                focusRipple={true}
-                focusVisibleClassName="Mui-focusVisible Button-focusVisible-21"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
                 type="button"
               >
-                <button
-                  className="MuiButtonBase-root MuiButton-root Button-root-1 MuiButton-contained Button-contained-15"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onDragLeave={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex={0}
-                  type="button"
+                <span
+                  className="MuiButton-label"
                 >
-                  <span
-                    className="MuiButton-label Button-label-2"
-                  >
-                    <FontAwesomeIcon
-                      border={false}
-                      className=""
-                      fixedWidth={false}
-                      flip={null}
-                      icon={
-                        Object {
-                          "icon": Array [
-                            384,
-                            512,
-                            Array [],
-                            "f068",
-                            "M368 224H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z",
-                          ],
-                          "iconName": "minus",
-                          "prefix": "far",
-                        }
+                  <FontAwesomeIcon
+                    border={false}
+                    className=""
+                    fixedWidth={false}
+                    flip={null}
+                    icon={
+                      Object {
+                        "icon": Array [
+                          384,
+                          512,
+                          Array [],
+                          "f068",
+                          "M368 224H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z",
+                        ],
+                        "iconName": "minus",
+                        "prefix": "far",
                       }
-                      inverse={false}
-                      listItem={false}
-                      mask={null}
-                      pull={null}
-                      pulse={false}
-                      rotation={null}
-                      size={null}
-                      spin={false}
-                      swapOpacity={false}
-                      symbol={false}
-                      title=""
-                      transform={null}
+                    }
+                    inverse={false}
+                    listItem={false}
+                    mask={null}
+                    pull={null}
+                    pulse={false}
+                    rotation={null}
+                    size={null}
+                    spin={false}
+                    swapOpacity={false}
+                    symbol={false}
+                    title=""
+                    transform={null}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-minus fa-w-12 "
+                      data-icon="minus"
+                      data-prefix="far"
+                      focusable="false"
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 384 512"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        aria-hidden="true"
-                        className="svg-inline--fa fa-minus fa-w-12 "
-                        data-icon="minus"
-                        data-prefix="far"
-                        focusable="false"
-                        role="img"
+                      <path
+                        d="M368 224H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                        fill="currentColor"
                         style={Object {}}
-                        viewBox="0 0 384 512"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M368 224H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
-                          fill="currentColor"
-                          style={Object {}}
-                        />
-                      </svg>
-                    </FontAwesomeIcon>
-                  </span>
-                  <WithStyles(memo)
+                      />
+                    </svg>
+                  </FontAwesomeIcon>
+                </span>
+                <WithStyles(memo)
+                  center={false}
+                >
+                  <ForwardRef(TouchRipple)
                     center={false}
-                  >
-                    <ForwardRef(TouchRipple)
-                      center={false}
-                      classes={
-                        Object {
-                          "child": "MuiTouchRipple-child",
-                          "childLeaving": "MuiTouchRipple-childLeaving",
-                          "childPulsate": "MuiTouchRipple-childPulsate",
-                          "ripple": "MuiTouchRipple-ripple",
-                          "ripplePulsate": "MuiTouchRipple-ripplePulsate",
-                          "rippleVisible": "MuiTouchRipple-rippleVisible",
-                          "root": "MuiTouchRipple-root",
-                        }
+                    classes={
+                      Object {
+                        "child": "MuiTouchRipple-child",
+                        "childLeaving": "MuiTouchRipple-childLeaving",
+                        "childPulsate": "MuiTouchRipple-childPulsate",
+                        "ripple": "MuiTouchRipple-ripple",
+                        "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                        "rippleVisible": "MuiTouchRipple-rippleVisible",
+                        "root": "MuiTouchRipple-root",
                       }
+                    }
+                  >
+                    <span
+                      className="MuiTouchRipple-root"
                     >
-                      <span
-                        className="MuiTouchRipple-root"
-                      >
-                        <TransitionGroup
-                          childFactory={[Function]}
-                          component={null}
-                          exit={true}
-                        />
-                      </span>
-                    </ForwardRef(TouchRipple)>
-                  </WithStyles(memo)>
-                </button>
-              </ForwardRef(ButtonBase)>
-            </WithStyles(ForwardRef(ButtonBase))>
-          </ForwardRef(Button)>
-        </WithStyles(ForwardRef(Button))>
-      </WithStyles(WithStyles(ForwardRef(Button)))>
+                      <TransitionGroup
+                        childFactory={[Function]}
+                        component={null}
+                        exit={true}
+                      />
+                    </span>
+                  </ForwardRef(TouchRipple)>
+                </WithStyles(memo)>
+              </button>
+            </ForwardRef(ButtonBase)>
+          </WithStyles(ForwardRef(ButtonBase))>
+        </ForwardRef(Button)>
+      </WithStyles(ForwardRef(Button))>
     </Button>
   </IconButton>
 </MinusButton>
