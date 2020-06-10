@@ -10,6 +10,19 @@ import {
 
 const lightTheme = createMuiTheme({
   overrides: {
+    MuiButton: {
+      root: {
+        textTransform: 'none',
+        padding: '0 16px',
+        minHeight: '40px',
+        fontSize: '16px',
+      },
+    },
+    MuiCard: {
+      root: {
+        overflow: 'visible',
+      },
+    },
     MuiFormHelperText: {
       root: {
         fontFamily: 'inherit',
@@ -47,14 +60,6 @@ const lightTheme = createMuiTheme({
       inputHiddenLabel: {
         padding: 0
       }
-    },
-    MuiButton: {
-      root: {
-        textTransform: 'none',
-        padding: '0 16px',
-        minHeight: '40px',
-        fontSize: '16px',
-      },
     },
     MuiIconButton: {
       root: {
@@ -198,6 +203,11 @@ const darkTheme = createMuiTheme({
         padding: '0 16px',
         minHeight: '40px',
         fontSize: '16px',
+      },
+    },
+    MuiCard: {
+      root: {
+        overflow: 'visible',
       },
     },
     MuiFormHelperText: {
