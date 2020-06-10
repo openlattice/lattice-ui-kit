@@ -193,10 +193,12 @@ const lightTheme = createMuiTheme({
 const darkTheme = createMuiTheme({
   overrides: {
     MuiButton: {
-      textTransform: 'none',
-      padding: '0 16px',
-      minHeight: '40px',
-      fontSize: '16px',
+      root: {
+        textTransform: 'none',
+        padding: '0 16px',
+        minHeight: '40px',
+        fontSize: '16px',
+      },
     },
     MuiFormHelperText: {
       root: {
