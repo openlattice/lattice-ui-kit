@@ -56,7 +56,12 @@ storiesOf('Button', module)
           <Button color="error">Error</Button>
           <Button color="warning">Warning</Button>
           <Button color="info">Info</Button>
+          <Button isLoading>isLoading</Button>
+          <Button disabled>Disabled</Button>
           <Button href="/?path=/story/button--buttons">href</Button>
+        </ButtonRow>
+        <ButtonRow style={{ color: 'orchid' }}>
+          <Button color="inherit">Inherit: orchid</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
@@ -69,7 +74,12 @@ storiesOf('Button', module)
           <Button variant="outlined" color="error">Error</Button>
           <Button variant="outlined" color="warning">Warning</Button>
           <Button variant="outlined" color="info">Info</Button>
+          <Button variant="outlined" isLoading>isLoading</Button>
+          <Button variant="outlined" disabled>Disabled</Button>
           <Button variant="outlined" href="/?path=/story/button--buttons">href</Button>
+        </ButtonRow>
+        <ButtonRow style={{ color: 'orchid' }}>
+          <Button variant="outlined" color="inherit">Inherit: orchid</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
@@ -82,7 +92,12 @@ storiesOf('Button', module)
           <Button variant="text" color="error">Error</Button>
           <Button variant="text" color="warning">Warning</Button>
           <Button variant="text" color="info">Info</Button>
+          <Button variant="text" isLoading>isLoading</Button>
+          <Button variant="text" disabled>Disabled</Button>
           <Button variant="text" href="/?path=/story/button--buttons">href</Button>
+        </ButtonRow>
+        <ButtonRow style={{ color: 'orchid' }}>
+          <Button variant="text" color="inherit">Inherit: orchid</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
@@ -101,36 +116,6 @@ storiesOf('Button', module)
           <Button variant="text" size="small">Small</Button>
           <Button variant="text" size="medium">Medium</Button>
           <Button variant="text" size="large">Large</Button>
-        </ButtonRow>
-      </CardSegment>
-      <CardSegment vertical>
-        <H2>Disabled</H2>
-        <ButtonRow>
-          <Button disabled>Default</Button>
-          <Button disabled color="primary">Primary</Button>
-          <Button disabled color="secondary">Secondary</Button>
-          <Button disabled color="success">Success</Button>
-          <Button disabled color="error">Error</Button>
-          <Button disabled color="warning">Warning</Button>
-          <Button disabled color="info">Info</Button>
-          <Button disabled href="/?path=/story/button--buttons">href</Button>
-        </ButtonRow>
-      </CardSegment>
-      <CardSegment vertical>
-        <H2>isLoading</H2>
-        <ButtonRow>
-          <Button isLoading>Default</Button>
-          <Button isLoading color="primary">Primary</Button>
-          <Button isLoading color="secondary">Secondary</Button>
-          <Button isLoading color="success">Success</Button>
-          <Button isLoading color="error">Error</Button>
-          <Button isLoading color="warning">Warning</Button>
-          <Button isLoading color="info">Info</Button>
-        </ButtonRow>
-        <ButtonRow>
-          <Button isLoading size="small">Small</Button>
-          <Button isLoading size="medium">Medium</Button>
-          <Button isLoading size="large">Large</Button>
         </ButtonRow>
       </CardSegment>
       <CardSegment vertical>

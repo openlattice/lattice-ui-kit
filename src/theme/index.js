@@ -231,6 +231,12 @@ const lightTheme = createMuiTheme({
       }
     },
     MuiTouchRipple: {
+      childLeaving: {
+        animationDuration: '250ms'
+      },
+      rippleVisible: {
+        animationDuration: '250ms'
+      },
       '@keyframes enter': {
         '0%': {
           transform: 'scale(1)',
