@@ -77,6 +77,9 @@ const lightTheme = createMuiTheme({
     primary: {
       main: PURPLES[1]
     },
+    secondary: {
+      main: PURPLES[3]
+    },
     text: {
       primary: NEUTRALS[0]
     },
