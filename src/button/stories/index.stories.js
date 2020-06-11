@@ -10,12 +10,6 @@ import { useBoolean } from '../../hooks';
 import { Card, CardSegment } from '../../layout';
 import {
   Button,
-  CopyButton,
-  EditButton,
-  IconButton,
-  MinusButton,
-  PlusButton,
-  SearchButton,
 } from '..';
 
 const ButtonRow = styled.div`
@@ -37,10 +31,7 @@ const StyledButton = styled(Button)`
   }
 `;
 
-const LaunchIcon = (
-  <FontAwesomeIcon icon={faSpaceShuttle} transform={{ rotate: -45 }} />
-);
-
+const LaunchIcon = <FontAwesomeIcon icon={faSpaceShuttle} />;
 const NewLocationIcon = <FontAwesomeIcon icon={faMapMarkerPlus} fixedWidth />;
 
 storiesOf('Button', module)
@@ -117,6 +108,11 @@ storiesOf('Button', module)
           <Button variant="text" size="medium">Medium</Button>
           <Button variant="text" size="large">Large</Button>
         </ButtonRow>
+        <ButtonRow>
+          <Button isLoading size="small">Small</Button>
+          <Button isLoading size="medium">Medium</Button>
+          <Button isLoading size="large">Large</Button>
+        </ButtonRow>
       </CardSegment>
       <CardSegment vertical>
         <H2>Styled</H2>
@@ -131,56 +127,12 @@ storiesOf('Button', module)
   .add('icon buttons', () => (
     <Card>
       <CardSegment vertical>
-        <H2>Search Button</H2>
+        <H2>Button w/ Icons</H2>
         <ButtonRow>
-          <SearchButton color="primary" />
-          <SearchButton color="primary">Search</SearchButton>
-        </ButtonRow>
-      </CardSegment>
-      <CardSegment vertical>
-        <H2>Copy Button</H2>
-        <ButtonRow>
-          <CopyButton color="secondary" />
-          <CopyButton color="secondary">Copy</CopyButton>
-        </ButtonRow>
-      </CardSegment>
-      <CardSegment vertical>
-        <H2>Edit Button</H2>
-        <ButtonRow>
-          <EditButton />
-          <EditButton>Edit</EditButton>
-        </ButtonRow>
-      </CardSegment>
-      <CardSegment vertical>
-        <H2>Plus Button</H2>
-        <ButtonRow>
-          <PlusButton color="success" />
-          <PlusButton color="success">Add</PlusButton>
-        </ButtonRow>
-      </CardSegment>
-      <CardSegment vertical>
-        <H2>Minus Button</H2>
-        <ButtonRow>
-          <MinusButton color="error" />
-          <MinusButton color="error">Remove</MinusButton>
-        </ButtonRow>
-      </CardSegment>
-      <CardSegment vertical>
-        <H2>Custom Icon Button</H2>
-        <ButtonRow>
-          <IconButton icon={LaunchIcon} />
-          <IconButton icon={LaunchIcon}>Launch</IconButton>
-        </ButtonRow>
-      </CardSegment>
-      <CardSegment vertical>
-        <H2>Size: small</H2>
-        <ButtonRow>
-          <SearchButton size="small" color="primary" />
-          <CopyButton size="small" color="secondary" />
-          <EditButton size="small" />
-          <PlusButton size="small" color="success" />
-          <MinusButton size="small" color="error" />
-          <IconButton size="small" icon={LaunchIcon} />
+          <Button color="success">{LaunchIcon}</Button>
+          <Button startIcon={LaunchIcon}>To the Moon</Button>
+          <Button size="small" startIcon={LaunchIcon}>To the Moon</Button>
+          <Button size="large" endIcon={LaunchIcon}>To the Moon</Button>
         </ButtonRow>
       </CardSegment>
     </Card>
