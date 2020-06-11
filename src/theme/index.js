@@ -2,6 +2,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 import {
   NEUTRAL,
+  PURPLE,
   RED,
 } from '../colors';
 import { duration } from '../style/transitions';
@@ -138,7 +139,7 @@ const lightTheme = createMuiTheme({
   },
   palette: {
     primary: {
-      main: PURPLES[1]
+      main: PURPLE.P300
     },
     text: {
       primary: NEUTRAL.N700
