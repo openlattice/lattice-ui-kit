@@ -130,8 +130,8 @@ storiesOf('Button', module)
         <H2>Button w/ Icons</H2>
         <ButtonRow>
           <Button color="success">{LaunchIcon}</Button>
-          <Button startIcon={LaunchIcon}>To the Moon</Button>
           <Button size="small" startIcon={LaunchIcon}>To the Moon</Button>
+          <Button startIcon={LaunchIcon}>To the Moon</Button>
           <Button size="large" endIcon={LaunchIcon}>To the Moon</Button>
         </ButtonRow>
       </CardSegment>
