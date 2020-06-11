@@ -7,7 +7,8 @@ import { Info } from 'luxon';
 class LatticeLuxonUtils extends LuxonUtils {
   getWeekdays() {
     // need to copy the existing, and use Info to preserve localization
-    const days = [...Info.weekdaysFormat('narrow', this.locale)];
+    const days = [...Info.weekdaysFormat('short', this.locale)]
+      .map((day) => day.toLocaleUpperCase());
     // remove Sun from end of list and move to start of list
     days.unshift(days.pop());
     return days;
