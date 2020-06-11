@@ -43,7 +43,8 @@ const LogoutButton = styled(Button)`
   width: 100px;
 `;
 
-const LogOutAnchor = styled.a``;
+const LogOutAnchor = styled.a`
+`;
 
 const HeaderSectionContentWrapper = styled.div`
   align-items: center;
