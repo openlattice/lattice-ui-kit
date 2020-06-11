@@ -1,4 +1,3 @@
-import deepPurple from '@material-ui/core/colors/deepPurple';
 import { createMuiTheme } from '@material-ui/core/styles';
 
 import {
@@ -138,7 +137,9 @@ const lightTheme = createMuiTheme({
     }
   },
   palette: {
-    primary: deepPurple,
+    primary: {
+      main: PURPLES[1]
+    },
     text: {
       primary: NEUTRAL.N700
     },
@@ -249,7 +250,9 @@ const darkTheme = createMuiTheme({
   },
   palette: {
     type: 'dark',
-    primary: deepPurple,
+    primary: {
+      main: '#fff'
+    },
     background: {
       header: '#333'
     },
