@@ -148,7 +148,7 @@ class AppHeaderWrapper extends Component<Props, State> {
   static defaultProps = {
     className: undefined,
     logout: undefined,
-    organizationsSelect: {},
+    organizationsSelect: undefined,
     user: undefined,
   }
 
@@ -346,20 +346,22 @@ class AppHeaderWrapper extends Component<Props, State> {
     const { handleNavigationWrapping, shouldForceDrawer } = this.state;
 
     let organizations = [];
-    if (isArray(organizationsSelect.organizations) || isPlainObject(organizationsSelect.organizations)) {
-      organizations = Object.values(organizationsSelect.organizations);
-    }
-    else if (isCollection(organizationsSelect.organizations)) {
-      organizations = organizationsSelect.organizations.valueSeq();
-    }
-
     const organizationOptions = [];
-    organizations.forEach((organization) => {
-      organizationOptions.push({
-        label: get(organization, 'title'),
-        value: get(organization, 'id'),
+    if (organizationsSelect) {
+      if (isArray(organizationsSelect.organizations) || isPlainObject(organizationsSelect.organizations)) {
+        organizations = Object.values(organizationsSelect.organizations);
+      }
+      else if (isCollection(organizationsSelect.organizations)) {
+        organizations = organizationsSelect.organizations.valueSeq();
+      }
+
+      organizations.forEach((organization) => {
+        organizationOptions.push({
+          label: get(organization, 'title'),
+          value: get(organization, 'id'),
+        });
       });
-    });
+    }
 
     const selectedOrganizationOption = organizationOptions.find((option) => (
       option.value === organizationsSelect.selectedOrganizationId
@@ -369,7 +371,7 @@ class AppHeaderWrapper extends Component<Props, State> {
       return (
         <HeaderSectionContentWrapper align="right" ref={this.rightRef}>
           {
-            organizationOptions.length > 0 && (
+            organizationsSelect && (
               <Select
                   isClearable={false}
                   isDisabled={organizationsSelect.isDisabled}
@@ -398,7 +400,7 @@ class AppHeaderWrapper extends Component<Props, State> {
           )
         }
         {
-          organizationOptions.length > 0 && (
+          organizationsSelect && (
             <Select
                 isClearable={false}
                 isDisabled={organizationsSelect.isDisabled}
