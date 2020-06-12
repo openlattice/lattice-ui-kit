@@ -931,7 +931,7 @@ exports[`DatePicker render matches snapshot 1`] = `
                                                             }
                                                           >
                                                             <svg
-                                                              aria-hidden={true}
+                                                              aria-hidden="true"
                                                               className="MuiSvgIcon-root"
                                                               focusable="false"
                                                               viewBox="0 0 24 24"
