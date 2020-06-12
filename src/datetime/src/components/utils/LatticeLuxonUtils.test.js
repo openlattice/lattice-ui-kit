@@ -23,6 +23,8 @@ describe('LatticeLuxonUtils', () => {
 
   test('May 31st, 2020', () => {
     const weeks = (new LatticeLuxonUtils()).getWeekArray(DateTime.fromISO('2020-05-13'));
+    // the first element in the last row should be May 31st
     expect(weeks[weeks.length - 1][0]).toEqual(DateTime.fromISO('2020-05-31'));
   });
+
 });
