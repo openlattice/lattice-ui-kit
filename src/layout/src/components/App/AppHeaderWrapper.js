@@ -346,20 +346,22 @@ class AppHeaderWrapper extends Component<Props, State> {
     const { handleNavigationWrapping, shouldForceDrawer } = this.state;
 
     let organizations = [];
-    if (isArray(organizationsSelect.organizations) || isPlainObject(organizationsSelect.organizations)) {
-      organizations = Object.values(organizationsSelect.organizations);
-    }
-    else if (isCollection(organizationsSelect.organizations)) {
-      organizations = organizationsSelect.organizations.valueSeq();
-    }
-
     const organizationOptions = [];
-    organizations.forEach((organization) => {
-      organizationOptions.push({
-        label: get(organization, 'title'),
-        value: get(organization, 'id'),
+    if (organizationsSelect !== undefined) {
+      if (isArray(organizationsSelect.organizations) || isPlainObject(organizationsSelect.organizations)) {
+        organizations = Object.values(organizationsSelect.organizations);
+      }
+      else if (isCollection(organizationsSelect.organizations)) {
+        organizations = organizationsSelect.organizations.valueSeq();
+      }
+
+      organizations.forEach((organization) => {
+        organizationOptions.push({
+          label: get(organization, 'title'),
+          value: get(organization, 'id'),
+        });
       });
-    });
+    }
 
     const selectedOrganizationOption = organizationOptions.find((option) => (
       option.value === organizationsSelect.selectedOrganizationId
