@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.32.1
+ * lattice-ui-kit - v0.32.2
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -48390,20 +48390,23 @@ var AppHeaderWrapper_AppHeaderWrapper = /*#__PURE__*/function (_Component) {
           handleNavigationWrapping = _this$state2.handleNavigationWrapping,
           shouldForceDrawer = _this$state2.shouldForceDrawer;
       var organizations = [];
+      var organizationOptions = [];
 
-      if (isArray_default()(organizationsSelect.organizations) || isPlainObject_default()(organizationsSelect.organizations)) {
-        organizations = Object.values(organizationsSelect.organizations);
-      } else if (isCollection(organizationsSelect.organizations)) {
-        organizations = organizationsSelect.organizations.valueSeq();
+      if (organizationsSelect) {
+        if (isArray_default()(organizationsSelect.organizations) || isPlainObject_default()(organizationsSelect.organizations)) {
+          organizations = Object.values(organizationsSelect.organizations);
+        } else if (isCollection(organizationsSelect.organizations)) {
+          organizations = organizationsSelect.organizations.valueSeq();
+        }
+
+        organizations.forEach(function (organization) {
+          organizationOptions.push({
+            label: get(organization, 'title'),
+            value: get(organization, 'id')
+          });
+        });
       }
 
-      var organizationOptions = [];
-      organizations.forEach(function (organization) {
-        organizationOptions.push({
-          label: get(organization, 'title'),
-          value: get(organization, 'id')
-        });
-      });
       var selectedOrganizationOption = organizationOptions.find(function (option) {
         return option.value === organizationsSelect.selectedOrganizationId;
       });
@@ -48412,7 +48415,7 @@ var AppHeaderWrapper_AppHeaderWrapper = /*#__PURE__*/function (_Component) {
         return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(HeaderSectionContentWrapper, {
           align: "right",
           ref: _this.rightRef
-        }, organizationOptions.length > 0 && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Select, {
+        }, organizationsSelect && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Select, {
           isClearable: false,
           isDisabled: organizationsSelect.isDisabled,
           isLoading: organizationsSelect.isLoading,
@@ -48433,7 +48436,7 @@ var AppHeaderWrapper_AppHeaderWrapper = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(HeaderSectionContentWrapper, {
         align: "right",
         ref: _this.rightRef
-      }, user && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, user), organizationOptions.length > 0 && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Select, {
+      }, user && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, user), organizationsSelect && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Select, {
         isClearable: false,
         isDisabled: organizationsSelect.isDisabled,
         isLoading: organizationsSelect.isLoading,
@@ -48694,7 +48697,7 @@ var AppHeaderWrapper_AppHeaderWrapper = /*#__PURE__*/function (_Component) {
 defineProperty_default()(AppHeaderWrapper_AppHeaderWrapper, "defaultProps", {
   className: undefined,
   logout: undefined,
-  organizationsSelect: {},
+  organizationsSelect: undefined,
   user: undefined
 });
 
@@ -61946,7 +61949,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.32.1";
+var src_version = "v0.32.2";
 
 
 
