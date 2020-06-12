@@ -347,7 +347,7 @@ class AppHeaderWrapper extends Component<Props, State> {
 
     let organizations = [];
     const organizationOptions = [];
-    if (organizationsSelect !== undefined) {
+    if (organizationsSelect) {
       if (isArray(organizationsSelect.organizations) || isPlainObject(organizationsSelect.organizations)) {
         organizations = Object.values(organizationsSelect.organizations);
       }
@@ -371,7 +371,7 @@ class AppHeaderWrapper extends Component<Props, State> {
       return (
         <HeaderSectionContentWrapper align="right" ref={this.rightRef}>
           {
-            organizationsSelect !== undefined && (
+            organizationsSelect && (
               <Select
                   isClearable={false}
                   isDisabled={organizationsSelect.isDisabled}
@@ -400,7 +400,7 @@ class AppHeaderWrapper extends Component<Props, State> {
           )
         }
         {
-          organizationsSelect !== undefined && (
+          organizationsSelect && (
             <Select
                 isClearable={false}
                 isDisabled={organizationsSelect.isDisabled}
