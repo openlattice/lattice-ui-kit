@@ -1,4 +1,5 @@
 import { DateTime } from 'luxon';
+
 import LatticeLuxonUtils from './LatticeLuxonUtils';
 
 describe('LatticeLuxonUtils', () => {

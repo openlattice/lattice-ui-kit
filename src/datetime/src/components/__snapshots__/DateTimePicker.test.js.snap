@@ -251,6 +251,12 @@ exports[`DateTimePicker render matches snapshot 1`] = `
               "transform": "scale(1)",
             },
           },
+          "childLeaving": Object {
+            "animationDuration": "250ms",
+          },
+          "rippleVisible": Object {
+            "animationDuration": "250ms",
+          },
         },
       },
       "palette": Object {
