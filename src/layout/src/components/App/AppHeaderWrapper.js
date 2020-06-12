@@ -148,7 +148,7 @@ class AppHeaderWrapper extends Component<Props, State> {
   static defaultProps = {
     className: undefined,
     logout: undefined,
-    organizationsSelect: {},
+    organizationsSelect: undefined,
     user: undefined,
   }
 
@@ -369,7 +369,7 @@ class AppHeaderWrapper extends Component<Props, State> {
       return (
         <HeaderSectionContentWrapper align="right" ref={this.rightRef}>
           {
-            organizationOptions.length > 0 && (
+            organizationsSelect !== undefined && (
               <Select
                   isClearable={false}
                   isDisabled={organizationsSelect.isDisabled}
@@ -398,7 +398,7 @@ class AppHeaderWrapper extends Component<Props, State> {
           )
         }
         {
-          organizationOptions.length > 0 && (
+          organizationsSelect !== undefined && (
             <Select
                 isClearable={false}
                 isDisabled={organizationsSelect.isDisabled}
