@@ -229,10 +229,10 @@ exports[`TimePicker render matches snapshot 1`] = `
           "main": "#7654ff",
         },
         "secondary": Object {
-          "contrastText": "#fff",
-          "dark": "#c51162",
-          "light": "#ff4081",
-          "main": "#f50057",
+          "contrastText": "rgba(0, 0, 0, 0.87)",
+          "dark": "rgb(128, 106, 178)",
+          "light": "rgb(198, 172, 255)",
+          "main": "#b898ff",
         },
         "success": Object {
           "contrastText": "rgba(0, 0, 0, 0.87)",
