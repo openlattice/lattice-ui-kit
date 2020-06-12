@@ -7,6 +7,7 @@ import { storiesOf } from '@storybook/react';
 
 import { REACT_SELECT_USAGE, paragraph, stateOptions } from './constants';
 
+import { Card, CardSegment } from '../../layout';
 import { genRealWordSelectOptions } from '../../utils/testing/MockUtils';
 import { CheckboxSelect, Creatable, Select } from '../index';
 
@@ -21,7 +22,12 @@ storiesOf('Select', module)
       <p>
         { REACT_SELECT_USAGE }
       </p>
-      { storyFn() }
+      <Card>
+        <CardSegment>
+          { storyFn() }
+        </CardSegment>
+      </Card>
+
     </div>
   ))
   .add('Default Select', () => (

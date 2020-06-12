@@ -44,38 +44,38 @@ exports[`button mode="default" should match snapshot 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c0:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c0:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 <Button
@@ -103,7 +103,7 @@ exports[`button mode="default" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "gaIvsc",
+            "lastClassName": "PJlNW",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -270,38 +270,38 @@ exports[`button mode="default" should match snapshot 2`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
+  background-color: #f2f2f4;
+  border-color: #f2f2f4;
+  color: #56565a;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
+  background-color: #dfdfe3;
+  border-color: #dfdfe3;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
+  background-color: #d1d1d6;
+  border-color: #d1d1d6;
+  color: #56565a;
 }
 
 .c0:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c0:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
+  box-shadow: #d1d1d6 0 0 0 2px;
 }
 
 <Button
@@ -329,7 +329,7 @@ exports[`button mode="default" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "gaIvsc",
+            "lastClassName": "PJlNW",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -496,39 +496,39 @@ exports[`button mode="negative" should match snapshot 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #ffd0cb;
-  border-color: #ffd0cb;
-  color: #e43424;
+  background-color: #ffeceb;
+  border-color: #ffeceb;
+  color: #ed4545;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #ffbeb7;
-  border-color: #ffbeb7;
-  color: #d02010;
+  background-color: #fabbb6;
+  border-color: #fabbb6;
+  color: #9c2d23;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #fb9f95;
-  border-color: #fb9f95;
-  color: #bd0000;
+  background-color: #f4857e;
+  border-color: #f4857e;
+  color: #4d0600;
 }
 
 .c0:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c0:focus {
-  box-shadow: #fb9f95 0 0 0 2px;
+  box-shadow: #f4857e 0 0 0 2px;
 }
 
 <Button
@@ -556,7 +556,7 @@ exports[`button mode="negative" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "jASeYO",
+            "lastClassName": "cFFcIx",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -752,7 +752,7 @@ exports[`button mode="neutral" should match snapshot 1`] = `
 }
 
 .c0:focus {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #8b8b90 0 0 0 2px;
 }
 
 <Button
@@ -780,7 +780,7 @@ exports[`button mode="neutral" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "eSoZZx",
+            "lastClassName": "dIoxyR",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -976,7 +976,7 @@ exports[`button mode="neutral" should match snapshot 2`] = `
 }
 
 .c0:focus {
-  box-shadow: #b6bbc7 0 0 0 2px;
+  box-shadow: #8b8b90 0 0 0 2px;
 }
 
 <Button
@@ -1004,7 +1004,7 @@ exports[`button mode="neutral" should match snapshot 2`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "eSoZZx",
+            "lastClassName": "dIoxyR",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1197,9 +1197,9 @@ exports[`button mode="positive" should match snapshot 1`] = `
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c0:focus {
@@ -1231,7 +1231,7 @@ exports[`button mode="positive" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "kCGvMa",
+            "lastClassName": "bUYvKp",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1398,37 +1398,37 @@ exports[`button mode="primary" should match snapshot 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
+  background-color: #4f3fa7;
+  border-color: #4f3fa7;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
+  background-color: #261e52;
+  border-color: #261e52;
 }
 
 .c0:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c0:focus {
-  box-shadow: #410ab5 0 0 0 2px;
+  box-shadow: #261e52 0 0 0 2px;
 }
 
 <Button
@@ -1456,7 +1456,7 @@ exports[`button mode="primary" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "gkrQYE",
+            "lastClassName": "eRLMtY",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1623,37 +1623,38 @@ exports[`button mode="secondary" should match snapshot 1`] = `
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
   white-space: nowrap;
-  background-color: #e4d8ff;
-  border-color: #e4d8ff;
-  color: #6124e2;
+  background-color: #cac0ff;
+  border-color: #cac0ff;
+  color: #4f3fa7;
 }
 
 .c0:hover {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #d0bbff;
-  border-color: #d0bbff;
+  background-color: #a291ff;
+  border-color: #a291ff;
 }
 
 .c0:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #b898ff;
-  border-color: #b898ff;
+  background-color: #7654ff;
+  border-color: #7654ff;
+  color: white;
 }
 
 .c0:disabled {
   cursor: not-allowed;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
+  background-color: #f9f9fc;
+  border-color: #f9f9fc;
+  color: #8b8b90;
 }
 
 .c0:focus {
-  box-shadow: #b898ff 0 0 0 2px;
+  box-shadow: #7654ff 0 0 0 2px;
 }
 
 <Button
@@ -1681,7 +1682,7 @@ exports[`button mode="secondary" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "iHfePs",
+            "lastClassName": "BzcMk",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",
@@ -1850,7 +1851,7 @@ exports[`button mode="subtle" should match snapshot 1`] = `
   white-space: nowrap;
   background-color: transparent;
   border-color: transparent;
-  color: #6124e2;
+  color: #7654ff;
 }
 
 .c0:hover {
@@ -1872,7 +1873,7 @@ exports[`button mode="subtle" should match snapshot 1`] = `
   text-decoration: none;
   background-color: transparent;
   border-color: transparent;
-  color: #b6bbc7;
+  color: #8b8b90;
 }
 
 .c0:focus {
@@ -1904,7 +1905,7 @@ exports[`button mode="subtle" should match snapshot 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "StyledButton-sc-1etazn9-0",
             "isStatic": false,
-            "lastClassName": "hiLzrX",
+            "lastClassName": "izsLXU",
             "rules": Array [
               "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
               "100ms",

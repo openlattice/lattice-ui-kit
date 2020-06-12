@@ -1,33 +1,33 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, REDS } from '../../../../colors';
+import { NEUTRAL, RED } from '../../../../colors';
 
 const negativeStyle = css`
-  background-color: ${REDS[0]};
-  border-color: ${REDS[0]};
-  color: ${REDS[3]};
+  background-color: ${RED.R00};
+  border-color: ${RED.R00};
+  color: ${RED.R300};
 `;
 
 const negativeHover = css`
-  background-color: ${REDS[1]};
-  border-color: ${REDS[1]};
-  color: ${REDS[4]};
+  background-color: ${RED.R100};
+  border-color: ${RED.R100};
+  color: ${RED.R400};
 `;
 
 const negativeActive = css`
-  background-color: ${REDS[2]};
-  border-color: ${REDS[2]};
-    color: ${REDS[5]};
+  background-color: ${RED.R200};
+  border-color: ${RED.R200};
+  color: ${RED.R500};
 `;
 
 const negativeDisabled = css`
-  background-color: ${NEUTRALS[6]};
-  border-color: ${NEUTRALS[6]};
-  color: ${NEUTRALS[2]};
+  background-color: ${NEUTRAL.N00};
+  border-color: ${NEUTRAL.N00};
+  color: ${NEUTRAL.N500};
 `;
 
 const negativeFocus = css`
-  box-shadow: ${REDS[2]} 0 0 0 2px;
+  box-shadow: ${RED.R200} 0 0 0 2px;
 `;
 
 export {

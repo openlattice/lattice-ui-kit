@@ -2,32 +2,31 @@ import styled from 'styled-components';
 
 import CardSegment from '../CardSegment/CardSegment';
 import {
-  GREEN_1,
-  NEUTRALS,
-  PURPLES,
-  RED_1,
-  WHITE,
-  YELLOW_1,
+  GREEN,
+  NEUTRAL,
+  PURPLE,
+  RED,
+  YELLOW,
 } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
 import { getStyleVariation } from '../../../../utils/StyleUtils';
 
 const backgroundColor = getStyleVariation('mode', {
-  danger: RED_1,
-  default: NEUTRALS[0],
-  primary: PURPLES[2],
-  secondary: PURPLES[5],
-  success: GREEN_1,
-  warning: YELLOW_1
+  danger: RED.R100,
+  default: NEUTRAL.N100,
+  primary: PURPLE.P300,
+  secondary: PURPLE.P100,
+  success: GREEN.G100,
+  warning: YELLOW.Y100,
 });
 
 const getFontColor = getStyleVariation('mode', {
-  danger: WHITE,
-  default: WHITE,
-  primary: WHITE,
-  secondary: PURPLES[1],
-  success: WHITE,
-  warning: NEUTRALS[0],
+  danger: RED.R400,
+  default: NEUTRAL.N900,
+  primary: 'white',
+  secondary: PURPLE.P300,
+  success: GREEN.G400,
+  warning: YELLOW.Y400,
 });
 
 const CardHeader = styled(CardSegment).attrs(() => ({

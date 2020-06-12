@@ -1,11 +1,11 @@
-import { NEUTRALS } from '../../colors/src/Colors';
+import { NEUTRAL } from '../../colors/src/Colors';
 
 const singleValueStyles = (base, state) => {
   const { selectProps } = state;
 
   const styles = {
     ...base,
-    color: state.isDisabled ? NEUTRALS[1] : 'inherit',
+    color: state.isDisabled ? NEUTRAL.N500 : 'inherit',
   };
 
   if (selectProps && selectProps.inputIcon) {

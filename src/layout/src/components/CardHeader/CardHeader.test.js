@@ -1,17 +1,18 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import CardHeader from './CardHeader';
+
 import * as Colors from '../../../../colors';
 
 const {
-  GREEN_1,
-  NEUTRALS,
-  PURPLES,
-  RED_1,
-  WHITE,
-  YELLOW_1,
+  GREEN,
+  NEUTRAL,
+  PURPLE,
+  RED,
+  YELLOW,
 } = Colors;
 
 describe('CardHeader', () => {
@@ -58,43 +59,43 @@ describe('CardHeader', () => {
       test('should render default mode', () => {
         const wrapper = mount(<CardHeader mode="default" />);
         expect(wrapper.prop('mode')).toEqual('default');
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', NEUTRALS[0]);
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', WHITE);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', NEUTRAL.N100);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', NEUTRAL.N900);
       });
 
       test('should render primary mode', () => {
         const wrapper = mount(<CardHeader mode="primary" />);
         expect(wrapper.prop('mode')).toEqual('primary');
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', PURPLES[2]);
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', WHITE);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', PURPLE.P300);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', 'white');
       });
 
       test('should render secondary mode', () => {
         const wrapper = mount(<CardHeader mode="secondary" />);
         expect(wrapper.prop('mode')).toEqual('secondary');
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', PURPLES[5]);
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', PURPLES[1]);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', PURPLE.P100);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', PURPLE.P300);
       });
 
       test('should render success mode', () => {
         const wrapper = mount(<CardHeader mode="success" />);
         expect(wrapper.prop('mode')).toEqual('success');
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', GREEN_1);
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', WHITE);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', GREEN.G100);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', GREEN.G400);
       });
 
       test('should render danger mode', () => {
         const wrapper = mount(<CardHeader mode="danger" />);
         expect(wrapper.prop('mode')).toEqual('danger');
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', RED_1);
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', WHITE);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', RED.R100);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', RED.R400);
       });
 
       test('should render warning mode', () => {
         const wrapper = mount(<CardHeader mode="warning" />);
         expect(wrapper.prop('mode')).toEqual('warning');
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', YELLOW_1);
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', NEUTRALS[0]);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', YELLOW.Y100);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', YELLOW.Y400);
       });
     });
 
@@ -110,7 +111,7 @@ describe('CardHeader', () => {
       });
 
       test('should have "cursor: pointer" for ":hover" when given onClick', () => {
-        const wrapper = mount(<CardHeader onClick={() => {}} />);
+        const wrapper = mount(<CardHeader onClick={() => { }} />);
         expect(wrapper).toHaveStyleRule('cursor', 'pointer', { modifier: ':hover' });
       });
 

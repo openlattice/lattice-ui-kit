@@ -1,10 +1,17 @@
 // @flow
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/pro-solid-svg-icons';
+
 import { faCheck } from '@fortawesome/pro-regular-svg-icons';
+import { faCircle } from '@fortawesome/pro-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { IconLayer, StepIndex } from './styled';
-import { PURPLES, NEUTRALS, WHITE } from '../../../colors';
+
+import {
+  NEUTRAL,
+  PURPLE,
+  WHITE
+} from '../../../colors';
 
 type Props = {
   active :boolean;
@@ -22,7 +29,7 @@ const StepIcon = ({
   const styledClassName = className ? `${className} fa-layers` : 'fa-layers';
   return (
     <IconLayer className={styledClassName}>
-      <FontAwesomeIcon icon={faCircle} color={(active || complete) ? PURPLES[2] : NEUTRALS[1]} />
+      <FontAwesomeIcon icon={faCircle} color={(active || complete) ? PURPLE.P300 : NEUTRAL.N500} />
       {
         complete
           ? <FontAwesomeIcon icon={faCheck} color={WHITE} transform="shrink-7" />

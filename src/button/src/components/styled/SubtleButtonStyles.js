@@ -1,11 +1,11 @@
 import { css } from 'styled-components';
 
-import { NEUTRALS, PURPLES } from '../../../../colors';
+import { NEUTRAL, PURPLE } from '../../../../colors';
 
 const subtleStyle = css`
   background-color: transparent;
   border-color: transparent;
-  color: ${PURPLES[1]};
+  color: ${PURPLE.P300};
 `;
 
 const subtleHover = css`
@@ -19,7 +19,7 @@ const subtleActive = css`
 const subtleDisabled = css`
   background-color: transparent;
   border-color: transparent;
-  color: ${NEUTRALS[2]};
+  color: ${NEUTRAL.N500};
 `;
 
 const subtleFocus = css`

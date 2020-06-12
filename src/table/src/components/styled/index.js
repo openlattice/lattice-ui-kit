@@ -1,11 +1,11 @@
 // @flow
 import styled from 'styled-components';
 
-import { NEUTRALS, WHITE } from '../../../../colors';
+import { NEUTRAL } from '../../../../colors';
 import { getStickyPosition } from '../../../../utils/StyleUtils';
 
 const StyledTable = styled.table`
-  background-color: ${WHITE};
+  background-color: white;
   border-collapse: collapse;
   border: none;
   table-layout: fixed;
@@ -20,7 +20,7 @@ const PaginationWrapper = styled.div`
 `;
 
 const Cell = styled.td((props :Object) => ({
-  backgroundColor: props.as === 'th' ? NEUTRALS[6] : 'inherit',
+  backgroundColor: props.as === 'th' ? NEUTRAL.N00 : 'inherit',
   cursor: props.onClick ? 'pointer' : 'auto',
   padding: '10px 10px',
   textAlign: 'left',
@@ -31,8 +31,8 @@ const Cell = styled.td((props :Object) => ({
 Cell.displayName = 'Cell';
 
 const StyledRow = styled.tr`
-  background-color: ${WHITE};
-  border-bottom: 1px solid ${NEUTRALS[4]};
+  background-color: white;
+  border-bottom: 1px solid ${NEUTRAL.N100};
 
   /* position: sticky doesn't work with thead/tr. Move to all cells within */
   td, th {

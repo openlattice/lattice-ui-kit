@@ -10,11 +10,12 @@ import styled from 'styled-components';
 import { faTimes } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { NEUTRALS } from '../../../colors';
 import { HeaderSection } from './styled/StyledModalComponents';
 
+import { NEUTRAL } from '../../../colors';
+
 const ModalTitle = styled.h1`
-  color: ${NEUTRALS[0]};
+  color: ${NEUTRAL.N700};
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
