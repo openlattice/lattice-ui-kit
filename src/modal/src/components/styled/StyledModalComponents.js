@@ -107,6 +107,14 @@ export const BodySection = styled(ModalSection)`
 export const FooterSection = styled(ModalSection)`
   align-items: center;
   flex-direction: row-reverse;
+
+  > button {
+    flex: ${({ stretch }) => (stretch ? 1 : 'none')};
+  }
+
+  > button:nth-of-type(2) {
+    margin: 0 20px 0 0px;
+  }
 `;
 
 export const HeaderSection = styled(ModalSection)`
