@@ -94,12 +94,12 @@ storiesOf('Button', module)
       <CardSegment vertical>
         <H2>Size</H2>
         <ButtonRow>
-          <Button size="small">Small</Button>
+          <Button size="small" fullWidth>Small</Button>
           <Button size="medium">Medium</Button>
           <Button size="large">Large</Button>
         </ButtonRow>
         <ButtonRow>
-          <Button variant="outlined" size="small">Small</Button>
+          <Button variant="outlined" color="primary" size="small">Small</Button>
           <Button variant="outlined" size="medium">Medium</Button>
           <Button variant="outlined" size="large">Large</Button>
         </ButtonRow>
