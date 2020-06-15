@@ -2105,6 +2105,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                             className=""
                                             color="default"
                                             disableElevation={true}
+                                            fullWidth={true}
                                             mode="primary"
                                             onClick={[Function]}
                                             type="submit"
@@ -2147,13 +2148,14 @@ exports[`Search snapshots should match snapshot 1`] = `
                                               }
                                               color="default"
                                               disableElevation={true}
+                                              fullWidth={true}
                                               mode="primary"
                                               onClick={[Function]}
                                               type="submit"
                                               variant="contained"
                                             >
                                               <WithStyles(ForwardRef(ButtonBase))
-                                                className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                                                className="MuiButton-root MuiButton-contained MuiButton-disableElevation MuiButton-fullWidth"
                                                 component="button"
                                                 disabled={false}
                                                 focusRipple={true}
@@ -2163,7 +2165,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                 type="submit"
                                               >
                                                 <ForwardRef(ButtonBase)
-                                                  className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                                                  className="MuiButton-root MuiButton-contained MuiButton-disableElevation MuiButton-fullWidth"
                                                   classes={
                                                     Object {
                                                       "disabled": "Mui-disabled",
@@ -2180,7 +2182,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                   type="submit"
                                                 >
                                                   <button
-                                                    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                                                    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation MuiButton-fullWidth"
                                                     disabled={false}
                                                     mode="primary"
                                                     onBlur={[Function]}
