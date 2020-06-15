@@ -12,12 +12,10 @@ import Spinner from '../../../spinner';
 
 const Button = (props :ButtonProps) => {
   const {
-    children,
     className,
     color = 'default',
     disableElevation = true,
     disabled,
-    fullWidth,
     isLoading,
     startIcon,
     variant = 'contained',
@@ -37,9 +35,7 @@ const Button = (props :ButtonProps) => {
         disabled={(disabled || isLoading)}
         startIcon={isLoading ? <Spinner /> : startIcon}
         // eslint-disable-next-line react/jsx-props-no-spreading
-        {...rest}>
-      { children }
-    </MuiButton>
+        {...rest} />
   );
 };
 
