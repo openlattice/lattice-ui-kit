@@ -34,12 +34,7 @@ export { default as Tag } from './tag';
 export { selectStyles } from './style/select';
 export {
   Button,
-  CopyButton,
-  EditButton,
   IconButton,
-  MinusButton,
-  PlusButton,
-  SearchButton,
 } from './button';
 export { Checkbox, ChoiceGroup, Radio } from './choices';
 export {
