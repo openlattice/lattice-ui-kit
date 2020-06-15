@@ -1,8 +1,8 @@
 import React from 'react';
 
-import MuiButton from '@material-ui/core/button';
 import capitalize from 'lodash/capitalize';
 import toJson from 'enzyme-to-json';
+import { Button as MuiButton } from '@material-ui/core';
 import { createMount } from '@material-ui/core/test-utils';
 
 import Button from './Button';
