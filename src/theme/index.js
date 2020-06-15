@@ -279,9 +279,6 @@ const lightTheme = createMuiTheme({
       dark: BLUE.B400,
       contrastText: 'white'
     },
-    secondary: {
-      main: PURPLES[3]
-    },
     text: {
       primary: NEUTRAL.N900
     },
