@@ -4,6 +4,7 @@ import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import ModalFooter, { PrimaryButton, SecondaryButton } from './ModalFooter';
+
 import { nope } from '../../../utils/testing/MockUtils';
 
 const CANCEL_TXT = 'No, cancel';
@@ -280,42 +281,6 @@ describe('ModalFooter', () => {
         );
         wrapper.find(SecondaryButton).find('button').simulate('click');
         expect(mockOnClick).toHaveBeenCalledTimes(1);
-      });
-
-    });
-
-    describe('shouldStretchButtons', () => {
-
-      test('should render stretchy buttons', () => {
-        const wrapper = mount(
-          <ModalFooter shouldStretchButtons textPrimary={CONFIRM_TXT} textSecondary={CANCEL_TXT} />
-        );
-        expect(wrapper.find(PrimaryButton)).toHaveStyleRule('flex', '1');
-        expect(wrapper.find(SecondaryButton)).toHaveStyleRule('flex', '1');
-      });
-
-      test('should render non-stretchy buttons', () => {
-        const wrapper = mount(
-          <ModalFooter shouldStretchButtons={false} textPrimary={CONFIRM_TXT} textSecondary={CANCEL_TXT} />
-        );
-        expect(wrapper.find(PrimaryButton)).toHaveStyleRule('flex', 'none');
-        expect(wrapper.find(SecondaryButton)).toHaveStyleRule('flex', 'none');
-      });
-
-      test('should render stretchy primary button', () => {
-        const wrapper = mount(
-          <ModalFooter shouldStretchButtons textPrimary={CONFIRM_TXT} textSecondary="" />
-        );
-        expect(wrapper.find(PrimaryButton)).toHaveStyleRule('flex', '1');
-        expect(wrapper.find(SecondaryButton)).toHaveLength(0);
-      });
-
-      test('should render stretchy secondary button', () => {
-        const wrapper = mount(
-          <ModalFooter shouldStretchButtons textPrimary="" textSecondary={CANCEL_TXT} />
-        );
-        expect(wrapper.find(PrimaryButton)).toHaveLength(0);
-        expect(wrapper.find(SecondaryButton)).toHaveStyleRule('flex', '1');
       });
 
     });

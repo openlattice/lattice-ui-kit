@@ -211,6 +211,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -237,13 +247,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -492,6 +495,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -518,13 +531,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -609,8 +615,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                             class="c8"
                           >
                             <button
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
-                              mode="primary"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                               tabindex="0"
                               type="button"
                             >
@@ -1042,7 +1047,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                   textSecondary=""
                                                   withFooter={true}
                                                 >
-                                                  <StyledModalComponents__FooterSection>
+                                                  <StyledModalComponents__FooterSection
+                                                    stretch={false}
+                                                  >
                                                     <StyledComponent
                                                       forwardedComponent={
                                                         Object {
@@ -1058,7 +1065,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
-                                                              "align-items:center;flex-direction:row-reverse;",
+                                                              "align-items:center;flex-direction:row-reverse;> button{flex:",
+                                                              [Function],
+                                                              ";}> button:nth-of-type(2){margin:0 20px 0 0px;}",
                                                             ],
                                                           },
                                                           "displayName": "StyledModalComponents__FooterSection",
@@ -1074,36 +1083,29 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                         }
                                                       }
                                                       forwardedRef={null}
+                                                      stretch={false}
                                                     >
                                                       <div
                                                         className="c8"
                                                       >
                                                         <ModalFooter__PrimaryButton
+                                                          color="primary"
                                                           disabled={false}
                                                           isLoading={false}
-                                                          isLonely={true}
                                                           onClick={[Function]}
-                                                          stretch={false}
                                                         >
                                                           <StyledComponent
+                                                            color="primary"
                                                             disabled={false}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [
-                                                                  [Function],
-                                                                ],
+                                                                "attrs": Array [],
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c9",
-                                                                  "rules": Array [
-                                                                    "margin:",
-                                                                    [Function],
-                                                                    ";flex:",
-                                                                    [Function],
-                                                                    ";",
-                                                                  ],
+                                                                  "lastClassName": "hJdMGi",
+                                                                  "rules": Array [],
                                                                 },
                                                                 "displayName": "ModalFooter__PrimaryButton",
                                                                 "foldedComponentIds": Array [],
@@ -1117,32 +1119,25 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                             }
                                                             forwardedRef={null}
                                                             isLoading={false}
-                                                            isLonely={true}
                                                             onClick={[Function]}
-                                                            stretch={false}
                                                           >
                                                             <Button
-                                                              className="c9"
+                                                              className=""
+                                                              color="primary"
                                                               disabled={false}
                                                               isLoading={false}
-                                                              isLonely={true}
-                                                              mode="primary"
                                                               onClick={[Function]}
-                                                              stretch={false}
                                                             >
                                                               <WithStyles(ForwardRef(Button))
-                                                                className="c9"
-                                                                color="default"
+                                                                className=""
+                                                                color="primary"
                                                                 disableElevation={true}
                                                                 disabled={false}
-                                                                isLonely={true}
-                                                                mode="primary"
                                                                 onClick={[Function]}
-                                                                stretch={false}
                                                                 variant="contained"
                                                               >
                                                                 <ForwardRef(Button)
-                                                                  className="c9"
+                                                                  className=""
                                                                   classes={
                                                                     Object {
                                                                       "colorInherit": "MuiButton-colorInherit",
@@ -1176,29 +1171,23 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                       "textSizeSmall": "MuiButton-textSizeSmall",
                                                                     }
                                                                   }
-                                                                  color="default"
+                                                                  color="primary"
                                                                   disableElevation={true}
                                                                   disabled={false}
-                                                                  isLonely={true}
-                                                                  mode="primary"
                                                                   onClick={[Function]}
-                                                                  stretch={false}
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                     component="button"
                                                                     disabled={false}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    isLonely={true}
-                                                                    mode="primary"
                                                                     onClick={[Function]}
-                                                                    stretch={false}
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                      className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -1210,17 +1199,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                       disabled={false}
                                                                       focusRipple={true}
                                                                       focusVisibleClassName="Mui-focusVisible"
-                                                                      isLonely={true}
-                                                                      mode="primary"
                                                                       onClick={[Function]}
-                                                                      stretch={false}
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                         disabled={false}
-                                                                        isLonely={true}
-                                                                        mode="primary"
                                                                         onBlur={[Function]}
                                                                         onClick={[Function]}
                                                                         onDragLeave={[Function]}
@@ -1233,7 +1217,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                         onTouchEnd={[Function]}
                                                                         onTouchMove={[Function]}
                                                                         onTouchStart={[Function]}
-                                                                        stretch={false}
                                                                         tabIndex={0}
                                                                         type="button"
                                                                       >
@@ -1454,6 +1437,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -1480,13 +1473,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -1759,6 +1745,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -1785,13 +1781,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -1876,8 +1865,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                             class="c8"
                           >
                             <button
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
-                              mode="primary"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                               tabindex="0"
                               type="button"
                             >
@@ -2309,7 +2297,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                   textSecondary=""
                                                   withFooter={true}
                                                 >
-                                                  <StyledModalComponents__FooterSection>
+                                                  <StyledModalComponents__FooterSection
+                                                    stretch={false}
+                                                  >
                                                     <StyledComponent
                                                       forwardedComponent={
                                                         Object {
@@ -2325,7 +2315,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
-                                                              "align-items:center;flex-direction:row-reverse;",
+                                                              "align-items:center;flex-direction:row-reverse;> button{flex:",
+                                                              [Function],
+                                                              ";}> button:nth-of-type(2){margin:0 20px 0 0px;}",
                                                             ],
                                                           },
                                                           "displayName": "StyledModalComponents__FooterSection",
@@ -2341,36 +2333,29 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                         }
                                                       }
                                                       forwardedRef={null}
+                                                      stretch={false}
                                                     >
                                                       <div
                                                         className="c8"
                                                       >
                                                         <ModalFooter__PrimaryButton
+                                                          color="primary"
                                                           disabled={false}
                                                           isLoading={false}
-                                                          isLonely={true}
                                                           onClick={[Function]}
-                                                          stretch={false}
                                                         >
                                                           <StyledComponent
+                                                            color="primary"
                                                             disabled={false}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [
-                                                                  [Function],
-                                                                ],
+                                                                "attrs": Array [],
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c9",
-                                                                  "rules": Array [
-                                                                    "margin:",
-                                                                    [Function],
-                                                                    ";flex:",
-                                                                    [Function],
-                                                                    ";",
-                                                                  ],
+                                                                  "lastClassName": "hJdMGi",
+                                                                  "rules": Array [],
                                                                 },
                                                                 "displayName": "ModalFooter__PrimaryButton",
                                                                 "foldedComponentIds": Array [],
@@ -2384,32 +2369,25 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                             }
                                                             forwardedRef={null}
                                                             isLoading={false}
-                                                            isLonely={true}
                                                             onClick={[Function]}
-                                                            stretch={false}
                                                           >
                                                             <Button
-                                                              className="c9"
+                                                              className=""
+                                                              color="primary"
                                                               disabled={false}
                                                               isLoading={false}
-                                                              isLonely={true}
-                                                              mode="primary"
                                                               onClick={[Function]}
-                                                              stretch={false}
                                                             >
                                                               <WithStyles(ForwardRef(Button))
-                                                                className="c9"
-                                                                color="default"
+                                                                className=""
+                                                                color="primary"
                                                                 disableElevation={true}
                                                                 disabled={false}
-                                                                isLonely={true}
-                                                                mode="primary"
                                                                 onClick={[Function]}
-                                                                stretch={false}
                                                                 variant="contained"
                                                               >
                                                                 <ForwardRef(Button)
-                                                                  className="c9"
+                                                                  className=""
                                                                   classes={
                                                                     Object {
                                                                       "colorInherit": "MuiButton-colorInherit",
@@ -2443,29 +2421,23 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                       "textSizeSmall": "MuiButton-textSizeSmall",
                                                                     }
                                                                   }
-                                                                  color="default"
+                                                                  color="primary"
                                                                   disableElevation={true}
                                                                   disabled={false}
-                                                                  isLonely={true}
-                                                                  mode="primary"
                                                                   onClick={[Function]}
-                                                                  stretch={false}
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                     component="button"
                                                                     disabled={false}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    isLonely={true}
-                                                                    mode="primary"
                                                                     onClick={[Function]}
-                                                                    stretch={false}
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                      className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -2477,17 +2449,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                       disabled={false}
                                                                       focusRipple={true}
                                                                       focusVisibleClassName="Mui-focusVisible"
-                                                                      isLonely={true}
-                                                                      mode="primary"
                                                                       onClick={[Function]}
-                                                                      stretch={false}
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                         disabled={false}
-                                                                        isLonely={true}
-                                                                        mode="primary"
                                                                         onBlur={[Function]}
                                                                         onClick={[Function]}
                                                                         onDragLeave={[Function]}
@@ -2500,7 +2467,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="FAILURE"
                                                                         onTouchEnd={[Function]}
                                                                         onTouchMove={[Function]}
                                                                         onTouchStart={[Function]}
-                                                                        stretch={false}
                                                                         tabIndex={0}
                                                                         type="button"
                                                                       >
@@ -2721,6 +2687,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -2749,25 +2725,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   justify-content: space-between;
 }
 
-.c10 {
+.c9 {
   -webkit-animation: fa-spin 0.75s infinite linear;
   animation: fa-spin 0.75s infinite linear;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-.c9 {
-  margin: 0 0 0 20px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c11 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -3015,6 +2978,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -3043,25 +3016,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   justify-content: space-between;
 }
 
-.c10 {
+.c9 {
   -webkit-animation: fa-spin 0.75s infinite linear;
   animation: fa-spin 0.75s infinite linear;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-.c9 {
-  margin: 0 0 0 20px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c11 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -3146,9 +3106,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                             class="c8"
                           >
                             <button
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation Mui-disabled Mui-disabled"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation Mui-disabled Mui-disabled"
                               disabled=""
-                              mode="primary"
                               tabindex="-1"
                               type="button"
                             >
@@ -3159,7 +3118,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                   class="MuiButton-startIcon MuiButton-iconSizeMedium"
                                 >
                                   <span
-                                    class="c10 fa-layers fa-fw fa-1x"
+                                    class="c9 fa-layers fa-fw fa-1x"
                                   >
                                     <svg
                                       aria-hidden="true"
@@ -3201,9 +3160,10 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                               </span>
                             </button>
                             <button
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained c11 MuiButton-disableElevation Mui-disabled Mui-disabled"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
                               disabled=""
-                              mode="default"
+                              id="secondary"
+                              name="secondary"
                               tabindex="-1"
                               type="button"
                             >
@@ -3631,7 +3591,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                   textSecondary="No, cancel"
                                                   withFooter={true}
                                                 >
-                                                  <StyledModalComponents__FooterSection>
+                                                  <StyledModalComponents__FooterSection
+                                                    stretch={false}
+                                                  >
                                                     <StyledComponent
                                                       forwardedComponent={
                                                         Object {
@@ -3647,7 +3609,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
-                                                              "align-items:center;flex-direction:row-reverse;",
+                                                              "align-items:center;flex-direction:row-reverse;> button{flex:",
+                                                              [Function],
+                                                              ";}> button:nth-of-type(2){margin:0 20px 0 0px;}",
                                                             ],
                                                           },
                                                           "displayName": "StyledModalComponents__FooterSection",
@@ -3663,35 +3627,28 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                         }
                                                       }
                                                       forwardedRef={null}
+                                                      stretch={false}
                                                     >
                                                       <div
                                                         className="c8"
                                                       >
                                                         <ModalFooter__PrimaryButton
+                                                          color="primary"
                                                           disabled={true}
                                                           isLoading={true}
-                                                          isLonely={false}
-                                                          stretch={false}
                                                         >
                                                           <StyledComponent
+                                                            color="primary"
                                                             disabled={true}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [
-                                                                  [Function],
-                                                                ],
+                                                                "attrs": Array [],
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c9",
-                                                                  "rules": Array [
-                                                                    "margin:",
-                                                                    [Function],
-                                                                    ";flex:",
-                                                                    [Function],
-                                                                    ";",
-                                                                  ],
+                                                                  "lastClassName": "hJdMGi",
+                                                                  "rules": Array [],
                                                                 },
                                                                 "displayName": "ModalFooter__PrimaryButton",
                                                                 "foldedComponentIds": Array [],
@@ -3705,24 +3662,18 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                             }
                                                             forwardedRef={null}
                                                             isLoading={true}
-                                                            isLonely={false}
-                                                            stretch={false}
                                                           >
                                                             <Button
-                                                              className="c9"
+                                                              className=""
+                                                              color="primary"
                                                               disabled={true}
                                                               isLoading={true}
-                                                              isLonely={false}
-                                                              mode="primary"
-                                                              stretch={false}
                                                             >
                                                               <WithStyles(ForwardRef(Button))
-                                                                className="c9"
-                                                                color="default"
+                                                                className=""
+                                                                color="primary"
                                                                 disableElevation={true}
                                                                 disabled={true}
-                                                                isLonely={false}
-                                                                mode="primary"
                                                                 startIcon={
                                                                   <Spinner
                                                                     bottomColor="#c3c3c8"
@@ -3731,11 +3682,10 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                     topColor="#56565a"
                                                                   />
                                                                 }
-                                                                stretch={false}
                                                                 variant="contained"
                                                               >
                                                                 <ForwardRef(Button)
-                                                                  className="c9"
+                                                                  className=""
                                                                   classes={
                                                                     Object {
                                                                       "colorInherit": "MuiButton-colorInherit",
@@ -3769,11 +3719,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                       "textSizeSmall": "MuiButton-textSizeSmall",
                                                                     }
                                                                   }
-                                                                  color="default"
+                                                                  color="primary"
                                                                   disableElevation={true}
                                                                   disabled={true}
-                                                                  isLonely={false}
-                                                                  mode="primary"
                                                                   startIcon={
                                                                     <Spinner
                                                                       bottomColor="#c3c3c8"
@@ -3782,22 +3730,18 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                       topColor="#56565a"
                                                                     />
                                                                   }
-                                                                  stretch={false}
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation Mui-disabled"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation Mui-disabled"
                                                                     component="button"
                                                                     disabled={true}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    isLonely={false}
-                                                                    mode="primary"
-                                                                    stretch={false}
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation Mui-disabled"
+                                                                      className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation Mui-disabled"
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -3809,16 +3753,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                       disabled={true}
                                                                       focusRipple={true}
                                                                       focusVisibleClassName="Mui-focusVisible"
-                                                                      isLonely={false}
-                                                                      mode="primary"
-                                                                      stretch={false}
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation Mui-disabled Mui-disabled"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation Mui-disabled Mui-disabled"
                                                                         disabled={true}
-                                                                        isLonely={false}
-                                                                        mode="primary"
                                                                         onBlur={[Function]}
                                                                         onDragLeave={[Function]}
                                                                         onFocus={[Function]}
@@ -3830,7 +3769,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                         onTouchEnd={[Function]}
                                                                         onTouchMove={[Function]}
                                                                         onTouchStart={[Function]}
-                                                                        stretch={false}
                                                                         tabIndex={-1}
                                                                         type="button"
                                                                       >
@@ -3860,7 +3798,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                       "componentStyle": ComponentStyle {
                                                                                         "componentId": "Rotate-sc-1o7nhkd-0",
                                                                                         "isStatic": false,
-                                                                                        "lastClassName": "c10",
+                                                                                        "lastClassName": "c9",
                                                                                         "rules": Array [
                                                                                           "animation:fa-spin ",
                                                                                           [Function],
@@ -3882,7 +3820,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                   forwardedRef={null}
                                                                                 >
                                                                                   <span
-                                                                                    className="c10 fa-layers fa-fw fa-1x"
+                                                                                    className="c9 fa-layers fa-fw fa-1x"
                                                                                   >
                                                                                     <FontAwesomeIcon
                                                                                       border={false}
@@ -4007,26 +3945,21 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                         </ModalFooter__PrimaryButton>
                                                         <ModalFooter__SecondaryButton
                                                           disabled={true}
+                                                          id="secondary"
                                                           isLoading={false}
-                                                          stretch={false}
+                                                          name="secondary"
                                                         >
                                                           <StyledComponent
                                                             disabled={true}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [
-                                                                  [Function],
-                                                                ],
+                                                                "attrs": Array [],
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c11",
-                                                                  "rules": Array [
-                                                                    "flex:",
-                                                                    [Function],
-                                                                    ";",
-                                                                  ],
+                                                                  "lastClassName": "gEFSSj",
+                                                                  "rules": Array [],
                                                                 },
                                                                 "displayName": "ModalFooter__SecondaryButton",
                                                                 "foldedComponentIds": Array [],
@@ -4039,27 +3972,28 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                               }
                                                             }
                                                             forwardedRef={null}
+                                                            id="secondary"
                                                             isLoading={false}
-                                                            stretch={false}
+                                                            name="secondary"
                                                           >
                                                             <Button
-                                                              className="c11"
+                                                              className=""
                                                               disabled={true}
+                                                              id="secondary"
                                                               isLoading={false}
-                                                              mode="default"
-                                                              stretch={false}
+                                                              name="secondary"
                                                             >
                                                               <WithStyles(ForwardRef(Button))
-                                                                className="c11"
+                                                                className=""
                                                                 color="default"
                                                                 disableElevation={true}
                                                                 disabled={true}
-                                                                mode="default"
-                                                                stretch={false}
+                                                                id="secondary"
+                                                                name="secondary"
                                                                 variant="contained"
                                                               >
                                                                 <ForwardRef(Button)
-                                                                  className="c11"
+                                                                  className=""
                                                                   classes={
                                                                     Object {
                                                                       "colorInherit": "MuiButton-colorInherit",
@@ -4096,22 +4030,22 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                   color="default"
                                                                   disableElevation={true}
                                                                   disabled={true}
-                                                                  mode="default"
-                                                                  stretch={false}
+                                                                  id="secondary"
+                                                                  name="secondary"
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained c11 MuiButton-disableElevation Mui-disabled"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
                                                                     component="button"
                                                                     disabled={true}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    mode="default"
-                                                                    stretch={false}
+                                                                    id="secondary"
+                                                                    name="secondary"
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained c11 MuiButton-disableElevation Mui-disabled"
+                                                                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -4123,14 +4057,15 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                       disabled={true}
                                                                       focusRipple={true}
                                                                       focusVisibleClassName="Mui-focusVisible"
-                                                                      mode="default"
-                                                                      stretch={false}
+                                                                      id="secondary"
+                                                                      name="secondary"
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained c11 MuiButton-disableElevation Mui-disabled Mui-disabled"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
                                                                         disabled={true}
-                                                                        mode="default"
+                                                                        id="secondary"
+                                                                        name="secondary"
                                                                         onBlur={[Function]}
                                                                         onDragLeave={[Function]}
                                                                         onFocus={[Function]}
@@ -4142,7 +4077,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                         onTouchEnd={[Function]}
                                                                         onTouchMove={[Function]}
                                                                         onTouchStart={[Function]}
-                                                                        stretch={false}
                                                                         tabIndex={-1}
                                                                         type="button"
                                                                       >
@@ -4335,6 +4269,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -4363,25 +4307,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   justify-content: space-between;
 }
 
-.c10 {
+.c9 {
   -webkit-animation: fa-spin 0.75s infinite linear;
   animation: fa-spin 0.75s infinite linear;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-.c9 {
-  margin: 0 0 0 20px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c11 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -4653,6 +4584,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -4681,25 +4622,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
   justify-content: space-between;
 }
 
-.c10 {
+.c9 {
   -webkit-animation: fa-spin 0.75s infinite linear;
   animation: fa-spin 0.75s infinite linear;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-.c9 {
-  margin: 0 0 0 20px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c11 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -4784,9 +4712,8 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                             class="c8"
                           >
                             <button
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation Mui-disabled Mui-disabled"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation Mui-disabled Mui-disabled"
                               disabled=""
-                              mode="primary"
                               tabindex="-1"
                               type="button"
                             >
@@ -4797,7 +4724,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                   class="MuiButton-startIcon MuiButton-iconSizeMedium"
                                 >
                                   <span
-                                    class="c10 fa-layers fa-fw fa-1x"
+                                    class="c9 fa-layers fa-fw fa-1x"
                                   >
                                     <svg
                                       aria-hidden="true"
@@ -4839,9 +4766,10 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                               </span>
                             </button>
                             <button
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained c11 MuiButton-disableElevation Mui-disabled Mui-disabled"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
                               disabled=""
-                              mode="default"
+                              id="secondary"
+                              name="secondary"
                               tabindex="-1"
                               type="button"
                             >
@@ -5269,7 +5197,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                   textSecondary="No, cancel"
                                                   withFooter={true}
                                                 >
-                                                  <StyledModalComponents__FooterSection>
+                                                  <StyledModalComponents__FooterSection
+                                                    stretch={false}
+                                                  >
                                                     <StyledComponent
                                                       forwardedComponent={
                                                         Object {
@@ -5285,7 +5215,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
-                                                              "align-items:center;flex-direction:row-reverse;",
+                                                              "align-items:center;flex-direction:row-reverse;> button{flex:",
+                                                              [Function],
+                                                              ";}> button:nth-of-type(2){margin:0 20px 0 0px;}",
                                                             ],
                                                           },
                                                           "displayName": "StyledModalComponents__FooterSection",
@@ -5301,35 +5233,28 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                         }
                                                       }
                                                       forwardedRef={null}
+                                                      stretch={false}
                                                     >
                                                       <div
                                                         className="c8"
                                                       >
                                                         <ModalFooter__PrimaryButton
+                                                          color="primary"
                                                           disabled={true}
                                                           isLoading={true}
-                                                          isLonely={false}
-                                                          stretch={false}
                                                         >
                                                           <StyledComponent
+                                                            color="primary"
                                                             disabled={true}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [
-                                                                  [Function],
-                                                                ],
+                                                                "attrs": Array [],
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c9",
-                                                                  "rules": Array [
-                                                                    "margin:",
-                                                                    [Function],
-                                                                    ";flex:",
-                                                                    [Function],
-                                                                    ";",
-                                                                  ],
+                                                                  "lastClassName": "hJdMGi",
+                                                                  "rules": Array [],
                                                                 },
                                                                 "displayName": "ModalFooter__PrimaryButton",
                                                                 "foldedComponentIds": Array [],
@@ -5343,24 +5268,18 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                             }
                                                             forwardedRef={null}
                                                             isLoading={true}
-                                                            isLonely={false}
-                                                            stretch={false}
                                                           >
                                                             <Button
-                                                              className="c9"
+                                                              className=""
+                                                              color="primary"
                                                               disabled={true}
                                                               isLoading={true}
-                                                              isLonely={false}
-                                                              mode="primary"
-                                                              stretch={false}
                                                             >
                                                               <WithStyles(ForwardRef(Button))
-                                                                className="c9"
-                                                                color="default"
+                                                                className=""
+                                                                color="primary"
                                                                 disableElevation={true}
                                                                 disabled={true}
-                                                                isLonely={false}
-                                                                mode="primary"
                                                                 startIcon={
                                                                   <Spinner
                                                                     bottomColor="#c3c3c8"
@@ -5369,11 +5288,10 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                     topColor="#56565a"
                                                                   />
                                                                 }
-                                                                stretch={false}
                                                                 variant="contained"
                                                               >
                                                                 <ForwardRef(Button)
-                                                                  className="c9"
+                                                                  className=""
                                                                   classes={
                                                                     Object {
                                                                       "colorInherit": "MuiButton-colorInherit",
@@ -5407,11 +5325,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                       "textSizeSmall": "MuiButton-textSizeSmall",
                                                                     }
                                                                   }
-                                                                  color="default"
+                                                                  color="primary"
                                                                   disableElevation={true}
                                                                   disabled={true}
-                                                                  isLonely={false}
-                                                                  mode="primary"
                                                                   startIcon={
                                                                     <Spinner
                                                                       bottomColor="#c3c3c8"
@@ -5420,22 +5336,18 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                       topColor="#56565a"
                                                                     />
                                                                   }
-                                                                  stretch={false}
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation Mui-disabled"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation Mui-disabled"
                                                                     component="button"
                                                                     disabled={true}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    isLonely={false}
-                                                                    mode="primary"
-                                                                    stretch={false}
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation Mui-disabled"
+                                                                      className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation Mui-disabled"
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -5447,16 +5359,11 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                       disabled={true}
                                                                       focusRipple={true}
                                                                       focusVisibleClassName="Mui-focusVisible"
-                                                                      isLonely={false}
-                                                                      mode="primary"
-                                                                      stretch={false}
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation Mui-disabled Mui-disabled"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation Mui-disabled Mui-disabled"
                                                                         disabled={true}
-                                                                        isLonely={false}
-                                                                        mode="primary"
                                                                         onBlur={[Function]}
                                                                         onDragLeave={[Function]}
                                                                         onFocus={[Function]}
@@ -5468,7 +5375,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                         onTouchEnd={[Function]}
                                                                         onTouchMove={[Function]}
                                                                         onTouchStart={[Function]}
-                                                                        stretch={false}
                                                                         tabIndex={-1}
                                                                         type="button"
                                                                       >
@@ -5498,7 +5404,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                       "componentStyle": ComponentStyle {
                                                                                         "componentId": "Rotate-sc-1o7nhkd-0",
                                                                                         "isStatic": false,
-                                                                                        "lastClassName": "c10",
+                                                                                        "lastClassName": "c9",
                                                                                         "rules": Array [
                                                                                           "animation:fa-spin ",
                                                                                           [Function],
@@ -5520,7 +5426,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                                   forwardedRef={null}
                                                                                 >
                                                                                   <span
-                                                                                    className="c10 fa-layers fa-fw fa-1x"
+                                                                                    className="c9 fa-layers fa-fw fa-1x"
                                                                                   >
                                                                                     <FontAwesomeIcon
                                                                                       border={false}
@@ -5645,26 +5551,21 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                         </ModalFooter__PrimaryButton>
                                                         <ModalFooter__SecondaryButton
                                                           disabled={true}
+                                                          id="secondary"
                                                           isLoading={false}
-                                                          stretch={false}
+                                                          name="secondary"
                                                         >
                                                           <StyledComponent
                                                             disabled={true}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [
-                                                                  [Function],
-                                                                ],
+                                                                "attrs": Array [],
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c11",
-                                                                  "rules": Array [
-                                                                    "flex:",
-                                                                    [Function],
-                                                                    ";",
-                                                                  ],
+                                                                  "lastClassName": "gEFSSj",
+                                                                  "rules": Array [],
                                                                 },
                                                                 "displayName": "ModalFooter__SecondaryButton",
                                                                 "foldedComponentIds": Array [],
@@ -5677,27 +5578,28 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                               }
                                                             }
                                                             forwardedRef={null}
+                                                            id="secondary"
                                                             isLoading={false}
-                                                            stretch={false}
+                                                            name="secondary"
                                                           >
                                                             <Button
-                                                              className="c11"
+                                                              className=""
                                                               disabled={true}
+                                                              id="secondary"
                                                               isLoading={false}
-                                                              mode="default"
-                                                              stretch={false}
+                                                              name="secondary"
                                                             >
                                                               <WithStyles(ForwardRef(Button))
-                                                                className="c11"
+                                                                className=""
                                                                 color="default"
                                                                 disableElevation={true}
                                                                 disabled={true}
-                                                                mode="default"
-                                                                stretch={false}
+                                                                id="secondary"
+                                                                name="secondary"
                                                                 variant="contained"
                                                               >
                                                                 <ForwardRef(Button)
-                                                                  className="c11"
+                                                                  className=""
                                                                   classes={
                                                                     Object {
                                                                       "colorInherit": "MuiButton-colorInherit",
@@ -5734,22 +5636,22 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                   color="default"
                                                                   disableElevation={true}
                                                                   disabled={true}
-                                                                  mode="default"
-                                                                  stretch={false}
+                                                                  id="secondary"
+                                                                  name="secondary"
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained c11 MuiButton-disableElevation Mui-disabled"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
                                                                     component="button"
                                                                     disabled={true}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    mode="default"
-                                                                    stretch={false}
+                                                                    id="secondary"
+                                                                    name="secondary"
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained c11 MuiButton-disableElevation Mui-disabled"
+                                                                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -5761,14 +5663,15 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                       disabled={true}
                                                                       focusRipple={true}
                                                                       focusVisibleClassName="Mui-focusVisible"
-                                                                      mode="default"
-                                                                      stretch={false}
+                                                                      id="secondary"
+                                                                      name="secondary"
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained c11 MuiButton-disableElevation Mui-disabled Mui-disabled"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
                                                                         disabled={true}
-                                                                        mode="default"
+                                                                        id="secondary"
+                                                                        name="secondary"
                                                                         onBlur={[Function]}
                                                                         onDragLeave={[Function]}
                                                                         onFocus={[Function]}
@@ -5780,7 +5683,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="PENDING"
                                                                         onTouchEnd={[Function]}
                                                                         onTouchMove={[Function]}
                                                                         onTouchStart={[Function]}
-                                                                        stretch={false}
                                                                         tabIndex={-1}
                                                                         type="button"
                                                                       >
@@ -5973,6 +5875,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -5999,19 +5911,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0 0 0 20px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c10 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -6248,6 +6147,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -6274,19 +6183,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0 0 0 20px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c10 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -6371,8 +6267,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                             class="c8"
                           >
                             <button
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
-                              mode="primary"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                               tabindex="0"
                               type="button"
                             >
@@ -6386,8 +6281,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                               />
                             </button>
                             <button
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained c10 MuiButton-disableElevation"
-                              mode="default"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                              id="secondary"
+                              name="secondary"
                               tabindex="0"
                               type="button"
                             >
@@ -6820,7 +6716,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                   textSecondary="No, cancel"
                                                   withFooter={true}
                                                 >
-                                                  <StyledModalComponents__FooterSection>
+                                                  <StyledModalComponents__FooterSection
+                                                    stretch={false}
+                                                  >
                                                     <StyledComponent
                                                       forwardedComponent={
                                                         Object {
@@ -6836,7 +6734,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
-                                                              "align-items:center;flex-direction:row-reverse;",
+                                                              "align-items:center;flex-direction:row-reverse;> button{flex:",
+                                                              [Function],
+                                                              ";}> button:nth-of-type(2){margin:0 20px 0 0px;}",
                                                             ],
                                                           },
                                                           "displayName": "StyledModalComponents__FooterSection",
@@ -6852,36 +6752,29 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                         }
                                                       }
                                                       forwardedRef={null}
+                                                      stretch={false}
                                                     >
                                                       <div
                                                         className="c8"
                                                       >
                                                         <ModalFooter__PrimaryButton
+                                                          color="primary"
                                                           disabled={false}
                                                           isLoading={false}
-                                                          isLonely={false}
                                                           onClick={[Function]}
-                                                          stretch={false}
                                                         >
                                                           <StyledComponent
+                                                            color="primary"
                                                             disabled={false}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [
-                                                                  [Function],
-                                                                ],
+                                                                "attrs": Array [],
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c9",
-                                                                  "rules": Array [
-                                                                    "margin:",
-                                                                    [Function],
-                                                                    ";flex:",
-                                                                    [Function],
-                                                                    ";",
-                                                                  ],
+                                                                  "lastClassName": "hJdMGi",
+                                                                  "rules": Array [],
                                                                 },
                                                                 "displayName": "ModalFooter__PrimaryButton",
                                                                 "foldedComponentIds": Array [],
@@ -6895,32 +6788,25 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                             }
                                                             forwardedRef={null}
                                                             isLoading={false}
-                                                            isLonely={false}
                                                             onClick={[Function]}
-                                                            stretch={false}
                                                           >
                                                             <Button
-                                                              className="c9"
+                                                              className=""
+                                                              color="primary"
                                                               disabled={false}
                                                               isLoading={false}
-                                                              isLonely={false}
-                                                              mode="primary"
                                                               onClick={[Function]}
-                                                              stretch={false}
                                                             >
                                                               <WithStyles(ForwardRef(Button))
-                                                                className="c9"
-                                                                color="default"
+                                                                className=""
+                                                                color="primary"
                                                                 disableElevation={true}
                                                                 disabled={false}
-                                                                isLonely={false}
-                                                                mode="primary"
                                                                 onClick={[Function]}
-                                                                stretch={false}
                                                                 variant="contained"
                                                               >
                                                                 <ForwardRef(Button)
-                                                                  className="c9"
+                                                                  className=""
                                                                   classes={
                                                                     Object {
                                                                       "colorInherit": "MuiButton-colorInherit",
@@ -6954,29 +6840,23 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                       "textSizeSmall": "MuiButton-textSizeSmall",
                                                                     }
                                                                   }
-                                                                  color="default"
+                                                                  color="primary"
                                                                   disableElevation={true}
                                                                   disabled={false}
-                                                                  isLonely={false}
-                                                                  mode="primary"
                                                                   onClick={[Function]}
-                                                                  stretch={false}
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                     component="button"
                                                                     disabled={false}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    isLonely={false}
-                                                                    mode="primary"
                                                                     onClick={[Function]}
-                                                                    stretch={false}
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                      className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -6988,17 +6868,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                       disabled={false}
                                                                       focusRipple={true}
                                                                       focusVisibleClassName="Mui-focusVisible"
-                                                                      isLonely={false}
-                                                                      mode="primary"
                                                                       onClick={[Function]}
-                                                                      stretch={false}
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                         disabled={false}
-                                                                        isLonely={false}
-                                                                        mode="primary"
                                                                         onBlur={[Function]}
                                                                         onClick={[Function]}
                                                                         onDragLeave={[Function]}
@@ -7011,7 +6886,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                         onTouchEnd={[Function]}
                                                                         onTouchMove={[Function]}
                                                                         onTouchStart={[Function]}
-                                                                        stretch={false}
                                                                         tabIndex={0}
                                                                         type="button"
                                                                       >
@@ -7058,27 +6932,22 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                         </ModalFooter__PrimaryButton>
                                                         <ModalFooter__SecondaryButton
                                                           disabled={false}
+                                                          id="secondary"
                                                           isLoading={false}
+                                                          name="secondary"
                                                           onClick={[Function]}
-                                                          stretch={false}
                                                         >
                                                           <StyledComponent
                                                             disabled={false}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [
-                                                                  [Function],
-                                                                ],
+                                                                "attrs": Array [],
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c10",
-                                                                  "rules": Array [
-                                                                    "flex:",
-                                                                    [Function],
-                                                                    ";",
-                                                                  ],
+                                                                  "lastClassName": "gEFSSj",
+                                                                  "rules": Array [],
                                                                 },
                                                                 "displayName": "ModalFooter__SecondaryButton",
                                                                 "foldedComponentIds": Array [],
@@ -7091,30 +6960,31 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                               }
                                                             }
                                                             forwardedRef={null}
+                                                            id="secondary"
                                                             isLoading={false}
+                                                            name="secondary"
                                                             onClick={[Function]}
-                                                            stretch={false}
                                                           >
                                                             <Button
-                                                              className="c10"
+                                                              className=""
                                                               disabled={false}
+                                                              id="secondary"
                                                               isLoading={false}
-                                                              mode="default"
+                                                              name="secondary"
                                                               onClick={[Function]}
-                                                              stretch={false}
                                                             >
                                                               <WithStyles(ForwardRef(Button))
-                                                                className="c10"
+                                                                className=""
                                                                 color="default"
                                                                 disableElevation={true}
                                                                 disabled={false}
-                                                                mode="default"
+                                                                id="secondary"
+                                                                name="secondary"
                                                                 onClick={[Function]}
-                                                                stretch={false}
                                                                 variant="contained"
                                                               >
                                                                 <ForwardRef(Button)
-                                                                  className="c10"
+                                                                  className=""
                                                                   classes={
                                                                     Object {
                                                                       "colorInherit": "MuiButton-colorInherit",
@@ -7151,24 +7021,24 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                   color="default"
                                                                   disableElevation={true}
                                                                   disabled={false}
-                                                                  mode="default"
+                                                                  id="secondary"
+                                                                  name="secondary"
                                                                   onClick={[Function]}
-                                                                  stretch={false}
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained c10 MuiButton-disableElevation"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
                                                                     component="button"
                                                                     disabled={false}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    mode="default"
+                                                                    id="secondary"
+                                                                    name="secondary"
                                                                     onClick={[Function]}
-                                                                    stretch={false}
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained c10 MuiButton-disableElevation"
+                                                                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -7180,15 +7050,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                       disabled={false}
                                                                       focusRipple={true}
                                                                       focusVisibleClassName="Mui-focusVisible"
-                                                                      mode="default"
+                                                                      id="secondary"
+                                                                      name="secondary"
                                                                       onClick={[Function]}
-                                                                      stretch={false}
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained c10 MuiButton-disableElevation"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
                                                                         disabled={false}
-                                                                        mode="default"
+                                                                        id="secondary"
+                                                                        name="secondary"
                                                                         onBlur={[Function]}
                                                                         onClick={[Function]}
                                                                         onDragLeave={[Function]}
@@ -7201,7 +7072,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                         onTouchEnd={[Function]}
                                                                         onTouchMove={[Function]}
                                                                         onTouchStart={[Function]}
-                                                                        stretch={false}
                                                                         tabIndex={0}
                                                                         type="button"
                                                                       >
@@ -7422,6 +7292,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -7448,19 +7328,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0 0 0 20px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c10 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -7721,6 +7588,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -7747,19 +7624,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0 0 0 20px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c10 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -7844,8 +7708,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                             class="c8"
                           >
                             <button
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
-                              mode="primary"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                               tabindex="0"
                               type="button"
                             >
@@ -7859,8 +7722,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                               />
                             </button>
                             <button
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained c10 MuiButton-disableElevation"
-                              mode="default"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                              id="secondary"
+                              name="secondary"
                               tabindex="0"
                               type="button"
                             >
@@ -8293,7 +8157,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                   textSecondary="No, cancel"
                                                   withFooter={true}
                                                 >
-                                                  <StyledModalComponents__FooterSection>
+                                                  <StyledModalComponents__FooterSection
+                                                    stretch={false}
+                                                  >
                                                     <StyledComponent
                                                       forwardedComponent={
                                                         Object {
@@ -8309,7 +8175,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
-                                                              "align-items:center;flex-direction:row-reverse;",
+                                                              "align-items:center;flex-direction:row-reverse;> button{flex:",
+                                                              [Function],
+                                                              ";}> button:nth-of-type(2){margin:0 20px 0 0px;}",
                                                             ],
                                                           },
                                                           "displayName": "StyledModalComponents__FooterSection",
@@ -8325,36 +8193,29 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                         }
                                                       }
                                                       forwardedRef={null}
+                                                      stretch={false}
                                                     >
                                                       <div
                                                         className="c8"
                                                       >
                                                         <ModalFooter__PrimaryButton
+                                                          color="primary"
                                                           disabled={false}
                                                           isLoading={false}
-                                                          isLonely={false}
                                                           onClick={[Function]}
-                                                          stretch={false}
                                                         >
                                                           <StyledComponent
+                                                            color="primary"
                                                             disabled={false}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [
-                                                                  [Function],
-                                                                ],
+                                                                "attrs": Array [],
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c9",
-                                                                  "rules": Array [
-                                                                    "margin:",
-                                                                    [Function],
-                                                                    ";flex:",
-                                                                    [Function],
-                                                                    ";",
-                                                                  ],
+                                                                  "lastClassName": "hJdMGi",
+                                                                  "rules": Array [],
                                                                 },
                                                                 "displayName": "ModalFooter__PrimaryButton",
                                                                 "foldedComponentIds": Array [],
@@ -8368,32 +8229,25 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                             }
                                                             forwardedRef={null}
                                                             isLoading={false}
-                                                            isLonely={false}
                                                             onClick={[Function]}
-                                                            stretch={false}
                                                           >
                                                             <Button
-                                                              className="c9"
+                                                              className=""
+                                                              color="primary"
                                                               disabled={false}
                                                               isLoading={false}
-                                                              isLonely={false}
-                                                              mode="primary"
                                                               onClick={[Function]}
-                                                              stretch={false}
                                                             >
                                                               <WithStyles(ForwardRef(Button))
-                                                                className="c9"
-                                                                color="default"
+                                                                className=""
+                                                                color="primary"
                                                                 disableElevation={true}
                                                                 disabled={false}
-                                                                isLonely={false}
-                                                                mode="primary"
                                                                 onClick={[Function]}
-                                                                stretch={false}
                                                                 variant="contained"
                                                               >
                                                                 <ForwardRef(Button)
-                                                                  className="c9"
+                                                                  className=""
                                                                   classes={
                                                                     Object {
                                                                       "colorInherit": "MuiButton-colorInherit",
@@ -8427,29 +8281,23 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                       "textSizeSmall": "MuiButton-textSizeSmall",
                                                                     }
                                                                   }
-                                                                  color="default"
+                                                                  color="primary"
                                                                   disableElevation={true}
                                                                   disabled={false}
-                                                                  isLonely={false}
-                                                                  mode="primary"
                                                                   onClick={[Function]}
-                                                                  stretch={false}
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                     component="button"
                                                                     disabled={false}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    isLonely={false}
-                                                                    mode="primary"
                                                                     onClick={[Function]}
-                                                                    stretch={false}
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                      className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -8461,17 +8309,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                       disabled={false}
                                                                       focusRipple={true}
                                                                       focusVisibleClassName="Mui-focusVisible"
-                                                                      isLonely={false}
-                                                                      mode="primary"
                                                                       onClick={[Function]}
-                                                                      stretch={false}
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                         disabled={false}
-                                                                        isLonely={false}
-                                                                        mode="primary"
                                                                         onBlur={[Function]}
                                                                         onClick={[Function]}
                                                                         onDragLeave={[Function]}
@@ -8484,7 +8327,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                         onTouchEnd={[Function]}
                                                                         onTouchMove={[Function]}
                                                                         onTouchStart={[Function]}
-                                                                        stretch={false}
                                                                         tabIndex={0}
                                                                         type="button"
                                                                       >
@@ -8531,27 +8373,22 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                         </ModalFooter__PrimaryButton>
                                                         <ModalFooter__SecondaryButton
                                                           disabled={false}
+                                                          id="secondary"
                                                           isLoading={false}
+                                                          name="secondary"
                                                           onClick={[Function]}
-                                                          stretch={false}
                                                         >
                                                           <StyledComponent
                                                             disabled={false}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [
-                                                                  [Function],
-                                                                ],
+                                                                "attrs": Array [],
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c10",
-                                                                  "rules": Array [
-                                                                    "flex:",
-                                                                    [Function],
-                                                                    ";",
-                                                                  ],
+                                                                  "lastClassName": "gEFSSj",
+                                                                  "rules": Array [],
                                                                 },
                                                                 "displayName": "ModalFooter__SecondaryButton",
                                                                 "foldedComponentIds": Array [],
@@ -8564,30 +8401,31 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                               }
                                                             }
                                                             forwardedRef={null}
+                                                            id="secondary"
                                                             isLoading={false}
+                                                            name="secondary"
                                                             onClick={[Function]}
-                                                            stretch={false}
                                                           >
                                                             <Button
-                                                              className="c10"
+                                                              className=""
                                                               disabled={false}
+                                                              id="secondary"
                                                               isLoading={false}
-                                                              mode="default"
+                                                              name="secondary"
                                                               onClick={[Function]}
-                                                              stretch={false}
                                                             >
                                                               <WithStyles(ForwardRef(Button))
-                                                                className="c10"
+                                                                className=""
                                                                 color="default"
                                                                 disableElevation={true}
                                                                 disabled={false}
-                                                                mode="default"
+                                                                id="secondary"
+                                                                name="secondary"
                                                                 onClick={[Function]}
-                                                                stretch={false}
                                                                 variant="contained"
                                                               >
                                                                 <ForwardRef(Button)
-                                                                  className="c10"
+                                                                  className=""
                                                                   classes={
                                                                     Object {
                                                                       "colorInherit": "MuiButton-colorInherit",
@@ -8624,24 +8462,24 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                   color="default"
                                                                   disableElevation={true}
                                                                   disabled={false}
-                                                                  mode="default"
+                                                                  id="secondary"
+                                                                  name="secondary"
                                                                   onClick={[Function]}
-                                                                  stretch={false}
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained c10 MuiButton-disableElevation"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
                                                                     component="button"
                                                                     disabled={false}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    mode="default"
+                                                                    id="secondary"
+                                                                    name="secondary"
                                                                     onClick={[Function]}
-                                                                    stretch={false}
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained c10 MuiButton-disableElevation"
+                                                                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -8653,15 +8491,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                       disabled={false}
                                                                       focusRipple={true}
                                                                       focusVisibleClassName="Mui-focusVisible"
-                                                                      mode="default"
+                                                                      id="secondary"
+                                                                      name="secondary"
                                                                       onClick={[Function]}
-                                                                      stretch={false}
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained c10 MuiButton-disableElevation"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
                                                                         disabled={false}
-                                                                        mode="default"
+                                                                        id="secondary"
+                                                                        name="secondary"
                                                                         onBlur={[Function]}
                                                                         onClick={[Function]}
                                                                         onDragLeave={[Function]}
@@ -8674,7 +8513,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="STANDBY"
                                                                         onTouchEnd={[Function]}
                                                                         onTouchMove={[Function]}
                                                                         onTouchStart={[Function]}
-                                                                        stretch={false}
                                                                         tabIndex={0}
                                                                         type="button"
                                                                       >
@@ -8895,6 +8733,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -8921,13 +8769,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -9176,6 +9017,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -9202,13 +9053,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -9293,8 +9137,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                             class="c8"
                           >
                             <button
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
-                              mode="primary"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                               tabindex="0"
                               type="button"
                             >
@@ -9726,7 +9569,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                   textSecondary=""
                                                   withFooter={true}
                                                 >
-                                                  <StyledModalComponents__FooterSection>
+                                                  <StyledModalComponents__FooterSection
+                                                    stretch={false}
+                                                  >
                                                     <StyledComponent
                                                       forwardedComponent={
                                                         Object {
@@ -9742,7 +9587,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
-                                                              "align-items:center;flex-direction:row-reverse;",
+                                                              "align-items:center;flex-direction:row-reverse;> button{flex:",
+                                                              [Function],
+                                                              ";}> button:nth-of-type(2){margin:0 20px 0 0px;}",
                                                             ],
                                                           },
                                                           "displayName": "StyledModalComponents__FooterSection",
@@ -9758,36 +9605,29 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                         }
                                                       }
                                                       forwardedRef={null}
+                                                      stretch={false}
                                                     >
                                                       <div
                                                         className="c8"
                                                       >
                                                         <ModalFooter__PrimaryButton
+                                                          color="primary"
                                                           disabled={false}
                                                           isLoading={false}
-                                                          isLonely={true}
                                                           onClick={[Function]}
-                                                          stretch={false}
                                                         >
                                                           <StyledComponent
+                                                            color="primary"
                                                             disabled={false}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [
-                                                                  [Function],
-                                                                ],
+                                                                "attrs": Array [],
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c9",
-                                                                  "rules": Array [
-                                                                    "margin:",
-                                                                    [Function],
-                                                                    ";flex:",
-                                                                    [Function],
-                                                                    ";",
-                                                                  ],
+                                                                  "lastClassName": "hJdMGi",
+                                                                  "rules": Array [],
                                                                 },
                                                                 "displayName": "ModalFooter__PrimaryButton",
                                                                 "foldedComponentIds": Array [],
@@ -9801,32 +9641,25 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                             }
                                                             forwardedRef={null}
                                                             isLoading={false}
-                                                            isLonely={true}
                                                             onClick={[Function]}
-                                                            stretch={false}
                                                           >
                                                             <Button
-                                                              className="c9"
+                                                              className=""
+                                                              color="primary"
                                                               disabled={false}
                                                               isLoading={false}
-                                                              isLonely={true}
-                                                              mode="primary"
                                                               onClick={[Function]}
-                                                              stretch={false}
                                                             >
                                                               <WithStyles(ForwardRef(Button))
-                                                                className="c9"
-                                                                color="default"
+                                                                className=""
+                                                                color="primary"
                                                                 disableElevation={true}
                                                                 disabled={false}
-                                                                isLonely={true}
-                                                                mode="primary"
                                                                 onClick={[Function]}
-                                                                stretch={false}
                                                                 variant="contained"
                                                               >
                                                                 <ForwardRef(Button)
-                                                                  className="c9"
+                                                                  className=""
                                                                   classes={
                                                                     Object {
                                                                       "colorInherit": "MuiButton-colorInherit",
@@ -9860,29 +9693,23 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                       "textSizeSmall": "MuiButton-textSizeSmall",
                                                                     }
                                                                   }
-                                                                  color="default"
+                                                                  color="primary"
                                                                   disableElevation={true}
                                                                   disabled={false}
-                                                                  isLonely={true}
-                                                                  mode="primary"
                                                                   onClick={[Function]}
-                                                                  stretch={false}
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                     component="button"
                                                                     disabled={false}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    isLonely={true}
-                                                                    mode="primary"
                                                                     onClick={[Function]}
-                                                                    stretch={false}
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                      className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -9894,17 +9721,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                       disabled={false}
                                                                       focusRipple={true}
                                                                       focusVisibleClassName="Mui-focusVisible"
-                                                                      isLonely={true}
-                                                                      mode="primary"
                                                                       onClick={[Function]}
-                                                                      stretch={false}
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                         disabled={false}
-                                                                        isLonely={true}
-                                                                        mode="primary"
                                                                         onBlur={[Function]}
                                                                         onClick={[Function]}
                                                                         onDragLeave={[Function]}
@@ -9917,7 +9739,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                         onTouchEnd={[Function]}
                                                                         onTouchMove={[Function]}
                                                                         onTouchStart={[Function]}
-                                                                        stretch={false}
                                                                         tabIndex={0}
                                                                         type="button"
                                                                       >
@@ -10138,6 +9959,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -10164,13 +9995,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -10443,6 +10267,16 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -10469,13 +10303,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -10560,8 +10387,7 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                             class="c8"
                           >
                             <button
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
-                              mode="primary"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                               tabindex="0"
                               type="button"
                             >
@@ -10993,7 +10819,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                   textSecondary=""
                                                   withFooter={true}
                                                 >
-                                                  <StyledModalComponents__FooterSection>
+                                                  <StyledModalComponents__FooterSection
+                                                    stretch={false}
+                                                  >
                                                     <StyledComponent
                                                       forwardedComponent={
                                                         Object {
@@ -11009,7 +10837,9 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                               ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                               "30px",
                                                               ";position:relative;",
-                                                              "align-items:center;flex-direction:row-reverse;",
+                                                              "align-items:center;flex-direction:row-reverse;> button{flex:",
+                                                              [Function],
+                                                              ";}> button:nth-of-type(2){margin:0 20px 0 0px;}",
                                                             ],
                                                           },
                                                           "displayName": "StyledModalComponents__FooterSection",
@@ -11025,36 +10855,29 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                         }
                                                       }
                                                       forwardedRef={null}
+                                                      stretch={false}
                                                     >
                                                       <div
                                                         className="c8"
                                                       >
                                                         <ModalFooter__PrimaryButton
+                                                          color="primary"
                                                           disabled={false}
                                                           isLoading={false}
-                                                          isLonely={true}
                                                           onClick={[Function]}
-                                                          stretch={false}
                                                         >
                                                           <StyledComponent
+                                                            color="primary"
                                                             disabled={false}
                                                             forwardedComponent={
                                                               Object {
                                                                 "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [
-                                                                  [Function],
-                                                                ],
+                                                                "attrs": Array [],
                                                                 "componentStyle": ComponentStyle {
                                                                   "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                                                                   "isStatic": false,
-                                                                  "lastClassName": "c9",
-                                                                  "rules": Array [
-                                                                    "margin:",
-                                                                    [Function],
-                                                                    ";flex:",
-                                                                    [Function],
-                                                                    ";",
-                                                                  ],
+                                                                  "lastClassName": "hJdMGi",
+                                                                  "rules": Array [],
                                                                 },
                                                                 "displayName": "ModalFooter__PrimaryButton",
                                                                 "foldedComponentIds": Array [],
@@ -11068,32 +10891,25 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                             }
                                                             forwardedRef={null}
                                                             isLoading={false}
-                                                            isLonely={true}
                                                             onClick={[Function]}
-                                                            stretch={false}
                                                           >
                                                             <Button
-                                                              className="c9"
+                                                              className=""
+                                                              color="primary"
                                                               disabled={false}
                                                               isLoading={false}
-                                                              isLonely={true}
-                                                              mode="primary"
                                                               onClick={[Function]}
-                                                              stretch={false}
                                                             >
                                                               <WithStyles(ForwardRef(Button))
-                                                                className="c9"
-                                                                color="default"
+                                                                className=""
+                                                                color="primary"
                                                                 disableElevation={true}
                                                                 disabled={false}
-                                                                isLonely={true}
-                                                                mode="primary"
                                                                 onClick={[Function]}
-                                                                stretch={false}
                                                                 variant="contained"
                                                               >
                                                                 <ForwardRef(Button)
-                                                                  className="c9"
+                                                                  className=""
                                                                   classes={
                                                                     Object {
                                                                       "colorInherit": "MuiButton-colorInherit",
@@ -11127,29 +10943,23 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                       "textSizeSmall": "MuiButton-textSizeSmall",
                                                                     }
                                                                   }
-                                                                  color="default"
+                                                                  color="primary"
                                                                   disableElevation={true}
                                                                   disabled={false}
-                                                                  isLonely={true}
-                                                                  mode="primary"
                                                                   onClick={[Function]}
-                                                                  stretch={false}
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                     component="button"
                                                                     disabled={false}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    isLonely={true}
-                                                                    mode="primary"
                                                                     onClick={[Function]}
-                                                                    stretch={false}
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                      className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -11161,17 +10971,12 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                       disabled={false}
                                                                       focusRipple={true}
                                                                       focusVisibleClassName="Mui-focusVisible"
-                                                                      isLonely={true}
-                                                                      mode="primary"
                                                                       onClick={[Function]}
-                                                                      stretch={false}
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                         disabled={false}
-                                                                        isLonely={true}
-                                                                        mode="primary"
                                                                         onBlur={[Function]}
                                                                         onClick={[Function]}
                                                                         onDragLeave={[Function]}
@@ -11184,7 +10989,6 @@ exports[`ActionModal snapshots should match snapshot when requestState="SUCCESS"
                                                                         onTouchEnd={[Function]}
                                                                         onTouchMove={[Function]}
                                                                         onTouchStart={[Function]}
-                                                                        stretch={false}
                                                                         tabIndex={0}
                                                                         type="button"
                                                                       >

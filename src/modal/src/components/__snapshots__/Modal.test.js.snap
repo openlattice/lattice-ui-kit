@@ -197,6 +197,16 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -223,19 +233,6 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0 0 0 20px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c10 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -459,6 +456,16 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
   color: #56565a;
   display: -webkit-box;
@@ -485,19 +492,6 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c9 {
-  margin: 0 0 0 20px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c10 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
 
 .c5 {
@@ -582,8 +576,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                           class="c8"
                         >
                           <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
-                            mode="primary"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                             tabindex="0"
                             type="button"
                           >
@@ -597,8 +590,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                             />
                           </button>
                           <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained c10 MuiButton-disableElevation"
-                            mode="default"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                            id="secondary"
+                            name="secondary"
                             tabindex="0"
                             type="button"
                           >
@@ -1031,7 +1025,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 textSecondary="Cancel"
                                                 withFooter={true}
                                               >
-                                                <StyledModalComponents__FooterSection>
+                                                <StyledModalComponents__FooterSection
+                                                  stretch={false}
+                                                >
                                                   <StyledComponent
                                                     forwardedComponent={
                                                       Object {
@@ -1047,7 +1043,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                             ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                             "30px",
                                                             ";position:relative;",
-                                                            "align-items:center;flex-direction:row-reverse;",
+                                                            "align-items:center;flex-direction:row-reverse;> button{flex:",
+                                                            [Function],
+                                                            ";}> button:nth-of-type(2){margin:0 20px 0 0px;}",
                                                           ],
                                                         },
                                                         "displayName": "StyledModalComponents__FooterSection",
@@ -1063,36 +1061,29 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                       }
                                                     }
                                                     forwardedRef={null}
+                                                    stretch={false}
                                                   >
                                                     <div
                                                       className="c8"
                                                     >
                                                       <ModalFooter__PrimaryButton
+                                                        color="primary"
                                                         disabled={false}
                                                         isLoading={false}
-                                                        isLonely={false}
                                                         onClick={[Function]}
-                                                        stretch={false}
                                                       >
                                                         <StyledComponent
+                                                          color="primary"
                                                           disabled={false}
                                                           forwardedComponent={
                                                             Object {
                                                               "$$typeof": Symbol(react.forward_ref),
-                                                              "attrs": Array [
-                                                                [Function],
-                                                              ],
+                                                              "attrs": Array [],
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c9",
-                                                                "rules": Array [
-                                                                  "margin:",
-                                                                  [Function],
-                                                                  ";flex:",
-                                                                  [Function],
-                                                                  ";",
-                                                                ],
+                                                                "lastClassName": "hJdMGi",
+                                                                "rules": Array [],
                                                               },
                                                               "displayName": "ModalFooter__PrimaryButton",
                                                               "foldedComponentIds": Array [],
@@ -1106,32 +1097,25 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           }
                                                           forwardedRef={null}
                                                           isLoading={false}
-                                                          isLonely={false}
                                                           onClick={[Function]}
-                                                          stretch={false}
                                                         >
                                                           <Button
-                                                            className="c9"
+                                                            className=""
+                                                            color="primary"
                                                             disabled={false}
                                                             isLoading={false}
-                                                            isLonely={false}
-                                                            mode="primary"
                                                             onClick={[Function]}
-                                                            stretch={false}
                                                           >
                                                             <WithStyles(ForwardRef(Button))
-                                                              className="c9"
-                                                              color="default"
+                                                              className=""
+                                                              color="primary"
                                                               disableElevation={true}
                                                               disabled={false}
-                                                              isLonely={false}
-                                                              mode="primary"
                                                               onClick={[Function]}
-                                                              stretch={false}
                                                               variant="contained"
                                                             >
                                                               <ForwardRef(Button)
-                                                                className="c9"
+                                                                className=""
                                                                 classes={
                                                                   Object {
                                                                     "colorInherit": "MuiButton-colorInherit",
@@ -1165,29 +1149,23 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                     "textSizeSmall": "MuiButton-textSizeSmall",
                                                                   }
                                                                 }
-                                                                color="default"
+                                                                color="primary"
                                                                 disableElevation={true}
                                                                 disabled={false}
-                                                                isLonely={false}
-                                                                mode="primary"
                                                                 onClick={[Function]}
-                                                                stretch={false}
                                                                 variant="contained"
                                                               >
                                                                 <WithStyles(ForwardRef(ButtonBase))
-                                                                  className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                  className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                   component="button"
                                                                   disabled={false}
                                                                   focusRipple={true}
                                                                   focusVisibleClassName="Mui-focusVisible"
-                                                                  isLonely={false}
-                                                                  mode="primary"
                                                                   onClick={[Function]}
-                                                                  stretch={false}
                                                                   type="button"
                                                                 >
                                                                   <ForwardRef(ButtonBase)
-                                                                    className="MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                     classes={
                                                                       Object {
                                                                         "disabled": "Mui-disabled",
@@ -1199,17 +1177,12 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                     disabled={false}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    isLonely={false}
-                                                                    mode="primary"
                                                                     onClick={[Function]}
-                                                                    stretch={false}
                                                                     type="button"
                                                                   >
                                                                     <button
-                                                                      className="MuiButtonBase-root MuiButton-root MuiButton-contained c9 MuiButton-disableElevation"
+                                                                      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
                                                                       disabled={false}
-                                                                      isLonely={false}
-                                                                      mode="primary"
                                                                       onBlur={[Function]}
                                                                       onClick={[Function]}
                                                                       onDragLeave={[Function]}
@@ -1222,7 +1195,6 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                       onTouchEnd={[Function]}
                                                                       onTouchMove={[Function]}
                                                                       onTouchStart={[Function]}
-                                                                      stretch={false}
                                                                       tabIndex={0}
                                                                       type="button"
                                                                     >
@@ -1269,27 +1241,22 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                       </ModalFooter__PrimaryButton>
                                                       <ModalFooter__SecondaryButton
                                                         disabled={false}
+                                                        id="secondary"
                                                         isLoading={false}
+                                                        name="secondary"
                                                         onClick={[Function]}
-                                                        stretch={false}
                                                       >
                                                         <StyledComponent
                                                           disabled={false}
                                                           forwardedComponent={
                                                             Object {
                                                               "$$typeof": Symbol(react.forward_ref),
-                                                              "attrs": Array [
-                                                                [Function],
-                                                              ],
+                                                              "attrs": Array [],
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c10",
-                                                                "rules": Array [
-                                                                  "flex:",
-                                                                  [Function],
-                                                                  ";",
-                                                                ],
+                                                                "lastClassName": "gEFSSj",
+                                                                "rules": Array [],
                                                               },
                                                               "displayName": "ModalFooter__SecondaryButton",
                                                               "foldedComponentIds": Array [],
@@ -1302,30 +1269,31 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                             }
                                                           }
                                                           forwardedRef={null}
+                                                          id="secondary"
                                                           isLoading={false}
+                                                          name="secondary"
                                                           onClick={[Function]}
-                                                          stretch={false}
                                                         >
                                                           <Button
-                                                            className="c10"
+                                                            className=""
                                                             disabled={false}
+                                                            id="secondary"
                                                             isLoading={false}
-                                                            mode="default"
+                                                            name="secondary"
                                                             onClick={[Function]}
-                                                            stretch={false}
                                                           >
                                                             <WithStyles(ForwardRef(Button))
-                                                              className="c10"
+                                                              className=""
                                                               color="default"
                                                               disableElevation={true}
                                                               disabled={false}
-                                                              mode="default"
+                                                              id="secondary"
+                                                              name="secondary"
                                                               onClick={[Function]}
-                                                              stretch={false}
                                                               variant="contained"
                                                             >
                                                               <ForwardRef(Button)
-                                                                className="c10"
+                                                                className=""
                                                                 classes={
                                                                   Object {
                                                                     "colorInherit": "MuiButton-colorInherit",
@@ -1362,24 +1330,24 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                 color="default"
                                                                 disableElevation={true}
                                                                 disabled={false}
-                                                                mode="default"
+                                                                id="secondary"
+                                                                name="secondary"
                                                                 onClick={[Function]}
-                                                                stretch={false}
                                                                 variant="contained"
                                                               >
                                                                 <WithStyles(ForwardRef(ButtonBase))
-                                                                  className="MuiButton-root MuiButton-contained c10 MuiButton-disableElevation"
+                                                                  className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
                                                                   component="button"
                                                                   disabled={false}
                                                                   focusRipple={true}
                                                                   focusVisibleClassName="Mui-focusVisible"
-                                                                  mode="default"
+                                                                  id="secondary"
+                                                                  name="secondary"
                                                                   onClick={[Function]}
-                                                                  stretch={false}
                                                                   type="button"
                                                                 >
                                                                   <ForwardRef(ButtonBase)
-                                                                    className="MuiButton-root MuiButton-contained c10 MuiButton-disableElevation"
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
                                                                     classes={
                                                                       Object {
                                                                         "disabled": "Mui-disabled",
@@ -1391,15 +1359,16 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                     disabled={false}
                                                                     focusRipple={true}
                                                                     focusVisibleClassName="Mui-focusVisible"
-                                                                    mode="default"
+                                                                    id="secondary"
+                                                                    name="secondary"
                                                                     onClick={[Function]}
-                                                                    stretch={false}
                                                                     type="button"
                                                                   >
                                                                     <button
-                                                                      className="MuiButtonBase-root MuiButton-root MuiButton-contained c10 MuiButton-disableElevation"
+                                                                      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
                                                                       disabled={false}
-                                                                      mode="default"
+                                                                      id="secondary"
+                                                                      name="secondary"
                                                                       onBlur={[Function]}
                                                                       onClick={[Function]}
                                                                       onDragLeave={[Function]}
@@ -1412,7 +1381,6 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                       onTouchEnd={[Function]}
                                                                       onTouchMove={[Function]}
                                                                       onTouchStart={[Function]}
-                                                                      stretch={false}
                                                                       tabIndex={0}
                                                                       type="button"
                                                                     >
