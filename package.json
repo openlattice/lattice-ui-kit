@@ -35,7 +35,7 @@
     "@material-ui/lab": "~4.0.0-alpha.50",
     "@material-ui/pickers": "~3.2.10",
     "@material-ui/styles": "~4.9.10",
-    "clsx": "^1.1.1",
+    "clsx": "~1.1.1",
     "immutable": "4.0.0-rc.9",
     "lodash": "~4.17.10",
     "luxon": "~1.24.1",
