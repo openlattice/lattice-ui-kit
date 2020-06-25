@@ -142,7 +142,7 @@ const lightTheme = createMuiTheme({
       main: PURPLE.P300
     },
     secondary: {
-      main: PURPLES[3]
+      main: PURPLE.P200
     },
     text: {
       primary: NEUTRAL.N700

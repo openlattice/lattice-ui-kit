@@ -420,9 +420,9 @@ exports[`Search snapshots should match snapshot 1`] = `
         },
         "secondary": Object {
           "contrastText": "rgba(0, 0, 0, 0.87)",
-          "dark": "rgb(128, 106, 178)",
-          "light": "rgb(198, 172, 255)",
-          "main": "#b898ff",
+          "dark": "rgb(113, 101, 178)",
+          "light": "rgb(180, 167, 255)",
+          "main": "#a291ff",
         },
         "success": Object {
           "contrastText": "rgba(0, 0, 0, 0.87)",
