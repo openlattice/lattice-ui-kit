@@ -3,6 +3,7 @@
  */
 
 import { Collapse, Fab, ThemeProvider } from '@material-ui/core';
+import { StylesProvider } from '@material-ui/core/styles';
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 
@@ -21,6 +22,7 @@ export {
   Hooks,
   Sizes,
   StyleUtils,
+  StylesProvider,
   version,
 };
 export { default as Badge } from './badge';

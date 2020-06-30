@@ -55,6 +55,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'StepLabel',
   'Stepper',
   'StyleUtils',
+  'StylesProvider',
   'Table',
   'TableBody',
   'TableHeader',
