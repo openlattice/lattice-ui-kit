@@ -348,22 +348,21 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -403,22 +402,20 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -430,14 +427,12 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -548,22 +543,21 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -603,22 +597,20 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -630,14 +622,12 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -3828,22 +3818,21 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -3883,22 +3872,20 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -3910,14 +3897,12 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -4028,22 +4013,21 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -4083,22 +4067,20 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -4110,14 +4092,12 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -6612,22 +6592,21 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -6667,22 +6646,20 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -6694,14 +6671,12 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -6812,21 +6787,20 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={false}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -6865,22 +6839,20 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                     }
                     color="default"
                     disableElevation={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation"
                       component="button"
                       disabled={false}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -6892,14 +6864,12 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                         disabled={false}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation"
                           disabled={false}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -11592,22 +11562,21 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -11647,22 +11616,20 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -11674,14 +11641,12 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -11792,21 +11757,20 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={false}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -11845,22 +11809,20 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                     }
                     color="default"
                     disableElevation={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation"
                       component="button"
                       disabled={false}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -11872,14 +11834,12 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                         disabled={false}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation"
                           disabled={false}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -12290,22 +12250,21 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -12345,22 +12304,20 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -12372,14 +12329,12 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -12490,22 +12445,21 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -12545,22 +12499,20 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -12572,14 +12524,12 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -15770,22 +15720,21 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -15825,22 +15774,20 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -15852,14 +15799,12 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -15970,22 +15915,21 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -16025,22 +15969,20 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -16052,14 +15994,12 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -16491,22 +16431,21 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -16546,22 +16485,20 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -16573,14 +16510,12 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -16691,22 +16626,21 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -16746,22 +16680,20 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -16773,14 +16705,12 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -19971,22 +19901,21 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -20026,22 +19955,20 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -20053,14 +19980,12 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -20171,22 +20096,21 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -20226,22 +20150,20 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -20253,14 +20175,12 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -20643,22 +20563,21 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -20698,22 +20617,20 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -20725,14 +20642,12 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -20843,22 +20758,21 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -20898,22 +20812,20 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -20925,14 +20837,12 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -24123,22 +24033,21 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -24178,22 +24087,20 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -24205,14 +24112,12 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}
@@ -24323,22 +24228,21 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                   transform={null}
                 />
               }
-              mode="subtle"
               onClick={[Function]}
+              variant="text"
             >
               <Button
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
+                variant="text"
               >
                 <WithStyles(ForwardRef(Button))
                   className=""
                   color="default"
                   disableElevation={true}
                   disabled={true}
-                  mode="subtle"
                   onClick={[Function]}
-                  variant="contained"
+                  variant="text"
                 >
                   <ForwardRef(Button)
                     className=""
@@ -24378,22 +24282,20 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     color="default"
                     disableElevation={true}
                     disabled={true}
-                    mode="subtle"
                     onClick={[Function]}
-                    variant="contained"
+                    variant="text"
                   >
                     <WithStyles(ForwardRef(ButtonBase))
-                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                      className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                       component="button"
                       disabled={true}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
-                      mode="subtle"
                       onClick={[Function]}
                       type="button"
                     >
                       <ForwardRef(ButtonBase)
-                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                        className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                         classes={
                           Object {
                             "disabled": "Mui-disabled",
@@ -24405,14 +24307,12 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         disabled={true}
                         focusRipple={true}
                         focusVisibleClassName="Mui-focusVisible"
-                        mode="subtle"
                         onClick={[Function]}
                         type="button"
                       >
                         <button
-                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                          className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                           disabled={true}
-                          mode="subtle"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onDragLeave={[Function]}

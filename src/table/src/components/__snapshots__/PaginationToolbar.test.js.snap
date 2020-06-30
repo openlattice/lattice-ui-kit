@@ -152,22 +152,21 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
               transform={null}
             />
           }
-          mode="subtle"
           onClick={[Function]}
+          variant="text"
         >
           <Button
             disabled={true}
-            mode="subtle"
             onClick={[Function]}
+            variant="text"
           >
             <WithStyles(ForwardRef(Button))
               className=""
               color="default"
               disableElevation={true}
               disabled={true}
-              mode="subtle"
               onClick={[Function]}
-              variant="contained"
+              variant="text"
             >
               <ForwardRef(Button)
                 className=""
@@ -207,22 +206,20 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                 color="default"
                 disableElevation={true}
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
-                variant="contained"
+                variant="text"
               >
                 <WithStyles(ForwardRef(ButtonBase))
-                  className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                  className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                   component="button"
                   disabled={true}
                   focusRipple={true}
                   focusVisibleClassName="Mui-focusVisible"
-                  mode="subtle"
                   onClick={[Function]}
                   type="button"
                 >
                   <ForwardRef(ButtonBase)
-                    className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                    className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                     classes={
                       Object {
                         "disabled": "Mui-disabled",
@@ -234,14 +231,12 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                     disabled={true}
                     focusRipple={true}
                     focusVisibleClassName="Mui-focusVisible"
-                    mode="subtle"
                     onClick={[Function]}
                     type="button"
                   >
                     <button
-                      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                       disabled={true}
-                      mode="subtle"
                       onBlur={[Function]}
                       onClick={[Function]}
                       onDragLeave={[Function]}
@@ -352,22 +347,21 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
               transform={null}
             />
           }
-          mode="subtle"
           onClick={[Function]}
+          variant="text"
         >
           <Button
             disabled={true}
-            mode="subtle"
             onClick={[Function]}
+            variant="text"
           >
             <WithStyles(ForwardRef(Button))
               className=""
               color="default"
               disableElevation={true}
               disabled={true}
-              mode="subtle"
               onClick={[Function]}
-              variant="contained"
+              variant="text"
             >
               <ForwardRef(Button)
                 className=""
@@ -407,22 +401,20 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                 color="default"
                 disableElevation={true}
                 disabled={true}
-                mode="subtle"
                 onClick={[Function]}
-                variant="contained"
+                variant="text"
               >
                 <WithStyles(ForwardRef(ButtonBase))
-                  className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                  className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                   component="button"
                   disabled={true}
                   focusRipple={true}
                   focusVisibleClassName="Mui-focusVisible"
-                  mode="subtle"
                   onClick={[Function]}
                   type="button"
                 >
                   <ForwardRef(ButtonBase)
-                    className="MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled"
+                    className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
                     classes={
                       Object {
                         "disabled": "Mui-disabled",
@@ -434,14 +426,12 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                     disabled={true}
                     focusRipple={true}
                     focusVisibleClassName="Mui-focusVisible"
-                    mode="subtle"
                     onClick={[Function]}
                     type="button"
                   >
                     <button
-                      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation Mui-disabled Mui-disabled"
+                      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
                       disabled={true}
-                      mode="subtle"
                       onBlur={[Function]}
                       onClick={[Function]}
                       onDragLeave={[Function]}
