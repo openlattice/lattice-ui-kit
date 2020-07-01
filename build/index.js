@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.33.0-alpha.1
+ * lattice-ui-kit - v0.33.0-alpha.2
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -34991,7 +34991,7 @@ var ChoiceLabel = external_amd_styled_components_commonjs_styled_components_comm
   displayName: "ChoiceLabel",
   componentId: "sc-11kob9e-0"
 })(["align-items:center;color:", ";display:inline-flex;font-size:14px;min-height:40px;pointer-events:", ";position:relative;vertical-align:middle;"], function (props) {
-  return props.disabled ? NEUTRAL.N500 : NEUTRAL.N700;
+  return props.disabled ? NEUTRAL.N500 : NEUTRAL.N900;
 }, function (props) {
   return props.readOnly ? 'none' : 'auto';
 });
@@ -62873,7 +62873,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.33.0-alpha.1";
+var src_version = "v0.33.0-alpha.2";
 
 
 
