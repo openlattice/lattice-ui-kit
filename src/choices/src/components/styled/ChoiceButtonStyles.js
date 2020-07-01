@@ -32,7 +32,7 @@ const choiceButtonStyles = css`
   }
 
   input:focus ~ & {
-    box-shadow: ${PURPLE.P300} 0 0 0 2px;
+    box-shadow: ${PURPLE.P300} 0 0 0 1px;
   }
 
   input:checked ~ &,
