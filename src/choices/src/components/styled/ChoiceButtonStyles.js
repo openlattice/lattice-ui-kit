@@ -9,19 +9,20 @@ import {
 import { NEUTRAL, PURPLE } from '../../../../colors';
 
 const choiceButtonStyles = css`
+  ${defaultStyle}
   align-items: center;
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
   display: flex;
   flex-direction: column;
-  min-height: 40px;
+  font-weight: 600;
   justify-content: center;
+  min-height: 40px;
   min-width: 84px;
   padding: 10px 12px;
   text-align: center;
   width: 100%;
-  ${defaultStyle}
 
   input:hover ~ & {
     ${defaultHover}
