@@ -102,7 +102,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
 }
 
 .c1 {
-  color: #56565a;
+  color: #1f1f22;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -279,7 +279,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#56565a",
+                        "#1f1f22",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -3749,7 +3749,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#56565a",
+                        "#1f1f22",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -4289,7 +4289,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
 }
 
 .c1 {
-  color: #56565a;
+  color: #1f1f22;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -4478,7 +4478,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#56565a",
+                        "#1f1f22",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -6523,7 +6523,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#56565a",
+                        "#1f1f22",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -9448,7 +9448,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#56565a",
+                        "#1f1f22",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -11493,7 +11493,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#56565a",
+                        "#1f1f22",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -12028,7 +12028,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
 }
 
 .c1 {
-  color: #56565a;
+  color: #1f1f22;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -12181,7 +12181,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#56565a",
+                        "#1f1f22",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -15651,7 +15651,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#56565a",
+                        "#1f1f22",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -16185,7 +16185,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
 }
 
 .c1 {
-  color: #56565a;
+  color: #1f1f22;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -16362,7 +16362,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#56565a",
+                        "#1f1f22",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -19832,7 +19832,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#56565a",
+                        "#1f1f22",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -20341,7 +20341,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
 }
 
 .c1 {
-  color: #56565a;
+  color: #1f1f22;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -20494,7 +20494,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#56565a",
+                        "#1f1f22",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -23964,7 +23964,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       "lastClassName": "c1",
                       "rules": Array [
                         "color:",
-                        "#56565a",
+                        "#1f1f22",
                         ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                         [Function],
                         ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",

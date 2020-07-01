@@ -18,7 +18,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
 }
 
 .c1 {
-  color: #56565a;
+  color: #1f1f22;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -83,7 +83,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                   "lastClassName": "c1",
                   "rules": Array [
                     "color:",
-                    "#56565a",
+                    "#1f1f22",
                     ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                     [Function],
                     ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
