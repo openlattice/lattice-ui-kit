@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.33.0-alpha.0
+ * lattice-ui-kit - v0.33.0-alpha.1
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -33990,7 +33990,7 @@ var Label_getRequiredStyles = function getRequiredStyles(_ref2) {
   var required = _ref2.required;
 
   if (required) {
-    return Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])([":after{content:'*'}"]);
+    return Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])([":after{content:'*';color:", ";}"], RED.R300);
   }
 
   return null;
@@ -33999,7 +33999,7 @@ var Label_getRequiredStyles = function getRequiredStyles(_ref2) {
 var Label_Label = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.label.withConfig({
   displayName: "Label",
   componentId: "sc-130fyca-0"
-})(["color:", ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:", ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:", ";", ";", ";"], NEUTRAL.N700, function (props) {
+})(["color:", ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:", ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:", ";", ";", ";"], NEUTRAL.N900, function (props) {
   return props.bold ? '600' : 'normal';
 }, function (props) {
   return props.stealth && 'hidden';
@@ -34940,17 +34940,17 @@ IconButton_IconButton.defaultProps = {
 
  // border-top + border-bottom + padding-top + padding-bottom + line-height = 40px
 
-var defaultStyle = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["background-color:", ";border-color:", ";color:", ";"], NEUTRAL.N50, NEUTRAL.N50, NEUTRAL.N700);
+var defaultStyle = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["background-color:", ";border-color:", ";color:", ";"], NEUTRAL.N50, NEUTRAL.N50, NEUTRAL.N900);
 var defaultHover = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["background-color:", ";border-color:", ";"], NEUTRAL.N100, NEUTRAL.N100);
-var defaultActive = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["background-color:", ";border-color:", ";color:", ";"], NEUTRAL.N200, NEUTRAL.N200, NEUTRAL.N700);
+var defaultActive = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["background-color:", ";border-color:", ";"], NEUTRAL.N200, NEUTRAL.N200);
 var defaultDisabled = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["background-color:", ";border-color:", ";color:", ";"], NEUTRAL.N00, NEUTRAL.N00, NEUTRAL.N500);
-var defaultFocus = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["box-shadow:", " 0 0 0 2px;"], NEUTRAL.N200);
+var defaultFocus = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["box-shadow:", " 0 0 0 1px;"], NEUTRAL.N200);
 
 // CONCATENATED MODULE: ./src/choices/src/components/styled/ChoiceButtonStyles.js
 
 
 
-var choiceButtonStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["align-items:center;border-radius:3px;border-style:solid;border-width:1px;display:flex;flex-direction:column;min-height:40px;justify-content:center;min-width:84px;padding:10px 12px;text-align:center;width:100%;", " input:hover ~ &{", "}input:active ~ &{", ";}input:focus ~ &{box-shadow:", " 0 0 0 2px;}input:checked ~ &,input[readonly]:checked:disabled ~ &,input[readonly]:checked:hover ~ &{background-color:", ";border:solid 1px ", ";color:", ";}input:checked:hover ~ &{background-color:", ";}input:disabled ~ &{", " cursor:not-allowed;}input:checked:disabled ~ &{", " cursor:not-allowed;}input[readonly] ~ &{cursor:default;pointer-events:none;}"], defaultStyle, defaultHover, defaultActive, PURPLE.P300, NEUTRAL.N50, PURPLE.P300, PURPLE.P300, PURPLE.P100, defaultDisabled, defaultActive);
+var choiceButtonStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["", " align-items:center;border-radius:3px;border-style:solid;border-width:1px;display:flex;flex-direction:column;font-weight:600;justify-content:center;min-height:40px;min-width:84px;padding:10px 12px;text-align:center;width:100%;input:hover ~ &{", "}input:active ~ &{", ";}input:focus ~ &{box-shadow:", " 0 0 0 1px;}input:checked ~ &,input[readonly]:checked:disabled ~ &,input[readonly]:checked:hover ~ &{background-color:", ";border:solid 1px ", ";color:", ";}input:checked:hover ~ &{background-color:", ";}input:disabled ~ &{", " cursor:not-allowed;}input:checked:disabled ~ &{", " cursor:not-allowed;}input[readonly] ~ &{cursor:default;pointer-events:none;}"], defaultStyle, defaultHover, defaultActive, PURPLE.P300, NEUTRAL.N50, PURPLE.P300, PURPLE.P300, PURPLE.P100, defaultDisabled, defaultActive);
 /* harmony default export */ var ChoiceButtonStyles = (choiceButtonStyles);
 // CONCATENATED MODULE: ./src/choices/src/components/styled/ChoiceIndicatorStyles.js
 
@@ -62873,7 +62873,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.33.0-alpha.0";
+var src_version = "v0.33.0-alpha.1";
 
 
 
