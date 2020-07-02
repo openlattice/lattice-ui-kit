@@ -15,7 +15,6 @@ const {
   YELLOW,
 } = Colors;
 
-
 describe('Tag', () => {
   describe('snapshots', () => {
 

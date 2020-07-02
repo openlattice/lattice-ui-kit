@@ -52,7 +52,6 @@ const Spinner = (props :Props) => {
   );
 };
 
-
 Spinner.defaultProps = {
   bottomColor: NEUTRAL.N300,
   centered: true,

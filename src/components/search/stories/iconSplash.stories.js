@@ -6,7 +6,6 @@ import { faFingerprint, faDiceD20 } from '@fortawesome/pro-light-svg-icons';
 import IconSplash from '../src/components/IconSplash';
 import { Card, CardSegment } from '../../../layout';
 
-
 storiesOf('Icon Splash', module)
   .add('FontAwesome IconDefinition', () => (
     <Card>

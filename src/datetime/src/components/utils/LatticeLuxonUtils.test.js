@@ -65,7 +65,6 @@ describe('LatticeLuxonUtils', () => {
     expect(weekdays).toEqual(['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']);
   });
 
-
   // https://en.wikipedia.org/wiki/Leap_year
   test('getWeekArray should yield correct number of days per month in a common year', () => {
     // Common years are non-integer multiples of 4 or multiples of 100

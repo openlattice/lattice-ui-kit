@@ -32,7 +32,6 @@ describe('CardStack', () => {
       expect(wrapper.find('div')).toHaveLength(1);
     });
 
-
   });
 
 });

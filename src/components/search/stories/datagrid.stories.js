@@ -5,7 +5,6 @@ import DataGrid from '../src/components/DataGrid';
 import { Card, CardSegment } from '../../../layout';
 import { mockResultLabels, mockSearchResultsForPeople } from '../src/components/constants';
 
-
 storiesOf('DataGrid', module)
   .add('default', () => (
     <Card>
