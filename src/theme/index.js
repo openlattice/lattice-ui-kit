@@ -60,6 +60,9 @@ const lightTheme = createMuiTheme({
         padding: '0 38px',
         fontSize: '18px',
       },
+      contained: {
+        backgroundColor: NEUTRAL.N50,
+      },
       /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
       containedSizeSmall: {
         minHeight: '26px',
