@@ -62,6 +62,7 @@ const lightTheme = createMuiTheme({
       },
       contained: {
         backgroundColor: NEUTRAL.N50,
+        color: NEUTRAL.N700,
       },
       /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
       containedSizeSmall: {
