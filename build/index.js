@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.33.0-alpha.4
+ * lattice-ui-kit - v0.33.0-alpha.5
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -63366,6 +63366,9 @@ var lightTheme = styles_createMuiTheme({
         padding: '0 38px',
         fontSize: '18px'
       },
+      contained: {
+        backgroundColor: NEUTRAL.N50
+      },
 
       /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
       containedSizeSmall: {
@@ -63917,7 +63920,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.33.0-alpha.4";
+var src_version = "v0.33.0-alpha.5";
 
 
 
