@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.33.0-alpha.6
+ * lattice-ui-kit - v0.33.0-alpha.7
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -54507,8 +54507,14 @@ var Card_Card = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_
 
 
 
+
+
+var StyledMuiCard = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(esm_Card_Card).withConfig({
+  displayName: "Card__StyledMuiCard",
+  componentId: "sc-3vnjrr-0"
+})(["", ""], StyleUtils_getHoverStyles);
 var Card_Card_Card = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Card_Card, extends_default()({
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledMuiCard, extends_default()({
     variant: "outlined" // eslint-disable-next-line react/jsx-props-no-spreading
 
   }, props, {
@@ -63921,7 +63927,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.33.0-alpha.6";
+var src_version = "v0.33.0-alpha.7";
 
 
 
