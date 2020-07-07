@@ -44,6 +44,9 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "borderColor": "currentColor",
             "color": "inherit",
           },
+          "contained": Object {
+            "backgroundColor": "#f2f2f4",
+          },
           "containedSizeLarge": Object {
             "fontSize": "18px",
             "minHeight": "46px",
