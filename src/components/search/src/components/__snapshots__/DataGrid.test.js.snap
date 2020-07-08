@@ -16,7 +16,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
 }
 
 .c1 {
-  color: #555e6f;
+  color: #1f1f22;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -27,7 +27,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8e929b;
+  color: #8b8b90;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -101,7 +101,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -188,7 +188,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -275,7 +275,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -360,7 +360,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -447,7 +447,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -534,7 +534,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -621,7 +621,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -708,7 +708,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -800,7 +800,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
 }
 
 .c1 {
-  color: #555e6f;
+  color: #1f1f22;
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
@@ -811,7 +811,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8e929b;
+  color: #8b8b90;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -897,7 +897,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -984,7 +984,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -1071,7 +1071,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -1156,7 +1156,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -1243,7 +1243,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -1330,7 +1330,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -1417,7 +1417,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
@@ -1504,7 +1504,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
                     "lastClassName": "c1",
                     "rules": Array [
                       "color:",
-                      "#555e6f",
+                      "#1f1f22",
                       ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
                       [Function],
                       ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",

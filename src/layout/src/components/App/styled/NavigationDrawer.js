@@ -4,7 +4,7 @@
 
 import styled from 'styled-components';
 
-import { NEUTRALS, PURPLES, WHITE } from '../../../../../colors';
+import { NEUTRAL, PURPLE } from '../../../../../colors';
 
 const NavigationDrawer = styled.nav`
   display: flex;
@@ -14,8 +14,8 @@ const NavigationDrawer = styled.nav`
   padding: 15px 0;
 
   > span {
-    background-color: ${WHITE};
-    color: ${NEUTRALS[0]};
+    background-color: white;
+    color: ${NEUTRAL.N700};
     font-size: 14px;
     font-weight: 600;
     letter-spacing: normal;
@@ -26,8 +26,8 @@ const NavigationDrawer = styled.nav`
   }
 
   > a {
-    background-color: ${WHITE};
-    color: ${NEUTRALS[0]};
+    background-color: white;
+    color: ${NEUTRAL.N700};
     font-size: 14px;
     font-weight: 600;
     letter-spacing: normal;
@@ -41,19 +41,19 @@ const NavigationDrawer = styled.nav`
     }
 
     &:hover {
-      background-color: ${NEUTRALS[6]};
-      color: ${PURPLES[1]};
+      background-color: ${NEUTRAL.N100};
+      color: ${PURPLE.P300};
       cursor: pointer;
     }
 
     &.active {
-      color: ${PURPLES[1]};
+      color: ${PURPLE.P300};
     }
   }
 
   > hr {
     border: none;
-    border-top: 1px solid ${NEUTRALS[5]};
+    border-top: 1px solid ${NEUTRAL.N100};
     margin: 15px 0;
     width: 100%;
   }

@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { NEUTRALS } from '../../../../colors';
+import { NEUTRAL } from '../../../../colors';
 
 const FigureWrapper = styled.figure`
   display: flex;
@@ -20,7 +20,7 @@ const FigureWrapper = styled.figure`
   }
 
   figcaption {
-    color: ${NEUTRALS[1]};
+    color: ${NEUTRAL.N500};
     font-size: 16px;
     font-weight: 600;
     line-height: 22px;

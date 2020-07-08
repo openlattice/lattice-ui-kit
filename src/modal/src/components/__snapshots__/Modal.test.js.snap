@@ -130,9 +130,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -151,7 +151,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -174,7 +174,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -197,8 +197,18 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -225,147 +235,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   justify-content: space-between;
 }
 
-.c12 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c11 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  position: relative;
-  overflow: hidden;
-  min-width: 14px;
-}
-
-.c10 {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 18px;
-  outline: none;
-  padding: 10px 20px;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
-}
-
-.c10:hover {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
-}
-
-.c10:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
-}
-
-.c10:disabled {
-  cursor: not-allowed;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
-}
-
-.c10:focus {
-  box-shadow: #410ab5 0 0 0 2px;
-}
-
-.c14 {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 18px;
-  outline: none;
-  padding: 10px 20px;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
-}
-
-.c14:hover {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
-}
-
-.c14:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
-}
-
-.c14:disabled {
-  cursor: not-allowed;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
-}
-
-.c14:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
-}
-
-.c9 {
-  margin: 0 0 0 20px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c13 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -518,9 +389,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px #555e6f;
+  box-shadow: 0 2px 8px -2px #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -539,7 +410,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c7 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -562,7 +433,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
 }
 
 .c8 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -585,8 +456,18 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   flex-direction: row-reverse;
 }
 
+.c8 > button {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8 > button:nth-of-type(2) {
+  margin: 0 20px 0 0px;
+}
+
 .c4 {
-  color: #555e6f;
+  color: #56565a;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -613,147 +494,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
   justify-content: space-between;
 }
 
-.c12 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c11 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  position: relative;
-  overflow: hidden;
-  min-width: 14px;
-}
-
-.c9 {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 18px;
-  outline: none;
-  padding: 10px 20px;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  white-space: nowrap;
-  background-color: #8045ff;
-  border-color: #8045ff;
-  color: #ffffff;
-}
-
-.c9:hover {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #6124e2;
-  border-color: #6124e2;
-}
-
-.c9:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #410ab5;
-  border-color: #410ab5;
-}
-
-.c9:disabled {
-  cursor: not-allowed;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #f0f0f7;
-  border-color: #f0f0f7;
-  color: #b6bbc7;
-}
-
-.c9:focus {
-  box-shadow: #410ab5 0 0 0 2px;
-}
-
-.c13 {
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 18px;
-  outline: none;
-  padding: 10px 20px;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out;
-  white-space: nowrap;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #555e6f;
-}
-
-.c13:hover {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #eaeaf0;
-  border-color: #eaeaf0;
-}
-
-.c13:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #dcdce7;
-  border-color: #dcdce7;
-  color: #555e6f;
-}
-
-.c13:disabled {
-  cursor: not-allowed;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: #f5f5f8;
-  border-color: #f5f5f8;
-  color: #b6bbc7;
-}
-
-.c13:focus {
-  box-shadow: #dcdce7 0 0 0 2px;
-}
-
-.c10 {
-  margin: 0 0 0 20px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c14 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 .c5 {
-  color: #555e6f;
+  color: #56565a;
   font-size: 18px;
   font-weight: normal;
   margin: 0 30px 0 0;
@@ -834,34 +576,34 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                           class="c8"
                         >
                           <button
-                            class="c9 c10"
-                            mode="primary"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
+                            tabindex="0"
                             type="button"
                           >
                             <span
-                              class="c11"
+                              class="MuiButton-label"
                             >
-                              <span
-                                class="c12"
-                              >
-                                Confirm
-                              </span>
+                              Confirm
                             </span>
+                            <span
+                              class="MuiTouchRipple-root"
+                            />
                           </button>
                           <button
-                            class="c13 c14"
-                            mode="default"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                            id="secondary"
+                            name="secondary"
+                            tabindex="0"
                             type="button"
                           >
                             <span
-                              class="c11"
+                              class="MuiButton-label"
                             >
-                              <span
-                                class="c12"
-                              >
-                                Cancel
-                              </span>
+                              Cancel
                             </span>
+                            <span
+                              class="MuiTouchRipple-root"
+                            />
                           </button>
                         </div>
                       </div>
@@ -1032,10 +774,8 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                   "rules": Array [
                                                     "align-self:",
                                                     [Function],
-                                                    ";background-color:",
-                                                    "#ffffff",
-                                                    ";border-radius:3px;box-shadow:0 2px 8px -2px ",
-                                                    "#555e6f",
+                                                    ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ",
+                                                    "#56565a",
                                                     ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;",
                                                     [Function],
                                                   ],
@@ -1073,7 +813,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           "lastClassName": "c4",
                                                           "rules": Array [
                                                             "color:",
-                                                            "#555e6f",
+                                                            "#56565a",
                                                             ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                             "30px",
                                                             ";position:relative;",
@@ -1109,7 +849,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                 "lastClassName": "c5",
                                                                 "rules": Array [
                                                                   "color:",
-                                                                  "#555e6f",
+                                                                  "#56565a",
                                                                   ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
                                                                 ],
                                                               },
@@ -1238,7 +978,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           "lastClassName": "c7",
                                                           "rules": Array [
                                                             "color:",
-                                                            "#555e6f",
+                                                            "#56565a",
                                                             ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                             "30px",
                                                             ";position:relative;",
@@ -1285,7 +1025,9 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                 textSecondary="Cancel"
                                                 withFooter={true}
                                               >
-                                                <StyledModalComponents__FooterSection>
+                                                <StyledModalComponents__FooterSection
+                                                  stretch={false}
+                                                >
                                                   <StyledComponent
                                                     forwardedComponent={
                                                       Object {
@@ -1297,11 +1039,13 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           "lastClassName": "c8",
                                                           "rules": Array [
                                                             "color:",
-                                                            "#555e6f",
+                                                            "#56565a",
                                                             ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:",
                                                             "30px",
                                                             ";position:relative;",
-                                                            "align-items:center;flex-direction:row-reverse;",
+                                                            "align-items:center;flex-direction:row-reverse;> button{flex:",
+                                                            [Function],
+                                                            ";}> button:nth-of-type(2){margin:0 20px 0 0px;}",
                                                           ],
                                                         },
                                                         "displayName": "StyledModalComponents__FooterSection",
@@ -1317,36 +1061,29 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                       }
                                                     }
                                                     forwardedRef={null}
+                                                    stretch={false}
                                                   >
                                                     <div
                                                       className="c8"
                                                     >
                                                       <ModalFooter__PrimaryButton
+                                                        color="primary"
                                                         disabled={false}
                                                         isLoading={false}
-                                                        isLonely={false}
                                                         onClick={[Function]}
-                                                        stretch={false}
                                                       >
                                                         <StyledComponent
+                                                          color="primary"
                                                           disabled={false}
                                                           forwardedComponent={
                                                             Object {
                                                               "$$typeof": Symbol(react.forward_ref),
-                                                              "attrs": Array [
-                                                                [Function],
-                                                              ],
+                                                              "attrs": Array [],
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "ModalFooter__PrimaryButton-sc-1a1to5t-0",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c9",
-                                                                "rules": Array [
-                                                                  "margin:",
-                                                                  [Function],
-                                                                  ";flex:",
-                                                                  [Function],
-                                                                  ";",
-                                                                ],
+                                                                "lastClassName": "hJdMGi",
+                                                                "rules": Array [],
                                                               },
                                                               "displayName": "ModalFooter__PrimaryButton",
                                                               "foldedComponentIds": Array [],
@@ -1360,190 +1097,166 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                           }
                                                           forwardedRef={null}
                                                           isLoading={false}
-                                                          isLonely={false}
                                                           onClick={[Function]}
-                                                          stretch={false}
                                                         >
                                                           <Button
-                                                            className="c9"
+                                                            className=""
+                                                            color="primary"
                                                             disabled={false}
-                                                            fontColor=""
                                                             isLoading={false}
-                                                            isLonely={false}
-                                                            mode="primary"
                                                             onClick={[Function]}
-                                                            stretch={false}
-                                                            type="button"
                                                           >
-                                                            <StyledButton
-                                                              className="c9"
+                                                            <WithStyles(ForwardRef(Button))
+                                                              className=""
+                                                              color="primary"
+                                                              disableElevation={true}
                                                               disabled={false}
-                                                              fontColor=""
-                                                              isLonely={false}
-                                                              mode="primary"
                                                               onClick={[Function]}
-                                                              stretch={false}
-                                                              type="button"
+                                                              variant="contained"
                                                             >
-                                                              <StyledComponent
-                                                                className="c9"
-                                                                disabled={false}
-                                                                fontColor=""
-                                                                forwardedComponent={
+                                                              <ForwardRef(Button)
+                                                                className=""
+                                                                classes={
                                                                   Object {
-                                                                    "$$typeof": Symbol(react.forward_ref),
-                                                                    "attrs": Array [],
-                                                                    "componentStyle": ComponentStyle {
-                                                                      "componentId": "StyledButton-sc-1etazn9-0",
-                                                                      "isStatic": false,
-                                                                      "lastClassName": "c14",
-                                                                      "rules": Array [
-                                                                        "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
-                                                                        "100ms",
-                                                                        " ease-out,border-color ",
-                                                                        "100ms",
-                                                                        " ease-out,box-shadow ",
-                                                                        "100ms",
-                                                                        " ease-out;width:",
-                                                                        [Function],
-                                                                        ";white-space:nowrap;",
-                                                                        [Function],
-                                                                        ";",
-                                                                        [Function],
-                                                                        ";:hover{cursor:pointer;text-decoration:none;",
-                                                                        [Function],
-                                                                        "};:active{text-decoration:none;",
-                                                                        [Function],
-                                                                        "};:disabled{cursor:not-allowed;text-decoration:none;",
-                                                                        [Function],
-                                                                        "};:focus{",
-                                                                        [Function],
-                                                                        "}",
-                                                                      ],
-                                                                    },
-                                                                    "displayName": "StyledButton",
-                                                                    "foldedComponentIds": Array [],
-                                                                    "render": [Function],
-                                                                    "styledComponentId": "StyledButton-sc-1etazn9-0",
-                                                                    "target": "button",
-                                                                    "toString": [Function],
-                                                                    "warnTooManyClasses": [Function],
-                                                                    "withComponent": [Function],
+                                                                    "colorInherit": "MuiButton-colorInherit",
+                                                                    "contained": "MuiButton-contained",
+                                                                    "containedPrimary": "MuiButton-containedPrimary",
+                                                                    "containedSecondary": "MuiButton-containedSecondary",
+                                                                    "containedSizeLarge": "MuiButton-containedSizeLarge",
+                                                                    "containedSizeSmall": "MuiButton-containedSizeSmall",
+                                                                    "disableElevation": "MuiButton-disableElevation",
+                                                                    "disabled": "Mui-disabled",
+                                                                    "endIcon": "MuiButton-endIcon",
+                                                                    "focusVisible": "Mui-focusVisible",
+                                                                    "fullWidth": "MuiButton-fullWidth",
+                                                                    "iconSizeLarge": "MuiButton-iconSizeLarge",
+                                                                    "iconSizeMedium": "MuiButton-iconSizeMedium",
+                                                                    "iconSizeSmall": "MuiButton-iconSizeSmall",
+                                                                    "label": "MuiButton-label",
+                                                                    "outlined": "MuiButton-outlined",
+                                                                    "outlinedPrimary": "MuiButton-outlinedPrimary",
+                                                                    "outlinedSecondary": "MuiButton-outlinedSecondary",
+                                                                    "outlinedSizeLarge": "MuiButton-outlinedSizeLarge",
+                                                                    "outlinedSizeSmall": "MuiButton-outlinedSizeSmall",
+                                                                    "root": "MuiButton-root",
+                                                                    "sizeLarge": "MuiButton-sizeLarge",
+                                                                    "sizeSmall": "MuiButton-sizeSmall",
+                                                                    "startIcon": "MuiButton-startIcon",
+                                                                    "text": "MuiButton-text",
+                                                                    "textPrimary": "MuiButton-textPrimary",
+                                                                    "textSecondary": "MuiButton-textSecondary",
+                                                                    "textSizeLarge": "MuiButton-textSizeLarge",
+                                                                    "textSizeSmall": "MuiButton-textSizeSmall",
                                                                   }
                                                                 }
-                                                                forwardedRef={null}
-                                                                isLonely={false}
-                                                                mode="primary"
+                                                                color="primary"
+                                                                disableElevation={true}
+                                                                disabled={false}
                                                                 onClick={[Function]}
-                                                                stretch={false}
-                                                                type="button"
+                                                                variant="contained"
                                                               >
-                                                                <button
-                                                                  className="c10 c9"
+                                                                <WithStyles(ForwardRef(ButtonBase))
+                                                                  className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
+                                                                  component="button"
                                                                   disabled={false}
-                                                                  mode="primary"
+                                                                  focusRipple={true}
+                                                                  focusVisibleClassName="Mui-focusVisible"
                                                                   onClick={[Function]}
                                                                   type="button"
                                                                 >
-                                                                  <ContentWrapper>
-                                                                    <StyledComponent
-                                                                      forwardedComponent={
-                                                                        Object {
-                                                                          "$$typeof": Symbol(react.forward_ref),
-                                                                          "attrs": Array [],
-                                                                          "componentStyle": ComponentStyle {
-                                                                            "componentId": "ContentWrapper-sc-36hfub-0",
-                                                                            "isStatic": false,
-                                                                            "lastClassName": "c11",
-                                                                            "rules": Array [
-                                                                              "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
-                                                                            ],
-                                                                          },
-                                                                          "displayName": "ContentWrapper",
-                                                                          "foldedComponentIds": Array [],
-                                                                          "render": [Function],
-                                                                          "styledComponentId": "ContentWrapper-sc-36hfub-0",
-                                                                          "target": "span",
-                                                                          "toString": [Function],
-                                                                          "warnTooManyClasses": [Function],
-                                                                          "withComponent": [Function],
-                                                                        }
+                                                                  <ForwardRef(ButtonBase)
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
+                                                                    classes={
+                                                                      Object {
+                                                                        "disabled": "Mui-disabled",
+                                                                        "focusVisible": "Mui-focusVisible",
+                                                                        "root": "MuiButtonBase-root",
                                                                       }
-                                                                      forwardedRef={null}
+                                                                    }
+                                                                    component="button"
+                                                                    disabled={false}
+                                                                    focusRipple={true}
+                                                                    focusVisibleClassName="Mui-focusVisible"
+                                                                    onClick={[Function]}
+                                                                    type="button"
+                                                                  >
+                                                                    <button
+                                                                      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
+                                                                      disabled={false}
+                                                                      onBlur={[Function]}
+                                                                      onClick={[Function]}
+                                                                      onDragLeave={[Function]}
+                                                                      onFocus={[Function]}
+                                                                      onKeyDown={[Function]}
+                                                                      onKeyUp={[Function]}
+                                                                      onMouseDown={[Function]}
+                                                                      onMouseLeave={[Function]}
+                                                                      onMouseUp={[Function]}
+                                                                      onTouchEnd={[Function]}
+                                                                      onTouchMove={[Function]}
+                                                                      onTouchStart={[Function]}
+                                                                      tabIndex={0}
+                                                                      type="button"
                                                                     >
                                                                       <span
-                                                                        className="c11"
+                                                                        className="MuiButton-label"
                                                                       >
-                                                                        <Content
-                                                                          isLoading={false}
-                                                                        >
-                                                                          <StyledComponent
-                                                                            forwardedComponent={
-                                                                              Object {
-                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                "attrs": Array [],
-                                                                                "componentStyle": ComponentStyle {
-                                                                                  "componentId": "Content-sc-18psqsj-0",
-                                                                                  "isStatic": false,
-                                                                                  "lastClassName": "c12",
-                                                                                  "rules": Array [
-                                                                                    "flex:1 1 auto;opacity:",
-                                                                                    [Function],
-                                                                                    ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
-                                                                                  ],
-                                                                                },
-                                                                                "displayName": "Content",
-                                                                                "foldedComponentIds": Array [],
-                                                                                "render": [Function],
-                                                                                "styledComponentId": "Content-sc-18psqsj-0",
-                                                                                "target": "span",
-                                                                                "toString": [Function],
-                                                                                "warnTooManyClasses": [Function],
-                                                                                "withComponent": [Function],
-                                                                              }
-                                                                            }
-                                                                            forwardedRef={null}
-                                                                            isLoading={false}
-                                                                          >
-                                                                            <span
-                                                                              className="c12"
-                                                                            >
-                                                                              Confirm
-                                                                            </span>
-                                                                          </StyledComponent>
-                                                                        </Content>
+                                                                        Confirm
                                                                       </span>
-                                                                    </StyledComponent>
-                                                                  </ContentWrapper>
-                                                                </button>
-                                                              </StyledComponent>
-                                                            </StyledButton>
+                                                                      <WithStyles(memo)
+                                                                        center={false}
+                                                                      >
+                                                                        <ForwardRef(TouchRipple)
+                                                                          center={false}
+                                                                          classes={
+                                                                            Object {
+                                                                              "child": "MuiTouchRipple-child",
+                                                                              "childLeaving": "MuiTouchRipple-childLeaving",
+                                                                              "childPulsate": "MuiTouchRipple-childPulsate",
+                                                                              "ripple": "MuiTouchRipple-ripple",
+                                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                                                              "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                                                              "root": "MuiTouchRipple-root",
+                                                                            }
+                                                                          }
+                                                                        >
+                                                                          <span
+                                                                            className="MuiTouchRipple-root"
+                                                                          >
+                                                                            <TransitionGroup
+                                                                              childFactory={[Function]}
+                                                                              component={null}
+                                                                              exit={true}
+                                                                            />
+                                                                          </span>
+                                                                        </ForwardRef(TouchRipple)>
+                                                                      </WithStyles(memo)>
+                                                                    </button>
+                                                                  </ForwardRef(ButtonBase)>
+                                                                </WithStyles(ForwardRef(ButtonBase))>
+                                                              </ForwardRef(Button)>
+                                                            </WithStyles(ForwardRef(Button))>
                                                           </Button>
                                                         </StyledComponent>
                                                       </ModalFooter__PrimaryButton>
                                                       <ModalFooter__SecondaryButton
                                                         disabled={false}
+                                                        id="secondary"
                                                         isLoading={false}
+                                                        name="secondary"
                                                         onClick={[Function]}
-                                                        stretch={false}
                                                       >
                                                         <StyledComponent
                                                           disabled={false}
                                                           forwardedComponent={
                                                             Object {
                                                               "$$typeof": Symbol(react.forward_ref),
-                                                              "attrs": Array [
-                                                                [Function],
-                                                              ],
+                                                              "attrs": Array [],
                                                               "componentStyle": ComponentStyle {
                                                                 "componentId": "ModalFooter__SecondaryButton-sc-1a1to5t-1",
                                                                 "isStatic": false,
-                                                                "lastClassName": "c13",
-                                                                "rules": Array [
-                                                                  "flex:",
-                                                                  [Function],
-                                                                  ";",
-                                                                ],
+                                                                "lastClassName": "gEFSSj",
+                                                                "rules": Array [],
                                                               },
                                                               "displayName": "ModalFooter__SecondaryButton",
                                                               "foldedComponentIds": Array [],
@@ -1556,161 +1269,159 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                             }
                                                           }
                                                           forwardedRef={null}
+                                                          id="secondary"
                                                           isLoading={false}
+                                                          name="secondary"
                                                           onClick={[Function]}
-                                                          stretch={false}
                                                         >
                                                           <Button
-                                                            className="c13"
+                                                            className=""
                                                             disabled={false}
-                                                            fontColor=""
+                                                            id="secondary"
                                                             isLoading={false}
-                                                            mode="default"
+                                                            name="secondary"
                                                             onClick={[Function]}
-                                                            stretch={false}
-                                                            type="button"
                                                           >
-                                                            <StyledButton
-                                                              className="c13"
+                                                            <WithStyles(ForwardRef(Button))
+                                                              className=""
+                                                              color="default"
+                                                              disableElevation={true}
                                                               disabled={false}
-                                                              fontColor=""
-                                                              mode="default"
+                                                              id="secondary"
+                                                              name="secondary"
                                                               onClick={[Function]}
-                                                              stretch={false}
-                                                              type="button"
+                                                              variant="contained"
                                                             >
-                                                              <StyledComponent
-                                                                className="c13"
-                                                                disabled={false}
-                                                                fontColor=""
-                                                                forwardedComponent={
+                                                              <ForwardRef(Button)
+                                                                className=""
+                                                                classes={
                                                                   Object {
-                                                                    "$$typeof": Symbol(react.forward_ref),
-                                                                    "attrs": Array [],
-                                                                    "componentStyle": ComponentStyle {
-                                                                      "componentId": "StyledButton-sc-1etazn9-0",
-                                                                      "isStatic": false,
-                                                                      "lastClassName": "c14",
-                                                                      "rules": Array [
-                                                                        "border-radius:3px;border-style:solid;border-width:1px;box-sizing:border-box;cursor:pointer;font-size:14px;line-height:18px;outline:none;padding:10px 20px;text-align:center;text-decoration:none;transition:background-color ",
-                                                                        "100ms",
-                                                                        " ease-out,border-color ",
-                                                                        "100ms",
-                                                                        " ease-out,box-shadow ",
-                                                                        "100ms",
-                                                                        " ease-out;width:",
-                                                                        [Function],
-                                                                        ";white-space:nowrap;",
-                                                                        [Function],
-                                                                        ";",
-                                                                        [Function],
-                                                                        ";:hover{cursor:pointer;text-decoration:none;",
-                                                                        [Function],
-                                                                        "};:active{text-decoration:none;",
-                                                                        [Function],
-                                                                        "};:disabled{cursor:not-allowed;text-decoration:none;",
-                                                                        [Function],
-                                                                        "};:focus{",
-                                                                        [Function],
-                                                                        "}",
-                                                                      ],
-                                                                    },
-                                                                    "displayName": "StyledButton",
-                                                                    "foldedComponentIds": Array [],
-                                                                    "render": [Function],
-                                                                    "styledComponentId": "StyledButton-sc-1etazn9-0",
-                                                                    "target": "button",
-                                                                    "toString": [Function],
-                                                                    "warnTooManyClasses": [Function],
-                                                                    "withComponent": [Function],
+                                                                    "colorInherit": "MuiButton-colorInherit",
+                                                                    "contained": "MuiButton-contained",
+                                                                    "containedPrimary": "MuiButton-containedPrimary",
+                                                                    "containedSecondary": "MuiButton-containedSecondary",
+                                                                    "containedSizeLarge": "MuiButton-containedSizeLarge",
+                                                                    "containedSizeSmall": "MuiButton-containedSizeSmall",
+                                                                    "disableElevation": "MuiButton-disableElevation",
+                                                                    "disabled": "Mui-disabled",
+                                                                    "endIcon": "MuiButton-endIcon",
+                                                                    "focusVisible": "Mui-focusVisible",
+                                                                    "fullWidth": "MuiButton-fullWidth",
+                                                                    "iconSizeLarge": "MuiButton-iconSizeLarge",
+                                                                    "iconSizeMedium": "MuiButton-iconSizeMedium",
+                                                                    "iconSizeSmall": "MuiButton-iconSizeSmall",
+                                                                    "label": "MuiButton-label",
+                                                                    "outlined": "MuiButton-outlined",
+                                                                    "outlinedPrimary": "MuiButton-outlinedPrimary",
+                                                                    "outlinedSecondary": "MuiButton-outlinedSecondary",
+                                                                    "outlinedSizeLarge": "MuiButton-outlinedSizeLarge",
+                                                                    "outlinedSizeSmall": "MuiButton-outlinedSizeSmall",
+                                                                    "root": "MuiButton-root",
+                                                                    "sizeLarge": "MuiButton-sizeLarge",
+                                                                    "sizeSmall": "MuiButton-sizeSmall",
+                                                                    "startIcon": "MuiButton-startIcon",
+                                                                    "text": "MuiButton-text",
+                                                                    "textPrimary": "MuiButton-textPrimary",
+                                                                    "textSecondary": "MuiButton-textSecondary",
+                                                                    "textSizeLarge": "MuiButton-textSizeLarge",
+                                                                    "textSizeSmall": "MuiButton-textSizeSmall",
                                                                   }
                                                                 }
-                                                                forwardedRef={null}
-                                                                mode="default"
+                                                                color="default"
+                                                                disableElevation={true}
+                                                                disabled={false}
+                                                                id="secondary"
+                                                                name="secondary"
                                                                 onClick={[Function]}
-                                                                stretch={false}
-                                                                type="button"
+                                                                variant="contained"
                                                               >
-                                                                <button
-                                                                  className="c14 c13"
+                                                                <WithStyles(ForwardRef(ButtonBase))
+                                                                  className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                                                                  component="button"
                                                                   disabled={false}
-                                                                  mode="default"
+                                                                  focusRipple={true}
+                                                                  focusVisibleClassName="Mui-focusVisible"
+                                                                  id="secondary"
+                                                                  name="secondary"
                                                                   onClick={[Function]}
                                                                   type="button"
                                                                 >
-                                                                  <ContentWrapper>
-                                                                    <StyledComponent
-                                                                      forwardedComponent={
-                                                                        Object {
-                                                                          "$$typeof": Symbol(react.forward_ref),
-                                                                          "attrs": Array [],
-                                                                          "componentStyle": ComponentStyle {
-                                                                            "componentId": "ContentWrapper-sc-36hfub-0",
-                                                                            "isStatic": false,
-                                                                            "lastClassName": "c11",
-                                                                            "rules": Array [
-                                                                              "align-self:center;display:inline-flex;flex-wrap:nowrap;max-width:100%;position:relative;overflow:hidden;min-width:14px;",
-                                                                            ],
-                                                                          },
-                                                                          "displayName": "ContentWrapper",
-                                                                          "foldedComponentIds": Array [],
-                                                                          "render": [Function],
-                                                                          "styledComponentId": "ContentWrapper-sc-36hfub-0",
-                                                                          "target": "span",
-                                                                          "toString": [Function],
-                                                                          "warnTooManyClasses": [Function],
-                                                                          "withComponent": [Function],
-                                                                        }
+                                                                  <ForwardRef(ButtonBase)
+                                                                    className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                                                                    classes={
+                                                                      Object {
+                                                                        "disabled": "Mui-disabled",
+                                                                        "focusVisible": "Mui-focusVisible",
+                                                                        "root": "MuiButtonBase-root",
                                                                       }
-                                                                      forwardedRef={null}
+                                                                    }
+                                                                    component="button"
+                                                                    disabled={false}
+                                                                    focusRipple={true}
+                                                                    focusVisibleClassName="Mui-focusVisible"
+                                                                    id="secondary"
+                                                                    name="secondary"
+                                                                    onClick={[Function]}
+                                                                    type="button"
+                                                                  >
+                                                                    <button
+                                                                      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                                                                      disabled={false}
+                                                                      id="secondary"
+                                                                      name="secondary"
+                                                                      onBlur={[Function]}
+                                                                      onClick={[Function]}
+                                                                      onDragLeave={[Function]}
+                                                                      onFocus={[Function]}
+                                                                      onKeyDown={[Function]}
+                                                                      onKeyUp={[Function]}
+                                                                      onMouseDown={[Function]}
+                                                                      onMouseLeave={[Function]}
+                                                                      onMouseUp={[Function]}
+                                                                      onTouchEnd={[Function]}
+                                                                      onTouchMove={[Function]}
+                                                                      onTouchStart={[Function]}
+                                                                      tabIndex={0}
+                                                                      type="button"
                                                                     >
                                                                       <span
-                                                                        className="c11"
+                                                                        className="MuiButton-label"
                                                                       >
-                                                                        <Content
-                                                                          isLoading={false}
-                                                                        >
-                                                                          <StyledComponent
-                                                                            forwardedComponent={
-                                                                              Object {
-                                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                                "attrs": Array [],
-                                                                                "componentStyle": ComponentStyle {
-                                                                                  "componentId": "Content-sc-18psqsj-0",
-                                                                                  "isStatic": false,
-                                                                                  "lastClassName": "c12",
-                                                                                  "rules": Array [
-                                                                                    "flex:1 1 auto;opacity:",
-                                                                                    [Function],
-                                                                                    ";overflow:hidden;text-overflow:ellipsis;white-space:nowrap;",
-                                                                                  ],
-                                                                                },
-                                                                                "displayName": "Content",
-                                                                                "foldedComponentIds": Array [],
-                                                                                "render": [Function],
-                                                                                "styledComponentId": "Content-sc-18psqsj-0",
-                                                                                "target": "span",
-                                                                                "toString": [Function],
-                                                                                "warnTooManyClasses": [Function],
-                                                                                "withComponent": [Function],
-                                                                              }
-                                                                            }
-                                                                            forwardedRef={null}
-                                                                            isLoading={false}
-                                                                          >
-                                                                            <span
-                                                                              className="c12"
-                                                                            >
-                                                                              Cancel
-                                                                            </span>
-                                                                          </StyledComponent>
-                                                                        </Content>
+                                                                        Cancel
                                                                       </span>
-                                                                    </StyledComponent>
-                                                                  </ContentWrapper>
-                                                                </button>
-                                                              </StyledComponent>
-                                                            </StyledButton>
+                                                                      <WithStyles(memo)
+                                                                        center={false}
+                                                                      >
+                                                                        <ForwardRef(TouchRipple)
+                                                                          center={false}
+                                                                          classes={
+                                                                            Object {
+                                                                              "child": "MuiTouchRipple-child",
+                                                                              "childLeaving": "MuiTouchRipple-childLeaving",
+                                                                              "childPulsate": "MuiTouchRipple-childPulsate",
+                                                                              "ripple": "MuiTouchRipple-ripple",
+                                                                              "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                                                              "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                                                              "root": "MuiTouchRipple-root",
+                                                                            }
+                                                                          }
+                                                                        >
+                                                                          <span
+                                                                            className="MuiTouchRipple-root"
+                                                                          >
+                                                                            <TransitionGroup
+                                                                              childFactory={[Function]}
+                                                                              component={null}
+                                                                              exit={true}
+                                                                            />
+                                                                          </span>
+                                                                        </ForwardRef(TouchRipple)>
+                                                                      </WithStyles(memo)>
+                                                                    </button>
+                                                                  </ForwardRef(ButtonBase)>
+                                                                </WithStyles(ForwardRef(ButtonBase))>
+                                                              </ForwardRef(Button)>
+                                                            </WithStyles(ForwardRef(Button))>
                                                           </Button>
                                                         </StyledComponent>
                                                       </ModalFooter__SecondaryButton>

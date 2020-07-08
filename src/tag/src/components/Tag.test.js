@@ -1,19 +1,19 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
-import * as Colors from '../../../colors';
 import Tag from './Tag';
 
-const {
-  GREEN_1,
-  NEUTRALS,
-  PURPLES,
-  RED_1,
-  WHITE,
-  YELLOW_1,
-} = Colors;
+import * as Colors from '../../../colors';
 
+const {
+  GREEN,
+  NEUTRAL,
+  PURPLE,
+  RED,
+  YELLOW,
+} = Colors;
 
 describe('Tag', () => {
   describe('snapshots', () => {
@@ -29,44 +29,44 @@ describe('Tag', () => {
 
     test('default', () => {
       const wrapper = mount(<Tag>tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', NEUTRALS[0]);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', NEUTRALS[6]);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', NEUTRAL.N700);
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', NEUTRAL.N100);
     });
 
     test('danger', () => {
       const wrapper = mount(<Tag mode="danger">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', WHITE);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', RED_1);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', 'white');
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', RED.R300);
     });
 
     test('neutral', () => {
       const wrapper = mount(<Tag mode="neutral">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', WHITE);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', NEUTRALS[0]);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', 'white');
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', NEUTRAL.N700);
     });
 
     test('primary', () => {
       const wrapper = mount(<Tag mode="primary">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', WHITE);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', PURPLES[2]);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', 'white');
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', PURPLE.P300);
     });
 
     test('secondary', () => {
       const wrapper = mount(<Tag mode="secondary">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', PURPLES[1]);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', PURPLES[5]);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', PURPLE.P300);
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', PURPLE.P100);
     });
 
     test('success', () => {
       const wrapper = mount(<Tag mode="success">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', WHITE);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', GREEN_1);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', 'white');
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', GREEN.G300);
     });
 
     test('warning', () => {
       const wrapper = mount(<Tag mode="warning">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', NEUTRALS[0]);
-      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', YELLOW_1);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', NEUTRAL.N700);
+      expect(wrapper.find(Tag)).toHaveStyleRule('background-color', YELLOW.Y300);
     });
 
   });

@@ -4,7 +4,7 @@
 
 import styled, { css } from 'styled-components';
 
-import { NEUTRALS, WHITE } from '../../../../colors';
+import { NEUTRAL } from '../../../../colors';
 import { media } from '../../../../utils/StyleUtils';
 
 const DEFAULT_PADDING :string = '30px';
@@ -71,9 +71,9 @@ export const ModalOuterContainer = styled.div`
  */
 export const ModalInnerContainer = styled.div`
   align-self: ${({ center }) => (center ? 'center' : 'flex-start')};
-  background-color: ${WHITE};
+  background-color: white;
   border-radius: 3px;
-  box-shadow: 0 2px 8px -2px ${NEUTRALS[0]};
+  box-shadow: 0 2px 8px -2px ${NEUTRAL.N700};
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
@@ -89,7 +89,7 @@ export const ModalInnerContainer = styled.div`
  * "min-height" 40px + "padding" 30px = 100px of total height
  */
 export const ModalSection = styled.div`
-  color: ${NEUTRALS[0]};
+  color: ${NEUTRAL.N700};
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
@@ -107,6 +107,14 @@ export const BodySection = styled(ModalSection)`
 export const FooterSection = styled(ModalSection)`
   align-items: center;
   flex-direction: row-reverse;
+
+  > button {
+    flex: ${({ stretch }) => (stretch ? 1 : 'none')};
+  }
+
+  > button:nth-of-type(2) {
+    margin: 0 20px 0 0px;
+  }
 `;
 
 export const HeaderSection = styled(ModalSection)`

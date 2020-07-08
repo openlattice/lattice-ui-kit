@@ -30,7 +30,6 @@ const AppContentWrapper = ({
   </AppContentOuterWrapper>
 );
 
-
 AppContentWrapper.defaultProps = {
   bgColor: undefined,
   borderless: false,

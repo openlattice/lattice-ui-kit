@@ -1,4 +1,5 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
 import { CSSTransition, config } from 'react-transition-group';
@@ -7,6 +8,7 @@ import Modal from './Modal';
 import ModalFooter, { PrimaryButton, SecondaryButton } from './ModalFooter';
 import ModalHeader, { CloseButton } from './ModalHeader';
 import { ModalInnerContainer, ModalOuterContainer } from './styled/StyledModalComponents';
+
 import { OverlayInnerContainer } from '../../../overlay/src/components/styled/StyledOverlayComponents';
 import { nope } from '../../../utils/testing/MockUtils';
 

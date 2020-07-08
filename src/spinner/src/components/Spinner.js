@@ -1,10 +1,12 @@
 // @flow
 import React from 'react';
+
+import { faCircle, faSpinnerThird } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpinnerThird, faCircle } from '@fortawesome/pro-light-svg-icons';
 
 import Rotate from './styled/Rotate';
-import { NEUTRALS } from '../../../colors';
+
+import { NEUTRAL } from '../../../colors';
 
 type Props = {
   /** color of spinner circle */
@@ -50,14 +52,13 @@ const Spinner = (props :Props) => {
   );
 };
 
-
 Spinner.defaultProps = {
-  bottomColor: NEUTRALS[3],
+  bottomColor: NEUTRAL.N300,
   centered: true,
   className: undefined,
   duration: undefined,
   size: '1x',
-  topColor: NEUTRALS[0],
+  topColor: NEUTRAL.N700,
 };
 
 export default Spinner;

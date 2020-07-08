@@ -1,76 +1,42 @@
-/*
- * @flow
- */
+// @flow
+import React, { useMemo } from 'react';
 
-import React from 'react';
-import type { Node } from 'react';
+import clsx from 'clsx';
+import { Button as MuiButton } from '@material-ui/core';
+import type { ButtonProps } from '@material-ui/core';
 
-import ButtonSpinner from './styled/ButtonSpinner';
-import Content from './styled/Content';
-import ContentWrapper from './styled/ContentWrapper';
-import StyledButton from './styled/StyledButton';
+import useButtonStyles, { isCustomColor } from './useButtonStyles';
+import { styleName } from './createColorStyles';
 
-type ButtonMode =
-  | 'default'
-  | 'negative'
-  | 'positive'
-  | 'primary'
-  | 'secondary'
-  | 'subtle'
-  | 'neutral';
+import Spinner from '../../../spinner';
 
-type Props = {
-  children ?:Node;
-  className ?:string;
-  disabled ?:boolean;
-  isLoading ?:boolean;
-  fontColor ?:string;
-  mode ?:ButtonMode;
-  onClick :(e :SyntheticEvent<HTMLButtonElement>) => void;
-  type ?:string;
-};
-
-/*
- * Inspiration:
- * https://atlaskit.atlassian.com/packages/core/button
- * https://evergreen.surge.sh/components/buttons
- */
-const Button = (props :Props) => {
-
+const Button = (props :ButtonProps) => {
   const {
-    children,
+    className,
+    color = 'default',
+    disableElevation = true,
     disabled,
     isLoading,
+    startIcon,
+    variant = 'contained',
     ...rest
   } = props;
-
-  /* eslint-disable react/jsx-props-no-spreading */
+  const classes = useButtonStyles();
+  const customColor = useMemo(() => isCustomColor(color), [color]);
   return (
-    <StyledButton {...rest} disabled={isLoading || disabled}>
-      <ContentWrapper>
-        { isLoading && <ButtonSpinner /> }
-        <Content isLoading={isLoading}>
-          {children}
-        </Content>
-      </ContentWrapper>
-    </StyledButton>
+    <MuiButton
+        className={clsx({
+          [className]: className,
+          [classes[styleName(variant, color)]]: customColor,
+        })}
+        color={customColor ? 'default' : color}
+        disableElevation={disableElevation}
+        variant={variant}
+        disabled={(disabled || isLoading)}
+        startIcon={isLoading ? <Spinner /> : startIcon}
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        {...rest} />
   );
-  /* eslint-enable */
-};
-
-Button.defaultProps = {
-  children: undefined,
-  className: undefined,
-  disabled: false,
-  isLoading: false,
-  fontColor: '',
-  mode: 'default',
-  type: 'button',
 };
 
 export default Button;
-
-export type {
-  ButtonMode,
-  Props,
-};

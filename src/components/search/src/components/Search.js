@@ -1,23 +1,24 @@
 // @flow
 import React, { Component } from 'react';
-import isFunction from 'lodash/isFunction';
-import { Map, List } from 'immutable';
 import type { ComponentType, Node } from 'react';
+
+import isFunction from 'lodash/isFunction';
+import { List, Map } from 'immutable';
 
 import DefaultResultComponent from './Result';
 import DefaultSearchResults from './SearchResults';
+import { InputGrid, Title } from './styled/StyledSearchComponents';
+import type { ResultProps } from './Result';
+import type { SearchResultsProps } from './SearchResults';
+
 import DatePicker from '../../../../datetime/src/components/DatePicker';
 import Label from '../../../../label';
 import { Button } from '../../../../button';
-import { Input } from '../../../../text';
-import { InputGrid, Title } from './styled/StyledSearchComponents';
-import { CheckboxSelect } from '../../../../select';
 import { Card, CardSegment, CardStack } from '../../../../layout';
-
-import type { SearchResultsProps } from './SearchResults';
-import type { ResultProps } from './Result';
-import type { SearchFieldDefinition, FilterFieldDefinition } from '../../types';
+import { CheckboxSelect } from '../../../../select';
+import { Input } from '../../../../text';
 import type { ReactSelectEvent, ReactSelectOption, ReactSelectValue } from '../../../../select/types';
+import type { FilterFieldDefinition, SearchFieldDefinition } from '../../types';
 
 type Props = {
   className ? :string;

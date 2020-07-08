@@ -5,12 +5,12 @@ import type { ElementConfig } from 'react';
 import styled from 'styled-components';
 import { components } from 'react-select';
 
-import { NEUTRALS } from '../../../../colors';
+import { NEUTRAL } from '../../../../colors';
 
 const IconWrapper = styled.span`
   position: absolute;
   left: 12px;
-  color: ${NEUTRALS[2]};
+  color: ${NEUTRAL.N500};
 `;
 
 type Props = ElementConfig<typeof components.ValueContainer>;

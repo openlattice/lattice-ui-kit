@@ -1,8 +1,7 @@
 import { Set } from 'immutable';
 
-import * as LatticeUIKit from './index';
-
 import PACKAGE from '../package.json';
+import * as LatticeUIKit from './index';
 
 const EXPECTED_OBJ_EXPORTS = Set([
   'Badge',
@@ -18,12 +17,10 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'ChoiceGroup',
   'Collapse',
   'Colors',
-  'CopyButton',
   'Creatable',
   'DataGrid',
   'DatePicker',
   'Drawer',
-  'EditButton',
   'ExpansionPanel',
   'ExpansionPanelDetails',
   'ExpansionPanelSummary',
@@ -34,7 +31,6 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'IconSplash',
   'Input',
   'Label',
-  'MinusButton',
   'Modal',
   'ModalFooter',
   'ModalHeader',
@@ -42,12 +38,10 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Overlay',
   'PaginationToolbar',
   'PersonResult',
-  'PlusButton',
   'Portal',
   'Radio',
   'Result',
   'Search',
-  'SearchButton',
   'SearchInput',
   'SearchResults',
   'Select',
@@ -60,6 +54,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'StepLabel',
   'Stepper',
   'StyleUtils',
+  'StylesProvider',
   'Table',
   'TableBody',
   'TableHeader',

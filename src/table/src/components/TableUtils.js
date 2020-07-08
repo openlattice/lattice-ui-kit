@@ -83,7 +83,6 @@ const getInitialRowsPerPage = (rowCount :number, rowsPerPageOptions ?:number[] =
   return initialRowsPerPage;
 };
 
-
 export {
   ascendByProperty,
   getComparator,

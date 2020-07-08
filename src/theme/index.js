@@ -1,21 +1,141 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
 import {
-  NEUTRALS,
-  PURPLES,
-  RED_1,
-  WHITE,
+  BLUE,
+  GREEN,
+  NEUTRAL,
+  ORANGE,
+  PURPLE,
+  RED,
 } from '../colors';
-import { duration } from '../style/transitions';
 
 const lightTheme = createMuiTheme({
   overrides: {
+    MuiButton: {
+      root: {
+        borderRadius: '3px',
+        fontSize: '16px',
+        minHeight: '40px',
+        padding: '0 16px',
+        textTransform: 'none',
+      },
+      label: {
+        fontWeight: 600,
+        lineHeight: 1.2,
+      },
+      /* Pseudo-class applied to the ButtonBase root element if the button is keyboard focused. */
+      focusVisible: {},
+      /* Pseudo-class applied to the root element if `disabled={true}`. */
+      disabled: {},
+      /* Styles applied to the root element if `color="inherit"`. */
+      colorInherit: {
+        color: 'inherit',
+        borderColor: 'currentColor',
+      },
+      /* Styles applied to the root element `variant="text"`. */
+      text: {
+        padding: '0 16px',
+      },
+      /* Styles applied to the root element if `size="small"` and `variant="text"`. */
+      textSizeSmall: {
+        minHeight: '26px',
+        padding: '5px',
+        fontSize: '14px',
+      },
+      /* Styles applied to the root element if `size="large"` and `variant="text"`. */
+      textSizeLarge: {
+        minHeight: '46px',
+        padding: '0 40px',
+        fontSize: '18px',
+      },
+      /* Styles applied to the root element if `size="small"` and `variant="outlined"`. */
+      outlinedSizeSmall: {
+        minHeight: '26px',
+        padding: '4px',
+        fontSize: '14px',
+      },
+      /* Styles applied to the root element if `size="large"` and `variant="outlined"`. */
+      outlinedSizeLarge: {
+        minHeight: '46px',
+        padding: '0 38px',
+        fontSize: '18px',
+      },
+      contained: {
+        backgroundColor: NEUTRAL.N50,
+        color: NEUTRAL.N700,
+      },
+      /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
+      containedSizeSmall: {
+        minHeight: '26px',
+        padding: '5px',
+        fontSize: '14px',
+      },
+      /* Styles applied to the root element if `size="large"` and `variant="contained"`. */
+      containedSizeLarge: {
+        minHeight: '46px',
+        padding: '0 40px',
+        fontSize: '18px',
+      },
+      /* Styles applied to the root element if `size="small"`. */
+      sizeSmall: {
+        minWidth: '26px',
+      },
+      /* Styles applied to the root element if `size="large"`. */
+      sizeLarge: {
+        minWidth: '26px',
+      },
+      /* Styles applied to the root element if `fullWidth={true}`. */
+      fullWidth: {
+        width: '100%',
+      },
+      /* Styles applied to the startIcon element if supplied. */
+      startIcon: {
+        display: 'inherit',
+        marginRight: 8,
+        marginLeft: -4,
+        '&$iconSizeSmall': {
+          marginLeft: -2,
+        },
+      },
+      /* Styles applied to the endIcon element if supplied. */
+      endIcon: {
+        display: 'inherit',
+        marginRight: -4,
+        marginLeft: 8,
+        '&$iconSizeSmall': {
+          marginRight: -2,
+        },
+      },
+      /* Styles applied to the icon element if supplied and `size="small"`. */
+      iconSizeSmall: {
+        '& > *:first-child': {
+          fontSize: 'inherit',
+        },
+      },
+      /* Styles applied to the icon element if supplied and `size="medium"`. */
+      iconSizeMedium: {
+        '& > *:first-child': {
+          fontSize: 'inherit',
+        },
+      },
+      /* Styles applied to the icon element if supplied and `size="large"`. */
+      iconSizeLarge: {
+        '& > *:first-child': {
+          fontSize: 'inherit',
+        },
+      },
+    },
+    MuiCard: {
+      root: {
+        overflow: 'visible',
+      },
+    },
     MuiFormHelperText: {
       root: {
         fontFamily: 'inherit',
         fontSize: '12px',
         '&$error': {
-          color: RED_1
+          color: RED.R300
         },
       },
       contained: {
@@ -24,30 +144,28 @@ const lightTheme = createMuiTheme({
     },
     MuiInputBase: {
       root: {
-        backgroundColor: NEUTRALS[8],
+        color: NEUTRAL.N900,
         borderRadius: '3px',
         fontFamily: 'inherit',
         fontSize: '14px',
-        height: '40px',
+        minHeight: '40px',
         lineHeight: '1.5',
-        transition: `background-color ${duration.standard} ease-out,
-        border-color ${duration.standard} ease-out`,
         '&:hover:not($disabled):not($focused):not($error)': {
-          backgroundColor: NEUTRALS[6]
-        },
-        '&$focused:not($disabled)': {
-          backgroundColor: WHITE
+          backgroundColor: NEUTRAL.N100
         },
         '&$disabled': {
-          cursor: 'not-allowed'
+          cursor: 'not-allowed',
         }
       },
       input: {
-        color: NEUTRALS[0],
+        padding: '10px',
         '&$disabled': {
-          color: NEUTRALS[1],
-          cursor: 'not-allowed'
+          color: NEUTRAL.N500,
+          cursor: 'not-allowed',
         }
+      },
+      inputHiddenLabel: {
+        padding: 0
       }
     },
     MuiIconButton: {
@@ -55,38 +173,123 @@ const lightTheme = createMuiTheme({
         padding: '5px'
       }
     },
-    MuiOutlinedInput: {
+    MuiFilledInput: {
       root: {
-        border: `1px solid ${NEUTRALS[4]}`,
+        backgroundColor: NEUTRAL.N50,
+        border: `1px solid ${NEUTRAL.N50}`,
+        '&:hover:not($disabled):not($focused):not($error)': {
+          backgroundColor: NEUTRAL.N100,
+          border: `1px solid ${NEUTRAL.N100}`,
+        },
         '&$focused': {
-          borderColor: PURPLES[1],
+          borderColor: NEUTRAL.N700,
+          backgroundColor: NEUTRAL.N00,
         },
         '&$error': {
-          borderColor: RED_1
+          borderColor: RED.R300
+        },
+        '&$disabled': {
+          cursor: 'not-allowed',
+          backgroundColor: NEUTRAL.N50,
+        }
+      },
+      input: {
+        padding: '10px',
+        '&$disabled': {
+          cursor: 'not-allowed',
+          backgroundColor: NEUTRAL.N50,
+        }
+      },
+      multiline: {
+        padding: '10px'
+      },
+      inputHiddenLabel: {
+        paddingTop: 10,
+        paddingBottom: 10,
+      }
+    },
+    MuiOutlinedInput: {
+      root: {
+        backgroundColor: 'white',
+        border: `1px solid ${NEUTRAL.N100}`,
+        '&:hover:not($disabled):not($focused):not($error)': {
+          backgroundColor: NEUTRAL.N00
+        },
+        '&$focused': {
+          borderColor: NEUTRAL.N700,
+          backgroundColor: 'white',
+        },
+        '&$error': {
+          borderColor: RED.R300
         },
       },
       input: {
         padding: '10px'
       },
+      inputHiddenLabel: {
+        paddingTop: 10,
+        paddingBottom: 10,
+      },
       notchedOutline: {
         visibility: 'hidden'
       }
+    },
+    MuiTouchRipple: {
+      childLeaving: {
+        animationDuration: '250ms'
+      },
+      rippleVisible: {
+        animationDuration: '250ms'
+      },
+      '@keyframes enter': {
+        '0%': {
+          transform: 'scale(1)',
+          opacity: 0.1,
+        },
+        '100%': {
+          transform: 'scale(1)',
+          opacity: 0.3,
+        },
+      },
     }
   },
   palette: {
     primary: {
-      main: PURPLES[1]
+      main: PURPLE.P300,
+      dark: PURPLE.P400,
     },
     secondary: {
-      main: PURPLES[3]
+      main: PURPLE.P100,
+      dark: PURPLE.P200,
+      contrastText: PURPLE.P400,
+    },
+    success: {
+      main: GREEN.G300,
+      dark: GREEN.G400,
+      contrastText: 'white'
+    },
+    warning: {
+      main: ORANGE.O300,
+      dark: ORANGE.O400,
+      contrastText: 'white'
+    },
+    error: {
+      main: RED.R300,
+      dark: RED.R400,
+      contrastText: 'white'
+    },
+    info: {
+      main: BLUE.B300,
+      dark: BLUE.B400,
+      contrastText: 'white'
     },
     text: {
-      primary: NEUTRALS[0]
+      primary: NEUTRAL.N900
     },
     background: {
-      header: NEUTRALS[6]
+      header: NEUTRAL.N50
     },
-    divider: '#E1E1EB'
+    divider: NEUTRAL.N100
   },
   props: {
     MuiFormControl: {
@@ -95,18 +298,143 @@ const lightTheme = createMuiTheme({
     },
     MuiOutlinedInput: {
       notched: false
+    },
+    MuiFilledInput: {
+      disableUnderline: true
     }
+  },
+  typography: {
+    fontFamily: [
+      'Inter',
+      'Arial',
+      'sans-serif'
+    ].join(','),
+    color: 'inherit'
   }
 });
 
 const darkTheme = createMuiTheme({
   overrides: {
+    MuiButton: {
+      root: {
+        textTransform: 'none',
+        padding: '0 16px',
+        minHeight: '40px',
+        fontSize: '16px',
+      },
+      label: {
+        fontWeight: 600,
+        lineHeight: 1.2,
+      },
+      /* Pseudo-class applied to the ButtonBase root element if the button is keyboard focused. */
+      focusVisible: {},
+      /* Pseudo-class applied to the root element if `disabled={true}`. */
+      disabled: {},
+      /* Styles applied to the root element if `color="inherit"`. */
+      colorInherit: {
+        color: 'inherit',
+        borderColor: 'currentColor',
+      },
+      /* Styles applied to the root element `variant="text"`. */
+      text: {
+        padding: '0 16px',
+      },
+      /* Styles applied to the root element if `size="small"` and `variant="text"`. */
+      textSizeSmall: {
+        minHeight: '26px',
+        padding: '5px',
+        fontSize: '14px',
+      },
+      /* Styles applied to the root element if `size="large"` and `variant="text"`. */
+      textSizeLarge: {
+        minHeight: '46px',
+        padding: '0 40px',
+        fontSize: '18px',
+      },
+      /* Styles applied to the root element if `size="small"` and `variant="outlined"`. */
+      outlinedSizeSmall: {
+        minHeight: '26px',
+        padding: '4px',
+        fontSize: '14px',
+      },
+      /* Styles applied to the root element if `size="large"` and `variant="outlined"`. */
+      outlinedSizeLarge: {
+        minHeight: '46px',
+        padding: '0 38px',
+        fontSize: '18px',
+      },
+      /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
+      containedSizeSmall: {
+        minHeight: '26px',
+        padding: '5px',
+        fontSize: '14px',
+      },
+      /* Styles applied to the root element if `size="large"` and `variant="contained"`. */
+      containedSizeLarge: {
+        minHeight: '46px',
+        padding: '0 40px',
+        fontSize: '18px',
+      },
+      /* Styles applied to the root element if `size="small"`. */
+      sizeSmall: {
+        minWidth: '26px',
+      },
+      /* Styles applied to the root element if `size="large"`. */
+      sizeLarge: {
+        minWidth: '26px',
+      },
+      /* Styles applied to the root element if `fullWidth={true}`. */
+      fullWidth: {
+        width: '100%',
+      },
+      /* Styles applied to the startIcon element if supplied. */
+      startIcon: {
+        display: 'inherit',
+        marginRight: 8,
+        marginLeft: -4,
+        '&$iconSizeSmall': {
+          marginLeft: -2,
+        },
+      },
+      /* Styles applied to the endIcon element if supplied. */
+      endIcon: {
+        display: 'inherit',
+        marginRight: -4,
+        marginLeft: 8,
+        '&$iconSizeSmall': {
+          marginRight: -2,
+        },
+      },
+      /* Styles applied to the icon element if supplied and `size="small"`. */
+      iconSizeSmall: {
+        '& > *:first-child': {
+          fontSize: 'inherit',
+        },
+      },
+      /* Styles applied to the icon element if supplied and `size="medium"`. */
+      iconSizeMedium: {
+        '& > *:first-child': {
+          fontSize: 'inherit',
+        },
+      },
+      /* Styles applied to the icon element if supplied and `size="large"`. */
+      iconSizeLarge: {
+        '& > *:first-child': {
+          fontSize: 'inherit',
+        },
+      },
+    },
+    MuiCard: {
+      root: {
+        overflow: 'visible',
+      },
+    },
     MuiFormHelperText: {
       root: {
         fontFamily: 'inherit',
         fontSize: '12px',
         '&$error': {
-          color: RED_1
+          color: RED.R300
         },
       },
       contained: {
@@ -121,8 +449,6 @@ const darkTheme = createMuiTheme({
         fontSize: '14px',
         height: '40px',
         lineHeight: '1.5',
-        transition: `background-color ${duration.standard} ease-out,
-        border-color ${duration.standard} ease-out`,
         '&:hover:not($disabled):not($focused):not($error)': {
           backgroundColor: '#4F4E54',
           borderColor: '#4F4E54',
@@ -135,6 +461,7 @@ const darkTheme = createMuiTheme({
         }
       },
       input: {
+        padding: '10px',
         '&$disabled': {
           cursor: 'not-allowed'
         }
@@ -152,7 +479,24 @@ const darkTheme = createMuiTheme({
           borderColor: '#98979D',
         },
         '&$error': {
-          borderColor: RED_1
+          borderColor: RED.R300
+        },
+      },
+      input: {
+        padding: '10px'
+      },
+      notchedOutline: {
+        visibility: 'hidden'
+      },
+    },
+    MuiFilledInput: {
+      root: {
+        border: '1px solid #36353B',
+        '&$focused': {
+          borderColor: '#98979D',
+        },
+        '&$error': {
+          borderColor: RED.R300
         },
       },
       input: {
@@ -161,12 +505,59 @@ const darkTheme = createMuiTheme({
       notchedOutline: {
         visibility: 'hidden'
       }
+    },
+    MuiTouchRipple: {
+      child: {
+        borderRadius: 0,
+      },
+      childLeaving: {
+        animationDuration: '250ms'
+      },
+      rippleVisible: {
+        animationDuration: '250ms'
+      },
+      '@keyframes enter': {
+        '0%': {
+          transform: 'scale(1)',
+          opacity: 0.1,
+        },
+        '100%': {
+          transform: 'scale(1)',
+          opacity: 0.3,
+        },
+      },
     }
   },
   palette: {
     type: 'dark',
     primary: {
-      main: '#fff'
+      main: PURPLE.P300,
+      dark: PURPLE.P400,
+    },
+    secondary: {
+      main: PURPLE.P100,
+      dark: PURPLE.P200,
+      contrastText: PURPLE.P400,
+    },
+    success: {
+      main: GREEN.G300,
+      dark: GREEN.G400,
+      contrastText: 'white'
+    },
+    warning: {
+      main: ORANGE.O300,
+      dark: ORANGE.O400,
+      contrastText: 'white'
+    },
+    error: {
+      main: RED.R300,
+      dark: RED.R400,
+      contrastText: 'white'
+    },
+    info: {
+      main: BLUE.B300,
+      dark: BLUE.B400,
+      contrastText: 'white'
     },
     background: {
       header: '#333'
@@ -179,12 +570,14 @@ const darkTheme = createMuiTheme({
     },
     MuiOutlinedInput: {
       notched: false
-    }
+    },
+    MuiFilledInput: {
+      disableUnderline: true
+    },
   },
   typography: {
     fontFamily: [
       'Inter',
-      'Open Sans',
       'Arial',
       'sans-serif'
     ].join(','),

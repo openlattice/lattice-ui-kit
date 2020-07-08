@@ -2,18 +2,19 @@ import React, { useState } from 'react';
 
 import styled from 'styled-components';
 import { ThemeProvider } from '@material-ui/core';
+import { StylesProvider } from '@material-ui/core/styles';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import { withInfo } from '@storybook/addon-info';
 import { addDecorator, configure } from '@storybook/react';
 
 import LatticeLuxonUtils from '../../src/datetime/src/components/utils/LatticeLuxonUtils';
 import { Button } from '../../src/button';
-import { NEUTRALS } from '../../src/colors';
+import { NEUTRAL } from '../../src/colors';
 import { darkTheme, lightTheme } from '../../src/theme';
 
 const StoryOuterWrapper = styled.div`
-  background-color: ${NEUTRALS[7]};
-  color: ${NEUTRALS[0]};
+  background-color: white;
+  color: ${NEUTRAL.N900};
   display: flex;
   font-family: 'Inter', Arial, sans-serif;
   font-stretch: normal;
@@ -55,8 +56,10 @@ addDecorator((StoryFn) => {
       <StoryInnerWrapper>
         <ThemeProvider theme={theme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
-            <Button mode="primary" onClick={toggleTheme}>{`Dark Theme: ${isDark}`}</Button>
-            <StoryFn isDark={isDark} />
+            <StylesProvider injectFirst>
+              <Button mode="primary" onClick={toggleTheme}>{`Dark Theme: ${isDark}`}</Button>
+              <StoryFn isDark={isDark} />
+            </StylesProvider>
           </MuiPickersUtilsProvider>
         </ThemeProvider>
       </StoryInnerWrapper>
