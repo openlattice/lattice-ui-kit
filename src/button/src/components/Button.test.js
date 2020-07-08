@@ -1,681 +1,128 @@
 import React from 'react';
+
+import capitalize from 'lodash/capitalize';
 import toJson from 'enzyme-to-json';
-import { mount, shallow } from 'enzyme';
+import { Button as MuiButton } from '@material-ui/core';
+import { createMount } from '@material-ui/core/test-utils';
 
 import Button from './Button';
-import StyledButton from './styled/StyledButton';
+
+import Spinner from '../../../spinner';
 import { nope } from '../../../utils/testing/MockUtils';
 
 const DEFAULT_BTN_TXT = 'DEFAULT_BUTTON';
-const PRIMARY_BTN_TXT = 'PRIMARY_BUTTON';
-const SECONDARY_BTN_TXT = 'SECONDARY_BUTTON';
-const POSITIVE_BTN_TXT = 'POSITIVE_BUTTON';
-const NEGATIVE_BTN_TXT = 'NEGATIVE_BUTTON';
-const SUBTLE_BTN_TXT = 'SUBTLE_BUTTON';
-const NEUTRAL_BTN_TXT = 'NEUTRAL_BUTTON';
+
+const variants = ['contained', 'outlined', 'text'];
+const themedColors = ['primary', 'secondary'];
+const intentColors = [
+  'error',
+  'info',
+  'success',
+  'warning',
+];
+const sizes = ['small', 'large'];
 
 describe('button', () => {
 
+  let mount;
+
+  beforeAll(() => {
+    mount = createMount();
+  });
+
+  afterAll(() => {
+    mount.cleanUp();
+  });
+
   describe('props', () => {
-    test('fullWidth should set width to 100%', () => {
-      const wrapper = mount(<Button fullWidth onClick={nope}>{ DEFAULT_BTN_TXT }</Button>);
+    test('fullWidth should add MuiButton-fullWidth class', () => {
+      const wrapper = mount(<Button fullWidth>{ DEFAULT_BTN_TXT }</Button>);
 
-      expect(wrapper.find(StyledButton)).toHaveStyleRule('width', '100%');
+      const button = wrapper.find('button.MuiButton-fullWidth');
+      expect(button).toHaveLength(1);
+    });
+
+    test('disabled should add Mui-disabled class', () => {
+      const wrapper = mount(<Button disabled>{ DEFAULT_BTN_TXT }</Button>);
+
+      const button = wrapper.find('button.Mui-disabled');
+      expect(button).toHaveLength(1);
+    });
+
+    test('isLoading should set startIcon to Spinner', () => {
+      const wrapper = mount(<Button isLoading onClick={nope}>{ DEFAULT_BTN_TXT }</Button>);
+
+      const disabled = wrapper.find('button.Mui-disabled');
+      expect(disabled).toHaveLength(1);
+
+      const span = wrapper.find('span.MuiButton-startIcon');
+      expect(span).toHaveLength(1);
+
+      const button = wrapper.find(MuiButton);
+      expect(button.prop('startIcon').type).toEqual(<Spinner />.type);
     });
   });
 
-  describe('mode="default"', () => {
+  describe('variants & colors', () => {
 
-    const basicBtn1 = mount(
-      <Button onClick={nope}>
-        { DEFAULT_BTN_TXT }
-      </Button>
-    );
-    const basicBtn2 = mount(
-      <Button mode="default" onClick={nope}>
-        { DEFAULT_BTN_TXT }
-      </Button>
-    );
+    test('render contained by default', () => {
+      const wrapper = mount(<Button>{ DEFAULT_BTN_TXT }</Button>);
 
-    test('should match snapshot', () => {
-      expect(toJson(basicBtn1)).toMatchSnapshot();
-      expect(toJson(basicBtn2)).toMatchSnapshot();
+      const button = wrapper.find('button.MuiButton-contained');
+      expect(button).toHaveLength(1);
     });
 
-    test('should render StyledButton component', () => {
-      expect(basicBtn1.find(StyledButton)).toHaveLength(1);
-      expect(basicBtn2.find(StyledButton)).toHaveLength(1);
-    });
+    test('should each render with size', () => {
+      variants.forEach((variant) => {
+        // default color
+        const wrapper = mount(<Button variant={variant}>{ DEFAULT_BTN_TXT }</Button>);
+        const button = wrapper.find('button');
+        expect(button.hasClass(`MuiButton-${variant}`)).toEqual(true);
+        expect(toJson(wrapper)).toMatchSnapshot();
 
-    test('should render a button element', () => {
-      expect(basicBtn1.find('button')).toHaveLength(1);
-      expect(basicBtn2.find('button')).toHaveLength(1);
-    });
+        // sizes
+        sizes.forEach((size) => {
+          const sizeWrapper = mount(<Button variant={variant} size={size}>{ DEFAULT_BTN_TXT }</Button>);
+          const sizeButton = sizeWrapper.find('button');
+          expect(sizeButton.hasClass(`MuiButton-size${capitalize(size)}`)).toEqual(true);
+          expect(sizeButton.hasClass(`MuiButton-${variant}Size${capitalize(size)}`)).toEqual(true);
+          expect(toJson(sizeWrapper)).toMatchSnapshot();
+        });
 
-    test('should render the correct text', () => {
-      expect(basicBtn1.text()).toEqual(DEFAULT_BTN_TXT);
-      expect(basicBtn2.text()).toEqual(DEFAULT_BTN_TXT);
-    });
+        // themed colors
+        themedColors.forEach((color) => {
+          const themedColorWrapper = mount(<Button variant={variant} color={color}>{ DEFAULT_BTN_TXT }</Button>);
+          const themedColorButton = themedColorWrapper.find('button');
+          expect(themedColorButton.hasClass(`MuiButton-${variant}${capitalize(color)}`)).toEqual(true);
+          expect(toJson(themedColorWrapper)).toMatchSnapshot();
 
-    describe('isLoading', () => {
-      test('should render loading spinner', () => {
-        const wrapper = mount(<Button isLoading />);
-        expect(wrapper.find('Spinner')).toHaveLength(1);
-      });
+          sizes.forEach((size) => {
+            const sizeWrapper = mount(<Button variant={variant} color={color} size={size}>{ DEFAULT_BTN_TXT }</Button>);
+            const sizeButton = sizeWrapper.find('button');
+            expect(sizeButton.hasClass(`MuiButton-size${capitalize(size)}`)).toEqual(true);
+            expect(sizeButton.hasClass(`MuiButton-${variant}Size${capitalize(size)}`)).toEqual(true);
+            expect(toJson(sizeWrapper)).toMatchSnapshot();
+          });
+        });
 
-      test('should set content opacity to 0', () => {
-        const wrapper = mount(<Button isLoading />);
-        expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
-      });
-    });
+        // intent colors
+        intentColors.forEach((color) => {
+          const intentColorWrapper = mount(<Button variant={variant} color={color}>{ DEFAULT_BTN_TXT }</Button>);
+          const intentColorButton = intentColorWrapper.find('button');
+          const regex = new RegExp(`makeStyles-${variant}${capitalize(color)}-\\d+`);
+          expect(intentColorButton.hasClass(regex)).toEqual(true);
+          expect(toJson(intentColorWrapper)).toMatchSnapshot();
 
-    describe('size="sm"', () => {
-      const basicBtn = mount(
-        <Button size="sm" mode="default" onClick={nope}>
-          { DEFAULT_BTN_TXT }
-        </Button>
-      );
-      test('should have small styles', () => {
-        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
-        expect(basicBtn).toHaveStyleRule('font-size', '11px');
-        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
-      });
-    });
-
-    describe('disabled', () => {
-
-      const disabledBtn1 = mount(
-        <Button disabled onClick={nope}>
-          { DEFAULT_BTN_TXT }
-        </Button>
-      );
-      const disabledBtn2 = mount(
-        <Button disabled mode="default" onClick={nope}>
-          { DEFAULT_BTN_TXT }
-        </Button>
-      );
-
-      test('should set "disabled" attribute to true', () => {
-        expect(disabledBtn1.prop('disabled')).toEqual(true);
-        expect(disabledBtn2.prop('disabled')).toEqual(true);
-        expect(disabledBtn1.find('button').get(0).props.disabled).toEqual(true);
-        expect(disabledBtn2.find('button').get(0).props.disabled).toEqual(true);
-      });
-
-      test('should set "disabled" attribute to false', () => {
-        expect(basicBtn1.prop('disabled')).toEqual(false);
-        expect(basicBtn2.prop('disabled')).toEqual(false);
-        expect(basicBtn1.find('button').get(0).props.disabled).toEqual(false);
-        expect(basicBtn2.find('button').get(0).props.disabled).toEqual(false);
-      });
-
-    });
-
-    describe('onClick()', () => {
-
-      test('should invoke onClick handler', () => {
-        const mockOnClick1 = jest.fn();
-        const mockOnClick2 = jest.fn();
-        const btn1 = shallow(
-          <Button onClick={mockOnClick1}>
-            { DEFAULT_BTN_TXT }
-          </Button>
-        );
-        const btn2 = shallow(
-          <Button mode="default" onClick={mockOnClick2}>
-            { DEFAULT_BTN_TXT }
-          </Button>
-        );
-        btn1.simulate('click');
-        btn2.simulate('click');
-        expect(mockOnClick1).toHaveBeenCalledTimes(1);
-        expect(mockOnClick2).toHaveBeenCalledTimes(1);
-      });
-
-    });
-
-  });
-
-  describe('mode="primary"', () => {
-
-    const basicBtn = mount(
-      <Button mode="primary" onClick={nope}>
-        { PRIMARY_BTN_TXT }
-      </Button>
-    );
-
-    test('should match snapshot', () => {
-      expect(toJson(basicBtn)).toMatchSnapshot();
-    });
-
-    test('should render StyledButton component', () => {
-      expect(basicBtn.find(StyledButton)).toHaveLength(1);
-    });
-
-    test('should render a button element', () => {
-      expect(basicBtn.find('button')).toHaveLength(1);
-    });
-
-    test('should render the correct text', () => {
-      expect(basicBtn.text()).toEqual(PRIMARY_BTN_TXT);
-    });
-
-    describe('isLoading', () => {
-      test('should render loading spinner', () => {
-        const wrapper = mount(<Button mode="primary" isLoading />);
-        expect(wrapper.find('Spinner')).toHaveLength(1);
-      });
-
-      test('should set content opacity to 0', () => {
-        const wrapper = mount(<Button mode="primary" isLoading />);
-        expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
+          sizes.forEach((size) => {
+            const sizeWrapper = mount(<Button variant={variant} color={color} size={size}>{ DEFAULT_BTN_TXT }</Button>);
+            const sizeButton = sizeWrapper.find('button');
+            expect(sizeButton.hasClass(`MuiButton-size${capitalize(size)}`)).toEqual(true);
+            expect(sizeButton.hasClass(`MuiButton-${variant}Size${capitalize(size)}`)).toEqual(true);
+            expect(toJson(sizeWrapper)).toMatchSnapshot();
+          });
+        });
       });
     });
-
-    describe('size="sm"', () => {
-      const smallBtn = mount(
-        <Button size="sm" mode="primary" onClick={nope}>
-          { PRIMARY_BTN_TXT }
-        </Button>
-      );
-      test('should have small styles', () => {
-        expect(smallBtn).toHaveStyleRule('padding', '5px 10px');
-        expect(smallBtn).toHaveStyleRule('font-size', '11px');
-        expect(smallBtn).toHaveStyleRule('line-height', '1.5');
-      });
-    });
-
-    describe('disabled', () => {
-
-      const disabledBtn = mount(
-        <Button disabled mode="primary" onClick={nope}>
-          { DEFAULT_BTN_TXT }
-        </Button>
-      );
-
-      test('should set "disabled" attribute to true', () => {
-        expect(disabledBtn.prop('disabled')).toEqual(true);
-        expect(disabledBtn.find('button').get(0).props.disabled).toEqual(true);
-      });
-
-      test('should set "disabled" attribute to false', () => {
-        expect(basicBtn.prop('disabled')).toEqual(false);
-        expect(basicBtn.find('button').get(0).props.disabled).toEqual(false);
-      });
-
-    });
-
-    describe('onClick()', () => {
-
-      test('should invoke onClick handler', () => {
-        const mockOnClick = jest.fn();
-        const btn = mount(
-          <Button mode="primary" onClick={mockOnClick}>
-            { PRIMARY_BTN_TXT }
-          </Button>
-        );
-        btn.simulate('click');
-        expect(mockOnClick).toHaveBeenCalledTimes(1);
-      });
-
-    });
-
-  });
-
-  describe('mode="secondary"', () => {
-
-    const basicBtn = mount(
-      <Button mode="secondary" onClick={nope}>
-        { SECONDARY_BTN_TXT }
-      </Button>
-    );
-
-    test('should match snapshot', () => {
-      expect(toJson(basicBtn)).toMatchSnapshot();
-    });
-
-    test('should render StyledButton component', () => {
-      expect(basicBtn.find(StyledButton)).toHaveLength(1);
-    });
-
-    test('should render a button element', () => {
-      expect(basicBtn.find('button')).toHaveLength(1);
-    });
-
-    test('should render the correct text', () => {
-      expect(basicBtn.text()).toEqual(SECONDARY_BTN_TXT);
-    });
-
-    describe('isLoading', () => {
-      test('should render loading spinner', () => {
-        const wrapper = mount(<Button mode="secondary" isLoading />);
-        expect(wrapper.find('Spinner')).toHaveLength(1);
-      });
-
-      test('should set content opacity to 0', () => {
-        const wrapper = mount(<Button mode="secondary" isLoading />);
-        expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
-      });
-    });
-
-    describe('size="sm"', () => {
-      const smallBtn = mount(
-        <Button size="sm" mode="secondary" onClick={nope}>
-          { SECONDARY_BTN_TXT }
-        </Button>
-      );
-      test('should have small styles', () => {
-        expect(smallBtn).toHaveStyleRule('padding', '5px 10px');
-        expect(smallBtn).toHaveStyleRule('font-size', '11px');
-        expect(smallBtn).toHaveStyleRule('line-height', '1.5');
-      });
-    });
-
-    describe('disabled', () => {
-
-      const disabledBtn = mount(
-        <Button disabled mode="secondary" onClick={nope}>
-          { SECONDARY_BTN_TXT }
-        </Button>
-      );
-
-      test('should set "disabled" attribute to true', () => {
-        expect(disabledBtn.prop('disabled')).toEqual(true);
-        expect(disabledBtn.find('button').get(0).props.disabled).toEqual(true);
-      });
-
-      test('should set "disabled" attribute to false', () => {
-        expect(basicBtn.prop('disabled')).toEqual(false);
-        expect(basicBtn.find('button').get(0).props.disabled).toEqual(false);
-      });
-
-    });
-
-    describe('onClick()', () => {
-
-      test('should invoke onClick handler', () => {
-        const mockOnClick = jest.fn();
-        const btn = mount(
-          <Button mode="secondary" onClick={mockOnClick}>
-            { SECONDARY_BTN_TXT }
-          </Button>
-        );
-        btn.simulate('click');
-        expect(mockOnClick).toHaveBeenCalledTimes(1);
-      });
-
-    });
-
-  });
-
-  describe('mode="positive"', () => {
-
-    const basicBtn = mount(
-      <Button mode="positive" onClick={nope}>
-        { POSITIVE_BTN_TXT }
-      </Button>
-    );
-
-    test('should match snapshot', () => {
-      expect(toJson(basicBtn)).toMatchSnapshot();
-    });
-
-    test('should render StyledButton component', () => {
-      expect(basicBtn.find(StyledButton)).toHaveLength(1);
-    });
-
-    test('should render a button element', () => {
-      expect(basicBtn.find('button')).toHaveLength(1);
-    });
-
-    test('should render the correct text', () => {
-      expect(basicBtn.text()).toEqual(POSITIVE_BTN_TXT);
-    });
-
-    describe('isLoading', () => {
-      test('should render loading spinner', () => {
-        const wrapper = mount(<Button mode="positive" isLoading />);
-        expect(wrapper.find('Spinner')).toHaveLength(1);
-      });
-
-      test('should set content opacity to 0', () => {
-        const wrapper = mount(<Button mode="positive" isLoading />);
-        expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
-      });
-    });
-
-    describe('size="sm"', () => {
-      const smallBtn = mount(
-        <Button size="sm" mode="positive" onClick={nope}>
-          { POSITIVE_BTN_TXT }
-        </Button>
-      );
-      test('should have small styles', () => {
-        expect(smallBtn).toHaveStyleRule('padding', '5px 10px');
-        expect(smallBtn).toHaveStyleRule('font-size', '11px');
-        expect(smallBtn).toHaveStyleRule('line-height', '1.5');
-      });
-    });
-
-    describe('disabled', () => {
-
-      const disabledBtn = mount(
-        <Button disabled mode="positive" onClick={nope}>
-          { POSITIVE_BTN_TXT }
-        </Button>
-      );
-
-      test('should set "disabled" attribute to true', () => {
-        expect(disabledBtn.prop('disabled')).toEqual(true);
-        expect(disabledBtn.find('button').get(0).props.disabled).toEqual(true);
-      });
-
-      test('should set "disabled" attribute to false', () => {
-        expect(basicBtn.prop('disabled')).toEqual(false);
-        expect(basicBtn.find('button').get(0).props.disabled).toEqual(false);
-      });
-
-    });
-
-    describe('onClick()', () => {
-
-      test('should invoke onClick handler', () => {
-        const mockOnClick = jest.fn();
-        const btn = mount(
-          <Button mode="positive" onClick={mockOnClick}>
-            { POSITIVE_BTN_TXT }
-          </Button>
-        );
-        btn.simulate('click');
-        expect(mockOnClick).toHaveBeenCalledTimes(1);
-      });
-
-    });
-
-  });
-
-  describe('mode="negative"', () => {
-
-    const basicBtn = mount(
-      <Button mode="negative" onClick={nope}>
-        { NEGATIVE_BTN_TXT }
-      </Button>
-    );
-
-    test('should match snapshot', () => {
-      expect(toJson(basicBtn)).toMatchSnapshot();
-    });
-
-    test('should render StyledButton component', () => {
-      expect(basicBtn.find(StyledButton)).toHaveLength(1);
-    });
-
-    test('should render a button element', () => {
-      expect(basicBtn.find('button')).toHaveLength(1);
-    });
-
-    test('should render the correct text', () => {
-      expect(basicBtn.text()).toEqual(NEGATIVE_BTN_TXT);
-    });
-
-    describe('isLoading', () => {
-      test('should render loading spinner', () => {
-        const wrapper = mount(<Button mode="negative" isLoading />);
-        expect(wrapper.find('Spinner')).toHaveLength(1);
-      });
-
-      test('should set content opacity to 0', () => {
-        const wrapper = mount(<Button mode="negative" isLoading />);
-        expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
-      });
-    });
-
-    describe('size="sm"', () => {
-      const smallBtn = mount(
-        <Button size="sm" mode="negative" onClick={nope}>
-          { NEGATIVE_BTN_TXT }
-        </Button>
-      );
-      test('should have small styles', () => {
-        expect(smallBtn).toHaveStyleRule('padding', '5px 10px');
-        expect(smallBtn).toHaveStyleRule('font-size', '11px');
-        expect(smallBtn).toHaveStyleRule('line-height', '1.5');
-      });
-    });
-
-    describe('disabled', () => {
-
-      const disabledBtn = mount(
-        <Button disabled mode="negative" onClick={nope}>
-          { NEGATIVE_BTN_TXT }
-        </Button>
-      );
-
-      test('should set "disabled" attribute to true', () => {
-        expect(disabledBtn.prop('disabled')).toEqual(true);
-        expect(disabledBtn.find('button').get(0).props.disabled).toEqual(true);
-      });
-
-      test('should set "disabled" attribute to false', () => {
-        expect(basicBtn.prop('disabled')).toEqual(false);
-        expect(basicBtn.find('button').get(0).props.disabled).toEqual(false);
-      });
-
-    });
-
-    describe('onClick()', () => {
-
-      test('should invoke onClick handler', () => {
-        const mockOnClick = jest.fn();
-        const btn = mount(
-          <Button mode="negative" onClick={mockOnClick}>
-            { NEGATIVE_BTN_TXT }
-          </Button>
-        );
-        btn.simulate('click');
-        expect(mockOnClick).toHaveBeenCalledTimes(1);
-      });
-
-    });
-
-  });
-
-  describe('mode="subtle"', () => {
-
-    const basicBtn = mount(
-      <Button mode="subtle" onClick={nope}>
-        { SUBTLE_BTN_TXT }
-      </Button>
-    );
-
-    test('should match snapshot', () => {
-      expect(toJson(basicBtn)).toMatchSnapshot();
-    });
-
-    test('should render StyledButton component', () => {
-      expect(basicBtn.find(StyledButton)).toHaveLength(1);
-    });
-
-    test('should render a button element', () => {
-      expect(basicBtn.find('button')).toHaveLength(1);
-    });
-
-    test('should render the correct text', () => {
-      expect(basicBtn.text()).toEqual(SUBTLE_BTN_TXT);
-    });
-
-    describe('isLoading', () => {
-      test('should render loading spinner', () => {
-        const wrapper = mount(<Button mode="subtle" isLoading />);
-        expect(wrapper.find('Spinner')).toHaveLength(1);
-      });
-
-      test('should set content opacity to 0', () => {
-        const wrapper = mount(<Button mode="subtle" isLoading />);
-        expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
-      });
-    });
-
-    describe('size="sm"', () => {
-      const smallBtn = mount(
-        <Button size="sm" mode="subtle" onClick={nope}>
-          { SUBTLE_BTN_TXT }
-        </Button>
-      );
-      test('should have small styles', () => {
-        expect(smallBtn).toHaveStyleRule('padding', '5px 10px');
-        expect(smallBtn).toHaveStyleRule('font-size', '11px');
-        expect(smallBtn).toHaveStyleRule('line-height', '1.5');
-      });
-    });
-
-    describe('disabled', () => {
-
-      const disabledBtn = mount(
-        <Button disabled mode="subtle" onClick={nope}>
-          { SUBTLE_BTN_TXT }
-        </Button>
-      );
-
-      test('should set "disabled" attribute to true', () => {
-        expect(disabledBtn.prop('disabled')).toEqual(true);
-        expect(disabledBtn.find('button').get(0).props.disabled).toEqual(true);
-      });
-
-      test('should set "disabled" attribute to false', () => {
-        expect(basicBtn.prop('disabled')).toEqual(false);
-        expect(basicBtn.find('button').get(0).props.disabled).toEqual(false);
-      });
-
-    });
-
-    describe('onClick()', () => {
-
-      test('should invoke onClick handler', () => {
-        const mockOnClick = jest.fn();
-        const btn = mount(
-          <Button mode="subtle" onClick={mockOnClick}>
-            { SUBTLE_BTN_TXT }
-          </Button>
-        );
-        btn.simulate('click');
-        expect(mockOnClick).toHaveBeenCalledTimes(1);
-      });
-
-    });
-
-  });
-
-  describe('mode="neutral"', () => {
-
-    const basicBtn1 = mount(
-      <Button mode="neutral" fontColor="dark" onClick={nope}>
-        { NEUTRAL_BTN_TXT }
-      </Button>
-    );
-    const basicBtn2 = mount(
-      <Button mode="neutral" fontColor="light" onClick={nope}>
-        { NEUTRAL_BTN_TXT }
-      </Button>
-    );
-
-    test('should match snapshot', () => {
-      expect(toJson(basicBtn1)).toMatchSnapshot();
-      expect(toJson(basicBtn2)).toMatchSnapshot();
-    });
-
-    test('should render StyledButton component', () => {
-      expect(basicBtn1.find(StyledButton)).toHaveLength(1);
-      expect(basicBtn2.find(StyledButton)).toHaveLength(1);
-    });
-
-    test('should render a button element', () => {
-      expect(basicBtn1.find('button')).toHaveLength(1);
-      expect(basicBtn2.find('button')).toHaveLength(1);
-    });
-
-    test('should render the correct text', () => {
-      expect(basicBtn1.text()).toEqual(NEUTRAL_BTN_TXT);
-      expect(basicBtn2.text()).toEqual(NEUTRAL_BTN_TXT);
-    });
-
-    describe('isLoading', () => {
-      test('should render loading spinner', () => {
-        const wrapper = mount(<Button isLoading />);
-        expect(wrapper.find('Spinner')).toHaveLength(1);
-      });
-
-      test('should set content opacity to 0', () => {
-        const wrapper = mount(<Button isLoading />);
-        expect(wrapper.find('Content')).toHaveStyleRule('opacity', '0');
-      });
-    });
-
-    describe('size="sm"', () => {
-      const basicBtn = mount(
-        <Button size="sm" mode="neutral" onClick={nope}>
-          { NEUTRAL_BTN_TXT }
-        </Button>
-      );
-      test('should have small styles', () => {
-        expect(basicBtn).toHaveStyleRule('padding', '5px 10px');
-        expect(basicBtn).toHaveStyleRule('font-size', '11px');
-        expect(basicBtn).toHaveStyleRule('line-height', '1.5');
-      });
-    });
-
-    describe('disabled', () => {
-
-      const disabledBtn1 = mount(
-        <Button disabled onClick={nope}>
-          { NEUTRAL_BTN_TXT }
-        </Button>
-      );
-      const disabledBtn2 = mount(
-        <Button disabled mode="neutral" onClick={nope}>
-          { NEUTRAL_BTN_TXT }
-        </Button>
-      );
-
-      test('should set "disabled" attribute to true', () => {
-        expect(disabledBtn1.prop('disabled')).toEqual(true);
-        expect(disabledBtn2.prop('disabled')).toEqual(true);
-        expect(disabledBtn1.find('button').get(0).props.disabled).toEqual(true);
-        expect(disabledBtn2.find('button').get(0).props.disabled).toEqual(true);
-      });
-
-      test('should set "disabled" attribute to false', () => {
-        expect(basicBtn1.prop('disabled')).toEqual(false);
-        expect(basicBtn2.prop('disabled')).toEqual(false);
-        expect(basicBtn1.find('button').get(0).props.disabled).toEqual(false);
-        expect(basicBtn2.find('button').get(0).props.disabled).toEqual(false);
-      });
-
-    });
-
-    describe('onClick()', () => {
-
-      test('should invoke onClick handler', () => {
-        const mockOnClick1 = jest.fn();
-        const mockOnClick2 = jest.fn();
-        const btn1 = shallow(
-          <Button onClick={mockOnClick1}>
-            { NEUTRAL_BTN_TXT }
-          </Button>
-        );
-        const btn2 = shallow(
-          <Button mode="neutral" onClick={mockOnClick2}>
-            { NEUTRAL_BTN_TXT }
-          </Button>
-        );
-        btn1.simulate('click');
-        btn2.simulate('click');
-        expect(mockOnClick1).toHaveBeenCalledTimes(1);
-        expect(mockOnClick2).toHaveBeenCalledTimes(1);
-      });
-
-    });
-
   });
 
 });

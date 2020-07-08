@@ -51,5 +51,4 @@ describe('StepIcon', () => {
 
   });
 
-
 });

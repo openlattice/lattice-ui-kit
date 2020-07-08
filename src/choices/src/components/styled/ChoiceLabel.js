@@ -4,7 +4,7 @@ import { NEUTRAL } from '../../../../colors';
 
 const ChoiceLabel = styled.label`
   align-items: center;
-  color: ${(props) => (props.disabled ? NEUTRAL.N500 : NEUTRAL.N700)};
+  color: ${(props) => (props.disabled ? NEUTRAL.N500 : NEUTRAL.N900)};
   display: inline-flex;
   font-size: 14px;
   min-height: 40px;

@@ -6,9 +6,9 @@ import React from 'react';
 import type { Element } from 'react';
 
 import styled from 'styled-components';
+import type { ButtonProps } from '@material-ui/core';
 
 import Button from './Button';
-import type { Props as ButtonProps } from './Button';
 
 const IconMarginRight = styled.span`
   margin: 0 8px 0 0;

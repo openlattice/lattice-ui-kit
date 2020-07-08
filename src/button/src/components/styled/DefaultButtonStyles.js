@@ -6,7 +6,7 @@ import { NEUTRAL } from '../../../../colors';
 const defaultStyle = css`
   background-color: ${NEUTRAL.N50};
   border-color: ${NEUTRAL.N50};
-  color: ${NEUTRAL.N700};
+  color: ${NEUTRAL.N900};
 `;
 
 const defaultHover = css`
@@ -17,7 +17,6 @@ const defaultHover = css`
 const defaultActive = css`
   background-color: ${NEUTRAL.N200};
   border-color: ${NEUTRAL.N200};
-  color: ${NEUTRAL.N700};
 `;
 
 const defaultDisabled = css`
@@ -27,7 +26,7 @@ const defaultDisabled = css`
 `;
 
 const defaultFocus = css`
-  box-shadow: ${NEUTRAL.N200} 0 0 0 2px;
+  box-shadow: ${NEUTRAL.N200} 0 0 0 1px;
 `;
 
 export {

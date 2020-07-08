@@ -69,7 +69,6 @@ const media = Object.keys(sizes).reduce((acc, label) => {
   return acc;
 }, {});
 
-
 export {
   getHoverStyles,
   getStickyPosition,

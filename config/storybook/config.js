@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import styled from 'styled-components';
 import { ThemeProvider } from '@material-ui/core';
+import { StylesProvider } from '@material-ui/core/styles';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import { withInfo } from '@storybook/addon-info';
 import { addDecorator, configure } from '@storybook/react';
@@ -12,7 +13,7 @@ import { NEUTRAL } from '../../src/colors';
 import { darkTheme, lightTheme } from '../../src/theme';
 
 const StoryOuterWrapper = styled.div`
-  background-color: 'white';
+  background-color: white;
   color: ${NEUTRAL.N900};
   display: flex;
   font-family: 'Inter', Arial, sans-serif;
@@ -55,8 +56,10 @@ addDecorator((StoryFn) => {
       <StoryInnerWrapper>
         <ThemeProvider theme={theme}>
           <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
-            <Button mode="primary" onClick={toggleTheme}>{`Dark Theme: ${isDark}`}</Button>
-            <StoryFn isDark={isDark} />
+            <StylesProvider injectFirst>
+              <Button mode="primary" onClick={toggleTheme}>{`Dark Theme: ${isDark}`}</Button>
+              <StoryFn isDark={isDark} />
+            </StylesProvider>
           </MuiPickersUtilsProvider>
         </ThemeProvider>
       </StoryInnerWrapper>

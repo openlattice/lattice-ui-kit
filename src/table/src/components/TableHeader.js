@@ -15,7 +15,6 @@ type Props = {
   sticky ? :boolean;
 };
 
-
 const TableHeader = (props :Props) => {
   const {
     components,

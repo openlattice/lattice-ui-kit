@@ -39,6 +39,107 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         },
       },
       "overrides": Object {
+        "MuiButton": Object {
+          "colorInherit": Object {
+            "borderColor": "currentColor",
+            "color": "inherit",
+          },
+          "contained": Object {
+            "backgroundColor": "#f2f2f4",
+            "color": "#56565a",
+          },
+          "containedSizeLarge": Object {
+            "fontSize": "18px",
+            "minHeight": "46px",
+            "padding": "0 40px",
+          },
+          "containedSizeSmall": Object {
+            "fontSize": "14px",
+            "minHeight": "26px",
+            "padding": "5px",
+          },
+          "disabled": Object {},
+          "endIcon": Object {
+            "&$iconSizeSmall": Object {
+              "marginRight": -2,
+            },
+            "display": "inherit",
+            "marginLeft": 8,
+            "marginRight": -4,
+          },
+          "focusVisible": Object {},
+          "fullWidth": Object {
+            "width": "100%",
+          },
+          "iconSizeLarge": Object {
+            "& > *:first-child": Object {
+              "fontSize": "inherit",
+            },
+          },
+          "iconSizeMedium": Object {
+            "& > *:first-child": Object {
+              "fontSize": "inherit",
+            },
+          },
+          "iconSizeSmall": Object {
+            "& > *:first-child": Object {
+              "fontSize": "inherit",
+            },
+          },
+          "label": Object {
+            "fontWeight": 600,
+            "lineHeight": 1.2,
+          },
+          "outlinedSizeLarge": Object {
+            "fontSize": "18px",
+            "minHeight": "46px",
+            "padding": "0 38px",
+          },
+          "outlinedSizeSmall": Object {
+            "fontSize": "14px",
+            "minHeight": "26px",
+            "padding": "4px",
+          },
+          "root": Object {
+            "borderRadius": "3px",
+            "fontSize": "16px",
+            "minHeight": "40px",
+            "padding": "0 16px",
+            "textTransform": "none",
+          },
+          "sizeLarge": Object {
+            "minWidth": "26px",
+          },
+          "sizeSmall": Object {
+            "minWidth": "26px",
+          },
+          "startIcon": Object {
+            "&$iconSizeSmall": Object {
+              "marginLeft": -2,
+            },
+            "display": "inherit",
+            "marginLeft": -4,
+            "marginRight": 8,
+          },
+          "text": Object {
+            "padding": "0 16px",
+          },
+          "textSizeLarge": Object {
+            "fontSize": "18px",
+            "minHeight": "46px",
+            "padding": "0 40px",
+          },
+          "textSizeSmall": Object {
+            "fontSize": "14px",
+            "minHeight": "26px",
+            "padding": "5px",
+          },
+        },
+        "MuiCard": Object {
+          "root": Object {
+            "overflow": "visible",
+          },
+        },
         "MuiFilledInput": Object {
           "input": Object {
             "&$disabled": Object {
@@ -115,8 +216,6 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "fontSize": "14px",
             "lineHeight": "1.5",
             "minHeight": "40px",
-            "transition": "background-color 200ms ease-out,
-        border-color 200ms ease-out",
           },
         },
         "MuiOutlinedInput": Object {
@@ -156,14 +255,11 @@ exports[`DateTimePicker render matches snapshot 1`] = `
               "transform": "scale(1)",
             },
           },
-          "child": Object {
-            "borderRadius": 0,
-          },
           "childLeaving": Object {
-            "animationDuration": "200ms",
+            "animationDuration": "250ms",
           },
           "rippleVisible": Object {
-            "animationDuration": "200ms",
+            "animationDuration": "250ms",
           },
         },
       },
@@ -194,10 +290,10 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         "contrastThreshold": 3,
         "divider": "#dfdfe3",
         "error": Object {
-          "contrastText": "#fff",
-          "dark": "#d32f2f",
-          "light": "#e57373",
-          "main": "#f44336",
+          "contrastText": "white",
+          "dark": "#9c2d23",
+          "light": "rgb(240, 106, 106)",
+          "main": "#ed4545",
         },
         "getContrastText": [Function],
         "grey": Object {
@@ -217,42 +313,42 @@ exports[`DateTimePicker render matches snapshot 1`] = `
           "A700": "#616161",
         },
         "info": Object {
-          "contrastText": "#fff",
-          "dark": "#1976d2",
-          "light": "#64b5f6",
-          "main": "#2196f3",
+          "contrastText": "white",
+          "dark": "#2161b7",
+          "light": "rgb(114, 174, 255)",
+          "main": "#4f9aff",
         },
         "primary": Object {
           "contrastText": "#fff",
-          "dark": "rgb(82, 58, 178)",
+          "dark": "#4f3fa7",
           "light": "rgb(145, 118, 255)",
           "main": "#7654ff",
         },
         "secondary": Object {
-          "contrastText": "rgba(0, 0, 0, 0.87)",
-          "dark": "rgb(113, 101, 178)",
-          "light": "rgb(180, 167, 255)",
-          "main": "#a291ff",
+          "contrastText": "#4f3fa7",
+          "dark": "#a291ff",
+          "light": "rgb(212, 204, 255)",
+          "main": "#cac0ff",
         },
         "success": Object {
-          "contrastText": "rgba(0, 0, 0, 0.87)",
-          "dark": "#388e3c",
-          "light": "#81c784",
-          "main": "#4caf50",
+          "contrastText": "white",
+          "dark": "#017546",
+          "light": "rgb(51, 191, 132)",
+          "main": "#00af66",
         },
         "text": Object {
           "disabled": "rgba(0, 0, 0, 0.38)",
           "hint": "rgba(0, 0, 0, 0.38)",
-          "primary": "#56565a",
+          "primary": "#1f1f22",
           "secondary": "rgba(0, 0, 0, 0.54)",
         },
         "tonalOffset": 0.2,
         "type": "light",
         "warning": Object {
-          "contrastText": "rgba(0, 0, 0, 0.87)",
-          "dark": "#f57c00",
-          "light": "#ffb74d",
-          "main": "#ff9800",
+          "contrastText": "white",
+          "dark": "#a34a25",
+          "light": "rgb(255, 150, 91)",
+          "main": "#ff7c33",
         },
       },
       "props": Object {
@@ -319,105 +415,93 @@ exports[`DateTimePicker render matches snapshot 1`] = `
       },
       "typography": Object {
         "body1": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "1rem",
           "fontWeight": 400,
-          "letterSpacing": "0.00938em",
           "lineHeight": 1.5,
         },
         "body2": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "0.875rem",
           "fontWeight": 400,
-          "letterSpacing": "0.01071em",
           "lineHeight": 1.43,
         },
         "button": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "0.875rem",
           "fontWeight": 500,
-          "letterSpacing": "0.02857em",
           "lineHeight": 1.75,
           "textTransform": "uppercase",
         },
         "caption": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 400,
-          "letterSpacing": "0.03333em",
           "lineHeight": 1.66,
         },
-        "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+        "color": "inherit",
+        "fontFamily": "Inter,Arial,sans-serif",
         "fontSize": 14,
         "fontWeightBold": 700,
         "fontWeightLight": 300,
         "fontWeightMedium": 500,
         "fontWeightRegular": 400,
         "h1": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "6rem",
           "fontWeight": 300,
-          "letterSpacing": "-0.01562em",
           "lineHeight": 1.167,
         },
         "h2": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "3.75rem",
           "fontWeight": 300,
-          "letterSpacing": "-0.00833em",
           "lineHeight": 1.2,
         },
         "h3": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "3rem",
           "fontWeight": 400,
-          "letterSpacing": "0em",
           "lineHeight": 1.167,
         },
         "h4": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "2.125rem",
           "fontWeight": 400,
-          "letterSpacing": "0.00735em",
           "lineHeight": 1.235,
         },
         "h5": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "1.5rem",
           "fontWeight": 400,
-          "letterSpacing": "0em",
           "lineHeight": 1.334,
         },
         "h6": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "1.25rem",
           "fontWeight": 500,
-          "letterSpacing": "0.0075em",
           "lineHeight": 1.6,
         },
         "htmlFontSize": 16,
         "overline": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 400,
-          "letterSpacing": "0.08333em",
           "lineHeight": 2.66,
           "textTransform": "uppercase",
         },
         "pxToRem": [Function],
         "round": [Function],
         "subtitle1": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "1rem",
           "fontWeight": 400,
-          "letterSpacing": "0.00938em",
           "lineHeight": 1.75,
         },
         "subtitle2": Object {
-          "fontFamily": "\\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif",
+          "fontFamily": "Inter,Arial,sans-serif",
           "fontSize": "0.875rem",
           "fontWeight": 500,
-          "letterSpacing": "0.00714em",
           "lineHeight": 1.57,
         },
       },
@@ -1012,7 +1096,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                                             }
                                                           >
                                                             <svg
-                                                              aria-hidden="true"
+                                                              aria-hidden={true}
                                                               className="MuiSvgIcon-root"
                                                               focusable="false"
                                                               viewBox="0 0 24 24"

@@ -6,7 +6,7 @@ exports[`Radio render matches snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #56565a;
+  color: #1f1f22;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

@@ -1,7 +1,7 @@
 // @flow
 import styled, { css } from 'styled-components';
 
-import { NEUTRAL } from '../../../colors';
+import { NEUTRAL, RED } from '../../../colors';
 
 type LabelProps = {
   bold :boolean;
@@ -27,7 +27,8 @@ const getRequiredStyles = ({ required } :LabelProps) => {
   if (required) {
     return css`
       :after {
-        content: '*'
+        content: '*';
+        color: ${RED.R300};
       }
     `;
   }
@@ -36,7 +37,7 @@ const getRequiredStyles = ({ required } :LabelProps) => {
 };
 
 const Label = styled.label`
-  color: ${NEUTRAL.N700};
+  color: ${NEUTRAL.N900};
   display: inline-block;
   font-size: 14px;
   font-stretch: normal;
