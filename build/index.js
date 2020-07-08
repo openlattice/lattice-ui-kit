@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.33.0-alpha.7
+ * lattice-ui-kit - v0.33.0
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -63927,7 +63927,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.33.0-alpha.7";
+var src_version = "v0.33.0";
 
 
 

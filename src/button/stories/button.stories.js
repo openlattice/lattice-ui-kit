@@ -99,7 +99,7 @@ storiesOf('Button', module)
           <Button size="large">Large</Button>
         </ButtonRow>
         <ButtonRow>
-          <Button variant="outlined" color="primary" size="small">Small</Button>
+          <Button variant="outlined" size="small">Small</Button>
           <Button variant="outlined" size="medium">Medium</Button>
           <Button variant="outlined" size="large">Large</Button>
         </ButtonRow>
