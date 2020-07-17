@@ -2,7 +2,19 @@
  * @flow
  */
 
-import { Collapse, Fab, ThemeProvider } from '@material-ui/core';
+import {
+  Chip,
+  Collapse,
+  Divider,
+  Fab,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemSecondaryAction,
+  ListItemText,
+  ListSubheader,
+  ThemeProvider,
+} from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
@@ -91,8 +103,16 @@ export {
 export { default as Skeleton } from './skeleton';
 export { default as Tooltip } from './tooltip';
 export {
+  Chip,
   Collapse,
+  Divider,
   Fab,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemSecondaryAction,
+  ListItemText,
+  ListSubheader,
   MuiPickersUtilsProvider,
   SpeedDial,
   SpeedDialAction,
