@@ -39,7 +39,7 @@
     "immutable": "4.0.0-rc.9",
     "lodash": "~4.17.15",
     "luxon": "~1.24.1",
-    "polished": "~3.5.2",
+    "polished": "~3.6.5",
     "prop-types": "~15.7.0",
     "react-scrolllock": "~5.0.0",
     "react-select": "~3.1.0",
