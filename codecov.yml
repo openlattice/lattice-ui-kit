@@ -4,6 +4,7 @@ comment:
   require_changes: false
 ignore:
   - "**/*.md"
+  - "**/stories/**"
   - "build/.*"
   - "config/.*"
   - "flow-typed/.*"
