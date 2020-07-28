@@ -12,7 +12,7 @@ exports[`Checkbox render matches snapshot 1`] = `
 }
 
 input:hover ~ .c4 {
-  background-color: #8b8b90;
+  background-color: #d1d1d6;
 }
 
 input:focus ~ .c4 {
@@ -36,7 +36,7 @@ input:disabled ~ .c4 {
 
 input:checked:disabled ~ .c4 {
   cursor: not-allowed;
-  background-color: #8b8b90;
+  background-color: #d1d1d6;
 }
 
 input[readonly] ~ .c4 {
