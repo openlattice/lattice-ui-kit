@@ -11,23 +11,25 @@ import {
 } from './styled';
 
 type Props = {|
-  checked ? :boolean;
-  defaultChecked ? :boolean;
-  disabled ? :boolean;
-  id ? :string;
-  label ? :string;
-  mode ? :string;
-  name ? :string;
-  onBlur ? :(event :SyntheticFocusEvent<HTMLInputElement>) => void;
-  onChange ? :(event :SyntheticInputEvent<HTMLInputElement>) => void;
-  onFocus ? :(event :SyntheticFocusEvent<HTMLInputElement>) => void;
-  readOnly ? :boolean;
-  value ? :any;
-|}
+  checked ?:boolean;
+  defaultChecked ?:boolean;
+  disabled ?:boolean;
+  forwardedRef ?:any;
+  id ?:string;
+  label ?:string;
+  mode ?:string;
+  name ?:string;
+  onBlur ?:(event :SyntheticFocusEvent<HTMLInputElement>) => void;
+  onChange ?:(event :SyntheticInputEvent<HTMLInputElement>) => void;
+  onFocus ?:(event :SyntheticFocusEvent<HTMLInputElement>) => void;
+  readOnly ?:boolean;
+  value ?:any;
+|};
 
 /* eslint-disable react/jsx-props-no-spreading */
 const Checkbox = ({
   disabled,
+  forwardedRef,
   id,
   label,
   mode,
@@ -41,9 +43,8 @@ const Checkbox = ({
             id={id}
             readOnly={readOnly}
             disabled={disabled || readOnly}
-            // $FlowFixMe
-            {...rest} />
-        <CheckboxIndicator mode={mode}>
+            {...rest}
+            ref={forwardedRef} />
           { mode === 'button' && label }
         </CheckboxIndicator>
       </ChoiceInnerWrapper>
@@ -63,6 +64,7 @@ Checkbox.defaultProps = {
   checked: undefined,
   defaultChecked: undefined,
   disabled: false,
+  forwardedRef: undefined,
   id: undefined,
   label: undefined,
   mode: undefined,
@@ -74,4 +76,8 @@ Checkbox.defaultProps = {
   value: undefined,
 };
 
-export default Checkbox;
+export default React.forwardRef<Props, HTMLInputElement>((props, ref) => (
+  /* eslint-disable react/jsx-props-no-spreading */
+  <Checkbox {...props} forwardedRef={ref} />
+  /* eslint-enable */
+));
