@@ -4,7 +4,7 @@ import { NEUTRAL, PURPLE } from '../../../../colors';
 
 const choiceIndicatorStyles = css`
   input:hover ~ & {
-    background-color: ${NEUTRAL.N500};
+    background-color: ${NEUTRAL.N200};
   }
 
   input:focus ~ & {
@@ -28,7 +28,7 @@ const choiceIndicatorStyles = css`
 
   input:checked:disabled ~ & {
     cursor: not-allowed;
-    background-color: ${NEUTRAL.N500};
+    background-color: ${NEUTRAL.N200};
   }
 
   input[readonly] ~ & {
