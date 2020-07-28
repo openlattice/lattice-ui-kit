@@ -112,7 +112,7 @@
     "build:dev": "webpack --config config/webpack/webpack.config.js --env.development",
     "build:prod": "webpack --config config/webpack/webpack.config.js --env.production",
     "build:storybook": "build-storybook -c config/storybook -o build/storybook -s config/storybook/static",
-    "clean": "rimraf build/*",
+    "clean": "rimraf build/*.js",
     "flow": "flow check",
     "lib": "webpack-dev-server --config config/webpack/webpack.config.js --env.development --port 9000 --content-base build/",
     "lint": "eslint --config .eslintrc src",
