@@ -138,220 +138,227 @@ input:checked ~ .c4:after {
   flex: 1;
 }
 
-<Checkbox
-  disabled={false}
->
-  <ChoiceLabel
+<ForwardRef>
+  <Checkbox
     disabled={false}
+    forwardedRef={null}
   >
-    <StyledComponent
+    <ChoiceLabel
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "ChoiceLabel-sc-11kob9e-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "align-items:center;color:",
-              [Function],
-              ";display:inline-flex;font-size:14px;min-height:40px;pointer-events:",
-              [Function],
-              ";position:relative;vertical-align:middle;",
-            ],
-          },
-          "displayName": "ChoiceLabel",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "ChoiceLabel-sc-11kob9e-0",
-          "target": "label",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
     >
-      <label
-        className="c0"
+      <StyledComponent
         disabled={false}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "ChoiceLabel-sc-11kob9e-0",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                "align-items:center;color:",
+                [Function],
+                ";display:inline-flex;font-size:14px;min-height:40px;pointer-events:",
+                [Function],
+                ";position:relative;vertical-align:middle;",
+              ],
+            },
+            "displayName": "ChoiceLabel",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "ChoiceLabel-sc-11kob9e-0",
+            "target": "label",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
       >
-        <ChoiceWrappers__ChoiceWrapper>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "ChoiceWrappers__ChoiceWrapper-kj63qq-0",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "align-items:stretch;display:inline-flex;justify-content:center;position:relative;vertical-align:middle;",
-                    [Function],
-                    ";",
-                  ],
-                },
-                "displayName": "ChoiceWrappers__ChoiceWrapper",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "ChoiceWrappers__ChoiceWrapper-kj63qq-0",
-                "target": "span",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+        <label
+          className="c0"
+          disabled={false}
+        >
+          <ChoiceWrappers__ChoiceWrapper>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "ChoiceWrappers__ChoiceWrapper-kj63qq-0",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "align-items:stretch;display:inline-flex;justify-content:center;position:relative;vertical-align:middle;",
+                      [Function],
+                      ";",
+                    ],
+                  },
+                  "displayName": "ChoiceWrappers__ChoiceWrapper",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "ChoiceWrappers__ChoiceWrapper-kj63qq-0",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-          >
-            <span
-              className="c1"
+              forwardedRef={null}
             >
-              <ChoiceWrappers__ChoiceInnerWrapper>
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "ChoiceWrappers__ChoiceInnerWrapper-kj63qq-1",
-                        "isStatic": false,
-                        "lastClassName": "c2",
-                        "rules": Array [
-                          "display:flex;flex:1;",
-                        ],
-                      },
-                      "displayName": "ChoiceWrappers__ChoiceInnerWrapper",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "ChoiceWrappers__ChoiceInnerWrapper-kj63qq-1",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+              <span
+                className="c1"
+              >
+                <ChoiceWrappers__ChoiceInnerWrapper>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "ChoiceWrappers__ChoiceInnerWrapper-kj63qq-1",
+                          "isStatic": false,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "display:flex;flex:1;",
+                          ],
+                        },
+                        "displayName": "ChoiceWrappers__ChoiceInnerWrapper",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "ChoiceWrappers__ChoiceInnerWrapper-kj63qq-1",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
                     }
-                  }
-                  forwardedRef={null}
-                >
-                  <span
-                    className="c2"
+                    forwardedRef={null}
                   >
-                    <ChoiceInputs__CheckboxInput>
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [
-                              [Function],
-                            ],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "ChoiceInputs__CheckboxInput-sc-1fkg6yx-1",
-                              "isStatic": false,
-                              "lastClassName": "c3",
-                              "rules": Array [
-                                "height:100%;left:0;margin:0;opacity:0;position:absolute;top:0;vertical-align:middle;width:100%;z-index:-1;",
-                                ";",
-                              ],
-                            },
-                            "displayName": "ChoiceInputs__CheckboxInput",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "ChoiceInputs__CheckboxInput-sc-1fkg6yx-1",
-                            "target": "input",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <input
-                          className="c3"
-                          type="checkbox"
-                        />
-                      </StyledComponent>
-                    </ChoiceInputs__CheckboxInput>
-                    <CheckboxIndicator>
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "CheckboxIndicator-sc-16t4mhx-0",
-                              "isStatic": false,
-                              "lastClassName": "c4",
-                              "rules": Array [
-                                "transition:background-color ",
-                                "100ms",
-                                " ease-out,border-color ",
-                                "100ms",
-                                " ease-out,box-shadow ",
-                                "100ms",
-                                " ease-out,color ",
-                                "100ms",
-                                " ease-out;",
+                    <span
+                      className="c2"
+                    >
+                      <ChoiceInputs__CheckboxInput>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [
                                 [Function],
                               ],
-                            },
-                            "displayName": "CheckboxIndicator",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "CheckboxIndicator-sc-16t4mhx-0",
-                            "target": "span",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "ChoiceInputs__CheckboxInput-sc-1fkg6yx-1",
+                                "isStatic": false,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "height:100%;left:0;margin:0;opacity:0;position:absolute;top:0;vertical-align:middle;width:100%;z-index:-1;",
+                                  ";",
+                                ],
+                              },
+                              "displayName": "ChoiceInputs__CheckboxInput",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "ChoiceInputs__CheckboxInput-sc-1fkg6yx-1",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
+                          forwardedRef={null}
+                        >
+                          <input
+                            className="c3"
+                            type="checkbox"
+                          />
+                        </StyledComponent>
+                      </ChoiceInputs__CheckboxInput>
+                      <CheckboxIndicator
+                        onClick={[Function]}
                       >
-                        <span
-                          className="c4"
-                        />
-                      </StyledComponent>
-                    </CheckboxIndicator>
-                  </span>
-                </StyledComponent>
-              </ChoiceWrappers__ChoiceInnerWrapper>
-            </span>
-          </StyledComponent>
-        </ChoiceWrappers__ChoiceWrapper>
-        <ChoiceText>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "ChoiceText-sc-1qnriny-0",
-                  "isStatic": false,
-                  "lastClassName": "c5",
-                  "rules": Array [
-                    "margin-left:10px;",
-                  ],
-                },
-                "displayName": "ChoiceText",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "ChoiceText-sc-1qnriny-0",
-                "target": "span",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "CheckboxIndicator-sc-16t4mhx-0",
+                                "isStatic": false,
+                                "lastClassName": "c4",
+                                "rules": Array [
+                                  "transition:background-color ",
+                                  "100ms",
+                                  " ease-out,border-color ",
+                                  "100ms",
+                                  " ease-out,box-shadow ",
+                                  "100ms",
+                                  " ease-out,color ",
+                                  "100ms",
+                                  " ease-out;",
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "CheckboxIndicator",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "CheckboxIndicator-sc-16t4mhx-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                        >
+                          <span
+                            className="c4"
+                            onClick={[Function]}
+                          />
+                        </StyledComponent>
+                      </CheckboxIndicator>
+                    </span>
+                  </StyledComponent>
+                </ChoiceWrappers__ChoiceInnerWrapper>
+              </span>
+            </StyledComponent>
+          </ChoiceWrappers__ChoiceWrapper>
+          <ChoiceText>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "ChoiceText-sc-1qnriny-0",
+                    "isStatic": false,
+                    "lastClassName": "c5",
+                    "rules": Array [
+                      "margin-left:10px;",
+                    ],
+                  },
+                  "displayName": "ChoiceText",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "ChoiceText-sc-1qnriny-0",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
               }
-            }
-            forwardedRef={null}
-          >
-            <span
-              className="c5"
-            />
-          </StyledComponent>
-        </ChoiceText>
-      </label>
-    </StyledComponent>
-  </ChoiceLabel>
-</Checkbox>
+              forwardedRef={null}
+            >
+              <span
+                className="c5"
+              />
+            </StyledComponent>
+          </ChoiceText>
+        </label>
+      </StyledComponent>
+    </ChoiceLabel>
+  </Checkbox>
+</ForwardRef>
 `;
