@@ -7,7 +7,14 @@ import { INVALID_PARAMS } from './testing/InvalidParams';
 
 describe('stopPropagation', () => {
 
-  test('should not throw when given valid parameters', () => {
+  test('should invoke stopPropagation()', () => {
+    const mockFn = jest.fn();
+    // $FlowFixMe
+    stopPropagation({ stopPropagation: mockFn });
+    expect(mockFn).toHaveBeenCalledTimes(1);
+  });
+
+  test('should not throw when given invalid parameters', () => {
     const errors = [];
     INVALID_PARAMS.forEach((invalidParam) => {
       try {
