@@ -10,6 +10,8 @@ import {
   ChoiceWrapper,
 } from './styled';
 
+import { stopPropagation } from '../../../utils';
+
 type Props = {|
   checked ?:boolean;
   defaultChecked ?:boolean;
@@ -45,6 +47,7 @@ const Checkbox = ({
             disabled={disabled || readOnly}
             {...rest}
             ref={forwardedRef} />
+        <CheckboxIndicator mode={mode} onClick={stopPropagation}>
           { mode === 'button' && label }
         </CheckboxIndicator>
       </ChoiceInnerWrapper>
