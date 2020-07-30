@@ -17,7 +17,7 @@ const DEFAULT_SECONDARY_TEXT :'Cancel' = 'Cancel';
 
 type ActionModalProps = {
   ...ModalProps;
-  requestState :RequestState;
+  requestState :?RequestState;
   requestStateComponents :{
     STANDBY ?:Element<any>;
     PENDING ?:Element<any>;
@@ -29,7 +29,7 @@ type ActionModalProps = {
 const ActionModal = (props :ActionModalProps) => {
 
   const {
-    children,
+    children = null,
     isVisible,
     modalRef,
     onClickPrimary,
@@ -41,8 +41,8 @@ const ActionModal = (props :ActionModalProps) => {
     shouldCloseOnEscape,
     shouldCloseOnOutsideClick,
     shouldStretchButtons,
-    textPrimary,
-    textSecondary,
+    textPrimary = DEFAULT_PRIMARY_TEXT,
+    textSecondary = DEFAULT_SECONDARY_TEXT,
     textTitle,
     viewportScrolling,
     withHeader,
@@ -93,8 +93,6 @@ const ActionModal = (props :ActionModalProps) => {
         onClickPrimary={onClickPrimary}
         onClickSecondary={onClickSecondary}
         onClose={onClose}
-        requestState={requestState}
-        requestStateComponents={requestStateComponents}
         shouldBeCentered={shouldBeCentered}
         shouldCloseOnEscape={shouldCloseOnEscape}
         shouldCloseOnOutsideClick={shouldCloseOnOutsideClick}
@@ -111,14 +109,11 @@ const ActionModal = (props :ActionModalProps) => {
   );
 };
 
-/* eslint-disable react/default-props-match-prop-types */
 ActionModal.defaultProps = {
-  children: null,
   requestState: RequestStates.STANDBY,
   requestStateComponents: {},
-  textPrimary: DEFAULT_PRIMARY_TEXT,
-  textSecondary: DEFAULT_SECONDARY_TEXT,
 };
-/* eslint-enable */
 
 export default ActionModal;
+
+export type { ActionModalProps };
