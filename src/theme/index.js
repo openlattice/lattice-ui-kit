@@ -169,9 +169,9 @@ const lightTheme = createMuiTheme({
       }
     },
     MuiIconButton: {
-      root: {
-        padding: '5px'
-      }
+      sizeSmall: {
+        padding: '8px',
+      },
     },
     MuiFilledInput: {
       root: {
@@ -468,9 +468,9 @@ const darkTheme = createMuiTheme({
       }
     },
     MuiIconButton: {
-      root: {
-        padding: '5px'
-      }
+      sizeSmall: {
+        padding: '8px',
+      },
     },
     MuiOutlinedInput: {
       root: {

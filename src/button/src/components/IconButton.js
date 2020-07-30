@@ -2,55 +2,72 @@
  * @flow
  */
 
-import React from 'react';
-import type { Element } from 'react';
+import React, { useMemo } from 'react';
 
+import clsx from 'clsx';
 import styled from 'styled-components';
-import type { ButtonProps } from '@material-ui/core';
+import { IconButton as MuiIconButton } from '@material-ui/core';
 
-import Button from './Button';
+import useButtonStyles, { isCustomColor } from './useButtonStyles';
+import { styleName } from './createColorStyles';
+import type { ButtonProps } from './types';
 
-const IconMarginRight = styled.span`
-  margin: 0 8px 0 0;
+import Spinner from '../../../spinner';
+
+const IconSquareWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: auto;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%; /* padding size is relative to the width */
+  }
 `;
 
-type Props = ButtonProps & {
-  icon ?:Element<any>;
-};
+const IconButton = ({
+  children,
+  className,
+  color = 'default',
+  disabled = false,
+  isLoading = false,
+  ...rest
+} :ButtonProps) => {
 
-/*
- * Inspiration:
- * https://atlaskit.atlassian.com/packages/core/button
- * https://evergreen.surge.sh/components/buttons
- */
-const IconButton = (props :Props) => {
+  const classes = useButtonStyles();
+  const customColor = useMemo(() => isCustomColor(color), [color]);
 
-  const { children, icon, ...rest } = props;
-
-  if (!children) {
-    /* eslint-disable react/jsx-props-no-spreading */
-    return (
-      <Button {...rest}>{icon}</Button>
-    );
-    /* eslint-enable */
+  // https://medium.com/flow-type/spreads-common-errors-fixes-9701012e9d58
+  // [...] you can annotate the object with optional properties and then explicitly set the property afterwards
+  const classesObject = {
+    [classes[styleName('text', color)]]: customColor,
+  };
+  if (className) {
+    classesObject[className] = className;
   }
+
+  const props = {
+    ...rest,
+    className: clsx(classesObject),
+    color: customColor ? 'default' : color,
+    disabled: disabled || isLoading,
+  };
 
   /* eslint-disable react/jsx-props-no-spreading */
   return (
-    <Button {...rest}>
-      <IconMarginRight>{icon}</IconMarginRight>
-      {children}
-    </Button>
+    <MuiIconButton {...props}>
+      <IconSquareWrapper>
+        {
+          isLoading
+            ? <Spinner />
+            : children
+        }
+      </IconSquareWrapper>
+    </MuiIconButton>
   );
   /* eslint-enable */
 };
 
-IconButton.defaultProps = {
-  icon: undefined,
-};
-
 export default IconButton;
-
-export type {
-  Props,
-};
