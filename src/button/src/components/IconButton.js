@@ -27,6 +27,17 @@ const IconSquareWrapper = styled.div`
   }
 `;
 
+const SpinnerWrapper = styled.div`
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+`;
+
 const IconButton = ({
   children,
   className,
@@ -60,10 +71,13 @@ const IconButton = ({
     <MuiIconButton {...props}>
       <IconSquareWrapper>
         {
-          isLoading
-            ? <Spinner />
-            : children
+          isLoading && (
+            <SpinnerWrapper>
+              <Spinner />
+            </SpinnerWrapper>
+          )
         }
+        {children}
       </IconSquareWrapper>
     </MuiIconButton>
   );
