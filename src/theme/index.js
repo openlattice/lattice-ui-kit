@@ -170,6 +170,7 @@ const lightTheme = createMuiTheme({
     },
     MuiIconButton: {
       sizeSmall: {
+        fontSize: '1rem',
         padding: '8px',
       },
     },
@@ -469,6 +470,7 @@ const darkTheme = createMuiTheme({
     },
     MuiIconButton: {
       sizeSmall: {
+        fontSize: '1rem',
         padding: '8px',
       },
     },
