@@ -25,11 +25,14 @@ const IconSquareWrapper = styled.div`
     display: block;
     padding-bottom: 100%; /* padding size is relative to the width */
   }
+
+  > :first-child {
+    visibility: ${({ isLoading }) => (isLoading ? 'hidden' : 'visible')};
+  }
 `;
 
 const SpinnerWrapper = styled.div`
   align-items: center;
-  background: white;
   border-radius: 50%;
   display: flex;
   height: 100%;
@@ -69,7 +72,8 @@ const IconButton = ({
   /* eslint-disable react/jsx-props-no-spreading */
   return (
     <MuiIconButton {...props}>
-      <IconSquareWrapper>
+      <IconSquareWrapper isLoading={isLoading}>
+        {children}
         {
           isLoading && (
             <SpinnerWrapper>
@@ -77,7 +81,6 @@ const IconButton = ({
             </SpinnerWrapper>
           )
         }
-        {children}
       </IconSquareWrapper>
     </MuiIconButton>
   );
