@@ -42,19 +42,23 @@ describe('IconButton', () => {
   describe('props', () => {
 
     test('color', () => {
-
       intentColors.forEach((color) => {
         const wrapper = mount(<IconButton color={color}>{CodeIcon}</IconButton>);
         const button = wrapper.find('button');
         expect(button.prop('className')).toEqual(expect.stringMatching(`makeStyles-text${_capitalize(color)}`));
       });
-
       themeColors.forEach((color) => {
         const wrapper = mount(<IconButton color={color}>{CodeIcon}</IconButton>);
         const button = wrapper.find('button');
         expect(button.prop('className')).toEqual(expect.stringMatching(`MuiIconButton-color${_capitalize(color)}`));
       });
+    });
 
+    test('disabled', () => {
+      const wrapper = mount(<IconButton disabled>{CodeIcon}</IconButton>);
+      const button = wrapper.find('button');
+      expect(button.prop('disabled')).toEqual(true);
+      expect(button.prop('className')).toEqual(expect.stringMatching('Mui-disabled'));
     });
 
   });
