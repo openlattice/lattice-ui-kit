@@ -46,10 +46,10 @@ export { default as Portal } from './portal';
 export { default as Spinner } from './spinner';
 export { default as Tag } from './tag';
 export { selectStyles } from './style/select';
-export {
-  Button,
-  IconButton,
-} from './button';
+
+export { Button, IconButton } from './button';
+export type { ButtonProps } from './button';
+
 export { Checkbox, ChoiceGroup, Radio } from './choices';
 export {
   ActionModal,
