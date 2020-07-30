@@ -12,6 +12,8 @@ import { mount } from 'enzyme';
 
 import IconButton from './IconButton';
 
+import Spinner from '../../../spinner';
+
 const CodeIcon = (
   <FontAwesomeIcon icon={faCode} />
 );
@@ -59,6 +61,14 @@ describe('IconButton', () => {
       const button = wrapper.find('button');
       expect(button.prop('disabled')).toEqual(true);
       expect(button.prop('className')).toEqual(expect.stringMatching('Mui-disabled'));
+    });
+
+    test('isLoading', () => {
+      const wrapper = mount(<IconButton isLoading>{CodeIcon}</IconButton>);
+      const button = wrapper.find('button');
+      expect(button.prop('disabled')).toEqual(true);
+      expect(button.prop('className')).toEqual(expect.stringMatching('Mui-disabled'));
+      expect(wrapper.find(Spinner)).toHaveLength(1);
     });
 
   });
