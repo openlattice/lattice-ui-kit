@@ -4,6 +4,7 @@
 
 import React from 'react';
 
+import _capitalize from 'lodash/capitalize';
 import toJson from 'enzyme-to-json';
 import { faCode } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,18 +16,45 @@ const CodeIcon = (
   <FontAwesomeIcon icon={faCode} />
 );
 
+const themeColors = ['primary', 'secondary'];
+const intentColors = ['error', 'info', 'success', 'warning'];
+
 describe('IconButton', () => {
 
   describe('snapshots', () => {
 
     test('default', () => {
-      const iconButton = mount(<IconButton>{CodeIcon}</IconButton>);
-      expect(toJson(iconButton)).toMatchSnapshot();
+      const wrapper = mount(<IconButton>{CodeIcon}</IconButton>);
+      expect(toJson(wrapper)).toMatchSnapshot();
+      const button = wrapper.find('button');
+      expect(button).toHaveLength(1);
     });
 
     test('spinner', () => {
-      const iconButton = mount(<IconButton isLoading>{CodeIcon}</IconButton>);
-      expect(toJson(iconButton)).toMatchSnapshot();
+      const wrapper = mount(<IconButton isLoading>{CodeIcon}</IconButton>);
+      expect(toJson(wrapper)).toMatchSnapshot();
+      const button = wrapper.find('button');
+      expect(button).toHaveLength(1);
+    });
+
+  });
+
+  describe('props', () => {
+
+    test('color', () => {
+
+      intentColors.forEach((color) => {
+        const wrapper = mount(<IconButton color={color}>{CodeIcon}</IconButton>);
+        const button = wrapper.find('button');
+        expect(button.prop('className')).toEqual(expect.stringMatching(`makeStyles-text${_capitalize(color)}`));
+      });
+
+      themeColors.forEach((color) => {
+        const wrapper = mount(<IconButton color={color}>{CodeIcon}</IconButton>);
+        const button = wrapper.find('button');
+        expect(button.prop('className')).toEqual(expect.stringMatching(`MuiIconButton-color${_capitalize(color)}`));
+      });
+
     });
 
   });
