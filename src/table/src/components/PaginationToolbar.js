@@ -74,16 +74,12 @@ const PaginationToolbar = (props :Props) => {
         )
       }
       <Label id="row-range" subtle>{rowRange}</Label>
-      <IconButton
-          variant="text"
-          icon={<FontAwesomeIcon icon={faChevronLeft} fixedWidth />}
-          disabled={page <= 0}
-          onClick={getPageChanger(-1)} />
-      <IconButton
-          variant="text"
-          icon={<FontAwesomeIcon icon={faChevronRight} fixedWidth />}
-          disabled={page >= lastPage}
-          onClick={getPageChanger(1)} />
+      <IconButton disabled={page <= 0} onClick={getPageChanger(-1)}>
+        <FontAwesomeIcon icon={faChevronLeft} fixedWidth />
+      </IconButton>
+      <IconButton disabled={page >= lastPage} onClick={getPageChanger(1)}>
+        <FontAwesomeIcon icon={faChevronRight} fixedWidth />
+      </IconButton>
     </PaginationWrapper>
   );
 };
