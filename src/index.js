@@ -51,12 +51,18 @@ export {
   IconButton,
 } from './button';
 export { Checkbox, ChoiceGroup, Radio } from './choices';
+
 export {
   ActionModal,
   Modal,
   ModalFooter,
   ModalHeader
 } from './modal';
+export type {
+  ActionModalProps,
+  ModalProps,
+} from './modal';
+
 export {
   Stepper,
   StepLabel,
