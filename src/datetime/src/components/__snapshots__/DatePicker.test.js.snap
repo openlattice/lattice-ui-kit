@@ -189,7 +189,12 @@ exports[`DatePicker render matches snapshot 1`] = `
         },
         "MuiIconButton": Object {
           "root": Object {
-            "padding": "5px",
+            "fontSize": "1rem",
+            "padding": "10px",
+          },
+          "sizeSmall": Object {
+            "fontSize": "0.8rem",
+            "padding": "6px",
           },
         },
         "MuiInputBase": Object {
