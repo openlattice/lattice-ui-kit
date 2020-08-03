@@ -13,6 +13,9 @@ import {
   ListItemSecondaryAction,
   ListItemText,
   ListSubheader,
+  Menu,
+  MenuItem,
+  MenuList,
   ThemeProvider,
 } from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
@@ -46,17 +49,23 @@ export { default as Portal } from './portal';
 export { default as Spinner } from './spinner';
 export { default as Tag } from './tag';
 export { selectStyles } from './style/select';
-export {
-  Button,
-  IconButton,
-} from './button';
+
+export { Button, IconButton } from './button';
+export type { ButtonProps } from './button';
+
 export { Checkbox, ChoiceGroup, Radio } from './choices';
+
 export {
   ActionModal,
   Modal,
   ModalFooter,
   ModalHeader
 } from './modal';
+export type {
+  ActionModalProps,
+  ModalProps,
+} from './modal';
+
 export {
   Stepper,
   StepLabel,
@@ -113,6 +122,9 @@ export {
   ListItemSecondaryAction,
   ListItemText,
   ListSubheader,
+  Menu,
+  MenuItem,
+  MenuList,
   MuiPickersUtilsProvider,
   SpeedDial,
   SpeedDialAction,
