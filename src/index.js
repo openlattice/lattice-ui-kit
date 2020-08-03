@@ -13,6 +13,9 @@ import {
   ListItemSecondaryAction,
   ListItemText,
   ListSubheader,
+  Menu,
+  MenuItem,
+  MenuList,
   ThemeProvider,
 } from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
@@ -119,6 +122,9 @@ export {
   ListItemSecondaryAction,
   ListItemText,
   ListSubheader,
+  Menu,
+  MenuItem,
+  MenuList,
   MuiPickersUtilsProvider,
   SpeedDial,
   SpeedDialAction,
