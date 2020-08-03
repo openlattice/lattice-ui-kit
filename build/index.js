@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.35.0-alpha.0
+ * lattice-ui-kit - v0.35.0
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -265,30 +265,6 @@ module.exports = _possibleConstructorReturn;
 
 /***/ }),
 /* 12 */
-/***/ (function(module, exports) {
-
-function _extends() {
-  module.exports = _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-module.exports = _extends;
-
-/***/ }),
-/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(36),
@@ -329,6 +305,30 @@ function isFunction(value) {
 
 module.exports = isFunction;
 
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+function _extends() {
+  module.exports = _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+module.exports = _extends;
 
 /***/ }),
 /* 14 */
@@ -37176,7 +37176,7 @@ var dist = __webpack_require__(66);
 var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
 
 // EXTERNAL MODULE: ./node_modules/lodash/isFunction.js
-var isFunction = __webpack_require__(13);
+var isFunction = __webpack_require__(12);
 var isFunction_default = /*#__PURE__*/__webpack_require__.n(isFunction);
 
 // CONCATENATED MODULE: ./src/transitions/index.js
@@ -37841,10 +37841,6 @@ var selectStyles = {
   valueContainer: select_valueContainerStyles
 };
 
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/extends.js
-var helpers_extends = __webpack_require__(12);
-var extends_default = /*#__PURE__*/__webpack_require__.n(helpers_extends);
-
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/objectWithoutProperties.js
 var objectWithoutProperties = __webpack_require__(14);
 var objectWithoutProperties_default = /*#__PURE__*/__webpack_require__.n(objectWithoutProperties);
@@ -38304,6 +38300,9 @@ var useButtonStyles = styles_makeStyles(components_createColorStyles(useButtonSt
 
 
 
+function Button_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function Button_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Button_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Button_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
 
@@ -38311,75 +38310,259 @@ var useButtonStyles = styles_makeStyles(components_createColorStyles(useButtonSt
 
 
 
-var components_Button_Button = function Button(props) {
-  var _clsx;
 
-  var className = props.className,
-      _props$color = props.color,
-      color = _props$color === void 0 ? 'default' : _props$color,
-      _props$disableElevati = props.disableElevation,
-      disableElevation = _props$disableElevati === void 0 ? true : _props$disableElevati,
-      disabled = props.disabled,
-      isLoading = props.isLoading,
-      startIcon = props.startIcon,
-      _props$variant = props.variant,
-      variant = _props$variant === void 0 ? 'contained' : _props$variant,
-      rest = objectWithoutProperties_default()(props, ["className", "color", "disableElevation", "disabled", "isLoading", "startIcon", "variant"]);
+var components_Button_Button = function Button(_ref) {
+  var className = _ref.className,
+      _ref$color = _ref.color,
+      color = _ref$color === void 0 ? 'default' : _ref$color,
+      _ref$disableElevation = _ref.disableElevation,
+      disableElevation = _ref$disableElevation === void 0 ? true : _ref$disableElevation,
+      disabled = _ref.disabled,
+      isLoading = _ref.isLoading,
+      startIcon = _ref.startIcon,
+      _ref$variant = _ref.variant,
+      variant = _ref$variant === void 0 ? 'contained' : _ref$variant,
+      rest = objectWithoutProperties_default()(_ref, ["className", "color", "disableElevation", "disabled", "isLoading", "startIcon", "variant"]);
 
   var classes = components_useButtonStyles();
   var customColor = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useMemo"])(function () {
     return isCustomColor(color);
-  }, [color]);
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Button_Button, extends_default()({
-    className: clsx_m((_clsx = {}, defineProperty_default()(_clsx, className, className), defineProperty_default()(_clsx, classes[createColorStyles_styleName(variant, color)], customColor), _clsx)),
-    color: customColor ? 'default' : color,
+  }, [color]); // https://medium.com/flow-type/spreads-common-errors-fixes-9701012e9d58
+  // [...] you can annotate the object with optional properties and then explicitly set the property afterwards
+
+  var classesObject = defineProperty_default()({}, classes[createColorStyles_styleName(variant, color)], customColor);
+
+  if (className) {
+    classesObject[className] = className;
+  }
+
+  var props = Button_objectSpread(Button_objectSpread({}, rest), {}, {
     disableElevation: disableElevation,
     variant: variant,
+    className: clsx_m(classesObject),
+    color: customColor ? 'default' : color,
     disabled: disabled || isLoading,
-    startIcon: isLoading ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, null) : startIcon // eslint-disable-next-line react/jsx-props-no-spreading
+    startIcon: isLoading ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, null) : startIcon
+  });
+  /* eslint-disable react/jsx-props-no-spreading */
 
-  }, rest));
+
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Button_Button, props);
+  /* eslint-enable */
 };
 
 /* harmony default export */ var components_Button = (components_Button_Button);
+// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/IconButton/IconButton.js
+
+
+
+
+
+
+
+
+
+
+var IconButton_styles = function styles(theme) {
+  return {
+    /* Styles applied to the root element. */
+    root: {
+      textAlign: 'center',
+      flex: '0 0 auto',
+      fontSize: theme.typography.pxToRem(24),
+      padding: 12,
+      borderRadius: '50%',
+      overflow: 'visible',
+      // Explicitly set the default value to solve a bug on IE 11.
+      color: theme.palette.action.active,
+      transition: theme.transitions.create('background-color', {
+        duration: theme.transitions.duration.shortest
+      }),
+      '&:hover': {
+        backgroundColor: fade(theme.palette.action.active, theme.palette.action.hoverOpacity),
+        // Reset on touch devices, it doesn't add specificity
+        '@media (hover: none)': {
+          backgroundColor: 'transparent'
+        }
+      },
+      '&$disabled': {
+        backgroundColor: 'transparent',
+        color: theme.palette.action.disabled
+      }
+    },
+
+    /* Styles applied to the root element if `edge="start"`. */
+    edgeStart: {
+      marginLeft: -12,
+      '$sizeSmall&': {
+        marginLeft: -3
+      }
+    },
+
+    /* Styles applied to the root element if `edge="end"`. */
+    edgeEnd: {
+      marginRight: -12,
+      '$sizeSmall&': {
+        marginRight: -3
+      }
+    },
+
+    /* Styles applied to the root element if `color="inherit"`. */
+    colorInherit: {
+      color: 'inherit'
+    },
+
+    /* Styles applied to the root element if `color="primary"`. */
+    colorPrimary: {
+      color: theme.palette.primary.main,
+      '&:hover': {
+        backgroundColor: fade(theme.palette.primary.main, theme.palette.action.hoverOpacity),
+        // Reset on touch devices, it doesn't add specificity
+        '@media (hover: none)': {
+          backgroundColor: 'transparent'
+        }
+      }
+    },
+
+    /* Styles applied to the root element if `color="secondary"`. */
+    colorSecondary: {
+      color: theme.palette.secondary.main,
+      '&:hover': {
+        backgroundColor: fade(theme.palette.secondary.main, theme.palette.action.hoverOpacity),
+        // Reset on touch devices, it doesn't add specificity
+        '@media (hover: none)': {
+          backgroundColor: 'transparent'
+        }
+      }
+    },
+
+    /* Pseudo-class applied to the root element if `disabled={true}`. */
+    disabled: {},
+
+    /* Styles applied to the root element if `size="small"`. */
+    sizeSmall: {
+      padding: 3,
+      fontSize: theme.typography.pxToRem(18)
+    },
+
+    /* Styles applied to the children container element. */
+    label: {
+      width: '100%',
+      display: 'flex',
+      alignItems: 'inherit',
+      justifyContent: 'inherit'
+    }
+  };
+};
+/**
+ * Refer to the [Icons](/components/icons/) section of the documentation
+ * regarding the available icon options.
+ */
+
+var IconButton_IconButton = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function IconButton(props, ref) {
+  var _props$edge = props.edge,
+      edge = _props$edge === void 0 ? false : _props$edge,
+      children = props.children,
+      classes = props.classes,
+      className = props.className,
+      _props$color = props.color,
+      color = _props$color === void 0 ? 'default' : _props$color,
+      _props$disabled = props.disabled,
+      disabled = _props$disabled === void 0 ? false : _props$disabled,
+      _props$disableFocusRi = props.disableFocusRipple,
+      disableFocusRipple = _props$disableFocusRi === void 0 ? false : _props$disableFocusRi,
+      _props$size = props.size,
+      size = _props$size === void 0 ? 'medium' : _props$size,
+      other = _objectWithoutProperties(props, ["edge", "children", "classes", "className", "color", "disabled", "disableFocusRipple", "size"]);
+
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_ButtonBase_ButtonBase, _extends({
+    className: clsx_m(classes.root, className, color !== 'default' && classes["color".concat(capitalize(color))], disabled && classes.disabled, size === "small" && classes["size".concat(capitalize(size))], {
+      'start': classes.edgeStart,
+      'end': classes.edgeEnd
+    }[edge]),
+    centerRipple: true,
+    focusRipple: !disableFocusRipple,
+    disabled: disabled,
+    ref: ref
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
+    className: classes.label
+  }, children));
+});
+ false ? undefined : void 0;
+/* harmony default export */ var esm_IconButton_IconButton = (styles_withStyles(IconButton_styles, {
+  name: 'MuiIconButton'
+})(IconButton_IconButton));
 // CONCATENATED MODULE: ./src/button/src/components/IconButton.js
 
 
 
+function IconButton_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-var IconMarginRight = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "IconButton__IconMarginRight",
+function IconButton_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { IconButton_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { IconButton_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
+
+
+
+
+var IconSquareWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
+  displayName: "IconButton__IconSquareWrapper",
   componentId: "g9q5gl-0"
-})(["margin:0 8px 0 0;"]);
+})(["align-items:center;display:flex;justify-content:center;width:auto;&::before{content:\"\";display:block;padding-bottom:100%;}>:first-child{visibility:", ";}"], function (_ref) {
+  var isLoading = _ref.isLoading;
+  return isLoading ? 'hidden' : 'visible';
+});
+var SpinnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
+  displayName: "IconButton__SpinnerWrapper",
+  componentId: "g9q5gl-1"
+})(["align-items:center;border-radius:50%;display:flex;height:100%;justify-content:center;position:absolute;width:100%;"]);
 
-/*
- * Inspiration:
- * https://atlaskit.atlassian.com/packages/core/button
- * https://evergreen.surge.sh/components/buttons
- */
-var IconButton_IconButton = function IconButton(props) {
-  var children = props.children,
-      icon = props.icon,
-      rest = objectWithoutProperties_default()(props, ["children", "icon"]);
+var components_IconButton_IconButton = function IconButton(_ref2) {
+  var children = _ref2.children,
+      className = _ref2.className,
+      _ref2$color = _ref2.color,
+      color = _ref2$color === void 0 ? 'default' : _ref2$color,
+      _ref2$disabled = _ref2.disabled,
+      disabled = _ref2$disabled === void 0 ? false : _ref2$disabled,
+      _ref2$isLoading = _ref2.isLoading,
+      isLoading = _ref2$isLoading === void 0 ? false : _ref2$isLoading,
+      rest = objectWithoutProperties_default()(_ref2, ["children", "className", "color", "disabled", "isLoading"]);
 
-  if (!children) {
-    /* eslint-disable react/jsx-props-no-spreading */
-    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Button, rest, icon);
-    /* eslint-enable */
+  var classes = components_useButtonStyles();
+  var customColor = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useMemo"])(function () {
+    return isCustomColor(color);
+  }, [color]); // https://medium.com/flow-type/spreads-common-errors-fixes-9701012e9d58
+  // [...] you can annotate the object with optional properties and then explicitly set the property afterwards
+
+  var classesObject = defineProperty_default()({}, classes[createColorStyles_styleName('text', color)], customColor);
+
+  if (className) {
+    classesObject[className] = className;
   }
+
+  var props = IconButton_objectSpread(IconButton_objectSpread({}, rest), {}, {
+    className: clsx_m(classesObject),
+    color: customColor ? 'default' : color,
+    disabled: disabled || isLoading
+  });
   /* eslint-disable react/jsx-props-no-spreading */
 
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Button, rest, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconMarginRight, null, icon), children);
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_IconButton_IconButton, props, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconSquareWrapper, {
+    isLoading: isLoading
+  }, children, isLoading && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SpinnerWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, null))));
   /* eslint-enable */
 };
 
-IconButton_IconButton.defaultProps = {
-  icon: undefined
-};
-/* harmony default export */ var components_IconButton = (IconButton_IconButton);
+/* harmony default export */ var components_IconButton = (components_IconButton_IconButton);
 // CONCATENATED MODULE: ./src/button/index.js
 
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/extends.js
+var helpers_extends = __webpack_require__(13);
+var extends_default = /*#__PURE__*/__webpack_require__.n(helpers_extends);
 
 // CONCATENATED MODULE: ./src/button/src/components/styled/DefaultButtonStyles.js
 
@@ -56134,22 +56317,18 @@ var PaginationToolbar_PaginationToolbar = function PaginationToolbar(props) {
     id: "row-range",
     subtle: true
   }, rowRange), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, {
-    variant: "text",
-    icon: /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
-      icon: faChevronLeft["faChevronLeft"],
-      fixedWidth: true
-    }),
     disabled: page <= 0,
     onClick: getPageChanger(-1)
-  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, {
-    variant: "text",
-    icon: /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
-      icon: faChevronRight["faChevronRight"],
-      fixedWidth: true
-    }),
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+    icon: faChevronLeft["faChevronLeft"],
+    fixedWidth: true
+  })), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton, {
     disabled: page >= lastPage,
     onClick: getPageChanger(1)
-  }));
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+    icon: faChevronRight["faChevronRight"],
+    fixedWidth: true
+  })));
 };
 
 PaginationToolbar_PaginationToolbar.defaultProps = {
@@ -57750,146 +57929,6 @@ var Wrapper_241966d7_Wrapper = function Wrapper(_ref) {
 
 //# sourceMappingURL=Wrapper-241966d7.js.map
 
-// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/IconButton/IconButton.js
-
-
-
-
-
-
-
-
-
-
-var IconButton_styles = function styles(theme) {
-  return {
-    /* Styles applied to the root element. */
-    root: {
-      textAlign: 'center',
-      flex: '0 0 auto',
-      fontSize: theme.typography.pxToRem(24),
-      padding: 12,
-      borderRadius: '50%',
-      overflow: 'visible',
-      // Explicitly set the default value to solve a bug on IE 11.
-      color: theme.palette.action.active,
-      transition: theme.transitions.create('background-color', {
-        duration: theme.transitions.duration.shortest
-      }),
-      '&:hover': {
-        backgroundColor: fade(theme.palette.action.active, theme.palette.action.hoverOpacity),
-        // Reset on touch devices, it doesn't add specificity
-        '@media (hover: none)': {
-          backgroundColor: 'transparent'
-        }
-      },
-      '&$disabled': {
-        backgroundColor: 'transparent',
-        color: theme.palette.action.disabled
-      }
-    },
-
-    /* Styles applied to the root element if `edge="start"`. */
-    edgeStart: {
-      marginLeft: -12,
-      '$sizeSmall&': {
-        marginLeft: -3
-      }
-    },
-
-    /* Styles applied to the root element if `edge="end"`. */
-    edgeEnd: {
-      marginRight: -12,
-      '$sizeSmall&': {
-        marginRight: -3
-      }
-    },
-
-    /* Styles applied to the root element if `color="inherit"`. */
-    colorInherit: {
-      color: 'inherit'
-    },
-
-    /* Styles applied to the root element if `color="primary"`. */
-    colorPrimary: {
-      color: theme.palette.primary.main,
-      '&:hover': {
-        backgroundColor: fade(theme.palette.primary.main, theme.palette.action.hoverOpacity),
-        // Reset on touch devices, it doesn't add specificity
-        '@media (hover: none)': {
-          backgroundColor: 'transparent'
-        }
-      }
-    },
-
-    /* Styles applied to the root element if `color="secondary"`. */
-    colorSecondary: {
-      color: theme.palette.secondary.main,
-      '&:hover': {
-        backgroundColor: fade(theme.palette.secondary.main, theme.palette.action.hoverOpacity),
-        // Reset on touch devices, it doesn't add specificity
-        '@media (hover: none)': {
-          backgroundColor: 'transparent'
-        }
-      }
-    },
-
-    /* Pseudo-class applied to the root element if `disabled={true}`. */
-    disabled: {},
-
-    /* Styles applied to the root element if `size="small"`. */
-    sizeSmall: {
-      padding: 3,
-      fontSize: theme.typography.pxToRem(18)
-    },
-
-    /* Styles applied to the children container element. */
-    label: {
-      width: '100%',
-      display: 'flex',
-      alignItems: 'inherit',
-      justifyContent: 'inherit'
-    }
-  };
-};
-/**
- * Refer to the [Icons](/components/icons/) section of the documentation
- * regarding the available icon options.
- */
-
-var IconButton_IconButton_IconButton = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function IconButton(props, ref) {
-  var _props$edge = props.edge,
-      edge = _props$edge === void 0 ? false : _props$edge,
-      children = props.children,
-      classes = props.classes,
-      className = props.className,
-      _props$color = props.color,
-      color = _props$color === void 0 ? 'default' : _props$color,
-      _props$disabled = props.disabled,
-      disabled = _props$disabled === void 0 ? false : _props$disabled,
-      _props$disableFocusRi = props.disableFocusRipple,
-      disableFocusRipple = _props$disableFocusRi === void 0 ? false : _props$disableFocusRi,
-      _props$size = props.size,
-      size = _props$size === void 0 ? 'medium' : _props$size,
-      other = _objectWithoutProperties(props, ["edge", "children", "classes", "className", "color", "disabled", "disableFocusRipple", "size"]);
-
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_ButtonBase_ButtonBase, _extends({
-    className: clsx_m(classes.root, className, color !== 'default' && classes["color".concat(capitalize(color))], disabled && classes.disabled, size === "small" && classes["size".concat(capitalize(size))], {
-      'start': classes.edgeStart,
-      'end': classes.edgeEnd
-    }[edge]),
-    centerRipple: true,
-    focusRipple: !disableFocusRipple,
-    disabled: disabled,
-    ref: ref
-  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
-    className: classes.label
-  }, children));
-});
- false ? undefined : void 0;
-/* harmony default export */ var esm_IconButton_IconButton = (styles_withStyles(IconButton_styles, {
-  name: 'MuiIconButton'
-})(IconButton_IconButton_IconButton));
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/InputAdornment/InputAdornment.js
 
 
@@ -64549,7 +64588,12 @@ var lightTheme = styles_createMuiTheme({
     },
     MuiIconButton: {
       root: {
-        padding: '5px'
+        fontSize: '1rem',
+        padding: '10px'
+      },
+      sizeSmall: {
+        fontSize: '0.8rem',
+        padding: '6px'
       }
     },
     MuiFilledInput: {
@@ -64861,7 +64905,12 @@ var darkTheme = styles_createMuiTheme({
     },
     MuiIconButton: {
       root: {
-        padding: '5px'
+        fontSize: '1rem',
+        padding: '10px'
+      },
+      sizeSmall: {
+        fontSize: '0.8rem',
+        padding: '6px'
       }
     },
     MuiOutlinedInput: {
@@ -64984,7 +65033,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.35.0-alpha.0";
+var src_version = "v0.35.0";
 
 
 
