@@ -67,7 +67,7 @@
     "@storybook/source-loader": "~5.3.19",
     "@storybook/theming": "~5.3.19",
     "babel-eslint": "~10.1.0",
-    "babel-jest": "~26.1.0",
+    "babel-jest": "~26.2.2",
     "babel-loader": "~8.1.0",
     "babel-plugin-styled-components": "~1.10.0",
     "babel-plugin-transform-imports": "~2.0.0",
