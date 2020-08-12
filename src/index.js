@@ -16,12 +16,18 @@ import {
   Menu,
   MenuItem,
   MenuList,
-  TabPanel,
+  Tab,
   Tabs,
   ThemeProvider,
 } from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
-import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
+import {
+  SpeedDial,
+  SpeedDialAction,
+  SpeedDialIcon,
+  TabContext,
+  TabPanel
+} from '@material-ui/lab';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 
 import LatticeLuxonUtils from './datetime/src/components/utils/LatticeLuxonUtils';
@@ -131,6 +137,8 @@ export {
   SpeedDial,
   SpeedDialAction,
   SpeedDialIcon,
+  Tab,
+  TabContext,
   TabPanel,
   Tabs,
   ThemeProvider,

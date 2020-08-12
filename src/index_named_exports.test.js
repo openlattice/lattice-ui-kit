@@ -67,6 +67,8 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Stepper',
   'StyleUtils',
   'StylesProvider',
+  'Tab',
+  'TabContext',
   'TabPanel',
   'Table',
   'TableBody',
