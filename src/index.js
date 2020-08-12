@@ -16,6 +16,8 @@ import {
   Menu,
   MenuItem,
   MenuList,
+  TabPanel,
+  Tabs,
   ThemeProvider,
 } from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
@@ -129,6 +131,8 @@ export {
   SpeedDial,
   SpeedDialAction,
   SpeedDialIcon,
+  TabPanel,
+  Tabs,
   ThemeProvider,
   LatticeLuxonUtils,
 };
