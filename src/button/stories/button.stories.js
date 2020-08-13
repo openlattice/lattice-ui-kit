@@ -1,19 +1,19 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import { faMapMarkerPlus, faSpaceShuttle } from '@fortawesome/pro-solid-svg-icons';
+import { faSearch, faTrash, faUserPlus } from '@fortawesome/pro-light-svg-icons';
+import { faDrone, faMapMarkerPlus, faSpaceShuttle } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
 import { storiesOf } from '@storybook/react';
 
 import { useBoolean } from '../../hooks';
 import { Card, CardSegment } from '../../layout';
-import {
-  Button,
-} from '..';
+import { Button, IconButton } from '..';
 
 const ButtonRow = styled.div`
   margin: 5px 0;
+
   && > * {
     margin: 0 5px;
   }
@@ -26,8 +26,17 @@ const H2 = styled.h2`
 const StyledButton = styled(Button)`
   background: linear-gradient(45deg, indigo 30%, magenta 90%);
   color: powderblue;
+
   :hover {
-    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);
+  }
+`;
+
+const StyledIconButton = styled(IconButton)`
+  color: #ff006e;
+
+  :hover {
+    background: linear-gradient(45deg, #EDE342 30%, #FF51EB 90%);
   }
 `;
 
@@ -122,10 +131,6 @@ storiesOf('Button', module)
           <StyledButton size="large">Styled</StyledButton>
         </ButtonRow>
       </CardSegment>
-    </Card>
-  ))
-  .add('icon buttons', () => (
-    <Card>
       <CardSegment vertical>
         <H2>Button w/ Icons</H2>
         <ButtonRow>
@@ -137,6 +142,72 @@ storiesOf('Button', module)
       </CardSegment>
     </Card>
   ))
+  .add('IconButton', () => {
+    const [isLoading, setTrue, setFalse] = useBoolean(false);
+    const handleOnClick = () => {
+      setTrue();
+      setTimeout(() => setFalse(), 1000);
+    };
+    return (
+      <Card>
+        <CardSegment>
+          <ButtonRow>
+            <IconButton color="success" size="small">
+              <FontAwesomeIcon fixedWidth icon={faUserPlus} />
+            </IconButton>
+            <IconButton color="success">
+              <FontAwesomeIcon fixedWidth icon={faUserPlus} />
+            </IconButton>
+            <IconButton color="error" size="small">
+              <FontAwesomeIcon fixedWidth icon={faTrash} />
+            </IconButton>
+            <IconButton color="error">
+              <FontAwesomeIcon fixedWidth icon={faTrash} />
+            </IconButton>
+          </ButtonRow>
+        </CardSegment>
+        <CardSegment>
+          <H2>Pending State</H2>
+          <ButtonRow>
+            <IconButton color="primary" isLoading={isLoading} onClick={handleOnClick} size="small">
+              <FontAwesomeIcon fixedWidth icon={faSpaceShuttle} />
+            </IconButton>
+            <IconButton color="primary" isLoading={isLoading} onClick={handleOnClick}>
+              <FontAwesomeIcon fixedWidth icon={faSpaceShuttle} />
+            </IconButton>
+          </ButtonRow>
+        </CardSegment>
+        <CardSegment>
+          <H2>FontAwesomeIcon size</H2>
+          <ButtonRow>
+            <IconButton>
+              <FontAwesomeIcon fixedWidth icon={faSearch} size="xs" />
+            </IconButton>
+            <IconButton>
+              <FontAwesomeIcon fixedWidth icon={faSearch} />
+            </IconButton>
+            <IconButton>
+              <FontAwesomeIcon fixedWidth icon={faSearch} size="lg" />
+            </IconButton>
+            <IconButton>
+              <FontAwesomeIcon fixedWidth icon={faSearch} size="2x" />
+            </IconButton>
+            <IconButton>
+              <FontAwesomeIcon fixedWidth icon={faSearch} size="3x" />
+            </IconButton>
+          </ButtonRow>
+        </CardSegment>
+        <CardSegment>
+          <H2>Styled</H2>
+          <ButtonRow>
+            <StyledIconButton>
+              <FontAwesomeIcon fixedWidth icon={faDrone} />
+            </StyledIconButton>
+          </ButtonRow>
+        </CardSegment>
+      </Card>
+    );
+  })
   .add('Speed Dial', () => {
     const [isOpen, setOpen, setClose] = useBoolean(false);
     return (

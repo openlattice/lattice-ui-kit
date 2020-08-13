@@ -13,10 +13,21 @@ import {
   ListItemSecondaryAction,
   ListItemText,
   ListSubheader,
+  Menu,
+  MenuItem,
+  MenuList,
+  Tab,
+  Tabs,
   ThemeProvider,
 } from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
-import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
+import {
+  SpeedDial,
+  SpeedDialAction,
+  SpeedDialIcon,
+  TabContext,
+  TabPanel
+} from '@material-ui/lab';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 
 import LatticeLuxonUtils from './datetime/src/components/utils/LatticeLuxonUtils';
@@ -46,17 +57,23 @@ export { default as Portal } from './portal';
 export { default as Spinner } from './spinner';
 export { default as Tag } from './tag';
 export { selectStyles } from './style/select';
-export {
-  Button,
-  IconButton,
-} from './button';
+
+export { Button, IconButton } from './button';
+export type { ButtonProps } from './button';
+
 export { Checkbox, ChoiceGroup, Radio } from './choices';
+
 export {
   ActionModal,
   Modal,
   ModalFooter,
   ModalHeader
 } from './modal';
+export type {
+  ActionModalProps,
+  ModalProps,
+} from './modal';
+
 export {
   Stepper,
   StepLabel,
@@ -113,10 +130,17 @@ export {
   ListItemSecondaryAction,
   ListItemText,
   ListSubheader,
+  Menu,
+  MenuItem,
+  MenuList,
   MuiPickersUtilsProvider,
   SpeedDial,
   SpeedDialAction,
   SpeedDialIcon,
+  Tab,
+  TabContext,
+  TabPanel,
+  Tabs,
   ThemeProvider,
   LatticeLuxonUtils,
 };

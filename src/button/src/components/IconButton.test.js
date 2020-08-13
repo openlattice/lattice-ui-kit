@@ -1,73 +1,74 @@
+/*
+ * @flow
+ */
+
 import React from 'react';
+
+import _capitalize from 'lodash/capitalize';
 import toJson from 'enzyme-to-json';
-import { faSpaceShuttle } from '@fortawesome/pro-solid-svg-icons';
+import { faCode } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { mount } from 'enzyme';
 
-import Button from './Button';
 import IconButton from './IconButton';
 
-const BUTTON_TXT = 'Launch!';
-const LaunchIcon = (
-  <FontAwesomeIcon icon={faSpaceShuttle} rotate={-45} />
+import Spinner from '../../../spinner';
+
+const CodeIcon = (
+  <FontAwesomeIcon icon={faCode} />
 );
+
+const themeColors = ['primary', 'secondary'];
+const intentColors = ['error', 'info', 'success', 'warning'];
 
 describe('IconButton', () => {
 
-  describe('icon with text', () => {
+  describe('snapshots', () => {
 
-    const iconButton = mount(
-      <IconButton icon={LaunchIcon}>
-        {BUTTON_TXT}
-      </IconButton>
-    );
-
-    test('should match snapshot', () => {
-      expect(toJson(iconButton)).toMatchSnapshot();
+    test('default', () => {
+      const wrapper = mount(<IconButton>{CodeIcon}</IconButton>);
+      expect(toJson(wrapper)).toMatchSnapshot();
+      const button = wrapper.find('button');
+      expect(button).toHaveLength(1);
     });
 
-    test('should render a button element', () => {
-      expect(iconButton.find('button')).toHaveLength(1);
-    });
-
-    test('should render FontAwesomeIcon component', () => {
-      expect(iconButton.find(FontAwesomeIcon)).toHaveLength(1);
-    });
-
-    test('should render Button component', () => {
-      expect(iconButton.find(Button)).toHaveLength(1);
-    });
-
-    test('should render the correct text', () => {
-      expect(iconButton.text()).toEqual(BUTTON_TXT);
+    test('spinner', () => {
+      const wrapper = mount(<IconButton isLoading>{CodeIcon}</IconButton>);
+      expect(toJson(wrapper)).toMatchSnapshot();
+      const button = wrapper.find('button');
+      expect(button).toHaveLength(1);
     });
 
   });
 
-  describe('icon without text', () => {
+  describe('props', () => {
 
-    const iconButton = mount(
-      <IconButton icon={LaunchIcon} />
-    );
-
-    test('should match snapshot', () => {
-      expect(toJson(iconButton)).toMatchSnapshot();
+    test('color', () => {
+      intentColors.forEach((color) => {
+        const wrapper = mount(<IconButton color={color}>{CodeIcon}</IconButton>);
+        const button = wrapper.find('button');
+        expect(button.prop('className')).toEqual(expect.stringMatching(`makeStyles-text${_capitalize(color)}`));
+      });
+      themeColors.forEach((color) => {
+        const wrapper = mount(<IconButton color={color}>{CodeIcon}</IconButton>);
+        const button = wrapper.find('button');
+        expect(button.prop('className')).toEqual(expect.stringMatching(`MuiIconButton-color${_capitalize(color)}`));
+      });
     });
 
-    test('should render a button element', () => {
-      expect(iconButton.find('button')).toHaveLength(1);
+    test('disabled', () => {
+      const wrapper = mount(<IconButton disabled>{CodeIcon}</IconButton>);
+      const button = wrapper.find('button');
+      expect(button.prop('disabled')).toEqual(true);
+      expect(button.prop('className')).toEqual(expect.stringMatching('Mui-disabled'));
     });
 
-    test('should render FontAwesomeIcon component', () => {
-      expect(iconButton.find(FontAwesomeIcon)).toHaveLength(1);
-    });
-
-    test('should render Button component', () => {
-      expect(iconButton.find(Button)).toHaveLength(1);
-    });
-
-    test('should not render any text', () => {
-      expect(iconButton.text()).toEqual('');
+    test('isLoading', () => {
+      const wrapper = mount(<IconButton isLoading>{CodeIcon}</IconButton>);
+      const button = wrapper.find('button');
+      expect(button.prop('disabled')).toEqual(true);
+      expect(button.prop('className')).toEqual(expect.stringMatching('Mui-disabled'));
+      expect(wrapper.find(Spinner)).toHaveLength(1);
     });
 
   });

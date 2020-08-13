@@ -35,6 +35,32 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
   text-transform: uppercase;
 }
 
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+}
+
+.c2::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.c2 >:first-child {
+  visibility: visible;
+}
+
 <PaginationToolbar
   count={0}
   page={0}
@@ -119,393 +145,331 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
         </Label>
         <IconButton
           disabled={true}
-          icon={
-            <FontAwesomeIcon
-              border={false}
-              className=""
-              fixedWidth={true}
-              flip={null}
-              icon={
-                Object {
-                  "icon": Array [
-                    256,
-                    512,
-                    Array [],
-                    "f053",
-                    "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
-                  ],
-                  "iconName": "chevron-left",
-                  "prefix": "far",
-                }
-              }
-              inverse={false}
-              listItem={false}
-              mask={null}
-              pull={null}
-              pulse={false}
-              rotation={null}
-              size={null}
-              spin={false}
-              swapOpacity={false}
-              symbol={false}
-              title=""
-              transform={null}
-            />
-          }
           onClick={[Function]}
-          variant="text"
         >
-          <Button
+          <WithStyles(ForwardRef(IconButton))
+            className=""
+            color="default"
             disabled={true}
             onClick={[Function]}
-            variant="text"
           >
-            <WithStyles(ForwardRef(Button))
+            <ForwardRef(IconButton)
               className=""
+              classes={
+                Object {
+                  "colorInherit": "MuiIconButton-colorInherit",
+                  "colorPrimary": "MuiIconButton-colorPrimary",
+                  "colorSecondary": "MuiIconButton-colorSecondary",
+                  "disabled": "Mui-disabled",
+                  "edgeEnd": "MuiIconButton-edgeEnd",
+                  "edgeStart": "MuiIconButton-edgeStart",
+                  "label": "MuiIconButton-label",
+                  "root": "MuiIconButton-root",
+                  "sizeSmall": "MuiIconButton-sizeSmall",
+                }
+              }
               color="default"
-              disableElevation={true}
               disabled={true}
               onClick={[Function]}
-              variant="text"
             >
-              <ForwardRef(Button)
-                className=""
-                classes={
-                  Object {
-                    "colorInherit": "MuiButton-colorInherit",
-                    "contained": "MuiButton-contained",
-                    "containedPrimary": "MuiButton-containedPrimary",
-                    "containedSecondary": "MuiButton-containedSecondary",
-                    "containedSizeLarge": "MuiButton-containedSizeLarge",
-                    "containedSizeSmall": "MuiButton-containedSizeSmall",
-                    "disableElevation": "MuiButton-disableElevation",
-                    "disabled": "Mui-disabled",
-                    "endIcon": "MuiButton-endIcon",
-                    "focusVisible": "Mui-focusVisible",
-                    "fullWidth": "MuiButton-fullWidth",
-                    "iconSizeLarge": "MuiButton-iconSizeLarge",
-                    "iconSizeMedium": "MuiButton-iconSizeMedium",
-                    "iconSizeSmall": "MuiButton-iconSizeSmall",
-                    "label": "MuiButton-label",
-                    "outlined": "MuiButton-outlined",
-                    "outlinedPrimary": "MuiButton-outlinedPrimary",
-                    "outlinedSecondary": "MuiButton-outlinedSecondary",
-                    "outlinedSizeLarge": "MuiButton-outlinedSizeLarge",
-                    "outlinedSizeSmall": "MuiButton-outlinedSizeSmall",
-                    "root": "MuiButton-root",
-                    "sizeLarge": "MuiButton-sizeLarge",
-                    "sizeSmall": "MuiButton-sizeSmall",
-                    "startIcon": "MuiButton-startIcon",
-                    "text": "MuiButton-text",
-                    "textPrimary": "MuiButton-textPrimary",
-                    "textSecondary": "MuiButton-textSecondary",
-                    "textSizeLarge": "MuiButton-textSizeLarge",
-                    "textSizeSmall": "MuiButton-textSizeSmall",
-                  }
-                }
-                color="default"
-                disableElevation={true}
+              <WithStyles(ForwardRef(ButtonBase))
+                centerRipple={true}
+                className="MuiIconButton-root Mui-disabled"
                 disabled={true}
+                focusRipple={true}
                 onClick={[Function]}
-                variant="text"
               >
-                <WithStyles(ForwardRef(ButtonBase))
-                  className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
-                  component="button"
+                <ForwardRef(ButtonBase)
+                  centerRipple={true}
+                  className="MuiIconButton-root Mui-disabled"
+                  classes={
+                    Object {
+                      "disabled": "Mui-disabled",
+                      "focusVisible": "Mui-focusVisible",
+                      "root": "MuiButtonBase-root",
+                    }
+                  }
                   disabled={true}
                   focusRipple={true}
-                  focusVisibleClassName="Mui-focusVisible"
                   onClick={[Function]}
-                  type="button"
                 >
-                  <ForwardRef(ButtonBase)
-                    className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
-                    classes={
-                      Object {
-                        "disabled": "Mui-disabled",
-                        "focusVisible": "Mui-focusVisible",
-                        "root": "MuiButtonBase-root",
-                      }
-                    }
-                    component="button"
+                  <button
+                    className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                     disabled={true}
-                    focusRipple={true}
-                    focusVisibleClassName="Mui-focusVisible"
+                    onBlur={[Function]}
                     onClick={[Function]}
+                    onDragLeave={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={-1}
                     type="button"
                   >
-                    <button
-                      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
-                      disabled={true}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onDragLeave={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onKeyUp={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseLeave={[Function]}
-                      onMouseUp={[Function]}
-                      onTouchEnd={[Function]}
-                      onTouchMove={[Function]}
-                      onTouchStart={[Function]}
-                      tabIndex={-1}
-                      type="button"
+                    <span
+                      className="MuiIconButton-label"
                     >
-                      <span
-                        className="MuiButton-label"
+                      <IconButton__IconSquareWrapper
+                        isLoading={false}
                       >
-                        <FontAwesomeIcon
-                          border={false}
-                          className=""
-                          fixedWidth={true}
-                          flip={null}
-                          icon={
+                        <StyledComponent
+                          forwardedComponent={
                             Object {
-                              "icon": Array [
-                                256,
-                                512,
-                                Array [],
-                                "f053",
-                                "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
-                              ],
-                              "iconName": "chevron-left",
-                              "prefix": "far",
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "IconButton__IconSquareWrapper-g9q5gl-0",
+                                "isStatic": false,
+                                "lastClassName": "c2",
+                                "rules": Array [
+                                  "align-items:center;display:flex;justify-content:center;width:auto;&::before{content:\\"\\";display:block;padding-bottom:100%;}>:first-child{visibility:",
+                                  [Function],
+                                  ";}",
+                                ],
+                              },
+                              "displayName": "IconButton__IconSquareWrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "IconButton__IconSquareWrapper-g9q5gl-0",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
                             }
                           }
-                          inverse={false}
-                          listItem={false}
-                          mask={null}
-                          pull={null}
-                          pulse={false}
-                          rotation={null}
-                          size={null}
-                          spin={false}
-                          swapOpacity={false}
-                          symbol={false}
-                          title=""
-                          transform={null}
+                          forwardedRef={null}
+                          isLoading={false}
                         >
-                          <svg
-                            aria-hidden="true"
-                            className="svg-inline--fa fa-chevron-left fa-w-8 fa-fw "
-                            data-icon="chevron-left"
-                            data-prefix="far"
-                            focusable="false"
-                            role="img"
-                            style={Object {}}
-                            viewBox="0 0 256 512"
-                            xmlns="http://www.w3.org/2000/svg"
+                          <div
+                            className="c2"
                           >
-                            <path
-                              d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
-                              fill="currentColor"
-                              style={Object {}}
-                            />
-                          </svg>
-                        </FontAwesomeIcon>
-                      </span>
-                    </button>
-                  </ForwardRef(ButtonBase)>
-                </WithStyles(ForwardRef(ButtonBase))>
-              </ForwardRef(Button)>
-            </WithStyles(ForwardRef(Button))>
-          </Button>
+                            <FontAwesomeIcon
+                              border={false}
+                              className=""
+                              fixedWidth={true}
+                              flip={null}
+                              icon={
+                                Object {
+                                  "icon": Array [
+                                    256,
+                                    512,
+                                    Array [],
+                                    "f053",
+                                    "M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z",
+                                  ],
+                                  "iconName": "chevron-left",
+                                  "prefix": "far",
+                                }
+                              }
+                              inverse={false}
+                              listItem={false}
+                              mask={null}
+                              pull={null}
+                              pulse={false}
+                              rotation={null}
+                              size={null}
+                              spin={false}
+                              swapOpacity={false}
+                              symbol={false}
+                              title=""
+                              transform={null}
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="svg-inline--fa fa-chevron-left fa-w-8 fa-fw "
+                                data-icon="chevron-left"
+                                data-prefix="far"
+                                focusable="false"
+                                role="img"
+                                style={Object {}}
+                                viewBox="0 0 256 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
+                                  fill="currentColor"
+                                  style={Object {}}
+                                />
+                              </svg>
+                            </FontAwesomeIcon>
+                          </div>
+                        </StyledComponent>
+                      </IconButton__IconSquareWrapper>
+                    </span>
+                  </button>
+                </ForwardRef(ButtonBase)>
+              </WithStyles(ForwardRef(ButtonBase))>
+            </ForwardRef(IconButton)>
+          </WithStyles(ForwardRef(IconButton))>
         </IconButton>
         <IconButton
           disabled={true}
-          icon={
-            <FontAwesomeIcon
-              border={false}
-              className=""
-              fixedWidth={true}
-              flip={null}
-              icon={
-                Object {
-                  "icon": Array [
-                    256,
-                    512,
-                    Array [],
-                    "f054",
-                    "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
-                  ],
-                  "iconName": "chevron-right",
-                  "prefix": "far",
-                }
-              }
-              inverse={false}
-              listItem={false}
-              mask={null}
-              pull={null}
-              pulse={false}
-              rotation={null}
-              size={null}
-              spin={false}
-              swapOpacity={false}
-              symbol={false}
-              title=""
-              transform={null}
-            />
-          }
           onClick={[Function]}
-          variant="text"
         >
-          <Button
+          <WithStyles(ForwardRef(IconButton))
+            className=""
+            color="default"
             disabled={true}
             onClick={[Function]}
-            variant="text"
           >
-            <WithStyles(ForwardRef(Button))
+            <ForwardRef(IconButton)
               className=""
+              classes={
+                Object {
+                  "colorInherit": "MuiIconButton-colorInherit",
+                  "colorPrimary": "MuiIconButton-colorPrimary",
+                  "colorSecondary": "MuiIconButton-colorSecondary",
+                  "disabled": "Mui-disabled",
+                  "edgeEnd": "MuiIconButton-edgeEnd",
+                  "edgeStart": "MuiIconButton-edgeStart",
+                  "label": "MuiIconButton-label",
+                  "root": "MuiIconButton-root",
+                  "sizeSmall": "MuiIconButton-sizeSmall",
+                }
+              }
               color="default"
-              disableElevation={true}
               disabled={true}
               onClick={[Function]}
-              variant="text"
             >
-              <ForwardRef(Button)
-                className=""
-                classes={
-                  Object {
-                    "colorInherit": "MuiButton-colorInherit",
-                    "contained": "MuiButton-contained",
-                    "containedPrimary": "MuiButton-containedPrimary",
-                    "containedSecondary": "MuiButton-containedSecondary",
-                    "containedSizeLarge": "MuiButton-containedSizeLarge",
-                    "containedSizeSmall": "MuiButton-containedSizeSmall",
-                    "disableElevation": "MuiButton-disableElevation",
-                    "disabled": "Mui-disabled",
-                    "endIcon": "MuiButton-endIcon",
-                    "focusVisible": "Mui-focusVisible",
-                    "fullWidth": "MuiButton-fullWidth",
-                    "iconSizeLarge": "MuiButton-iconSizeLarge",
-                    "iconSizeMedium": "MuiButton-iconSizeMedium",
-                    "iconSizeSmall": "MuiButton-iconSizeSmall",
-                    "label": "MuiButton-label",
-                    "outlined": "MuiButton-outlined",
-                    "outlinedPrimary": "MuiButton-outlinedPrimary",
-                    "outlinedSecondary": "MuiButton-outlinedSecondary",
-                    "outlinedSizeLarge": "MuiButton-outlinedSizeLarge",
-                    "outlinedSizeSmall": "MuiButton-outlinedSizeSmall",
-                    "root": "MuiButton-root",
-                    "sizeLarge": "MuiButton-sizeLarge",
-                    "sizeSmall": "MuiButton-sizeSmall",
-                    "startIcon": "MuiButton-startIcon",
-                    "text": "MuiButton-text",
-                    "textPrimary": "MuiButton-textPrimary",
-                    "textSecondary": "MuiButton-textSecondary",
-                    "textSizeLarge": "MuiButton-textSizeLarge",
-                    "textSizeSmall": "MuiButton-textSizeSmall",
-                  }
-                }
-                color="default"
-                disableElevation={true}
+              <WithStyles(ForwardRef(ButtonBase))
+                centerRipple={true}
+                className="MuiIconButton-root Mui-disabled"
                 disabled={true}
+                focusRipple={true}
                 onClick={[Function]}
-                variant="text"
               >
-                <WithStyles(ForwardRef(ButtonBase))
-                  className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
-                  component="button"
+                <ForwardRef(ButtonBase)
+                  centerRipple={true}
+                  className="MuiIconButton-root Mui-disabled"
+                  classes={
+                    Object {
+                      "disabled": "Mui-disabled",
+                      "focusVisible": "Mui-focusVisible",
+                      "root": "MuiButtonBase-root",
+                    }
+                  }
                   disabled={true}
                   focusRipple={true}
-                  focusVisibleClassName="Mui-focusVisible"
                   onClick={[Function]}
-                  type="button"
                 >
-                  <ForwardRef(ButtonBase)
-                    className="MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled"
-                    classes={
-                      Object {
-                        "disabled": "Mui-disabled",
-                        "focusVisible": "Mui-focusVisible",
-                        "root": "MuiButtonBase-root",
-                      }
-                    }
-                    component="button"
+                  <button
+                    className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                     disabled={true}
-                    focusRipple={true}
-                    focusVisibleClassName="Mui-focusVisible"
+                    onBlur={[Function]}
                     onClick={[Function]}
+                    onDragLeave={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onKeyUp={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchMove={[Function]}
+                    onTouchStart={[Function]}
+                    tabIndex={-1}
                     type="button"
                   >
-                    <button
-                      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-disableElevation Mui-disabled Mui-disabled"
-                      disabled={true}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onDragLeave={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onKeyUp={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseLeave={[Function]}
-                      onMouseUp={[Function]}
-                      onTouchEnd={[Function]}
-                      onTouchMove={[Function]}
-                      onTouchStart={[Function]}
-                      tabIndex={-1}
-                      type="button"
+                    <span
+                      className="MuiIconButton-label"
                     >
-                      <span
-                        className="MuiButton-label"
+                      <IconButton__IconSquareWrapper
+                        isLoading={false}
                       >
-                        <FontAwesomeIcon
-                          border={false}
-                          className=""
-                          fixedWidth={true}
-                          flip={null}
-                          icon={
+                        <StyledComponent
+                          forwardedComponent={
                             Object {
-                              "icon": Array [
-                                256,
-                                512,
-                                Array [],
-                                "f054",
-                                "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
-                              ],
-                              "iconName": "chevron-right",
-                              "prefix": "far",
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "IconButton__IconSquareWrapper-g9q5gl-0",
+                                "isStatic": false,
+                                "lastClassName": "c2",
+                                "rules": Array [
+                                  "align-items:center;display:flex;justify-content:center;width:auto;&::before{content:\\"\\";display:block;padding-bottom:100%;}>:first-child{visibility:",
+                                  [Function],
+                                  ";}",
+                                ],
+                              },
+                              "displayName": "IconButton__IconSquareWrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "IconButton__IconSquareWrapper-g9q5gl-0",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
                             }
                           }
-                          inverse={false}
-                          listItem={false}
-                          mask={null}
-                          pull={null}
-                          pulse={false}
-                          rotation={null}
-                          size={null}
-                          spin={false}
-                          swapOpacity={false}
-                          symbol={false}
-                          title=""
-                          transform={null}
+                          forwardedRef={null}
+                          isLoading={false}
                         >
-                          <svg
-                            aria-hidden="true"
-                            className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
-                            data-icon="chevron-right"
-                            data-prefix="far"
-                            focusable="false"
-                            role="img"
-                            style={Object {}}
-                            viewBox="0 0 256 512"
-                            xmlns="http://www.w3.org/2000/svg"
+                          <div
+                            className="c2"
                           >
-                            <path
-                              d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
-                              fill="currentColor"
-                              style={Object {}}
-                            />
-                          </svg>
-                        </FontAwesomeIcon>
-                      </span>
-                    </button>
-                  </ForwardRef(ButtonBase)>
-                </WithStyles(ForwardRef(ButtonBase))>
-              </ForwardRef(Button)>
-            </WithStyles(ForwardRef(Button))>
-          </Button>
+                            <FontAwesomeIcon
+                              border={false}
+                              className=""
+                              fixedWidth={true}
+                              flip={null}
+                              icon={
+                                Object {
+                                  "icon": Array [
+                                    256,
+                                    512,
+                                    Array [],
+                                    "f054",
+                                    "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                                  ],
+                                  "iconName": "chevron-right",
+                                  "prefix": "far",
+                                }
+                              }
+                              inverse={false}
+                              listItem={false}
+                              mask={null}
+                              pull={null}
+                              pulse={false}
+                              rotation={null}
+                              size={null}
+                              spin={false}
+                              swapOpacity={false}
+                              symbol={false}
+                              title=""
+                              transform={null}
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
+                                data-icon="chevron-right"
+                                data-prefix="far"
+                                focusable="false"
+                                role="img"
+                                style={Object {}}
+                                viewBox="0 0 256 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                                  fill="currentColor"
+                                  style={Object {}}
+                                />
+                              </svg>
+                            </FontAwesomeIcon>
+                          </div>
+                        </StyledComponent>
+                      </IconButton__IconSquareWrapper>
+                    </span>
+                  </button>
+                </ForwardRef(ButtonBase)>
+              </WithStyles(ForwardRef(ButtonBase))>
+            </ForwardRef(IconButton)>
+          </WithStyles(ForwardRef(IconButton))>
         </IconButton>
       </div>
     </StyledComponent>
