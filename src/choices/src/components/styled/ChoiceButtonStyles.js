@@ -6,14 +6,12 @@ import {
   defaultHover,
   defaultStyle,
 } from '../../../../button/src/components/styled/DefaultButtonStyles';
-import { NEUTRAL, PURPLE } from '../../../../colors';
+import { PURPLE } from '../../../../colors';
 
 const choiceButtonStyles = css`
   ${defaultStyle}
   align-items: center;
   border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
   display: flex;
   flex-direction: column;
   font-weight: 600;
@@ -24,6 +22,7 @@ const choiceButtonStyles = css`
   text-align: center;
   width: 100%;
 
+  input:focus ~ &,
   input:hover ~ & {
     ${defaultHover}
   }
@@ -32,20 +31,21 @@ const choiceButtonStyles = css`
     ${defaultActive};
   }
 
-  input:focus ~ & {
-    box-shadow: ${PURPLE.P300} 0 0 0 1px;
-  }
-
   input:checked ~ &,
   input[readonly]:checked:disabled ~ &,
   input[readonly]:checked:hover ~ & {
-    background-color: ${NEUTRAL.N50};
-    border: solid 1px ${PURPLE.P300};
+    background-color: ${PURPLE.P00};
     color: ${PURPLE.P300};
   }
 
+  input:checked:focus ~ &,
   input:checked:hover ~ & {
     background-color: ${PURPLE.P100};
+  }
+
+  input:checked:active ~ & {
+    background-color: ${PURPLE.P200};
+    color: ${PURPLE.P400};
   }
 
   input:disabled ~ & {
