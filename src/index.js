@@ -19,6 +19,7 @@ import {
   Tab,
   Tabs,
   ThemeProvider,
+  Typography,
 } from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
 import {
@@ -119,11 +120,23 @@ export {
 } from './datetime';
 export { default as Skeleton } from './skeleton';
 export { default as Tooltip } from './tooltip';
+export { default as Breadcrumbs } from './breadcrumbs';
+export {
+  ExpansionPanel,
+  ExpansionPanelDetails,
+  ExpansionPanelSummary,
+} from './expansion';
+export {
+  darkTheme,
+  lightTheme
+} from './theme';
+
 export {
   Chip,
   Collapse,
   Divider,
   Fab,
+  LatticeLuxonUtils,
   List,
   ListItem,
   ListItemAvatar,
@@ -142,18 +155,8 @@ export {
   TabPanel,
   Tabs,
   ThemeProvider,
-  LatticeLuxonUtils,
+  Typography,
 };
-export { default as Breadcrumbs } from './breadcrumbs';
-export {
-  ExpansionPanel,
-  ExpansionPanelDetails,
-  ExpansionPanelSummary,
-} from './expansion';
-export {
-  darkTheme,
-  lightTheme
-} from './theme';
 
 export default {
   version
