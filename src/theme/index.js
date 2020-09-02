@@ -322,10 +322,11 @@ const darkTheme = createMuiTheme({
   overrides: {
     MuiButton: {
       root: {
-        textTransform: 'none',
-        padding: '0 16px',
-        minHeight: '40px',
+        borderRadius: '3px',
         fontSize: '16px',
+        minHeight: '40px',
+        padding: '0 16px',
+        textTransform: 'none',
       },
       label: {
         fontWeight: 600,
