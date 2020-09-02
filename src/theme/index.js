@@ -1,5 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
+import typography from './typography';
+
 import {
   BLUE,
   GREEN,
@@ -289,7 +291,8 @@ const lightTheme = createMuiTheme({
       contrastText: 'white'
     },
     text: {
-      primary: NEUTRAL.N900
+      primary: NEUTRAL.N900,
+      secondary: NEUTRAL.N500,
     },
     background: {
       header: NEUTRAL.N50
@@ -308,14 +311,7 @@ const lightTheme = createMuiTheme({
       disableUnderline: true
     }
   },
-  typography: {
-    fontFamily: [
-      'Inter',
-      'Arial',
-      'sans-serif'
-    ].join(','),
-    color: 'inherit'
-  }
+  typography
 });
 
 const darkTheme = createMuiTheme({
@@ -586,14 +582,7 @@ const darkTheme = createMuiTheme({
       disableUnderline: true
     },
   },
-  typography: {
-    fontFamily: [
-      'Inter',
-      'Arial',
-      'sans-serif'
-    ].join(','),
-    color: 'inherit'
-  }
+  typography
 });
 
 export { darkTheme, lightTheme };
