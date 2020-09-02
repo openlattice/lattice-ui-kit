@@ -11,6 +11,10 @@ const ChoiceLabel = styled.label`
   pointer-events: ${(props) => (props.readOnly ? 'none' : 'auto')};
   position: relative;
   vertical-align: middle;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export default ChoiceLabel;
