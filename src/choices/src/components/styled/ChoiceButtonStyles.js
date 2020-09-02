@@ -1,20 +1,14 @@
 import { css } from 'styled-components';
 
-import {
-  defaultActive,
-  defaultDisabled,
-  defaultHover,
-  defaultStyle,
-} from '../../../../button/src/components/styled/DefaultButtonStyles';
-import { PURPLE } from '../../../../colors';
+import { NEUTRAL, PURPLE } from '../../../../colors';
 
 const choiceButtonStyles = css`
-  ${defaultStyle}
   align-items: center;
+  background-color: ${NEUTRAL.N50};
   border-radius: 3px;
+  color: ${NEUTRAL.N900};
   display: flex;
   flex-direction: column;
-  font-weight: 600;
   justify-content: center;
   min-height: 40px;
   min-width: 84px;
@@ -22,13 +16,10 @@ const choiceButtonStyles = css`
   text-align: center;
   width: 100%;
 
-  input:focus ~ &,
+  input:focus-visible ~ &,
   input:hover ~ & {
-    ${defaultHover}
-  }
-
-  input:active ~ & {
-    ${defaultActive};
+    background-color: ${NEUTRAL.N100};
+    cursor: pointer;
   }
 
   input:checked ~ &,
@@ -38,23 +29,15 @@ const choiceButtonStyles = css`
     color: ${PURPLE.P300};
   }
 
-  input:checked:focus ~ &,
-  input:checked:hover ~ & {
-    background-color: ${PURPLE.P100};
-  }
-
-  input:checked:active ~ & {
-    background-color: ${PURPLE.P200};
-    color: ${PURPLE.P400};
-  }
-
   input:disabled ~ & {
-    ${defaultDisabled}
+    background-color: ${NEUTRAL.N00};
+    color: ${NEUTRAL.N500};
     cursor: not-allowed;
   }
 
   input:checked:disabled ~ & {
-    ${defaultActive}
+    background-color: ${NEUTRAL.N400};
+    color: white;
     cursor: not-allowed;
   }
 
