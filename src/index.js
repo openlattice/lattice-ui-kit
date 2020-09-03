@@ -19,7 +19,6 @@ import {
   Tab,
   Tabs,
   ThemeProvider,
-  Typography,
 } from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
 import {
@@ -118,9 +117,10 @@ export {
   TimePicker,
   DateTimePicker,
 } from './datetime';
+export { default as Breadcrumbs } from './breadcrumbs';
 export { default as Skeleton } from './skeleton';
 export { default as Tooltip } from './tooltip';
-export { default as Breadcrumbs } from './breadcrumbs';
+export { default as Typography } from './typography';
 export {
   ExpansionPanel,
   ExpansionPanelDetails,
@@ -155,7 +155,6 @@ export {
   TabPanel,
   Tabs,
   ThemeProvider,
-  Typography,
 };
 
 export default {

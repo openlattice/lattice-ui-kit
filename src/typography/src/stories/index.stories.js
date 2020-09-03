@@ -1,16 +1,16 @@
 import React from 'react';
 
-import { Divider, Typography } from '@material-ui/core';
 import { storiesOf } from '@storybook/react';
 
-import { Card, CardSegment } from '../../layout';
+import Typography from '../components/Typography';
+import { Card, CardSegment } from '../../../layout';
 
 storiesOf('Typography', module)
   .add('html', () => (
     <Card>
       <CardSegment>
         <a href="https://material-ui.com/api/typography/">https://material-ui.com/api/typography/</a>
-        <Divider />
+        <br />
         <Typography variant="h1" gutterBottom>
           h1. h1
         </Typography>
