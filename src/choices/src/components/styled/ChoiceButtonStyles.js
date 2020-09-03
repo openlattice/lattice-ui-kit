@@ -2,18 +2,25 @@ import { css } from 'styled-components';
 
 import { NEUTRAL, PURPLE } from '../../../../colors';
 
+// Not really sure why, but 1px box-shadow looks significantly larger than 1px on chrome
+// Using fractional pixel seems to look closer to intended design
+
 const choiceButtonStyles = css`
   align-items: center;
   background-color: ${NEUTRAL.N50};
-  border-radius: 3px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  border-radius: 6px;
   color: ${NEUTRAL.N900};
   display: flex;
+  font-size: 1rem;
   flex-direction: column;
   justify-content: center;
-  min-height: 40px;
+  min-height: 60px;
   min-width: 84px;
   padding: 10px 12px;
   text-align: center;
+  user-select: none;
   width: 100%;
 
   input:focus-visible ~ &,
@@ -29,6 +36,13 @@ const choiceButtonStyles = css`
     color: ${PURPLE.P300};
   }
 
+  input:focus-visible ~ & {
+    box-shadow: ${NEUTRAL.N400} 0 0 0 0.1px;
+  }
+  input:checked:focus-visible ~ & {
+    box-shadow: ${PURPLE.P300} 0 0 0 0.1px;
+  }
+
   input:disabled ~ & {
     background-color: ${NEUTRAL.N00};
     color: ${NEUTRAL.N500};
@@ -37,7 +51,7 @@ const choiceButtonStyles = css`
 
   input:checked:disabled ~ & {
     background-color: ${NEUTRAL.N400};
-    color: white;
+    color: ${NEUTRAL.N900};
     cursor: not-allowed;
   }
 
