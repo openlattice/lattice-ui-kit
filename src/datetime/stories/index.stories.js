@@ -41,11 +41,6 @@ storiesOf('Date and Time', module)
                   value="2019-01-01"
                   onChange={dateMuiChange} />
               <br />
-              <Label subtle>Provided Value</Label>
-              <DatePicker
-                  value="2019-01-01"
-                  onChange={dateMuiChange} />
-              <br />
               <Label subtle>Controlled</Label>
               <DatePicker
                   onChange={(value) => {
@@ -69,12 +64,6 @@ storiesOf('Date and Time', module)
               <DatePicker
                   inputVariant="outlined"
                   disabled
-                  value="2019-01-01"
-                  onChange={dateMuiChange} />
-              <br />
-              <Label subtle>Provided Value</Label>
-              <DatePicker
-                  inputVariant="outlined"
                   value="2019-01-01"
                   onChange={dateMuiChange} />
               <br />
@@ -109,15 +98,13 @@ storiesOf('Date and Time', module)
               <Label subtle>Default</Label>
               <TimePicker onChange={timeMuiChange} />
               <br />
+              <Label subtle>24h</Label>
+              <TimePicker ampm={false} onChange={timeMuiChange} />
+              <br />
               <Label subtle>Disabled</Label>
               <TimePicker
                   disabled
                   onChange={timeMuiChange} />
-              <br />
-              <Label subtle>Provided Value</Label>
-              <TimePicker
-                  onChange={timeMuiChange}
-                  value="23:11" />
               <br />
               <Label subtle>Controlled</Label>
               <TimePicker
@@ -138,17 +125,17 @@ storiesOf('Date and Time', module)
                   inputVariant="outlined"
                   onChange={timeMuiChange} />
               <br />
+              <Label subtle>24h</Label>
+              <TimePicker
+                  ampm={false}
+                  inputVariant="outlined"
+                  onChange={timeMuiChange} />
+              <br />
               <Label subtle>Disabled</Label>
               <TimePicker
                   inputVariant="outlined"
                   disabled
                   onChange={timeMuiChange} />
-              <br />
-              <Label subtle>Provided Value</Label>
-              <TimePicker
-                  inputVariant="outlined"
-                  onChange={timeMuiChange}
-                  value="23:11" />
               <br />
               <Label subtle>Controlled</Label>
               <TimePicker
@@ -179,14 +166,12 @@ storiesOf('Date and Time', module)
               <Label subtle>Default</Label>
               <DateTimePicker onChange={datetimeMuiChange} />
               <br />
+              <Label subtle>24h</Label>
+              <DateTimePicker ampm={false} onChange={datetimeMuiChange} />
+              <br />
               <Label subtle>Disabled</Label>
               <DateTimePicker
                   disabled
-                  onChange={datetimeMuiChange} />
-              <br />
-              <Label subtle>Provided Value</Label>
-              <DateTimePicker
-                  value={DateTime.local().toISO()}
                   onChange={datetimeMuiChange} />
               <br />
               <Label subtle>Controlled</Label>
@@ -208,16 +193,16 @@ storiesOf('Date and Time', module)
                   inputVariant="outlined"
                   onChange={datetimeMuiChange} />
               <br />
+              <Label subtle>24h</Label>
+              <DateTimePicker
+                  ampm={false}
+                  inputVariant="outlined"
+                  onChange={datetimeMuiChange} />
+              <br />
               <Label subtle>Disabled</Label>
               <DateTimePicker
                   inputVariant="outlined"
                   disabled
-                  onChange={datetimeMuiChange} />
-              <br />
-              <Label subtle>Provided Value</Label>
-              <DateTimePicker
-                  inputVariant="outlined"
-                  value={DateTime.local().toISO()}
                   onChange={datetimeMuiChange} />
               <br />
               <Label subtle>Controlled</Label>
