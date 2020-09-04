@@ -3,10 +3,14 @@
 import React, { useCallback, useEffect, useState } from 'react';
 
 import isFunction from 'lodash/isFunction';
+import { faCalendarDay } from '@fortawesome/pro-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { KeyboardDatePicker } from '@material-ui/pickers';
 import { DateTime } from 'luxon';
 
 import useInputPropsMemo from './hooks/useInputPropsMemo';
+
+const CalendarIcon = <FontAwesomeIcon icon={faCalendarDay} size="lg" />;
 
 const DatePicker = (props :typeof KeyboardDatePicker) => {
   const {
@@ -59,6 +63,7 @@ const DatePicker = (props :typeof KeyboardDatePicker) => {
         fullWidth={fullWidth}
         InputProps={inputProps}
         inputVariant="filled"
+        keyboardIcon={CalendarIcon}
         mask={mask}
         onChange={handleDateChange}
         placeholder={placeholder}
