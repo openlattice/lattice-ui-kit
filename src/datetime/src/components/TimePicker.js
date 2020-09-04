@@ -10,10 +10,11 @@ import { DateTime } from 'luxon';
 
 import useInputPropsMemo from './hooks/useInputPropsMemo';
 
-const ClockIcon = <FontAwesomeIcon icon={faClock} />;
+const ClockIcon = <FontAwesomeIcon icon={faClock} size="lg" />;
 
 const TimePicker = (props :typeof KeyboardTimePicker) => {
   const {
+    ampm,
     disabled,
     format,
     fullWidth,
@@ -56,18 +57,22 @@ const TimePicker = (props :typeof KeyboardTimePicker) => {
     setSelectedDate(date);
   }, [onChange]);
 
+  const defaultFormat = ampm ? 'hh:mm a' : 'HH:mm';
+  const defaultMask = ampm ? '__:__ _M' : '__:__';
+  const defaultPlaceholder = ampm ? 'HH:MM AM' : 'HH:MM';
+
   return (
     <KeyboardTimePicker
-        ampm
+        ampm={ampm}
         InputProps={inputProps}
         disabled={disabled}
-        format={format}
+        format={format || defaultFormat}
         fullWidth={fullWidth}
         inputVariant="filled"
         keyboardIcon={ClockIcon}
-        mask={mask}
+        mask={mask || defaultMask}
         onChange={handleDateChange}
-        placeholder={placeholder}
+        placeholder={placeholder || defaultPlaceholder}
         value={selectedDate}
         variant="inline"
         {...other} />
@@ -75,11 +80,9 @@ const TimePicker = (props :typeof KeyboardTimePicker) => {
 };
 
 TimePicker.defaultProps = {
+  ampm: true,
   disabled: false,
-  format: 'hh:mm a',
   fullWidth: true,
-  mask: '__:__ _M',
-  placeholder: 'HH:MM AM',
   value: '',
 };
 

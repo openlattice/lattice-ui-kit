@@ -146,4 +146,35 @@ describe('TimePicker', () => {
     expect(preventDefault).toHaveBeenCalledTimes(1);
   });
 
+  describe('ampm', () => {
+    test('true should set 12h format, mask, and placeholder', () => {
+      const wrapper = mount(
+        <ThemeProvider theme={lightTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <TimePicker />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
+
+      const props = wrapper.find(KeyboardTimePicker).props();
+      expect(props.format).toEqual('hh:mm a');
+      expect(props.mask).toEqual('__:__ _M');
+      expect(props.placeholder).toEqual('HH:MM AM');
+    });
+
+    test('false should set 24h format, mask, and placeholder', () => {
+      const wrapper = mount(
+        <ThemeProvider theme={lightTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <TimePicker ampm={false} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
+
+      const props = wrapper.find(KeyboardTimePicker).props();
+      expect(props.format).toEqual('HH:mm');
+      expect(props.mask).toEqual('__:__');
+      expect(props.placeholder).toEqual('HH:MM');
+    });
+  });
 });
