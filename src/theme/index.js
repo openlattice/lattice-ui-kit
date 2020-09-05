@@ -1,7 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
-import typography from './typography';
-
 import {
   BLUE,
   GREEN,
@@ -213,7 +211,7 @@ const lightTheme = createMuiTheme({
       inputHiddenLabel: {
         paddingTop: 10,
         paddingBottom: 10,
-      }
+      },
     },
     MuiOutlinedInput: {
       root: {
@@ -232,10 +230,6 @@ const lightTheme = createMuiTheme({
       },
       input: {
         padding: '10px'
-      },
-      inputHiddenLabel: {
-        paddingTop: 10,
-        paddingBottom: 10,
       },
       notchedOutline: {
         visibility: 'hidden'
@@ -311,7 +305,9 @@ const lightTheme = createMuiTheme({
       disableUnderline: true
     }
   },
-  typography
+  typography: {
+    fontFamily: "'Inter', 'Arial', sans-serif",
+  }
 });
 
 const darkTheme = createMuiTheme({
@@ -364,6 +360,10 @@ const darkTheme = createMuiTheme({
         minHeight: '46px',
         padding: '0 38px',
         fontSize: '18px',
+      },
+      contained: {
+        backgroundColor: NEUTRAL.N50,
+        color: NEUTRAL.N700,
       },
       /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
       containedSizeSmall: {
@@ -449,7 +449,7 @@ const darkTheme = createMuiTheme({
         borderRadius: '3px',
         fontFamily: 'inherit',
         fontSize: '14px',
-        height: '40px',
+        minHeight: '40px',
         lineHeight: '1.5',
         '&:hover:not($disabled):not($focused):not($error)': {
           backgroundColor: '#4F4E54',
@@ -467,6 +467,9 @@ const darkTheme = createMuiTheme({
         '&$disabled': {
           cursor: 'not-allowed'
         }
+      },
+      inputHiddenLabel: {
+        padding: 0
       }
     },
     MuiIconButton: {
@@ -477,6 +480,27 @@ const darkTheme = createMuiTheme({
       sizeSmall: {
         fontSize: '0.8rem',
         padding: '6px',
+      },
+    },
+    MuiFilledInput: {
+      root: {
+        border: '1px solid #36353B',
+        '&$focused': {
+          borderColor: '#98979D',
+        },
+        '&$error': {
+          borderColor: RED.R300
+        },
+      },
+      input: {
+        padding: '10px'
+      },
+      multiline: {
+        padding: '10px'
+      },
+      inputHiddenLabel: {
+        paddingTop: 10,
+        paddingBottom: 10,
       },
     },
     MuiOutlinedInput: {
@@ -495,23 +519,6 @@ const darkTheme = createMuiTheme({
       notchedOutline: {
         visibility: 'hidden'
       },
-    },
-    MuiFilledInput: {
-      root: {
-        border: '1px solid #36353B',
-        '&$focused': {
-          borderColor: '#98979D',
-        },
-        '&$error': {
-          borderColor: RED.R300
-        },
-      },
-      input: {
-        padding: '10px'
-      },
-      notchedOutline: {
-        visibility: 'hidden'
-      }
     },
     MuiTouchRipple: {
       child: {
@@ -582,7 +589,9 @@ const darkTheme = createMuiTheme({
       disableUnderline: true
     },
   },
-  typography
+  typography: {
+    fontFamily: "'Inter', 'Arial', sans-serif",
+  }
 });
 
 export { darkTheme, lightTheme };
