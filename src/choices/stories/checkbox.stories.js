@@ -76,7 +76,7 @@ storiesOf('Checkbox', module)
             display: 'flex',
             flexDirection: 'column'
           }}>
-            <Label>Showcase</Label>
+            <Label>Group</Label>
             <ChoiceGroup row>
               <Checkbox mode="button" id="group-1" label="Out of Touch with Reality" />
               <Checkbox mode="button" id="group-2" label="Neglect of Self Care" />
