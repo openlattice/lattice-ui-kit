@@ -12,11 +12,11 @@ exports[`Checkbox render matches snapshot 1`] = `
 }
 
 input:hover ~ .c4 {
-  background-color: #d1d1d6;
+  background-color: #c3c3c8;
 }
 
-input:focus ~ .c4 {
-  box-shadow: #4f3fa7 0 0 0 2px;
+input:focus-visible ~ .c4 {
+  box-shadow: #7654ff 0 0 0 2px;
 }
 
 input:checked ~ .c4,
@@ -36,7 +36,7 @@ input:disabled ~ .c4 {
 
 input:checked:disabled ~ .c4 {
   cursor: not-allowed;
-  background-color: #d1d1d6;
+  background-color: #8b8b90;
 }
 
 input[readonly] ~ .c4 {
@@ -93,6 +93,10 @@ input:checked ~ .c4:after {
   pointer-events: auto;
   position: relative;
   vertical-align: middle;
+}
+
+.c0:hover {
+  cursor: pointer;
 }
 
 .c5 {
@@ -161,7 +165,7 @@ input:checked ~ .c4:after {
                 [Function],
                 ";display:inline-flex;font-size:14px;min-height:40px;pointer-events:",
                 [Function],
-                ";position:relative;vertical-align:middle;",
+                ";position:relative;vertical-align:middle;&:hover{cursor:pointer;}",
               ],
             },
             "displayName": "ChoiceLabel",

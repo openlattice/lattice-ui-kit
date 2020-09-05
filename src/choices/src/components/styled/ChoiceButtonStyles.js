@@ -1,60 +1,57 @@
 import { css } from 'styled-components';
 
-import {
-  defaultActive,
-  defaultDisabled,
-  defaultHover,
-  defaultStyle,
-} from '../../../../button/src/components/styled/DefaultButtonStyles';
 import { NEUTRAL, PURPLE } from '../../../../colors';
 
+// Not really sure why, but 1px box-shadow looks significantly larger than 1px on chrome
+// Using fractional pixel seems to look closer to intended design
+
 const choiceButtonStyles = css`
-  ${defaultStyle}
   align-items: center;
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
+  background-color: ${NEUTRAL.N50};
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  border-radius: 6px;
+  color: ${NEUTRAL.N900};
   display: flex;
+  font-size: 1rem;
   flex-direction: column;
-  font-weight: 600;
   justify-content: center;
-  min-height: 40px;
+  min-height: 60px;
   min-width: 84px;
   padding: 10px 12px;
   text-align: center;
+  user-select: none;
   width: 100%;
 
+  input:focus-visible ~ &,
   input:hover ~ & {
-    ${defaultHover}
-  }
-
-  input:active ~ & {
-    ${defaultActive};
-  }
-
-  input:focus ~ & {
-    box-shadow: ${PURPLE.P300} 0 0 0 1px;
+    background-color: ${NEUTRAL.N100};
+    cursor: pointer;
   }
 
   input:checked ~ &,
   input[readonly]:checked:disabled ~ &,
   input[readonly]:checked:hover ~ & {
-    background-color: ${NEUTRAL.N50};
-    border: solid 1px ${PURPLE.P300};
+    background-color: ${PURPLE.P00};
     color: ${PURPLE.P300};
   }
 
-  input:checked:hover ~ & {
-    background-color: ${PURPLE.P100};
+  input:focus-visible ~ & {
+    box-shadow: ${NEUTRAL.N400} 0 0 0 0.1px;
+  }
+  input:checked:focus-visible ~ & {
+    box-shadow: ${PURPLE.P300} 0 0 0 0.1px;
   }
 
   input:disabled ~ & {
-    ${defaultDisabled}
+    background-color: ${NEUTRAL.N00};
+    color: ${NEUTRAL.N500};
     cursor: not-allowed;
   }
 
   input:checked:disabled ~ & {
-    ${defaultActive}
+    background-color: ${NEUTRAL.N400};
+    color: ${NEUTRAL.N900};
     cursor: not-allowed;
   }
 
