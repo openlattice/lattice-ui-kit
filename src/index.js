@@ -117,13 +117,26 @@ export {
   TimePicker,
   DateTimePicker,
 } from './datetime';
+export { default as Breadcrumbs } from './breadcrumbs';
 export { default as Skeleton } from './skeleton';
 export { default as Tooltip } from './tooltip';
+export { default as Typography } from './typography';
+export {
+  ExpansionPanel,
+  ExpansionPanelDetails,
+  ExpansionPanelSummary,
+} from './expansion';
+export {
+  darkTheme,
+  lightTheme
+} from './theme';
+
 export {
   Chip,
   Collapse,
   Divider,
   Fab,
+  LatticeLuxonUtils,
   List,
   ListItem,
   ListItemAvatar,
@@ -142,18 +155,7 @@ export {
   TabPanel,
   Tabs,
   ThemeProvider,
-  LatticeLuxonUtils,
 };
-export { default as Breadcrumbs } from './breadcrumbs';
-export {
-  ExpansionPanel,
-  ExpansionPanelDetails,
-  ExpansionPanelSummary,
-} from './expansion';
-export {
-  darkTheme,
-  lightTheme
-} from './theme';
 
 export default {
   version

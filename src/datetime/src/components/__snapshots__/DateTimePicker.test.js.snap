@@ -227,10 +227,6 @@ exports[`DateTimePicker render matches snapshot 1`] = `
           "input": Object {
             "padding": "10px",
           },
-          "inputHiddenLabel": Object {
-            "paddingBottom": 10,
-            "paddingTop": 10,
-          },
           "notchedOutline": Object {
             "visibility": "hidden",
           },
@@ -345,7 +341,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
           "disabled": "rgba(0, 0, 0, 0.38)",
           "hint": "rgba(0, 0, 0, 0.38)",
           "primary": "#1f1f22",
-          "secondary": "rgba(0, 0, 0, 0.54)",
+          "secondary": "#8b8b90",
         },
         "tonalOffset": 0.2,
         "type": "light",
@@ -420,76 +416,75 @@ exports[`DateTimePicker render matches snapshot 1`] = `
       },
       "typography": Object {
         "body1": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "1rem",
           "fontWeight": 400,
           "lineHeight": 1.5,
         },
         "body2": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "0.875rem",
           "fontWeight": 400,
           "lineHeight": 1.43,
         },
         "button": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "0.875rem",
           "fontWeight": 500,
           "lineHeight": 1.75,
           "textTransform": "uppercase",
         },
         "caption": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 400,
           "lineHeight": 1.66,
         },
-        "color": "inherit",
-        "fontFamily": "Inter,Arial,sans-serif",
+        "fontFamily": "'Inter', 'Arial', sans-serif",
         "fontSize": 14,
         "fontWeightBold": 700,
         "fontWeightLight": 300,
         "fontWeightMedium": 500,
         "fontWeightRegular": 400,
         "h1": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "6rem",
           "fontWeight": 300,
           "lineHeight": 1.167,
         },
         "h2": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "3.75rem",
           "fontWeight": 300,
           "lineHeight": 1.2,
         },
         "h3": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "3rem",
           "fontWeight": 400,
           "lineHeight": 1.167,
         },
         "h4": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "2.125rem",
           "fontWeight": 400,
           "lineHeight": 1.235,
         },
         "h5": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "1.5rem",
           "fontWeight": 400,
           "lineHeight": 1.334,
         },
         "h6": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "1.25rem",
           "fontWeight": 500,
           "lineHeight": 1.6,
         },
         "htmlFontSize": 16,
         "overline": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 400,
           "lineHeight": 2.66,
@@ -498,13 +493,13 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         "pxToRem": [Function],
         "round": [Function],
         "subtitle1": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "1rem",
           "fontWeight": 400,
           "lineHeight": 1.75,
         },
         "subtitle2": Object {
-          "fontFamily": "Inter,Arial,sans-serif",
+          "fontFamily": "'Inter', 'Arial', sans-serif",
           "fontSize": "0.875rem",
           "fontWeight": 500,
           "lineHeight": 1.57,
@@ -527,11 +522,9 @@ exports[`DateTimePicker render matches snapshot 1`] = `
     utils={[Function]}
   >
     <DateTimePicker
+      ampm={true}
       disabled={false}
-      format="MM/dd/yyyy hh:mm a"
       fullWidth={true}
-      mask="__/__/____ __:__ _M"
-      placeholder="MM/DD/YYYY HH:MM AM"
       value=""
     >
       <PickerWithState
@@ -548,6 +541,39 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         fullWidth={true}
         inputVariant="filled"
         invalidDateMessage="Invalid Date Format"
+        keyboardIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  448,
+                  512,
+                  Array [],
+                  "f783",
+                  "M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z",
+                ],
+                "iconName": "calendar-day",
+                "prefix": "far",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size="lg"
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
         mask="__/__/____ __:__ _M"
         maxDate={2100-01-01T00:00:00.000Z}
         maxDateMessage="Date should not be after maximal date"
@@ -591,6 +617,39 @@ exports[`DateTimePicker render matches snapshot 1`] = `
           format="MM/dd/yyyy hh:mm a"
           fullWidth={true}
           inputVariant="filled"
+          keyboardIcon={
+            <FontAwesomeIcon
+              border={false}
+              className=""
+              fixedWidth={false}
+              flip={null}
+              icon={
+                Object {
+                  "icon": Array [
+                    448,
+                    512,
+                    Array [],
+                    "f783",
+                    "M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z",
+                  ],
+                  "iconName": "calendar-day",
+                  "prefix": "far",
+                }
+              }
+              inverse={false}
+              listItem={false}
+              mask={null}
+              pull={null}
+              pulse={false}
+              rotation={null}
+              size="lg"
+              spin={false}
+              swapOpacity={false}
+              symbol={false}
+              title=""
+              transform={null}
+            />
+          }
           mask="__/__/____ __:__ _M"
           onAccept={[Function]}
           onClear={[Function]}
@@ -624,6 +683,39 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             format="MM/dd/yyyy hh:mm a"
             fullWidth={true}
             inputVariant="filled"
+            keyboardIcon={
+              <FontAwesomeIcon
+                border={false}
+                className=""
+                fixedWidth={false}
+                flip={null}
+                icon={
+                  Object {
+                    "icon": Array [
+                      448,
+                      512,
+                      Array [],
+                      "f783",
+                      "M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z",
+                    ],
+                    "iconName": "calendar-day",
+                    "prefix": "far",
+                  }
+                }
+                inverse={false}
+                listItem={false}
+                mask={null}
+                pull={null}
+                pulse={false}
+                rotation={null}
+                size="lg"
+                spin={false}
+                swapOpacity={false}
+                symbol={false}
+                title=""
+                transform={null}
+              />
+            }
             mask="__/__/____ __:__ _M"
             onAccept={[Function]}
             onClear={[Function]}
@@ -658,7 +750,39 @@ exports[`DateTimePicker render matches snapshot 1`] = `
               }
               inputValue=""
               inputVariant="filled"
-              keyboardIcon={<KeyboardIcon />}
+              keyboardIcon={
+                <FontAwesomeIcon
+                  border={false}
+                  className=""
+                  fixedWidth={false}
+                  flip={null}
+                  icon={
+                    Object {
+                      "icon": Array [
+                        448,
+                        512,
+                        Array [],
+                        "f783",
+                        "M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z",
+                      ],
+                      "iconName": "calendar-day",
+                      "prefix": "far",
+                    }
+                  }
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size="lg"
+                  spin={false}
+                  swapOpacity={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                />
+              }
               mask="__/__/____ __:__ _M"
               onChange={[Function]}
               openPicker={[Function]}
@@ -683,7 +807,37 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                           disabled={false}
                           onClick={[Function]}
                         >
-                          <KeyboardIcon />
+                          <FontAwesomeIcon
+                            border={false}
+                            className=""
+                            fixedWidth={false}
+                            flip={null}
+                            icon={
+                              Object {
+                                "icon": Array [
+                                  448,
+                                  512,
+                                  Array [],
+                                  "f783",
+                                  "M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z",
+                                ],
+                                "iconName": "calendar-day",
+                                "prefix": "far",
+                              }
+                            }
+                            inverse={false}
+                            listItem={false}
+                            mask={null}
+                            pull={null}
+                            pulse={false}
+                            rotation={null}
+                            size="lg"
+                            spin={false}
+                            swapOpacity={false}
+                            symbol={false}
+                            title=""
+                            transform={null}
+                          />
                         </WithStyles(ForwardRef(IconButton))>
                       </WithStyles(ForwardRef(InputAdornment))>,
                       "onBlur": [Function],
@@ -720,7 +874,37 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                             disabled={false}
                             onClick={[Function]}
                           >
-                            <KeyboardIcon />
+                            <FontAwesomeIcon
+                              border={false}
+                              className=""
+                              fixedWidth={false}
+                              flip={null}
+                              icon={
+                                Object {
+                                  "icon": Array [
+                                    448,
+                                    512,
+                                    Array [],
+                                    "f783",
+                                    "M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z",
+                                  ],
+                                  "iconName": "calendar-day",
+                                  "prefix": "far",
+                                }
+                              }
+                              inverse={false}
+                              listItem={false}
+                              mask={null}
+                              pull={null}
+                              pulse={false}
+                              rotation={null}
+                              size="lg"
+                              spin={false}
+                              swapOpacity={false}
+                              symbol={false}
+                              title=""
+                              transform={null}
+                            />
                           </WithStyles(ForwardRef(IconButton))>
                         </WithStyles(ForwardRef(InputAdornment))>,
                         "onBlur": [Function],
@@ -792,7 +976,37 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                   disabled={false}
                                   onClick={[Function]}
                                 >
-                                  <KeyboardIcon />
+                                  <FontAwesomeIcon
+                                    border={false}
+                                    className=""
+                                    fixedWidth={false}
+                                    flip={null}
+                                    icon={
+                                      Object {
+                                        "icon": Array [
+                                          448,
+                                          512,
+                                          Array [],
+                                          "f783",
+                                          "M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z",
+                                        ],
+                                        "iconName": "calendar-day",
+                                        "prefix": "far",
+                                      }
+                                    }
+                                    inverse={false}
+                                    listItem={false}
+                                    mask={null}
+                                    pull={null}
+                                    pulse={false}
+                                    rotation={null}
+                                    size="lg"
+                                    spin={false}
+                                    swapOpacity={false}
+                                    symbol={false}
+                                    title=""
+                                    transform={null}
+                                  />
                                 </WithStyles(ForwardRef(IconButton))>
                               </WithStyles(ForwardRef(InputAdornment))>
                             }
@@ -846,7 +1060,37 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                     disabled={false}
                                     onClick={[Function]}
                                   >
-                                    <KeyboardIcon />
+                                    <FontAwesomeIcon
+                                      border={false}
+                                      className=""
+                                      fixedWidth={false}
+                                      flip={null}
+                                      icon={
+                                        Object {
+                                          "icon": Array [
+                                            448,
+                                            512,
+                                            Array [],
+                                            "f783",
+                                            "M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z",
+                                          ],
+                                          "iconName": "calendar-day",
+                                          "prefix": "far",
+                                        }
+                                      }
+                                      inverse={false}
+                                      listItem={false}
+                                      mask={null}
+                                      pull={null}
+                                      pulse={false}
+                                      rotation={null}
+                                      size="lg"
+                                      spin={false}
+                                      swapOpacity={false}
+                                      symbol={false}
+                                      title=""
+                                      transform={null}
+                                    />
                                   </WithStyles(ForwardRef(IconButton))>
                                 </WithStyles(ForwardRef(InputAdornment))>
                               }
@@ -899,7 +1143,37 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                       disabled={false}
                                       onClick={[Function]}
                                     >
-                                      <KeyboardIcon />
+                                      <FontAwesomeIcon
+                                        border={false}
+                                        className=""
+                                        fixedWidth={false}
+                                        flip={null}
+                                        icon={
+                                          Object {
+                                            "icon": Array [
+                                              448,
+                                              512,
+                                              Array [],
+                                              "f783",
+                                              "M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z",
+                                            ],
+                                            "iconName": "calendar-day",
+                                            "prefix": "far",
+                                          }
+                                        }
+                                        inverse={false}
+                                        listItem={false}
+                                        mask={null}
+                                        pull={null}
+                                        pulse={false}
+                                        rotation={null}
+                                        size="lg"
+                                        spin={false}
+                                        swapOpacity={false}
+                                        symbol={false}
+                                        title=""
+                                        transform={null}
+                                      />
                                     </WithStyles(ForwardRef(IconButton))>
                                   </WithStyles(ForwardRef(InputAdornment))>
                                 }
@@ -956,7 +1230,37 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                         disabled={false}
                                         onClick={[Function]}
                                       >
-                                        <KeyboardIcon />
+                                        <FontAwesomeIcon
+                                          border={false}
+                                          className=""
+                                          fixedWidth={false}
+                                          flip={null}
+                                          icon={
+                                            Object {
+                                              "icon": Array [
+                                                448,
+                                                512,
+                                                Array [],
+                                                "f783",
+                                                "M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z",
+                                              ],
+                                              "iconName": "calendar-day",
+                                              "prefix": "far",
+                                            }
+                                          }
+                                          inverse={false}
+                                          listItem={false}
+                                          mask={null}
+                                          pull={null}
+                                          pulse={false}
+                                          rotation={null}
+                                          size="lg"
+                                          spin={false}
+                                          swapOpacity={false}
+                                          symbol={false}
+                                          title=""
+                                          transform={null}
+                                        />
                                       </WithStyles(ForwardRef(IconButton))>
                                     </WithStyles(ForwardRef(InputAdornment))>
                                   }
@@ -1083,40 +1387,55 @@ exports[`DateTimePicker render matches snapshot 1`] = `
                                                     <span
                                                       className="MuiIconButton-label"
                                                     >
-                                                      <KeyboardIcon>
-                                                        <WithStyles(ForwardRef(SvgIcon))>
-                                                          <ForwardRef(SvgIcon)
-                                                            classes={
-                                                              Object {
-                                                                "colorAction": "MuiSvgIcon-colorAction",
-                                                                "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                                "colorError": "MuiSvgIcon-colorError",
-                                                                "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                                "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                                "root": "MuiSvgIcon-root",
-                                                              }
-                                                            }
-                                                          >
-                                                            <svg
-                                                              aria-hidden={true}
-                                                              className="MuiSvgIcon-root"
-                                                              focusable="false"
-                                                              viewBox="0 0 24 24"
-                                                            >
-                                                              <path
-                                                                d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
-                                                              />
-                                                              <path
-                                                                d="M0 0h24v24H0z"
-                                                                fill="none"
-                                                              />
-                                                            </svg>
-                                                          </ForwardRef(SvgIcon)>
-                                                        </WithStyles(ForwardRef(SvgIcon))>
-                                                      </KeyboardIcon>
+                                                      <FontAwesomeIcon
+                                                        border={false}
+                                                        className=""
+                                                        fixedWidth={false}
+                                                        flip={null}
+                                                        icon={
+                                                          Object {
+                                                            "icon": Array [
+                                                              448,
+                                                              512,
+                                                              Array [],
+                                                              "f783",
+                                                              "M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z",
+                                                            ],
+                                                            "iconName": "calendar-day",
+                                                            "prefix": "far",
+                                                          }
+                                                        }
+                                                        inverse={false}
+                                                        listItem={false}
+                                                        mask={null}
+                                                        pull={null}
+                                                        pulse={false}
+                                                        rotation={null}
+                                                        size="lg"
+                                                        spin={false}
+                                                        swapOpacity={false}
+                                                        symbol={false}
+                                                        title=""
+                                                        transform={null}
+                                                      >
+                                                        <svg
+                                                          aria-hidden="true"
+                                                          className="svg-inline--fa fa-calendar-day fa-w-14 fa-lg "
+                                                          data-icon="calendar-day"
+                                                          data-prefix="far"
+                                                          focusable="false"
+                                                          role="img"
+                                                          style={Object {}}
+                                                          viewBox="0 0 448 512"
+                                                          xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                          <path
+                                                            d="M112 368h96c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-96c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V160h352v298z"
+                                                            fill="currentColor"
+                                                            style={Object {}}
+                                                          />
+                                                        </svg>
+                                                      </FontAwesomeIcon>
                                                     </span>
                                                     <WithStyles(memo)
                                                       center={true}

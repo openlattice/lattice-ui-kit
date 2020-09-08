@@ -143,4 +143,36 @@ describe('DateTimePicker', () => {
     expect(preventDefault).toHaveBeenCalledTimes(1);
   });
 
+  describe('ampm', () => {
+    test('true should set 12h format, mask, and placeholder', () => {
+      const wrapper = mount(
+        <ThemeProvider theme={lightTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <DateTimePicker />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
+
+      const props = wrapper.find(KeyboardDateTimePicker).props();
+      expect(props.format).toEqual('MM/dd/yyyy hh:mm a');
+      expect(props.mask).toEqual('__/__/____ __:__ _M');
+      expect(props.placeholder).toEqual('MM/DD/YYYY HH:MM AM');
+    });
+
+    test('false should set 24h format, mask, and placeholder', () => {
+      const wrapper = mount(
+        <ThemeProvider theme={lightTheme}>
+          <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+            <DateTimePicker ampm={false} />
+          </MuiPickersUtilsProvider>
+        </ThemeProvider>
+      );
+
+      const props = wrapper.find(KeyboardDateTimePicker).props();
+      expect(props.format).toEqual('MM/dd/yyyy HH:mm');
+      expect(props.mask).toEqual('__/__/____ __:__');
+      expect(props.placeholder).toEqual('MM/DD/YYYY HH:MM');
+    });
+  });
+
 });

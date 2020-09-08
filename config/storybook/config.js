@@ -27,7 +27,6 @@ const StoryOuterWrapper = styled.div`
   overflow: scroll;
   position: relative;
   width: 100%;
-  -webkit-font-smoothing: antialiased;
 `;
 
 const StoryInnerWrapper = styled.div`
