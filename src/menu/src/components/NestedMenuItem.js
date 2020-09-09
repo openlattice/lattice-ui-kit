@@ -3,6 +3,7 @@ import React, { useImperativeHandle, useRef, useState } from 'react';
 
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import clsx from 'clsx';
+import styled from 'styled-components';
 import { faChevronRight } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Menu, MenuItem } from '@material-ui/core';
@@ -13,6 +14,11 @@ import { NEUTRAL } from '../../../colors';
 import { ARROW_LEFT, ARROW_RIGHT, ESC } from '../../../utils/keycodes';
 
 const ChevronRight = () => <FontAwesomeIcon icon={faChevronRight} color={NEUTRAL.N500} />;
+const NestedMenuItemWrapper = styled.div`
+  :focus {
+    outline: none;
+  }
+`;
 
 // open NestedMenuItem maintains themed hover style
 const useMenuItemStyles = makeStyles((theme) => ({
@@ -123,7 +129,7 @@ const NestedMenuItem = React.forwardRef<MuiMenuItemProps, MenuItem>((props :Prop
   }
 
   return (
-    <div
+    <NestedMenuItemWrapper
         onFocus={handleFocus}
         onKeyDown={handleKeyDown}
         onMouseEnter={handleMouseEnter}
@@ -166,7 +172,7 @@ const NestedMenuItem = React.forwardRef<MuiMenuItemProps, MenuItem>((props :Prop
           {children}
         </div>
       </Menu>
-    </div>
+    </NestedMenuItemWrapper>
   );
 });
 
