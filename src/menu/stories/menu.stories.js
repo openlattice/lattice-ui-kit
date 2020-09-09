@@ -10,7 +10,7 @@ import NestedMenuItem from '../src/components/NestedMenuItem';
 import { Button, IconButton } from '../../button';
 import { Card, CardSegment, CardStack } from '../../layout';
 
-const options = ['Edit', 'Create Issue'];
+const options = ['Edit Profile', 'Create Issue'];
 
 const MoreVertIcon = () => <FontAwesomeIcon icon={faEllipsisV} fixedWidth />;
 
