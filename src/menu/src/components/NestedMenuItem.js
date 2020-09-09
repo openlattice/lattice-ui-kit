@@ -1,12 +1,11 @@
 // @flow
 import React, { useImperativeHandle, useRef, useState } from 'react';
 
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import clsx from 'clsx';
 import styled from 'styled-components';
 import { faChevronRight } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Menu, MenuItem } from '@material-ui/core';
+import { ListItemSecondaryAction, Menu, MenuItem } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import type { MenuItemProps as MuiMenuItemProps } from '@material-ui/core';
 
