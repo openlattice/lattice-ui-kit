@@ -89,4 +89,4 @@ const IconButton = ({
 };
 
 /* eslint-disable-next-line react/jsx-props-no-spreading */
-export default React.forwardRef((props, ref) => <IconButton {...props} forwardRef={ref} />);
+export default React.forwardRef<ButtonProps, MuiIconButton>((props, ref) => <IconButton {...props} forwardRef={ref} />);
