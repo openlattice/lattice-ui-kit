@@ -85,8 +85,7 @@ storiesOf('Menu', module)
             transformOrigin={{
               vertical: 'top',
               horizontal: 'right',
-            }}
-            transition>
+            }}>
           {options.map((option) => (
             <MenuItem
                 key={option}
