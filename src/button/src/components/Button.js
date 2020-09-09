@@ -18,6 +18,7 @@ const Button = ({
   isLoading,
   startIcon,
   variant = 'contained',
+  forwardRef,
   ...rest
 } :ButtonProps) => {
 
@@ -45,9 +46,10 @@ const Button = ({
 
   /* eslint-disable react/jsx-props-no-spreading */
   return (
-    <MuiButton {...props} />
+    <MuiButton {...props} ref={forwardRef} />
   );
   /* eslint-enable */
 };
 
-export default Button;
+/* eslint-disable-next-line react/jsx-props-no-spreading */
+export default React.forwardRef<ButtonProps, MuiButton>((props, ref) => <Button {...props} forwardRef={ref} />);
