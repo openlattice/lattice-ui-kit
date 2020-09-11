@@ -89,8 +89,6 @@ export {
   NestedMenuItem,
 } from './menu';
 export {
-  AppContainerWrapper,
-  AppContentWrapper,
   AppHeaderWrapper,
   AppNavigationWrapper,
   Card,
