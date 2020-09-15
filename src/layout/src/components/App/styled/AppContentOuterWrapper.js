@@ -7,8 +7,8 @@ import styled, { css } from 'styled-components';
 import { NEUTRAL } from '../../../../../colors';
 
 type Props = {
-  bgColor :?string;
-  borderless :boolean;
+  bgColor ?:string;
+  borderless ?:boolean;
 };
 
 const getComputedStyles = ({ bgColor, borderless } :Props) => {
