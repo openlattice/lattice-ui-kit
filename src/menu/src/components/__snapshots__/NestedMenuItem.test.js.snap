@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NestedMenuItem should match snapshot 1`] = `
+<WithStyles(ForwardRef(Menu))
+  anchorEl={[Function]}
+  open={true}
+>
+  <ForwardRef(Menu)
+    anchorEl={[Function]}
+    classes={
+      Object {
+        "list": "MuiMenu-list",
+        "paper": "MuiMenu-paper",
+      }
+    }
+    open={true}
+  >
+    <WithStyles(ForwardRef(Popover))
+      PaperProps={
+        Object {
+          "classes": Object {
+            "root": "MuiMenu-paper",
+          },
+        }
+      }
+      anchorEl={[Function]}
+      anchorOrigin={
+        Object {
+          "horizontal": "left",
+          "vertical": "top",
+        }
+      }
+      getContentAnchorEl={[Function]}
+      onEntering={[Function]}
+      open={true}
+      transformOrigin={
+        Object {
+          "horizontal": "left",
+          "vertical": "top",
+        }
+      }
+      transitionDuration="auto"
+    >
+      <ForwardRef(Popover)
+        PaperProps={
+          Object {
+            "classes": Object {
+              "root": "MuiMenu-paper",
+            },
+          }
+        }
+        anchorEl={[Function]}
+        anchorOrigin={
+          Object {
+            "horizontal": "left",
+            "vertical": "top",
+          }
+        }
+        classes={
+          Object {
+            "paper": "MuiPopover-paper",
+            "root": "MuiPopover-root",
+          }
+        }
+        getContentAnchorEl={[Function]}
+        onEntering={[Function]}
+        open={true}
+        transformOrigin={
+          Object {
+            "horizontal": "left",
+            "vertical": "top",
+          }
+        }
+        transitionDuration="auto"
+      >
+        <ForwardRef(Modal)
+          BackdropProps={
+            Object {
+              "invisible": true,
+            }
+          }
+          className="MuiPopover-root"
+          container={
+            <body
+              style="padding-right: 0px; overflow: hidden;"
+            >
+              <div
+                class="MuiPopover-root"
+                role="presentation"
+                style="position: fixed; z-index: 1300; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+              >
+                <div
+                  aria-hidden="true"
+                  style="z-index: -1; position: fixed; right: 0px; bottom: 0px; top: 0px; left: 0px; background-color: transparent;"
+                />
+                <div
+                  data-test="sentinelStart"
+                  tabindex="0"
+                />
+                <div
+                  class="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
+                  style="opacity: 1; transform: scale(1, 1); transition: opacity 0ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,transform 0ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; top: 16px; left: 16px; transform-origin: -16px -16px;"
+                  tabindex="-1"
+                >
+                  <ul
+                    class="MuiList-root MuiMenu-list MuiList-padding"
+                    role="menu"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="makeStyles-root-3"
+                      role="menu"
+                      tabindex="0"
+                    >
+                      <li
+                        class="MuiListItem-container"
+                      >
+                        <div
+                          aria-disabled="false"
+                          class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root makeStyles-root-1 makeStyles-root-2 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button MuiListItem-secondaryAction"
+                          role="menuitem"
+                          tabindex="-1"
+                        >
+                          Option 1
+                          <span
+                            class="MuiTouchRipple-root"
+                          />
+                        </div>
+                        <div
+                          class="MuiListItemSecondaryAction-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="svg-inline--fa fa-chevron-right fa-w-8 fa-sm "
+                            color="#8b8b90"
+                            data-icon="chevron-right"
+                            data-prefix="far"
+                            focusable="false"
+                            role="img"
+                            viewBox="0 0 256 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </div>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+                <div
+                  data-test="sentinelEnd"
+                  tabindex="0"
+                />
+              </div>
+            </body>
+          }
+          open={true}
+        >
+          <ForwardRef(Portal)
+            container={
+              <body
+                style="padding-right: 0px; overflow: hidden;"
+              >
+                <div
+                  class="MuiPopover-root"
+                  role="presentation"
+                  style="position: fixed; z-index: 1300; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+                >
+                  <div
+                    aria-hidden="true"
+                    style="z-index: -1; position: fixed; right: 0px; bottom: 0px; top: 0px; left: 0px; background-color: transparent;"
+                  />
+                  <div
+                    data-test="sentinelStart"
+                    tabindex="0"
+                  />
+                  <div
+                    class="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
+                    style="opacity: 1; transform: scale(1, 1); transition: opacity 0ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,transform 0ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; top: 16px; left: 16px; transform-origin: -16px -16px;"
+                    tabindex="-1"
+                  >
+                    <ul
+                      class="MuiList-root MuiMenu-list MuiList-padding"
+                      role="menu"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="makeStyles-root-3"
+                        role="menu"
+                        tabindex="0"
+                      >
+                        <li
+                          class="MuiListItem-container"
+                        >
+                          <div
+                            aria-disabled="false"
+                            class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root makeStyles-root-1 makeStyles-root-2 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button MuiListItem-secondaryAction"
+                            role="menuitem"
+                            tabindex="-1"
+                          >
+                            Option 1
+                            <span
+                              class="MuiTouchRipple-root"
+                            />
+                          </div>
+                          <div
+                            class="MuiListItemSecondaryAction-root"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="svg-inline--fa fa-chevron-right fa-w-8 fa-sm "
+                              color="#8b8b90"
+                              data-icon="chevron-right"
+                              data-prefix="far"
+                              focusable="false"
+                              role="img"
+                              viewBox="0 0 256 512"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </div>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                  <div
+                    data-test="sentinelEnd"
+                    tabindex="0"
+                  />
+                </div>
+              </body>
+            }
+            disablePortal={false}
+          />
+        </ForwardRef(Modal)>
+      </ForwardRef(Popover)>
+    </WithStyles(ForwardRef(Popover))>
+  </ForwardRef(Menu)>
+</WithStyles(ForwardRef(Menu))>
+`;
