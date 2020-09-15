@@ -6,7 +6,6 @@ import { mount, shallow } from 'enzyme';
 import AppContentInnerWrapper from './styled/AppContentInnerWrapper';
 import AppContentOuterWrapper from './styled/AppContentOuterWrapper';
 import AppContentWrapper from './AppContentWrapper';
-import { APP_CONTAINER_MIN_WIDTH, APP_CONTENT_PADDING } from '../../../../style/Sizes';
 
 describe('AppContentWrapper', () => {
 
@@ -111,9 +110,9 @@ describe('AppContentWrapper', () => {
         expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('flex', '1 0 auto');
         expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('flex-direction', 'column');
         expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('justify-content', 'flex-start');
-        expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('max-width', `${APP_CONTAINER_MIN_WIDTH}px`);
+        expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('max-width', '1168px');
         expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('min-width', '0');
-        expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('padding', `${APP_CONTENT_PADDING}px`);
+        expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('padding', '32px');
         expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('position', 'relative');
         expect(wrapper.find(AppContentInnerWrapper)).toHaveStyleRule('width', '100%');
       });
