@@ -10,7 +10,7 @@ import NestedMenuItem from '../src/components/NestedMenuItem';
 import { Button, IconButton } from '../../button';
 import { Card, CardSegment, CardStack } from '../../layout';
 
-const options = ['Edit Profile', 'Create Issue'];
+const options = ['Option 1', 'Option 2'];
 
 const MoreVertIcon = () => <FontAwesomeIcon icon={faEllipsisV} fixedWidth />;
 
@@ -42,7 +42,7 @@ storiesOf('Menu', module)
       </CardStack>
     </div>
   ))
-  .add('Nested Menu', () => {
+  .add('default', () => {
     const [open, setOpen] = React.useState(false);
     const anchorRef = React.useRef(null);
 
@@ -60,20 +60,18 @@ storiesOf('Menu', module)
 
     return (
       <div>
-        <Button variant="contained">
-          Create Report
-        </Button>
-        <IconButton
-            variant="text"
+        <Button
             aria-controls={open ? 'button-action-menu' : undefined}
             aria-expanded={open ? 'true' : undefined}
-            aria-label="select additional action"
             aria-haspopup="menu"
+            aria-label="select additional action"
+            color="primary"
             onClick={handleToggle}
             ref={anchorRef}>
-          <MoreVertIcon />
-        </IconButton>
+          Open Menu
+        </Button>
         <Menu
+            elevation={4}
             open={open}
             onClose={handleClose}
             anchorEl={anchorRef.current}
@@ -93,10 +91,94 @@ storiesOf('Menu', module)
               {option}
             </MenuItem>
           ))}
-          <NestedMenuItem label="Visibility" parentMenuOpen={!!open}>
-            <MenuItem onClick={action('Click nested MenuItem')}>Auto</MenuItem>
-            <MenuItem onClick={action('Click nested MenuItem')}>Always</MenuItem>
-            <MenuItem onClick={action('Click nested MenuItem')}>Never</MenuItem>
+        </Menu>
+      </div>
+    );
+  })
+  .add('Nested Menu', () => {
+    const [open, setOpen] = React.useState(false);
+    const anchorRef = React.useRef(null);
+
+    const handleToggle = () => {
+      setOpen((prevOpen) => !prevOpen);
+    };
+
+    const handleClose = (event) => {
+      if (anchorRef.current && anchorRef.current.contains(event.target)) {
+        return;
+      }
+
+      setOpen(false);
+    };
+
+    return (
+      <div>
+        <Button color="primary" variant="contained">
+          Create Report
+        </Button>
+        <IconButton
+            variant="text"
+            aria-controls={open ? 'button-action-menu' : undefined}
+            aria-expanded={open ? 'true' : undefined}
+            aria-label="select additional action"
+            aria-haspopup="menu"
+            onClick={handleToggle}
+            ref={anchorRef}>
+          <MoreVertIcon />
+        </IconButton>
+        <Menu
+            elevation={4}
+            open={open}
+            onClose={handleClose}
+            anchorEl={anchorRef.current}
+            getContentAnchorEl={null}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'right',
+            }}
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'right',
+            }}>
+          {options.map((option) => (
+            <MenuItem
+                key={option}
+                onClick={action('Click MenuItem')}>
+              {option}
+            </MenuItem>
+          ))}
+          <NestedMenuItem elevation={4} label="Option 3" parentMenuOpen={!!open}>
+            {options.map((option) => (
+              <MenuItem
+                  key={`nested-${option}`}
+                  onClick={action('Click nested MenuItem')}>
+                {`Nested ${option}`}
+              </MenuItem>
+            ))}
+          </NestedMenuItem>
+          <NestedMenuItem
+              elevation={4}
+              label="Option 4"
+              parentMenuOpen={!!open}>
+            {options.map((option) => (
+              <MenuItem
+                  key={`nested-${option}`}
+                  onClick={action('Click nested MenuItem')}>
+                {`Nested ${option}`}
+              </MenuItem>
+            ))}
+            <NestedMenuItem
+                elevation={4}
+                label="Nested Menu 1"
+                parentMenuOpen={!!open}>
+              {options.map((option) => (
+                <MenuItem
+                    key={`nested--nested-${option}`}
+                    onClick={action('Click nested MenuItem')}>
+                  {`Nested ${option}`}
+                </MenuItem>
+              ))}
+            </NestedMenuItem>
           </NestedMenuItem>
         </Menu>
       </div>
