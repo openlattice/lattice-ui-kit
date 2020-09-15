@@ -16,7 +16,7 @@ import type { ModalFooterProps } from './ModalFooter';
 import type { ModalHeaderProps } from './ModalHeader';
 
 import Overlay from '../../../overlay';
-import { ESC_KEY_CODE } from '../../../utils/keycodes';
+import { ESC } from '../../../utils/keycodes';
 
 type ModalProps = {
   children ?:Node;
@@ -145,12 +145,12 @@ export default class Modal extends Component<ModalProps> {
       return;
     }
 
-    if (event.key === ESC_KEY_CODE) {
+    if (event.key === ESC) {
       this.escapeKeyIsPressed = true;
     }
 
     switch (event.key) {
-      case ESC_KEY_CODE: {
+      case ESC: {
         if (isVisible === true && shouldCloseOnEscape === true) {
           this.close();
         }
@@ -163,7 +163,7 @@ export default class Modal extends Component<ModalProps> {
 
   handleOnKeyUp = (event :KeyboardEvent) => {
 
-    if (event.key === ESC_KEY_CODE) {
+    if (event.key === ESC) {
       this.escapeKeyIsPressed = false;
     }
   }

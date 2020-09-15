@@ -13,9 +13,6 @@ import {
   ListItemSecondaryAction,
   ListItemText,
   ListSubheader,
-  Menu,
-  MenuItem,
-  MenuList,
   Tab,
   Tabs,
   ThemeProvider,
@@ -81,9 +78,17 @@ export {
   Step
 } from './stepper';
 export { Input, SearchInput, TextArea } from './text';
+
+// NOTE: doing this because adding @flow to layout/index.js will break things
+export { default as AppContainerWrapper } from './layout/src/components/App/AppContainerWrapper';
+export { default as AppContentWrapper } from './layout/src/components/App/AppContentWrapper';
 export {
-  AppContainerWrapper,
-  AppContentWrapper,
+  Menu,
+  MenuItem,
+  MenuList,
+  NestedMenuItem,
+} from './menu';
+export {
   AppHeaderWrapper,
   AppNavigationWrapper,
   Card,
@@ -91,6 +96,7 @@ export {
   CardSegment,
   CardStack
 } from './layout';
+
 export { Creatable, Select, CheckboxSelect } from './select';
 export {
   Cell,
@@ -143,9 +149,6 @@ export {
   ListItemSecondaryAction,
   ListItemText,
   ListSubheader,
-  Menu,
-  MenuItem,
-  MenuList,
   MuiPickersUtilsProvider,
   SpeedDial,
   SpeedDialAction,

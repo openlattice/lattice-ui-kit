@@ -47,6 +47,7 @@ const IconButton = ({
   color = 'default',
   disabled = false,
   isLoading = false,
+  forwardRef,
   ...rest
 } :ButtonProps) => {
 
@@ -71,7 +72,7 @@ const IconButton = ({
 
   /* eslint-disable react/jsx-props-no-spreading */
   return (
-    <MuiIconButton {...props}>
+    <MuiIconButton {...props} ref={forwardRef}>
       <IconSquareWrapper isLoading={isLoading}>
         {children}
         {
@@ -87,4 +88,5 @@ const IconButton = ({
   /* eslint-enable */
 };
 
-export default IconButton;
+/* eslint-disable-next-line react/jsx-props-no-spreading */
+export default React.forwardRef<ButtonProps, MuiIconButton>((props, ref) => <IconButton {...props} forwardRef={ref} />);
