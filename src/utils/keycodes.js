@@ -1,8 +1,12 @@
 // @flow
-const ESC_KEY_CODE :'Escape' = 'Escape';
-const ENTER_KEY_CODE :'Enter' = 'Enter';
+const ESC :'Escape' = 'Escape';
+const ENTER :'Enter' = 'Enter';
+const ARROW_LEFT :'ArrowLeft' = 'ArrowLeft';
+const ARROW_RIGHT :'ArrowRight' = 'ArrowRight';
 
 export {
-  ESC_KEY_CODE,
-  ENTER_KEY_CODE,
+  ARROW_LEFT,
+  ARROW_RIGHT,
+  ENTER,
+  ESC,
 };

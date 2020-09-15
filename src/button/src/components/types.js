@@ -35,6 +35,7 @@ type ButtonProps = {
   size ?:ButtonSize;
   startIcon ?:Node;
   variant ?:ButtonVariant;
+  forwardRef ?:any;
 };
 
 export type {

@@ -13,9 +13,6 @@ import {
   ListItemSecondaryAction,
   ListItemText,
   ListSubheader,
-  Menu,
-  MenuItem,
-  MenuList,
   Tab,
   Tabs,
   ThemeProvider,
@@ -86,6 +83,12 @@ export { Input, SearchInput, TextArea } from './text';
 export { default as AppContainerWrapper } from './layout/src/components/App/AppContainerWrapper';
 export { default as AppContentWrapper } from './layout/src/components/App/AppContentWrapper';
 export {
+  Menu,
+  MenuItem,
+  MenuList,
+  NestedMenuItem,
+} from './menu';
+export {
   AppHeaderWrapper,
   AppNavigationWrapper,
   Card,
@@ -146,9 +149,6 @@ export {
   ListItemSecondaryAction,
   ListItemText,
   ListSubheader,
-  Menu,
-  MenuItem,
-  MenuList,
   MuiPickersUtilsProvider,
   SpeedDial,
   SpeedDialAction,

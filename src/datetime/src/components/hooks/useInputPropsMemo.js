@@ -1,7 +1,9 @@
 // @flow
 import { useMemo } from 'react';
+
 import type { DateTime } from 'luxon';
-import { ENTER_KEY_CODE } from '../../../../utils/keycodes';
+
+import { ENTER } from '../../../../utils/keycodes';
 
 // Provide reference equality InputProps with onKeyDown event
 // For Mui Pickers only
@@ -9,7 +11,7 @@ import { ENTER_KEY_CODE } from '../../../../utils/keycodes';
 const useInputPropsMemo = (lastValidDate :?DateTime, setSelectedDate :(date :?DateTime) => void) => {
   const inputProps = useMemo(() => ({
     onKeyDown: (e :SyntheticKeyboardEvent<HTMLInputElement>) => {
-      if (e.key === ENTER_KEY_CODE) {
+      if (e.key === ENTER) {
         e.preventDefault();
       }
     },

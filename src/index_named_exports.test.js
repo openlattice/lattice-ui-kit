@@ -47,6 +47,7 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'ModalFooter',
   'ModalHeader',
   'MuiPickersUtilsProvider',
+  'NestedMenuItem',
   'Overlay',
   'PaginationToolbar',
   'PersonResult',

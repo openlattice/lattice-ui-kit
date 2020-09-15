@@ -6,7 +6,7 @@ import styled, { css } from 'styled-components';
 
 import { useKeyDownListener } from '../../../../hooks';
 import { slideTransitionStyles } from '../../../../transitions';
-import { ESC_KEY_CODE } from '../../../../utils/keycodes';
+import { ESC } from '../../../../utils/keycodes';
 
 type Props = {
   children :Element<any>,
@@ -56,7 +56,7 @@ const DrawerCard = (props :Props) => {
     side,
   } = props;
 
-  useKeyDownListener(ESC_KEY_CODE, onClose, shouldCloseOnEscape);
+  useKeyDownListener(ESC, onClose, shouldCloseOnEscape);
 
   return (
     <DrawerCardWrapper side={side}>
