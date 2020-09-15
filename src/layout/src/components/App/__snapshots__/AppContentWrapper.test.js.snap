@@ -6,21 +6,21 @@ exports[`AppContentWrapper snapshots should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  max-width: 1020px;
+  max-width: 1168px;
   min-width: 0;
+  padding: 32px;
   position: relative;
   width: 100%;
-  padding: 30px;
 }
 
 .c0 {
@@ -43,7 +43,7 @@ exports[`AppContentWrapper snapshots should match snapshot 1`] = `
 
 @media (max-width:36em) {
   .c1 {
-    padding: 20px;
+    padding: 16px;
   }
 }
 
@@ -94,10 +94,20 @@ exports[`AppContentWrapper snapshots should match snapshot 1`] = `
                   "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
-                    "display:flex;flex:1 0 auto;flex-direction:column;justify-content:flex-start;max-width:",
-                    "1020",
-                    "px;min-width:0;position:relative;width:100%;",
-                    [Function],
+                    "display:flex;flex-direction:column;flex:1 0 auto;justify-content:flex-start;max-width:",
+                    "1168",
+                    "px;min-width:0;padding:",
+                    "32",
+                    "px;position:relative;width:100%;",
+                    "@media (max-width:",
+                    "36",
+                    "em){",
+                    "
+    padding: ",
+                    "16",
+                    "px;
+  ",
+                    "}",
                   ],
                 },
                 "displayName": "AppContentInnerWrapper",
