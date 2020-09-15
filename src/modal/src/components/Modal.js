@@ -8,18 +8,18 @@ import type { ComponentType, Element, Node } from 'react';
 import PropTypes from 'prop-types';
 import isFunction from 'lodash/isFunction';
 
-import Overlay from '../../../overlay';
 import ModalBody from './ModalBody';
 import ModalFooter from './ModalFooter';
 import ModalHeader from './ModalHeader';
-import { ModalOuterContainer, ModalInnerContainer } from './styled/StyledModalComponents';
-import { ESC_KEY_CODE } from '../../../utils/keycodes';
-
+import { ModalInnerContainer, ModalOuterContainer } from './styled/StyledModalComponents';
 import type { ModalFooterProps } from './ModalFooter';
 import type { ModalHeaderProps } from './ModalHeader';
 
+import Overlay from '../../../overlay';
+import { ESC_KEY_CODE } from '../../../utils/keycodes';
+
 type ModalProps = {
-  children :Node;
+  children ?:Node;
   isVisible :boolean;
   modalRef ?:{ current :null | HTMLElement };
   onClickPrimary ?:() => void;
@@ -45,7 +45,7 @@ type ModalProps = {
 export default class Modal extends Component<ModalProps> {
 
   static propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
     isVisible: PropTypes.bool.isRequired,
     modalRef: PropTypes.oneOfType([PropTypes.func, PropTypes.shape({ current: PropTypes.any })]),
     onClickPrimary: PropTypes.func,
@@ -64,6 +64,7 @@ export default class Modal extends Component<ModalProps> {
   }
 
   static defaultProps = {
+    children: null,
     modalRef: undefined,
     onClickPrimary: undefined,
     onClickSecondary: undefined,
