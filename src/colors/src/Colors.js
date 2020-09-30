@@ -103,7 +103,7 @@ export const PURPLE = {
   P00: '#f2f0ff',
   P100: '#cac0ff',
   P200: '#a291ff',
-  P300: '#7654ff',
+  P300: '#6d49fe',
   P400: '#4f3fa7',
   P500: '#261e52',
 };
