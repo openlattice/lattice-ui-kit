@@ -13,7 +13,7 @@ type LabelProps = {
 const getSubtleStyles = ({ subtle } :LabelProps) => {
   if (subtle) {
     return css`
-      color: ${NEUTRAL.N500};
+      color: ${NEUTRAL.N600};
       font-size: 0.75rem;
       font-weight: 600;
       text-transform: uppercase;
