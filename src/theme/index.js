@@ -255,6 +255,11 @@ const lightTheme = createMuiTheme({
     }
   },
   palette: {
+    default: {
+      main: NEUTRAL.N50,
+      dark: NEUTRAL.N100,
+      contrastText: NEUTRAL.N700,
+    },
     primary: {
       main: PURPLE.P300,
       dark: PURPLE.P400,
@@ -544,6 +549,11 @@ const darkTheme = createMuiTheme({
   },
   palette: {
     type: 'dark',
+    default: {
+      main: NEUTRAL.N50,
+      dark: NEUTRAL.N100,
+      contrastText: NEUTRAL.N700,
+    },
     primary: {
       main: PURPLE.P300,
       dark: PURPLE.P400,
