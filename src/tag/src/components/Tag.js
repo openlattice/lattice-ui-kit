@@ -6,28 +6,29 @@ import { getStyleVariation } from '../../../utils/StyleUtils';
 
 const {
   GREEN,
+  MAGENTA,
   NEUTRAL,
   PURPLE,
   RED,
-  YELLOW,
+  ORANGE,
 } = Colors;
 
 const getBackgroundColor = getStyleVariation('mode', {
-  danger: RED.R300,
+  danger: MAGENTA.M00,
   neutral: NEUTRAL.N700,
   primary: PURPLE.P300,
-  secondary: PURPLE.P100,
-  success: GREEN.G300,
-  warning: YELLOW.Y300
+  secondary: PURPLE.P00,
+  success: GREEN.G00,
+  warning: ORANGE.O00
 }, NEUTRAL.N100);
 
 const getFontColor = getStyleVariation('mode', {
-  danger: 'white',
-  neutral: 'white',
-  primary: 'white',
-  secondary: PURPLE.P300,
-  success: 'white',
-  warning: NEUTRAL.N700
+  danger: MAGENTA.M400,
+  neutral: NEUTRAL.N100,
+  primary: PURPLE.P00,
+  secondary: PURPLE.P400,
+  success: GREEN.G400,
+  warning: ORANGE.O400
 }, NEUTRAL.N700);
 
 const Tag = styled.span`
