@@ -10,7 +10,6 @@ const {
   MAGENTA,
   NEUTRAL,
   PURPLE,
-  RED,
   ORANGE,
 } = Colors;
 
