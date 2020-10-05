@@ -5,6 +5,7 @@ import * as Colors from '../../../colors';
 import { getStyleVariation } from '../../../utils/StyleUtils';
 
 const {
+  BLUE,
   GREEN,
   MAGENTA,
   NEUTRAL,
@@ -16,6 +17,7 @@ const {
 const getBackgroundColor = getStyleVariation('mode', {
   danger: MAGENTA.M00,
   neutral: NEUTRAL.N700,
+  info: BLUE.B00,
   primary: PURPLE.P300,
   secondary: PURPLE.P00,
   success: GREEN.G00,
@@ -25,6 +27,7 @@ const getBackgroundColor = getStyleVariation('mode', {
 const getFontColor = getStyleVariation('mode', {
   danger: MAGENTA.M400,
   neutral: NEUTRAL.N100,
+  info: BLUE.B400,
   primary: PURPLE.P00,
   secondary: PURPLE.P400,
   success: GREEN.G400,
