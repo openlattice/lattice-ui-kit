@@ -50,7 +50,7 @@ describe('Badge', () => {
 
     test('secondary', () => {
       const wrapper = mount(<Badge mode="secondary" count="10" />);
-      expect(wrapper.find(Badge)).toHaveStyleRule('color', PURPLE.P300);
+      expect(wrapper.find(Badge)).toHaveStyleRule('color', PURPLE.P400);
       expect(wrapper.find(Badge)).toHaveStyleRule('background-color', PURPLE.P100);
     });
 
