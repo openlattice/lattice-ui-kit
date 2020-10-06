@@ -152,16 +152,16 @@ storiesOf('Button', module)
       <Card>
         <CardSegment>
           <ButtonRow>
-            <IconButton color="success" size="small">
+            <IconButton aria-label="Small Success Icon Button" color="success" size="small">
               <FontAwesomeIcon fixedWidth icon={faUserPlus} />
             </IconButton>
-            <IconButton color="success">
+            <IconButton aria-label="Success Icon Button" color="success">
               <FontAwesomeIcon fixedWidth icon={faUserPlus} />
             </IconButton>
-            <IconButton color="error" size="small">
+            <IconButton aria-label="Small Error Icon Button" color="error" size="small">
               <FontAwesomeIcon fixedWidth icon={faTrash} />
             </IconButton>
-            <IconButton color="error">
+            <IconButton aria-label="Error Icon Button" color="error">
               <FontAwesomeIcon fixedWidth icon={faTrash} />
             </IconButton>
           </ButtonRow>
@@ -169,10 +169,10 @@ storiesOf('Button', module)
         <CardSegment>
           <H2>Pending State</H2>
           <ButtonRow>
-            <IconButton color="primary" isLoading={isLoading} onClick={handleOnClick} size="small">
+            <IconButton aria-label="Primary Icon Button" color="primary" isLoading={isLoading} onClick={handleOnClick} size="small">
               <FontAwesomeIcon fixedWidth icon={faSpaceShuttle} />
             </IconButton>
-            <IconButton color="primary" isLoading={isLoading} onClick={handleOnClick}>
+            <IconButton aria-label="Primary Icon Button" color="primary" isLoading={isLoading} onClick={handleOnClick}>
               <FontAwesomeIcon fixedWidth icon={faSpaceShuttle} />
             </IconButton>
           </ButtonRow>
@@ -180,19 +180,19 @@ storiesOf('Button', module)
         <CardSegment>
           <H2>FontAwesomeIcon size</H2>
           <ButtonRow>
-            <IconButton>
+            <IconButton aria-label="XS Icon Button">
               <FontAwesomeIcon fixedWidth icon={faSearch} size="xs" />
             </IconButton>
-            <IconButton>
+            <IconButton aria-label="Size Undefined Icon Button">
               <FontAwesomeIcon fixedWidth icon={faSearch} />
             </IconButton>
-            <IconButton>
+            <IconButton aria-label="LG Icon Button">
               <FontAwesomeIcon fixedWidth icon={faSearch} size="lg" />
             </IconButton>
-            <IconButton>
+            <IconButton aria-label="2X Icon Button">
               <FontAwesomeIcon fixedWidth icon={faSearch} size="2x" />
             </IconButton>
-            <IconButton>
+            <IconButton aria-label="3X Icon Button">
               <FontAwesomeIcon fixedWidth icon={faSearch} size="3x" />
             </IconButton>
           </ButtonRow>
@@ -200,7 +200,7 @@ storiesOf('Button', module)
         <CardSegment>
           <H2>Styled</H2>
           <ButtonRow>
-            <StyledIconButton>
+            <StyledIconButton aria-label="Styled Icon Button">
               <FontAwesomeIcon fixedWidth icon={faDrone} />
             </StyledIconButton>
           </ButtonRow>
@@ -212,7 +212,7 @@ storiesOf('Button', module)
     const [isOpen, setOpen, setClose] = useBoolean(false);
     return (
       <SpeedDial
-          ariaLabel="Speed Dial Actions"
+          aria-label="Speed Dial Actions"
           icon={<SpeedDialIcon />}
           open={isOpen}
           onOpen={setOpen}
