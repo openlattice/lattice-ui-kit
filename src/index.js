@@ -23,7 +23,14 @@ import {
   SpeedDialAction,
   SpeedDialIcon,
   TabContext,
-  TabPanel
+  TabPanel,
+  Timeline,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+  TimelineItem,
+  TimelineOppositeContent,
+  TimelineSeparator,
 } from '@material-ui/lab';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 
@@ -158,6 +165,13 @@ export {
   TabPanel,
   Tabs,
   ThemeProvider,
+  Timeline,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+  TimelineItem,
+  TimelineOppositeContent,
+  TimelineSeparator,
 };
 
 export default {

@@ -252,7 +252,42 @@ const lightTheme = createMuiTheme({
           opacity: 0.3,
         },
       },
-    }
+    },
+    MuiTimelineConnector: {
+      root: {
+        backgroundColor: NEUTRAL.N200
+      },
+    },
+    MuiTimelineContent: {
+      root: {
+        padding: '0 16px'
+      },
+    },
+    MuiTimelineDot: {
+      root: {
+        boxShadow: 'none',
+        marginTop: '4px',
+        marginBottom: '4px',
+      },
+      defaultGrey: {
+        backgroundColor: NEUTRAL.N200
+      },
+      outlinedGrey: {
+        backgroundColor: NEUTRAL.N200
+      }
+    },
+    MuiTimelineItem: {
+      missingOppositeContent: {
+        '&:before': {
+          display: 'none'
+        },
+      },
+    },
+    MuiTimelineOppositeContent: {
+      root: {
+        padding: '0 16px'
+      },
+    },
   },
   palette: {
     primary: {
@@ -291,7 +326,7 @@ const lightTheme = createMuiTheme({
     background: {
       header: NEUTRAL.N50
     },
-    divider: NEUTRAL.N100
+    divider: NEUTRAL.N100,
   },
   props: {
     MuiFormControl: {
@@ -540,7 +575,42 @@ const darkTheme = createMuiTheme({
           opacity: 0.3,
         },
       },
-    }
+    },
+    MuiTimelineConnector: {
+      root: {
+        backgroundColor: NEUTRAL.N200
+      },
+    },
+    MuiTimelineContent: {
+      root: {
+        padding: '0 16px'
+      },
+    },
+    MuiTimelineDot: {
+      root: {
+        boxShadow: 'none',
+        marginTop: '4px',
+        marginBottom: '4px',
+      },
+      defaultGrey: {
+        backgroundColor: NEUTRAL.N200
+      },
+      outlinedGrey: {
+        backgroundColor: NEUTRAL.N200
+      }
+    },
+    MuiTimelineItem: {
+      missingOppositeContent: {
+        '&:before': {
+          display: 'none'
+        },
+      },
+    },
+    MuiTimelineOppositeContent: {
+      root: {
+        padding: '0 16px'
+      },
+    },
   },
   palette: {
     type: 'dark',
