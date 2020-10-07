@@ -39,14 +39,14 @@ const styles = {
     letterSpacing: '0em',
   },
   subtitle1: {
-    fontWeight: 500,
-    fontSize: '1rem', // 16px
+    fontWeight: 600,
+    fontSize: '0.875rem', // 14px
     lineHeight: 1.5,
     letterSpacing: '0em',
   },
   subtitle2: {
-    fontWeight: 500,
-    fontSize: '1rem', // 16px
+    fontWeight: 600,
+    fontSize: '0.875rem', // 14px
     lineHeight: 1.5,
     letterSpacing: '0em',
   },
@@ -57,7 +57,7 @@ const styles = {
     letterSpacing: '0em',
   },
   body2: {
-    fontWeight: 400,
+    fontWeight: 600,
     fontSize: '1rem', // 16px
     lineHeight: 1.5,
     letterSpacing: '0em',
