@@ -37,6 +37,7 @@ const Button = ({
   const props = {
     ...rest,
     disableElevation,
+    disableRipple: true,
     variant,
     className: clsx(classesObject),
     color: customColor ? 'default' : color,
