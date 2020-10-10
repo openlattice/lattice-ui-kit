@@ -25,7 +25,7 @@ const getBackgroundColor = getStyleVariation('mode', {
 
 const getFontColor = getStyleVariation('mode', {
   danger: MAGENTA.M400,
-  neutral: NEUTRAL.N100,
+  neutral: NEUTRAL.N00,
   info: BLUE.B400,
   primary: PURPLE.P00,
   secondary: PURPLE.P400,

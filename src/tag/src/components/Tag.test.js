@@ -48,7 +48,7 @@ describe('Tag', () => {
 
     test('neutral', () => {
       const wrapper = mount(<Tag mode="neutral">tag</Tag>);
-      expect(wrapper.find(Tag)).toHaveStyleRule('color', NEUTRAL.N100);
+      expect(wrapper.find(Tag)).toHaveStyleRule('color', NEUTRAL.N00);
       expect(wrapper.find(Tag)).toHaveStyleRule('background-color', NEUTRAL.N700);
     });
 
