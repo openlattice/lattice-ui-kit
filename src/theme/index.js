@@ -35,6 +35,9 @@ const lightTheme = createMuiTheme({
       /* Styles applied to the root element `variant="text"`. */
       text: {
         padding: '0 16px',
+        '&:focus': {
+          boxShadow: '0 0 0 2px currentColor'
+        },
       },
       /* Styles applied to the root element if `size="small"` and `variant="text"`. */
       textSizeSmall: {
@@ -63,6 +66,15 @@ const lightTheme = createMuiTheme({
       contained: {
         backgroundColor: NEUTRAL.N50,
         color: NEUTRAL.N700,
+        '&:focus': {
+          boxShadow: '0 0 0 2px currentColor'
+        },
+      },
+      outlined: {
+        color: NEUTRAL.N700,
+        '&:focus': {
+          boxShadow: '0 0 0 2px currentColor'
+        },
       },
       /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
       containedSizeSmall: {
@@ -255,38 +267,39 @@ const lightTheme = createMuiTheme({
     }
   },
   palette: {
-    default: {
-      main: NEUTRAL.N50,
-      dark: NEUTRAL.N100,
-      contrastText: NEUTRAL.N700,
-    },
     primary: {
+      light: PURPLE.P400,
       main: PURPLE.P300,
-      dark: PURPLE.P400,
+      dark: PURPLE.P500,
     },
     secondary: {
+      light: PURPLE.P200,
       main: PURPLE.P100,
-      dark: PURPLE.P200,
+      dark: PURPLE.P300,
       contrastText: PURPLE.P400,
     },
     success: {
+      light: GREEN.G400,
       main: GREEN.G300,
-      dark: GREEN.G400,
+      dark: GREEN.G500,
       contrastText: 'white'
     },
     warning: {
+      light: ORANGE.O400,
       main: ORANGE.O300,
-      dark: ORANGE.O400,
+      dark: ORANGE.O500,
       contrastText: NEUTRAL.N900
     },
     error: {
+      light: RED.R400,
       main: RED.R300,
-      dark: RED.R400,
+      dark: RED.R500,
       contrastText: 'white'
     },
     info: {
+      light: BLUE.B400,
       main: BLUE.B300,
-      dark: BLUE.B400,
+      dark: BLUE.B500,
       contrastText: 'white'
     },
     text: {
@@ -324,11 +337,16 @@ const darkTheme = createMuiTheme({
         minHeight: '40px',
         padding: '0 16px',
         textTransform: 'none',
+
+        '&$focused': {
+          boxShadow: `0 0 0 2px ${NEUTRAL.N700}`
+        }
       },
       label: {
         fontWeight: 600,
         lineHeight: 1.2,
       },
+      focused: {},
       /* Pseudo-class applied to the ButtonBase root element if the button is keyboard focused. */
       focusVisible: {},
       /* Pseudo-class applied to the root element if `disabled={true}`. */
@@ -340,7 +358,11 @@ const darkTheme = createMuiTheme({
       },
       /* Styles applied to the root element `variant="text"`. */
       text: {
+        color: NEUTRAL.N50,
         padding: '0 16px',
+        '&:focus': {
+          boxShadow: '0 0 0 2px currentColor'
+        },
       },
       /* Styles applied to the root element if `size="small"` and `variant="text"`. */
       textSizeSmall: {
@@ -368,7 +390,16 @@ const darkTheme = createMuiTheme({
       },
       contained: {
         backgroundColor: NEUTRAL.N50,
-        color: NEUTRAL.N700,
+        color: NEUTRAL.N50,
+        '&:focus': {
+          boxShadow: `0 0 0 2px ${NEUTRAL.N50}`
+        },
+      },
+      outlined: {
+        color: NEUTRAL.N50,
+        '&:focus': {
+          boxShadow: '0 0 0 2px currentColor'
+        },
       },
       /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
       containedSizeSmall: {
@@ -549,38 +580,39 @@ const darkTheme = createMuiTheme({
   },
   palette: {
     type: 'dark',
-    default: {
-      main: NEUTRAL.N50,
-      dark: NEUTRAL.N100,
-      contrastText: NEUTRAL.N700,
-    },
     primary: {
+      light: PURPLE.P400,
       main: PURPLE.P300,
-      dark: PURPLE.P400,
+      dark: PURPLE.P500,
     },
     secondary: {
+      light: PURPLE.P200,
       main: PURPLE.P100,
-      dark: PURPLE.P200,
+      dark: PURPLE.P300,
       contrastText: PURPLE.P400,
     },
     success: {
+      light: GREEN.G400,
       main: GREEN.G300,
-      dark: GREEN.G400,
+      dark: GREEN.G500,
       contrastText: 'white'
     },
     warning: {
+      light: ORANGE.O400,
       main: ORANGE.O300,
-      dark: ORANGE.O400,
-      contrastText: 'white'
+      dark: ORANGE.O500,
+      contrastText: NEUTRAL.N900
     },
     error: {
+      light: RED.R400,
       main: RED.R300,
-      dark: RED.R400,
+      dark: RED.R500,
       contrastText: 'white'
     },
     info: {
+      light: BLUE.B400,
       main: BLUE.B300,
-      dark: BLUE.B400,
+      dark: BLUE.B500,
       contrastText: 'white'
     },
     background: {
