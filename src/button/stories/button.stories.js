@@ -249,7 +249,12 @@ storiesOf('Button', module)
         <CardSegment>
           <H2>Pending State</H2>
           <ButtonRow>
-            <IconButton aria-label="Primary Icon Button" color="primary" isLoading={isLoading} onClick={handleOnClick} size="small">
+            <IconButton
+                aria-label="Primary Icon Button"
+                color="primary"
+                isLoading={isLoading}
+                onClick={handleOnClick}
+                size="small">
               <FontAwesomeIcon fixedWidth icon={faSpaceShuttle} />
             </IconButton>
             <IconButton aria-label="Primary Icon Button" color="primary" isLoading={isLoading} onClick={handleOnClick}>
