@@ -48,13 +48,6 @@ describe('IconButton', () => {
         const button = wrapper.find('button');
         expect(button.prop('className')).toEqual(expect.stringMatching(`makeStyles-text${_capitalize(color)}`));
       });
-      // themeColors.forEach((color) => {
-      //   const wrapper = mount(<IconButton color={color}>{CodeIcon}</IconButton>);
-      //   const button = wrapper.find('button');
-      //   console.log(color);
-      //   console.log(button.prop('className'));
-      //   expect(button.prop('className')).toEqual(expect.stringMatching(`MuiIconButton-color${_capitalize(color)}`));
-      // });
     });
 
     test('disabled', () => {
