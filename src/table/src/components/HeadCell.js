@@ -30,6 +30,8 @@ const HeadCell = (props :Props) => {
   if (order === 'asc') icon = faSortUp;
   if (order === 'desc') icon = faSortDown;
 
+  const sortText = `Sort (${order === 'asc' ? 'Ascending' : 'Descending'})`;
+
   return (
     <Cell
         as="th"
@@ -37,7 +39,7 @@ const HeadCell = (props :Props) => {
         className={className}
         onClick={onClick}>
       {children}
-      { (sortable) && <span><FontAwesomeIcon icon={icon} fixedWidth /></span> }
+      { (sortable) && <span aria-label={sortText}><FontAwesomeIcon icon={icon} fixedWidth /></span> }
     </Cell>
   );
 
