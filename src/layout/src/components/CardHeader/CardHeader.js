@@ -24,9 +24,9 @@ const getFontColor = getStyleVariation('mode', {
   danger: RED.R400,
   default: NEUTRAL.N900,
   primary: 'white',
-  secondary: PURPLE.P300,
+  secondary: PURPLE.P400,
   success: GREEN.G400,
-  warning: YELLOW.Y400,
+  warning: YELLOW.Y500,
 });
 
 const CardHeader = styled(CardSegment).attrs(() => ({

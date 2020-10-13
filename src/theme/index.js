@@ -272,7 +272,7 @@ const lightTheme = createMuiTheme({
     warning: {
       main: ORANGE.O300,
       dark: ORANGE.O400,
-      contrastText: 'white'
+      contrastText: NEUTRAL.N900
     },
     error: {
       main: RED.R300,
@@ -286,7 +286,7 @@ const lightTheme = createMuiTheme({
     },
     text: {
       primary: NEUTRAL.N900,
-      secondary: NEUTRAL.N500,
+      secondary: NEUTRAL.N600,
     },
     background: {
       header: NEUTRAL.N50

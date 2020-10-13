@@ -18,18 +18,15 @@ type ContainerProps = {
 }
 
 const backgroundColor = getStyleVariation('mode', {
-  default: NEUTRAL.N100,
-  success: GREEN.G100,
-  danger: RED.R100,
-  warning: YELLOW.Y100
+  default: NEUTRAL.N700,
+  success: GREEN.G300,
+  danger: RED.R300,
+  warning: YELLOW.Y200
 });
 
 const getFontColor = getStyleVariation('mode', {
-  default: NEUTRAL.N900,
-  success: GREEN.G400,
-  danger: RED.R400,
-  warning: YELLOW.Y400
-});
+  warning: NEUTRAL.N900
+}, 'white');
 
 const getMaxHeight = (props :ContainerProps) => {
   const { maxHeight, isOpen } = props;
