@@ -2,6 +2,7 @@
 
 exports[`Banner snapshot should match snapshot when closed 1`] = `
 .c0 {
+  color: white;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 250ms ease-out;
@@ -113,6 +114,7 @@ exports[`Banner snapshot should match snapshot when closed 1`] = `
 
 exports[`Banner snapshot should match snapshot when open 1`] = `
 .c0 {
+  color: white;
   max-height: 60px;
   overflow: hidden;
   -webkit-transition: max-height 250ms ease-out;

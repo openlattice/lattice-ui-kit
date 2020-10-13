@@ -113,7 +113,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8b8b90;
+  color: #717175;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -4262,7 +4262,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8b8b90;
+  color: #717175;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -4638,6 +4638,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             "valueContainer": [Function],
                           }
                         }
+                        theme={[Function]}
                         value={
                           Object {
                             "label": "5",
@@ -4725,6 +4726,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                           }
                           tabIndex="0"
                           tabSelectsValue={true}
+                          theme={[Function]}
                           value={
                             Object {
                               "label": "5",
@@ -4842,6 +4844,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                 },
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
+                                "theme": [Function],
                                 "value": Object {
                                   "label": "5",
                                   "value": 5,
@@ -4861,7 +4864,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                   "neutral30": "hsl(0, 0%, 70%)",
                                   "neutral40": "hsl(0, 0%, 60%)",
                                   "neutral5": "hsl(0, 0%, 95%)",
-                                  "neutral50": "hsl(0, 0%, 50%)",
+                                  "neutral50": "#56565a",
                                   "neutral60": "hsl(0, 0%, 40%)",
                                   "neutral70": "hsl(0, 0%, 30%)",
                                   "neutral80": "hsl(0, 0%, 20%)",
@@ -5012,6 +5015,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                       },
                                       "tabIndex": "0",
                                       "tabSelectsValue": true,
+                                      "theme": [Function],
                                       "value": Object {
                                         "label": "5",
                                         "value": 5,
@@ -5031,7 +5035,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                         "neutral30": "hsl(0, 0%, 70%)",
                                         "neutral40": "hsl(0, 0%, 60%)",
                                         "neutral5": "hsl(0, 0%, 95%)",
-                                        "neutral50": "hsl(0, 0%, 50%)",
+                                        "neutral50": "#56565a",
                                         "neutral60": "hsl(0, 0%, 40%)",
                                         "neutral70": "hsl(0, 0%, 30%)",
                                         "neutral80": "hsl(0, 0%, 20%)",
@@ -5197,6 +5201,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                             },
                                             "tabIndex": "0",
                                             "tabSelectsValue": true,
+                                            "theme": [Function],
                                             "value": Object {
                                               "label": "5",
                                               "value": 5,
@@ -5216,7 +5221,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                               "neutral30": "hsl(0, 0%, 70%)",
                                               "neutral40": "hsl(0, 0%, 60%)",
                                               "neutral5": "hsl(0, 0%, 95%)",
-                                              "neutral50": "hsl(0, 0%, 50%)",
+                                              "neutral50": "#56565a",
                                               "neutral60": "hsl(0, 0%, 40%)",
                                               "neutral70": "hsl(0, 0%, 30%)",
                                               "neutral80": "hsl(0, 0%, 20%)",
@@ -5338,6 +5343,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                               },
                                               "tabIndex": "0",
                                               "tabSelectsValue": true,
+                                              "theme": [Function],
                                               "value": Object {
                                                 "label": "5",
                                                 "value": 5,
@@ -5357,7 +5363,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                 "neutral30": "hsl(0, 0%, 70%)",
                                                 "neutral40": "hsl(0, 0%, 60%)",
                                                 "neutral5": "hsl(0, 0%, 95%)",
-                                                "neutral50": "hsl(0, 0%, 50%)",
+                                                "neutral50": "#56565a",
                                                 "neutral60": "hsl(0, 0%, 40%)",
                                                 "neutral70": "hsl(0, 0%, 30%)",
                                                 "neutral80": "hsl(0, 0%, 20%)",
@@ -5505,6 +5511,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                     },
                                                     "tabIndex": "0",
                                                     "tabSelectsValue": true,
+                                                    "theme": [Function],
                                                     "value": Object {
                                                       "label": "5",
                                                       "value": 5,
@@ -5524,7 +5531,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                       "neutral30": "hsl(0, 0%, 70%)",
                                                       "neutral40": "hsl(0, 0%, 60%)",
                                                       "neutral5": "hsl(0, 0%, 95%)",
-                                                      "neutral50": "hsl(0, 0%, 50%)",
+                                                      "neutral50": "#56565a",
                                                       "neutral60": "hsl(0, 0%, 40%)",
                                                       "neutral70": "hsl(0, 0%, 30%)",
                                                       "neutral80": "hsl(0, 0%, 20%)",
@@ -5661,6 +5668,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                     },
                                                     "tabIndex": "0",
                                                     "tabSelectsValue": true,
+                                                    "theme": [Function],
                                                     "value": Object {
                                                       "label": "5",
                                                       "value": 5,
@@ -5681,7 +5689,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                       "neutral30": "hsl(0, 0%, 70%)",
                                                       "neutral40": "hsl(0, 0%, 60%)",
                                                       "neutral5": "hsl(0, 0%, 95%)",
-                                                      "neutral50": "hsl(0, 0%, 50%)",
+                                                      "neutral50": "#56565a",
                                                       "neutral60": "hsl(0, 0%, 40%)",
                                                       "neutral70": "hsl(0, 0%, 30%)",
                                                       "neutral80": "hsl(0, 0%, 20%)",
@@ -5911,6 +5919,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                             },
                                             "tabIndex": "0",
                                             "tabSelectsValue": true,
+                                            "theme": [Function],
                                             "value": Object {
                                               "label": "5",
                                               "value": 5,
@@ -5930,7 +5939,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                               "neutral30": "hsl(0, 0%, 70%)",
                                               "neutral40": "hsl(0, 0%, 60%)",
                                               "neutral5": "hsl(0, 0%, 95%)",
-                                              "neutral50": "hsl(0, 0%, 50%)",
+                                              "neutral50": "#56565a",
                                               "neutral60": "hsl(0, 0%, 40%)",
                                               "neutral70": "hsl(0, 0%, 30%)",
                                               "neutral80": "hsl(0, 0%, 20%)",
@@ -6071,6 +6080,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                   },
                                                   "tabIndex": "0",
                                                   "tabSelectsValue": true,
+                                                  "theme": [Function],
                                                   "value": Object {
                                                     "label": "5",
                                                     "value": 5,
@@ -6090,7 +6100,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                     "neutral30": "hsl(0, 0%, 70%)",
                                                     "neutral40": "hsl(0, 0%, 60%)",
                                                     "neutral5": "hsl(0, 0%, 95%)",
-                                                    "neutral50": "hsl(0, 0%, 50%)",
+                                                    "neutral50": "#56565a",
                                                     "neutral60": "hsl(0, 0%, 40%)",
                                                     "neutral70": "hsl(0, 0%, 30%)",
                                                     "neutral80": "hsl(0, 0%, 20%)",
@@ -6234,6 +6244,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                   },
                                                   "tabIndex": "0",
                                                   "tabSelectsValue": true,
+                                                  "theme": [Function],
                                                   "value": Object {
                                                     "label": "5",
                                                     "value": 5,
@@ -6253,7 +6264,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                     "neutral30": "hsl(0, 0%, 70%)",
                                                     "neutral40": "hsl(0, 0%, 60%)",
                                                     "neutral5": "hsl(0, 0%, 95%)",
-                                                    "neutral50": "hsl(0, 0%, 50%)",
+                                                    "neutral50": "#56565a",
                                                     "neutral60": "hsl(0, 0%, 40%)",
                                                     "neutral70": "hsl(0, 0%, 30%)",
                                                     "neutral80": "hsl(0, 0%, 20%)",
@@ -6382,6 +6393,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                     },
                                                     "tabIndex": "0",
                                                     "tabSelectsValue": true,
+                                                    "theme": [Function],
                                                     "value": Object {
                                                       "label": "5",
                                                       "value": 5,
@@ -6401,7 +6413,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                       "neutral30": "hsl(0, 0%, 70%)",
                                                       "neutral40": "hsl(0, 0%, 60%)",
                                                       "neutral5": "hsl(0, 0%, 95%)",
-                                                      "neutral50": "hsl(0, 0%, 50%)",
+                                                      "neutral50": "#56565a",
                                                       "neutral60": "hsl(0, 0%, 40%)",
                                                       "neutral70": "hsl(0, 0%, 30%)",
                                                       "neutral80": "hsl(0, 0%, 20%)",
@@ -9582,6 +9594,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             "valueContainer": [Function],
                           }
                         }
+                        theme={[Function]}
                         value={
                           Object {
                             "label": "5",
@@ -9669,6 +9682,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                           }
                           tabIndex="0"
                           tabSelectsValue={true}
+                          theme={[Function]}
                           value={
                             Object {
                               "label": "5",
@@ -9786,6 +9800,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                 },
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
+                                "theme": [Function],
                                 "value": Object {
                                   "label": "5",
                                   "value": 5,
@@ -9805,7 +9820,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                   "neutral30": "hsl(0, 0%, 70%)",
                                   "neutral40": "hsl(0, 0%, 60%)",
                                   "neutral5": "hsl(0, 0%, 95%)",
-                                  "neutral50": "hsl(0, 0%, 50%)",
+                                  "neutral50": "#56565a",
                                   "neutral60": "hsl(0, 0%, 40%)",
                                   "neutral70": "hsl(0, 0%, 30%)",
                                   "neutral80": "hsl(0, 0%, 20%)",
@@ -9956,6 +9971,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                       },
                                       "tabIndex": "0",
                                       "tabSelectsValue": true,
+                                      "theme": [Function],
                                       "value": Object {
                                         "label": "5",
                                         "value": 5,
@@ -9975,7 +9991,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                         "neutral30": "hsl(0, 0%, 70%)",
                                         "neutral40": "hsl(0, 0%, 60%)",
                                         "neutral5": "hsl(0, 0%, 95%)",
-                                        "neutral50": "hsl(0, 0%, 50%)",
+                                        "neutral50": "#56565a",
                                         "neutral60": "hsl(0, 0%, 40%)",
                                         "neutral70": "hsl(0, 0%, 30%)",
                                         "neutral80": "hsl(0, 0%, 20%)",
@@ -10141,6 +10157,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                             },
                                             "tabIndex": "0",
                                             "tabSelectsValue": true,
+                                            "theme": [Function],
                                             "value": Object {
                                               "label": "5",
                                               "value": 5,
@@ -10160,7 +10177,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                               "neutral30": "hsl(0, 0%, 70%)",
                                               "neutral40": "hsl(0, 0%, 60%)",
                                               "neutral5": "hsl(0, 0%, 95%)",
-                                              "neutral50": "hsl(0, 0%, 50%)",
+                                              "neutral50": "#56565a",
                                               "neutral60": "hsl(0, 0%, 40%)",
                                               "neutral70": "hsl(0, 0%, 30%)",
                                               "neutral80": "hsl(0, 0%, 20%)",
@@ -10282,6 +10299,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                               },
                                               "tabIndex": "0",
                                               "tabSelectsValue": true,
+                                              "theme": [Function],
                                               "value": Object {
                                                 "label": "5",
                                                 "value": 5,
@@ -10301,7 +10319,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                 "neutral30": "hsl(0, 0%, 70%)",
                                                 "neutral40": "hsl(0, 0%, 60%)",
                                                 "neutral5": "hsl(0, 0%, 95%)",
-                                                "neutral50": "hsl(0, 0%, 50%)",
+                                                "neutral50": "#56565a",
                                                 "neutral60": "hsl(0, 0%, 40%)",
                                                 "neutral70": "hsl(0, 0%, 30%)",
                                                 "neutral80": "hsl(0, 0%, 20%)",
@@ -10449,6 +10467,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                     },
                                                     "tabIndex": "0",
                                                     "tabSelectsValue": true,
+                                                    "theme": [Function],
                                                     "value": Object {
                                                       "label": "5",
                                                       "value": 5,
@@ -10468,7 +10487,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                       "neutral30": "hsl(0, 0%, 70%)",
                                                       "neutral40": "hsl(0, 0%, 60%)",
                                                       "neutral5": "hsl(0, 0%, 95%)",
-                                                      "neutral50": "hsl(0, 0%, 50%)",
+                                                      "neutral50": "#56565a",
                                                       "neutral60": "hsl(0, 0%, 40%)",
                                                       "neutral70": "hsl(0, 0%, 30%)",
                                                       "neutral80": "hsl(0, 0%, 20%)",
@@ -10605,6 +10624,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                     },
                                                     "tabIndex": "0",
                                                     "tabSelectsValue": true,
+                                                    "theme": [Function],
                                                     "value": Object {
                                                       "label": "5",
                                                       "value": 5,
@@ -10625,7 +10645,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                       "neutral30": "hsl(0, 0%, 70%)",
                                                       "neutral40": "hsl(0, 0%, 60%)",
                                                       "neutral5": "hsl(0, 0%, 95%)",
-                                                      "neutral50": "hsl(0, 0%, 50%)",
+                                                      "neutral50": "#56565a",
                                                       "neutral60": "hsl(0, 0%, 40%)",
                                                       "neutral70": "hsl(0, 0%, 30%)",
                                                       "neutral80": "hsl(0, 0%, 20%)",
@@ -10855,6 +10875,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                             },
                                             "tabIndex": "0",
                                             "tabSelectsValue": true,
+                                            "theme": [Function],
                                             "value": Object {
                                               "label": "5",
                                               "value": 5,
@@ -10874,7 +10895,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                               "neutral30": "hsl(0, 0%, 70%)",
                                               "neutral40": "hsl(0, 0%, 60%)",
                                               "neutral5": "hsl(0, 0%, 95%)",
-                                              "neutral50": "hsl(0, 0%, 50%)",
+                                              "neutral50": "#56565a",
                                               "neutral60": "hsl(0, 0%, 40%)",
                                               "neutral70": "hsl(0, 0%, 30%)",
                                               "neutral80": "hsl(0, 0%, 20%)",
@@ -11015,6 +11036,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                   },
                                                   "tabIndex": "0",
                                                   "tabSelectsValue": true,
+                                                  "theme": [Function],
                                                   "value": Object {
                                                     "label": "5",
                                                     "value": 5,
@@ -11034,7 +11056,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                     "neutral30": "hsl(0, 0%, 70%)",
                                                     "neutral40": "hsl(0, 0%, 60%)",
                                                     "neutral5": "hsl(0, 0%, 95%)",
-                                                    "neutral50": "hsl(0, 0%, 50%)",
+                                                    "neutral50": "#56565a",
                                                     "neutral60": "hsl(0, 0%, 40%)",
                                                     "neutral70": "hsl(0, 0%, 30%)",
                                                     "neutral80": "hsl(0, 0%, 20%)",
@@ -11178,6 +11200,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                   },
                                                   "tabIndex": "0",
                                                   "tabSelectsValue": true,
+                                                  "theme": [Function],
                                                   "value": Object {
                                                     "label": "5",
                                                     "value": 5,
@@ -11197,7 +11220,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                     "neutral30": "hsl(0, 0%, 70%)",
                                                     "neutral40": "hsl(0, 0%, 60%)",
                                                     "neutral5": "hsl(0, 0%, 95%)",
-                                                    "neutral50": "hsl(0, 0%, 50%)",
+                                                    "neutral50": "#56565a",
                                                     "neutral60": "hsl(0, 0%, 40%)",
                                                     "neutral70": "hsl(0, 0%, 30%)",
                                                     "neutral80": "hsl(0, 0%, 20%)",
@@ -11326,6 +11349,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                     },
                                                     "tabIndex": "0",
                                                     "tabSelectsValue": true,
+                                                    "theme": [Function],
                                                     "value": Object {
                                                       "label": "5",
                                                       "value": 5,
@@ -11345,7 +11369,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                                                       "neutral30": "hsl(0, 0%, 70%)",
                                                       "neutral40": "hsl(0, 0%, 60%)",
                                                       "neutral5": "hsl(0, 0%, 95%)",
-                                                      "neutral50": "hsl(0, 0%, 50%)",
+                                                      "neutral50": "#56565a",
                                                       "neutral60": "hsl(0, 0%, 40%)",
                                                       "neutral70": "hsl(0, 0%, 30%)",
                                                       "neutral80": "hsl(0, 0%, 20%)",
@@ -11967,7 +11991,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8b8b90;
+  color: #717175;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -16086,7 +16110,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8b8b90;
+  color: #717175;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -20204,7 +20228,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8b8b90;
+  color: #717175;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
