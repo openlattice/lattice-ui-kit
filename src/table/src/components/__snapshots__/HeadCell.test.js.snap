@@ -13,7 +13,9 @@ exports[`HeadCell props order should render faSort if sortable but without order
   as="th"
   cellStyle={Object {}}
 >
-  <span>
+  <span
+    aria-label="Sort (Descending)"
+  >
     <FontAwesomeIcon
       border={false}
       className=""
@@ -57,7 +59,9 @@ exports[`HeadCell props order should render faSortDown if sortable and order="de
   as="th"
   cellStyle={Object {}}
 >
-  <span>
+  <span
+    aria-label="Sort (Descending)"
+  >
     <FontAwesomeIcon
       border={false}
       className=""
@@ -101,7 +105,9 @@ exports[`HeadCell props order should render faSortUp if sortable and order="asc"
   as="th"
   cellStyle={Object {}}
 >
-  <span>
+  <span
+    aria-label="Sort (Ascending)"
+  >
     <FontAwesomeIcon
       border={false}
       className=""
