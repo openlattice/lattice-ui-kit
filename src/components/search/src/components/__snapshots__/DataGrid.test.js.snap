@@ -27,7 +27,7 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8b8b90;
+  color: #717175;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -811,7 +811,7 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   margin: 5px 5px 5px 0;
-  color: #8b8b90;
+  color: #717175;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;

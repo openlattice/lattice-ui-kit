@@ -36,6 +36,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
           "valueContainer": [Function],
         }
       }
+      theme={[Function]}
     >
       <Select
         backspaceRemovesValue={true}
@@ -101,6 +102,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
         }
         tabIndex="0"
         tabSelectsValue={true}
+        theme={[Function]}
         value={null}
       >
         <SelectContainer
@@ -184,6 +186,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
               },
               "tabIndex": "0",
               "tabSelectsValue": true,
+              "theme": [Function],
               "value": null,
             }
           }
@@ -200,7 +203,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                 "neutral30": "hsl(0, 0%, 70%)",
                 "neutral40": "hsl(0, 0%, 60%)",
                 "neutral5": "hsl(0, 0%, 95%)",
-                "neutral50": "hsl(0, 0%, 50%)",
+                "neutral50": "#56565a",
                 "neutral60": "hsl(0, 0%, 40%)",
                 "neutral70": "hsl(0, 0%, 30%)",
                 "neutral80": "hsl(0, 0%, 20%)",
@@ -322,6 +325,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                     },
                     "tabIndex": "0",
                     "tabSelectsValue": true,
+                    "theme": [Function],
                     "value": null,
                   }
                 }
@@ -338,7 +342,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                       "neutral30": "hsl(0, 0%, 70%)",
                       "neutral40": "hsl(0, 0%, 60%)",
                       "neutral5": "hsl(0, 0%, 95%)",
-                      "neutral50": "hsl(0, 0%, 50%)",
+                      "neutral50": "#56565a",
                       "neutral60": "hsl(0, 0%, 40%)",
                       "neutral70": "hsl(0, 0%, 30%)",
                       "neutral80": "hsl(0, 0%, 20%)",
@@ -475,6 +479,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                           },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
+                          "theme": [Function],
                           "value": null,
                         }
                       }
@@ -491,7 +496,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                             "neutral30": "hsl(0, 0%, 70%)",
                             "neutral40": "hsl(0, 0%, 60%)",
                             "neutral5": "hsl(0, 0%, 95%)",
-                            "neutral50": "hsl(0, 0%, 50%)",
+                            "neutral50": "#56565a",
                             "neutral60": "hsl(0, 0%, 40%)",
                             "neutral70": "hsl(0, 0%, 30%)",
                             "neutral80": "hsl(0, 0%, 20%)",
@@ -584,6 +589,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                             },
                             "tabIndex": "0",
                             "tabSelectsValue": true,
+                            "theme": [Function],
                             "value": null,
                           }
                         }
@@ -600,7 +606,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                               "neutral30": "hsl(0, 0%, 70%)",
                               "neutral40": "hsl(0, 0%, 60%)",
                               "neutral5": "hsl(0, 0%, 95%)",
-                              "neutral50": "hsl(0, 0%, 50%)",
+                              "neutral50": "#56565a",
                               "neutral60": "hsl(0, 0%, 40%)",
                               "neutral70": "hsl(0, 0%, 30%)",
                               "neutral80": "hsl(0, 0%, 20%)",
@@ -715,6 +721,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                   },
                                   "tabIndex": "0",
                                   "tabSelectsValue": true,
+                                  "theme": [Function],
                                   "value": null,
                                 }
                               }
@@ -731,7 +738,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                     "neutral30": "hsl(0, 0%, 70%)",
                                     "neutral40": "hsl(0, 0%, 60%)",
                                     "neutral5": "hsl(0, 0%, 95%)",
-                                    "neutral50": "hsl(0, 0%, 50%)",
+                                    "neutral50": "#56565a",
                                     "neutral60": "hsl(0, 0%, 40%)",
                                     "neutral70": "hsl(0, 0%, 30%)",
                                     "neutral80": "hsl(0, 0%, 20%)",
@@ -756,7 +763,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                 css={
                                   Object {
                                     "boxSizing": "border-box",
-                                    "color": "hsl(0, 0%, 50%)",
+                                    "color": "#56565a",
                                     "label": "placeholder",
                                     "marginLeft": 2,
                                     "marginRight": 2,
@@ -767,7 +774,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                 }
                               >
                                 <div
-                                  className=" css-1wa3eu0-placeholder"
+                                  className=" css-1kn0zpa-placeholder"
                                 >
                                   Select...
                                 </div>
@@ -850,6 +857,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                   },
                                   "tabIndex": "0",
                                   "tabSelectsValue": true,
+                                  "theme": [Function],
                                   "value": null,
                                 }
                               }
@@ -867,7 +875,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                     "neutral30": "hsl(0, 0%, 70%)",
                                     "neutral40": "hsl(0, 0%, 60%)",
                                     "neutral5": "hsl(0, 0%, 95%)",
-                                    "neutral50": "hsl(0, 0%, 50%)",
+                                    "neutral50": "#56565a",
                                     "neutral60": "hsl(0, 0%, 40%)",
                                     "neutral70": "hsl(0, 0%, 30%)",
                                     "neutral80": "hsl(0, 0%, 20%)",
@@ -1068,6 +1076,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                           },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
+                          "theme": [Function],
                           "value": null,
                         }
                       }
@@ -1084,7 +1093,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                             "neutral30": "hsl(0, 0%, 70%)",
                             "neutral40": "hsl(0, 0%, 60%)",
                             "neutral5": "hsl(0, 0%, 95%)",
-                            "neutral50": "hsl(0, 0%, 50%)",
+                            "neutral50": "#56565a",
                             "neutral60": "hsl(0, 0%, 40%)",
                             "neutral70": "hsl(0, 0%, 30%)",
                             "neutral80": "hsl(0, 0%, 20%)",
@@ -1196,6 +1205,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                 },
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
+                                "theme": [Function],
                                 "value": null,
                               }
                             }
@@ -1212,7 +1222,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                   "neutral30": "hsl(0, 0%, 70%)",
                                   "neutral40": "hsl(0, 0%, 60%)",
                                   "neutral5": "hsl(0, 0%, 95%)",
-                                  "neutral50": "hsl(0, 0%, 50%)",
+                                  "neutral50": "#56565a",
                                   "neutral60": "hsl(0, 0%, 40%)",
                                   "neutral70": "hsl(0, 0%, 30%)",
                                   "neutral80": "hsl(0, 0%, 20%)",
@@ -1327,6 +1337,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                 },
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
+                                "theme": [Function],
                                 "value": null,
                               }
                             }
@@ -1343,7 +1354,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                   "neutral30": "hsl(0, 0%, 70%)",
                                   "neutral40": "hsl(0, 0%, 60%)",
                                   "neutral5": "hsl(0, 0%, 95%)",
-                                  "neutral50": "hsl(0, 0%, 50%)",
+                                  "neutral50": "#56565a",
                                   "neutral60": "hsl(0, 0%, 40%)",
                                   "neutral70": "hsl(0, 0%, 30%)",
                                   "neutral80": "hsl(0, 0%, 20%)",
@@ -1443,6 +1454,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                   },
                                   "tabIndex": "0",
                                   "tabSelectsValue": true,
+                                  "theme": [Function],
                                   "value": null,
                                 }
                               }
@@ -1459,7 +1471,7 @@ exports[`Select snapshot render matches snapshot 1`] = `
                                     "neutral30": "hsl(0, 0%, 70%)",
                                     "neutral40": "hsl(0, 0%, 60%)",
                                     "neutral5": "hsl(0, 0%, 95%)",
-                                    "neutral50": "hsl(0, 0%, 50%)",
+                                    "neutral50": "#56565a",
                                     "neutral60": "hsl(0, 0%, 40%)",
                                     "neutral70": "hsl(0, 0%, 30%)",
                                     "neutral80": "hsl(0, 0%, 20%)",

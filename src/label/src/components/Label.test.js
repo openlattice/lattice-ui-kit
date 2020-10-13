@@ -31,7 +31,7 @@ describe('Label', () => {
     test('subtle prop should apply styles', () => {
       const wrapper = mount(<Label subtle />);
       expect(wrapper.find(Label)).toHaveStyleRule('font-weight', '600');
-      expect(wrapper.find(Label)).toHaveStyleRule('color', NEUTRAL.N500);
+      expect(wrapper.find(Label)).toHaveStyleRule('color', NEUTRAL.N600);
       expect(wrapper.find(Label)).toHaveStyleRule('font-size', '0.75rem');
       expect(wrapper.find(Label)).toHaveStyleRule('text-transform', 'uppercase');
     });

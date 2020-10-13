@@ -11,12 +11,13 @@ storiesOf('Tag', module)
       <Card>
         <CardSegment vertical={false}>
           <Tag>undefined</Tag>
-          <Tag mode="neutral">neutral</Tag>
-          <Tag mode="success">success</Tag>
           <Tag mode="danger">danger</Tag>
-          <Tag mode="warning">warning</Tag>
+          <Tag mode="neutral">neutral</Tag>
+          <Tag mode="info">info</Tag>
           <Tag mode="primary">primary</Tag>
           <Tag mode="secondary">secondary</Tag>
+          <Tag mode="success">success</Tag>
+          <Tag mode="warning">warning</Tag>
         </CardSegment>
       </Card>
     </>

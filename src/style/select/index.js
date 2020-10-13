@@ -8,6 +8,7 @@ import menuListStyles from './menuListStyles';
 import menuPortalStyles from './menuPortalStyles';
 import menuStyles from './menuStyles';
 import optionStyles from './optionStyles';
+import selectTheme from './selectTheme';
 import singleValueStyles from './singleValueStyles';
 import valueContainerStyles from './valueContainerStyles';
 
@@ -38,6 +39,7 @@ export {
   menuStyles,
   optionStyles,
   selectStyles,
+  selectTheme,
   singleValueStyles,
   valueContainerStyles,
 };
