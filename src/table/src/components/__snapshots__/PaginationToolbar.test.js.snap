@@ -144,21 +144,25 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
           </StyledComponent>
         </Label>
         <ForwardRef
+          aria-label="Previous Page"
           disabled={true}
           onClick={[Function]}
         >
           <IconButton
+            aria-label="Previous Page"
             disabled={true}
             forwardRef={null}
             onClick={[Function]}
           >
             <WithStyles(ForwardRef(IconButton))
+              aria-label="Previous Page"
               className=""
               color="default"
               disabled={true}
               onClick={[Function]}
             >
               <ForwardRef(IconButton)
+                aria-label="Previous Page"
                 className=""
                 classes={
                   Object {
@@ -178,6 +182,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(ButtonBase))
+                  aria-label="Previous Page"
                   centerRipple={true}
                   className="MuiIconButton-root Mui-disabled"
                   disabled={true}
@@ -185,6 +190,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                   onClick={[Function]}
                 >
                   <ForwardRef(ButtonBase)
+                    aria-label="Previous Page"
                     centerRipple={true}
                     className="MuiIconButton-root Mui-disabled"
                     classes={
@@ -199,6 +205,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                     onClick={[Function]}
                   >
                     <button
+                      aria-label="Previous Page"
                       className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                       disabled={true}
                       onBlur={[Function]}
@@ -314,21 +321,25 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
           </IconButton>
         </ForwardRef>
         <ForwardRef
+          aria-label="Next Page"
           disabled={true}
           onClick={[Function]}
         >
           <IconButton
+            aria-label="Next Page"
             disabled={true}
             forwardRef={null}
             onClick={[Function]}
           >
             <WithStyles(ForwardRef(IconButton))
+              aria-label="Next Page"
               className=""
               color="default"
               disabled={true}
               onClick={[Function]}
             >
               <ForwardRef(IconButton)
+                aria-label="Next Page"
                 className=""
                 classes={
                   Object {
@@ -348,6 +359,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(ButtonBase))
+                  aria-label="Next Page"
                   centerRipple={true}
                   className="MuiIconButton-root Mui-disabled"
                   disabled={true}
@@ -355,6 +367,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                   onClick={[Function]}
                 >
                   <ForwardRef(ButtonBase)
+                    aria-label="Next Page"
                     centerRipple={true}
                     className="MuiIconButton-root Mui-disabled"
                     classes={
@@ -369,6 +382,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
                     onClick={[Function]}
                   >
                     <button
+                      aria-label="Next Page"
                       className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                       disabled={true}
                       onBlur={[Function]}
