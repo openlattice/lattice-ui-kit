@@ -340,21 +340,25 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
               </StyledComponent>
             </Label>
             <ForwardRef
+              aria-label="Previous Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Previous Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Previous Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Previous Page"
                     className=""
                     classes={
                       Object {
@@ -374,6 +378,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Previous Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -381,6 +386,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Previous Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -395,6 +401,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Previous Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -510,21 +517,25 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
               </IconButton>
             </ForwardRef>
             <ForwardRef
+              aria-label="Next Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Next Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Next Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Next Page"
                     className=""
                     classes={
                       Object {
@@ -544,6 +555,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Next Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -551,6 +563,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Next Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -565,6 +578,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Next Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -913,7 +927,9 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                             onClick={[Function]}
                           >
                             Subject Name
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -1065,7 +1081,9 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                             onClick={[Function]}
                           >
                             Date of Birth
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -1217,7 +1235,9 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                             onClick={[Function]}
                           >
                             Manager
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -1369,7 +1389,9 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                             onClick={[Function]}
                           >
                             Last Updated
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -3760,21 +3782,25 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
               </StyledComponent>
             </Label>
             <ForwardRef
+              aria-label="Previous Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Previous Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Previous Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Previous Page"
                     className=""
                     classes={
                       Object {
@@ -3794,6 +3820,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Previous Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -3801,6 +3828,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Previous Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -3815,6 +3843,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Previous Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -3930,21 +3959,25 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
               </IconButton>
             </ForwardRef>
             <ForwardRef
+              aria-label="Next Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Next Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Next Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Next Page"
                     className=""
                     classes={
                       Object {
@@ -3964,6 +3997,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Next Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -3971,6 +4005,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Next Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -3985,6 +4020,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Next Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -6522,21 +6558,25 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
               </StyledComponent>
             </Label>
             <ForwardRef
+              aria-label="Previous Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Previous Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Previous Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Previous Page"
                     className=""
                     classes={
                       Object {
@@ -6556,6 +6596,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Previous Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -6563,6 +6604,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Previous Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -6577,6 +6619,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Previous Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -6692,21 +6735,25 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
               </IconButton>
             </ForwardRef>
             <ForwardRef
+              aria-label="Next Page"
               disabled={false}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Next Page"
                 disabled={false}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Next Page"
                   className=""
                   color="default"
                   disabled={false}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Next Page"
                     className=""
                     classes={
                       Object {
@@ -6726,6 +6773,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Next Page"
                       centerRipple={true}
                       className="MuiIconButton-root"
                       disabled={false}
@@ -6733,6 +6781,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Next Page"
                         centerRipple={true}
                         className="MuiIconButton-root"
                         classes={
@@ -6747,6 +6796,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Next Page"
                           className="MuiButtonBase-root MuiIconButton-root"
                           disabled={false}
                           onBlur={[Function]}
@@ -7123,7 +7173,9 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             onClick={[Function]}
                           >
                             Subject Name
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -7275,7 +7327,9 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             onClick={[Function]}
                           >
                             Date of Birth
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -7427,7 +7481,9 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             onClick={[Function]}
                           >
                             Manager
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -7579,7 +7635,9 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                             onClick={[Function]}
                           >
                             Last Updated
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -11456,21 +11514,25 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
               </StyledComponent>
             </Label>
             <ForwardRef
+              aria-label="Previous Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Previous Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Previous Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Previous Page"
                     className=""
                     classes={
                       Object {
@@ -11490,6 +11552,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Previous Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -11497,6 +11560,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Previous Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -11511,6 +11575,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Previous Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -11626,21 +11691,25 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
               </IconButton>
             </ForwardRef>
             <ForwardRef
+              aria-label="Next Page"
               disabled={false}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Next Page"
                 disabled={false}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Next Page"
                   className=""
                   color="default"
                   disabled={false}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Next Page"
                     className=""
                     classes={
                       Object {
@@ -11660,6 +11729,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Next Page"
                       centerRipple={true}
                       className="MuiIconButton-root"
                       disabled={false}
@@ -11667,6 +11737,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Next Page"
                         centerRipple={true}
                         className="MuiIconButton-root"
                         classes={
@@ -11681,6 +11752,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Next Page"
                           className="MuiButtonBase-root MuiIconButton-root"
                           disabled={false}
                           onBlur={[Function]}
@@ -12122,21 +12194,25 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
               </StyledComponent>
             </Label>
             <ForwardRef
+              aria-label="Previous Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Previous Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Previous Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Previous Page"
                     className=""
                     classes={
                       Object {
@@ -12156,6 +12232,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Previous Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -12163,6 +12240,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Previous Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -12177,6 +12255,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Previous Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -12292,21 +12371,25 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
               </IconButton>
             </ForwardRef>
             <ForwardRef
+              aria-label="Next Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Next Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Next Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Next Page"
                     className=""
                     classes={
                       Object {
@@ -12326,6 +12409,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Next Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -12333,6 +12417,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Next Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -12347,6 +12432,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Next Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -12695,7 +12781,9 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                             onClick={[Function]}
                           >
                             Subject Name
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -12847,7 +12935,9 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                             onClick={[Function]}
                           >
                             Date of Birth
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -12999,7 +13089,9 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                             onClick={[Function]}
                           >
                             Manager
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -13151,7 +13243,9 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                             onClick={[Function]}
                           >
                             Last Updated
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -15542,21 +15636,25 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
               </StyledComponent>
             </Label>
             <ForwardRef
+              aria-label="Previous Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Previous Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Previous Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Previous Page"
                     className=""
                     classes={
                       Object {
@@ -15576,6 +15674,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Previous Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -15583,6 +15682,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Previous Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -15597,6 +15697,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Previous Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -15712,21 +15813,25 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
               </IconButton>
             </ForwardRef>
             <ForwardRef
+              aria-label="Next Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Next Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Next Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Next Page"
                     className=""
                     classes={
                       Object {
@@ -15746,6 +15851,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Next Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -15753,6 +15859,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Next Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -15767,6 +15874,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Next Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -16229,21 +16337,25 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
               </StyledComponent>
             </Label>
             <ForwardRef
+              aria-label="Previous Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Previous Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Previous Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Previous Page"
                     className=""
                     classes={
                       Object {
@@ -16263,6 +16375,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Previous Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -16270,6 +16383,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Previous Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -16284,6 +16398,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Previous Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -16399,21 +16514,25 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
               </IconButton>
             </ForwardRef>
             <ForwardRef
+              aria-label="Next Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Next Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Next Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Next Page"
                     className=""
                     classes={
                       Object {
@@ -16433,6 +16552,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Next Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -16440,6 +16560,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Next Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -16454,6 +16575,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Next Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -16802,7 +16924,9 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                             onClick={[Function]}
                           >
                             Subject Name
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -16954,7 +17078,9 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                             onClick={[Function]}
                           >
                             Date of Birth
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -17106,7 +17232,9 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                             onClick={[Function]}
                           >
                             Manager
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -17258,7 +17386,9 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                             onClick={[Function]}
                           >
                             Last Updated
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -19649,21 +19779,25 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
               </StyledComponent>
             </Label>
             <ForwardRef
+              aria-label="Previous Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Previous Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Previous Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Previous Page"
                     className=""
                     classes={
                       Object {
@@ -19683,6 +19817,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Previous Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -19690,6 +19825,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Previous Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -19704,6 +19840,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Previous Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -19819,21 +19956,25 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
               </IconButton>
             </ForwardRef>
             <ForwardRef
+              aria-label="Next Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Next Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Next Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Next Page"
                     className=""
                     classes={
                       Object {
@@ -19853,6 +19994,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Next Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -19860,6 +20002,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Next Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -19874,6 +20017,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Next Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -20287,21 +20431,25 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               </StyledComponent>
             </Label>
             <ForwardRef
+              aria-label="Previous Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Previous Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Previous Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Previous Page"
                     className=""
                     classes={
                       Object {
@@ -20321,6 +20469,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Previous Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -20328,6 +20477,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Previous Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -20342,6 +20492,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Previous Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -20457,21 +20608,25 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               </IconButton>
             </ForwardRef>
             <ForwardRef
+              aria-label="Next Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Next Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Next Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Next Page"
                     className=""
                     classes={
                       Object {
@@ -20491,6 +20646,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Next Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -20498,6 +20654,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Next Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -20512,6 +20669,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Next Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -20860,7 +21018,9 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             onClick={[Function]}
                           >
                             Subject Name
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -21012,7 +21172,9 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             onClick={[Function]}
                           >
                             Date of Birth
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -21164,7 +21326,9 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             onClick={[Function]}
                           >
                             Manager
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -21316,7 +21480,9 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                             onClick={[Function]}
                           >
                             Last Updated
-                            <span>
+                            <span
+                              aria-label="Sort (Descending)"
+                            >
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -23707,21 +23873,25 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               </StyledComponent>
             </Label>
             <ForwardRef
+              aria-label="Previous Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Previous Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Previous Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Previous Page"
                     className=""
                     classes={
                       Object {
@@ -23741,6 +23911,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Previous Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -23748,6 +23919,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Previous Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -23762,6 +23934,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Previous Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
@@ -23877,21 +24050,25 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
               </IconButton>
             </ForwardRef>
             <ForwardRef
+              aria-label="Next Page"
               disabled={true}
               onClick={[Function]}
             >
               <IconButton
+                aria-label="Next Page"
                 disabled={true}
                 forwardRef={null}
                 onClick={[Function]}
               >
                 <WithStyles(ForwardRef(IconButton))
+                  aria-label="Next Page"
                   className=""
                   color="default"
                   disabled={true}
                   onClick={[Function]}
                 >
                   <ForwardRef(IconButton)
+                    aria-label="Next Page"
                     className=""
                     classes={
                       Object {
@@ -23911,6 +24088,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                     onClick={[Function]}
                   >
                     <WithStyles(ForwardRef(ButtonBase))
+                      aria-label="Next Page"
                       centerRipple={true}
                       className="MuiIconButton-root Mui-disabled"
                       disabled={true}
@@ -23918,6 +24096,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                       onClick={[Function]}
                     >
                       <ForwardRef(ButtonBase)
+                        aria-label="Next Page"
                         centerRipple={true}
                         className="MuiIconButton-root Mui-disabled"
                         classes={
@@ -23932,6 +24111,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                         onClick={[Function]}
                       >
                         <button
+                          aria-label="Next Page"
                           className="MuiButtonBase-root MuiIconButton-root Mui-disabled Mui-disabled"
                           disabled={true}
                           onBlur={[Function]}
