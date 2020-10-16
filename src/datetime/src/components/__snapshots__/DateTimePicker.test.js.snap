@@ -257,6 +257,41 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "border": "1px solid #dfdfe3",
           },
         },
+        "MuiTimelineConnector": Object {
+          "root": Object {
+            "backgroundColor": "#d1d1d6",
+          },
+        },
+        "MuiTimelineContent": Object {
+          "root": Object {
+            "padding": "0 16px",
+          },
+        },
+        "MuiTimelineDot": Object {
+          "defaultGrey": Object {
+            "backgroundColor": "#d1d1d6",
+          },
+          "outlinedGrey": Object {
+            "backgroundColor": "#d1d1d6",
+          },
+          "root": Object {
+            "boxShadow": "none",
+            "marginBottom": "4px",
+            "marginTop": "4px",
+          },
+        },
+        "MuiTimelineItem": Object {
+          "missingOppositeContent": Object {
+            "&:before": Object {
+              "display": "none",
+            },
+          },
+        },
+        "MuiTimelineOppositeContent": Object {
+          "root": Object {
+            "padding": "0 16px",
+          },
+        },
         "MuiTouchRipple": Object {
           "@keyframes enter": Object {
             "0%": Object {
