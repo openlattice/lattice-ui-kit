@@ -23,6 +23,7 @@ const lightTheme = createMuiTheme({
         fontWeight: 600,
         lineHeight: 1.2,
       },
+      focused: {},
       /* Pseudo-class applied to the ButtonBase root element if the button is keyboard focused. */
       focusVisible: {},
       /* Pseudo-class applied to the root element if `disabled={true}`. */
@@ -35,9 +36,16 @@ const lightTheme = createMuiTheme({
       /* Styles applied to the root element `variant="text"`. */
       text: {
         padding: '0 16px',
-        '&:focus': {
+        '&:active': {
+          backgroundColor: NEUTRAL.N200,
+        },
+        '&:focus:hover': {
           boxShadow: '0 0 0 2px currentColor'
         },
+        '&:focus': {
+          backgroundColor: NEUTRAL.N50,
+          boxShadow: '0 0 0 2px currentColor'
+        }
       },
       /* Styles applied to the root element if `size="small"` and `variant="text"`. */
       textSizeSmall: {
@@ -65,16 +73,33 @@ const lightTheme = createMuiTheme({
       },
       contained: {
         backgroundColor: NEUTRAL.N50,
+        border: '1px solid transparent',
         color: NEUTRAL.N700,
-        '&:focus': {
+        '&:active': {
+          backgroundColor: NEUTRAL.N500,
+          color: 'white'
+        },
+        '&:focus:hover': {
+          borderColor: 'white',
           boxShadow: '0 0 0 2px currentColor'
         },
+        '&:focus': {
+          borderColor: 'white',
+          boxShadow: '0 0 0 2px currentColor'
+        }
       },
       outlined: {
         color: NEUTRAL.N700,
-        '&:focus': {
+        '&:active': {
+          backgroundColor: NEUTRAL.N200,
+        },
+        '&:focus:hover': {
           boxShadow: '0 0 0 2px currentColor'
         },
+        '&:focus': {
+          backgroundColor: NEUTRAL.N50,
+          boxShadow: '0 0 0 2px currentColor'
+        }
       },
       /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
       containedSizeSmall: {
