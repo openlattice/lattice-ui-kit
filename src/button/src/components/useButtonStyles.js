@@ -40,7 +40,7 @@ const isContained = (variant) => variant === variants[2];
 // Adjustments to colors that are outside of the palette's light, main, dark, & contrastText
 const getContrastColor = (color, theme) => ((color === colors[1])
   ? (theme.palette[color].contrastText) : theme.palette[color].main);
-const getOutlinedHoverColor = (color) => outlinedHoverColors[color] || NEUTRAL.N050;
+const getOutlinedHoverColor = (color) => outlinedHoverColors[color] || NEUTRAL.N50;
 const getOutlinedActiveColor = (color) => outlinedActiveColors[color] || NEUTRAL.N200;
 
 const template = (variant, color, theme) => theme.palette[color] && mergeAll([
@@ -91,6 +91,16 @@ const template = (variant, color, theme) => theme.palette[color] && mergeAll([
   },
   {
     '&:focus': mergeAll([
+      {
+        boxShadow: `0 0 0 2px ${getContrastColor(color, theme)}`
+      },
+      isContained(variant) && {
+        border: `1px solid ${theme.palette.background.header}`,
+      }
+    ])
+  },
+  {
+    '&:focus:hover': mergeAll([
       {
         boxShadow: `0 0 0 2px ${getContrastColor(color, theme)}`
       },
