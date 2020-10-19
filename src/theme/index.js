@@ -9,6 +9,11 @@ import {
   RED,
 } from '../colors';
 
+const focusAndHoverStylesForOutlinedAndText = {
+  border: '1px solid transparent',
+  boxShadow: '0 0 0 2px currentColor'
+};
+
 const lightTheme = createMuiTheme({
   overrides: {
     MuiButton: {
@@ -35,17 +40,16 @@ const lightTheme = createMuiTheme({
       },
       /* Styles applied to the root element `variant="text"`. */
       text: {
+        color: NEUTRAL.N700,
         padding: '0 16px',
         '&:active': {
           backgroundColor: NEUTRAL.N200,
         },
-        '&:focus:hover': {
-          boxShadow: '0 0 0 2px currentColor'
-        },
-        '&:focus': {
+        '&:hover': {
           backgroundColor: NEUTRAL.N50,
-          boxShadow: '0 0 0 2px currentColor'
-        }
+        },
+        '&:focus:hover': focusAndHoverStylesForOutlinedAndText,
+        '&:focus': focusAndHoverStylesForOutlinedAndText
       },
       /* Styles applied to the root element if `size="small"` and `variant="text"`. */
       textSizeSmall: {
@@ -93,13 +97,11 @@ const lightTheme = createMuiTheme({
         '&:active': {
           backgroundColor: NEUTRAL.N200,
         },
-        '&:focus:hover': {
-          boxShadow: '0 0 0 2px currentColor'
-        },
-        '&:focus': {
+        '&:hover': {
           backgroundColor: NEUTRAL.N50,
-          boxShadow: '0 0 0 2px currentColor'
-        }
+        },
+        '&:focus:hover': focusAndHoverStylesForOutlinedAndText,
+        '&:focus': focusAndHoverStylesForOutlinedAndText
       },
       /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
       containedSizeSmall: {
@@ -420,9 +422,8 @@ const darkTheme = createMuiTheme({
       text: {
         color: NEUTRAL.N50,
         padding: '0 16px',
-        '&:focus': {
-          boxShadow: '0 0 0 2px currentColor'
-        },
+        '&:focus:hover': focusAndHoverStylesForOutlinedAndText,
+        '&:focus': focusAndHoverStylesForOutlinedAndText,
       },
       /* Styles applied to the root element if `size="small"` and `variant="text"`. */
       textSizeSmall: {
@@ -450,16 +451,25 @@ const darkTheme = createMuiTheme({
       },
       contained: {
         backgroundColor: NEUTRAL.N50,
-        color: NEUTRAL.N50,
+        border: '1px solid transparent',
+        color: NEUTRAL.N700,
+        '&:active': {
+          backgroundColor: NEUTRAL.N500,
+          color: 'white'
+        },
+        '&:focus:hover': {
+          border: '1px solid currentColor',
+          boxShadow: `0 0 0 2px ${NEUTRAL.N50}`
+        },
         '&:focus': {
+          border: '1px solid currentColor',
           boxShadow: `0 0 0 2px ${NEUTRAL.N50}`
         },
       },
       outlined: {
         color: NEUTRAL.N50,
-        '&:focus': {
-          boxShadow: '0 0 0 2px currentColor'
-        },
+        '&:focus:hover': focusAndHoverStylesForOutlinedAndText,
+        '&:focus': focusAndHoverStylesForOutlinedAndText,
       },
       /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
       containedSizeSmall: {
