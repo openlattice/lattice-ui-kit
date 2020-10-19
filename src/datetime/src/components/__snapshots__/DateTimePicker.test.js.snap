@@ -45,10 +45,20 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "color": "inherit",
           },
           "contained": Object {
+            "&:active": Object {
+              "backgroundColor": "#8b8b90",
+              "color": "white",
+            },
             "&:focus": Object {
+              "borderColor": "white",
+              "boxShadow": "0 0 0 2px currentColor",
+            },
+            "&:focus:hover": Object {
+              "borderColor": "white",
               "boxShadow": "0 0 0 2px currentColor",
             },
             "backgroundColor": "#f2f2f4",
+            "border": "1px solid transparent",
             "color": "#56565a",
           },
           "containedSizeLarge": Object {
@@ -71,6 +81,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "marginRight": -4,
           },
           "focusVisible": Object {},
+          "focused": Object {},
           "fullWidth": Object {
             "width": "100%",
           },
@@ -94,8 +105,19 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "lineHeight": 1.2,
           },
           "outlined": Object {
+            "&:active": Object {
+              "backgroundColor": "#d1d1d6",
+            },
             "&:focus": Object {
+              "border": "1px solid transparent",
               "boxShadow": "0 0 0 2px currentColor",
+            },
+            "&:focus:hover": Object {
+              "border": "1px solid transparent",
+              "boxShadow": "0 0 0 2px currentColor",
+            },
+            "&:hover": Object {
+              "backgroundColor": "#f2f2f4",
             },
             "color": "#56565a",
           },
@@ -131,9 +153,21 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "marginRight": 8,
           },
           "text": Object {
+            "&:active": Object {
+              "backgroundColor": "#d1d1d6",
+            },
             "&:focus": Object {
+              "border": "1px solid transparent",
               "boxShadow": "0 0 0 2px currentColor",
             },
+            "&:focus:hover": Object {
+              "border": "1px solid transparent",
+              "boxShadow": "0 0 0 2px currentColor",
+            },
+            "&:hover": Object {
+              "backgroundColor": "#f2f2f4",
+            },
+            "color": "#56565a",
             "padding": "0 16px",
           },
           "textSizeLarge": Object {
