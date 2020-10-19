@@ -43,17 +43,21 @@ const getContrastColor = (color, theme) => ((color === colors[1])
 const getOutlinedHoverColor = (color) => outlinedHoverColors[color] || NEUTRAL.N50;
 const getOutlinedActiveColor = (color) => outlinedActiveColors[color] || NEUTRAL.N200;
 
+const focusAndHoverStylesForOutlinedAndText = (color, theme) => ({
+  border: '1px solid transparent',
+  boxShadow: `0 0 0 2px ${getContrastColor(color, theme)}`
+})
+
 const template = (variant, color, theme) => theme.palette[color] && mergeAll([
   {
+    border: '1px solid transparent',
     color: getContrastColor(color, theme),
   },
   isContained(variant) && {
     backgroundColor: theme.palette[color].main,
-    border: '1px solid transparent',
     color: theme.palette[color].contrastText,
   },
   isOutlined(variant) && {
-    border: '1px solid',
     borderColor: fade(getContrastColor(color, theme), 0.5),
   },
   {
@@ -63,7 +67,6 @@ const template = (variant, color, theme) => theme.palette[color] && mergeAll([
       },
       (isOutlined(variant) || isText(variant)) && {
         backgroundColor: getOutlinedHoverColor(color),
-        borderColor: 'transparent',
       },
       {
         // reset on touch devices
@@ -91,9 +94,7 @@ const template = (variant, color, theme) => theme.palette[color] && mergeAll([
   },
   {
     '&:focus': mergeAll([
-      {
-        boxShadow: `0 0 0 2px ${getContrastColor(color, theme)}`
-      },
+      focusAndHoverStylesForOutlinedAndText(color, theme),
       isContained(variant) && {
         border: `1px solid ${theme.palette.background.header}`,
       }
@@ -101,9 +102,7 @@ const template = (variant, color, theme) => theme.palette[color] && mergeAll([
   },
   {
     '&:focus:hover': mergeAll([
-      {
-        boxShadow: `0 0 0 2px ${getContrastColor(color, theme)}`
-      },
+      focusAndHoverStylesForOutlinedAndText(color, theme),
       isContained(variant) && {
         border: `1px solid ${theme.palette.background.header}`,
       }
