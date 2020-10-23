@@ -13,7 +13,7 @@ import Spinner from '../../../spinner';
 const Button = ({
   className,
   color = 'default',
-  disableElevation = true,
+  disableElevation = false,
   disabled,
   isLoading,
   startIcon,
