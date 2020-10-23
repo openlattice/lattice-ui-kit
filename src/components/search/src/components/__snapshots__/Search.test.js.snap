@@ -147,14 +147,18 @@ exports[`Search snapshots should match snapshot 1`] = `
             },
             "&:focus": Object {
               "borderColor": "white",
-              "boxShadow": "0 0 0 2px currentColor",
+              "boxShadow": "0 0 0 2px currentColor;",
             },
             "&:focus:hover": Object {
               "borderColor": "white",
-              "boxShadow": "0 0 0 2px currentColor",
+              "boxShadow": "0 0 0 2px currentColor;",
+            },
+            "&:hover": Object {
+              "boxShadow": "none",
             },
             "backgroundColor": "#f2f2f4",
             "border": "1px solid transparent",
+            "boxShadow": "none",
             "color": "#56565a",
           },
           "containedSizeLarge": Object {
@@ -167,6 +171,9 @@ exports[`Search snapshots should match snapshot 1`] = `
             "minHeight": "26px",
             "padding": "5px",
           },
+          "disableElevation": Object {
+            "boxShadow": "none",
+          },
           "disabled": Object {},
           "endIcon": Object {
             "&$iconSizeSmall": Object {
@@ -177,7 +184,6 @@ exports[`Search snapshots should match snapshot 1`] = `
             "marginRight": -4,
           },
           "focusVisible": Object {},
-          "focused": Object {},
           "fullWidth": Object {
             "width": "100%",
           },
@@ -214,7 +220,9 @@ exports[`Search snapshots should match snapshot 1`] = `
             },
             "&:hover": Object {
               "backgroundColor": "#f2f2f4",
+              "boxShadow": "none",
             },
+            "boxShadow": "none",
             "color": "#56565a",
           },
           "outlinedSizeLarge": Object {
@@ -262,7 +270,9 @@ exports[`Search snapshots should match snapshot 1`] = `
             },
             "&:hover": Object {
               "backgroundColor": "#f2f2f4",
+              "boxShadow": "none",
             },
+            "boxShadow": "none",
             "color": "#56565a",
             "padding": "0 16px",
           },
@@ -3169,7 +3179,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                 <WithStyles(ForwardRef(Button))
                                                   className=""
                                                   color="default"
-                                                  disableElevation={true}
+                                                  disableElevation={false}
                                                   disableRipple={true}
                                                   fullWidth={true}
                                                   mode="primary"
@@ -3191,7 +3201,6 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                         "disabled": "Mui-disabled",
                                                         "endIcon": "MuiButton-endIcon",
                                                         "focusVisible": "Mui-focusVisible",
-                                                        "focused": "Mui-focused",
                                                         "fullWidth": "MuiButton-fullWidth",
                                                         "iconSizeLarge": "MuiButton-iconSizeLarge",
                                                         "iconSizeMedium": "MuiButton-iconSizeMedium",
@@ -3214,7 +3223,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                       }
                                                     }
                                                     color="default"
-                                                    disableElevation={true}
+                                                    disableElevation={false}
                                                     disableRipple={true}
                                                     fullWidth={true}
                                                     mode="primary"
@@ -3223,7 +3232,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                     variant="contained"
                                                   >
                                                     <WithStyles(ForwardRef(ButtonBase))
-                                                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation MuiButton-fullWidth"
+                                                      className="MuiButton-root MuiButton-contained MuiButton-fullWidth"
                                                       component="button"
                                                       disableRipple={true}
                                                       disabled={false}
@@ -3234,7 +3243,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                       type="submit"
                                                     >
                                                       <ForwardRef(ButtonBase)
-                                                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation MuiButton-fullWidth"
+                                                        className="MuiButton-root MuiButton-contained MuiButton-fullWidth"
                                                         classes={
                                                           Object {
                                                             "disabled": "Mui-disabled",
@@ -3252,7 +3261,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                         type="submit"
                                                       >
                                                         <button
-                                                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation MuiButton-fullWidth"
+                                                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-fullWidth"
                                                           disabled={false}
                                                           mode="primary"
                                                           onBlur={[Function]}

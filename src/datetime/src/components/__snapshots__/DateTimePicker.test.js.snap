@@ -51,14 +51,18 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             },
             "&:focus": Object {
               "borderColor": "white",
-              "boxShadow": "0 0 0 2px currentColor",
+              "boxShadow": "0 0 0 2px currentColor;",
             },
             "&:focus:hover": Object {
               "borderColor": "white",
-              "boxShadow": "0 0 0 2px currentColor",
+              "boxShadow": "0 0 0 2px currentColor;",
+            },
+            "&:hover": Object {
+              "boxShadow": "none",
             },
             "backgroundColor": "#f2f2f4",
             "border": "1px solid transparent",
+            "boxShadow": "none",
             "color": "#56565a",
           },
           "containedSizeLarge": Object {
@@ -71,6 +75,9 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "minHeight": "26px",
             "padding": "5px",
           },
+          "disableElevation": Object {
+            "boxShadow": "none",
+          },
           "disabled": Object {},
           "endIcon": Object {
             "&$iconSizeSmall": Object {
@@ -81,7 +88,6 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "marginRight": -4,
           },
           "focusVisible": Object {},
-          "focused": Object {},
           "fullWidth": Object {
             "width": "100%",
           },
@@ -118,7 +124,9 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             },
             "&:hover": Object {
               "backgroundColor": "#f2f2f4",
+              "boxShadow": "none",
             },
+            "boxShadow": "none",
             "color": "#56565a",
           },
           "outlinedSizeLarge": Object {
@@ -166,7 +174,9 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             },
             "&:hover": Object {
               "backgroundColor": "#f2f2f4",
+              "boxShadow": "none",
             },
+            "boxShadow": "none",
             "color": "#56565a",
             "padding": "0 16px",
           },

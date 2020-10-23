@@ -576,7 +576,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                           class="c8"
                         >
                           <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-containedPrimary-13 MuiButton-disableElevation"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-containedPrimary-13 "
                             tabindex="0"
                             type="button"
                           >
@@ -587,7 +587,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                             </span>
                           </button>
                           <button
-                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained "
                             id="secondary"
                             name="secondary"
                             tabindex="0"
@@ -1114,7 +1114,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                               <WithStyles(ForwardRef(Button))
                                                                 className="makeStyles-containedPrimary-13 "
                                                                 color="default"
-                                                                disableElevation={true}
+                                                                disableElevation={false}
                                                                 disableRipple={true}
                                                                 disabled={false}
                                                                 onClick={[Function]}
@@ -1156,14 +1156,14 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                     }
                                                                   }
                                                                   color="default"
-                                                                  disableElevation={true}
+                                                                  disableElevation={false}
                                                                   disableRipple={true}
                                                                   disabled={false}
                                                                   onClick={[Function]}
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained makeStyles-containedPrimary-13 MuiButton-disableElevation"
+                                                                    className="MuiButton-root MuiButton-contained makeStyles-containedPrimary-13 "
                                                                     component="button"
                                                                     disableRipple={true}
                                                                     disabled={false}
@@ -1173,7 +1173,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained makeStyles-containedPrimary-13 MuiButton-disableElevation"
+                                                                      className="MuiButton-root MuiButton-contained makeStyles-containedPrimary-13 "
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -1190,7 +1190,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-containedPrimary-13 MuiButton-disableElevation"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-containedPrimary-13 "
                                                                         disabled={false}
                                                                         onBlur={[Function]}
                                                                         onClick={[Function]}
@@ -1279,7 +1279,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                               <WithStyles(ForwardRef(Button))
                                                                 className=""
                                                                 color="default"
-                                                                disableElevation={true}
+                                                                disableElevation={false}
                                                                 disableRipple={true}
                                                                 disabled={false}
                                                                 id="secondary"
@@ -1323,7 +1323,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                     }
                                                                   }
                                                                   color="default"
-                                                                  disableElevation={true}
+                                                                  disableElevation={false}
                                                                   disableRipple={true}
                                                                   disabled={false}
                                                                   id="secondary"
@@ -1332,7 +1332,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                   variant="contained"
                                                                 >
                                                                   <WithStyles(ForwardRef(ButtonBase))
-                                                                    className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                                                                    className="MuiButton-root MuiButton-contained "
                                                                     component="button"
                                                                     disableRipple={true}
                                                                     disabled={false}
@@ -1344,7 +1344,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                     type="button"
                                                                   >
                                                                     <ForwardRef(ButtonBase)
-                                                                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                                                                      className="MuiButton-root MuiButton-contained "
                                                                       classes={
                                                                         Object {
                                                                           "disabled": "Mui-disabled",
@@ -1363,7 +1363,7 @@ exports[`modal snapshots should match snapshot when isVisible="true" 1`] = `
                                                                       type="button"
                                                                     >
                                                                       <button
-                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+                                                                        className="MuiButtonBase-root MuiButton-root MuiButton-contained "
                                                                         disabled={false}
                                                                         id="secondary"
                                                                         name="secondary"
