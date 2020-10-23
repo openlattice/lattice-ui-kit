@@ -46,11 +46,12 @@ const getOutlinedActiveColor = (color) => outlinedActiveColors[color] || NEUTRAL
 const focusAndHoverStylesForOutlinedAndText = (color, theme) => ({
   border: '1px solid transparent',
   boxShadow: `0 0 0 2px ${getContrastColor(color, theme)}`
-})
+});
 
 const template = (variant, color, theme) => theme.palette[color] && mergeAll([
   {
     border: '1px solid transparent',
+    boxShadow: 'none',
     color: getContrastColor(color, theme),
   },
   isContained(variant) && {

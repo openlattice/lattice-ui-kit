@@ -28,11 +28,13 @@ const lightTheme = createMuiTheme({
         fontWeight: 600,
         lineHeight: 1.2,
       },
-      focused: {},
       /* Pseudo-class applied to the ButtonBase root element if the button is keyboard focused. */
       focusVisible: {},
       /* Pseudo-class applied to the root element if `disabled={true}`. */
       disabled: {},
+      disableElevation: {
+        boxShadow: 'none'
+      },
       /* Styles applied to the root element if `color="inherit"`. */
       colorInherit: {
         color: 'inherit',
@@ -40,12 +42,14 @@ const lightTheme = createMuiTheme({
       },
       /* Styles applied to the root element `variant="text"`. */
       text: {
+        boxShadow: 'none',
         color: NEUTRAL.N700,
         padding: '0 16px',
         '&:active': {
           backgroundColor: NEUTRAL.N200,
         },
         '&:hover': {
+          boxShadow: 'none',
           backgroundColor: NEUTRAL.N50,
         },
         '&:focus:hover': focusAndHoverStylesForOutlinedAndText,
@@ -78,30 +82,36 @@ const lightTheme = createMuiTheme({
       contained: {
         backgroundColor: NEUTRAL.N50,
         border: '1px solid transparent',
+        boxShadow: 'none',
         color: NEUTRAL.N700,
         '&:active': {
           backgroundColor: NEUTRAL.N500,
           color: 'white'
         },
-        '&:focus:hover': {
-          borderColor: 'white',
-          boxShadow: '0 0 0 2px currentColor'
+        '&:hover': {
+          boxShadow: 'none',
         },
         '&:focus': {
           borderColor: 'white',
-          boxShadow: '0 0 0 2px currentColor'
-        }
+          boxShadow: '0 0 0 2px currentColor;'
+        },
+        '&:focus:hover': {
+          borderColor: 'white',
+          boxShadow: '0 0 0 2px currentColor;'
+        },
       },
       outlined: {
+        boxShadow: 'none',
         color: NEUTRAL.N700,
         '&:active': {
           backgroundColor: NEUTRAL.N200,
         },
         '&:hover': {
+          boxShadow: 'none',
           backgroundColor: NEUTRAL.N50,
         },
+        '&:focus': focusAndHoverStylesForOutlinedAndText,
         '&:focus:hover': focusAndHoverStylesForOutlinedAndText,
-        '&:focus': focusAndHoverStylesForOutlinedAndText
       },
       /* Styles applied to the root element if `size="small"` and `variant="contained"`. */
       containedSizeSmall: {
@@ -420,8 +430,12 @@ const darkTheme = createMuiTheme({
       },
       /* Styles applied to the root element `variant="text"`. */
       text: {
+        boxShadow: 'none',
         color: NEUTRAL.N50,
         padding: '0 16px',
+        '&:hover': {
+          boxShadow: 'none',
+        },
         '&:focus:hover': focusAndHoverStylesForOutlinedAndText,
         '&:focus': focusAndHoverStylesForOutlinedAndText,
       },
@@ -452,10 +466,14 @@ const darkTheme = createMuiTheme({
       contained: {
         backgroundColor: NEUTRAL.N50,
         border: '1px solid transparent',
+        boxShadow: 'none',
         color: NEUTRAL.N700,
         '&:active': {
           backgroundColor: NEUTRAL.N500,
           color: 'white'
+        },
+        '&:hover': {
+          boxShadow: 'none',
         },
         '&:focus:hover': {
           border: '1px solid currentColor',
@@ -467,7 +485,11 @@ const darkTheme = createMuiTheme({
         },
       },
       outlined: {
+        boxShadow: 'none',
         color: NEUTRAL.N50,
+        '&:hover': {
+          boxShadow: 'none',
+        },
         '&:focus:hover': focusAndHoverStylesForOutlinedAndText,
         '&:focus': focusAndHoverStylesForOutlinedAndText,
       },
