@@ -18,8 +18,7 @@ const CodeIcon = (
   <FontAwesomeIcon icon={faCode} />
 );
 
-const themeColors = ['primary', 'secondary'];
-const intentColors = ['error', 'info', 'success', 'warning'];
+const intentColors = ['primary', 'secondary', 'error', 'info', 'success', 'warning'];
 
 describe('IconButton', () => {
 
@@ -48,11 +47,6 @@ describe('IconButton', () => {
         const wrapper = mount(<IconButton color={color}>{CodeIcon}</IconButton>);
         const button = wrapper.find('button');
         expect(button.prop('className')).toEqual(expect.stringMatching(`makeStyles-text${_capitalize(color)}`));
-      });
-      themeColors.forEach((color) => {
-        const wrapper = mount(<IconButton color={color}>{CodeIcon}</IconButton>);
-        const button = wrapper.find('button');
-        expect(button.prop('className')).toEqual(expect.stringMatching(`MuiIconButton-color${_capitalize(color)}`));
       });
     });
 

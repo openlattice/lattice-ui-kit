@@ -141,7 +141,24 @@ exports[`Search snapshots should match snapshot 1`] = `
             "color": "inherit",
           },
           "contained": Object {
+            "&:active": Object {
+              "backgroundColor": "#8b8b90",
+              "color": "white",
+            },
+            "&:focus": Object {
+              "borderColor": "white",
+              "boxShadow": "0 0 0 2px currentColor;",
+            },
+            "&:focus:hover": Object {
+              "borderColor": "white",
+              "boxShadow": "0 0 0 2px currentColor;",
+            },
+            "&:hover": Object {
+              "boxShadow": "none",
+            },
             "backgroundColor": "#f2f2f4",
+            "border": "1px solid transparent",
+            "boxShadow": "none",
             "color": "#56565a",
           },
           "containedSizeLarge": Object {
@@ -153,6 +170,9 @@ exports[`Search snapshots should match snapshot 1`] = `
             "fontSize": "14px",
             "minHeight": "26px",
             "padding": "5px",
+          },
+          "disableElevation": Object {
+            "boxShadow": "none",
           },
           "disabled": Object {},
           "endIcon": Object {
@@ -186,6 +206,25 @@ exports[`Search snapshots should match snapshot 1`] = `
             "fontWeight": 600,
             "lineHeight": 1.2,
           },
+          "outlined": Object {
+            "&:active": Object {
+              "backgroundColor": "#d1d1d6",
+            },
+            "&:focus": Object {
+              "border": "1px solid transparent",
+              "boxShadow": "0 0 0 2px currentColor",
+            },
+            "&:focus:hover": Object {
+              "border": "1px solid transparent",
+              "boxShadow": "0 0 0 2px currentColor",
+            },
+            "&:hover": Object {
+              "backgroundColor": "#f2f2f4",
+              "boxShadow": "none",
+            },
+            "boxShadow": "none",
+            "color": "#56565a",
+          },
           "outlinedSizeLarge": Object {
             "fontSize": "18px",
             "minHeight": "46px",
@@ -218,6 +257,23 @@ exports[`Search snapshots should match snapshot 1`] = `
             "marginRight": 8,
           },
           "text": Object {
+            "&:active": Object {
+              "backgroundColor": "#d1d1d6",
+            },
+            "&:focus": Object {
+              "border": "1px solid transparent",
+              "boxShadow": "0 0 0 2px currentColor",
+            },
+            "&:focus:hover": Object {
+              "border": "1px solid transparent",
+              "boxShadow": "0 0 0 2px currentColor",
+            },
+            "&:hover": Object {
+              "backgroundColor": "#f2f2f4",
+              "boxShadow": "none",
+            },
+            "boxShadow": "none",
+            "color": "#56565a",
             "padding": "0 16px",
           },
           "textSizeLarge": Object {
@@ -423,8 +479,8 @@ exports[`Search snapshots should match snapshot 1`] = `
         "divider": "#dfdfe3",
         "error": Object {
           "contrastText": "white",
-          "dark": "#9c2d23",
-          "light": "rgb(240, 106, 106)",
+          "dark": "#4d0600",
+          "light": "#9c2d23",
           "main": "#ed4545",
         },
         "getContrastText": [Function],
@@ -446,26 +502,26 @@ exports[`Search snapshots should match snapshot 1`] = `
         },
         "info": Object {
           "contrastText": "white",
-          "dark": "#1150a4",
-          "light": "rgb(71, 139, 231)",
+          "dark": "#152c4a",
+          "light": "#1150a4",
           "main": "#196fe1",
         },
         "primary": Object {
           "contrastText": "#fff",
-          "dark": "#4f3fa7",
-          "light": "rgb(138, 109, 254)",
+          "dark": "#261e52",
+          "light": "#4f3fa7",
           "main": "#6d49fe",
         },
         "secondary": Object {
           "contrastText": "#4f3fa7",
-          "dark": "#a291ff",
-          "light": "rgb(212, 204, 255)",
+          "dark": "#6d49fe",
+          "light": "#a291ff",
           "main": "#cac0ff",
         },
         "success": Object {
           "contrastText": "white",
-          "dark": "#015b36",
-          "light": "rgb(51, 156, 112)",
+          "dark": "#003925",
+          "light": "#015b36",
           "main": "#01844d",
         },
         "text": Object {
@@ -478,8 +534,8 @@ exports[`Search snapshots should match snapshot 1`] = `
         "type": "light",
         "warning": Object {
           "contrastText": "#1f1f22",
-          "dark": "#a34a25",
-          "light": "rgb(255, 150, 91)",
+          "dark": "#4a1f0c",
+          "light": "#a34a25",
           "main": "#ff7c33",
         },
       },
@@ -3123,7 +3179,8 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                 <WithStyles(ForwardRef(Button))
                                                   className=""
                                                   color="default"
-                                                  disableElevation={true}
+                                                  disableElevation={false}
+                                                  disableRipple={true}
                                                   fullWidth={true}
                                                   mode="primary"
                                                   onClick={[Function]}
@@ -3166,7 +3223,8 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                       }
                                                     }
                                                     color="default"
-                                                    disableElevation={true}
+                                                    disableElevation={false}
+                                                    disableRipple={true}
                                                     fullWidth={true}
                                                     mode="primary"
                                                     onClick={[Function]}
@@ -3174,8 +3232,9 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                     variant="contained"
                                                   >
                                                     <WithStyles(ForwardRef(ButtonBase))
-                                                      className="MuiButton-root MuiButton-contained MuiButton-disableElevation MuiButton-fullWidth"
+                                                      className="MuiButton-root MuiButton-contained MuiButton-fullWidth"
                                                       component="button"
+                                                      disableRipple={true}
                                                       disabled={false}
                                                       focusRipple={true}
                                                       focusVisibleClassName="Mui-focusVisible"
@@ -3184,7 +3243,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                       type="submit"
                                                     >
                                                       <ForwardRef(ButtonBase)
-                                                        className="MuiButton-root MuiButton-contained MuiButton-disableElevation MuiButton-fullWidth"
+                                                        className="MuiButton-root MuiButton-contained MuiButton-fullWidth"
                                                         classes={
                                                           Object {
                                                             "disabled": "Mui-disabled",
@@ -3193,6 +3252,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                           }
                                                         }
                                                         component="button"
+                                                        disableRipple={true}
                                                         disabled={false}
                                                         focusRipple={true}
                                                         focusVisibleClassName="Mui-focusVisible"
@@ -3201,7 +3261,7 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                         type="submit"
                                                       >
                                                         <button
-                                                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation MuiButton-fullWidth"
+                                                          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-fullWidth"
                                                           disabled={false}
                                                           mode="primary"
                                                           onBlur={[Function]}
@@ -3224,34 +3284,6 @@ exports[`Search snapshots should match snapshot 1`] = `
                                                           >
                                                             Search
                                                           </span>
-                                                          <WithStyles(memo)
-                                                            center={false}
-                                                          >
-                                                            <ForwardRef(TouchRipple)
-                                                              center={false}
-                                                              classes={
-                                                                Object {
-                                                                  "child": "MuiTouchRipple-child",
-                                                                  "childLeaving": "MuiTouchRipple-childLeaving",
-                                                                  "childPulsate": "MuiTouchRipple-childPulsate",
-                                                                  "ripple": "MuiTouchRipple-ripple",
-                                                                  "ripplePulsate": "MuiTouchRipple-ripplePulsate",
-                                                                  "rippleVisible": "MuiTouchRipple-rippleVisible",
-                                                                  "root": "MuiTouchRipple-root",
-                                                                }
-                                                              }
-                                                            >
-                                                              <span
-                                                                className="MuiTouchRipple-root"
-                                                              >
-                                                                <TransitionGroup
-                                                                  childFactory={[Function]}
-                                                                  component={null}
-                                                                  exit={true}
-                                                                />
-                                                              </span>
-                                                            </ForwardRef(TouchRipple)>
-                                                          </WithStyles(memo)>
                                                         </button>
                                                       </ForwardRef(ButtonBase)>
                                                     </WithStyles(ForwardRef(ButtonBase))>
