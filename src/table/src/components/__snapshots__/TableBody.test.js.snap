@@ -475,13 +475,141 @@ exports[`TableBody render should render tbody at root 1`] = `
     }
     key="7"
   />
+  <TableRow
+    components={
+      Object {
+        "Cell": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styled__Cell-r3xwjs-2",
+            "isStatic": false,
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Cell",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "target": "td",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "Row": [Function],
+      }
+    }
+    data={
+      Object {
+        "dob": "1999-07-17",
+        "id": "8",
+        "lastUpdated": "2019-06-21",
+        "manager": "Eugene Krabs",
+        "name": "Spongebob Squarepants",
+      }
+    }
+    headers={
+      Array [
+        Object {
+          "cellStyle": Object {
+            "width": "33%",
+          },
+          "key": "name",
+          "label": "Subject Name",
+        },
+        Object {
+          "key": "dob",
+          "label": "Date of Birth",
+        },
+        Object {
+          "key": "manager",
+          "label": "Manager",
+        },
+        Object {
+          "key": "lastUpdated",
+          "label": "Last Updated",
+        },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
+      ]
+    }
+    key="8"
+  />
+  <TableRow
+    components={
+      Object {
+        "Cell": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "styled__Cell-r3xwjs-2",
+            "isStatic": false,
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "Cell",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "target": "td",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "Row": [Function],
+      }
+    }
+    data={
+      Object {
+        "dob": "1984-03-17",
+        "id": "9",
+        "lastUpdated": "2019-06-21",
+        "manager": "N/A",
+        "name": "Patrick Star",
+      }
+    }
+    headers={
+      Array [
+        Object {
+          "cellStyle": Object {
+            "width": "33%",
+          },
+          "key": "name",
+          "label": "Subject Name",
+        },
+        Object {
+          "key": "dob",
+          "label": "Date of Birth",
+        },
+        Object {
+          "key": "manager",
+          "label": "Manager",
+        },
+        Object {
+          "key": "lastUpdated",
+          "label": "Last Updated",
+        },
+        Object {
+          "key": "id",
+          "label": "ID",
+          "sortable": false,
+        },
+      ]
+    }
+    key="9"
+  />
   <styled__StyledRow
     id="empty-row-filler"
   >
     <Cell
       cellStyle={
         Object {
-          "height": "114px",
+          "height": "24px",
         }
       }
       colSpan={5}

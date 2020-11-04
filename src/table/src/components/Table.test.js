@@ -36,7 +36,7 @@ describe('Table', () => {
       test('Table should set rowsPerPage to data.length when data is provided', () => {
         const wrapper = shallow(<Table data={TABLE_DATA} headers={TABLE_HEADERS} />);
 
-        expect(wrapper.find(TableBody).props().rowsPerPage).toEqual(7);
+        expect(wrapper.find(TableBody).props().rowsPerPage).toEqual(TABLE_DATA.length);
         expect(toJson(wrapper)).toMatchSnapshot();
       });
 
@@ -48,9 +48,9 @@ describe('Table', () => {
               paginated />
         );
 
-        expect(wrapper.find(TableBody).props().rowsPerPage).toEqual(7);
+        expect(wrapper.find(TableBody).props().rowsPerPage).toEqual(TABLE_DATA.length);
         wrapper.find(PaginationToolbar).forEach((node) => {
-          expect(node.prop('rowsPerPage')).toEqual(7);
+          expect(node.prop('rowsPerPage')).toEqual(TABLE_DATA.length);
         });
         expect(toJson(wrapper)).toMatchSnapshot();
       });
@@ -116,7 +116,7 @@ describe('Table', () => {
         column: 'name',
         order: 'desc',
         page: 1,
-        rowsPerPage: 7,
+        rowsPerPage: TABLE_DATA.length,
         start: 0
       });
       expect(mockOnSort).toMatchSnapshot();
@@ -143,7 +143,7 @@ describe('Table', () => {
       });
 
       expect(setState.mock.calls[2][0]).toEqual(2); // setPage
-      expect(setState.mock.calls[3][0]).toEqual(7); // setRowsPerPage
+      expect(setState.mock.calls[3][0]).toEqual(TABLE_DATA.length); // setRowsPerPage
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
@@ -167,8 +167,8 @@ describe('Table', () => {
         column: undefined,
         order: undefined,
         page: 2,
-        rowsPerPage: 7,
-        start: 7
+        rowsPerPage: TABLE_DATA.length,
+        start: TABLE_DATA.length
       });
       expect(mockOnPageChange).toMatchSnapshot();
       expect(toJson(wrapper)).toMatchSnapshot();
