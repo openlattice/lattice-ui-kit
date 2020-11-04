@@ -70,13 +70,6 @@ const TABLE_DATA = [
     lastUpdated: '2019-06-21',
     id: '9'
   },
-  {
-    name: 'Squilliam Fancyson',
-    dob: '1965-07-07',
-    manager: 'N/A',
-    lastUpdated: '2019-06-21',
-    id: '10'
-  },
 ];
 
 const PRIORITY_ORDER = {
