@@ -1,9 +1,10 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+
 import toJson from 'enzyme-to-json';
+import { mount, shallow } from 'enzyme';
 
 import PaginationToolbar from './PaginationToolbar';
-import { IconButton } from '../../../button';
+
 import { Select } from '../../../select';
 
 describe('PaginationToolbar', () => {
@@ -12,7 +13,7 @@ describe('PaginationToolbar', () => {
     test('should match snaphot', () => {
       const wrapper = mount(
         <PaginationToolbar
-            page={0}
+            page={1}
             count={0} />
       );
       expect(toJson(wrapper)).toMatchSnapshot();
@@ -27,34 +28,34 @@ describe('PaginationToolbar', () => {
       mockOnPageChange = jest.fn();
       wrapper = mount(
         <PaginationToolbar
-            count={10}
+            count={15}
             onPageChange={mockOnPageChange}
-            page={1}
+            page={2}
             rowsPerPageOptions={[5, 10]} />
       );
-      buttons = wrapper.find(IconButton);
+      buttons = wrapper.find('button');
     });
 
     describe('change page', () => {
       test('should invoke setPage and onPageChange when back button is clicked', () => {
-        const prevButton = buttons.get(0);
+        const prevButton = buttons.first();
 
-        prevButton.props.onClick();
+        prevButton.props().onClick();
 
         expect(mockOnPageChange.mock.calls[0][0]).toEqual({
-          page: 0,
+          page: 1,
           start: 0,
           rowsPerPage: 5
         });
       });
 
       test('should invoke setPage and onPageChange when next button is clicked', () => {
-        const nextButton = buttons.get(1);
+        const nextButton = buttons.last();
 
-        nextButton.props.onClick();
+        nextButton.props().onClick();
 
         expect(mockOnPageChange.mock.calls[0][0]).toEqual({
-          page: 2,
+          page: 3,
           start: 10,
           rowsPerPage: 5
         });
@@ -64,12 +65,12 @@ describe('PaginationToolbar', () => {
     describe('change rowsPerPage', () => {
 
       test('should invoke onPageChange when Select onChange', () => {
-        const select = wrapper.find(Select).get(0);
+        const select = wrapper.find(Select).first();
 
-        select.props.onChange(20);
+        select.props().onChange(20);
 
         expect(mockOnPageChange.mock.calls[0][0]).toEqual({
-          page: 0,
+          page: 1,
           start: 0,
           rowsPerPage: 20
         });
@@ -78,28 +79,13 @@ describe('PaginationToolbar', () => {
   });
 
   describe('render', () => {
-    describe('row range', () => {
-      test('should show updated range when count and page change', () => {
-        const wrapper = shallow(
-          <PaginationToolbar
-              page={0}
-              count={0}
-              rowsPerPage={5} />
-        );
-        expect(wrapper.find('#row-range').text()).toEqual('0 - 0 of 0');
-        wrapper.setProps({ count: 7 });
-        expect(wrapper.find('#row-range').text()).toEqual('1 - 5 of 7');
-        wrapper.setProps({ page: 1 });
-        expect(wrapper.find('#row-range').text()).toEqual('6 - 7 of 7');
-      });
-    });
 
     describe('rowsPerPageOptions', () => {
 
       test('should not show Select with only one value in rowsPerPageOptions', () => {
         const wrapper = shallow(
           <PaginationToolbar
-              page={0}
+              page={1}
               count={0}
               rowsPerPageOptions={[5, 10]} />
         );
@@ -114,18 +100,18 @@ describe('PaginationToolbar', () => {
       test('should disable page buttons when at their upper and lower page bounds', () => {
         const wrapper = mount(
           <PaginationToolbar
-              page={0}
+              page={1}
               count={7}
               rowsPerPage={5} />
         );
-        const buttons = wrapper.find(IconButton);
-        const prevButton = buttons.get(0);
-        const nextButton = buttons.get(1);
-        expect(prevButton.props.disabled).toEqual(true);
-        expect(nextButton.props.disabled).toEqual(false);
+        const buttons = wrapper.find('button');
+        const prevButton = buttons.first();
+        const nextButton = buttons.last();
+        expect(prevButton.props().disabled).toEqual(true);
+        expect(nextButton.props().disabled).toEqual(false);
 
-        wrapper.setProps({ page: 1 });
-        expect(wrapper.find(IconButton).get(1).props.disabled).toEqual(true);
+        wrapper.setProps({ page: 2 });
+        expect(wrapper.find('button').last().props().disabled).toEqual(true);
       });
     });
   });

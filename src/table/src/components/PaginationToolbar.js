@@ -44,7 +44,7 @@ const PaginationToolbar = (props :Props) => {
     onPageChange({
       page: newPage,
       rowsPerPage,
-      start: Math.min(rowsPerPage * newPage, count)
+      start: Math.min(rowsPerPage * (newPage - 1), count)
     }, event);
   };
 

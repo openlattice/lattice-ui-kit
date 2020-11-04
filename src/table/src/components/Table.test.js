@@ -1,15 +1,17 @@
 import React from 'react';
-import { act } from 'react-dom/test-utils';
-import { mount, shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
 
+import toJson from 'enzyme-to-json';
+import { mount, shallow } from 'enzyme';
+import { act } from 'react-dom/test-utils';
+
+import PaginationToolbar from './PaginationToolbar';
 import Table from './Table';
 import TableBody from './TableBody';
-import PaginationToolbar from './PaginationToolbar';
 import { StyledTable } from './styled';
+
 import { Select } from '../../../select';
-import { TABLE_DATA, TABLE_HEADERS } from '../../stories/constants';
 import { MOCK_CLICK_EVENT, MOCK_SELECT_EVENT } from '../../../utils/testing/MockUtils';
+import { TABLE_DATA, TABLE_HEADERS } from '../../stories/constants';
 
 describe('Table', () => {
 
@@ -113,7 +115,7 @@ describe('Table', () => {
       expect(mockOnSort.mock.calls[0][0]).toEqual({
         column: 'name',
         order: 'desc',
-        page: 0,
+        page: 1,
         rowsPerPage: 7,
         start: 0
       });
@@ -137,10 +139,10 @@ describe('Table', () => {
       );
 
       act(() => {
-        wrapper.find('IconButton').get(1).props.onClick(MOCK_CLICK_EVENT);
+        wrapper.find('button').last().props().onClick(MOCK_CLICK_EVENT);
       });
 
-      expect(setState.mock.calls[2][0]).toEqual(1); // setPage
+      expect(setState.mock.calls[2][0]).toEqual(2); // setPage
       expect(setState.mock.calls[3][0]).toEqual(7); // setRowsPerPage
       expect(toJson(wrapper)).toMatchSnapshot();
     });
@@ -157,14 +159,14 @@ describe('Table', () => {
       );
 
       act(() => {
-        wrapper.find('IconButton').get(1).props.onClick(MOCK_CLICK_EVENT);
+        wrapper.find('button').last().props().onClick(MOCK_CLICK_EVENT);
       });
 
       expect(mockOnPageChange).toBeCalledTimes(1);
       expect(mockOnPageChange.mock.calls[0][0]).toEqual({
         column: undefined,
         order: undefined,
-        page: 1,
+        page: 2,
         rowsPerPage: 7,
         start: 7
       });
@@ -192,7 +194,7 @@ describe('Table', () => {
       expect(mockOnPageChange.mock.calls[0][0]).toEqual({
         column: undefined,
         order: undefined,
-        page: 0,
+        page: 1,
         rowsPerPage: 20,
         start: 0
       });
