@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { storiesOf } from '@storybook/react';
+
 import { action } from '@storybook/addon-actions';
+import { storiesOf } from '@storybook/react';
+
+import CustomRow from './components/CustomRow';
+import {
+  COMPARATOR_DATA,
+  COMPARATOR_HEADERS,
+  TABLE_DATA,
+  TABLE_HEADERS
+} from './constants';
 
 import { Button } from '../../button';
 import {
@@ -9,13 +18,6 @@ import {
   CardSegment,
   CardStack
 } from '../../layout';
-import {
-  COMPARATOR_DATA,
-  COMPARATOR_HEADERS,
-  TABLE_DATA,
-  TABLE_HEADERS
-} from './constants';
-import CustomRow from './components/CustomRow';
 import {
   Table
 } from '..';
