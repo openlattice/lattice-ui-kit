@@ -154,7 +154,7 @@ storiesOf('Table', module)
     );
   })
   .add('Exact & totalRows', () => {
-    const [data, setData] = useState(TABLE_DATA.slice(0, 5));
+    const [data, setData] = useState(TABLE_DATA.slice(0, rowsPerPageOptions[0]));
     const [isLoading, setLoading] = useState(true);
 
     useEffect(() => {
