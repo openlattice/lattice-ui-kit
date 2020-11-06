@@ -1,9 +1,10 @@
 import React from 'react';
+
 import ReactSelect from 'react-select';
-import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { faSearch } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { mount, shallow } from 'enzyme';
 
 import SelectController from './SelectController';
 import { OPTIONS } from './constants';
