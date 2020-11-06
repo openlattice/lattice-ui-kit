@@ -56,6 +56,20 @@ const TABLE_DATA = [
     lastUpdated: '2019-06-21',
     id: '7'
   },
+  {
+    name: 'Spongebob Squarepants',
+    dob: '1999-07-17',
+    manager: 'Eugene Krabs',
+    lastUpdated: '2019-06-21',
+    id: '8'
+  },
+  {
+    name: 'Patrick Star',
+    dob: '1984-03-17',
+    manager: 'N/A',
+    lastUpdated: '2019-06-21',
+    id: '9'
+  },
 ];
 
 const PRIORITY_ORDER = {

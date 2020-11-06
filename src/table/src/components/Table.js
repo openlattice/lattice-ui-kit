@@ -1,15 +1,16 @@
 // @flow
 
 import React, { useCallback, useEffect } from 'react';
+
 import isFunction from 'lodash/isFunction';
 
-import TableHeader from './TableHeader';
-import TableBody from './TableBody';
 import HeadCell from './HeadCell';
-import TableRow from './TableRow';
 import PaginationToolbar from './PaginationToolbar';
-import { StyledTable, Cell } from './styled';
+import TableBody from './TableBody';
+import TableHeader from './TableHeader';
+import TableRow from './TableRow';
 import { getInitialRowsPerPage } from './TableUtils';
+import { Cell, StyledTable } from './styled';
 
 const defaultComponents = {
   Header: TableHeader,
@@ -60,11 +61,11 @@ const Table = (props :Props) => {
 
   const [orderBy, setOrderBy] = React.useState();
   const [order, setOrder] = React.useState();
-  const [currentPage, setPage] = React.useState(0);
+  const [currentPage, setPage] = React.useState(1);
   const [rowsPerPage, setRowsPerPage] = React.useState(initialRowsPerPage);
 
   useEffect(() => {
-    setPage(0);
+    setPage(1);
     if (!rowsPerPageOptions.length) {
       setRowsPerPage(getInitialRowsPerPage(rowCount, rowsPerPageOptions));
     }
@@ -81,7 +82,7 @@ const Table = (props :Props) => {
         order: newOrder,
         page: currentPage,
         rowsPerPage,
-        start: Math.min(currentPage * rowsPerPage, rowCount)
+        start: Math.min((currentPage - 1) * rowsPerPage, rowCount)
       }, event);
     }
   }, [

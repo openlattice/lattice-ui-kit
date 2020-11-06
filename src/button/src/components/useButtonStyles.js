@@ -1,6 +1,8 @@
 import { fade, makeStyles } from '@material-ui/core/styles';
 import { mergeAll } from 'lodash/fp';
 
+import createColorStyles from './createColorStyles';
+
 // avoid MUI errors from custom color classes
 // https://github.com/mui-org/material-ui/issues/13875#issuecomment-625358023
 import {
@@ -11,7 +13,6 @@ import {
   PURPLE,
   RED,
 } from '../../../colors';
-import createColorStyles from './createColorStyles';
 
 const outlinedHoverColors = {
   error: RED.R00,
@@ -85,7 +86,7 @@ const template = (variant, color, theme) => theme.palette[color] && mergeAll([
       isContained(variant) && {
         backgroundColor: theme.palette[color].dark
       },
-      isContained(variant) && (theme.palette[color] && (theme.palette[color].contrastText !== 'white')) && {
+      isContained(variant) && {
         color: 'white',
       },
       (isOutlined(variant) || isText(variant)) && {
