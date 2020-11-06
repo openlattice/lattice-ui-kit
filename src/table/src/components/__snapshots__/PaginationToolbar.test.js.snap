@@ -15,6 +15,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%;
+  margin: 8px 0;
 }
 
 <PaginationToolbar
@@ -32,7 +33,7 @@ exports[`PaginationToolbar snapshots should match snaphot 1`] = `
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
-              "align-items:center;display:flex;justify-content:flex-end;width:100%;",
+              "align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;",
             ],
           },
           "displayName": "styled__PaginationWrapper",

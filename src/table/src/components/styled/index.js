@@ -17,6 +17,7 @@ const PaginationWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  margin: 8px 0;
 `;
 
 const Cell = styled.td((props :Object) => ({

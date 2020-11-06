@@ -48,6 +48,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%;
+  margin: 8px 0;
 }
 
 .c3 {
@@ -242,7 +243,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
-                  "align-items:center;display:flex;justify-content:flex-end;width:100%;",
+                  "align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;",
                 ],
               },
               "displayName": "styled__PaginationWrapper",
@@ -4282,7 +4283,7 @@ exports[`Table handlePageChange should invoke onPageChange on pagination button 
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
-                  "align-items:center;display:flex;justify-content:flex-end;width:100%;",
+                  "align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;",
                 ],
               },
               "displayName": "styled__PaginationWrapper",
@@ -4765,6 +4766,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%;
+  margin: 8px 0;
 }
 
 .c5 {
@@ -4996,7 +4998,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
-                  "align-items:center;display:flex;justify-content:flex-end;width:100%;",
+                  "align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;",
                 ],
               },
               "displayName": "styled__PaginationWrapper",
@@ -10093,7 +10095,7 @@ exports[`Table handlePageChange should invoke onPageChange on rows per page sele
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
-                  "align-items:center;display:flex;justify-content:flex-end;width:100%;",
+                  "align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;",
                 ],
               },
               "displayName": "styled__PaginationWrapper",
@@ -12756,6 +12758,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%;
+  margin: 8px 0;
 }
 
 .c3 {
@@ -12926,7 +12929,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
-                  "align-items:center;display:flex;justify-content:flex-end;width:100%;",
+                  "align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;",
                 ],
               },
               "displayName": "styled__PaginationWrapper",
@@ -16966,7 +16969,7 @@ exports[`Table handlePageChange should set page and rowsPerPage when invoked 1`]
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
-                  "align-items:center;display:flex;justify-content:flex-end;width:100%;",
+                  "align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;",
                 ],
               },
               "displayName": "styled__PaginationWrapper",
@@ -17449,6 +17452,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%;
+  margin: 8px 0;
 }
 
 .c3 {
@@ -17643,7 +17647,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
-                  "align-items:center;display:flex;justify-content:flex-end;width:100%;",
+                  "align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;",
                 ],
               },
               "displayName": "styled__PaginationWrapper",
@@ -21683,7 +21687,7 @@ exports[`Table handleSort should invoke onSort with property and isDesc 2`] = `
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
-                  "align-items:center;display:flex;justify-content:flex-end;width:100%;",
+                  "align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;",
                 ],
               },
               "displayName": "styled__PaginationWrapper",
@@ -22141,6 +22145,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%;
+  margin: 8px 0;
 }
 
 .c3 {
@@ -22311,7 +22316,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
-                  "align-items:center;display:flex;justify-content:flex-end;width:100%;",
+                  "align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;",
                 ],
               },
               "displayName": "styled__PaginationWrapper",
@@ -26351,7 +26356,7 @@ exports[`Table handleSort should set order and orderBy when invoked 1`] = `
                 "isStatic": false,
                 "lastClassName": "c0",
                 "rules": Array [
-                  "align-items:center;display:flex;justify-content:flex-end;width:100%;",
+                  "align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;",
                 ],
               },
               "displayName": "styled__PaginationWrapper",
