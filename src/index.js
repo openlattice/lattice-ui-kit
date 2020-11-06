@@ -63,7 +63,12 @@ export { default as Tag } from './tag';
 export { selectStyles } from './style/select';
 
 export { Button, IconButton } from './button';
-export type { ButtonProps } from './button';
+export type {
+  ButtonColor,
+  ButtonProps,
+  ButtonSize,
+  ButtonVariant,
+} from './button';
 
 export { Checkbox, ChoiceGroup, Radio } from './choices';
 
