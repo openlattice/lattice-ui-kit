@@ -71,10 +71,12 @@ export {
   ActionModal,
   Modal,
   ModalFooter,
-  ModalHeader
+  ModalHeader,
 } from './modal';
 export type {
   ActionModalProps,
+  ModalFooterProps,
+  ModalHeaderProps,
   ModalProps,
 } from './modal';
 
