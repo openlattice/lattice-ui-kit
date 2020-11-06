@@ -1,10 +1,10 @@
 // @flow
 import React from 'react';
 
-import Spinner from '../../../spinner';
 import { getSortedData } from './TableUtils';
+import { Cell, StyledRow } from './styled';
 
-import { StyledRow, Cell } from './styled';
+import Spinner from '../../../spinner';
 import type { RowData, SortOrder } from '../../types';
 
 type Props = {
@@ -37,7 +37,7 @@ const TableBody = (props :Props) => {
   const sortedData = getSortedData(headers, data, order, orderBy);
   const dataByPage :RowData[] = exact
     ? sortedData
-    : sortedData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
+    : sortedData.slice((page - 1) * rowsPerPage, (page - 1) * rowsPerPage + rowsPerPage);
 
   // inject empty row to maintain table size
   const emptyRowCount = rowsPerPage - dataByPage.length;

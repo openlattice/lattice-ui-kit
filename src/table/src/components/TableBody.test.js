@@ -1,10 +1,12 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+
 import toJson from 'enzyme-to-json';
+import { shallow } from 'enzyme';
 
 import TableBody from './TableBody';
 import TableRow from './TableRow';
 import { Cell } from './styled';
+
 import { TABLE_DATA, TABLE_HEADERS } from '../../stories/constants';
 
 describe('TableBody', () => {
@@ -19,7 +21,7 @@ describe('TableBody', () => {
             headers={TABLE_HEADERS}
             data={TABLE_DATA}
             rowsPerPage={10}
-            page={0} />
+            page={1} />
       );
       expect(wrapper.type()).toEqual('tbody');
       expect(toJson(wrapper)).toMatchSnapshot();
@@ -33,7 +35,7 @@ describe('TableBody', () => {
             isLoading
             data={[]}
             rowsPerPage={10}
-            page={0} />
+            page={1} />
       );
 
       expect(wrapper.find('Spinner')).toHaveLength(1);
@@ -51,7 +53,7 @@ describe('TableBody', () => {
             orderBy="name"
             rowsPerPage={5}
             rowComponent={rowComponent}
-            page={0} />
+            page={1} />
       );
 
       let rowComponents = wrapper.find(rowComponent);
@@ -80,11 +82,11 @@ describe('TableBody', () => {
             data={TABLE_DATA}
             headers={TABLE_HEADERS}
             rowsPerPage={5}
-            page={0} />
+            page={1} />
       );
 
       expect(wrapper.find('#empty-row-filler')).toHaveLength(0);
-      wrapper.setProps({ page: 1 });
+      wrapper.setProps({ page: 2 });
       expect(wrapper.find('#empty-row-filler')).toHaveLength(1);
     });
   });

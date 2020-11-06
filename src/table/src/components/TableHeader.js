@@ -1,8 +1,10 @@
 // @flow
 import React from 'react';
+
 import isFunction from 'lodash/isFunction';
 
 import { StyledRow } from './styled';
+
 import type { SortOrder } from '../../types';
 
 type Props = {

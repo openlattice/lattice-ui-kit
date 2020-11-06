@@ -176,6 +176,7 @@ exports[`DatePicker render matches snapshot 1`] = `
               "backgroundColor": "#f2f2f4",
               "boxShadow": "none",
             },
+            "border": "1px solid transparent",
             "boxShadow": "none",
             "color": "#56565a",
             "padding": "0 16px",

@@ -42,6 +42,7 @@ const lightTheme = createMuiTheme({
       },
       /* Styles applied to the root element `variant="text"`. */
       text: {
+        border: '1px solid transparent',
         boxShadow: 'none',
         color: NEUTRAL.N700,
         padding: '0 16px',
