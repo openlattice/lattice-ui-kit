@@ -16,7 +16,7 @@ const getBackgroundColor = getStyleVariation('mode', {
 
 const getFontColor = getStyleVariation('mode', {
   primary: 'white',
-  secondary: PURPLE.P300,
+  secondary: PURPLE.P400,
   subtle: PURPLE.P300,
 }, NEUTRAL.N700);
 

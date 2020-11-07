@@ -41,13 +41,13 @@ input:hover ~ .c4 {
 }
 
 input:focus-visible ~ .c4 {
-  box-shadow: #7654ff 0 0 0 2px;
+  box-shadow: #6d49fe 0 0 0 2px;
 }
 
 input:checked ~ .c4,
 input[readonly]:checked:disabled ~ .c4,
 input[readonly]:checked:hover ~ .c4 {
-  background-color: #7654ff;
+  background-color: #6d49fe;
 }
 
 input:checked:hover ~ .c4 {

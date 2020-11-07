@@ -74,7 +74,7 @@ describe('CardHeader', () => {
         const wrapper = mount(<CardHeader mode="secondary" />);
         expect(wrapper.prop('mode')).toEqual('secondary');
         expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', PURPLE.P100);
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', PURPLE.P300);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', PURPLE.P400);
       });
 
       test('should render success mode', () => {
@@ -95,7 +95,7 @@ describe('CardHeader', () => {
         const wrapper = mount(<CardHeader mode="warning" />);
         expect(wrapper.prop('mode')).toEqual('warning');
         expect(wrapper.find(CardHeader)).toHaveStyleRule('background-color', YELLOW.Y100);
-        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', YELLOW.Y400);
+        expect(wrapper.find(CardHeader)).toHaveStyleRule('color', YELLOW.Y500);
       });
     });
 

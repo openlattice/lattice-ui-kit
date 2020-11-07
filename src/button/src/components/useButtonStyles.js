@@ -1,48 +1,112 @@
 import { fade, makeStyles } from '@material-ui/core/styles';
 import { mergeAll } from 'lodash/fp';
 
-// avoid MUI errors from custom color classes
-// https://github.com/mui-org/material-ui/issues/13875#issuecomment-625358023
 import createColorStyles from './createColorStyles';
 
+// avoid MUI errors from custom color classes
+// https://github.com/mui-org/material-ui/issues/13875#issuecomment-625358023
+import {
+  BLUE,
+  GREEN,
+  NEUTRAL,
+  ORANGE,
+  PURPLE,
+  RED,
+} from '../../../colors';
+
+const outlinedHoverColors = {
+  error: RED.R00,
+  info: BLUE.B00,
+  primary: PURPLE.P100,
+  secondary: PURPLE.P00,
+  success: GREEN.G00,
+  warning: ORANGE.O00,
+};
+const outlinedActiveColors = {
+  error: RED.R100,
+  info: BLUE.B100,
+  primary: PURPLE.P200,
+  secondary: PURPLE.P100,
+  success: GREEN.G100,
+  warning: ORANGE.O100,
+};
 const variants = ['text', 'outlined', 'contained'];
-const colors = ['error', 'warning', 'info', 'success'];
+const colors = ['primary', 'secondary', 'error', 'warning', 'info', 'success'];
 export const isCustomColor = (color) => colors.includes(color);
 
+const isText = (variant) => variant === variants[0];
 const isOutlined = (variant) => variant === variants[1];
 const isContained = (variant) => variant === variants[2];
 
-const template = (variant, color, theme) => mergeAll([
+// Adjustments to colors that are outside of the palette's light, main, dark, & contrastText
+const getContrastColor = (color, theme) => ((color === colors[1])
+  ? (theme.palette[color].contrastText) : theme.palette[color].main);
+const getOutlinedHoverColor = (color) => outlinedHoverColors[color] || NEUTRAL.N50;
+const getOutlinedActiveColor = (color) => outlinedActiveColors[color] || NEUTRAL.N200;
+
+const focusAndHoverStylesForOutlinedAndText = (color, theme) => ({
+  border: '1px solid transparent',
+  boxShadow: `0 0 0 2px ${getContrastColor(color, theme)}`
+});
+
+const template = (variant, color, theme) => theme.palette[color] && mergeAll([
   {
-    color: theme.palette[color].main
+    border: '1px solid transparent',
+    boxShadow: 'none',
+    color: getContrastColor(color, theme),
   },
   isContained(variant) && {
+    backgroundColor: theme.palette[color].main,
     color: theme.palette[color].contrastText,
-    backgroundColor: theme.palette[color].main
   },
   isOutlined(variant) && {
-    border: '1px solid',
-    borderColor: fade(theme.palette[color].main, 0.5)
+    borderColor: fade(getContrastColor(color, theme), 0.5),
   },
   {
     '&:hover': mergeAll([
-      {
-        backgroundColor: fade(
-          theme.palette[color].main,
-          theme.palette.action.hoverOpacity
-        )
-      },
       isContained(variant) && {
-        backgroundColor: theme.palette[color].dark
+        backgroundColor: theme.palette[color].light
       },
-      isOutlined(variant) && {
-        borderColor: theme.palette[color].main
+      (isOutlined(variant) || isText(variant)) && {
+        backgroundColor: getOutlinedHoverColor(color),
       },
       {
         // reset on touch devices
         '@media (hover: none)': {
           backgroundColor: 'transparent'
         }
+      }
+    ])
+  },
+  {
+    '&:active': mergeAll([
+      {
+        boxShadow: 'none'
+      },
+      isContained(variant) && {
+        backgroundColor: theme.palette[color].dark
+      },
+      isContained(variant) && {
+        color: 'white',
+      },
+      (isOutlined(variant) || isText(variant)) && {
+        backgroundColor: getOutlinedActiveColor(color),
+      }
+    ])
+  },
+  {
+    '&:focus': mergeAll([
+      focusAndHoverStylesForOutlinedAndText(color, theme),
+      isContained(variant) && {
+        border: `1px solid ${theme.palette.background.header}`,
+      }
+    ])
+  },
+  {
+    '&:focus:hover': mergeAll([
+      focusAndHoverStylesForOutlinedAndText(color, theme),
+      isContained(variant) && {
+        border: `1px solid ${theme.palette.background.header}`,
       }
     ])
   }

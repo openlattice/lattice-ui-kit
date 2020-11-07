@@ -17,6 +17,7 @@ const PrimaryButton = styled(Button)``;
 const SecondaryButton = styled(Button)``;
 
 type ModalFooterProps = {
+  className ?:string;
   isDisabledPrimary ?:boolean;
   isDisabledSecondary ?:boolean;
   isPendingPrimary ?:boolean;
@@ -32,6 +33,7 @@ type ModalFooterProps = {
 export default class ModalFooter extends Component<ModalFooterProps> {
 
   static propTypes = {
+    className: PropTypes.string,
     isDisabledPrimary: PropTypes.bool,
     isDisabledSecondary: PropTypes.bool,
     isPendingPrimary: PropTypes.bool,
@@ -45,6 +47,7 @@ export default class ModalFooter extends Component<ModalFooterProps> {
   }
 
   static defaultProps = {
+    className: undefined,
     isDisabledPrimary: false,
     isDisabledSecondary: false,
     isPendingPrimary: false,
@@ -109,6 +112,7 @@ export default class ModalFooter extends Component<ModalFooterProps> {
   render() {
 
     const {
+      className,
       isDisabledPrimary,
       isDisabledSecondary,
       isPendingPrimary,
@@ -127,7 +131,7 @@ export default class ModalFooter extends Component<ModalFooterProps> {
 
     if (withFooter === true) {
       return (
-        <FooterSection stretch={shouldStretchButtons}>
+        <FooterSection className={className} stretch={shouldStretchButtons}>
           { this.renderPrimaryButton() }
           { this.renderSecondaryButton() }
         </FooterSection>
@@ -142,6 +146,7 @@ export default class ModalFooter extends Component<ModalFooterProps> {
     if (withFooter) {
       // $FlowFixMe - how do we refine ComponentType?
       return createElement(withFooter, {
+        className,
         isDisabledPrimary,
         isDisabledSecondary,
         isPendingPrimary,

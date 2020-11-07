@@ -37,6 +37,7 @@ const CloseButton = styled.button`
 `;
 
 type ModalHeaderProps = {
+  className ?:string;
   onClickClose ?:() => void;
   textTitle ?:string;
   withHeader ?:ComponentType<ModalHeaderProps> | Element<any> | boolean;
@@ -45,12 +46,14 @@ type ModalHeaderProps = {
 export default class ModalHeader extends Component<ModalHeaderProps> {
 
   static propTypes = {
+    className: PropTypes.string,
     onClickClose: PropTypes.func,
     textTitle: PropTypes.string,
     withHeader: PropTypes.oneOfType([PropTypes.bool, PropTypes.func, PropTypes.node]),
   }
 
   static defaultProps = {
+    className: undefined,
     onClickClose: undefined,
     textTitle: '',
     withHeader: true,
@@ -85,6 +88,7 @@ export default class ModalHeader extends Component<ModalHeaderProps> {
   render() {
 
     const {
+      className,
       onClickClose,
       textTitle,
       withHeader,
@@ -96,7 +100,7 @@ export default class ModalHeader extends Component<ModalHeaderProps> {
 
     if (withHeader === true) {
       return (
-        <HeaderSection>
+        <HeaderSection className={className}>
           { this.renderTitle() }
           { this.renderCloseButton() }
         </HeaderSection>
@@ -111,6 +115,7 @@ export default class ModalHeader extends Component<ModalHeaderProps> {
     if (withHeader) {
       // $FlowFixMe - how do we refine ComponentType?
       return createElement(withHeader, {
+        className,
         onClickClose,
         textTitle,
       });

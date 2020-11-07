@@ -8,6 +8,7 @@ type ButtonColor =
   | 'default'
   | 'error'
   | 'info'
+  | 'inherit'
   | 'primary'
   | 'secondary'
   | 'success'

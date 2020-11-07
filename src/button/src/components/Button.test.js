@@ -13,8 +13,9 @@ import { nope } from '../../../utils/testing/MockUtils';
 const DEFAULT_BTN_TXT = 'DEFAULT_BUTTON';
 
 const variants = ['contained', 'outlined', 'text'];
-const themedColors = ['primary', 'secondary'];
 const intentColors = [
+  'primary',
+  'secondary',
   'error',
   'info',
   'success',
@@ -87,22 +88,6 @@ describe('button', () => {
           expect(sizeButton.hasClass(`MuiButton-size${capitalize(size)}`)).toEqual(true);
           expect(sizeButton.hasClass(`MuiButton-${variant}Size${capitalize(size)}`)).toEqual(true);
           expect(toJson(sizeWrapper)).toMatchSnapshot();
-        });
-
-        // themed colors
-        themedColors.forEach((color) => {
-          const themedColorWrapper = mount(<Button variant={variant} color={color}>{ DEFAULT_BTN_TXT }</Button>);
-          const themedColorButton = themedColorWrapper.find('button');
-          expect(themedColorButton.hasClass(`MuiButton-${variant}${capitalize(color)}`)).toEqual(true);
-          expect(toJson(themedColorWrapper)).toMatchSnapshot();
-
-          sizes.forEach((size) => {
-            const sizeWrapper = mount(<Button variant={variant} color={color} size={size}>{ DEFAULT_BTN_TXT }</Button>);
-            const sizeButton = sizeWrapper.find('button');
-            expect(sizeButton.hasClass(`MuiButton-size${capitalize(size)}`)).toEqual(true);
-            expect(sizeButton.hasClass(`MuiButton-${variant}Size${capitalize(size)}`)).toEqual(true);
-            expect(toJson(sizeWrapper)).toMatchSnapshot();
-          });
         });
 
         // intent colors

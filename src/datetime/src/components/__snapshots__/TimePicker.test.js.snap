@@ -45,7 +45,24 @@ exports[`TimePicker render matches snapshot 1`] = `
             "color": "inherit",
           },
           "contained": Object {
+            "&:active": Object {
+              "backgroundColor": "#8b8b90",
+              "color": "white",
+            },
+            "&:focus": Object {
+              "borderColor": "white",
+              "boxShadow": "0 0 0 2px currentColor;",
+            },
+            "&:focus:hover": Object {
+              "borderColor": "white",
+              "boxShadow": "0 0 0 2px currentColor;",
+            },
+            "&:hover": Object {
+              "boxShadow": "none",
+            },
             "backgroundColor": "#f2f2f4",
+            "border": "1px solid transparent",
+            "boxShadow": "none",
             "color": "#56565a",
           },
           "containedSizeLarge": Object {
@@ -57,6 +74,9 @@ exports[`TimePicker render matches snapshot 1`] = `
             "fontSize": "14px",
             "minHeight": "26px",
             "padding": "5px",
+          },
+          "disableElevation": Object {
+            "boxShadow": "none",
           },
           "disabled": Object {},
           "endIcon": Object {
@@ -90,6 +110,25 @@ exports[`TimePicker render matches snapshot 1`] = `
             "fontWeight": 600,
             "lineHeight": 1.2,
           },
+          "outlined": Object {
+            "&:active": Object {
+              "backgroundColor": "#d1d1d6",
+            },
+            "&:focus": Object {
+              "border": "1px solid transparent",
+              "boxShadow": "0 0 0 2px currentColor",
+            },
+            "&:focus:hover": Object {
+              "border": "1px solid transparent",
+              "boxShadow": "0 0 0 2px currentColor",
+            },
+            "&:hover": Object {
+              "backgroundColor": "#f2f2f4",
+              "boxShadow": "none",
+            },
+            "boxShadow": "none",
+            "color": "#56565a",
+          },
           "outlinedSizeLarge": Object {
             "fontSize": "18px",
             "minHeight": "46px",
@@ -122,6 +161,24 @@ exports[`TimePicker render matches snapshot 1`] = `
             "marginRight": 8,
           },
           "text": Object {
+            "&:active": Object {
+              "backgroundColor": "#d1d1d6",
+            },
+            "&:focus": Object {
+              "border": "1px solid transparent",
+              "boxShadow": "0 0 0 2px currentColor",
+            },
+            "&:focus:hover": Object {
+              "border": "1px solid transparent",
+              "boxShadow": "0 0 0 2px currentColor",
+            },
+            "&:hover": Object {
+              "backgroundColor": "#f2f2f4",
+              "boxShadow": "none",
+            },
+            "border": "1px solid transparent",
+            "boxShadow": "none",
+            "color": "#56565a",
             "padding": "0 16px",
           },
           "textSizeLarge": Object {
@@ -245,6 +302,41 @@ exports[`TimePicker render matches snapshot 1`] = `
             "border": "1px solid #dfdfe3",
           },
         },
+        "MuiTimelineConnector": Object {
+          "root": Object {
+            "backgroundColor": "#d1d1d6",
+          },
+        },
+        "MuiTimelineContent": Object {
+          "root": Object {
+            "padding": "0 16px",
+          },
+        },
+        "MuiTimelineDot": Object {
+          "defaultGrey": Object {
+            "backgroundColor": "#d1d1d6",
+          },
+          "outlinedGrey": Object {
+            "backgroundColor": "#d1d1d6",
+          },
+          "root": Object {
+            "boxShadow": "none",
+            "marginBottom": "4px",
+            "marginTop": "4px",
+          },
+        },
+        "MuiTimelineItem": Object {
+          "missingOppositeContent": Object {
+            "&:before": Object {
+              "display": "none",
+            },
+          },
+        },
+        "MuiTimelineOppositeContent": Object {
+          "root": Object {
+            "padding": "0 16px",
+          },
+        },
         "MuiTouchRipple": Object {
           "@keyframes enter": Object {
             "0%": Object {
@@ -292,8 +384,8 @@ exports[`TimePicker render matches snapshot 1`] = `
         "divider": "#dfdfe3",
         "error": Object {
           "contrastText": "white",
-          "dark": "#9c2d23",
-          "light": "rgb(240, 106, 106)",
+          "dark": "#4d0600",
+          "light": "#9c2d23",
           "main": "#ed4545",
         },
         "getContrastText": [Function],
@@ -315,40 +407,40 @@ exports[`TimePicker render matches snapshot 1`] = `
         },
         "info": Object {
           "contrastText": "white",
-          "dark": "#2161b7",
-          "light": "rgb(114, 174, 255)",
-          "main": "#4f9aff",
+          "dark": "#152c4a",
+          "light": "#1150a4",
+          "main": "#196fe1",
         },
         "primary": Object {
           "contrastText": "#fff",
-          "dark": "#4f3fa7",
-          "light": "rgb(145, 118, 255)",
-          "main": "#7654ff",
+          "dark": "#261e52",
+          "light": "#4f3fa7",
+          "main": "#6d49fe",
         },
         "secondary": Object {
           "contrastText": "#4f3fa7",
-          "dark": "#a291ff",
-          "light": "rgb(212, 204, 255)",
+          "dark": "#6d49fe",
+          "light": "#a291ff",
           "main": "#cac0ff",
         },
         "success": Object {
           "contrastText": "white",
-          "dark": "#017546",
-          "light": "rgb(51, 191, 132)",
-          "main": "#00af66",
+          "dark": "#003925",
+          "light": "#015b36",
+          "main": "#01844d",
         },
         "text": Object {
           "disabled": "rgba(0, 0, 0, 0.38)",
           "hint": "rgba(0, 0, 0, 0.38)",
           "primary": "#1f1f22",
-          "secondary": "#8b8b90",
+          "secondary": "#717175",
         },
         "tonalOffset": 0.2,
         "type": "light",
         "warning": Object {
-          "contrastText": "white",
-          "dark": "#a34a25",
-          "light": "rgb(255, 150, 91)",
+          "contrastText": "#1f1f22",
+          "dark": "#4a1f0c",
+          "light": "#a34a25",
           "main": "#ff7c33",
         },
       },
