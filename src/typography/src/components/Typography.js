@@ -39,7 +39,7 @@ const styles = {
     letterSpacing: '0em',
   },
   subtitle1: {
-    fontWeight: 600,
+    fontWeight: 500,
     fontSize: '0.875rem', // 14px
     lineHeight: 1.5,
     letterSpacing: '0em',
