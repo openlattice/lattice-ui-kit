@@ -1,0 +1,62 @@
+name: build
+
+on:
+  push:
+    branches:
+      - develop
+      - master
+  pull_request:
+    branches:
+      - develop
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: node ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: cache node modules
+        uses: actions/cache@v2
+        with:
+          # https://github.com/actions/cache/blob/main/examples.md#macos-and-ubuntu
+          # https://github.com/actions/cache/issues/67
+          path: ~/.npm
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+
+      - name: npm config
+        env:
+          FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+        run: |
+          npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+          npm config set "//npm.fontawesome.com/:_authToken" "$FONTAWESOME_NPM_AUTH_TOKEN"
+
+      # https://docs.npmjs.com/cli/v6/commands/npm-ci
+      - name: npm ci
+        run: npm ci
+
+      - name: npm run lint
+        run: npm run lint
+
+      - name: npm run flow
+        run: npm run flow
+
+      - name: npm run test
+        run: npm run test
+
+      - name: npm run build:prod
+        run: npm run build:prod
+
+      - name: codecov
+        uses: codecov/codecov-action@v1
