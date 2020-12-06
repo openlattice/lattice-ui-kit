@@ -61,7 +61,7 @@
     "@storybook/addon-actions": "~5.3.19",
     "@storybook/addon-info": "~5.3.19",
     "@storybook/addon-options": "~5.3.19",
-    "@storybook/addon-storysource": "~5.3.19",
+    "@storybook/addon-storysource": "~6.1.10",
     "@storybook/addons": "~5.3.19",
     "@storybook/react": "~5.3.19",
     "@storybook/source-loader": "~5.3.19",
