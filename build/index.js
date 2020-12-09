@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.39.0
+ * lattice-ui-kit - v0.39.1
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -34514,10 +34514,10 @@ var curriedOpacify = /*#__PURE__*/curry
 /* ::<number | string, string, string> */
 (opacify);
 
-var defaultLightReturnColor = '#000';
-var defaultDarkReturnColor = '#fff';
+var defaultReturnIfLightColor = '#000';
+var defaultReturnIfDarkColor = '#fff';
 /**
- * Returns black or white (or optional light and dark return colors) for best
+ * Returns black or white (or optional passed colors) for best
  * contrast depending on the luminosity of the given color.
  * When passing custom return colors, strict mode ensures that the
  * return color always meets or exceeds WCAG level AA or greater. If this test
@@ -34552,27 +34552,27 @@ var defaultDarkReturnColor = '#fff';
  * }
  */
 
-function readableColor(color, lightReturnColor, darkReturnColor, strict) {
-  if (lightReturnColor === void 0) {
-    lightReturnColor = defaultLightReturnColor;
+function readableColor(color, returnIfLightColor, returnIfDarkColor, strict) {
+  if (returnIfLightColor === void 0) {
+    returnIfLightColor = defaultReturnIfLightColor;
   }
 
-  if (darkReturnColor === void 0) {
-    darkReturnColor = defaultDarkReturnColor;
+  if (returnIfDarkColor === void 0) {
+    returnIfDarkColor = defaultReturnIfDarkColor;
   }
 
   if (strict === void 0) {
     strict = true;
   }
 
-  var isLightColor = polished_esm_getLuminance(color) > 0.179;
-  var preferredReturnColor = isLightColor ? lightReturnColor : darkReturnColor;
+  var isColorLight = polished_esm_getLuminance(color) > 0.179;
+  var preferredReturnColor = isColorLight ? returnIfLightColor : returnIfDarkColor;
 
   if (!strict || getContrast(color, preferredReturnColor) >= 4.5) {
     return preferredReturnColor;
   }
 
-  return isLightColor ? defaultLightReturnColor : defaultDarkReturnColor;
+  return isColorLight ? defaultReturnIfLightColor : defaultReturnIfDarkColor;
 }
 
 /**
@@ -34867,7 +34867,7 @@ function transparentize(amount, color) {
   var alpha = typeof parsedColor.alpha === 'number' ? parsedColor.alpha : 1;
 
   var colorWithAlpha = _extends({}, parsedColor, {
-    alpha: guard(0, 1, (alpha * 100 - parseFloat(amount) * 100) / 100)
+    alpha: guard(0, 1, +(alpha * 100 - parseFloat(amount) * 100).toFixed(2) / 100)
   });
 
   return rgba(colorWithAlpha);
@@ -38805,7 +38805,7 @@ var ChoiceWrappers_getChoiceSize = function getChoiceSize(_ref) {
 var ChoiceWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
   displayName: "ChoiceWrappers__ChoiceWrapper",
   componentId: "kj63qq-0"
-})(["align-items:stretch;display:inline-flex;justify-content:center;position:relative;vertical-align:middle;", ";"], ChoiceWrappers_getChoiceSize);
+})(["align-items:stretch;display:inline-flex;justify-content:center;position:relative;vertical-align:middle;word-break:break-word;", ";"], ChoiceWrappers_getChoiceSize);
 var ChoiceInnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
   displayName: "ChoiceWrappers__ChoiceInnerWrapper",
   componentId: "kj63qq-1"
@@ -44456,7 +44456,7 @@ var NestedMenuItem = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_r
   var handleMouseEnter = function handleMouseEnter(event) {
     setIsSubMenuOpen(true);
 
-    if (ContainerProps === null || ContainerProps === void 0 ? void 0 : ContainerProps.onMouseEnter) {
+    if (ContainerProps !== null && ContainerProps !== void 0 && ContainerProps.onMouseEnter) {
       ContainerProps.onMouseEnter(event);
     }
   };
@@ -44464,7 +44464,7 @@ var NestedMenuItem = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_r
   var handleMouseLeave = function handleMouseLeave(event) {
     setIsSubMenuOpen(false);
 
-    if (ContainerProps === null || ContainerProps === void 0 ? void 0 : ContainerProps.onMouseLeave) {
+    if (ContainerProps !== null && ContainerProps !== void 0 && ContainerProps.onMouseLeave) {
       ContainerProps.onMouseLeave(event);
     }
   }; // Check if any immediate children are active
@@ -65501,7 +65501,7 @@ var components_Typography_styles = {
     letterSpacing: '0em'
   },
   subtitle1: {
-    fontWeight: 600,
+    fontWeight: 500,
     fontSize: '0.875rem',
     // 14px
     lineHeight: 1.5,
@@ -66808,7 +66808,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.39.0";
+var src_version = "v0.39.1";
 
 
 
