@@ -17,6 +17,7 @@ const ChoiceWrapper = styled.span`
   justify-content: center;
   position: relative;
   vertical-align: middle;
+  word-break: break-word;
   ${getChoiceSize};
 `;
 
