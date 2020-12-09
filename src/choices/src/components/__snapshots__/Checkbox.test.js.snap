@@ -130,6 +130,7 @@ input:checked ~ .c4:after {
   justify-content: center;
   position: relative;
   vertical-align: middle;
+  word-break: break-word;
 }
 
 .c2 {
@@ -195,7 +196,7 @@ input:checked ~ .c4:after {
                     "isStatic": false,
                     "lastClassName": "c1",
                     "rules": Array [
-                      "align-items:stretch;display:inline-flex;justify-content:center;position:relative;vertical-align:middle;",
+                      "align-items:stretch;display:inline-flex;justify-content:center;position:relative;vertical-align:middle;word-break:break-word;",
                       [Function],
                       ";",
                     ],
