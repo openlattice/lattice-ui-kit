@@ -14,14 +14,26 @@ const SearchIcon = (
   </InputAdornment>
 );
 
-const SearchInput = React.forwardRef<any, TextField>((props, ref) => (
-  <TextField
-      InputProps={{ startAdornment: SearchIcon }}
-      fullWidth
-      variant="outlined"
-      // eslint-disable-next-line react/jsx-props-no-spreading
-      {...props}
-      ref={ref} />
-));
+const SearchInput = React.forwardRef<Object, TextField>((props, ref) => {
+
+  const {
+    fullWidth = true,
+    type = 'text',
+    variant,
+    ...other
+  } = props;
+
+  /* eslint-disable react/jsx-props-no-spreading */
+  return (
+    <TextField
+        {...other} // eslint-disable-line indent
+        InputProps={{ startAdornment: SearchIcon }}
+        fullWidth={fullWidth}
+        ref={ref}
+        type={type}
+        variant="outlined" />
+  );
+  /* eslint-enable */
+});
 
 export default SearchInput;
