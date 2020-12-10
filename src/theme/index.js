@@ -192,6 +192,11 @@ const lightTheme = createMuiTheme({
         margin: '5px 10px 0'
       },
     },
+    MuiInputAdornment: {
+      root: {
+        color: NEUTRAL.N500,
+      },
+    },
     MuiInputBase: {
       root: {
         color: NEUTRAL.N900,
@@ -276,6 +281,9 @@ const lightTheme = createMuiTheme({
         },
         '&$error': {
           borderColor: RED.R300
+        },
+        '&.Mui-focused .MuiInputAdornment-root': {
+          color: NEUTRAL.N700,
         },
       },
       input: {
