@@ -110,7 +110,7 @@ storiesOf('Text', module)
             <SearchInput id="story-defaultvalue" defaultValue="OpenLattice" />
 
             <Label htmlFor="story-invalid">Invalid value</Label>
-            <SearchInput invalid id="story-invalid" defaultValue="ecittaLnepO" />
+            <SearchInput error id="story-invalid" defaultValue="ecittaLnepO" />
 
             <Label htmlFor="story-width">Width</Label>
             <SearchInput id="story-width" defaultValue="ecittaLnepO" width="200px" />
