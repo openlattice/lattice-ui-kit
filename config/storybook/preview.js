@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { ThemeProvider } from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
-import { withInfo } from '@storybook/addon-info';
+// import { withInfo } from '@storybook/addon-info';
 import { addDecorator, configure } from '@storybook/react';
 
 import LatticeLuxonUtils from '../../src/datetime/src/components/utils/LatticeLuxonUtils';
@@ -39,8 +39,6 @@ const StoryInnerWrapper = styled.div`
     height: 100%;
   }
 `;
-
-addDecorator(withInfo);
 
 addDecorator((StoryFn) => {
   const [isDark, setTheme] = useState(false);
