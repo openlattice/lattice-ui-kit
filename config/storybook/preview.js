@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { ThemeProvider } from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
-import { addDecorator, configure } from '@storybook/react';
+import { addDecorator } from '@storybook/react';
 
 import LatticeLuxonUtils from '../../src/datetime/src/components/utils/LatticeLuxonUtils';
 import { Button } from '../../src/button';
@@ -62,11 +62,3 @@ addDecorator((StoryFn) => {
     </StoryOuterWrapper>
   );
 });
-
-const req = require.context('../../src/', true, /\.stories\.js$/);
-
-function loadStories() {
-  req.keys().forEach((filename) => req(filename));
-}
-
-configure(loadStories, module);
