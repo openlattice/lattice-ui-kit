@@ -4,71 +4,36 @@
 
 import React from 'react';
 
-import styled from 'styled-components';
 import { faSearch } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { InputAdornment, TextField } from '@material-ui/core';
 
-import inputStyles from './styled/inputStyles';
-
-import { NEUTRAL } from '../../../colors';
-
-const SearchInputWrapper = styled.div`
-  display: flex;
-  position: relative;
-`;
-
-const Input = styled.input`
-  ${inputStyles}
-  color: ${NEUTRAL.N700};
-  padding-left: 32px;
-
-  &::placeholder {
-    color: ${NEUTRAL.N500};
-  }
-`;
-
-const SearchIcon = styled.div`
-  align-self: center;
-  color: ${NEUTRAL.N500};
-  margin-left: 11px;
-  font-size: 14px;
-  line-height: 14px;
-  position: absolute;
-`;
-
-type Props = {
-  disabled ?:boolean;
-  id ?:string;
-  name ?:string;
-  onBlur ?:(event :SyntheticFocusEvent<HTMLInputElement>) => void;
-  onChange ?:(event :SyntheticInputEvent<HTMLInputElement>) => void;
-  onFocus ?:(event :SyntheticFocusEvent<HTMLInputElement>) => void;
-  placeholder ?:string;
-  readOnly ?:boolean;
-  value ?:any;
-};
-
-/* eslint-disable react/jsx-props-no-spreading */
-const SearchInput = (props :Props) => (
-  <SearchInputWrapper>
-    <SearchIcon>
-      <FontAwesomeIcon icon={faSearch} />
-    </SearchIcon>
-    <Input {...props} type="search" />
-  </SearchInputWrapper>
+const SearchIcon = (
+  <InputAdornment position="start">
+    <FontAwesomeIcon icon={faSearch} />
+  </InputAdornment>
 );
-/* eslint-enable */
 
-SearchInput.defaultProps = {
-  disabled: false,
-  id: undefined,
-  name: undefined,
-  onBlur: undefined,
-  onChange: undefined,
-  onFocus: undefined,
-  placeholder: 'Search...',
-  readOnly: undefined,
-  value: undefined,
-};
+const SearchInput = React.forwardRef<Object, TextField>((props, ref) => {
+
+  const {
+    fullWidth = true,
+    type = 'text',
+    variant,
+    ...other
+  } = props;
+
+  /* eslint-disable react/jsx-props-no-spreading */
+  return (
+    <TextField
+        {...other} // eslint-disable-line indent
+        InputProps={{ startAdornment: SearchIcon }}
+        fullWidth={fullWidth}
+        ref={ref}
+        type={type}
+        variant="outlined" />
+  );
+  /* eslint-enable */
+});
 
 export default SearchInput;

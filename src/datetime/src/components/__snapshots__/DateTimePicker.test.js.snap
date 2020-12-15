@@ -254,6 +254,11 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "padding": "6px",
           },
         },
+        "MuiInputAdornment": Object {
+          "root": Object {
+            "color": "#8b8b90",
+          },
+        },
         "MuiInputBase": Object {
           "input": Object {
             "&$disabled": Object {
@@ -294,6 +299,9 @@ exports[`DateTimePicker render matches snapshot 1`] = `
             "&$focused": Object {
               "backgroundColor": "white",
               "borderColor": "#56565a",
+            },
+            "&.Mui-focused .MuiInputAdornment-root": Object {
+              "color": "#56565a",
             },
             "&:hover:not($disabled):not($focused):not($error)": Object {
               "backgroundColor": "#f9f9fc",
