@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import { storiesOf } from '@storybook/react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faNarwhal } from '@fortawesome/pro-regular-svg-icons';
 
-import { Button } from '../../button';
+import styled from 'styled-components';
+import { faNarwhal } from '@fortawesome/pro-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import Banner from '..';
+import { Button } from '../../button';
 
 const CITIZENS_OF_DALARAN = `
   CITIZENS OF DALARAN! RAISE YOUR EYES TO THE SKIES AND OBSERVE!
@@ -51,21 +51,23 @@ const Filler = styled.div`
 
 class BannerController extends Component {
   state = {
-    open: false
+    open: false,
   };
 
   handleOpenToggle = () => {
     const { open } = this.state;
     this.setState({
-      open: !open
+      open: !open,
     });
-  }
+  };
 
   render() {
     const { open } = this.state;
     return (
       <>
-        <Button type="button" mode="primary" onClick={this.handleOpenToggle}>Toggle</Button>
+        <Button type="button" mode="primary" onClick={this.handleOpenToggle}>
+          Toggle
+        </Button>
         <Banner isOpen={open} mode="default">
           <StyledDiv>
             <Name>WERBENJAGERMANJENSEN, SMITTY</Name>
@@ -77,26 +79,49 @@ class BannerController extends Component {
   }
 }
 
-storiesOf('Banner', module)
-  .add('default', () => (
-    <>
-      <Banner isOpen mode="default">This is a banner</Banner>
-      <Banner isOpen mode="danger">This is an error</Banner>
-      <Banner isOpen mode="warning">This is a warning</Banner>
-      <Banner isOpen mode="success">This is a success</Banner>
-      <Banner isOpen icon={() => <FontAwesomeIcon icon={faNarwhal} fixedWidth />}>This is a custom icon</Banner>
-      <br />
-      <Container>
-        <Banner isOpen mode="default" sticky>This is a sticky banner. Scroll down to observe</Banner>
-        <Filler>
-          { CITIZENS_OF_DALARAN }
-        </Filler>
-      </Container>
-    </>
-  ))
-  .add('Custom controlled', () => (
-    <>
-      <BannerController />
-      { CITIZENS_OF_DALARAN }
-    </>
-  ));
+export default {
+  title: 'Banner',
+  component: Banner,
+};
+
+export const Default = () => (
+  <>
+    <Banner isOpen mode="default">
+      This is a banner
+    </Banner>
+    <Banner isOpen mode="danger">
+      This is an error
+    </Banner>
+    <Banner isOpen mode="warning">
+      This is a warning
+    </Banner>
+    <Banner isOpen mode="success">
+      This is a success
+    </Banner>
+    <Banner isOpen icon={() => <FontAwesomeIcon icon={faNarwhal} fixedWidth />}>
+      This is a custom icon
+    </Banner>
+    <br />
+    <Container>
+      <Banner isOpen mode="default" sticky>
+        This is a sticky banner. Scroll down to observe
+      </Banner>
+      <Filler>{CITIZENS_OF_DALARAN}</Filler>
+    </Container>
+  </>
+);
+
+Default.story = {
+  name: 'default',
+};
+
+export const CustomControlled = () => (
+  <>
+    <BannerController />
+    {CITIZENS_OF_DALARAN}
+  </>
+);
+
+CustomControlled.story = {
+  name: 'Custom controlled',
+};
