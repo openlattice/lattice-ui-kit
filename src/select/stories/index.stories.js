@@ -45,19 +45,17 @@ export const UseRawValues = () => (
     <Select useRawValues options={stateOptions} onChange={action('Single select changed')} />
     <h1>Multiple Select</h1>
     <Select
-      useRawValues
-      options={stateOptions}
-      onChange={action('Multiple selection changed')}
-      isMulti
-    />
+        useRawValues
+        options={stateOptions}
+        onChange={action('Multiple selection changed')}
+        isMulti />
     <h1>Creatable Multiple Input (hideMenu)</h1>
     <Creatable
-      hideMenu
-      isMulti
-      useRawValues
-      options={stateOptions}
-      onChange={action('Borderless changed')}
-    />
+        hideMenu
+        isMulti
+        useRawValues
+        options={stateOptions}
+        onChange={action('Borderless changed')} />
   </>
 );
 
@@ -105,16 +103,14 @@ export const DisabledOptions = () => (
     <h1>Disabled options</h1>
     <h2>Checkbox Select</h2>
     <CheckboxSelect
-      isOptionDisabled={(option) => option.value === 'AL'}
-      options={stateOptions}
-      onChange={action('CheckboxSelect changed')}
-    />
+        isOptionDisabled={(option) => option.value === 'AL'}
+        options={stateOptions}
+        onChange={action('CheckboxSelect changed')} />
     <h2>Select</h2>
     <Select
-      isOptionDisabled={(option) => option.value === 'AL'}
-      options={stateOptions}
-      onChange={action('Single select changed')}
-    />
+        isOptionDisabled={(option) => option.value === 'AL'}
+        options={stateOptions}
+        onChange={action('Single select changed')} />
   </>
 );
 

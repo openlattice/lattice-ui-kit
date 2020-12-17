@@ -17,12 +17,11 @@ export const Uncontrolled = () => (
     <Card>
       <CardSegment vertical={false}>
         <form
-          style={{
-            display: 'flex',
-            flex: '0 1 100%',
-            flexDirection: 'column',
-          }}
-        >
+            style={{
+              display: 'flex',
+              flex: '0 1 100%',
+              flexDirection: 'column',
+            }}>
           <Label>Showcase</Label>
           <ChoiceGroup>
             <Radio id="story-default" label="Default" />
@@ -31,22 +30,20 @@ export const Uncontrolled = () => (
             <Radio id="story-disabled" label="Disabled" disabled />
             <Radio id="story-disabledchecked" label="Disabled (checked)" disabled checked />
             <Radio
-              id="story-eventhandlers"
-              label="Event handlers (see Actions tab)"
-              value={false}
-              onChange={action('onChange')}
-              onBlur={action('onBlur')}
-              onFocus={action('onFocus')}
-            />
+                id="story-eventhandlers"
+                label="Event handlers (see Actions tab)"
+                value={false}
+                onChange={action('onChange')}
+                onBlur={action('onBlur')}
+                onFocus={action('onFocus')} />
           </ChoiceGroup>
         </form>
         <form
-          style={{
-            display: 'flex',
-            flex: '0 1 100%',
-            flexDirection: 'column',
-          }}
-        >
+            style={{
+              display: 'flex',
+              flex: '0 1 100%',
+              flexDirection: 'column',
+            }}>
           <Label>Group</Label>
           <ChoiceGroup>
             <Radio name="group" id="group-1" label="1" value="1" />
@@ -59,12 +56,11 @@ export const Uncontrolled = () => (
       </CardSegment>
       <CardSegment>
         <form
-          style={{
-            display: 'flex',
-            flex: '0 1 100%',
-            flexDirection: 'column',
-          }}
-        >
+            style={{
+              display: 'flex',
+              flex: '0 1 100%',
+              flexDirection: 'column',
+            }}>
           <Label>Row Group</Label>
           <ChoiceGroup>
             <Radio name="row-group" id="row-group-1" label="1" value="1" />
@@ -85,57 +81,51 @@ export const Button = () => (
     <Card>
       <CardSegment vertical>
         <form
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            flexBasis: 'fit-content',
-          }}
-        >
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              flexBasis: 'fit-content',
+            }}>
           <Label>Showcase</Label>
           <ChoiceGroup row>
             <Radio mode="button" id="story-default" label="Default" />
             <Radio mode="button" id="story-checked" label="Default Checked" defaultChecked />
             <Radio
-              mode="button"
-              id="story-checkedreadonly"
-              label="Checked readOnly"
-              checked
-              readOnly
-            />
+                mode="button"
+                id="story-checkedreadonly"
+                label="Checked readOnly"
+                checked
+                readOnly />
             <Radio mode="button" id="story-disabled" label="Disabled" disabled />
             <Radio
-              mode="button"
-              id="story-disabledchecked"
-              label="Disabled (checked)"
-              disabled
-              checked
-            />
+                mode="button"
+                id="story-disabledchecked"
+                label="Disabled (checked)"
+                disabled
+                checked />
             <Radio
-              mode="button"
-              id="story-eventhandlers"
-              label="Event handlers (see Actions tab)"
-              value={false}
-              onChange={action('onChange')}
-              onBlur={action('onBlur')}
-              onFocus={action('onFocus')}
-            />
+                mode="button"
+                id="story-eventhandlers"
+                label="Event handlers (see Actions tab)"
+                value={false}
+                onChange={action('onChange')}
+                onBlur={action('onBlur')}
+                onFocus={action('onFocus')} />
           </ChoiceGroup>
         </form>
         <form
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-          }}
-        >
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}>
           <Label>Group</Label>
           <ChoiceGroup row>
             <Radio
-              mode="button"
-              name="group"
-              id="group-1"
-              label="Out of Touch with Reality"
-              value="1"
-            />
+                mode="button"
+                name="group"
+                id="group-1"
+                label="Out of Touch with Reality"
+                value="1" />
             <Radio mode="button" name="group" id="group-2" label="Neglect of Self Care" value="2" />
             <Radio mode="button" name="group" id="group-3" label="Depressed" value="3" />
             <Radio mode="button" name="group" id="group-4" label="Disorderly Conduct" value="4" />

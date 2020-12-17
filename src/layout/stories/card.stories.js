@@ -4,7 +4,9 @@ import { action } from '@storybook/addon-actions';
 
 import { Button } from '../../button';
 import { PURPLE } from '../../colors';
-import { Card, CardHeader, CardSegment, CardStack } from '../index';
+import {
+  Card, CardHeader, CardSegment, CardStack
+} from '../index';
 
 export default {
   title: 'Card',

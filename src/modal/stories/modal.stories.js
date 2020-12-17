@@ -9,13 +9,12 @@ const TheNextLevel = ({ isVisible, onClose }) => {
   const [showNext, goDeeper, kicker] = useBoolean();
   return (
     <Modal
-      isVisible={isVisible}
-      onClose={onClose}
-      onClickPrimary={goDeeper}
-      textPrimary="Go Deeper"
-      textSecondary="Kick Out"
-      textTitle="Inception"
-    >
+        isVisible={isVisible}
+        onClose={onClose}
+        onClickPrimary={goDeeper}
+        textPrimary="Go Deeper"
+        textSecondary="Kick Out"
+        textTitle="Inception">
       Am I in limbo?
       <TheNextLevel isVisible={showNext} onClose={kicker} />
     </Modal>
@@ -41,12 +40,11 @@ export const Basic = () => {
   return (
     <>
       <Modal
-        isVisible={isVisible}
-        onClose={hide}
-        textPrimary="Confirm"
-        textSecondary="Cancel"
-        textTitle="Metallica, Master of Puppets - March 3, 1986"
-      >
+          isVisible={isVisible}
+          onClose={hide}
+          textPrimary="Confirm"
+          textSecondary="Cancel"
+          textTitle="Metallica, Master of Puppets - March 3, 1986">
         <p>March 3, 1986</p>
         <a href="https://openlattice.com">https://openlattice.com</a>
       </Modal>
@@ -64,13 +62,12 @@ export const ViewportScrolling = () => {
   return (
     <>
       <Modal
-        isVisible={isVisible}
-        onClose={hide}
-        textPrimary="Confirm"
-        textSecondary="Cancel"
-        textTitle="Metallica, Master of Puppets - March 3, 1986"
-        viewportScrolling
-      >
+          isVisible={isVisible}
+          onClose={hide}
+          textPrimary="Confirm"
+          textSecondary="Cancel"
+          textTitle="Metallica, Master of Puppets - March 3, 1986"
+          viewportScrolling>
         <div style={{ height: '4096px' }}>I am a tall div</div>
       </Modal>
       <Button onClick={show}>Show Modal</Button>
@@ -97,13 +94,12 @@ export const StretchyButtons = () => {
   return (
     <>
       <Modal
-        isVisible={isVisible}
-        onClose={hide}
-        shouldStretchButtons
-        textPrimary="Confirm"
-        textSecondary="Cancel"
-        textTitle="Metallica, Master of Puppets - March 3, 1986"
-      >
+          isVisible={isVisible}
+          onClose={hide}
+          shouldStretchButtons
+          textPrimary="Confirm"
+          textSecondary="Cancel"
+          textTitle="Metallica, Master of Puppets - March 3, 1986">
         <p>March 3, 1986</p>
         <a href="https://openlattice.com">https://openlattice.com</a>
       </Modal>
@@ -121,12 +117,11 @@ export const StretchyPrimaryButton = () => {
   return (
     <>
       <Modal
-        isVisible={isVisible}
-        onClose={hide}
-        shouldStretchButtons
-        textPrimary="Confirm"
-        textTitle="Metallica, Master of Puppets - March 3, 1986"
-      >
+          isVisible={isVisible}
+          onClose={hide}
+          shouldStretchButtons
+          textPrimary="Confirm"
+          textTitle="Metallica, Master of Puppets - March 3, 1986">
         <p>March 3, 1986</p>
         <a href="https://openlattice.com">https://openlattice.com</a>
       </Modal>
@@ -144,12 +139,11 @@ export const StretchySecondaryButton = () => {
   return (
     <>
       <Modal
-        isVisible={isVisible}
-        onClose={hide}
-        shouldStretchButtons
-        textSecondary="Cancel"
-        textTitle="Metallica, Master of Puppets - March 3, 1986"
-      >
+          isVisible={isVisible}
+          onClose={hide}
+          shouldStretchButtons
+          textSecondary="Cancel"
+          textTitle="Metallica, Master of Puppets - March 3, 1986">
         <p>March 3, 1986</p>
         <a href="https://openlattice.com">https://openlattice.com</a>
       </Modal>
@@ -167,13 +161,12 @@ export const AlignTop = () => {
   return (
     <>
       <Modal
-        isVisible={isVisible}
-        onClose={hide}
-        shouldBeCentered={false}
-        textPrimary="Confirm"
-        textSecondary="Cancel"
-        textTitle="Metallica, Master of Puppets - March 3, 1986"
-      >
+          isVisible={isVisible}
+          onClose={hide}
+          shouldBeCentered={false}
+          textPrimary="Confirm"
+          textSecondary="Cancel"
+          textTitle="Metallica, Master of Puppets - March 3, 1986">
         <p>March 3, 1986</p>
         <a href="https://openlattice.com">https://openlattice.com</a>
       </Modal>
@@ -191,14 +184,13 @@ export const OutsideClickDoesNotCloseModal = () => {
   return (
     <>
       <Modal
-        isVisible={isVisible}
-        onClose={hide}
-        shouldBeCentered={false}
-        shouldCloseOnOutsideClick={false}
-        textPrimary="Confirm"
-        textSecondary="Cancel"
-        textTitle="Metallica, Master of Puppets - March 3, 1986"
-      >
+          isVisible={isVisible}
+          onClose={hide}
+          shouldBeCentered={false}
+          shouldCloseOnOutsideClick={false}
+          textPrimary="Confirm"
+          textSecondary="Cancel"
+          textTitle="Metallica, Master of Puppets - March 3, 1986">
         <p>March 3, 1986</p>
         <a href="https://openlattice.com">https://openlattice.com</a>
       </Modal>

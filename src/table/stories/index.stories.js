@@ -3,10 +3,14 @@ import React, { useEffect, useState } from 'react';
 import { action } from '@storybook/addon-actions';
 
 import CustomRow from './components/CustomRow';
-import { COMPARATOR_DATA, COMPARATOR_HEADERS, TABLE_DATA, TABLE_HEADERS } from './constants';
+import {
+  COMPARATOR_DATA, COMPARATOR_HEADERS, TABLE_DATA, TABLE_HEADERS
+} from './constants';
 
 import { Button } from '../../button';
-import { Card, CardHeader, CardSegment, CardStack } from '../../layout';
+import {
+  Card, CardHeader, CardSegment, CardStack
+} from '../../layout';
 import { Table } from '..';
 
 const components = {
@@ -42,11 +46,10 @@ export const Paginated = () => (
       <CardHeader padding="sm">Multiple rowsPerPageOptions values</CardHeader>
       <CardSegment vertical>
         <Table
-          headers={TABLE_HEADERS}
-          data={TABLE_DATA}
-          rowsPerPageOptions={rowsPerPageOptions}
-          paginated
-        />
+            headers={TABLE_HEADERS}
+            data={TABLE_DATA}
+            rowsPerPageOptions={rowsPerPageOptions}
+            paginated />
       </CardSegment>
     </Card>
     <Card>
@@ -62,12 +65,11 @@ export const CustomComponents = () => (
   <Card>
     <CardSegment vertical>
       <Table
-        components={components}
-        headers={TABLE_HEADERS}
-        data={TABLE_DATA}
-        rowsPerPageOptions={rowsPerPageOptions}
-        paginated
-      />
+          components={components}
+          headers={TABLE_HEADERS}
+          data={TABLE_DATA}
+          rowsPerPageOptions={rowsPerPageOptions}
+          paginated />
     </CardSegment>
   </Card>
 );
@@ -80,10 +82,9 @@ export const AddRows = () => {
         <Table components={components} headers={TABLE_HEADERS} data={data} />
       </CardSegment>
       <Button
-        onClick={() => {
-          setData([...data, {}]);
-        }}
-      >
+          onClick={() => {
+            setData([...data, {}]);
+          }}>
         Add Blank Row
       </Button>
     </Card>
@@ -109,13 +110,12 @@ export const IsLoading = () => {
     <Card>
       <CardSegment vertical>
         <Table
-          components={components}
-          headers={TABLE_HEADERS}
-          data={data}
-          isLoading={isLoading}
-          rowsPerPageOptions={rowsPerPageOptions}
-          paginated
-        />
+            components={components}
+            headers={TABLE_HEADERS}
+            data={data}
+            isLoading={isLoading}
+            rowsPerPageOptions={rowsPerPageOptions}
+            paginated />
       </CardSegment>
     </Card>
   );
@@ -133,13 +133,12 @@ export const EventHandlers = () => {
     <Card>
       <CardSegment vertical>
         <Table
-          headers={TABLE_HEADERS}
-          data={TABLE_DATA}
-          rowsPerPageOptions={rowsPerPageOptions}
-          onPageChange={onPageChange}
-          onSort={onSort}
-          paginated
-        />
+            headers={TABLE_HEADERS}
+            data={TABLE_DATA}
+            rowsPerPageOptions={rowsPerPageOptions}
+            onPageChange={onPageChange}
+            onSort={onSort}
+            paginated />
       </CardSegment>
     </Card>
   );
@@ -183,15 +182,14 @@ export const ExactTotalRows = () => {
             `}
         </p>
         <Table
-          isLoading={isLoading}
-          headers={TABLE_HEADERS}
-          data={data}
-          exact
-          totalRows={TABLE_DATA.length}
-          rowsPerPageOptions={rowsPerPageOptions}
-          onPageChange={onPageChange}
-          paginated
-        />
+            isLoading={isLoading}
+            headers={TABLE_HEADERS}
+            data={data}
+            exact
+            totalRows={TABLE_DATA.length}
+            rowsPerPageOptions={rowsPerPageOptions}
+            onPageChange={onPageChange}
+            paginated />
       </CardSegment>
     </Card>
   );

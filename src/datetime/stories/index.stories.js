@@ -4,7 +4,9 @@ import { action } from '@storybook/addon-actions';
 import { DateTime } from 'luxon';
 
 import Label from '../../label';
-import { Card, CardHeader, CardSegment, CardStack } from '../../layout';
+import {
+  Card, CardHeader, CardSegment, CardStack
+} from '../../layout';
 import { DatePicker, DateTimePicker, TimePicker } from '../index';
 
 const dateMuiChange = action('MUI Date changed');
@@ -33,12 +35,11 @@ export const Date = ({ isDark }) => {
             <br />
             <Label subtle>Controlled</Label>
             <DatePicker
-              onChange={(value) => {
-                dateMuiChange(value);
-                setSelectedDate(value);
-              }}
-              value={selectedDate}
-            />
+                onChange={(value) => {
+                  dateMuiChange(value);
+                  setSelectedDate(value);
+                }}
+                value={selectedDate} />
           </CardSegment>
         </Card>
         <Card>
@@ -49,21 +50,19 @@ export const Date = ({ isDark }) => {
             <br />
             <Label subtle>Disabled</Label>
             <DatePicker
-              inputVariant="outlined"
-              disabled
-              value="2019-01-01"
-              onChange={dateMuiChange}
-            />
+                inputVariant="outlined"
+                disabled
+                value="2019-01-01"
+                onChange={dateMuiChange} />
             <br />
             <Label subtle>Controlled</Label>
             <DatePicker
-              inputVariant="outlined"
-              onChange={(value) => {
-                dateMuiChange(value);
-                setSelectedDate(value);
-              }}
-              value={selectedDate}
-            />
+                inputVariant="outlined"
+                onChange={(value) => {
+                  dateMuiChange(value);
+                  setSelectedDate(value);
+                }}
+                value={selectedDate} />
           </CardSegment>
         </Card>
       </CardStack>
@@ -92,12 +91,11 @@ export const Time = ({ isDark }) => {
             <br />
             <Label subtle>Controlled</Label>
             <TimePicker
-              onChange={(value) => {
-                timeMuiChange(value);
-                setSelectedTime(value);
-              }}
-              value={selectedTime}
-            />
+                onChange={(value) => {
+                  timeMuiChange(value);
+                  setSelectedTime(value);
+                }}
+                value={selectedTime} />
           </CardSegment>
         </Card>
         <Card>
@@ -114,13 +112,12 @@ export const Time = ({ isDark }) => {
             <br />
             <Label subtle>Controlled</Label>
             <TimePicker
-              inputVariant="outlined"
-              onChange={(value) => {
-                timeMuiChange(value);
-                setSelectedTime(value);
-              }}
-              value={selectedTime}
-            />
+                inputVariant="outlined"
+                onChange={(value) => {
+                  timeMuiChange(value);
+                  setSelectedTime(value);
+                }}
+                value={selectedTime} />
           </CardSegment>
         </Card>
       </CardStack>
@@ -149,12 +146,11 @@ export const _DateTime = ({ isDark }) => {
             <br />
             <Label subtle>Controlled</Label>
             <DateTimePicker
-              onChange={(value) => {
-                datetimeMuiChange(value);
-                setDateTime(value);
-              }}
-              value={selectedDateTime}
-            />
+                onChange={(value) => {
+                  datetimeMuiChange(value);
+                  setDateTime(value);
+                }}
+                value={selectedDateTime} />
           </CardSegment>
         </Card>
         <Card>
@@ -171,13 +167,12 @@ export const _DateTime = ({ isDark }) => {
             <br />
             <Label subtle>Controlled</Label>
             <DateTimePicker
-              inputVariant="outlined"
-              onChange={(value) => {
-                datetimeMuiChange(value);
-                setDateTime(value);
-              }}
-              value={selectedDateTime}
-            />
+                inputVariant="outlined"
+                onChange={(value) => {
+                  datetimeMuiChange(value);
+                  setDateTime(value);
+                }}
+                value={selectedDateTime} />
           </CardSegment>
         </Card>
       </CardStack>

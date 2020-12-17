@@ -16,11 +16,15 @@ export default {
             </a>
             <p>
               This forwards the
-              <code> &lt;Breadcrumbs /&gt; </code> component from Material-Ui.
+              <code> &lt;Breadcrumbs /&gt; </code>
+              {' '}
+              component from Material-Ui.
             </p>
             <div>
               The default
-              <code>separator</code> uses
+              <code>separator</code>
+              {' '}
+              uses
               <code>faChevronRight</code>
             </div>
           </CardSegment>

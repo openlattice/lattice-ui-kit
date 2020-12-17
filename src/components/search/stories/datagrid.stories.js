@@ -36,11 +36,10 @@ export const Columns = () => (
   <Card>
     <CardSegment>
       <DataGrid
-        data={mockSearchResultsForPeople.first()}
-        columns={3}
-        labelMap={mockResultLabels}
-        truncate
-      />
+          data={mockSearchResultsForPeople.first()}
+          columns={3}
+          labelMap={mockResultLabels}
+          truncate />
     </CardSegment>
   </Card>
 );

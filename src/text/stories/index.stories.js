@@ -43,11 +43,10 @@ export const _Input = () => (
 
           <Label htmlFor="story-eventhandlers">Event handlers (see Actions tab)</Label>
           <Input
-            id="story-eventhandlers"
-            onChange={action('onChange')}
-            onBlur={action('onBlur')}
-            onFocus={action('onFocus')}
-          />
+              id="story-eventhandlers"
+              onChange={action('onChange')}
+              onBlur={action('onBlur')}
+              onFocus={action('onFocus')} />
         </StyledForm>
       </CardSegment>
     </Card>
@@ -80,11 +79,10 @@ export const _TextArea = () => (
 
           <Label htmlFor="story-eventhandlers">Event handlers (see Actions tab)</Label>
           <TextArea
-            id="story-eventhandlers"
-            onChange={action('onChange')}
-            onBlur={action('onBlur')}
-            onFocus={action('onFocus')}
-          />
+              id="story-eventhandlers"
+              onChange={action('onChange')}
+              onBlur={action('onBlur')}
+              onFocus={action('onFocus')} />
         </StyledForm>
       </CardSegment>
     </Card>
@@ -121,11 +119,10 @@ export const _SearchInput = () => (
 
           <Label htmlFor="story-eventhandlers">Event handlers (see Actions tab)</Label>
           <SearchInput
-            id="story-eventhandlers"
-            onChange={action('onChange')}
-            onBlur={action('onBlur')}
-            onFocus={action('onFocus')}
-          />
+              id="story-eventhandlers"
+              onChange={action('onChange')}
+              onBlur={action('onBlur')}
+              onFocus={action('onFocus')} />
         </StyledForm>
       </CardSegment>
     </Card>

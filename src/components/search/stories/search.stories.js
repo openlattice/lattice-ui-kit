@@ -34,17 +34,16 @@ export const SearchFieldsWithFilter = () => (
   <>
     <h1>Search Fields</h1>
     <Search
-      title="Search"
-      filterFields={mockFilterFields}
-      onSearch={action('search clicked')}
-      searchResults={mockSearchResultsForReports}
-      resultLabels={Map({
-        reportType: 'Report type',
-        badges: 'banana',
-        submitter: 'Submitter',
-      })}
-      resultColumns={3}
-    />
+        title="Search"
+        filterFields={mockFilterFields}
+        onSearch={action('search clicked')}
+        searchResults={mockSearchResultsForReports}
+        resultLabels={Map({
+          reportType: 'Report type',
+          badges: 'banana',
+          submitter: 'Submitter',
+        })}
+        resultColumns={3} />
   </>
 );
 
@@ -56,10 +55,9 @@ export const SearchFieldsWithResults = () => (
   <>
     <h1>Search Fields</h1>
     <Search
-      title="Search"
-      onSearch={action('search clicked')}
-      searchResults={mockSearchResultsForPeople}
-    />
+        title="Search"
+        onSearch={action('search clicked')}
+        searchResults={mockSearchResultsForPeople} />
   </>
 );
 
@@ -71,13 +69,12 @@ export const SearchWithCustomSearchResultsComponent = () => (
   <>
     <h1>Search Fields</h1>
     <Search
-      title="Search"
-      onSearch={action('search clicked')}
-      searchResults={mockSearchResultsForPeople}
-      searchResultsComponent={(props) => (
-        <SearchResults {...props} resultLabels={mockResultLabels} />
-      )}
-    />
+        title="Search"
+        onSearch={action('search clicked')}
+        searchResults={mockSearchResultsForPeople}
+        searchResultsComponent={(props) => (
+          <SearchResults {...props} resultLabels={mockResultLabels} />
+        )} />
   </>
 );
 
@@ -89,11 +86,10 @@ export const SearchWithCustomResultComponent = () => (
   <>
     <h1>Search Fields</h1>
     <Search
-      title="Search"
-      onSearch={action('search clicked')}
-      searchResults={mockSearchResultsForPeople}
-      resultComponent={(props) => <Result {...props} onClick={action('Result clicked')} />}
-    />
+        title="Search"
+        onSearch={action('search clicked')}
+        searchResults={mockSearchResultsForPeople}
+        resultComponent={(props) => <Result {...props} onClick={action('Result clicked')} />} />
   </>
 );
 

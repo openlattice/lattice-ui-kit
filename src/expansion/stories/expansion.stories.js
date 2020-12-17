@@ -26,8 +26,10 @@ export default {
               </a>
               <p>
                 This forwards
-                <code> &lt;ExpansionPanel /&gt; </code>,
-                <code> &lt;ExpansionPanelDetails /&gt; </code>, and
+                <code> &lt;ExpansionPanel /&gt; </code>
+                ,
+                <code> &lt;ExpansionPanelDetails /&gt; </code>
+                , and
                 <code> &lt;ExpansionPanelSummary /&gt; </code>
                 components from Material-Ui.
               </p>

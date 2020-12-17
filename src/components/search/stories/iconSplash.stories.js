@@ -13,10 +13,9 @@ export const FontAwesomeIconDefinition = () => (
   <Card>
     <CardSegment>
       <IconSplash
-        icon={faFingerprint}
-        caption="Keep your finger on the sensor a little longer"
-        size="3x"
-      />
+          icon={faFingerprint}
+          caption="Keep your finger on the sensor a little longer"
+          size="3x" />
     </CardSegment>
   </Card>
 );
@@ -29,9 +28,8 @@ export const IconRenderProp = () => (
   <Card>
     <CardSegment>
       <IconSplash
-        icon={(size) => <FontAwesomeIcon icon={faDiceD20} size={size} fixedWidth spin />}
-        caption="Rolling the dice..."
-      />
+          icon={(size) => <FontAwesomeIcon icon={faDiceD20} size={size} fixedWidth spin />}
+          caption="Rolling the dice..." />
     </CardSegment>
   </Card>
 );

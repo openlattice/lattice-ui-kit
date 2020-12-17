@@ -101,18 +101,16 @@ export const HeaderVariations = () => (
       <StoryAppHeaderWrapper appIcon={OpenLatticeLogo} logout={() => {}} user={mockUser} />
       <br />
       <StoryAppHeaderWrapper
-        appIcon={OpenLatticeLogo}
-        logout={() => {}}
-        organizationsSelect={mockOrgSelect}
-        user={mockUser}
-      />
+          appIcon={OpenLatticeLogo}
+          logout={() => {}}
+          organizationsSelect={mockOrgSelect}
+          user={mockUser} />
       <br />
       <StoryAppHeaderWrapper
-        appIcon={OpenLatticeLogo}
-        logout={() => {}}
-        organizationsSelect={mockOrgSelect}
-        user={mockUser}
-      >
+          appIcon={OpenLatticeLogo}
+          logout={() => {}}
+          organizationsSelect={mockOrgSelect}
+          user={mockUser}>
         <StoryAppNavigationWrapper>
           <NavLink to="/home" />
           <NavLink to="/tab1">Tab 1</NavLink>
@@ -132,11 +130,10 @@ export const NavigationDefault = () => (
     <HashRouter>
       <StoryAppContainerWrapper>
         <StoryAppHeaderWrapper
-          appIcon={OpenLatticeLogo}
-          logout={() => {}}
-          organizationsSelect={mockOrgSelect}
-          user={mockUser}
-        >
+            appIcon={OpenLatticeLogo}
+            logout={() => {}}
+            organizationsSelect={mockOrgSelect}
+            user={mockUser}>
           <StoryAppNavigationWrapper>
             <NavLink to="/home" />
             <NavLink to="/tab1">Data</NavLink>
@@ -156,11 +153,10 @@ export const NavigationDefault = () => (
         <br />
         <br />
         <StoryAppHeaderWrapper
-          appIcon={OpenLatticeLogo}
-          logout={() => {}}
-          organizationsSelect={mockOrgSelect}
-          user={mockUser}
-        />
+            appIcon={OpenLatticeLogo}
+            logout={() => {}}
+            organizationsSelect={mockOrgSelect}
+            user={mockUser} />
         <StoryAppNavigationWrapper>
           <NavLink to="/tab1">Data Management</NavLink>
           <NavLink to="/tab2">Administration</NavLink>
@@ -182,11 +178,10 @@ export const NavigationDrawer = () => (
   <HashRouter>
     <StoryAppContainerWrapper>
       <StoryAppHeaderWrapper
-        appIcon={OpenLatticeLogo}
-        logout={() => {}}
-        organizationsSelect={mockOrgSelect}
-        user={mockUser}
-      >
+          appIcon={OpenLatticeLogo}
+          logout={() => {}}
+          organizationsSelect={mockOrgSelect}
+          user={mockUser}>
         <StoryAppNavigationWrapper drawer>
           <NavLink to="/home" />
           <NavLink to="/tab1">Data</NavLink>
@@ -208,11 +203,10 @@ export const ExamplePage = () => (
   <HashRouter>
     <StoryAppContainerWrapper>
       <StoryAppHeaderWrapper
-        appIcon={OpenLatticeLogo}
-        logout={() => {}}
-        organizationsSelect={mockOrgSelect}
-        user={mockUser}
-      >
+          appIcon={OpenLatticeLogo}
+          logout={() => {}}
+          organizationsSelect={mockOrgSelect}
+          user={mockUser}>
         <StoryAppNavigationWrapper>
           <NavLink to="/home" />
           <NavLink to="/tab1">Tab 1</NavLink>

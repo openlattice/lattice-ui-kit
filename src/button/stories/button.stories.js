@@ -212,12 +212,16 @@ export const Buttons = () => (
       <ul>
         <li>
           <Typography variant="subtitle1" gutterBottom>
-            For buttons that that inherit styles, note that color contrast for{' '}
+            For buttons that that inherit styles, note that color contrast for
+            {' '}
             <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast">
               non-text elements
-            </a>{' '}
-            should be at least 3:1, and for{' '}
-            <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum">text elements</a>{' '}
+            </a>
+            {' '}
+            should be at least 3:1, and for
+            {' '}
+            <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum">text elements</a>
+            {' '}
             should be at least 4.5:1. This option will also fall back to the browsers default active
             and focus styles.
           </Typography>
@@ -232,18 +236,33 @@ export const Buttons = () => (
             accessibility API mapping for a label is the accessible name property.
           </p>
           <p>
-            Ensure that each <code>button</code> element and elements with{' '}
+            Ensure that each
+            {' '}
+            <code>button</code>
+            {' '}
+            element and elements with
+            {' '}
             {/* eslint-disable-next-line */}
             <code>role="button"</code> have one of the following characteristics:
           </p>
           <ul>
             <li>Inner text that is discernible to screen reader users.</li>
             <li>
-              Non-empty <code>aria-label</code> attribute.
+              Non-empty
+              {' '}
+              <code>aria-label</code>
+              {' '}
+              attribute.
             </li>
             <li>
-              <code>aria-labelledby</code> pointing to element with text which is discernible to
-              screen reader users (i.e. not <code>display: none;</code> or{' '}
+              <code>aria-labelledby</code>
+              {' '}
+              pointing to element with text which is discernible to
+              screen reader users (i.e. not
+              <code>display: none;</code>
+              {' '}
+              or
+              {' '}
               {/* eslint-disable-next-line */}
               <code>aria-hidden='true'</code>
               .)

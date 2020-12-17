@@ -27,7 +27,10 @@ export default {
                 https://material-ui.com/components/menus/
               </a>
               <p>
-                <code> &lt;Menu /&gt; </code>,<code> &lt;MenuItem /&gt; </code>, and
+                <code> &lt;Menu /&gt; </code>
+                ,
+                <code> &lt;MenuItem /&gt; </code>
+                , and
                 <code> &lt;MenuList /&gt; </code>
                 are forwarded from Material-Ui. Use
                 <code> &lt;NestedMenuItem /&gt; </code>
@@ -63,31 +66,29 @@ export const Default = () => {
   return (
     <div>
       <Button
-        aria-controls={open ? 'button-action-menu' : undefined}
-        aria-expanded={open ? 'true' : undefined}
-        aria-haspopup="menu"
-        aria-label="select additional action"
-        color="primary"
-        onClick={handleToggle}
-        ref={anchorRef}
-      >
+          aria-controls={open ? 'button-action-menu' : undefined}
+          aria-expanded={open ? 'true' : undefined}
+          aria-haspopup="menu"
+          aria-label="select additional action"
+          color="primary"
+          onClick={handleToggle}
+          ref={anchorRef}>
         Open Menu
       </Button>
       <Menu
-        elevation={4}
-        open={open}
-        onClose={handleClose}
-        anchorEl={anchorRef.current}
-        getContentAnchorEl={null}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'right',
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
-        }}
-      >
+          elevation={4}
+          open={open}
+          onClose={handleClose}
+          anchorEl={anchorRef.current}
+          getContentAnchorEl={null}
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'right',
+          }}
+          transformOrigin={{
+            vertical: 'top',
+            horizontal: 'right',
+          }}>
         {options.map((option) => (
           <MenuItem key={option} onClick={action('Click MenuItem')}>
             {option}
@@ -124,31 +125,29 @@ export const NestedMenu = () => {
         Create Report
       </Button>
       <IconButton
-        variant="text"
-        aria-controls={open ? 'button-action-menu' : undefined}
-        aria-expanded={open ? 'true' : undefined}
-        aria-label="select additional action"
-        aria-haspopup="menu"
-        onClick={handleToggle}
-        ref={anchorRef}
-      >
+          variant="text"
+          aria-controls={open ? 'button-action-menu' : undefined}
+          aria-expanded={open ? 'true' : undefined}
+          aria-label="select additional action"
+          aria-haspopup="menu"
+          onClick={handleToggle}
+          ref={anchorRef}>
         <MoreVertIcon />
       </IconButton>
       <Menu
-        elevation={4}
-        open={open}
-        onClose={handleClose}
-        anchorEl={anchorRef.current}
-        getContentAnchorEl={null}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'right',
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
-        }}
-      >
+          elevation={4}
+          open={open}
+          onClose={handleClose}
+          anchorEl={anchorRef.current}
+          getContentAnchorEl={null}
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'right',
+          }}
+          transformOrigin={{
+            vertical: 'top',
+            horizontal: 'right',
+          }}>
         {options.map((option) => (
           <MenuItem key={option} onClick={action('Click MenuItem')}>
             {option}

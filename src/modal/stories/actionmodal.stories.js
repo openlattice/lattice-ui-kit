@@ -23,19 +23,20 @@ export default {
 
 export const BasicActionModal = () => (
   <ActionModalExample>
-    {({ closeModal, isVisible, onClickPrimary, onClickSecondary, requestState, openModal }) => (
+    {({
+      closeModal, isVisible, onClickPrimary, onClickSecondary, requestState, openModal
+    }) => (
       <>
         <ActionModal
-          isVisible={isVisible}
-          onClickPrimary={onClickPrimary}
-          onClickSecondary={onClickSecondary}
-          onClose={closeModal}
-          requestState={requestState}
-          shouldStretchButtons
-          textPrimary="Simulate Success"
-          textSecondary="Simulate Failure"
-          textTitle="Action Action Action"
-        />
+            isVisible={isVisible}
+            onClickPrimary={onClickPrimary}
+            onClickSecondary={onClickSecondary}
+            onClose={closeModal}
+            requestState={requestState}
+            shouldStretchButtons
+            textPrimary="Simulate Success"
+            textSecondary="Simulate Failure"
+            textTitle="Action Action Action" />
         <Button onClick={openModal}>Show Modal</Button>
       </>
     )}
@@ -59,28 +60,27 @@ export const DeleteOrgExample = () => (
     }) => (
       <CardSegment vertical>
         <ActionModal
-          isVisible={isVisible}
-          onClickPrimary={deleteThing}
-          onClickSecondary={closeModal}
-          onClose={closeModal}
-          requestState={requestState}
-          requestStateComponents={{
-            STANDBY: (
-              <>
-                <span>Are you absolutely sure you want to delete this thing?</span>
-                <br />
-                <span>To confirm, please type &quot;OpenLattice&quot;.</span>
-                <Input invalid={!isValidConfirmation} onChange={handleOnChangeDeleteConfirmation} />
-              </>
-            ),
-            SUCCESS: <span>Success! The thing has been deleted.</span>,
-            FAILURE: <span>Delete failed. Please try again.</span>,
-          }}
-          shouldBeCentered={false}
-          textPrimary="Yes, delete"
-          textSecondary="No, cancel"
-          textTitle="Delete Thing"
-        />
+            isVisible={isVisible}
+            onClickPrimary={deleteThing}
+            onClickSecondary={closeModal}
+            onClose={closeModal}
+            requestState={requestState}
+            requestStateComponents={{
+              STANDBY: (
+                <>
+                  <span>Are you absolutely sure you want to delete this thing?</span>
+                  <br />
+                  <span>To confirm, please type &quot;OpenLattice&quot;.</span>
+                  <Input invalid={!isValidConfirmation} onChange={handleOnChangeDeleteConfirmation} />
+                </>
+              ),
+              SUCCESS: <span>Success! The thing has been deleted.</span>,
+              FAILURE: <span>Delete failed. Please try again.</span>,
+            }}
+            shouldBeCentered={false}
+            textPrimary="Yes, delete"
+            textSecondary="No, cancel"
+            textTitle="Delete Thing" />
         <Button mode="primary" onClick={() => openModal(true)}>
           Delete Thing (success)
         </Button>

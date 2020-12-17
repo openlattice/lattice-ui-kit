@@ -19,30 +19,27 @@ export const Uncontrolled = () => (
     <Card>
       <CardSegment>
         <form
-          style={{
-            display: 'flex',
-            flex: '0 1 100%',
-            flexDirection: 'column',
-          }}
-        >
+            style={{
+              display: 'flex',
+              flex: '0 1 100%',
+              flexDirection: 'column',
+            }}>
           <ChoiceGroup>
             <Checkbox id="story-default" label="Default" />
             <Checkbox id="story-defaultchecked" label="Default Checked" defaultChecked />
             <Checkbox id="story-defaultcheckedreadonly" label="Checked readOnly" checked readOnly />
             <Checkbox id="story-disabled" label="Disabled" disabled />
             <Checkbox
-              id="story-disabledchecked"
-              label="Disabled (checked)"
-              disabled
-              defaultChecked
-            />
+                id="story-disabledchecked"
+                label="Disabled (checked)"
+                disabled
+                defaultChecked />
             <Checkbox
-              id="story-eventhandlers"
-              label="Event handlers (see Actions tab)"
-              onChange={action('onChange')}
-              onBlur={action('onBlur')}
-              onFocus={action('onFocus')}
-            />
+                id="story-eventhandlers"
+                label="Event handlers (see Actions tab)"
+                onChange={action('onChange')}
+                onBlur={action('onBlur')}
+                onFocus={action('onFocus')} />
           </ChoiceGroup>
         </form>
       </CardSegment>
@@ -58,51 +55,45 @@ export const Button = () => (
     <Card>
       <CardSegment vertical>
         <form
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-          }}
-        >
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}>
           <Label>Showcase</Label>
           <ChoiceGroup row>
             <Checkbox mode="button" id="story-default" label="Default" />
             <Checkbox
-              mode="button"
-              id="story-defaultchecked"
-              label="Default Checked"
-              defaultChecked
-            />
+                mode="button"
+                id="story-defaultchecked"
+                label="Default Checked"
+                defaultChecked />
             <Checkbox
-              mode="button"
-              id="story-defaultcheckedreadonly"
-              label="Checked readOnly"
-              checked
-              readOnly
-            />
+                mode="button"
+                id="story-defaultcheckedreadonly"
+                label="Checked readOnly"
+                checked
+                readOnly />
             <Checkbox mode="button" id="story-disabled" label="Disabled" disabled />
             <Checkbox
-              mode="button"
-              id="story-disabledchecked"
-              label="Disabled (checked)"
-              disabled
-              defaultChecked
-            />
+                mode="button"
+                id="story-disabledchecked"
+                label="Disabled (checked)"
+                disabled
+                defaultChecked />
             <Checkbox
-              mode="button"
-              id="story-eventhandlers"
-              label="Event handlers (see Actions tab)"
-              onChange={action('onChange')}
-              onBlur={action('onBlur')}
-              onFocus={action('onFocus')}
-            />
+                mode="button"
+                id="story-eventhandlers"
+                label="Event handlers (see Actions tab)"
+                onChange={action('onChange')}
+                onBlur={action('onBlur')}
+                onFocus={action('onFocus')} />
           </ChoiceGroup>
         </form>
         <form
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-          }}
-        >
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}>
           <Label>Group</Label>
           <ChoiceGroup row>
             <Checkbox mode="button" id="group-1" label="Out of Touch with Reality" />
