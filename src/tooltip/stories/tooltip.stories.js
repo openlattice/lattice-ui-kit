@@ -3,9 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { faInfoCircle } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { storiesOf } from '@storybook/react';
 
-import Tooltip from '../index';
+import Tooltip from '..';
 import { Card, CardSegment } from '../../layout';
 
 const MarginWrapper = styled.span`
@@ -20,31 +19,34 @@ const InfoIcon = React.forwardRef((props, ref) => (
   </span>
 ));
 
-storiesOf('Tooltip', module)
-  .addDecorator((storyFn) => (
-    <div>
-      <a href="https://material-ui.com/components/tooltips/#tooltip">https://material-ui.com/components/tooltips/#tooltip</a>
-      <p>
-        This forwards the Tooltip component from Material-Ui.
-      </p>
-      <p>
-        <strong>Children must be able to accept a ref.</strong>
-      </p>
-      {storyFn()}
-    </div>
-  ))
-  .add('Info icon', () => (
-    <Card>
-      <CardSegment padding="sm" vertical={false}>
-        <span>Hover for information</span>
-        <MarginWrapper>
-          <Tooltip
-              arrow
-              placement="top"
-              title="Information">
-            <InfoIcon />
-          </Tooltip>
-        </MarginWrapper>
-      </CardSegment>
-    </Card>
-  ));
+export default {
+  title: 'Tooltip',
+
+  decorators: [
+    (storyFn) => (
+      <div>
+        <a href="https://material-ui.com/components/tooltips/#tooltip">
+          https://material-ui.com/components/tooltips/#tooltip
+        </a>
+        <p>This forwards the Tooltip component from Material-Ui.</p>
+        <p>
+          <strong>Children must be able to accept a ref.</strong>
+        </p>
+        {storyFn()}
+      </div>
+    ),
+  ],
+};
+
+export const Icon = () => (
+  <Card>
+    <CardSegment padding="sm" vertical={false}>
+      <span>Hover for information</span>
+      <MarginWrapper>
+        <Tooltip arrow placement="top" title="Information">
+          <InfoIcon />
+        </Tooltip>
+      </MarginWrapper>
+    </CardSegment>
+  </Card>
+);
