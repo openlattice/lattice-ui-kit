@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Switch from '../components/Switch';
+import Switch from '..';
 
 export default {
   title: 'Switch',
@@ -9,4 +9,8 @@ export default {
 
 export const Default = () => (
   <Switch />
+);
+
+export const Disabled = () => (
+  <Switch disabled />
 );
