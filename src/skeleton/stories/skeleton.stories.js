@@ -6,9 +6,10 @@ import Skeleton from '../index';
 import { Card, CardHeader, CardSegment } from '../../layout';
 
 const Row = styled.div`
+  align-items: ${(props) => (props.align ? props.align : null)};
   display: flex;
   flex: 1 1 100%;
-  align-items: ${(props) => (props.align ? props.align : null)};
+  width: 100%;
   > *:not(:first-child) {
     flex: 1;
     margin-left: 10px;
@@ -36,7 +37,7 @@ export const DefaultAnimationPulse = () => (
     <CardHeader padding="sm">
       <Row align="center">
         <Skeleton variant="circle" width={40} height={40} />
-        <Skeleton height={27} width="40%" />
+        <Skeleton variant="text" />
       </Row>
     </CardHeader>
     <CardSegment vertical padding="sm">
