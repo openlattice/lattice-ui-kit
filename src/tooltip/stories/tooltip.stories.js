@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { faInfoCircle } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Tooltip from '../index';
+import Tooltip from '..';
 import { Card, CardSegment } from '../../layout';
 
 const MarginWrapper = styled.span`
@@ -38,7 +38,7 @@ export default {
   ],
 };
 
-export const _InfoIcon = () => (
+export const Icon = () => (
   <Card>
     <CardSegment padding="sm" vertical={false}>
       <span>Hover for information</span>
@@ -50,7 +50,3 @@ export const _InfoIcon = () => (
     </CardSegment>
   </Card>
 );
-
-_InfoIcon.story = {
-  name: 'Info icon',
-};
