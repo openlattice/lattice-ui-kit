@@ -62,7 +62,7 @@ Basic.story = {
   name: 'basic',
 };
 
-export const _CustomContent = () => (
+export const Custom = () => (
   <div>
     <Typography variant="h1" gutterBottom>
       Timeline
@@ -122,6 +122,6 @@ export const _CustomContent = () => (
   </div>
 );
 
-_CustomContent.story = {
+Custom.story = {
   name: 'custom content',
 };
