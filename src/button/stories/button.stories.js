@@ -7,10 +7,10 @@ import { faDrone, faMapMarkerPlus, faSpaceShuttle } from '@fortawesome/pro-solid
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from '@material-ui/lab';
 
+import Typography from '../../typography';
 import { useBoolean } from '../../hooks';
 import { Card, CardSegment } from '../../layout';
 import { Button, IconButton } from '..';
-import Typography from '../../typography';
 
 const ButtonRow = styled.div`
   margin: 5px 0;
@@ -264,7 +264,7 @@ export const Buttons = () => (
   </Card>
 );
 
-export const _IconButton = () => {
+export const Icon = () => {
   const [isLoading, setTrue, setFalse] = useBoolean(false);
   const handleOnClick = () => {
     setTrue();
@@ -292,20 +292,18 @@ export const _IconButton = () => {
         <H2>Pending State</H2>
         <ButtonRow>
           <IconButton
-            aria-label="Primary Icon Button"
-            color="primary"
-            isLoading={isLoading}
-            onClick={handleOnClick}
-            size="small"
-          >
+              aria-label="Primary Icon Button"
+              color="primary"
+              isLoading={isLoading}
+              onClick={handleOnClick}
+              size="small">
             <FontAwesomeIcon fixedWidth icon={faSpaceShuttle} />
           </IconButton>
           <IconButton
-            aria-label="Primary Icon Button"
-            color="primary"
-            isLoading={isLoading}
-            onClick={handleOnClick}
-          >
+              aria-label="Primary Icon Button"
+              color="primary"
+              isLoading={isLoading}
+              onClick={handleOnClick}>
             <FontAwesomeIcon fixedWidth icon={faSpaceShuttle} />
           </IconButton>
         </ButtonRow>
@@ -342,21 +340,24 @@ export const _IconButton = () => {
   );
 };
 
-_IconButton.story = {
-  name: 'IconButton',
+Icon.story = {
+  name: 'IconButton'
 };
 
-export const _SpeedDial = () => {
+export const Speed = () => {
   const [isOpen, setOpen, setClose] = useBoolean(false);
   return (
     <SpeedDial
-      ariaLabel="Speed Dial Actions"
-      icon={<SpeedDialIcon />}
-      open={isOpen}
-      onOpen={setOpen}
-      onClose={setClose}
-    >
+        ariaLabel="Speed Dial Actions"
+        icon={<SpeedDialIcon />}
+        open={isOpen}
+        onOpen={setOpen}
+        onClose={setClose}>
       <SpeedDialAction tooltipTitle="Create" icon={NewLocationIcon} />
     </SpeedDial>
   );
+};
+
+Speed.story = {
+  name: 'SpeedDial'
 };
