@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.39.2
+ * lattice-ui-kit - v0.40.0
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -18235,6 +18235,7 @@ __webpack_require__.d(__webpack_exports__, "DateTimePicker", function() { return
 __webpack_require__.d(__webpack_exports__, "Breadcrumbs", function() { return /* reexport */ breadcrumbs; });
 __webpack_require__.d(__webpack_exports__, "Skeleton", function() { return /* reexport */ skeleton; });
 __webpack_require__.d(__webpack_exports__, "Tooltip", function() { return /* reexport */ tooltip; });
+__webpack_require__.d(__webpack_exports__, "Switch", function() { return /* reexport */ src_switch; });
 __webpack_require__.d(__webpack_exports__, "Typography", function() { return /* reexport */ src_typography; });
 __webpack_require__.d(__webpack_exports__, "ExpansionPanel", function() { return /* reexport */ components_ExpansionPanel; });
 __webpack_require__.d(__webpack_exports__, "ExpansionPanelDetails", function() { return /* reexport */ components_ExpansionPanelDetails; });
@@ -38499,7 +38500,7 @@ var Checkbox_Checkbox = function Checkbox(_ref) {
   })), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_CheckboxIndicator, {
     mode: mode,
     onClick: utils_stopPropagation
-  }, mode === 'button' && label))), mode !== 'button' && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceText, null, label));
+  }, mode === 'button' && label))), mode !== 'button' && label && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceText, null, label));
 };
 /* eslint-enable */
 
@@ -52062,7 +52063,7 @@ var cleanValue = function cleanValue(value) {
 // Handle Input Change
 // ==============================
 
-function handleInputChange(inputValue, actionMeta, onInputChange) {
+function utils_06b0d5a4_browser_esm_handleInputChange(inputValue, actionMeta, onInputChange) {
   if (onInputChange) {
     var newValue = onInputChange(inputValue, actionMeta);
     if (typeof newValue === 'string') return newValue;
@@ -64801,6 +64802,352 @@ var Skeleton_Skeleton = /*#__PURE__*/external_root_React_commonjs2_react_commonj
 // CONCATENATED MODULE: ./src/tooltip/index.js
 
 /* harmony default export */ var tooltip = (esm_Tooltip_Tooltip);
+// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/internal/SwitchBase.js
+
+
+
+
+
+
+
+
+
+
+
+var SwitchBase_styles = {
+  root: {
+    padding: 9
+  },
+  checked: {},
+  disabled: {},
+  input: {
+    cursor: 'inherit',
+    position: 'absolute',
+    opacity: 0,
+    width: '100%',
+    height: '100%',
+    top: 0,
+    left: 0,
+    margin: 0,
+    padding: 0,
+    zIndex: 1
+  }
+};
+/**
+ * @ignore - internal component.
+ */
+
+var SwitchBase_SwitchBase = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function SwitchBase(props, ref) {
+  var autoFocus = props.autoFocus,
+      checkedProp = props.checked,
+      checkedIcon = props.checkedIcon,
+      classes = props.classes,
+      className = props.className,
+      defaultChecked = props.defaultChecked,
+      disabledProp = props.disabled,
+      icon = props.icon,
+      id = props.id,
+      inputProps = props.inputProps,
+      inputRef = props.inputRef,
+      name = props.name,
+      onBlur = props.onBlur,
+      onChange = props.onChange,
+      onFocus = props.onFocus,
+      readOnly = props.readOnly,
+      required = props.required,
+      tabIndex = props.tabIndex,
+      type = props.type,
+      value = props.value,
+      other = _objectWithoutProperties(props, ["autoFocus", "checked", "checkedIcon", "classes", "className", "defaultChecked", "disabled", "icon", "id", "inputProps", "inputRef", "name", "onBlur", "onChange", "onFocus", "readOnly", "required", "tabIndex", "type", "value"]);
+
+  var _useControlled = useControlled({
+    controlled: checkedProp,
+    default: Boolean(defaultChecked),
+    name: 'SwitchBase',
+    state: 'checked'
+  }),
+      _useControlled2 = _slicedToArray(_useControlled, 2),
+      checked = _useControlled2[0],
+      setCheckedState = _useControlled2[1];
+
+  var muiFormControl = useFormControl_useFormControl();
+
+  var handleFocus = function handleFocus(event) {
+    if (onFocus) {
+      onFocus(event);
+    }
+
+    if (muiFormControl && muiFormControl.onFocus) {
+      muiFormControl.onFocus(event);
+    }
+  };
+
+  var handleBlur = function handleBlur(event) {
+    if (onBlur) {
+      onBlur(event);
+    }
+
+    if (muiFormControl && muiFormControl.onBlur) {
+      muiFormControl.onBlur(event);
+    }
+  };
+
+  var handleInputChange = function handleInputChange(event) {
+    var newChecked = event.target.checked;
+    setCheckedState(newChecked);
+
+    if (onChange) {
+      // TODO v5: remove the second argument.
+      onChange(event, newChecked);
+    }
+  };
+
+  var disabled = disabledProp;
+
+  if (muiFormControl) {
+    if (typeof disabled === 'undefined') {
+      disabled = muiFormControl.disabled;
+    }
+  }
+
+  var hasLabelFor = type === 'checkbox' || type === 'radio';
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](esm_IconButton_IconButton, _extends({
+    component: "span",
+    className: clsx_m(classes.root, className, checked && classes.checked, disabled && classes.disabled),
+    disabled: disabled,
+    tabIndex: null,
+    role: undefined,
+    onFocus: handleFocus,
+    onBlur: handleBlur,
+    ref: ref
+  }, other), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("input", _extends({
+    autoFocus: autoFocus,
+    checked: checkedProp,
+    defaultChecked: defaultChecked,
+    className: classes.input,
+    disabled: disabled,
+    id: hasLabelFor && id,
+    name: name,
+    onChange: handleInputChange,
+    readOnly: readOnly,
+    ref: inputRef,
+    required: required,
+    tabIndex: tabIndex,
+    type: type,
+    value: value
+  }, inputProps)), checked ? checkedIcon : icon);
+}); // NB: If changed, please update Checkbox, Switch and Radio
+// so that the API documentation is updated.
+
+ false ? undefined : void 0;
+/* harmony default export */ var internal_SwitchBase = (styles_withStyles(SwitchBase_styles, {
+  name: 'PrivateSwitchBase'
+})(SwitchBase_SwitchBase));
+// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Switch/Switch.js
+
+
+// @inheritedComponent IconButton
+
+
+
+
+
+
+
+
+var Switch_styles = function styles(theme) {
+  return {
+    /* Styles applied to the root element. */
+    root: {
+      display: 'inline-flex',
+      width: 34 + 12 * 2,
+      height: 14 + 12 * 2,
+      overflow: 'hidden',
+      padding: 12,
+      boxSizing: 'border-box',
+      position: 'relative',
+      flexShrink: 0,
+      zIndex: 0,
+      // Reset the stacking context.
+      verticalAlign: 'middle',
+      // For correct alignment with the text.
+      '@media print': {
+        colorAdjust: 'exact'
+      }
+    },
+
+    /* Styles applied to the root element if `edge="start"`. */
+    edgeStart: {
+      marginLeft: -8
+    },
+
+    /* Styles applied to the root element if `edge="end"`. */
+    edgeEnd: {
+      marginRight: -8
+    },
+
+    /* Styles applied to the internal `SwitchBase` component's `root` class. */
+    switchBase: {
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      zIndex: 1,
+      // Render above the focus ripple.
+      color: theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[400],
+      transition: theme.transitions.create(['left', 'transform'], {
+        duration: theme.transitions.duration.shortest
+      }),
+      '&$checked': {
+        transform: 'translateX(20px)'
+      },
+      '&$disabled': {
+        color: theme.palette.type === 'light' ? theme.palette.grey[400] : theme.palette.grey[800]
+      },
+      '&$checked + $track': {
+        opacity: 0.5
+      },
+      '&$disabled + $track': {
+        opacity: theme.palette.type === 'light' ? 0.12 : 0.1
+      }
+    },
+
+    /* Styles applied to the internal SwitchBase component's root element if `color="primary"`. */
+    colorPrimary: {
+      '&$checked': {
+        color: theme.palette.primary.main,
+        '&:hover': {
+          backgroundColor: fade(theme.palette.primary.main, theme.palette.action.hoverOpacity),
+          '@media (hover: none)': {
+            backgroundColor: 'transparent'
+          }
+        }
+      },
+      '&$disabled': {
+        color: theme.palette.type === 'light' ? theme.palette.grey[400] : theme.palette.grey[800]
+      },
+      '&$checked + $track': {
+        backgroundColor: theme.palette.primary.main
+      },
+      '&$disabled + $track': {
+        backgroundColor: theme.palette.type === 'light' ? theme.palette.common.black : theme.palette.common.white
+      }
+    },
+
+    /* Styles applied to the internal SwitchBase component's root element if `color="secondary"`. */
+    colorSecondary: {
+      '&$checked': {
+        color: theme.palette.secondary.main,
+        '&:hover': {
+          backgroundColor: fade(theme.palette.secondary.main, theme.palette.action.hoverOpacity),
+          '@media (hover: none)': {
+            backgroundColor: 'transparent'
+          }
+        }
+      },
+      '&$disabled': {
+        color: theme.palette.type === 'light' ? theme.palette.grey[400] : theme.palette.grey[800]
+      },
+      '&$checked + $track': {
+        backgroundColor: theme.palette.secondary.main
+      },
+      '&$disabled + $track': {
+        backgroundColor: theme.palette.type === 'light' ? theme.palette.common.black : theme.palette.common.white
+      }
+    },
+
+    /* Styles applied to the root element if `size="small"`. */
+    sizeSmall: {
+      width: 40,
+      height: 24,
+      padding: 7,
+      '& $thumb': {
+        width: 16,
+        height: 16
+      },
+      '& $switchBase': {
+        padding: 4,
+        '&$checked': {
+          transform: 'translateX(16px)'
+        }
+      }
+    },
+
+    /* Pseudo-class applied to the internal `SwitchBase` component's `checked` class. */
+    checked: {},
+
+    /* Pseudo-class applied to the internal SwitchBase component's disabled class. */
+    disabled: {},
+
+    /* Styles applied to the internal SwitchBase component's input element. */
+    input: {
+      left: '-100%',
+      width: '300%'
+    },
+
+    /* Styles used to create the thumb passed to the internal `SwitchBase` component `icon` prop. */
+    thumb: {
+      boxShadow: theme.shadows[1],
+      backgroundColor: 'currentColor',
+      width: 20,
+      height: 20,
+      borderRadius: '50%'
+    },
+
+    /* Styles applied to the track element. */
+    track: {
+      height: '100%',
+      width: '100%',
+      borderRadius: 14 / 2,
+      zIndex: -1,
+      transition: theme.transitions.create(['opacity', 'background-color'], {
+        duration: theme.transitions.duration.shortest
+      }),
+      backgroundColor: theme.palette.type === 'light' ? theme.palette.common.black : theme.palette.common.white,
+      opacity: theme.palette.type === 'light' ? 0.38 : 0.3
+    }
+  };
+};
+var Switch_Switch = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Switch(props, ref) {
+  var classes = props.classes,
+      className = props.className,
+      _props$color = props.color,
+      color = _props$color === void 0 ? 'secondary' : _props$color,
+      _props$edge = props.edge,
+      edge = _props$edge === void 0 ? false : _props$edge,
+      _props$size = props.size,
+      size = _props$size === void 0 ? 'medium' : _props$size,
+      other = _objectWithoutProperties(props, ["classes", "className", "color", "edge", "size"]);
+
+  var icon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
+    className: classes.thumb
+  });
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
+    className: clsx_m(classes.root, className, {
+      'start': classes.edgeStart,
+      'end': classes.edgeEnd
+    }[edge], size === "small" && classes["size".concat(capitalize(size))])
+  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](internal_SwitchBase, _extends({
+    type: "checkbox",
+    icon: icon,
+    checkedIcon: icon,
+    classes: {
+      root: clsx_m(classes.switchBase, classes["color".concat(capitalize(color))]),
+      input: classes.input,
+      checked: classes.checked,
+      disabled: classes.disabled
+    },
+    ref: ref
+  }, other)), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
+    className: classes.track
+  }));
+});
+ false ? undefined : void 0;
+/* harmony default export */ var esm_Switch_Switch = (styles_withStyles(Switch_styles, {
+  name: 'MuiSwitch'
+})(Switch_Switch));
+// CONCATENATED MODULE: ./src/switch/index.js
+
+/* harmony default export */ var src_switch = (esm_Switch_Switch);
 // CONCATENATED MODULE: ./src/typography/src/components/Typography.js
 
 
@@ -65657,6 +66004,61 @@ var lightTheme = styles_createMuiTheme({
         visibility: 'hidden'
       }
     },
+    MuiSwitch: {
+      root: {
+        width: 42,
+        height: 24,
+        padding: 0,
+        display: 'flex'
+      },
+      colorPrimary: {
+        '&$checked': {
+          color: 'white'
+        },
+        '&$disabled': {
+          '& + $track': {
+            opacity: 1,
+            backgroundColor: NEUTRAL.N200,
+            borderColor: NEUTRAL.N200
+          }
+        }
+      },
+      switchBase: {
+        padding: 4,
+        color: 'white',
+        '&$checked': {
+          transform: 'translateX(18px)',
+          color: 'white',
+          '& + $track': {
+            opacity: 1,
+            backgroundColor: PURPLE.P300,
+            borderColor: PURPLE.P300
+          }
+        },
+        '&$disabled': {
+          backgroundColor: NEUTRAL.N200,
+          color: 'white',
+          '& + $track': {
+            opacity: 1,
+            backgroundColor: NEUTRAL.N200,
+            borderColor: NEUTRAL.N200
+          }
+        }
+      },
+      thumb: {
+        width: 16,
+        height: 16,
+        boxShadow: 'none',
+        color: 'white'
+      },
+      track: {
+        border: "1px solid ".concat(NEUTRAL.N500),
+        borderRadius: 24 / 2,
+        opacity: 1,
+        backgroundColor: NEUTRAL.N500
+      },
+      checked: {}
+    },
     MuiTouchRipple: {
       childLeaving: {
         animationDuration: '250ms'
@@ -65754,7 +66156,19 @@ var lightTheme = styles_createMuiTheme({
     background: {
       header: NEUTRAL.N50
     },
-    divider: NEUTRAL.N100
+    divider: NEUTRAL.N100,
+    grey: {
+      50: NEUTRAL.N50,
+      100: NEUTRAL.N100,
+      200: NEUTRAL.N200,
+      300: NEUTRAL.N300,
+      400: NEUTRAL.N400,
+      500: NEUTRAL.N500,
+      600: NEUTRAL.N600,
+      700: NEUTRAL.N700,
+      800: NEUTRAL.N800,
+      900: NEUTRAL.N900
+    }
   },
   props: {
     MuiFormControl: {
@@ -65766,6 +66180,9 @@ var lightTheme = styles_createMuiTheme({
     },
     MuiFilledInput: {
       disableUnderline: true
+    },
+    MuiSwitch: {
+      color: 'primary'
     }
   },
   typography: {
@@ -66037,6 +66454,61 @@ var darkTheme = styles_createMuiTheme({
         visibility: 'hidden'
       }
     },
+    MuiSwitch: {
+      root: {
+        width: 42,
+        height: 24,
+        padding: 0,
+        display: 'flex'
+      },
+      colorPrimary: {
+        '&$checked': {
+          color: 'white'
+        },
+        '&$disabled': {
+          '& + $track': {
+            opacity: 1,
+            backgroundColor: NEUTRAL.N200,
+            borderColor: NEUTRAL.N200
+          }
+        }
+      },
+      switchBase: {
+        padding: 4,
+        color: 'white',
+        '&$checked': {
+          transform: 'translateX(18px)',
+          color: 'white',
+          '& + $track': {
+            opacity: 1,
+            backgroundColor: PURPLE.P300,
+            borderColor: PURPLE.P300
+          }
+        },
+        '&$disabled': {
+          backgroundColor: NEUTRAL.N200,
+          color: 'white',
+          '& + $track': {
+            opacity: 1,
+            backgroundColor: NEUTRAL.N200,
+            borderColor: NEUTRAL.N200
+          }
+        }
+      },
+      thumb: {
+        width: 16,
+        height: 16,
+        boxShadow: 'none',
+        color: 'white'
+      },
+      track: {
+        border: "1px solid ".concat(NEUTRAL.N500),
+        borderRadius: 24 / 2,
+        opacity: 1,
+        backgroundColor: NEUTRAL.N500
+      },
+      checked: {}
+    },
     MuiTouchRipple: {
       child: {
         borderRadius: 0
@@ -66133,6 +66605,18 @@ var darkTheme = styles_createMuiTheme({
     },
     background: {
       header: '#333'
+    },
+    grey: {
+      50: NEUTRAL.N50,
+      100: NEUTRAL.N100,
+      200: NEUTRAL.N200,
+      300: NEUTRAL.N300,
+      400: NEUTRAL.N400,
+      500: NEUTRAL.N500,
+      600: NEUTRAL.N600,
+      700: NEUTRAL.N700,
+      800: NEUTRAL.N800,
+      900: NEUTRAL.N900
     }
   },
   props: {
@@ -66145,6 +66629,9 @@ var darkTheme = styles_createMuiTheme({
     },
     MuiFilledInput: {
       disableUnderline: true
+    },
+    MuiSwitch: {
+      color: 'primary'
     }
   },
   typography: {
@@ -66163,7 +66650,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.39.2";
+var src_version = "v0.40.0";
 
 
 
@@ -66187,6 +66674,7 @@ var src_version = "v0.39.2";
 
 
  // Material-ui
+
 
 
 
