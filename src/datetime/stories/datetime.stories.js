@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 
 import { action } from '@storybook/addon-actions';
-import { DateTime } from 'luxon';
+import { DateTime as LuxonDateTime } from 'luxon';
 
 import Label from '../../label';
 import {
-  Card, CardHeader, CardSegment, CardStack
+  Card,
+  CardHeader,
+  CardSegment,
+  CardStack
 } from '../../layout';
 import { DatePicker, DateTimePicker, TimePicker } from '../index';
 
@@ -125,8 +128,8 @@ export const Time = ({ isDark }) => {
   );
 };
 
-export const _DateTime = ({ isDark }) => {
-  const [selectedDateTime, setDateTime] = useState(DateTime.local().toISO());
+export const DateTime = ({ isDark }) => {
+  const [selectedDateTime, setDateTime] = useState(LuxonDateTime.local().toISO());
   const bgColor = isDark ? '#1F1E24' : undefined;
   return (
     <div>
@@ -178,8 +181,4 @@ export const _DateTime = ({ isDark }) => {
       </CardStack>
     </div>
   );
-};
-
-_DateTime.story = {
-  name: 'DateTime',
 };
