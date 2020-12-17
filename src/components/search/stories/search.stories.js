@@ -1,12 +1,14 @@
 /* eslint-disable react/jsx-props-no-spreading */
 
 import React from 'react';
-import { Map } from 'immutable';
+
 import { action } from '@storybook/addon-actions';
+import { Map } from 'immutable';
 
 import SearchContainer from './components/SearchContainer';
-import Search from '../src/components/Search';
+
 import Result from '../src/components/Result';
+import Search from '../src/components/Search';
 import SearchResults from '../src/components/SearchResults';
 import {
   mockFilterFields,
@@ -97,7 +99,7 @@ SearchWithCustomResultComponent.story = {
   name: 'Search with custom resultComponent',
 };
 
-export const _SearchContainer = () => (
+export const Container = () => (
   <>
     <h1>Search Fields</h1>
     <SearchContainer />
