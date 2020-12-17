@@ -59,28 +59,6 @@ export const UseRawValues = () => (
   </>
 );
 
-UseRawValues.story = {
-  name: 'useRawValues',
-};
-
-export const CreatableSelect = () => (
-  <>
-    <h1>Creatable Select</h1>
-    <Creatable options={stateOptions} onChange={action('Single creatable changed')} />
-    <h1>Creatable Multiple Select</h1>
-    <Creatable options={stateOptions} onChange={action('Multiple creatable changed')} isMulti />
-    <h1>Creatable Multiple Input (hideMenu)</h1>
-    <Creatable hideMenu isMulti options={stateOptions} onChange={action('Borderless changed')} />
-  </>
-);
-
-export const _CheckboxSelect = () => (
-  <>
-    <h1>Checkbox Select</h1>
-    <CheckboxSelect options={stateOptions} onChange={action('CheckboxSelect changed')} />
-  </>
-);
-
 export const Appearances = () => (
   <>
     <h2>borderless</h2>
@@ -113,7 +91,3 @@ export const DisabledOptions = () => (
         onChange={action('Single select changed')} />
   </>
 );
-
-DisabledOptions.story = {
-  name: 'Disabled options',
-};
