@@ -99,10 +99,6 @@ input:checked ~ .c4:after {
   cursor: pointer;
 }
 
-.c5 {
-  margin-left: 10px;
-}
-
 .c3 {
   height: 100%;
   left: 0;
@@ -330,37 +326,6 @@ input:checked ~ .c4:after {
               </span>
             </StyledComponent>
           </ChoiceWrappers__ChoiceWrapper>
-          <ChoiceText>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "ChoiceText-sc-1qnriny-0",
-                    "isStatic": false,
-                    "lastClassName": "c5",
-                    "rules": Array [
-                      "margin-left:10px;",
-                    ],
-                  },
-                  "displayName": "ChoiceText",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "ChoiceText-sc-1qnriny-0",
-                  "target": "span",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <span
-                className="c5"
-              />
-            </StyledComponent>
-          </ChoiceText>
         </label>
       </StyledComponent>
     </ChoiceLabel>
