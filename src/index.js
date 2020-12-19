@@ -141,6 +141,7 @@ export { default as Breadcrumbs } from './breadcrumbs';
 export { default as Skeleton } from './skeleton';
 export { default as Tooltip } from './tooltip';
 export { default as Switch } from './switch';
+export { default as Chip } from './chip';
 export { default as Typography } from './typography';
 export {
   ExpansionPanel,
@@ -153,7 +154,6 @@ export {
 } from './theme';
 
 export {
-  Chip,
   Collapse,
   Divider,
   Fab,
