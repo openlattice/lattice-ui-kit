@@ -68,3 +68,17 @@ export {
   YELLOW,
   YELLOW_1,
 };
+
+export default {
+  BLUE,
+  GREEN,
+  MAGENTA,
+  NEUTRAL,
+  ORANGE,
+  PURPLE,
+  RED,
+  TEAL,
+  VIOLET,
+  WHITE,
+  YELLOW,
+};
