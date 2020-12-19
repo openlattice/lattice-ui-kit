@@ -5,10 +5,10 @@ import clsx from 'clsx';
 import { Button as MuiButton } from '@material-ui/core';
 
 import useButtonStyles, { isCustomColor } from './useButtonStyles';
-import { styleName } from './createColorStyles';
 import type { ButtonProps } from './types';
 
 import Spinner from '../../../spinner';
+import { styleName } from '../../../utils/createColorStyles';
 
 const Button = ({
   className,

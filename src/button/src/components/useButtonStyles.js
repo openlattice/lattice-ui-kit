@@ -1,8 +1,7 @@
 import { fade, makeStyles } from '@material-ui/core/styles';
 import { mergeAll } from 'lodash/fp';
 
-import createColorStyles from './createColorStyles';
-
+import createColorStyles from '../../../utils/createColorStyles';
 // avoid MUI errors from custom color classes
 // https://github.com/mui-org/material-ui/issues/13875#issuecomment-625358023
 import {

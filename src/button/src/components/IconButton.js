@@ -9,10 +9,10 @@ import styled from 'styled-components';
 import { IconButton as MuiIconButton } from '@material-ui/core';
 
 import useButtonStyles, { isCustomColor } from './useButtonStyles';
-import { styleName } from './createColorStyles';
 import type { ButtonProps } from './types';
 
 import Spinner from '../../../spinner';
+import { styleName } from '../../../utils/createColorStyles';
 
 const IconSquareWrapper = styled.div`
   align-items: center;
