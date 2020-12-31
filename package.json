@@ -129,5 +129,10 @@
     "storybook:deploy": "storybook-to-ghpages --ci -e build/storybook --source-branch=develop -t GITHUB_TOKEN",
     "test": "jest --config config/jest/jest.config.js",
     "test:watch": "jest --config config/jest/jest.config.js --watch --coverage=false"
+  },
+  "storybook-deployer": {
+    "gitUsername": "githubpages",
+    "gitEmail": "githubpages@openlattice.com",
+    "commitMessage": "deploy storybook to github pages"
   }
 }
