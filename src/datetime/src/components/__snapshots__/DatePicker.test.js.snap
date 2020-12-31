@@ -254,6 +254,11 @@ exports[`DatePicker render matches snapshot 1`] = `
             "padding": "6px",
           },
         },
+        "MuiInputAdornment": Object {
+          "root": Object {
+            "color": "#8b8b90",
+          },
+        },
         "MuiInputBase": Object {
           "input": Object {
             "&$disabled": Object {
@@ -295,11 +300,69 @@ exports[`DatePicker render matches snapshot 1`] = `
               "backgroundColor": "white",
               "borderColor": "#56565a",
             },
+            "&.Mui-focused .MuiInputAdornment-root": Object {
+              "color": "#56565a",
+            },
             "&:hover:not($disabled):not($focused):not($error)": Object {
               "backgroundColor": "#f9f9fc",
             },
             "backgroundColor": "white",
             "border": "1px solid #dfdfe3",
+          },
+        },
+        "MuiSwitch": Object {
+          "checked": Object {},
+          "colorPrimary": Object {
+            "&$checked": Object {
+              "color": "white",
+            },
+            "&$disabled": Object {
+              "& + $track": Object {
+                "backgroundColor": "#d1d1d6",
+                "borderColor": "#d1d1d6",
+                "opacity": 1,
+              },
+            },
+          },
+          "root": Object {
+            "display": "flex",
+            "height": 24,
+            "padding": 0,
+            "width": 42,
+          },
+          "switchBase": Object {
+            "&$checked": Object {
+              "& + $track": Object {
+                "backgroundColor": "#6d49fe",
+                "borderColor": "#6d49fe",
+                "opacity": 1,
+              },
+              "color": "white",
+              "transform": "translateX(18px)",
+            },
+            "&$disabled": Object {
+              "& + $track": Object {
+                "backgroundColor": "#d1d1d6",
+                "borderColor": "#d1d1d6",
+                "opacity": 1,
+              },
+              "backgroundColor": "#d1d1d6",
+              "color": "white",
+            },
+            "color": "white",
+            "padding": 4,
+          },
+          "thumb": Object {
+            "boxShadow": "none",
+            "color": "white",
+            "height": 16,
+            "width": 16,
+          },
+          "track": Object {
+            "backgroundColor": "#8b8b90",
+            "border": "1px solid #8b8b90",
+            "borderRadius": 12,
+            "opacity": 1,
           },
         },
         "MuiTimelineConnector": Object {
@@ -390,16 +453,16 @@ exports[`DatePicker render matches snapshot 1`] = `
         },
         "getContrastText": [Function],
         "grey": Object {
-          "100": "#f5f5f5",
-          "200": "#eeeeee",
-          "300": "#e0e0e0",
-          "400": "#bdbdbd",
-          "50": "#fafafa",
-          "500": "#9e9e9e",
-          "600": "#757575",
-          "700": "#616161",
-          "800": "#424242",
-          "900": "#212121",
+          "100": "#dfdfe3",
+          "200": "#d1d1d6",
+          "300": "#c3c3c8",
+          "400": "#a7a7ac",
+          "50": "#f2f2f4",
+          "500": "#8b8b90",
+          "600": "#717175",
+          "700": "#56565a",
+          "800": "#3c3c40",
+          "900": "#1f1f22",
           "A100": "#d5d5d5",
           "A200": "#aaaaaa",
           "A400": "#303030",
@@ -454,6 +517,9 @@ exports[`DatePicker render matches snapshot 1`] = `
         },
         "MuiOutlinedInput": Object {
           "notched": false,
+        },
+        "MuiSwitch": Object {
+          "color": "primary",
         },
       },
       "shadows": Array [

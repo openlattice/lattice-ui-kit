@@ -192,6 +192,11 @@ const lightTheme = createMuiTheme({
         margin: '5px 10px 0'
       },
     },
+    MuiInputAdornment: {
+      root: {
+        color: NEUTRAL.N500,
+      },
+    },
     MuiInputBase: {
       root: {
         color: NEUTRAL.N900,
@@ -277,6 +282,9 @@ const lightTheme = createMuiTheme({
         '&$error': {
           borderColor: RED.R300
         },
+        '&.Mui-focused .MuiInputAdornment-root': {
+          color: NEUTRAL.N700,
+        },
       },
       input: {
         padding: '10px'
@@ -284,6 +292,61 @@ const lightTheme = createMuiTheme({
       notchedOutline: {
         visibility: 'hidden'
       }
+    },
+    MuiSwitch: {
+      root: {
+        width: 42,
+        height: 24,
+        padding: 0,
+        display: 'flex',
+      },
+      colorPrimary: {
+        '&$checked': {
+          color: 'white'
+        },
+        '&$disabled': {
+          '& + $track': {
+            opacity: 1,
+            backgroundColor: NEUTRAL.N200,
+            borderColor: NEUTRAL.N200,
+          }
+        }
+      },
+      switchBase: {
+        padding: 4,
+        color: 'white',
+        '&$checked': {
+          transform: 'translateX(18px)',
+          color: 'white',
+          '& + $track': {
+            opacity: 1,
+            backgroundColor: PURPLE.P300,
+            borderColor: PURPLE.P300,
+          },
+        },
+        '&$disabled': {
+          backgroundColor: NEUTRAL.N200,
+          color: 'white',
+          '& + $track': {
+            opacity: 1,
+            backgroundColor: NEUTRAL.N200,
+            borderColor: NEUTRAL.N200,
+          },
+        }
+      },
+      thumb: {
+        width: 16,
+        height: 16,
+        boxShadow: 'none',
+        color: 'white'
+      },
+      track: {
+        border: `1px solid ${NEUTRAL.N500}`,
+        borderRadius: 24 / 2,
+        opacity: 1,
+        backgroundColor: NEUTRAL.N500,
+      },
+      checked: {}
     },
     MuiTouchRipple: {
       childLeaving: {
@@ -383,6 +446,18 @@ const lightTheme = createMuiTheme({
       header: NEUTRAL.N50
     },
     divider: NEUTRAL.N100,
+    grey: {
+      50: NEUTRAL.N50,
+      100: NEUTRAL.N100,
+      200: NEUTRAL.N200,
+      300: NEUTRAL.N300,
+      400: NEUTRAL.N400,
+      500: NEUTRAL.N500,
+      600: NEUTRAL.N600,
+      700: NEUTRAL.N700,
+      800: NEUTRAL.N800,
+      900: NEUTRAL.N900,
+    }
   },
   props: {
     MuiFormControl: {
@@ -394,6 +469,9 @@ const lightTheme = createMuiTheme({
     },
     MuiFilledInput: {
       disableUnderline: true
+    },
+    MuiSwitch: {
+      color: 'primary'
     }
   },
   typography: {
@@ -649,6 +727,61 @@ const darkTheme = createMuiTheme({
         visibility: 'hidden'
       },
     },
+    MuiSwitch: {
+      root: {
+        width: 42,
+        height: 24,
+        padding: 0,
+        display: 'flex',
+      },
+      colorPrimary: {
+        '&$checked': {
+          color: 'white'
+        },
+        '&$disabled': {
+          '& + $track': {
+            opacity: 1,
+            backgroundColor: NEUTRAL.N200,
+            borderColor: NEUTRAL.N200,
+          }
+        }
+      },
+      switchBase: {
+        padding: 4,
+        color: 'white',
+        '&$checked': {
+          transform: 'translateX(18px)',
+          color: 'white',
+          '& + $track': {
+            opacity: 1,
+            backgroundColor: PURPLE.P300,
+            borderColor: PURPLE.P300,
+          },
+        },
+        '&$disabled': {
+          backgroundColor: NEUTRAL.N200,
+          color: 'white',
+          '& + $track': {
+            opacity: 1,
+            backgroundColor: NEUTRAL.N200,
+            borderColor: NEUTRAL.N200,
+          },
+        }
+      },
+      thumb: {
+        width: 16,
+        height: 16,
+        boxShadow: 'none',
+        color: 'white'
+      },
+      track: {
+        border: `1px solid ${NEUTRAL.N500}`,
+        borderRadius: 24 / 2,
+        opacity: 1,
+        backgroundColor: NEUTRAL.N500,
+      },
+      checked: {}
+    },
     MuiTouchRipple: {
       child: {
         borderRadius: 0,
@@ -746,6 +879,18 @@ const darkTheme = createMuiTheme({
     background: {
       header: '#333'
     },
+    grey: {
+      50: NEUTRAL.N50,
+      100: NEUTRAL.N100,
+      200: NEUTRAL.N200,
+      300: NEUTRAL.N300,
+      400: NEUTRAL.N400,
+      500: NEUTRAL.N500,
+      600: NEUTRAL.N600,
+      700: NEUTRAL.N700,
+      800: NEUTRAL.N800,
+      900: NEUTRAL.N900,
+    }
   },
   props: {
     MuiFormControl: {
@@ -758,6 +903,9 @@ const darkTheme = createMuiTheme({
     MuiFilledInput: {
       disableUnderline: true
     },
+    MuiSwitch: {
+      color: 'primary'
+    }
   },
   typography: {
     fontFamily: "'Inter', 'Arial', sans-serif",

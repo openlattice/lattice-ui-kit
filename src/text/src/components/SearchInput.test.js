@@ -16,36 +16,4 @@ describe('SearchInput', () => {
 
   });
 
-  describe('props', () => {
-
-    test('should default to type="search"', () => {
-      const wrapper = mount(<SearchInput />);
-      expect(wrapper.find('input').prop('type')).toEqual('search');
-    });
-
-    test('should ignore type prop and default to type="search"', () => {
-      const wrapper = mount(<SearchInput type="password" />);
-      expect(wrapper.find('input').prop('type')).toEqual('search');
-    });
-
-    test('should pass props through', () => {
-      const props = {
-        autoComplete: 'on',
-        disabled: true,
-        form: 'test-form',
-        max: 8,
-        maxLength: 8,
-        min: 1,
-        name: 'test',
-        pattern: '/.+/',
-        placeholder: 'test placeholder',
-        required: true,
-      };
-      // eslint-disable-next-line react/jsx-props-no-spreading
-      const wrapper = mount(<SearchInput {...props} />);
-      expect(wrapper.find('input').props()).toEqual(expect.objectContaining(props));
-    });
-
-  });
-
 });
