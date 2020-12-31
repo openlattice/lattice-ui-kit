@@ -1,6 +1,6 @@
 {
   "name": "lattice-ui-kit",
-  "version": "0.39.2",
+  "version": "0.40.0",
   "homepage": "https://github.com/openlattice/lattice-ui-kit",
   "description": "OpenLattice UI Kit for React",
   "author": {
@@ -75,7 +75,7 @@
     "enzyme": "~3.11.0",
     "enzyme-adapter-react-16": "~1.15.5",
     "enzyme-to-json": "~3.6.1",
-    "eslint": "~7.15.0",
+    "eslint": "~7.16.0",
     "eslint-config-airbnb": "~18.2.1",
     "eslint-import-resolver-webpack": "~0.13.0",
     "eslint-loader": "~4.0.2",
@@ -83,7 +83,7 @@
     "eslint-plugin-import": "~2.22.1",
     "eslint-plugin-jest": "~24.1.0",
     "eslint-plugin-jsx-a11y": "~6.4.1",
-    "eslint-plugin-react": "~7.21.5",
+    "eslint-plugin-react": "~7.22.0",
     "eslint-plugin-react-hooks": "~4.2.0",
     "file-loader": "~6.2.0",
     "flow-bin": "~0.131.0",
