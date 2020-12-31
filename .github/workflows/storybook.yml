@@ -43,5 +43,5 @@ jobs:
 
       - name: npm run storybook:deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
         run: npm run storybook:deploy
