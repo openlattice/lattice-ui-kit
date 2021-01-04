@@ -31,6 +31,7 @@ type ButtonProps = {
   disableElevation ?:boolean;
   disabled ?:boolean;
   endIcon ?:Node;
+  fullWidth ?:boolean;
   href ?:string;
   isLoading ?:boolean;
   size ?:ButtonSize;
