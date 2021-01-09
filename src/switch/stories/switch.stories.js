@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Switch from '..';
+import Switch from '@material-ui/core';
 
 export default {
   title: 'Switch',
