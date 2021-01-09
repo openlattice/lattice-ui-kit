@@ -2,38 +2,7 @@
  * @flow
  */
 
-import {
-  Chip,
-  Collapse,
-  Divider,
-  Fab,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemSecondaryAction,
-  ListItemText,
-  ListSubheader,
-  Popover,
-  Popper,
-  Tab,
-  Tabs,
-  ThemeProvider,
-} from '@material-ui/core';
 import { StylesProvider } from '@material-ui/core/styles';
-import {
-  SpeedDial,
-  SpeedDialAction,
-  SpeedDialIcon,
-  TabContext,
-  TabPanel,
-  Timeline,
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
-  TimelineItem,
-  TimelineOppositeContent,
-  TimelineSeparator,
-} from '@material-ui/lab';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 
 import LatticeLuxonUtils from './datetime/src/components/utils/LatticeLuxonUtils';
@@ -46,6 +15,8 @@ import * as StyleUtils from './utils/StyleUtils';
 declare var __VERSION__ :string;
 const version :string = __VERSION__;
 
+export * from '@material-ui/core';
+export * from '@material-ui/lab';
 export {
   Colors,
   Hooks,
@@ -98,12 +69,7 @@ export { Input, SearchInput, TextArea } from './text';
 // NOTE: doing this because adding @flow to layout/index.js will break things
 export { default as AppContainerWrapper } from './layout/src/components/App/AppContainerWrapper';
 export { default as AppContentWrapper } from './layout/src/components/App/AppContentWrapper';
-export {
-  Menu,
-  MenuItem,
-  MenuList,
-  NestedMenuItem,
-} from './menu';
+export { NestedMenuItem } from './menu';
 export {
   AppHeaderWrapper,
   AppNavigationWrapper,
@@ -140,9 +106,6 @@ export {
   DateTimePicker,
 } from './datetime';
 export { default as Breadcrumbs } from './breadcrumbs';
-export { default as Skeleton } from './skeleton';
-export { default as Tooltip } from './tooltip';
-export { default as Switch } from './switch';
 export { default as Typography } from './typography';
 export {
   ExpansionPanel,
@@ -155,35 +118,8 @@ export {
 } from './theme';
 
 export {
-  Chip,
-  Collapse,
-  Divider,
-  Fab,
   LatticeLuxonUtils,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemSecondaryAction,
-  ListItemText,
-  ListSubheader,
   MuiPickersUtilsProvider,
-  Popover,
-  Popper,
-  SpeedDial,
-  SpeedDialAction,
-  SpeedDialIcon,
-  Tab,
-  TabContext,
-  TabPanel,
-  Tabs,
-  ThemeProvider,
-  Timeline,
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
-  TimelineItem,
-  TimelineOppositeContent,
-  TimelineSeparator,
 };
 
 export default {
