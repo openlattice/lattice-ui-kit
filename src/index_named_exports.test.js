@@ -50,6 +50,8 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'Overlay',
   'PaginationToolbar',
   'PersonResult',
+  'Popover',
+  'Popper',
   'Portal',
   'Radio',
   'Result',
