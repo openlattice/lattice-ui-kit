@@ -1,7 +1,10 @@
 import React from 'react';
+
 import styled from 'styled-components';
-import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
+import { mount, shallow } from 'enzyme';
+
+import Rotate from './styled/Rotate';
 import Spinner from './Spinner';
 
 describe('Spinner', () => {
@@ -14,12 +17,12 @@ describe('Spinner', () => {
 
     test('should set align-self to "center" by default', () => {
       const wrapper = mount(<Spinner />);
-      expect(wrapper.find('Rotate')).toHaveStyleRule('align-self', 'center');
+      expect(wrapper.find(Rotate)).toHaveStyleRule('align-self', 'center');
     });
 
     test('should set align-self to "flex-start" if centered is false', () => {
       const wrapper = mount(<Spinner centered={false} />);
-      expect(wrapper.find('Rotate')).toHaveStyleRule('align-self', 'flex-start');
+      expect(wrapper.find(Rotate)).toHaveStyleRule('align-self', 'flex-start');
     });
 
     test('should pass bottomColor prop to spinner circle', () => {
@@ -37,21 +40,21 @@ describe('Spinner', () => {
     test('should set duration of Rotate animation to 0.75s by default', () => {
       const defaultDuration = '0.75s';
       const wrapper = mount(<Spinner />);
-      expect(wrapper.find('Rotate').props().duration).toEqual(undefined);
-      expect(wrapper.find('Rotate')).toHaveStyleRule('animation', `fa-spin ${defaultDuration} infinite linear`);
+      expect(wrapper.find(Rotate).props().duration).toEqual(undefined);
+      expect(wrapper.find(Rotate)).toHaveStyleRule('animation', `fa-spin ${defaultDuration} infinite linear`);
     });
 
     test('should pass duration prop to Rotate', () => {
       const duration = '2s';
       const wrapper = mount(<Spinner duration={duration} />);
-      expect(wrapper.find('Rotate').props().duration).toEqual(duration);
-      expect(wrapper.find('Rotate')).toHaveStyleRule('animation', `fa-spin ${duration} infinite linear`);
+      expect(wrapper.find(Rotate).props().duration).toEqual(duration);
+      expect(wrapper.find(Rotate)).toHaveStyleRule('animation', `fa-spin ${duration} infinite linear`);
     });
 
     test('should adjust fa-{size} className', () => {
       const size = '2x';
       const wrapper = shallow(<Spinner size={size} />);
-      expect(wrapper.find(`Rotate.fa-${size}`)).toHaveLength(1);
+      expect(wrapper.find(`.fa-${size}`)).toHaveLength(1);
     });
 
     test('should allow styled classNames', () => {
@@ -60,7 +63,7 @@ describe('Spinner', () => {
       `;
 
       const wrapper = mount(<StyledSpinner />);
-      expect(wrapper.find('Rotate')).toHaveStyleRule('font-size', '20px');
+      expect(wrapper.find(Rotate)).toHaveStyleRule('font-size', '20px');
     });
 
   });

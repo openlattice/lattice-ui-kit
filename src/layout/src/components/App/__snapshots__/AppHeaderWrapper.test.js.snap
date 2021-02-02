@@ -2,11 +2,11 @@
 
 exports[`AppHeaderWrapper snapshots default 1`] = `
 <Fragment>
-  <AppHeaderOuterWrapper
+  <Styled(styled.div)
     onClick={[Function]}
   >
-    <AppHeaderInnerWrapper>
-      <NavigationWrapper>
+    <Styled(styled.div)>
+      <styled.nav>
         <a
           className="app-nav-root"
           href="http://localhost/"
@@ -14,22 +14,22 @@ exports[`AppHeaderWrapper snapshots default 1`] = `
           <AppIcon />
           <AppTitle />
         </a>
-      </NavigationWrapper>
-      <AppHeaderWrapper__HeaderSectionContentWrapper
+      </styled.nav>
+      <styled.div
         align="right"
       />
-    </AppHeaderInnerWrapper>
-  </AppHeaderOuterWrapper>
+    </Styled(styled.div)>
+  </Styled(styled.div)>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots force drawer 1`] = `
 <Fragment>
-  <AppHeaderOuterWrapper
+  <Styled(styled.div)
     onClick={[Function]}
   >
-    <AppHeaderInnerWrapper>
-      <NavigationWrapper
+    <Styled(styled.div)>
+      <styled.nav
         key=".0"
       >
         <a
@@ -39,8 +39,8 @@ exports[`AppHeaderWrapper snapshots force drawer 1`] = `
         >
           <AppIcon />
         </a>
-      </NavigationWrapper>
-      <AppHeaderWrapper__HeaderSectionContentWrapper
+      </styled.nav>
+      <styled.div
         align="right"
       >
         <Select
@@ -81,7 +81,7 @@ exports[`AppHeaderWrapper snapshots force drawer 1`] = `
             }
           }
         />
-        <AppHeaderWrapper__NavigationToggleWrapper
+        <styled.div
           onClick={[Function]}
         >
           <FontAwesomeIcon
@@ -115,10 +115,10 @@ exports[`AppHeaderWrapper snapshots force drawer 1`] = `
             title=""
             transform={null}
           />
-        </AppHeaderWrapper__NavigationToggleWrapper>
-      </AppHeaderWrapper__HeaderSectionContentWrapper>
-    </AppHeaderInnerWrapper>
-  </AppHeaderOuterWrapper>
+        </styled.div>
+      </styled.div>
+    </Styled(styled.div)>
+  </Styled(styled.div)>
   <ForwardRef
     drawer={true}
     isOpen={false}
@@ -143,7 +143,7 @@ exports[`AppHeaderWrapper snapshots force drawer 1`] = `
     >
       Tab2
     </a>
-    <AppHeaderWrapper__LogOutAnchor
+    <styled.a
       onClick={[Function]}
     >
       <FontAwesomeIcon
@@ -186,18 +186,18 @@ exports[`AppHeaderWrapper snapshots force drawer 1`] = `
       >
         Log Out
       </span>
-    </AppHeaderWrapper__LogOutAnchor>
+    </styled.a>
   </ForwardRef>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots logout 1`] = `
 <Fragment>
-  <AppHeaderOuterWrapper
+  <Styled(styled.div)
     onClick={[Function]}
   >
-    <AppHeaderInnerWrapper>
-      <NavigationWrapper>
+    <Styled(styled.div)>
+      <styled.nav>
         <a
           className="app-nav-root"
           href="http://localhost/"
@@ -205,28 +205,28 @@ exports[`AppHeaderWrapper snapshots logout 1`] = `
           <AppIcon />
           <AppTitle />
         </a>
-      </NavigationWrapper>
-      <AppHeaderWrapper__HeaderSectionContentWrapper
+      </styled.nav>
+      <styled.div
         align="right"
       >
-        <AppHeaderWrapper__LogoutButton
+        <Styled(Component)
           onClick={[Function]}
         >
           Log Out
-        </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderSectionContentWrapper>
-    </AppHeaderInnerWrapper>
-  </AppHeaderOuterWrapper>
+        </Styled(Component)>
+      </styled.div>
+    </Styled(styled.div)>
+  </Styled(styled.div)>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots navigation 1`] = `
 <Fragment>
-  <AppHeaderOuterWrapper
+  <Styled(styled.div)
     onClick={[Function]}
   >
-    <AppHeaderInnerWrapper>
-      <NavigationWrapper
+    <Styled(styled.div)>
+      <styled.nav
         key=".0"
       >
         <a
@@ -251,28 +251,28 @@ exports[`AppHeaderWrapper snapshots navigation 1`] = `
         >
           Tab2
         </a>
-      </NavigationWrapper>
-      <AppHeaderWrapper__HeaderSectionContentWrapper
+      </styled.nav>
+      <styled.div
         align="right"
       >
-        <AppHeaderWrapper__LogoutButton
+        <Styled(Component)
           onClick={[Function]}
         >
           Log Out
-        </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderSectionContentWrapper>
-    </AppHeaderInnerWrapper>
-  </AppHeaderOuterWrapper>
+        </Styled(Component)>
+      </styled.div>
+    </Styled(styled.div)>
+  </Styled(styled.div)>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots navigation wrapping 1`] = `
 <Fragment>
-  <AppHeaderOuterWrapper
+  <Styled(styled.div)
     onClick={[Function]}
   >
-    <AppHeaderInnerWrapper>
-      <NavigationWrapper
+    <Styled(styled.div)>
+      <styled.nav
         key=".0"
       >
         <a
@@ -285,18 +285,18 @@ exports[`AppHeaderWrapper snapshots navigation wrapping 1`] = `
             title="Home"
           />
         </a>
-      </NavigationWrapper>
-      <AppHeaderWrapper__HeaderSectionContentWrapper
+      </styled.nav>
+      <styled.div
         align="right"
       >
-        <AppHeaderWrapper__LogoutButton
+        <Styled(Component)
           onClick={[Function]}
         >
           Log Out
-        </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderSectionContentWrapper>
-    </AppHeaderInnerWrapper>
-  </AppHeaderOuterWrapper>
+        </Styled(Component)>
+      </styled.div>
+    </Styled(styled.div)>
+  </Styled(styled.div)>
   <ForwardRef>
     <a
       href="/tab1"
@@ -316,11 +316,11 @@ exports[`AppHeaderWrapper snapshots navigation wrapping 1`] = `
 
 exports[`AppHeaderWrapper snapshots select + navigation 1`] = `
 <Fragment>
-  <AppHeaderOuterWrapper
+  <Styled(styled.div)
     onClick={[Function]}
   >
-    <AppHeaderInnerWrapper>
-      <NavigationWrapper
+    <Styled(styled.div)>
+      <styled.nav
         key=".0"
       >
         <a
@@ -345,8 +345,8 @@ exports[`AppHeaderWrapper snapshots select + navigation 1`] = `
         >
           Tab2
         </a>
-      </NavigationWrapper>
-      <AppHeaderWrapper__HeaderSectionContentWrapper
+      </styled.nav>
+      <styled.div
         align="right"
       >
         <Select
@@ -387,24 +387,24 @@ exports[`AppHeaderWrapper snapshots select + navigation 1`] = `
             }
           }
         />
-        <AppHeaderWrapper__LogoutButton
+        <Styled(Component)
           onClick={[Function]}
         >
           Log Out
-        </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderSectionContentWrapper>
-    </AppHeaderInnerWrapper>
-  </AppHeaderOuterWrapper>
+        </Styled(Component)>
+      </styled.div>
+    </Styled(styled.div)>
+  </Styled(styled.div)>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots select 1`] = `
 <Fragment>
-  <AppHeaderOuterWrapper
+  <Styled(styled.div)
     onClick={[Function]}
   >
-    <AppHeaderInnerWrapper>
-      <NavigationWrapper>
+    <Styled(styled.div)>
+      <styled.nav>
         <a
           className="app-nav-root"
           href="http://localhost/"
@@ -412,8 +412,8 @@ exports[`AppHeaderWrapper snapshots select 1`] = `
           <AppIcon />
           <AppTitle />
         </a>
-      </NavigationWrapper>
-      <AppHeaderWrapper__HeaderSectionContentWrapper
+      </styled.nav>
+      <styled.div
         align="right"
       >
         <Select
@@ -454,24 +454,24 @@ exports[`AppHeaderWrapper snapshots select 1`] = `
             }
           }
         />
-        <AppHeaderWrapper__LogoutButton
+        <Styled(Component)
           onClick={[Function]}
         >
           Log Out
-        </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderSectionContentWrapper>
-    </AppHeaderInnerWrapper>
-  </AppHeaderOuterWrapper>
+        </Styled(Component)>
+      </styled.div>
+    </Styled(styled.div)>
+  </Styled(styled.div)>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots user + navigation + select 1`] = `
 <Fragment>
-  <AppHeaderOuterWrapper
+  <Styled(styled.div)
     onClick={[Function]}
   >
-    <AppHeaderInnerWrapper>
-      <NavigationWrapper
+    <Styled(styled.div)>
+      <styled.nav
         key=".0"
       >
         <a
@@ -496,8 +496,8 @@ exports[`AppHeaderWrapper snapshots user + navigation + select 1`] = `
         >
           Tab2
         </a>
-      </NavigationWrapper>
-      <AppHeaderWrapper__HeaderSectionContentWrapper
+      </styled.nav>
+      <styled.div
         align="right"
       >
         <span>
@@ -541,24 +541,24 @@ exports[`AppHeaderWrapper snapshots user + navigation + select 1`] = `
             }
           }
         />
-        <AppHeaderWrapper__LogoutButton
+        <Styled(Component)
           onClick={[Function]}
         >
           Log Out
-        </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderSectionContentWrapper>
-    </AppHeaderInnerWrapper>
-  </AppHeaderOuterWrapper>
+        </Styled(Component)>
+      </styled.div>
+    </Styled(styled.div)>
+  </Styled(styled.div)>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots user + navigation 1`] = `
 <Fragment>
-  <AppHeaderOuterWrapper
+  <Styled(styled.div)
     onClick={[Function]}
   >
-    <AppHeaderInnerWrapper>
-      <NavigationWrapper
+    <Styled(styled.div)>
+      <styled.nav
         key=".0"
       >
         <a
@@ -583,31 +583,31 @@ exports[`AppHeaderWrapper snapshots user + navigation 1`] = `
         >
           Tab2
         </a>
-      </NavigationWrapper>
-      <AppHeaderWrapper__HeaderSectionContentWrapper
+      </styled.nav>
+      <styled.div
         align="right"
       >
         <span>
           jest@openlattice.com
         </span>
-        <AppHeaderWrapper__LogoutButton
+        <Styled(Component)
           onClick={[Function]}
         >
           Log Out
-        </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderSectionContentWrapper>
-    </AppHeaderInnerWrapper>
-  </AppHeaderOuterWrapper>
+        </Styled(Component)>
+      </styled.div>
+    </Styled(styled.div)>
+  </Styled(styled.div)>
 </Fragment>
 `;
 
 exports[`AppHeaderWrapper snapshots user 1`] = `
 <Fragment>
-  <AppHeaderOuterWrapper
+  <Styled(styled.div)
     onClick={[Function]}
   >
-    <AppHeaderInnerWrapper>
-      <NavigationWrapper>
+    <Styled(styled.div)>
+      <styled.nav>
         <a
           className="app-nav-root"
           href="http://localhost/"
@@ -615,20 +615,20 @@ exports[`AppHeaderWrapper snapshots user 1`] = `
           <AppIcon />
           <AppTitle />
         </a>
-      </NavigationWrapper>
-      <AppHeaderWrapper__HeaderSectionContentWrapper
+      </styled.nav>
+      <styled.div
         align="right"
       >
         <span>
           jest@openlattice.com
         </span>
-        <AppHeaderWrapper__LogoutButton
+        <Styled(Component)
           onClick={[Function]}
         >
           Log Out
-        </AppHeaderWrapper__LogoutButton>
-      </AppHeaderWrapper__HeaderSectionContentWrapper>
-    </AppHeaderInnerWrapper>
-  </AppHeaderOuterWrapper>
+        </Styled(Component)>
+      </styled.div>
+    </Styled(styled.div)>
+  </Styled(styled.div)>
 </Fragment>
 `;

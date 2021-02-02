@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Spinner snapshot 1`] = `
-<Rotate
+<styled.span
   centered={true}
   className="fa-layers fa-fw fa-1x"
 >
@@ -71,5 +71,5 @@ exports[`Spinner snapshot 1`] = `
     title=""
     transform={null}
   />
-</Rotate>
+</styled.span>
 `;
