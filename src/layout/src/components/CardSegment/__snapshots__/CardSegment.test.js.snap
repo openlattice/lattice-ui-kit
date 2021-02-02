@@ -32,46 +32,18 @@ exports[`CardSegment snapshots with children 1`] = `
   border-radius: 0 0 3px 3px;
 }
 
-<CardSegment>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "CardSegment-sc-44tqm2-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "display:flex;flex:1 0 auto;position:relative;",
-            [Function],
-            " &:first-child{border-radius:3px 3px 0 0;}&:last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
-          ],
-        },
-        "displayName": "CardSegment",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "CardSegment-sc-44tqm2-0",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
+<styled.div>
+  <div
+    className="c0"
   >
-    <div
-      className="c0"
-    >
-      <div>
-        child 1
-      </div>
-      <div>
-        child 2
-      </div>
+    <div>
+      child 1
     </div>
-  </StyledComponent>
-</CardSegment>
+    <div>
+      child 2
+    </div>
+  </div>
+</styled.div>
 `;
 
 exports[`CardSegment snapshots without children 1`] = `
@@ -106,37 +78,9 @@ exports[`CardSegment snapshots without children 1`] = `
   border-radius: 0 0 3px 3px;
 }
 
-<CardSegment>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "CardSegment-sc-44tqm2-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "display:flex;flex:1 0 auto;position:relative;",
-            [Function],
-            " &:first-child{border-radius:3px 3px 0 0;}&:last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
-          ],
-        },
-        "displayName": "CardSegment",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "CardSegment-sc-44tqm2-0",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-  >
-    <div
-      className="c0"
-    />
-  </StyledComponent>
-</CardSegment>
+<styled.div>
+  <div
+    className="c0"
+  />
+</styled.div>
 `;

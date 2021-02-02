@@ -15,45 +15,9 @@ exports[`Label snapshots should match snapshot 1`] = `
   margin: 5px 5px 5px 0;
 }
 
-<Label>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "Label-sc-130fyca-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "color:",
-            "#1f1f22",
-            ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-            [Function],
-            ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-            [Function],
-            ";",
-            [Function],
-            ";",
-            [Function],
-            ";",
-          ],
-        },
-        "displayName": "Label",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "Label-sc-130fyca-0",
-        "target": "label",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-  >
-    <label
-      className="c0"
-    />
-  </StyledComponent>
-</Label>
+<styled.label>
+  <label
+    className="c0"
+  />
+</styled.label>
 `;

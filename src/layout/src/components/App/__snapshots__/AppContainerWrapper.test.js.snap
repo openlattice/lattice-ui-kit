@@ -14,35 +14,9 @@ exports[`AppContainerWrapper snapshots should match snapshot 1`] = `
   padding: 0;
 }
 
-<AppContainerWrapper>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "AppContainerWrapper-urn6g2-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "display:flex;flex-direction:column;height:100%;margin:0;padding:0;",
-          ],
-        },
-        "displayName": "AppContainerWrapper",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "AppContainerWrapper-urn6g2-0",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-  >
-    <div
-      className="c0"
-    />
-  </StyledComponent>
-</AppContainerWrapper>
+<styled.div>
+  <div
+    className="c0"
+  />
+</styled.div>
 `;

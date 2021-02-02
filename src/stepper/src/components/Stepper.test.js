@@ -1,9 +1,10 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
 
-import Stepper from './Stepper';
+import toJson from 'enzyme-to-json';
+import { mount, shallow } from 'enzyme';
+
 import Step from './Step';
+import Stepper from './Stepper';
 import {
   StepDivider,
   StepperWrapper,

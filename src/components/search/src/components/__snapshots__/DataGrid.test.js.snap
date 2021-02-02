@@ -50,737 +50,188 @@ exports[`DataGrid snapshots should match snapshot 1`] = `
   emptyString="---"
   truncate={false}
 >
-  <StyledResultComponents__ResultGrid
+  <styled.div
     columns={4}
   >
-    <StyledComponent
-      columns={4}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "StyledResultComponents__ResultGrid-drevdl-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "display:grid;flex:1;grid-auto-flow:row;grid-template-columns:",
-              [Function],
-              ";grid-gap:20px 30px;",
-            ],
-          },
-          "displayName": "StyledResultComponents__ResultGrid",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "StyledResultComponents__ResultGrid-drevdl-0",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="c0"
     >
       <div
-        className="c0"
+        key="0"
       >
-        <div
-          key="0"
+        <styled.label
+          subtle={true}
         >
-          <Label
-            subtle={true}
+          <label
+            className="c1"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                lastName
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                Werbenjagermanjensen
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="1"
+            lastName
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
         >
-          <Label
-            subtle={true}
+          <div
+            className="c2"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                firstName
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                Smitty
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="2"
-        >
-          <Label
-            subtle={true}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                middleName
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              />
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="3"
-        >
-          <Label
-            subtle={true}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                sex
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                M
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="4"
-        >
-          <Label
-            subtle={true}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                gender
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                M
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="5"
-        >
-          <Label
-            subtle={true}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                ethnicity
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                Fish
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="6"
-        >
-          <Label
-            subtle={true}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                dob
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                02/22/2002
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="7"
-        >
-          <Label
-            subtle={true}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                identifier
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                365ba027-0c71-47d1-a5f4-61346ed96d8c
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
+            Werbenjagermanjensen
+          </div>
+        </styled.div>
       </div>
-    </StyledComponent>
-  </StyledResultComponents__ResultGrid>
+      <div
+        key="1"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            firstName
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          >
+            Smitty
+          </div>
+        </styled.div>
+      </div>
+      <div
+        key="2"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            middleName
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          />
+        </styled.div>
+      </div>
+      <div
+        key="3"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            sex
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          >
+            M
+          </div>
+        </styled.div>
+      </div>
+      <div
+        key="4"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            gender
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          >
+            M
+          </div>
+        </styled.div>
+      </div>
+      <div
+        key="5"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            ethnicity
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          >
+            Fish
+          </div>
+        </styled.div>
+      </div>
+      <div
+        key="6"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            dob
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          >
+            02/22/2002
+          </div>
+        </styled.div>
+      </div>
+      <div
+        key="7"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            identifier
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          >
+            365ba027-0c71-47d1-a5f4-61346ed96d8c
+          </div>
+        </styled.div>
+      </div>
+    </div>
+  </styled.div>
 </DataGrid>
 `;
 
@@ -846,736 +297,187 @@ exports[`DataGrid snapshots should match snapshot with labels 1`] = `
   }
   truncate={false}
 >
-  <StyledResultComponents__ResultGrid
+  <styled.div
     columns={4}
   >
-    <StyledComponent
-      columns={4}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "StyledResultComponents__ResultGrid-drevdl-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "display:grid;flex:1;grid-auto-flow:row;grid-template-columns:",
-              [Function],
-              ";grid-gap:20px 30px;",
-            ],
-          },
-          "displayName": "StyledResultComponents__ResultGrid",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "StyledResultComponents__ResultGrid-drevdl-0",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="c0"
     >
       <div
-        className="c0"
+        key="0"
       >
-        <div
-          key="0"
+        <styled.label
+          subtle={true}
         >
-          <Label
-            subtle={true}
+          <label
+            className="c1"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                Last name
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                Werbenjagermanjensen
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="1"
+            Last name
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
         >
-          <Label
-            subtle={true}
+          <div
+            className="c2"
           >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                First name
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                Smitty
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="2"
-        >
-          <Label
-            subtle={true}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                Middle name
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              />
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="3"
-        >
-          <Label
-            subtle={true}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                Sex
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                M
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="4"
-        >
-          <Label
-            subtle={true}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                Gender
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                M
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="5"
-        >
-          <Label
-            subtle={true}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                Ethnicity
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                Fish
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="6"
-        >
-          <Label
-            subtle={true}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                DOB
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                02/22/2002
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
-        <div
-          key="7"
-        >
-          <Label
-            subtle={true}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Label-sc-130fyca-0",
-                    "isStatic": false,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "color:",
-                      "#1f1f22",
-                      ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:",
-                      [Function],
-                      ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "Label",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Label-sc-130fyca-0",
-                  "target": "label",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              subtle={true}
-            >
-              <label
-                className="c1"
-              >
-                Identifier
-              </label>
-            </StyledComponent>
-          </Label>
-          <StyledResultComponents__Text
-            truncate={false}
-          >
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "StyledResultComponents__Text-drevdl-3",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      ";",
-                    ],
-                  },
-                  "displayName": "StyledResultComponents__Text",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "StyledResultComponents__Text-drevdl-3",
-                  "target": "div",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-              truncate={false}
-            >
-              <div
-                className="c2"
-              >
-                365ba027-0c71-47d1-a5f4-61346ed96d8c
-              </div>
-            </StyledComponent>
-          </StyledResultComponents__Text>
-        </div>
+            Werbenjagermanjensen
+          </div>
+        </styled.div>
       </div>
-    </StyledComponent>
-  </StyledResultComponents__ResultGrid>
+      <div
+        key="1"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            First name
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          >
+            Smitty
+          </div>
+        </styled.div>
+      </div>
+      <div
+        key="2"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            Middle name
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          />
+        </styled.div>
+      </div>
+      <div
+        key="3"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            Sex
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          >
+            M
+          </div>
+        </styled.div>
+      </div>
+      <div
+        key="4"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            Gender
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          >
+            M
+          </div>
+        </styled.div>
+      </div>
+      <div
+        key="5"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            Ethnicity
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          >
+            Fish
+          </div>
+        </styled.div>
+      </div>
+      <div
+        key="6"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            DOB
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          >
+            02/22/2002
+          </div>
+        </styled.div>
+      </div>
+      <div
+        key="7"
+      >
+        <styled.label
+          subtle={true}
+        >
+          <label
+            className="c1"
+          >
+            Identifier
+          </label>
+        </styled.label>
+        <styled.div
+          truncate={false}
+        >
+          <div
+            className="c2"
+          >
+            365ba027-0c71-47d1-a5f4-61346ed96d8c
+          </div>
+        </styled.div>
+      </div>
+    </div>
+  </styled.div>
 </DataGrid>
 `;
