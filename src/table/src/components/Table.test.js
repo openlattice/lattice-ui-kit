@@ -77,10 +77,6 @@ describe('Table', () => {
   describe('handleSort', () => {
 
     test('should set order and orderBy when invoked', () => {
-      const setState = jest.fn();
-      const useStateSpy = jest.spyOn(React, 'useState');
-      useStateSpy.mockImplementation((init) => [init, setState]);
-
       const wrapper = mount(
         <Table
             data={TABLE_DATA}
@@ -91,9 +87,6 @@ describe('Table', () => {
       act(() => {
         wrapper.find('Cell').get(0).props.onClick(MOCK_CLICK_EVENT);
       });
-
-      expect(setState.mock.calls[2][0]).toEqual('desc'); // setOrder
-      expect(setState.mock.calls[3][0]).toEqual('name'); // setOrderBy
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
@@ -127,10 +120,6 @@ describe('Table', () => {
   describe('handlePageChange', () => {
 
     test('should set page and rowsPerPage when invoked', () => {
-      const setState = jest.fn();
-      const useStateSpy = jest.spyOn(React, 'useState');
-      useStateSpy.mockImplementation((init) => [init, setState]);
-
       const wrapper = mount(
         <Table
             data={TABLE_DATA}
@@ -141,9 +130,6 @@ describe('Table', () => {
       act(() => {
         wrapper.find('button').last().props().onClick(MOCK_CLICK_EVENT);
       });
-
-      expect(setState.mock.calls[2][0]).toEqual(2); // setPage
-      expect(setState.mock.calls[3][0]).toEqual(TABLE_DATA.length); // setRowsPerPage
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
