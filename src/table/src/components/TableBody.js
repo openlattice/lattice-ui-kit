@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import { memo } from 'react';
 
 import { getSortedData } from './TableUtils';
 import { Cell, StyledRow } from './styled';
@@ -96,4 +96,4 @@ TableBody.defaultProps = {
   orderBy: undefined
 };
 
-export default React.memo<Props>(TableBody);
+export default memo<Props>(TableBody);

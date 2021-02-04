@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Button } from '../../button';
 import { Card, CardSegment } from '../../layout';
 import { useBoolean } from '../../hooks';

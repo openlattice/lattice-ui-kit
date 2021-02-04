@@ -1,5 +1,4 @@
 // @flow
-import React from 'react';
 import type { ElementConfig } from 'react';
 
 import styled from 'styled-components';

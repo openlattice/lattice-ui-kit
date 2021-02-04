@@ -1,5 +1,3 @@
-import React from 'react';
-
 import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';
 import { CSSTransition, config } from 'react-transition-group';

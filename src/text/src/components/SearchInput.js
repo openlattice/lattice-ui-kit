@@ -2,7 +2,7 @@
  * @flow
  */
 
-import React from 'react';
+import { forwardRef } from 'react';
 
 import { faSearch } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,7 +14,7 @@ const SearchIcon = (
   </InputAdornment>
 );
 
-const SearchInput = React.forwardRef<Object, TextField>((props, ref) => {
+const SearchInput = forwardRef<Object, TextField>((props, ref) => {
 
   const {
     fullWidth = true,

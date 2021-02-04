@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactSelectCreatable from 'react-select/creatable';
 import { createFilter } from 'react-select';
 import { mergeDeep } from 'immutable';

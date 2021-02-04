@@ -1,6 +1,6 @@
 // @flow
 
-import React, { useCallback, useEffect } from 'react';
+import { useState, memo, useCallback, useEffect } from 'react';
 
 import isFunction from 'lodash/isFunction';
 
@@ -59,10 +59,10 @@ const Table = (props :Props) => {
   const rowCount = totalRows || (data && data.length);
   const initialRowsPerPage = getInitialRowsPerPage(rowCount, rowsPerPageOptions);
 
-  const [orderBy, setOrderBy] = React.useState();
-  const [order, setOrder] = React.useState();
-  const [currentPage, setPage] = React.useState(1);
-  const [rowsPerPage, setRowsPerPage] = React.useState(initialRowsPerPage);
+  const [orderBy, setOrderBy] = useState();
+  const [order, setOrder] = useState();
+  const [currentPage, setPage] = useState(1);
+  const [rowsPerPage, setRowsPerPage] = useState(initialRowsPerPage);
 
   useEffect(() => {
     setPage(1);
@@ -168,4 +168,4 @@ Table.defaultProps = {
   totalRows: 0,
 };
 
-export default React.memo<Props>(Table);
+export default memo<Props>(Table);

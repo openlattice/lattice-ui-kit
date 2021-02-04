@@ -1,6 +1,5 @@
 // @flow
 
-import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import type { Element } from 'react';
 

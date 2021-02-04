@@ -1,5 +1,3 @@
-import React from 'react';
-
 import toJson from 'enzyme-to-json';
 import { Menu, MenuItem } from '@material-ui/core';
 import { mount } from 'enzyme';

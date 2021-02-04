@@ -1,5 +1,5 @@
 // @flow
-import React, { useImperativeHandle, useRef, useState } from 'react';
+import { forwardRef, useImperativeHandle, useRef, useState } from 'react';
 
 import clsx from 'clsx';
 import { faChevronRight } from '@fortawesome/pro-regular-svg-icons';
@@ -35,7 +35,7 @@ const useNestedMenuItemStyles = makeStyles((theme) => ({
  */
 type Props = typeof MenuItem;
 
-const NestedMenuItem = React.forwardRef<MuiMenuItemProps, MenuItem>((props :Props, ref) => {
+const NestedMenuItem = forwardRef<MuiMenuItemProps, MenuItem>((props :Props, ref) => {
   const {
     ContainerProps: ContainerPropsProp = {},
     children,

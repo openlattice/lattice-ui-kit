@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Component } from 'react';
+import { Component } from 'react';
 import type { ComponentType, Node } from 'react';
 
 import { faSearchMinus } from '@fortawesome/pro-regular-svg-icons';

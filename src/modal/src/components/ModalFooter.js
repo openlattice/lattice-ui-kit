@@ -2,8 +2,8 @@
  * @flow
  */
 
-import React, { Component, createElement } from 'react';
 import type { ComponentType, Element } from 'react';
+import { isValidElement, Component, createElement } from 'react';
 
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -138,7 +138,7 @@ export default class ModalFooter extends Component<ModalFooterProps> {
       );
     }
 
-    if (React.isValidElement(withFooter)) {
+    if (isValidElement(withFooter)) {
       // $FlowFixMe - how do we refine Element?
       return withFooter;
     }

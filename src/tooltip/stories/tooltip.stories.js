@@ -1,4 +1,4 @@
-import React from 'react';
+import { forwardRef } from 'react';
 
 import styled from 'styled-components';
 import { faInfoCircle } from '@fortawesome/pro-regular-svg-icons';
@@ -11,7 +11,7 @@ const MarginWrapper = styled.span`
   margin-left: 5px;
 `;
 
-const InfoIcon = React.forwardRef((props, ref) => (
+const InfoIcon = forwardRef((props, ref) => (
   // https://material-ui.com/components/tooltips/#custom-child-element
   // eslint-disable-next-line react/jsx-props-no-spreading
   <span {...props} ref={ref}>

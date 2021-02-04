@@ -1,6 +1,4 @@
 // @flow
-import React from 'react';
-
 import { faCheck } from '@fortawesome/pro-regular-svg-icons';
 import { faCircle } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

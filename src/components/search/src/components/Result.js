@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Component } from 'react';
+import { Component } from 'react';
 import isFunction from 'lodash/isFunction';
 import { Map } from 'immutable';
 

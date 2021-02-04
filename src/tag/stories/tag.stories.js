@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Card, CardSegment } from '../../layout';
 import Tag from '..';
 

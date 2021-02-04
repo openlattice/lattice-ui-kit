@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { faSearch } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { action } from '@storybook/addon-actions';

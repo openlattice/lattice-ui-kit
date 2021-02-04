@@ -1,6 +1,5 @@
 // @flow
 
-import React from 'react';
 import { StyledRow } from './styled';
 import type { RowData } from '../../types';
 

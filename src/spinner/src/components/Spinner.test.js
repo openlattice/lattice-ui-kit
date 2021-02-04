@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styled from 'styled-components';
 import toJson from 'enzyme-to-json';
 import { mount, shallow } from 'enzyme';

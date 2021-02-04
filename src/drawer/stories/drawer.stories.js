@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 
 import Drawer from '../src/components/Drawer';
@@ -12,8 +12,8 @@ const ButtonGroup = styled.div`
 `;
 
 const DrawerController = () => {
-  const [isLeftOpen, setLeft] = React.useState(false);
-  const [isRightOpen, setRight] = React.useState(false);
+  const [isLeftOpen, setLeft] = useState(false);
+  const [isRightOpen, setRight] = useState(false);
 
   return (
     <Card>

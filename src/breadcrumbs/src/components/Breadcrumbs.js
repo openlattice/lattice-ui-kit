@@ -1,6 +1,5 @@
 // @flow
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
 import type { Node } from 'react';
 
 import { faChevronRight } from '@fortawesome/pro-regular-svg-icons';

@@ -2,7 +2,6 @@
  * @flow
  */
 
-import React from 'react';
 import type { ElementConfig } from 'react';
 
 import isPlainObject from 'lodash/isPlainObject';

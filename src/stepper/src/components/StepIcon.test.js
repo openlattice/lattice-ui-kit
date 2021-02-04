@@ -1,5 +1,3 @@
-import React from 'react';
-
 import toJson from 'enzyme-to-json';
 import { faCheck } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

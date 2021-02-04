@@ -2,7 +2,9 @@
  * @flow
  */
 
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
+
+import * as React from 'react';
 
 import clsx from 'clsx';
 import styled from 'styled-components';

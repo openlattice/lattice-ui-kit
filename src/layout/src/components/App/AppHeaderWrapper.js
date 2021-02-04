@@ -2,8 +2,8 @@
  * @flow
  */
 
-import React, { Children, Component } from 'react';
 import type { Node } from 'react';
+import { createRef, createElement, cloneElement, Children, Component } from 'react';
 
 import isArray from 'lodash/isArray';
 import isFunction from 'lodash/isFunction';
@@ -140,10 +140,10 @@ type State = {
 
 class AppHeaderWrapper extends Component<Props, State> {
 
-  headerRef :{ current :null | HTMLElement } = React.createRef();
-  nav1Ref :{ current :null | HTMLElement } = React.createRef();
-  nav2Ref :{ current :null | HTMLElement } = React.createRef();
-  rightRef :{ current :null | HTMLElement } = React.createRef();
+  headerRef :{ current :null | HTMLElement } = createRef();
+  nav1Ref :{ current :null | HTMLElement } = createRef();
+  nav2Ref :{ current :null | HTMLElement } = createRef();
+  rightRef :{ current :null | HTMLElement } = createRef();
 
   static defaultProps = {
     className: undefined,
@@ -475,178 +475,176 @@ class AppHeaderWrapper extends Component<Props, State> {
       headerBounds = this.headerRef.current.getBoundingClientRect();
     }
 
-    return (
-      <>
-        <AppHeaderOuterWrapper className={className} ref={this.headerRef} onClick={this.handleOnClickHeader}>
-          <AppHeaderInnerWrapper>
-            {
-              /*
-               * this block is expected to handle the following examples:
-               *
-               *   1. this is unlikely to be common and is not ideal
-               *     <AppHeaderWrapper ... />
-               *
-               *   2. this is unlikely to be common and should be avoided
-               *     <AppHeaderWrapper ...>
-               *       <AppNavigationWrapper />
-               *     </AppHeaderWrapper>
-               */
-              navigationChildrenCount === 0 && (
-                <NavigationWrapper>
-                  <a href={window.location.href} className={APP_NAV_ROOT}>
-                    <AppIcon icon={appIcon} />
-                    <AppTitle title={appTitle} />
-                  </a>
-                </NavigationWrapper>
-              )
-            }
-            {
-              /*
-               * this block is responsible for rendering nav items inside the header. here's how it works:
-               *
-               *   1. AppNavigationWrapper MUST NOT have any special props enabled (like "drawer")
-               *
-               *      AND
-               *
-               *   2. AppNavigationWrapper's 1st child is expected to be the root route, i.e. the app icon + app title,
-               *      and will ALWAYS be rendered in the header
-               *   3. AppNavigationWrapper has many children AND they all will fit (otherwise, wrapping happens)
-               *
-               * this block is expected to handle the following examples. additionally, only example 2 is relevant when
-               * the header is handling navigation wrapping. nothing fancy happens with example 1.
-               *
-               * for example...
-               *
-               *     <AppHeaderWrapper ...>
-               *       <AppNavigationWrapper>
-               *         <NavLink to="/home" />
-               *         <NavLink to="/tab1">Tab 1</NavLink>
-               *         <NavLink to="/tab2">Tab 2</NavLink>
-               *       </AppNavigationWrapper>
-               *     </AppHeaderWrapper>
-               */
-              navigationChildrenCount > 0 && Children.map(children, (child, index) => {
-                // the 1st child is expected to be <AppNavigationWrapper />
-                if (index === 0 && child.type.name === AppNavigationWrapper.name) {
-                  return (
-                    <NavigationWrapper ref={this.nav1Ref}>
-                      {
-                        Children.map(child.props.children, (navChild, navIndex) => {
-                          // the 1st child is expected to be the root route, i.e. the app icon + app title
-                          if (navIndex === 0) {
-                            const appTitleElement = shouldForceDrawer
-                              ? null
-                              : React.createElement(AppTitle, { title: navChild.props.children || appTitle });
-                            return React.cloneElement(
-                              navChild,
-                              { ...navChild.props, className: APP_NAV_ROOT },
-                              React.createElement(AppIcon, { icon: appIcon }),
-                              appTitleElement,
-                            );
-                          }
-                          // return null if...
-                          //   - the header is not responsible for navigation wrapping (i.e. if the nav is a drawer)
-                          //   - the header has computed that the nav items won't fit and need to wrap around
-                          //   - the header has computed that the screen is too small and will force the drawer
-                          return (!handleNavigationWrapping || shouldWrapNavigation || shouldForceDrawer)
-                            ? null
-                            : navChild;
-                        })
-                      }
-                    </NavigationWrapper>
-                  );
-                }
-                return child;
-              })
-            }
-            {this.renderHeaderRight()}
-          </AppHeaderInnerWrapper>
-        </AppHeaderOuterWrapper>
-        {
-          /*
-           * this block is only relevant when the header is handling navigation wrapping, and it only applies to the
-           * following example:
-           *
-           *   <AppHeaderWrapper ...>
-           *     <AppNavigationWrapper>
-           *       <NavLink to="/home" />
-           *       <NavLink to="/tab1">Tab 1</NavLink>
-           *       <NavLink to="/tab2">Tab 2</NavLink>
-           *     </AppNavigationWrapper>
-           *   </AppHeaderWrapper>
-           */
-          handleNavigationWrapping && navigationChildrenCount > 1 && shouldWrapNavigation && !shouldForceDrawer && (
-            <AppNavigationWrapper className={className} ref={this.nav2Ref}>
-              {
-                Children.map(children, (child, index) => {
-                  // the 1st child is expected to be <AppNavigationWrapper />
-                  if (index === 0 && child.type.name === AppNavigationWrapper.name) {
-                    return Children.map(child.props.children, (navChild, navIndex) => (
-                      // the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
-                      // processed above and moved into the header, so we want to return null here
-                      navIndex === 0 ? null : navChild
-                    ));
-                  }
-                  // ignoring other children for now...
-                  return null;
-                })
-              }
-            </AppNavigationWrapper>
-          )
-        }
-        {
-          /*
-           * this block is only relevant when the header is NOT handling navigation wrapping, i.e. if the
-           * navigation is a drawer (or something else in the future)
-           *
-           *   <AppHeaderWrapper ...>
-           *     <AppNavigationWrapper drawer ...>
-           *       <NavLink to="/home" />
-           *       <NavLink to="/tab1">Tab 1</NavLink>
-           *       <NavLink to="/tab2">Tab 2</NavLink>
-           *     </AppNavigationWrapper>
-           *   </AppHeaderWrapper>
-           */
-          (!handleNavigationWrapping || shouldForceDrawer) && navigationChildrenCount > 0 && (
-            Children.map(children, (child, index) => {
-              // the 1st child is expected to be <AppNavigationWrapper ... />
-              if (index === 0) {
+    return <>
+      <AppHeaderOuterWrapper className={className} ref={this.headerRef} onClick={this.handleOnClickHeader}>
+        <AppHeaderInnerWrapper>
+          {
+            /*
+             * this block is expected to handle the following examples:
+             *
+             *   1. this is unlikely to be common and is not ideal
+             *     <AppHeaderWrapper ... />
+             *
+             *   2. this is unlikely to be common and should be avoided
+             *     <AppHeaderWrapper ...>
+             *       <AppNavigationWrapper />
+             *     </AppHeaderWrapper>
+             */
+            navigationChildrenCount === 0 && (
+              <NavigationWrapper>
+                <a href={window.location.href} className={APP_NAV_ROOT}>
+                  <AppIcon icon={appIcon} />
+                  <AppTitle title={appTitle} />
+                </a>
+              </NavigationWrapper>
+            )
+          }
+          {
+            /*
+             * this block is responsible for rendering nav items inside the header. here's how it works:
+             *
+             *   1. AppNavigationWrapper MUST NOT have any special props enabled (like "drawer")
+             *
+             *      AND
+             *
+             *   2. AppNavigationWrapper's 1st child is expected to be the root route, i.e. the app icon + app title,
+             *      and will ALWAYS be rendered in the header
+             *   3. AppNavigationWrapper has many children AND they all will fit (otherwise, wrapping happens)
+             *
+             * this block is expected to handle the following examples. additionally, only example 2 is relevant when
+             * the header is handling navigation wrapping. nothing fancy happens with example 1.
+             *
+             * for example...
+             *
+             *     <AppHeaderWrapper ...>
+             *       <AppNavigationWrapper>
+             *         <NavLink to="/home" />
+             *         <NavLink to="/tab1">Tab 1</NavLink>
+             *         <NavLink to="/tab2">Tab 2</NavLink>
+             *       </AppNavigationWrapper>
+             *     </AppHeaderWrapper>
+             */
+            navigationChildrenCount > 0 && Children.map(children, (child, index) => {
+              // the 1st child is expected to be <AppNavigationWrapper />
+              if (index === 0 && child.type.name === AppNavigationWrapper.name) {
                 return (
-                  <AppNavigationWrapper
-                      drawer={child.props.drawer || shouldForceDrawer}
-                      headerBounds={headerBounds}
-                      isOpen={isNavigationOpen}
-                      onClose={this.closeNavigation}>
+                  <NavigationWrapper ref={this.nav1Ref}>
                     {
-                      shouldForceDrawer && user && (
-                        <>
-                          <span>{user}</span>
-                          <hr />
-                        </>
-                      )
-                    }
-                    {
-                      Children.map(child.props.children, (navChild, navIndex) => (
-                        // the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
-                        // processed above and moved into the header, so we want to return null here
-                        navIndex === 0
+                      Children.map(child.props.children, (navChild, navIndex) => {
+                        // the 1st child is expected to be the root route, i.e. the app icon + app title
+                        if (navIndex === 0) {
+                          const appTitleElement = shouldForceDrawer
+                            ? null
+                            : createElement(AppTitle, { title: navChild.props.children || appTitle });
+                          return cloneElement(
+                            navChild,
+                            { ...navChild.props, className: APP_NAV_ROOT },
+                            createElement(AppIcon, { icon: appIcon }),
+                            appTitleElement,
+                          );
+                        }
+                        // return null if...
+                        //   - the header is not responsible for navigation wrapping (i.e. if the nav is a drawer)
+                        //   - the header has computed that the nav items won't fit and need to wrap around
+                        //   - the header has computed that the screen is too small and will force the drawer
+                        return (!handleNavigationWrapping || shouldWrapNavigation || shouldForceDrawer)
                           ? null
-                          : React.cloneElement(navChild, { ...navChild.props, onClick: this.closeNavigation })
-                      ))
+                          : navChild;
+                      })
                     }
-                    {
-                      shouldForceDrawer && this.renderLogOutButtonInDrawer()
-                    }
-                  </AppNavigationWrapper>
+                  </NavigationWrapper>
                 );
               }
-              // ignoring other children for now...
-              return null;
+              return child;
             })
-          )
-        }
-      </>
-    );
+          }
+          {this.renderHeaderRight()}
+        </AppHeaderInnerWrapper>
+      </AppHeaderOuterWrapper>
+      {
+        /*
+         * this block is only relevant when the header is handling navigation wrapping, and it only applies to the
+         * following example:
+         *
+         *   <AppHeaderWrapper ...>
+         *     <AppNavigationWrapper>
+         *       <NavLink to="/home" />
+         *       <NavLink to="/tab1">Tab 1</NavLink>
+         *       <NavLink to="/tab2">Tab 2</NavLink>
+         *     </AppNavigationWrapper>
+         *   </AppHeaderWrapper>
+         */
+        handleNavigationWrapping && navigationChildrenCount > 1 && shouldWrapNavigation && !shouldForceDrawer && (
+          <AppNavigationWrapper className={className} ref={this.nav2Ref}>
+            {
+              Children.map(children, (child, index) => {
+                // the 1st child is expected to be <AppNavigationWrapper />
+                if (index === 0 && child.type.name === AppNavigationWrapper.name) {
+                  return Children.map(child.props.children, (navChild, navIndex) => (
+                    // the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
+                    // processed above and moved into the header, so we want to return null here
+                    navIndex === 0 ? null : navChild
+                  ));
+                }
+                // ignoring other children for now...
+                return null;
+              })
+            }
+          </AppNavigationWrapper>
+        )
+      }
+      {
+        /*
+         * this block is only relevant when the header is NOT handling navigation wrapping, i.e. if the
+         * navigation is a drawer (or something else in the future)
+         *
+         *   <AppHeaderWrapper ...>
+         *     <AppNavigationWrapper drawer ...>
+         *       <NavLink to="/home" />
+         *       <NavLink to="/tab1">Tab 1</NavLink>
+         *       <NavLink to="/tab2">Tab 2</NavLink>
+         *     </AppNavigationWrapper>
+         *   </AppHeaderWrapper>
+         */
+        (!handleNavigationWrapping || shouldForceDrawer) && navigationChildrenCount > 0 && (
+          Children.map(children, (child, index) => {
+            // the 1st child is expected to be <AppNavigationWrapper ... />
+            if (index === 0) {
+              return (
+                <AppNavigationWrapper
+                    drawer={child.props.drawer || shouldForceDrawer}
+                    headerBounds={headerBounds}
+                    isOpen={isNavigationOpen}
+                    onClose={this.closeNavigation}>
+                  {
+                    shouldForceDrawer && user && (
+                      <>
+                        <span>{user}</span>
+                        <hr />
+                      </>
+                    )
+                  }
+                  {
+                    Children.map(child.props.children, (navChild, navIndex) => (
+                      // the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
+                      // processed above and moved into the header, so we want to return null here
+                      navIndex === 0
+                        ? null
+                        : cloneElement(navChild, { ...navChild.props, onClick: this.closeNavigation })
+                    ))
+                  }
+                  {
+                    shouldForceDrawer && this.renderLogOutButtonInDrawer()
+                  }
+                </AppNavigationWrapper>
+              );
+            }
+            // ignoring other children for now...
+            return null;
+          })
+        )
+      }
+    </>;
   }
 }
 

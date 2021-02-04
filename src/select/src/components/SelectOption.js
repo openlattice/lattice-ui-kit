@@ -1,4 +1,3 @@
-import React from 'react';
 import { components } from 'react-select';
 
 // this exists only as a (hopefully temporary) performance fix when there's many options
