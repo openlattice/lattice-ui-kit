@@ -1,5 +1,10 @@
 // @flow
-import { forwardRef, useImperativeHandle, useRef, useState } from 'react';
+import {
+  forwardRef,
+  useImperativeHandle,
+  useRef,
+  useState
+} from 'react';
 
 import clsx from 'clsx';
 import { faChevronRight } from '@fortawesome/pro-regular-svg-icons';

@@ -1,6 +1,11 @@
 // @flow
 
-import { useState, memo, useCallback, useEffect } from 'react';
+import {
+  memo,
+  useCallback,
+  useEffect,
+  useState
+} from 'react';
 
 import isFunction from 'lodash/isFunction';
 
