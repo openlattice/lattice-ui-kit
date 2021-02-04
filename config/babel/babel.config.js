@@ -3,7 +3,10 @@ module.exports = {
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-proposal-object-rest-spread',
     '@babel/plugin-transform-runtime',
-    'babel-plugin-styled-components',
+    [
+      'babel-plugin-styled-components',
+      { ssr: false, displayName: false, namespace: 'sc' },
+    ],
     ['babel-plugin-transform-imports', {
       '@fortawesome/pro-duotone-svg-icons': {
         transform: (importName) => `@fortawesome/pro-duotone-svg-icons/${importName}`,

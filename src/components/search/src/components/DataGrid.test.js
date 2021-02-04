@@ -1,12 +1,14 @@
 import React from 'react';
+
 import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 import { Map } from 'immutable';
 
-import { mockSearchResultsForPeople, mockResultLabels } from './constants';
 import DataGrid from './DataGrid';
-import Label from '../../../../label';
+import { mockResultLabels, mockSearchResultsForPeople } from './constants';
 import { Text } from './styled/StyledResultComponents';
+
+import Label from '../../../../label';
 
 describe('DataGrid', () => {
   describe('snapshots', () => {
@@ -27,9 +29,11 @@ describe('DataGrid', () => {
       const data = mockSearchResultsForPeople.first();
       const wrapper = mount(<DataGrid data={data} truncate />);
 
-      expect(wrapper.find(Text)).toHaveStyleRule('overflow', 'hidden');
-      expect(wrapper.find(Text)).toHaveStyleRule('text-overflow', 'ellipsis');
-      expect(wrapper.find(Text)).toHaveStyleRule('white-space', 'nowrap');
+      const textWrapper = wrapper.find(Text).at(0);
+
+      expect(textWrapper).toHaveStyleRule('overflow', 'hidden');
+      expect(textWrapper).toHaveStyleRule('text-overflow', 'ellipsis');
+      expect(textWrapper).toHaveStyleRule('white-space', 'nowrap');
     });
   });
 

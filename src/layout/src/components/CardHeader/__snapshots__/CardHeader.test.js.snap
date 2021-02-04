@@ -17,15 +17,6 @@ exports[`CardHeader snapshots with children 1`] = `
   flex-direction: column;
   margin: 0;
   padding: 30px 30px 30px 30px;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  -webkit-transition: background-color 200ms ease-out,color 200ms ease-out;
-  transition: background-color 200ms ease-out,color 200ms ease-out;
 }
 
 .c0:hover {
@@ -41,52 +32,23 @@ exports[`CardHeader snapshots with children 1`] = `
   border-radius: 0 0 3px 3px;
 }
 
-<CardHeader>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [
-          [Function],
-        ],
-        "componentStyle": ComponentStyle {
-          "componentId": "CardHeader-ez5xes-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "display:flex;flex:1 0 auto;position:relative;",
-            [Function],
-            " &:first-child{border-radius:3px 3px 0 0;}&:last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
-            "align-items:baseline;background-color:",
-            [Function],
-            ";color:",
-            [Function],
-            ";flex:none;transition:background-color ",
-            "200ms",
-            " ease-out,color ",
-            "200ms",
-            " ease-out;",
-          ],
-        },
-        "displayName": "CardHeader",
-        "foldedComponentIds": Array [
-          "CardSegment-sc-44tqm2-0",
-        ],
-        "render": [Function],
-        "styledComponentId": "CardHeader-ez5xes-0",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-  >
-    <header
-      className="c0"
-    />
-  </StyledComponent>
-</CardHeader>
+.c1 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  -webkit-transition: background-color 200ms ease-out,color 200ms ease-out;
+  transition: background-color 200ms ease-out,color 200ms ease-out;
+}
+
+<Styled(styled.div)>
+  <header
+    className="c0 c1"
+  />
+</Styled(styled.div)>
 `;
 
 exports[`CardHeader snapshots without children 1`] = `
@@ -106,15 +68,6 @@ exports[`CardHeader snapshots without children 1`] = `
   flex-direction: column;
   margin: 0;
   padding: 30px 30px 30px 30px;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  -webkit-transition: background-color 200ms ease-out,color 200ms ease-out;
-  transition: background-color 200ms ease-out,color 200ms ease-out;
 }
 
 .c0:hover {
@@ -130,50 +83,21 @@ exports[`CardHeader snapshots without children 1`] = `
   border-radius: 0 0 3px 3px;
 }
 
-<CardHeader>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [
-          [Function],
-        ],
-        "componentStyle": ComponentStyle {
-          "componentId": "CardHeader-ez5xes-0",
-          "isStatic": false,
-          "lastClassName": "c0",
-          "rules": Array [
-            "display:flex;flex:1 0 auto;position:relative;",
-            [Function],
-            " &:first-child{border-radius:3px 3px 0 0;}&:last-child{border-bottom:0;border-radius:0 0 3px 3px;}",
-            "align-items:baseline;background-color:",
-            [Function],
-            ";color:",
-            [Function],
-            ";flex:none;transition:background-color ",
-            "200ms",
-            " ease-out,color ",
-            "200ms",
-            " ease-out;",
-          ],
-        },
-        "displayName": "CardHeader",
-        "foldedComponentIds": Array [
-          "CardSegment-sc-44tqm2-0",
-        ],
-        "render": [Function],
-        "styledComponentId": "CardHeader-ez5xes-0",
-        "target": "div",
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
-  >
-    <header
-      className="c0"
-    />
-  </StyledComponent>
-</CardHeader>
+.c1 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  -webkit-transition: background-color 200ms ease-out,color 200ms ease-out;
+  transition: background-color 200ms ease-out,color 200ms ease-out;
+}
+
+<Styled(styled.div)>
+  <header
+    className="c0 c1"
+  />
+</Styled(styled.div)>
 `;

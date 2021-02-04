@@ -50,85 +50,18 @@ exports[`AppContentWrapper snapshots should match snapshot 1`] = `
 <AppContentWrapper
   borderless={false}
 >
-  <AppContentOuterWrapper
+  <styled.div
     borderless={false}
   >
-    <StyledComponent
-      borderless={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "AppContentOuterWrapper-sc-13mz9i2-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "display:flex;flex-direction:row;flex:0 0 auto;justify-content:center;position:relative;",
-              [Function],
-            ],
-          },
-          "displayName": "AppContentOuterWrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "AppContentOuterWrapper-sc-13mz9i2-0",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <div
+      className="c0"
     >
-      <div
-        className="c0"
-      >
-        <AppContentInnerWrapper>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "AppContentInnerWrapper-dk4lgw-0",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "display:flex;flex-direction:column;flex:1 0 auto;justify-content:flex-start;max-width:",
-                    "1168",
-                    "px;min-width:0;padding:",
-                    "32",
-                    "px;position:relative;width:100%;",
-                    "@media (max-width:",
-                    "36",
-                    "em){",
-                    "
-    padding: ",
-                    "16",
-                    "px;
-  ",
-                    "}",
-                  ],
-                },
-                "displayName": "AppContentInnerWrapper",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "AppContentInnerWrapper-dk4lgw-0",
-                "target": "div",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <div
-              className="c1"
-            />
-          </StyledComponent>
-        </AppContentInnerWrapper>
-      </div>
-    </StyledComponent>
-  </AppContentOuterWrapper>
+      <styled.div>
+        <div
+          className="c1"
+        />
+      </styled.div>
+    </div>
+  </styled.div>
 </AppContentWrapper>
 `;
