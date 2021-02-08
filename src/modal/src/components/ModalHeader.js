@@ -2,8 +2,8 @@
  * @flow
  */
 
+import { Component, createElement, isValidElement } from 'react';
 import type { ComponentType, Element } from 'react';
-import { isValidElement, Component, createElement } from 'react';
 
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
