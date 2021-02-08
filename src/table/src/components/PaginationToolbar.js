@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import { memo } from 'react';
 
 import { Pagination } from '@material-ui/lab';
 
@@ -84,4 +84,4 @@ PaginationToolbar.defaultProps = {
 };
 
 // $FlowFixMe
-export default React.memo(PaginationToolbar);
+export default memo(PaginationToolbar);

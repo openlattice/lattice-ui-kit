@@ -2,8 +2,6 @@
  * @flow
  */
 
-import React from 'react';
-
 import _capitalize from 'lodash/capitalize';
 import toJson from 'enzyme-to-json';
 import { faCode } from '@fortawesome/pro-light-svg-icons';

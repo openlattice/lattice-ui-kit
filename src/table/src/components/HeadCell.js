@@ -1,5 +1,4 @@
 // @flow
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { Node } from 'react';
 import { faSort, faSortUp, faSortDown } from '@fortawesome/pro-duotone-svg-icons';

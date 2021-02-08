@@ -1,5 +1,5 @@
 // @flow
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Map } from 'immutable';
 import { ResultGrid, Text } from './styled/StyledResultComponents';
 import Label from '../../../../label';

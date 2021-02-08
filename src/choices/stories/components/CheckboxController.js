@@ -1,5 +1,5 @@
 // @flow
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 import { Card, CardSegment } from '../../../layout';
 import { ChoiceGroup } from '../../src/components/styled';

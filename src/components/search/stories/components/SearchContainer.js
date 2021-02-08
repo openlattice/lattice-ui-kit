@@ -1,5 +1,5 @@
 // @flow
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { List, Map } from 'immutable';
 
 import { Search } from '../..';

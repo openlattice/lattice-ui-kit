@@ -1,4 +1,3 @@
-import React from 'react';
 import toJson from 'enzyme-to-json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchMinus } from '@fortawesome/pro-regular-svg-icons';

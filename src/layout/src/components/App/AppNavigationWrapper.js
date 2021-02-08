@@ -2,8 +2,8 @@
  * @flow
  */
 
-import React, { Component } from 'react';
 import type { Node } from 'react';
+import { forwardRef, Component } from 'react';
 
 import AppNavigationInnerWrapper from './styled/AppNavigationInnerWrapper';
 import AppNavigationOuterWrapper from './styled/AppNavigationOuterWrapper';
@@ -80,7 +80,7 @@ class AppNavigationWrapper extends Component<Props> {
 }
 
 // https://github.com/facebook/flow/issues/7467
-export default React.forwardRef<Props, HTMLElement>((props, ref) => (
+export default forwardRef<Props, HTMLElement>((props, ref) => (
   <AppNavigationWrapper
       borderless={props.borderless}
       bgColor={props.bgColor}

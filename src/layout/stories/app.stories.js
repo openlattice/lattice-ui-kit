@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
 import { Map } from 'immutable';

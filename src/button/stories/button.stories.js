@@ -1,6 +1,4 @@
 // @flow
-import React from 'react';
-
 import styled from 'styled-components';
 import { faSearch, faTrash, faUserPlus } from '@fortawesome/pro-light-svg-icons';
 import { faDrone, faMapMarkerPlus, faSpaceShuttle } from '@fortawesome/pro-solid-svg-icons';

@@ -1,6 +1,6 @@
 // @flow
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import isFunction from 'lodash/isFunction';
 import { faClock } from '@fortawesome/pro-regular-svg-icons';

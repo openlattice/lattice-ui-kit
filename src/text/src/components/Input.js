@@ -2,11 +2,11 @@
  * @flow
  */
 
-import React from 'react';
+import { forwardRef } from 'react';
 
 import { TextField } from '@material-ui/core';
 
-const Input = React.forwardRef<Object, TextField>((props, ref) => {
+const Input = forwardRef<Object, TextField>((props, ref) => {
 
   const {
     fullWidth = true,

@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react';
+import { forwardRef } from 'react';
 
 import styled from 'styled-components';
 import { Card as MuiCard } from '@material-ui/core';
@@ -12,7 +12,7 @@ const StyledMuiCard = styled(MuiCard)`
   ${getHoverStyles}
 `;
 
-const Card = React.forwardRef<CardProps, MuiCard>((props, ref) => (
+const Card = forwardRef<CardProps, MuiCard>((props, ref) => (
   <StyledMuiCard
       variant="outlined"
       // eslint-disable-next-line react/jsx-props-no-spreading
