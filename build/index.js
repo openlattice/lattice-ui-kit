@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.41.0
+ * lattice-ui-kit - v0.42.0
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -16,7 +16,7 @@
 		exports["LUK"] = factory(require("react"), require("styled-components"), require("react-dom"));
 	else
 		root["LUK"] = factory(root["React"], root[undefined], root["ReactDOM"]);
-})(window, function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__2__, __WEBPACK_EXTERNAL_MODULE__7__) {
+})(window, function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__4__, __WEBPACK_EXTERNAL_MODULE__8__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -113,6 +113,18 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__0__;
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+if (true) {
+  module.exports = __webpack_require__(222);
+} else {}
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -126,12 +138,6 @@ if (false) { var throwOnDirectAccess, ReactIs; } else {
   module.exports = __webpack_require__(219)();
 }
 
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__2__;
 
 /***/ }),
 /* 3 */
@@ -158,6 +164,12 @@ module.exports = _defineProperty;
 /* 4 */
 /***/ (function(module, exports) {
 
+module.exports = __WEBPACK_EXTERNAL_MODULE__4__;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
 function _assertThisInitialized(self) {
   if (self === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -169,8 +181,8 @@ function _assertThisInitialized(self) {
 module.exports = _assertThisInitialized;
 
 /***/ }),
-/* 5 */,
-/* 6 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports) {
 
 function _getPrototypeOf(o) {
@@ -183,34 +195,10 @@ function _getPrototypeOf(o) {
 module.exports = _getPrototypeOf;
 
 /***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__7__;
-
-/***/ }),
 /* 8 */
 /***/ (function(module, exports) {
 
-function _extends() {
-  module.exports = _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-module.exports = _extends;
+module.exports = __WEBPACK_EXTERNAL_MODULE__8__;
 
 /***/ }),
 /* 9 */
@@ -273,9 +261,9 @@ module.exports = _inherits;
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _typeof = __webpack_require__(97);
+var _typeof = __webpack_require__(43);
 
-var assertThisInitialized = __webpack_require__(4);
+var assertThisInitialized = __webpack_require__(5);
 
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof(call) === "object" || typeof call === "function")) {
@@ -291,8 +279,35 @@ module.exports = _possibleConstructorReturn;
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(54),
-    isObject = __webpack_require__(232);
+var objectWithoutPropertiesLoose = __webpack_require__(234);
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+  var target = objectWithoutPropertiesLoose(source, excluded);
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+module.exports = _objectWithoutProperties;
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseGetTag = __webpack_require__(56),
+    isObject = __webpack_require__(233);
 
 /** `Object#toString` result references. */
 var asyncTag = '[object AsyncFunction]',
@@ -329,33 +344,6 @@ function isFunction(value) {
 
 module.exports = isFunction;
 
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var objectWithoutPropertiesLoose = __webpack_require__(233);
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-  var target = objectWithoutPropertiesLoose(source, excluded);
-  var key, i;
-
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-
-  return target;
-}
-
-module.exports = _objectWithoutProperties;
 
 /***/ }),
 /* 15 */
@@ -8692,9 +8680,7 @@ if (true) {
 
 
 /***/ }),
-/* 22 */,
-/* 23 */,
-/* 24 */
+/* 22 */
 /***/ (function(module, exports) {
 
 function _taggedTemplateLiteral(strings, raw) {
@@ -8712,32 +8698,9 @@ function _taggedTemplateLiteral(strings, raw) {
 module.exports = _taggedTemplateLiteral;
 
 /***/ }),
+/* 23 */,
+/* 24 */,
 /* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _ = __webpack_require__(234).runInContext();
-module.exports = __webpack_require__(236)(_, _);
-
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * 
- * redux-reqseq - v0.5.0
- * JavaScript library for request sequence lifecycles in redux
- * https://github.com/openlattice/redux-reqseq
- * 
- * Copyright (c) 2017-2019, OpenLattice, Inc. All rights reserved.
- * 
- */
-!function(e,t){ true?module.exports=t():undefined}(window,function(){return function(e){var t={};function n(r){if(t[r])return t[r].exports;var u=t[r]={i:r,l:!1,exports:{}};return e[r].call(u.exports,u,u.exports,n),u.l=!0,u.exports}return n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var u in e)n.d(r,u,function(t){return e[t]}.bind(null,u));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="/",n(n.s=0)}([function(e,t,n){e.exports=n(1)},function(e,t,n){"use strict";n.r(t);var r=Object.freeze({STANDBY:"STANDBY",PENDING:"PENDING",SUCCESS:"SUCCESS",FAILURE:"FAILURE"});function u(e,t,n){return null==n?{id:e,type:t,value:{}}:{id:e,type:t,value:n}}var o="REQUEST",c="SUCCESS",a="FAILURE",i="FINALLY";var l="[object String]";function f(e,t){return function(n){if(r=n,!(Object.prototype.toString.call(r)===l&&r.length>0))return e;var r,u="",o=n.lastIndexOf("/");return o>0&&o<n.length&&(u=n.substring(o+1)),t[u]===n?n:e}}function s(e){return Object.prototype.toString.call(e)===l&&e.length>0}function d(e){var t="".concat(e,"/").concat(o).toUpperCase(),n="".concat(e,"/").concat(c).toUpperCase(),r="".concat(e,"/").concat(a).toUpperCase(),l="".concat(e,"/").concat(i).toUpperCase(),d={},p=function(o){var c=Math.random().toString(36).slice(2)+(new Date).getTime().toString(36);return d[c]={requestCalled:!1,successCalled:!1,failureCalled:!1,request:function(e){return u(c,t,e)},success:function(e){return u(c,n,e)},failure:function(e){return u(c,r,e)},finally:function(e){return u(c,l,e)}},u(c,e,o)};return p.REQUEST=t,p.SUCCESS=n,p.FAILURE=r,p.FINALLY=l,p.request=function(e,t){if(!s(e)||!d[e])throw new Error("request() has been called with an invalid id");if(!0===d[e].requestCalled)throw new Error("request() has already been called");return d[e].requestCalled=!0,d[e].request(t)},p.success=function(e,t){if(!s(e)||!d[e])throw new Error("success() has been called with an invalid id");if(!0===d[e].successCalled)throw new Error("success() has already been called");return d[e].successCalled=!0,d[e].success(t)},p.failure=function(e,t){if(!s(e)||!d[e])throw new Error("failure() has been called with an invalid id");if(!0===d[e].failureCalled)throw new Error("failure() has already been called");return d[e].failureCalled=!0,d[e].failure(t)},p.finally=function(e,t){if(!s(e)||!d[e])throw new Error("finally() has been called with an invalid id");var n=d[e];return delete d[e],n.finally(t)},p.baseType=e,p.case=f(e,p),p.reducer=function(e){return function(t,n,r){if(n.type==="".concat(e,"/").concat(o)){var u=r[o];if(null!=u){if("function"==typeof u)return u();throw new Error("RequestSequence: ".concat(o," reducer must be a function."))}}else if(n.type==="".concat(e,"/").concat(c)){var l=r[c];if(null!=l){if("function"==typeof l)return l();throw new Error("RequestSequence: ".concat(c," reducer must be a function."))}}else if(n.type==="".concat(e,"/").concat(a)){var f=r[a];if(null!=f){if("function"==typeof f)return f();throw new Error("RequestSequence: ".concat(a," reducer must be a function."))}}else if(n.type==="".concat(e,"/").concat(i)){var s=r[i];if(null!=s){if("function"==typeof s)return s();throw new Error("RequestSequence: ".concat(i," reducer must be a function."))}}return t}}(e),p}n.d(t,"version",function(){return p}),n.d(t,"RequestStates",function(){return r}),n.d(t,"newRequestSequence",function(){return d});var p="v0.5.0";t.default={RequestStates:r,newRequestSequence:d,version:p}}])});
-
-/***/ }),
-/* 27 */,
-/* 28 */,
-/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8847,6 +8810,31 @@ module.exports = hoistNonReactStatics;
 
 
 /***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _ = __webpack_require__(235).runInContext();
+module.exports = __webpack_require__(237)(_, _);
+
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+ * 
+ * redux-reqseq - v0.5.0
+ * JavaScript library for request sequence lifecycles in redux
+ * https://github.com/openlattice/redux-reqseq
+ * 
+ * Copyright (c) 2017-2019, OpenLattice, Inc. All rights reserved.
+ * 
+ */
+!function(e,t){ true?module.exports=t():undefined}(window,function(){return function(e){var t={};function n(r){if(t[r])return t[r].exports;var u=t[r]={i:r,l:!1,exports:{}};return e[r].call(u.exports,u,u.exports,n),u.l=!0,u.exports}return n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var u in e)n.d(r,u,function(t){return e[t]}.bind(null,u));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="/",n(n.s=0)}([function(e,t,n){e.exports=n(1)},function(e,t,n){"use strict";n.r(t);var r=Object.freeze({STANDBY:"STANDBY",PENDING:"PENDING",SUCCESS:"SUCCESS",FAILURE:"FAILURE"});function u(e,t,n){return null==n?{id:e,type:t,value:{}}:{id:e,type:t,value:n}}var o="REQUEST",c="SUCCESS",a="FAILURE",i="FINALLY";var l="[object String]";function f(e,t){return function(n){if(r=n,!(Object.prototype.toString.call(r)===l&&r.length>0))return e;var r,u="",o=n.lastIndexOf("/");return o>0&&o<n.length&&(u=n.substring(o+1)),t[u]===n?n:e}}function s(e){return Object.prototype.toString.call(e)===l&&e.length>0}function d(e){var t="".concat(e,"/").concat(o).toUpperCase(),n="".concat(e,"/").concat(c).toUpperCase(),r="".concat(e,"/").concat(a).toUpperCase(),l="".concat(e,"/").concat(i).toUpperCase(),d={},p=function(o){var c=Math.random().toString(36).slice(2)+(new Date).getTime().toString(36);return d[c]={requestCalled:!1,successCalled:!1,failureCalled:!1,request:function(e){return u(c,t,e)},success:function(e){return u(c,n,e)},failure:function(e){return u(c,r,e)},finally:function(e){return u(c,l,e)}},u(c,e,o)};return p.REQUEST=t,p.SUCCESS=n,p.FAILURE=r,p.FINALLY=l,p.request=function(e,t){if(!s(e)||!d[e])throw new Error("request() has been called with an invalid id");if(!0===d[e].requestCalled)throw new Error("request() has already been called");return d[e].requestCalled=!0,d[e].request(t)},p.success=function(e,t){if(!s(e)||!d[e])throw new Error("success() has been called with an invalid id");if(!0===d[e].successCalled)throw new Error("success() has already been called");return d[e].successCalled=!0,d[e].success(t)},p.failure=function(e,t){if(!s(e)||!d[e])throw new Error("failure() has been called with an invalid id");if(!0===d[e].failureCalled)throw new Error("failure() has already been called");return d[e].failureCalled=!0,d[e].failure(t)},p.finally=function(e,t){if(!s(e)||!d[e])throw new Error("finally() has been called with an invalid id");var n=d[e];return delete d[e],n.finally(t)},p.baseType=e,p.case=f(e,p),p.reducer=function(e){return function(t,n,r){if(n.type==="".concat(e,"/").concat(o)){var u=r[o];if(null!=u){if("function"==typeof u)return u();throw new Error("RequestSequence: ".concat(o," reducer must be a function."))}}else if(n.type==="".concat(e,"/").concat(c)){var l=r[c];if(null!=l){if("function"==typeof l)return l();throw new Error("RequestSequence: ".concat(c," reducer must be a function."))}}else if(n.type==="".concat(e,"/").concat(a)){var f=r[a];if(null!=f){if("function"==typeof f)return f();throw new Error("RequestSequence: ".concat(a," reducer must be a function."))}}else if(n.type==="".concat(e,"/").concat(i)){var s=r[i];if(null!=s){if("function"==typeof s)return s();throw new Error("RequestSequence: ".concat(i," reducer must be a function."))}}return t}}(e),p}n.d(t,"version",function(){return p}),n.d(t,"RequestStates",function(){return r}),n.d(t,"newRequestSequence",function(){return d});var p="v0.5.0";t.default={RequestStates:r,newRequestSequence:d,version:p}}])});
+
+/***/ }),
+/* 28 */,
+/* 29 */,
 /* 30 */,
 /* 31 */,
 /* 32 */,
@@ -8885,8 +8873,46 @@ module.exports = g;
 /***/ }),
 /* 41 */,
 /* 42 */,
-/* 43 */,
-/* 44 */,
+/* 43 */
+/***/ (function(module, exports) {
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithoutHoles = __webpack_require__(212);
+
+var iterableToArray = __webpack_require__(213);
+
+var unsupportedIterableToArray = __webpack_require__(179);
+
+var nonIterableSpread = __webpack_require__(214);
+
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
+}
+
+module.exports = _toConsumableArray;
+
+/***/ }),
 /* 45 */,
 /* 46 */,
 /* 47 */,
@@ -8894,7 +8920,9 @@ module.exports = g;
 /* 49 */,
 /* 50 */,
 /* 51 */,
-/* 52 */
+/* 52 */,
+/* 53 */,
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -8937,7 +8965,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 53 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8960,7 +8988,7 @@ exports.makeStyleTag = makeStyleTag;
 exports.injectStyles = injectStyles;
 exports.insertStyleTag = insertStyleTag;
 
-var _exenv = __webpack_require__(52);
+var _exenv = __webpack_require__(54);
 
 var listenerOptions = exports.listenerOptions = {
   capture: false,
@@ -9094,12 +9122,12 @@ function insertStyleTag(tag) {
 }
 
 /***/ }),
-/* 54 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(95),
-    getRawTag = __webpack_require__(230),
-    objectToString = __webpack_require__(231);
+var Symbol = __webpack_require__(96),
+    getRawTag = __webpack_require__(231),
+    objectToString = __webpack_require__(232);
 
 /** `Object#toString` result references. */
 var nullTag = '[object Null]',
@@ -9128,7 +9156,7 @@ module.exports = baseGetTag;
 
 
 /***/ }),
-/* 55 */
+/* 57 */
 /***/ (function(module, exports) {
 
 /**
@@ -9160,7 +9188,7 @@ module.exports = isArray;
 
 
 /***/ }),
-/* 56 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9178,7 +9206,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(1);
+var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -9231,6 +9259,15 @@ var generateId = function generateId() {
 var AutosizeInput = function (_Component) {
 	_inherits(AutosizeInput, _Component);
 
+	_createClass(AutosizeInput, null, [{
+		key: 'getDerivedStateFromProps',
+		value: function getDerivedStateFromProps(props, state) {
+			var id = props.id;
+
+			return id !== state.prevId ? { inputId: id || generateId(), prevId: id } : null;
+		}
+	}]);
+
 	function AutosizeInput(props) {
 		_classCallCheck(this, AutosizeInput);
 
@@ -9253,7 +9290,8 @@ var AutosizeInput = function (_Component) {
 
 		_this.state = {
 			inputWidth: props.minWidth,
-			inputId: props.id || generateId()
+			inputId: props.id || generateId(),
+			prevId: props.id
 		};
 		return _this;
 	}
@@ -9264,15 +9302,6 @@ var AutosizeInput = function (_Component) {
 			this.mounted = true;
 			this.copyInputStyles();
 			this.updateInputWidth();
-		}
-	}, {
-		key: 'UNSAFE_componentWillReceiveProps',
-		value: function UNSAFE_componentWillReceiveProps(nextProps) {
-			var id = nextProps.id;
-
-			if (id !== this.props.id) {
-				this.setState({ inputId: id || generateId() });
-			}
 		}
 	}, {
 		key: 'componentDidUpdate',
@@ -9434,25 +9463,7 @@ AutosizeInput.defaultProps = {
 exports.default = AutosizeInput;
 
 /***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithoutHoles = __webpack_require__(212);
-
-var iterableToArray = __webpack_require__(213);
-
-var unsupportedIterableToArray = __webpack_require__(179);
-
-var nonIterableSpread = __webpack_require__(214);
-
-function _toConsumableArray(arr) {
-  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
-}
-
-module.exports = _toConsumableArray;
-
-/***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9467,6 +9478,10 @@ module.exports = _toConsumableArray;
 /* unused harmony export dom */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return parse; });
 /* unused harmony export findIconDefinition */
+/*!
+ * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
 function _typeof(obj) {
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
     _typeof = function (obj) {
@@ -9649,6 +9664,7 @@ var PREFIX_TO_STYLE = {
   'fal': 'light',
   'fad': 'duotone',
   'fab': 'brands',
+  'fak': 'kit',
   'fa': 'solid'
 };
 var STYLE_TO_PREFIX = {
@@ -9656,10 +9672,12 @@ var STYLE_TO_PREFIX = {
   'regular': 'far',
   'light': 'fal',
   'duotone': 'fad',
-  'brands': 'fab'
+  'brands': 'fab',
+  'kit': 'fak'
 };
 var LAYERS_TEXT_CLASSNAME = 'fa-layers-text';
-var FONT_FAMILY_PATTERN = /Font Awesome 5 (Solid|Regular|Light|Duotone|Brands|Free|Pro)/;
+var FONT_FAMILY_PATTERN = /Font Awesome ([5 ]*)(Solid|Regular|Light|Duotone|Brands|Free|Pro|Kit).*/; // TODO: do we need to handle font-weight for kit SVG pseudo-elements?
+
 var FONT_WEIGHT_TO_PREFIX = {
   '900': 'fas',
   '400': 'far',
@@ -10400,9 +10418,12 @@ function makeInlineSvgAbstract(params) {
       width = _ref.width,
       height = _ref.height;
 
-  var widthClass = "fa-w-".concat(Math.ceil(width / height * 16));
+  var isUploadedIcon = prefix === 'fak';
+  var widthClass = isUploadedIcon ? '' : "fa-w-".concat(Math.ceil(width / height * 16));
   var attrClass = [config.replacementClass, iconName ? "".concat(config.familyPrefix, "-").concat(iconName) : '', widthClass].filter(function (c) {
     return extra.classes.indexOf(c) === -1;
+  }).filter(function (c) {
+    return c !== '' || !!c;
   }).concat(extra.classes).join(' ');
   var content = {
     children: [],
@@ -10415,6 +10436,9 @@ function makeInlineSvgAbstract(params) {
       'viewBox': "0 0 ".concat(width, " ").concat(height)
     })
   };
+  var uploadedIconWidthStyle = isUploadedIcon && !~extra.classes.indexOf('fa-fw') ? {
+    width: "".concat(width / height * 16 * 0.0625, "em")
+  } : {};
 
   if (watchable) {
     content.attributes[DATA_FA_I2SVG] = '';
@@ -10436,7 +10460,7 @@ function makeInlineSvgAbstract(params) {
     maskId: maskId,
     transform: transform,
     symbol: symbol,
-    styles: extra.styles
+    styles: _objectSpread({}, uploadedIconWidthStyle, extra.styles)
   });
 
   var _ref2 = mask.found && main.found ? makeIconMasking(args) : makeIconStandard(args),
@@ -10552,7 +10576,7 @@ var p = config.measurePerformance && PERFORMANCE && PERFORMANCE.mark && PERFORMA
   mark: noop$1,
   measure: noop$1
 };
-var preamble = "FA \"5.13.1\"";
+var preamble = "FA \"5.15.2\"";
 
 var begin = function begin(name) {
   p.mark("".concat(preamble, " ").concat(name, " begins"));
@@ -10738,7 +10762,7 @@ function getCanonicalIcon(values) {
 
     if (styles$1[cls]) {
       acc.prefix = cls;
-    } else if (config.autoFetchSvg && ['fas', 'far', 'fal', 'fad', 'fab', 'fa'].indexOf(cls) > -1) {
+    } else if (config.autoFetchSvg && Object.keys(PREFIX_TO_STYLE).indexOf(cls) > -1) {
       acc.prefix = cls;
     } else if (iconName) {
       var shim = acc.prefix === 'fa' ? byOldName(iconName) : {};
@@ -10800,7 +10824,7 @@ var mutators = {
     }).join('\n');
 
     if (node.parentNode && node.outerHTML) {
-      node.outerHTML = newOuterHTML + (config.keepOriginalSource && node.tagName.toLowerCase() !== 'svg' ? "<!-- ".concat(node.outerHTML, " -->") : '');
+      node.outerHTML = newOuterHTML + (config.keepOriginalSource && node.tagName.toLowerCase() !== 'svg' ? "<!-- ".concat(node.outerHTML, " Font Awesome fontawesome.com -->") : '');
     } else if (node.parentNode) {
       var newNode = document.createElement('span');
       node.parentNode.replaceChild(newNode, node);
@@ -11270,12 +11294,6 @@ function findIcon(iconName, prefix) {
       return resolve(asFoundIcon(icon));
     }
 
-    var headers = {};
-
-    if (_typeof(WINDOW.FontAwesomeKitConfig) === 'object' && typeof window.FontAwesomeKitConfig.token === 'string') {
-      headers['fa-kit-token'] = WINDOW.FontAwesomeKitConfig.token;
-    }
-
     if (iconName && prefix && !config.showMissingIcons) {
       reject(new MissingIcon("Icon is missing for prefix ".concat(prefix, " with icon name ").concat(iconName)));
     } else {
@@ -11464,8 +11482,10 @@ function replaceForPosition(node, position) {
       node.removeChild(alreadyProcessedPseudoElement);
       return resolve();
     } else if (fontFamily && content !== 'none' && content !== '') {
-      var prefix = ~['Solid', 'Regular', 'Light', 'Duotone', 'Brands'].indexOf(fontFamily[1]) ? STYLE_TO_PREFIX[fontFamily[1].toLowerCase()] : FONT_WEIGHT_TO_PREFIX[fontWeight];
-      var hexValue = toHex(content.length === 3 ? content.substr(1, 1) : content);
+      var _content = styles.getPropertyValue('content');
+
+      var prefix = ~['Solid', 'Regular', 'Light', 'Duotone', 'Brands', 'Kit'].indexOf(fontFamily[2]) ? STYLE_TO_PREFIX[fontFamily[2].toLowerCase()] : FONT_WEIGHT_TO_PREFIX[fontWeight];
+      var hexValue = toHex(_content.length === 3 ? _content.substr(1, 1) : _content);
       var iconName = byUnicode(prefix, hexValue);
       var iconIdentifier = iconName; // Only convert the pseudo element in this :before/:after position into an icon if we haven't
       // already done so with the same prefix and iconName
@@ -11894,10 +11914,10 @@ var autoReplace = function autoReplace() {
 
 
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40), __webpack_require__(222).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40), __webpack_require__(223).setImmediate))
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11932,12 +11952,12 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(54),
-    getPrototype = __webpack_require__(249),
-    isObjectLike = __webpack_require__(96);
+var baseGetTag = __webpack_require__(56),
+    getPrototype = __webpack_require__(250),
+    isObjectLike = __webpack_require__(97);
 
 /** `Object#toString` result references. */
 var objectTag = '[object Object]';
@@ -12000,7 +12020,7 @@ module.exports = isPlainObject;
 
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12035,7 +12055,6 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 62 */,
 /* 63 */,
 /* 64 */,
 /* 65 */,
@@ -12068,10 +12087,11 @@ exports.svgPathData = svgPathData;
 /* 92 */,
 /* 93 */,
 /* 94 */,
-/* 95 */
+/* 95 */,
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(228);
+var root = __webpack_require__(229);
 
 /** Built-in value references. */
 var Symbol = root.Symbol;
@@ -12080,7 +12100,7 @@ module.exports = Symbol;
 
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports) {
 
 /**
@@ -12113,28 +12133,6 @@ function isObjectLike(value) {
 
 module.exports = isObjectLike;
 
-
-/***/ }),
-/* 97 */
-/***/ (function(module, exports) {
-
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    module.exports = _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    module.exports = _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
-module.exports = _typeof;
 
 /***/ }),
 /* 98 */,
@@ -12267,9 +12265,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _react = __webpack_require__(0);
 
-var _exenv = __webpack_require__(52);
+var _exenv = __webpack_require__(54);
 
-var _utils = __webpack_require__(53);
+var _utils = __webpack_require__(55);
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
@@ -12332,7 +12330,7 @@ var TouchScrollable = exports.TouchScrollable = function (_PureComponent) {
 /* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseToString = __webpack_require__(239);
+var baseToString = __webpack_require__(240);
 
 /**
  * Converts `value` to a string. An empty string is returned for `null`
@@ -12396,6 +12394,30 @@ module.exports = hasUnicode;
 
 /***/ }),
 /* 183 */
+/***/ (function(module, exports) {
+
+function _extends() {
+  module.exports = _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+module.exports = _extends;
+
+/***/ }),
+/* 184 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15019,7 +15041,7 @@ Popper.Defaults = Defaults;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40)))
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15054,7 +15076,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15089,7 +15111,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15124,7 +15146,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15134,7 +15156,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ScrollLock = __webpack_require__(225);
+var _ScrollLock = __webpack_require__(226);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -15155,7 +15177,7 @@ Object.defineProperty(exports, 'TouchScrollable', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15190,7 +15212,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15225,11 +15247,11 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var toString = __webpack_require__(181),
-    upperFirst = __webpack_require__(242);
+    upperFirst = __webpack_require__(243);
 
 /**
  * Converts the first character of `string` to upper case and the remaining
@@ -15254,7 +15276,7 @@ module.exports = capitalize;
 
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15289,7 +15311,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15324,7 +15346,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15359,7 +15381,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15394,12 +15416,12 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(54),
-    isArray = __webpack_require__(55),
-    isObjectLike = __webpack_require__(96);
+var baseGetTag = __webpack_require__(56),
+    isArray = __webpack_require__(57),
+    isObjectLike = __webpack_require__(97);
 
 /** `Object#toString` result references. */
 var stringTag = '[object String]';
@@ -15428,18 +15450,6 @@ function isString(value) {
 
 module.exports = isString;
 
-
-/***/ }),
-/* 196 */
-/***/ (function(module, exports) {
-
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  subClass.__proto__ = superClass;
-}
-
-module.exports = _inheritsLoose;
 
 /***/ }),
 /* 197 */
@@ -15697,7 +15707,7 @@ exports.svgPathData = svgPathData;
 /* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(251);
+module.exports = __webpack_require__(252);
 
 
 /***/ }),
@@ -15916,6 +15926,23 @@ exports.isValidElementType=function(a){return"string"===typeof a||"function"===t
 /* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+/** @license React v16.14.0
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+var f=__webpack_require__(0),g=60103;exports.Fragment=60107;if("function"===typeof Symbol&&Symbol.for){var h=Symbol.for;g=h("react.element");exports.Fragment=h("react.fragment")}var m=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,n=Object.prototype.hasOwnProperty,p={key:!0,ref:!0,__self:!0,__source:!0};
+function q(c,a,k){var b,d={},e=null,l=null;void 0!==k&&(e=""+k);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(l=a.ref);for(b in a)n.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:g,type:c,key:e,ref:l,props:d,_owner:m.current}}exports.jsx=q;exports.jsxs=q;
+
+
+/***/ }),
+/* 223 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
             (typeof self !== "undefined" && self) ||
             window;
@@ -15969,7 +15996,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(223);
+__webpack_require__(224);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -15983,7 +16010,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40)))
 
 /***/ }),
-/* 223 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -16173,10 +16200,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40), __webpack_require__(224)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40), __webpack_require__(225)))
 
 /***/ }),
-/* 224 */
+/* 225 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -16366,7 +16393,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16382,19 +16409,19 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _exenv = __webpack_require__(52);
+var _exenv = __webpack_require__(54);
 
 var _TouchScrollable = __webpack_require__(180);
 
-var _withLockSheet = __webpack_require__(226);
+var _withLockSheet = __webpack_require__(227);
 
 var _withLockSheet2 = _interopRequireDefault(_withLockSheet);
 
-var _withTouchListeners = __webpack_require__(227);
+var _withTouchListeners = __webpack_require__(228);
 
 var _withTouchListeners2 = _interopRequireDefault(_withTouchListeners);
 
-var _utils = __webpack_require__(53);
+var _utils = __webpack_require__(55);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -16470,7 +16497,7 @@ LockToggle.defaultProps = {
 exports.default = LockToggle;
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16488,7 +16515,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _utils = __webpack_require__(53);
+var _utils = __webpack_require__(55);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -16566,7 +16593,7 @@ function withLockSheet(WrappedComponent) {
 }
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16584,9 +16611,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _exenv = __webpack_require__(52);
+var _exenv = __webpack_require__(54);
 
-var _utils = __webpack_require__(53);
+var _utils = __webpack_require__(55);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -16634,10 +16661,10 @@ function withTouchListeners(WrappedComponent) {
 }
 
 /***/ }),
-/* 228 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var freeGlobal = __webpack_require__(229);
+var freeGlobal = __webpack_require__(230);
 
 /** Detect free variable `self`. */
 var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -16649,7 +16676,7 @@ module.exports = root;
 
 
 /***/ }),
-/* 229 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
@@ -16660,10 +16687,10 @@ module.exports = freeGlobal;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40)))
 
 /***/ }),
-/* 230 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(95);
+var Symbol = __webpack_require__(96);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -16712,7 +16739,7 @@ module.exports = getRawTag;
 
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -16740,7 +16767,7 @@ module.exports = objectToString;
 
 
 /***/ }),
-/* 232 */
+/* 233 */
 /***/ (function(module, exports) {
 
 /**
@@ -16777,7 +16804,7 @@ module.exports = isObject;
 
 
 /***/ }),
-/* 233 */
+/* 234 */
 /***/ (function(module, exports) {
 
 function _objectWithoutPropertiesLoose(source, excluded) {
@@ -16798,7 +16825,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 module.exports = _objectWithoutPropertiesLoose;
 
 /***/ }),
-/* 234 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -16941,10 +16968,10 @@ u&&(q.prototype[t]=function(){var t=this.__wrapped__,o=e?[1]:arguments,f=t insta
 var t=hl[n],r=/^(?:push|sort|unshift)$/.test(n)?"tap":"thru",e=/^(?:pop|shift)$/.test(n);q.prototype[n]=function(){var n=arguments;if(e&&!this.__chain__){var u=this.value();return t.apply(yh(u)?u:[],n)}return this[r](function(r){return t.apply(yh(r)?r:[],n)})}}),ee(Bt.prototype,function(n,t){var r=q[t];if(r){var e=r.name+"";yl.call(is,e)||(is[e]=[]),is[e].push({name:t,func:r})}}),is[Ju(Y,hn).name]=[{name:"wrapper",func:Y}],Bt.prototype.clone=Gt,Bt.prototype.reverse=Ht,Bt.prototype.value=Jt,q.prototype.at=Js,
 q.prototype.chain=Xo,q.prototype.commit=nf,q.prototype.next=tf,q.prototype.plant=ef,q.prototype.reverse=uf,q.prototype.toJSON=q.prototype.valueOf=q.prototype.value=of,q.prototype.first=q.prototype.head,Ll&&(q.prototype[Ll]=rf),q},ge=ve(); true?(Xr._=ge,!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(){return ge}).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))):undefined}).call(this);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40), __webpack_require__(235)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40), __webpack_require__(236)(module)))
 
 /***/ }),
-/* 235 */
+/* 236 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -16972,11 +16999,11 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 236 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var mapping = __webpack_require__(237),
-    fallbackHolder = __webpack_require__(238);
+var mapping = __webpack_require__(238),
+    fallbackHolder = __webpack_require__(239);
 
 /** Built-in value reference. */
 var push = Array.prototype.push;
@@ -17547,7 +17574,7 @@ module.exports = baseConvert;
 
 
 /***/ }),
-/* 237 */
+/* 238 */
 /***/ (function(module, exports) {
 
 /** Used to map aliases to their real names. */
@@ -17911,7 +17938,7 @@ exports.skipRearg = {
 
 
 /***/ }),
-/* 238 */
+/* 239 */
 /***/ (function(module, exports) {
 
 /**
@@ -17923,13 +17950,13 @@ module.exports = {};
 
 
 /***/ }),
-/* 239 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(95),
-    arrayMap = __webpack_require__(240),
-    isArray = __webpack_require__(55),
-    isSymbol = __webpack_require__(241);
+var Symbol = __webpack_require__(96),
+    arrayMap = __webpack_require__(241),
+    isArray = __webpack_require__(57),
+    isSymbol = __webpack_require__(242);
 
 /** Used as references for various `Number` constants. */
 var INFINITY = 1 / 0;
@@ -17966,7 +17993,7 @@ module.exports = baseToString;
 
 
 /***/ }),
-/* 240 */
+/* 241 */
 /***/ (function(module, exports) {
 
 /**
@@ -17993,11 +18020,11 @@ module.exports = arrayMap;
 
 
 /***/ }),
-/* 241 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(54),
-    isObjectLike = __webpack_require__(96);
+var baseGetTag = __webpack_require__(56),
+    isObjectLike = __webpack_require__(97);
 
 /** `Object#toString` result references. */
 var symbolTag = '[object Symbol]';
@@ -18028,10 +18055,10 @@ module.exports = isSymbol;
 
 
 /***/ }),
-/* 242 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var createCaseFirst = __webpack_require__(243);
+var createCaseFirst = __webpack_require__(244);
 
 /**
  * Converts the first character of `string` to upper case.
@@ -18056,12 +18083,12 @@ module.exports = upperFirst;
 
 
 /***/ }),
-/* 243 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var castSlice = __webpack_require__(244),
+var castSlice = __webpack_require__(245),
     hasUnicode = __webpack_require__(182),
-    stringToArray = __webpack_require__(246),
+    stringToArray = __webpack_require__(247),
     toString = __webpack_require__(181);
 
 /**
@@ -18095,10 +18122,10 @@ module.exports = createCaseFirst;
 
 
 /***/ }),
-/* 244 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseSlice = __webpack_require__(245);
+var baseSlice = __webpack_require__(246);
 
 /**
  * Casts `array` to a slice if it's needed.
@@ -18119,7 +18146,7 @@ module.exports = castSlice;
 
 
 /***/ }),
-/* 245 */
+/* 246 */
 /***/ (function(module, exports) {
 
 /**
@@ -18156,12 +18183,12 @@ module.exports = baseSlice;
 
 
 /***/ }),
-/* 246 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var asciiToArray = __webpack_require__(247),
+var asciiToArray = __webpack_require__(248),
     hasUnicode = __webpack_require__(182),
-    unicodeToArray = __webpack_require__(248);
+    unicodeToArray = __webpack_require__(249);
 
 /**
  * Converts `string` to an array.
@@ -18180,7 +18207,7 @@ module.exports = stringToArray;
 
 
 /***/ }),
-/* 247 */
+/* 248 */
 /***/ (function(module, exports) {
 
 /**
@@ -18198,7 +18225,7 @@ module.exports = asciiToArray;
 
 
 /***/ }),
-/* 248 */
+/* 249 */
 /***/ (function(module, exports) {
 
 /** Used to compose unicode character classes. */
@@ -18244,10 +18271,10 @@ module.exports = unicodeToArray;
 
 
 /***/ }),
-/* 249 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var overArg = __webpack_require__(250);
+var overArg = __webpack_require__(251);
 
 /** Built-in value references. */
 var getPrototype = overArg(Object.getPrototypeOf, Object);
@@ -18256,7 +18283,7 @@ module.exports = getPrototype;
 
 
 /***/ }),
-/* 250 */
+/* 251 */
 /***/ (function(module, exports) {
 
 /**
@@ -18277,7 +18304,7 @@ module.exports = overArg;
 
 
 /***/ }),
-/* 251 */
+/* 252 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18305,14 +18332,14 @@ __webpack_require__.d(__webpack_exports__, "responsiveFontSizes", function() { r
 __webpack_require__.d(__webpack_exports__, "styled", function() { return /* reexport */ styles_styled; });
 __webpack_require__.d(__webpack_exports__, "easing", function() { return /* reexport */ easing; });
 __webpack_require__.d(__webpack_exports__, "duration", function() { return /* reexport */ transitions_duration; });
-__webpack_require__.d(__webpack_exports__, "useTheme", function() { return /* reexport */ useTheme_useTheme; });
+__webpack_require__.d(__webpack_exports__, "useTheme", function() { return /* reexport */ styles_useTheme_useTheme; });
 __webpack_require__.d(__webpack_exports__, "withStyles", function() { return /* reexport */ styles_withStyles; });
 __webpack_require__.d(__webpack_exports__, "withTheme", function() { return /* reexport */ styles_withTheme; });
 __webpack_require__.d(__webpack_exports__, "createGenerateClassName", function() { return /* reexport */ createGenerateClassName; });
 __webpack_require__.d(__webpack_exports__, "jssPreset", function() { return /* reexport */ jssPreset; });
 __webpack_require__.d(__webpack_exports__, "ServerStyleSheets", function() { return /* reexport */ ServerStyleSheets_ServerStyleSheets; });
-__webpack_require__.d(__webpack_exports__, "MuiThemeProvider", function() { return /* reexport */ ThemeProvider_ThemeProvider; });
-__webpack_require__.d(__webpack_exports__, "ThemeProvider", function() { return /* reexport */ ThemeProvider_ThemeProvider; });
+__webpack_require__.d(__webpack_exports__, "MuiThemeProvider", function() { return /* reexport */ esm_ThemeProvider_ThemeProvider; });
+__webpack_require__.d(__webpack_exports__, "ThemeProvider", function() { return /* reexport */ esm_ThemeProvider_ThemeProvider; });
 __webpack_require__.d(__webpack_exports__, "capitalize", function() { return /* reexport */ capitalize; });
 __webpack_require__.d(__webpack_exports__, "createChainedFunction", function() { return /* reexport */ createChainedFunction; });
 __webpack_require__.d(__webpack_exports__, "createSvgIcon", function() { return /* reexport */ createSvgIcon; });
@@ -18676,7 +18703,7 @@ var external_root_React_commonjs2_react_commonjs_react_amd_react_ = __webpack_re
 var external_root_React_commonjs2_react_commonjs_react_amd_react_default = /*#__PURE__*/__webpack_require__.n(external_root_React_commonjs2_react_commonjs_react_amd_react_);
 
 // EXTERNAL MODULE: ./node_modules/prop-types/index.js
-var prop_types = __webpack_require__(1);
+var prop_types = __webpack_require__(2);
 var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
 
 // CONCATENATED MODULE: ./node_modules/@material-ui/styles/esm/ThemeProvider/nested.js
@@ -18796,11 +18823,21 @@ function _createClass(Constructor, protoProps, staticProps) {
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
 }
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js
+
 function _inheritsLoose(subClass, superClass) {
   subClass.prototype = Object.create(superClass.prototype);
   subClass.prototype.constructor = subClass;
-  subClass.__proto__ = superClass;
+  _setPrototypeOf(subClass, superClass);
 }
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js
 function _assertThisInitialized(self) {
@@ -20780,7 +20817,7 @@ var jss_esm_Jss =
 function () {
   function Jss(options) {
     this.id = instanceCounter++;
-    this.version = "10.5.0";
+    this.version = "10.5.1";
     this.plugins = new PluginsRegistry();
     this.options = {
       id: {
@@ -21619,6 +21656,7 @@ var defaultUnits = {
   'font-size': px,
   'font-size-delta': px,
   'letter-spacing': px,
+  'text-decoration-thickness': px,
   'text-indent': px,
   'text-stroke': px,
   'text-stroke-width': px,
@@ -21652,6 +21690,7 @@ var defaultUnits = {
   // Grid properties
   grid: px,
   'grid-gap': px,
+  'row-gap': px,
   'grid-row-gap': px,
   'grid-column-gap': px,
   'grid-template-rows': px,
@@ -21712,7 +21751,7 @@ function iterate(prop, value, options) {
         value[_innerProp] = iterate(prop + "-" + _innerProp, value[_innerProp], options);
       }
     }
-  } else if (typeof value === 'number') {
+  } else if (typeof value === 'number' && !Number.isNaN(value)) {
     var unit = options[prop] || units[prop]; // Add the unit if available, except for the special case of 0px.
 
     if (unit && !(value === 0 && unit === px)) {
@@ -22592,7 +22631,7 @@ function useUtils() {
 //# sourceMappingURL=useUtils-cfb96ac9.js.map
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/toConsumableArray.js
-var toConsumableArray = __webpack_require__(57);
+var toConsumableArray = __webpack_require__(44);
 var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableArray);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/classCallCheck.js
@@ -22612,7 +22651,7 @@ var possibleConstructorReturn = __webpack_require__(12);
 var possibleConstructorReturn_default = /*#__PURE__*/__webpack_require__.n(possibleConstructorReturn);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/getPrototypeOf.js
-var getPrototypeOf = __webpack_require__(6);
+var getPrototypeOf = __webpack_require__(7);
 var getPrototypeOf_default = /*#__PURE__*/__webpack_require__.n(getPrototypeOf);
 
 // EXTERNAL MODULE: ./node_modules/luxon/build/cjs-browser/luxon.js
@@ -22965,15 +23004,6 @@ function _getPrototypeOf(o) {
   };
   return _getPrototypeOf(o);
 }
-// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/isNativeFunction.js
 function _isNativeFunction(fn) {
   return Function.toString.call(fn).indexOf("[native code]") !== -1;
@@ -23313,7 +23343,9 @@ var ERRORS = {
   "73": "Please provide a valid CSS variable.\n\n",
   "74": "CSS variable not found and no default was provided.\n\n",
   "75": "important requires a valid style object, got a %s instead.\n\n",
-  "76": "fromSize and toSize must be provided as stringified numbers with the same units as minScreen and maxScreen.\n"
+  "76": "fromSize and toSize must be provided as stringified numbers with the same units as minScreen and maxScreen.\n\n",
+  "77": "remToPx expects a value in \"rem\" but you provided it in \"%s\".\n\n",
+  "78": "base must be set in \"px\" or \"%\" but you set it in \"%s\".\n"
 };
 /**
  * super basic version of sprintf
@@ -23907,6 +23939,72 @@ function modularScale(steps, base, ratio) {
  */
 
 var rem = /*#__PURE__*/pxtoFactory('rem');
+
+var defaultFontSize = 16;
+
+function convertBase(base) {
+  var deconstructedValue = getValueAndUnit(base);
+
+  if (deconstructedValue[1] === 'px') {
+    return parseFloat(base);
+  }
+
+  if (deconstructedValue[1] === '%') {
+    return parseFloat(base) / 100 * defaultFontSize;
+  }
+
+  throw new polished_esm_PolishedError(78, deconstructedValue[1]);
+}
+
+function getBaseFromDoc() {
+  /* eslint-disable */
+
+  /* istanbul ignore next */
+  if (typeof document !== 'undefined' && document.documentElement !== null) {
+    var rootFontSize = getComputedStyle(document.documentElement).fontSize;
+    return rootFontSize ? convertBase(rootFontSize) : defaultFontSize;
+  }
+  /* eslint-enable */
+
+  /* istanbul ignore next */
+
+
+  return defaultFontSize;
+}
+/**
+ * Convert rem values to px. By default, the base value is pulled from the font-size property on the root element (if it is set in % or px). It defaults to 16px if not found on the root. You can also override the base value by providing your own base in % or px.
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   'height': remToPx('1.6rem')
+ *   'height': remToPx('1.6rem', '10px')
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   height: ${remToPx('1.6rem')}
+ *   height: ${remToPx('1.6rem', '10px')}
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   'height': '25.6px',
+ *   'height': '16px',
+ * }
+ */
+
+
+function remToPx(value, base) {
+  var deconstructedValue = getValueAndUnit(value);
+
+  if (deconstructedValue[1] !== 'rem' && deconstructedValue[1] !== '') {
+    throw new polished_esm_PolishedError(77, deconstructedValue[1]);
+  }
+
+  var newBase = base ? convertBase(base) : getBaseFromDoc();
+  return deconstructedValue[0] * newBase + "px";
+}
 
 var functionsMap = {
   back: 'cubic-bezier(0.600, -0.280, 0.735, 0.045)',
@@ -26824,7 +26922,7 @@ function borderColor() {
  *   'borderTopLeftRadius': '5px',
  * }
  */
-function borderRadius(side, radius) {
+function polished_esm_borderRadius(side, radius) {
   var uppercaseSide = capitalizeString(side);
 
   if (!radius && radius !== 0) {
@@ -27438,7 +27536,7 @@ var APP_CONTENT_WIDTH = 1104; // 12 column grid system: 48px * (12 columns + 11 
 
 
 // EXTERNAL MODULE: external {"amd":"styled-components","commonjs":"styled-components","commonjs2":"styled-components"}
-var external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_ = __webpack_require__(2);
+var external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_ = __webpack_require__(4);
 var external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default = /*#__PURE__*/__webpack_require__.n(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_);
 
 // CONCATENATED MODULE: ./src/utils/StyleUtils.js
@@ -28878,8 +28976,8 @@ function createUnarySpacing(theme) {
   };
 }
 
-function spacing_getValue(transformer, propValue) {
-  if (typeof propValue === 'string') {
+function getValue(transformer, propValue) {
+  if (typeof propValue === 'string' || propValue == null) {
     return propValue;
   }
 
@@ -28900,7 +28998,7 @@ function spacing_getValue(transformer, propValue) {
 function getStyleFromPropValue(cssProperties, transformer) {
   return function (propValue) {
     return cssProperties.reduce(function (acc, cssProperty) {
-      acc[cssProperty] = spacing_getValue(transformer, propValue);
+      acc[cssProperty] = getValue(transformer, propValue);
       return acc;
     }, {});
   };
@@ -29220,7 +29318,7 @@ if (false) {}
 // CONCATENATED MODULE: ./node_modules/@material-ui/styles/esm/useTheme/useTheme.js
 
 
-function useTheme() {
+function useTheme_useTheme() {
   var theme = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useContext(useTheme_ThemeContext);
 
   if (false) {}
@@ -29511,7 +29609,7 @@ function makeStyles(stylesOrCreator) {
 
   var useStyles = function useStyles() {
     var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var theme = useTheme() || defaultTheme;
+    var theme = useTheme_useTheme() || defaultTheme;
 
     var stylesOptions = _extends({}, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useContext(StylesContext), stylesOptions2);
 
@@ -29807,7 +29905,7 @@ function toVal(mix) {
 });
 
 // EXTERNAL MODULE: ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js
-var hoist_non_react_statics_cjs = __webpack_require__(29);
+var hoist_non_react_statics_cjs = __webpack_require__(25);
 var hoist_non_react_statics_cjs_default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics_cjs);
 
 // CONCATENATED MODULE: ./node_modules/@material-ui/styles/esm/styled/styled.js
@@ -29940,8 +30038,8 @@ var styles_styled_styled = function styled(Component) {
 
 
 
-function useTheme_useTheme() {
-  var theme = useTheme() || styles_defaultTheme;
+function styles_useTheme_useTheme() {
+  var theme = useTheme_useTheme() || styles_defaultTheme;
 
   if (false) {}
 
@@ -30020,7 +30118,7 @@ var withStyles_withStyles = function withStyles(stylesOrCreator) {
       if (typeof name === 'string' || withTheme) {
         // name and withTheme are invariant in the outer scope
         // eslint-disable-next-line react-hooks/rules-of-hooks
-        theme = useTheme() || defaultTheme;
+        theme = useTheme_useTheme() || defaultTheme;
 
         if (name) {
           more = getThemeProps({
@@ -30086,7 +30184,7 @@ function withThemeCreator() {
       var innerRef = props.innerRef,
           other = _objectWithoutProperties(props, ["innerRef"]);
 
-      var theme = useTheme() || defaultTheme;
+      var theme = useTheme_useTheme() || defaultTheme;
       return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Component, _extends({
         theme: theme,
         ref: innerRef || ref
@@ -30205,10 +30303,10 @@ function mergeOuterLocalTheme(outerTheme, localTheme) {
  */
 
 
-function ThemeProvider(props) {
+function ThemeProvider_ThemeProvider(props) {
   var children = props.children,
       localTheme = props.theme;
-  var outerTheme = useTheme();
+  var outerTheme = useTheme_useTheme();
 
   if (false) {}
 
@@ -30230,7 +30328,7 @@ function ThemeProvider(props) {
 
 if (false) {}
 
-/* harmony default export */ var ThemeProvider_ThemeProvider = (ThemeProvider);
+/* harmony default export */ var esm_ThemeProvider_ThemeProvider = (ThemeProvider_ThemeProvider);
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/styles/index.js
 
  // eslint-disable-next-line camelcase
@@ -30603,7 +30701,7 @@ function useId(idOverride) {
   return id;
 }
 // EXTERNAL MODULE: external {"root":"ReactDOM","commonjs2":"react-dom","commonjs":"react-dom","amd":"react-dom"}
-var external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_ = __webpack_require__(7);
+var external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_ = __webpack_require__(8);
 var external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_default = /*#__PURE__*/__webpack_require__.n(external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_);
 
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/utils/useIsFocusVisible.js
@@ -31315,7 +31413,7 @@ var Collapse_Collapse = /*#__PURE__*/external_root_React_commonjs2_react_commonj
       TransitionComponent = _props$TransitionComp === void 0 ? esm_Transition : _props$TransitionComp,
       other = _objectWithoutProperties(props, ["children", "classes", "className", "collapsedHeight", "component", "disableStrictModeCompat", "in", "onEnter", "onEntered", "onEntering", "onExit", "onExited", "onExiting", "style", "timeout", "TransitionComponent"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var timer = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
   var wrapperRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
   var autoTransitionDuration = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
@@ -33325,7 +33423,7 @@ var Fade_Fade = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_
       timeout = _props$timeout === void 0 ? defaultTimeout : _props$timeout,
       other = _objectWithoutProperties(props, ["children", "disableStrictModeCompat", "in", "onEnter", "onEntered", "onEntering", "onExit", "onExited", "onExiting", "style", "TransitionComponent", "timeout"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var enableStrictModeCompat = theme.unstable_strictMode && !disableStrictModeCompat;
   var nodeRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
   var foreignRef = useForkRef(children.ref, ref);
@@ -33989,7 +34087,7 @@ var sizing_maxHeight = esm_style({
   prop: 'maxHeight',
   transform: sizing_transform
 });
-var sizing_minHeight = esm_style({
+var minHeight = esm_style({
   prop: 'minHeight',
   transform: sizing_transform
 });
@@ -34006,7 +34104,7 @@ var sizeHeight = esm_style({
 var boxSizing = esm_style({
   prop: 'boxSizing'
 });
-var sizing = esm_compose(sizing_width, sizing_maxWidth, minWidth, sizing_height, sizing_maxHeight, sizing_minHeight, boxSizing);
+var sizing = esm_compose(sizing_width, sizing_maxWidth, minWidth, sizing_height, sizing_maxHeight, minHeight, boxSizing);
 /* harmony default export */ var esm_sizing = (sizing);
 // CONCATENATED MODULE: ./node_modules/@material-ui/system/esm/typography.js
 
@@ -36329,7 +36427,7 @@ var Modal_styles = function styles(theme) {
  */
 
 var Modal_Modal = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Modal(inProps, ref) {
-  var theme = useTheme();
+  var theme = useTheme_useTheme();
   var props = getThemeProps({
     name: 'MuiModal',
     props: _extends({}, inProps),
@@ -39470,7 +39568,7 @@ var Grow_Grow = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_
 
   var timer = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
   var autoTimeout = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"]();
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var enableStrictModeCompat = theme.unstable_strictMode && !disableStrictModeCompat;
   var nodeRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
   var foreignRef = useForkRef(children.ref, ref);
@@ -39610,7 +39708,7 @@ Grow_Grow.muiSupportAuto = true;
 
 function useMediaQuery(queryInput) {
   var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  var theme = useTheme();
+  var theme = useTheme_useTheme();
   var props = getThemeProps({
     theme: theme,
     name: 'MuiUseMediaQuery',
@@ -39726,7 +39824,7 @@ var withWidth_withWidth = function withWidth() {
         initialWidthOption = options.initialWidth;
 
     function WithWidth(props) {
-      var contextTheme = useTheme_useTheme();
+      var contextTheme = styles_useTheme_useTheme();
       var theme = props.theme || contextTheme;
 
       var _getThemeProps = getThemeProps({
@@ -39800,7 +39898,7 @@ function HiddenJs(props) {
   var children = props.children,
       only = props.only,
       width = props.width;
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var visible = true; // `only` check is faster to get out sooner if used.
 
   if (only) {
@@ -39967,7 +40065,7 @@ function HiddenCss(props) {
       only = props.only,
       other = _objectWithoutProperties(props, ["children", "classes", "className", "only"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
 
   if (false) { var unknownProps; }
 
@@ -40585,7 +40683,7 @@ var LinearProgress_LinearProgress = /*#__PURE__*/external_root_React_commonjs2_r
       variant = _props$variant === void 0 ? 'indeterminate' : _props$variant,
       other = _objectWithoutProperties(props, ["classes", "className", "color", "value", "valueBuffer", "variant"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var rootProps = {};
   var inlineStyles = {
     bar1: {},
@@ -41979,7 +42077,7 @@ var Menu_Menu = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_
       variant = _props$variant === void 0 ? 'selectedMenu' : _props$variant,
       other = _objectWithoutProperties(props, ["autoFocus", "children", "classes", "disableAutoFocusItem", "MenuListProps", "onClose", "onEntering", "open", "PaperProps", "PopoverClasses", "transitionDuration", "variant"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var autoFocusItem = autoFocus && !disableAutoFocusItem && open;
   var menuListActionsRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
   var contentAnchorRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
@@ -42746,7 +42844,7 @@ var NotchedOutline_NotchedOutline = /*#__PURE__*/external_root_React_commonjs2_r
       style = props.style,
       other = _objectWithoutProperties(props, ["children", "classes", "className", "label", "labelWidth", "notched", "style"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var align = theme.direction === 'rtl' ? 'right' : 'left';
 
   if (label !== undefined) {
@@ -42944,7 +43042,7 @@ OutlinedInput_OutlinedInput.muiName = 'Input';
   name: 'MuiOutlinedInput'
 })(OutlinedInput_OutlinedInput));
 // EXTERNAL MODULE: ./node_modules/popper.js/dist/esm/popper.js
-var esm_popper = __webpack_require__(183);
+var esm_popper = __webpack_require__(184);
 
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Popper/Popper.js
 
@@ -43030,7 +43128,7 @@ var Popper_Popper = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_re
       exited = _React$useState[0],
       setExited = _React$useState[1];
 
-  var theme = useTheme();
+  var theme = useTheme_useTheme();
   var rtlPlacement = flipPlacement(initialPlacement, theme);
   /**
    * placement initialized from prop but can change during lifetime if modifiers.flip.
@@ -43453,7 +43551,7 @@ var Slide_Slide = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_reac
       TransitionComponent = _props$TransitionComp === void 0 ? esm_Transition : _props$TransitionComp,
       other = _objectWithoutProperties(props, ["children", "direction", "in", "onEnter", "onEntered", "onEntering", "onExit", "onExited", "onExiting", "style", "timeout", "TransitionComponent"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var childrenRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
   /**
    * used in cloneElement(children, { ref: handleRef })
@@ -44103,7 +44201,7 @@ var Slider_Slider = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_re
       valueLabelFormat = _props$valueLabelForm === void 0 ? Identity : _props$valueLabelForm,
       other = _objectWithoutProperties(props, ["aria-label", "aria-labelledby", "aria-valuetext", "classes", "className", "color", "component", "defaultValue", "disabled", "getAriaLabel", "getAriaValueText", "marks", "max", "min", "name", "onChange", "onChangeCommitted", "onMouseDown", "orientation", "scale", "step", "ThumbComponent", "track", "value", "ValueLabelComponent", "valueLabelDisplay", "valueLabelFormat"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var touchId = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](); // We can't use the :active browser pseudo-classes.
   // - The active state isn't triggered when clicking on the rail.
   // - The active state isn't transfered when inversing a range slider.
@@ -45495,7 +45593,7 @@ var Drawer_Drawer = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_re
       variant = _props$variant === void 0 ? 'temporary' : _props$variant,
       other = _objectWithoutProperties(props, ["anchor", "BackdropProps", "children", "classes", "className", "elevation", "ModalProps", "onClose", "open", "PaperProps", "SlideProps", "TransitionComponent", "transitionDuration", "variant"]);
 
-  var theme = useTheme_useTheme(); // Let's assume that the Drawer will always be rendered on user space.
+  var theme = styles_useTheme_useTheme(); // Let's assume that the Drawer will always be rendered on user space.
   // We use this state is order to skip the appear transition during the
   // initial mount of the component.
 
@@ -45724,7 +45822,7 @@ var transitionDurationDefault = {
 };
 var SwipeableDrawer_useEnhancedEffect = typeof window !== 'undefined' ? external_root_React_commonjs2_react_commonjs_react_amd_react_["useLayoutEffect"] : external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"];
 var SwipeableDrawer_SwipeableDrawer = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function SwipeableDrawer(inProps, ref) {
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var props = getThemeProps({
     name: 'MuiSwipeableDrawer',
     props: _extends({}, inProps),
@@ -47532,7 +47630,7 @@ var TablePaginationActions_TablePaginationActions = /*#__PURE__*/external_root_R
       rowsPerPage = props.rowsPerPage,
       other = _objectWithoutProperties(props, ["backIconButtonProps", "count", "nextIconButtonProps", "onChangePage", "page", "rowsPerPage"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
 
   var handleBackButtonClick = function handleBackButtonClick(event) {
     onChangePage(event, page - 1);
@@ -48270,7 +48368,7 @@ var Tabs_Tabs = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_
       variant = _props$variant === void 0 ? 'standard' : _props$variant,
       other = _objectWithoutProperties(props, ["aria-label", "aria-labelledby", "action", "centered", "children", "classes", "className", "component", "indicatorColor", "onChange", "orientation", "ScrollButtonComponent", "scrollButtons", "selectionFollowsFocus", "TabIndicatorProps", "TabScrollButtonProps", "textColor", "value", "variant"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var scrollable = variant === 'scrollable';
   var isRtl = theme.direction === 'rtl';
   var vertical = orientation === 'vertical';
@@ -49017,7 +49115,7 @@ var Tooltip_Tooltip = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_
       TransitionProps = props.TransitionProps,
       other = _objectWithoutProperties(props, ["arrow", "children", "classes", "disableFocusListener", "disableHoverListener", "disableTouchListener", "enterDelay", "enterNextDelay", "enterTouchDelay", "id", "interactive", "leaveDelay", "leaveTouchDelay", "onClose", "onOpen", "open", "placement", "PopperComponent", "PopperProps", "title", "TransitionComponent", "TransitionProps"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
 
   var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"](),
       childNode = _React$useState[0],
@@ -49455,7 +49553,7 @@ var Zoom_Zoom = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_
       TransitionComponent = _props$TransitionComp === void 0 ? esm_Transition : _props$TransitionComp,
       other = _objectWithoutProperties(props, ["children", "disableStrictModeCompat", "in", "onEnter", "onEntered", "onEntering", "onExit", "onExited", "onExiting", "style", "timeout", "TransitionComponent"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var enableStrictModeCompat = theme.unstable_strictMode && !disableStrictModeCompat;
   var nodeRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
   var foreignRef = useForkRef(children.ref, ref);
@@ -49537,7 +49635,7 @@ var Zoom_Zoom = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_
  false ? undefined : void 0;
 /* harmony default export */ var esm_Zoom_Zoom = (Zoom_Zoom);
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/index.js
-/** @license Material-UI v4.11.2
+/** @license Material-UI v4.11.3
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -52128,7 +52226,7 @@ var PaginationItem_PaginationItem = /*#__PURE__*/external_root_React_commonjs2_r
       variant = _props$variant === void 0 ? 'text' : _props$variant,
       other = _objectWithoutProperties(props, ["classes", "className", "color", "component", "disabled", "page", "selected", "shape", "size", "type", "variant"]);
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var normalizedIcons = theme.direction === 'rtl' ? {
     previous: NavigateNext,
     next: NavigateBefore,
@@ -52467,7 +52565,7 @@ var Rating_Rating = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_re
       setValueState = _useControlled2[1];
 
   var valueRounded = roundValueToPrecision(valueDerived, precision);
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
 
   var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"]({
     hover: -1,
@@ -54401,7 +54499,7 @@ var TreeItem_TreeItem = /*#__PURE__*/external_root_React_commonjs2_react_commonj
   var tabbable = isTabbable ? isTabbable(nodeId) : false;
   var selected = isSelected ? isSelected(nodeId) : false;
   var icons = contextIcons || {};
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
 
   if (!icon) {
     if (expandable) {
@@ -55392,6 +55490,9 @@ var TreeView_TreeView = /*#__PURE__*/external_root_React_commonjs2_react_commonj
  // createFilterOptions is exported from Autocomplete
 
 
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(1);
+
 // CONCATENATED MODULE: ./src/badge/src/components/Badge.js
 
 
@@ -55409,20 +55510,18 @@ var getFontColor = getStyleVariation('mode', {
   secondary: Badge_PURPLE.P400,
   subtle: Badge_PURPLE.P300
 }, Badge_NEUTRAL.N700);
-var BadgeWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "Badge__BadgeWrapper",
-  componentId: "sc-1kfg7sp-0"
-})(["background-color:", ";border-radius:2em;color:", ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;"], Badge_getBackgroundColor, getFontColor);
+var BadgeWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["background-color:", ";border-radius:2em;color:", ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;"], Badge_getBackgroundColor, getFontColor);
 
 var Badge_Badge = function Badge(_ref) {
   var className = _ref.className,
       count = _ref.count,
       max = _ref.max,
       mode = _ref.mode;
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(BadgeWrapper, {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(BadgeWrapper, {
     className: className,
-    mode: mode
-  }, max !== undefined && count > max ? "".concat(max, "+") : count);
+    mode: mode,
+    children: max !== undefined && count > max ? "".concat(max, "+") : count
+  });
 };
 
 Badge_Badge.defaultProps = {
@@ -55435,7 +55534,7 @@ Badge_Badge.defaultProps = {
 
 /* harmony default export */ var badge = (components_Badge);
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/assertThisInitialized.js
-var assertThisInitialized = __webpack_require__(4);
+var assertThisInitialized = __webpack_require__(5);
 var assertThisInitialized_default = /*#__PURE__*/__webpack_require__.n(assertThisInitialized);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/defineProperty.js
@@ -55443,16 +55542,16 @@ var defineProperty = __webpack_require__(3);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faCheckCircle.js
-var faCheckCircle = __webpack_require__(185);
+var faCheckCircle = __webpack_require__(186);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faExclamationTriangle.js
-var faExclamationTriangle = __webpack_require__(186);
+var faExclamationTriangle = __webpack_require__(187);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faTimesOctagon.js
-var faTimesOctagon = __webpack_require__(184);
+var faTimesOctagon = __webpack_require__(185);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/fontawesome-svg-core/index.es.js
-var index_es = __webpack_require__(58);
+var index_es = __webpack_require__(59);
 
 // CONCATENATED MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js
 
@@ -55865,18 +55964,9 @@ var getMaxHeight = function getMaxHeight(props) {
   return maxHeight;
 };
 
-var StyledBannerComponents_Container = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledBannerComponents__Container",
-  componentId: "sc-88s6ku-0"
-})(["background-color:", ";color:", ";max-height:", ";overflow:hidden;transition:max-height ", " ease-out;", ""], StyledBannerComponents_backgroundColor, StyledBannerComponents_getFontColor, getMaxHeight, style_transitions_duration.enter, StyleUtils_getStickyPosition);
-var Content = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledBannerComponents__Content",
-  componentId: "sc-88s6ku-1"
-})(["align-items:center;display:flex;justify-content:center;margin:auto;max-width:900px;padding:10px;min-width:0;"]);
-var IconWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledBannerComponents__IconWrapper",
-  componentId: "sc-88s6ku-2"
-})(["vertical-align:middle;align-items:center;display:flex;flex-direction:column;flex:0 0 auto;margin-right:5px;"]);
+var StyledBannerComponents_Container = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["background-color:", ";color:", ";max-height:", ";overflow:hidden;transition:max-height ", " ease-out;", ""], StyledBannerComponents_backgroundColor, StyledBannerComponents_getFontColor, getMaxHeight, style_transitions_duration.enter, StyleUtils_getStickyPosition);
+var Content = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["align-items:center;display:flex;justify-content:center;margin:auto;max-width:900px;padding:10px;min-width:0;"]);
+var IconWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["vertical-align:middle;align-items:center;display:flex;flex-direction:column;flex:0 0 auto;margin-right:5px;"]);
 
 // CONCATENATED MODULE: ./src/banner/src/components/Banner.js
 
@@ -55890,6 +55980,8 @@ var IconWrapper = external_amd_styled_components_commonjs_styled_components_comm
 function Banner_createSuper(Derived) { var hasNativeReflectConstruct = Banner_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
 function Banner_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 
 
@@ -55927,13 +56019,17 @@ var Banner_Banner = /*#__PURE__*/function (_Component) {
 
       if (finalIcon) {
         if (typeof finalIcon === 'function') {
-          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconWrapper, null, finalIcon());
+          return /*#__PURE__*/Object(jsx_runtime["jsx"])(IconWrapper, {
+            children: finalIcon()
+          });
         }
 
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
-          icon: finalIcon,
-          fixedWidth: true
-        }));
+        return /*#__PURE__*/Object(jsx_runtime["jsx"])(IconWrapper, {
+          children: /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
+            icon: finalIcon,
+            fixedWidth: true
+          })
+        });
       }
 
       return null;
@@ -55952,13 +56048,16 @@ var Banner_Banner = /*#__PURE__*/function (_Component) {
           maxHeight = _this$props.maxHeight,
           mode = _this$props.mode,
           sticky = _this$props.sticky;
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledBannerComponents_Container, {
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(StyledBannerComponents_Container, {
         className: className,
         isOpen: isOpen,
         maxHeight: maxHeight,
         mode: mode,
-        sticky: sticky
-      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Content, null, this.renderIcon(), children));
+        sticky: sticky,
+        children: /*#__PURE__*/Object(jsx_runtime["jsxs"])(Content, {
+          children: [this.renderIcon(), children]
+        })
+      });
     }
   }]);
 
@@ -56371,11 +56470,11 @@ defineProperty_default()(components_Portal_Portal, "propTypes", {
 // CONCATENATED MODULE: ./src/portal/index.js
 
 // EXTERNAL MODULE: ./node_modules/react-scrolllock/dist/index.js
-var dist = __webpack_require__(187);
+var dist = __webpack_require__(188);
 var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
 
 // EXTERNAL MODULE: ./node_modules/lodash/isFunction.js
-var isFunction = __webpack_require__(13);
+var isFunction = __webpack_require__(14);
 var isFunction_default = /*#__PURE__*/__webpack_require__.n(isFunction);
 
 // CONCATENATED MODULE: ./src/transitions/index.js
@@ -56400,17 +56499,11 @@ var slideTransitionStyles = Object(external_amd_styled_components_commonjs_style
 
  // TODO: centralize z-index layering
 
-var OverlayOuterContainer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledOverlayComponents__OverlayOuterContainer",
-  componentId: "ol4tzw-0"
-})(["background-color:", ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;", ";"], function (props) {
+var OverlayOuterContainer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["background-color:", ";bottom:0;display:block;left:0;position:fixed;right:0;top:0;z-index:1000;", ";"], function (props) {
   return props.transparent ? 'transparent' : OVERLAY_BG;
 }, fadeTransitionStyles);
 OverlayOuterContainer.displayName = 'OverlayOuterContainer';
-var OverlayInnerContainer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledOverlayComponents__OverlayInnerContainer",
-  componentId: "ol4tzw-1"
-})(["display:block;height:100%;position:absolute;overflow-y:", ";width:100%;"], function (_ref) {
+var OverlayInnerContainer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["display:block;height:100%;position:absolute;overflow-y:", ";width:100%;"], function (_ref) {
   var isScrollable = _ref.isScrollable;
   return isScrollable ? 'scroll' : 'visible';
 });
@@ -56427,6 +56520,7 @@ OverlayInnerContainer.displayName = 'OverlayInnerContainer';
 function Overlay_createSuper(Derived) { var hasNativeReflectConstruct = Overlay_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
 function Overlay_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
 
 
 
@@ -56484,18 +56578,25 @@ var Overlay_Overlay = /*#__PURE__*/function (_Component) {
           children = _this$props.children,
           isScrollable = _this$props.isScrollable,
           transparent = _this$props.transparent;
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_CSSTransition, {
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_CSSTransition, {
         "in": isVisible,
         mountOnEnter: true,
         unmountOnExit: true,
         timeout: 200,
-        classNames: "luk-fade"
-      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Portal_Portal, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(dist_default.a, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(OverlayOuterContainer, {
-        transparent: transparent
-      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(OverlayInnerContainer, {
-        isScrollable: isScrollable,
-        onClick: this.handleOnClick
-      }, children)))));
+        classNames: "luk-fade",
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Portal_Portal, {
+          children: /*#__PURE__*/Object(jsx_runtime["jsx"])(dist_default.a, {
+            children: /*#__PURE__*/Object(jsx_runtime["jsx"])(OverlayOuterContainer, {
+              transparent: transparent,
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])(OverlayInnerContainer, {
+                isScrollable: isScrollable,
+                onClick: this.handleOnClick,
+                children: children
+              })
+            })
+          })
+        })
+      });
     }
   }]);
 
@@ -56549,10 +56650,7 @@ var DrawerCard_getScreenPosition = function getScreenPosition(props) {
   }
 };
 
-var DrawerCardWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "DrawerCard__DrawerCardWrapper",
-  componentId: "sc-1ka5kr5-0"
-})(["background-color:white;box-shadow:0 0 30px 0 rgba(0,0,0,0.2);display:flex;flex-direction:column;height:100%;justify-content:flex-start;min-width:300px;overflow-y:auto;position:fixed;top:0;z-index:1000;", ";", ";"], DrawerCard_getScreenPosition, slideTransitionStyles);
+var DrawerCardWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["background-color:white;box-shadow:0 0 30px 0 rgba(0,0,0,0.2);display:flex;flex-direction:column;height:100%;justify-content:flex-start;min-width:300px;overflow-y:auto;position:fixed;top:0;z-index:1000;", ";", ";"], DrawerCard_getScreenPosition, slideTransitionStyles);
 
 var DrawerCard_DrawerCard = function DrawerCard(props) {
   var children = props.children,
@@ -56560,13 +56658,16 @@ var DrawerCard_DrawerCard = function DrawerCard(props) {
       shouldCloseOnEscape = props.shouldCloseOnEscape,
       side = props.side;
   hooks_useKeyDownListener(ESC, onClose, shouldCloseOnEscape);
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(DrawerCardWrapper, {
-    side: side
-  }, children);
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(DrawerCardWrapper, {
+    side: side,
+    children: children
+  });
 };
 
 /* harmony default export */ var styled_DrawerCard = (DrawerCard_DrawerCard);
 // CONCATENATED MODULE: ./src/drawer/src/components/Drawer.js
+
+
 
 
 
@@ -56586,23 +56687,29 @@ var components_Drawer_Drawer = function Drawer(props) {
       shouldCloseOnOutsideClick = props.shouldCloseOnOutsideClick,
       side = props.side,
       transparentOverlay = props.transparentOverlay;
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Overlay_Overlay, {
-    onClose: onClose,
-    isVisible: isOpen,
-    isScrollable: true,
-    shouldCloseOnClick: shouldCloseOnOutsideClick,
-    transparent: transparentOverlay
-  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_CSSTransition, {
-    "in": isOpen,
-    mountOnEnter: true,
-    unmountOnExit: true,
-    timeout: 200,
-    classNames: "luk-slide"
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Portal_Portal, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_DrawerCard, {
-    onClose: onClose,
-    shouldCloseOnEscape: shouldCloseOnEscape,
-    side: side
-  }, children))));
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])(jsx_runtime["Fragment"], {
+    children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(Overlay_Overlay, {
+      onClose: onClose,
+      isVisible: isOpen,
+      isScrollable: true,
+      shouldCloseOnClick: shouldCloseOnOutsideClick,
+      transparent: transparentOverlay
+    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_CSSTransition, {
+      "in": isOpen,
+      mountOnEnter: true,
+      unmountOnExit: true,
+      timeout: 200,
+      classNames: "luk-slide",
+      children: /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Portal_Portal, {
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_DrawerCard, {
+          onClose: onClose,
+          shouldCloseOnEscape: shouldCloseOnEscape,
+          side: side,
+          children: children
+        })
+      })
+    })]
+  });
 };
 
 components_Drawer_Drawer.defaultProps = {
@@ -56642,10 +56749,7 @@ var Label_getRequiredStyles = function getRequiredStyles(_ref2) {
   return null;
 };
 
-var Label_Label = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.label.withConfig({
-  displayName: "Label",
-  componentId: "sc-130fyca-0"
-})(["color:", ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:", ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:", ";", ";", ";"], NEUTRAL.N900, function (props) {
+var Label_Label = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.label(["color:", ";display:inline-block;font-size:14px;font-stretch:normal;font-style:normal;font-weight:", ";letter-spacing:normal;margin:5px 5px 5px 0;visibility:", ";", ";", ";"], NEUTRAL.N900, function (props) {
   return props.bold ? '600' : 'normal';
 }, function (props) {
   return props.stealth && 'hidden';
@@ -56655,17 +56759,14 @@ var Label_Label = external_amd_styled_components_commonjs_styled_components_comm
 
 /* harmony default export */ var src_label = (components_Label);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-light-svg-icons/faCircle.js
-var faCircle = __webpack_require__(188);
+var faCircle = __webpack_require__(189);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-light-svg-icons/faSpinnerThird.js
-var faSpinnerThird = __webpack_require__(189);
+var faSpinnerThird = __webpack_require__(190);
 
 // CONCATENATED MODULE: ./src/spinner/src/components/styled/Rotate.js
 
-var Rotate = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "Rotate",
-  componentId: "sc-1o7nhkd-0"
-})(["animation:fa-spin ", " infinite linear;align-self:", ";"], function (_ref) {
+var Rotate = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["animation:fa-spin ", " infinite linear;align-self:", ";"], function (_ref) {
   var duration = _ref.duration;
   return duration || '0.75s';
 }, function (_ref2) {
@@ -56674,6 +56775,7 @@ var Rotate = external_amd_styled_components_commonjs_styled_components_commonjs2
 });
 /* harmony default export */ var styled_Rotate = (Rotate);
 // CONCATENATED MODULE: ./src/spinner/src/components/Spinner.js
+
 
 
 
@@ -56692,19 +56794,20 @@ var Spinner_Spinner = function Spinner(props) {
 
   var defaultClassName = "fa-layers fa-fw fa-".concat(size);
   var styledClassName = className ? "".concat(defaultClassName, " ").concat(className) : defaultClassName;
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_Rotate, {
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])(styled_Rotate, {
     className: styledClassName,
     duration: duration,
-    centered: centered
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
-    id: "spinner-circle",
-    color: bottomColor,
-    icon: faCircle["faCircle"]
-  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
-    id: "spinner-third",
-    color: topColor,
-    icon: faSpinnerThird["faSpinnerThird"]
-  }));
+    centered: centered,
+    children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
+      id: "spinner-circle",
+      color: bottomColor,
+      icon: faCircle["faCircle"]
+    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
+      id: "spinner-third",
+      color: topColor,
+      icon: faSpinnerThird["faSpinnerThird"]
+    })]
+  });
 };
 
 Spinner_Spinner.defaultProps = {
@@ -56746,10 +56849,7 @@ var Tag_getFontColor = getStyleVariation('mode', {
   success: Tag_GREEN.G400,
   warning: Tag_ORANGE.O400
 }, Tag_NEUTRAL.N700);
-var Tag = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "Tag",
-  componentId: "sc-1sp059-0"
-})(["border-radius:3px;font-size:12px;font-weight:700;margin:0 5px;padding:0 5px;text-transform:uppercase;background-color:", ";color:", ";"], Tag_getBackgroundColor, Tag_getFontColor);
+var Tag = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["border-radius:3px;font-size:12px;font-weight:700;margin:0 5px;padding:0 5px;text-transform:uppercase;background-color:", ";color:", ";"], Tag_getBackgroundColor, Tag_getFontColor);
 /* harmony default export */ var components_Tag = (Tag);
 // CONCATENATED MODULE: ./src/tag/index.js
 
@@ -57064,19 +57164,15 @@ var selectStyles = {
   valueContainer: select_valueContainerStyles
 };
 
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/extends.js
-var helpers_extends = __webpack_require__(8);
-var extends_default = /*#__PURE__*/__webpack_require__.n(helpers_extends);
-
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/objectWithoutProperties.js
-var objectWithoutProperties = __webpack_require__(14);
+var objectWithoutProperties = __webpack_require__(13);
 var objectWithoutProperties_default = /*#__PURE__*/__webpack_require__.n(objectWithoutProperties);
 
 // EXTERNAL MODULE: ./node_modules/lodash/fp.js
-var fp = __webpack_require__(25);
+var fp = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./node_modules/lodash/capitalize.js
-var lodash_capitalize = __webpack_require__(190);
+var lodash_capitalize = __webpack_require__(191);
 var capitalize_default = /*#__PURE__*/__webpack_require__.n(lodash_capitalize);
 
 // CONCATENATED MODULE: ./src/button/src/components/createColorStyles.js
@@ -57233,10 +57329,10 @@ var useButtonStyles = styles_makeStyles(components_createColorStyles(useButtonSt
 
 
 
-
 function Button_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function Button_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Button_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Button_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 
 
 
@@ -57278,12 +57374,12 @@ var components_Button_Button = function Button(_ref) {
     className: clsx_m(classesObject),
     color: customColor ? 'default' : color,
     disabled: disabled || isLoading,
-    startIcon: isLoading ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, null) : startIcon
+    startIcon: isLoading ? /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Spinner, {}) : startIcon
   });
   /* eslint-disable react/jsx-props-no-spreading */
 
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Button_Button, extends_default()({}, props, {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_Button_Button, Button_objectSpread(Button_objectSpread({}, props), {}, {
     ref: forwardRef
   }));
   /* eslint-enable */
@@ -57292,12 +57388,11 @@ var components_Button_Button = function Button(_ref) {
 
 
 /* harmony default export */ var components_Button = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Button_Button, extends_default()({}, props, {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Button_Button, Button_objectSpread(Button_objectSpread({}, props), {}, {
     forwardRef: ref
   }));
 }));
 // CONCATENATED MODULE: ./src/button/src/components/IconButton.js
-
 
 
 
@@ -57312,17 +57407,13 @@ function IconButton_objectSpread(target) { for (var i = 1; i < arguments.length;
 
 
 
-var IconSquareWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "IconButton__IconSquareWrapper",
-  componentId: "g9q5gl-0"
-})(["align-items:center;display:flex;justify-content:center;width:auto;&::before{content:\"\";display:block;padding-bottom:100%;}>:first-child{visibility:", ";}"], function (_ref) {
+
+
+var IconSquareWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["align-items:center;display:flex;justify-content:center;width:auto;&::before{content:\"\";display:block;padding-bottom:100%;}>:first-child{visibility:", ";}"], function (_ref) {
   var isLoading = _ref.isLoading;
   return isLoading ? 'hidden' : 'visible';
 });
-var SpinnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "IconButton__SpinnerWrapper",
-  componentId: "g9q5gl-1"
-})(["align-items:center;border-radius:50%;display:flex;height:100%;justify-content:center;position:absolute;width:100%;"]);
+var SpinnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["align-items:center;border-radius:50%;display:flex;height:100%;justify-content:center;position:absolute;width:100%;"]);
 
 var components_IconButton_IconButton = function IconButton(_ref2) {
   var children = _ref2.children,
@@ -57356,18 +57447,22 @@ var components_IconButton_IconButton = function IconButton(_ref2) {
   /* eslint-disable react/jsx-props-no-spreading */
 
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_IconButton_IconButton, extends_default()({}, props, {
-    ref: forwardRef
-  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconSquareWrapper, {
-    isLoading: isLoading
-  }, children, isLoading && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SpinnerWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, null))));
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_IconButton_IconButton, IconButton_objectSpread(IconButton_objectSpread({}, props), {}, {
+    ref: forwardRef,
+    children: /*#__PURE__*/Object(jsx_runtime["jsxs"])(IconSquareWrapper, {
+      isLoading: isLoading,
+      children: [children, isLoading && /*#__PURE__*/Object(jsx_runtime["jsx"])(SpinnerWrapper, {
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Spinner, {})
+      })]
+    })
+  }));
   /* eslint-enable */
 };
 /* eslint-disable-next-line react/jsx-props-no-spreading */
 
 
 /* harmony default export */ var components_IconButton = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconButton_IconButton, extends_default()({}, props, {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(components_IconButton_IconButton, IconButton_objectSpread(IconButton_objectSpread({}, props), {}, {
     forwardRef: ref
   }));
 }));
@@ -57398,28 +57493,19 @@ var checkboxWithAfterStyles = Object(external_amd_styled_components_commonjs_sty
 var getIndicatorStyles = getStyleVariation('mode', {
   button: ChoiceButtonStyles
 }, checkboxWithAfterStyles);
-var CheckboxIndicator = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "CheckboxIndicator",
-  componentId: "sc-16t4mhx-0"
-})(["transition:background-color ", " ease-out,border-color ", " ease-out,box-shadow ", " ease-out,color ", " ease-out;", ""], style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, getIndicatorStyles);
+var CheckboxIndicator = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["transition:background-color ", " ease-out,border-color ", " ease-out,box-shadow ", " ease-out,color ", " ease-out;", ""], style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, getIndicatorStyles);
 /* harmony default export */ var styled_CheckboxIndicator = (CheckboxIndicator);
 
 // CONCATENATED MODULE: ./src/choices/src/components/styled/ChoiceGroup.js
 
-var ChoiceGroup = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "ChoiceGroup",
-  componentId: "sc-1pvteyi-0"
-})(["display:grid;grid-gap:10px;grid-template-columns:", ";flex-wrap:wrap;"], function (props) {
+var ChoiceGroup = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["display:grid;grid-gap:10px;grid-template-columns:", ";flex-wrap:wrap;"], function (props) {
   return props.row ? 'repeat(auto-fit, minmax(200px, 1fr))' : '1fr';
 });
 /* harmony default export */ var styled_ChoiceGroup = (ChoiceGroup);
 // CONCATENATED MODULE: ./src/choices/src/components/styled/ChoiceLabel.js
 
 
-var ChoiceLabel = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.label.withConfig({
-  displayName: "ChoiceLabel",
-  componentId: "sc-11kob9e-0"
-})(["align-items:center;color:", ";display:inline-flex;font-size:14px;min-height:40px;pointer-events:", ";position:relative;vertical-align:middle;&:hover{cursor:pointer;}"], function (props) {
+var ChoiceLabel = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.label(["align-items:center;color:", ";display:inline-flex;font-size:14px;min-height:40px;pointer-events:", ";position:relative;vertical-align:middle;&:hover{cursor:pointer;}"], function (props) {
   return props.disabled ? NEUTRAL.N500 : NEUTRAL.N900;
 }, function (props) {
   return props.readOnly ? 'none' : 'auto';
@@ -57427,10 +57513,7 @@ var ChoiceLabel = external_amd_styled_components_commonjs_styled_components_comm
 /* harmony default export */ var styled_ChoiceLabel = (ChoiceLabel);
 // CONCATENATED MODULE: ./src/choices/src/components/styled/ChoiceText.js
 
-var ChoiceText = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "ChoiceText",
-  componentId: "sc-1qnriny-0"
-})(["margin-left:10px;"]);
+var ChoiceText = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["margin-left:10px;"]);
 /* harmony default export */ var styled_ChoiceText = (ChoiceText);
 // CONCATENATED MODULE: ./src/choices/src/components/styled/RadioIndicator.js
 
@@ -57444,10 +57527,7 @@ var radioWithAfterStyles = Object(external_amd_styled_components_commonjs_styled
 var RadioIndicator_getIndicatorStyles = getStyleVariation('mode', {
   button: ChoiceButtonStyles
 }, radioWithAfterStyles);
-var RadioIndicator = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "RadioIndicator",
-  componentId: "sc-1vlnpb4-0"
-})(["transition:background-color ", " ease-out,border-color ", " ease-out,box-shadow ", " ease-out,color ", " ease-out;", ";"], style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, RadioIndicator_getIndicatorStyles);
+var RadioIndicator = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["transition:background-color ", " ease-out,border-color ", " ease-out,box-shadow ", " ease-out,color ", " ease-out;", ";"], style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, RadioIndicator_getIndicatorStyles);
 /* harmony default export */ var styled_RadioIndicator = (RadioIndicator);
 
 // CONCATENATED MODULE: ./src/choices/src/components/styled/ChoiceInputs.js
@@ -57457,17 +57537,11 @@ var RadioInput = external_amd_styled_components_commonjs_styled_components_commo
   return {
     type: 'radio'
   };
-}).withConfig({
-  displayName: "ChoiceInputs__RadioInput",
-  componentId: "sc-1fkg6yx-0"
 })(["", ""], inputStyles);
 var CheckboxInput = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.input.attrs(function () {
   return {
     type: 'checkbox'
   };
-}).withConfig({
-  displayName: "ChoiceInputs__CheckboxInput",
-  componentId: "sc-1fkg6yx-1"
 })(["", ";"], inputStyles);
 
 // CONCATENATED MODULE: ./src/choices/src/components/styled/ChoiceWrappers.js
@@ -57483,14 +57557,8 @@ var ChoiceWrappers_getChoiceSize = function getChoiceSize(_ref) {
   return null;
 };
 
-var ChoiceWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "ChoiceWrappers__ChoiceWrapper",
-  componentId: "kj63qq-0"
-})(["align-items:stretch;display:inline-flex;justify-content:center;position:relative;vertical-align:middle;word-break:break-word;", ";"], ChoiceWrappers_getChoiceSize);
-var ChoiceInnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "ChoiceWrappers__ChoiceInnerWrapper",
-  componentId: "kj63qq-1"
-})(["display:flex;flex:1;"]);
+var ChoiceWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["align-items:stretch;display:inline-flex;justify-content:center;position:relative;vertical-align:middle;word-break:break-word;", ";"], ChoiceWrappers_getChoiceSize);
+var ChoiceInnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["display:flex;flex:1;"]);
 
 // CONCATENATED MODULE: ./src/choices/src/components/styled/index.js
 
@@ -57517,6 +57585,13 @@ var stopPropagation_stopPropagation = function stopPropagation(event) {
 
 
 
+function Checkbox_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function Checkbox_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Checkbox_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Checkbox_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
 
 
 
@@ -57530,22 +57605,29 @@ var Checkbox_Checkbox = function Checkbox(_ref) {
       readOnly = _ref.readOnly,
       rest = objectWithoutProperties_default()(_ref, ["disabled", "forwardedRef", "id", "label", "mode", "readOnly"]);
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceLabel, {
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])(styled_ChoiceLabel, {
     htmlFor: id,
     readOnly: readOnly,
-    disabled: disabled
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ChoiceWrapper, {
-    mode: mode
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ChoiceInnerWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CheckboxInput, extends_default()({
-    id: id,
-    readOnly: readOnly,
-    disabled: disabled || readOnly
-  }, rest, {
-    ref: forwardedRef
-  })), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_CheckboxIndicator, {
-    mode: mode,
-    onClick: utils_stopPropagation
-  }, mode === 'button' && label))), mode !== 'button' && label && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceText, null, label));
+    disabled: disabled,
+    children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(ChoiceWrapper, {
+      mode: mode,
+      children: /*#__PURE__*/Object(jsx_runtime["jsxs"])(ChoiceInnerWrapper, {
+        children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(CheckboxInput, Checkbox_objectSpread(Checkbox_objectSpread({
+          id: id,
+          readOnly: readOnly,
+          disabled: disabled || readOnly
+        }, rest), {}, {
+          ref: forwardedRef
+        })), /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_CheckboxIndicator, {
+          mode: mode,
+          onClick: utils_stopPropagation,
+          children: mode === 'button' && label
+        })]
+      })
+    }), mode !== 'button' && label && /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_ChoiceText, {
+      children: label
+    })]
+  });
 };
 /* eslint-enable */
 
@@ -57565,12 +57647,12 @@ Checkbox_Checkbox.defaultProps = {
   readOnly: undefined,
   value: undefined
 };
-/* harmony default export */ var components_Checkbox = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
+/* harmony default export */ var components_Checkbox = (/*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"])(function (props, ref) {
   return (
     /*#__PURE__*/
 
     /* eslint-disable react/jsx-props-no-spreading */
-    external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Checkbox_Checkbox, extends_default()({}, props, {
+    Object(jsx_runtime["jsx"])(Checkbox_Checkbox, Checkbox_objectSpread(Checkbox_objectSpread({}, props), {}, {
       forwardedRef: ref
     }))
     /* eslint-enable */
@@ -57578,6 +57660,12 @@ Checkbox_Checkbox.defaultProps = {
   );
 }));
 // CONCATENATED MODULE: ./src/choices/src/components/Radio.js
+
+
+
+function Radio_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function Radio_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Radio_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Radio_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
 
@@ -57592,20 +57680,27 @@ var Radio_Radio = function Radio(_ref) {
       readOnly = _ref.readOnly,
       rest = objectWithoutProperties_default()(_ref, ["disabled", "id", "label", "mode", "readOnly"]);
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceLabel, {
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])(styled_ChoiceLabel, {
     htmlFor: id,
     readOnly: readOnly,
-    disabled: disabled
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ChoiceWrapper, {
-    mode: mode
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ChoiceInnerWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(RadioInput, extends_default()({
-    id: id,
-    readOnly: readOnly,
-    disabled: disabled || readOnly // $FlowFixMe
+    disabled: disabled,
+    children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(ChoiceWrapper, {
+      mode: mode,
+      children: /*#__PURE__*/Object(jsx_runtime["jsxs"])(ChoiceInnerWrapper, {
+        children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(RadioInput, Radio_objectSpread({
+          id: id,
+          readOnly: readOnly,
+          disabled: disabled || readOnly // $FlowFixMe
 
-  }, rest)), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_RadioIndicator, {
-    mode: mode
-  }, mode === 'button' && label))), mode !== 'button' && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_ChoiceText, null, label));
+        }, rest)), /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_RadioIndicator, {
+          mode: mode,
+          children: mode === 'button' && label
+        })]
+      })
+    }), mode !== 'button' && /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_ChoiceText, {
+      children: label
+    })]
+  });
 };
 /* eslint-enable */
 
@@ -57630,24 +57725,16 @@ Radio_Radio.defaultProps = {
 
 
 // EXTERNAL MODULE: ./node_modules/redux-reqseq/build/index.js
-var build = __webpack_require__(26);
+var build = __webpack_require__(27);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/taggedTemplateLiteral.js
-var taggedTemplateLiteral = __webpack_require__(24);
+var taggedTemplateLiteral = __webpack_require__(22);
 var taggedTemplateLiteral_default = /*#__PURE__*/__webpack_require__.n(taggedTemplateLiteral);
 
 // CONCATENATED MODULE: ./src/modal/src/components/styled/StyledModalComponents.js
 
 
-function StyledModalComponents_templateObject() {
-  var data = taggedTemplateLiteral_default()(["\n    padding: ", ";\n  "]);
-
-  StyledModalComponents_templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var StyledModalComponents_templateObject;
 
 
 
@@ -57685,19 +57772,13 @@ var StyledModalComponents_getScrollBehavior = function getScrollBehavior(_ref3) 
   return Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["overflow-x:hidden;overflow-y:auto;"]);
 };
 
-var ModalOuterContainer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledModalComponents__ModalOuterContainer",
-  componentId: "sc-1r1r1yf-0"
-})(["align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;padding:", ";", " ", ""], LARGE_PADDING, media.phone(StyledModalComponents_templateObject(), DEFAULT_PADDING), StyledModalComponents_getOuterContainerHeight);
+var ModalOuterContainer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["align-items:center;display:flex;flex:0 0 auto;flex-direction:row;justify-content:center;width:100%;padding:", ";", " ", ""], LARGE_PADDING, media.phone(StyledModalComponents_templateObject || (StyledModalComponents_templateObject = taggedTemplateLiteral_default()(["\n    padding: ", ";\n  "])), DEFAULT_PADDING), StyledModalComponents_getOuterContainerHeight);
 /*
  * max height & width are bounded by the ModalOuterContainer padding
  * alignment is handled by flexbox
  */
 
-var ModalInnerContainer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledModalComponents__ModalInnerContainer",
-  componentId: "sc-1r1r1yf-1"
-})(["align-self:", ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ", ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;", ""], function (_ref4) {
+var ModalInnerContainer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["align-self:", ";background-color:white;border-radius:3px;box-shadow:0 2px 8px -2px ", ";display:flex;flex:0 0 auto;flex-direction:column;max-width:100%;min-height:200px;min-width:300px;position:relative;", ""], function (_ref4) {
   var center = _ref4.center;
   return center ? 'center' : 'flex-start';
 }, NEUTRAL.N700, StyledModalComponents_getInnerContainerMaxHeight);
@@ -57705,25 +57786,13 @@ var ModalInnerContainer = external_amd_styled_components_commonjs_styled_compone
  * "min-height" 40px + "padding" 30px = 100px of total height
  */
 
-var ModalSection = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledModalComponents__ModalSection",
-  componentId: "sc-1r1r1yf-2"
-})(["color:", ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:", ";position:relative;"], NEUTRAL.N700, DEFAULT_PADDING);
-var BodySection = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(ModalSection).withConfig({
-  displayName: "StyledModalComponents__BodySection",
-  componentId: "sc-1r1r1yf-3"
-})(["flex:1 1 auto;padding:0 ", ";", ""], DEFAULT_PADDING, StyledModalComponents_getScrollBehavior);
-var FooterSection = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(ModalSection).withConfig({
-  displayName: "StyledModalComponents__FooterSection",
-  componentId: "sc-1r1r1yf-4"
-})(["align-items:center;flex-direction:row-reverse;> button{flex:", ";}> button:nth-of-type(2){margin:0 20px 0 0px;}"], function (_ref5) {
+var ModalSection = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["color:", ";display:flex;flex:0 0 auto;flex-direction:column;min-height:40px;padding:", ";position:relative;"], NEUTRAL.N700, DEFAULT_PADDING);
+var BodySection = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(ModalSection)(["flex:1 1 auto;padding:0 ", ";", ""], DEFAULT_PADDING, StyledModalComponents_getScrollBehavior);
+var FooterSection = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(ModalSection)(["align-items:center;flex-direction:row-reverse;> button{flex:", ";}> button:nth-of-type(2){margin:0 20px 0 0px;}"], function (_ref5) {
   var stretch = _ref5.stretch;
   return stretch ? 1 : 'none';
 });
-var HeaderSection = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(ModalSection).withConfig({
-  displayName: "StyledModalComponents__HeaderSection",
-  componentId: "sc-1r1r1yf-5"
-})(["align-items:center;flex-direction:row;justify-content:space-between;"]);
+var HeaderSection = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(ModalSection)(["align-items:center;flex-direction:row;justify-content:space-between;"]);
 // CONCATENATED MODULE: ./src/modal/src/components/ModalBody.js
 
 
@@ -57732,9 +57801,10 @@ var HeaderSection = external_amd_styled_components_commonjs_styled_components_co
 var ModalBody_ModalBody = function ModalBody(props) {
   var children = props.children,
       viewportScrolling = props.viewportScrolling;
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(BodySection, {
-    viewportScrolling: viewportScrolling
-  }, children);
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(BodySection, {
+    viewportScrolling: viewportScrolling,
+    children: children
+  });
 };
 
 ModalBody_ModalBody.propTypes = {
@@ -57765,14 +57835,10 @@ function ModalFooter_isNativeReflectConstruct() { if (typeof Reflect === "undefi
 
  // named buttons for tests
 
-var PrimaryButton = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(components_Button).withConfig({
-  displayName: "ModalFooter__PrimaryButton",
-  componentId: "sc-1a1to5t-0"
-})([""]);
-var SecondaryButton = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(components_Button).withConfig({
-  displayName: "ModalFooter__SecondaryButton",
-  componentId: "sc-1a1to5t-1"
-})([""]);
+
+
+var PrimaryButton = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(components_Button)([""]);
+var SecondaryButton = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(components_Button)([""]);
 
 var ModalFooter_ModalFooter = /*#__PURE__*/function (_Component) {
   inherits_default()(ModalFooter, _Component);
@@ -57801,12 +57867,13 @@ var ModalFooter_ModalFooter = /*#__PURE__*/function (_Component) {
         return null;
       }
 
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(PrimaryButton, {
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(PrimaryButton, {
         color: "primary",
         disabled: isDisabledPrimary || isPendingPrimary,
         isLoading: isPendingPrimary,
-        onClick: onClickPrimary
-      }, textPrimary);
+        onClick: onClickPrimary,
+        children: textPrimary
+      });
     });
 
     defineProperty_default()(assertThisInitialized_default()(_this), "renderSecondaryButton", function () {
@@ -57820,13 +57887,14 @@ var ModalFooter_ModalFooter = /*#__PURE__*/function (_Component) {
         return null;
       }
 
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SecondaryButton, {
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(SecondaryButton, {
         name: "secondary",
         id: "secondary",
         disabled: isDisabledSecondary || isPendingSecondary,
         isLoading: isPendingSecondary,
-        onClick: onClickSecondary
-      }, textSecondary);
+        onClick: onClickSecondary,
+        children: textSecondary
+      });
     });
 
     return _this;
@@ -57853,13 +57921,14 @@ var ModalFooter_ModalFooter = /*#__PURE__*/function (_Component) {
       }
 
       if (withFooter === true) {
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FooterSection, {
+        return /*#__PURE__*/Object(jsx_runtime["jsxs"])(FooterSection, {
           className: className,
-          stretch: shouldStretchButtons
-        }, this.renderPrimaryButton(), this.renderSecondaryButton());
+          stretch: shouldStretchButtons,
+          children: [this.renderPrimaryButton(), this.renderSecondaryButton()]
+        });
       }
 
-      if ( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(withFooter)) {
+      if ( /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"])(withFooter)) {
         // $FlowFixMe - how do we refine Element?
         return withFooter;
       }
@@ -57918,7 +57987,7 @@ defineProperty_default()(ModalFooter_ModalFooter, "defaultProps", {
 
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-light-svg-icons/faTimes.js
-var faTimes = __webpack_require__(191);
+var faTimes = __webpack_require__(192);
 
 // CONCATENATED MODULE: ./src/modal/src/components/ModalHeader.js
 
@@ -57940,14 +58009,10 @@ function ModalHeader_isNativeReflectConstruct() { if (typeof Reflect === "undefi
 
 
 
-var ModalTitle = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.h1.withConfig({
-  displayName: "ModalHeader__ModalTitle",
-  componentId: "sc-1rdyrep-0"
-})(["color:", ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"], NEUTRAL.N700);
-var CloseButton = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.button.withConfig({
-  displayName: "ModalHeader__CloseButton",
-  componentId: "sc-1rdyrep-1"
-})(["background:none;border:none;cursor:pointer;font-size:12px;height:32px;margin:0 0 0 auto;padding:0;text-align:center;width:32px;"]);
+
+
+var ModalTitle = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.h1(["color:", ";font-size:18px;font-weight:normal;margin:0 30px 0 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"], NEUTRAL.N700);
+var CloseButton = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.button(["background:none;border:none;cursor:pointer;font-size:12px;height:32px;margin:0 0 0 auto;padding:0;text-align:center;width:32px;"]);
 
 var ModalHeader_ModalHeader = /*#__PURE__*/function (_Component) {
   inherits_default()(ModalHeader, _Component);
@@ -57967,12 +58032,13 @@ var ModalHeader_ModalHeader = /*#__PURE__*/function (_Component) {
 
     defineProperty_default()(assertThisInitialized_default()(_this), "renderCloseButton", function () {
       var onClickClose = _this.props.onClickClose;
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CloseButton, {
-        onClick: onClickClose
-      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
-        icon: faTimes["faTimes"],
-        size: "lg"
-      }));
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(CloseButton, {
+        onClick: onClickClose,
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
+          icon: faTimes["faTimes"],
+          size: "lg"
+        })
+      });
     });
 
     defineProperty_default()(assertThisInitialized_default()(_this), "renderTitle", function () {
@@ -57982,7 +58048,9 @@ var ModalHeader_ModalHeader = /*#__PURE__*/function (_Component) {
         return null;
       }
 
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalTitle, null, textTitle);
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(ModalTitle, {
+        children: textTitle
+      });
     });
 
     return _this;
@@ -58002,12 +58070,13 @@ var ModalHeader_ModalHeader = /*#__PURE__*/function (_Component) {
       }
 
       if (withHeader === true) {
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(HeaderSection, {
-          className: className
-        }, this.renderTitle(), this.renderCloseButton());
+        return /*#__PURE__*/Object(jsx_runtime["jsxs"])(HeaderSection, {
+          className: className,
+          children: [this.renderTitle(), this.renderCloseButton()]
+        });
       }
 
-      if ( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.isValidElement(withHeader)) {
+      if ( /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"])(withHeader)) {
         // $FlowFixMe - how do we refine Element?
         return withHeader;
       }
@@ -58057,6 +58126,8 @@ defineProperty_default()(ModalHeader_ModalHeader, "defaultProps", {
 function Modal_createSuper(Derived) { var hasNativeReflectConstruct = Modal_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
 function Modal_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 
 
@@ -58182,7 +58253,7 @@ var components_Modal_Modal = /*#__PURE__*/function (_Component) {
       }
 
       if (withHeader) {
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalHeader_ModalHeader, {
+        return /*#__PURE__*/Object(jsx_runtime["jsx"])(ModalHeader_ModalHeader, {
           onClickClose: _this.close,
           textTitle: textTitle,
           withHeader: withHeader
@@ -58209,7 +58280,7 @@ var components_Modal_Modal = /*#__PURE__*/function (_Component) {
       }
 
       if (withFooter || textPrimary || textSecondary) {
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalFooter_ModalFooter, {
+        return /*#__PURE__*/Object(jsx_runtime["jsx"])(ModalFooter_ModalFooter, {
           onClickPrimary: _this.handleOnClickPrimary,
           onClickSecondary: _this.handleOnClickSecondary,
           shouldStretchButtons: shouldStretchButtons,
@@ -58246,20 +58317,24 @@ var components_Modal_Modal = /*#__PURE__*/function (_Component) {
           modalRef = _this$props4.modalRef,
           shouldBeCentered = _this$props4.shouldBeCentered,
           viewportScrolling = _this$props4.viewportScrolling;
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Overlay_Overlay, {
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(Overlay_Overlay, {
         isScrollable: viewportScrolling,
         isVisible: isVisible,
-        onClose: this.handleOnClickOverlay
-      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalOuterContainer, {
-        onClick: this.handleOnClickOutside,
-        ref: modalRef,
-        viewportScrolling: viewportScrolling
-      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalInnerContainer, {
-        center: shouldBeCentered,
-        viewportScrolling: viewportScrolling
-      }, this.renderHeaderComponent(), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_ModalBody, {
-        viewportScrolling: viewportScrolling
-      }, children), this.renderFooterComponent())));
+        onClose: this.handleOnClickOverlay,
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])(ModalOuterContainer, {
+          onClick: this.handleOnClickOutside,
+          ref: modalRef,
+          viewportScrolling: viewportScrolling,
+          children: /*#__PURE__*/Object(jsx_runtime["jsxs"])(ModalInnerContainer, {
+            center: shouldBeCentered,
+            viewportScrolling: viewportScrolling,
+            children: [this.renderHeaderComponent(), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_ModalBody, {
+              viewportScrolling: viewportScrolling,
+              children: children
+            }), this.renderFooterComponent()]
+          })
+        })
+      });
     }
   }]);
 
@@ -58310,6 +58385,7 @@ defineProperty_default()(components_Modal_Modal, "defaultProps", {
 
 
 
+
 var DEFAULT_PRIMARY_TEXT = 'Confirm';
 var DEFAULT_SECONDARY_TEXT = 'Cancel';
 
@@ -58335,16 +58411,23 @@ var ActionModal_ActionModal = function ActionModal(props) {
       viewportScrolling = props.viewportScrolling,
       withHeader = props.withHeader;
   var withFooter = true;
-  var body = requestStateComponents[build["RequestStates"].STANDBY] || /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, "Are you sure?");
+
+  var body = requestStateComponents[build["RequestStates"].STANDBY] || /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
+    children: "Are you sure?"
+  });
 
   if (requestState === build["RequestStates"].FAILURE) {
-    body = requestStateComponents[build["RequestStates"].FAILURE] || /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, "Failure. Please try again.");
+    body = requestStateComponents[build["RequestStates"].FAILURE] || /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
+      children: "Failure. Please try again."
+    });
   } else if (requestState === build["RequestStates"].SUCCESS) {
-    body = requestStateComponents[build["RequestStates"].SUCCESS] || /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, "Success!");
+    body = requestStateComponents[build["RequestStates"].SUCCESS] || /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
+      children: "Success!"
+    });
   }
 
   if (requestState === build["RequestStates"].PENDING) {
-    withFooter = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalFooter_ModalFooter, {
+    withFooter = /*#__PURE__*/Object(jsx_runtime["jsx"])(ModalFooter_ModalFooter, {
       isPendingPrimary: true,
       isDisabledSecondary: true,
       shouldStretchButtons: shouldStretchButtons,
@@ -58353,7 +58436,7 @@ var ActionModal_ActionModal = function ActionModal(props) {
       withFooter: true
     });
   } else if (requestState === build["RequestStates"].FAILURE || requestState === build["RequestStates"].SUCCESS) {
-    withFooter = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ModalFooter_ModalFooter, {
+    withFooter = /*#__PURE__*/Object(jsx_runtime["jsx"])(ModalFooter_ModalFooter, {
       onClickPrimary: onClose,
       shouldStretchButtons: shouldStretchButtons,
       textPrimary: "Close",
@@ -58361,7 +58444,7 @@ var ActionModal_ActionModal = function ActionModal(props) {
     });
   }
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Modal_Modal, {
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])(components_Modal_Modal, {
     isVisible: isVisible,
     modalRef: modalRef,
     onClickPrimary: onClickPrimary,
@@ -58376,8 +58459,9 @@ var ActionModal_ActionModal = function ActionModal(props) {
     textTitle: textTitle,
     viewportScrolling: viewportScrolling,
     withFooter: withFooter,
-    withHeader: withHeader
-  }, body, children);
+    withHeader: withHeader,
+    children: [body, children]
+  });
 };
 
 ActionModal_ActionModal.defaultProps = {
@@ -58393,10 +58477,7 @@ ActionModal_ActionModal.defaultProps = {
 // CONCATENATED MODULE: ./src/stepper/src/components/styled/index.js
 
 
-var IconLayer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "styled__IconLayer",
-  componentId: "g8vnjr-0"
-})(["font-size:24px;min-width:24px;"]);
+var IconLayer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["font-size:24px;min-width:24px;"]);
 
 var styled_getDividerOrientationStyles = function getDividerOrientationStyles(_ref) {
   var vertical = _ref.vertical;
@@ -58408,24 +58489,12 @@ var styled_getDividerOrientationStyles = function getDividerOrientationStyles(_r
   return Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["border-top:2px solid ", ";"], NEUTRAL.N100);
 };
 
-var StepDivider = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "styled__StepDivider",
-  componentId: "g8vnjr-1"
-})(["flex:1 1 auto;", ";"], styled_getDividerOrientationStyles);
-var StepIndex = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "styled__StepIndex",
-  componentId: "g8vnjr-2"
-})(["font-size:14px;font-weight:bold;"]);
-var styled_StepLabel = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "styled__StepLabel",
-  componentId: "g8vnjr-3"
-})(["margin-left:8px;font-weight:", ";"], function (props) {
+var StepDivider = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["flex:1 1 auto;", ";"], styled_getDividerOrientationStyles);
+var StepIndex = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["font-size:14px;font-weight:bold;"]);
+var styled_StepLabel = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["margin-left:8px;font-weight:", ";"], function (props) {
   return props.active && '600';
 });
-var StepWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "styled__StepWrapper",
-  componentId: "g8vnjr-4"
-})(["display:flex;align-items:center;padding:10px;cursor:", ";"], function (props) {
+var StepWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["display:flex;align-items:center;padding:10px;cursor:", ";"], function (props) {
   return props.onClick && 'pointer';
 });
 
@@ -58439,18 +58508,16 @@ var styled_getStepperOrientationStyles = function getStepperOrientationStyles(_r
   return Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["flex-direction:row;justify-content:space-around;"]);
 };
 
-var StepperWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "styled__StepperWrapper",
-  componentId: "g8vnjr-5"
-})(["align-items:center;display:flex;width:100%;", ";"], styled_getStepperOrientationStyles);
+var StepperWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["align-items:center;display:flex;width:100%;", ";"], styled_getStepperOrientationStyles);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faCheck.js
-var faCheck = __webpack_require__(193);
+var faCheck = __webpack_require__(194);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faCircle.js
-var pro_solid_svg_icons_faCircle = __webpack_require__(192);
+var pro_solid_svg_icons_faCircle = __webpack_require__(193);
 
 // CONCATENATED MODULE: ./src/stepper/src/components/StepIcon.js
+
 
 
 
@@ -58464,18 +58531,20 @@ var components_StepIcon_StepIcon = function StepIcon(_ref) {
       complete = _ref.complete,
       index = _ref.index;
   var styledClassName = className ? "".concat(className, " fa-layers") : 'fa-layers';
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IconLayer, {
-    className: styledClassName
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
-    icon: pro_solid_svg_icons_faCircle["faCircle"],
-    color: active || complete ? PURPLE.P300 : NEUTRAL.N500
-  }), complete ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
-    icon: faCheck["faCheck"],
-    color: WHITE,
-    transform: "shrink-7"
-  }) : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepIndex, {
-    className: "fa-layers-text fa-inverse"
-  }, index));
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])(IconLayer, {
+    className: styledClassName,
+    children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
+      icon: pro_solid_svg_icons_faCircle["faCircle"],
+      color: active || complete ? PURPLE.P300 : NEUTRAL.N500
+    }), complete ? /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
+      icon: faCheck["faCheck"],
+      color: WHITE,
+      transform: "shrink-7"
+    }) : /*#__PURE__*/Object(jsx_runtime["jsx"])(StepIndex, {
+      className: "fa-layers-text fa-inverse",
+      children: index
+    })]
+  });
 };
 
 components_StepIcon_StepIcon.defaultProps = {
@@ -58487,21 +58556,24 @@ components_StepIcon_StepIcon.defaultProps = {
 
 
 
+
 var Step_Step = function Step(props) {
   var active = props.active,
       children = props.children,
       complete = props.complete,
       index = props.index,
       onClick = props.onClick;
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepWrapper, {
-    onClick: onClick
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_StepIcon, {
-    active: active,
-    complete: complete,
-    index: index
-  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_StepLabel, {
-    active: active
-  }, children));
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])(StepWrapper, {
+    onClick: onClick,
+    children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(components_StepIcon, {
+      active: active,
+      complete: complete,
+      index: index
+    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_StepLabel, {
+      active: active,
+      children: children
+    })]
+  });
 };
 
 /* harmony default export */ var components_Step = (Step_Step);
@@ -58515,25 +58587,27 @@ function Stepper_objectSpread(target) { for (var i = 1; i < arguments.length; i+
 
 
 
+
 var Stepper_Stepper = function Stepper(_ref) {
   var activeStep = _ref.activeStep,
       children = _ref.children,
       sequential = _ref.sequential,
       vertical = _ref.vertical;
-  var steps = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Children.map(children, function (child, index) {
+  var steps = external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
     var state = {
       active: activeStep === index,
       complete: sequential && activeStep > index,
       disabled: sequential && activeStep < index,
       index: index + 1
     };
-    return [index !== 0 && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepDivider, {
+    return [index !== 0 && /*#__PURE__*/Object(jsx_runtime["jsx"])(StepDivider, {
       vertical: vertical
-    }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(child, Stepper_objectSpread(Stepper_objectSpread({}, state), child.props))];
+    }), /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"])(child, Stepper_objectSpread(Stepper_objectSpread({}, state), child.props))];
   });
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StepperWrapper, {
-    vertical: vertical
-  }, steps);
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(StepperWrapper, {
+    vertical: vertical,
+    children: steps
+  });
 };
 
 Stepper_Stepper.defaultProps = {
@@ -58551,8 +58625,14 @@ Stepper_Stepper.defaultProps = {
 
 
 
+function Input_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-var components_Input_Input = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
+function Input_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Input_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Input_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
+var components_Input_Input = /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"])(function (props, ref) {
   var _props$fullWidth = props.fullWidth,
       fullWidth = _props$fullWidth === void 0 ? true : _props$fullWidth,
       variant = props.variant,
@@ -58560,7 +58640,7 @@ var components_Input_Input = /*#__PURE__*/external_root_React_commonjs2_react_co
   /* eslint-disable react/jsx-props-no-spreading */
 
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_TextField_TextField, extends_default()({}, other, {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_TextField_TextField, Input_objectSpread(Input_objectSpread({}, other), {}, {
     // eslint-disable-line indent
     fullWidth: fullWidth,
     variant: "filled",
@@ -58570,21 +58650,30 @@ var components_Input_Input = /*#__PURE__*/external_root_React_commonjs2_react_co
 });
 /* harmony default export */ var components_Input = (components_Input_Input);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faSearch.js
-var faSearch = __webpack_require__(194);
+var faSearch = __webpack_require__(195);
 
 // CONCATENATED MODULE: ./src/text/src/components/SearchInput.js
 
 
 
+function SearchInput_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function SearchInput_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { SearchInput_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { SearchInput_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
 
-var SearchIcon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_InputAdornment_InputAdornment, {
-  position: "start"
-}, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
-  icon: faSearch["faSearch"]
-}));
-var SearchInput = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
+
+
+
+
+var SearchIcon = /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_InputAdornment_InputAdornment, {
+  position: "start",
+  children: /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
+    icon: faSearch["faSearch"]
+  })
+});
+
+var SearchInput = /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"])(function (props, ref) {
   var _props$fullWidth = props.fullWidth,
       fullWidth = _props$fullWidth === void 0 ? true : _props$fullWidth,
       _props$type = props.type,
@@ -58594,7 +58683,7 @@ var SearchInput = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_reac
   /* eslint-disable react/jsx-props-no-spreading */
 
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_TextField_TextField, extends_default()({}, other, {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_TextField_TextField, SearchInput_objectSpread(SearchInput_objectSpread({}, other), {}, {
     // eslint-disable-line indent
     InputProps: {
       startAdornment: SearchIcon
@@ -58610,15 +58699,21 @@ var SearchInput = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_reac
 // CONCATENATED MODULE: ./src/text/src/components/TextArea.js
 
 
+function TextArea_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-var TextArea = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_TextField_TextField, extends_default()({
+function TextArea_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { TextArea_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { TextArea_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
+var TextArea = /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"])(function (props, ref) {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_TextField_TextField, TextArea_objectSpread(TextArea_objectSpread({
     fullWidth: true,
     variant: "filled",
     multiline: true,
     rows: 3 // eslint-disable-next-line react/jsx-props-no-spreading
 
-  }, props, {
+  }, props), {}, {
     ref: ref
   }));
 });
@@ -58630,31 +58725,17 @@ var TextArea = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_a
 
 // CONCATENATED MODULE: ./src/layout/src/components/App/AppContainerWrapper.js
 
-var AppContainerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "AppContainerWrapper",
-  componentId: "urn6g2-0"
-})(["display:flex;flex-direction:column;height:100%;margin:0;padding:0;"]);
+var AppContainerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["display:flex;flex-direction:column;height:100%;margin:0;padding:0;"]);
 /* harmony default export */ var App_AppContainerWrapper = (AppContainerWrapper);
 // CONCATENATED MODULE: ./src/layout/src/components/App/styled/AppContentInnerWrapper.js
 
 
-function AppContentInnerWrapper_templateObject() {
-  var data = taggedTemplateLiteral_default()(["\n    padding: ", "px;\n  "]);
-
-  AppContentInnerWrapper_templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var AppContentInnerWrapper_templateObject;
 
 
 
 
-var AppContentInnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "AppContentInnerWrapper",
-  componentId: "dk4lgw-0"
-})(["display:flex;flex-direction:column;flex:1 0 auto;justify-content:flex-start;max-width:", "px;min-width:0;padding:", "px;position:relative;width:100%;", ""], APP_CONTENT_WIDTH + 2 * APP_CONTENT_PADDING, APP_CONTENT_PADDING, media.phone(AppContentInnerWrapper_templateObject(), APP_CONTENT_PADDING / 2));
+var AppContentInnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["display:flex;flex-direction:column;flex:1 0 auto;justify-content:flex-start;max-width:", "px;min-width:0;padding:", "px;position:relative;width:100%;", ""], APP_CONTENT_WIDTH + 2 * APP_CONTENT_PADDING, APP_CONTENT_PADDING, media.phone(AppContentInnerWrapper_templateObject || (AppContentInnerWrapper_templateObject = taggedTemplateLiteral_default()(["\n    padding: ", "px;\n  "])), APP_CONTENT_PADDING / 2));
 /* harmony default export */ var styled_AppContentInnerWrapper = (AppContentInnerWrapper);
 // CONCATENATED MODULE: ./src/layout/src/components/App/styled/AppContentOuterWrapper.js
 
@@ -58678,10 +58759,7 @@ var AppContentOuterWrapper_getComputedStyles = function getComputedStyles(_ref) 
   return Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["background-color:", ";border-bottom:", ";"], finalBackgroundColor, finalBorderBottom);
 };
 
-var AppContentOuterWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "AppContentOuterWrapper",
-  componentId: "sc-13mz9i2-0"
-})(["display:flex;flex-direction:row;flex:0 0 auto;justify-content:center;position:relative;", ""], AppContentOuterWrapper_getComputedStyles);
+var AppContentOuterWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["display:flex;flex-direction:row;flex:0 0 auto;justify-content:center;position:relative;", ""], AppContentOuterWrapper_getComputedStyles);
 /* harmony default export */ var styled_AppContentOuterWrapper = (AppContentOuterWrapper);
 // CONCATENATED MODULE: ./src/layout/src/components/App/AppContentWrapper.js
 
@@ -58693,11 +58771,14 @@ var AppContentWrapper_AppContentWrapper = function AppContentWrapper(_ref) {
       borderless = _ref.borderless,
       children = _ref.children,
       className = _ref.className;
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppContentOuterWrapper, {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_AppContentOuterWrapper, {
     bgColor: bgColor,
     borderless: borderless,
-    className: className
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppContentInnerWrapper, null, children));
+    className: className,
+    children: /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_AppContentInnerWrapper, {
+      children: children
+    })
+  });
 };
 
 AppContentWrapper_AppContentWrapper.defaultProps = {
@@ -58707,9 +58788,16 @@ AppContentWrapper_AppContentWrapper.defaultProps = {
 };
 /* harmony default export */ var App_AppContentWrapper = (AppContentWrapper_AppContentWrapper);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faChevronRight.js
-var faChevronRight = __webpack_require__(59);
+var faChevronRight = __webpack_require__(60);
 
 // CONCATENATED MODULE: ./src/menu/src/components/NestedMenuItem.js
+
+
+
+
+function NestedMenuItem_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function NestedMenuItem_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { NestedMenuItem_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { NestedMenuItem_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
 
@@ -58723,7 +58811,7 @@ var faChevronRight = __webpack_require__(59);
 
 
 var NestedMenuItem_ChevronRight = function ChevronRight() {
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
     icon: faChevronRight["faChevronRight"],
     color: NEUTRAL.N500,
     size: "sm"
@@ -58755,7 +58843,7 @@ var useNestedMenuItemStyles = styles_makeStyles(function (theme) {
  * menu elements as children to this component.
  */
 
-var NestedMenuItem = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
+var NestedMenuItem = /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"])(function (props, ref) {
   var _props$ContainerProps = props.ContainerProps,
       ContainerPropsProp = _props$ContainerProps === void 0 ? {} : _props$ContainerProps,
       children = props.children,
@@ -58764,7 +58852,7 @@ var NestedMenuItem = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_r
       label = props.label,
       parentMenuOpen = props.parentMenuOpen,
       _props$rightIcon = props.rightIcon,
-      rightIcon = _props$rightIcon === void 0 ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(NestedMenuItem_ChevronRight, null) : _props$rightIcon,
+      rightIcon = _props$rightIcon === void 0 ? /*#__PURE__*/Object(jsx_runtime["jsx"])(NestedMenuItem_ChevronRight, {}) : _props$rightIcon,
       tabIndexProp = props.tabIndex,
       MenuItemProps = objectWithoutProperties_default()(props, ["ContainerProps", "children", "className", "elevation", "label", "parentMenuOpen", "rightIcon", "tabIndex"]);
 
@@ -58860,72 +58948,79 @@ var NestedMenuItem = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_r
     tabIndex = tabIndexProp !== undefined ? tabIndexProp : -1;
   }
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", extends_default()({
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", NestedMenuItem_objectSpread(NestedMenuItem_objectSpread({
     className: clsx_m(nestedMenuItemClasses.root)
     /* eslint-disable-next-line react/jsx-props-no-spreading */
 
-  }, ContainerProps, {
+  }, ContainerProps), {}, {
     onKeyDown: handleKeyDown,
     onMouseEnter: handleMouseEnter,
     onMouseLeave: handleMouseLeave,
     ref: containerRef,
     role: "menu",
-    tabIndex: tabIndex
-  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_MenuItem_MenuItem, extends_default()({
-    className: clsx_m(menuItemClasses.root, className),
-    ref: menuItemRef
-    /* eslint-disable-next-line react/jsx-props-no-spreading */
+    tabIndex: tabIndex,
+    children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])(esm_MenuItem_MenuItem, NestedMenuItem_objectSpread(NestedMenuItem_objectSpread({
+      className: clsx_m(menuItemClasses.root, className),
+      ref: menuItemRef
+      /* eslint-disable-next-line react/jsx-props-no-spreading */
 
-  }, MenuItemProps), label, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_ListItemSecondaryAction_ListItemSecondaryAction, null, rightIcon)), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Menu_Menu // Set pointer events to 'none' to prevent the invisible Popover div
-  // from capturing events for clicks and hovers
-  , {
-    anchorEl: menuItemRef.current,
-    anchorOrigin: {
-      vertical: 'top',
-      horizontal: 'right'
-    },
-    autoFocus: false,
-    disableAutoFocus: true,
-    disableEnforceFocus: true,
-    elevation: elevation,
-    getContentAnchorEl: null,
-    onClose: function onClose() {
-      setIsSubMenuOpen(false);
-    },
-    onEntering: function onEntering() {
-      var _menuContainerRef$cur4, _menuContainerRef$cur5;
+    }, MenuItemProps), {}, {
+      children: [label, /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_ListItemSecondaryAction_ListItemSecondaryAction, {
+        children: rightIcon
+      })]
+    })), /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_Menu_Menu // Set pointer events to 'none' to prevent the invisible Popover div
+    // from capturing events for clicks and hovers
+    , {
+      anchorEl: menuItemRef.current,
+      anchorOrigin: {
+        vertical: 'top',
+        horizontal: 'right'
+      },
+      autoFocus: false,
+      disableAutoFocus: true,
+      disableEnforceFocus: true,
+      elevation: elevation,
+      getContentAnchorEl: null,
+      onClose: function onClose() {
+        setIsSubMenuOpen(false);
+      },
+      onEntering: function onEntering() {
+        var _menuContainerRef$cur4, _menuContainerRef$cur5;
 
-      return (_menuContainerRef$cur4 = menuContainerRef.current) === null || _menuContainerRef$cur4 === void 0 ? void 0 : (_menuContainerRef$cur5 = _menuContainerRef$cur4.children[0]) === null || _menuContainerRef$cur5 === void 0 ? void 0 : _menuContainerRef$cur5.focus();
-    },
-    open: open,
-    style: {
-      pointerEvents: 'none'
-    },
-    transformOrigin: {
-      vertical: 'top',
-      horizontal: 'left'
-    }
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
-    ref: menuContainerRef,
-    style: {
-      pointerEvents: 'auto'
-    }
-  }, children)));
+        return (_menuContainerRef$cur4 = menuContainerRef.current) === null || _menuContainerRef$cur4 === void 0 ? void 0 : (_menuContainerRef$cur5 = _menuContainerRef$cur4.children[0]) === null || _menuContainerRef$cur5 === void 0 ? void 0 : _menuContainerRef$cur5.focus();
+      },
+      open: open,
+      style: {
+        pointerEvents: 'none'
+      },
+      transformOrigin: {
+        vertical: 'top',
+        horizontal: 'left'
+      },
+      children: /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
+        ref: menuContainerRef,
+        style: {
+          pointerEvents: 'auto'
+        },
+        children: children
+      })
+    })]
+  }));
 });
 /* harmony default export */ var components_NestedMenuItem = (NestedMenuItem);
 // CONCATENATED MODULE: ./src/menu/index.js
 
 
 // EXTERNAL MODULE: ./node_modules/lodash/isArray.js
-var isArray = __webpack_require__(55);
+var isArray = __webpack_require__(57);
 var isArray_default = /*#__PURE__*/__webpack_require__.n(isArray);
 
 // EXTERNAL MODULE: ./node_modules/lodash/isPlainObject.js
-var lodash_isPlainObject = __webpack_require__(60);
+var lodash_isPlainObject = __webpack_require__(61);
 var isPlainObject_default = /*#__PURE__*/__webpack_require__.n(lodash_isPlainObject);
 
 // EXTERNAL MODULE: ./node_modules/lodash/isString.js
-var lodash_isString = __webpack_require__(195);
+var lodash_isString = __webpack_require__(196);
 var isString_default = /*#__PURE__*/__webpack_require__.n(lodash_isString);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faSignOut.js
@@ -64693,24 +64788,13 @@ var Iterable = Collection;
 // CONCATENATED MODULE: ./src/layout/src/components/App/styled/AppHeaderInnerWrapper.js
 
 
-function AppHeaderInnerWrapper_templateObject() {
-  var data = taggedTemplateLiteral_default()(["\n    padding: 0 20px;\n  "]);
-
-  AppHeaderInnerWrapper_templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var AppHeaderInnerWrapper_templateObject;
 
 
 
 
 
-var AppHeaderInnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(styled_AppContentInnerWrapper).withConfig({
-  displayName: "AppHeaderInnerWrapper",
-  componentId: "l32jeg-0"
-})(["align-items:center;flex-direction:row;justify-content:space-between;padding:0 ", "px;max-width:none;width:auto;", ""], APP_CONTENT_PADDING, media.phone(AppHeaderInnerWrapper_templateObject()));
+var AppHeaderInnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(styled_AppContentInnerWrapper)(["align-items:center;flex-direction:row;justify-content:space-between;padding:0 ", "px;max-width:none;width:auto;", ""], APP_CONTENT_PADDING, media.phone(AppHeaderInnerWrapper_templateObject || (AppHeaderInnerWrapper_templateObject = taggedTemplateLiteral_default()(["\n    padding: 0 20px;\n  "]))));
 /* harmony default export */ var styled_AppHeaderInnerWrapper = (AppHeaderInnerWrapper);
 // CONCATENATED MODULE: ./src/layout/src/components/App/styled/AppHeaderOuterWrapper.js
 
@@ -64720,35 +64804,21 @@ var AppHeaderOuterWrapper_WHITE = WHITE;
 var AppHeaderOuterWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(styled_AppContentOuterWrapper).attrs({
   as: 'header',
   bgColor: AppHeaderOuterWrapper_WHITE
-}).withConfig({
-  displayName: "AppHeaderOuterWrapper",
-  componentId: "sc-9eb0di-0"
 })(["justify-content:flex-start;"]);
 /* harmony default export */ var styled_AppHeaderOuterWrapper = (AppHeaderOuterWrapper);
 // CONCATENATED MODULE: ./src/layout/src/components/App/styled/AppNavigationInnerWrapper.js
 
 
-function AppNavigationInnerWrapper_templateObject() {
-  var data = taggedTemplateLiteral_default()(["\n    padding: 0 20px;\n  "]);
-
-  AppNavigationInnerWrapper_templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var AppNavigationInnerWrapper_templateObject;
 
 
 
 
 
-var AppNavigationInnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(styled_AppContentInnerWrapper).withConfig({
-  displayName: "AppNavigationInnerWrapper",
-  componentId: "sc-1pcrzjm-0"
-})(["align-items:center;flex-direction:", ";padding:0 ", "px;max-width:none;width:auto;", ""], function (_ref) {
+var AppNavigationInnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(styled_AppContentInnerWrapper)(["align-items:center;flex-direction:", ";padding:0 ", "px;max-width:none;width:auto;", ""], function (_ref) {
   var vertical = _ref.vertical;
   return vertical ? 'column' : 'row';
-}, APP_CONTENT_PADDING, media.phone(AppNavigationInnerWrapper_templateObject()));
+}, APP_CONTENT_PADDING, media.phone(AppNavigationInnerWrapper_templateObject || (AppNavigationInnerWrapper_templateObject = taggedTemplateLiteral_default()(["\n    padding: 0 20px;\n  "]))));
 /* harmony default export */ var styled_AppNavigationInnerWrapper = (AppNavigationInnerWrapper);
 // CONCATENATED MODULE: ./src/layout/src/components/App/styled/AppNavigationOuterWrapper.js
 
@@ -64759,18 +64829,12 @@ var AppNavigationOuterWrapper = external_amd_styled_components_commonjs_styled_c
     bgColor: props.bgColor,
     borderless: props.borderless
   };
-}).withConfig({
-  displayName: "AppNavigationOuterWrapper",
-  componentId: "w72ivc-0"
 })(["justify-content:flex-start;"]);
 /* harmony default export */ var styled_AppNavigationOuterWrapper = (AppNavigationOuterWrapper);
 // CONCATENATED MODULE: ./src/layout/src/components/App/styled/NavigationDrawer.js
 
 
-var NavigationDrawer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.nav.withConfig({
-  displayName: "NavigationDrawer",
-  componentId: "sc-12rt7ou-0"
-})(["display:flex;flex:1 0 auto;flex-direction:column;justify-content:flex-start;padding:15px 0;> span{background-color:white;color:", ";font-size:14px;font-weight:600;letter-spacing:normal;line-height:1.5;outline:none;padding:15px 30px;text-decoration:none;}> a{background-color:white;color:", ";font-size:14px;font-weight:600;letter-spacing:normal;line-height:1.5;outline:none;padding:15px 30px;text-decoration:none;&:last-child{margin-top:auto;}&:hover{background-color:", ";color:", ";cursor:pointer;}&.active{color:", ";}}> hr{border:none;border-top:1px solid ", ";margin:15px 0;width:100%;}"], NEUTRAL.N700, NEUTRAL.N700, NEUTRAL.N100, PURPLE.P300, PURPLE.P300, NEUTRAL.N100);
+var NavigationDrawer = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.nav(["display:flex;flex:1 0 auto;flex-direction:column;justify-content:flex-start;padding:15px 0;> span{background-color:white;color:", ";font-size:14px;font-weight:600;letter-spacing:normal;line-height:1.5;outline:none;padding:15px 30px;text-decoration:none;}> a{background-color:white;color:", ";font-size:14px;font-weight:600;letter-spacing:normal;line-height:1.5;outline:none;padding:15px 30px;text-decoration:none;&:last-child{margin-top:auto;}&:hover{background-color:", ";color:", ";cursor:pointer;}&.active{color:", ";}}> hr{border:none;border-top:1px solid ", ";margin:15px 0;width:100%;}"], NEUTRAL.N700, NEUTRAL.N700, NEUTRAL.N100, PURPLE.P300, PURPLE.P300, NEUTRAL.N100);
 /* harmony default export */ var styled_NavigationDrawer = (NavigationDrawer);
 // CONCATENATED MODULE: ./src/layout/src/components/App/styled/NavigationWrapper.js
 
@@ -64778,10 +64842,7 @@ var NavigationDrawer = external_amd_styled_components_commonjs_styled_components
 var NavigationWrapper_NEUTRAL = NEUTRAL,
     NavigationWrapper_PURPLE = PURPLE;
 var APP_NAV_ROOT = 'app-nav-root';
-var NavigationWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.nav.withConfig({
-  displayName: "NavigationWrapper",
-  componentId: "zufr9y-0"
-})(["display:flex;flex:0 0 auto;height:100%;min-height:60px;justify-content:flex-start;> a{align-items:center;border-bottom:3px solid transparent;color:", ";display:flex;font-size:12px;font-weight:normal;justify-content:center;letter-spacing:normal;line-height:1.5;margin:0 0 0 30px;outline:none;padding:3px 3px 0 3px;text-align:center;text-decoration:none;&:first-child{margin:0;}&:focus{outline:none;text-decoration:none;}&:hover{border-bottom:3px solid ", ";color:", ";cursor:pointer;}&.active{border-bottom:3px solid ", ";color:", ";}&.", "{border:none;margin:0;padding:0;> h1{color:", ";font-size:14px;font-weight:600;letter-spacing:normal;margin:0 0 0 10px;padding:0;}> img{height:26px;}}}> hr{border:none;border-left:1px solid ", ";margin:0 0 0 30px;}"], NavigationWrapper_NEUTRAL.N500, NavigationWrapper_NEUTRAL.N500, NavigationWrapper_NEUTRAL.N700, NavigationWrapper_PURPLE.P300, NavigationWrapper_PURPLE.P300, APP_NAV_ROOT, NavigationWrapper_NEUTRAL.N700, NavigationWrapper_NEUTRAL.N100);
+var NavigationWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.nav(["display:flex;flex:0 0 auto;height:100%;min-height:60px;justify-content:flex-start;> a{align-items:center;border-bottom:3px solid transparent;color:", ";display:flex;font-size:12px;font-weight:normal;justify-content:center;letter-spacing:normal;line-height:1.5;margin:0 0 0 30px;outline:none;padding:3px 3px 0 3px;text-align:center;text-decoration:none;&:first-child{margin:0;}&:focus{outline:none;text-decoration:none;}&:hover{border-bottom:3px solid ", ";color:", ";cursor:pointer;}&.active{border-bottom:3px solid ", ";color:", ";}&.", "{border:none;margin:0;padding:0;> h1{color:", ";font-size:14px;font-weight:600;letter-spacing:normal;margin:0 0 0 10px;padding:0;}> img{height:26px;}}}> hr{border:none;border-left:1px solid ", ";margin:0 0 0 30px;}"], NavigationWrapper_NEUTRAL.N500, NavigationWrapper_NEUTRAL.N500, NavigationWrapper_NEUTRAL.N700, NavigationWrapper_PURPLE.P300, NavigationWrapper_PURPLE.P300, APP_NAV_ROOT, NavigationWrapper_NEUTRAL.N700, NavigationWrapper_NEUTRAL.N100);
 /* harmony default export */ var styled_NavigationWrapper = (NavigationWrapper);
 
 // CONCATENATED MODULE: ./src/layout/src/components/App/AppNavigationWrapper.js
@@ -64795,6 +64856,7 @@ var NavigationWrapper = external_amd_styled_components_commonjs_styled_component
 function AppNavigationWrapper_createSuper(Derived) { var hasNativeReflectConstruct = AppNavigationWrapper_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
 function AppNavigationWrapper_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
 
 
 
@@ -64831,25 +64893,34 @@ var AppNavigationWrapper_AppNavigationWrapper = /*#__PURE__*/function (_Componen
           onClose = _this$props.onClose;
 
       if (drawer) {
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppNavigationOuterWrapper, {
+        return /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_AppNavigationOuterWrapper, {
           borderless: true,
-          className: className
-        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppNavigationInnerWrapper, {
-          vertical: true
-        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Drawer, {
-          isOpen: isOpen,
-          onClose: onClose,
-          side: "right"
-        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_NavigationDrawer, null, children))));
+          className: className,
+          children: /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_AppNavigationInnerWrapper, {
+            vertical: true,
+            children: /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Drawer, {
+              isOpen: isOpen,
+              onClose: onClose,
+              side: "right",
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_NavigationDrawer, {
+                children: children
+              })
+            })
+          })
+        });
       }
 
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppNavigationOuterWrapper, {
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_AppNavigationOuterWrapper, {
         borderless: borderless,
         bgColor: bgColor,
-        className: className
-      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppNavigationInnerWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_NavigationWrapper, {
-        ref: forwardedRef
-      }, children)));
+        className: className,
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_AppNavigationInnerWrapper, {
+          children: /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_NavigationWrapper, {
+            ref: forwardedRef,
+            children: children
+          })
+        })
+      });
     }
   }]);
 
@@ -64867,60 +64938,19 @@ defineProperty_default()(AppNavigationWrapper_AppNavigationWrapper, "defaultProp
   onClose: undefined
 });
 
-/* harmony default export */ var App_AppNavigationWrapper = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(AppNavigationWrapper_AppNavigationWrapper, {
+/* harmony default export */ var App_AppNavigationWrapper = (/*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"])(function (props, ref) {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(AppNavigationWrapper_AppNavigationWrapper, {
     borderless: props.borderless,
     bgColor: props.bgColor,
     className: props.className,
     drawer: props.drawer,
     forwardedRef: ref,
     isOpen: props.isOpen,
-    onClose: props.onClose
-  }, props.children);
+    onClose: props.onClose,
+    children: props.children
+  });
 }));
-// CONCATENATED MODULE: ./node_modules/memoize-one/dist/memoize-one.esm.js
-function areInputsEqual(newInputs, lastInputs) {
-    if (newInputs.length !== lastInputs.length) {
-        return false;
-    }
-    for (var i = 0; i < newInputs.length; i++) {
-        if (newInputs[i] !== lastInputs[i]) {
-            return false;
-        }
-    }
-    return true;
-}
-
-function memoizeOne(resultFn, isEqual) {
-    if (isEqual === void 0) { isEqual = areInputsEqual; }
-    var lastThis;
-    var lastArgs = [];
-    var lastResult;
-    var calledOnce = false;
-    function memoized() {
-        var newArgs = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            newArgs[_i] = arguments[_i];
-        }
-        if (calledOnce && lastThis === this && isEqual(newArgs, lastArgs)) {
-            return lastResult;
-        }
-        lastResult = resultFn.apply(this, newArgs);
-        calledOnce = true;
-        lastThis = this;
-        lastArgs = newArgs;
-        return lastResult;
-    }
-    return memoized;
-}
-
-/* harmony default export */ var memoize_one_esm = (memoizeOne);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/inheritsLoose.js
-var inheritsLoose = __webpack_require__(196);
-var inheritsLoose_default = /*#__PURE__*/__webpack_require__.n(inheritsLoose);
-
-// CONCATENATED MODULE: ./node_modules/@emotion/sheet/dist/sheet.browser.esm.js
+// CONCATENATED MODULE: ./node_modules/@emotion/react/node_modules/@emotion/sheet/dist/emotion-sheet.browser.esm.js
 /*
 
 Based off glamor's StyleSheet, thanks Sunil ❤️
@@ -64970,13 +65000,28 @@ function createStyleElement(options) {
   }
 
   tag.appendChild(document.createTextNode(''));
+  tag.setAttribute('data-s', '');
   return tag;
 }
 
-var sheet_browser_esm_StyleSheet =
-/*#__PURE__*/
-function () {
+var emotion_sheet_browser_esm_StyleSheet = /*#__PURE__*/function () {
   function StyleSheet(options) {
+    var _this = this;
+
+    this._insertTag = function (tag) {
+      var before;
+
+      if (_this.tags.length === 0) {
+        before = _this.prepend ? _this.container.firstChild : _this.before;
+      } else {
+        before = _this.tags[_this.tags.length - 1].nextSibling;
+      }
+
+      _this.container.insertBefore(tag, before);
+
+      _this.tags.push(tag);
+    };
+
     this.isSpeedy = options.speedy === undefined ? "production" === 'production' : options.speedy;
     this.tags = [];
     this.ctr = 0;
@@ -64984,53 +65029,35 @@ function () {
 
     this.key = options.key;
     this.container = options.container;
+    this.prepend = options.prepend;
     this.before = null;
   }
 
   var _proto = StyleSheet.prototype;
+
+  _proto.hydrate = function hydrate(nodes) {
+    nodes.forEach(this._insertTag);
+  };
 
   _proto.insert = function insert(rule) {
     // the max length is how many rules we have per style tag, it's 65000 in speedy mode
     // it's 1 in dev because we insert source maps that map a single rule to a location
     // and you can only have one source map per style tag
     if (this.ctr % (this.isSpeedy ? 65000 : 1) === 0) {
-      var _tag = createStyleElement(this);
-
-      var before;
-
-      if (this.tags.length === 0) {
-        before = this.before;
-      } else {
-        before = this.tags[this.tags.length - 1].nextSibling;
-      }
-
-      this.container.insertBefore(_tag, before);
-      this.tags.push(_tag);
+      this._insertTag(createStyleElement(this));
     }
 
     var tag = this.tags[this.tags.length - 1];
+
+    if (false) { var isImportRule; }
 
     if (this.isSpeedy) {
       var sheet = sheetForTag(tag);
 
       try {
-        // this is a really hot path
-        // we check the second character first because having "i"
-        // as the second character will happen less often than
-        // having "@" as the first character
-        var isImportRule = rule.charCodeAt(1) === 105 && rule.charCodeAt(0) === 64; // this is the ultrafast version, works across browsers
+        // this is the ultrafast version, works across browsers
         // the big drawback is that the css won't be editable in devtools
-
-        sheet.insertRule(rule, // we need to insert @import rules before anything else
-        // otherwise there will be an error
-        // technically this means that the @import rules will
-        // _usually_(not always since there could be multiple style tags)
-        // be the first ones in prod and generally later in dev
-        // this shouldn't really matter in the real world though
-        // @import is generally only used for font faces from google fonts and etc.
-        // so while this could be technically correct then it would be slower and larger
-        // for a tiny bit of correctness that won't matter in the real world
-        isImportRule ? 0 : sheet.cssRules.length);
+        sheet.insertRule(rule, sheet.cssRules.length);
       } catch (e) {
         if (false) {}
       }
@@ -65048,6 +65075,8 @@ function () {
     });
     this.tags = [];
     this.ctr = 0;
+
+    if (false) {}
   };
 
   return StyleSheet;
@@ -65055,622 +65084,9 @@ function () {
 
 
 
-// CONCATENATED MODULE: ./node_modules/@emotion/stylis/dist/stylis.browser.esm.js
-function stylis_min (W) {
-  function M(d, c, e, h, a) {
-    for (var m = 0, b = 0, v = 0, n = 0, q, g, x = 0, K = 0, k, u = k = q = 0, l = 0, r = 0, I = 0, t = 0, B = e.length, J = B - 1, y, f = '', p = '', F = '', G = '', C; l < B;) {
-      g = e.charCodeAt(l);
-      l === J && 0 !== b + n + v + m && (0 !== b && (g = 47 === b ? 10 : 47), n = v = m = 0, B++, J++);
-
-      if (0 === b + n + v + m) {
-        if (l === J && (0 < r && (f = f.replace(N, '')), 0 < f.trim().length)) {
-          switch (g) {
-            case 32:
-            case 9:
-            case 59:
-            case 13:
-            case 10:
-              break;
-
-            default:
-              f += e.charAt(l);
-          }
-
-          g = 59;
-        }
-
-        switch (g) {
-          case 123:
-            f = f.trim();
-            q = f.charCodeAt(0);
-            k = 1;
-
-            for (t = ++l; l < B;) {
-              switch (g = e.charCodeAt(l)) {
-                case 123:
-                  k++;
-                  break;
-
-                case 125:
-                  k--;
-                  break;
-
-                case 47:
-                  switch (g = e.charCodeAt(l + 1)) {
-                    case 42:
-                    case 47:
-                      a: {
-                        for (u = l + 1; u < J; ++u) {
-                          switch (e.charCodeAt(u)) {
-                            case 47:
-                              if (42 === g && 42 === e.charCodeAt(u - 1) && l + 2 !== u) {
-                                l = u + 1;
-                                break a;
-                              }
-
-                              break;
-
-                            case 10:
-                              if (47 === g) {
-                                l = u + 1;
-                                break a;
-                              }
-
-                          }
-                        }
-
-                        l = u;
-                      }
-
-                  }
-
-                  break;
-
-                case 91:
-                  g++;
-
-                case 40:
-                  g++;
-
-                case 34:
-                case 39:
-                  for (; l++ < J && e.charCodeAt(l) !== g;) {
-                  }
-
-              }
-
-              if (0 === k) break;
-              l++;
-            }
-
-            k = e.substring(t, l);
-            0 === q && (q = (f = f.replace(ca, '').trim()).charCodeAt(0));
-
-            switch (q) {
-              case 64:
-                0 < r && (f = f.replace(N, ''));
-                g = f.charCodeAt(1);
-
-                switch (g) {
-                  case 100:
-                  case 109:
-                  case 115:
-                  case 45:
-                    r = c;
-                    break;
-
-                  default:
-                    r = O;
-                }
-
-                k = M(c, r, k, g, a + 1);
-                t = k.length;
-                0 < A && (r = X(O, f, I), C = H(3, k, r, c, D, z, t, g, a, h), f = r.join(''), void 0 !== C && 0 === (t = (k = C.trim()).length) && (g = 0, k = ''));
-                if (0 < t) switch (g) {
-                  case 115:
-                    f = f.replace(da, ea);
-
-                  case 100:
-                  case 109:
-                  case 45:
-                    k = f + '{' + k + '}';
-                    break;
-
-                  case 107:
-                    f = f.replace(fa, '$1 $2');
-                    k = f + '{' + k + '}';
-                    k = 1 === w || 2 === w && L('@' + k, 3) ? '@-webkit-' + k + '@' + k : '@' + k;
-                    break;
-
-                  default:
-                    k = f + k, 112 === h && (k = (p += k, ''));
-                } else k = '';
-                break;
-
-              default:
-                k = M(c, X(c, f, I), k, h, a + 1);
-            }
-
-            F += k;
-            k = I = r = u = q = 0;
-            f = '';
-            g = e.charCodeAt(++l);
-            break;
-
-          case 125:
-          case 59:
-            f = (0 < r ? f.replace(N, '') : f).trim();
-            if (1 < (t = f.length)) switch (0 === u && (q = f.charCodeAt(0), 45 === q || 96 < q && 123 > q) && (t = (f = f.replace(' ', ':')).length), 0 < A && void 0 !== (C = H(1, f, c, d, D, z, p.length, h, a, h)) && 0 === (t = (f = C.trim()).length) && (f = '\x00\x00'), q = f.charCodeAt(0), g = f.charCodeAt(1), q) {
-              case 0:
-                break;
-
-              case 64:
-                if (105 === g || 99 === g) {
-                  G += f + e.charAt(l);
-                  break;
-                }
-
-              default:
-                58 !== f.charCodeAt(t - 1) && (p += P(f, q, g, f.charCodeAt(2)));
-            }
-            I = r = u = q = 0;
-            f = '';
-            g = e.charCodeAt(++l);
-        }
-      }
-
-      switch (g) {
-        case 13:
-        case 10:
-          47 === b ? b = 0 : 0 === 1 + q && 107 !== h && 0 < f.length && (r = 1, f += '\x00');
-          0 < A * Y && H(0, f, c, d, D, z, p.length, h, a, h);
-          z = 1;
-          D++;
-          break;
-
-        case 59:
-        case 125:
-          if (0 === b + n + v + m) {
-            z++;
-            break;
-          }
-
-        default:
-          z++;
-          y = e.charAt(l);
-
-          switch (g) {
-            case 9:
-            case 32:
-              if (0 === n + m + b) switch (x) {
-                case 44:
-                case 58:
-                case 9:
-                case 32:
-                  y = '';
-                  break;
-
-                default:
-                  32 !== g && (y = ' ');
-              }
-              break;
-
-            case 0:
-              y = '\\0';
-              break;
-
-            case 12:
-              y = '\\f';
-              break;
-
-            case 11:
-              y = '\\v';
-              break;
-
-            case 38:
-              0 === n + b + m && (r = I = 1, y = '\f' + y);
-              break;
-
-            case 108:
-              if (0 === n + b + m + E && 0 < u) switch (l - u) {
-                case 2:
-                  112 === x && 58 === e.charCodeAt(l - 3) && (E = x);
-
-                case 8:
-                  111 === K && (E = K);
-              }
-              break;
-
-            case 58:
-              0 === n + b + m && (u = l);
-              break;
-
-            case 44:
-              0 === b + v + n + m && (r = 1, y += '\r');
-              break;
-
-            case 34:
-            case 39:
-              0 === b && (n = n === g ? 0 : 0 === n ? g : n);
-              break;
-
-            case 91:
-              0 === n + b + v && m++;
-              break;
-
-            case 93:
-              0 === n + b + v && m--;
-              break;
-
-            case 41:
-              0 === n + b + m && v--;
-              break;
-
-            case 40:
-              if (0 === n + b + m) {
-                if (0 === q) switch (2 * x + 3 * K) {
-                  case 533:
-                    break;
-
-                  default:
-                    q = 1;
-                }
-                v++;
-              }
-
-              break;
-
-            case 64:
-              0 === b + v + n + m + u + k && (k = 1);
-              break;
-
-            case 42:
-            case 47:
-              if (!(0 < n + m + v)) switch (b) {
-                case 0:
-                  switch (2 * g + 3 * e.charCodeAt(l + 1)) {
-                    case 235:
-                      b = 47;
-                      break;
-
-                    case 220:
-                      t = l, b = 42;
-                  }
-
-                  break;
-
-                case 42:
-                  47 === g && 42 === x && t + 2 !== l && (33 === e.charCodeAt(t + 2) && (p += e.substring(t, l + 1)), y = '', b = 0);
-              }
-          }
-
-          0 === b && (f += y);
-      }
-
-      K = x;
-      x = g;
-      l++;
-    }
-
-    t = p.length;
-
-    if (0 < t) {
-      r = c;
-      if (0 < A && (C = H(2, p, r, d, D, z, t, h, a, h), void 0 !== C && 0 === (p = C).length)) return G + p + F;
-      p = r.join(',') + '{' + p + '}';
-
-      if (0 !== w * E) {
-        2 !== w || L(p, 2) || (E = 0);
-
-        switch (E) {
-          case 111:
-            p = p.replace(ha, ':-moz-$1') + p;
-            break;
-
-          case 112:
-            p = p.replace(Q, '::-webkit-input-$1') + p.replace(Q, '::-moz-$1') + p.replace(Q, ':-ms-input-$1') + p;
-        }
-
-        E = 0;
-      }
-    }
-
-    return G + p + F;
-  }
-
-  function X(d, c, e) {
-    var h = c.trim().split(ia);
-    c = h;
-    var a = h.length,
-        m = d.length;
-
-    switch (m) {
-      case 0:
-      case 1:
-        var b = 0;
-
-        for (d = 0 === m ? '' : d[0] + ' '; b < a; ++b) {
-          c[b] = Z(d, c[b], e).trim();
-        }
-
-        break;
-
-      default:
-        var v = b = 0;
-
-        for (c = []; b < a; ++b) {
-          for (var n = 0; n < m; ++n) {
-            c[v++] = Z(d[n] + ' ', h[b], e).trim();
-          }
-        }
-
-    }
-
-    return c;
-  }
-
-  function Z(d, c, e) {
-    var h = c.charCodeAt(0);
-    33 > h && (h = (c = c.trim()).charCodeAt(0));
-
-    switch (h) {
-      case 38:
-        return c.replace(F, '$1' + d.trim());
-
-      case 58:
-        return d.trim() + c.replace(F, '$1' + d.trim());
-
-      default:
-        if (0 < 1 * e && 0 < c.indexOf('\f')) return c.replace(F, (58 === d.charCodeAt(0) ? '' : '$1') + d.trim());
-    }
-
-    return d + c;
-  }
-
-  function P(d, c, e, h) {
-    var a = d + ';',
-        m = 2 * c + 3 * e + 4 * h;
-
-    if (944 === m) {
-      d = a.indexOf(':', 9) + 1;
-      var b = a.substring(d, a.length - 1).trim();
-      b = a.substring(0, d).trim() + b + ';';
-      return 1 === w || 2 === w && L(b, 1) ? '-webkit-' + b + b : b;
-    }
-
-    if (0 === w || 2 === w && !L(a, 1)) return a;
-
-    switch (m) {
-      case 1015:
-        return 97 === a.charCodeAt(10) ? '-webkit-' + a + a : a;
-
-      case 951:
-        return 116 === a.charCodeAt(3) ? '-webkit-' + a + a : a;
-
-      case 963:
-        return 110 === a.charCodeAt(5) ? '-webkit-' + a + a : a;
-
-      case 1009:
-        if (100 !== a.charCodeAt(4)) break;
-
-      case 969:
-      case 942:
-        return '-webkit-' + a + a;
-
-      case 978:
-        return '-webkit-' + a + '-moz-' + a + a;
-
-      case 1019:
-      case 983:
-        return '-webkit-' + a + '-moz-' + a + '-ms-' + a + a;
-
-      case 883:
-        if (45 === a.charCodeAt(8)) return '-webkit-' + a + a;
-        if (0 < a.indexOf('image-set(', 11)) return a.replace(ja, '$1-webkit-$2') + a;
-        break;
-
-      case 932:
-        if (45 === a.charCodeAt(4)) switch (a.charCodeAt(5)) {
-          case 103:
-            return '-webkit-box-' + a.replace('-grow', '') + '-webkit-' + a + '-ms-' + a.replace('grow', 'positive') + a;
-
-          case 115:
-            return '-webkit-' + a + '-ms-' + a.replace('shrink', 'negative') + a;
-
-          case 98:
-            return '-webkit-' + a + '-ms-' + a.replace('basis', 'preferred-size') + a;
-        }
-        return '-webkit-' + a + '-ms-' + a + a;
-
-      case 964:
-        return '-webkit-' + a + '-ms-flex-' + a + a;
-
-      case 1023:
-        if (99 !== a.charCodeAt(8)) break;
-        b = a.substring(a.indexOf(':', 15)).replace('flex-', '').replace('space-between', 'justify');
-        return '-webkit-box-pack' + b + '-webkit-' + a + '-ms-flex-pack' + b + a;
-
-      case 1005:
-        return ka.test(a) ? a.replace(aa, ':-webkit-') + a.replace(aa, ':-moz-') + a : a;
-
-      case 1e3:
-        b = a.substring(13).trim();
-        c = b.indexOf('-') + 1;
-
-        switch (b.charCodeAt(0) + b.charCodeAt(c)) {
-          case 226:
-            b = a.replace(G, 'tb');
-            break;
-
-          case 232:
-            b = a.replace(G, 'tb-rl');
-            break;
-
-          case 220:
-            b = a.replace(G, 'lr');
-            break;
-
-          default:
-            return a;
-        }
-
-        return '-webkit-' + a + '-ms-' + b + a;
-
-      case 1017:
-        if (-1 === a.indexOf('sticky', 9)) break;
-
-      case 975:
-        c = (a = d).length - 10;
-        b = (33 === a.charCodeAt(c) ? a.substring(0, c) : a).substring(d.indexOf(':', 7) + 1).trim();
-
-        switch (m = b.charCodeAt(0) + (b.charCodeAt(7) | 0)) {
-          case 203:
-            if (111 > b.charCodeAt(8)) break;
-
-          case 115:
-            a = a.replace(b, '-webkit-' + b) + ';' + a;
-            break;
-
-          case 207:
-          case 102:
-            a = a.replace(b, '-webkit-' + (102 < m ? 'inline-' : '') + 'box') + ';' + a.replace(b, '-webkit-' + b) + ';' + a.replace(b, '-ms-' + b + 'box') + ';' + a;
-        }
-
-        return a + ';';
-
-      case 938:
-        if (45 === a.charCodeAt(5)) switch (a.charCodeAt(6)) {
-          case 105:
-            return b = a.replace('-items', ''), '-webkit-' + a + '-webkit-box-' + b + '-ms-flex-' + b + a;
-
-          case 115:
-            return '-webkit-' + a + '-ms-flex-item-' + a.replace(ba, '') + a;
-
-          default:
-            return '-webkit-' + a + '-ms-flex-line-pack' + a.replace('align-content', '').replace(ba, '') + a;
-        }
-        break;
-
-      case 973:
-      case 989:
-        if (45 !== a.charCodeAt(3) || 122 === a.charCodeAt(4)) break;
-
-      case 931:
-      case 953:
-        if (!0 === la.test(d)) return 115 === (b = d.substring(d.indexOf(':') + 1)).charCodeAt(0) ? P(d.replace('stretch', 'fill-available'), c, e, h).replace(':fill-available', ':stretch') : a.replace(b, '-webkit-' + b) + a.replace(b, '-moz-' + b.replace('fill-', '')) + a;
-        break;
-
-      case 962:
-        if (a = '-webkit-' + a + (102 === a.charCodeAt(5) ? '-ms-' + a : '') + a, 211 === e + h && 105 === a.charCodeAt(13) && 0 < a.indexOf('transform', 10)) return a.substring(0, a.indexOf(';', 27) + 1).replace(ma, '$1-webkit-$2') + a;
-    }
-
-    return a;
-  }
-
-  function L(d, c) {
-    var e = d.indexOf(1 === c ? ':' : '{'),
-        h = d.substring(0, 3 !== c ? e : 10);
-    e = d.substring(e + 1, d.length - 1);
-    return R(2 !== c ? h : h.replace(na, '$1'), e, c);
-  }
-
-  function ea(d, c) {
-    var e = P(c, c.charCodeAt(0), c.charCodeAt(1), c.charCodeAt(2));
-    return e !== c + ';' ? e.replace(oa, ' or ($1)').substring(4) : '(' + c + ')';
-  }
-
-  function H(d, c, e, h, a, m, b, v, n, q) {
-    for (var g = 0, x = c, w; g < A; ++g) {
-      switch (w = S[g].call(B, d, x, e, h, a, m, b, v, n, q)) {
-        case void 0:
-        case !1:
-        case !0:
-        case null:
-          break;
-
-        default:
-          x = w;
-      }
-    }
-
-    if (x !== c) return x;
-  }
-
-  function T(d) {
-    switch (d) {
-      case void 0:
-      case null:
-        A = S.length = 0;
-        break;
-
-      default:
-        if ('function' === typeof d) S[A++] = d;else if ('object' === typeof d) for (var c = 0, e = d.length; c < e; ++c) {
-          T(d[c]);
-        } else Y = !!d | 0;
-    }
-
-    return T;
-  }
-
-  function U(d) {
-    d = d.prefix;
-    void 0 !== d && (R = null, d ? 'function' !== typeof d ? w = 1 : (w = 2, R = d) : w = 0);
-    return U;
-  }
-
-  function B(d, c) {
-    var e = d;
-    33 > e.charCodeAt(0) && (e = e.trim());
-    V = e;
-    e = [V];
-
-    if (0 < A) {
-      var h = H(-1, c, e, e, D, z, 0, 0, 0, 0);
-      void 0 !== h && 'string' === typeof h && (c = h);
-    }
-
-    var a = M(O, e, c, 0, 0);
-    0 < A && (h = H(-2, a, e, e, D, z, a.length, 0, 0, 0), void 0 !== h && (a = h));
-    V = '';
-    E = 0;
-    z = D = 1;
-    return a;
-  }
-
-  var ca = /^\0+/g,
-      N = /[\0\r\f]/g,
-      aa = /: */g,
-      ka = /zoo|gra/,
-      ma = /([,: ])(transform)/g,
-      ia = /,\r+?/g,
-      F = /([\t\r\n ])*\f?&/g,
-      fa = /@(k\w+)\s*(\S*)\s*/,
-      Q = /::(place)/g,
-      ha = /:(read-only)/g,
-      G = /[svh]\w+-[tblr]{2}/,
-      da = /\(\s*(.*)\s*\)/g,
-      oa = /([\s\S]*?);/g,
-      ba = /-self|flex-/g,
-      na = /[^]*?(:[rp][el]a[\w-]+)[^]*/,
-      la = /stretch|:\s*\w+\-(?:conte|avail)/,
-      ja = /([^-])(image-set\()/,
-      z = 1,
-      D = 1,
-      E = 0,
-      w = 1,
-      O = [],
-      S = [],
-      A = 0,
-      R = null,
-      Y = 0,
-      V = '';
-  B.use = T;
-  B.set = U;
-  void 0 !== W && U(W);
-  return B;
-}
-
-/* harmony default export */ var stylis_browser_esm = (stylis_min);
+// CONCATENATED MODULE: ./node_modules/stylis/dist/stylis.mjs
+var stylis_e="-ms-";var r="-moz-";var stylis_a="-webkit-";var stylis_c="comm";var stylis_n="rule";var t="decl";var s="@page";var u="@media";var stylis_i="@import";var stylis_f="@charset";var stylis_o="@viewport";var l="@supports";var v="@document";var h="@namespace";var stylis_p="@keyframes";var w="@font-face";var stylis_b="@counter-style";var $="@font-feature-values";var k=Math.abs;var d=String.fromCharCode;function m(e,r){return(((r<<2^stylis_z(e,0))<<2^stylis_z(e,1))<<2^stylis_z(e,2))<<2^stylis_z(e,3)}function g(e){return e.trim()}function stylis_x(e,r){return(e=r.exec(e))?e[0]:e}function stylis_y(e,r,a){return e.replace(r,a)}function j(e,r){return e.indexOf(r)}function stylis_z(e,r){return e.charCodeAt(r)|0}function C(e,r,a){return e.slice(r,a)}function A(e){return e.length}function M(e){return e.length}function O(e,r){return r.push(e),e}function S(e,r){return e.map(r).join("")}var q=1;var B=1;var D=0;var E=0;var F=0;var G="";function H(e,r,a,c,n,t,s){return{value:e,root:r,parent:a,type:c,props:n,children:t,line:q,column:B,length:s,return:""}}function I(e,r,a){return H(e,r.root,r.parent,a,r.props,r.children,0)}function J(){return F}function K(){F=E<D?stylis_z(G,E++):0;if(B++,F===10)B=1,q++;return F}function L(){return stylis_z(G,E)}function N(){return E}function P(e,r){return C(G,e,r)}function Q(e){switch(e){case 0:case 9:case 10:case 13:case 32:return 5;case 33:case 43:case 44:case 47:case 62:case 64:case 126:case 59:case 123:case 125:return 4;case 58:return 3;case 34:case 39:case 40:case 91:return 2;case 41:case 93:return 1}return 0}function R(e){return q=B=1,D=A(G=e),E=0,[]}function T(e){return G="",e}function U(e){return g(P(E-1,Y(e===91?e+2:e===40?e+1:e)))}function V(e){return T(X(R(e)))}function W(e){while(F=L())if(F<33)K();else break;return Q(e)>2||Q(F)>3?"":" "}function X(e){while(K())switch(Q(F)){case 0:O(stylis_(E-1),e);break;case 2:O(U(F),e);break;default:O(d(F),e)}return e}function Y(e){while(K())switch(F){case e:return E;case 34:case 39:return Y(e===34||e===39?e:F);case 40:if(e===41)Y(e);break;case 92:K();break}return E}function Z(e,r){while(K())if(e+F===47+10)break;else if(e+F===42+42&&L()===47)break;return"/*"+P(r,E-1)+"*"+d(e===47?e:K())}function stylis_(e){while(!Q(L()))K();return P(e,E)}function ee(e){return T(re("",null,null,null,[""],e=R(e),0,[0],e))}function re(e,r,a,c,n,t,s,u,i){var f=0;var o=0;var l=s;var v=0;var h=0;var p=0;var w=1;var b=1;var $=1;var k=0;var m="";var g=n;var x=t;var j=c;var z=m;while(b)switch(p=k,k=K()){case 34:case 39:case 91:case 40:z+=U(k);break;case 9:case 10:case 13:case 32:z+=W(p);break;case 47:switch(L()){case 42:case 47:O(ce(Z(K(),N()),r,a),i);break;default:z+="/"}break;case 123*w:u[f++]=A(z)*$;case 125*w:case 59:case 0:switch(k){case 0:case 125:b=0;case 59+o:if(h>0&&A(z)-l)O(h>32?ne(z+";",c,a,l-1):ne(stylis_y(z," ","")+";",c,a,l-2),i);break;case 59:z+=";";default:O(j=ae(z,r,a,f,o,n,u,m,g=[],x=[],l),t);if(k===123)if(o===0)re(z,r,j,j,g,t,l,u,x);else switch(v){case 100:case 109:case 115:re(e,j,j,c&&O(ae(e,j,j,0,0,n,u,m,n,g=[],l),x),n,x,l,u,c?g:x);break;default:re(z,j,j,j,[""],x,l,u,x)}}f=o=h=0,w=$=1,m=z="",l=s;break;case 58:l=1+A(z),h=p;default:switch(z+=d(k),k*w){case 38:$=o>0?1:(z+="\f",-1);break;case 44:u[f++]=(A(z)-1)*$,$=1;break;case 64:if(L()===45)z+=U(K());v=L(),o=A(m=z+=stylis_(N())),k++;break;case 45:if(p===45&&A(z)==2)w=0}}return t}function ae(e,r,a,c,t,s,u,i,f,o,l){var v=t-1;var h=t===0?s:[""];var p=M(h);for(var w=0,b=0,$=0;w<c;++w)for(var d=0,m=C(e,v+1,v=k(b=u[w])),x=e;d<p;++d)if(x=g(b>0?h[d]+" "+m:stylis_y(m,/&\f/g,h[d])))f[$++]=x;return H(e,r,a,t===0?stylis_n:i,f,o,l)}function ce(e,r,a){return H(e,r,a,stylis_c,d(J()),C(e,2,-2),0)}function ne(e,r,a,c){return H(e,r,a,t,C(e,0,c),C(e,c+1,-1),c)}function te(c,n){switch(m(c,n)){case 5737:case 4201:case 3177:case 3433:case 1641:case 4457:case 2921:case 5572:case 6356:case 5844:case 3191:case 6645:case 3005:case 6391:case 5879:case 5623:case 6135:case 4599:case 4855:case 4215:case 6389:case 5109:case 5365:case 5621:case 3829:return stylis_a+c+c;case 5349:case 4246:case 4810:case 6968:case 2756:return stylis_a+c+r+c+stylis_e+c+c;case 6828:case 4268:return stylis_a+c+stylis_e+c+c;case 6165:return stylis_a+c+stylis_e+"flex-"+c+c;case 5187:return stylis_a+c+stylis_y(c,/(\w+).+(:[^]+)/,stylis_a+"box-$1$2"+stylis_e+"flex-$1$2")+c;case 5443:return stylis_a+c+stylis_e+"flex-item-"+stylis_y(c,/flex-|-self/,"")+c;case 4675:return stylis_a+c+stylis_e+"flex-line-pack"+stylis_y(c,/align-content|flex-|-self/,"")+c;case 5548:return stylis_a+c+stylis_e+stylis_y(c,"shrink","negative")+c;case 5292:return stylis_a+c+stylis_e+stylis_y(c,"basis","preferred-size")+c;case 6060:return stylis_a+"box-"+stylis_y(c,"-grow","")+stylis_a+c+stylis_e+stylis_y(c,"grow","positive")+c;case 4554:return stylis_a+stylis_y(c,/([^-])(transform)/g,"$1"+stylis_a+"$2")+c;case 6187:return stylis_y(stylis_y(stylis_y(c,/(zoom-|grab)/,stylis_a+"$1"),/(image-set)/,stylis_a+"$1"),c,"")+c;case 5495:case 3959:return stylis_y(c,/(image-set\([^]*)/,stylis_a+"$1"+"$`$1");case 4968:return stylis_y(stylis_y(c,/(.+:)(flex-)?(.*)/,stylis_a+"box-pack:$3"+stylis_e+"flex-pack:$3"),/s.+-b[^;]+/,"justify")+stylis_a+c+c;case 4095:case 3583:case 4068:case 2532:return stylis_y(c,/(.+)-inline(.+)/,stylis_a+"$1$2")+c;case 8116:case 7059:case 5753:case 5535:case 5445:case 5701:case 4933:case 4677:case 5533:case 5789:case 5021:case 4765:if(A(c)-1-n>6)switch(stylis_z(c,n+1)){case 102:n=stylis_z(c,n+3);case 109:return stylis_y(c,/(.+:)(.+)-([^]+)/,"$1"+stylis_a+"$2-$3"+"$1"+r+(n==108?"$3":"$2-$3"))+c;case 115:return~j(c,"stretch")?te(stylis_y(c,"stretch","fill-available"),n)+c:c}break;case 4949:if(stylis_z(c,n+1)!==115)break;case 6444:switch(stylis_z(c,A(c)-3-(~j(c,"!important")&&10))){case 107:case 111:return stylis_y(c,c,stylis_a+c)+c;case 101:return stylis_y(c,/(.+:)([^;!]+)(;|!.+)?/,"$1"+stylis_a+(stylis_z(c,14)===45?"inline-":"")+"box$3"+"$1"+stylis_a+"$2$3"+"$1"+stylis_e+"$2box$3")+c}break;case 5936:switch(stylis_z(c,n+11)){case 114:return stylis_a+c+stylis_e+stylis_y(c,/[svh]\w+-[tblr]{2}/,"tb")+c;case 108:return stylis_a+c+stylis_e+stylis_y(c,/[svh]\w+-[tblr]{2}/,"tb-rl")+c;case 45:return stylis_a+c+stylis_e+stylis_y(c,/[svh]\w+-[tblr]{2}/,"lr")+c}return stylis_a+c+stylis_e+c+c}return c}function se(e,r){var a="";var c=M(e);for(var n=0;n<c;n++)a+=r(e[n],n,e,r)||"";return a}function ue(e,r,a,s){switch(e.type){case stylis_i:case t:return e.return=e.return||e.value;case stylis_c:return"";case stylis_n:e.value=e.props.join(",")}return A(a=se(e.children,s))?e.return=e.value+"{"+a+"}":""}function ie(e){var r=M(e);return function(a,c,n,t){var s="";for(var u=0;u<r;u++)s+=e[u](a,c,n,t)||"";return s}}function fe(e){return function(r){if(!r.root)if(r=r.return)e(r)}}function oe(c,s,u,i){if(!c.return)switch(c.type){case t:c.return=te(c.value,c.length);break;case stylis_p:return se([I(stylis_y(c.value,"@","@"+stylis_a),c,"")],i);case stylis_n:if(c.length)return S(c.props,(function(n){switch(stylis_x(n,/(::plac\w+|:read-\w+)/)){case":read-only":case":read-write":return se([I(stylis_y(n,/:(read-\w+)/,":"+r+"$1"),c,"")],i);case"::placeholder":return se([I(stylis_y(n,/:(plac\w+)/,":"+stylis_a+"input-$1"),c,""),I(stylis_y(n,/:(plac\w+)/,":"+r+"$1"),c,""),I(stylis_y(n,/:(plac\w+)/,stylis_e+"input-$1"),c,"")],i)}return""}))}}function le(e){switch(e.type){case stylis_n:e.props=e.props.map((function(r){return S(V(r),(function(r,a,c){switch(stylis_z(r,0)){case 12:return C(r,1,A(r));case 0:case 40:case 43:case 62:case 126:return r;case 58:if(c[a+1]==="global")c[a+1]="",c[a+2]="\f"+C(c[a+2],a=1,-1);case 32:return a===1?"":r;default:switch(a){case 0:e=r;return M(c)>1?"":r;case a=M(c)-1:case 2:return a===2?r+e+e:r+e;default:return r}}}))}))}}
+//# sourceMappingURL=stylis.mjs.map
 
 // CONCATENATED MODULE: ./node_modules/@emotion/weak-memoize/dist/weak-memoize.browser.esm.js
 var weakMemoize = function weakMemoize(func) {
@@ -65690,167 +65106,306 @@ var weakMemoize = function weakMemoize(func) {
 
 /* harmony default export */ var weak_memoize_browser_esm = (weakMemoize);
 
-// CONCATENATED MODULE: ./node_modules/@emotion/cache/dist/cache.browser.esm.js
-
-
-
-
-// https://github.com/thysultan/stylis.js/tree/master/plugins/rule-sheet
-// inlined to avoid umd wrapper and peerDep warnings/installing stylis
-// since we use stylis after closure compiler
-var cache_browser_esm_delimiter = '/*|*/';
-var needle = cache_browser_esm_delimiter + '}';
-
-function toSheet(block) {
-  if (block) {
-    Sheet.current.insert(block + '}');
-  }
+// CONCATENATED MODULE: ./node_modules/@emotion/memoize/dist/memoize.browser.esm.js
+function memoize_browser_esm_memoize(fn) {
+  var cache = {};
+  return function (arg) {
+    if (cache[arg] === undefined) cache[arg] = fn(arg);
+    return cache[arg];
+  };
 }
 
-var Sheet = {
-  current: null
+/* harmony default export */ var memoize_browser_esm = (memoize_browser_esm_memoize);
+
+// CONCATENATED MODULE: ./node_modules/@emotion/react/node_modules/@emotion/cache/dist/emotion-cache.browser.esm.js
+
+
+
+
+
+var emotion_cache_browser_esm_last = function last(arr) {
+  return arr.length ? arr[arr.length - 1] : null;
 };
-var ruleSheet = function ruleSheet(context, content, selectors, parents, line, column, length, ns, depth, at) {
-  switch (context) {
-    // property
-    case 1:
-      {
-        switch (content.charCodeAt(0)) {
-          case 64:
-            {
-              // @import
-              Sheet.current.insert(content + ';');
-              return '';
-            }
-          // charcode for l
 
-          case 108:
-            {
-              // charcode for b
-              // this ignores label
-              if (content.charCodeAt(2) === 98) {
-                return '';
-              }
-            }
+var emotion_cache_browser_esm_toRules = function toRules(parsed, points) {
+  // pretend we've started with a comma
+  var index = -1;
+  var character = 44;
+
+  do {
+    switch (Q(character)) {
+      case 0:
+        // &\f
+        if (character === 38 && L() === 12) {
+          // this is not 100% correct, we don't account for literal sequences here - like for example quoted strings
+          // stylis inserts \f after & to know when & where it should replace this sequence with the context selector
+          // and when it should just concatenate the outer and inner selectors
+          // it's very unlikely for this sequence to actually appear in a different context, so we just leverage this fact here
+          points[index] = 1;
         }
 
+        parsed[index] += stylis_(E - 1);
         break;
-      }
-    // selector
 
-    case 2:
-      {
-        if (ns === 0) return content + cache_browser_esm_delimiter;
+      case 2:
+        parsed[index] += U(character);
         break;
-      }
-    // at-rule
 
-    case 3:
-      {
-        switch (ns) {
-          // @font-face, @page
-          case 102:
-          case 112:
-            {
-              Sheet.current.insert(selectors[0] + content);
-              return '';
-            }
-
-          default:
-            {
-              return content + (at === 0 ? cache_browser_esm_delimiter : '');
-            }
+      case 4:
+        // comma
+        if (character === 44) {
+          // colon
+          parsed[++index] = L() === 58 ? '&\f' : '';
+          points[index] = parsed[index].length;
+          break;
         }
+
+      // fallthrough
+
+      default:
+        parsed[index] += d(character);
+    }
+  } while (character = K());
+
+  return parsed;
+};
+
+var emotion_cache_browser_esm_getRules = function getRules(value, points) {
+  return T(emotion_cache_browser_esm_toRules(R(value), points));
+}; // WeakSet would be more appropriate, but only WeakMap is supported in IE11
+
+
+var fixedElements = /* #__PURE__ */new WeakMap();
+var compat = function compat(element) {
+  if (element.type !== 'rule' || !element.parent || // .length indicates if this rule contains pseudo or not
+  !element.length) {
+    return;
+  }
+
+  var value = element.value,
+      parent = element.parent;
+  var isImplicitRule = element.column === parent.column && element.line === parent.line;
+
+  while (parent.type !== 'rule') {
+    parent = parent.parent;
+    if (!parent) return;
+  } // short-circuit for the simplest case
+
+
+  if (element.props.length === 1 && value.charCodeAt(0) !== 58
+  /* colon */
+  && !fixedElements.get(parent)) {
+    return;
+  } // if this is an implicitly inserted rule (the one eagerly inserted at the each new nested level)
+  // then the props has already been manipulated beforehand as they that array is shared between it and its "rule parent"
+
+
+  if (isImplicitRule) {
+    return;
+  }
+
+  fixedElements.set(element, true);
+  var points = [];
+  var rules = emotion_cache_browser_esm_getRules(value, points);
+  var parentRules = parent.props;
+
+  for (var i = 0, k = 0; i < rules.length; i++) {
+    for (var j = 0; j < parentRules.length; j++, k++) {
+      element.props[k] = points[i] ? rules[i].replace(/&\f/g, parentRules[j]) : parentRules[j] + " " + rules[i];
+    }
+  }
+};
+var removeLabel = function removeLabel(element) {
+  if (element.type === 'decl') {
+    var value = element.value;
+
+    if ( // charcode for l
+    value.charCodeAt(0) === 108 && // charcode for b
+    value.charCodeAt(2) === 98) {
+      // this ignores label
+      element["return"] = '';
+      element.value = '';
+    }
+  }
+};
+var ignoreFlag = 'emotion-disable-server-rendering-unsafe-selector-warning-please-do-not-use-this-the-warning-exists-for-a-reason';
+
+var isIgnoringComment = function isIgnoringComment(element) {
+  return !!element && element.type === 'comm' && element.children.indexOf(ignoreFlag) > -1;
+};
+
+var createUnsafeSelectorsAlarm = function createUnsafeSelectorsAlarm(cache) {
+  return function (element, index, children) {
+    if (element.type !== 'rule') return;
+    var unsafePseudoClasses = element.value.match(/(:first|:nth|:nth-last)-child/g);
+
+    if (unsafePseudoClasses && cache.compat !== true) {
+      var prevElement = index > 0 ? children[index - 1] : null;
+
+      if (prevElement && isIgnoringComment(emotion_cache_browser_esm_last(prevElement.children))) {
+        return;
       }
 
-    case -2:
-      {
-        content.split(needle).forEach(toSheet);
-      }
+      unsafePseudoClasses.forEach(function (unsafePseudoClass) {
+        console.error("The pseudo class \"" + unsafePseudoClass + "\" is potentially unsafe when doing server-side rendering. Try changing it to \"" + unsafePseudoClass.split('-child')[0] + "-of-type\".");
+      });
+    }
+  };
+};
+
+var isImportRule = function isImportRule(element) {
+  return element.type.charCodeAt(1) === 105 && element.type.charCodeAt(0) === 64;
+};
+
+var isPrependedWithRegularRules = function isPrependedWithRegularRules(index, children) {
+  for (var i = index - 1; i >= 0; i--) {
+    if (!isImportRule(children[i])) {
+      return true;
+    }
+  }
+
+  return false;
+}; // use this to remove incorrect elements from further processing
+// so they don't get handed to the `sheet` (or anything else)
+// as that could potentially lead to additional logs which in turn could be overhelming to the user
+
+
+var nullifyElement = function nullifyElement(element) {
+  element.type = '';
+  element.value = '';
+  element["return"] = '';
+  element.children = '';
+  element.props = '';
+};
+
+var incorrectImportAlarm = function incorrectImportAlarm(element, index, children) {
+  if (!isImportRule(element)) {
+    return;
+  }
+
+  if (element.parent) {
+    console.error("`@import` rules can't be nested inside other rules. Please move it to the top level and put it before regular rules. Keep in mind that they can only be used within global styles.");
+    nullifyElement(element);
+  } else if (isPrependedWithRegularRules(index, children)) {
+    console.error("`@import` rules can't be after other rules. Please put your `@import` rules before your other rules.");
+    nullifyElement(element);
   }
 };
 
-var cache_browser_esm_createCache = function createCache(options) {
-  if (options === undefined) options = {};
-  var key = options.key || 'css';
-  var stylisOptions;
+var defaultStylisPlugins = [oe];
 
-  if (options.prefix !== undefined) {
-    stylisOptions = {
-      prefix: options.prefix
-    };
+var emotion_cache_browser_esm_createCache = function createCache(options) {
+  var key = options.key;
+
+  if (false) {}
+
+  if ( key === 'css') {
+    var ssrStyles = document.querySelectorAll("style[data-emotion]:not([data-s])"); // get SSRed styles out of the way of React's hydration
+    // document.head is a safe place to move them to
+
+    Array.prototype.forEach.call(ssrStyles, function (node) {
+      document.head.appendChild(node);
+      node.setAttribute('data-s', '');
+    });
   }
 
-  var stylis = new stylis_browser_esm(stylisOptions);
+  var stylisPlugins = options.stylisPlugins || defaultStylisPlugins;
 
   if (false) {}
 
   var inserted = {}; // $FlowFixMe
 
   var container;
+  var nodesToHydrate = [];
 
   {
     container = options.container || document.head;
-    var nodes = document.querySelectorAll("style[data-emotion-" + key + "]");
-    Array.prototype.forEach.call(nodes, function (node) {
-      var attrib = node.getAttribute("data-emotion-" + key); // $FlowFixMe
+    Array.prototype.forEach.call(document.querySelectorAll("style[data-emotion]"), function (node) {
+      var attrib = node.getAttribute("data-emotion").split(' ');
 
-      attrib.split(' ').forEach(function (id) {
-        inserted[id] = true;
-      });
+      if (attrib[0] !== key) {
+        return;
+      } // $FlowFixMe
 
-      if (node.parentNode !== container) {
-        container.appendChild(node);
+
+      for (var i = 1; i < attrib.length; i++) {
+        inserted[attrib[i]] = true;
       }
+
+      nodesToHydrate.push(node);
     });
   }
 
   var _insert;
 
+  var omnipresentPlugins = [compat, removeLabel];
+
+  if (false) {}
+
   {
-    stylis.use(options.stylisPlugins)(ruleSheet);
+    var currentSheet;
+    var finalizingPlugins = [ue,  false ? undefined : fe(function (rule) {
+      currentSheet.insert(rule);
+    })];
+    var serializer = ie(omnipresentPlugins.concat(stylisPlugins, finalizingPlugins));
+
+    var stylis = function stylis(styles) {
+      return se(ee(styles), serializer);
+    };
 
     _insert = function insert(selector, serialized, sheet, shouldCache) {
-      var name = serialized.name;
-      Sheet.current = sheet;
+      currentSheet = sheet;
 
-      if (false) { var map; }
+      if (false) {}
 
-      stylis(selector, serialized.styles);
+      stylis(selector ? selector + "{" + serialized.styles + "}" : serialized.styles);
 
       if (shouldCache) {
-        cache.inserted[name] = true;
+        cache.inserted[serialized.name] = true;
       }
     };
   }
 
-  if (false) { var commentEnd, commentStart; }
-
   var cache = {
     key: key,
-    sheet: new sheet_browser_esm_StyleSheet({
+    sheet: new emotion_sheet_browser_esm_StyleSheet({
       key: key,
       container: container,
       nonce: options.nonce,
-      speedy: options.speedy
+      speedy: options.speedy,
+      prepend: options.prepend
     }),
     nonce: options.nonce,
     inserted: inserted,
     registered: {},
     insert: _insert
   };
+  cache.sheet.hydrate(nodesToHydrate);
   return cache;
 };
 
-/* harmony default export */ var cache_browser_esm = (cache_browser_esm_createCache);
+/* harmony default export */ var emotion_cache_browser_esm = (emotion_cache_browser_esm_createCache);
 
-// CONCATENATED MODULE: ./node_modules/@emotion/utils/dist/utils.browser.esm.js
-var utils_browser_esm_isBrowser = "object" !== 'undefined';
+// CONCATENATED MODULE: ./node_modules/@emotion/react/isolated-hoist-non-react-statics-do-not-use-this-in-your-code/dist/emotion-react-isolated-hoist-non-react-statics-do-not-use-this-in-your-code.browser.esm.js
+
+
+// this file isolates this package that is not tree-shakeable
+// and if this module doesn't actually contain any logic of its own
+// then Rollup just use 'hoist-non-react-statics' directly in other chunks
+
+var hoistNonReactStatics = (function (targetComponent, sourceComponent) {
+  return hoist_non_react_statics_cjs_default()(targetComponent, sourceComponent);
+});
+
+/* harmony default export */ var emotion_react_isolated_hoist_non_react_statics_do_not_use_this_in_your_code_browser_esm = (hoistNonReactStatics);
+
+// CONCATENATED MODULE: ./node_modules/@emotion/react/node_modules/@emotion/utils/dist/emotion-utils.browser.esm.js
+var emotion_utils_browser_esm_isBrowser = "object" !== 'undefined';
 function getRegisteredStyles(registered, registeredStyles, classNames) {
   var rawClassName = '';
   classNames.split(' ').forEach(function (className) {
     if (registered[className] !== undefined) {
-      registeredStyles.push(registered[className]);
+      registeredStyles.push(registered[className] + ";");
     } else {
       rawClassName += className + " ";
     }
@@ -65869,7 +65424,7 @@ var insertStyles = function insertStyles(cache, serialized, isStringTag) {
   // in node since emotion-server relies on whether a style is in
   // the registered cache to know whether a style is global or not
   // also, note that this check will be dead code eliminated in the browser
-  utils_browser_esm_isBrowser === false && cache.compat !== undefined) && cache.registered[className] === undefined) {
+  emotion_utils_browser_esm_isBrowser === false ) && cache.registered[className] === undefined) {
     cache.registered[className] = serialized.styles;
   }
 
@@ -65877,7 +65432,7 @@ var insertStyles = function insertStyles(cache, serialized, isStringTag) {
     var current = serialized;
 
     do {
-      var maybeStyles = cache.insert("." + className, current, cache.sheet, true);
+      var maybeStyles = cache.insert(serialized === current ? "." + className : '', current, cache.sheet, true);
 
       current = current.next;
     } while (current !== undefined);
@@ -65995,18 +65550,7 @@ var unitlessKeys = {
 
 /* harmony default export */ var unitless_browser_esm = (unitlessKeys);
 
-// CONCATENATED MODULE: ./node_modules/@emotion/memoize/dist/memoize.browser.esm.js
-function memoize_browser_esm_memoize(fn) {
-  var cache = {};
-  return function (arg) {
-    if (cache[arg] === undefined) cache[arg] = fn(arg);
-    return cache[arg];
-  };
-}
-
-/* harmony default export */ var memoize_browser_esm = (memoize_browser_esm_memoize);
-
-// CONCATENATED MODULE: ./node_modules/@emotion/serialize/dist/serialize.browser.esm.js
+// CONCATENATED MODULE: ./node_modules/@emotion/react/node_modules/@emotion/serialize/dist/emotion-serialize.browser.esm.js
 
 
 
@@ -66024,21 +65568,21 @@ var isProcessableValue = function isProcessableValue(value) {
   return value != null && typeof value !== 'boolean';
 };
 
-var processStyleName = memoize_browser_esm(function (styleName) {
+var processStyleName = /* #__PURE__ */memoize_browser_esm(function (styleName) {
   return isCustomProperty(styleName) ? styleName : styleName.replace(hyphenateRegex, '-$&').toLowerCase();
 });
 
-var serialize_browser_esm_processStyleValue = function processStyleValue(key, value) {
+var emotion_serialize_browser_esm_processStyleValue = function processStyleValue(key, value) {
   switch (key) {
     case 'animation':
     case 'animationName':
       {
         if (typeof value === 'string') {
           return value.replace(animationRegex, function (match, p1, p2) {
-            serialize_browser_esm_cursor = {
+            emotion_serialize_browser_esm_cursor = {
               name: p1,
               styles: p2,
-              next: serialize_browser_esm_cursor
+              next: emotion_serialize_browser_esm_cursor
             };
             return p1;
           });
@@ -66053,11 +65597,9 @@ var serialize_browser_esm_processStyleValue = function processStyleValue(key, va
   return value;
 };
 
-if (false) { var hyphenatedCache, hyphenPattern, serialize_browser_esm_msPattern, oldProcessStyleValue, contentValues, contentValuePattern; }
+if (false) { var hyphenatedCache, hyphenPattern, emotion_serialize_browser_esm_msPattern, oldProcessStyleValue, contentValues, contentValuePattern; }
 
-var shouldWarnAboutInterpolatingClassNameFromCss = true;
-
-function handleInterpolation(mergedProps, registered, interpolation, couldBeSelectorInterpolation) {
+function handleInterpolation(mergedProps, registered, interpolation) {
   if (interpolation == null) {
     return '';
   }
@@ -66077,10 +65619,10 @@ function handleInterpolation(mergedProps, registered, interpolation, couldBeSele
     case 'object':
       {
         if (interpolation.anim === 1) {
-          serialize_browser_esm_cursor = {
+          emotion_serialize_browser_esm_cursor = {
             name: interpolation.name,
             styles: interpolation.styles,
-            next: serialize_browser_esm_cursor
+            next: emotion_serialize_browser_esm_cursor
           };
           return interpolation.name;
         }
@@ -66092,10 +65634,10 @@ function handleInterpolation(mergedProps, registered, interpolation, couldBeSele
             // not the most efficient thing ever but this is a pretty rare case
             // and there will be very few iterations of this generally
             while (next !== undefined) {
-              serialize_browser_esm_cursor = {
+              emotion_serialize_browser_esm_cursor = {
                 name: next.name,
                 styles: next.styles,
-                next: serialize_browser_esm_cursor
+                next: emotion_serialize_browser_esm_cursor
               };
               next = next.next;
             }
@@ -66114,10 +65656,10 @@ function handleInterpolation(mergedProps, registered, interpolation, couldBeSele
     case 'function':
       {
         if (mergedProps !== undefined) {
-          var previousCursor = serialize_browser_esm_cursor;
+          var previousCursor = emotion_serialize_browser_esm_cursor;
           var result = interpolation(mergedProps);
-          serialize_browser_esm_cursor = previousCursor;
-          return handleInterpolation(mergedProps, registered, result, couldBeSelectorInterpolation);
+          emotion_serialize_browser_esm_cursor = previousCursor;
+          return handleInterpolation(mergedProps, registered, result);
         } else if (false) {}
 
         break;
@@ -66135,10 +65677,7 @@ function handleInterpolation(mergedProps, registered, interpolation, couldBeSele
   }
 
   var cached = registered[interpolation];
-
-  if (false) {}
-
-  return cached !== undefined && !couldBeSelectorInterpolation ? cached : interpolation;
+  return cached !== undefined ? cached : interpolation;
 }
 
 function createStringFromObject(mergedProps, registered, obj) {
@@ -66146,7 +65685,7 @@ function createStringFromObject(mergedProps, registered, obj) {
 
   if (Array.isArray(obj)) {
     for (var i = 0; i < obj.length; i++) {
-      string += handleInterpolation(mergedProps, registered, obj[i], false);
+      string += handleInterpolation(mergedProps, registered, obj[i]) + ";";
     }
   } else {
     for (var _key in obj) {
@@ -66156,21 +65695,21 @@ function createStringFromObject(mergedProps, registered, obj) {
         if (registered != null && registered[value] !== undefined) {
           string += _key + "{" + registered[value] + "}";
         } else if (isProcessableValue(value)) {
-          string += processStyleName(_key) + ":" + serialize_browser_esm_processStyleValue(_key, value) + ";";
+          string += processStyleName(_key) + ":" + emotion_serialize_browser_esm_processStyleValue(_key, value) + ";";
         }
       } else {
         if (_key === 'NO_COMPONENT_SELECTOR' && "production" !== 'production') {
-          throw new Error('Component selectors can only be used in conjunction with babel-plugin-emotion.');
+          throw new Error('Component selectors can only be used in conjunction with @emotion/babel-plugin.');
         }
 
         if (Array.isArray(value) && typeof value[0] === 'string' && (registered == null || registered[value[0]] === undefined)) {
           for (var _i = 0; _i < value.length; _i++) {
             if (isProcessableValue(value[_i])) {
-              string += processStyleName(_key) + ":" + serialize_browser_esm_processStyleValue(_key, value[_i]) + ";";
+              string += processStyleName(_key) + ":" + emotion_serialize_browser_esm_processStyleValue(_key, value[_i]) + ";";
             }
           }
         } else {
-          var interpolated = handleInterpolation(mergedProps, registered, value, false);
+          var interpolated = handleInterpolation(mergedProps, registered, value);
 
           switch (_key) {
             case 'animation':
@@ -66202,20 +65741,20 @@ if (false) {} // this is the cursor for keyframes
 // keyframes are stored on the SerializedStyles object as a linked list
 
 
-var serialize_browser_esm_cursor;
-var serialize_browser_esm_serializeStyles = function serializeStyles(args, registered, mergedProps) {
+var emotion_serialize_browser_esm_cursor;
+var emotion_serialize_browser_esm_serializeStyles = function serializeStyles(args, registered, mergedProps) {
   if (args.length === 1 && typeof args[0] === 'object' && args[0] !== null && args[0].styles !== undefined) {
     return args[0];
   }
 
   var stringMode = true;
   var styles = '';
-  serialize_browser_esm_cursor = undefined;
+  emotion_serialize_browser_esm_cursor = undefined;
   var strings = args[0];
 
   if (strings == null || strings.raw === undefined) {
     stringMode = false;
-    styles += handleInterpolation(mergedProps, registered, strings, false);
+    styles += handleInterpolation(mergedProps, registered, strings);
   } else {
     if (false) {}
 
@@ -66224,7 +65763,7 @@ var serialize_browser_esm_serializeStyles = function serializeStyles(args, regis
 
 
   for (var i = 1; i < args.length; i++) {
-    styles += handleInterpolation(mergedProps, registered, args[i], styles.charCodeAt(styles.length - 1) === 46);
+    styles += handleInterpolation(mergedProps, registered, args[i]);
 
     if (stringMode) {
       if (false) {}
@@ -66254,26 +65793,13 @@ var serialize_browser_esm_serializeStyles = function serializeStyles(args, regis
   return {
     name: name,
     styles: styles,
-    next: serialize_browser_esm_cursor
+    next: emotion_serialize_browser_esm_cursor
   };
 };
 
 
 
-// CONCATENATED MODULE: ./node_modules/@emotion/css/dist/css.browser.esm.js
-
-
-function css_browser_esm_css() {
-  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-    args[_key] = arguments[_key];
-  }
-
-  return serialize_browser_esm_serializeStyles(args);
-}
-
-/* harmony default export */ var css_browser_esm = (css_browser_esm_css);
-
-// CONCATENATED MODULE: ./node_modules/@emotion/core/dist/core.browser.esm.js
+// CONCATENATED MODULE: ./node_modules/@emotion/react/dist/emotion-element-4fbd89c5.browser.esm.js
 
 
 
@@ -66282,27 +65808,79 @@ function css_browser_esm_css() {
 
 
 
+var emotion_element_4fbd89c5_browser_esm_hasOwnProperty = Object.prototype.hasOwnProperty;
 
-var EmotionCacheContext = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createContext"])( // we're doing this to avoid preconstruct's dead code elimination in this one case
+var EmotionCacheContext = /* #__PURE__ */Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createContext"])( // we're doing this to avoid preconstruct's dead code elimination in this one case
 // because this module is primarily intended for the browser and node
 // but it's also required in react native and similar environments sometimes
 // and we could have a special build just for that
 // but this is much easier and the native packages
 // might use a different theme context in the future anyway
-typeof HTMLElement !== 'undefined' ? cache_browser_esm() : null);
-var core_browser_esm_ThemeContext = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createContext"])({});
+typeof HTMLElement !== 'undefined' ? /* #__PURE__ */emotion_cache_browser_esm({
+  key: 'css'
+}) : null);
 var CacheProvider = EmotionCacheContext.Provider;
 
-var core_browser_esm_withEmotionCache = function withEmotionCache(func) {
+var emotion_element_4fbd89c5_browser_esm_withEmotionCache = function withEmotionCache(func) {
+  // $FlowFixMe
+  return /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"])(function (props, ref) {
+    // the cache will never be null in the browser
+    var cache = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useContext"])(EmotionCacheContext);
+    return func(props, cache, ref);
+  });
+};
+
+var emotion_element_4fbd89c5_browser_esm_ThemeContext = /* #__PURE__ */Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createContext"])({});
+var emotion_element_4fbd89c5_browser_esm_useTheme = function useTheme() {
+  return Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useContext"])(emotion_element_4fbd89c5_browser_esm_ThemeContext);
+};
+
+var emotion_element_4fbd89c5_browser_esm_getTheme = function getTheme(outerTheme, theme) {
+  if (typeof theme === 'function') {
+    var mergedTheme = theme(outerTheme);
+
+    if (false) {}
+
+    return mergedTheme;
+  }
+
+  if (false) {}
+
+  return _extends({}, outerTheme, {}, theme);
+};
+
+var createCacheWithTheme = /* #__PURE__ */weak_memoize_browser_esm(function (outerTheme) {
+  return weak_memoize_browser_esm(function (theme) {
+    return emotion_element_4fbd89c5_browser_esm_getTheme(outerTheme, theme);
+  });
+});
+var emotion_element_4fbd89c5_browser_esm_ThemeProvider = function ThemeProvider(props) {
+  var theme = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useContext"])(emotion_element_4fbd89c5_browser_esm_ThemeContext);
+
+  if (props.theme !== theme) {
+    theme = createCacheWithTheme(theme)(props.theme);
+  }
+
+  return /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(emotion_element_4fbd89c5_browser_esm_ThemeContext.Provider, {
+    value: theme
+  }, props.children);
+};
+function emotion_element_4fbd89c5_browser_esm_withTheme(Component) {
+  var componentName = Component.displayName || Component.name || 'Component';
+
   var render = function render(props, ref) {
-    return Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(EmotionCacheContext.Consumer, null, function (cache) {
-      return func(props, cache, ref);
-    });
+    var theme = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useContext"])(emotion_element_4fbd89c5_browser_esm_ThemeContext);
+    return /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(Component, _extends({
+      theme: theme,
+      ref: ref
+    }, props));
   }; // $FlowFixMe
 
 
-  return Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"])(render);
-};
+  var WithTheme = /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"])(render);
+  WithTheme.displayName = "WithTheme(" + componentName + ")";
+  return emotion_react_isolated_hoist_non_react_statics_do_not_use_this_in_your_code_browser_esm(WithTheme, Component);
+}
 
 // thus we only need to replace what is a valid character for JS, but not for CSS
 
@@ -66312,10 +65890,25 @@ var sanitizeIdentifier = function sanitizeIdentifier(identifier) {
 
 var typePropName = '__EMOTION_TYPE_PLEASE_DO_NOT_USE__';
 var labelPropName = '__EMOTION_LABEL_PLEASE_DO_NOT_USE__';
-var core_browser_esm_hasOwnProperty = Object.prototype.hasOwnProperty;
+var createEmotionProps = function createEmotionProps(type, props) {
+  if (false) {}
 
-var core_browser_esm_render = function render(cache, props, theme, ref) {
-  var cssProp = theme === null ? props.css : props.css(theme); // so that using `css` from `emotion` and passing the result to the css prop works
+  var newProps = {};
+
+  for (var key in props) {
+    if (emotion_element_4fbd89c5_browser_esm_hasOwnProperty.call(props, key)) {
+      newProps[key] = props[key];
+    }
+  }
+
+  newProps[typePropName] = type;
+
+  if (false) { var match, error; }
+
+  return newProps;
+};
+var Emotion = /* #__PURE__ */emotion_element_4fbd89c5_browser_esm_withEmotionCache(function (props, cache, ref) {
+  var cssProp = props.css; // so that using `css` from `emotion` and passing the result to the css prop works
   // not passing the registered cache to serializeStyles because it would
   // make certain babel optimisations not possible
 
@@ -66333,7 +65926,7 @@ var core_browser_esm_render = function render(cache, props, theme, ref) {
     className = props.className + " ";
   }
 
-  var serialized = serialize_browser_esm_serializeStyles(registeredStyles);
+  var serialized = emotion_serialize_browser_esm_serializeStyles(registeredStyles, undefined, typeof cssProp === 'function' || Array.isArray(cssProp) ? Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useContext"])(emotion_element_4fbd89c5_browser_esm_ThemeContext) : undefined);
 
   if (false) { var labelFromStack; }
 
@@ -66342,60 +65935,126 @@ var core_browser_esm_render = function render(cache, props, theme, ref) {
   var newProps = {};
 
   for (var key in props) {
-    if (core_browser_esm_hasOwnProperty.call(props, key) && key !== 'css' && key !== typePropName && ( true || false)) {
+    if (emotion_element_4fbd89c5_browser_esm_hasOwnProperty.call(props, key) && key !== 'css' && key !== typePropName && ( true || false)) {
       newProps[key] = props[key];
     }
   }
 
   newProps.ref = ref;
   newProps.className = className;
-  var ele = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(type, newProps);
+  var ele = /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(type, newProps);
 
   return ele;
-};
-
-var Emotion =
-/* #__PURE__ */
-core_browser_esm_withEmotionCache(function (props, cache, ref) {
-  // use Context.read for the theme when it's stable
-  if (typeof props.css === 'function') {
-    return Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(core_browser_esm_ThemeContext.Consumer, null, function (theme) {
-      return core_browser_esm_render(cache, props, theme, ref);
-    });
-  }
-
-  return core_browser_esm_render(cache, props, null, ref);
 });
 
-if (false) {} // $FlowFixMe
+if (false) {}
 
 
-var core_browser_esm_jsx = function jsx(type, props) {
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/extends.js
+var helpers_extends = __webpack_require__(183);
+
+// CONCATENATED MODULE: ./node_modules/@emotion/react/dist/emotion-react.browser.esm.js
+
+
+
+
+
+
+
+
+
+
+
+
+var pkg = {
+	name: "@emotion/react",
+	version: "11.1.4",
+	main: "dist/emotion-react.cjs.js",
+	module: "dist/emotion-react.esm.js",
+	browser: {
+		"./dist/emotion-react.cjs.js": "./dist/emotion-react.browser.cjs.js",
+		"./dist/emotion-react.esm.js": "./dist/emotion-react.browser.esm.js"
+	},
+	types: "types/index.d.ts",
+	files: [
+		"src",
+		"dist",
+		"jsx-runtime",
+		"jsx-dev-runtime",
+		"isolated-hoist-non-react-statics-do-not-use-this-in-your-code",
+		"types/*.d.ts",
+		"macro.js",
+		"macro.d.ts",
+		"macro.js.flow"
+	],
+	sideEffects: false,
+	author: "mitchellhamilton <mitchell@mitchellhamilton.me>",
+	license: "MIT",
+	scripts: {
+		"test:typescript": "dtslint types"
+	},
+	dependencies: {
+		"@babel/runtime": "^7.7.2",
+		"@emotion/cache": "^11.1.3",
+		"@emotion/serialize": "^1.0.0",
+		"@emotion/sheet": "^1.0.1",
+		"@emotion/utils": "^1.0.0",
+		"@emotion/weak-memoize": "^0.2.5",
+		"hoist-non-react-statics": "^3.3.1"
+	},
+	peerDependencies: {
+		"@babel/core": "^7.0.0",
+		react: ">=16.8.0"
+	},
+	peerDependenciesMeta: {
+		"@babel/core": {
+			optional: true
+		},
+		"@types/react": {
+			optional: true
+		}
+	},
+	devDependencies: {
+		"@babel/core": "^7.7.2",
+		"@emotion/css": "11.1.3",
+		"@emotion/css-prettifier": "1.0.0",
+		"@emotion/server": "11.0.0",
+		"@emotion/styled": "11.0.0",
+		"@types/react": "^16.9.11",
+		dtslint: "^0.3.0",
+		"html-tag-names": "^1.1.2",
+		react: "16.14.0",
+		"svg-tag-names": "^1.1.1"
+	},
+	repository: "https://github.com/emotion-js/emotion/tree/master/packages/react",
+	publishConfig: {
+		access: "public"
+	},
+	"umd:main": "dist/emotion-react.umd.min.js",
+	preconstruct: {
+		entrypoints: [
+			"./index.js",
+			"./jsx-runtime.js",
+			"./jsx-dev-runtime.js",
+			"./isolated-hoist-non-react-statics-do-not-use-this-in-your-code.js"
+		],
+		umdName: "emotionReact"
+	}
+};
+
+var emotion_react_browser_esm_jsx = function jsx(type, props) {
   var args = arguments;
 
-  if (props == null || !core_browser_esm_hasOwnProperty.call(props, 'css')) {
+  if (props == null || !emotion_element_4fbd89c5_browser_esm_hasOwnProperty.call(props, 'css')) {
     // $FlowFixMe
     return external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"].apply(undefined, args);
   }
 
-  if (false) {}
-
   var argsLength = args.length;
   var createElementArgArray = new Array(argsLength);
   createElementArgArray[0] = Emotion;
-  var newProps = {};
-
-  for (var key in props) {
-    if (core_browser_esm_hasOwnProperty.call(props, key)) {
-      newProps[key] = props[key];
-    }
-  }
-
-  newProps[typePropName] = type;
-
-  if (false) { var match, error; }
-
-  createElementArgArray[1] = newProps;
+  createElementArgArray[1] = createEmotionProps(type, props);
 
   for (var i = 2; i < argsLength; i++) {
     createElementArgArray[i] = args[i];
@@ -66405,101 +66064,77 @@ var core_browser_esm_jsx = function jsx(type, props) {
   return external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"].apply(null, createElementArgArray);
 };
 
-var warnedAboutCssPropForGlobal = false;
-var Global =
-/* #__PURE__ */
-core_browser_esm_withEmotionCache(function (props, cache) {
+var warnedAboutCssPropForGlobal = false; // maintain place over rerenders.
+// initial render from browser, insertBefore context.sheet.tags[0] or if a style hasn't been inserted there yet, appendChild
+// initial client-side render from SSR, use place of hydrating tag
+
+var Global = /* #__PURE__ */emotion_element_4fbd89c5_browser_esm_withEmotionCache(function (props, cache) {
   if (false) {}
 
   var styles = props.styles;
+  var serialized = emotion_serialize_browser_esm_serializeStyles([styles], undefined, typeof styles === 'function' || Array.isArray(styles) ? Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useContext"])(emotion_element_4fbd89c5_browser_esm_ThemeContext) : undefined);
+  // but it is based on a constant that will never change at runtime
+  // it's effectively like having two implementations and switching them out
+  // so it's not actually breaking anything
 
-  if (typeof styles === 'function') {
-    return Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(core_browser_esm_ThemeContext.Consumer, null, function (theme) {
-      var serialized = serialize_browser_esm_serializeStyles([styles(theme)]);
-      return Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(core_browser_esm_InnerGlobal, {
-        serialized: serialized,
-        cache: cache
-      });
-    });
-  }
 
-  var serialized = serialize_browser_esm_serializeStyles([styles]);
-  return Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(core_browser_esm_InnerGlobal, {
-    serialized: serialized,
-    cache: cache
-  });
-});
-
-// maintain place over rerenders.
-// initial render from browser, insertBefore context.sheet.tags[0] or if a style hasn't been inserted there yet, appendChild
-// initial client-side render from SSR, use place of hydrating tag
-var core_browser_esm_InnerGlobal =
-/*#__PURE__*/
-function (_React$Component) {
-  inheritsLoose_default()(InnerGlobal, _React$Component);
-
-  function InnerGlobal(props, context, updater) {
-    return _React$Component.call(this, props, context, updater) || this;
-  }
-
-  var _proto = InnerGlobal.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.sheet = new sheet_browser_esm_StyleSheet({
-      key: this.props.cache.key + "-global",
-      nonce: this.props.cache.sheet.nonce,
-      container: this.props.cache.sheet.container
+  var sheetRef = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"])();
+  Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useLayoutEffect"])(function () {
+    var key = cache.key + "-global";
+    var sheet = new emotion_sheet_browser_esm_StyleSheet({
+      key: key,
+      nonce: cache.sheet.nonce,
+      container: cache.sheet.container,
+      speedy: cache.sheet.isSpeedy
     }); // $FlowFixMe
 
-    var node = document.querySelector("style[data-emotion-" + this.props.cache.key + "=\"" + this.props.serialized.name + "\"]");
+    var node = document.querySelector("style[data-emotion=\"" + key + " " + serialized.name + "\"]");
+
+    if (cache.sheet.tags.length) {
+      sheet.before = cache.sheet.tags[0];
+    }
 
     if (node !== null) {
-      this.sheet.tags.push(node);
+      sheet.hydrate([node]);
     }
 
-    if (this.props.cache.sheet.tags.length) {
-      this.sheet.before = this.props.cache.sheet.tags[0];
-    }
-
-    this.insertStyles();
-  };
-
-  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
-    if (prevProps.serialized.name !== this.props.serialized.name) {
-      this.insertStyles();
-    }
-  };
-
-  _proto.insertStyles = function insertStyles$1() {
-    if (this.props.serialized.next !== undefined) {
+    sheetRef.current = sheet;
+    return function () {
+      sheet.flush();
+    };
+  }, [cache]);
+  Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useLayoutEffect"])(function () {
+    if (serialized.next !== undefined) {
       // insert keyframes
-      insertStyles(this.props.cache, this.props.serialized.next, true);
+      insertStyles(cache, serialized.next, true);
     }
 
-    if (this.sheet.tags.length) {
+    var sheet = sheetRef.current;
+
+    if (sheet.tags.length) {
       // if this doesn't exist then it will be null so the style element will be appended
-      var element = this.sheet.tags[this.sheet.tags.length - 1].nextElementSibling;
-      this.sheet.before = element;
-      this.sheet.flush();
+      var element = sheet.tags[sheet.tags.length - 1].nextElementSibling;
+      sheet.before = element;
+      sheet.flush();
     }
 
-    this.props.cache.insert("", this.props.serialized, this.sheet, false);
-  };
+    cache.insert("", serialized, sheet, false);
+  }, [cache, serialized.name]);
+  return null;
+});
 
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.sheet.flush();
-  };
+if (false) {}
 
-  _proto.render = function render() {
+function emotion_react_browser_esm_css() {
+  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
 
-    return null;
-  };
+  return emotion_serialize_browser_esm_serializeStyles(args);
+}
 
-  return InnerGlobal;
-}(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
-
-var core_browser_esm_keyframes = function keyframes() {
-  var insertable = css_browser_esm.apply(void 0, arguments);
+var keyframes = function keyframes() {
+  var insertable = emotion_react_browser_esm_css.apply(void 0, arguments);
   var name = "animation-" + insertable.name; // $FlowFixMe
 
   return {
@@ -66531,6 +66166,8 @@ var classnames = function classnames(args) {
           if (Array.isArray(arg)) {
             toAdd = classnames(arg);
           } else {
+            if (false) {}
+
             toAdd = '';
 
             for (var k in arg) {
@@ -66559,7 +66196,7 @@ var classnames = function classnames(args) {
   return cls;
 };
 
-function core_browser_esm_merge(registered, css, className) {
+function emotion_react_browser_esm_merge(registered, css, className) {
   var registeredStyles = [];
   var rawClassName = getRegisteredStyles(registered, registeredStyles, className);
 
@@ -66570,59 +66207,92 @@ function core_browser_esm_merge(registered, css, className) {
   return rawClassName + css(registeredStyles);
 }
 
-var ClassNames = core_browser_esm_withEmotionCache(function (props, context) {
-  return Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(core_browser_esm_ThemeContext.Consumer, null, function (theme) {
-    var hasRendered = false;
+var ClassNames = /* #__PURE__ */emotion_element_4fbd89c5_browser_esm_withEmotionCache(function (props, cache) {
+  var hasRendered = false;
 
-    var css = function css() {
-      if (hasRendered && "production" !== 'production') {
-        throw new Error('css can only be used during render');
-      }
+  var css = function css() {
+    if (hasRendered && "production" !== 'production') {
+      throw new Error('css can only be used during render');
+    }
 
-      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-        args[_key] = arguments[_key];
-      }
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
 
-      var serialized = serialize_browser_esm_serializeStyles(args, context.registered);
+    var serialized = emotion_serialize_browser_esm_serializeStyles(args, cache.registered);
 
-      {
-        insertStyles(context, serialized, false);
-      }
+    {
+      insertStyles(cache, serialized, false);
+    }
 
-      return context.key + "-" + serialized.name;
-    };
+    return cache.key + "-" + serialized.name;
+  };
 
-    var cx = function cx() {
-      if (hasRendered && "production" !== 'production') {
-        throw new Error('cx can only be used during render');
-      }
+  var cx = function cx() {
+    if (hasRendered && "production" !== 'production') {
+      throw new Error('cx can only be used during render');
+    }
 
-      for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-        args[_key2] = arguments[_key2];
-      }
+    for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      args[_key2] = arguments[_key2];
+    }
 
-      return core_browser_esm_merge(context.registered, css, classnames(args));
-    };
+    return emotion_react_browser_esm_merge(cache.registered, css, classnames(args));
+  };
 
-    var content = {
-      css: css,
-      cx: cx,
-      theme: theme
-    };
-    var ele = props.children(content);
-    hasRendered = true;
+  var content = {
+    css: css,
+    cx: cx,
+    theme: Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useContext"])(emotion_element_4fbd89c5_browser_esm_ThemeContext)
+  };
+  var ele = props.children(content);
+  hasRendered = true;
 
-    return ele;
-  });
+  return ele;
 });
 
+if (false) {}
+
+if (false) { var globalKey, globalContext, isJest, emotion_react_browser_esm_isBrowser; }
 
 
-// CONCATENATED MODULE: ./node_modules/react-select/dist/utils-06b0d5a4.browser.esm.js
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
+
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+// EXTERNAL MODULE: ./node_modules/react-input-autosize/lib/AutosizeInput.js
+var AutosizeInput = __webpack_require__(58);
+var AutosizeInput_default = /*#__PURE__*/__webpack_require__.n(AutosizeInput);
+
+// CONCATENATED MODULE: ./node_modules/react-select/dist/index-8b64410c.browser.esm.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ==============================
 // NO OP
 // ==============================
-var utils_06b0d5a4_browser_esm_noop = function noop() {};
+var index_8b64410c_browser_esm_noop = function noop() {};
 // Class Name Prefixer
 // ==============================
 
@@ -66652,7 +66322,7 @@ function classNames(prefix, state, className) {
   if (state && prefix) {
     for (var key in state) {
       if (state.hasOwnProperty(key) && state[key]) {
-        arr.push("" + applyPrefixToName(prefix, key));
+        arr.push("".concat(applyPrefixToName(prefix, key)));
       }
     }
   }
@@ -66666,15 +66336,15 @@ function classNames(prefix, state, className) {
 // Clean Value
 // ==============================
 
-var cleanValue = function cleanValue(value) {
+var index_8b64410c_browser_esm_cleanValue = function cleanValue(value) {
   if (Array.isArray(value)) return value.filter(Boolean);
-  if (typeof value === 'object' && value !== null) return [value];
+  if (typeof_typeof(value) === 'object' && value !== null) return [value];
   return [];
 }; // ==============================
 // Handle Input Change
 // ==============================
 
-function utils_06b0d5a4_browser_esm_handleInputChange(inputValue, actionMeta, onInputChange) {
+function index_8b64410c_browser_esm_handleInputChange(inputValue, actionMeta, onInputChange) {
   if (onInputChange) {
     var newValue = onInputChange(inputValue, actionMeta);
     if (typeof newValue === 'string') return newValue;
@@ -66708,7 +66378,7 @@ function scrollTo(el, top) {
 } // Get Scroll Parent
 // ------------------------------
 
-function utils_06b0d5a4_browser_esm_getScrollParent(element) {
+function index_8b64410c_browser_esm_getScrollParent(element) {
   var style = getComputedStyle(element);
   var excludeStaticParent = style.position === 'absolute';
   var overflowRx = /(auto|scroll)/;
@@ -66743,15 +66413,9 @@ function easeOutCubic(t, b, c, d) {
   return c * ((t = t / d - 1) * t * t + 1) + b;
 }
 
-function animatedScrollTo(element, to, duration, callback) {
-  if (duration === void 0) {
-    duration = 200;
-  }
-
-  if (callback === void 0) {
-    callback = utils_06b0d5a4_browser_esm_noop;
-  }
-
+function animatedScrollTo(element, to) {
+  var duration = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 200;
+  var callback = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : index_8b64410c_browser_esm_noop;
   var start = getScrollTop(element);
   var change = to - start;
   var increment = 10;
@@ -66821,24 +66485,13 @@ function isMobileDevice() {
   }
 }
 
+function index_8b64410c_browser_esm_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
+function index_8b64410c_browser_esm_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { index_8b64410c_browser_esm_ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { index_8b64410c_browser_esm_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
-// EXTERNAL MODULE: ./node_modules/react-input-autosize/lib/AutosizeInput.js
-var AutosizeInput = __webpack_require__(56);
-var AutosizeInput_default = /*#__PURE__*/__webpack_require__.n(AutosizeInput);
+function index_8b64410c_browser_esm_createSuper(Derived) { var hasNativeReflectConstruct = index_8b64410c_browser_esm_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-// CONCATENATED MODULE: ./node_modules/react-select/dist/index-4322c0ed.browser.esm.js
-
-
-
-
-
-
-
-
-function index_4322c0ed_browser_esm_extends() { index_4322c0ed_browser_esm_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return index_4322c0ed_browser_esm_extends.apply(this, arguments); }
-
-function index_4322c0ed_browser_esm_inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+function index_8b64410c_browser_esm_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 function getMenuPlacement(_ref) {
   var maxHeight = _ref.maxHeight,
       menuEl = _ref.menuEl,
@@ -66848,7 +66501,7 @@ function getMenuPlacement(_ref) {
       isFixedPosition = _ref.isFixedPosition,
       theme = _ref.theme;
   var spacing = theme.spacing;
-  var scrollParent = utils_06b0d5a4_browser_esm_getScrollParent(menuEl);
+  var scrollParent = index_8b64410c_browser_esm_getScrollParent(menuEl);
   var defaultState = {
     placement: 'bottom',
     maxHeight: maxHeight
@@ -66995,7 +66648,7 @@ function getMenuPlacement(_ref) {
       };
 
     default:
-      throw new Error("Invalid placement provided \"" + placement + "\".");
+      throw new Error("Invalid placement provided \"".concat(placement, "\"."));
   } // fulfil contract with flow: implicit return value of undefined
 
 
@@ -67015,7 +66668,7 @@ var coercePlacement = function coercePlacement(p) {
   return p === 'auto' ? 'bottom' : p;
 };
 
-var menuCSS = function menuCSS(_ref2) {
+var index_8b64410c_browser_esm_menuCSS = function menuCSS(_ref2) {
   var _ref3;
 
   var placement = _ref2.placement,
@@ -67025,22 +66678,27 @@ var menuCSS = function menuCSS(_ref2) {
       colors = _ref2$theme.colors;
   return _ref3 = {
     label: 'menu'
-  }, _ref3[alignToControl(placement)] = '100%', _ref3.backgroundColor = colors.neutral0, _ref3.borderRadius = borderRadius, _ref3.boxShadow = '0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 11px hsla(0, 0%, 0%, 0.1)', _ref3.marginBottom = spacing.menuGutter, _ref3.marginTop = spacing.menuGutter, _ref3.position = 'absolute', _ref3.width = '100%', _ref3.zIndex = 1, _ref3;
-}; // NOTE: internal only
+  }, _defineProperty(_ref3, alignToControl(placement), '100%'), _defineProperty(_ref3, "backgroundColor", colors.neutral0), _defineProperty(_ref3, "borderRadius", borderRadius), _defineProperty(_ref3, "boxShadow", '0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 11px hsla(0, 0%, 0%, 0.1)'), _defineProperty(_ref3, "marginBottom", spacing.menuGutter), _defineProperty(_ref3, "marginTop", spacing.menuGutter), _defineProperty(_ref3, "position", 'absolute'), _defineProperty(_ref3, "width", '100%'), _defineProperty(_ref3, "zIndex", 1), _ref3;
+};
+var PortalPlacementContext = /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createContext"])({
+  getPortalPlacement: null
+}); // NOTE: internal only
 
-var MenuPlacer =
-/*#__PURE__*/
-function (_Component) {
-  index_4322c0ed_browser_esm_inheritsLoose(MenuPlacer, _Component);
+var index_8b64410c_browser_esm_MenuPlacer = /*#__PURE__*/function (_Component) {
+  _inherits(MenuPlacer, _Component);
+
+  var _super = index_8b64410c_browser_esm_createSuper(MenuPlacer);
 
   function MenuPlacer() {
     var _this;
+
+    _classCallCheck(this, MenuPlacer);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = _Component.call.apply(_Component, [this].concat(args)) || this;
+    _this = _super.call.apply(_super, [this].concat(args));
     _this.state = {
       maxHeight: _this.props.maxMenuHeight,
       placement: null
@@ -67054,7 +66712,6 @@ function (_Component) {
           menuPosition = _this$props.menuPosition,
           menuShouldScrollIntoView = _this$props.menuShouldScrollIntoView,
           theme = _this$props.theme;
-      var getPortalPlacement = _this.context.getPortalPlacement;
       if (!ref) return; // DO NOT scroll if position is fixed
 
       var isFixedPosition = menuPosition === 'fixed';
@@ -67068,6 +66725,7 @@ function (_Component) {
         isFixedPosition: isFixedPosition,
         theme: theme
       });
+      var getPortalPlacement = _this.context.getPortalPlacement;
       if (getPortalPlacement) getPortalPlacement(state);
 
       _this.setState(state);
@@ -67076,7 +66734,7 @@ function (_Component) {
     _this.getUpdatedProps = function () {
       var menuPlacement = _this.props.menuPlacement;
       var placement = _this.state.placement || coercePlacement(menuPlacement);
-      return index_4322c0ed_browser_esm_extends({}, _this.props, {
+      return index_8b64410c_browser_esm_objectSpread(index_8b64410c_browser_esm_objectSpread({}, _this.props), {}, {
         placement: placement,
         maxHeight: _this.state.maxHeight
       });
@@ -67085,30 +66743,29 @@ function (_Component) {
     return _this;
   }
 
-  var _proto = MenuPlacer.prototype;
-
-  _proto.render = function render() {
-    var children = this.props.children;
-    return children({
-      ref: this.getPlacement,
-      placerProps: this.getUpdatedProps()
-    });
-  };
+  _createClass(MenuPlacer, [{
+    key: "render",
+    value: function render() {
+      var children = this.props.children;
+      return children({
+        ref: this.getPlacement,
+        placerProps: this.getUpdatedProps()
+      });
+    }
+  }]);
 
   return MenuPlacer;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
-MenuPlacer.contextTypes = {
-  getPortalPlacement: prop_types_default.a.func
-};
+index_8b64410c_browser_esm_MenuPlacer.contextType = PortalPlacementContext;
 
-var index_4322c0ed_browser_esm_Menu = function Menu(props) {
+var index_8b64410c_browser_esm_Menu = function Menu(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerRef = props.innerRef,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", index_4322c0ed_browser_esm_extends({
+  return emotion_react_browser_esm_jsx("div", _extends({
     css: getStyles('menu', props),
     className: cx({
       menu: true
@@ -67133,21 +66790,22 @@ var menuListCSS = function menuListCSS(_ref4) {
     WebkitOverflowScrolling: 'touch'
   };
 };
-var index_4322c0ed_browser_esm_MenuList = function MenuList(props) {
+var index_8b64410c_browser_esm_MenuList = function MenuList(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       isMulti = props.isMulti,
-      innerRef = props.innerRef;
-  return core_browser_esm_jsx("div", {
+      innerRef = props.innerRef,
+      innerProps = props.innerProps;
+  return emotion_react_browser_esm_jsx("div", _extends({
     css: getStyles('menuList', props),
     className: cx({
       'menu-list': true,
       'menu-list--is-multi': isMulti
     }, className),
     ref: innerRef
-  }, children);
+  }, innerProps), children);
 }; // ==============================
 // Menu Notices
 // ==============================
@@ -67158,20 +66816,20 @@ var noticeCSS = function noticeCSS(_ref5) {
       colors = _ref5$theme.colors;
   return {
     color: colors.neutral40,
-    padding: baseUnit * 2 + "px " + baseUnit * 3 + "px",
+    padding: "".concat(baseUnit * 2, "px ").concat(baseUnit * 3, "px"),
     textAlign: 'center'
   };
 };
 
 var noOptionsMessageCSS = noticeCSS;
 var loadingMessageCSS = noticeCSS;
-var index_4322c0ed_browser_esm_NoOptionsMessage = function NoOptionsMessage(props) {
+var index_8b64410c_browser_esm_NoOptionsMessage = function NoOptionsMessage(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", index_4322c0ed_browser_esm_extends({
+  return emotion_react_browser_esm_jsx("div", _extends({
     css: getStyles('noOptionsMessage', props),
     className: cx({
       'menu-notice': true,
@@ -67179,16 +66837,16 @@ var index_4322c0ed_browser_esm_NoOptionsMessage = function NoOptionsMessage(prop
     }, className)
   }, innerProps), children);
 };
-index_4322c0ed_browser_esm_NoOptionsMessage.defaultProps = {
+index_8b64410c_browser_esm_NoOptionsMessage.defaultProps = {
   children: 'No options'
 };
-var index_4322c0ed_browser_esm_LoadingMessage = function LoadingMessage(props) {
+var index_8b64410c_browser_esm_LoadingMessage = function LoadingMessage(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", index_4322c0ed_browser_esm_extends({
+  return emotion_react_browser_esm_jsx("div", _extends({
     css: getStyles('loadingMessage', props),
     className: cx({
       'menu-notice': true,
@@ -67196,7 +66854,7 @@ var index_4322c0ed_browser_esm_LoadingMessage = function LoadingMessage(props) {
     }, className)
   }, innerProps), children);
 };
-index_4322c0ed_browser_esm_LoadingMessage.defaultProps = {
+index_8b64410c_browser_esm_LoadingMessage.defaultProps = {
   children: 'Loading...'
 }; // ==============================
 // Menu Portal
@@ -67214,19 +66872,21 @@ var menuPortalCSS = function menuPortalCSS(_ref6) {
     zIndex: 1
   };
 };
-var index_4322c0ed_browser_esm_MenuPortal =
-/*#__PURE__*/
-function (_Component2) {
-  index_4322c0ed_browser_esm_inheritsLoose(MenuPortal, _Component2);
+var index_8b64410c_browser_esm_MenuPortal = /*#__PURE__*/function (_Component2) {
+  _inherits(MenuPortal, _Component2);
+
+  var _super2 = index_8b64410c_browser_esm_createSuper(MenuPortal);
 
   function MenuPortal() {
     var _this2;
+
+    _classCallCheck(this, MenuPortal);
 
     for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
       args[_key2] = arguments[_key2];
     }
 
-    _this2 = _Component2.call.apply(_Component2, [this].concat(args)) || this;
+    _this2 = _super2.call.apply(_super2, [this].concat(args));
     _this2.state = {
       placement: null
     };
@@ -67245,142 +66905,46 @@ function (_Component2) {
     return _this2;
   }
 
-  var _proto2 = MenuPortal.prototype;
+  _createClass(MenuPortal, [{
+    key: "render",
+    value: function render() {
+      var _this$props2 = this.props,
+          appendTo = _this$props2.appendTo,
+          children = _this$props2.children,
+          controlElement = _this$props2.controlElement,
+          menuPlacement = _this$props2.menuPlacement,
+          position = _this$props2.menuPosition,
+          getStyles = _this$props2.getStyles;
+      var isFixed = position === 'fixed'; // bail early if required elements aren't present
 
-  _proto2.getChildContext = function getChildContext() {
-    return {
-      getPortalPlacement: this.getPortalPlacement
-    };
-  } // callback for occassions where the menu must "flip"
-  ;
+      if (!appendTo && !isFixed || !controlElement) {
+        return null;
+      }
 
-  _proto2.render = function render() {
-    var _this$props2 = this.props,
-        appendTo = _this$props2.appendTo,
-        children = _this$props2.children,
-        controlElement = _this$props2.controlElement,
-        menuPlacement = _this$props2.menuPlacement,
-        position = _this$props2.menuPosition,
-        getStyles = _this$props2.getStyles;
-    var isFixed = position === 'fixed'; // bail early if required elements aren't present
+      var placement = this.state.placement || coercePlacement(menuPlacement);
+      var rect = getBoundingClientObj(controlElement);
+      var scrollDistance = isFixed ? 0 : window.pageYOffset;
+      var offset = rect[placement] + scrollDistance;
+      var state = {
+        offset: offset,
+        position: position,
+        rect: rect
+      }; // same wrapper element whether fixed or portalled
 
-    if (!appendTo && !isFixed || !controlElement) {
-      return null;
+      var menuWrapper = emotion_react_browser_esm_jsx("div", {
+        css: getStyles('menuPortal', state)
+      }, children);
+      return emotion_react_browser_esm_jsx(PortalPlacementContext.Provider, {
+        value: {
+          getPortalPlacement: this.getPortalPlacement
+        }
+      }, appendTo ? /*#__PURE__*/Object(external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["createPortal"])(menuWrapper, appendTo) : menuWrapper);
     }
-
-    var placement = this.state.placement || coercePlacement(menuPlacement);
-    var rect = getBoundingClientObj(controlElement);
-    var scrollDistance = isFixed ? 0 : window.pageYOffset;
-    var offset = rect[placement] + scrollDistance;
-    var state = {
-      offset: offset,
-      position: position,
-      rect: rect
-    }; // same wrapper element whether fixed or portalled
-
-    var menuWrapper = core_browser_esm_jsx("div", {
-      css: getStyles('menuPortal', state)
-    }, children);
-    return appendTo ? Object(external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["createPortal"])(menuWrapper, appendTo) : menuWrapper;
-  };
+  }]);
 
   return MenuPortal;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
-index_4322c0ed_browser_esm_MenuPortal.childContextTypes = {
-  getPortalPlacement: prop_types_default.a.func
-};
 
-var index_4322c0ed_browser_esm_isArray = Array.isArray;
-var keyList = Object.keys;
-var hasProp = Object.prototype.hasOwnProperty;
-
-function equal(a, b) {
-  // fast-deep-equal index.js 2.0.1
-  if (a === b) return true;
-
-  if (a && b && typeof a == 'object' && typeof b == 'object') {
-    var arrA = index_4322c0ed_browser_esm_isArray(a),
-        arrB = index_4322c0ed_browser_esm_isArray(b),
-        i,
-        length,
-        key;
-
-    if (arrA && arrB) {
-      length = a.length;
-      if (length != b.length) return false;
-
-      for (i = length; i-- !== 0;) {
-        if (!equal(a[i], b[i])) return false;
-      }
-
-      return true;
-    }
-
-    if (arrA != arrB) return false;
-    var dateA = a instanceof Date,
-        dateB = b instanceof Date;
-    if (dateA != dateB) return false;
-    if (dateA && dateB) return a.getTime() == b.getTime();
-    var regexpA = a instanceof RegExp,
-        regexpB = b instanceof RegExp;
-    if (regexpA != regexpB) return false;
-    if (regexpA && regexpB) return a.toString() == b.toString();
-    var keys = keyList(a);
-    length = keys.length;
-
-    if (length !== keyList(b).length) {
-      return false;
-    }
-
-    for (i = length; i-- !== 0;) {
-      if (!hasProp.call(b, keys[i])) return false;
-    } // end fast-deep-equal
-    // Custom handling for React
-
-
-    for (i = length; i-- !== 0;) {
-      key = keys[i];
-
-      if (key === '_owner' && a.$$typeof) {
-        // React-specific: avoid traversing React elements' _owner.
-        //  _owner contains circular references
-        // and is not needed when comparing the actual elements (and not their owners)
-        // .$$typeof and ._store on just reasonable markers of a react element
-        continue;
-      } else {
-        // all other properties should be traversed as usual
-        if (!equal(a[key], b[key])) return false;
-      }
-    } // fast-deep-equal index.js 2.0.1
-
-
-    return true;
-  }
-
-  return a !== a && b !== b;
-} // end fast-deep-equal
-
-
-function exportedEqual(a, b) {
-  try {
-    return equal(a, b);
-  } catch (error) {
-    if (error.message && error.message.match(/stack|recursion/i)) {
-      // warn on circular references, don't crash
-      // browsers give this different errors name and messages:
-      // chrome/safari: "RangeError", "Maximum call stack size exceeded"
-      // firefox: "InternalError", too much recursion"
-      // edge: "Error", "Out of stack space"
-      console.warn('Warning: react-fast-compare does not handle circular references.', error.name, error.message);
-      return false;
-    } // some other error. we should definitely know about these
-
-
-    throw error;
-  }
-}
-
-function _extends$1() { _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$1.apply(this, arguments); }
 var containerCSS = function containerCSS(_ref) {
   var isDisabled = _ref.isDisabled,
       isRtl = _ref.isRtl;
@@ -67392,7 +66956,7 @@ var containerCSS = function containerCSS(_ref) {
     position: 'relative'
   };
 };
-var index_4322c0ed_browser_esm_SelectContainer = function SelectContainer(props) {
+var index_8b64410c_browser_esm_SelectContainer = function SelectContainer(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
@@ -67400,7 +66964,7 @@ var index_4322c0ed_browser_esm_SelectContainer = function SelectContainer(props)
       innerProps = props.innerProps,
       isDisabled = props.isDisabled,
       isRtl = props.isRtl;
-  return core_browser_esm_jsx("div", _extends$1({
+  return emotion_react_browser_esm_jsx("div", _extends({
     css: getStyles('container', props),
     className: cx({
       '--is-disabled': isDisabled,
@@ -67418,20 +66982,20 @@ var valueContainerCSS = function valueContainerCSS(_ref2) {
     display: 'flex',
     flex: 1,
     flexWrap: 'wrap',
-    padding: spacing.baseUnit / 2 + "px " + spacing.baseUnit * 2 + "px",
+    padding: "".concat(spacing.baseUnit / 2, "px ").concat(spacing.baseUnit * 2, "px"),
     WebkitOverflowScrolling: 'touch',
     position: 'relative',
     overflow: 'hidden'
   };
 };
-var index_4322c0ed_browser_esm_ValueContainer = function ValueContainer(props) {
+var index_8b64410c_browser_esm_ValueContainer = function ValueContainer(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       isMulti = props.isMulti,
       getStyles = props.getStyles,
       hasValue = props.hasValue;
-  return core_browser_esm_jsx("div", {
+  return emotion_react_browser_esm_jsx("div", {
     css: getStyles('valueContainer', props),
     className: cx({
       'value-container': true,
@@ -67451,12 +67015,12 @@ var indicatorsContainerCSS = function indicatorsContainerCSS() {
     flexShrink: 0
   };
 };
-var index_4322c0ed_browser_esm_IndicatorsContainer = function IndicatorsContainer(props) {
+var index_8b64410c_browser_esm_IndicatorsContainer = function IndicatorsContainer(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles;
-  return core_browser_esm_jsx("div", {
+  return emotion_react_browser_esm_jsx("div", {
     css: getStyles('indicatorsContainer', props),
     className: cx({
       indicators: true
@@ -67464,55 +67028,51 @@ var index_4322c0ed_browser_esm_IndicatorsContainer = function IndicatorsContaine
   }, children);
 };
 
-function index_4322c0ed_browser_esm_templateObject() {
-  var data = index_4322c0ed_browser_esm_taggedTemplateLiteralLoose(["\n  0%, 80%, 100% { opacity: 0; }\n  40% { opacity: 1; }\n"]);
+function index_8b64410c_browser_esm_templateObject() {
+  var data = _taggedTemplateLiteral(["\n  0%, 80%, 100% { opacity: 0; }\n  40% { opacity: 1; }\n"]);
 
-  index_4322c0ed_browser_esm_templateObject = function _templateObject() {
+  index_8b64410c_browser_esm_templateObject = function _templateObject() {
     return data;
   };
 
   return data;
 }
 
-function index_4322c0ed_browser_esm_taggedTemplateLiteralLoose(strings, raw) { if (!raw) { raw = strings.slice(0); } strings.raw = raw; return strings; }
+function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
-function _extends$2() { _extends$2 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$2.apply(this, arguments); }
-
-function index_4322c0ed_browser_esm_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-var index_4322c0ed_browser_esm_ref2 =  true ? {
-  name: "19bqh2r",
-  styles: "display:inline-block;fill:currentColor;line-height:1;stroke:currentColor;stroke-width:0;"
+var index_8b64410c_browser_esm_ref2 =  true ? {
+  name: "8mmkcg",
+  styles: "display:inline-block;fill:currentColor;line-height:1;stroke:currentColor;stroke-width:0"
 } : undefined;
 
 // ==============================
 // Dropdown & Clear Icons
 // ==============================
-var index_4322c0ed_browser_esm_Svg = function Svg(_ref) {
+var index_8b64410c_browser_esm_Svg = function Svg(_ref) {
   var size = _ref.size,
-      props = index_4322c0ed_browser_esm_objectWithoutPropertiesLoose(_ref, ["size"]);
+      props = _objectWithoutProperties(_ref, ["size"]);
 
-  return core_browser_esm_jsx("svg", _extends$2({
+  return emotion_react_browser_esm_jsx("svg", _extends({
     height: size,
     width: size,
     viewBox: "0 0 20 20",
     "aria-hidden": "true",
     focusable: "false",
-    css: index_4322c0ed_browser_esm_ref2
+    css: index_8b64410c_browser_esm_ref2
   }, props));
 };
 
-var index_4322c0ed_browser_esm_CrossIcon = function CrossIcon(props) {
-  return core_browser_esm_jsx(index_4322c0ed_browser_esm_Svg, _extends$2({
+var index_8b64410c_browser_esm_CrossIcon = function CrossIcon(props) {
+  return emotion_react_browser_esm_jsx(index_8b64410c_browser_esm_Svg, _extends({
     size: 20
-  }, props), core_browser_esm_jsx("path", {
+  }, props), emotion_react_browser_esm_jsx("path", {
     d: "M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"
   }));
 };
-var index_4322c0ed_browser_esm_DownChevron = function DownChevron(props) {
-  return core_browser_esm_jsx(index_4322c0ed_browser_esm_Svg, _extends$2({
+var index_8b64410c_browser_esm_DownChevron = function DownChevron(props) {
+  return emotion_react_browser_esm_jsx(index_8b64410c_browser_esm_Svg, _extends({
     size: 20
-  }, props), core_browser_esm_jsx("path", {
+  }, props), emotion_react_browser_esm_jsx("path", {
     d: "M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
   }));
 }; // ==============================
@@ -67537,34 +67097,34 @@ var baseCSS = function baseCSS(_ref3) {
 };
 
 var dropdownIndicatorCSS = baseCSS;
-var index_4322c0ed_browser_esm_DropdownIndicator = function DropdownIndicator(props) {
+var index_8b64410c_browser_esm_DropdownIndicator = function DropdownIndicator(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends$2({}, innerProps, {
+  return emotion_react_browser_esm_jsx("div", _extends({}, innerProps, {
     css: getStyles('dropdownIndicator', props),
     className: cx({
       indicator: true,
       'dropdown-indicator': true
     }, className)
-  }), children || core_browser_esm_jsx(index_4322c0ed_browser_esm_DownChevron, null));
+  }), children || emotion_react_browser_esm_jsx(index_8b64410c_browser_esm_DownChevron, null));
 };
 var clearIndicatorCSS = baseCSS;
-var index_4322c0ed_browser_esm_ClearIndicator = function ClearIndicator(props) {
+var index_8b64410c_browser_esm_ClearIndicator = function ClearIndicator(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends$2({}, innerProps, {
+  return emotion_react_browser_esm_jsx("div", _extends({}, innerProps, {
     css: getStyles('clearIndicator', props),
     className: cx({
       indicator: true,
       'clear-indicator': true
     }, className)
-  }), children || core_browser_esm_jsx(index_4322c0ed_browser_esm_CrossIcon, null));
+  }), children || emotion_react_browser_esm_jsx(index_8b64410c_browser_esm_CrossIcon, null));
 }; // ==============================
 // Separator
 // ==============================
@@ -67583,12 +67143,12 @@ var indicatorSeparatorCSS = function indicatorSeparatorCSS(_ref4) {
     width: 1
   };
 };
-var index_4322c0ed_browser_esm_IndicatorSeparator = function IndicatorSeparator(props) {
+var index_8b64410c_browser_esm_IndicatorSeparator = function IndicatorSeparator(props) {
   var className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("span", _extends$2({}, innerProps, {
+  return emotion_react_browser_esm_jsx("span", _extends({}, innerProps, {
     css: getStyles('indicatorSeparator', props),
     className: cx({
       'indicator-separator': true
@@ -67598,7 +67158,7 @@ var index_4322c0ed_browser_esm_IndicatorSeparator = function IndicatorSeparator(
 // Loading
 // ==============================
 
-var loadingDotAnimations = core_browser_esm_keyframes(index_4322c0ed_browser_esm_templateObject());
+var loadingDotAnimations = keyframes(index_8b64410c_browser_esm_templateObject());
 var loadingIndicatorCSS = function loadingIndicatorCSS(_ref5) {
   var isFocused = _ref5.isFocused,
       size = _ref5.size,
@@ -67620,14 +67180,12 @@ var loadingIndicatorCSS = function loadingIndicatorCSS(_ref5) {
   };
 };
 
-var index_4322c0ed_browser_esm_LoadingDot = function LoadingDot(_ref6) {
+var index_8b64410c_browser_esm_LoadingDot = function LoadingDot(_ref6) {
   var delay = _ref6.delay,
       offset = _ref6.offset;
-  return core_browser_esm_jsx("span", {
-    css:
-    /*#__PURE__*/
-    css_browser_esm({
-      animation: loadingDotAnimations + " 1s ease-in-out " + delay + "ms infinite;",
+  return emotion_react_browser_esm_jsx("span", {
+    css: /*#__PURE__*/emotion_react_browser_esm_css({
+      animation: "".concat(loadingDotAnimations, " 1s ease-in-out ").concat(delay, "ms infinite;"),
       backgroundColor: 'currentColor',
       borderRadius: '1em',
       display: 'inline-block',
@@ -67635,39 +67193,38 @@ var index_4322c0ed_browser_esm_LoadingDot = function LoadingDot(_ref6) {
       height: '1em',
       verticalAlign: 'top',
       width: '1em'
-    },  true ? "" : undefined)
+    },  true ? "" : undefined,  true ? "" : undefined)
   });
 };
 
-var index_4322c0ed_browser_esm_LoadingIndicator = function LoadingIndicator(props) {
+var index_8b64410c_browser_esm_LoadingIndicator = function LoadingIndicator(props) {
   var className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps,
       isRtl = props.isRtl;
-  return core_browser_esm_jsx("div", _extends$2({}, innerProps, {
+  return emotion_react_browser_esm_jsx("div", _extends({}, innerProps, {
     css: getStyles('loadingIndicator', props),
     className: cx({
       indicator: true,
       'loading-indicator': true
     }, className)
-  }), core_browser_esm_jsx(index_4322c0ed_browser_esm_LoadingDot, {
+  }), emotion_react_browser_esm_jsx(index_8b64410c_browser_esm_LoadingDot, {
     delay: 0,
     offset: isRtl
-  }), core_browser_esm_jsx(index_4322c0ed_browser_esm_LoadingDot, {
+  }), emotion_react_browser_esm_jsx(index_8b64410c_browser_esm_LoadingDot, {
     delay: 160,
     offset: true
-  }), core_browser_esm_jsx(index_4322c0ed_browser_esm_LoadingDot, {
+  }), emotion_react_browser_esm_jsx(index_8b64410c_browser_esm_LoadingDot, {
     delay: 320,
     offset: !isRtl
   }));
 };
-index_4322c0ed_browser_esm_LoadingIndicator.defaultProps = {
+index_8b64410c_browser_esm_LoadingIndicator.defaultProps = {
   size: 4
 };
 
-function _extends$3() { _extends$3 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$3.apply(this, arguments); }
-var index_4322c0ed_browser_esm_css = function css(_ref) {
+var index_8b64410c_browser_esm_css = function css(_ref) {
   var isDisabled = _ref.isDisabled,
       isFocused = _ref.isFocused,
       _ref$theme = _ref.theme,
@@ -67682,7 +67239,7 @@ var index_4322c0ed_browser_esm_css = function css(_ref) {
     borderRadius: borderRadius,
     borderStyle: 'solid',
     borderWidth: 1,
-    boxShadow: isFocused ? "0 0 0 1px " + colors.primary : null,
+    boxShadow: isFocused ? "0 0 0 1px ".concat(colors.primary) : null,
     cursor: 'default',
     display: 'flex',
     flexWrap: 'wrap',
@@ -67697,7 +67254,7 @@ var index_4322c0ed_browser_esm_css = function css(_ref) {
   };
 };
 
-var index_4322c0ed_browser_esm_Control = function Control(props) {
+var index_8b64410c_browser_esm_Control = function Control(props) {
   var children = props.children,
       cx = props.cx,
       getStyles = props.getStyles,
@@ -67707,7 +67264,7 @@ var index_4322c0ed_browser_esm_Control = function Control(props) {
       innerRef = props.innerRef,
       innerProps = props.innerProps,
       menuIsOpen = props.menuIsOpen;
-  return core_browser_esm_jsx("div", _extends$3({
+  return emotion_react_browser_esm_jsx("div", _extends({
     ref: innerRef,
     css: getStyles('control', props),
     className: cx({
@@ -67719,9 +67276,9 @@ var index_4322c0ed_browser_esm_Control = function Control(props) {
   }, innerProps), children);
 };
 
-function _objectWithoutPropertiesLoose$1(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function ownKeys$1(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _extends$4() { _extends$4 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$4.apply(this, arguments); }
+function _objectSpread$1(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys$1(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys$1(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 var groupCSS = function groupCSS(_ref) {
   var spacing = _ref.theme.spacing;
   return {
@@ -67730,7 +67287,7 @@ var groupCSS = function groupCSS(_ref) {
   };
 };
 
-var index_4322c0ed_browser_esm_Group = function Group(props) {
+var index_8b64410c_browser_esm_Group = function Group(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
@@ -67740,17 +67297,17 @@ var index_4322c0ed_browser_esm_Group = function Group(props) {
       label = props.label,
       theme = props.theme,
       selectProps = props.selectProps;
-  return core_browser_esm_jsx("div", {
+  return emotion_react_browser_esm_jsx("div", {
     css: getStyles('group', props),
     className: cx({
       group: true
     }, className)
-  }, core_browser_esm_jsx(Heading, _extends$4({}, headingProps, {
+  }, emotion_react_browser_esm_jsx(Heading, _extends({}, headingProps, {
     selectProps: selectProps,
     theme: theme,
     getStyles: getStyles,
     cx: cx
-  }), label), core_browser_esm_jsx("div", null, children));
+  }), label), emotion_react_browser_esm_jsx("div", null, children));
 };
 
 var groupHeadingCSS = function groupHeadingCSS(_ref2) {
@@ -67768,16 +67325,16 @@ var groupHeadingCSS = function groupHeadingCSS(_ref2) {
     textTransform: 'uppercase'
   };
 };
-var index_4322c0ed_browser_esm_GroupHeading = function GroupHeading(props) {
+var index_8b64410c_browser_esm_GroupHeading = function GroupHeading(props) {
   var className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       theme = props.theme,
       selectProps = props.selectProps,
-      cleanProps = _objectWithoutPropertiesLoose$1(props, ["className", "cx", "getStyles", "theme", "selectProps"]);
+      cleanProps = _objectWithoutProperties(props, ["className", "cx", "getStyles", "theme", "selectProps"]);
 
-  return core_browser_esm_jsx("div", _extends$4({
-    css: getStyles('groupHeading', _extends$4({
+  return emotion_react_browser_esm_jsx("div", _extends({
+    css: getStyles('groupHeading', _objectSpread$1({
       theme: theme
     }, cleanProps)),
     className: cx({
@@ -67786,9 +67343,9 @@ var index_4322c0ed_browser_esm_GroupHeading = function GroupHeading(props) {
   }, cleanProps));
 };
 
-function _extends$5() { _extends$5 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$5.apply(this, arguments); }
+function ownKeys$2(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectWithoutPropertiesLoose$2(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function _objectSpread$2(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys$2(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys$2(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 var inputCSS = function inputCSS(_ref) {
   var isDisabled = _ref.isDisabled,
       _ref$theme = _ref.theme,
@@ -67816,7 +67373,7 @@ var inputStyle = function inputStyle(isHidden) {
   };
 };
 
-var index_4322c0ed_browser_esm_Input = function Input(_ref2) {
+var index_8b64410c_browser_esm_Input = function Input(_ref2) {
   var className = _ref2.className,
       cx = _ref2.cx,
       getStyles = _ref2.getStyles,
@@ -67825,13 +67382,13 @@ var index_4322c0ed_browser_esm_Input = function Input(_ref2) {
       isDisabled = _ref2.isDisabled,
       theme = _ref2.theme,
       selectProps = _ref2.selectProps,
-      props = _objectWithoutPropertiesLoose$2(_ref2, ["className", "cx", "getStyles", "innerRef", "isHidden", "isDisabled", "theme", "selectProps"]);
+      props = _objectWithoutProperties(_ref2, ["className", "cx", "getStyles", "innerRef", "isHidden", "isDisabled", "theme", "selectProps"]);
 
-  return core_browser_esm_jsx("div", {
-    css: getStyles('input', _extends$5({
+  return emotion_react_browser_esm_jsx("div", {
+    css: getStyles('input', _objectSpread$2({
       theme: theme
     }, props))
-  }, core_browser_esm_jsx(AutosizeInput_default.a, _extends$5({
+  }, emotion_react_browser_esm_jsx(AutosizeInput_default.a, _extends({
     className: cx({
       input: true
     }, className),
@@ -67841,7 +67398,9 @@ var index_4322c0ed_browser_esm_Input = function Input(_ref2) {
   }, props)));
 };
 
-function _extends$6() { _extends$6 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$6.apply(this, arguments); }
+function ownKeys$3(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread$3(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys$3(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys$3(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 var multiValueCSS = function multiValueCSS(_ref) {
   var _ref$theme = _ref.theme,
       spacing = _ref$theme.spacing,
@@ -67892,22 +67451,22 @@ var multiValueRemoveCSS = function multiValueRemoveCSS(_ref3) {
     }
   };
 };
-var index_4322c0ed_browser_esm_MultiValueGeneric = function MultiValueGeneric(_ref4) {
+var index_8b64410c_browser_esm_MultiValueGeneric = function MultiValueGeneric(_ref4) {
   var children = _ref4.children,
       innerProps = _ref4.innerProps;
-  return core_browser_esm_jsx("div", innerProps, children);
+  return emotion_react_browser_esm_jsx("div", innerProps, children);
 };
-var index_4322c0ed_browser_esm_MultiValueContainer = index_4322c0ed_browser_esm_MultiValueGeneric;
-var index_4322c0ed_browser_esm_MultiValueLabel = index_4322c0ed_browser_esm_MultiValueGeneric;
-function index_4322c0ed_browser_esm_MultiValueRemove(_ref5) {
+var index_8b64410c_browser_esm_MultiValueContainer = index_8b64410c_browser_esm_MultiValueGeneric;
+var index_8b64410c_browser_esm_MultiValueLabel = index_8b64410c_browser_esm_MultiValueGeneric;
+function index_8b64410c_browser_esm_MultiValueRemove(_ref5) {
   var children = _ref5.children,
       innerProps = _ref5.innerProps;
-  return core_browser_esm_jsx("div", innerProps, children || core_browser_esm_jsx(index_4322c0ed_browser_esm_CrossIcon, {
+  return emotion_react_browser_esm_jsx("div", innerProps, children || emotion_react_browser_esm_jsx(index_8b64410c_browser_esm_CrossIcon, {
     size: 14
   }));
 }
 
-var index_4322c0ed_browser_esm_MultiValue = function MultiValue(props) {
+var index_8b64410c_browser_esm_MultiValue = function MultiValue(props) {
   var children = props.children,
       className = props.className,
       components = props.components,
@@ -67921,19 +67480,19 @@ var index_4322c0ed_browser_esm_MultiValue = function MultiValue(props) {
   var Container = components.Container,
       Label = components.Label,
       Remove = components.Remove;
-  return core_browser_esm_jsx(ClassNames, null, function (_ref6) {
+  return emotion_react_browser_esm_jsx(ClassNames, null, function (_ref6) {
     var css = _ref6.css,
         emotionCx = _ref6.cx;
-    return core_browser_esm_jsx(Container, {
+    return emotion_react_browser_esm_jsx(Container, {
       data: data,
-      innerProps: _extends$6({}, innerProps, {
+      innerProps: _objectSpread$3(_objectSpread$3({}, innerProps), {}, {
         className: emotionCx(css(getStyles('multiValue', props)), cx({
           'multi-value': true,
           'multi-value--is-disabled': isDisabled
         }, className))
       }),
       selectProps: selectProps
-    }, core_browser_esm_jsx(Label, {
+    }, emotion_react_browser_esm_jsx(Label, {
       data: data,
       innerProps: {
         className: emotionCx(css(getStyles('multiValueLabel', props)), cx({
@@ -67941,9 +67500,9 @@ var index_4322c0ed_browser_esm_MultiValue = function MultiValue(props) {
         }, className))
       },
       selectProps: selectProps
-    }, children), core_browser_esm_jsx(Remove, {
+    }, children), emotion_react_browser_esm_jsx(Remove, {
       data: data,
-      innerProps: _extends$6({
+      innerProps: _objectSpread$3({
         className: emotionCx(css(getStyles('multiValueRemove', props)), cx({
           'multi-value__remove': true
         }, className))
@@ -67953,11 +67512,10 @@ var index_4322c0ed_browser_esm_MultiValue = function MultiValue(props) {
   });
 };
 
-index_4322c0ed_browser_esm_MultiValue.defaultProps = {
+index_8b64410c_browser_esm_MultiValue.defaultProps = {
   cropWithEllipsis: true
 };
 
-function _extends$7() { _extends$7 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$7.apply(this, arguments); }
 var optionCSS = function optionCSS(_ref) {
   var isDisabled = _ref.isDisabled,
       isFocused = _ref.isFocused,
@@ -67972,7 +67530,7 @@ var optionCSS = function optionCSS(_ref) {
     cursor: 'default',
     display: 'block',
     fontSize: 'inherit',
-    padding: spacing.baseUnit * 2 + "px " + spacing.baseUnit * 3 + "px",
+    padding: "".concat(spacing.baseUnit * 2, "px ").concat(spacing.baseUnit * 3, "px"),
     width: '100%',
     userSelect: 'none',
     WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
@@ -67983,7 +67541,7 @@ var optionCSS = function optionCSS(_ref) {
   };
 };
 
-var index_4322c0ed_browser_esm_Option = function Option(props) {
+var index_8b64410c_browser_esm_Option = function Option(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
@@ -67993,7 +67551,7 @@ var index_4322c0ed_browser_esm_Option = function Option(props) {
       isSelected = props.isSelected,
       innerRef = props.innerRef,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends$7({
+  return emotion_react_browser_esm_jsx("div", _extends({
     css: getStyles('option', props),
     className: cx({
       option: true,
@@ -68005,7 +67563,6 @@ var index_4322c0ed_browser_esm_Option = function Option(props) {
   }, innerProps), children);
 };
 
-function _extends$8() { _extends$8 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$8.apply(this, arguments); }
 var placeholderCSS = function placeholderCSS(_ref) {
   var _ref$theme = _ref.theme,
       spacing = _ref$theme.spacing,
@@ -68021,13 +67578,13 @@ var placeholderCSS = function placeholderCSS(_ref) {
   };
 };
 
-var index_4322c0ed_browser_esm_Placeholder = function Placeholder(props) {
+var index_8b64410c_browser_esm_Placeholder = function Placeholder(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends$8({
+  return emotion_react_browser_esm_jsx("div", _extends({
     css: getStyles('placeholder', props),
     className: cx({
       placeholder: true
@@ -68035,7 +67592,6 @@ var index_4322c0ed_browser_esm_Placeholder = function Placeholder(props) {
   }, innerProps), children);
 };
 
-function _extends$9() { _extends$9 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$9.apply(this, arguments); }
 var css$1 = function css(_ref) {
   var isDisabled = _ref.isDisabled,
       _ref$theme = _ref.theme,
@@ -68046,7 +67602,7 @@ var css$1 = function css(_ref) {
     color: isDisabled ? colors.neutral40 : colors.neutral80,
     marginLeft: spacing.baseUnit / 2,
     marginRight: spacing.baseUnit / 2,
-    maxWidth: "calc(100% - " + spacing.baseUnit * 2 + "px)",
+    maxWidth: "calc(100% - ".concat(spacing.baseUnit * 2, "px)"),
     overflow: 'hidden',
     position: 'absolute',
     textOverflow: 'ellipsis',
@@ -68056,14 +67612,14 @@ var css$1 = function css(_ref) {
   };
 };
 
-var index_4322c0ed_browser_esm_SingleValue = function SingleValue(props) {
+var index_8b64410c_browser_esm_SingleValue = function SingleValue(props) {
   var children = props.children,
       className = props.className,
       cx = props.cx,
       getStyles = props.getStyles,
       isDisabled = props.isDisabled,
       innerProps = props.innerProps;
-  return core_browser_esm_jsx("div", _extends$9({
+  return emotion_react_browser_esm_jsx("div", _extends({
     css: getStyles('singleValue', props),
     className: cx({
       'single-value': true,
@@ -68072,41 +67628,48 @@ var index_4322c0ed_browser_esm_SingleValue = function SingleValue(props) {
   }, innerProps), children);
 };
 
-function _extends$a() { _extends$a = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$a.apply(this, arguments); }
-var index_4322c0ed_browser_esm_components = {
-  ClearIndicator: index_4322c0ed_browser_esm_ClearIndicator,
-  Control: index_4322c0ed_browser_esm_Control,
-  DropdownIndicator: index_4322c0ed_browser_esm_DropdownIndicator,
-  DownChevron: index_4322c0ed_browser_esm_DownChevron,
-  CrossIcon: index_4322c0ed_browser_esm_CrossIcon,
-  Group: index_4322c0ed_browser_esm_Group,
-  GroupHeading: index_4322c0ed_browser_esm_GroupHeading,
-  IndicatorsContainer: index_4322c0ed_browser_esm_IndicatorsContainer,
-  IndicatorSeparator: index_4322c0ed_browser_esm_IndicatorSeparator,
-  Input: index_4322c0ed_browser_esm_Input,
-  LoadingIndicator: index_4322c0ed_browser_esm_LoadingIndicator,
-  Menu: index_4322c0ed_browser_esm_Menu,
-  MenuList: index_4322c0ed_browser_esm_MenuList,
-  MenuPortal: index_4322c0ed_browser_esm_MenuPortal,
-  LoadingMessage: index_4322c0ed_browser_esm_LoadingMessage,
-  NoOptionsMessage: index_4322c0ed_browser_esm_NoOptionsMessage,
-  MultiValue: index_4322c0ed_browser_esm_MultiValue,
-  MultiValueContainer: index_4322c0ed_browser_esm_MultiValueContainer,
-  MultiValueLabel: index_4322c0ed_browser_esm_MultiValueLabel,
-  MultiValueRemove: index_4322c0ed_browser_esm_MultiValueRemove,
-  Option: index_4322c0ed_browser_esm_Option,
-  Placeholder: index_4322c0ed_browser_esm_Placeholder,
-  SelectContainer: index_4322c0ed_browser_esm_SelectContainer,
-  SingleValue: index_4322c0ed_browser_esm_SingleValue,
-  ValueContainer: index_4322c0ed_browser_esm_ValueContainer
+function ownKeys$4(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread$4(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys$4(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys$4(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+var index_8b64410c_browser_esm_components = {
+  ClearIndicator: index_8b64410c_browser_esm_ClearIndicator,
+  Control: index_8b64410c_browser_esm_Control,
+  DropdownIndicator: index_8b64410c_browser_esm_DropdownIndicator,
+  DownChevron: index_8b64410c_browser_esm_DownChevron,
+  CrossIcon: index_8b64410c_browser_esm_CrossIcon,
+  Group: index_8b64410c_browser_esm_Group,
+  GroupHeading: index_8b64410c_browser_esm_GroupHeading,
+  IndicatorsContainer: index_8b64410c_browser_esm_IndicatorsContainer,
+  IndicatorSeparator: index_8b64410c_browser_esm_IndicatorSeparator,
+  Input: index_8b64410c_browser_esm_Input,
+  LoadingIndicator: index_8b64410c_browser_esm_LoadingIndicator,
+  Menu: index_8b64410c_browser_esm_Menu,
+  MenuList: index_8b64410c_browser_esm_MenuList,
+  MenuPortal: index_8b64410c_browser_esm_MenuPortal,
+  LoadingMessage: index_8b64410c_browser_esm_LoadingMessage,
+  NoOptionsMessage: index_8b64410c_browser_esm_NoOptionsMessage,
+  MultiValue: index_8b64410c_browser_esm_MultiValue,
+  MultiValueContainer: index_8b64410c_browser_esm_MultiValueContainer,
+  MultiValueLabel: index_8b64410c_browser_esm_MultiValueLabel,
+  MultiValueRemove: index_8b64410c_browser_esm_MultiValueRemove,
+  Option: index_8b64410c_browser_esm_Option,
+  Placeholder: index_8b64410c_browser_esm_Placeholder,
+  SelectContainer: index_8b64410c_browser_esm_SelectContainer,
+  SingleValue: index_8b64410c_browser_esm_SingleValue,
+  ValueContainer: index_8b64410c_browser_esm_ValueContainer
 };
-var index_4322c0ed_browser_esm_defaultComponents = function defaultComponents(props) {
-  return _extends$a({}, index_4322c0ed_browser_esm_components, props.components);
+var index_8b64410c_browser_esm_defaultComponents = function defaultComponents(props) {
+  return _objectSpread$4(_objectSpread$4({}, index_8b64410c_browser_esm_components), props.components);
 };
 
 
 
-// CONCATENATED MODULE: ./node_modules/react-select/dist/Select-9fdb8cd0.browser.esm.js
+// CONCATENATED MODULE: ./node_modules/react-select/dist/Select-d53e3329.browser.esm.js
+
+
+
+
+
 
 
 
@@ -68117,278 +67680,291 @@ var index_4322c0ed_browser_esm_defaultComponents = function defaultComponents(pr
 
 var diacritics = [{
   base: 'A',
-  letters: /[\u0041\u24B6\uFF21\u00C0\u00C1\u00C2\u1EA6\u1EA4\u1EAA\u1EA8\u00C3\u0100\u0102\u1EB0\u1EAE\u1EB4\u1EB2\u0226\u01E0\u00C4\u01DE\u1EA2\u00C5\u01FA\u01CD\u0200\u0202\u1EA0\u1EAC\u1EB6\u1E00\u0104\u023A\u2C6F]/g
+  letters: "A\u24B6\uFF21\xC0\xC1\xC2\u1EA6\u1EA4\u1EAA\u1EA8\xC3\u0100\u0102\u1EB0\u1EAE\u1EB4\u1EB2\u0226\u01E0\xC4\u01DE\u1EA2\xC5\u01FA\u01CD\u0200\u0202\u1EA0\u1EAC\u1EB6\u1E00\u0104\u023A\u2C6F"
 }, {
   base: 'AA',
-  letters: /[\uA732]/g
+  letters: "\uA732"
 }, {
   base: 'AE',
-  letters: /[\u00C6\u01FC\u01E2]/g
+  letters: "\xC6\u01FC\u01E2"
 }, {
   base: 'AO',
-  letters: /[\uA734]/g
+  letters: "\uA734"
 }, {
   base: 'AU',
-  letters: /[\uA736]/g
+  letters: "\uA736"
 }, {
   base: 'AV',
-  letters: /[\uA738\uA73A]/g
+  letters: "\uA738\uA73A"
 }, {
   base: 'AY',
-  letters: /[\uA73C]/g
+  letters: "\uA73C"
 }, {
   base: 'B',
-  letters: /[\u0042\u24B7\uFF22\u1E02\u1E04\u1E06\u0243\u0182\u0181]/g
+  letters: "B\u24B7\uFF22\u1E02\u1E04\u1E06\u0243\u0182\u0181"
 }, {
   base: 'C',
-  letters: /[\u0043\u24B8\uFF23\u0106\u0108\u010A\u010C\u00C7\u1E08\u0187\u023B\uA73E]/g
+  letters: "C\u24B8\uFF23\u0106\u0108\u010A\u010C\xC7\u1E08\u0187\u023B\uA73E"
 }, {
   base: 'D',
-  letters: /[\u0044\u24B9\uFF24\u1E0A\u010E\u1E0C\u1E10\u1E12\u1E0E\u0110\u018B\u018A\u0189\uA779]/g
+  letters: "D\u24B9\uFF24\u1E0A\u010E\u1E0C\u1E10\u1E12\u1E0E\u0110\u018B\u018A\u0189\uA779"
 }, {
   base: 'DZ',
-  letters: /[\u01F1\u01C4]/g
+  letters: "\u01F1\u01C4"
 }, {
   base: 'Dz',
-  letters: /[\u01F2\u01C5]/g
+  letters: "\u01F2\u01C5"
 }, {
   base: 'E',
-  letters: /[\u0045\u24BA\uFF25\u00C8\u00C9\u00CA\u1EC0\u1EBE\u1EC4\u1EC2\u1EBC\u0112\u1E14\u1E16\u0114\u0116\u00CB\u1EBA\u011A\u0204\u0206\u1EB8\u1EC6\u0228\u1E1C\u0118\u1E18\u1E1A\u0190\u018E]/g
+  letters: "E\u24BA\uFF25\xC8\xC9\xCA\u1EC0\u1EBE\u1EC4\u1EC2\u1EBC\u0112\u1E14\u1E16\u0114\u0116\xCB\u1EBA\u011A\u0204\u0206\u1EB8\u1EC6\u0228\u1E1C\u0118\u1E18\u1E1A\u0190\u018E"
 }, {
   base: 'F',
-  letters: /[\u0046\u24BB\uFF26\u1E1E\u0191\uA77B]/g
+  letters: "F\u24BB\uFF26\u1E1E\u0191\uA77B"
 }, {
   base: 'G',
-  letters: /[\u0047\u24BC\uFF27\u01F4\u011C\u1E20\u011E\u0120\u01E6\u0122\u01E4\u0193\uA7A0\uA77D\uA77E]/g
+  letters: "G\u24BC\uFF27\u01F4\u011C\u1E20\u011E\u0120\u01E6\u0122\u01E4\u0193\uA7A0\uA77D\uA77E"
 }, {
   base: 'H',
-  letters: /[\u0048\u24BD\uFF28\u0124\u1E22\u1E26\u021E\u1E24\u1E28\u1E2A\u0126\u2C67\u2C75\uA78D]/g
+  letters: "H\u24BD\uFF28\u0124\u1E22\u1E26\u021E\u1E24\u1E28\u1E2A\u0126\u2C67\u2C75\uA78D"
 }, {
   base: 'I',
-  letters: /[\u0049\u24BE\uFF29\u00CC\u00CD\u00CE\u0128\u012A\u012C\u0130\u00CF\u1E2E\u1EC8\u01CF\u0208\u020A\u1ECA\u012E\u1E2C\u0197]/g
+  letters: "I\u24BE\uFF29\xCC\xCD\xCE\u0128\u012A\u012C\u0130\xCF\u1E2E\u1EC8\u01CF\u0208\u020A\u1ECA\u012E\u1E2C\u0197"
 }, {
   base: 'J',
-  letters: /[\u004A\u24BF\uFF2A\u0134\u0248]/g
+  letters: "J\u24BF\uFF2A\u0134\u0248"
 }, {
   base: 'K',
-  letters: /[\u004B\u24C0\uFF2B\u1E30\u01E8\u1E32\u0136\u1E34\u0198\u2C69\uA740\uA742\uA744\uA7A2]/g
+  letters: "K\u24C0\uFF2B\u1E30\u01E8\u1E32\u0136\u1E34\u0198\u2C69\uA740\uA742\uA744\uA7A2"
 }, {
   base: 'L',
-  letters: /[\u004C\u24C1\uFF2C\u013F\u0139\u013D\u1E36\u1E38\u013B\u1E3C\u1E3A\u0141\u023D\u2C62\u2C60\uA748\uA746\uA780]/g
+  letters: "L\u24C1\uFF2C\u013F\u0139\u013D\u1E36\u1E38\u013B\u1E3C\u1E3A\u0141\u023D\u2C62\u2C60\uA748\uA746\uA780"
 }, {
   base: 'LJ',
-  letters: /[\u01C7]/g
+  letters: "\u01C7"
 }, {
   base: 'Lj',
-  letters: /[\u01C8]/g
+  letters: "\u01C8"
 }, {
   base: 'M',
-  letters: /[\u004D\u24C2\uFF2D\u1E3E\u1E40\u1E42\u2C6E\u019C]/g
+  letters: "M\u24C2\uFF2D\u1E3E\u1E40\u1E42\u2C6E\u019C"
 }, {
   base: 'N',
-  letters: /[\u004E\u24C3\uFF2E\u01F8\u0143\u00D1\u1E44\u0147\u1E46\u0145\u1E4A\u1E48\u0220\u019D\uA790\uA7A4]/g
+  letters: "N\u24C3\uFF2E\u01F8\u0143\xD1\u1E44\u0147\u1E46\u0145\u1E4A\u1E48\u0220\u019D\uA790\uA7A4"
 }, {
   base: 'NJ',
-  letters: /[\u01CA]/g
+  letters: "\u01CA"
 }, {
   base: 'Nj',
-  letters: /[\u01CB]/g
+  letters: "\u01CB"
 }, {
   base: 'O',
-  letters: /[\u004F\u24C4\uFF2F\u00D2\u00D3\u00D4\u1ED2\u1ED0\u1ED6\u1ED4\u00D5\u1E4C\u022C\u1E4E\u014C\u1E50\u1E52\u014E\u022E\u0230\u00D6\u022A\u1ECE\u0150\u01D1\u020C\u020E\u01A0\u1EDC\u1EDA\u1EE0\u1EDE\u1EE2\u1ECC\u1ED8\u01EA\u01EC\u00D8\u01FE\u0186\u019F\uA74A\uA74C]/g
+  letters: "O\u24C4\uFF2F\xD2\xD3\xD4\u1ED2\u1ED0\u1ED6\u1ED4\xD5\u1E4C\u022C\u1E4E\u014C\u1E50\u1E52\u014E\u022E\u0230\xD6\u022A\u1ECE\u0150\u01D1\u020C\u020E\u01A0\u1EDC\u1EDA\u1EE0\u1EDE\u1EE2\u1ECC\u1ED8\u01EA\u01EC\xD8\u01FE\u0186\u019F\uA74A\uA74C"
 }, {
   base: 'OI',
-  letters: /[\u01A2]/g
+  letters: "\u01A2"
 }, {
   base: 'OO',
-  letters: /[\uA74E]/g
+  letters: "\uA74E"
 }, {
   base: 'OU',
-  letters: /[\u0222]/g
+  letters: "\u0222"
 }, {
   base: 'P',
-  letters: /[\u0050\u24C5\uFF30\u1E54\u1E56\u01A4\u2C63\uA750\uA752\uA754]/g
+  letters: "P\u24C5\uFF30\u1E54\u1E56\u01A4\u2C63\uA750\uA752\uA754"
 }, {
   base: 'Q',
-  letters: /[\u0051\u24C6\uFF31\uA756\uA758\u024A]/g
+  letters: "Q\u24C6\uFF31\uA756\uA758\u024A"
 }, {
   base: 'R',
-  letters: /[\u0052\u24C7\uFF32\u0154\u1E58\u0158\u0210\u0212\u1E5A\u1E5C\u0156\u1E5E\u024C\u2C64\uA75A\uA7A6\uA782]/g
+  letters: "R\u24C7\uFF32\u0154\u1E58\u0158\u0210\u0212\u1E5A\u1E5C\u0156\u1E5E\u024C\u2C64\uA75A\uA7A6\uA782"
 }, {
   base: 'S',
-  letters: /[\u0053\u24C8\uFF33\u1E9E\u015A\u1E64\u015C\u1E60\u0160\u1E66\u1E62\u1E68\u0218\u015E\u2C7E\uA7A8\uA784]/g
+  letters: "S\u24C8\uFF33\u1E9E\u015A\u1E64\u015C\u1E60\u0160\u1E66\u1E62\u1E68\u0218\u015E\u2C7E\uA7A8\uA784"
 }, {
   base: 'T',
-  letters: /[\u0054\u24C9\uFF34\u1E6A\u0164\u1E6C\u021A\u0162\u1E70\u1E6E\u0166\u01AC\u01AE\u023E\uA786]/g
+  letters: "T\u24C9\uFF34\u1E6A\u0164\u1E6C\u021A\u0162\u1E70\u1E6E\u0166\u01AC\u01AE\u023E\uA786"
 }, {
   base: 'TZ',
-  letters: /[\uA728]/g
+  letters: "\uA728"
 }, {
   base: 'U',
-  letters: /[\u0055\u24CA\uFF35\u00D9\u00DA\u00DB\u0168\u1E78\u016A\u1E7A\u016C\u00DC\u01DB\u01D7\u01D5\u01D9\u1EE6\u016E\u0170\u01D3\u0214\u0216\u01AF\u1EEA\u1EE8\u1EEE\u1EEC\u1EF0\u1EE4\u1E72\u0172\u1E76\u1E74\u0244]/g
+  letters: "U\u24CA\uFF35\xD9\xDA\xDB\u0168\u1E78\u016A\u1E7A\u016C\xDC\u01DB\u01D7\u01D5\u01D9\u1EE6\u016E\u0170\u01D3\u0214\u0216\u01AF\u1EEA\u1EE8\u1EEE\u1EEC\u1EF0\u1EE4\u1E72\u0172\u1E76\u1E74\u0244"
 }, {
   base: 'V',
-  letters: /[\u0056\u24CB\uFF36\u1E7C\u1E7E\u01B2\uA75E\u0245]/g
+  letters: "V\u24CB\uFF36\u1E7C\u1E7E\u01B2\uA75E\u0245"
 }, {
   base: 'VY',
-  letters: /[\uA760]/g
+  letters: "\uA760"
 }, {
   base: 'W',
-  letters: /[\u0057\u24CC\uFF37\u1E80\u1E82\u0174\u1E86\u1E84\u1E88\u2C72]/g
+  letters: "W\u24CC\uFF37\u1E80\u1E82\u0174\u1E86\u1E84\u1E88\u2C72"
 }, {
   base: 'X',
-  letters: /[\u0058\u24CD\uFF38\u1E8A\u1E8C]/g
+  letters: "X\u24CD\uFF38\u1E8A\u1E8C"
 }, {
   base: 'Y',
-  letters: /[\u0059\u24CE\uFF39\u1EF2\u00DD\u0176\u1EF8\u0232\u1E8E\u0178\u1EF6\u1EF4\u01B3\u024E\u1EFE]/g
+  letters: "Y\u24CE\uFF39\u1EF2\xDD\u0176\u1EF8\u0232\u1E8E\u0178\u1EF6\u1EF4\u01B3\u024E\u1EFE"
 }, {
   base: 'Z',
-  letters: /[\u005A\u24CF\uFF3A\u0179\u1E90\u017B\u017D\u1E92\u1E94\u01B5\u0224\u2C7F\u2C6B\uA762]/g
+  letters: "Z\u24CF\uFF3A\u0179\u1E90\u017B\u017D\u1E92\u1E94\u01B5\u0224\u2C7F\u2C6B\uA762"
 }, {
   base: 'a',
-  letters: /[\u0061\u24D0\uFF41\u1E9A\u00E0\u00E1\u00E2\u1EA7\u1EA5\u1EAB\u1EA9\u00E3\u0101\u0103\u1EB1\u1EAF\u1EB5\u1EB3\u0227\u01E1\u00E4\u01DF\u1EA3\u00E5\u01FB\u01CE\u0201\u0203\u1EA1\u1EAD\u1EB7\u1E01\u0105\u2C65\u0250]/g
+  letters: "a\u24D0\uFF41\u1E9A\xE0\xE1\xE2\u1EA7\u1EA5\u1EAB\u1EA9\xE3\u0101\u0103\u1EB1\u1EAF\u1EB5\u1EB3\u0227\u01E1\xE4\u01DF\u1EA3\xE5\u01FB\u01CE\u0201\u0203\u1EA1\u1EAD\u1EB7\u1E01\u0105\u2C65\u0250"
 }, {
   base: 'aa',
-  letters: /[\uA733]/g
+  letters: "\uA733"
 }, {
   base: 'ae',
-  letters: /[\u00E6\u01FD\u01E3]/g
+  letters: "\xE6\u01FD\u01E3"
 }, {
   base: 'ao',
-  letters: /[\uA735]/g
+  letters: "\uA735"
 }, {
   base: 'au',
-  letters: /[\uA737]/g
+  letters: "\uA737"
 }, {
   base: 'av',
-  letters: /[\uA739\uA73B]/g
+  letters: "\uA739\uA73B"
 }, {
   base: 'ay',
-  letters: /[\uA73D]/g
+  letters: "\uA73D"
 }, {
   base: 'b',
-  letters: /[\u0062\u24D1\uFF42\u1E03\u1E05\u1E07\u0180\u0183\u0253]/g
+  letters: "b\u24D1\uFF42\u1E03\u1E05\u1E07\u0180\u0183\u0253"
 }, {
   base: 'c',
-  letters: /[\u0063\u24D2\uFF43\u0107\u0109\u010B\u010D\u00E7\u1E09\u0188\u023C\uA73F\u2184]/g
+  letters: "c\u24D2\uFF43\u0107\u0109\u010B\u010D\xE7\u1E09\u0188\u023C\uA73F\u2184"
 }, {
   base: 'd',
-  letters: /[\u0064\u24D3\uFF44\u1E0B\u010F\u1E0D\u1E11\u1E13\u1E0F\u0111\u018C\u0256\u0257\uA77A]/g
+  letters: "d\u24D3\uFF44\u1E0B\u010F\u1E0D\u1E11\u1E13\u1E0F\u0111\u018C\u0256\u0257\uA77A"
 }, {
   base: 'dz',
-  letters: /[\u01F3\u01C6]/g
+  letters: "\u01F3\u01C6"
 }, {
   base: 'e',
-  letters: /[\u0065\u24D4\uFF45\u00E8\u00E9\u00EA\u1EC1\u1EBF\u1EC5\u1EC3\u1EBD\u0113\u1E15\u1E17\u0115\u0117\u00EB\u1EBB\u011B\u0205\u0207\u1EB9\u1EC7\u0229\u1E1D\u0119\u1E19\u1E1B\u0247\u025B\u01DD]/g
+  letters: "e\u24D4\uFF45\xE8\xE9\xEA\u1EC1\u1EBF\u1EC5\u1EC3\u1EBD\u0113\u1E15\u1E17\u0115\u0117\xEB\u1EBB\u011B\u0205\u0207\u1EB9\u1EC7\u0229\u1E1D\u0119\u1E19\u1E1B\u0247\u025B\u01DD"
 }, {
   base: 'f',
-  letters: /[\u0066\u24D5\uFF46\u1E1F\u0192\uA77C]/g
+  letters: "f\u24D5\uFF46\u1E1F\u0192\uA77C"
 }, {
   base: 'g',
-  letters: /[\u0067\u24D6\uFF47\u01F5\u011D\u1E21\u011F\u0121\u01E7\u0123\u01E5\u0260\uA7A1\u1D79\uA77F]/g
+  letters: "g\u24D6\uFF47\u01F5\u011D\u1E21\u011F\u0121\u01E7\u0123\u01E5\u0260\uA7A1\u1D79\uA77F"
 }, {
   base: 'h',
-  letters: /[\u0068\u24D7\uFF48\u0125\u1E23\u1E27\u021F\u1E25\u1E29\u1E2B\u1E96\u0127\u2C68\u2C76\u0265]/g
+  letters: "h\u24D7\uFF48\u0125\u1E23\u1E27\u021F\u1E25\u1E29\u1E2B\u1E96\u0127\u2C68\u2C76\u0265"
 }, {
   base: 'hv',
-  letters: /[\u0195]/g
+  letters: "\u0195"
 }, {
   base: 'i',
-  letters: /[\u0069\u24D8\uFF49\u00EC\u00ED\u00EE\u0129\u012B\u012D\u00EF\u1E2F\u1EC9\u01D0\u0209\u020B\u1ECB\u012F\u1E2D\u0268\u0131]/g
+  letters: "i\u24D8\uFF49\xEC\xED\xEE\u0129\u012B\u012D\xEF\u1E2F\u1EC9\u01D0\u0209\u020B\u1ECB\u012F\u1E2D\u0268\u0131"
 }, {
   base: 'j',
-  letters: /[\u006A\u24D9\uFF4A\u0135\u01F0\u0249]/g
+  letters: "j\u24D9\uFF4A\u0135\u01F0\u0249"
 }, {
   base: 'k',
-  letters: /[\u006B\u24DA\uFF4B\u1E31\u01E9\u1E33\u0137\u1E35\u0199\u2C6A\uA741\uA743\uA745\uA7A3]/g
+  letters: "k\u24DA\uFF4B\u1E31\u01E9\u1E33\u0137\u1E35\u0199\u2C6A\uA741\uA743\uA745\uA7A3"
 }, {
   base: 'l',
-  letters: /[\u006C\u24DB\uFF4C\u0140\u013A\u013E\u1E37\u1E39\u013C\u1E3D\u1E3B\u017F\u0142\u019A\u026B\u2C61\uA749\uA781\uA747]/g
+  letters: "l\u24DB\uFF4C\u0140\u013A\u013E\u1E37\u1E39\u013C\u1E3D\u1E3B\u017F\u0142\u019A\u026B\u2C61\uA749\uA781\uA747"
 }, {
   base: 'lj',
-  letters: /[\u01C9]/g
+  letters: "\u01C9"
 }, {
   base: 'm',
-  letters: /[\u006D\u24DC\uFF4D\u1E3F\u1E41\u1E43\u0271\u026F]/g
+  letters: "m\u24DC\uFF4D\u1E3F\u1E41\u1E43\u0271\u026F"
 }, {
   base: 'n',
-  letters: /[\u006E\u24DD\uFF4E\u01F9\u0144\u00F1\u1E45\u0148\u1E47\u0146\u1E4B\u1E49\u019E\u0272\u0149\uA791\uA7A5]/g
+  letters: "n\u24DD\uFF4E\u01F9\u0144\xF1\u1E45\u0148\u1E47\u0146\u1E4B\u1E49\u019E\u0272\u0149\uA791\uA7A5"
 }, {
   base: 'nj',
-  letters: /[\u01CC]/g
+  letters: "\u01CC"
 }, {
   base: 'o',
-  letters: /[\u006F\u24DE\uFF4F\u00F2\u00F3\u00F4\u1ED3\u1ED1\u1ED7\u1ED5\u00F5\u1E4D\u022D\u1E4F\u014D\u1E51\u1E53\u014F\u022F\u0231\u00F6\u022B\u1ECF\u0151\u01D2\u020D\u020F\u01A1\u1EDD\u1EDB\u1EE1\u1EDF\u1EE3\u1ECD\u1ED9\u01EB\u01ED\u00F8\u01FF\u0254\uA74B\uA74D\u0275]/g
+  letters: "o\u24DE\uFF4F\xF2\xF3\xF4\u1ED3\u1ED1\u1ED7\u1ED5\xF5\u1E4D\u022D\u1E4F\u014D\u1E51\u1E53\u014F\u022F\u0231\xF6\u022B\u1ECF\u0151\u01D2\u020D\u020F\u01A1\u1EDD\u1EDB\u1EE1\u1EDF\u1EE3\u1ECD\u1ED9\u01EB\u01ED\xF8\u01FF\u0254\uA74B\uA74D\u0275"
 }, {
   base: 'oi',
-  letters: /[\u01A3]/g
+  letters: "\u01A3"
 }, {
   base: 'ou',
-  letters: /[\u0223]/g
+  letters: "\u0223"
 }, {
   base: 'oo',
-  letters: /[\uA74F]/g
+  letters: "\uA74F"
 }, {
   base: 'p',
-  letters: /[\u0070\u24DF\uFF50\u1E55\u1E57\u01A5\u1D7D\uA751\uA753\uA755]/g
+  letters: "p\u24DF\uFF50\u1E55\u1E57\u01A5\u1D7D\uA751\uA753\uA755"
 }, {
   base: 'q',
-  letters: /[\u0071\u24E0\uFF51\u024B\uA757\uA759]/g
+  letters: "q\u24E0\uFF51\u024B\uA757\uA759"
 }, {
   base: 'r',
-  letters: /[\u0072\u24E1\uFF52\u0155\u1E59\u0159\u0211\u0213\u1E5B\u1E5D\u0157\u1E5F\u024D\u027D\uA75B\uA7A7\uA783]/g
+  letters: "r\u24E1\uFF52\u0155\u1E59\u0159\u0211\u0213\u1E5B\u1E5D\u0157\u1E5F\u024D\u027D\uA75B\uA7A7\uA783"
 }, {
   base: 's',
-  letters: /[\u0073\u24E2\uFF53\u00DF\u015B\u1E65\u015D\u1E61\u0161\u1E67\u1E63\u1E69\u0219\u015F\u023F\uA7A9\uA785\u1E9B]/g
+  letters: "s\u24E2\uFF53\xDF\u015B\u1E65\u015D\u1E61\u0161\u1E67\u1E63\u1E69\u0219\u015F\u023F\uA7A9\uA785\u1E9B"
 }, {
   base: 't',
-  letters: /[\u0074\u24E3\uFF54\u1E6B\u1E97\u0165\u1E6D\u021B\u0163\u1E71\u1E6F\u0167\u01AD\u0288\u2C66\uA787]/g
+  letters: "t\u24E3\uFF54\u1E6B\u1E97\u0165\u1E6D\u021B\u0163\u1E71\u1E6F\u0167\u01AD\u0288\u2C66\uA787"
 }, {
   base: 'tz',
-  letters: /[\uA729]/g
+  letters: "\uA729"
 }, {
   base: 'u',
-  letters: /[\u0075\u24E4\uFF55\u00F9\u00FA\u00FB\u0169\u1E79\u016B\u1E7B\u016D\u00FC\u01DC\u01D8\u01D6\u01DA\u1EE7\u016F\u0171\u01D4\u0215\u0217\u01B0\u1EEB\u1EE9\u1EEF\u1EED\u1EF1\u1EE5\u1E73\u0173\u1E77\u1E75\u0289]/g
+  letters: "u\u24E4\uFF55\xF9\xFA\xFB\u0169\u1E79\u016B\u1E7B\u016D\xFC\u01DC\u01D8\u01D6\u01DA\u1EE7\u016F\u0171\u01D4\u0215\u0217\u01B0\u1EEB\u1EE9\u1EEF\u1EED\u1EF1\u1EE5\u1E73\u0173\u1E77\u1E75\u0289"
 }, {
   base: 'v',
-  letters: /[\u0076\u24E5\uFF56\u1E7D\u1E7F\u028B\uA75F\u028C]/g
+  letters: "v\u24E5\uFF56\u1E7D\u1E7F\u028B\uA75F\u028C"
 }, {
   base: 'vy',
-  letters: /[\uA761]/g
+  letters: "\uA761"
 }, {
   base: 'w',
-  letters: /[\u0077\u24E6\uFF57\u1E81\u1E83\u0175\u1E87\u1E85\u1E98\u1E89\u2C73]/g
+  letters: "w\u24E6\uFF57\u1E81\u1E83\u0175\u1E87\u1E85\u1E98\u1E89\u2C73"
 }, {
   base: 'x',
-  letters: /[\u0078\u24E7\uFF58\u1E8B\u1E8D]/g
+  letters: "x\u24E7\uFF58\u1E8B\u1E8D"
 }, {
   base: 'y',
-  letters: /[\u0079\u24E8\uFF59\u1EF3\u00FD\u0177\u1EF9\u0233\u1E8F\u00FF\u1EF7\u1E99\u1EF5\u01B4\u024F\u1EFF]/g
+  letters: "y\u24E8\uFF59\u1EF3\xFD\u0177\u1EF9\u0233\u1E8F\xFF\u1EF7\u1E99\u1EF5\u01B4\u024F\u1EFF"
 }, {
   base: 'z',
-  letters: /[\u007A\u24E9\uFF5A\u017A\u1E91\u017C\u017E\u1E93\u1E95\u01B6\u0225\u0240\u2C6C\uA763]/g
+  letters: "z\u24E9\uFF5A\u017A\u1E91\u017C\u017E\u1E93\u1E95\u01B6\u0225\u0240\u2C6C\uA763"
 }];
-var Select_9fdb8cd0_browser_esm_stripDiacritics = function stripDiacritics(str) {
-  for (var i = 0; i < diacritics.length; i++) {
-    str = str.replace(diacritics[i].letters, diacritics[i].base);
-  }
+var anyDiacritic = new RegExp('[' + diacritics.map(function (d) {
+  return d.letters;
+}).join('') + ']', 'g');
+var diacriticToBase = {};
 
-  return str;
+for (var Select_d53e3329_browser_esm_i = 0; Select_d53e3329_browser_esm_i < diacritics.length; Select_d53e3329_browser_esm_i++) {
+  var diacritic = diacritics[Select_d53e3329_browser_esm_i];
+
+  for (var Select_d53e3329_browser_esm_j = 0; Select_d53e3329_browser_esm_j < diacritic.letters.length; Select_d53e3329_browser_esm_j++) {
+    diacriticToBase[diacritic.letters[Select_d53e3329_browser_esm_j]] = diacritic.base;
+  }
+}
+
+var Select_d53e3329_browser_esm_stripDiacritics = function stripDiacritics(str) {
+  return str.replace(anyDiacritic, function (match) {
+    return diacriticToBase[match];
+  });
 };
 
-function Select_9fdb8cd0_browser_esm_extends() { Select_9fdb8cd0_browser_esm_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Select_9fdb8cd0_browser_esm_extends.apply(this, arguments); }
+function Select_d53e3329_browser_esm_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function Select_d53e3329_browser_esm_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Select_d53e3329_browser_esm_ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Select_d53e3329_browser_esm_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 var trimString = function trimString(str) {
   return str.replace(/^\s+|\s+$/g, '');
 };
 
 var defaultStringify = function defaultStringify(option) {
-  return option.label + " " + option.value;
+  return "".concat(option.label, " ").concat(option.value);
 };
 
 var createFilter = function createFilter(config) {
   return function (option, rawInput) {
-    var _ignoreCase$ignoreAcc = Select_9fdb8cd0_browser_esm_extends({
+    var _ignoreCase$ignoreAcc = Select_d53e3329_browser_esm_objectSpread({
       ignoreCase: true,
       ignoreAccents: true,
       stringify: defaultStringify,
@@ -68410,30 +67986,27 @@ var createFilter = function createFilter(config) {
     }
 
     if (ignoreAccents) {
-      input = Select_9fdb8cd0_browser_esm_stripDiacritics(input);
-      candidate = Select_9fdb8cd0_browser_esm_stripDiacritics(candidate);
+      input = Select_d53e3329_browser_esm_stripDiacritics(input);
+      candidate = Select_d53e3329_browser_esm_stripDiacritics(candidate);
     }
 
     return matchFrom === 'start' ? candidate.substr(0, input.length) === input : candidate.indexOf(input) > -1;
   };
 };
 
-function Select_9fdb8cd0_browser_esm_extends$1() { Select_9fdb8cd0_browser_esm_extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Select_9fdb8cd0_browser_esm_extends$1.apply(this, arguments); }
+function Select_d53e3329_browser_esm_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
-var Select_9fdb8cd0_browser_esm_ref =  true ? {
-  name: "1laao21-a11yText",
-  styles: "label:a11yText;z-index:9999;border:0;clip:rect(1px, 1px, 1px, 1px);height:1px;width:1px;position:absolute;overflow:hidden;padding:0;white-space:nowrap;"
+var Select_d53e3329_browser_esm_ref =  true ? {
+  name: "7pg0cj-a11yText",
+  styles: "label:a11yText;z-index:9999;border:0;clip:rect(1px, 1px, 1px, 1px);height:1px;width:1px;position:absolute;overflow:hidden;padding:0;white-space:nowrap"
 } : undefined;
 
-var Select_9fdb8cd0_browser_esm_A11yText = function A11yText(props) {
-  return core_browser_esm_jsx("span", Select_9fdb8cd0_browser_esm_extends$1({
-    css: Select_9fdb8cd0_browser_esm_ref
+var Select_d53e3329_browser_esm_A11yText = function A11yText(props) {
+  return emotion_react_browser_esm_jsx("span", _extends({
+    css: Select_d53e3329_browser_esm_ref
   }, props));
 };
 
-function Select_9fdb8cd0_browser_esm_extends$2() { Select_9fdb8cd0_browser_esm_extends$2 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Select_9fdb8cd0_browser_esm_extends$2.apply(this, arguments); }
-
-function Select_9fdb8cd0_browser_esm_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 function DummyInput(_ref) {
   var inProp = _ref.in,
       out = _ref.out,
@@ -68443,14 +68016,12 @@ function DummyInput(_ref) {
       exit = _ref.exit,
       innerRef = _ref.innerRef,
       emotion = _ref.emotion,
-      props = Select_9fdb8cd0_browser_esm_objectWithoutPropertiesLoose(_ref, ["in", "out", "onExited", "appear", "enter", "exit", "innerRef", "emotion"]);
+      props = _objectWithoutProperties(_ref, ["in", "out", "onExited", "appear", "enter", "exit", "innerRef", "emotion"]);
 
-  return core_browser_esm_jsx("input", Select_9fdb8cd0_browser_esm_extends$2({
+  return emotion_react_browser_esm_jsx("input", _extends({
     ref: innerRef
   }, props, {
-    css:
-    /*#__PURE__*/
-    css_browser_esm({
+    css: /*#__PURE__*/emotion_react_browser_esm_css({
       label: 'dummyInput',
       // get rid of any default styles
       background: 0,
@@ -68467,37 +68038,126 @@ function DummyInput(_ref) {
       opacity: 0,
       position: 'relative',
       transform: 'scale(0)'
-    },  true ? "" : undefined)
+    },  true ? "" : undefined,  true ? "" : undefined)
   }));
 }
 
-function Select_9fdb8cd0_browser_esm_inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+var cancelScroll = function cancelScroll(event) {
+  event.preventDefault();
+  event.stopPropagation();
+};
 
-var Select_9fdb8cd0_browser_esm_NodeResolver =
-/*#__PURE__*/
-function (_Component) {
-  Select_9fdb8cd0_browser_esm_inheritsLoose(NodeResolver, _Component);
+function useScrollCapture(_ref) {
+  var isEnabled = _ref.isEnabled,
+      onBottomArrive = _ref.onBottomArrive,
+      onBottomLeave = _ref.onBottomLeave,
+      onTopArrive = _ref.onTopArrive,
+      onTopLeave = _ref.onTopLeave;
+  var isBottom = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"])(false);
+  var isTop = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"])(false);
+  var touchStart = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"])(0);
+  var scrollTarget = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"])(null);
+  var handleEventDelta = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"])(function (event, delta) {
+    // Reference should never be `null` at this point, but flow complains otherwise
+    if (scrollTarget.current === null) return;
+    var _scrollTarget$current = scrollTarget.current,
+        scrollTop = _scrollTarget$current.scrollTop,
+        scrollHeight = _scrollTarget$current.scrollHeight,
+        clientHeight = _scrollTarget$current.clientHeight;
+    var target = scrollTarget.current;
+    var isDeltaPositive = delta > 0;
+    var availableScroll = scrollHeight - clientHeight - scrollTop;
+    var shouldCancelScroll = false; // reset bottom/top flags
 
-  function NodeResolver() {
-    return _Component.apply(this, arguments) || this;
-  }
+    if (availableScroll > delta && isBottom.current) {
+      if (onBottomLeave) onBottomLeave(event);
+      isBottom.current = false;
+    }
 
-  var _proto = NodeResolver.prototype;
+    if (isDeltaPositive && isTop.current) {
+      if (onTopLeave) onTopLeave(event);
+      isTop.current = false;
+    } // bottom limit
 
-  _proto.componentDidMount = function componentDidMount() {
-    this.props.innerRef(Object(external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_["findDOMNode"])(this));
+
+    if (isDeltaPositive && delta > availableScroll) {
+      if (onBottomArrive && !isBottom.current) {
+        onBottomArrive(event);
+      }
+
+      target.scrollTop = scrollHeight;
+      shouldCancelScroll = true;
+      isBottom.current = true; // top limit
+    } else if (!isDeltaPositive && -delta > scrollTop) {
+      if (onTopArrive && !isTop.current) {
+        onTopArrive(event);
+      }
+
+      target.scrollTop = 0;
+      shouldCancelScroll = true;
+      isTop.current = true;
+    } // cancel scroll
+
+
+    if (shouldCancelScroll) {
+      cancelScroll(event);
+    }
+  }, []);
+  var onWheel = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"])(function (event) {
+    handleEventDelta(event, event.deltaY);
+  }, [handleEventDelta]);
+  var onTouchStart = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"])(function (event) {
+    // set touch start so we can calculate touchmove delta
+    touchStart.current = event.changedTouches[0].clientY;
+  }, []);
+  var onTouchMove = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"])(function (event) {
+    var deltaY = touchStart.current - event.changedTouches[0].clientY;
+    handleEventDelta(event, deltaY);
+  }, [handleEventDelta]);
+  var startListening = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"])(function (el) {
+    // bail early if no element is available to attach to
+    if (!el) return; // all the if statements are to appease Flow 😢
+
+    if (typeof el.addEventListener === 'function') {
+      el.addEventListener('wheel', onWheel, false);
+    }
+
+    if (typeof el.addEventListener === 'function') {
+      el.addEventListener('touchstart', onTouchStart, false);
+    }
+
+    if (typeof el.addEventListener === 'function') {
+      el.addEventListener('touchmove', onTouchMove, false);
+    }
+  }, [onTouchMove, onTouchStart, onWheel]);
+  var stopListening = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"])(function (el) {
+    // bail early if no element is available to detach from
+    if (!el) return; // all the if statements are to appease Flow 😢
+
+    if (typeof el.removeEventListener === 'function') {
+      el.removeEventListener('wheel', onWheel, false);
+    }
+
+    if (typeof el.removeEventListener === 'function') {
+      el.removeEventListener('touchstart', onTouchStart, false);
+    }
+
+    if (typeof el.removeEventListener === 'function') {
+      el.removeEventListener('touchmove', onTouchMove, false);
+    }
+  }, [onTouchMove, onTouchStart, onWheel]);
+  Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"])(function () {
+    if (!isEnabled) return;
+    var element = scrollTarget.current;
+    startListening(element);
+    return function () {
+      stopListening(element);
+    };
+  }, [isEnabled, startListening, stopListening]);
+  return function (element) {
+    scrollTarget.current = element;
   };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.props.innerRef(null);
-  };
-
-  _proto.render = function render() {
-    return this.props.children;
-  };
-
-  return NodeResolver;
-}(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
+}
 
 var STYLE_KEYS = ['boxSizing', 'height', 'overflow', 'paddingRight', 'position'];
 var LOCK_STYLES = {
@@ -68511,9 +68171,11 @@ var LOCK_STYLES = {
 function preventTouchMove(e) {
   e.preventDefault();
 }
+
 function allowTouchMove(e) {
   e.stopPropagation();
 }
+
 function preventInertiaScroll() {
   var top = this.scrollTop;
   var totalScroll = this.scrollHeight;
@@ -68527,44 +68189,25 @@ function preventInertiaScroll() {
 } // `ontouchstart` check works on most browsers
 // `maxTouchPoints` works on IE10/11 and Surface
 
+
 function isTouchDevice() {
   return 'ontouchstart' in window || navigator.maxTouchPoints;
 }
 
-function _inheritsLoose$1(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
 var canUseDOM = !!( window.document && window.document.createElement);
 var activeScrollLocks = 0;
-
-var ScrollLock =
-/*#__PURE__*/
-function (_Component) {
-  _inheritsLoose$1(ScrollLock, _Component);
-
-  function ScrollLock() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _Component.call.apply(_Component, [this].concat(args)) || this;
-    _this.originalStyles = {};
-    _this.listenerOptions = {
-      capture: false,
-      passive: false
-    };
-    return _this;
-  }
-
-  var _proto = ScrollLock.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    var _this2 = this;
-
+var listenerOptions = {
+  capture: false,
+  passive: false
+};
+function useScrollLock(_ref) {
+  var isEnabled = _ref.isEnabled,
+      _ref$accountForScroll = _ref.accountForScrollbars,
+      accountForScrollbars = _ref$accountForScroll === void 0 ? true : _ref$accountForScroll;
+  var originalStyles = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"])({});
+  var scrollTarget = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"])(null);
+  var addScrollLock = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"])(function (touchScrollTarget) {
     if (!canUseDOM) return;
-    var _this$props = this.props,
-        accountForScrollbars = _this$props.accountForScrollbars,
-        touchScrollTarget = _this$props.touchScrollTarget;
     var target = document.body;
     var targetStyle = target && target.style;
 
@@ -68572,13 +68215,13 @@ function (_Component) {
       // store any styles already applied to the body
       STYLE_KEYS.forEach(function (key) {
         var val = targetStyle && targetStyle[key];
-        _this2.originalStyles[key] = val;
+        originalStyles.current[key] = val;
       });
     } // apply the lock styles and padding if this is the first scroll lock
 
 
     if (accountForScrollbars && activeScrollLocks < 1) {
-      var currentPadding = parseInt(this.originalStyles.paddingRight, 10) || 0;
+      var currentPadding = parseInt(originalStyles.current.paddingRight, 10) || 0;
       var clientWidth = document.body ? document.body.clientWidth : 0;
       var adjustedPadding = window.innerWidth - clientWidth + currentPadding || 0;
       Object.keys(LOCK_STYLES).forEach(function (key) {
@@ -68590,32 +68233,26 @@ function (_Component) {
       });
 
       if (targetStyle) {
-        targetStyle.paddingRight = adjustedPadding + "px";
+        targetStyle.paddingRight = "".concat(adjustedPadding, "px");
       }
     } // account for touch devices
 
 
     if (target && isTouchDevice()) {
       // Mobile Safari ignores { overflow: hidden } declaration on the body.
-      target.addEventListener('touchmove', preventTouchMove, this.listenerOptions); // Allow scroll on provided target
+      target.addEventListener('touchmove', preventTouchMove, listenerOptions); // Allow scroll on provided target
 
       if (touchScrollTarget) {
-        touchScrollTarget.addEventListener('touchstart', preventInertiaScroll, this.listenerOptions);
-        touchScrollTarget.addEventListener('touchmove', allowTouchMove, this.listenerOptions);
+        touchScrollTarget.addEventListener('touchstart', preventInertiaScroll, listenerOptions);
+        touchScrollTarget.addEventListener('touchmove', allowTouchMove, listenerOptions);
       }
     } // increment active scroll locks
 
 
     activeScrollLocks += 1;
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    var _this3 = this;
-
+  }, []);
+  var removeScrollLock = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useCallback"])(function (touchScrollTarget) {
     if (!canUseDOM) return;
-    var _this$props2 = this.props,
-        accountForScrollbars = _this$props2.accountForScrollbars,
-        touchScrollTarget = _this$props2.touchScrollTarget;
     var target = document.body;
     var targetStyle = target && target.style; // safely decrement active scroll locks
 
@@ -68623,7 +68260,7 @@ function (_Component) {
 
     if (accountForScrollbars && activeScrollLocks < 1) {
       STYLE_KEYS.forEach(function (key) {
-        var val = _this3.originalStyles[key];
+        var val = originalStyles.current[key];
 
         if (targetStyle) {
           targetStyle[key] = val;
@@ -68633,281 +68270,83 @@ function (_Component) {
 
 
     if (target && isTouchDevice()) {
-      target.removeEventListener('touchmove', preventTouchMove, this.listenerOptions);
+      target.removeEventListener('touchmove', preventTouchMove, listenerOptions);
 
       if (touchScrollTarget) {
-        touchScrollTarget.removeEventListener('touchstart', preventInertiaScroll, this.listenerOptions);
-        touchScrollTarget.removeEventListener('touchmove', allowTouchMove, this.listenerOptions);
+        touchScrollTarget.removeEventListener('touchstart', preventInertiaScroll, listenerOptions);
+        touchScrollTarget.removeEventListener('touchmove', allowTouchMove, listenerOptions);
       }
     }
+  }, []);
+  Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"])(function () {
+    if (!isEnabled) return;
+    var element = scrollTarget.current;
+    addScrollLock(element);
+    return function () {
+      removeScrollLock(element);
+    };
+  }, [isEnabled, addScrollLock, removeScrollLock]);
+  return function (element) {
+    scrollTarget.current = element;
   };
-
-  _proto.render = function render() {
-    return null;
-  };
-
-  return ScrollLock;
-}(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
-
-ScrollLock.defaultProps = {
-  accountForScrollbars: true
-};
-
-function _inheritsLoose$2(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
-
-var _ref$1 =  true ? {
-  name: "1dsbpcp",
-  styles: "position:fixed;left:0;bottom:0;right:0;top:0;"
-} : undefined;
-
-// NOTE:
-// We shouldn't need this after updating to React v16.3.0, which introduces:
-// - createRef() https://reactjs.org/docs/react-api.html#reactcreateref
-// - forwardRef() https://reactjs.org/docs/react-api.html#reactforwardref
-var Select_9fdb8cd0_browser_esm_ScrollBlock =
-/*#__PURE__*/
-function (_PureComponent) {
-  _inheritsLoose$2(ScrollBlock, _PureComponent);
-
-  function ScrollBlock() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _PureComponent.call.apply(_PureComponent, [this].concat(args)) || this;
-    _this.state = {
-      touchScrollTarget: null
-    };
-
-    _this.getScrollTarget = function (ref) {
-      if (ref === _this.state.touchScrollTarget) return;
-
-      _this.setState({
-        touchScrollTarget: ref
-      });
-    };
-
-    _this.blurSelectInput = function () {
-      if (document.activeElement) {
-        document.activeElement.blur();
-      }
-    };
-
-    return _this;
-  }
-
-  var _proto = ScrollBlock.prototype;
-
-  _proto.render = function render() {
-    var _this$props = this.props,
-        children = _this$props.children,
-        isEnabled = _this$props.isEnabled;
-    var touchScrollTarget = this.state.touchScrollTarget; // bail early if not enabled
-
-    if (!isEnabled) return children;
-    /*
-     * Div
-     * ------------------------------
-     * blocks scrolling on non-body elements behind the menu
-      * NodeResolver
-     * ------------------------------
-     * we need a reference to the scrollable element to "unlock" scroll on
-     * mobile devices
-      * ScrollLock
-     * ------------------------------
-     * actually does the scroll locking
-     */
-
-    return core_browser_esm_jsx("div", null, core_browser_esm_jsx("div", {
-      onClick: this.blurSelectInput,
-      css: _ref$1
-    }), core_browser_esm_jsx(Select_9fdb8cd0_browser_esm_NodeResolver, {
-      innerRef: this.getScrollTarget
-    }, children), touchScrollTarget ? core_browser_esm_jsx(ScrollLock, {
-      touchScrollTarget: touchScrollTarget
-    }) : null);
-  };
-
-  return ScrollBlock;
-}(external_root_React_commonjs2_react_commonjs_react_amd_react_["PureComponent"]);
-
-function Select_9fdb8cd0_browser_esm_objectWithoutPropertiesLoose$1(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-function _inheritsLoose$3(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
-
-var Select_9fdb8cd0_browser_esm_ScrollCaptor =
-/*#__PURE__*/
-function (_Component) {
-  _inheritsLoose$3(ScrollCaptor, _Component);
-
-  function ScrollCaptor() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _Component.call.apply(_Component, [this].concat(args)) || this;
-    _this.isBottom = false;
-    _this.isTop = false;
-    _this.scrollTarget = void 0;
-    _this.touchStart = void 0;
-
-    _this.cancelScroll = function (event) {
-      event.preventDefault();
-      event.stopPropagation();
-    };
-
-    _this.handleEventDelta = function (event, delta) {
-      var _this$props = _this.props,
-          onBottomArrive = _this$props.onBottomArrive,
-          onBottomLeave = _this$props.onBottomLeave,
-          onTopArrive = _this$props.onTopArrive,
-          onTopLeave = _this$props.onTopLeave;
-      var _this$scrollTarget = _this.scrollTarget,
-          scrollTop = _this$scrollTarget.scrollTop,
-          scrollHeight = _this$scrollTarget.scrollHeight,
-          clientHeight = _this$scrollTarget.clientHeight;
-      var target = _this.scrollTarget;
-      var isDeltaPositive = delta > 0;
-      var availableScroll = scrollHeight - clientHeight - scrollTop;
-      var shouldCancelScroll = false; // reset bottom/top flags
-
-      if (availableScroll > delta && _this.isBottom) {
-        if (onBottomLeave) onBottomLeave(event);
-        _this.isBottom = false;
-      }
-
-      if (isDeltaPositive && _this.isTop) {
-        if (onTopLeave) onTopLeave(event);
-        _this.isTop = false;
-      } // bottom limit
-
-
-      if (isDeltaPositive && delta > availableScroll) {
-        if (onBottomArrive && !_this.isBottom) {
-          onBottomArrive(event);
-        }
-
-        target.scrollTop = scrollHeight;
-        shouldCancelScroll = true;
-        _this.isBottom = true; // top limit
-      } else if (!isDeltaPositive && -delta > scrollTop) {
-        if (onTopArrive && !_this.isTop) {
-          onTopArrive(event);
-        }
-
-        target.scrollTop = 0;
-        shouldCancelScroll = true;
-        _this.isTop = true;
-      } // cancel scroll
-
-
-      if (shouldCancelScroll) {
-        _this.cancelScroll(event);
-      }
-    };
-
-    _this.onWheel = function (event) {
-      _this.handleEventDelta(event, event.deltaY);
-    };
-
-    _this.onTouchStart = function (event) {
-      // set touch start so we can calculate touchmove delta
-      _this.touchStart = event.changedTouches[0].clientY;
-    };
-
-    _this.onTouchMove = function (event) {
-      var deltaY = _this.touchStart - event.changedTouches[0].clientY;
-
-      _this.handleEventDelta(event, deltaY);
-    };
-
-    _this.getScrollTarget = function (ref) {
-      _this.scrollTarget = ref;
-    };
-
-    return _this;
-  }
-
-  var _proto = ScrollCaptor.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.startListening(this.scrollTarget);
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.stopListening(this.scrollTarget);
-  };
-
-  _proto.startListening = function startListening(el) {
-    // bail early if no element is available to attach to
-    if (!el) return; // all the if statements are to appease Flow 😢
-
-    if (typeof el.addEventListener === 'function') {
-      el.addEventListener('wheel', this.onWheel, false);
-    }
-
-    if (typeof el.addEventListener === 'function') {
-      el.addEventListener('touchstart', this.onTouchStart, false);
-    }
-
-    if (typeof el.addEventListener === 'function') {
-      el.addEventListener('touchmove', this.onTouchMove, false);
-    }
-  };
-
-  _proto.stopListening = function stopListening(el) {
-    // all the if statements are to appease Flow 😢
-    if (typeof el.removeEventListener === 'function') {
-      el.removeEventListener('wheel', this.onWheel, false);
-    }
-
-    if (typeof el.removeEventListener === 'function') {
-      el.removeEventListener('touchstart', this.onTouchStart, false);
-    }
-
-    if (typeof el.removeEventListener === 'function') {
-      el.removeEventListener('touchmove', this.onTouchMove, false);
-    }
-  };
-
-  _proto.render = function render() {
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Select_9fdb8cd0_browser_esm_NodeResolver, {
-      innerRef: this.getScrollTarget
-    }, this.props.children);
-  };
-
-  return ScrollCaptor;
-}(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
-
-function ScrollCaptorSwitch(_ref) {
-  var _ref$isEnabled = _ref.isEnabled,
-      isEnabled = _ref$isEnabled === void 0 ? true : _ref$isEnabled,
-      props = Select_9fdb8cd0_browser_esm_objectWithoutPropertiesLoose$1(_ref, ["isEnabled"]);
-
-  return isEnabled ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Select_9fdb8cd0_browser_esm_ScrollCaptor, props) : props.children;
 }
 
-var instructionsAriaMessage = function instructionsAriaMessage(event, context) {
-  if (context === void 0) {
-    context = {};
-  }
+function _EMOTION_STRINGIFIED_CSS_ERROR__$1() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
-  var _context = context,
-      isSearchable = _context.isSearchable,
-      isMulti = _context.isMulti,
-      label = _context.label,
-      isDisabled = _context.isDisabled;
+var blurSelectInput = function blurSelectInput() {
+  return document.activeElement && document.activeElement.blur();
+};
+
+var Select_d53e3329_browser_esm_ref2 =  true ? {
+  name: "1kfdb0e",
+  styles: "position:fixed;left:0;bottom:0;right:0;top:0"
+} : undefined;
+
+function ScrollManager(_ref) {
+  var children = _ref.children,
+      lockEnabled = _ref.lockEnabled,
+      _ref$captureEnabled = _ref.captureEnabled,
+      captureEnabled = _ref$captureEnabled === void 0 ? true : _ref$captureEnabled,
+      onBottomArrive = _ref.onBottomArrive,
+      onBottomLeave = _ref.onBottomLeave,
+      onTopArrive = _ref.onTopArrive,
+      onTopLeave = _ref.onTopLeave;
+  var setScrollCaptureTarget = useScrollCapture({
+    isEnabled: captureEnabled,
+    onBottomArrive: onBottomArrive,
+    onBottomLeave: onBottomLeave,
+    onTopArrive: onTopArrive,
+    onTopLeave: onTopLeave
+  });
+  var setScrollLockTarget = useScrollLock({
+    isEnabled: lockEnabled
+  });
+
+  var targetRef = function targetRef(element) {
+    setScrollCaptureTarget(element);
+    setScrollLockTarget(element);
+  };
+
+  return emotion_react_browser_esm_jsx(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, lockEnabled && emotion_react_browser_esm_jsx("div", {
+    onClick: blurSelectInput,
+    css: Select_d53e3329_browser_esm_ref2
+  }), children(targetRef));
+}
+
+var instructionsAriaMessage = function instructionsAriaMessage(event) {
+  var context = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var isSearchable = context.isSearchable,
+      isMulti = context.isMulti,
+      label = context.label,
+      isDisabled = context.isDisabled,
+      tabSelectsValue = context.tabSelectsValue;
 
   switch (event) {
     case 'menu':
-      return "Use Up and Down to choose options" + (isDisabled ? '' : ', press Enter to select the currently focused option') + ", press Escape to exit the menu, press Tab to select the option and exit the menu.";
+      return "Use Up and Down to choose options".concat(isDisabled ? '' : ', press Enter to select the currently focused option', ", press Escape to exit the menu").concat(tabSelectsValue ? ', press Tab to select the option and exit the menu' : '', ".");
 
     case 'input':
-      return (label ? label : 'Select') + " is focused " + (isSearchable ? ',type to refine list' : '') + ", press Down to open the menu, " + (isMulti ? ' press left to focus selected values' : '');
+      return "".concat(label ? label : 'Select', " is focused ").concat(isSearchable ? ',type to refine list' : '', ", press Down to open the menu, ").concat(isMulti ? ' press left to focus selected values' : '');
 
     case 'value':
       return 'Use left and right to toggle between focused values, press Backspace to remove the currently focused value';
@@ -68922,34 +68361,34 @@ var valueEventAriaMessage = function valueEventAriaMessage(event, context) {
     case 'deselect-option':
     case 'pop-value':
     case 'remove-value':
-      return "option " + value + ", deselected.";
+      return "option ".concat(value, ", deselected.");
 
     case 'select-option':
-      return isDisabled ? "option " + value + " is disabled. Select another option." : "option " + value + ", selected.";
+      return isDisabled ? "option ".concat(value, " is disabled. Select another option.") : "option ".concat(value, ", selected.");
   }
 };
 var valueFocusAriaMessage = function valueFocusAriaMessage(_ref) {
   var focusedValue = _ref.focusedValue,
       getOptionLabel = _ref.getOptionLabel,
       selectValue = _ref.selectValue;
-  return "value " + getOptionLabel(focusedValue) + " focused, " + (selectValue.indexOf(focusedValue) + 1) + " of " + selectValue.length + ".";
+  return "value ".concat(getOptionLabel(focusedValue), " focused, ").concat(selectValue.indexOf(focusedValue) + 1, " of ").concat(selectValue.length, ".");
 };
 var optionFocusAriaMessage = function optionFocusAriaMessage(_ref2) {
   var focusedOption = _ref2.focusedOption,
       getOptionLabel = _ref2.getOptionLabel,
       options = _ref2.options;
-  return "option " + getOptionLabel(focusedOption) + " focused" + (focusedOption.isDisabled ? ' disabled' : '') + ", " + (options.indexOf(focusedOption) + 1) + " of " + options.length + ".";
+  return "option ".concat(getOptionLabel(focusedOption), " focused").concat(focusedOption.isDisabled ? ' disabled' : '', ", ").concat(options.indexOf(focusedOption) + 1, " of ").concat(options.length, ".");
 };
 var resultsAriaMessage = function resultsAriaMessage(_ref3) {
   var inputValue = _ref3.inputValue,
       screenReaderMessage = _ref3.screenReaderMessage;
-  return "" + screenReaderMessage + (inputValue ? ' for search term ' + inputValue : '') + ".";
+  return "".concat(screenReaderMessage).concat(inputValue ? ' for search term ' + inputValue : '', ".");
 };
 
 var formatGroupLabel = function formatGroupLabel(group) {
   return group.label;
 };
-var Select_9fdb8cd0_browser_esm_getOptionLabel = function getOptionLabel(option) {
+var Select_d53e3329_browser_esm_getOptionLabel = function getOptionLabel(option) {
   return option.label;
 };
 var getOptionValue = function getOptionValue(option) {
@@ -68959,11 +68398,13 @@ var isOptionDisabled = function isOptionDisabled(option) {
   return !!option.isDisabled;
 };
 
-function Select_9fdb8cd0_browser_esm_extends$3() { Select_9fdb8cd0_browser_esm_extends$3 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Select_9fdb8cd0_browser_esm_extends$3.apply(this, arguments); }
+function Select_d53e3329_browser_esm_ownKeys$1(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function Select_d53e3329_browser_esm_objectSpread$1(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Select_d53e3329_browser_esm_ownKeys$1(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Select_d53e3329_browser_esm_ownKeys$1(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 var defaultStyles = {
   clearIndicator: clearIndicatorCSS,
   container: containerCSS,
-  control: index_4322c0ed_browser_esm_css,
+  control: index_8b64410c_browser_esm_css,
   dropdownIndicator: dropdownIndicatorCSS,
   group: groupCSS,
   groupHeading: groupHeadingCSS,
@@ -68972,7 +68413,7 @@ var defaultStyles = {
   input: inputCSS,
   loadingIndicator: loadingIndicatorCSS,
   loadingMessage: loadingMessageCSS,
-  menu: menuCSS,
+  menu: index_8b64410c_browser_esm_menuCSS,
   menuList: menuListCSS,
   menuPortal: menuPortalCSS,
   multiValue: multiValueCSS,
@@ -68986,13 +68427,11 @@ var defaultStyles = {
 }; // Merge Utility
 // Allows consumers to extend a base Select with additional styles
 
-function mergeStyles(source, target) {
-  if (target === void 0) {
-    target = {};
-  }
+function mergeStyles(source) {
+  var target = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
   // initialize with source styles
-  var styles = Select_9fdb8cd0_browser_esm_extends$3({}, source); // massage in target styles
+  var styles = Select_d53e3329_browser_esm_objectSpread$1({}, source); // massage in target styles
 
 
   Object.keys(target).forEach(function (key) {
@@ -69007,7 +68446,7 @@ function mergeStyles(source, target) {
   return styles;
 }
 
-var Select_9fdb8cd0_browser_esm_colors = {
+var Select_d53e3329_browser_esm_colors = {
   primary: '#2684FF',
   primary75: '#4C9AFF',
   primary50: '#B2D4FF',
@@ -69026,32 +68465,32 @@ var Select_9fdb8cd0_browser_esm_colors = {
   neutral80: 'hsl(0, 0%, 20%)',
   neutral90: 'hsl(0, 0%, 10%)'
 };
-var Select_9fdb8cd0_browser_esm_borderRadius = 4; // Used to calculate consistent margin/padding on elements
+var Select_d53e3329_browser_esm_borderRadius = 4; // Used to calculate consistent margin/padding on elements
 
 var baseUnit = 4; // The minimum height of the control
 
 var controlHeight = 38; // The amount of space between the control and menu */
 
 var menuGutter = baseUnit * 2;
-var Select_9fdb8cd0_browser_esm_spacing = {
+var Select_d53e3329_browser_esm_spacing = {
   baseUnit: baseUnit,
   controlHeight: controlHeight,
   menuGutter: menuGutter
 };
-var Select_9fdb8cd0_browser_esm_defaultTheme = {
-  borderRadius: Select_9fdb8cd0_browser_esm_borderRadius,
-  colors: Select_9fdb8cd0_browser_esm_colors,
-  spacing: Select_9fdb8cd0_browser_esm_spacing
+var Select_d53e3329_browser_esm_defaultTheme = {
+  borderRadius: Select_d53e3329_browser_esm_borderRadius,
+  colors: Select_d53e3329_browser_esm_colors,
+  spacing: Select_d53e3329_browser_esm_spacing
 };
 
-function Select_9fdb8cd0_browser_esm_objectWithoutPropertiesLoose$2(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function Select_d53e3329_browser_esm_ownKeys$2(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function Select_9fdb8cd0_browser_esm_extends$4() { Select_9fdb8cd0_browser_esm_extends$4 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return Select_9fdb8cd0_browser_esm_extends$4.apply(this, arguments); }
+function Select_d53e3329_browser_esm_objectSpread$2(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Select_d53e3329_browser_esm_ownKeys$2(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Select_d53e3329_browser_esm_ownKeys$2(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
-function _inheritsLoose$4(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+function Select_d53e3329_browser_esm_createSuper(Derived) { var hasNativeReflectConstruct = Select_d53e3329_browser_esm_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function Select_9fdb8cd0_browser_esm_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-var Select_9fdb8cd0_browser_esm_defaultProps = {
+function Select_d53e3329_browser_esm_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+var Select_d53e3329_browser_esm_defaultProps = {
   backspaceRemovesValue: true,
   blurInputOnSelect: isTouchCapable(),
   captureMenuScroll: !isTouchCapable(),
@@ -69062,7 +68501,7 @@ var Select_9fdb8cd0_browser_esm_defaultProps = {
   escapeClearsValue: false,
   filterOption: createFilter(),
   formatGroupLabel: formatGroupLabel,
-  getOptionLabel: Select_9fdb8cd0_browser_esm_getOptionLabel,
+  getOptionLabel: Select_d53e3329_browser_esm_getOptionLabel,
   getOptionValue: getOptionValue,
   isDisabled: false,
   isLoading: false,
@@ -69090,18 +68529,153 @@ var Select_9fdb8cd0_browser_esm_defaultProps = {
   placeholder: 'Select...',
   screenReaderStatus: function screenReaderStatus(_ref) {
     var count = _ref.count;
-    return count + " result" + (count !== 1 ? 's' : '') + " available";
+    return "".concat(count, " result").concat(count !== 1 ? 's' : '', " available");
   },
   styles: {},
   tabIndex: '0',
   tabSelectsValue: true
 };
+
+function toCategorizedOption(props, option, selectValue, index) {
+  var isDisabled = _isOptionDisabled(props, option, selectValue);
+
+  var isSelected = _isOptionSelected(props, option, selectValue);
+
+  var label = getOptionLabel$1(props, option);
+  var value = getOptionValue$1(props, option);
+  return {
+    type: 'option',
+    data: option,
+    isDisabled: isDisabled,
+    isSelected: isSelected,
+    label: label,
+    value: value,
+    index: index
+  };
+}
+
+function buildCategorizedOptions(props, selectValue) {
+  return props.options.map(function (groupOrOption, groupOrOptionIndex) {
+    if (groupOrOption.options) {
+      var categorizedOptions = groupOrOption.options.map(function (option, optionIndex) {
+        return toCategorizedOption(props, option, selectValue, optionIndex);
+      }).filter(function (categorizedOption) {
+        return isFocusable(props, categorizedOption);
+      });
+      return categorizedOptions.length > 0 ? {
+        type: 'group',
+        data: groupOrOption,
+        options: categorizedOptions,
+        index: groupOrOptionIndex
+      } : undefined;
+    }
+
+    var categorizedOption = toCategorizedOption(props, groupOrOption, selectValue, groupOrOptionIndex);
+    return isFocusable(props, categorizedOption) ? categorizedOption : undefined;
+  }) // Flow limitation (see https://github.com/facebook/flow/issues/1414)
+  .filter(function (categorizedOption) {
+    return !!categorizedOption;
+  });
+}
+
+function buildFocusableOptionsFromCategorizedOptions(categorizedOptions) {
+  return categorizedOptions.reduce(function (optionsAccumulator, categorizedOption) {
+    if (categorizedOption.type === 'group') {
+      optionsAccumulator.push.apply(optionsAccumulator, _toConsumableArray(categorizedOption.data.options));
+    } else {
+      optionsAccumulator.push(categorizedOption.data);
+    }
+
+    return optionsAccumulator;
+  }, []);
+}
+
+function buildFocusableOptions(props, selectValue) {
+  return buildFocusableOptionsFromCategorizedOptions(buildCategorizedOptions(props, selectValue));
+}
+
+function isFocusable(props, categorizedOption) {
+  var _props$inputValue = props.inputValue,
+      inputValue = _props$inputValue === void 0 ? '' : _props$inputValue;
+  var data = categorizedOption.data,
+      isSelected = categorizedOption.isSelected,
+      label = categorizedOption.label,
+      value = categorizedOption.value;
+  return (!shouldHideSelectedOptions(props) || !isSelected) && _filterOption(props, {
+    label: label,
+    value: value,
+    data: data
+  }, inputValue);
+}
+
+function getNextFocusedValue(state, nextSelectValue) {
+  var focusedValue = state.focusedValue,
+      lastSelectValue = state.selectValue;
+  var lastFocusedIndex = lastSelectValue.indexOf(focusedValue);
+
+  if (lastFocusedIndex > -1) {
+    var nextFocusedIndex = nextSelectValue.indexOf(focusedValue);
+
+    if (nextFocusedIndex > -1) {
+      // the focused value is still in the selectValue, return it
+      return focusedValue;
+    } else if (lastFocusedIndex < nextSelectValue.length) {
+      // the focusedValue is not present in the next selectValue array by
+      // reference, so return the new value at the same index
+      return nextSelectValue[lastFocusedIndex];
+    }
+  }
+
+  return null;
+}
+
+function getNextFocusedOption(state, options) {
+  var lastFocusedOption = state.focusedOption;
+  return lastFocusedOption && options.indexOf(lastFocusedOption) > -1 ? lastFocusedOption : options[0];
+}
+
+var getOptionLabel$1 = function getOptionLabel(props, data) {
+  return props.getOptionLabel(data);
+};
+
+var getOptionValue$1 = function getOptionValue(props, data) {
+  return props.getOptionValue(data);
+};
+
+function _isOptionDisabled(props, option, selectValue) {
+  return typeof props.isOptionDisabled === 'function' ? props.isOptionDisabled(option, selectValue) : false;
+}
+
+function _isOptionSelected(props, option, selectValue) {
+  if (selectValue.indexOf(option) > -1) return true;
+
+  if (typeof props.isOptionSelected === 'function') {
+    return props.isOptionSelected(option, selectValue);
+  }
+
+  var candidate = getOptionValue$1(props, option);
+  return selectValue.some(function (i) {
+    return getOptionValue$1(props, i) === candidate;
+  });
+}
+
+function _filterOption(props, option, inputValue) {
+  return props.filterOption ? props.filterOption(option, inputValue) : true;
+}
+
+var shouldHideSelectedOptions = function shouldHideSelectedOptions(props) {
+  var hideSelectedOptions = props.hideSelectedOptions,
+      isMulti = props.isMulti;
+  if (hideSelectedOptions === undefined) return isMulti;
+  return hideSelectedOptions;
+};
+
 var instanceId = 1;
 
-var Select_9fdb8cd0_browser_esm_Select =
-/*#__PURE__*/
-function (_Component) {
-  _inheritsLoose$4(Select, _Component);
+var Select_d53e3329_browser_esm_Select = /*#__PURE__*/function (_Component) {
+  _inherits(Select, _Component);
+
+  var _super = Select_d53e3329_browser_esm_createSuper(Select);
 
   // Misc. Instance Properties
   // ------------------------------
@@ -69113,7 +68687,9 @@ function (_Component) {
   function Select(_props) {
     var _this;
 
-    _this = _Component.call(this, _props) || this;
+    _classCallCheck(this, Select);
+
+    _this = _super.call(this, _props);
     _this.state = {
       ariaLiveSelection: '',
       ariaLiveContext: '',
@@ -69121,21 +68697,16 @@ function (_Component) {
       focusedValue: null,
       inputIsHidden: false,
       isFocused: false,
-      menuOptions: {
-        render: [],
-        focusable: []
-      },
-      selectValue: []
+      selectValue: [],
+      clearFocusValueOnUpdate: false,
+      inputIsHiddenAfterUpdate: undefined,
+      prevProps: undefined
     };
     _this.blockOptionHover = false;
     _this.isComposing = false;
-    _this.clearFocusValueOnUpdate = false;
     _this.commonProps = void 0;
-    _this.components = void 0;
-    _this.hasGroups = false;
     _this.initialTouchX = 0;
     _this.initialTouchY = 0;
-    _this.inputIsHiddenAfterUpdate = void 0;
     _this.instancePrefix = '';
     _this.openAfterFocus = false;
     _this.scrollToFocusedOptionOnUpdate = false;
@@ -69164,12 +68735,6 @@ function (_Component) {
       _this.inputRef = ref;
     };
 
-    _this.cacheComponents = function (components) {
-      _this.components = index_4322c0ed_browser_esm_defaultComponents({
-        components: components
-      });
-    };
-
     _this.focus = _this.focusInput;
     _this.blur = _this.blurInput;
 
@@ -69177,16 +68742,14 @@ function (_Component) {
       var _this$props = _this.props,
           onChange = _this$props.onChange,
           name = _this$props.name;
-      onChange(newValue, Select_9fdb8cd0_browser_esm_extends$4({}, actionMeta, {
+      onChange(newValue, Select_d53e3329_browser_esm_objectSpread$2(Select_d53e3329_browser_esm_objectSpread$2({}, actionMeta), {}, {
         name: name
       }));
     };
 
-    _this.setValue = function (newValue, action, option) {
-      if (action === void 0) {
-        action = 'set-value';
-      }
-
+    _this.setValue = function (newValue) {
+      var action = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'set-value';
+      var option = arguments.length > 2 ? arguments[2] : undefined;
       var _this$props2 = _this.props,
           closeMenuOnSelect = _this$props2.closeMenuOnSelect,
           isMulti = _this$props2.isMulti;
@@ -69196,13 +68759,17 @@ function (_Component) {
       });
 
       if (closeMenuOnSelect) {
-        _this.inputIsHiddenAfterUpdate = !isMulti;
+        _this.setState({
+          inputIsHiddenAfterUpdate: !isMulti
+        });
 
         _this.onMenuClose();
       } // when the select value should change, we should reset focusedValue
 
 
-      _this.clearFocusValueOnUpdate = true;
+      _this.setState({
+        clearFocusValueOnUpdate: true
+      });
 
       _this.onChange(newValue, {
         action: action,
@@ -69232,7 +68799,7 @@ function (_Component) {
           });
         } else {
           if (!_this.isOptionDisabled(newValue, selectValue)) {
-            _this.setValue([].concat(selectValue, [newValue]), 'select-option', newValue);
+            _this.setValue([].concat(_toConsumableArray(selectValue), [newValue]), 'select-option', newValue);
 
             _this.announceAriaLiveSelection({
               event: 'select-option',
@@ -69279,15 +68846,17 @@ function (_Component) {
     };
 
     _this.removeValue = function (removedValue) {
+      var isMulti = _this.props.isMulti;
       var selectValue = _this.state.selectValue;
 
       var candidate = _this.getOptionValue(removedValue);
 
-      var newValue = selectValue.filter(function (i) {
+      var newValueArray = selectValue.filter(function (i) {
         return _this.getOptionValue(i) !== candidate;
       });
+      var newValue = isMulti ? newValueArray : newValueArray.length > 0 ? newValueArray[0] : null;
 
-      _this.onChange(newValue.length ? newValue : null, {
+      _this.onChange(newValue, {
         action: 'remove-value',
         removedValue: removedValue
       });
@@ -69303,17 +68872,17 @@ function (_Component) {
     };
 
     _this.clearValue = function () {
-      var isMulti = _this.props.isMulti;
-
-      _this.onChange(isMulti ? [] : null, {
+      _this.onChange(_this.props.isMulti ? [] : null, {
         action: 'clear'
       });
     };
 
     _this.popValue = function () {
+      var isMulti = _this.props.isMulti;
       var selectValue = _this.state.selectValue;
       var lastSelectedValue = selectValue[selectValue.length - 1];
-      var newValue = selectValue.slice(0, selectValue.length - 1);
+      var newValueArray = selectValue.slice(0, selectValue.length - 1);
+      var newValue = isMulti ? newValueArray : newValueArray.length > 0 ? newValueArray[0] : null;
 
       _this.announceAriaLiveSelection({
         event: 'pop-value',
@@ -69322,18 +68891,30 @@ function (_Component) {
         }
       });
 
-      _this.onChange(newValue.length ? newValue : null, {
+      _this.onChange(newValue, {
         action: 'pop-value',
         removedValue: lastSelectedValue
       });
     };
 
+    _this.getValue = function () {
+      return _this.state.selectValue;
+    };
+
+    _this.cx = function () {
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      return classNames.apply(void 0, [_this.props.classNamePrefix].concat(args));
+    };
+
     _this.getOptionLabel = function (data) {
-      return _this.props.getOptionLabel(data);
+      return getOptionLabel$1(_this.props, data);
     };
 
     _this.getOptionValue = function (data) {
-      return _this.props.getOptionValue(data);
+      return getOptionValue$1(_this.props, data);
     };
 
     _this.getStyles = function (key, props) {
@@ -69344,18 +68925,27 @@ function (_Component) {
     };
 
     _this.getElementId = function (element) {
-      return _this.instancePrefix + "-" + element;
+      return "".concat(_this.instancePrefix, "-").concat(element);
     };
 
-    _this.getActiveDescendentId = function () {
-      var menuIsOpen = _this.props.menuIsOpen;
-      var _this$state = _this.state,
-          menuOptions = _this$state.menuOptions,
-          focusedOption = _this$state.focusedOption;
-      if (!focusedOption || !menuIsOpen) return undefined;
-      var index = menuOptions.focusable.indexOf(focusedOption);
-      var option = menuOptions.render[index];
-      return option && option.key;
+    _this.getComponents = function () {
+      return index_8b64410c_browser_esm_defaultComponents(_this.props);
+    };
+
+    _this.buildCategorizedOptions = function () {
+      return buildCategorizedOptions(_this.props, _this.state.selectValue);
+    };
+
+    _this.getCategorizedOptions = function () {
+      return _this.props.menuIsOpen ? _this.buildCategorizedOptions() : [];
+    };
+
+    _this.buildFocusableOptions = function () {
+      return buildFocusableOptionsFromCategorizedOptions(_this.buildCategorizedOptions());
+    };
+
+    _this.getFocusableOptions = function () {
+      return _this.props.menuIsOpen ? _this.buildFocusableOptions() : [];
     };
 
     _this.announceAriaLiveSelection = function (_ref2) {
@@ -69372,7 +68962,7 @@ function (_Component) {
           context = _ref3.context;
 
       _this.setState({
-        ariaLiveContext: instructionsAriaMessage(event, Select_9fdb8cd0_browser_esm_extends$4({}, context, {
+        ariaLiveContext: instructionsAriaMessage(event, Select_d53e3329_browser_esm_objectSpread$2(Select_d53e3329_browser_esm_objectSpread$2({}, context), {}, {
           label: _this.props['aria-label']
         }))
       });
@@ -69433,7 +69023,9 @@ function (_Component) {
       _this.focusInput();
 
       if (menuIsOpen) {
-        _this.inputIsHiddenAfterUpdate = !isMulti;
+        _this.setState({
+          inputIsHiddenAfterUpdate: !isMulti
+        });
 
         _this.onMenuClose();
       } else {
@@ -69486,7 +69078,7 @@ function (_Component) {
 
     _this.onTouchStart = function (_ref4) {
       var touches = _ref4.touches;
-      var touch = touches.item(0);
+      var touch = touches && touches.item(0);
 
       if (!touch) {
         return;
@@ -69499,7 +69091,7 @@ function (_Component) {
 
     _this.onTouchMove = function (_ref5) {
       var touches = _ref5.touches;
-      var touch = touches.item(0);
+      var touch = touches && touches.item(0);
 
       if (!touch) {
         return;
@@ -69545,13 +69137,18 @@ function (_Component) {
 
     _this.handleInputChange = function (event) {
       var inputValue = event.currentTarget.value;
-      _this.inputIsHiddenAfterUpdate = false;
+
+      _this.setState({
+        inputIsHiddenAfterUpdate: false
+      });
 
       _this.onInputChange(inputValue, {
         action: 'input-change'
       });
 
-      _this.onMenuOpen();
+      if (!_this.props.menuIsOpen) {
+        _this.onMenuOpen();
+      }
     };
 
     _this.onInputFocus = function (event) {
@@ -69563,7 +69160,9 @@ function (_Component) {
         _this.props.onFocus(event);
       }
 
-      _this.inputIsHiddenAfterUpdate = false;
+      _this.setState({
+        inputIsHiddenAfterUpdate: false
+      });
 
       _this.announceAriaLiveContext({
         event: 'input',
@@ -69618,29 +69217,25 @@ function (_Component) {
     };
 
     _this.shouldHideSelectedOptions = function () {
-      var _this$props6 = _this.props,
-          hideSelectedOptions = _this$props6.hideSelectedOptions,
-          isMulti = _this$props6.isMulti;
-      if (hideSelectedOptions === undefined) return isMulti;
-      return hideSelectedOptions;
+      return shouldHideSelectedOptions(_this.props);
     };
 
     _this.onKeyDown = function (event) {
-      var _this$props7 = _this.props,
-          isMulti = _this$props7.isMulti,
-          backspaceRemovesValue = _this$props7.backspaceRemovesValue,
-          escapeClearsValue = _this$props7.escapeClearsValue,
-          inputValue = _this$props7.inputValue,
-          isClearable = _this$props7.isClearable,
-          isDisabled = _this$props7.isDisabled,
-          menuIsOpen = _this$props7.menuIsOpen,
-          onKeyDown = _this$props7.onKeyDown,
-          tabSelectsValue = _this$props7.tabSelectsValue,
-          openMenuOnFocus = _this$props7.openMenuOnFocus;
-      var _this$state2 = _this.state,
-          focusedOption = _this$state2.focusedOption,
-          focusedValue = _this$state2.focusedValue,
-          selectValue = _this$state2.selectValue;
+      var _this$props6 = _this.props,
+          isMulti = _this$props6.isMulti,
+          backspaceRemovesValue = _this$props6.backspaceRemovesValue,
+          escapeClearsValue = _this$props6.escapeClearsValue,
+          inputValue = _this$props6.inputValue,
+          isClearable = _this$props6.isClearable,
+          isDisabled = _this$props6.isDisabled,
+          menuIsOpen = _this$props6.menuIsOpen,
+          onKeyDown = _this$props6.onKeyDown,
+          tabSelectsValue = _this$props6.tabSelectsValue,
+          openMenuOnFocus = _this$props6.openMenuOnFocus;
+      var _this$state = _this.state,
+          focusedOption = _this$state.focusedOption,
+          focusedValue = _this$state.focusedValue,
+          selectValue = _this$state.selectValue;
       if (isDisabled) return;
 
       if (typeof onKeyDown === 'function') {
@@ -69720,7 +69315,9 @@ function (_Component) {
 
         case 'Escape':
           if (menuIsOpen) {
-            _this.inputIsHiddenAfterUpdate = false;
+            _this.setState({
+              inputIsHiddenAfterUpdate: false
+            });
 
             _this.onInputChange('', {
               action: 'menu-close'
@@ -69804,317 +69401,74 @@ function (_Component) {
       event.preventDefault();
     };
 
-    _this.buildMenuOptions = function (props, selectValue) {
-      var _props$inputValue = props.inputValue,
-          inputValue = _props$inputValue === void 0 ? '' : _props$inputValue,
-          options = props.options;
-
-      var toOption = function toOption(option, id) {
-        var isDisabled = _this.isOptionDisabled(option, selectValue);
-
-        var isSelected = _this.isOptionSelected(option, selectValue);
-
-        var label = _this.getOptionLabel(option);
-
-        var value = _this.getOptionValue(option);
-
-        if (_this.shouldHideSelectedOptions() && isSelected || !_this.filterOption({
-          label: label,
-          value: value,
-          data: option
-        }, inputValue)) {
-          return;
-        }
-
-        var onHover = isDisabled ? undefined : function () {
-          return _this.onOptionHover(option);
-        };
-        var onSelect = isDisabled ? undefined : function () {
-          return _this.selectOption(option);
-        };
-        var optionId = _this.getElementId('option') + "-" + id;
-        return {
-          innerProps: {
-            id: optionId,
-            onClick: onSelect,
-            onMouseMove: onHover,
-            onMouseOver: onHover,
-            tabIndex: -1
-          },
-          data: option,
-          isDisabled: isDisabled,
-          isSelected: isSelected,
-          key: optionId,
-          label: label,
-          type: 'option',
-          value: value
-        };
-      };
-
-      return options.reduce(function (acc, item, itemIndex) {
-        if (item.options) {
-          // TODO needs a tidier implementation
-          if (!_this.hasGroups) _this.hasGroups = true;
-          var items = item.options;
-          var children = items.map(function (child, i) {
-            var option = toOption(child, itemIndex + "-" + i);
-            if (option) acc.focusable.push(child);
-            return option;
-          }).filter(Boolean);
-
-          if (children.length) {
-            var groupId = _this.getElementId('group') + "-" + itemIndex;
-            acc.render.push({
-              type: 'group',
-              key: groupId,
-              data: item,
-              options: children
-            });
-          }
-        } else {
-          var option = toOption(item, "" + itemIndex);
-
-          if (option) {
-            acc.render.push(option);
-            acc.focusable.push(item);
-          }
-        }
-
-        return acc;
-      }, {
-        render: [],
-        focusable: []
-      });
-    };
-
-    var _value = _props.value;
-    _this.cacheComponents = memoize_one_esm(_this.cacheComponents, exportedEqual).bind(Select_9fdb8cd0_browser_esm_assertThisInitialized(Select_9fdb8cd0_browser_esm_assertThisInitialized(_this)));
-
-    _this.cacheComponents(_props.components);
-
     _this.instancePrefix = 'react-select-' + (_this.props.instanceId || ++instanceId);
-
-    var _selectValue = cleanValue(_value);
-
-    _this.buildMenuOptions = memoize_one_esm(_this.buildMenuOptions, function (newArgs, lastArgs) {
-      var _ref6 = newArgs,
-          newProps = _ref6[0],
-          newSelectValue = _ref6[1];
-      var _ref7 = lastArgs,
-          lastProps = _ref7[0],
-          lastSelectValue = _ref7[1];
-      return exportedEqual(newSelectValue, lastSelectValue) && exportedEqual(newProps.inputValue, lastProps.inputValue) && exportedEqual(newProps.options, lastProps.options);
-    }).bind(Select_9fdb8cd0_browser_esm_assertThisInitialized(Select_9fdb8cd0_browser_esm_assertThisInitialized(_this)));
-
-    var _menuOptions = _props.menuIsOpen ? _this.buildMenuOptions(_props, _selectValue) : {
-      render: [],
-      focusable: []
-    };
-
-    _this.state.menuOptions = _menuOptions;
-    _this.state.selectValue = _selectValue;
+    _this.state.selectValue = index_8b64410c_browser_esm_cleanValue(_props.value);
     return _this;
   }
 
-  var _proto = Select.prototype;
+  _createClass(Select, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.startListeningComposition();
+      this.startListeningToTouch();
 
-  _proto.componentDidMount = function componentDidMount() {
-    this.startListeningComposition();
-    this.startListeningToTouch();
-
-    if (this.props.closeMenuOnScroll && document && document.addEventListener) {
-      // Listen to all scroll events, and filter them out inside of 'onScroll'
-      document.addEventListener('scroll', this.onScroll, true);
-    }
-
-    if (this.props.autoFocus) {
-      this.focusInput();
-    }
-  };
-
-  _proto.UNSAFE_componentWillReceiveProps = function UNSAFE_componentWillReceiveProps(nextProps) {
-    var _this$props8 = this.props,
-        options = _this$props8.options,
-        value = _this$props8.value,
-        menuIsOpen = _this$props8.menuIsOpen,
-        inputValue = _this$props8.inputValue; // re-cache custom components
-
-    this.cacheComponents(nextProps.components); // rebuild the menu options
-
-    if (nextProps.value !== value || nextProps.options !== options || nextProps.menuIsOpen !== menuIsOpen || nextProps.inputValue !== inputValue) {
-      var selectValue = cleanValue(nextProps.value);
-      var menuOptions = nextProps.menuIsOpen ? this.buildMenuOptions(nextProps, selectValue) : {
-        render: [],
-        focusable: []
-      };
-      var focusedValue = this.getNextFocusedValue(selectValue);
-      var focusedOption = this.getNextFocusedOption(menuOptions.focusable);
-      this.setState({
-        menuOptions: menuOptions,
-        selectValue: selectValue,
-        focusedOption: focusedOption,
-        focusedValue: focusedValue
-      });
-    } // some updates should toggle the state of the input visibility
-
-
-    if (this.inputIsHiddenAfterUpdate != null) {
-      this.setState({
-        inputIsHidden: this.inputIsHiddenAfterUpdate
-      });
-      delete this.inputIsHiddenAfterUpdate;
-    }
-  };
-
-  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
-    var _this$props9 = this.props,
-        isDisabled = _this$props9.isDisabled,
-        menuIsOpen = _this$props9.menuIsOpen;
-    var isFocused = this.state.isFocused;
-
-    if ( // ensure focus is restored correctly when the control becomes enabled
-    isFocused && !isDisabled && prevProps.isDisabled || // ensure focus is on the Input when the menu opens
-    isFocused && menuIsOpen && !prevProps.menuIsOpen) {
-      this.focusInput();
-    } // scroll the focused option into view if necessary
-
-
-    if (this.menuListRef && this.focusedOptionRef && this.scrollToFocusedOptionOnUpdate) {
-      scrollIntoView(this.menuListRef, this.focusedOptionRef);
-      this.scrollToFocusedOptionOnUpdate = false;
-    }
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.stopListeningComposition();
-    this.stopListeningToTouch();
-    document.removeEventListener('scroll', this.onScroll, true);
-  };
-
-  // ==============================
-  // Consumer Handlers
-  // ==============================
-  _proto.onMenuOpen = function onMenuOpen() {
-    this.props.onMenuOpen();
-  };
-
-  _proto.onMenuClose = function onMenuClose() {
-    var _this$props10 = this.props,
-        isSearchable = _this$props10.isSearchable,
-        isMulti = _this$props10.isMulti;
-    this.announceAriaLiveContext({
-      event: 'input',
-      context: {
-        isSearchable: isSearchable,
-        isMulti: isMulti
+      if (this.props.closeMenuOnScroll && document && document.addEventListener) {
+        // Listen to all scroll events, and filter them out inside of 'onScroll'
+        document.addEventListener('scroll', this.onScroll, true);
       }
-    });
-    this.onInputChange('', {
-      action: 'menu-close'
-    });
-    this.props.onMenuClose();
-  };
 
-  _proto.onInputChange = function onInputChange(newValue, actionMeta) {
-    this.props.onInputChange(newValue, actionMeta);
-  } // ==============================
-  // Methods
-  // ==============================
-  ;
-
-  _proto.focusInput = function focusInput() {
-    if (!this.inputRef) return;
-    this.inputRef.focus();
-  };
-
-  _proto.blurInput = function blurInput() {
-    if (!this.inputRef) return;
-    this.inputRef.blur();
-  } // aliased for consumers
-  ;
-
-  _proto.openMenu = function openMenu(focusOption) {
-    var _this2 = this;
-
-    var _this$state3 = this.state,
-        selectValue = _this$state3.selectValue,
-        isFocused = _this$state3.isFocused;
-    var menuOptions = this.buildMenuOptions(this.props, selectValue);
-    var isMulti = this.props.isMulti;
-    var openAtIndex = focusOption === 'first' ? 0 : menuOptions.focusable.length - 1;
-
-    if (!isMulti) {
-      var selectedIndex = menuOptions.focusable.indexOf(selectValue[0]);
-
-      if (selectedIndex > -1) {
-        openAtIndex = selectedIndex;
+      if (this.props.autoFocus) {
+        this.focusInput();
       }
-    } // only scroll if the menu isn't already open
-
-
-    this.scrollToFocusedOptionOnUpdate = !(isFocused && this.menuListRef);
-    this.inputIsHiddenAfterUpdate = false;
-    this.setState({
-      menuOptions: menuOptions,
-      focusedValue: null,
-      focusedOption: menuOptions.focusable[openAtIndex]
-    }, function () {
-      _this2.onMenuOpen();
-
-      _this2.announceAriaLiveContext({
-        event: 'menu'
-      });
-    });
-  };
-
-  _proto.focusValue = function focusValue(direction) {
-    var _this$props11 = this.props,
-        isMulti = _this$props11.isMulti,
-        isSearchable = _this$props11.isSearchable;
-    var _this$state4 = this.state,
-        selectValue = _this$state4.selectValue,
-        focusedValue = _this$state4.focusedValue; // Only multiselects support value focusing
-
-    if (!isMulti) return;
-    this.setState({
-      focusedOption: null
-    });
-    var focusedIndex = selectValue.indexOf(focusedValue);
-
-    if (!focusedValue) {
-      focusedIndex = -1;
-      this.announceAriaLiveContext({
-        event: 'value'
-      });
     }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      var _this$props7 = this.props,
+          isDisabled = _this$props7.isDisabled,
+          menuIsOpen = _this$props7.menuIsOpen;
+      var isFocused = this.state.isFocused;
 
-    var lastIndex = selectValue.length - 1;
-    var nextFocus = -1;
-    if (!selectValue.length) return;
+      if ( // ensure focus is restored correctly when the control becomes enabled
+      isFocused && !isDisabled && prevProps.isDisabled || // ensure focus is on the Input when the menu opens
+      isFocused && menuIsOpen && !prevProps.menuIsOpen) {
+        this.focusInput();
+      }
 
-    switch (direction) {
-      case 'previous':
-        if (focusedIndex === 0) {
-          // don't cycle from the start to the end
-          nextFocus = 0;
-        } else if (focusedIndex === -1) {
-          // if nothing is focused, focus the last value first
-          nextFocus = lastIndex;
-        } else {
-          nextFocus = focusedIndex - 1;
-        }
+      if (isFocused && isDisabled && !prevProps.isDisabled) {
+        // ensure select state gets blurred in case Select is programatically disabled while focused
+        this.setState({
+          isFocused: false
+        }, this.onMenuClose);
+      } // scroll the focused option into view if necessary
 
-        break;
 
-      case 'next':
-        if (focusedIndex > -1 && focusedIndex < lastIndex) {
-          nextFocus = focusedIndex + 1;
-        }
-
-        break;
+      if (this.menuListRef && this.focusedOptionRef && this.scrollToFocusedOptionOnUpdate) {
+        scrollIntoView(this.menuListRef, this.focusedOptionRef);
+        this.scrollToFocusedOptionOnUpdate = false;
+      }
     }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this.stopListeningComposition();
+      this.stopListeningToTouch();
+      document.removeEventListener('scroll', this.onScroll, true);
+    } // ==============================
+    // Consumer Handlers
+    // ==============================
 
-    if (nextFocus === -1) {
+  }, {
+    key: "onMenuOpen",
+    value: function onMenuOpen() {
+      this.props.onMenuOpen();
+    }
+  }, {
+    key: "onMenuClose",
+    value: function onMenuClose() {
+      var _this$props8 = this.props,
+          isSearchable = _this$props8.isSearchable,
+          isMulti = _this$props8.isMulti;
       this.announceAriaLiveContext({
         event: 'input',
         context: {
@@ -70122,748 +69476,947 @@ function (_Component) {
           isMulti: isMulti
         }
       });
+      this.onInputChange('', {
+        action: 'menu-close'
+      });
+      this.props.onMenuClose();
     }
+  }, {
+    key: "onInputChange",
+    value: function onInputChange(newValue, actionMeta) {
+      this.props.onInputChange(newValue, actionMeta);
+    } // ==============================
+    // Methods
+    // ==============================
 
-    this.setState({
-      inputIsHidden: nextFocus !== -1,
-      focusedValue: selectValue[nextFocus]
-    });
-  };
-
-  _proto.focusOption = function focusOption(direction) {
-    if (direction === void 0) {
-      direction = 'first';
+  }, {
+    key: "focusInput",
+    value: function focusInput() {
+      if (!this.inputRef) return;
+      this.inputRef.focus();
     }
+  }, {
+    key: "blurInput",
+    value: function blurInput() {
+      if (!this.inputRef) return;
+      this.inputRef.blur();
+    } // aliased for consumers
 
-    var pageSize = this.props.pageSize;
-    var _this$state5 = this.state,
-        focusedOption = _this$state5.focusedOption,
-        menuOptions = _this$state5.menuOptions;
-    var options = menuOptions.focusable;
-    if (!options.length) return;
-    var nextFocus = 0; // handles 'first'
+  }, {
+    key: "openMenu",
+    value: function openMenu(focusOption) {
+      var _this2 = this;
 
-    var focusedIndex = options.indexOf(focusedOption);
+      var _this$state2 = this.state,
+          selectValue = _this$state2.selectValue,
+          isFocused = _this$state2.isFocused;
+      var focusableOptions = this.buildFocusableOptions();
+      var _this$props9 = this.props,
+          isMulti = _this$props9.isMulti,
+          tabSelectsValue = _this$props9.tabSelectsValue;
+      var openAtIndex = focusOption === 'first' ? 0 : focusableOptions.length - 1;
 
-    if (!focusedOption) {
-      focusedIndex = -1;
+      if (!isMulti) {
+        var selectedIndex = focusableOptions.indexOf(selectValue[0]);
+
+        if (selectedIndex > -1) {
+          openAtIndex = selectedIndex;
+        }
+      } // only scroll if the menu isn't already open
+
+
+      this.scrollToFocusedOptionOnUpdate = !(isFocused && this.menuListRef);
+      this.setState({
+        inputIsHiddenAfterUpdate: false,
+        focusedValue: null,
+        focusedOption: focusableOptions[openAtIndex]
+      }, function () {
+        _this2.onMenuOpen();
+
+        _this2.announceAriaLiveContext({
+          event: 'menu',
+          context: {
+            tabSelectsValue: tabSelectsValue
+          }
+        });
+      });
+    }
+  }, {
+    key: "focusValue",
+    value: function focusValue(direction) {
+      var _this$props10 = this.props,
+          isMulti = _this$props10.isMulti,
+          isSearchable = _this$props10.isSearchable;
+      var _this$state3 = this.state,
+          selectValue = _this$state3.selectValue,
+          focusedValue = _this$state3.focusedValue; // Only multiselects support value focusing
+
+      if (!isMulti) return;
+      this.setState({
+        focusedOption: null
+      });
+      var focusedIndex = selectValue.indexOf(focusedValue);
+
+      if (!focusedValue) {
+        focusedIndex = -1;
+        this.announceAriaLiveContext({
+          event: 'value'
+        });
+      }
+
+      var lastIndex = selectValue.length - 1;
+      var nextFocus = -1;
+      if (!selectValue.length) return;
+
+      switch (direction) {
+        case 'previous':
+          if (focusedIndex === 0) {
+            // don't cycle from the start to the end
+            nextFocus = 0;
+          } else if (focusedIndex === -1) {
+            // if nothing is focused, focus the last value first
+            nextFocus = lastIndex;
+          } else {
+            nextFocus = focusedIndex - 1;
+          }
+
+          break;
+
+        case 'next':
+          if (focusedIndex > -1 && focusedIndex < lastIndex) {
+            nextFocus = focusedIndex + 1;
+          }
+
+          break;
+      }
+
+      if (nextFocus === -1) {
+        this.announceAriaLiveContext({
+          event: 'input',
+          context: {
+            isSearchable: isSearchable,
+            isMulti: isMulti
+          }
+        });
+      }
+
+      this.setState({
+        inputIsHidden: nextFocus !== -1,
+        focusedValue: selectValue[nextFocus]
+      });
+    }
+  }, {
+    key: "focusOption",
+    value: function focusOption() {
+      var direction = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'first';
+      var _this$props11 = this.props,
+          pageSize = _this$props11.pageSize,
+          tabSelectsValue = _this$props11.tabSelectsValue;
+      var _this$state4 = this.state,
+          focusedOption = _this$state4.focusedOption,
+          selectValue = _this$state4.selectValue;
+      var options = this.getFocusableOptions();
+      if (!options.length) return;
+      var nextFocus = 0; // handles 'first'
+
+      var focusedIndex = options.indexOf(focusedOption);
+
+      if (!focusedOption) {
+        focusedIndex = -1;
+        this.announceAriaLiveContext({
+          event: 'menu',
+          context: {
+            tabSelectsValue: tabSelectsValue
+          }
+        });
+      }
+
+      if (direction === 'up') {
+        nextFocus = focusedIndex > 0 ? focusedIndex - 1 : options.length - 1;
+      } else if (direction === 'down') {
+        nextFocus = (focusedIndex + 1) % options.length;
+      } else if (direction === 'pageup') {
+        nextFocus = focusedIndex - pageSize;
+        if (nextFocus < 0) nextFocus = 0;
+      } else if (direction === 'pagedown') {
+        nextFocus = focusedIndex + pageSize;
+        if (nextFocus > options.length - 1) nextFocus = options.length - 1;
+      } else if (direction === 'last') {
+        nextFocus = options.length - 1;
+      }
+
+      this.scrollToFocusedOptionOnUpdate = true;
+      this.setState({
+        focusedOption: options[nextFocus],
+        focusedValue: null
+      });
       this.announceAriaLiveContext({
-        event: 'menu'
-      });
-    }
-
-    if (direction === 'up') {
-      nextFocus = focusedIndex > 0 ? focusedIndex - 1 : options.length - 1;
-    } else if (direction === 'down') {
-      nextFocus = (focusedIndex + 1) % options.length;
-    } else if (direction === 'pageup') {
-      nextFocus = focusedIndex - pageSize;
-      if (nextFocus < 0) nextFocus = 0;
-    } else if (direction === 'pagedown') {
-      nextFocus = focusedIndex + pageSize;
-      if (nextFocus > options.length - 1) nextFocus = options.length - 1;
-    } else if (direction === 'last') {
-      nextFocus = options.length - 1;
-    }
-
-    this.scrollToFocusedOptionOnUpdate = true;
-    this.setState({
-      focusedOption: options[nextFocus],
-      focusedValue: null
-    });
-    this.announceAriaLiveContext({
-      event: 'menu',
-      context: {
-        isDisabled: isOptionDisabled(options[nextFocus])
-      }
-    });
-  };
-
-  // ==============================
-  // Getters
-  // ==============================
-  _proto.getTheme = function getTheme() {
-    // Use the default theme if there are no customizations.
-    if (!this.props.theme) {
-      return Select_9fdb8cd0_browser_esm_defaultTheme;
-    } // If the theme prop is a function, assume the function
-    // knows how to merge the passed-in default theme with
-    // its own modifications.
-
-
-    if (typeof this.props.theme === 'function') {
-      return this.props.theme(Select_9fdb8cd0_browser_esm_defaultTheme);
-    } // Otherwise, if a plain theme object was passed in,
-    // overlay it with the default theme.
-
-
-    return Select_9fdb8cd0_browser_esm_extends$4({}, Select_9fdb8cd0_browser_esm_defaultTheme, this.props.theme);
-  };
-
-  _proto.getCommonProps = function getCommonProps() {
-    var clearValue = this.clearValue,
-        getStyles = this.getStyles,
-        setValue = this.setValue,
-        selectOption = this.selectOption,
-        props = this.props;
-    var classNamePrefix = props.classNamePrefix,
-        isMulti = props.isMulti,
-        isRtl = props.isRtl,
-        options = props.options;
-    var selectValue = this.state.selectValue;
-    var hasValue = this.hasValue();
-
-    var getValue = function getValue() {
-      return selectValue;
-    };
-
-    var cx = classNames.bind(null, classNamePrefix);
-    return {
-      cx: cx,
-      clearValue: clearValue,
-      getStyles: getStyles,
-      getValue: getValue,
-      hasValue: hasValue,
-      isMulti: isMulti,
-      isRtl: isRtl,
-      options: options,
-      selectOption: selectOption,
-      setValue: setValue,
-      selectProps: props,
-      theme: this.getTheme()
-    };
-  };
-
-  _proto.getNextFocusedValue = function getNextFocusedValue(nextSelectValue) {
-    if (this.clearFocusValueOnUpdate) {
-      this.clearFocusValueOnUpdate = false;
-      return null;
-    }
-
-    var _this$state6 = this.state,
-        focusedValue = _this$state6.focusedValue,
-        lastSelectValue = _this$state6.selectValue;
-    var lastFocusedIndex = lastSelectValue.indexOf(focusedValue);
-
-    if (lastFocusedIndex > -1) {
-      var nextFocusedIndex = nextSelectValue.indexOf(focusedValue);
-
-      if (nextFocusedIndex > -1) {
-        // the focused value is still in the selectValue, return it
-        return focusedValue;
-      } else if (lastFocusedIndex < nextSelectValue.length) {
-        // the focusedValue is not present in the next selectValue array by
-        // reference, so return the new value at the same index
-        return nextSelectValue[lastFocusedIndex];
-      }
-    }
-
-    return null;
-  };
-
-  _proto.getNextFocusedOption = function getNextFocusedOption(options) {
-    var lastFocusedOption = this.state.focusedOption;
-    return lastFocusedOption && options.indexOf(lastFocusedOption) > -1 ? lastFocusedOption : options[0];
-  };
-
-  _proto.hasValue = function hasValue() {
-    var selectValue = this.state.selectValue;
-    return selectValue.length > 0;
-  };
-
-  _proto.hasOptions = function hasOptions() {
-    return !!this.state.menuOptions.render.length;
-  };
-
-  _proto.countOptions = function countOptions() {
-    return this.state.menuOptions.focusable.length;
-  };
-
-  _proto.isClearable = function isClearable() {
-    var _this$props12 = this.props,
-        isClearable = _this$props12.isClearable,
-        isMulti = _this$props12.isMulti; // single select, by default, IS NOT clearable
-    // multi select, by default, IS clearable
-
-    if (isClearable === undefined) return isMulti;
-    return isClearable;
-  };
-
-  _proto.isOptionDisabled = function isOptionDisabled(option, selectValue) {
-    return typeof this.props.isOptionDisabled === 'function' ? this.props.isOptionDisabled(option, selectValue) : false;
-  };
-
-  _proto.isOptionSelected = function isOptionSelected(option, selectValue) {
-    var _this3 = this;
-
-    if (selectValue.indexOf(option) > -1) return true;
-
-    if (typeof this.props.isOptionSelected === 'function') {
-      return this.props.isOptionSelected(option, selectValue);
-    }
-
-    var candidate = this.getOptionValue(option);
-    return selectValue.some(function (i) {
-      return _this3.getOptionValue(i) === candidate;
-    });
-  };
-
-  _proto.filterOption = function filterOption(option, inputValue) {
-    return this.props.filterOption ? this.props.filterOption(option, inputValue) : true;
-  };
-
-  _proto.formatOptionLabel = function formatOptionLabel(data, context) {
-    if (typeof this.props.formatOptionLabel === 'function') {
-      var inputValue = this.props.inputValue;
-      var selectValue = this.state.selectValue;
-      return this.props.formatOptionLabel(data, {
-        context: context,
-        inputValue: inputValue,
-        selectValue: selectValue
-      });
-    } else {
-      return this.getOptionLabel(data);
-    }
-  };
-
-  _proto.formatGroupLabel = function formatGroupLabel(data) {
-    return this.props.formatGroupLabel(data);
-  } // ==============================
-  // Mouse Handlers
-  // ==============================
-  ;
-
-  // ==============================
-  // Composition Handlers
-  // ==============================
-  _proto.startListeningComposition = function startListeningComposition() {
-    if (document && document.addEventListener) {
-      document.addEventListener('compositionstart', this.onCompositionStart, false);
-      document.addEventListener('compositionend', this.onCompositionEnd, false);
-    }
-  };
-
-  _proto.stopListeningComposition = function stopListeningComposition() {
-    if (document && document.removeEventListener) {
-      document.removeEventListener('compositionstart', this.onCompositionStart);
-      document.removeEventListener('compositionend', this.onCompositionEnd);
-    }
-  };
-
-  // ==============================
-  // Touch Handlers
-  // ==============================
-  _proto.startListeningToTouch = function startListeningToTouch() {
-    if (document && document.addEventListener) {
-      document.addEventListener('touchstart', this.onTouchStart, false);
-      document.addEventListener('touchmove', this.onTouchMove, false);
-      document.addEventListener('touchend', this.onTouchEnd, false);
-    }
-  };
-
-  _proto.stopListeningToTouch = function stopListeningToTouch() {
-    if (document && document.removeEventListener) {
-      document.removeEventListener('touchstart', this.onTouchStart);
-      document.removeEventListener('touchmove', this.onTouchMove);
-      document.removeEventListener('touchend', this.onTouchEnd);
-    }
-  };
-
-  // ==============================
-  // Renderers
-  // ==============================
-  _proto.constructAriaLiveMessage = function constructAriaLiveMessage() {
-    var _this$state7 = this.state,
-        ariaLiveContext = _this$state7.ariaLiveContext,
-        selectValue = _this$state7.selectValue,
-        focusedValue = _this$state7.focusedValue,
-        focusedOption = _this$state7.focusedOption;
-    var _this$props13 = this.props,
-        options = _this$props13.options,
-        menuIsOpen = _this$props13.menuIsOpen,
-        inputValue = _this$props13.inputValue,
-        screenReaderStatus = _this$props13.screenReaderStatus; // An aria live message representing the currently focused value in the select.
-
-    var focusedValueMsg = focusedValue ? valueFocusAriaMessage({
-      focusedValue: focusedValue,
-      getOptionLabel: this.getOptionLabel,
-      selectValue: selectValue
-    }) : ''; // An aria live message representing the currently focused option in the select.
-
-    var focusedOptionMsg = focusedOption && menuIsOpen ? optionFocusAriaMessage({
-      focusedOption: focusedOption,
-      getOptionLabel: this.getOptionLabel,
-      options: options
-    }) : ''; // An aria live message representing the set of focusable results and current searchterm/inputvalue.
-
-    var resultsMsg = resultsAriaMessage({
-      inputValue: inputValue,
-      screenReaderMessage: screenReaderStatus({
-        count: this.countOptions()
-      })
-    });
-    return focusedValueMsg + " " + focusedOptionMsg + " " + resultsMsg + " " + ariaLiveContext;
-  };
-
-  _proto.renderInput = function renderInput() {
-    var _this$props14 = this.props,
-        isDisabled = _this$props14.isDisabled,
-        isSearchable = _this$props14.isSearchable,
-        inputId = _this$props14.inputId,
-        inputValue = _this$props14.inputValue,
-        tabIndex = _this$props14.tabIndex;
-    var Input = this.components.Input;
-    var inputIsHidden = this.state.inputIsHidden;
-    var id = inputId || this.getElementId('input'); // aria attributes makes the JSX "noisy", separated for clarity
-
-    var ariaAttributes = {
-      'aria-autocomplete': 'list',
-      'aria-label': this.props['aria-label'],
-      'aria-labelledby': this.props['aria-labelledby']
-    };
-
-    if (!isSearchable) {
-      // use a dummy input to maintain focus/blur functionality
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(DummyInput, Select_9fdb8cd0_browser_esm_extends$4({
-        id: id,
-        innerRef: this.getInputRef,
-        onBlur: this.onInputBlur,
-        onChange: utils_06b0d5a4_browser_esm_noop,
-        onFocus: this.onInputFocus,
-        readOnly: true,
-        disabled: isDisabled,
-        tabIndex: tabIndex,
-        value: ""
-      }, ariaAttributes));
-    }
-
-    var _this$commonProps = this.commonProps,
-        cx = _this$commonProps.cx,
-        theme = _this$commonProps.theme,
-        selectProps = _this$commonProps.selectProps;
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Input, Select_9fdb8cd0_browser_esm_extends$4({
-      autoCapitalize: "none",
-      autoComplete: "off",
-      autoCorrect: "off",
-      cx: cx,
-      getStyles: this.getStyles,
-      id: id,
-      innerRef: this.getInputRef,
-      isDisabled: isDisabled,
-      isHidden: inputIsHidden,
-      onBlur: this.onInputBlur,
-      onChange: this.handleInputChange,
-      onFocus: this.onInputFocus,
-      selectProps: selectProps,
-      spellCheck: "false",
-      tabIndex: tabIndex,
-      theme: theme,
-      type: "text",
-      value: inputValue
-    }, ariaAttributes));
-  };
-
-  _proto.renderPlaceholderOrValue = function renderPlaceholderOrValue() {
-    var _this4 = this;
-
-    var _this$components = this.components,
-        MultiValue = _this$components.MultiValue,
-        MultiValueContainer = _this$components.MultiValueContainer,
-        MultiValueLabel = _this$components.MultiValueLabel,
-        MultiValueRemove = _this$components.MultiValueRemove,
-        SingleValue = _this$components.SingleValue,
-        Placeholder = _this$components.Placeholder;
-    var commonProps = this.commonProps;
-    var _this$props15 = this.props,
-        controlShouldRenderValue = _this$props15.controlShouldRenderValue,
-        isDisabled = _this$props15.isDisabled,
-        isMulti = _this$props15.isMulti,
-        inputValue = _this$props15.inputValue,
-        placeholder = _this$props15.placeholder;
-    var _this$state8 = this.state,
-        selectValue = _this$state8.selectValue,
-        focusedValue = _this$state8.focusedValue,
-        isFocused = _this$state8.isFocused;
-
-    if (!this.hasValue() || !controlShouldRenderValue) {
-      return inputValue ? null : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Placeholder, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-        key: "placeholder",
-        isDisabled: isDisabled,
-        isFocused: isFocused
-      }), placeholder);
-    }
-
-    if (isMulti) {
-      var selectValues = selectValue.map(function (opt, index) {
-        var isOptionFocused = opt === focusedValue;
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MultiValue, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-          components: {
-            Container: MultiValueContainer,
-            Label: MultiValueLabel,
-            Remove: MultiValueRemove
-          },
-          isFocused: isOptionFocused,
-          isDisabled: isDisabled,
-          key: _this4.getOptionValue(opt),
-          index: index,
-          removeProps: {
-            onClick: function onClick() {
-              return _this4.removeValue(opt);
-            },
-            onTouchEnd: function onTouchEnd() {
-              return _this4.removeValue(opt);
-            },
-            onMouseDown: function onMouseDown(e) {
-              e.preventDefault();
-              e.stopPropagation();
-            }
-          },
-          data: opt
-        }), _this4.formatOptionLabel(opt, 'value'));
-      });
-      return selectValues;
-    }
-
-    if (inputValue) {
-      return null;
-    }
-
-    var singleValue = selectValue[0];
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SingleValue, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-      data: singleValue,
-      isDisabled: isDisabled
-    }), this.formatOptionLabel(singleValue, 'value'));
-  };
-
-  _proto.renderClearIndicator = function renderClearIndicator() {
-    var ClearIndicator = this.components.ClearIndicator;
-    var commonProps = this.commonProps;
-    var _this$props16 = this.props,
-        isDisabled = _this$props16.isDisabled,
-        isLoading = _this$props16.isLoading;
-    var isFocused = this.state.isFocused;
-
-    if (!this.isClearable() || !ClearIndicator || isDisabled || !this.hasValue() || isLoading) {
-      return null;
-    }
-
-    var innerProps = {
-      onMouseDown: this.onClearIndicatorMouseDown,
-      onTouchEnd: this.onClearIndicatorTouchEnd,
-      'aria-hidden': 'true'
-    };
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ClearIndicator, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-      innerProps: innerProps,
-      isFocused: isFocused
-    }));
-  };
-
-  _proto.renderLoadingIndicator = function renderLoadingIndicator() {
-    var LoadingIndicator = this.components.LoadingIndicator;
-    var commonProps = this.commonProps;
-    var _this$props17 = this.props,
-        isDisabled = _this$props17.isDisabled,
-        isLoading = _this$props17.isLoading;
-    var isFocused = this.state.isFocused;
-    if (!LoadingIndicator || !isLoading) return null;
-    var innerProps = {
-      'aria-hidden': 'true'
-    };
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LoadingIndicator, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-      innerProps: innerProps,
-      isDisabled: isDisabled,
-      isFocused: isFocused
-    }));
-  };
-
-  _proto.renderIndicatorSeparator = function renderIndicatorSeparator() {
-    var _this$components2 = this.components,
-        DropdownIndicator = _this$components2.DropdownIndicator,
-        IndicatorSeparator = _this$components2.IndicatorSeparator; // separator doesn't make sense without the dropdown indicator
-
-    if (!DropdownIndicator || !IndicatorSeparator) return null;
-    var commonProps = this.commonProps;
-    var isDisabled = this.props.isDisabled;
-    var isFocused = this.state.isFocused;
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IndicatorSeparator, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-      isDisabled: isDisabled,
-      isFocused: isFocused
-    }));
-  };
-
-  _proto.renderDropdownIndicator = function renderDropdownIndicator() {
-    var DropdownIndicator = this.components.DropdownIndicator;
-    if (!DropdownIndicator) return null;
-    var commonProps = this.commonProps;
-    var isDisabled = this.props.isDisabled;
-    var isFocused = this.state.isFocused;
-    var innerProps = {
-      onMouseDown: this.onDropdownIndicatorMouseDown,
-      onTouchEnd: this.onDropdownIndicatorTouchEnd,
-      'aria-hidden': 'true'
-    };
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(DropdownIndicator, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-      innerProps: innerProps,
-      isDisabled: isDisabled,
-      isFocused: isFocused
-    }));
-  };
-
-  _proto.renderMenu = function renderMenu() {
-    var _this5 = this;
-
-    var _this$components3 = this.components,
-        Group = _this$components3.Group,
-        GroupHeading = _this$components3.GroupHeading,
-        Menu = _this$components3.Menu,
-        MenuList = _this$components3.MenuList,
-        MenuPortal = _this$components3.MenuPortal,
-        LoadingMessage = _this$components3.LoadingMessage,
-        NoOptionsMessage = _this$components3.NoOptionsMessage,
-        Option = _this$components3.Option;
-    var commonProps = this.commonProps;
-    var _this$state9 = this.state,
-        focusedOption = _this$state9.focusedOption,
-        menuOptions = _this$state9.menuOptions;
-    var _this$props18 = this.props,
-        captureMenuScroll = _this$props18.captureMenuScroll,
-        inputValue = _this$props18.inputValue,
-        isLoading = _this$props18.isLoading,
-        loadingMessage = _this$props18.loadingMessage,
-        minMenuHeight = _this$props18.minMenuHeight,
-        maxMenuHeight = _this$props18.maxMenuHeight,
-        menuIsOpen = _this$props18.menuIsOpen,
-        menuPlacement = _this$props18.menuPlacement,
-        menuPosition = _this$props18.menuPosition,
-        menuPortalTarget = _this$props18.menuPortalTarget,
-        menuShouldBlockScroll = _this$props18.menuShouldBlockScroll,
-        menuShouldScrollIntoView = _this$props18.menuShouldScrollIntoView,
-        noOptionsMessage = _this$props18.noOptionsMessage,
-        onMenuScrollToTop = _this$props18.onMenuScrollToTop,
-        onMenuScrollToBottom = _this$props18.onMenuScrollToBottom;
-    if (!menuIsOpen) return null; // TODO: Internal Option Type here
-
-    var render = function render(props) {
-      // for performance, the menu options in state aren't changed when the
-      // focused option changes so we calculate additional props based on that
-      var isFocused = focusedOption === props.data;
-      props.innerRef = isFocused ? _this5.getFocusedOptionRef : undefined;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Option, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, props, {
-        isFocused: isFocused
-      }), _this5.formatOptionLabel(props.data, 'menu'));
-    };
-
-    var menuUI;
-
-    if (this.hasOptions()) {
-      menuUI = menuOptions.render.map(function (item) {
-        if (item.type === 'group') {
-          var type = item.type,
-              group = Select_9fdb8cd0_browser_esm_objectWithoutPropertiesLoose$2(item, ["type"]);
-
-          var headingId = item.key + "-heading";
-          return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Group, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, group, {
-            Heading: GroupHeading,
-            headingProps: {
-              id: headingId
-            },
-            label: _this5.formatGroupLabel(item.data)
-          }), item.options.map(function (option) {
-            return render(option);
-          }));
-        } else if (item.type === 'option') {
-          return render(item);
+        event: 'menu',
+        context: {
+          isDisabled: this.isOptionDisabled(options[nextFocus], selectValue),
+          tabSelectsValue: tabSelectsValue
         }
       });
-    } else if (isLoading) {
-      var message = loadingMessage({
-        inputValue: inputValue
-      });
-      if (message === null) return null;
-      menuUI = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LoadingMessage, commonProps, message);
-    } else {
-      var _message = noOptionsMessage({
-        inputValue: inputValue
-      });
-
-      if (_message === null) return null;
-      menuUI = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(NoOptionsMessage, commonProps, _message);
     }
+  }, {
+    key: "getTheme",
+    // ==============================
+    // Getters
+    // ==============================
+    value: function getTheme() {
+      // Use the default theme if there are no customizations.
+      if (!this.props.theme) {
+        return Select_d53e3329_browser_esm_defaultTheme;
+      } // If the theme prop is a function, assume the function
+      // knows how to merge the passed-in default theme with
+      // its own modifications.
 
-    var menuPlacementProps = {
-      minMenuHeight: minMenuHeight,
-      maxMenuHeight: maxMenuHeight,
-      menuPlacement: menuPlacement,
-      menuPosition: menuPosition,
-      menuShouldScrollIntoView: menuShouldScrollIntoView
-    };
-    var menuElement = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MenuPlacer, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, menuPlacementProps), function (_ref8) {
-      var ref = _ref8.ref,
-          _ref8$placerProps = _ref8.placerProps,
-          placement = _ref8$placerProps.placement,
-          maxHeight = _ref8$placerProps.maxHeight;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Menu, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, menuPlacementProps, {
-        innerRef: ref,
-        innerProps: {
-          onMouseDown: _this5.onMenuMouseDown,
-          onMouseMove: _this5.onMenuMouseMove
-        },
-        isLoading: isLoading,
-        placement: placement
-      }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ScrollCaptorSwitch, {
-        isEnabled: captureMenuScroll,
-        onTopArrive: onMenuScrollToTop,
-        onBottomArrive: onMenuScrollToBottom
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Select_9fdb8cd0_browser_esm_ScrollBlock, {
-        isEnabled: menuShouldBlockScroll
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MenuList, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-        innerRef: _this5.getMenuListRef,
-        isLoading: isLoading,
-        maxHeight: maxHeight
-      }), menuUI))));
-    }); // positioning behaviour is almost identical for portalled and fixed,
-    // so we use the same component. the actual portalling logic is forked
-    // within the component based on `menuPosition`
 
-    return menuPortalTarget || menuPosition === 'fixed' ? external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MenuPortal, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-      appendTo: menuPortalTarget,
-      controlElement: this.controlRef,
-      menuPlacement: menuPlacement,
-      menuPosition: menuPosition
-    }), menuElement) : menuElement;
-  };
+      if (typeof this.props.theme === 'function') {
+        return this.props.theme(Select_d53e3329_browser_esm_defaultTheme);
+      } // Otherwise, if a plain theme object was passed in,
+      // overlay it with the default theme.
 
-  _proto.renderFormField = function renderFormField() {
-    var _this6 = this;
 
-    var _this$props19 = this.props,
-        delimiter = _this$props19.delimiter,
-        isDisabled = _this$props19.isDisabled,
-        isMulti = _this$props19.isMulti,
-        name = _this$props19.name;
-    var selectValue = this.state.selectValue;
-    if (!name || isDisabled) return;
+      return Select_d53e3329_browser_esm_objectSpread$2(Select_d53e3329_browser_esm_objectSpread$2({}, Select_d53e3329_browser_esm_defaultTheme), this.props.theme);
+    }
+  }, {
+    key: "getCommonProps",
+    value: function getCommonProps() {
+      var clearValue = this.clearValue,
+          cx = this.cx,
+          getStyles = this.getStyles,
+          getValue = this.getValue,
+          setValue = this.setValue,
+          selectOption = this.selectOption,
+          props = this.props;
+      var isMulti = props.isMulti,
+          isRtl = props.isRtl,
+          options = props.options;
+      var hasValue = this.hasValue();
+      return {
+        cx: cx,
+        clearValue: clearValue,
+        getStyles: getStyles,
+        getValue: getValue,
+        hasValue: hasValue,
+        isMulti: isMulti,
+        isRtl: isRtl,
+        options: options,
+        selectOption: selectOption,
+        setValue: setValue,
+        selectProps: props,
+        theme: this.getTheme()
+      };
+    }
+  }, {
+    key: "hasValue",
+    value: function hasValue() {
+      var selectValue = this.state.selectValue;
+      return selectValue.length > 0;
+    }
+  }, {
+    key: "hasOptions",
+    value: function hasOptions() {
+      return !!this.getFocusableOptions().length;
+    }
+  }, {
+    key: "countOptions",
+    value: function countOptions() {
+      return this.getFocusableOptions().length;
+    }
+  }, {
+    key: "isClearable",
+    value: function isClearable() {
+      var _this$props12 = this.props,
+          isClearable = _this$props12.isClearable,
+          isMulti = _this$props12.isMulti; // single select, by default, IS NOT clearable
+      // multi select, by default, IS clearable
 
-    if (isMulti) {
-      if (delimiter) {
-        var value = selectValue.map(function (opt) {
-          return _this6.getOptionValue(opt);
-        }).join(delimiter);
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
-          name: name,
-          type: "hidden",
-          value: value
+      if (isClearable === undefined) return isMulti;
+      return isClearable;
+    }
+  }, {
+    key: "isOptionDisabled",
+    value: function isOptionDisabled(option, selectValue) {
+      return _isOptionDisabled(this.props, option, selectValue);
+    }
+  }, {
+    key: "isOptionSelected",
+    value: function isOptionSelected(option, selectValue) {
+      return _isOptionSelected(this.props, option, selectValue);
+    }
+  }, {
+    key: "filterOption",
+    value: function filterOption(option, inputValue) {
+      return _filterOption(this.props, option, inputValue);
+    }
+  }, {
+    key: "formatOptionLabel",
+    value: function formatOptionLabel(data, context) {
+      if (typeof this.props.formatOptionLabel === 'function') {
+        var inputValue = this.props.inputValue;
+        var selectValue = this.state.selectValue;
+        return this.props.formatOptionLabel(data, {
+          context: context,
+          inputValue: inputValue,
+          selectValue: selectValue
         });
       } else {
-        var input = selectValue.length > 0 ? selectValue.map(function (opt, i) {
-          return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
-            key: "i-" + i,
+        return this.getOptionLabel(data);
+      }
+    }
+  }, {
+    key: "formatGroupLabel",
+    value: function formatGroupLabel(data) {
+      return this.props.formatGroupLabel(data);
+    } // ==============================
+    // Mouse Handlers
+    // ==============================
+
+  }, {
+    key: "startListeningComposition",
+    // ==============================
+    // Composition Handlers
+    // ==============================
+    value: function startListeningComposition() {
+      if (document && document.addEventListener) {
+        document.addEventListener('compositionstart', this.onCompositionStart, false);
+        document.addEventListener('compositionend', this.onCompositionEnd, false);
+      }
+    }
+  }, {
+    key: "stopListeningComposition",
+    value: function stopListeningComposition() {
+      if (document && document.removeEventListener) {
+        document.removeEventListener('compositionstart', this.onCompositionStart);
+        document.removeEventListener('compositionend', this.onCompositionEnd);
+      }
+    }
+  }, {
+    key: "startListeningToTouch",
+    // ==============================
+    // Touch Handlers
+    // ==============================
+    value: function startListeningToTouch() {
+      if (document && document.addEventListener) {
+        document.addEventListener('touchstart', this.onTouchStart, false);
+        document.addEventListener('touchmove', this.onTouchMove, false);
+        document.addEventListener('touchend', this.onTouchEnd, false);
+      }
+    }
+  }, {
+    key: "stopListeningToTouch",
+    value: function stopListeningToTouch() {
+      if (document && document.removeEventListener) {
+        document.removeEventListener('touchstart', this.onTouchStart);
+        document.removeEventListener('touchmove', this.onTouchMove);
+        document.removeEventListener('touchend', this.onTouchEnd);
+      }
+    }
+  }, {
+    key: "constructAriaLiveMessage",
+    // ==============================
+    // Renderers
+    // ==============================
+    value: function constructAriaLiveMessage() {
+      var _this$state5 = this.state,
+          ariaLiveContext = _this$state5.ariaLiveContext,
+          selectValue = _this$state5.selectValue,
+          focusedValue = _this$state5.focusedValue,
+          focusedOption = _this$state5.focusedOption;
+      var _this$props13 = this.props,
+          options = _this$props13.options,
+          menuIsOpen = _this$props13.menuIsOpen,
+          inputValue = _this$props13.inputValue,
+          screenReaderStatus = _this$props13.screenReaderStatus; // An aria live message representing the currently focused value in the select.
+
+      var focusedValueMsg = focusedValue ? valueFocusAriaMessage({
+        focusedValue: focusedValue,
+        getOptionLabel: this.getOptionLabel,
+        selectValue: selectValue
+      }) : ''; // An aria live message representing the currently focused option in the select.
+
+      var focusedOptionMsg = focusedOption && menuIsOpen ? optionFocusAriaMessage({
+        focusedOption: focusedOption,
+        getOptionLabel: this.getOptionLabel,
+        options: options
+      }) : ''; // An aria live message representing the set of focusable results and current searchterm/inputvalue.
+
+      var resultsMsg = resultsAriaMessage({
+        inputValue: inputValue,
+        screenReaderMessage: screenReaderStatus({
+          count: this.countOptions()
+        })
+      });
+      return "".concat(focusedValueMsg, " ").concat(focusedOptionMsg, " ").concat(resultsMsg, " ").concat(ariaLiveContext);
+    }
+  }, {
+    key: "renderInput",
+    value: function renderInput() {
+      var _this$props14 = this.props,
+          isDisabled = _this$props14.isDisabled,
+          isSearchable = _this$props14.isSearchable,
+          inputId = _this$props14.inputId,
+          inputValue = _this$props14.inputValue,
+          tabIndex = _this$props14.tabIndex,
+          form = _this$props14.form;
+
+      var _this$getComponents = this.getComponents(),
+          Input = _this$getComponents.Input;
+
+      var inputIsHidden = this.state.inputIsHidden;
+      var id = inputId || this.getElementId('input'); // aria attributes makes the JSX "noisy", separated for clarity
+
+      var ariaAttributes = {
+        'aria-autocomplete': 'list',
+        'aria-label': this.props['aria-label'],
+        'aria-labelledby': this.props['aria-labelledby']
+      };
+
+      if (!isSearchable) {
+        // use a dummy input to maintain focus/blur functionality
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(DummyInput, _extends({
+          id: id,
+          innerRef: this.getInputRef,
+          onBlur: this.onInputBlur,
+          onChange: index_8b64410c_browser_esm_noop,
+          onFocus: this.onInputFocus,
+          readOnly: true,
+          disabled: isDisabled,
+          tabIndex: tabIndex,
+          form: form,
+          value: ""
+        }, ariaAttributes));
+      }
+
+      var _this$commonProps = this.commonProps,
+          cx = _this$commonProps.cx,
+          theme = _this$commonProps.theme,
+          selectProps = _this$commonProps.selectProps;
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Input, _extends({
+        autoCapitalize: "none",
+        autoComplete: "off",
+        autoCorrect: "off",
+        cx: cx,
+        getStyles: this.getStyles,
+        id: id,
+        innerRef: this.getInputRef,
+        isDisabled: isDisabled,
+        isHidden: inputIsHidden,
+        onBlur: this.onInputBlur,
+        onChange: this.handleInputChange,
+        onFocus: this.onInputFocus,
+        selectProps: selectProps,
+        spellCheck: "false",
+        tabIndex: tabIndex,
+        form: form,
+        theme: theme,
+        type: "text",
+        value: inputValue
+      }, ariaAttributes));
+    }
+  }, {
+    key: "renderPlaceholderOrValue",
+    value: function renderPlaceholderOrValue() {
+      var _this3 = this;
+
+      var _this$getComponents2 = this.getComponents(),
+          MultiValue = _this$getComponents2.MultiValue,
+          MultiValueContainer = _this$getComponents2.MultiValueContainer,
+          MultiValueLabel = _this$getComponents2.MultiValueLabel,
+          MultiValueRemove = _this$getComponents2.MultiValueRemove,
+          SingleValue = _this$getComponents2.SingleValue,
+          Placeholder = _this$getComponents2.Placeholder;
+
+      var commonProps = this.commonProps;
+      var _this$props15 = this.props,
+          controlShouldRenderValue = _this$props15.controlShouldRenderValue,
+          isDisabled = _this$props15.isDisabled,
+          isMulti = _this$props15.isMulti,
+          inputValue = _this$props15.inputValue,
+          placeholder = _this$props15.placeholder;
+      var _this$state6 = this.state,
+          selectValue = _this$state6.selectValue,
+          focusedValue = _this$state6.focusedValue,
+          isFocused = _this$state6.isFocused;
+
+      if (!this.hasValue() || !controlShouldRenderValue) {
+        return inputValue ? null : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Placeholder, _extends({}, commonProps, {
+          key: "placeholder",
+          isDisabled: isDisabled,
+          isFocused: isFocused
+        }), placeholder);
+      }
+
+      if (isMulti) {
+        var selectValues = selectValue.map(function (opt, index) {
+          var isOptionFocused = opt === focusedValue;
+          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MultiValue, _extends({}, commonProps, {
+            components: {
+              Container: MultiValueContainer,
+              Label: MultiValueLabel,
+              Remove: MultiValueRemove
+            },
+            isFocused: isOptionFocused,
+            isDisabled: isDisabled,
+            key: "".concat(_this3.getOptionValue(opt)).concat(index),
+            index: index,
+            removeProps: {
+              onClick: function onClick() {
+                return _this3.removeValue(opt);
+              },
+              onTouchEnd: function onTouchEnd() {
+                return _this3.removeValue(opt);
+              },
+              onMouseDown: function onMouseDown(e) {
+                e.preventDefault();
+                e.stopPropagation();
+              }
+            },
+            data: opt
+          }), _this3.formatOptionLabel(opt, 'value'));
+        });
+        return selectValues;
+      }
+
+      if (inputValue) {
+        return null;
+      }
+
+      var singleValue = selectValue[0];
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SingleValue, _extends({}, commonProps, {
+        data: singleValue,
+        isDisabled: isDisabled
+      }), this.formatOptionLabel(singleValue, 'value'));
+    }
+  }, {
+    key: "renderClearIndicator",
+    value: function renderClearIndicator() {
+      var _this$getComponents3 = this.getComponents(),
+          ClearIndicator = _this$getComponents3.ClearIndicator;
+
+      var commonProps = this.commonProps;
+      var _this$props16 = this.props,
+          isDisabled = _this$props16.isDisabled,
+          isLoading = _this$props16.isLoading;
+      var isFocused = this.state.isFocused;
+
+      if (!this.isClearable() || !ClearIndicator || isDisabled || !this.hasValue() || isLoading) {
+        return null;
+      }
+
+      var innerProps = {
+        onMouseDown: this.onClearIndicatorMouseDown,
+        onTouchEnd: this.onClearIndicatorTouchEnd,
+        'aria-hidden': 'true'
+      };
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ClearIndicator, _extends({}, commonProps, {
+        innerProps: innerProps,
+        isFocused: isFocused
+      }));
+    }
+  }, {
+    key: "renderLoadingIndicator",
+    value: function renderLoadingIndicator() {
+      var _this$getComponents4 = this.getComponents(),
+          LoadingIndicator = _this$getComponents4.LoadingIndicator;
+
+      var commonProps = this.commonProps;
+      var _this$props17 = this.props,
+          isDisabled = _this$props17.isDisabled,
+          isLoading = _this$props17.isLoading;
+      var isFocused = this.state.isFocused;
+      if (!LoadingIndicator || !isLoading) return null;
+      var innerProps = {
+        'aria-hidden': 'true'
+      };
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LoadingIndicator, _extends({}, commonProps, {
+        innerProps: innerProps,
+        isDisabled: isDisabled,
+        isFocused: isFocused
+      }));
+    }
+  }, {
+    key: "renderIndicatorSeparator",
+    value: function renderIndicatorSeparator() {
+      var _this$getComponents5 = this.getComponents(),
+          DropdownIndicator = _this$getComponents5.DropdownIndicator,
+          IndicatorSeparator = _this$getComponents5.IndicatorSeparator; // separator doesn't make sense without the dropdown indicator
+
+
+      if (!DropdownIndicator || !IndicatorSeparator) return null;
+      var commonProps = this.commonProps;
+      var isDisabled = this.props.isDisabled;
+      var isFocused = this.state.isFocused;
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IndicatorSeparator, _extends({}, commonProps, {
+        isDisabled: isDisabled,
+        isFocused: isFocused
+      }));
+    }
+  }, {
+    key: "renderDropdownIndicator",
+    value: function renderDropdownIndicator() {
+      var _this$getComponents6 = this.getComponents(),
+          DropdownIndicator = _this$getComponents6.DropdownIndicator;
+
+      if (!DropdownIndicator) return null;
+      var commonProps = this.commonProps;
+      var isDisabled = this.props.isDisabled;
+      var isFocused = this.state.isFocused;
+      var innerProps = {
+        onMouseDown: this.onDropdownIndicatorMouseDown,
+        onTouchEnd: this.onDropdownIndicatorTouchEnd,
+        'aria-hidden': 'true'
+      };
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(DropdownIndicator, _extends({}, commonProps, {
+        innerProps: innerProps,
+        isDisabled: isDisabled,
+        isFocused: isFocused
+      }));
+    }
+  }, {
+    key: "renderMenu",
+    value: function renderMenu() {
+      var _this4 = this;
+
+      var _this$getComponents7 = this.getComponents(),
+          Group = _this$getComponents7.Group,
+          GroupHeading = _this$getComponents7.GroupHeading,
+          Menu = _this$getComponents7.Menu,
+          MenuList = _this$getComponents7.MenuList,
+          MenuPortal = _this$getComponents7.MenuPortal,
+          LoadingMessage = _this$getComponents7.LoadingMessage,
+          NoOptionsMessage = _this$getComponents7.NoOptionsMessage,
+          Option = _this$getComponents7.Option;
+
+      var commonProps = this.commonProps;
+      var focusedOption = this.state.focusedOption;
+      var _this$props18 = this.props,
+          captureMenuScroll = _this$props18.captureMenuScroll,
+          inputValue = _this$props18.inputValue,
+          isLoading = _this$props18.isLoading,
+          loadingMessage = _this$props18.loadingMessage,
+          minMenuHeight = _this$props18.minMenuHeight,
+          maxMenuHeight = _this$props18.maxMenuHeight,
+          menuIsOpen = _this$props18.menuIsOpen,
+          menuPlacement = _this$props18.menuPlacement,
+          menuPosition = _this$props18.menuPosition,
+          menuPortalTarget = _this$props18.menuPortalTarget,
+          menuShouldBlockScroll = _this$props18.menuShouldBlockScroll,
+          menuShouldScrollIntoView = _this$props18.menuShouldScrollIntoView,
+          noOptionsMessage = _this$props18.noOptionsMessage,
+          onMenuScrollToTop = _this$props18.onMenuScrollToTop,
+          onMenuScrollToBottom = _this$props18.onMenuScrollToBottom;
+      if (!menuIsOpen) return null; // TODO: Internal Option Type here
+
+      var render = function render(props, id) {
+        var type = props.type,
+            data = props.data,
+            isDisabled = props.isDisabled,
+            isSelected = props.isSelected,
+            label = props.label,
+            value = props.value;
+        var isFocused = focusedOption === data;
+        var onHover = isDisabled ? undefined : function () {
+          return _this4.onOptionHover(data);
+        };
+        var onSelect = isDisabled ? undefined : function () {
+          return _this4.selectOption(data);
+        };
+        var optionId = "".concat(_this4.getElementId('option'), "-").concat(id);
+        var innerProps = {
+          id: optionId,
+          onClick: onSelect,
+          onMouseMove: onHover,
+          onMouseOver: onHover,
+          tabIndex: -1
+        };
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Option, _extends({}, commonProps, {
+          innerProps: innerProps,
+          data: data,
+          isDisabled: isDisabled,
+          isSelected: isSelected,
+          key: optionId,
+          label: label,
+          type: type,
+          value: value,
+          isFocused: isFocused,
+          innerRef: isFocused ? _this4.getFocusedOptionRef : undefined
+        }), _this4.formatOptionLabel(props.data, 'menu'));
+      };
+
+      var menuUI;
+
+      if (this.hasOptions()) {
+        menuUI = this.getCategorizedOptions().map(function (item) {
+          if (item.type === 'group') {
+            var data = item.data,
+                options = item.options,
+                groupIndex = item.index;
+            var groupId = "".concat(_this4.getElementId('group'), "-").concat(groupIndex);
+            var headingId = "".concat(groupId, "-heading");
+            return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Group, _extends({}, commonProps, {
+              key: groupId,
+              data: data,
+              options: options,
+              Heading: GroupHeading,
+              headingProps: {
+                id: headingId,
+                data: item.data
+              },
+              label: _this4.formatGroupLabel(item.data)
+            }), item.options.map(function (option) {
+              return render(option, "".concat(groupIndex, "-").concat(option.index));
+            }));
+          } else if (item.type === 'option') {
+            return render(item, "".concat(item.index));
+          }
+        });
+      } else if (isLoading) {
+        var message = loadingMessage({
+          inputValue: inputValue
+        });
+        if (message === null) return null;
+        menuUI = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LoadingMessage, commonProps, message);
+      } else {
+        var _message = noOptionsMessage({
+          inputValue: inputValue
+        });
+
+        if (_message === null) return null;
+        menuUI = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(NoOptionsMessage, commonProps, _message);
+      }
+
+      var menuPlacementProps = {
+        minMenuHeight: minMenuHeight,
+        maxMenuHeight: maxMenuHeight,
+        menuPlacement: menuPlacement,
+        menuPosition: menuPosition,
+        menuShouldScrollIntoView: menuShouldScrollIntoView
+      };
+      var menuElement = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(index_8b64410c_browser_esm_MenuPlacer, _extends({}, commonProps, menuPlacementProps), function (_ref6) {
+        var ref = _ref6.ref,
+            _ref6$placerProps = _ref6.placerProps,
+            placement = _ref6$placerProps.placement,
+            maxHeight = _ref6$placerProps.maxHeight;
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Menu, _extends({}, commonProps, menuPlacementProps, {
+          innerRef: ref,
+          innerProps: {
+            onMouseDown: _this4.onMenuMouseDown,
+            onMouseMove: _this4.onMenuMouseMove
+          },
+          isLoading: isLoading,
+          placement: placement
+        }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ScrollManager, {
+          captureEnabled: captureMenuScroll,
+          onTopArrive: onMenuScrollToTop,
+          onBottomArrive: onMenuScrollToBottom,
+          lockEnabled: menuShouldBlockScroll
+        }, function (scrollTargetRef) {
+          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MenuList, _extends({}, commonProps, {
+            innerRef: function innerRef(instance) {
+              _this4.getMenuListRef(instance);
+
+              scrollTargetRef(instance);
+            },
+            isLoading: isLoading,
+            maxHeight: maxHeight
+          }), menuUI);
+        }));
+      }); // positioning behaviour is almost identical for portalled and fixed,
+      // so we use the same component. the actual portalling logic is forked
+      // within the component based on `menuPosition`
+
+      return menuPortalTarget || menuPosition === 'fixed' ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(MenuPortal, _extends({}, commonProps, {
+        appendTo: menuPortalTarget,
+        controlElement: this.controlRef,
+        menuPlacement: menuPlacement,
+        menuPosition: menuPosition
+      }), menuElement) : menuElement;
+    }
+  }, {
+    key: "renderFormField",
+    value: function renderFormField() {
+      var _this5 = this;
+
+      var _this$props19 = this.props,
+          delimiter = _this$props19.delimiter,
+          isDisabled = _this$props19.isDisabled,
+          isMulti = _this$props19.isMulti,
+          name = _this$props19.name;
+      var selectValue = this.state.selectValue;
+      if (!name || isDisabled) return;
+
+      if (isMulti) {
+        if (delimiter) {
+          var value = selectValue.map(function (opt) {
+            return _this5.getOptionValue(opt);
+          }).join(delimiter);
+          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
             name: name,
             type: "hidden",
-            value: _this6.getOptionValue(opt)
+            value: value
           });
-        }) : external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
-          name: name,
-          type: "hidden"
-        });
-        return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, input);
-      }
-    } else {
-      var _value2 = selectValue[0] ? this.getOptionValue(selectValue[0]) : '';
+        } else {
+          var input = selectValue.length > 0 ? selectValue.map(function (opt, i) {
+            return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
+              key: "i-".concat(i),
+              name: name,
+              type: "hidden",
+              value: _this5.getOptionValue(opt)
+            });
+          }) : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
+            name: name,
+            type: "hidden"
+          });
+          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, input);
+        }
+      } else {
+        var _value = selectValue[0] ? this.getOptionValue(selectValue[0]) : '';
 
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
-        name: name,
-        type: "hidden",
-        value: _value2
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("input", {
+          name: name,
+          type: "hidden",
+          value: _value
+        });
+      }
+    }
+  }, {
+    key: "renderLiveRegion",
+    value: function renderLiveRegion() {
+      if (!this.state.isFocused) return null;
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Select_d53e3329_browser_esm_A11yText, {
+        "aria-live": "polite"
+      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+        id: "aria-selection-event"
+      }, "\xA0", this.state.ariaLiveSelection), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
+        id: "aria-context"
+      }, "\xA0", this.constructAriaLiveMessage()));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$getComponents8 = this.getComponents(),
+          Control = _this$getComponents8.Control,
+          IndicatorsContainer = _this$getComponents8.IndicatorsContainer,
+          SelectContainer = _this$getComponents8.SelectContainer,
+          ValueContainer = _this$getComponents8.ValueContainer;
+
+      var _this$props20 = this.props,
+          className = _this$props20.className,
+          id = _this$props20.id,
+          isDisabled = _this$props20.isDisabled,
+          menuIsOpen = _this$props20.menuIsOpen;
+      var isFocused = this.state.isFocused;
+      var commonProps = this.commonProps = this.getCommonProps();
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SelectContainer, _extends({}, commonProps, {
+        className: className,
+        innerProps: {
+          id: id,
+          onKeyDown: this.onKeyDown
+        },
+        isDisabled: isDisabled,
+        isFocused: isFocused
+      }), this.renderLiveRegion(), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Control, _extends({}, commonProps, {
+        innerRef: this.getControlRef,
+        innerProps: {
+          onMouseDown: this.onControlMouseDown,
+          onTouchEnd: this.onControlTouchEnd
+        },
+        isDisabled: isDisabled,
+        isFocused: isFocused,
+        menuIsOpen: menuIsOpen
+      }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ValueContainer, _extends({}, commonProps, {
+        isDisabled: isDisabled
+      }), this.renderPlaceholderOrValue(), this.renderInput()), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IndicatorsContainer, _extends({}, commonProps, {
+        isDisabled: isDisabled
+      }), this.renderClearIndicator(), this.renderLoadingIndicator(), this.renderIndicatorSeparator(), this.renderDropdownIndicator())), this.renderMenu(), this.renderFormField());
+    }
+  }], [{
+    key: "getDerivedStateFromProps",
+    value: function getDerivedStateFromProps(props, state) {
+      var prevProps = state.prevProps,
+          clearFocusValueOnUpdate = state.clearFocusValueOnUpdate,
+          inputIsHiddenAfterUpdate = state.inputIsHiddenAfterUpdate;
+      var options = props.options,
+          value = props.value,
+          menuIsOpen = props.menuIsOpen,
+          inputValue = props.inputValue;
+      var newMenuOptionsState = {};
+
+      if (prevProps && (value !== prevProps.value || options !== prevProps.options || menuIsOpen !== prevProps.menuIsOpen || inputValue !== prevProps.inputValue)) {
+        var selectValue = index_8b64410c_browser_esm_cleanValue(value);
+        var focusableOptions = menuIsOpen ? buildFocusableOptions(props, selectValue) : [];
+        var focusedValue = clearFocusValueOnUpdate ? getNextFocusedValue(state, selectValue) : null;
+        var focusedOption = getNextFocusedOption(state, focusableOptions);
+        newMenuOptionsState = {
+          selectValue: selectValue,
+          focusedOption: focusedOption,
+          focusedValue: focusedValue,
+          clearFocusValueOnUpdate: false
+        };
+      } // some updates should toggle the state of the input visibility
+
+
+      var newInputIsHiddenState = inputIsHiddenAfterUpdate != null && props !== prevProps ? {
+        inputIsHidden: inputIsHiddenAfterUpdate,
+        inputIsHiddenAfterUpdate: undefined
+      } : {};
+      return Select_d53e3329_browser_esm_objectSpread$2(Select_d53e3329_browser_esm_objectSpread$2(Select_d53e3329_browser_esm_objectSpread$2({}, newMenuOptionsState), newInputIsHiddenState), {}, {
+        prevProps: props
       });
     }
-  };
-
-  _proto.renderLiveRegion = function renderLiveRegion() {
-    if (!this.state.isFocused) return null;
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Select_9fdb8cd0_browser_esm_A11yText, {
-      "aria-live": "polite"
-    }, external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", {
-      id: "aria-selection-event"
-    }, "\xA0", this.state.ariaLiveSelection), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("p", {
-      id: "aria-context"
-    }, "\xA0", this.constructAriaLiveMessage()));
-  };
-
-  _proto.render = function render() {
-    var _this$components4 = this.components,
-        Control = _this$components4.Control,
-        IndicatorsContainer = _this$components4.IndicatorsContainer,
-        SelectContainer = _this$components4.SelectContainer,
-        ValueContainer = _this$components4.ValueContainer;
-    var _this$props20 = this.props,
-        className = _this$props20.className,
-        id = _this$props20.id,
-        isDisabled = _this$props20.isDisabled,
-        menuIsOpen = _this$props20.menuIsOpen;
-    var isFocused = this.state.isFocused;
-    var commonProps = this.commonProps = this.getCommonProps();
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SelectContainer, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-      className: className,
-      innerProps: {
-        id: id,
-        onKeyDown: this.onKeyDown
-      },
-      isDisabled: isDisabled,
-      isFocused: isFocused
-    }), this.renderLiveRegion(), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Control, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-      innerRef: this.getControlRef,
-      innerProps: {
-        onMouseDown: this.onControlMouseDown,
-        onTouchEnd: this.onControlTouchEnd
-      },
-      isDisabled: isDisabled,
-      isFocused: isFocused,
-      menuIsOpen: menuIsOpen
-    }), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ValueContainer, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-      isDisabled: isDisabled
-    }), this.renderPlaceholderOrValue(), this.renderInput()), external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(IndicatorsContainer, Select_9fdb8cd0_browser_esm_extends$4({}, commonProps, {
-      isDisabled: isDisabled
-    }), this.renderClearIndicator(), this.renderLoadingIndicator(), this.renderIndicatorSeparator(), this.renderDropdownIndicator())), this.renderMenu(), this.renderFormField());
-  };
+  }]);
 
   return Select;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
 
-Select_9fdb8cd0_browser_esm_Select.defaultProps = Select_9fdb8cd0_browser_esm_defaultProps;
+Select_d53e3329_browser_esm_Select.defaultProps = Select_d53e3329_browser_esm_defaultProps;
 
 
 
-// CONCATENATED MODULE: ./node_modules/react-select/dist/stateManager-04f734a2.browser.esm.js
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/typeof.js
+var helpers_typeof = __webpack_require__(43);
+var typeof_default = /*#__PURE__*/__webpack_require__.n(helpers_typeof);
+
+// CONCATENATED MODULE: ./node_modules/react-select/dist/stateManager-66a21f68.browser.esm.js
 
 
-function stateManager_04f734a2_browser_esm_extends() { stateManager_04f734a2_browser_esm_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return stateManager_04f734a2_browser_esm_extends.apply(this, arguments); }
 
-function stateManager_04f734a2_browser_esm_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-function stateManager_04f734a2_browser_esm_inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
-var stateManager_04f734a2_browser_esm_defaultProps = {
+
+
+
+
+
+function stateManager_66a21f68_browser_esm_createSuper(Derived) { var hasNativeReflectConstruct = stateManager_66a21f68_browser_esm_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function stateManager_66a21f68_browser_esm_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+var stateManager_66a21f68_browser_esm_defaultProps = {
   defaultInputValue: '',
   defaultMenuIsOpen: false,
   defaultValue: null
 };
 
-var stateManager_04f734a2_browser_esm_manageState = function manageState(SelectComponent) {
+var stateManager_66a21f68_browser_esm_manageState = function manageState(SelectComponent) {
   var _class, _temp;
 
-  return _temp = _class =
-  /*#__PURE__*/
-  function (_Component) {
-    stateManager_04f734a2_browser_esm_inheritsLoose(StateManager, _Component);
+  return _temp = _class = /*#__PURE__*/function (_Component) {
+    _inherits(StateManager, _Component);
+
+    var _super = stateManager_66a21f68_browser_esm_createSuper(StateManager);
 
     function StateManager() {
       var _this;
+
+      _classCallCheck(this, StateManager);
 
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
 
-      _this = _Component.call.apply(_Component, [this].concat(args)) || this;
+      _this = _super.call.apply(_super, [this].concat(args));
       _this.select = void 0;
       _this.state = {
         inputValue: _this.props.inputValue !== undefined ? _this.props.inputValue : _this.props.defaultInputValue,
@@ -70908,62 +70461,508 @@ var stateManager_04f734a2_browser_esm_manageState = function manageState(SelectC
       return _this;
     }
 
-    var _proto = StateManager.prototype;
-
-    _proto.focus = function focus() {
-      this.select.focus();
-    };
-
-    _proto.blur = function blur() {
-      this.select.blur();
-    } // FIXME: untyped flow code, return any
-    ;
-
-    _proto.getProp = function getProp(key) {
-      return this.props[key] !== undefined ? this.props[key] : this.state[key];
-    } // FIXME: untyped flow code, return any
-    ;
-
-    _proto.callProp = function callProp(name) {
-      if (typeof this.props[name] === 'function') {
-        var _this$props;
-
-        for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-          args[_key2 - 1] = arguments[_key2];
-        }
-
-        return (_this$props = this.props)[name].apply(_this$props, args);
+    _createClass(StateManager, [{
+      key: "focus",
+      value: function focus() {
+        this.select.focus();
       }
-    };
+    }, {
+      key: "blur",
+      value: function blur() {
+        this.select.blur();
+      } // FIXME: untyped flow code, return any
 
-    _proto.render = function render() {
-      var _this2 = this;
+    }, {
+      key: "getProp",
+      value: function getProp(key) {
+        return this.props[key] !== undefined ? this.props[key] : this.state[key];
+      } // FIXME: untyped flow code, return any
 
-      var _this$props2 = this.props,
-          defaultInputValue = _this$props2.defaultInputValue,
-          defaultMenuIsOpen = _this$props2.defaultMenuIsOpen,
-          defaultValue = _this$props2.defaultValue,
-          props = stateManager_04f734a2_browser_esm_objectWithoutPropertiesLoose(_this$props2, ["defaultInputValue", "defaultMenuIsOpen", "defaultValue"]);
+    }, {
+      key: "callProp",
+      value: function callProp(name) {
+        if (typeof this.props[name] === 'function') {
+          var _this$props;
 
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SelectComponent, stateManager_04f734a2_browser_esm_extends({}, props, {
-        ref: function ref(_ref) {
-          _this2.select = _ref;
-        },
-        inputValue: this.getProp('inputValue'),
-        menuIsOpen: this.getProp('menuIsOpen'),
-        onChange: this.onChange,
-        onInputChange: this.onInputChange,
-        onMenuClose: this.onMenuClose,
-        onMenuOpen: this.onMenuOpen,
-        value: this.getProp('value')
-      }));
-    };
+          for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+            args[_key2 - 1] = arguments[_key2];
+          }
+
+          return (_this$props = this.props)[name].apply(_this$props, args);
+        }
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var _this2 = this;
+
+        var _this$props2 = this.props,
+            defaultInputValue = _this$props2.defaultInputValue,
+            defaultMenuIsOpen = _this$props2.defaultMenuIsOpen,
+            defaultValue = _this$props2.defaultValue,
+            props = _objectWithoutProperties(_this$props2, ["defaultInputValue", "defaultMenuIsOpen", "defaultValue"]);
+
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SelectComponent, _extends({}, props, {
+          ref: function ref(_ref) {
+            _this2.select = _ref;
+          },
+          inputValue: this.getProp('inputValue'),
+          menuIsOpen: this.getProp('menuIsOpen'),
+          onChange: this.onChange,
+          onInputChange: this.onInputChange,
+          onMenuClose: this.onMenuClose,
+          onMenuOpen: this.onMenuOpen,
+          value: this.getProp('value')
+        }));
+      }
+    }]);
 
     return StateManager;
-  }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]), _class.defaultProps = stateManager_04f734a2_browser_esm_defaultProps, _temp;
+  }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]), _class.defaultProps = stateManager_66a21f68_browser_esm_defaultProps, _temp;
 };
 
 
+
+// CONCATENATED MODULE: ./node_modules/react-select/node_modules/@emotion/sheet/dist/emotion-sheet.browser.esm.js
+/*
+
+Based off glamor's StyleSheet, thanks Sunil ❤️
+
+high performance StyleSheet for css-in-js systems
+
+- uses multiple style tags behind the scenes for millions of rules
+- uses `insertRule` for appending in production for *much* faster performance
+
+// usage
+
+import { StyleSheet } from '@emotion/sheet'
+
+let styleSheet = new StyleSheet({ key: '', container: document.head })
+
+styleSheet.insert('#box { border: 1px solid red; }')
+- appends a css rule into the stylesheet
+
+styleSheet.flush()
+- empties the stylesheet of all its contents
+
+*/
+// $FlowFixMe
+function emotion_sheet_browser_esm_sheetForTag(tag) {
+  if (tag.sheet) {
+    // $FlowFixMe
+    return tag.sheet;
+  } // this weirdness brought to you by firefox
+
+  /* istanbul ignore next */
+
+
+  for (var i = 0; i < document.styleSheets.length; i++) {
+    if (document.styleSheets[i].ownerNode === tag) {
+      // $FlowFixMe
+      return document.styleSheets[i];
+    }
+  }
+}
+
+function emotion_sheet_browser_esm_createStyleElement(options) {
+  var tag = document.createElement('style');
+  tag.setAttribute('data-emotion', options.key);
+
+  if (options.nonce !== undefined) {
+    tag.setAttribute('nonce', options.nonce);
+  }
+
+  tag.appendChild(document.createTextNode(''));
+  tag.setAttribute('data-s', '');
+  return tag;
+}
+
+var dist_emotion_sheet_browser_esm_StyleSheet = /*#__PURE__*/function () {
+  function StyleSheet(options) {
+    var _this = this;
+
+    this._insertTag = function (tag) {
+      var before;
+
+      if (_this.tags.length === 0) {
+        before = _this.prepend ? _this.container.firstChild : _this.before;
+      } else {
+        before = _this.tags[_this.tags.length - 1].nextSibling;
+      }
+
+      _this.container.insertBefore(tag, before);
+
+      _this.tags.push(tag);
+    };
+
+    this.isSpeedy = options.speedy === undefined ? "production" === 'production' : options.speedy;
+    this.tags = [];
+    this.ctr = 0;
+    this.nonce = options.nonce; // key is the value of the data-emotion attribute, it's used to identify different sheets
+
+    this.key = options.key;
+    this.container = options.container;
+    this.prepend = options.prepend;
+    this.before = null;
+  }
+
+  var _proto = StyleSheet.prototype;
+
+  _proto.hydrate = function hydrate(nodes) {
+    nodes.forEach(this._insertTag);
+  };
+
+  _proto.insert = function insert(rule) {
+    // the max length is how many rules we have per style tag, it's 65000 in speedy mode
+    // it's 1 in dev because we insert source maps that map a single rule to a location
+    // and you can only have one source map per style tag
+    if (this.ctr % (this.isSpeedy ? 65000 : 1) === 0) {
+      this._insertTag(emotion_sheet_browser_esm_createStyleElement(this));
+    }
+
+    var tag = this.tags[this.tags.length - 1];
+
+    if (false) { var isImportRule; }
+
+    if (this.isSpeedy) {
+      var sheet = emotion_sheet_browser_esm_sheetForTag(tag);
+
+      try {
+        // this is the ultrafast version, works across browsers
+        // the big drawback is that the css won't be editable in devtools
+        sheet.insertRule(rule, sheet.cssRules.length);
+      } catch (e) {
+        if (false) {}
+      }
+    } else {
+      tag.appendChild(document.createTextNode(rule));
+    }
+
+    this.ctr++;
+  };
+
+  _proto.flush = function flush() {
+    // $FlowFixMe
+    this.tags.forEach(function (tag) {
+      return tag.parentNode.removeChild(tag);
+    });
+    this.tags = [];
+    this.ctr = 0;
+
+    if (false) {}
+  };
+
+  return StyleSheet;
+}();
+
+
+
+// CONCATENATED MODULE: ./node_modules/react-select/node_modules/@emotion/cache/dist/emotion-cache.browser.esm.js
+
+
+
+
+
+var dist_emotion_cache_browser_esm_last = function last(arr) {
+  return arr.length ? arr[arr.length - 1] : null;
+};
+
+var dist_emotion_cache_browser_esm_toRules = function toRules(parsed, points) {
+  // pretend we've started with a comma
+  var index = -1;
+  var character = 44;
+
+  do {
+    switch (Q(character)) {
+      case 0:
+        // &\f
+        if (character === 38 && L() === 12) {
+          // this is not 100% correct, we don't account for literal sequences here - like for example quoted strings
+          // stylis inserts \f after & to know when & where it should replace this sequence with the context selector
+          // and when it should just concatenate the outer and inner selectors
+          // it's very unlikely for this sequence to actually appear in a different context, so we just leverage this fact here
+          points[index] = 1;
+        }
+
+        parsed[index] += stylis_(E - 1);
+        break;
+
+      case 2:
+        parsed[index] += U(character);
+        break;
+
+      case 4:
+        // comma
+        if (character === 44) {
+          // colon
+          parsed[++index] = L() === 58 ? '&\f' : '';
+          points[index] = parsed[index].length;
+          break;
+        }
+
+      // fallthrough
+
+      default:
+        parsed[index] += d(character);
+    }
+  } while (character = K());
+
+  return parsed;
+};
+
+var dist_emotion_cache_browser_esm_getRules = function getRules(value, points) {
+  return T(dist_emotion_cache_browser_esm_toRules(R(value), points));
+}; // WeakSet would be more appropriate, but only WeakMap is supported in IE11
+
+
+var emotion_cache_browser_esm_fixedElements = /* #__PURE__ */new WeakMap();
+var emotion_cache_browser_esm_compat = function compat(element) {
+  if (element.type !== 'rule' || !element.parent || // .length indicates if this rule contains pseudo or not
+  !element.length) {
+    return;
+  }
+
+  var value = element.value,
+      parent = element.parent;
+  var isImplicitRule = element.column === parent.column && element.line === parent.line;
+
+  while (parent.type !== 'rule') {
+    parent = parent.parent;
+    if (!parent) return;
+  } // short-circuit for the simplest case
+
+
+  if (element.props.length === 1 && value.charCodeAt(0) !== 58
+  /* colon */
+  && !emotion_cache_browser_esm_fixedElements.get(parent)) {
+    return;
+  } // if this is an implicitly inserted rule (the one eagerly inserted at the each new nested level)
+  // then the props has already been manipulated beforehand as they that array is shared between it and its "rule parent"
+
+
+  if (isImplicitRule) {
+    return;
+  }
+
+  emotion_cache_browser_esm_fixedElements.set(element, true);
+  var points = [];
+  var rules = dist_emotion_cache_browser_esm_getRules(value, points);
+  var parentRules = parent.props;
+
+  for (var i = 0, k = 0; i < rules.length; i++) {
+    for (var j = 0; j < parentRules.length; j++, k++) {
+      element.props[k] = points[i] ? rules[i].replace(/&\f/g, parentRules[j]) : parentRules[j] + " " + rules[i];
+    }
+  }
+};
+var emotion_cache_browser_esm_removeLabel = function removeLabel(element) {
+  if (element.type === 'decl') {
+    var value = element.value;
+
+    if ( // charcode for l
+    value.charCodeAt(0) === 108 && // charcode for b
+    value.charCodeAt(2) === 98) {
+      // this ignores label
+      element["return"] = '';
+      element.value = '';
+    }
+  }
+};
+var emotion_cache_browser_esm_ignoreFlag = 'emotion-disable-server-rendering-unsafe-selector-warning-please-do-not-use-this-the-warning-exists-for-a-reason';
+
+var emotion_cache_browser_esm_isIgnoringComment = function isIgnoringComment(element) {
+  return !!element && element.type === 'comm' && element.children.indexOf(emotion_cache_browser_esm_ignoreFlag) > -1;
+};
+
+var emotion_cache_browser_esm_createUnsafeSelectorsAlarm = function createUnsafeSelectorsAlarm(cache) {
+  return function (element, index, children) {
+    if (element.type !== 'rule') return;
+    var unsafePseudoClasses = element.value.match(/(:first|:nth|:nth-last)-child/g);
+
+    if (unsafePseudoClasses && cache.compat !== true) {
+      var prevElement = index > 0 ? children[index - 1] : null;
+
+      if (prevElement && emotion_cache_browser_esm_isIgnoringComment(dist_emotion_cache_browser_esm_last(prevElement.children))) {
+        return;
+      }
+
+      unsafePseudoClasses.forEach(function (unsafePseudoClass) {
+        console.error("The pseudo class \"" + unsafePseudoClass + "\" is potentially unsafe when doing server-side rendering. Try changing it to \"" + unsafePseudoClass.split('-child')[0] + "-of-type\".");
+      });
+    }
+  };
+};
+
+var emotion_cache_browser_esm_isImportRule = function isImportRule(element) {
+  return element.type.charCodeAt(1) === 105 && element.type.charCodeAt(0) === 64;
+};
+
+var emotion_cache_browser_esm_isPrependedWithRegularRules = function isPrependedWithRegularRules(index, children) {
+  for (var i = index - 1; i >= 0; i--) {
+    if (!emotion_cache_browser_esm_isImportRule(children[i])) {
+      return true;
+    }
+  }
+
+  return false;
+}; // use this to remove incorrect elements from further processing
+// so they don't get handed to the `sheet` (or anything else)
+// as that could potentially lead to additional logs which in turn could be overhelming to the user
+
+
+var emotion_cache_browser_esm_nullifyElement = function nullifyElement(element) {
+  element.type = '';
+  element.value = '';
+  element["return"] = '';
+  element.children = '';
+  element.props = '';
+};
+
+var emotion_cache_browser_esm_incorrectImportAlarm = function incorrectImportAlarm(element, index, children) {
+  if (!emotion_cache_browser_esm_isImportRule(element)) {
+    return;
+  }
+
+  if (element.parent) {
+    console.error("`@import` rules can't be nested inside other rules. Please move it to the top level and put it before regular rules. Keep in mind that they can only be used within global styles.");
+    emotion_cache_browser_esm_nullifyElement(element);
+  } else if (emotion_cache_browser_esm_isPrependedWithRegularRules(index, children)) {
+    console.error("`@import` rules can't be after other rules. Please put your `@import` rules before your other rules.");
+    emotion_cache_browser_esm_nullifyElement(element);
+  }
+};
+
+var emotion_cache_browser_esm_defaultStylisPlugins = [oe];
+
+var dist_emotion_cache_browser_esm_createCache = function createCache(options) {
+  var key = options.key;
+
+  if (false) {}
+
+  if ( key === 'css') {
+    var ssrStyles = document.querySelectorAll("style[data-emotion]:not([data-s])"); // get SSRed styles out of the way of React's hydration
+    // document.head is a safe place to move them to
+
+    Array.prototype.forEach.call(ssrStyles, function (node) {
+      document.head.appendChild(node);
+      node.setAttribute('data-s', '');
+    });
+  }
+
+  var stylisPlugins = options.stylisPlugins || emotion_cache_browser_esm_defaultStylisPlugins;
+
+  if (false) {}
+
+  var inserted = {}; // $FlowFixMe
+
+  var container;
+  var nodesToHydrate = [];
+
+  {
+    container = options.container || document.head;
+    Array.prototype.forEach.call(document.querySelectorAll("style[data-emotion]"), function (node) {
+      var attrib = node.getAttribute("data-emotion").split(' ');
+
+      if (attrib[0] !== key) {
+        return;
+      } // $FlowFixMe
+
+
+      for (var i = 1; i < attrib.length; i++) {
+        inserted[attrib[i]] = true;
+      }
+
+      nodesToHydrate.push(node);
+    });
+  }
+
+  var _insert;
+
+  var omnipresentPlugins = [emotion_cache_browser_esm_compat, emotion_cache_browser_esm_removeLabel];
+
+  if (false) {}
+
+  {
+    var currentSheet;
+    var finalizingPlugins = [ue,  false ? undefined : fe(function (rule) {
+      currentSheet.insert(rule);
+    })];
+    var serializer = ie(omnipresentPlugins.concat(stylisPlugins, finalizingPlugins));
+
+    var stylis = function stylis(styles) {
+      return se(ee(styles), serializer);
+    };
+
+    _insert = function insert(selector, serialized, sheet, shouldCache) {
+      currentSheet = sheet;
+
+      if (false) {}
+
+      stylis(selector ? selector + "{" + serialized.styles + "}" : serialized.styles);
+
+      if (shouldCache) {
+        cache.inserted[serialized.name] = true;
+      }
+    };
+  }
+
+  var cache = {
+    key: key,
+    sheet: new dist_emotion_sheet_browser_esm_StyleSheet({
+      key: key,
+      container: container,
+      nonce: options.nonce,
+      speedy: options.speedy,
+      prepend: options.prepend
+    }),
+    nonce: options.nonce,
+    inserted: inserted,
+    registered: {},
+    insert: _insert
+  };
+  cache.sheet.hydrate(nodesToHydrate);
+  return cache;
+};
+
+/* harmony default export */ var dist_emotion_cache_browser_esm = (dist_emotion_cache_browser_esm_createCache);
+
+// CONCATENATED MODULE: ./node_modules/memoize-one/dist/memoize-one.esm.js
+function areInputsEqual(newInputs, lastInputs) {
+    if (newInputs.length !== lastInputs.length) {
+        return false;
+    }
+    for (var i = 0; i < newInputs.length; i++) {
+        if (newInputs[i] !== lastInputs[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function memoizeOne(resultFn, isEqual) {
+    if (isEqual === void 0) { isEqual = areInputsEqual; }
+    var lastThis;
+    var lastArgs = [];
+    var lastResult;
+    var calledOnce = false;
+    function memoized() {
+        var newArgs = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            newArgs[_i] = arguments[_i];
+        }
+        if (calledOnce && lastThis === this && isEqual(newArgs, lastArgs)) {
+            return lastResult;
+        }
+        lastResult = resultFn.apply(this, newArgs);
+        calledOnce = true;
+        lastThis = this;
+        lastArgs = newArgs;
+        return lastResult;
+    }
+    return memoized;
+}
+
+/* harmony default export */ var memoize_one_esm = (memoizeOne);
 
 // CONCATENATED MODULE: ./node_modules/react-select/dist/react-select.browser.esm.js
 
@@ -70980,21 +70979,34 @@ var stateManager_04f734a2_browser_esm_manageState = function manageState(SelectC
 
 
 
-function react_select_browser_esm_inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
 
-var react_select_browser_esm_NonceProvider =
-/*#__PURE__*/
-function (_Component) {
-  react_select_browser_esm_inheritsLoose(NonceProvider, _Component);
+
+
+
+
+
+
+
+function react_select_browser_esm_createSuper(Derived) { var hasNativeReflectConstruct = react_select_browser_esm_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function react_select_browser_esm_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+var react_select_browser_esm_NonceProvider = /*#__PURE__*/function (_Component) {
+  _inherits(NonceProvider, _Component);
+
+  var _super = react_select_browser_esm_createSuper(NonceProvider);
 
   function NonceProvider(props) {
     var _this;
 
-    _this = _Component.call(this, props) || this;
+    _classCallCheck(this, NonceProvider);
 
-    _this.createEmotionCache = function (nonce) {
-      return cache_browser_esm({
-        nonce: nonce
+    _this = _super.call(this, props);
+
+    _this.createEmotionCache = function (nonce, key) {
+      return dist_emotion_cache_browser_esm({
+        nonce: nonce,
+        key: key
       });
     };
 
@@ -71002,19 +71014,20 @@ function (_Component) {
     return _this;
   }
 
-  var _proto = NonceProvider.prototype;
-
-  _proto.render = function render() {
-    var emotionCache = this.createEmotionCache(this.props.nonce);
-    return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CacheProvider, {
-      value: emotionCache
-    }, this.props.children);
-  };
+  _createClass(NonceProvider, [{
+    key: "render",
+    value: function render() {
+      var emotionCache = this.createEmotionCache(this.props.nonce, this.props.cacheKey);
+      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CacheProvider, {
+        value: emotionCache
+      }, this.props.children);
+    }
+  }]);
 
   return NonceProvider;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]);
 
-var react_select_browser_esm_index = stateManager_04f734a2_browser_esm_manageState(Select_9fdb8cd0_browser_esm_Select);
+var react_select_browser_esm_index = stateManager_66a21f68_browser_esm_manageState(Select_d53e3329_browser_esm_Select);
 
 /* harmony default export */ var react_select_browser_esm = (react_select_browser_esm_index);
 
@@ -71022,9 +71035,15 @@ var react_select_browser_esm_index = stateManager_04f734a2_browser_esm_manageSta
 // CONCATENATED MODULE: ./src/select/src/components/styled/DropdownIndicator.js
 
 
+function DropdownIndicator_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function DropdownIndicator_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { DropdownIndicator_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { DropdownIndicator_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
-var RSDropdownIndicator = index_4322c0ed_browser_esm_components.DropdownIndicator;
+
+
+
+var RSDropdownIndicator = index_8b64410c_browser_esm_components.DropdownIndicator;
 
 var DropdownIndicator_LUKDropdownIndicator = function LUKDropdownIndicator(props) {
   var _props$selectProps = props.selectProps,
@@ -71042,7 +71061,7 @@ var DropdownIndicator_LUKDropdownIndicator = function LUKDropdownIndicator(props
   if (typeof icon === 'function') {
     finalIcon = icon();
   } else if (isPlainObject_default()(icon)) {
-    finalIcon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+    finalIcon = /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
       icon: icon,
       fixedWidth: true
     });
@@ -71051,7 +71070,9 @@ var DropdownIndicator_LUKDropdownIndicator = function LUKDropdownIndicator(props
   return (
     /*#__PURE__*/
     // eslint-disable-next-line react/jsx-props-no-spreading
-    external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(RSDropdownIndicator, props, finalIcon)
+    Object(jsx_runtime["jsx"])(RSDropdownIndicator, DropdownIndicator_objectSpread(DropdownIndicator_objectSpread({}, props), {}, {
+      children: finalIcon
+    }))
   );
 };
 
@@ -71059,10 +71080,17 @@ var DropdownIndicator_LUKDropdownIndicator = function LUKDropdownIndicator(props
 // CONCATENATED MODULE: ./src/select/src/components/SelectOption.js
 
 
+
+function SelectOption_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function SelectOption_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { SelectOption_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { SelectOption_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
  // this exists only as a (hopefully temporary) performance fix when there's many options
 // https://github.com/JedWatson/react-select/issues/3128#issuecomment-451936743
 
 /* eslint-disable react/jsx-props-no-spreading */
+
+
 
 var SelectOption_SelectOption = function SelectOption(_ref) {
   var children = _ref.children,
@@ -71077,7 +71105,9 @@ var SelectOption_SelectOption = function SelectOption(_ref) {
   var finalProps = Object.assign(props, {
     innerProps: finalInnerProps
   });
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(index_4322c0ed_browser_esm_components.Option, finalProps, children);
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(index_8b64410c_browser_esm_components.Option, SelectOption_objectSpread(SelectOption_objectSpread({}, finalProps), {}, {
+    children: children
+  }));
 };
 /* eslint-enable */
 
@@ -71087,13 +71117,16 @@ var SelectOption_SelectOption = function SelectOption(_ref) {
 
 
 
+function ValueContainer_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function ValueContainer_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ValueContainer_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ValueContainer_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
 
-var ValueContainer_IconWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span.withConfig({
-  displayName: "ValueContainer__IconWrapper",
-  componentId: "lryi26-0"
-})(["position:absolute;left:12px;color:", ";"], NEUTRAL.N500);
+
+
+
+var ValueContainer_IconWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["position:absolute;left:12px;color:", ";"], NEUTRAL.N500);
 
 var ValueContainer_ValueContainer = function ValueContainer(_ref) {
   var children = _ref.children,
@@ -71101,12 +71134,16 @@ var ValueContainer_ValueContainer = function ValueContainer(_ref) {
       props = objectWithoutProperties_default()(_ref, ["children", "selectProps"]);
 
   var inputIcon = selectProps.inputIcon;
-  return index_4322c0ed_browser_esm_components.ValueContainer &&
+  return index_8b64410c_browser_esm_components.ValueContainer &&
   /*#__PURE__*/
   // eslint-disable-next-line react/jsx-props-no-spreading
-  external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(index_4322c0ed_browser_esm_components.ValueContainer, extends_default()({
+  Object(jsx_runtime["jsxs"])(index_8b64410c_browser_esm_components.ValueContainer, ValueContainer_objectSpread(ValueContainer_objectSpread({
     selectProps: selectProps
-  }, props), inputIcon && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ValueContainer_IconWrapper, null, inputIcon), children);
+  }, props), {}, {
+    children: [inputIcon && /*#__PURE__*/Object(jsx_runtime["jsx"])(ValueContainer_IconWrapper, {
+      children: inputIcon
+    }), children]
+  }));
 };
 
 ValueContainer_ValueContainer.defaultProps = {
@@ -71130,6 +71167,8 @@ function SelectController_objectSpread(target) { for (var i = 1; i < arguments.l
 function SelectController_createSuper(Derived) { var hasNativeReflectConstruct = SelectController_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
 function SelectController_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 
 
@@ -71260,7 +71299,9 @@ var SelectController_SelectController = /*#__PURE__*/function (_Component) {
           rest = objectWithoutProperties_default()(_this$props3, ["useRawValues", "render"]);
 
       var composedProps = this.composeProps(SelectController_objectSpread({}, rest));
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, useRawValues ? this.renderWithDataOverrides() : render(composedProps));
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(jsx_runtime["Fragment"], {
+        children: useRawValues ? this.renderWithDataOverrides() : render(composedProps)
+      });
     }
   }]);
 
@@ -71275,6 +71316,11 @@ defineProperty_default()(SelectController_SelectController, "defaultProps", {
 
 /* harmony default export */ var components_SelectController = (SelectController_SelectController);
 // CONCATENATED MODULE: ./src/select/src/components/Select.js
+
+
+function Select_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function Select_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Select_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Select_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
 
@@ -71292,10 +71338,10 @@ var Select_defaultProps = {
 /* eslint-disable react/jsx-props-no-spreading */
 
 var components_Select_Select = function Select(props) {
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_SelectController, extends_default()({}, props, {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(components_SelectController, Select_objectSpread(Select_objectSpread({}, props), {}, {
     // eslint-disable-line indent
     render: function render(selectProps) {
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(react_select_browser_esm, mergeDeep$1(Select_defaultProps, selectProps));
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(react_select_browser_esm, Select_objectSpread({}, mergeDeep$1(Select_defaultProps, selectProps)));
     }
   }));
 };
@@ -71316,15 +71362,24 @@ var components_Select_Select = function Select(props) {
 
 
 
-function dist_react_select_browser_esm_inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
 
-function react_select_browser_esm_extends() { react_select_browser_esm_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return react_select_browser_esm_extends.apply(this, arguments); }
 
-var compareOption = function compareOption(inputValue, option) {
-  if (inputValue === void 0) {
-    inputValue = '';
-  }
 
+
+
+
+
+function dist_react_select_browser_esm_createSuper(Derived) { var hasNativeReflectConstruct = dist_react_select_browser_esm_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function dist_react_select_browser_esm_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function react_select_browser_esm_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function react_select_browser_esm_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { react_select_browser_esm_ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { react_select_browser_esm_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+var compareOption = function compareOption() {
+  var inputValue = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var option = arguments.length > 1 ? arguments[1] : undefined;
   var candidate = String(inputValue).toLowerCase();
   var optionValue = String(option.value).toLowerCase();
   var optionLabel = String(option.label).toLowerCase();
@@ -71333,7 +71388,7 @@ var compareOption = function compareOption(inputValue, option) {
 
 var builtins = {
   formatCreateLabel: function formatCreateLabel(inputValue) {
-    return "Create \"" + inputValue + "\"";
+    return "Create \"".concat(inputValue, "\"");
   },
   isValidNewOption: function isValidNewOption(inputValue, selectValue, selectOptions) {
     return !(!inputValue || selectValue.some(function (option) {
@@ -71350,22 +71405,24 @@ var builtins = {
     };
   }
 };
-var react_select_browser_esm_defaultProps = react_select_browser_esm_extends({
+var react_select_browser_esm_defaultProps = react_select_browser_esm_objectSpread({
   allowCreateWhileLoading: false,
   createOptionPosition: 'last'
 }, builtins);
 var react_select_browser_esm_makeCreatableSelect = function makeCreatableSelect(SelectComponent) {
   var _class, _temp;
 
-  return _temp = _class =
-  /*#__PURE__*/
-  function (_Component) {
-    dist_react_select_browser_esm_inheritsLoose(Creatable, _Component);
+  return _temp = _class = /*#__PURE__*/function (_Component) {
+    _inherits(Creatable, _Component);
+
+    var _super = dist_react_select_browser_esm_createSuper(Creatable);
 
     function Creatable(props) {
       var _this;
 
-      _this = _Component.call(this, props) || this;
+      _classCallCheck(this, Creatable);
+
+      _this = _super.call(this, props);
       _this.select = void 0;
 
       _this.onChange = function (newValue, actionMeta) {
@@ -71394,7 +71451,7 @@ var react_select_browser_esm_makeCreatableSelect = function makeCreatableSelect(
             };
 
             if (isMulti) {
-              onChange([].concat(cleanValue(value), [newOptionData]), newActionMeta);
+              onChange([].concat(_toConsumableArray(index_8b64410c_browser_esm_cleanValue(value)), [newOptionData]), newActionMeta);
             } else {
               onChange(newOptionData, newActionMeta);
             }
@@ -71413,64 +71470,73 @@ var react_select_browser_esm_makeCreatableSelect = function makeCreatableSelect(
       return _this;
     }
 
-    var _proto = Creatable.prototype;
-
-    _proto.UNSAFE_componentWillReceiveProps = function UNSAFE_componentWillReceiveProps(nextProps) {
-      var allowCreateWhileLoading = nextProps.allowCreateWhileLoading,
-          createOptionPosition = nextProps.createOptionPosition,
-          formatCreateLabel = nextProps.formatCreateLabel,
-          getNewOptionData = nextProps.getNewOptionData,
-          inputValue = nextProps.inputValue,
-          isLoading = nextProps.isLoading,
-          isValidNewOption = nextProps.isValidNewOption,
-          value = nextProps.value;
-      var options = nextProps.options || [];
-      var newOption = this.state.newOption;
-
-      if (isValidNewOption(inputValue, cleanValue(value), options)) {
-        newOption = getNewOptionData(inputValue, formatCreateLabel(inputValue));
-      } else {
-        newOption = undefined;
+    _createClass(Creatable, [{
+      key: "focus",
+      value: function focus() {
+        this.select.focus();
       }
+    }, {
+      key: "blur",
+      value: function blur() {
+        this.select.blur();
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var _this2 = this;
 
-      this.setState({
-        newOption: newOption,
-        options: (allowCreateWhileLoading || !isLoading) && newOption ? createOptionPosition === 'first' ? [newOption].concat(options) : [].concat(options, [newOption]) : options
-      });
-    };
+        var options = this.state.options;
+        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SelectComponent, _extends({}, this.props, {
+          ref: function ref(_ref) {
+            _this2.select = _ref;
+          },
+          options: options,
+          onChange: this.onChange
+        }));
+      }
+    }], [{
+      key: "getDerivedStateFromProps",
+      value: function getDerivedStateFromProps(props, state) {
+        var allowCreateWhileLoading = props.allowCreateWhileLoading,
+            createOptionPosition = props.createOptionPosition,
+            formatCreateLabel = props.formatCreateLabel,
+            getNewOptionData = props.getNewOptionData,
+            inputValue = props.inputValue,
+            isLoading = props.isLoading,
+            isValidNewOption = props.isValidNewOption,
+            value = props.value;
+        var options = props.options || [];
+        var newOption = state.newOption;
 
-    _proto.focus = function focus() {
-      this.select.focus();
-    };
+        if (isValidNewOption(inputValue, index_8b64410c_browser_esm_cleanValue(value), options)) {
+          newOption = getNewOptionData(inputValue, formatCreateLabel(inputValue));
+        } else {
+          newOption = undefined;
+        }
 
-    _proto.blur = function blur() {
-      this.select.blur();
-    };
-
-    _proto.render = function render() {
-      var _this2 = this;
-
-      var options = this.state.options;
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SelectComponent, react_select_browser_esm_extends({}, this.props, {
-        ref: function ref(_ref) {
-          _this2.select = _ref;
-        },
-        options: options,
-        onChange: this.onChange
-      }));
-    };
+        return {
+          newOption: newOption,
+          options: (allowCreateWhileLoading || !isLoading) && newOption ? createOptionPosition === 'first' ? [newOption].concat(_toConsumableArray(options)) : [].concat(_toConsumableArray(options), [newOption]) : options
+        };
+      }
+    }]);
 
     return Creatable;
   }(external_root_React_commonjs2_react_commonjs_react_amd_react_["Component"]), _class.defaultProps = react_select_browser_esm_defaultProps, _temp;
 }; // TODO: do this in package entrypoint
 
-var SelectCreatable = react_select_browser_esm_makeCreatableSelect(Select_9fdb8cd0_browser_esm_Select);
-var react_select_browser_esm_Creatable = stateManager_04f734a2_browser_esm_manageState(SelectCreatable);
+var SelectCreatable = react_select_browser_esm_makeCreatableSelect(Select_d53e3329_browser_esm_Select);
+var react_select_browser_esm_Creatable = stateManager_66a21f68_browser_esm_manageState(SelectCreatable);
 
 /* harmony default export */ var dist_react_select_browser_esm = (react_select_browser_esm_Creatable);
 
 
 // CONCATENATED MODULE: ./src/select/src/components/Creatable.js
+
+
+function Creatable_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function Creatable_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Creatable_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Creatable_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
 
@@ -71488,10 +71554,10 @@ var Creatable_defaultProps = {
 /* eslint-disable react/jsx-props-no-spreading */
 
 var Creatable_Creatable = function Creatable(props) {
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_SelectController, extends_default()({}, props, {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(components_SelectController, Creatable_objectSpread(Creatable_objectSpread({}, props), {}, {
     // eslint-disable-line indent
     render: function render(selectProps) {
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(dist_react_select_browser_esm, mergeDeep$1(Creatable_defaultProps, selectProps));
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(dist_react_select_browser_esm, Creatable_objectSpread({}, mergeDeep$1(Creatable_defaultProps, selectProps)));
     }
   }));
 };
@@ -71500,6 +71566,11 @@ var Creatable_Creatable = function Creatable(props) {
 
 /* harmony default export */ var components_Creatable = (Creatable_Creatable);
 // CONCATENATED MODULE: ./src/select/src/components/styled/CheckboxOption.js
+
+
+function CheckboxOption_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function CheckboxOption_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { CheckboxOption_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { CheckboxOption_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
 
@@ -71511,19 +71582,25 @@ var CheckboxOption_Option = function Option(props) {
       label = props.label;
   /* eslint-disable react/jsx-props-no-spreading */
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_SelectOption, extends_default()({}, props, {
-    isCheckBoxOption: true
-  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Checkbox, {
-    checked: isSelected,
-    label: label,
-    disabled: isDisabled,
-    readOnly: true
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(components_SelectOption, CheckboxOption_objectSpread(CheckboxOption_objectSpread({}, props), {}, {
+    isCheckBoxOption: true,
+    children: /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Checkbox, {
+      checked: isSelected,
+      label: label,
+      disabled: isDisabled,
+      readOnly: true
+    })
   }));
   /* eslint-enable */
 };
 
 /* harmony default export */ var CheckboxOption = (CheckboxOption_Option);
 // CONCATENATED MODULE: ./src/select/src/components/CheckboxSelect.js
+
+
+function CheckboxSelect_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function CheckboxSelect_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { CheckboxSelect_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { CheckboxSelect_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
 
@@ -71551,10 +71628,10 @@ var CheckboxSelect_defaultProps = {
 /* eslint-disable react/jsx-props-no-spreading */
 
 var CheckboxSelect_CheckboxSelect = function CheckboxSelect(props) {
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_SelectController, extends_default()({}, props, {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(components_SelectController, CheckboxSelect_objectSpread(CheckboxSelect_objectSpread({}, props), {}, {
     // eslint-disable-line indent
     render: function render(selectProps) {
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(react_select_browser_esm, mergeDeep$1(selectProps, CheckboxSelect_defaultProps));
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(react_select_browser_esm, CheckboxSelect_objectSpread({}, mergeDeep$1(selectProps, CheckboxSelect_defaultProps)));
     }
   }));
 };
@@ -71576,6 +71653,8 @@ var CheckboxSelect_CheckboxSelect = function CheckboxSelect(props) {
 
 
 
+var AppHeaderWrapper_templateObject, _templateObject2;
+
 function AppHeaderWrapper_createSuper(Derived) { var hasNativeReflectConstruct = AppHeaderWrapper_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
 function AppHeaderWrapper_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
@@ -71584,25 +71663,8 @@ function AppHeaderWrapper_ownKeys(object, enumerableOnly) { var keys = Object.ke
 
 function AppHeaderWrapper_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { AppHeaderWrapper_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { AppHeaderWrapper_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
-function _templateObject2() {
-  var data = taggedTemplateLiteral_default()(["\n    margin-left: 11px;\n    margin-right: -6px;\n  "]);
 
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
 
-  return data;
-}
-
-function AppHeaderWrapper_templateObject() {
-  var data = taggedTemplateLiteral_default()(["\n      margin-left: 20px;\n    "]);
-
-  AppHeaderWrapper_templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
 
 
 
@@ -71626,25 +71688,13 @@ function AppHeaderWrapper_templateObject() {
 var AppHeaderWrapper_NEUTRAL = NEUTRAL; // button line-height = font-size (12px) * desired line-height (1.5) = 18px
 // total button height = line-height (18px) + padding (2*8px) + border (2*1px) = 36px
 
-var LogoutButton = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(components_Button).withConfig({
-  displayName: "AppHeaderWrapper__LogoutButton",
-  componentId: "krtes7-0"
-})(["border:solid 1px ", ";font-size:12px;line-height:18px;padding:8px 16px;width:100px;"], AppHeaderWrapper_NEUTRAL.N100);
-var LogOutAnchor = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.a.withConfig({
-  displayName: "AppHeaderWrapper__LogOutAnchor",
-  componentId: "krtes7-1"
-})([""]);
-var HeaderSectionContentWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "AppHeaderWrapper__HeaderSectionContentWrapper",
-  componentId: "krtes7-2"
-})(["align-items:center;display:flex;flex:1 1 auto;font-size:12px;font-weight:normal;justify-content:flex-end;justify-content:", ";padding:12px 0;> *{margin-left:30px;", "}"], function (_ref) {
+var LogoutButton = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(components_Button)(["border:solid 1px ", ";font-size:12px;line-height:18px;padding:8px 16px;width:100px;"], AppHeaderWrapper_NEUTRAL.N100);
+var LogOutAnchor = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.a([""]);
+var HeaderSectionContentWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["align-items:center;display:flex;flex:1 1 auto;font-size:12px;font-weight:normal;justify-content:flex-end;justify-content:", ";padding:12px 0;> *{margin-left:30px;", "}"], function (_ref) {
   var align = _ref.align;
   return align === 'right' ? 'flex-end' : 'flex-start';
-}, media.phone(AppHeaderWrapper_templateObject()));
-var NavigationToggleWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "AppHeaderWrapper__NavigationToggleWrapper",
-  componentId: "krtes7-3"
-})(["align-items:center;color:", ";cursor:pointer;display:flex;font-size:16px;height:32px;justify-content:center;margin-left:21px;margin-right:-9px;width:32px;", " &:hover{color:", ";}"], AppHeaderWrapper_NEUTRAL.N500, media.phone(_templateObject2()), AppHeaderWrapper_NEUTRAL.N700);
+}, media.phone(AppHeaderWrapper_templateObject || (AppHeaderWrapper_templateObject = taggedTemplateLiteral_default()(["\n      margin-left: 20px;\n    "]))));
+var NavigationToggleWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["align-items:center;color:", ";cursor:pointer;display:flex;font-size:16px;height:32px;justify-content:center;margin-left:21px;margin-right:-9px;width:32px;", " &:hover{color:", ";}"], AppHeaderWrapper_NEUTRAL.N500, media.phone(_templateObject2 || (_templateObject2 = taggedTemplateLiteral_default()(["\n    margin-left: 11px;\n    margin-right: -6px;\n  "]))), AppHeaderWrapper_NEUTRAL.N700);
 
 var organizationsSelectStyles = AppHeaderWrapper_objectSpread(AppHeaderWrapper_objectSpread({}, selectStyles), {}, {
   container: function container(base, state) {
@@ -71672,7 +71722,7 @@ var organizationsSelectStyles = AppHeaderWrapper_objectSpread(AppHeaderWrapper_o
 
 var AppHeaderWrapper_AppIcon = function AppIcon(_ref2) {
   var icon = _ref2.icon;
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("img", {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])("img", {
     alt: "OpenLattice Application Icon",
     src: icon
   });
@@ -71681,7 +71731,9 @@ var AppHeaderWrapper_AppIcon = function AppIcon(_ref2) {
 var AppHeaderWrapper_AppTitle = function AppTitle(_ref3) {
   var _ref3$title = _ref3.title,
       title = _ref3$title === void 0 ? 'OpenLattice' : _ref3$title;
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("h1", null, title);
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])("h1", {
+    children: title
+  });
 };
 
 var AppHeaderWrapper_AppHeaderWrapper = /*#__PURE__*/function (_Component) {
@@ -71696,13 +71748,13 @@ var AppHeaderWrapper_AppHeaderWrapper = /*#__PURE__*/function (_Component) {
 
     _this = _super.call(this, props);
 
-    defineProperty_default()(assertThisInitialized_default()(_this), "headerRef", /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createRef());
+    defineProperty_default()(assertThisInitialized_default()(_this), "headerRef", /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createRef"])());
 
-    defineProperty_default()(assertThisInitialized_default()(_this), "nav1Ref", /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createRef());
+    defineProperty_default()(assertThisInitialized_default()(_this), "nav1Ref", /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createRef"])());
 
-    defineProperty_default()(assertThisInitialized_default()(_this), "nav2Ref", /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createRef());
+    defineProperty_default()(assertThisInitialized_default()(_this), "nav2Ref", /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createRef"])());
 
-    defineProperty_default()(assertThisInitialized_default()(_this), "rightRef", /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createRef());
+    defineProperty_default()(assertThisInitialized_default()(_this), "rightRef", /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createRef"])());
 
     defineProperty_default()(assertThisInitialized_default()(_this), "closeNavigation", function () {
       var isNavigationOpen = _this.state.isNavigationOpen;
@@ -71878,10 +71930,35 @@ var AppHeaderWrapper_AppHeaderWrapper = /*#__PURE__*/function (_Component) {
       });
 
       if (!handleNavigationWrapping || shouldForceDrawer) {
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(HeaderSectionContentWrapper, {
+        return /*#__PURE__*/Object(jsx_runtime["jsxs"])(HeaderSectionContentWrapper, {
           align: "right",
-          ref: _this.rightRef
-        }, organizationsSelect && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Select, {
+          ref: _this.rightRef,
+          children: [organizationsSelect && /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Select, {
+            isClearable: false,
+            isDisabled: organizationsSelect.isDisabled,
+            isLoading: organizationsSelect.isLoading,
+            isMulti: false,
+            menuPortalTarget: document.body,
+            onChange: organizationsSelect.onChange,
+            options: organizationOptions,
+            placeholder: "Select an organization...",
+            styles: organizationsSelectStyles,
+            value: selectedOrganizationOption
+          }), /*#__PURE__*/Object(jsx_runtime["jsx"])(NavigationToggleWrapper, {
+            onClick: _this.toggleNavigation,
+            children: /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
+              icon: faBars["faBars"]
+            })
+          })]
+        });
+      }
+
+      return /*#__PURE__*/Object(jsx_runtime["jsxs"])(HeaderSectionContentWrapper, {
+        align: "right",
+        ref: _this.rightRef,
+        children: [user && /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
+          children: user
+        }), organizationsSelect && /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Select, {
           isClearable: false,
           isDisabled: organizationsSelect.isDisabled,
           isLoading: organizationsSelect.isLoading,
@@ -71892,54 +71969,41 @@ var AppHeaderWrapper_AppHeaderWrapper = /*#__PURE__*/function (_Component) {
           placeholder: "Select an organization...",
           styles: organizationsSelectStyles,
           value: selectedOrganizationOption
-        }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(NavigationToggleWrapper, {
-          onClick: _this.toggleNavigation
-        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
-          icon: faBars["faBars"]
-        })));
-      }
-
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(HeaderSectionContentWrapper, {
-        align: "right",
-        ref: _this.rightRef
-      }, user && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, user), organizationsSelect && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Select, {
-        isClearable: false,
-        isDisabled: organizationsSelect.isDisabled,
-        isLoading: organizationsSelect.isLoading,
-        isMulti: false,
-        menuPortalTarget: document.body,
-        onChange: organizationsSelect.onChange,
-        options: organizationOptions,
-        placeholder: "Select an organization...",
-        styles: organizationsSelectStyles,
-        value: selectedOrganizationOption
-      }), isFunction_default()(logout) && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LogoutButton, {
-        onClick: logout
-      }, "Log Out"));
+        }), isFunction_default()(logout) && /*#__PURE__*/Object(jsx_runtime["jsx"])(LogoutButton, {
+          onClick: logout,
+          children: "Log Out"
+        })]
+      });
     });
 
     defineProperty_default()(assertThisInitialized_default()(_this), "renderLogOutButtonInDrawer", function () {
       var logout = _this.props.logout;
-      var LogOutBody = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
-        size: "lg",
-        fixedWidth: true,
-        icon: faSignOut["faSignOut"]
-      }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
-        style: {
-          marginLeft: '20px'
-        }
-      }, "Log Out"));
+
+      var LogOutBody = /*#__PURE__*/Object(jsx_runtime["jsxs"])(jsx_runtime["Fragment"], {
+        children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
+          size: "lg",
+          fixedWidth: true,
+          icon: faSignOut["faSignOut"]
+        }), /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
+          style: {
+            marginLeft: '20px'
+          },
+          children: "Log Out"
+        })]
+      });
 
       if (isFunction_default()(logout)) {
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LogOutAnchor, {
-          onClick: logout
-        }, LogOutBody);
+        return /*#__PURE__*/Object(jsx_runtime["jsx"])(LogOutAnchor, {
+          onClick: logout,
+          children: LogOutBody
+        });
       }
 
       if (isString_default()(logout)) {
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(LogOutAnchor, {
-          href: logout
-        }, LogOutBody);
+        return /*#__PURE__*/Object(jsx_runtime["jsx"])(LogOutAnchor, {
+          href: logout,
+          children: LogOutBody
+        });
       }
 
       return null;
@@ -72016,144 +72080,159 @@ var AppHeaderWrapper_AppHeaderWrapper = /*#__PURE__*/function (_Component) {
         headerBounds = this.headerRef.current.getBoundingClientRect();
       }
 
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppHeaderOuterWrapper, {
-        className: className,
-        ref: this.headerRef,
-        onClick: this.handleOnClickHeader
-      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_AppHeaderInnerWrapper, null,
-      /*
-       * this block is expected to handle the following examples:
-       *
-       *   1. this is unlikely to be common and is not ideal
-       *     <AppHeaderWrapper ... />
-       *
-       *   2. this is unlikely to be common and should be avoided
-       *     <AppHeaderWrapper ...>
-       *       <AppNavigationWrapper />
-       *     </AppHeaderWrapper>
-       */
-      navigationChildrenCount === 0 && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_NavigationWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("a", {
-        href: window.location.href,
-        className: APP_NAV_ROOT
-      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(AppHeaderWrapper_AppIcon, {
-        icon: appIcon
-      }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(AppHeaderWrapper_AppTitle, {
-        title: appTitle
-      }))),
-      /*
-       * this block is responsible for rendering nav items inside the header. here's how it works:
-       *
-       *   1. AppNavigationWrapper MUST NOT have any special props enabled (like "drawer")
-       *
-       *      AND
-       *
-       *   2. AppNavigationWrapper's 1st child is expected to be the root route, i.e. the app icon + app title,
-       *      and will ALWAYS be rendered in the header
-       *   3. AppNavigationWrapper has many children AND they all will fit (otherwise, wrapping happens)
-       *
-       * this block is expected to handle the following examples. additionally, only example 2 is relevant when
-       * the header is handling navigation wrapping. nothing fancy happens with example 1.
-       *
-       * for example...
-       *
-       *     <AppHeaderWrapper ...>
-       *       <AppNavigationWrapper>
-       *         <NavLink to="/home" />
-       *         <NavLink to="/tab1">Tab 1</NavLink>
-       *         <NavLink to="/tab2">Tab 2</NavLink>
-       *       </AppNavigationWrapper>
-       *     </AppHeaderWrapper>
-       */
-      navigationChildrenCount > 0 && external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
-        // the 1st child is expected to be <AppNavigationWrapper />
-        if (index === 0 && child.type.name === App_AppNavigationWrapper.name) {
-          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(styled_NavigationWrapper, {
-            ref: _this2.nav1Ref
-          }, external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(child.props.children, function (navChild, navIndex) {
-            // the 1st child is expected to be the root route, i.e. the app icon + app title
-            if (navIndex === 0) {
-              var appTitleElement = shouldForceDrawer ? null : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(AppHeaderWrapper_AppTitle, {
-                title: navChild.props.children || appTitle
+      return /*#__PURE__*/Object(jsx_runtime["jsxs"])(jsx_runtime["Fragment"], {
+        children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(styled_AppHeaderOuterWrapper, {
+          className: className,
+          ref: this.headerRef,
+          onClick: this.handleOnClickHeader,
+          children: /*#__PURE__*/Object(jsx_runtime["jsxs"])(styled_AppHeaderInnerWrapper, {
+            children: [
+            /*
+            * this block is expected to handle the following examples:
+            *
+            *   1. this is unlikely to be common and is not ideal
+            *     <AppHeaderWrapper ... />
+            *
+            *   2. this is unlikely to be common and should be avoided
+            *     <AppHeaderWrapper ...>
+            *       <AppNavigationWrapper />
+            *     </AppHeaderWrapper>
+            */
+            navigationChildrenCount === 0 && /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_NavigationWrapper, {
+              children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
+                href: window.location.href,
+                className: APP_NAV_ROOT,
+                children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(AppHeaderWrapper_AppIcon, {
+                  icon: appIcon
+                }), /*#__PURE__*/Object(jsx_runtime["jsx"])(AppHeaderWrapper_AppTitle, {
+                  title: appTitle
+                })]
+              })
+            }),
+            /*
+            * this block is responsible for rendering nav items inside the header. here's how it works:
+            *
+            *   1. AppNavigationWrapper MUST NOT have any special props enabled (like "drawer")
+            *
+            *      AND
+            *
+            *   2. AppNavigationWrapper's 1st child is expected to be the root route, i.e. the app icon + app title,
+            *      and will ALWAYS be rendered in the header
+            *   3. AppNavigationWrapper has many children AND they all will fit (otherwise, wrapping happens)
+            *
+            * this block is expected to handle the following examples. additionally, only example 2 is relevant when
+            * the header is handling navigation wrapping. nothing fancy happens with example 1.
+            *
+            * for example...
+            *
+            *     <AppHeaderWrapper ...>
+            *       <AppNavigationWrapper>
+            *         <NavLink to="/home" />
+            *         <NavLink to="/tab1">Tab 1</NavLink>
+            *         <NavLink to="/tab2">Tab 2</NavLink>
+            *       </AppNavigationWrapper>
+            *     </AppHeaderWrapper>
+            */
+            navigationChildrenCount > 0 && external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
+              // the 1st child is expected to be <AppNavigationWrapper />
+              if (index === 0 && child.type.name === App_AppNavigationWrapper.name) {
+                return /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_NavigationWrapper, {
+                  ref: _this2.nav1Ref,
+                  children: external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(child.props.children, function (navChild, navIndex) {
+                    // the 1st child is expected to be the root route, i.e. the app icon + app title
+                    if (navIndex === 0) {
+                      var appTitleElement = shouldForceDrawer ? null : /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(AppHeaderWrapper_AppTitle, {
+                        title: navChild.props.children || appTitle
+                      });
+                      return /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"])(navChild, AppHeaderWrapper_objectSpread(AppHeaderWrapper_objectSpread({}, navChild.props), {}, {
+                        className: APP_NAV_ROOT
+                      }), /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(AppHeaderWrapper_AppIcon, {
+                        icon: appIcon
+                      }), appTitleElement);
+                    } // return null if...
+                    //   - the header is not responsible for navigation wrapping (i.e. if the nav is a drawer)
+                    //   - the header has computed that the nav items won't fit and need to wrap around
+                    //   - the header has computed that the screen is too small and will force the drawer
+
+
+                    return !handleNavigationWrapping || shouldWrapNavigation || shouldForceDrawer ? null : navChild;
+                  })
+                });
+              }
+
+              return child;
+            }), this.renderHeaderRight()]
+          })
+        }),
+        /*
+        * this block is only relevant when the header is handling navigation wrapping, and it only applies to the
+        * following example:
+        *
+        *   <AppHeaderWrapper ...>
+        *     <AppNavigationWrapper>
+        *       <NavLink to="/home" />
+        *       <NavLink to="/tab1">Tab 1</NavLink>
+        *       <NavLink to="/tab2">Tab 2</NavLink>
+        *     </AppNavigationWrapper>
+        *   </AppHeaderWrapper>
+        */
+        handleNavigationWrapping && navigationChildrenCount > 1 && shouldWrapNavigation && !shouldForceDrawer && /*#__PURE__*/Object(jsx_runtime["jsx"])(App_AppNavigationWrapper, {
+          className: className,
+          ref: this.nav2Ref,
+          children: external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
+            // the 1st child is expected to be <AppNavigationWrapper />
+            if (index === 0 && child.type.name === App_AppNavigationWrapper.name) {
+              return external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(child.props.children, function (navChild, navIndex) {
+                return (// the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
+                  // processed above and moved into the header, so we want to return null here
+                  navIndex === 0 ? null : navChild
+                );
               });
-              return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(navChild, AppHeaderWrapper_objectSpread(AppHeaderWrapper_objectSpread({}, navChild.props), {}, {
-                className: APP_NAV_ROOT
-              }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(AppHeaderWrapper_AppIcon, {
-                icon: appIcon
-              }), appTitleElement);
-            } // return null if...
-            //   - the header is not responsible for navigation wrapping (i.e. if the nav is a drawer)
-            //   - the header has computed that the nav items won't fit and need to wrap around
-            //   - the header has computed that the screen is too small and will force the drawer
+            } // ignoring other children for now...
 
 
-            return !handleNavigationWrapping || shouldWrapNavigation || shouldForceDrawer ? null : navChild;
-          }));
-        }
-
-        return child;
-      }), this.renderHeaderRight())),
-      /*
-       * this block is only relevant when the header is handling navigation wrapping, and it only applies to the
-       * following example:
-       *
-       *   <AppHeaderWrapper ...>
-       *     <AppNavigationWrapper>
-       *       <NavLink to="/home" />
-       *       <NavLink to="/tab1">Tab 1</NavLink>
-       *       <NavLink to="/tab2">Tab 2</NavLink>
-       *     </AppNavigationWrapper>
-       *   </AppHeaderWrapper>
-       */
-      handleNavigationWrapping && navigationChildrenCount > 1 && shouldWrapNavigation && !shouldForceDrawer && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(App_AppNavigationWrapper, {
-        className: className,
-        ref: this.nav2Ref
-      }, external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
-        // the 1st child is expected to be <AppNavigationWrapper />
-        if (index === 0 && child.type.name === App_AppNavigationWrapper.name) {
-          return external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(child.props.children, function (navChild, navIndex) {
-            return (// the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
-              // processed above and moved into the header, so we want to return null here
-              navIndex === 0 ? null : navChild
-            );
-          });
-        } // ignoring other children for now...
-
-
-        return null;
-      })),
-      /*
-       * this block is only relevant when the header is NOT handling navigation wrapping, i.e. if the
-       * navigation is a drawer (or something else in the future)
-       *
-       *   <AppHeaderWrapper ...>
-       *     <AppNavigationWrapper drawer ...>
-       *       <NavLink to="/home" />
-       *       <NavLink to="/tab1">Tab 1</NavLink>
-       *       <NavLink to="/tab2">Tab 2</NavLink>
-       *     </AppNavigationWrapper>
-       *   </AppHeaderWrapper>
-       */
-      (!handleNavigationWrapping || shouldForceDrawer) && navigationChildrenCount > 0 && external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
-        // the 1st child is expected to be <AppNavigationWrapper ... />
-        if (index === 0) {
-          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(App_AppNavigationWrapper, {
-            drawer: child.props.drawer || shouldForceDrawer,
-            headerBounds: headerBounds,
-            isOpen: isNavigationOpen,
-            onClose: _this2.closeNavigation
-          }, shouldForceDrawer && user && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", null, user), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("hr", null)), external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(child.props.children, function (navChild, navIndex) {
-            return (// the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
-              // processed above and moved into the header, so we want to return null here
-              navIndex === 0 ? null : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.cloneElement(navChild, AppHeaderWrapper_objectSpread(AppHeaderWrapper_objectSpread({}, navChild.props), {}, {
-                onClick: _this2.closeNavigation
-              }))
-            );
-          }), shouldForceDrawer && _this2.renderLogOutButtonInDrawer());
-        } // ignoring other children for now...
+            return null;
+          })
+        }),
+        /*
+        * this block is only relevant when the header is NOT handling navigation wrapping, i.e. if the
+        * navigation is a drawer (or something else in the future)
+        *
+        *   <AppHeaderWrapper ...>
+        *     <AppNavigationWrapper drawer ...>
+        *       <NavLink to="/home" />
+        *       <NavLink to="/tab1">Tab 1</NavLink>
+        *       <NavLink to="/tab2">Tab 2</NavLink>
+        *     </AppNavigationWrapper>
+        *   </AppHeaderWrapper>
+        */
+        (!handleNavigationWrapping || shouldForceDrawer) && navigationChildrenCount > 0 && external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(children, function (child, index) {
+          // the 1st child is expected to be <AppNavigationWrapper ... />
+          if (index === 0) {
+            return /*#__PURE__*/Object(jsx_runtime["jsxs"])(App_AppNavigationWrapper, {
+              drawer: child.props.drawer || shouldForceDrawer,
+              headerBounds: headerBounds,
+              isOpen: isNavigationOpen,
+              onClose: _this2.closeNavigation,
+              children: [shouldForceDrawer && user && /*#__PURE__*/Object(jsx_runtime["jsxs"])(jsx_runtime["Fragment"], {
+                children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
+                  children: user
+                }), /*#__PURE__*/Object(jsx_runtime["jsx"])("hr", {})]
+              }), external_root_React_commonjs2_react_commonjs_react_amd_react_["Children"].map(child.props.children, function (navChild, navIndex) {
+                return (// the 1st child is expected to be the root route, i.e. the app icon + app title, which will be
+                  // processed above and moved into the header, so we want to return null here
+                  navIndex === 0 ? null : /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"])(navChild, AppHeaderWrapper_objectSpread(AppHeaderWrapper_objectSpread({}, navChild.props), {}, {
+                    onClick: _this2.closeNavigation
+                  }))
+                );
+              }), shouldForceDrawer && _this2.renderLogOutButtonInDrawer()]
+            });
+          } // ignoring other children for now...
 
 
-        return null;
-      }));
+          return null;
+        })]
+      });
     }
   }]);
 
@@ -72202,18 +72281,21 @@ var Card_Card = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_
 // CONCATENATED MODULE: ./src/layout/src/components/Card/Card.js
 
 
+function Card_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function Card_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Card_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Card_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
 
-var StyledMuiCard = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(esm_Card_Card).withConfig({
-  displayName: "Card__StyledMuiCard",
-  componentId: "sc-3vnjrr-0"
-})(["", ""], StyleUtils_getHoverStyles);
-var Card_Card_Card = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledMuiCard, extends_default()({
+
+
+
+var StyledMuiCard = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(esm_Card_Card)(["", ""], StyleUtils_getHoverStyles);
+var Card_Card_Card = /*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"])(function (props, ref) {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(StyledMuiCard, Card_objectSpread(Card_objectSpread({
     variant: "outlined" // eslint-disable-next-line react/jsx-props-no-spreading
 
-  }, props, {
+  }, props), {}, {
     ref: ref
   }));
 });
@@ -72290,10 +72372,7 @@ var CardSegment_getSegmentComputedStyles = function getSegmentComputedStyles(pro
   return styles;
 };
 
-var CardSegment = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "CardSegment",
-  componentId: "sc-44tqm2-0"
-})(["display:flex;flex:1 0 auto;position:relative;", " &:first-child{border-radius:3px 3px 0 0;}&:last-child{border-bottom:0;border-radius:0 0 3px 3px;}"], CardSegment_getSegmentComputedStyles);
+var CardSegment = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["display:flex;flex:1 0 auto;position:relative;", " &:first-child{border-radius:3px 3px 0 0;}&:last-child{border-bottom:0;border-radius:0 0 3px 3px;}"], CardSegment_getSegmentComputedStyles);
 /* harmony default export */ var CardSegment_CardSegment = (CardSegment);
 
 // CONCATENATED MODULE: ./src/layout/src/components/CardHeader/CardHeader.js
@@ -72322,17 +72401,11 @@ var CardHeader = external_amd_styled_components_commonjs_styled_components_commo
   return {
     as: 'header'
   };
-}).withConfig({
-  displayName: "CardHeader",
-  componentId: "ez5xes-0"
 })(["align-items:baseline;background-color:", ";color:", ";flex:none;transition:background-color ", " ease-out,color ", " ease-out;"], CardHeader_backgroundColor, CardHeader_getFontColor, style_transitions_duration.standard, style_transitions_duration.standard);
 /* harmony default export */ var CardHeader_CardHeader = (CardHeader);
 // CONCATENATED MODULE: ./src/layout/src/components/CardStack/CardStack.js
 
-var CardStack = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "CardStack",
-  componentId: "sc-1vtkaja-0"
-})(["display:flex;flex-direction:column;position:relative;& > div{margin:10px 0;}& > div:first-child{margin-top:0;}& > div:last-child{margin-bottom:0;}"]);
+var CardStack = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["display:flex;flex-direction:column;position:relative;& > div{margin:10px 0;}& > div:first-child{margin-top:0;}& > div:last-child{margin-bottom:0;}"]);
 /* harmony default export */ var CardStack_CardStack = (CardStack);
 // CONCATENATED MODULE: ./src/layout/index.js
 
@@ -72363,18 +72436,9 @@ function styled_objectSpread(target) { for (var i = 1; i < arguments.length; i++
 
 
 
-var StyledTable = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.table.withConfig({
-  displayName: "styled__StyledTable",
-  componentId: "r3xwjs-0"
-})(["background-color:white;border-collapse:collapse;border:none;table-layout:fixed;width:100%;"]);
-var PaginationWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "styled__PaginationWrapper",
-  componentId: "r3xwjs-1"
-})(["align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;"]);
-var Cell = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.td.withConfig({
-  displayName: "styled__Cell",
-  componentId: "r3xwjs-2"
-})(function (props) {
+var StyledTable = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.table(["background-color:white;border-collapse:collapse;border:none;table-layout:fixed;width:100%;"]);
+var PaginationWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["align-items:center;display:flex;justify-content:flex-end;width:100%;margin:8px 0;"]);
+var Cell = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.td(function (props) {
   return styled_objectSpread({
     backgroundColor: props.as === 'th' ? NEUTRAL.N00 : 'inherit',
     cursor: props.onClick ? 'pointer' : 'auto',
@@ -72384,16 +72448,11 @@ var Cell = external_amd_styled_components_commonjs_styled_components_commonjs2_s
   }, props.cellStyle);
 });
 Cell.displayName = 'Cell';
-var StyledRow = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.tr.withConfig({
-  displayName: "styled__StyledRow",
-  componentId: "r3xwjs-3"
-})(["background-color:white;border-bottom:1px solid ", ";td,th{", "};"], NEUTRAL.N100, StyleUtils_getStickyPosition);
-var RowPerPageWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "styled__RowPerPageWrapper",
-  componentId: "r3xwjs-4"
-})(["font-size:14px;margin-right:10px;width:75px;"]);
+var StyledRow = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.tr(["background-color:white;border-bottom:1px solid ", ";td,th{", "};"], NEUTRAL.N100, StyleUtils_getStickyPosition);
+var RowPerPageWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["font-size:14px;margin-right:10px;width:75px;"]);
 
 // CONCATENATED MODULE: ./src/table/src/components/HeadCell.js
+
 
 
 
@@ -72412,17 +72471,19 @@ var HeadCell_HeadCell = function HeadCell(props) {
   if (order === 'asc') icon = faSortUp["faSortUp"];
   if (order === 'desc') icon = faSortDown["faSortDown"];
   var sortText = "Sort (".concat(order === 'asc' ? 'Ascending' : 'Descending', ")");
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Cell, {
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])(Cell, {
     as: "th",
     cellStyle: cellStyle,
     className: className,
-    onClick: onClick
-  }, children, sortable && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("span", {
-    "aria-label": sortText
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
-    icon: icon,
-    fixedWidth: true
-  })));
+    onClick: onClick,
+    children: [children, sortable && /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
+      "aria-label": sortText,
+      children: /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
+        icon: icon,
+        fixedWidth: true
+      })
+    })]
+  });
 };
 
 HeadCell_HeadCell.defaultProps = {
@@ -72433,10 +72494,6 @@ HeadCell_HeadCell.defaultProps = {
   sortable: false
 };
 /* harmony default export */ var components_HeadCell = (HeadCell_HeadCell);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/typeof.js
-var helpers_typeof = __webpack_require__(97);
-var typeof_default = /*#__PURE__*/__webpack_require__.n(helpers_typeof);
-
 // CONCATENATED MODULE: ./src/table/src/components/TableUtils.js
 
 
@@ -72539,6 +72596,9 @@ var TableUtils_getInitialRowsPerPage = function getInitialRowsPerPage(rowCount) 
 
 
 
+
+
+
 var PaginationToolbar_PaginationToolbar = function PaginationToolbar(props) {
   var count = props.count,
       onPageChange = props.onPageChange,
@@ -72564,21 +72624,28 @@ var PaginationToolbar_PaginationToolbar = function PaginationToolbar(props) {
     }, event);
   };
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(PaginationWrapper, null, options.length > 1 && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.Fragment, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
-    subtle: true
-  }, "Rows per page"), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(RowPerPageWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Select, {
-    borderless: true,
-    defaultValue: options[0],
-    onChange: handleRowsPerPage,
-    options: options,
-    value: rowsPerPage,
-    useRawValues: true
-  }))), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Pagination_Pagination, {
-    count: lastPage + 1,
-    onChange: handlePaginationChange,
-    page: page,
-    shape: "rounded"
-  }));
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])(PaginationWrapper, {
+    children: [options.length > 1 && /*#__PURE__*/Object(jsx_runtime["jsxs"])(jsx_runtime["Fragment"], {
+      children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(src_label, {
+        subtle: true,
+        children: "Rows per page"
+      }), /*#__PURE__*/Object(jsx_runtime["jsx"])(RowPerPageWrapper, {
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Select, {
+          borderless: true,
+          defaultValue: options[0],
+          onChange: handleRowsPerPage,
+          options: options,
+          value: rowsPerPage,
+          useRawValues: true
+        })
+      })]
+    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_Pagination_Pagination, {
+      count: lastPage + 1,
+      onChange: handlePaginationChange,
+      page: page,
+      shape: "rounded"
+    })]
+  });
 };
 
 PaginationToolbar_PaginationToolbar.defaultProps = {
@@ -72589,8 +72656,10 @@ PaginationToolbar_PaginationToolbar.defaultProps = {
   rowsPerPageOptions: []
 }; // $FlowFixMe
 
-/* harmony default export */ var components_PaginationToolbar = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.memo(PaginationToolbar_PaginationToolbar));
+/* harmony default export */ var components_PaginationToolbar = (/*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["memo"])(PaginationToolbar_PaginationToolbar));
 // CONCATENATED MODULE: ./src/table/src/components/TableBody.js
+
+
 
 
 
@@ -72616,39 +72685,43 @@ var TableBody_TableBody = function TableBody(props) {
 
   if (isLoading) {
     emptyHeight = "".concat(rowsPerPage * 24 + (rowsPerPage - 1) * 21, "px");
-    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("tbody", {
-      className: className
-    }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledRow, {
-      id: "empty-row-filler"
-    }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Cell, {
-      colSpan: headers.length,
-      cellStyle: {
-        height: emptyHeight,
-        textAlign: 'center'
-      }
-    }, isLoading && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, {
-      size: "2x"
-    }))));
+    return /*#__PURE__*/Object(jsx_runtime["jsx"])("tbody", {
+      className: className,
+      children: /*#__PURE__*/Object(jsx_runtime["jsx"])(StyledRow, {
+        id: "empty-row-filler",
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])(Cell, {
+          colSpan: headers.length,
+          cellStyle: {
+            height: emptyHeight,
+            textAlign: 'center'
+          },
+          children: isLoading && /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Spinner, {
+            size: "2x"
+          })
+        })
+      })
+    });
   }
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("tbody", {
-    className: className
-  }, dataByPage.map(function (rowData) {
-    var id = rowData.id;
-    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Row, {
-      key: id,
-      data: rowData,
-      headers: headers,
-      components: components
-    });
-  }), !!emptyRowCount && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledRow, {
-    id: "empty-row-filler"
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Cell, {
-    colSpan: headers.length,
-    cellStyle: {
-      height: emptyHeight
-    }
-  })));
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])("tbody", {
+    className: className,
+    children: [dataByPage.map(function (rowData) {
+      var id = rowData.id;
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(components.Row, {
+        data: rowData,
+        headers: headers,
+        components: components
+      }, id);
+    }), !!emptyRowCount && /*#__PURE__*/Object(jsx_runtime["jsx"])(StyledRow, {
+      id: "empty-row-filler",
+      children: /*#__PURE__*/Object(jsx_runtime["jsx"])(Cell, {
+        colSpan: headers.length,
+        cellStyle: {
+          height: emptyHeight
+        }
+      })
+    })]
+  });
 };
 
 TableBody_TableBody.defaultProps = {
@@ -72659,7 +72732,7 @@ TableBody_TableBody.defaultProps = {
   order: false,
   orderBy: undefined
 };
-/* harmony default export */ var components_TableBody = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.memo(TableBody_TableBody));
+/* harmony default export */ var components_TableBody = (/*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["memo"])(TableBody_TableBody));
 // CONCATENATED MODULE: ./src/table/src/components/TableHeader.js
 
 
@@ -72682,25 +72755,27 @@ var TableHeader_TableHeader = function TableHeader(props) {
     };
   };
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("thead", {
-    className: className
-  }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledRow, {
-    sticky: sticky
-  }, headers && headers.map(function (header) {
-    var cellStyle = header.cellStyle,
-        key = header.key,
-        label = header.label,
-        _header$sortable = header.sortable,
-        sortable = _header$sortable === void 0 ? true : _header$sortable;
-    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.HeadCell, {
-      key: key,
-      components: components,
-      cellStyle: cellStyle,
-      onClick: onSort && sortable ? createSortHandler(key) : undefined,
-      order: orderBy === header.key ? order : false,
-      sortable: sortable
-    }, label);
-  })));
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])("thead", {
+    className: className,
+    children: /*#__PURE__*/Object(jsx_runtime["jsx"])(StyledRow, {
+      sticky: sticky,
+      children: headers && headers.map(function (header) {
+        var cellStyle = header.cellStyle,
+            key = header.key,
+            label = header.label,
+            _header$sortable = header.sortable,
+            sortable = _header$sortable === void 0 ? true : _header$sortable;
+        return /*#__PURE__*/Object(jsx_runtime["jsx"])(components.HeadCell, {
+          components: components,
+          cellStyle: cellStyle,
+          onClick: onSort && sortable ? createSortHandler(key) : undefined,
+          order: orderBy === header.key ? order : false,
+          sortable: sortable,
+          children: label
+        }, key);
+      })
+    })
+  });
 };
 
 TableHeader_TableHeader.defaultProps = {
@@ -72723,13 +72798,14 @@ var TableRow_TableRow = function TableRow(props) {
       headers = props.headers;
   var id = data.id;
   var cells = headers.map(function (header) {
-    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Cell, {
-      key: "".concat(id, "_cell_").concat(header.key)
-    }, data[header.key]);
+    return /*#__PURE__*/Object(jsx_runtime["jsx"])(components.Cell, {
+      children: data[header.key]
+    }, "".concat(id, "_cell_").concat(header.key));
   });
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledRow, {
-    className: className
-  }, cells);
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(StyledRow, {
+    className: className,
+    children: cells
+  });
 };
 
 TableRow_TableRow.defaultProps = {
@@ -72743,6 +72819,8 @@ TableRow_TableRow.defaultProps = {
 function Table_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function Table_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Table_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Table_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
 
 
 
@@ -72776,25 +72854,25 @@ var Table_Table = function Table(props) {
   var rowCount = totalRows || data && data.length;
   var initialRowsPerPage = TableUtils_getInitialRowsPerPage(rowCount, rowsPerPageOptions);
 
-  var _React$useState = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(),
-      _React$useState2 = slicedToArray_default()(_React$useState, 2),
-      orderBy = _React$useState2[0],
-      setOrderBy = _React$useState2[1];
+  var _useState = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"])(),
+      _useState2 = slicedToArray_default()(_useState, 2),
+      orderBy = _useState2[0],
+      setOrderBy = _useState2[1];
 
-  var _React$useState3 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(),
-      _React$useState4 = slicedToArray_default()(_React$useState3, 2),
-      order = _React$useState4[0],
-      setOrder = _React$useState4[1];
+  var _useState3 = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"])(),
+      _useState4 = slicedToArray_default()(_useState3, 2),
+      order = _useState4[0],
+      setOrder = _useState4[1];
 
-  var _React$useState5 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(1),
-      _React$useState6 = slicedToArray_default()(_React$useState5, 2),
-      currentPage = _React$useState6[0],
-      setPage = _React$useState6[1];
+  var _useState5 = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"])(1),
+      _useState6 = slicedToArray_default()(_useState5, 2),
+      currentPage = _useState6[0],
+      setPage = _useState6[1];
 
-  var _React$useState7 = external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.useState(initialRowsPerPage),
-      _React$useState8 = slicedToArray_default()(_React$useState7, 2),
-      rowsPerPage = _React$useState8[0],
-      setRowsPerPage = _React$useState8[1];
+  var _useState7 = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useState"])(initialRowsPerPage),
+      _useState8 = slicedToArray_default()(_useState7, 2),
+      rowsPerPage = _useState8[0],
+      setRowsPerPage = _useState8[1];
 
   Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useEffect"])(function () {
     setPage(1);
@@ -72835,36 +72913,40 @@ var Table_Table = function Table(props) {
 
   var components = Table_objectSpread(Table_objectSpread({}, Table_defaultComponents), propComponents);
 
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, paginated && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Pagination, {
-    count: rowCount,
-    onPageChange: handlePageChange,
-    page: currentPage,
-    rowsPerPage: rowsPerPage,
-    rowsPerPageOptions: rowsPerPageOptions
-  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledTable, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Header, {
-    components: components,
-    headers: headers,
-    order: order,
-    orderBy: orderBy,
-    onSort: handleSort,
-    sticky: true
-  }), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Body, {
-    components: components,
-    data: data,
-    headers: headers,
-    isLoading: isLoading,
-    exact: exact,
-    order: order,
-    orderBy: orderBy,
-    rowsPerPage: rowsPerPage,
-    page: currentPage
-  })), paginated && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components.Pagination, {
-    count: rowCount,
-    onPageChange: handlePageChange,
-    page: currentPage,
-    rowsPerPage: rowsPerPage,
-    rowsPerPageOptions: rowsPerPageOptions
-  }));
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
+    children: [paginated && /*#__PURE__*/Object(jsx_runtime["jsx"])(components.Pagination, {
+      count: rowCount,
+      onPageChange: handlePageChange,
+      page: currentPage,
+      rowsPerPage: rowsPerPage,
+      rowsPerPageOptions: rowsPerPageOptions
+    }), /*#__PURE__*/Object(jsx_runtime["jsxs"])(StyledTable, {
+      children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(components.Header, {
+        components: components,
+        headers: headers,
+        order: order,
+        orderBy: orderBy,
+        onSort: handleSort,
+        sticky: true
+      }), /*#__PURE__*/Object(jsx_runtime["jsx"])(components.Body, {
+        components: components,
+        data: data,
+        headers: headers,
+        isLoading: isLoading,
+        exact: exact,
+        order: order,
+        orderBy: orderBy,
+        rowsPerPage: rowsPerPage,
+        page: currentPage
+      })]
+    }), paginated && /*#__PURE__*/Object(jsx_runtime["jsx"])(components.Pagination, {
+      count: rowCount,
+      onPageChange: handlePageChange,
+      page: currentPage,
+      rowsPerPage: rowsPerPage,
+      rowsPerPageOptions: rowsPerPageOptions
+    })]
+  });
 };
 
 Table_Table.defaultProps = {
@@ -72877,7 +72959,7 @@ Table_Table.defaultProps = {
   rowsPerPageOptions: [],
   totalRows: 0
 };
-/* harmony default export */ var components_Table = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.memo(Table_Table));
+/* harmony default export */ var components_Table = (/*#__PURE__*/Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["memo"])(Table_Table));
 // CONCATENATED MODULE: ./src/table/index.js
 
 
@@ -72890,20 +72972,11 @@ Table_Table.defaultProps = {
 
 // CONCATENATED MODULE: ./src/components/search/src/components/styled/StyledResultComponents.js
 
-var ResultGrid = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledResultComponents__ResultGrid",
-  componentId: "drevdl-0"
-})(["display:grid;flex:1;grid-auto-flow:row;grid-template-columns:", ";grid-gap:20px 30px;"], function (props) {
+var ResultGrid = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["display:grid;flex:1;grid-auto-flow:row;grid-template-columns:", ";grid-gap:20px 30px;"], function (props) {
   return props.columns && Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["repeat(", ",minmax(0,1fr))"], props.columns);
 });
-var ResultWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledResultComponents__ResultWrapper",
-  componentId: "drevdl-1"
-})(["display:flex;flex-direction:row;padding:10px;"]);
-var ResultDetails = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledResultComponents__ResultDetails",
-  componentId: "drevdl-2"
-})(["padding:10px 30px;flex:1;"]);
+var ResultWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["display:flex;flex-direction:row;padding:10px;"]);
+var ResultDetails = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["padding:10px 30px;flex:1;"]);
 
 var StyledResultComponents_getTruncatedStyles = function getTruncatedStyles(props) {
   var truncate = props.truncate;
@@ -72915,14 +72988,8 @@ var StyledResultComponents_getTruncatedStyles = function getTruncatedStyles(prop
   return Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["word-break:break-word;"]);
 };
 
-var Text = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledResultComponents__Text",
-  componentId: "drevdl-3"
-})(["", ";"], StyledResultComponents_getTruncatedStyles);
-var StyledResultComponents_Image = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.img.withConfig({
-  displayName: "StyledResultComponents__Image",
-  componentId: "drevdl-4"
-})(["height:100%;width:100px;"]);
+var Text = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["", ";"], StyledResultComponents_getTruncatedStyles);
+var StyledResultComponents_Image = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.img(["height:100%;width:100px;"]);
 
 // CONCATENATED MODULE: ./src/components/search/src/components/DataGrid.js
 
@@ -72936,6 +73003,8 @@ var StyledResultComponents_Image = external_amd_styled_components_commonjs_style
 function DataGrid_createSuper(Derived) { var hasNativeReflectConstruct = DataGrid_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
 function DataGrid_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 
 
@@ -72997,18 +73066,21 @@ var DataGrid_DataGrid = /*#__PURE__*/function (_Component) {
           columns = _this$props2.columns,
           truncate = _this$props2.truncate;
       var details = this.transformDataToDetailsList();
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultGrid, {
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(ResultGrid, {
         className: className,
-        columns: columns
-      }, details && details.map(function (detail, index) {
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
-          key: index.toString()
-        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
-          subtle: true
-        }, detail.get('label', '')), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Text, {
-          truncate: truncate
-        }, detail.get('value', '')));
-      }));
+        columns: columns,
+        children: details && details.map(function (detail, index) {
+          return /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
+            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(src_label, {
+              subtle: true,
+              children: detail.get('label', '')
+            }), /*#__PURE__*/Object(jsx_runtime["jsx"])(Text, {
+              truncate: truncate,
+              children: detail.get('value', '')
+            })]
+          }, index.toString());
+        })
+      });
     }
   }]);
 
@@ -73036,6 +73108,7 @@ defineProperty_default()(DataGrid_DataGrid, "defaultProps", {
 function Result_createSuper(Derived) { var hasNativeReflectConstruct = Result_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
 function Result_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
 
 
 
@@ -73081,14 +73154,19 @@ var Result_Result = /*#__PURE__*/function (_Component) {
           result = _this$props2.result,
           resultColumns = _this$props2.resultColumns,
           resultLabels = _this$props2.resultLabels;
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Card_Card, {
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Card_Card, {
         className: className,
-        onClick: this.handleClick
-      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultDetails, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_DataGrid, {
-        columns: resultColumns,
-        data: result,
-        labelMap: resultLabels
-      }))));
+        onClick: this.handleClick,
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])(ResultWrapper, {
+          children: /*#__PURE__*/Object(jsx_runtime["jsx"])(ResultDetails, {
+            children: /*#__PURE__*/Object(jsx_runtime["jsx"])(components_DataGrid, {
+              columns: resultColumns,
+              data: result,
+              labelMap: resultLabels
+            })
+          })
+        })
+      });
     }
   }]);
 
@@ -73124,10 +73202,9 @@ function IconSplash_isNativeReflectConstruct() { if (typeof Reflect === "undefin
 
 
 
-var FigureWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.figure.withConfig({
-  displayName: "IconSplash__FigureWrapper",
-  componentId: "sc-1cajf7r-0"
-})(["display:flex;flex-direction:column;justify-content:center;margin:10px auto;text-align:center;> div:first-child{margin-bottom:10px;}figcaption{color:", ";font-size:16px;font-weight:600;line-height:22px;margin:0 auto;text-align:center;width:100%;}"], NEUTRAL.N500);
+
+
+var FigureWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.figure(["display:flex;flex-direction:column;justify-content:center;margin:10px auto;text-align:center;> div:first-child{margin-bottom:10px;}figcaption{color:", ";font-size:16px;font-weight:600;line-height:22px;margin:0 auto;text-align:center;width:100%;}"], NEUTRAL.N500);
 
 var IconSplash_IconSplash = /*#__PURE__*/function (_Component) {
   inherits_default()(IconSplash, _Component);
@@ -73151,12 +73228,14 @@ var IconSplash_IconSplash = /*#__PURE__*/function (_Component) {
           size = _this$props.size;
 
       if (icon) {
-        var content = typeof icon === 'function' ? icon(size) : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+        var content = typeof icon === 'function' ? icon(size) : /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
           icon: icon,
           size: size,
           fixedWidth: true
         });
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, content);
+        return /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
+          children: content
+        });
       }
 
       return null;
@@ -73171,9 +73250,12 @@ var IconSplash_IconSplash = /*#__PURE__*/function (_Component) {
       var _this$props2 = this.props,
           className = _this$props2.className,
           caption = _this$props2.caption;
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FigureWrapper, {
-        className: className
-      }, this.renderIcon(), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("figcaption", null, caption));
+      return /*#__PURE__*/Object(jsx_runtime["jsxs"])(FigureWrapper, {
+        className: className,
+        children: [this.renderIcon(), /*#__PURE__*/Object(jsx_runtime["jsx"])("figcaption", {
+          children: caption
+        })]
+      });
     }
   }]);
 
@@ -73209,6 +73291,7 @@ function SearchResults_isNativeReflectConstruct() { if (typeof Reflect === "unde
 
 
 
+
 var SearchResults_SearchResults = /*#__PURE__*/function (_Component) {
   inherits_default()(SearchResults, _Component);
 
@@ -73234,24 +73317,23 @@ var SearchResults_SearchResults = /*#__PURE__*/function (_Component) {
           ResultComponent = _this$props.resultComponent,
           resultLabels = _this$props.resultLabels,
           results = _this$props.results;
-      if (isLoading) return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Spinner, {
+      if (isLoading) return /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Spinner, {
         size: "2x"
       });
 
       if (immutable_es_List.isList(results) && results.count() && ResultComponent) {
         return results.map(function (result, index) {
-          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultComponent, {
-            key: index.toString(),
+          return /*#__PURE__*/Object(jsx_runtime["jsx"])(ResultComponent, {
             onClick: onResultClick,
             result: result,
             index: index,
             resultLabels: resultLabels
-          });
+          }, index.toString());
         });
       }
 
       if (hasSearched && NoResults) {
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(NoResults, null);
+        return /*#__PURE__*/Object(jsx_runtime["jsx"])(NoResults, {});
       }
 
       return null;
@@ -73264,9 +73346,10 @@ var SearchResults_SearchResults = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       var className = this.props.className;
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CardStack_CardStack, {
-        className: className
-      }, this.renderResults());
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(CardStack_CardStack, {
+        className: className,
+        children: this.renderResults()
+      });
     }
   }]);
 
@@ -73278,7 +73361,7 @@ defineProperty_default()(SearchResults_SearchResults, "defaultProps", {
   hasSearched: false,
   isLoading: false,
   noResults: function noResults() {
-    return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_IconSplash, {
+    return /*#__PURE__*/Object(jsx_runtime["jsx"])(components_IconSplash, {
       icon: faSearchMinus["faSearchMinus"],
       caption: "No results"
     });
@@ -73303,17 +73386,11 @@ var StyledSearchComponents_getAlignItems = function getAlignItems(_ref2) {
   return Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["align-items:", ";"], align || 'flex-start');
 };
 
-var InputGrid = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div.withConfig({
-  displayName: "StyledSearchComponents__InputGrid",
-  componentId: "sc-1686v4u-0"
-})(["display:grid;flex:1 1 100%;grid-gap:20px 30px;", " ", ""], StyledSearchComponents_getAlignItems, StyledSearchComponents_getGridTemplateColumns);
-var Title = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.h1.withConfig({
-  displayName: "StyledSearchComponents__Title",
-  componentId: "sc-1686v4u-1"
-})(["font-size:18px;font-weight:normal;margin:0;"]);
+var InputGrid = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.div(["display:grid;flex:1 1 100%;grid-gap:20px 30px;", " ", ""], StyledSearchComponents_getAlignItems, StyledSearchComponents_getGridTemplateColumns);
+var Title = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.h1(["font-size:18px;font-weight:normal;margin:0;"]);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faCalendarDay.js
-var faCalendarDay = __webpack_require__(61);
+var faCalendarDay = __webpack_require__(62);
 
 // CONCATENATED MODULE: ./node_modules/@material-ui/pickers/esm/Wrapper-241966d7.js
 
@@ -74060,7 +74137,7 @@ var Calendar_11ae61f6_CalendarHeader = function CalendarHeader(_ref) {
       slideDirection = _ref.slideDirection;
   var utils = useUtils();
   var classes = useStyles$1();
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var rtl = theme.direction === 'rtl';
 
   var selectNextMonth = function selectNextMonth() {
@@ -75412,9 +75489,9 @@ function useIsLandscape(customOrientation) {
   return orientationToUse === 'landscape';
 }
 
-function ownKeys$1(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function Picker_ccd9ba90_ownKeys$1(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread$1(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys$1(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys$1(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function Picker_ccd9ba90_objectSpread$1(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Picker_ccd9ba90_ownKeys$1(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Picker_ccd9ba90_ownKeys$1(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 var viewsMap = {
   year: Picker_ccd9ba90_YearSelection,
   month: Picker_ccd9ba90_MonthSelection,
@@ -75507,7 +75584,7 @@ var Picker_ccd9ba90_Picker = function Picker(_ref) {
     onSecondsChange: handleChangeAndOpenNext
   }))));
 };
-Picker_ccd9ba90_Picker.defaultProps = _objectSpread$1({}, datePickerDefaultProps, {
+Picker_ccd9ba90_Picker.defaultProps = Picker_ccd9ba90_objectSpread$1({}, datePickerDefaultProps, {
   views: Object.keys(viewsMap)
 });
 
@@ -76011,9 +76088,9 @@ function usePickerState(props, options) {
   return pickerState;
 }
 
-function ownKeys$2(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function makePickerWithState_5a79cb8a_ownKeys$2(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread$2(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys$2(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys$2(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function makePickerWithState_5a79cb8a_objectSpread$2(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { makePickerWithState_5a79cb8a_ownKeys$2(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { makePickerWithState_5a79cb8a_ownKeys$2(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function parseInputString(value, utils, format) {
   try {
@@ -76048,7 +76125,7 @@ function useKeyboardPickerState(props, options) {
   }, [format, _onChange, utils]);
 
   var _usePickerState = usePickerState( // Extend props interface
-  _objectSpread$2({}, props, {
+  makePickerWithState_5a79cb8a_objectSpread$2({}, props, {
     value: dateValue,
     onChange: handleKeyboardChange
   }), options),
@@ -76057,7 +76134,7 @@ function useKeyboardPickerState(props, options) {
       pickerProps = _usePickerState.pickerProps;
 
   var inputProps = Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["useMemo"])(function () {
-    return _objectSpread$2({}, innerInputProps, {
+    return makePickerWithState_5a79cb8a_objectSpread$2({}, innerInputProps, {
       // reuse validation and open/close logic
       format: wrapperProps.format,
       inputValue: inputValue || innerInputValue,
@@ -76334,6 +76411,10 @@ var useInputPropsMemo_useInputPropsMemo = function useInputPropsMemo(lastValidDa
 
 
 
+function components_DatePicker_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function components_DatePicker_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { components_DatePicker_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { components_DatePicker_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 /* eslint-disable react/jsx-props-no-spreading */
 
 
@@ -76342,7 +76423,9 @@ var useInputPropsMemo_useInputPropsMemo = function useInputPropsMemo(lastValidDa
 
 
 
-var CalendarIcon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+
+
+var CalendarIcon = /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
   icon: faCalendarDay["faCalendarDay"],
   size: "lg"
 });
@@ -76395,7 +76478,7 @@ var components_DatePicker_DatePicker = function DatePicker(props) {
 
     setSelectedDate(date);
   }, [onChange]);
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(KeyboardDatePicker, extends_default()({
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(KeyboardDatePicker, components_DatePicker_objectSpread({
     disabled: disabled,
     format: format,
     fullWidth: fullWidth,
@@ -76431,6 +76514,8 @@ components_DatePicker_DatePicker.defaultProps = {
 function Search_createSuper(Derived) { var hasNativeReflectConstruct = Search_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
 function Search_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 
 
@@ -76536,7 +76621,7 @@ var Search_Search = /*#__PURE__*/function (_Component) {
       }
 
       if (SearchResultsComponent) {
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(SearchResultsComponent, {
+        return /*#__PURE__*/Object(jsx_runtime["jsx"])(SearchResultsComponent, {
           hasSearched: hasSearched,
           isLoading: isLoading,
           onResultClick: onResultClick,
@@ -76557,15 +76642,16 @@ var Search_Search = /*#__PURE__*/function (_Component) {
       var searchFieldValues = _this.state.searchFieldValues; // $FlowFixMe optional not recognizing defaultProps
 
       var searchFieldComponents = searchFields.map(function (field) {
-        var fieldComponent = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Input, {
+        var fieldComponent = /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Input, {
           id: "luk-search-".concat(field.id),
           name: field.id,
           onChange: _this.handleOnChangeInput,
           value: searchFieldValues.get(field.id)
         }); // TODO: More flexible method for handling checkboxes, dropdowns, etc.
 
+
         if (field.type === 'date') {
-          fieldComponent = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_DatePicker, {
+          fieldComponent = /*#__PURE__*/Object(jsx_runtime["jsx"])(components_DatePicker, {
             id: "luk-search-".concat(field.id),
             name: field.id,
             onChange: _this.getOnChangeDate(field.id),
@@ -76573,26 +76659,37 @@ var Search_Search = /*#__PURE__*/function (_Component) {
           });
         }
 
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
-          key: "luk-search-key-".concat(field.id)
-        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
-          htmlFor: "luk-search-".concat(field.id)
-        }, field.label), fieldComponent);
+        return /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
+          children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(src_label, {
+            htmlFor: "luk-search-".concat(field.id),
+            children: field.label
+          }), fieldComponent]
+        }, "luk-search-key-".concat(field.id));
       });
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CardSegment_CardSegment, {
-        vertical: true
-      }, title && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Title, null, title), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("form", null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(InputGrid, {
-        columns: searchFields.length + 1,
-        align: "flex-start"
-      }, searchFieldComponents, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
-        stealth: true
-      }, "Submit"), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Button, {
-        type: "submit",
-        fullWidth: true,
-        isLoading: isLoading,
-        mode: "primary",
-        onClick: _this.handleOnClickSearchButton
-      }, "Search")))));
+      return /*#__PURE__*/Object(jsx_runtime["jsxs"])(CardSegment_CardSegment, {
+        vertical: true,
+        children: [title && /*#__PURE__*/Object(jsx_runtime["jsx"])(Title, {
+          children: title
+        }), /*#__PURE__*/Object(jsx_runtime["jsx"])("form", {
+          children: /*#__PURE__*/Object(jsx_runtime["jsxs"])(InputGrid, {
+            columns: searchFields.length + 1,
+            align: "flex-start",
+            children: [searchFieldComponents, /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
+              children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(src_label, {
+                stealth: true,
+                children: "Submit"
+              }), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Button, {
+                type: "submit",
+                fullWidth: true,
+                isLoading: isLoading,
+                mode: "primary",
+                onClick: _this.handleOnClickSearchButton,
+                children: "Search"
+              })]
+            })]
+          })
+        })]
+      });
     });
 
     defineProperty_default()(assertThisInitialized_default()(_this), "renderFiltersSegment", function () {
@@ -76606,28 +76703,30 @@ var Search_Search = /*#__PURE__*/function (_Component) {
               value: v
             };
           });
-          return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
-            key: "luk-filter-key-".concat(filter.id)
-          }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
-            bold: true,
-            key: filter.id,
-            htmlFor: "luk-filter-".concat(filter.id)
-          }, filter.label), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_CheckboxSelect, {
-            name: filter.id,
-            id: "luk-filter-".concat(filter.id),
-            borderless: true,
-            placeholder: "Add filter",
-            onChange: _this.handleOnChangeFilter,
-            options: options
-          }));
+          return /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
+            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(src_label, {
+              bold: true,
+              htmlFor: "luk-filter-".concat(filter.id),
+              children: filter.label
+            }, filter.id), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_CheckboxSelect, {
+              name: filter.id,
+              id: "luk-filter-".concat(filter.id),
+              borderless: true,
+              placeholder: "Add filter",
+              onChange: _this.handleOnChangeFilter,
+              options: options
+            })]
+          }, "luk-filter-key-".concat(filter.id));
         });
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CardSegment_CardSegment, {
+        return /*#__PURE__*/Object(jsx_runtime["jsx"])(CardSegment_CardSegment, {
           vertical: true,
-          padding: "sm"
-        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(InputGrid, {
-          columns: filterFields.length,
-          align: "flex-start"
-        }, filterFieldComponents));
+          padding: "sm",
+          children: /*#__PURE__*/Object(jsx_runtime["jsx"])(InputGrid, {
+            columns: filterFields.length,
+            align: "flex-start",
+            children: filterFieldComponents
+          })
+        });
       }
 
       return null;
@@ -76651,9 +76750,12 @@ var Search_Search = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       var className = this.props.className;
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(CardStack_CardStack, {
-        className: className
-      }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Card_Card, null, this.renderSearchFieldsSegment(), this.renderFiltersSegment()), this.renderFilteredSearchResults());
+      return /*#__PURE__*/Object(jsx_runtime["jsxs"])(CardStack_CardStack, {
+        className: className,
+        children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])(components_Card_Card, {
+          children: [this.renderSearchFieldsSegment(), this.renderFiltersSegment()]
+        }), this.renderFilteredSearchResults()]
+      });
     }
   }]);
 
@@ -76702,10 +76804,9 @@ function PersonResult_isNativeReflectConstruct() { if (typeof Reflect === "undef
 
 
 
-var StyledResultGrid = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(ResultGrid).withConfig({
-  displayName: "PersonResult__StyledResultGrid",
-  componentId: "sc-4sveql-0"
-})(["grid-template-columns:minmax(80px,2fr) minmax(80px,2fr) minmax(80px,2fr) 1fr 1fr;> div:last-child{grid-column:3 / -1;}"]);
+
+
+var StyledResultGrid = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(ResultGrid)(["grid-template-columns:minmax(80px,2fr) minmax(80px,2fr) minmax(80px,2fr) 1fr 1fr;> div:last-child{grid-column:3 / -1;}"]);
 
 var PersonResult_PersonResult = /*#__PURE__*/function (_Component) {
   inherits_default()(PersonResult, _Component);
@@ -76749,13 +76850,24 @@ var PersonResult_PersonResult = /*#__PURE__*/function (_Component) {
     value: function render() {
       var result = this.props.result;
       var details = this.transformResultToDetailsList(result);
-      return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(components_Card_Card, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultWrapper, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(ResultDetails, null, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(StyledResultGrid, null, details && details.map(function (detail, index) {
-        return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement("div", {
-          key: index.toString()
-        }, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(src_label, {
-          bold: true
-        }, detail.get('label', '')), /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(Text, null, detail.get('value', '')));
-      })))));
+      return /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Card_Card, {
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])(ResultWrapper, {
+          children: /*#__PURE__*/Object(jsx_runtime["jsx"])(ResultDetails, {
+            children: /*#__PURE__*/Object(jsx_runtime["jsx"])(StyledResultGrid, {
+              children: details && details.map(function (detail, index) {
+                return /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
+                  children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(src_label, {
+                    bold: true,
+                    children: detail.get('label', '')
+                  }), /*#__PURE__*/Object(jsx_runtime["jsx"])(Text, {
+                    children: detail.get('value', '')
+                  })]
+                }, index.toString());
+              })
+            })
+          })
+        })
+      });
     }
   }]);
 
@@ -76853,7 +76965,7 @@ var TimePickerToolbar_81100fab_TimePickerToolbar = function TimePickerToolbar(_r
       isLandscape = _ref.isLandscape,
       setOpenView = _ref.setOpenView;
   var utils = useUtils();
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var classes = TimePickerToolbar_81100fab_useStyles();
 
   var _useMeridiemMode = useMeridiemMode(date, ampm, onChange),
@@ -77012,6 +77124,10 @@ KeyboardTimePicker.defaultProps = TimePicker_defaultProps;
 
 
 
+function components_TimePicker_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function components_TimePicker_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { components_TimePicker_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { components_TimePicker_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 /* eslint-disable react/jsx-props-no-spreading */
 
 
@@ -77020,7 +77136,9 @@ KeyboardTimePicker.defaultProps = TimePicker_defaultProps;
 
 
 
-var ClockIcon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+
+
+var ClockIcon = /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
   icon: faClock["faClock"],
   size: "lg"
 });
@@ -77077,7 +77195,7 @@ var components_TimePicker_TimePicker = function TimePicker(props) {
   var defaultFormat = ampm ? 'hh:mm a' : 'HH:mm';
   var defaultMask = ampm ? '__:__ _M' : '__:__';
   var defaultPlaceholder = ampm ? 'HH:MM AM' : 'HH:MM';
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(KeyboardTimePicker, extends_default()({
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(KeyboardTimePicker, components_TimePicker_objectSpread({
     ampm: ampm,
     InputProps: inputProps,
     disabled: disabled,
@@ -77196,7 +77314,7 @@ var DateTimePicker_DateTimePickerTabs = function DateTimePickerTabs(_ref) {
       dateRangeIcon = _ref.dateRangeIcon,
       timeIcon = _ref.timeIcon;
   var classes = DateTimePicker_useStyles();
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var indicatorColor = theme.palette.type === 'light' ? 'secondary' : 'primary';
 
   var handleChange = function handleChange(e, value) {
@@ -77256,7 +77374,7 @@ var DateTimePicker_DateTimePickerToolbar = function DateTimePickerToolbar(_ref) 
       meridiemMode = _useMeridiemMode.meridiemMode,
       handleMeridiemChange = _useMeridiemMode.handleMeridiemChange;
 
-  var theme = useTheme_useTheme();
+  var theme = styles_useTheme_useTheme();
   var rtl = theme.direction === 'rtl';
   return Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(external_root_React_commonjs2_react_commonjs_react_amd_react_["Fragment"], null, Object(external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"])(makePickerWithState_5a79cb8a_PickerToolbar, {
     isLandscape: false,
@@ -77394,6 +77512,10 @@ KeyboardDateTimePicker.defaultProps = DateTimePicker_defaultProps;
 
 
 
+function components_DateTimePicker_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function components_DateTimePicker_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { components_DateTimePicker_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { components_DateTimePicker_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 /* eslint-disable react/jsx-props-no-spreading */
 
 
@@ -77402,7 +77524,9 @@ KeyboardDateTimePicker.defaultProps = DateTimePicker_defaultProps;
 
 
 
-var DateTimePicker_CalendarIcon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+
+
+var DateTimePicker_CalendarIcon = /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
   icon: faCalendarDay["faCalendarDay"],
   size: "lg"
 });
@@ -77459,7 +77583,7 @@ var components_DateTimePicker_DateTimePicker = function DateTimePicker(props) {
   var defaultFormat = ampm ? 'MM/dd/yyyy hh:mm a' : 'MM/dd/yyyy HH:mm';
   var defaultMask = ampm ? '__/__/____ __:__ _M' : '__/__/____ __:__';
   var defaultPlaceholder = ampm ? 'MM/DD/YYYY HH:MM AM' : 'MM/DD/YYYY HH:MM';
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(KeyboardDateTimePicker, extends_default()({
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(KeyboardDateTimePicker, components_DateTimePicker_objectSpread({
     ampm: ampm,
     disabled: disabled,
     format: format || defaultFormat,
@@ -77678,6 +77802,12 @@ var Breadcrumbs_Breadcrumbs = /*#__PURE__*/external_root_React_commonjs2_react_c
   name: 'MuiBreadcrumbs'
 })(Breadcrumbs_Breadcrumbs));
 // CONCATENATED MODULE: ./src/breadcrumbs/src/components/Breadcrumbs.js
+
+
+function Breadcrumbs_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function Breadcrumbs_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Breadcrumbs_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Breadcrumbs_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 /* eslint-disable react/jsx-props-no-spreading */
 
 
@@ -77685,11 +77815,11 @@ var Breadcrumbs_Breadcrumbs = /*#__PURE__*/external_root_React_commonjs2_react_c
 
 
 var components_Breadcrumbs_Breadcrumbs = function Breadcrumbs(props) {
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(esm_Breadcrumbs_Breadcrumbs, props);
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_Breadcrumbs_Breadcrumbs, Breadcrumbs_objectSpread({}, props));
 };
 
 components_Breadcrumbs_Breadcrumbs.defaultProps = {
-  separator: /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.createElement(FontAwesomeIcon, {
+  separator: /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
     icon: faChevronRight["faChevronRight"],
     fixedWidth: true
   })
@@ -79190,7 +79320,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.41.0";
+var src_version = "v0.42.0";
 
 
 
