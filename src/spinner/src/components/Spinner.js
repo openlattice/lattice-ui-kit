@@ -1,6 +1,4 @@
 // @flow
-import React from 'react';
-
 import { faCircle, faSpinnerThird } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

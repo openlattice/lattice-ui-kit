@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import { forwardRef } from 'react';
 
 import {
   CheckboxIndicator,
@@ -79,7 +79,7 @@ Checkbox.defaultProps = {
   value: undefined,
 };
 
-export default React.forwardRef<Props, HTMLInputElement>((props, ref) => (
+export default forwardRef<Props, HTMLInputElement>((props, ref) => (
   /* eslint-disable react/jsx-props-no-spreading */
   <Checkbox {...props} forwardedRef={ref} />
   /* eslint-enable */

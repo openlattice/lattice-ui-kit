@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactSelectCreatable from 'react-select/creatable';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';

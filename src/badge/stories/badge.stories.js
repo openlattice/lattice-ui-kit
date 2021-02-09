@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Badge from '..';
 import { Card, CardSegment } from '../../layout';
 

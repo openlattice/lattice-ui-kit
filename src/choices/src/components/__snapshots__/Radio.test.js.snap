@@ -22,11 +22,11 @@ exports[`Radio render matches snapshot 1`] = `
   cursor: pointer;
 }
 
-.c5 {
+.c6 {
   margin-left: 10px;
 }
 
-.c4 {
+.c5 {
   -webkit-transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out,color 100ms ease-out;
   transition: background-color 100ms ease-out,border-color 100ms ease-out,box-shadow 100ms ease-out,color 100ms ease-out;
   background-color: #f2f2f4;
@@ -45,8 +45,8 @@ input:focus-visible ~ .c4 {
 }
 
 input:checked ~ .c4,
-input[readonly]:checked:disabled ~ .c4,
-input[readonly]:checked:hover ~ .c4 {
+input[readonly]:checked:disabled ~ .c5,
+input[readonly]:checked:hover ~ .c5 {
   background-color: #6d49fe;
 }
 
@@ -70,7 +70,7 @@ input[readonly] ~ .c4 {
 }
 
 input:not(:checked) ~ .c4:after,
-input:checked ~ .c4:after {
+input:checked ~ .c5:after {
   content: '';
   background-color: white;
   border-radius: 50%;
@@ -144,217 +144,42 @@ input:checked ~ .c4:after {
 <Radio
   disabled={false}
 >
-  <ChoiceLabel
+  <styled.label
     disabled={false}
   >
-    <StyledComponent
+    <label
+      className="c0"
       disabled={false}
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "ChoiceLabel-sc-11kob9e-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "align-items:center;color:",
-              [Function],
-              ";display:inline-flex;font-size:14px;min-height:40px;pointer-events:",
-              [Function],
-              ";position:relative;vertical-align:middle;&:hover{cursor:pointer;}",
-            ],
-          },
-          "displayName": "ChoiceLabel",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "ChoiceLabel-sc-11kob9e-0",
-          "target": "label",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
     >
-      <label
-        className="c0"
-        disabled={false}
-      >
-        <ChoiceWrappers__ChoiceWrapper>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "ChoiceWrappers__ChoiceWrapper-kj63qq-0",
-                  "isStatic": false,
-                  "lastClassName": "c1",
-                  "rules": Array [
-                    "align-items:stretch;display:inline-flex;justify-content:center;position:relative;vertical-align:middle;word-break:break-word;",
-                    [Function],
-                    ";",
-                  ],
-                },
-                "displayName": "ChoiceWrappers__ChoiceWrapper",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "ChoiceWrappers__ChoiceWrapper-kj63qq-0",
-                "target": "span",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
+      <styled.span>
+        <span
+          className="c1"
+        >
+          <styled.span>
             <span
-              className="c1"
+              className="c2"
             >
-              <ChoiceWrappers__ChoiceInnerWrapper>
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "ChoiceWrappers__ChoiceInnerWrapper-kj63qq-1",
-                        "isStatic": false,
-                        "lastClassName": "c2",
-                        "rules": Array [
-                          "display:flex;flex:1;",
-                        ],
-                      },
-                      "displayName": "ChoiceWrappers__ChoiceInnerWrapper",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "ChoiceWrappers__ChoiceInnerWrapper-kj63qq-1",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <span
-                    className="c2"
-                  >
-                    <ChoiceInputs__RadioInput>
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [
-                              [Function],
-                            ],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "ChoiceInputs__RadioInput-sc-1fkg6yx-0",
-                              "isStatic": false,
-                              "lastClassName": "c3",
-                              "rules": Array [
-                                "height:100%;left:0;margin:0;opacity:0;position:absolute;top:0;vertical-align:middle;width:100%;z-index:-1;",
-                              ],
-                            },
-                            "displayName": "ChoiceInputs__RadioInput",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "ChoiceInputs__RadioInput-sc-1fkg6yx-0",
-                            "target": "input",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <input
-                          className="c3"
-                          type="radio"
-                        />
-                      </StyledComponent>
-                    </ChoiceInputs__RadioInput>
-                    <RadioIndicator>
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "RadioIndicator-sc-1vlnpb4-0",
-                              "isStatic": false,
-                              "lastClassName": "c4",
-                              "rules": Array [
-                                "transition:background-color ",
-                                "100ms",
-                                " ease-out,border-color ",
-                                "100ms",
-                                " ease-out,box-shadow ",
-                                "100ms",
-                                " ease-out,color ",
-                                "100ms",
-                                " ease-out;",
-                                [Function],
-                                ";",
-                              ],
-                            },
-                            "displayName": "RadioIndicator",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "RadioIndicator-sc-1vlnpb4-0",
-                            "target": "span",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <span
-                          className="c4"
-                        />
-                      </StyledComponent>
-                    </RadioIndicator>
-                  </span>
-                </StyledComponent>
-              </ChoiceWrappers__ChoiceInnerWrapper>
+              <styled.input>
+                <input
+                  className="c3"
+                  type="radio"
+                />
+              </styled.input>
+              <styled.span>
+                <span
+                  className="c4 c5"
+                />
+              </styled.span>
             </span>
-          </StyledComponent>
-        </ChoiceWrappers__ChoiceWrapper>
-        <ChoiceText>
-          <StyledComponent
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "ChoiceText-sc-1qnriny-0",
-                  "isStatic": false,
-                  "lastClassName": "c5",
-                  "rules": Array [
-                    "margin-left:10px;",
-                  ],
-                },
-                "displayName": "ChoiceText",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "ChoiceText-sc-1qnriny-0",
-                "target": "span",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              }
-            }
-            forwardedRef={null}
-          >
-            <span
-              className="c5"
-            />
-          </StyledComponent>
-        </ChoiceText>
-      </label>
-    </StyledComponent>
-  </ChoiceLabel>
+          </styled.span>
+        </span>
+      </styled.span>
+      <styled.span>
+        <span
+          className="c6"
+        />
+      </styled.span>
+    </label>
+  </styled.label>
 </Radio>
 `;

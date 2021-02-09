@@ -1,6 +1,6 @@
 // @flow
-import React from 'react';
 import type { ChildrenArray } from 'react';
+import { Children, cloneElement } from 'react';
 
 import { StepDivider, StepperWrapper } from './styled';
 
@@ -17,7 +17,7 @@ const Stepper = ({
   sequential,
   vertical
 } :Props) => {
-  const steps = React.Children.map(children, (child, index) => {
+  const steps = Children.map(children, (child, index) => {
 
     const state = {
       active: activeStep === index,
@@ -28,7 +28,7 @@ const Stepper = ({
 
     return [
       index !== 0 && <StepDivider vertical={vertical} />,
-      React.cloneElement(child, { ...state, ...child.props })
+      cloneElement(child, { ...state, ...child.props })
     ];
   });
 

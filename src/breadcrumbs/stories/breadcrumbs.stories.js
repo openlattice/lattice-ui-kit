@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Breadcrumbs from '..';
 import { Card, CardSegment, CardStack } from '../../layout';
 

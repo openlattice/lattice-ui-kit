@@ -30,36 +30,10 @@ exports[`SearchResults snapshots should match snapshot 1`] = `
   noResults={[Function]}
   resultComponent={[Function]}
 >
-  <CardStack>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "CardStack-sc-1vtkaja-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "display:flex;flex-direction:column;position:relative;& > div{margin:10px 0;}& > div:first-child{margin-top:0;}& > div:last-child{margin-bottom:0;}",
-            ],
-          },
-          "displayName": "CardStack",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "CardStack-sc-1vtkaja-0",
-          "target": "div",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-    >
-      <div
-        className="c0"
-      />
-    </StyledComponent>
-  </CardStack>
+  <styled.div>
+    <div
+      className="c0"
+    />
+  </styled.div>
 </SearchResults>
 `;

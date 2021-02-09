@@ -1,7 +1,5 @@
-import React from 'react';
-
-import Skeleton from '@material-ui/core';
 import styled from 'styled-components';
+import { Skeleton } from '@material-ui/lab';
 
 import { Card, CardHeader, CardSegment } from '../../layout';
 

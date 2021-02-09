@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ReactSelect from 'react-select';
 import toJson from 'enzyme-to-json';
 import { faSearch } from '@fortawesome/pro-regular-svg-icons';

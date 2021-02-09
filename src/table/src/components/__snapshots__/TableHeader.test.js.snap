@@ -21,7 +21,7 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
 
 exports[`TableHeader props onSort invoke onSort with property when HeadCell is clicked 2`] = `
 <thead>
-  <styled__StyledRow
+  <styled.tr
     sticky={true}
   >
     <HeadCell
@@ -97,13 +97,13 @@ exports[`TableHeader props onSort invoke onSort with property when HeadCell is c
     >
       ID
     </HeadCell>
-  </styled__StyledRow>
+  </styled.tr>
 </thead>
 `;
 
 exports[`TableHeader props order and orderBy should pass order to HeadCell when orderBy matches header key 1`] = `
 <thead>
-  <styled__StyledRow
+  <styled.tr
     sticky={true}
   >
     <HeadCell
@@ -175,13 +175,13 @@ exports[`TableHeader props order and orderBy should pass order to HeadCell when 
     >
       ID
     </HeadCell>
-  </styled__StyledRow>
+  </styled.tr>
 </thead>
 `;
 
 exports[`TableHeader render should render a thead at the root 1`] = `
 <thead>
-  <styled__StyledRow
+  <styled.tr
     sticky={true}
   />
 </thead>
@@ -189,7 +189,7 @@ exports[`TableHeader render should render a thead at the root 1`] = `
 
 exports[`TableHeader render should render sortable HeadCells 1`] = `
 <thead>
-  <styled__StyledRow
+  <styled.tr
     sticky={true}
   >
     <HeadCell
@@ -261,6 +261,6 @@ exports[`TableHeader render should render sortable HeadCells 1`] = `
     >
       ID
     </HeadCell>
-  </styled__StyledRow>
+  </styled.tr>
 </thead>
 `;

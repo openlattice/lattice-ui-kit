@@ -1,4 +1,3 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFingerprint, faDiceD20 } from '@fortawesome/pro-light-svg-icons';
 

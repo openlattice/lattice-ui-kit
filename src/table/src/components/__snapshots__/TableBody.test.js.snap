@@ -2,7 +2,7 @@
 
 exports[`TableBody render should render spinner when isLoading=true 1`] = `
 <tbody>
-  <styled__StyledRow
+  <styled.tr
     id="empty-row-filler"
   >
     <Cell
@@ -21,7 +21,7 @@ exports[`TableBody render should render spinner when isLoading=true 1`] = `
         topColor="#56565a"
       />
     </Cell>
-  </styled__StyledRow>
+  </styled.tr>
 </tbody>
 `;
 
@@ -33,17 +33,21 @@ exports[`TableBody render should render tbody at root 1`] = `
         "Cell": Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "styled__Cell-r3xwjs-2",
+          "componentStyle": e {
+            "baseHash": 394922401,
+            "baseStyle": undefined,
+            "componentId": "sc-dlfnbm",
             "isStatic": false,
             "rules": Array [
               [Function],
             ],
+            "staticRulesId": "",
           },
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "shouldForwardProp": undefined,
+          "styledComponentId": "sc-dlfnbm",
           "target": "td",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -97,17 +101,21 @@ exports[`TableBody render should render tbody at root 1`] = `
         "Cell": Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "styled__Cell-r3xwjs-2",
+          "componentStyle": e {
+            "baseHash": 394922401,
+            "baseStyle": undefined,
+            "componentId": "sc-dlfnbm",
             "isStatic": false,
             "rules": Array [
               [Function],
             ],
+            "staticRulesId": "",
           },
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "shouldForwardProp": undefined,
+          "styledComponentId": "sc-dlfnbm",
           "target": "td",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -161,17 +169,21 @@ exports[`TableBody render should render tbody at root 1`] = `
         "Cell": Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "styled__Cell-r3xwjs-2",
+          "componentStyle": e {
+            "baseHash": 394922401,
+            "baseStyle": undefined,
+            "componentId": "sc-dlfnbm",
             "isStatic": false,
             "rules": Array [
               [Function],
             ],
+            "staticRulesId": "",
           },
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "shouldForwardProp": undefined,
+          "styledComponentId": "sc-dlfnbm",
           "target": "td",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -225,17 +237,21 @@ exports[`TableBody render should render tbody at root 1`] = `
         "Cell": Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "styled__Cell-r3xwjs-2",
+          "componentStyle": e {
+            "baseHash": 394922401,
+            "baseStyle": undefined,
+            "componentId": "sc-dlfnbm",
             "isStatic": false,
             "rules": Array [
               [Function],
             ],
+            "staticRulesId": "",
           },
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "shouldForwardProp": undefined,
+          "styledComponentId": "sc-dlfnbm",
           "target": "td",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -289,17 +305,21 @@ exports[`TableBody render should render tbody at root 1`] = `
         "Cell": Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "styled__Cell-r3xwjs-2",
+          "componentStyle": e {
+            "baseHash": 394922401,
+            "baseStyle": undefined,
+            "componentId": "sc-dlfnbm",
             "isStatic": false,
             "rules": Array [
               [Function],
             ],
+            "staticRulesId": "",
           },
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "shouldForwardProp": undefined,
+          "styledComponentId": "sc-dlfnbm",
           "target": "td",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -353,17 +373,21 @@ exports[`TableBody render should render tbody at root 1`] = `
         "Cell": Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "styled__Cell-r3xwjs-2",
+          "componentStyle": e {
+            "baseHash": 394922401,
+            "baseStyle": undefined,
+            "componentId": "sc-dlfnbm",
             "isStatic": false,
             "rules": Array [
               [Function],
             ],
+            "staticRulesId": "",
           },
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "shouldForwardProp": undefined,
+          "styledComponentId": "sc-dlfnbm",
           "target": "td",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -417,17 +441,21 @@ exports[`TableBody render should render tbody at root 1`] = `
         "Cell": Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "styled__Cell-r3xwjs-2",
+          "componentStyle": e {
+            "baseHash": 394922401,
+            "baseStyle": undefined,
+            "componentId": "sc-dlfnbm",
             "isStatic": false,
             "rules": Array [
               [Function],
             ],
+            "staticRulesId": "",
           },
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "shouldForwardProp": undefined,
+          "styledComponentId": "sc-dlfnbm",
           "target": "td",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -481,17 +509,21 @@ exports[`TableBody render should render tbody at root 1`] = `
         "Cell": Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "styled__Cell-r3xwjs-2",
+          "componentStyle": e {
+            "baseHash": 394922401,
+            "baseStyle": undefined,
+            "componentId": "sc-dlfnbm",
             "isStatic": false,
             "rules": Array [
               [Function],
             ],
+            "staticRulesId": "",
           },
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "shouldForwardProp": undefined,
+          "styledComponentId": "sc-dlfnbm",
           "target": "td",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -545,17 +577,21 @@ exports[`TableBody render should render tbody at root 1`] = `
         "Cell": Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "styled__Cell-r3xwjs-2",
+          "componentStyle": e {
+            "baseHash": 394922401,
+            "baseStyle": undefined,
+            "componentId": "sc-dlfnbm",
             "isStatic": false,
             "rules": Array [
               [Function],
             ],
+            "staticRulesId": "",
           },
           "displayName": "Cell",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "styled__Cell-r3xwjs-2",
+          "shouldForwardProp": undefined,
+          "styledComponentId": "sc-dlfnbm",
           "target": "td",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -603,7 +639,7 @@ exports[`TableBody render should render tbody at root 1`] = `
     }
     key="9"
   />
-  <styled__StyledRow
+  <styled.tr
     id="empty-row-filler"
   >
     <Cell
@@ -614,6 +650,6 @@ exports[`TableBody render should render tbody at root 1`] = `
       }
       colSpan={5}
     />
-  </styled__StyledRow>
+  </styled.tr>
 </tbody>
 `;

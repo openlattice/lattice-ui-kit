@@ -2,7 +2,6 @@
  * @flow
  */
 
-import React from 'react';
 import type { Ref } from 'react';
 
 import SelectOption from '../SelectOption';

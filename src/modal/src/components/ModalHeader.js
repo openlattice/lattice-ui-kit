@@ -2,7 +2,7 @@
  * @flow
  */
 
-import React, { Component, createElement } from 'react';
+import { Component, createElement, isValidElement } from 'react';
 import type { ComponentType, Element } from 'react';
 
 import PropTypes from 'prop-types';
@@ -107,7 +107,7 @@ export default class ModalHeader extends Component<ModalHeaderProps> {
       );
     }
 
-    if (React.isValidElement(withHeader)) {
+    if (isValidElement(withHeader)) {
       // $FlowFixMe - how do we refine Element?
       return withHeader;
     }

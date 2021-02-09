@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ActionModalExample from './components/ActionModalExample';
 import DeleteModalExample from './components/DeleteModalExample';
 import { Button } from '../../button';

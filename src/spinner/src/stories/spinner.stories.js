@@ -1,8 +1,8 @@
-import React from 'react';
 import styled from 'styled-components';
 
-import Spinner from '../components/Spinner';
 import notes from './notes.md';
+
+import Spinner from '../components/Spinner';
 
 const StyledSpinner = styled(Spinner)`
   font-size: 50px;

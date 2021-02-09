@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Button, Card, CardContent } from '@material-ui/core';
 import { Pagination } from '@material-ui/lab';
 

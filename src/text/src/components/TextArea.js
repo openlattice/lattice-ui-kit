@@ -1,10 +1,10 @@
 // @flow
-import React from 'react';
+import { forwardRef } from 'react';
 
 import { TextField } from '@material-ui/core';
 import type { TextFieldProps } from '@material-ui/core';
 
-const TextArea = React.forwardRef<TextFieldProps, TextField>((props, ref) => (
+const TextArea = forwardRef<TextFieldProps, TextField>((props, ref) => (
   <TextField
       fullWidth
       variant="filled"

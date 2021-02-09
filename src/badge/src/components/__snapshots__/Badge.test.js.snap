@@ -16,47 +16,16 @@ exports[`Badge snapshots default max value should be displayed 1`] = `
   max={999}
   mode="default"
 >
-  <Badge__BadgeWrapper
+  <styled.span
     mode="default"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "background-color:",
-              [Function],
-              ";border-radius:2em;color:",
-              [Function],
-              ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;",
-            ],
-          },
-          "displayName": "Badge__BadgeWrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
-          "target": "span",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <span
+      className="c0"
       mode="default"
     >
-      <span
-        className="c0"
-        mode="default"
-      >
-        999+
-      </span>
-    </StyledComponent>
-  </Badge__BadgeWrapper>
+      999+
+    </span>
+  </styled.span>
 </Badge>
 `;
 
@@ -76,47 +45,16 @@ exports[`Badge snapshots should match snapshot 1`] = `
   max={999}
   mode="default"
 >
-  <Badge__BadgeWrapper
+  <styled.span
     mode="default"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "background-color:",
-              [Function],
-              ";border-radius:2em;color:",
-              [Function],
-              ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;",
-            ],
-          },
-          "displayName": "Badge__BadgeWrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
-          "target": "span",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <span
+      className="c0"
       mode="default"
     >
-      <span
-        className="c0"
-        mode="default"
-      >
-        10
-      </span>
-    </StyledComponent>
-  </Badge__BadgeWrapper>
+      10
+    </span>
+  </styled.span>
 </Badge>
 `;
 
@@ -136,47 +74,16 @@ exports[`Badge snapshots text should show count and not max 1`] = `
   max="99"
   mode="default"
 >
-  <Badge__BadgeWrapper
+  <styled.span
     mode="default"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "background-color:",
-              [Function],
-              ";border-radius:2em;color:",
-              [Function],
-              ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;",
-            ],
-          },
-          "displayName": "Badge__BadgeWrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
-          "target": "span",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <span
+      className="c0"
       mode="default"
     >
-      <span
-        className="c0"
-        mode="default"
-      >
-        82
-      </span>
-    </StyledComponent>
-  </Badge__BadgeWrapper>
+      82
+    </span>
+  </styled.span>
 </Badge>
 `;
 
@@ -196,46 +103,15 @@ exports[`Badge snapshots text should show max and not count 1`] = `
   max="99"
   mode="default"
 >
-  <Badge__BadgeWrapper
+  <styled.span
     mode="default"
   >
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "background-color:",
-              [Function],
-              ";border-radius:2em;color:",
-              [Function],
-              ";font-size:12px;font-weight:600;padding:0.1875em 0.5em;text-align:center;",
-            ],
-          },
-          "displayName": "Badge__BadgeWrapper",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "Badge__BadgeWrapper-sc-1kfg7sp-0",
-          "target": "span",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+    <span
+      className="c0"
       mode="default"
     >
-      <span
-        className="c0"
-        mode="default"
-      >
-        100
-      </span>
-    </StyledComponent>
-  </Badge__BadgeWrapper>
+      100
+    </span>
+  </styled.span>
 </Badge>
 `;
