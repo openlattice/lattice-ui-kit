@@ -51,7 +51,7 @@ input[readonly]:checked:hover ~ .c5 {
 }
 
 input:checked:hover ~ .c4 {
-  background-color: #4f3fa7;
+  background-color: #cac0ff;
 }
 
 input:disabled ~ .c4 {
