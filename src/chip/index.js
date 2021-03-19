@@ -4,4 +4,9 @@
 
 export { default as Chip } from './src/components/Chip';
 
-export type { ChipProps } from './src/components/types';
+export type {
+  ChipColor,
+  ChipProps,
+  ChipSize,
+  ChipVariant,
+} from './src/components/types';
