@@ -18,7 +18,7 @@ const choiceIndicatorStyles = css`
   }
 
   input:checked:hover ~ & {
-    background-color: ${PURPLE.P400};
+    background-color: ${PURPLE.P100};
   }
 
   input:disabled ~ & {
