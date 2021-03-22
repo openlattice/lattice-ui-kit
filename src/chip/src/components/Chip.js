@@ -28,6 +28,7 @@ const useStyles = (color, size) => {
       cursor: 'pointer',
       ...actionStates(colors.clickable)
     },
+    deletable: actionStates(colors.clickable),
     deleteIcon: {
       color: colors.color,
       marginRight: size === 'medium' ? '12px' : '8px',
