@@ -18,7 +18,7 @@ const actionStates = (backgroundColor) => ({
   },
 });
 
-const useStyles = (color) => {
+const useStyles = (color, size) => {
   const colors = Colors[color] || {};
   return makeStyles({
     root: {
@@ -28,10 +28,15 @@ const useStyles = (color) => {
       cursor: 'pointer',
       ...actionStates(colors.clickable)
     },
-    deletable: actionStates(colors.background),
     deleteIcon: {
       color: colors.color,
-      margin: '0 12px 0 -6px',
+      marginRight: size === 'medium' ? '12px' : '8px',
+      '&:hover, &:focus': {
+        color: colors.deletable
+      },
+      '&:active': {
+        color: colors.deletable
+      },
     }
   });
 };
@@ -52,7 +57,7 @@ const Chip = ({
   forwardRef,
   ...rest
 } :ChipProps) => {
-  const styles = useStyles(color)();
+  const styles = useStyles(color, size)();
 
   const props :Object = {
     ...rest,
