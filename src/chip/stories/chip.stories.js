@@ -60,7 +60,6 @@ storiesOf('Chip', module)
           <Chip color="primary" label="Primary" onDelete={() => ''} />
           <Chip color="secondary" label="Secondary" onDelete={() => ''} />
           <Chip color="blue" label="Blue" onDelete={() => ''} />
-          <Chip color="blue" label="Blue" size="small" onDelete={() => ''} />
           <Chip color="teal" label="Teal" onDelete={() => ''} />
           <Chip color="green" label="Green" onDelete={() => ''} />
           <Chip color="yellow" label="Yellow" onDelete={() => ''} />
