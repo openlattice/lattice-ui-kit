@@ -19,10 +19,6 @@ type ChipSize =
   | 'medium'
   | 'small';
 
-type ChipVariant =
-  | 'default'
-  | 'outlined';
-
 type ChipProps = {
   avatar ?:Node;
   classes ?:Object;
@@ -36,12 +32,10 @@ type ChipProps = {
   label ?:string;
   onDelete ?:Function;
   size ?:ChipSize;
-  variant ?:ChipVariant;
 };
 
 export type {
   ChipColor,
   ChipProps,
   ChipSize,
-  ChipVariant,
 };

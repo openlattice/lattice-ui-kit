@@ -54,7 +54,6 @@ const Chip = ({
   label,
   onDelete,
   size = 'medium',
-  variant = 'default',
   forwardRef,
   ...rest
 } :ChipProps) => {
@@ -72,7 +71,7 @@ const Chip = ({
     label,
     onDelete,
     size,
-    variant,
+    variant: 'default'
   };
 
   if (color === 'default' || color === 'primary' || color === 'secondary') props.color = color;
