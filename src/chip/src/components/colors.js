@@ -64,9 +64,11 @@ export default {
     clickable: YELLOW.Y100
   },
   primary: {
+    background: PURPLE.P300,
     color: 'white'
   },
   secondary: {
+    background: PURPLE.P00,
     color: PURPLE.P400
   },
 };
