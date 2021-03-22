@@ -16,7 +16,7 @@ type ChipColor =
   | 'violet';
 
 type ChipSize =
-  'medium'
+  | 'medium'
   | 'small';
 
 type ChipVariant =
@@ -31,12 +31,12 @@ type ChipProps = {
   component ?:string;
   deleteIcon ?:Node;
   disabled ?:boolean;
+  forwardRef ?:any;
   icon ?:Node;
   label ?:string;
   onDelete ?:Function;
   size ?:ChipSize;
   variant ?:ChipVariant;
-  forwardRef ?:any;
 };
 
 export type {
