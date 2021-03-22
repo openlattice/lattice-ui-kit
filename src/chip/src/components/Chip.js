@@ -7,10 +7,9 @@ import { faTimes } from '@fortawesome/pro-light-svg-icons';
 import Colors from './colors';
 import type { ChipProps } from './types';
 
-const DeleteIcon = <FontAwesomeIcon icon={faTimes} />;
+const DeleteIcon = <FontAwesomeIcon fixedWidth icon={faTimes} />;
 
 const actionStates = (backgroundColor) => ({
-  cursor: 'pointer',
   '&:hover, &:focus': {
     backgroundColor
   },
@@ -25,7 +24,10 @@ const useStyles = (color) => {
     root: {
       ...colors
     },
-    clickable: actionStates(colors.clickable),
+    clickable: {
+      cursor: 'pointer',
+      ...actionStates(colors.clickable)
+    },
     deletable: actionStates(colors.background),
     deleteIcon: {
       color: colors.color,
