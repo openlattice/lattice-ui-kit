@@ -31,7 +31,6 @@ storiesOf('Chip', module)
           <Chip color="default" label="default" />
           <Chip color="primary" label="Primary" />
           <Chip color="secondary" label="Secondary" />
-          <Chip color="purple" label="Purple" />
           <Chip color="blue" label="Blue" />
           <Chip color="teal" label="Teal" />
           <Chip color="green" label="Green" />
@@ -46,7 +45,6 @@ storiesOf('Chip', module)
           <Chip color="default" disabled label="default" />
           <Chip color="primary" disabled label="Primary" />
           <Chip color="secondary" disabled label="Secondary" />
-          <Chip color="purple" disabled label="Purple" />
           <Chip color="blue" disabled label="Blue" />
           <Chip color="teal" disabled label="Teal" />
           <Chip color="green" disabled label="Green" />
@@ -61,8 +59,8 @@ storiesOf('Chip', module)
           <Chip color="default" label="default" onDelete={() => ''} />
           <Chip color="primary" label="Primary" onDelete={() => ''} />
           <Chip color="secondary" label="Secondary" onDelete={() => ''} />
-          <Chip color="purple" label="Purple" onDelete={() => ''} />
           <Chip color="blue" label="Blue" onDelete={() => ''} />
+          <Chip color="blue" label="Blue" size="small" onDelete={() => ''} />
           <Chip color="teal" label="Teal" onDelete={() => ''} />
           <Chip color="green" label="Green" onDelete={() => ''} />
           <Chip color="yellow" label="Yellow" onDelete={() => ''} />
@@ -76,7 +74,6 @@ storiesOf('Chip', module)
           <Chip color="default" label="default" clickable />
           <Chip color="primary" label="Primary" clickable />
           <Chip color="secondary" label="Secondary" clickable />
-          <Chip color="purple" label="Purple" clickable />
           <Chip color="blue" label="Blue" clickable />
           <Chip color="teal" label="Teal" clickable />
           <Chip color="green" label="Green" clickable />
