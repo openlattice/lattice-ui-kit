@@ -14,7 +14,8 @@ const actionStates = (backgroundColor) => ({
     backgroundColor
   },
   '&:active': {
-    backgroundColor
+    backgroundColor,
+    boxShadow: 'none',
   },
 });
 
