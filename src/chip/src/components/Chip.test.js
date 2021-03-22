@@ -21,7 +21,7 @@ describe('Chip', () => {
 
   test('default', () => {
     const wrapper = mount(<Chip />);
-    const chip = wrapper.find('div');
+    const chip = wrapper.find(Chip);
     expect(chip).toHaveLength(1);
     expect(window.getComputedStyle(chip.getDOMNode())).toHaveProperty('color', hexToRgb(NEUTRAL.N600));
     expect(window.getComputedStyle(chip.getDOMNode())).toHaveProperty('background', hexToRgb(NEUTRAL.N00));
@@ -33,7 +33,7 @@ describe('Chip', () => {
     Object.entries(ChipColors).forEach(([color, attributes]) => {
       test(`color = ${color}`, () => {
         const wrapper = mount(<Chip color={color} />);
-        const chip = wrapper.find('div');
+        const chip = wrapper.find(Chip);
         expect(chip).toHaveLength(1);
         if (color !== 'primary' && color !== 'secondary') {
           expect(window.getComputedStyle(chip.getDOMNode()))
