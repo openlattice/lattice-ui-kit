@@ -69,7 +69,7 @@ export default {
   primary: {
     background: PURPLE.P300,
     color: 'white',
-    deletable: PURPLE.P200,
+    deletable: PURPLE.P100,
   },
   secondary: {
     background: PURPLE.P00,
