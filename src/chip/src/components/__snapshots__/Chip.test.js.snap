@@ -19,7 +19,7 @@ exports[`Chip default 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -91,7 +91,7 @@ exports[`Chip default 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -157,7 +157,7 @@ exports[`Chip snapshots should match snapshot 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -229,7 +229,7 @@ exports[`Chip snapshots should match snapshot 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -297,7 +297,7 @@ exports[`Chip test custom colors color = blue 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -368,7 +368,7 @@ exports[`Chip test custom colors color = blue 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -437,7 +437,7 @@ exports[`Chip test custom colors color = default 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -509,7 +509,7 @@ exports[`Chip test custom colors color = default 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -577,7 +577,7 @@ exports[`Chip test custom colors color = green 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -648,7 +648,7 @@ exports[`Chip test custom colors color = green 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -716,7 +716,7 @@ exports[`Chip test custom colors color = magenta 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -787,7 +787,7 @@ exports[`Chip test custom colors color = magenta 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -855,7 +855,7 @@ exports[`Chip test custom colors color = orange 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -926,7 +926,7 @@ exports[`Chip test custom colors color = orange 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -995,7 +995,7 @@ exports[`Chip test custom colors color = primary 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -1067,7 +1067,7 @@ exports[`Chip test custom colors color = primary 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -1135,7 +1135,7 @@ exports[`Chip test custom colors color = purple 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -1206,7 +1206,7 @@ exports[`Chip test custom colors color = purple 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -1274,7 +1274,7 @@ exports[`Chip test custom colors color = red 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -1345,7 +1345,7 @@ exports[`Chip test custom colors color = red 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -1414,7 +1414,7 @@ exports[`Chip test custom colors color = secondary 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -1486,7 +1486,7 @@ exports[`Chip test custom colors color = secondary 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -1554,7 +1554,7 @@ exports[`Chip test custom colors color = teal 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -1625,7 +1625,7 @@ exports[`Chip test custom colors color = teal 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -1693,7 +1693,7 @@ exports[`Chip test custom colors color = violet 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -1764,7 +1764,7 @@ exports[`Chip test custom colors color = violet 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
@@ -1832,7 +1832,7 @@ exports[`Chip test custom colors color = yellow 1`] = `
         <FontAwesomeIcon
           border={false}
           className=""
-          fixedWidth={false}
+          fixedWidth={true}
           flip={null}
           icon={
             Object {
@@ -1903,7 +1903,7 @@ exports[`Chip test custom colors color = yellow 1`] = `
           <FontAwesomeIcon
             border={false}
             className=""
-            fixedWidth={false}
+            fixedWidth={true}
             flip={null}
             icon={
               Object {
