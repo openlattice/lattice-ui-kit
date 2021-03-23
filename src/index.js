@@ -48,7 +48,6 @@ export type {
   ChipColor,
   ChipProps,
   ChipSize,
-  ChipVariant,
 } from './chip';
 
 export { Checkbox, ChoiceGroup, Radio } from './choices';
