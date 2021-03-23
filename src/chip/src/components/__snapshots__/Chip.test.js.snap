@@ -1,0 +1,1812 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip default 1`] = `
+<ForwardRef>
+  <Chip
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-6",
+          "deletable": "makeStyles-deletable-7",
+          "deleteIcon": "makeStyles-deleteIcon-8",
+          "root": "makeStyles-root-5",
+        }
+      }
+      color="default"
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-6",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-7",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-8",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-5",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        color="default"
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-5"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
+
+exports[`Chip snapshots should match snapshot 1`] = `
+<ForwardRef>
+  <Chip
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-2",
+          "deletable": "makeStyles-deletable-3",
+          "deleteIcon": "makeStyles-deleteIcon-4",
+          "root": "makeStyles-root-1",
+        }
+      }
+      color="default"
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-2",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-3",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-4",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-1",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        color="default"
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-1"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
+
+exports[`Chip test custom colors color = blue 1`] = `
+<ForwardRef
+  color="blue"
+>
+  <Chip
+    color="blue"
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-14",
+          "deletable": "makeStyles-deletable-15",
+          "deleteIcon": "makeStyles-deleteIcon-16",
+          "root": "makeStyles-root-13",
+        }
+      }
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-14",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-15",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-16",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-13",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-13"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
+
+exports[`Chip test custom colors color = default 1`] = `
+<ForwardRef
+  color="default"
+>
+  <Chip
+    color="default"
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-10",
+          "deletable": "makeStyles-deletable-11",
+          "deleteIcon": "makeStyles-deleteIcon-12",
+          "root": "makeStyles-root-9",
+        }
+      }
+      color="default"
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-10",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-11",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-12",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-9",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        color="default"
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-9"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
+
+exports[`Chip test custom colors color = green 1`] = `
+<ForwardRef
+  color="green"
+>
+  <Chip
+    color="green"
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-18",
+          "deletable": "makeStyles-deletable-19",
+          "deleteIcon": "makeStyles-deleteIcon-20",
+          "root": "makeStyles-root-17",
+        }
+      }
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-18",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-19",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-20",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-17",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-17"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
+
+exports[`Chip test custom colors color = magenta 1`] = `
+<ForwardRef
+  color="magenta"
+>
+  <Chip
+    color="magenta"
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-22",
+          "deletable": "makeStyles-deletable-23",
+          "deleteIcon": "makeStyles-deleteIcon-24",
+          "root": "makeStyles-root-21",
+        }
+      }
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-22",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-23",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-24",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-21",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-21"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
+
+exports[`Chip test custom colors color = orange 1`] = `
+<ForwardRef
+  color="orange"
+>
+  <Chip
+    color="orange"
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-26",
+          "deletable": "makeStyles-deletable-27",
+          "deleteIcon": "makeStyles-deleteIcon-28",
+          "root": "makeStyles-root-25",
+        }
+      }
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-26",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-27",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-28",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-25",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-25"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
+
+exports[`Chip test custom colors color = primary 1`] = `
+<ForwardRef
+  color="primary"
+>
+  <Chip
+    color="primary"
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-46",
+          "deletable": "makeStyles-deletable-47",
+          "deleteIcon": "makeStyles-deleteIcon-48",
+          "root": "makeStyles-root-45",
+        }
+      }
+      color="primary"
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-46",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-47",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-48",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-45",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        color="primary"
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-45 MuiChip-colorPrimary"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
+
+exports[`Chip test custom colors color = red 1`] = `
+<ForwardRef
+  color="red"
+>
+  <Chip
+    color="red"
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-30",
+          "deletable": "makeStyles-deletable-31",
+          "deleteIcon": "makeStyles-deleteIcon-32",
+          "root": "makeStyles-root-29",
+        }
+      }
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-30",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-31",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-32",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-29",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-29"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
+
+exports[`Chip test custom colors color = secondary 1`] = `
+<ForwardRef
+  color="secondary"
+>
+  <Chip
+    color="secondary"
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-50",
+          "deletable": "makeStyles-deletable-51",
+          "deleteIcon": "makeStyles-deleteIcon-52",
+          "root": "makeStyles-root-49",
+        }
+      }
+      color="secondary"
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-50",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-51",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-52",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-49",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        color="secondary"
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-49 MuiChip-colorSecondary"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
+
+exports[`Chip test custom colors color = teal 1`] = `
+<ForwardRef
+  color="teal"
+>
+  <Chip
+    color="teal"
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-34",
+          "deletable": "makeStyles-deletable-35",
+          "deleteIcon": "makeStyles-deleteIcon-36",
+          "root": "makeStyles-root-33",
+        }
+      }
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-34",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-35",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-36",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-33",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-33"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
+
+exports[`Chip test custom colors color = violet 1`] = `
+<ForwardRef
+  color="violet"
+>
+  <Chip
+    color="violet"
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-38",
+          "deletable": "makeStyles-deletable-39",
+          "deleteIcon": "makeStyles-deleteIcon-40",
+          "root": "makeStyles-root-37",
+        }
+      }
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-38",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-39",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-40",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-37",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-37"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
+
+exports[`Chip test custom colors color = yellow 1`] = `
+<ForwardRef
+  color="yellow"
+>
+  <Chip
+    color="yellow"
+    forwardRef={null}
+  >
+    <WithStyles(ForwardRef(Chip))
+      classes={
+        Object {
+          "clickable": "makeStyles-clickable-42",
+          "deletable": "makeStyles-deletable-43",
+          "deleteIcon": "makeStyles-deleteIcon-44",
+          "root": "makeStyles-root-41",
+        }
+      }
+      deleteIcon={
+        <FontAwesomeIcon
+          border={false}
+          className=""
+          fixedWidth={false}
+          flip={null}
+          icon={
+            Object {
+              "icon": Array [
+                320,
+                512,
+                Array [],
+                "f00d",
+                "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+              ],
+              "iconName": "times",
+              "prefix": "fal",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          size={null}
+          spin={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          transform={null}
+        />
+      }
+      size="medium"
+      variant="default"
+    >
+      <ForwardRef(Chip)
+        classes={
+          Object {
+            "avatar": "MuiChip-avatar",
+            "avatarColorPrimary": "MuiChip-avatarColorPrimary",
+            "avatarColorSecondary": "MuiChip-avatarColorSecondary",
+            "avatarSmall": "MuiChip-avatarSmall",
+            "clickable": "MuiChip-clickable makeStyles-clickable-42",
+            "clickableColorPrimary": "MuiChip-clickableColorPrimary",
+            "clickableColorSecondary": "MuiChip-clickableColorSecondary",
+            "colorPrimary": "MuiChip-colorPrimary",
+            "colorSecondary": "MuiChip-colorSecondary",
+            "deletable": "MuiChip-deletable makeStyles-deletable-43",
+            "deletableColorPrimary": "MuiChip-deletableColorPrimary",
+            "deletableColorSecondary": "MuiChip-deletableColorSecondary",
+            "deleteIcon": "MuiChip-deleteIcon makeStyles-deleteIcon-44",
+            "deleteIconColorPrimary": "MuiChip-deleteIconColorPrimary",
+            "deleteIconColorSecondary": "MuiChip-deleteIconColorSecondary",
+            "deleteIconOutlinedColorPrimary": "MuiChip-deleteIconOutlinedColorPrimary",
+            "deleteIconOutlinedColorSecondary": "MuiChip-deleteIconOutlinedColorSecondary",
+            "deleteIconSmall": "MuiChip-deleteIconSmall",
+            "disabled": "Mui-disabled",
+            "icon": "MuiChip-icon",
+            "iconColorPrimary": "MuiChip-iconColorPrimary",
+            "iconColorSecondary": "MuiChip-iconColorSecondary",
+            "iconSmall": "MuiChip-iconSmall",
+            "label": "MuiChip-label",
+            "labelSmall": "MuiChip-labelSmall",
+            "outlined": "MuiChip-outlined",
+            "outlinedPrimary": "MuiChip-outlinedPrimary",
+            "outlinedSecondary": "MuiChip-outlinedSecondary",
+            "root": "MuiChip-root makeStyles-root-41",
+            "sizeSmall": "MuiChip-sizeSmall",
+          }
+        }
+        deleteIcon={
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  320,
+                  512,
+                  Array [],
+                  "f00d",
+                  "M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z",
+                ],
+                "iconName": "times",
+                "prefix": "fal",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        }
+        size="medium"
+        variant="default"
+      >
+        <div
+          className="MuiChip-root makeStyles-root-41"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+        >
+          <span
+            className="MuiChip-label"
+          />
+        </div>
+      </ForwardRef(Chip)>
+    </WithStyles(ForwardRef(Chip))>
+  </Chip>
+</ForwardRef>
+`;
