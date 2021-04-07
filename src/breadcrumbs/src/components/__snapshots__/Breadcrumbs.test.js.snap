@@ -1,13 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Breadcrumbs should match snapshot 1`] = `
+.c0 {
+  font-size: 60%;
+}
+
 <Breadcrumbs
   separator={
-    <FontAwesomeIcon
-      border={false}
-      className=""
+    <Styled(FontAwesomeIcon)
       fixedWidth={true}
-      flip={null}
       icon={
         Object {
           "icon": Array [
@@ -21,28 +22,13 @@ exports[`Breadcrumbs should match snapshot 1`] = `
           "prefix": "far",
         }
       }
-      inverse={false}
-      listItem={false}
-      mask={null}
-      pull={null}
-      pulse={false}
-      rotation={null}
-      size={null}
-      spin={false}
-      swapOpacity={false}
-      symbol={false}
-      title=""
-      transform={null}
     />
   }
 >
   <WithStyles(ForwardRef(Breadcrumbs))
     separator={
-      <FontAwesomeIcon
-        border={false}
-        className=""
+      <Styled(FontAwesomeIcon)
         fixedWidth={true}
-        flip={null}
         icon={
           Object {
             "icon": Array [
@@ -56,18 +42,6 @@ exports[`Breadcrumbs should match snapshot 1`] = `
             "prefix": "far",
           }
         }
-        inverse={false}
-        listItem={false}
-        mask={null}
-        pull={null}
-        pulse={false}
-        rotation={null}
-        size={null}
-        spin={false}
-        swapOpacity={false}
-        symbol={false}
-        title=""
-        transform={null}
       />
     }
   >
@@ -81,11 +55,8 @@ exports[`Breadcrumbs should match snapshot 1`] = `
         }
       }
       separator={
-        <FontAwesomeIcon
-          border={false}
-          className=""
+        <Styled(FontAwesomeIcon)
           fixedWidth={true}
-          flip={null}
           icon={
             Object {
               "icon": Array [
@@ -99,18 +70,6 @@ exports[`Breadcrumbs should match snapshot 1`] = `
               "prefix": "far",
             }
           }
-          inverse={false}
-          listItem={false}
-          mask={null}
-          pull={null}
-          pulse={false}
-          rotation={null}
-          size={null}
-          spin={false}
-          swapOpacity={false}
-          symbol={false}
-          title=""
-          transform={null}
         />
       }
     >
@@ -179,11 +138,8 @@ exports[`Breadcrumbs should match snapshot 1`] = `
                 className="MuiBreadcrumbs-separator"
                 key="separator-0"
               >
-                <FontAwesomeIcon
-                  border={false}
-                  className=""
+                <Styled(FontAwesomeIcon)
                   fixedWidth={true}
-                  flip={null}
                   icon={
                     Object {
                       "icon": Array [
@@ -197,37 +153,57 @@ exports[`Breadcrumbs should match snapshot 1`] = `
                       "prefix": "far",
                     }
                   }
-                  inverse={false}
-                  listItem={false}
-                  mask={null}
-                  pull={null}
-                  pulse={false}
-                  rotation={null}
-                  size={null}
-                  spin={false}
-                  swapOpacity={false}
-                  symbol={false}
-                  title=""
-                  transform={null}
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
-                    data-icon="chevron-right"
-                    data-prefix="far"
-                    focusable="false"
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 256 512"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <FontAwesomeIcon
+                    border={false}
+                    className="c0"
+                    fixedWidth={true}
+                    flip={null}
+                    icon={
+                      Object {
+                        "icon": Array [
+                          256,
+                          512,
+                          Array [],
+                          "f054",
+                          "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                        ],
+                        "iconName": "chevron-right",
+                        "prefix": "far",
+                      }
+                    }
+                    inverse={false}
+                    listItem={false}
+                    mask={null}
+                    pull={null}
+                    pulse={false}
+                    rotation={null}
+                    size={null}
+                    spin={false}
+                    swapOpacity={false}
+                    symbol={false}
+                    title=""
+                    transform={null}
                   >
-                    <path
-                      d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
-                      fill="currentColor"
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw c0"
+                      data-icon="chevron-right"
+                      data-prefix="far"
+                      focusable="false"
+                      role="img"
                       style={Object {}}
-                    />
-                  </svg>
-                </FontAwesomeIcon>
+                      viewBox="0 0 256 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </FontAwesomeIcon>
+                </Styled(FontAwesomeIcon)>
               </li>
               <li
                 className="MuiBreadcrumbs-li"
@@ -244,11 +220,8 @@ exports[`Breadcrumbs should match snapshot 1`] = `
                 className="MuiBreadcrumbs-separator"
                 key="separator-1"
               >
-                <FontAwesomeIcon
-                  border={false}
-                  className=""
+                <Styled(FontAwesomeIcon)
                   fixedWidth={true}
-                  flip={null}
                   icon={
                     Object {
                       "icon": Array [
@@ -262,37 +235,57 @@ exports[`Breadcrumbs should match snapshot 1`] = `
                       "prefix": "far",
                     }
                   }
-                  inverse={false}
-                  listItem={false}
-                  mask={null}
-                  pull={null}
-                  pulse={false}
-                  rotation={null}
-                  size={null}
-                  spin={false}
-                  swapOpacity={false}
-                  symbol={false}
-                  title=""
-                  transform={null}
                 >
-                  <svg
-                    aria-hidden="true"
-                    className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw "
-                    data-icon="chevron-right"
-                    data-prefix="far"
-                    focusable="false"
-                    role="img"
-                    style={Object {}}
-                    viewBox="0 0 256 512"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <FontAwesomeIcon
+                    border={false}
+                    className="c0"
+                    fixedWidth={true}
+                    flip={null}
+                    icon={
+                      Object {
+                        "icon": Array [
+                          256,
+                          512,
+                          Array [],
+                          "f054",
+                          "M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z",
+                        ],
+                        "iconName": "chevron-right",
+                        "prefix": "far",
+                      }
+                    }
+                    inverse={false}
+                    listItem={false}
+                    mask={null}
+                    pull={null}
+                    pulse={false}
+                    rotation={null}
+                    size={null}
+                    spin={false}
+                    swapOpacity={false}
+                    symbol={false}
+                    title=""
+                    transform={null}
                   >
-                    <path
-                      d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
-                      fill="currentColor"
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-chevron-right fa-w-8 fa-fw c0"
+                      data-icon="chevron-right"
+                      data-prefix="far"
+                      focusable="false"
+                      role="img"
                       style={Object {}}
-                    />
-                  </svg>
-                </FontAwesomeIcon>
+                      viewBox="0 0 256 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </FontAwesomeIcon>
+                </Styled(FontAwesomeIcon)>
               </li>
               <li
                 className="MuiBreadcrumbs-li"
