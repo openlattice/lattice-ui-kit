@@ -4,6 +4,7 @@ import {
   ChoiceLabel,
   ChoiceText,
   ChoiceWrapper,
+  RadioButtonIndicator,
   RadioIndicator,
   RadioInput,
 } from './styled';
@@ -40,9 +41,11 @@ const Radio = ({
             disabled={disabled || readOnly}
             // $FlowFixMe
             {...rest} />
-        <RadioIndicator mode={mode}>
-          { mode === 'button' && label }
-        </RadioIndicator>
+        {
+          (mode === 'button' && label)
+            ? <RadioButtonIndicator>{label}</RadioButtonIndicator>
+            : <RadioIndicator />
+        }
       </ChoiceInnerWrapper>
     </ChoiceWrapper>
     {
