@@ -28,7 +28,7 @@ const choiceButtonStyles = css`
     cursor: pointer;
   }
   input:hover ~ & {
-    background-color: ${NEUTRAL.N500};
+    background-color: ${NEUTRAL.N100};
     cursor: pointer;
   }
 
