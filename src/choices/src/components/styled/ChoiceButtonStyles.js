@@ -10,7 +10,7 @@ const choiceButtonStyles = css`
   background-color: ${NEUTRAL.N50};
   border: 3px solid transparent;
   background-clip: padding-box;
-  border-radius: 6px;
+  border-radius: 5px;
   color: ${NEUTRAL.N900};
   display: flex;
   font-size: 1rem;
@@ -23,24 +23,30 @@ const choiceButtonStyles = css`
   user-select: none;
   width: 100%;
 
-  input:focus-visible ~ &,
+  input:focus ~ & {
+    box-shadow: ${NEUTRAL.N400} 0 0 0 1px;
+    cursor: pointer;
+  }
   input:hover ~ & {
     background-color: ${NEUTRAL.N100};
     cursor: pointer;
   }
 
   input:checked ~ &,
-  input[readonly]:checked:disabled ~ &,
-  input[readonly]:checked:hover ~ & {
+  input[readonly]:checked:disabled ~ & {
     background-color: ${PURPLE.P00};
     color: ${PURPLE.P300};
   }
-
-  input:focus-visible ~ & {
-    box-shadow: ${NEUTRAL.N400} 0 0 0 0.1px;
+  input[readonly]:checked:hover ~ & {
+    background-color: ${PURPLE.P100};
   }
-  input:checked:focus-visible ~ & {
-    box-shadow: ${PURPLE.P300} 0 0 0 0.1px;
+
+  input:checked:focus ~ & {
+    box-shadow: ${PURPLE.P300} 0 0 0 1px;
+  }
+
+  input:checked:hover ~ & {
+    background-color: ${PURPLE.P100};
   }
 
   input:disabled ~ & {
