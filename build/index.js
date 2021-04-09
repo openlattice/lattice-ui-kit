@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.43.0
+ * lattice-ui-kit - v0.43.1
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -57691,7 +57691,7 @@ var components_Chip_Chip = function Chip(_ref) {
  // Not really sure why, but 1px box-shadow looks significantly larger than 1px on chrome
 // Using fractional pixel seems to look closer to intended design
 
-var choiceButtonStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["align-items:center;background-color:", ";border:3px solid transparent;background-clip:padding-box;border-radius:6px;color:", ";display:flex;font-size:1rem;flex-direction:column;justify-content:center;min-height:60px;min-width:84px;padding:10px 12px;text-align:center;user-select:none;width:100%;input:focus-visible ~ &,input:hover ~ &{background-color:", ";cursor:pointer;}input:checked ~ &,input[readonly]:checked:disabled ~ &,input[readonly]:checked:hover ~ &{background-color:", ";color:", ";}input:focus-visible ~ &{box-shadow:", " 0 0 0 0.1px;}input:checked:focus-visible ~ &{box-shadow:", " 0 0 0 0.1px;}input:disabled ~ &{background-color:", ";color:", ";cursor:not-allowed;}input:checked:disabled ~ &{background-color:", ";color:", ";cursor:not-allowed;}input[readonly] ~ &{cursor:default;pointer-events:none;}"], NEUTRAL.N50, NEUTRAL.N900, NEUTRAL.N100, PURPLE.P00, PURPLE.P300, NEUTRAL.N400, PURPLE.P300, NEUTRAL.N00, NEUTRAL.N500, NEUTRAL.N400, NEUTRAL.N900);
+var choiceButtonStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["align-items:center;background-color:", ";border:3px solid transparent;background-clip:padding-box;border-radius:5px;color:", ";display:flex;font-size:1rem;flex-direction:column;justify-content:center;min-height:60px;min-width:84px;padding:10px 12px;text-align:center;user-select:none;width:100%;input:focus ~ &{box-shadow:", " 0 0 0 1px;cursor:pointer;}input:hover ~ &{background-color:", ";cursor:pointer;}input:checked ~ &,input[readonly]:checked:disabled ~ &{background-color:", ";color:", ";}input[readonly]:checked:hover ~ &{background-color:", ";}input:checked:focus ~ &{box-shadow:", " 0 0 0 1px;}input:checked:hover ~ &{background-color:", ";}input:disabled ~ &{background-color:", ";color:", ";cursor:not-allowed;}input:checked:disabled ~ &{background-color:", ";color:", ";cursor:not-allowed;}input[readonly] ~ &{cursor:default;pointer-events:none;}"], NEUTRAL.N50, NEUTRAL.N900, NEUTRAL.N400, NEUTRAL.N100, PURPLE.P00, PURPLE.P300, PURPLE.P100, PURPLE.P300, PURPLE.P100, NEUTRAL.N00, NEUTRAL.N500, NEUTRAL.N400, NEUTRAL.N900);
 /* harmony default export */ var ChoiceButtonStyles = (choiceButtonStyles);
 // CONCATENATED MODULE: ./src/choices/src/components/styled/ChoiceIndicatorStyles.js
 
@@ -57737,16 +57737,16 @@ var ChoiceText = external_amd_styled_components_commonjs_styled_components_commo
 
 
 
-
-
 var RadioIndicator_afterStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["content:'';background-color:white;border-radius:50%;height:8px;left:0;margin:auto;position:absolute;right:0;top:0;bottom:0;width:8px;transition:transform ", " ease-out,opacity ", " ease-out;"], style_transitions_duration.standard, style_transitions_duration.standard);
 var radioWithAfterStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["background-color:", ";border-radius:100%;display:inline-block;height:20px;width:20px;", ";input:not(:checked) ~ &:after,input:checked ~ &:after{", "}input:not(:checked) ~ &:after{opacity:0;transform:scale(0);}input:checked ~ &:after{opacity:1;transform:scale(1);}"], NEUTRAL.N50, ChoiceIndicatorStyles, RadioIndicator_afterStyles);
-var RadioIndicator_getIndicatorStyles = getStyleVariation('mode', {
-  button: ChoiceButtonStyles
-}, radioWithAfterStyles);
-var RadioIndicator = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["transition:background-color ", " ease-out,border-color ", " ease-out,box-shadow ", " ease-out,color ", " ease-out;", ";"], style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, RadioIndicator_getIndicatorStyles);
+var RadioIndicator = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["transition:background-color ", " ease-out,border-color ", " ease-out,box-shadow ", " ease-out,color ", " ease-out;", ";"], style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, radioWithAfterStyles);
 /* harmony default export */ var styled_RadioIndicator = (RadioIndicator);
+// CONCATENATED MODULE: ./src/choices/src/components/styled/RadioButtonIndicator.js
 
+
+
+var RadioButtonIndicator = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["transition:background-color ", " ease-out,border-color ", " ease-out,box-shadow ", " ease-out,color ", " ease-out;", ";"], style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, ChoiceButtonStyles);
+/* harmony default export */ var styled_RadioButtonIndicator = (RadioButtonIndicator);
 // CONCATENATED MODULE: ./src/choices/src/components/styled/ChoiceInputs.js
 
 var inputStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["height:100%;left:0;margin:0;opacity:0;position:absolute;top:0;vertical-align:middle;width:100%;z-index:-1;"]);
@@ -57778,6 +57778,7 @@ var ChoiceWrapper = external_amd_styled_components_commonjs_styled_components_co
 var ChoiceInnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["display:flex;flex:1;"]);
 
 // CONCATENATED MODULE: ./src/choices/src/components/styled/index.js
+
 
 
 
@@ -57909,10 +57910,9 @@ var Radio_Radio = function Radio(_ref) {
           readOnly: readOnly,
           disabled: disabled || readOnly // $FlowFixMe
 
-        }, rest)), /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_RadioIndicator, {
-          mode: mode,
-          children: mode === 'button' && label
-        })]
+        }, rest)), mode === 'button' && label ? /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_RadioButtonIndicator, {
+          children: label
+        }) : /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_RadioIndicator, {})]
       })
     }), mode !== 'button' && /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_ChoiceText, {
       children: label
@@ -79532,7 +79532,7 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.43.0";
+var src_version = "v0.43.1";
 
 
 
