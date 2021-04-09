@@ -1,11 +1,9 @@
 import styled, { css } from 'styled-components';
 
-import choiceButtonStyles from './ChoiceButtonStyles';
 import choiceIndicatorStyles from './ChoiceIndicatorStyles';
 
 import { NEUTRAL } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
-import { getStyleVariation } from '../../../../utils/StyleUtils';
 
 const afterStyles = css`
   content: '';
@@ -47,20 +45,13 @@ const radioWithAfterStyles = css`
   }
 `;
 
-const getIndicatorStyles = getStyleVariation('mode', {
-  button: choiceButtonStyles
-}, radioWithAfterStyles);
-
 const RadioIndicator = styled.span`
   transition: background-color ${duration.swift} ease-out,
     border-color ${duration.swift} ease-out,
     box-shadow ${duration.swift} ease-out,
     color ${duration.swift} ease-out;
 
-  ${getIndicatorStyles};
+  ${radioWithAfterStyles};
 `;
 
 export default RadioIndicator;
-export {
-  getIndicatorStyles
-};
