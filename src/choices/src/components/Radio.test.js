@@ -3,6 +3,7 @@ import { mount } from 'enzyme';
 
 import Radio from './Radio';
 import choiceButtonStyles from './styled/ChoiceButtonStyles';
+import choicePillStyles from './styled/ChoicePillStyles';
 import { ChoiceLabel, RadioIndicator, RadioInput } from './styled';
 import { getIndicatorStyles } from './styled/RadioIndicator';
 
@@ -74,6 +75,11 @@ describe('Radio', () => {
     test('mode="button" should use choiceButtonStyles', () => {
       const indicatorStyles = getIndicatorStyles({ mode: 'button' });
       expect(indicatorStyles).toEqual(choiceButtonStyles);
+    });
+
+    test('mode="pill" should use choiceButtonStyles', () => {
+      const indicatorStyles = getIndicatorStyles({ mode: 'pill' });
+      expect(indicatorStyles).toEqual(choicePillStyles);
     });
   });
 

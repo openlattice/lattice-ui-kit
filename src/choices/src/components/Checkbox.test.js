@@ -3,6 +3,7 @@ import { mount } from 'enzyme';
 
 import Checkbox from './Checkbox';
 import choiceButtonStyles from './styled/ChoiceButtonStyles';
+import choicePillStyles from './styled/ChoicePillStyles';
 import { CheckboxIndicator, CheckboxInput, ChoiceLabel } from './styled';
 import { getIndicatorStyles } from './styled/CheckboxIndicator';
 
@@ -74,6 +75,11 @@ describe('Checkbox', () => {
     test('mode="button" should use choiceButtonStyles', () => {
       const indicatorStyles = getIndicatorStyles({ mode: 'button' });
       expect(indicatorStyles).toEqual(choiceButtonStyles);
+    });
+
+    test('mode="pill" should use choiceButtonStyles', () => {
+      const indicatorStyles = getIndicatorStyles({ mode: 'pill' });
+      expect(indicatorStyles).toEqual(choicePillStyles);
     });
   });
 
