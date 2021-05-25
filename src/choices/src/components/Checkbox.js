@@ -2,6 +2,8 @@
 import { forwardRef } from 'react';
 
 import {
+  CheckboxButtonIndicator,
+  CheckboxPillIndicator,
   CheckboxIndicator,
   CheckboxInput,
   ChoiceInnerWrapper,
@@ -47,9 +49,15 @@ const Checkbox = ({
             disabled={disabled || readOnly}
             {...rest}
             ref={forwardedRef} />
-        <CheckboxIndicator mode={mode} onClick={stopPropagation}>
-          { (mode === 'button' || mode === 'pill') && label }
-        </CheckboxIndicator>
+        {
+          mode === 'button' && label
+            && <CheckboxButtonIndicator onClick={stopPropagation}>{label}</CheckboxButtonIndicator>
+        }
+        {
+          mode === 'pill' && label
+            && <CheckboxPillIndicator onClick={stopPropagation}>{label}</CheckboxPillIndicator>
+        }
+        { mode !== 'button' && mode !== 'pill' && <CheckboxIndicator />}
       </ChoiceInnerWrapper>
     </ChoiceWrapper>
     {
