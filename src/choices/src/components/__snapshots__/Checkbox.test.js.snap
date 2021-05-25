@@ -169,12 +169,9 @@ input:checked ~ .c4:after {
                     type="checkbox"
                   />
                 </styled.input>
-                <styled.span
-                  onClick={[Function]}
-                >
+                <styled.span>
                   <span
                     className="c4 c5"
-                    onClick={[Function]}
                   />
                 </styled.span>
               </span>
