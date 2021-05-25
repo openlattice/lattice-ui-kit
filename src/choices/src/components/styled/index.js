@@ -3,6 +3,8 @@ import ChoiceGroup from './ChoiceGroup';
 import ChoiceLabel from './ChoiceLabel';
 import ChoiceText from './ChoiceText';
 import RadioIndicator from './RadioIndicator';
+import RadioButtonIndicator from './RadioButtonIndicator';
+import RadioPillIndicator from './RadioPillIndicator';
 import { CheckboxInput, RadioInput } from './ChoiceInputs';
 import { ChoiceInnerWrapper, ChoiceWrapper } from './ChoiceWrappers';
 
@@ -14,6 +16,8 @@ export {
   ChoiceLabel,
   ChoiceText,
   ChoiceWrapper,
+  RadioButtonIndicator,
+  RadioPillIndicator,
   RadioIndicator,
   RadioInput,
 };

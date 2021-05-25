@@ -2,10 +2,12 @@ import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import Radio from './Radio';
-import choiceButtonStyles from './styled/ChoiceButtonStyles';
-import choicePillStyles from './styled/ChoicePillStyles';
-import { ChoiceLabel, RadioIndicator, RadioInput } from './styled';
-import { getIndicatorStyles } from './styled/RadioIndicator';
+import {
+  ChoiceLabel,
+  RadioButtonIndicator,
+  RadioIndicator,
+  RadioInput
+} from './styled';
 
 describe('Radio', () => {
 
@@ -67,14 +69,9 @@ describe('Radio', () => {
 
   describe('mode', () => {
 
-    test('should pass mode to RadioIndicator', () => {
-      const wrapper = mount(<Radio mode="button" />);
-      expect(wrapper.find(RadioIndicator).prop('mode')).toEqual('button');
-    });
-
-    test('mode="button" should use choiceButtonStyles', () => {
-      const indicatorStyles = getIndicatorStyles({ mode: 'button' });
-      expect(indicatorStyles).toEqual(choiceButtonStyles);
+    test('should render RadioButtonIndicator when passed a label and mode="button"', () => {
+      const wrapper = mount(<Radio label="Radio Button" mode="button" />);
+      expect(wrapper.find(RadioButtonIndicator).exists()).toBe(true);
     });
 
     test('mode="pill" should use choiceButtonStyles', () => {
