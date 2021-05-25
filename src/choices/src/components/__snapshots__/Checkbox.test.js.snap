@@ -99,6 +99,10 @@ input:checked ~ .c4:after {
   cursor: pointer;
 }
 
+.c6 {
+  margin-left: 10px;
+}
+
 .c3 {
   height: 100%;
   left: 0;
@@ -176,6 +180,11 @@ input:checked ~ .c4:after {
               </span>
             </styled.span>
           </span>
+        </styled.span>
+        <styled.span>
+          <span
+            className="c6"
+          />
         </styled.span>
       </label>
     </styled.label>
