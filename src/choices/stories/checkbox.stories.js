@@ -106,3 +106,63 @@ export const Button = () => (
     </Card>
   </div>
 );
+
+export const Pill = () => (
+  <div>
+    <h1>Checkbox Pill</h1>
+    <Card>
+      <CardSegment vertical>
+        <form
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}>
+          <Label>Showcase</Label>
+          <div>
+            <Checkbox mode="pill" id="story-default" label="Default" />
+            <Checkbox
+                mode="pill"
+                id="story-defaultchecked"
+                label="Default Checked"
+                defaultChecked />
+            <Checkbox
+                mode="pill"
+                id="story-defaultcheckedreadonly"
+                label="Checked readOnly"
+                checked
+                readOnly />
+            <Checkbox mode="pill" id="story-disabled" label="Disabled" disabled />
+            <Checkbox
+                mode="pill"
+                id="story-disabledchecked"
+                label="Disabled (checked)"
+                disabled
+                defaultChecked />
+            <Checkbox
+                mode="pill"
+                id="story-eventhandlers"
+                label="Event handlers (see Actions tab)"
+                onChange={action('onChange')}
+                onBlur={action('onBlur')}
+                onFocus={action('onFocus')} />
+          </div>
+        </form>
+        <form
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}>
+          <Label>Group</Label>
+          <div>
+            <Checkbox mode="pill" id="group-1" label="Out of Touch with Reality" />
+            <Checkbox mode="pill" id="group-2" label="Neglect of Self Care" />
+            <Checkbox mode="pill" id="group-3" label="Depressed" />
+            <Checkbox mode="pill" id="group-4" label="Disorderly Conduct" />
+            <Checkbox mode="pill" id="group-5" label="Disorientation" />
+            <Checkbox mode="pill" id="group-6" label="None" />
+          </div>
+        </form>
+      </CardSegment>
+    </Card>
+  </div>
+);

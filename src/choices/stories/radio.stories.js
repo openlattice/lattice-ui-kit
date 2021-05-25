@@ -135,3 +135,66 @@ export const Button = () => (
     </Card>
   </div>
 );
+
+export const Pill = () => (
+  <div>
+    <h1>Radio Pill</h1>
+    <Card>
+      <CardSegment vertical>
+        <form
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              flexBasis: 'fit-content',
+            }}>
+          <Label>Showcase</Label>
+          <div>
+            <Radio mode="pill" id="story-default" label="Default" />
+            <Radio mode="pill" id="story-checked" label="Default Checked" defaultChecked />
+            <Radio
+                mode="pill"
+                id="story-checkedreadonly"
+                label="Checked readOnly"
+                checked
+                readOnly />
+            <Radio mode="pill" id="story-disabled" label="Disabled" disabled />
+            <Radio
+                mode="pill"
+                id="story-disabledchecked"
+                label="Disabled (checked)"
+                disabled
+                checked />
+            <Radio
+                mode="pill"
+                id="story-eventhandlers"
+                label="Event handlers (see Actions tab)"
+                value={false}
+                onChange={action('onChange')}
+                onBlur={action('onBlur')}
+                onFocus={action('onFocus')} />
+          </div>
+        </form>
+        <form
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}>
+          <Label>Group</Label>
+          <div>
+            <Radio
+                mode="pill"
+                name="group"
+                id="group-1"
+                label="Out of Touch with Reality"
+                value="1" />
+            <Radio mode="pill" name="group" id="group-2" label="Neglect of Self Care" value="2" />
+            <Radio mode="pill" name="group" id="group-3" label="Depressed" value="3" />
+            <Radio mode="pill" name="group" id="group-4" label="Disorderly Conduct" value="4" />
+            <Radio mode="pill" name="group" id="group-5" label="Disorientation" value="5" />
+            <Radio mode="pill" name="group" id="group-6" label="None" value="6" />
+          </div>
+        </form>
+      </CardSegment>
+    </Card>
+  </div>
+);
