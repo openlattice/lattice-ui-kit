@@ -4,7 +4,7 @@ import choicePillStyles from './ChoicePillStyles';
 
 import { duration } from '../../../../style/transitions';
 
-const RadioButtonIndicator = styled.span`
+const RadioPillIndicator = styled.span`
   transition: background-color ${duration.swift} ease-out,
     border-color ${duration.swift} ease-out,
     box-shadow ${duration.swift} ease-out,
@@ -13,4 +13,4 @@ const RadioButtonIndicator = styled.span`
   ${choicePillStyles};
 `;
 
-export default RadioButtonIndicator;
+export default RadioPillIndicator;
