@@ -66,8 +66,7 @@ export const LUKColors = () => {
                     }
                   </div>
                 </CardSegment>
-              ))
-            )
+              )))
         }
       </ColorGrid>
     </Card>
