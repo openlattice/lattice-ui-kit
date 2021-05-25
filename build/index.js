@@ -1,6 +1,6 @@
 /*!
  * 
- * lattice-ui-kit - v0.42.0
+ * lattice-ui-kit - v0.43.1
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * 
@@ -159,6 +159,7 @@ function _defineProperty(obj, key, value) {
 }
 
 module.exports = _defineProperty;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 4 */
@@ -179,6 +180,7 @@ function _assertThisInitialized(self) {
 }
 
 module.exports = _assertThisInitialized;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 6 */,
@@ -189,10 +191,12 @@ function _getPrototypeOf(o) {
   module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
     return o.__proto__ || Object.getPrototypeOf(o);
   };
+  module.exports["default"] = module.exports, module.exports.__esModule = true;
   return _getPrototypeOf(o);
 }
 
 module.exports = _getPrototypeOf;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 8 */
@@ -202,81 +206,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__8__;
 
 /***/ }),
 /* 9 */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-module.exports = _classCallCheck;
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-module.exports = _createClass;
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var setPrototypeOf = __webpack_require__(215);
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) setPrototypeOf(subClass, superClass);
-}
-
-module.exports = _inherits;
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__(43);
-
-var assertThisInitialized = __webpack_require__(5);
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return assertThisInitialized(self);
-}
-
-module.exports = _possibleConstructorReturn;
-
-/***/ }),
-/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var objectWithoutPropertiesLoose = __webpack_require__(234);
@@ -301,6 +230,86 @@ function _objectWithoutProperties(source, excluded) {
 }
 
 module.exports = _objectWithoutProperties;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports) {
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+module.exports = _classCallCheck;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+module.exports = _createClass;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var setPrototypeOf = __webpack_require__(215);
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) setPrototypeOf(subClass, superClass);
+}
+
+module.exports = _inherits;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(32)["default"];
+
+var assertThisInitialized = __webpack_require__(5);
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return assertThisInitialized(self);
+}
+
+module.exports = _possibleConstructorReturn;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 14 */
@@ -353,7 +362,7 @@ var arrayWithHoles = __webpack_require__(216);
 
 var iterableToArrayLimit = __webpack_require__(217);
 
-var unsupportedIterableToArray = __webpack_require__(179);
+var unsupportedIterableToArray = __webpack_require__(180);
 
 var nonIterableRest = __webpack_require__(218);
 
@@ -362,6 +371,7 @@ function _slicedToArray(arr, i) {
 }
 
 module.exports = _slicedToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 16 */,
@@ -8696,6 +8706,7 @@ function _taggedTemplateLiteral(strings, raw) {
 }
 
 module.exports = _taggedTemplateLiteral;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 23 */,
@@ -8837,7 +8848,33 @@ module.exports = __webpack_require__(237)(_, _);
 /* 29 */,
 /* 30 */,
 /* 31 */,
-/* 32 */,
+/* 32 */
+/***/ (function(module, exports) {
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+
+    module.exports["default"] = module.exports, module.exports.__esModule = true;
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+
+    module.exports["default"] = module.exports, module.exports.__esModule = true;
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
 /* 33 */,
 /* 34 */,
 /* 35 */,
@@ -8845,7 +8882,8 @@ module.exports = __webpack_require__(237)(_, _);
 /* 37 */,
 /* 38 */,
 /* 39 */,
-/* 40 */
+/* 40 */,
+/* 41 */
 /***/ (function(module, exports) {
 
 var g;
@@ -8871,30 +8909,8 @@ module.exports = g;
 
 
 /***/ }),
-/* 41 */,
 /* 42 */,
-/* 43 */
-/***/ (function(module, exports) {
-
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    module.exports = _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    module.exports = _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
-module.exports = _typeof;
-
-/***/ }),
+/* 43 */,
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8902,7 +8918,7 @@ var arrayWithoutHoles = __webpack_require__(212);
 
 var iterableToArray = __webpack_require__(213);
 
-var unsupportedIterableToArray = __webpack_require__(179);
+var unsupportedIterableToArray = __webpack_require__(180);
 
 var nonIterableSpread = __webpack_require__(214);
 
@@ -8911,6 +8927,7 @@ function _toConsumableArray(arr) {
 }
 
 module.exports = _toConsumableArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 45 */,
@@ -9125,7 +9142,7 @@ function insertStyleTag(tag) {
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(96),
+var Symbol = __webpack_require__(97),
     getRawTag = __webpack_require__(231),
     objectToString = __webpack_require__(232);
 
@@ -11914,10 +11931,45 @@ var autoReplace = function autoReplace() {
 
 
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40), __webpack_require__(223).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(41), __webpack_require__(223).setImmediate))
 
 /***/ }),
 /* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, '__esModule', { value: true });
+var prefix = 'fal';
+var iconName = 'times';
+var width = 320;
+var height = 512;
+var ligatures = [];
+var unicode = 'f00d';
+var svgPathData = 'M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faTimes = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
+
+/***/ }),
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11952,12 +12004,12 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(56),
     getPrototype = __webpack_require__(250),
-    isObjectLike = __webpack_require__(97);
+    isObjectLike = __webpack_require__(98);
 
 /** `Object#toString` result references. */
 var objectTag = '[object Object]';
@@ -12020,7 +12072,7 @@ module.exports = isPlainObject;
 
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12055,7 +12107,6 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 63 */,
 /* 64 */,
 /* 65 */,
 /* 66 */,
@@ -12088,7 +12139,8 @@ exports.svgPathData = svgPathData;
 /* 93 */,
 /* 94 */,
 /* 95 */,
-/* 96 */
+/* 96 */,
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(229);
@@ -12100,7 +12152,7 @@ module.exports = Symbol;
 
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports) {
 
 /**
@@ -12135,7 +12187,6 @@ module.exports = isObjectLike;
 
 
 /***/ }),
-/* 98 */,
 /* 99 */,
 /* 100 */,
 /* 101 */,
@@ -12215,7 +12266,8 @@ module.exports = isObjectLike;
 /* 175 */,
 /* 176 */,
 /* 177 */,
-/* 178 */
+/* 178 */,
+/* 179 */
 /***/ (function(module, exports) {
 
 function _arrayLikeToArray(arr, len) {
@@ -12229,12 +12281,13 @@ function _arrayLikeToArray(arr, len) {
 }
 
 module.exports = _arrayLikeToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeToArray = __webpack_require__(178);
+var arrayLikeToArray = __webpack_require__(179);
 
 function _unsupportedIterableToArray(o, minLen) {
   if (!o) return;
@@ -12246,9 +12299,10 @@ function _unsupportedIterableToArray(o, minLen) {
 }
 
 module.exports = _unsupportedIterableToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12327,7 +12381,7 @@ var TouchScrollable = exports.TouchScrollable = function (_PureComponent) {
 }(_react.PureComponent);
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseToString = __webpack_require__(240);
@@ -12361,7 +12415,7 @@ module.exports = toString;
 
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports) {
 
 /** Used to compose unicode character classes. */
@@ -12393,7 +12447,7 @@ module.exports = hasUnicode;
 
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports) {
 
 function _extends() {
@@ -12411,13 +12465,15 @@ function _extends() {
     return target;
   };
 
+  module.exports["default"] = module.exports, module.exports.__esModule = true;
   return _extends.apply(this, arguments);
 }
 
 module.exports = _extends;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15038,10 +15094,10 @@ Popper.Defaults = Defaults;
 /* harmony default export */ __webpack_exports__["a"] = (Popper);
 //# sourceMappingURL=popper.js.map
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(41)))
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15076,7 +15132,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15111,7 +15167,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15146,7 +15202,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15165,7 +15221,7 @@ Object.defineProperty(exports, 'default', {
   }
 });
 
-var _TouchScrollable = __webpack_require__(180);
+var _TouchScrollable = __webpack_require__(181);
 
 Object.defineProperty(exports, 'TouchScrollable', {
   enumerable: true,
@@ -15177,7 +15233,7 @@ Object.defineProperty(exports, 'TouchScrollable', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15212,7 +15268,7 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15247,10 +15303,10 @@ exports.unicode = unicode;
 exports.svgPathData = svgPathData;
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toString = __webpack_require__(181),
+var toString = __webpack_require__(182),
     upperFirst = __webpack_require__(243);
 
 /**
@@ -15274,41 +15330,6 @@ function capitalize(string) {
 
 module.exports = capitalize;
 
-
-/***/ }),
-/* 192 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, '__esModule', { value: true });
-var prefix = 'fal';
-var iconName = 'times';
-var width = 320;
-var height = 512;
-var ligatures = [];
-var unicode = 'f00d';
-var svgPathData = 'M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z';
-
-exports.definition = {
-  prefix: prefix,
-  iconName: iconName,
-  icon: [
-    width,
-    height,
-    ligatures,
-    unicode,
-    svgPathData
-  ]};
-
-exports.faTimes = exports.definition;
-exports.prefix = prefix;
-exports.iconName = iconName;
-exports.width = width;
-exports.height = height;
-exports.ligatures = ligatures;
-exports.unicode = unicode;
-exports.svgPathData = svgPathData;
 
 /***/ }),
 /* 193 */
@@ -15421,7 +15442,7 @@ exports.svgPathData = svgPathData;
 
 var baseGetTag = __webpack_require__(56),
     isArray = __webpack_require__(57),
-    isObjectLike = __webpack_require__(97);
+    isObjectLike = __webpack_require__(98);
 
 /** `Object#toString` result references. */
 var stringTag = '[object String]';
@@ -15714,13 +15735,14 @@ module.exports = __webpack_require__(252);
 /* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeToArray = __webpack_require__(178);
+var arrayLikeToArray = __webpack_require__(179);
 
 function _arrayWithoutHoles(arr) {
   if (Array.isArray(arr)) return arrayLikeToArray(arr);
 }
 
 module.exports = _arrayWithoutHoles;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 213 */
@@ -15731,6 +15753,7 @@ function _iterableToArray(iter) {
 }
 
 module.exports = _iterableToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 214 */
@@ -15741,6 +15764,7 @@ function _nonIterableSpread() {
 }
 
 module.exports = _nonIterableSpread;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 215 */
@@ -15752,10 +15776,12 @@ function _setPrototypeOf(o, p) {
     return o;
   };
 
+  module.exports["default"] = module.exports, module.exports.__esModule = true;
   return _setPrototypeOf(o, p);
 }
 
 module.exports = _setPrototypeOf;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 216 */
@@ -15766,6 +15792,7 @@ function _arrayWithHoles(arr) {
 }
 
 module.exports = _arrayWithHoles;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 217 */
@@ -15799,6 +15826,7 @@ function _iterableToArrayLimit(arr, i) {
 }
 
 module.exports = _iterableToArrayLimit;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 218 */
@@ -15809,6 +15837,7 @@ function _nonIterableRest() {
 }
 
 module.exports = _nonIterableRest;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 219 */
@@ -16007,7 +16036,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (typeof global !== "undefined" && global.clearImmediate) ||
                          (this && this.clearImmediate);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(41)))
 
 /***/ }),
 /* 224 */
@@ -16200,7 +16229,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40), __webpack_require__(225)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(41), __webpack_require__(225)))
 
 /***/ }),
 /* 225 */
@@ -16411,7 +16440,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _exenv = __webpack_require__(54);
 
-var _TouchScrollable = __webpack_require__(180);
+var _TouchScrollable = __webpack_require__(181);
 
 var _withLockSheet = __webpack_require__(227);
 
@@ -16684,13 +16713,13 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 module.exports = freeGlobal;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(41)))
 
 /***/ }),
 /* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(96);
+var Symbol = __webpack_require__(97);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -16823,6 +16852,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 }
 
 module.exports = _objectWithoutPropertiesLoose;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 /* 235 */
@@ -16968,7 +16998,7 @@ u&&(q.prototype[t]=function(){var t=this.__wrapped__,o=e?[1]:arguments,f=t insta
 var t=hl[n],r=/^(?:push|sort|unshift)$/.test(n)?"tap":"thru",e=/^(?:pop|shift)$/.test(n);q.prototype[n]=function(){var n=arguments;if(e&&!this.__chain__){var u=this.value();return t.apply(yh(u)?u:[],n)}return this[r](function(r){return t.apply(yh(r)?r:[],n)})}}),ee(Bt.prototype,function(n,t){var r=q[t];if(r){var e=r.name+"";yl.call(is,e)||(is[e]=[]),is[e].push({name:t,func:r})}}),is[Ju(Y,hn).name]=[{name:"wrapper",func:Y}],Bt.prototype.clone=Gt,Bt.prototype.reverse=Ht,Bt.prototype.value=Jt,q.prototype.at=Js,
 q.prototype.chain=Xo,q.prototype.commit=nf,q.prototype.next=tf,q.prototype.plant=ef,q.prototype.reverse=uf,q.prototype.toJSON=q.prototype.valueOf=q.prototype.value=of,q.prototype.first=q.prototype.head,Ll&&(q.prototype[Ll]=rf),q},ge=ve(); true?(Xr._=ge,!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(){return ge}).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))):undefined}).call(this);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(40), __webpack_require__(236)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(41), __webpack_require__(236)(module)))
 
 /***/ }),
 /* 236 */
@@ -17953,7 +17983,7 @@ module.exports = {};
 /* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(96),
+var Symbol = __webpack_require__(97),
     arrayMap = __webpack_require__(241),
     isArray = __webpack_require__(57),
     isSymbol = __webpack_require__(242);
@@ -18024,7 +18054,7 @@ module.exports = arrayMap;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(56),
-    isObjectLike = __webpack_require__(97);
+    isObjectLike = __webpack_require__(98);
 
 /** `Object#toString` result references. */
 var symbolTag = '[object Symbol]';
@@ -18087,9 +18117,9 @@ module.exports = upperFirst;
 /***/ (function(module, exports, __webpack_require__) {
 
 var castSlice = __webpack_require__(245),
-    hasUnicode = __webpack_require__(182),
+    hasUnicode = __webpack_require__(183),
     stringToArray = __webpack_require__(247),
-    toString = __webpack_require__(181);
+    toString = __webpack_require__(182);
 
 /**
  * Creates a function like `_.lowerFirst`.
@@ -18187,7 +18217,7 @@ module.exports = baseSlice;
 /***/ (function(module, exports, __webpack_require__) {
 
 var asciiToArray = __webpack_require__(248),
-    hasUnicode = __webpack_require__(182),
+    hasUnicode = __webpack_require__(183),
     unicodeToArray = __webpack_require__(249);
 
 /**
@@ -18373,7 +18403,6 @@ __webpack_require__.d(__webpack_exports__, "CardActionArea", function() { return
 __webpack_require__.d(__webpack_exports__, "CardActions", function() { return /* reexport */ esm_CardActions_CardActions; });
 __webpack_require__.d(__webpack_exports__, "CardContent", function() { return /* reexport */ esm_CardContent_CardContent; });
 __webpack_require__.d(__webpack_exports__, "CardMedia", function() { return /* reexport */ esm_CardMedia_CardMedia; });
-__webpack_require__.d(__webpack_exports__, "Chip", function() { return /* reexport */ esm_Chip_Chip; });
 __webpack_require__.d(__webpack_exports__, "CircularProgress", function() { return /* reexport */ esm_CircularProgress_CircularProgress; });
 __webpack_require__.d(__webpack_exports__, "ClickAwayListener", function() { return /* reexport */ ClickAwayListener_ClickAwayListener; });
 __webpack_require__.d(__webpack_exports__, "Collapse", function() { return /* reexport */ esm_Collapse_Collapse; });
@@ -18507,6 +18536,7 @@ __webpack_require__.d(__webpack_exports__, "Tag", function() { return /* reexpor
 __webpack_require__.d(__webpack_exports__, "selectStyles", function() { return /* reexport */ selectStyles; });
 __webpack_require__.d(__webpack_exports__, "Button", function() { return /* reexport */ components_Button; });
 __webpack_require__.d(__webpack_exports__, "IconButton", function() { return /* reexport */ components_IconButton; });
+__webpack_require__.d(__webpack_exports__, "Chip", function() { return /* reexport */ components_Chip; });
 __webpack_require__.d(__webpack_exports__, "Checkbox", function() { return /* reexport */ components_Checkbox; });
 __webpack_require__.d(__webpack_exports__, "ChoiceGroup", function() { return /* reexport */ styled_ChoiceGroup; });
 __webpack_require__.d(__webpack_exports__, "Radio", function() { return /* reexport */ components_Radio; });
@@ -22635,19 +22665,19 @@ var toConsumableArray = __webpack_require__(44);
 var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableArray);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/classCallCheck.js
-var classCallCheck = __webpack_require__(9);
+var classCallCheck = __webpack_require__(10);
 var classCallCheck_default = /*#__PURE__*/__webpack_require__.n(classCallCheck);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/createClass.js
-var createClass = __webpack_require__(10);
+var createClass = __webpack_require__(11);
 var createClass_default = /*#__PURE__*/__webpack_require__.n(createClass);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/inherits.js
-var inherits = __webpack_require__(11);
+var inherits = __webpack_require__(12);
 var inherits_default = /*#__PURE__*/__webpack_require__.n(inherits);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js
-var possibleConstructorReturn = __webpack_require__(12);
+var possibleConstructorReturn = __webpack_require__(13);
 var possibleConstructorReturn_default = /*#__PURE__*/__webpack_require__.n(possibleConstructorReturn);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/getPrototypeOf.js
@@ -22916,7 +22946,7 @@ var index_esm_LuxonUtils = /** @class */ (function () {
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
  // Extend LuxonUtils to start week on Sunday
@@ -23015,7 +23045,7 @@ function isNativeReflectConstruct_isNativeReflectConstruct() {
   if (typeof Proxy === "function") return true;
 
   try {
-    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
     return true;
   } catch (e) {
     return false;
@@ -34914,435 +34944,6 @@ var CardMedia_CardMedia = /*#__PURE__*/external_root_React_commonjs2_react_commo
 /* harmony default export */ var esm_CardMedia_CardMedia = (styles_withStyles(CardMedia_styles, {
   name: 'MuiCardMedia'
 })(CardMedia_CardMedia));
-// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/internal/svg-icons/Cancel.js
-
-
-/**
- * @ignore - internal component.
- */
-
-/* harmony default export */ var Cancel = (createSvgIcon( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("path", {
-  d: "M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-}), 'Cancel'));
-// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Chip/Chip.js
-
-
-
-
-
-
-
-
-
-
-
-
-var Chip_styles = function styles(theme) {
-  var backgroundColor = theme.palette.type === 'light' ? theme.palette.grey[300] : theme.palette.grey[700];
-  var deleteIconColor = fade(theme.palette.text.primary, 0.26);
-  return {
-    /* Styles applied to the root element. */
-    root: {
-      fontFamily: theme.typography.fontFamily,
-      fontSize: theme.typography.pxToRem(13),
-      display: 'inline-flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: 32,
-      color: theme.palette.getContrastText(backgroundColor),
-      backgroundColor: backgroundColor,
-      borderRadius: 32 / 2,
-      whiteSpace: 'nowrap',
-      transition: theme.transitions.create(['background-color', 'box-shadow']),
-      // label will inherit this from root, then `clickable` class overrides this for both
-      cursor: 'default',
-      // We disable the focus ring for mouse, touch and keyboard users.
-      outline: 0,
-      textDecoration: 'none',
-      border: 'none',
-      // Remove `button` border
-      padding: 0,
-      // Remove `button` padding
-      verticalAlign: 'middle',
-      boxSizing: 'border-box',
-      '&$disabled': {
-        opacity: 0.5,
-        pointerEvents: 'none'
-      },
-      '& $avatar': {
-        marginLeft: 5,
-        marginRight: -6,
-        width: 24,
-        height: 24,
-        color: theme.palette.type === 'light' ? theme.palette.grey[700] : theme.palette.grey[300],
-        fontSize: theme.typography.pxToRem(12)
-      },
-      '& $avatarColorPrimary': {
-        color: theme.palette.primary.contrastText,
-        backgroundColor: theme.palette.primary.dark
-      },
-      '& $avatarColorSecondary': {
-        color: theme.palette.secondary.contrastText,
-        backgroundColor: theme.palette.secondary.dark
-      },
-      '& $avatarSmall': {
-        marginLeft: 4,
-        marginRight: -4,
-        width: 18,
-        height: 18,
-        fontSize: theme.typography.pxToRem(10)
-      }
-    },
-
-    /* Styles applied to the root element if `size="small"`. */
-    sizeSmall: {
-      height: 24
-    },
-
-    /* Styles applied to the root element if `color="primary"`. */
-    colorPrimary: {
-      backgroundColor: theme.palette.primary.main,
-      color: theme.palette.primary.contrastText
-    },
-
-    /* Styles applied to the root element if `color="secondary"`. */
-    colorSecondary: {
-      backgroundColor: theme.palette.secondary.main,
-      color: theme.palette.secondary.contrastText
-    },
-
-    /* Pseudo-class applied to the root element if `disabled={true}`. */
-    disabled: {},
-
-    /* Styles applied to the root element if `onClick` is defined or `clickable={true}`. */
-    clickable: {
-      userSelect: 'none',
-      WebkitTapHighlightColor: 'transparent',
-      cursor: 'pointer',
-      '&:hover, &:focus': {
-        backgroundColor: emphasize(backgroundColor, 0.08)
-      },
-      '&:active': {
-        boxShadow: theme.shadows[1]
-      }
-    },
-
-    /* Styles applied to the root element if `onClick` and `color="primary"` is defined or `clickable={true}`. */
-    clickableColorPrimary: {
-      '&:hover, &:focus': {
-        backgroundColor: emphasize(theme.palette.primary.main, 0.08)
-      }
-    },
-
-    /* Styles applied to the root element if `onClick` and `color="secondary"` is defined or `clickable={true}`. */
-    clickableColorSecondary: {
-      '&:hover, &:focus': {
-        backgroundColor: emphasize(theme.palette.secondary.main, 0.08)
-      }
-    },
-
-    /* Styles applied to the root element if `onDelete` is defined. */
-    deletable: {
-      '&:focus': {
-        backgroundColor: emphasize(backgroundColor, 0.08)
-      }
-    },
-
-    /* Styles applied to the root element if `onDelete` and `color="primary"` is defined. */
-    deletableColorPrimary: {
-      '&:focus': {
-        backgroundColor: emphasize(theme.palette.primary.main, 0.2)
-      }
-    },
-
-    /* Styles applied to the root element if `onDelete` and `color="secondary"` is defined. */
-    deletableColorSecondary: {
-      '&:focus': {
-        backgroundColor: emphasize(theme.palette.secondary.main, 0.2)
-      }
-    },
-
-    /* Styles applied to the root element if `variant="outlined"`. */
-    outlined: {
-      backgroundColor: 'transparent',
-      border: "1px solid ".concat(theme.palette.type === 'light' ? 'rgba(0, 0, 0, 0.23)' : 'rgba(255, 255, 255, 0.23)'),
-      '$clickable&:hover, $clickable&:focus, $deletable&:focus': {
-        backgroundColor: fade(theme.palette.text.primary, theme.palette.action.hoverOpacity)
-      },
-      '& $avatar': {
-        marginLeft: 4
-      },
-      '& $avatarSmall': {
-        marginLeft: 2
-      },
-      '& $icon': {
-        marginLeft: 4
-      },
-      '& $iconSmall': {
-        marginLeft: 2
-      },
-      '& $deleteIcon': {
-        marginRight: 5
-      },
-      '& $deleteIconSmall': {
-        marginRight: 3
-      }
-    },
-
-    /* Styles applied to the root element if `variant="outlined"` and `color="primary"`. */
-    outlinedPrimary: {
-      color: theme.palette.primary.main,
-      border: "1px solid ".concat(theme.palette.primary.main),
-      '$clickable&:hover, $clickable&:focus, $deletable&:focus': {
-        backgroundColor: fade(theme.palette.primary.main, theme.palette.action.hoverOpacity)
-      }
-    },
-
-    /* Styles applied to the root element if `variant="outlined"` and `color="secondary"`. */
-    outlinedSecondary: {
-      color: theme.palette.secondary.main,
-      border: "1px solid ".concat(theme.palette.secondary.main),
-      '$clickable&:hover, $clickable&:focus, $deletable&:focus': {
-        backgroundColor: fade(theme.palette.secondary.main, theme.palette.action.hoverOpacity)
-      }
-    },
-    // TODO v5: remove
-
-    /* Styles applied to the `avatar` element. */
-    avatar: {},
-
-    /* Styles applied to the `avatar` element if `size="small"`. */
-    avatarSmall: {},
-
-    /* Styles applied to the `avatar` element if `color="primary"`. */
-    avatarColorPrimary: {},
-
-    /* Styles applied to the `avatar` element if `color="secondary"`. */
-    avatarColorSecondary: {},
-
-    /* Styles applied to the `icon` element. */
-    icon: {
-      color: theme.palette.type === 'light' ? theme.palette.grey[700] : theme.palette.grey[300],
-      marginLeft: 5,
-      marginRight: -6
-    },
-
-    /* Styles applied to the `icon` element if `size="small"`. */
-    iconSmall: {
-      width: 18,
-      height: 18,
-      marginLeft: 4,
-      marginRight: -4
-    },
-
-    /* Styles applied to the `icon` element if `color="primary"`. */
-    iconColorPrimary: {
-      color: 'inherit'
-    },
-
-    /* Styles applied to the `icon` element if `color="secondary"`. */
-    iconColorSecondary: {
-      color: 'inherit'
-    },
-
-    /* Styles applied to the label `span` element. */
-    label: {
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
-      paddingLeft: 12,
-      paddingRight: 12,
-      whiteSpace: 'nowrap'
-    },
-
-    /* Styles applied to the label `span` element if `size="small"`. */
-    labelSmall: {
-      paddingLeft: 8,
-      paddingRight: 8
-    },
-
-    /* Styles applied to the `deleteIcon` element. */
-    deleteIcon: {
-      WebkitTapHighlightColor: 'transparent',
-      color: deleteIconColor,
-      height: 22,
-      width: 22,
-      cursor: 'pointer',
-      margin: '0 5px 0 -6px',
-      '&:hover': {
-        color: fade(deleteIconColor, 0.4)
-      }
-    },
-
-    /* Styles applied to the `deleteIcon` element if `size="small"`. */
-    deleteIconSmall: {
-      height: 16,
-      width: 16,
-      marginRight: 4,
-      marginLeft: -4
-    },
-
-    /* Styles applied to the deleteIcon element if `color="primary"` and `variant="default"`. */
-    deleteIconColorPrimary: {
-      color: fade(theme.palette.primary.contrastText, 0.7),
-      '&:hover, &:active': {
-        color: theme.palette.primary.contrastText
-      }
-    },
-
-    /* Styles applied to the deleteIcon element if `color="secondary"` and `variant="default"`. */
-    deleteIconColorSecondary: {
-      color: fade(theme.palette.secondary.contrastText, 0.7),
-      '&:hover, &:active': {
-        color: theme.palette.secondary.contrastText
-      }
-    },
-
-    /* Styles applied to the deleteIcon element if `color="primary"` and `variant="outlined"`. */
-    deleteIconOutlinedColorPrimary: {
-      color: fade(theme.palette.primary.main, 0.7),
-      '&:hover, &:active': {
-        color: theme.palette.primary.main
-      }
-    },
-
-    /* Styles applied to the deleteIcon element if `color="secondary"` and `variant="outlined"`. */
-    deleteIconOutlinedColorSecondary: {
-      color: fade(theme.palette.secondary.main, 0.7),
-      '&:hover, &:active': {
-        color: theme.palette.secondary.main
-      }
-    }
-  };
-};
-
-function isDeleteKeyboardEvent(keyboardEvent) {
-  return keyboardEvent.key === 'Backspace' || keyboardEvent.key === 'Delete';
-}
-/**
- * Chips represent complex entities in small blocks, such as a contact.
- */
-
-
-var Chip_Chip = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Chip(props, ref) {
-  var avatarProp = props.avatar,
-      classes = props.classes,
-      className = props.className,
-      clickableProp = props.clickable,
-      _props$color = props.color,
-      color = _props$color === void 0 ? 'default' : _props$color,
-      ComponentProp = props.component,
-      deleteIconProp = props.deleteIcon,
-      _props$disabled = props.disabled,
-      disabled = _props$disabled === void 0 ? false : _props$disabled,
-      iconProp = props.icon,
-      label = props.label,
-      onClick = props.onClick,
-      onDelete = props.onDelete,
-      onKeyDown = props.onKeyDown,
-      onKeyUp = props.onKeyUp,
-      _props$size = props.size,
-      size = _props$size === void 0 ? 'medium' : _props$size,
-      _props$variant = props.variant,
-      variant = _props$variant === void 0 ? 'default' : _props$variant,
-      other = _objectWithoutProperties(props, ["avatar", "classes", "className", "clickable", "color", "component", "deleteIcon", "disabled", "icon", "label", "onClick", "onDelete", "onKeyDown", "onKeyUp", "size", "variant"]);
-
-  var chipRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
-  var handleRef = useForkRef(chipRef, ref);
-
-  var handleDeleteIconClick = function handleDeleteIconClick(event) {
-    // Stop the event from bubbling up to the `Chip`
-    event.stopPropagation();
-
-    if (onDelete) {
-      onDelete(event);
-    }
-  };
-
-  var handleKeyDown = function handleKeyDown(event) {
-    // Ignore events from children of `Chip`.
-    if (event.currentTarget === event.target && isDeleteKeyboardEvent(event)) {
-      // will be handled in keyUp, otherwise some browsers
-      // might init navigation
-      event.preventDefault();
-    }
-
-    if (onKeyDown) {
-      onKeyDown(event);
-    }
-  };
-
-  var handleKeyUp = function handleKeyUp(event) {
-    // Ignore events from children of `Chip`.
-    if (event.currentTarget === event.target) {
-      if (onDelete && isDeleteKeyboardEvent(event)) {
-        onDelete(event);
-      } else if (event.key === 'Escape' && chipRef.current) {
-        chipRef.current.blur();
-      }
-    }
-
-    if (onKeyUp) {
-      onKeyUp(event);
-    }
-  };
-
-  var clickable = clickableProp !== false && onClick ? true : clickableProp;
-  var small = size === 'small';
-  var Component = ComponentProp || (clickable ? esm_ButtonBase_ButtonBase : 'div');
-  var moreProps = Component === esm_ButtonBase_ButtonBase ? {
-    component: 'div'
-  } : {};
-  var deleteIcon = null;
-
-  if (onDelete) {
-    var customClasses = clsx_m(color !== 'default' && (variant === "default" ? classes["deleteIconColor".concat(capitalize(color))] : classes["deleteIconOutlinedColor".concat(capitalize(color))]), small && classes.deleteIconSmall);
-    deleteIcon = deleteIconProp && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](deleteIconProp) ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](deleteIconProp, {
-      className: clsx_m(deleteIconProp.props.className, classes.deleteIcon, customClasses),
-      onClick: handleDeleteIconClick
-    }) : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Cancel, {
-      className: clsx_m(classes.deleteIcon, customClasses),
-      onClick: handleDeleteIconClick
-    });
-  }
-
-  var avatar = null;
-
-  if (avatarProp && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](avatarProp)) {
-    avatar = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](avatarProp, {
-      className: clsx_m(classes.avatar, avatarProp.props.className, small && classes.avatarSmall, color !== 'default' && classes["avatarColor".concat(capitalize(color))])
-    });
-  }
-
-  var icon = null;
-
-  if (iconProp && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](iconProp)) {
-    icon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](iconProp, {
-      className: clsx_m(classes.icon, iconProp.props.className, small && classes.iconSmall, color !== 'default' && classes["iconColor".concat(capitalize(color))])
-    });
-  }
-
-  if (false) {}
-
-  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
-    role: clickable || onDelete ? 'button' : undefined,
-    className: clsx_m(classes.root, className, color !== 'default' && [classes["color".concat(capitalize(color))], clickable && classes["clickableColor".concat(capitalize(color))], onDelete && classes["deletableColor".concat(capitalize(color))]], variant !== "default" && [classes.outlined, {
-      'primary': classes.outlinedPrimary,
-      'secondary': classes.outlinedSecondary
-    }[color]], disabled && classes.disabled, small && classes.sizeSmall, clickable && classes.clickable, onDelete && classes.deletable),
-    "aria-disabled": disabled ? true : undefined,
-    tabIndex: clickable || onDelete ? 0 : undefined,
-    onClick: onClick,
-    onKeyDown: handleKeyDown,
-    onKeyUp: handleKeyUp,
-    ref: handleRef
-  }, moreProps, other), avatar || icon, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
-    className: clsx_m(classes.label, small && classes.labelSmall)
-  }, label), deleteIcon);
-});
- false ? undefined : void 0;
-/* harmony default export */ var esm_Chip_Chip = (styles_withStyles(Chip_styles, {
-  name: 'MuiChip'
-})(Chip_Chip));
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/CircularProgress/CircularProgress.js
 
 
@@ -43042,7 +42643,7 @@ OutlinedInput_OutlinedInput.muiName = 'Input';
   name: 'MuiOutlinedInput'
 })(OutlinedInput_OutlinedInput));
 // EXTERNAL MODULE: ./node_modules/popper.js/dist/esm/popper.js
-var esm_popper = __webpack_require__(184);
+var esm_popper = __webpack_require__(185);
 
 // CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Popper/Popper.js
 
@@ -43353,11 +42954,15 @@ function _inherits(subClass, superClass) {
   });
   if (superClass) _setPrototypeOf(subClass, superClass);
 }
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/typeof.js
+var helpers_typeof = __webpack_require__(32);
+var typeof_default = /*#__PURE__*/__webpack_require__.n(helpers_typeof);
+
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js
 
 
 function _possibleConstructorReturn(self, call) {
-  if (call && (typeof_typeof(call) === "object" || typeof call === "function")) {
+  if (call && (typeof_default()(call) === "object" || typeof call === "function")) {
     return call;
   }
 
@@ -50187,6 +49792,435 @@ var AlertTitle_AlertTitle = /*#__PURE__*/external_root_React_commonjs2_react_com
 /* harmony default export */ var esm_AlertTitle_AlertTitle = (styles_withStyles(AlertTitle_styles, {
   name: 'MuiAlertTitle'
 })(AlertTitle_AlertTitle));
+// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/internal/svg-icons/Cancel.js
+
+
+/**
+ * @ignore - internal component.
+ */
+
+/* harmony default export */ var Cancel = (createSvgIcon( /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("path", {
+  d: "M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+}), 'Cancel'));
+// CONCATENATED MODULE: ./node_modules/@material-ui/core/esm/Chip/Chip.js
+
+
+
+
+
+
+
+
+
+
+
+
+var Chip_styles = function styles(theme) {
+  var backgroundColor = theme.palette.type === 'light' ? theme.palette.grey[300] : theme.palette.grey[700];
+  var deleteIconColor = fade(theme.palette.text.primary, 0.26);
+  return {
+    /* Styles applied to the root element. */
+    root: {
+      fontFamily: theme.typography.fontFamily,
+      fontSize: theme.typography.pxToRem(13),
+      display: 'inline-flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: 32,
+      color: theme.palette.getContrastText(backgroundColor),
+      backgroundColor: backgroundColor,
+      borderRadius: 32 / 2,
+      whiteSpace: 'nowrap',
+      transition: theme.transitions.create(['background-color', 'box-shadow']),
+      // label will inherit this from root, then `clickable` class overrides this for both
+      cursor: 'default',
+      // We disable the focus ring for mouse, touch and keyboard users.
+      outline: 0,
+      textDecoration: 'none',
+      border: 'none',
+      // Remove `button` border
+      padding: 0,
+      // Remove `button` padding
+      verticalAlign: 'middle',
+      boxSizing: 'border-box',
+      '&$disabled': {
+        opacity: 0.5,
+        pointerEvents: 'none'
+      },
+      '& $avatar': {
+        marginLeft: 5,
+        marginRight: -6,
+        width: 24,
+        height: 24,
+        color: theme.palette.type === 'light' ? theme.palette.grey[700] : theme.palette.grey[300],
+        fontSize: theme.typography.pxToRem(12)
+      },
+      '& $avatarColorPrimary': {
+        color: theme.palette.primary.contrastText,
+        backgroundColor: theme.palette.primary.dark
+      },
+      '& $avatarColorSecondary': {
+        color: theme.palette.secondary.contrastText,
+        backgroundColor: theme.palette.secondary.dark
+      },
+      '& $avatarSmall': {
+        marginLeft: 4,
+        marginRight: -4,
+        width: 18,
+        height: 18,
+        fontSize: theme.typography.pxToRem(10)
+      }
+    },
+
+    /* Styles applied to the root element if `size="small"`. */
+    sizeSmall: {
+      height: 24
+    },
+
+    /* Styles applied to the root element if `color="primary"`. */
+    colorPrimary: {
+      backgroundColor: theme.palette.primary.main,
+      color: theme.palette.primary.contrastText
+    },
+
+    /* Styles applied to the root element if `color="secondary"`. */
+    colorSecondary: {
+      backgroundColor: theme.palette.secondary.main,
+      color: theme.palette.secondary.contrastText
+    },
+
+    /* Pseudo-class applied to the root element if `disabled={true}`. */
+    disabled: {},
+
+    /* Styles applied to the root element if `onClick` is defined or `clickable={true}`. */
+    clickable: {
+      userSelect: 'none',
+      WebkitTapHighlightColor: 'transparent',
+      cursor: 'pointer',
+      '&:hover, &:focus': {
+        backgroundColor: emphasize(backgroundColor, 0.08)
+      },
+      '&:active': {
+        boxShadow: theme.shadows[1]
+      }
+    },
+
+    /* Styles applied to the root element if `onClick` and `color="primary"` is defined or `clickable={true}`. */
+    clickableColorPrimary: {
+      '&:hover, &:focus': {
+        backgroundColor: emphasize(theme.palette.primary.main, 0.08)
+      }
+    },
+
+    /* Styles applied to the root element if `onClick` and `color="secondary"` is defined or `clickable={true}`. */
+    clickableColorSecondary: {
+      '&:hover, &:focus': {
+        backgroundColor: emphasize(theme.palette.secondary.main, 0.08)
+      }
+    },
+
+    /* Styles applied to the root element if `onDelete` is defined. */
+    deletable: {
+      '&:focus': {
+        backgroundColor: emphasize(backgroundColor, 0.08)
+      }
+    },
+
+    /* Styles applied to the root element if `onDelete` and `color="primary"` is defined. */
+    deletableColorPrimary: {
+      '&:focus': {
+        backgroundColor: emphasize(theme.palette.primary.main, 0.2)
+      }
+    },
+
+    /* Styles applied to the root element if `onDelete` and `color="secondary"` is defined. */
+    deletableColorSecondary: {
+      '&:focus': {
+        backgroundColor: emphasize(theme.palette.secondary.main, 0.2)
+      }
+    },
+
+    /* Styles applied to the root element if `variant="outlined"`. */
+    outlined: {
+      backgroundColor: 'transparent',
+      border: "1px solid ".concat(theme.palette.type === 'light' ? 'rgba(0, 0, 0, 0.23)' : 'rgba(255, 255, 255, 0.23)'),
+      '$clickable&:hover, $clickable&:focus, $deletable&:focus': {
+        backgroundColor: fade(theme.palette.text.primary, theme.palette.action.hoverOpacity)
+      },
+      '& $avatar': {
+        marginLeft: 4
+      },
+      '& $avatarSmall': {
+        marginLeft: 2
+      },
+      '& $icon': {
+        marginLeft: 4
+      },
+      '& $iconSmall': {
+        marginLeft: 2
+      },
+      '& $deleteIcon': {
+        marginRight: 5
+      },
+      '& $deleteIconSmall': {
+        marginRight: 3
+      }
+    },
+
+    /* Styles applied to the root element if `variant="outlined"` and `color="primary"`. */
+    outlinedPrimary: {
+      color: theme.palette.primary.main,
+      border: "1px solid ".concat(theme.palette.primary.main),
+      '$clickable&:hover, $clickable&:focus, $deletable&:focus': {
+        backgroundColor: fade(theme.palette.primary.main, theme.palette.action.hoverOpacity)
+      }
+    },
+
+    /* Styles applied to the root element if `variant="outlined"` and `color="secondary"`. */
+    outlinedSecondary: {
+      color: theme.palette.secondary.main,
+      border: "1px solid ".concat(theme.palette.secondary.main),
+      '$clickable&:hover, $clickable&:focus, $deletable&:focus': {
+        backgroundColor: fade(theme.palette.secondary.main, theme.palette.action.hoverOpacity)
+      }
+    },
+    // TODO v5: remove
+
+    /* Styles applied to the `avatar` element. */
+    avatar: {},
+
+    /* Styles applied to the `avatar` element if `size="small"`. */
+    avatarSmall: {},
+
+    /* Styles applied to the `avatar` element if `color="primary"`. */
+    avatarColorPrimary: {},
+
+    /* Styles applied to the `avatar` element if `color="secondary"`. */
+    avatarColorSecondary: {},
+
+    /* Styles applied to the `icon` element. */
+    icon: {
+      color: theme.palette.type === 'light' ? theme.palette.grey[700] : theme.palette.grey[300],
+      marginLeft: 5,
+      marginRight: -6
+    },
+
+    /* Styles applied to the `icon` element if `size="small"`. */
+    iconSmall: {
+      width: 18,
+      height: 18,
+      marginLeft: 4,
+      marginRight: -4
+    },
+
+    /* Styles applied to the `icon` element if `color="primary"`. */
+    iconColorPrimary: {
+      color: 'inherit'
+    },
+
+    /* Styles applied to the `icon` element if `color="secondary"`. */
+    iconColorSecondary: {
+      color: 'inherit'
+    },
+
+    /* Styles applied to the label `span` element. */
+    label: {
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      paddingLeft: 12,
+      paddingRight: 12,
+      whiteSpace: 'nowrap'
+    },
+
+    /* Styles applied to the label `span` element if `size="small"`. */
+    labelSmall: {
+      paddingLeft: 8,
+      paddingRight: 8
+    },
+
+    /* Styles applied to the `deleteIcon` element. */
+    deleteIcon: {
+      WebkitTapHighlightColor: 'transparent',
+      color: deleteIconColor,
+      height: 22,
+      width: 22,
+      cursor: 'pointer',
+      margin: '0 5px 0 -6px',
+      '&:hover': {
+        color: fade(deleteIconColor, 0.4)
+      }
+    },
+
+    /* Styles applied to the `deleteIcon` element if `size="small"`. */
+    deleteIconSmall: {
+      height: 16,
+      width: 16,
+      marginRight: 4,
+      marginLeft: -4
+    },
+
+    /* Styles applied to the deleteIcon element if `color="primary"` and `variant="default"`. */
+    deleteIconColorPrimary: {
+      color: fade(theme.palette.primary.contrastText, 0.7),
+      '&:hover, &:active': {
+        color: theme.palette.primary.contrastText
+      }
+    },
+
+    /* Styles applied to the deleteIcon element if `color="secondary"` and `variant="default"`. */
+    deleteIconColorSecondary: {
+      color: fade(theme.palette.secondary.contrastText, 0.7),
+      '&:hover, &:active': {
+        color: theme.palette.secondary.contrastText
+      }
+    },
+
+    /* Styles applied to the deleteIcon element if `color="primary"` and `variant="outlined"`. */
+    deleteIconOutlinedColorPrimary: {
+      color: fade(theme.palette.primary.main, 0.7),
+      '&:hover, &:active': {
+        color: theme.palette.primary.main
+      }
+    },
+
+    /* Styles applied to the deleteIcon element if `color="secondary"` and `variant="outlined"`. */
+    deleteIconOutlinedColorSecondary: {
+      color: fade(theme.palette.secondary.main, 0.7),
+      '&:hover, &:active': {
+        color: theme.palette.secondary.main
+      }
+    }
+  };
+};
+
+function isDeleteKeyboardEvent(keyboardEvent) {
+  return keyboardEvent.key === 'Backspace' || keyboardEvent.key === 'Delete';
+}
+/**
+ * Chips represent complex entities in small blocks, such as a contact.
+ */
+
+
+var Chip_Chip = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["forwardRef"](function Chip(props, ref) {
+  var avatarProp = props.avatar,
+      classes = props.classes,
+      className = props.className,
+      clickableProp = props.clickable,
+      _props$color = props.color,
+      color = _props$color === void 0 ? 'default' : _props$color,
+      ComponentProp = props.component,
+      deleteIconProp = props.deleteIcon,
+      _props$disabled = props.disabled,
+      disabled = _props$disabled === void 0 ? false : _props$disabled,
+      iconProp = props.icon,
+      label = props.label,
+      onClick = props.onClick,
+      onDelete = props.onDelete,
+      onKeyDown = props.onKeyDown,
+      onKeyUp = props.onKeyUp,
+      _props$size = props.size,
+      size = _props$size === void 0 ? 'medium' : _props$size,
+      _props$variant = props.variant,
+      variant = _props$variant === void 0 ? 'default' : _props$variant,
+      other = _objectWithoutProperties(props, ["avatar", "classes", "className", "clickable", "color", "component", "deleteIcon", "disabled", "icon", "label", "onClick", "onDelete", "onKeyDown", "onKeyUp", "size", "variant"]);
+
+  var chipRef = external_root_React_commonjs2_react_commonjs_react_amd_react_["useRef"](null);
+  var handleRef = useForkRef(chipRef, ref);
+
+  var handleDeleteIconClick = function handleDeleteIconClick(event) {
+    // Stop the event from bubbling up to the `Chip`
+    event.stopPropagation();
+
+    if (onDelete) {
+      onDelete(event);
+    }
+  };
+
+  var handleKeyDown = function handleKeyDown(event) {
+    // Ignore events from children of `Chip`.
+    if (event.currentTarget === event.target && isDeleteKeyboardEvent(event)) {
+      // will be handled in keyUp, otherwise some browsers
+      // might init navigation
+      event.preventDefault();
+    }
+
+    if (onKeyDown) {
+      onKeyDown(event);
+    }
+  };
+
+  var handleKeyUp = function handleKeyUp(event) {
+    // Ignore events from children of `Chip`.
+    if (event.currentTarget === event.target) {
+      if (onDelete && isDeleteKeyboardEvent(event)) {
+        onDelete(event);
+      } else if (event.key === 'Escape' && chipRef.current) {
+        chipRef.current.blur();
+      }
+    }
+
+    if (onKeyUp) {
+      onKeyUp(event);
+    }
+  };
+
+  var clickable = clickableProp !== false && onClick ? true : clickableProp;
+  var small = size === 'small';
+  var Component = ComponentProp || (clickable ? esm_ButtonBase_ButtonBase : 'div');
+  var moreProps = Component === esm_ButtonBase_ButtonBase ? {
+    component: 'div'
+  } : {};
+  var deleteIcon = null;
+
+  if (onDelete) {
+    var customClasses = clsx_m(color !== 'default' && (variant === "default" ? classes["deleteIconColor".concat(capitalize(color))] : classes["deleteIconOutlinedColor".concat(capitalize(color))]), small && classes.deleteIconSmall);
+    deleteIcon = deleteIconProp && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](deleteIconProp) ? /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](deleteIconProp, {
+      className: clsx_m(deleteIconProp.props.className, classes.deleteIcon, customClasses),
+      onClick: handleDeleteIconClick
+    }) : /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Cancel, {
+      className: clsx_m(classes.deleteIcon, customClasses),
+      onClick: handleDeleteIconClick
+    });
+  }
+
+  var avatar = null;
+
+  if (avatarProp && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](avatarProp)) {
+    avatar = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](avatarProp, {
+      className: clsx_m(classes.avatar, avatarProp.props.className, small && classes.avatarSmall, color !== 'default' && classes["avatarColor".concat(capitalize(color))])
+    });
+  }
+
+  var icon = null;
+
+  if (iconProp && /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["isValidElement"](iconProp)) {
+    icon = /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["cloneElement"](iconProp, {
+      className: clsx_m(classes.icon, iconProp.props.className, small && classes.iconSmall, color !== 'default' && classes["iconColor".concat(capitalize(color))])
+    });
+  }
+
+  if (false) {}
+
+  return /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"](Component, _extends({
+    role: clickable || onDelete ? 'button' : undefined,
+    className: clsx_m(classes.root, className, color !== 'default' && [classes["color".concat(capitalize(color))], clickable && classes["clickableColor".concat(capitalize(color))], onDelete && classes["deletableColor".concat(capitalize(color))]], variant !== "default" && [classes.outlined, {
+      'primary': classes.outlinedPrimary,
+      'secondary': classes.outlinedSecondary
+    }[color]], disabled && classes.disabled, small && classes.sizeSmall, clickable && classes.clickable, onDelete && classes.deletable),
+    "aria-disabled": disabled ? true : undefined,
+    tabIndex: clickable || onDelete ? 0 : undefined,
+    onClick: onClick,
+    onKeyDown: handleKeyDown,
+    onKeyUp: handleKeyUp,
+    ref: handleRef
+  }, moreProps, other), avatar || icon, /*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_["createElement"]("span", {
+    className: clsx_m(classes.label, small && classes.labelSmall)
+  }, label), deleteIcon);
+});
+ false ? undefined : void 0;
+/* harmony default export */ var esm_Chip_Chip = (styles_withStyles(Chip_styles, {
+  name: 'MuiChip'
+})(Chip_Chip));
 // CONCATENATED MODULE: ./node_modules/@material-ui/lab/esm/internal/svg-icons/ArrowDropDown.js
 
 
@@ -55542,13 +55576,13 @@ var defineProperty = __webpack_require__(3);
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faCheckCircle.js
-var faCheckCircle = __webpack_require__(186);
+var faCheckCircle = __webpack_require__(187);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faExclamationTriangle.js
-var faExclamationTriangle = __webpack_require__(187);
+var faExclamationTriangle = __webpack_require__(188);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-solid-svg-icons/faTimesOctagon.js
-var faTimesOctagon = __webpack_require__(185);
+var faTimesOctagon = __webpack_require__(186);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/fontawesome-svg-core/index.es.js
 var index_es = __webpack_require__(59);
@@ -55979,7 +56013,7 @@ var IconWrapper = external_amd_styled_components_commonjs_styled_components_comm
 
 function Banner_createSuper(Derived) { var hasNativeReflectConstruct = Banner_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function Banner_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function Banner_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -56397,7 +56431,7 @@ CSSTransition_CSSTransition.propTypes =  false ? undefined : {};
 
 function Portal_createSuper(Derived) { var hasNativeReflectConstruct = Portal_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function Portal_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function Portal_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -56470,7 +56504,7 @@ defineProperty_default()(components_Portal_Portal, "propTypes", {
 // CONCATENATED MODULE: ./src/portal/index.js
 
 // EXTERNAL MODULE: ./node_modules/react-scrolllock/dist/index.js
-var dist = __webpack_require__(188);
+var dist = __webpack_require__(189);
 var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
 
 // EXTERNAL MODULE: ./node_modules/lodash/isFunction.js
@@ -56519,7 +56553,7 @@ OverlayInnerContainer.displayName = 'OverlayInnerContainer';
 
 function Overlay_createSuper(Derived) { var hasNativeReflectConstruct = Overlay_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function Overlay_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function Overlay_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -56759,10 +56793,10 @@ var Label_Label = external_amd_styled_components_commonjs_styled_components_comm
 
 /* harmony default export */ var src_label = (components_Label);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-light-svg-icons/faCircle.js
-var faCircle = __webpack_require__(189);
+var faCircle = __webpack_require__(190);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-light-svg-icons/faSpinnerThird.js
-var faSpinnerThird = __webpack_require__(190);
+var faSpinnerThird = __webpack_require__(191);
 
 // CONCATENATED MODULE: ./src/spinner/src/components/styled/Rotate.js
 
@@ -57165,14 +57199,14 @@ var selectStyles = {
 };
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/objectWithoutProperties.js
-var objectWithoutProperties = __webpack_require__(13);
+var objectWithoutProperties = __webpack_require__(9);
 var objectWithoutProperties_default = /*#__PURE__*/__webpack_require__.n(objectWithoutProperties);
 
 // EXTERNAL MODULE: ./node_modules/lodash/fp.js
 var fp = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./node_modules/lodash/capitalize.js
-var lodash_capitalize = __webpack_require__(191);
+var lodash_capitalize = __webpack_require__(192);
 var capitalize_default = /*#__PURE__*/__webpack_require__.n(lodash_capitalize);
 
 // CONCATENATED MODULE: ./src/button/src/components/createColorStyles.js
@@ -57469,17 +57503,200 @@ var components_IconButton_IconButton = function IconButton(_ref2) {
 // CONCATENATED MODULE: ./src/button/index.js
 
 
+// EXTERNAL MODULE: ./node_modules/@fortawesome/pro-light-svg-icons/faTimes.js
+var faTimes = __webpack_require__(60);
+
+// CONCATENATED MODULE: ./src/chip/src/components/colors.js
+
+var colors_NEUTRAL = NEUTRAL,
+    colors_PURPLE = PURPLE,
+    colors_BLUE = BLUE,
+    colors_TEAL = TEAL,
+    colors_GREEN = GREEN,
+    colors_YELLOW = YELLOW,
+    colors_ORANGE = ORANGE,
+    colors_RED = RED,
+    colors_MAGENTA = MAGENTA,
+    colors_VIOLET = VIOLET;
+/* harmony default export */ var components_colors = ({
+  "default": {
+    background: colors_NEUTRAL.N00,
+    color: colors_NEUTRAL.N600
+  },
+  blue: {
+    background: colors_BLUE.B00,
+    color: colors_BLUE.B400,
+    clickable: colors_BLUE.B100,
+    deletable: colors_BLUE.B200
+  },
+  green: {
+    background: colors_GREEN.G00,
+    color: colors_GREEN.G400,
+    clickable: colors_GREEN.G100,
+    deletable: colors_GREEN.G200
+  },
+  magenta: {
+    background: colors_MAGENTA.M00,
+    color: colors_MAGENTA.M400,
+    clickable: colors_MAGENTA.M100,
+    deletable: colors_MAGENTA.M200
+  },
+  orange: {
+    background: colors_ORANGE.O00,
+    color: colors_ORANGE.O500,
+    clickable: colors_ORANGE.O100,
+    deletable: colors_ORANGE.O200
+  },
+  red: {
+    background: colors_RED.R00,
+    color: colors_RED.R400,
+    clickable: colors_RED.R100,
+    deletable: colors_RED.R200
+  },
+  teal: {
+    background: colors_TEAL.T00,
+    color: colors_TEAL.T500,
+    clickable: colors_TEAL.T100,
+    deletable: colors_TEAL.T200
+  },
+  violet: {
+    background: colors_VIOLET.V00,
+    color: colors_VIOLET.V400,
+    clickable: colors_VIOLET.V100,
+    deletable: colors_VIOLET.V200
+  },
+  yellow: {
+    background: colors_YELLOW.Y00,
+    color: colors_YELLOW.Y500,
+    clickable: colors_YELLOW.Y100,
+    deletable: colors_YELLOW.Y200
+  },
+  primary: {
+    background: colors_PURPLE.P300,
+    color: 'white',
+    deletable: colors_PURPLE.P100
+  },
+  secondary: {
+    background: colors_PURPLE.P00,
+    color: colors_PURPLE.P400,
+    deletable: colors_PURPLE.P200
+  }
+});
+// CONCATENATED MODULE: ./src/chip/src/components/Chip.js
+
+
+
+function Chip_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function Chip_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { Chip_ownKeys(Object(source), true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { Chip_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
+
+
+
+
+var DeleteIcon = /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
+  icon: faTimes["faTimes"]
+});
+
+var actionStates = function actionStates(backgroundColor) {
+  return {
+    '&:hover, &:focus': {
+      backgroundColor: backgroundColor
+    },
+    '&:active': {
+      backgroundColor: backgroundColor,
+      boxShadow: 'none'
+    }
+  };
+};
+
+var Chip_useStyles = function useStyles(color, size) {
+  var colors = components_colors[color] || {};
+  return styles_makeStyles({
+    root: Chip_objectSpread({}, colors),
+    clickable: Chip_objectSpread({
+      cursor: 'pointer'
+    }, actionStates(colors.clickable)),
+    deletable: actionStates(colors.clickable),
+    deleteIcon: {
+      color: colors.color,
+      marginRight: size === 'medium' ? '12px' : '8px',
+      '&:hover, &:focus': {
+        color: colors.deletable
+      },
+      '&:active': {
+        color: colors.deletable
+      }
+    }
+  });
+};
+
+var components_Chip_Chip = function Chip(_ref) {
+  var avatar = _ref.avatar,
+      classes = _ref.classes,
+      clickable = _ref.clickable,
+      _ref$color = _ref.color,
+      color = _ref$color === void 0 ? 'default' : _ref$color,
+      component = _ref.component,
+      _ref$deleteIcon = _ref.deleteIcon,
+      deleteIcon = _ref$deleteIcon === void 0 ? DeleteIcon : _ref$deleteIcon,
+      disabled = _ref.disabled,
+      icon = _ref.icon,
+      label = _ref.label,
+      onDelete = _ref.onDelete,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 'medium' : _ref$size,
+      forwardRef = _ref.forwardRef,
+      rest = objectWithoutProperties_default()(_ref, ["avatar", "classes", "clickable", "color", "component", "deleteIcon", "disabled", "icon", "label", "onDelete", "size", "forwardRef"]);
+
+  var styles = Chip_useStyles(color, size)();
+
+  var props = Chip_objectSpread(Chip_objectSpread({}, rest), {}, {
+    avatar: avatar,
+    classes: classes || styles,
+    clickable: clickable,
+    component: component,
+    deleteIcon: deleteIcon,
+    disabled: disabled,
+    icon: icon,
+    label: label,
+    onDelete: onDelete,
+    size: size,
+    variant: 'default'
+  });
+
+  if (color === 'default' || color === 'primary' || color === 'secondary') props.color = color;
+  /* eslint-disable react/jsx-props-no-spreading */
+
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_Chip_Chip, Chip_objectSpread(Chip_objectSpread({}, props), {}, {
+    ref: forwardRef
+  }));
+  /* eslint-enable */
+};
+/* eslint-disable-next-line react/jsx-props-no-spreading */
+
+
+/* harmony default export */ var components_Chip = (/*#__PURE__*/external_root_React_commonjs2_react_commonjs_react_amd_react_default.a.forwardRef(function (props, ref) {
+  return /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Chip_Chip, Chip_objectSpread(Chip_objectSpread({}, props), {}, {
+    forwardRef: ref
+  }));
+}));
+// CONCATENATED MODULE: ./src/chip/index.js
+
 // CONCATENATED MODULE: ./src/choices/src/components/styled/ChoiceButtonStyles.js
 
  // Not really sure why, but 1px box-shadow looks significantly larger than 1px on chrome
 // Using fractional pixel seems to look closer to intended design
 
-var choiceButtonStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["align-items:center;background-color:", ";border:3px solid transparent;background-clip:padding-box;border-radius:6px;color:", ";display:flex;font-size:1rem;flex-direction:column;justify-content:center;min-height:60px;min-width:84px;padding:10px 12px;text-align:center;user-select:none;width:100%;input:focus-visible ~ &,input:hover ~ &{background-color:", ";cursor:pointer;}input:checked ~ &,input[readonly]:checked:disabled ~ &,input[readonly]:checked:hover ~ &{background-color:", ";color:", ";}input:focus-visible ~ &{box-shadow:", " 0 0 0 0.1px;}input:checked:focus-visible ~ &{box-shadow:", " 0 0 0 0.1px;}input:disabled ~ &{background-color:", ";color:", ";cursor:not-allowed;}input:checked:disabled ~ &{background-color:", ";color:", ";cursor:not-allowed;}input[readonly] ~ &{cursor:default;pointer-events:none;}"], NEUTRAL.N50, NEUTRAL.N900, NEUTRAL.N100, PURPLE.P00, PURPLE.P300, NEUTRAL.N400, PURPLE.P300, NEUTRAL.N00, NEUTRAL.N500, NEUTRAL.N400, NEUTRAL.N900);
+var choiceButtonStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["align-items:center;background-color:", ";border:3px solid transparent;background-clip:padding-box;border-radius:5px;color:", ";display:flex;font-size:1rem;flex-direction:column;justify-content:center;min-height:60px;min-width:84px;padding:10px 12px;text-align:center;user-select:none;width:100%;input:focus ~ &{box-shadow:", " 0 0 0 1px;cursor:pointer;}input:hover ~ &{background-color:", ";cursor:pointer;}input:checked ~ &,input[readonly]:checked:disabled ~ &{background-color:", ";color:", ";}input[readonly]:checked:hover ~ &{background-color:", ";}input:checked:focus ~ &{box-shadow:", " 0 0 0 1px;}input:checked:hover ~ &{background-color:", ";}input:disabled ~ &{background-color:", ";color:", ";cursor:not-allowed;}input:checked:disabled ~ &{background-color:", ";color:", ";cursor:not-allowed;}input[readonly] ~ &{cursor:default;pointer-events:none;}"], NEUTRAL.N50, NEUTRAL.N900, NEUTRAL.N400, NEUTRAL.N100, PURPLE.P00, PURPLE.P300, PURPLE.P100, PURPLE.P300, PURPLE.P100, NEUTRAL.N00, NEUTRAL.N500, NEUTRAL.N400, NEUTRAL.N900);
 /* harmony default export */ var ChoiceButtonStyles = (choiceButtonStyles);
 // CONCATENATED MODULE: ./src/choices/src/components/styled/ChoiceIndicatorStyles.js
 
 
-var choiceIndicatorStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["input:hover ~ &{background-color:", ";}input:focus-visible ~ &{box-shadow:", " 0 0 0 2px;}input:checked ~ &,input[readonly]:checked:disabled ~ &,input[readonly]:checked:hover ~ &{background-color:", ";}input:checked:hover ~ &{background-color:", ";}input:disabled ~ &{background-color:", ";cursor:not-allowed;}input:checked:disabled ~ &{cursor:not-allowed;background-color:", ";}input[readonly] ~ &{cursor:default;pointer-events:none;}"], NEUTRAL.N300, PURPLE.P300, PURPLE.P300, PURPLE.P400, NEUTRAL.N50, NEUTRAL.N500);
+var choiceIndicatorStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["input:hover ~ &{background-color:", ";}input:focus-visible ~ &{box-shadow:", " 0 0 0 2px;}input:checked ~ &,input[readonly]:checked:disabled ~ &,input[readonly]:checked:hover ~ &{background-color:", ";}input:checked:hover ~ &{background-color:", ";}input:disabled ~ &{background-color:", ";cursor:not-allowed;}input:checked:disabled ~ &{cursor:not-allowed;background-color:", ";}input[readonly] ~ &{cursor:default;pointer-events:none;}"], NEUTRAL.N300, PURPLE.P300, PURPLE.P300, PURPLE.P100, NEUTRAL.N50, NEUTRAL.N500);
 /* harmony default export */ var ChoiceIndicatorStyles = (choiceIndicatorStyles);
 // CONCATENATED MODULE: ./src/choices/src/components/styled/CheckboxIndicator.js
 
@@ -57520,16 +57737,16 @@ var ChoiceText = external_amd_styled_components_commonjs_styled_components_commo
 
 
 
-
-
 var RadioIndicator_afterStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["content:'';background-color:white;border-radius:50%;height:8px;left:0;margin:auto;position:absolute;right:0;top:0;bottom:0;width:8px;transition:transform ", " ease-out,opacity ", " ease-out;"], style_transitions_duration.standard, style_transitions_duration.standard);
 var radioWithAfterStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["background-color:", ";border-radius:100%;display:inline-block;height:20px;width:20px;", ";input:not(:checked) ~ &:after,input:checked ~ &:after{", "}input:not(:checked) ~ &:after{opacity:0;transform:scale(0);}input:checked ~ &:after{opacity:1;transform:scale(1);}"], NEUTRAL.N50, ChoiceIndicatorStyles, RadioIndicator_afterStyles);
-var RadioIndicator_getIndicatorStyles = getStyleVariation('mode', {
-  button: ChoiceButtonStyles
-}, radioWithAfterStyles);
-var RadioIndicator = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["transition:background-color ", " ease-out,border-color ", " ease-out,box-shadow ", " ease-out,color ", " ease-out;", ";"], style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, RadioIndicator_getIndicatorStyles);
+var RadioIndicator = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["transition:background-color ", " ease-out,border-color ", " ease-out,box-shadow ", " ease-out,color ", " ease-out;", ";"], style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, radioWithAfterStyles);
 /* harmony default export */ var styled_RadioIndicator = (RadioIndicator);
+// CONCATENATED MODULE: ./src/choices/src/components/styled/RadioButtonIndicator.js
 
+
+
+var RadioButtonIndicator = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["transition:background-color ", " ease-out,border-color ", " ease-out,box-shadow ", " ease-out,color ", " ease-out;", ";"], style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, style_transitions_duration.swift, ChoiceButtonStyles);
+/* harmony default export */ var styled_RadioButtonIndicator = (RadioButtonIndicator);
 // CONCATENATED MODULE: ./src/choices/src/components/styled/ChoiceInputs.js
 
 var inputStyles = Object(external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_["css"])(["height:100%;left:0;margin:0;opacity:0;position:absolute;top:0;vertical-align:middle;width:100%;z-index:-1;"]);
@@ -57561,6 +57778,7 @@ var ChoiceWrapper = external_amd_styled_components_commonjs_styled_components_co
 var ChoiceInnerWrapper = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.span(["display:flex;flex:1;"]);
 
 // CONCATENATED MODULE: ./src/choices/src/components/styled/index.js
+
 
 
 
@@ -57692,10 +57910,9 @@ var Radio_Radio = function Radio(_ref) {
           readOnly: readOnly,
           disabled: disabled || readOnly // $FlowFixMe
 
-        }, rest)), /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_RadioIndicator, {
-          mode: mode,
-          children: mode === 'button' && label
-        })]
+        }, rest)), mode === 'button' && label ? /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_RadioButtonIndicator, {
+          children: label
+        }) : /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_RadioIndicator, {})]
       })
     }), mode !== 'button' && /*#__PURE__*/Object(jsx_runtime["jsx"])(styled_ChoiceText, {
       children: label
@@ -57827,7 +58044,7 @@ ModalBody_ModalBody.defaultProps = {
 
 function ModalFooter_createSuper(Derived) { var hasNativeReflectConstruct = ModalFooter_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function ModalFooter_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function ModalFooter_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -57986,9 +58203,6 @@ defineProperty_default()(ModalFooter_ModalFooter, "defaultProps", {
 
 
 
-// EXTERNAL MODULE: ./node_modules/@fortawesome/pro-light-svg-icons/faTimes.js
-var faTimes = __webpack_require__(192);
-
 // CONCATENATED MODULE: ./src/modal/src/components/ModalHeader.js
 
 
@@ -58000,7 +58214,7 @@ var faTimes = __webpack_require__(192);
 
 function ModalHeader_createSuper(Derived) { var hasNativeReflectConstruct = ModalHeader_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function ModalHeader_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function ModalHeader_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -58125,7 +58339,7 @@ defineProperty_default()(ModalHeader_ModalHeader, "defaultProps", {
 
 function Modal_createSuper(Derived) { var hasNativeReflectConstruct = Modal_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function Modal_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function Modal_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -58788,7 +59002,7 @@ AppContentWrapper_AppContentWrapper.defaultProps = {
 };
 /* harmony default export */ var App_AppContentWrapper = (AppContentWrapper_AppContentWrapper);
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faChevronRight.js
-var faChevronRight = __webpack_require__(60);
+var faChevronRight = __webpack_require__(61);
 
 // CONCATENATED MODULE: ./src/menu/src/components/NestedMenuItem.js
 
@@ -59016,7 +59230,7 @@ var isArray = __webpack_require__(57);
 var isArray_default = /*#__PURE__*/__webpack_require__.n(isArray);
 
 // EXTERNAL MODULE: ./node_modules/lodash/isPlainObject.js
-var lodash_isPlainObject = __webpack_require__(61);
+var lodash_isPlainObject = __webpack_require__(62);
 var isPlainObject_default = /*#__PURE__*/__webpack_require__.n(lodash_isPlainObject);
 
 // EXTERNAL MODULE: ./node_modules/lodash/isString.js
@@ -64855,7 +65069,7 @@ var NavigationWrapper = external_amd_styled_components_commonjs_styled_component
 
 function AppNavigationWrapper_createSuper(Derived) { var hasNativeReflectConstruct = AppNavigationWrapper_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function AppNavigationWrapper_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function AppNavigationWrapper_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -65952,7 +66166,7 @@ if (false) {}
 
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/extends.js
-var helpers_extends = __webpack_require__(183);
+var helpers_extends = __webpack_require__(184);
 
 // CONCATENATED MODULE: ./node_modules/@emotion/react/dist/emotion-react.browser.esm.js
 
@@ -70376,10 +70590,6 @@ Select_d53e3329_browser_esm_Select.defaultProps = Select_d53e3329_browser_esm_de
 
 
 
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/typeof.js
-var helpers_typeof = __webpack_require__(43);
-var typeof_default = /*#__PURE__*/__webpack_require__.n(helpers_typeof);
-
 // CONCATENATED MODULE: ./node_modules/react-select/dist/stateManager-66a21f68.browser.esm.js
 
 
@@ -71166,7 +71376,7 @@ function SelectController_objectSpread(target) { for (var i = 1; i < arguments.l
 
 function SelectController_createSuper(Derived) { var hasNativeReflectConstruct = SelectController_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function SelectController_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function SelectController_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -71657,7 +71867,7 @@ var AppHeaderWrapper_templateObject, _templateObject2;
 
 function AppHeaderWrapper_createSuper(Derived) { var hasNativeReflectConstruct = AppHeaderWrapper_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function AppHeaderWrapper_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function AppHeaderWrapper_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function AppHeaderWrapper_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -73002,7 +73212,7 @@ var StyledResultComponents_Image = external_amd_styled_components_commonjs_style
 
 function DataGrid_createSuper(Derived) { var hasNativeReflectConstruct = DataGrid_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function DataGrid_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function DataGrid_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -73107,7 +73317,7 @@ defineProperty_default()(DataGrid_DataGrid, "defaultProps", {
 
 function Result_createSuper(Derived) { var hasNativeReflectConstruct = Result_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function Result_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function Result_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -73195,7 +73405,7 @@ var faSearchMinus = __webpack_require__(202);
 
 function IconSplash_createSuper(Derived) { var hasNativeReflectConstruct = IconSplash_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function IconSplash_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function IconSplash_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -73281,7 +73491,7 @@ defineProperty_default()(IconSplash_IconSplash, "defaultProps", {
 
 function SearchResults_createSuper(Derived) { var hasNativeReflectConstruct = SearchResults_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function SearchResults_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function SearchResults_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -73390,7 +73600,7 @@ var InputGrid = external_amd_styled_components_commonjs_styled_components_common
 var Title = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default.a.h1(["font-size:18px;font-weight:normal;margin:0;"]);
 
 // EXTERNAL MODULE: ./node_modules/@fortawesome/pro-regular-svg-icons/faCalendarDay.js
-var faCalendarDay = __webpack_require__(62);
+var faCalendarDay = __webpack_require__(63);
 
 // CONCATENATED MODULE: ./node_modules/@material-ui/pickers/esm/Wrapper-241966d7.js
 
@@ -76513,7 +76723,7 @@ components_DatePicker_DatePicker.defaultProps = {
 
 function Search_createSuper(Derived) { var hasNativeReflectConstruct = Search_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function Search_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function Search_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -76796,7 +77006,7 @@ defineProperty_default()(Search_Search, "defaultProps", {
 
 function PersonResult_createSuper(Derived) { var hasNativeReflectConstruct = PersonResult_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = getPrototypeOf_default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = getPrototypeOf_default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return possibleConstructorReturn_default()(this, result); }; }
 
-function PersonResult_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function PersonResult_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -77814,12 +78024,14 @@ function Breadcrumbs_objectSpread(target) { for (var i = 1; i < arguments.length
 
 
 
+var Separator = external_amd_styled_components_commonjs_styled_components_commonjs2_styled_components_default()(FontAwesomeIcon)(["font-size:60%;"]);
+
 var components_Breadcrumbs_Breadcrumbs = function Breadcrumbs(props) {
   return /*#__PURE__*/Object(jsx_runtime["jsx"])(esm_Breadcrumbs_Breadcrumbs, Breadcrumbs_objectSpread({}, props));
 };
 
 components_Breadcrumbs_Breadcrumbs.defaultProps = {
-  separator: /*#__PURE__*/Object(jsx_runtime["jsx"])(FontAwesomeIcon, {
+  separator: /*#__PURE__*/Object(jsx_runtime["jsx"])(Separator, {
     icon: faChevronRight["faChevronRight"],
     fixedWidth: true
   })
@@ -79320,7 +79532,8 @@ var darkTheme = styles_createMuiTheme({
 
  // injected by Webpack.DefinePlugin
 
-var src_version = "v0.42.0";
+var src_version = "v0.43.1";
+
 
 
 
