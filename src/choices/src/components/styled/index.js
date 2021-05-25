@@ -1,4 +1,6 @@
+import CheckboxButtonIndicator from './CheckboxButtonIndicator';
 import CheckboxIndicator from './CheckboxIndicator';
+import CheckboxPillIndicator from './CheckboxPillIndicator';
 import ChoiceGroup from './ChoiceGroup';
 import ChoiceLabel from './ChoiceLabel';
 import ChoiceText from './ChoiceText';
@@ -9,7 +11,9 @@ import { CheckboxInput, RadioInput } from './ChoiceInputs';
 import { ChoiceInnerWrapper, ChoiceWrapper } from './ChoiceWrappers';
 
 export {
+  CheckboxButtonIndicator,
   CheckboxIndicator,
+  CheckboxPillIndicator,
   CheckboxInput,
   ChoiceGroup,
   ChoiceInnerWrapper,
