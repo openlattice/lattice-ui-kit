@@ -48,12 +48,12 @@ const Checkbox = ({
             {...rest}
             ref={forwardedRef} />
         <CheckboxIndicator mode={mode} onClick={stopPropagation}>
-          { mode === 'button' && label }
+          { (mode === 'button' || mode === 'pill') && label }
         </CheckboxIndicator>
       </ChoiceInnerWrapper>
     </ChoiceWrapper>
     {
-      mode !== 'button' && label && (
+      (mode !== 'button' && mode !== 'pill') && (
         <ChoiceText>
           {label}
         </ChoiceText>

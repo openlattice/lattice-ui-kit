@@ -41,12 +41,12 @@ const Radio = ({
             // $FlowFixMe
             {...rest} />
         <RadioIndicator mode={mode}>
-          { mode === 'button' && label }
+          { (mode === 'button' || mode === 'pill') && label }
         </RadioIndicator>
       </ChoiceInnerWrapper>
     </ChoiceWrapper>
     {
-      mode !== 'button' && (
+      (mode !== 'button' && mode !== 'pill') && (
         <ChoiceText>
           {label}
         </ChoiceText>
