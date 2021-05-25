@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 import choiceButtonStyles from './ChoiceButtonStyles';
 import choiceIndicatorStyles from './ChoiceIndicatorStyles';
+import choicePillStyles from './ChoicePillStyles';
 
 import { NEUTRAL } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
@@ -48,7 +49,8 @@ const radioWithAfterStyles = css`
 `;
 
 const getIndicatorStyles = getStyleVariation('mode', {
-  button: choiceButtonStyles
+  button: choiceButtonStyles,
+  pill: choicePillStyles
 }, radioWithAfterStyles);
 
 const RadioIndicator = styled.span`
