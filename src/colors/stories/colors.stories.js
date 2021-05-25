@@ -3,6 +3,7 @@ import isString from 'lodash/isString';
 import isEmpty from 'lodash/isEmpty';
 import isPlainObject from 'lodash/isPlainObject';
 import styled from 'styled-components';
+import { readableColor } from 'polished';
 import { Typography } from '@material-ui/core';
 
 import * as Colors from '../src/Colors';
@@ -27,13 +28,6 @@ export default {
 };
 
 export const LUKColors = () => {
-  const getTextColor = (hexcolor :string) :string => {
-    const r = parseInt(hexcolor.substr(1, 2), 16);
-    const g = parseInt(hexcolor.substr(3, 2), 16);
-    const b = parseInt(hexcolor.substr(5, 2), 16);
-    const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
-    return (yiq >= 128) ? 'black' : 'white';
-  };
 
   const copyToClipboard = (e :SyntheticInputEvent<HTMLInputElement>) => {
     const copyText = e.target.getAttribute('value') || '';
@@ -50,7 +44,7 @@ export const LUKColors = () => {
       <ColorGrid>
         {
           Object.entries(Colors).map(([label, colors]) => (
-            (isPlainObject(colors) && !isEmpty(colors))
+            isPlainObject(colors) && !isEmpty(colors)
               && (
                 <CardSegment>
                   <h4>{label}</h4>
@@ -61,7 +55,7 @@ export const LUKColors = () => {
                           <ColorBlock
                               color={hex}
                               onClick={copyToClipboard}
-                              textColor={getTextColor(hex)}
+                              textColor={readableColor(hex, 'black', 'white')}
                               value={`${label}.${color}`}>
                             <Typography color="inherit" variant="button">{color}</Typography>
                             /
