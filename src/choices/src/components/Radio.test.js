@@ -5,6 +5,7 @@ import Radio from './Radio';
 import {
   ChoiceLabel,
   RadioButtonIndicator,
+  RadioPillIndicator,
   RadioIndicator,
   RadioInput
 } from './styled';
@@ -74,9 +75,9 @@ describe('Radio', () => {
       expect(wrapper.find(RadioButtonIndicator).exists()).toBe(true);
     });
 
-    test('mode="pill" should use choiceButtonStyles', () => {
-      const indicatorStyles = getIndicatorStyles({ mode: 'pill' });
-      expect(indicatorStyles).toEqual(choicePillStyles);
+    test('should render RadioPillIndicator when passed a label and mode="pill"', () => {
+      const wrapper = mount(<Radio label="Radio Pill" mode="pill" />);
+      expect(wrapper.find(RadioPillIndicator).exists()).toBe(true);
     });
   });
 

@@ -2,10 +2,13 @@ import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import Checkbox from './Checkbox';
-import choiceButtonStyles from './styled/ChoiceButtonStyles';
-import choicePillStyles from './styled/ChoicePillStyles';
-import { CheckboxIndicator, CheckboxInput, ChoiceLabel } from './styled';
-import { getIndicatorStyles } from './styled/CheckboxIndicator';
+import {
+  CheckboxButtonIndicator,
+  CheckboxIndicator,
+  CheckboxInput,
+  CheckboxPillIndicator,
+  ChoiceLabel
+} from './styled';
 
 describe('Checkbox', () => {
 
@@ -67,19 +70,14 @@ describe('Checkbox', () => {
 
   describe('mode', () => {
 
-    test('should pass mode to CheckboxIndicator', () => {
-      const wrapper = mount(<Checkbox mode="button" />);
-      expect(wrapper.find(CheckboxIndicator).prop('mode')).toEqual('button');
+    test('should render CheckboxButtonIndicator when passed a label and mode="button"', () => {
+      const wrapper = mount(<Checkbox label="Checkbox Button" mode="button" />);
+      expect(wrapper.find(CheckboxButtonIndicator).exists()).toBe(true);
     });
 
-    test('mode="button" should use choiceButtonStyles', () => {
-      const indicatorStyles = getIndicatorStyles({ mode: 'button' });
-      expect(indicatorStyles).toEqual(choiceButtonStyles);
-    });
-
-    test('mode="pill" should use choiceButtonStyles', () => {
-      const indicatorStyles = getIndicatorStyles({ mode: 'pill' });
-      expect(indicatorStyles).toEqual(choicePillStyles);
+    test('should render CheckboxPillIndicator when passed a label and mode="pill"', () => {
+      const wrapper = mount(<Checkbox label="Checkbox Pill" mode="pill" />);
+      expect(wrapper.find(CheckboxPillIndicator).exists()).toBe(true);
     });
   });
 
