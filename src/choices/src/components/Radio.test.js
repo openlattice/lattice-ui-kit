@@ -5,7 +5,7 @@ import Radio from './Radio';
 import {
   ChoiceLabel,
   RadioButtonIndicator,
-  RadioPillIndicator,
+  RadioChipIndicator,
   RadioIndicator,
   RadioInput
 } from './styled';
@@ -75,9 +75,9 @@ describe('Radio', () => {
       expect(wrapper.find(RadioButtonIndicator).exists()).toBe(true);
     });
 
-    test('should render RadioPillIndicator when passed a label and mode="pill"', () => {
-      const wrapper = mount(<Radio label="Radio Pill" mode="pill" />);
-      expect(wrapper.find(RadioPillIndicator).exists()).toBe(true);
+    test('should render RadioChipIndicator when passed a label and mode="chip"', () => {
+      const wrapper = mount(<Radio label="Radio Chip" mode="chip" />);
+      expect(wrapper.find(RadioChipIndicator).exists()).toBe(true);
     });
   });
 

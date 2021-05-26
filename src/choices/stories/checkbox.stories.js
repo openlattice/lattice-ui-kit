@@ -107,9 +107,9 @@ export const Button = () => (
   </div>
 );
 
-export const Pill = () => (
+export const Chip = () => (
   <div>
-    <h1>Checkbox Pill</h1>
+    <h1>Checkbox Chip</h1>
     <Card>
       <CardSegment vertical>
         <form
@@ -119,27 +119,27 @@ export const Pill = () => (
             }}>
           <Label>Showcase</Label>
           <div>
-            <Checkbox mode="pill" id="story-default" label="Default" />
+            <Checkbox mode="chip" id="story-default" label="Default" />
             <Checkbox
-                mode="pill"
+                mode="chip"
                 id="story-defaultchecked"
                 label="Default Checked"
                 defaultChecked />
             <Checkbox
-                mode="pill"
+                mode="chip"
                 id="story-defaultcheckedreadonly"
                 label="Checked readOnly"
                 checked
                 readOnly />
-            <Checkbox mode="pill" id="story-disabled" label="Disabled" disabled />
+            <Checkbox mode="chip" id="story-disabled" label="Disabled" disabled />
             <Checkbox
-                mode="pill"
+                mode="chip"
                 id="story-disabledchecked"
                 label="Disabled (checked)"
                 disabled
                 defaultChecked />
             <Checkbox
-                mode="pill"
+                mode="chip"
                 id="story-eventhandlers"
                 label="Event handlers (see Actions tab)"
                 onChange={action('onChange')}
@@ -154,12 +154,12 @@ export const Pill = () => (
             }}>
           <Label>Group</Label>
           <div>
-            <Checkbox mode="pill" id="group-1" label="Out of Touch with Reality" />
-            <Checkbox mode="pill" id="group-2" label="Neglect of Self Care" />
-            <Checkbox mode="pill" id="group-3" label="Depressed" />
-            <Checkbox mode="pill" id="group-4" label="Disorderly Conduct" />
-            <Checkbox mode="pill" id="group-5" label="Disorientation" />
-            <Checkbox mode="pill" id="group-6" label="None" />
+            <Checkbox mode="chip" id="group-1" label="Out of Touch with Reality" />
+            <Checkbox mode="chip" id="group-2" label="Neglect of Self Care" />
+            <Checkbox mode="chip" id="group-3" label="Depressed" />
+            <Checkbox mode="chip" id="group-4" label="Disorderly Conduct" />
+            <Checkbox mode="chip" id="group-5" label="Disorientation" />
+            <Checkbox mode="chip" id="group-6" label="None" />
           </div>
         </form>
       </CardSegment>

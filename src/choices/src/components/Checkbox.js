@@ -3,7 +3,7 @@ import { forwardRef } from 'react';
 
 import {
   CheckboxButtonIndicator,
-  CheckboxPillIndicator,
+  CheckboxChipIndicator,
   CheckboxIndicator,
   CheckboxInput,
   ChoiceInnerWrapper,
@@ -54,14 +54,14 @@ const Checkbox = ({
             && <CheckboxButtonIndicator onClick={stopPropagation}>{label}</CheckboxButtonIndicator>
         }
         {
-          mode === 'pill' && label
-            && <CheckboxPillIndicator onClick={stopPropagation}>{label}</CheckboxPillIndicator>
+          mode === 'chip' && label
+            && <CheckboxChipIndicator onClick={stopPropagation}>{label}</CheckboxChipIndicator>
         }
-        { mode !== 'button' && mode !== 'pill' && <CheckboxIndicator />}
+        { mode !== 'button' && mode !== 'chip' && <CheckboxIndicator />}
       </ChoiceInnerWrapper>
     </ChoiceWrapper>
     {
-      (mode !== 'button' && mode !== 'pill') && (
+      (mode !== 'button' && mode !== 'chip') && (
         <ChoiceText>
           {label}
         </ChoiceText>

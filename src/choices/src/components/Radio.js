@@ -5,7 +5,7 @@ import {
   ChoiceText,
   ChoiceWrapper,
   RadioButtonIndicator,
-  RadioPillIndicator,
+  RadioChipIndicator,
   RadioIndicator,
   RadioInput,
 } from './styled';
@@ -43,12 +43,12 @@ const Radio = ({
             // $FlowFixMe
             {...rest} />
         { mode === 'button' && label && <RadioButtonIndicator>{label}</RadioButtonIndicator>}
-        { mode === 'pill' && label && <RadioPillIndicator>{label}</RadioPillIndicator>}
-        { mode !== 'button' && mode !== 'pill' && <RadioIndicator />}
+        { mode === 'chip' && label && <RadioChipIndicator>{label}</RadioChipIndicator>}
+        { mode !== 'button' && mode !== 'chip' && <RadioIndicator />}
       </ChoiceInnerWrapper>
     </ChoiceWrapper>
     {
-      (mode !== 'button' && mode !== 'pill') && (
+      (mode !== 'button' && mode !== 'chip') && (
         <ChoiceText>
           {label}
         </ChoiceText>

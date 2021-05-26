@@ -1,19 +1,19 @@
 import CheckboxButtonIndicator from './CheckboxButtonIndicator';
 import CheckboxIndicator from './CheckboxIndicator';
-import CheckboxPillIndicator from './CheckboxPillIndicator';
+import CheckboxChipIndicator from './CheckboxChipIndicator';
 import ChoiceGroup from './ChoiceGroup';
 import ChoiceLabel from './ChoiceLabel';
 import ChoiceText from './ChoiceText';
 import RadioIndicator from './RadioIndicator';
 import RadioButtonIndicator from './RadioButtonIndicator';
-import RadioPillIndicator from './RadioPillIndicator';
+import RadioChipIndicator from './RadioChipIndicator';
 import { CheckboxInput, RadioInput } from './ChoiceInputs';
 import { ChoiceInnerWrapper, ChoiceWrapper } from './ChoiceWrappers';
 
 export {
   CheckboxButtonIndicator,
   CheckboxIndicator,
-  CheckboxPillIndicator,
+  CheckboxChipIndicator,
   CheckboxInput,
   ChoiceGroup,
   ChoiceInnerWrapper,
@@ -21,7 +21,7 @@ export {
   ChoiceText,
   ChoiceWrapper,
   RadioButtonIndicator,
-  RadioPillIndicator,
+  RadioChipIndicator,
   RadioIndicator,
   RadioInput,
 };

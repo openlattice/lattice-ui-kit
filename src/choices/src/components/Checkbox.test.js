@@ -6,7 +6,7 @@ import {
   CheckboxButtonIndicator,
   CheckboxIndicator,
   CheckboxInput,
-  CheckboxPillIndicator,
+  CheckboxChipIndicator,
   ChoiceLabel
 } from './styled';
 
@@ -75,9 +75,9 @@ describe('Checkbox', () => {
       expect(wrapper.find(CheckboxButtonIndicator).exists()).toBe(true);
     });
 
-    test('should render CheckboxPillIndicator when passed a label and mode="pill"', () => {
-      const wrapper = mount(<Checkbox label="Checkbox Pill" mode="pill" />);
-      expect(wrapper.find(CheckboxPillIndicator).exists()).toBe(true);
+    test('should render CheckboxChipIndicator when passed a label and mode="chip"', () => {
+      const wrapper = mount(<Checkbox label="Checkbox Chip" mode="chip" />);
+      expect(wrapper.find(CheckboxChipIndicator).exists()).toBe(true);
     });
   });
 

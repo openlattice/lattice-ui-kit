@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 import choiceButtonStyles from './ChoiceButtonStyles';
 import choiceIndicatorStyles from './ChoiceIndicatorStyles';
-import choicePillStyles from './ChoicePillStyles';
+import choiceChipStyles from './ChoiceChipStyles';
 
 import { NEUTRAL } from '../../../../colors';
 import { duration } from '../../../../style/transitions';
@@ -50,7 +50,7 @@ const checkboxWithAfterStyles = css`
 
 const getIndicatorStyles = getStyleVariation('mode', {
   button: choiceButtonStyles,
-  pill: choicePillStyles,
+  chip: choiceChipStyles,
 }, checkboxWithAfterStyles);
 
 const CheckboxIndicator = styled.span`
