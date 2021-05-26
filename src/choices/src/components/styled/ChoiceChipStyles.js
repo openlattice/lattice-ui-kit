@@ -5,7 +5,7 @@ import { NEUTRAL, PURPLE } from '../../../../colors';
 // Not really sure why, but 1px box-shadow looks significantly larger than 1px on chrome
 // Using fractional pixel seems to look closer to intended design
 
-const ChoicePillStyles = css`
+const ChoiceChipStyles = css`
   align-items: center;
   background-color: ${NEUTRAL.N50};
   border: 3px solid transparent;
@@ -58,4 +58,4 @@ const ChoicePillStyles = css`
   }
 `;
 
-export default ChoicePillStyles;
+export default ChoiceChipStyles;
