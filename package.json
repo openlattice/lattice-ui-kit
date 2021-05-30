@@ -38,7 +38,7 @@
     "clsx": "~1.1.1",
     "immutable": "4.0.0-rc.9",
     "lodash": "~4.17.20",
-    "luxon": "~1.25.0",
+    "luxon": "~1.27.0",
     "polished": "~4.1.0",
     "prop-types": "~15.7.2",
     "react-scrolllock": "~5.0.1",
