@@ -135,3 +135,66 @@ export const Button = () => (
     </Card>
   </div>
 );
+
+export const Chip = () => (
+  <div>
+    <h1>Radio Chip</h1>
+    <Card>
+      <CardSegment vertical>
+        <form
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              flexBasis: 'fit-content',
+            }}>
+          <Label>Showcase</Label>
+          <div>
+            <Radio mode="chip" id="story-default" label="Default" />
+            <Radio mode="chip" id="story-checked" label="Default Checked" defaultChecked />
+            <Radio
+                mode="chip"
+                id="story-checkedreadonly"
+                label="Checked readOnly"
+                checked
+                readOnly />
+            <Radio mode="chip" id="story-disabled" label="Disabled" disabled />
+            <Radio
+                mode="chip"
+                id="story-disabledchecked"
+                label="Disabled (checked)"
+                disabled
+                checked />
+            <Radio
+                mode="chip"
+                id="story-eventhandlers"
+                label="Event handlers (see Actions tab)"
+                value={false}
+                onChange={action('onChange')}
+                onBlur={action('onBlur')}
+                onFocus={action('onFocus')} />
+          </div>
+        </form>
+        <form
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}>
+          <Label>Group</Label>
+          <div>
+            <Radio
+                mode="chip"
+                name="group"
+                id="group-1"
+                label="Out of Touch with Reality"
+                value="1" />
+            <Radio mode="chip" name="group" id="group-2" label="Neglect of Self Care" value="2" />
+            <Radio mode="chip" name="group" id="group-3" label="Depressed" value="3" />
+            <Radio mode="chip" name="group" id="group-4" label="Disorderly Conduct" value="4" />
+            <Radio mode="chip" name="group" id="group-5" label="Disorientation" value="5" />
+            <Radio mode="chip" name="group" id="group-6" label="None" value="6" />
+          </div>
+        </form>
+      </CardSegment>
+    </Card>
+  </div>
+);
