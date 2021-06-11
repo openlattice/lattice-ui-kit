@@ -35,8 +35,7 @@
     "prop-types": "~15.7.2",
     "react-scrolllock": "~5.0.1",
     "react-select": "~4.3.1",
-    "react-transition-group": "~4.4.2",
-    "redux-reqseq": "0.6.1"
+    "react-transition-group": "~4.4.2"
   },
   "devDependencies": {
     "@babel/cli": "~7.14.5",
@@ -47,7 +46,6 @@
     "@babel/preset-env": "~7.14.5",
     "@babel/preset-flow": "~7.14.5",
     "@babel/preset-react": "~7.14.5",
-    "@babel/runtime": "~7.14.5",
     "@fortawesome/fontawesome-svg-core": "~1.2.35",
     "@fortawesome/pro-duotone-svg-icons": "~5.15.3",
     "@fortawesome/pro-light-svg-icons": "~5.15.3",
@@ -93,6 +91,7 @@
     "react-dom": "~16.14.0",
     "react-router": "~5.2.0",
     "react-router-dom": "~5.2.0",
+    "redux-reqseq": "~0.6.1",
     "rimraf": "~3.0.2",
     "styled-components": "~5.3.0",
     "stylelint": "~13.13.1",
@@ -101,8 +100,7 @@
     "stylelint-processor-styled-components": "~1.10.0",
     "webpack": "~5.38.1",
     "webpack-cli": "~4.7.2",
-    "webpack-dev-server": "~3.11.2",
-    "webpack-node-externals": "~3.0.0"
+    "webpack-dev-server": "~3.11.2"
   },
   "peerDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.0",
@@ -118,6 +116,7 @@
     "react-dom": "^16.14.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "redux-reqseq": "^0.6.1",
     "styled-components": "^5.3.0"
   },
   "scripts": {
