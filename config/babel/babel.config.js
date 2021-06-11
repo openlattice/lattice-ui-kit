@@ -39,8 +39,7 @@ module.exports = {
   ],
   presets: [
     ['@babel/preset-env', {
-      corejs: '3',
-      useBuiltIns: 'entry',
+      useBuiltIns: 'none',
     }],
     '@babel/preset-flow',
     ['@babel/preset-react', {
