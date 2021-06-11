@@ -2,9 +2,13 @@ import toJson from 'enzyme-to-json';
 import { mount } from 'enzyme';
 
 import Checkbox from './Checkbox';
-import choiceButtonStyles from './styled/ChoiceButtonStyles';
-import { CheckboxIndicator, CheckboxInput, ChoiceLabel } from './styled';
-import { getIndicatorStyles } from './styled/CheckboxIndicator';
+import {
+  CheckboxButtonIndicator,
+  CheckboxIndicator,
+  CheckboxInput,
+  CheckboxChipIndicator,
+  ChoiceLabel
+} from './styled';
 
 describe('Checkbox', () => {
 
@@ -66,14 +70,14 @@ describe('Checkbox', () => {
 
   describe('mode', () => {
 
-    test('should pass mode to CheckboxIndicator', () => {
-      const wrapper = mount(<Checkbox mode="button" />);
-      expect(wrapper.find(CheckboxIndicator).prop('mode')).toEqual('button');
+    test('should render CheckboxButtonIndicator when passed a label and mode="button"', () => {
+      const wrapper = mount(<Checkbox label="Checkbox Button" mode="button" />);
+      expect(wrapper.find(CheckboxButtonIndicator).exists()).toBe(true);
     });
 
-    test('mode="button" should use choiceButtonStyles', () => {
-      const indicatorStyles = getIndicatorStyles({ mode: 'button' });
-      expect(indicatorStyles).toEqual(choiceButtonStyles);
+    test('should render CheckboxChipIndicator when passed a label and mode="chip"', () => {
+      const wrapper = mount(<Checkbox label="Checkbox Chip" mode="chip" />);
+      expect(wrapper.find(CheckboxChipIndicator).exists()).toBe(true);
     });
   });
 
