@@ -28,9 +28,6 @@ module.exports = {
   setupFiles: [
     '<rootDir>/config/jest/enzyme.config.js',
   ],
-  setupFilesAfterEnv: [
-    '<rootDir>/config/jest/test.config.js',
-  ],
   testEnvironment: '<rootDir>/config/jest/jsdom.config.js',
   testURL: 'http://localhost',
   transform: {
