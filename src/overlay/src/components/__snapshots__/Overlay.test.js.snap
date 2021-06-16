@@ -71,10 +71,10 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
               lattice-portal-inner-container=""
             >
               <div
-                class="umcYV"
+                class="kcBBUu"
               >
                 <div
-                  class="ezcjbU"
+                  class="huVzSq"
                 >
                   <span>
                     hello
@@ -105,14 +105,14 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
                       transparent={false}
                     >
                       <div
-                        className="umcYV"
+                        className="kcBBUu"
                       >
                         <OverlayInnerContainer
                           isScrollable={false}
                           onClick={[Function]}
                         >
                           <div
-                            className="ezcjbU"
+                            className="huVzSq"
                             onClick={[Function]}
                           >
                             <span>
