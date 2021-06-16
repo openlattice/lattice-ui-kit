@@ -1,11 +1,16 @@
-/* eslint-disable import/extensions */
+/* eslint-disable import/no-extraneous-dependencies */
 
 const path = require('path');
 const Webpack = require('webpack');
 
-const LIB_CONFIG = require('../lib/lib.config.js');
-const LIB_PATHS = require('../lib/paths.config.js');
 const PACKAGE = require('../../package.json');
+
+const BANNER = `
+${PACKAGE.name} - v${PACKAGE.version}
+${PACKAGE.description}
+${PACKAGE.homepage}
+Copyright (c) 2017-${(new Date()).getFullYear()}, OpenLattice, Inc. All rights reserved.
+`;
 
 module.exports = (env = {}) => {
 
@@ -16,8 +21,11 @@ module.exports = (env = {}) => {
   const BABEL_CONFIG = path.resolve(__dirname, '../babel/babel.config.js');
   const ENV_DEV = 'development';
   const ENV_PROD = 'production';
-  const LIB_FILE_NAME = 'index.js';
-  const LIB_NAMESPACE = 'LUK';
+
+  const ROOT = path.resolve(__dirname, '../..');
+  const BUILD = path.resolve(ROOT, 'build');
+  const NODE = path.resolve(ROOT, 'node_modules');
+  const SOURCE = path.resolve(ROOT, 'src');
 
   /*
    * loaders
@@ -26,9 +34,7 @@ module.exports = (env = {}) => {
   const BABEL_LOADER = {
     test: /\.js$/,
     exclude: /node_modules/,
-    include: [
-      LIB_PATHS.ABS.SOURCE,
-    ],
+    include: [SOURCE],
     use: {
       loader: 'babel-loader',
       options: {
@@ -42,7 +48,7 @@ module.exports = (env = {}) => {
    */
 
   const BANNER_PLUGIN = new Webpack.BannerPlugin({
-    banner: LIB_CONFIG.BANNER,
+    banner: BANNER,
     entryOnly: true,
   });
 
@@ -60,43 +66,29 @@ module.exports = (env = {}) => {
   return {
     bail: true,
     entry: [
-      LIB_PATHS.ABS.ENTRY,
+      path.resolve(ROOT, 'src/index.js'),
     ],
-    externals: {
-      react: {
-        root: 'React',
-        commonjs2: 'react',
-        commonjs: 'react',
-        amd: 'react'
-      },
-      'react-dom': {
-        root: 'ReactDOM',
-        commonjs2: 'react-dom',
-        commonjs: 'react-dom',
-        amd: 'react-dom'
-      },
-      'styled-components': {
-        amd: 'styled-components',
-        commonjs: 'styled-components',
-        commonjs2: 'styled-components',
-      },
-    },
     mode: env.production ? ENV_PROD : ENV_DEV,
     module: {
       rules: [
         BABEL_LOADER,
+        {
+          test: /\.(jpg|png|svg)$/,
+          type: 'asset/inline',
+        },
       ],
     },
     optimization: {
-      // minimize: !!env.production,
-      minimize: false,
+      minimize: !!env.production,
     },
     output: {
-      library: LIB_NAMESPACE,
-      libraryTarget: 'umd',
-      path: LIB_PATHS.ABS.BUILD,
+      filename: 'index.js',
+      library: {
+        name: 'LUK',
+        type: 'umd',
+      },
+      path: BUILD,
       publicPath: '/',
-      filename: LIB_FILE_NAME,
     },
     performance: {
       hints: false, // disable performance hints for now
@@ -108,8 +100,8 @@ module.exports = (env = {}) => {
     resolve: {
       extensions: ['.js'],
       modules: [
-        LIB_PATHS.ABS.SOURCE,
-        'node_modules',
+        SOURCE,
+        NODE,
       ],
     },
     target: 'web',
