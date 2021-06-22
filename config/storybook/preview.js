@@ -33,10 +33,6 @@ const StoryInnerWrapper = styled.div`
   padding: 30px;
   position: relative;
   width: 100%;
-
-  > div {
-    height: 100%;
-  }
 `;
 
 addDecorator((StoryFn) => {
