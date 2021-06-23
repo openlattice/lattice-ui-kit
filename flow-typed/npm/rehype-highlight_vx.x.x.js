@@ -16,30 +16,3 @@
 declare module 'rehype-highlight' {
   declare module.exports: any;
 }
-
-/**
- * We include stubs for each file inside this npm package in case you need to
- * require those files directly. Feel free to delete any files that aren't
- * needed.
- */
-declare module 'rehype-highlight/core' {
-  declare module.exports: any;
-}
-
-declare module 'rehype-highlight/light' {
-  declare module.exports: any;
-}
-
-// Filename aliases
-declare module 'rehype-highlight/core.js' {
-  declare module.exports: $Exports<'rehype-highlight/core'>;
-}
-declare module 'rehype-highlight/index' {
-  declare module.exports: $Exports<'rehype-highlight'>;
-}
-declare module 'rehype-highlight/index.js' {
-  declare module.exports: $Exports<'rehype-highlight'>;
-}
-declare module 'rehype-highlight/light.js' {
-  declare module.exports: $Exports<'rehype-highlight/light'>;
-}
