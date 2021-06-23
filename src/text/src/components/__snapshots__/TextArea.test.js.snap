@@ -4,6 +4,13 @@ exports[`TextArea render matches snapshot 1`] = `
 <ForwardRef>
   <WithStyles(ForwardRef(TextField))
     fullWidth={true}
+    inputProps={
+      Object {
+        "style": Object {
+          "resize": "vertical",
+        },
+      }
+    }
     multiline={true}
     rows={3}
     variant="filled"
@@ -15,6 +22,13 @@ exports[`TextArea render matches snapshot 1`] = `
         }
       }
       fullWidth={true}
+      inputProps={
+        Object {
+          "style": Object {
+            "resize": "vertical",
+          },
+        }
+      }
       multiline={true}
       rows={3}
       variant="filled"
@@ -51,6 +65,13 @@ exports[`TextArea render matches snapshot 1`] = `
             <WithStyles(ForwardRef(FilledInput))
               autoFocus={false}
               fullWidth={true}
+              inputProps={
+                Object {
+                  "style": Object {
+                    "resize": "vertical",
+                  },
+                }
+              }
               multiline={true}
               rows={3}
             >
@@ -77,6 +98,13 @@ exports[`TextArea render matches snapshot 1`] = `
                   }
                 }
                 fullWidth={true}
+                inputProps={
+                  Object {
+                    "style": Object {
+                      "resize": "vertical",
+                    },
+                  }
+                }
                 multiline={true}
                 rows={3}
               >
@@ -104,6 +132,13 @@ exports[`TextArea render matches snapshot 1`] = `
                   }
                   fullWidth={true}
                   inputComponent="input"
+                  inputProps={
+                    Object {
+                      "style": Object {
+                        "resize": "vertical",
+                      },
+                    }
+                  }
                   multiline={true}
                   rows={3}
                   type="text"
@@ -134,6 +169,13 @@ exports[`TextArea render matches snapshot 1`] = `
                     }
                     fullWidth={true}
                     inputComponent="input"
+                    inputProps={
+                      Object {
+                        "style": Object {
+                          "resize": "vertical",
+                        },
+                      }
+                    }
                     multiline={true}
                     rows={3}
                     type="text"
@@ -153,6 +195,11 @@ exports[`TextArea render matches snapshot 1`] = `
                         onFocus={[Function]}
                         required={false}
                         rows={3}
+                        style={
+                          Object {
+                            "resize": "vertical",
+                          }
+                        }
                       />
                     </div>
                   </ForwardRef(InputBase)>
