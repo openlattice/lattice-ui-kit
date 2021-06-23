@@ -1,0 +1,652 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarkdownEditor render matches snapshot 1`] = `
+.c0 {
+  padding: 8px 0 0;
+}
+
+<ForwardRef>
+  <MarkdownEditor
+    forwardedRef={null}
+  >
+    <div>
+      <TabContext
+        value="edit"
+      >
+        <ForwardRef(TabList)
+          aria-label="markdown editor tabs"
+          indicatorColor="primary"
+          onChange={[Function]}
+          textColor="primary"
+          value="edit"
+        >
+          <WithStyles(ForwardRef(Tabs))
+            aria-label="markdown editor tabs"
+            indicatorColor="primary"
+            onChange={[Function]}
+            textColor="primary"
+            value="edit"
+          >
+            <ForwardRef(Tabs)
+              aria-label="markdown editor tabs"
+              classes={
+                Object {
+                  "centered": "MuiTabs-centered",
+                  "fixed": "MuiTabs-fixed",
+                  "flexContainer": "MuiTabs-flexContainer",
+                  "flexContainerVertical": "MuiTabs-flexContainerVertical",
+                  "indicator": "MuiTabs-indicator",
+                  "root": "MuiTabs-root",
+                  "scrollButtons": "MuiTabs-scrollButtons",
+                  "scrollButtonsDesktop": "MuiTabs-scrollButtonsDesktop",
+                  "scrollable": "MuiTabs-scrollable",
+                  "scroller": "MuiTabs-scroller",
+                  "vertical": "MuiTabs-vertical",
+                }
+              }
+              indicatorColor="primary"
+              onChange={[Function]}
+              textColor="primary"
+              value="edit"
+            >
+              <div
+                className="MuiTabs-root"
+              >
+                <div
+                  className="MuiTabs-scroller MuiTabs-fixed"
+                  onScroll={[Function]}
+                  style={
+                    Object {
+                      "marginBottom": null,
+                      "overflow": "hidden",
+                    }
+                  }
+                >
+                  <div
+                    aria-label="markdown editor tabs"
+                    className="MuiTabs-flexContainer"
+                    onKeyDown={[Function]}
+                    role="tablist"
+                  >
+                    <WithStyles(ForwardRef(Tab))
+                      aria-controls="mui-p-26487-P-edit"
+                      fullWidth={false}
+                      id="mui-p-26487-T-edit"
+                      indicator={false}
+                      key=".$.0"
+                      label="Edit"
+                      onChange={[Function]}
+                      selected={true}
+                      textColor="primary"
+                      value="edit"
+                    >
+                      <ForwardRef(Tab)
+                        aria-controls="mui-p-26487-P-edit"
+                        classes={
+                          Object {
+                            "disabled": "Mui-disabled",
+                            "fullWidth": "MuiTab-fullWidth",
+                            "labelIcon": "MuiTab-labelIcon",
+                            "root": "MuiTab-root",
+                            "selected": "Mui-selected",
+                            "textColorInherit": "MuiTab-textColorInherit",
+                            "textColorPrimary": "MuiTab-textColorPrimary",
+                            "textColorSecondary": "MuiTab-textColorSecondary",
+                            "wrapped": "MuiTab-wrapped",
+                            "wrapper": "MuiTab-wrapper",
+                          }
+                        }
+                        fullWidth={false}
+                        id="mui-p-26487-T-edit"
+                        indicator={false}
+                        label="Edit"
+                        onChange={[Function]}
+                        selected={true}
+                        textColor="primary"
+                        value="edit"
+                      >
+                        <WithStyles(ForwardRef(ButtonBase))
+                          aria-controls="mui-p-26487-P-edit"
+                          aria-selected={true}
+                          className="MuiTab-root MuiTab-textColorPrimary Mui-selected"
+                          disabled={false}
+                          focusRipple={true}
+                          id="mui-p-26487-T-edit"
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          role="tab"
+                          tabIndex={0}
+                        >
+                          <ForwardRef(ButtonBase)
+                            aria-controls="mui-p-26487-P-edit"
+                            aria-selected={true}
+                            className="MuiTab-root MuiTab-textColorPrimary Mui-selected"
+                            classes={
+                              Object {
+                                "disabled": "Mui-disabled",
+                                "focusVisible": "Mui-focusVisible",
+                                "root": "MuiButtonBase-root",
+                              }
+                            }
+                            disabled={false}
+                            focusRipple={true}
+                            id="mui-p-26487-T-edit"
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            role="tab"
+                            tabIndex={0}
+                          >
+                            <button
+                              aria-controls="mui-p-26487-P-edit"
+                              aria-selected={true}
+                              className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected"
+                              disabled={false}
+                              id="mui-p-26487-T-edit"
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onDragLeave={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                              onKeyUp={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseLeave={[Function]}
+                              onMouseUp={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              role="tab"
+                              tabIndex={0}
+                              type="button"
+                            >
+                              <span
+                                className="MuiTab-wrapper"
+                              >
+                                Edit
+                              </span>
+                              <WithStyles(memo)
+                                center={false}
+                              >
+                                <ForwardRef(TouchRipple)
+                                  center={false}
+                                  classes={
+                                    Object {
+                                      "child": "MuiTouchRipple-child",
+                                      "childLeaving": "MuiTouchRipple-childLeaving",
+                                      "childPulsate": "MuiTouchRipple-childPulsate",
+                                      "ripple": "MuiTouchRipple-ripple",
+                                      "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                      "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                      "root": "MuiTouchRipple-root",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    className="MuiTouchRipple-root"
+                                  >
+                                    <TransitionGroup
+                                      childFactory={[Function]}
+                                      component={null}
+                                      exit={true}
+                                    />
+                                  </span>
+                                </ForwardRef(TouchRipple)>
+                              </WithStyles(memo)>
+                            </button>
+                          </ForwardRef(ButtonBase)>
+                        </WithStyles(ForwardRef(ButtonBase))>
+                      </ForwardRef(Tab)>
+                    </WithStyles(ForwardRef(Tab))>
+                    <WithStyles(ForwardRef(Tab))
+                      aria-controls="mui-p-26487-P-preview"
+                      fullWidth={false}
+                      id="mui-p-26487-T-preview"
+                      indicator={false}
+                      key=".$.1"
+                      label="Preview"
+                      onChange={[Function]}
+                      selected={false}
+                      textColor="primary"
+                      value="preview"
+                    >
+                      <ForwardRef(Tab)
+                        aria-controls="mui-p-26487-P-preview"
+                        classes={
+                          Object {
+                            "disabled": "Mui-disabled",
+                            "fullWidth": "MuiTab-fullWidth",
+                            "labelIcon": "MuiTab-labelIcon",
+                            "root": "MuiTab-root",
+                            "selected": "Mui-selected",
+                            "textColorInherit": "MuiTab-textColorInherit",
+                            "textColorPrimary": "MuiTab-textColorPrimary",
+                            "textColorSecondary": "MuiTab-textColorSecondary",
+                            "wrapped": "MuiTab-wrapped",
+                            "wrapper": "MuiTab-wrapper",
+                          }
+                        }
+                        fullWidth={false}
+                        id="mui-p-26487-T-preview"
+                        indicator={false}
+                        label="Preview"
+                        onChange={[Function]}
+                        selected={false}
+                        textColor="primary"
+                        value="preview"
+                      >
+                        <WithStyles(ForwardRef(ButtonBase))
+                          aria-controls="mui-p-26487-P-preview"
+                          aria-selected={false}
+                          className="MuiTab-root MuiTab-textColorPrimary"
+                          disabled={false}
+                          focusRipple={true}
+                          id="mui-p-26487-T-preview"
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          role="tab"
+                          tabIndex={-1}
+                        >
+                          <ForwardRef(ButtonBase)
+                            aria-controls="mui-p-26487-P-preview"
+                            aria-selected={false}
+                            className="MuiTab-root MuiTab-textColorPrimary"
+                            classes={
+                              Object {
+                                "disabled": "Mui-disabled",
+                                "focusVisible": "Mui-focusVisible",
+                                "root": "MuiButtonBase-root",
+                              }
+                            }
+                            disabled={false}
+                            focusRipple={true}
+                            id="mui-p-26487-T-preview"
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            role="tab"
+                            tabIndex={-1}
+                          >
+                            <button
+                              aria-controls="mui-p-26487-P-preview"
+                              aria-selected={false}
+                              className="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary"
+                              disabled={false}
+                              id="mui-p-26487-T-preview"
+                              onBlur={[Function]}
+                              onClick={[Function]}
+                              onDragLeave={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                              onKeyUp={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseLeave={[Function]}
+                              onMouseUp={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              role="tab"
+                              tabIndex={-1}
+                              type="button"
+                            >
+                              <span
+                                className="MuiTab-wrapper"
+                              >
+                                Preview
+                              </span>
+                              <WithStyles(memo)
+                                center={false}
+                              >
+                                <ForwardRef(TouchRipple)
+                                  center={false}
+                                  classes={
+                                    Object {
+                                      "child": "MuiTouchRipple-child",
+                                      "childLeaving": "MuiTouchRipple-childLeaving",
+                                      "childPulsate": "MuiTouchRipple-childPulsate",
+                                      "ripple": "MuiTouchRipple-ripple",
+                                      "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                      "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                      "root": "MuiTouchRipple-root",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    className="MuiTouchRipple-root"
+                                  >
+                                    <TransitionGroup
+                                      childFactory={[Function]}
+                                      component={null}
+                                      exit={true}
+                                    />
+                                  </span>
+                                </ForwardRef(TouchRipple)>
+                              </WithStyles(memo)>
+                            </button>
+                          </ForwardRef(ButtonBase)>
+                        </WithStyles(ForwardRef(ButtonBase))>
+                      </ForwardRef(Tab)>
+                    </WithStyles(ForwardRef(Tab))>
+                  </div>
+                  <WithStyles(ForwardRef(TabIndicator))
+                    className="MuiTabs-indicator"
+                    color="primary"
+                    orientation="horizontal"
+                    style={
+                      Object {
+                        "left": 0,
+                        "width": 0,
+                      }
+                    }
+                  >
+                    <ForwardRef(TabIndicator)
+                      className="MuiTabs-indicator"
+                      classes={
+                        Object {
+                          "colorPrimary": "PrivateTabIndicator-colorPrimary-2",
+                          "colorSecondary": "PrivateTabIndicator-colorSecondary-3",
+                          "root": "PrivateTabIndicator-root-1",
+                          "vertical": "PrivateTabIndicator-vertical-4",
+                        }
+                      }
+                      color="primary"
+                      orientation="horizontal"
+                      style={
+                        Object {
+                          "left": 0,
+                          "width": 0,
+                        }
+                      }
+                    >
+                      <span
+                        className="PrivateTabIndicator-root-1 PrivateTabIndicator-colorPrimary-2 MuiTabs-indicator"
+                        style={
+                          Object {
+                            "left": 0,
+                            "width": 0,
+                          }
+                        }
+                      />
+                    </ForwardRef(TabIndicator)>
+                  </WithStyles(ForwardRef(TabIndicator))>
+                </div>
+              </div>
+            </ForwardRef(Tabs)>
+          </WithStyles(ForwardRef(Tabs))>
+        </ForwardRef(TabList)>
+        <Styled(WithStyles(ForwardRef(TabPanel)))
+          value="edit"
+        >
+          <WithStyles(ForwardRef(TabPanel))
+            className="c0"
+            value="edit"
+          >
+            <ForwardRef(TabPanel)
+              className="c0"
+              classes={
+                Object {
+                  "root": "MuiTabPanel-root",
+                }
+              }
+              value="edit"
+            >
+              <div
+                aria-labelledby="mui-p-26487-T-edit"
+                className="MuiTabPanel-root c0"
+                hidden={false}
+                id="mui-p-26487-P-edit"
+                role="tabpanel"
+              >
+                <ForwardRef
+                  rows={4}
+                  value=""
+                >
+                  <WithStyles(ForwardRef(TextField))
+                    fullWidth={true}
+                    inputProps={
+                      Object {
+                        "style": Object {
+                          "resize": "vertical",
+                        },
+                      }
+                    }
+                    multiline={true}
+                    rows={4}
+                    value=""
+                    variant="filled"
+                  >
+                    <ForwardRef(TextField)
+                      classes={
+                        Object {
+                          "root": "MuiTextField-root",
+                        }
+                      }
+                      fullWidth={true}
+                      inputProps={
+                        Object {
+                          "style": Object {
+                            "resize": "vertical",
+                          },
+                        }
+                      }
+                      multiline={true}
+                      rows={4}
+                      value=""
+                      variant="filled"
+                    >
+                      <WithStyles(ForwardRef(FormControl))
+                        className="MuiTextField-root"
+                        color="primary"
+                        disabled={false}
+                        error={false}
+                        fullWidth={true}
+                        required={false}
+                        variant="filled"
+                      >
+                        <ForwardRef(FormControl)
+                          className="MuiTextField-root"
+                          classes={
+                            Object {
+                              "fullWidth": "MuiFormControl-fullWidth",
+                              "marginDense": "MuiFormControl-marginDense",
+                              "marginNormal": "MuiFormControl-marginNormal",
+                              "root": "MuiFormControl-root",
+                            }
+                          }
+                          color="primary"
+                          disabled={false}
+                          error={false}
+                          fullWidth={true}
+                          required={false}
+                          variant="filled"
+                        >
+                          <div
+                            className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                          >
+                            <WithStyles(ForwardRef(FilledInput))
+                              autoFocus={false}
+                              fullWidth={true}
+                              inputProps={
+                                Object {
+                                  "style": Object {
+                                    "resize": "vertical",
+                                  },
+                                }
+                              }
+                              multiline={true}
+                              rows={4}
+                              value=""
+                            >
+                              <ForwardRef(FilledInput)
+                                autoFocus={false}
+                                classes={
+                                  Object {
+                                    "adornedEnd": "MuiFilledInput-adornedEnd",
+                                    "adornedStart": "MuiFilledInput-adornedStart",
+                                    "colorSecondary": "MuiFilledInput-colorSecondary",
+                                    "disabled": "Mui-disabled",
+                                    "error": "Mui-error",
+                                    "focused": "Mui-focused",
+                                    "input": "MuiFilledInput-input",
+                                    "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd",
+                                    "inputAdornedStart": "MuiFilledInput-inputAdornedStart",
+                                    "inputHiddenLabel": "MuiFilledInput-inputHiddenLabel",
+                                    "inputMarginDense": "MuiFilledInput-inputMarginDense",
+                                    "inputMultiline": "MuiFilledInput-inputMultiline",
+                                    "marginDense": "MuiFilledInput-marginDense",
+                                    "multiline": "MuiFilledInput-multiline",
+                                    "root": "MuiFilledInput-root",
+                                    "underline": "MuiFilledInput-underline",
+                                  }
+                                }
+                                fullWidth={true}
+                                inputProps={
+                                  Object {
+                                    "style": Object {
+                                      "resize": "vertical",
+                                    },
+                                  }
+                                }
+                                multiline={true}
+                                rows={4}
+                                value=""
+                              >
+                                <WithStyles(ForwardRef(InputBase))
+                                  autoFocus={false}
+                                  classes={
+                                    Object {
+                                      "adornedEnd": "MuiFilledInput-adornedEnd",
+                                      "adornedStart": "MuiFilledInput-adornedStart",
+                                      "colorSecondary": "MuiFilledInput-colorSecondary",
+                                      "disabled": "Mui-disabled",
+                                      "error": "Mui-error",
+                                      "focused": "Mui-focused",
+                                      "input": "MuiFilledInput-input",
+                                      "inputAdornedEnd": "MuiFilledInput-inputAdornedEnd",
+                                      "inputAdornedStart": "MuiFilledInput-inputAdornedStart",
+                                      "inputHiddenLabel": "MuiFilledInput-inputHiddenLabel",
+                                      "inputMarginDense": "MuiFilledInput-inputMarginDense",
+                                      "inputMultiline": "MuiFilledInput-inputMultiline",
+                                      "marginDense": "MuiFilledInput-marginDense",
+                                      "multiline": "MuiFilledInput-multiline",
+                                      "root": "MuiFilledInput-root MuiFilledInput-underline",
+                                      "underline": null,
+                                    }
+                                  }
+                                  fullWidth={true}
+                                  inputComponent="input"
+                                  inputProps={
+                                    Object {
+                                      "style": Object {
+                                        "resize": "vertical",
+                                      },
+                                    }
+                                  }
+                                  multiline={true}
+                                  rows={4}
+                                  type="text"
+                                  value=""
+                                >
+                                  <ForwardRef(InputBase)
+                                    autoFocus={false}
+                                    classes={
+                                      Object {
+                                        "adornedEnd": "MuiInputBase-adornedEnd MuiFilledInput-adornedEnd",
+                                        "adornedStart": "MuiInputBase-adornedStart MuiFilledInput-adornedStart",
+                                        "colorSecondary": "MuiInputBase-colorSecondary MuiFilledInput-colorSecondary",
+                                        "disabled": "Mui-disabled Mui-disabled",
+                                        "error": "Mui-error Mui-error",
+                                        "focused": "Mui-focused Mui-focused",
+                                        "formControl": "MuiInputBase-formControl",
+                                        "fullWidth": "MuiInputBase-fullWidth",
+                                        "input": "MuiInputBase-input MuiFilledInput-input",
+                                        "inputAdornedEnd": "MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd",
+                                        "inputAdornedStart": "MuiInputBase-inputAdornedStart MuiFilledInput-inputAdornedStart",
+                                        "inputHiddenLabel": "MuiInputBase-inputHiddenLabel MuiFilledInput-inputHiddenLabel",
+                                        "inputMarginDense": "MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense",
+                                        "inputMultiline": "MuiInputBase-inputMultiline MuiFilledInput-inputMultiline",
+                                        "inputTypeSearch": "MuiInputBase-inputTypeSearch",
+                                        "marginDense": "MuiInputBase-marginDense MuiFilledInput-marginDense",
+                                        "multiline": "MuiInputBase-multiline MuiFilledInput-multiline",
+                                        "root": "MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline",
+                                      }
+                                    }
+                                    fullWidth={true}
+                                    inputComponent="input"
+                                    inputProps={
+                                      Object {
+                                        "style": Object {
+                                          "resize": "vertical",
+                                        },
+                                      }
+                                    }
+                                    multiline={true}
+                                    rows={4}
+                                    type="text"
+                                    value=""
+                                  >
+                                    <div
+                                      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiFilledInput-multiline"
+                                      onClick={[Function]}
+                                    >
+                                      <textarea
+                                        aria-invalid={false}
+                                        autoFocus={false}
+                                        className="MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMultiline MuiFilledInput-inputMultiline"
+                                        disabled={false}
+                                        onAnimationStart={[Function]}
+                                        onBlur={[Function]}
+                                        onChange={[Function]}
+                                        onFocus={[Function]}
+                                        required={false}
+                                        rows={4}
+                                        style={
+                                          Object {
+                                            "resize": "vertical",
+                                          }
+                                        }
+                                        value=""
+                                      />
+                                    </div>
+                                  </ForwardRef(InputBase)>
+                                </WithStyles(ForwardRef(InputBase))>
+                              </ForwardRef(FilledInput)>
+                            </WithStyles(ForwardRef(FilledInput))>
+                          </div>
+                        </ForwardRef(FormControl)>
+                      </WithStyles(ForwardRef(FormControl))>
+                    </ForwardRef(TextField)>
+                  </WithStyles(ForwardRef(TextField))>
+                </ForwardRef>
+              </div>
+            </ForwardRef(TabPanel)>
+          </WithStyles(ForwardRef(TabPanel))>
+        </Styled(WithStyles(ForwardRef(TabPanel)))>
+        <Styled(WithStyles(ForwardRef(TabPanel)))
+          value="preview"
+        >
+          <WithStyles(ForwardRef(TabPanel))
+            className="c0"
+            value="preview"
+          >
+            <ForwardRef(TabPanel)
+              className="c0"
+              classes={
+                Object {
+                  "root": "MuiTabPanel-root",
+                }
+              }
+              value="preview"
+            >
+              <div
+                aria-labelledby="mui-p-26487-T-preview"
+                className="MuiTabPanel-root c0"
+                hidden={true}
+                id="mui-p-26487-P-preview"
+                role="tabpanel"
+              />
+            </ForwardRef(TabPanel)>
+          </WithStyles(ForwardRef(TabPanel))>
+        </Styled(WithStyles(ForwardRef(TabPanel)))>
+      </TabContext>
+    </div>
+  </MarkdownEditor>
+</ForwardRef>
+`;
