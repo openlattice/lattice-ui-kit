@@ -6,6 +6,8 @@
 // When you add this file, we won't add the default configurations which is similar
 // to "React Create App". This only has babel loader to load JavaScript.
 
+// react-markdown uses a dependency that relies on process
+// https://github.com/remarkjs/react-markdown/issues/339#issuecomment-683199835
 module.exports = ({ config }) => {
   config.module.rules.push({
     test: /node_modules\/vfile\/core\.js/,
