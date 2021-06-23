@@ -1,5 +1,4 @@
-const MARKDOWN_DEMO = `
-# A demo of \`react-markdown\`
+const MARKDOWN_DEMO = `# A demo of \`react-markdown\`
 
 \`react-markdown\` is a markdown component for React.
 
