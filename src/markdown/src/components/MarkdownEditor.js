@@ -15,6 +15,7 @@ const StyledTabPanel = styled(TabPanel)`
 `;
 
 type Props = {
+  defaultValue :?string;
   forwardedRef :any;
   value :string;
   view :'edit' | 'preview';
@@ -22,15 +23,25 @@ type Props = {
 };
 
 const MarkdownEditor = ({
+  defaultValue,
   forwardedRef,
+  onChange,
+  value,
   view = 'edit',
-  value = '',
   ...rest
 } :Props) => {
   const [tab, setTab] = useState(view);
+  const [content, setContent] = useState(value || defaultValue);
 
-  const handleChange = (event, newValue) => {
+  const handleChangeTab = (event, newValue) => {
     setTab(newValue);
+  };
+
+  const handleChangeContent = (e) => {
+    if (onChange) {
+      onChange(e);
+    }
+    setContent(e.target.value);
   };
 
   return (
@@ -39,7 +50,7 @@ const MarkdownEditor = ({
         <TabList
             aria-label="markdown editor tabs"
             indicatorColor="primary"
-            onChange={handleChange}
+            onChange={handleChangeTab}
             textColor="primary"
             value={tab}>
           <Tab label="Edit" value="edit" />
@@ -49,12 +60,13 @@ const MarkdownEditor = ({
           <TextArea
               rows={4}
               ref={forwardedRef}
-              value={value}
+              onChange={handleChangeContent}
+              value={content}
               /* eslint-disable-next-line react/jsx-props-no-spreading */
               {...rest} />
         </StyledTabPanel>
         <StyledTabPanel value="preview">
-          <MarkdownPreview>{value}</MarkdownPreview>
+          <MarkdownPreview>{content}</MarkdownPreview>
         </StyledTabPanel>
       </TabContext>
     </div>
