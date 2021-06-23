@@ -58,7 +58,6 @@ const MarkdownEditor = ({
         </StyledTabPanel>
       </TabContext>
     </div>
-
   );
 };
 
