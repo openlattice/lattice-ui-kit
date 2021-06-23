@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`MarkdownEditor render matches snapshot 1`] = `
-<MarkdownEditor
-  forwardedRef={null}
-/>
-`;
