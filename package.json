@@ -12,6 +12,10 @@
     {
       "name": "Hristo Oskov",
       "email": "hristo@openlattice.com"
+    },
+    {
+      "name": "Solomon Tang",
+      "email": "solomon@openlattice.com"
     }
   ],
   "repository": {
@@ -98,7 +102,7 @@
     "stylelint-config-standard": "~22.0.0",
     "stylelint-config-styled-components": "~0.1.1",
     "stylelint-processor-styled-components": "~1.10.0",
-    "webpack": "~5.38.1",
+    "webpack": "~5.40.0",
     "webpack-cli": "~4.7.2",
     "webpack-dev-server": "~3.11.2"
   },
