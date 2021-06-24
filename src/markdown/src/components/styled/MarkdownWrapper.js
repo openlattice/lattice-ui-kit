@@ -2,18 +2,18 @@ import styled from 'styled-components';
 
 const MarkdownWrapper = styled.div`
   code {
-    padding: .2em .4em;
-    margin: 0;
-    font-size: 85%;
     background-color: rgba(27,31,35,.05);
     border-radius: 3px;
+    font-size: 85%;
+    margin: 0;
+    padding: .2em .4em;
   }
   .hljs {
+    background: #f8f8f8;
+    color: #333;
     display: block;
     overflow-x: auto;
     padding: .5em;
-    color: #333;
-    background: #f8f8f8;
   }
   .hljs-comment, .hljs-quote {
     color: #998;
@@ -70,19 +70,19 @@ const MarkdownWrapper = styled.div`
     font-weight: 700;
   }
   table {
-    display: block;
-    width: 100%;
-    overflow: auto;
-    border-spacing: 0;
     border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    overflow: auto;
+    width: 100%;
   }
   table th {
     font-weight: 600;
   }
   table td,
   table th {
-    padding: 6px 13px;
     border: 1px solid #dfe2e5;
+    padding: 6px 13px;
   }
   table tr {
     background-color: #fff;
@@ -93,6 +93,4 @@ const MarkdownWrapper = styled.div`
   }
 `;
 
-export {
-  MarkdownWrapper
-};
+export default MarkdownWrapper;

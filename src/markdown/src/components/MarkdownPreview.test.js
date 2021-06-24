@@ -3,7 +3,7 @@ import toJson from 'enzyme-to-json';
 import { shallow } from 'enzyme';
 
 import MarkdownPreview from './MarkdownPreview';
-import { MarkdownWrapper } from './styled/MarkdownWrapper';
+import MarkdownWrapper from './styled/MarkdownWrapper';
 
 describe('MarkdownPreview', () => {
 

@@ -86,6 +86,8 @@ export {
   CardStack
 } from './layout';
 
+export { MarkdownEditor, MarkdownPreview, MarkdownWrapper } from './markdown';
+
 export { Creatable, Select, CheckboxSelect } from './select';
 export {
   Cell,
