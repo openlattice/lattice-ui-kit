@@ -68,6 +68,25 @@ module.exports = (env = {}) => {
     entry: [
       path.resolve(ROOT, 'src/index.js'),
     ],
+    externals: {
+      react: {
+        root: 'React',
+        commonjs2: 'react',
+        commonjs: 'react',
+        amd: 'react'
+      },
+      'react-dom': {
+        root: 'ReactDOM',
+        commonjs2: 'react-dom',
+        commonjs: 'react-dom',
+        amd: 'react-dom'
+      },
+      'styled-components': {
+        amd: 'styled-components',
+        commonjs: 'styled-components',
+        commonjs2: 'styled-components',
+      },
+    },
     mode: env.production ? ENV_PROD : ENV_DEV,
     module: {
       rules: [
