@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarkdownPreview render matches snapshot 1`] = `
+<styled.div>
+  <ReactMarkdown
+    rehypePlugins={
+      Array [
+        [Function],
+      ]
+    }
+    remarkPlugins={
+      Array [
+        [Function],
+      ]
+    }
+    transformLinkUri={[Function]}
+  />
+</styled.div>
+`;
