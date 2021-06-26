@@ -1,9 +1,6 @@
 import { mount } from 'enzyme';
 
-import MarkdownPreview from './MarkdownPreview';
 import MarkdownEditor, { StyledTabPanel } from './MarkdownEditor';
-
-import { TextArea } from '../../../text';
 
 describe('MarkdownEditor', () => {
 
