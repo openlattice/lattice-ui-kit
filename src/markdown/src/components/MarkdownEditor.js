@@ -23,10 +23,12 @@ const StyledTextArea = styled(TextArea)`
 const EDIT = 'edit';
 const PREVIEW = 'preview';
 
+type ViewType = 'edit' | 'preview';
+
 type Props = {
   defaultValue :?string;
   value :string;
-  view :EDIT | PREVIEW;
+  view :ViewType;
   ...TextFieldProps;
 };
 
@@ -40,7 +42,7 @@ const MarkdownEditor = ({
   const [content, setContent] = useState(value || defaultValue);
   const [tab, setTab] = useState(view);
   const didMount = useRef(false);
-  const inputRef = useRef<HTMLTextAreaElement>();
+  const inputRef = useRef();
 
   useEffect(() => {
     if (didMount.current && tab === EDIT && inputRef.current) {
