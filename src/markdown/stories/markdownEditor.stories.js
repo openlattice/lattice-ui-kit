@@ -42,3 +42,15 @@ export const Controlled = () => {
 Controlled.story = {
   name: 'Controlled',
 };
+
+export const DefaultPreview = () => (
+  <Card>
+    <CardSegment>
+      <MarkdownEditor view="preview" defaultValue={MARKDOWN_DEMO} />
+    </CardSegment>
+  </Card>
+);
+
+DefaultPreview.story = {
+  name: 'Default View: Preview',
+};
