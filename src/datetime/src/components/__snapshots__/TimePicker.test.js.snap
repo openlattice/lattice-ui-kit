@@ -206,11 +206,14 @@ exports[`TimePicker render matches snapshot 1`] = `
             "padding": "10px",
           },
           "inputHiddenLabel": Object {
-            "paddingBottom": 10,
-            "paddingTop": 10,
+            "paddingBottom": "10px",
+            "paddingTop": "10px",
+          },
+          "inputMultiline": Object {
+            "padding": "10px",
           },
           "multiline": Object {
-            "padding": "10px",
+            "padding": "0",
           },
           "root": Object {
             "&$disabled": Object {
@@ -288,6 +291,16 @@ exports[`TimePicker render matches snapshot 1`] = `
         "MuiOutlinedInput": Object {
           "input": Object {
             "padding": "10px",
+          },
+          "inputHiddenLabel": Object {
+            "paddingBottom": "10px",
+            "paddingTop": "10px",
+          },
+          "inputMultiline": Object {
+            "padding": "10px",
+          },
+          "multiline": Object {
+            "padding": "0",
           },
           "notchedOutline": Object {
             "visibility": "hidden",
