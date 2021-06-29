@@ -1,22 +1,21 @@
 import { mount } from 'enzyme';
 
-import MarkdownEditor from './MarkdownEditor';
-import MarkdownPreview from './MarkdownPreview';
-
-import { TextArea } from '../../../text';
+import MarkdownEditor, { StyledTabPanel } from './MarkdownEditor';
 
 describe('MarkdownEditor', () => {
 
   test('default view is edit', () => {
     const wrapper = mount(<MarkdownEditor />);
 
-    expect(wrapper.find(TextArea)).toHaveLength(1);
+    expect(wrapper.find(StyledTabPanel).first()).toHaveStyleRule('display', 'block');
+    expect(wrapper.find(StyledTabPanel).last()).toHaveStyleRule('display', 'none');
   });
 
   test('preview view renders MarkdownPreview', () => {
     const wrapper = mount(<MarkdownEditor view="preview" />);
 
-    expect(wrapper.find(MarkdownPreview)).toHaveLength(1);
+    expect(wrapper.find(StyledTabPanel).first()).toHaveStyleRule('display', 'none');
+    expect(wrapper.find(StyledTabPanel).last()).toHaveStyleRule('display', 'block');
   });
 
   test('clicking preview tab shows MarkdownPreview', () => {
@@ -27,20 +26,38 @@ describe('MarkdownEditor', () => {
 
     wrapper.update();
 
-    expect(wrapper.find(TextArea)).toHaveLength(0);
-    expect(wrapper.find(MarkdownPreview)).toHaveLength(1);
+    expect(wrapper.find(StyledTabPanel).first()).toHaveStyleRule('display', 'none');
+    expect(wrapper.find(StyledTabPanel).last()).toHaveStyleRule('display', 'block');
   });
 
   test('clicking edit tab shows MarkdownPreview', () => {
-    const wrapper = mount(<MarkdownEditor view="edit" />);
+    const wrapper = mount(<MarkdownEditor view="preview" />);
 
     const previewTab = wrapper.find('button').first();
     previewTab.simulate('click');
 
     wrapper.update();
 
-    expect(wrapper.find(TextArea)).toHaveLength(1);
-    expect(wrapper.find(MarkdownPreview)).toHaveLength(0);
+    expect(wrapper.find(StyledTabPanel).first()).toHaveStyleRule('display', 'block');
+    expect(wrapper.find(StyledTabPanel).last()).toHaveStyleRule('display', 'none');
+  });
+
+  test('clicking edit tab focuses textarea', () => {
+
+    const testContainer = document.createElement('div');
+    document.body.appendChild(testContainer);
+
+    const wrapper = mount(<MarkdownEditor view="preview" />, {
+      attachTo: testContainer
+    });
+
+    expect(wrapper.find('textarea').getDOMNode()).not.toEqual(document.activeElement);
+
+    const previewTab = wrapper.find('button').first();
+    previewTab.simulate('click');
+    wrapper.update();
+
+    expect(wrapper.find('textarea').getDOMNode()).toEqual(document.activeElement);
   });
 
   test('should call onChange if provided', () => {

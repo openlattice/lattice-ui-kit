@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const MarkdownWrapper = styled.div`
+  word-break: break-word;
   code {
     background-color: rgba(27,31,35,.05);
     border-radius: 3px;
