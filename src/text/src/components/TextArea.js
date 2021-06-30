@@ -10,6 +10,9 @@ const TextArea = forwardRef<TextFieldProps, TextField>((props, ref) => (
       variant="filled"
       multiline
       rows={3}
+      inputProps={{
+        style: { resize: 'vertical' }
+      }}
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...props}
       ref={ref} />

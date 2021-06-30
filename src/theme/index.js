@@ -260,12 +260,15 @@ const lightTheme = createMuiTheme({
           backgroundColor: NEUTRAL.N50,
         }
       },
-      multiline: {
-        padding: '10px'
-      },
       inputHiddenLabel: {
-        paddingTop: 10,
-        paddingBottom: 10,
+        paddingTop: '10px',
+        paddingBottom: '10px',
+      },
+      inputMultiline: {
+        padding: '10px',
+      },
+      multiline: {
+        padding: '0',
       },
     },
     MuiOutlinedInput: {
@@ -288,6 +291,16 @@ const lightTheme = createMuiTheme({
       },
       input: {
         padding: '10px'
+      },
+      inputHiddenLabel: {
+        paddingTop: '10px',
+        paddingBottom: '10px',
+      },
+      inputMultiline: {
+        padding: '10px',
+      },
+      multiline: {
+        padding: '0',
       },
       notchedOutline: {
         visibility: 'hidden'
@@ -702,12 +715,15 @@ const darkTheme = createMuiTheme({
       input: {
         padding: '10px'
       },
-      multiline: {
-        padding: '10px'
-      },
       inputHiddenLabel: {
-        paddingTop: 10,
-        paddingBottom: 10,
+        paddingTop: '10px',
+        paddingBottom: '10px',
+      },
+      inputMultiline: {
+        padding: '10px',
+      },
+      multiline: {
+        padding: '0',
       },
     },
     MuiOutlinedInput: {
@@ -722,6 +738,16 @@ const darkTheme = createMuiTheme({
       },
       input: {
         padding: '10px'
+      },
+      inputHiddenLabel: {
+        paddingTop: '10px',
+        paddingBottom: '10px',
+      },
+      inputMultiline: {
+        padding: '10px',
+      },
+      multiline: {
+        padding: '0',
       },
       notchedOutline: {
         visibility: 'hidden'
