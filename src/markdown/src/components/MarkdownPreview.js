@@ -15,7 +15,7 @@ type Props = {
 const MarkdownPreview = ({ children } :Props) => (
   <MarkdownWrapper>
     <ReactMarkdown
-        rehypePlugins={[rehypeHighlight]}
+        rehypePlugins={[[rehypeHighlight, { ignoreMissing: true }]]}
         remarkPlugins={[remarkGFM]}>
       {children}
     </ReactMarkdown>

@@ -5,7 +5,12 @@ exports[`MarkdownPreview render matches snapshot 1`] = `
   <ReactMarkdown
     rehypePlugins={
       Array [
-        [Function],
+        Array [
+          [Function],
+          Object {
+            "ignoreMissing": true,
+          },
+        ],
       ]
     }
     remarkPlugins={
