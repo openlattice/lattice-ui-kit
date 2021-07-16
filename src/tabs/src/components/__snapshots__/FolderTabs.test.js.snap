@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FolderTabs default should match snapshot 1`] = `
+<WithStyles(WithStyles(ForwardRef(Tabs)))>
+  <WithStyles(ForwardRef(Tabs))
+    classes={
+      Object {
+        "flexContainer": "WithStyles(ForwardRef(Tabs))-flexContainer-3",
+        "indicator": "WithStyles(ForwardRef(Tabs))-indicator-2",
+        "root": "WithStyles(ForwardRef(Tabs))-root-1",
+      }
+    }
+  >
+    <ForwardRef(Tabs)
+      classes={
+        Object {
+          "centered": "MuiTabs-centered",
+          "fixed": "MuiTabs-fixed",
+          "flexContainer": "MuiTabs-flexContainer WithStyles(ForwardRef(Tabs))-flexContainer-3",
+          "flexContainerVertical": "MuiTabs-flexContainerVertical",
+          "indicator": "MuiTabs-indicator WithStyles(ForwardRef(Tabs))-indicator-2",
+          "root": "MuiTabs-root WithStyles(ForwardRef(Tabs))-root-1",
+          "scrollButtons": "MuiTabs-scrollButtons",
+          "scrollButtonsDesktop": "MuiTabs-scrollButtonsDesktop",
+          "scrollable": "MuiTabs-scrollable",
+          "scroller": "MuiTabs-scroller",
+          "vertical": "MuiTabs-vertical",
+        }
+      }
+    >
+      <div
+        className="MuiTabs-root WithStyles(ForwardRef(Tabs))-root-1"
+      >
+        <div
+          className="MuiTabs-scroller MuiTabs-fixed"
+          onScroll={[Function]}
+          style={
+            Object {
+              "marginBottom": null,
+              "overflow": "hidden",
+            }
+          }
+        >
+          <div
+            className="MuiTabs-flexContainer WithStyles(ForwardRef(Tabs))-flexContainer-3"
+            onKeyDown={[Function]}
+            role="tablist"
+          />
+          <WithStyles(ForwardRef(TabIndicator))
+            className="MuiTabs-indicator WithStyles(ForwardRef(Tabs))-indicator-2"
+            color="secondary"
+            orientation="horizontal"
+            style={
+              Object {
+                "left": 0,
+                "width": 0,
+              }
+            }
+          >
+            <ForwardRef(TabIndicator)
+              className="MuiTabs-indicator WithStyles(ForwardRef(Tabs))-indicator-2"
+              classes={
+                Object {
+                  "colorPrimary": "PrivateTabIndicator-colorPrimary-5",
+                  "colorSecondary": "PrivateTabIndicator-colorSecondary-6",
+                  "root": "PrivateTabIndicator-root-4",
+                  "vertical": "PrivateTabIndicator-vertical-7",
+                }
+              }
+              color="secondary"
+              orientation="horizontal"
+              style={
+                Object {
+                  "left": 0,
+                  "width": 0,
+                }
+              }
+            >
+              <span
+                className="PrivateTabIndicator-root-4 PrivateTabIndicator-colorSecondary-6 MuiTabs-indicator WithStyles(ForwardRef(Tabs))-indicator-2"
+                style={
+                  Object {
+                    "left": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </ForwardRef(TabIndicator)>
+          </WithStyles(ForwardRef(TabIndicator))>
+        </div>
+      </div>
+    </ForwardRef(Tabs)>
+  </WithStyles(ForwardRef(Tabs))>
+</WithStyles(WithStyles(ForwardRef(Tabs)))>
+`;
