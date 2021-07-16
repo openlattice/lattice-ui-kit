@@ -6,7 +6,6 @@ import { NEUTRAL } from '../../../colors';
 const FolderTabs = withStyles({
   root: {
     borderBottom: `1px solid ${NEUTRAL.N100}`,
-    margin: '2px',
     minHeight: '32px',
   },
   indicator: {
