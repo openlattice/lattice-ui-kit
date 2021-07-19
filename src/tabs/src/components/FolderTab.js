@@ -4,7 +4,7 @@ import Tab from '@material-ui/core/Tab';
 import styled from 'styled-components';
 import { withStyles } from '@material-ui/core/styles';
 
-import { PURPLE } from '../../../colors';
+import { NEUTRAL, PURPLE } from '../../../colors';
 
 // adjust tab content to take size of bold font
 const ContentSpan = styled.span`
@@ -27,8 +27,10 @@ const FolderTab = withStyles((theme) => ({
     backgroundColor: theme.palette.action.hover,
     minHeight: 32,
     borderRadius: '3px 3px 0px 0px',
+    color: NEUTRAL.N700,
+    opacity: 1,
     '&:hover': {
-      boxShadow: theme.shadows[5],
+      color: PURPLE.P300,
     },
     '&$selected': {
       color: PURPLE.P300,
@@ -36,7 +38,7 @@ const FolderTab = withStyles((theme) => ({
       fontWeight: theme.typography.fontWeightBold,
     },
     '&:focus': {
-      boxShadow: theme.shadows[5],
+      color: PURPLE.P300,
     },
   },
   selected: {},
