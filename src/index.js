@@ -52,6 +52,8 @@ export type {
 
 export { Checkbox, ChoiceGroup, Radio } from './choices';
 
+export { FolderTab, FolderTabs } from './tabs';
+
 export {
   ActionModal,
   Modal,

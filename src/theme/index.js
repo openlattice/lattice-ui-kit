@@ -489,6 +489,10 @@ const lightTheme = createMuiTheme({
   },
   typography: {
     fontFamily: "'Inter', 'Arial', sans-serif",
+    fontWeightBold: 600,
+    fontWeightLight: 300,
+    fontWeightMedium: 500,
+    fontWeightRegular: 400,
   }
 });
 
@@ -935,6 +939,10 @@ const darkTheme = createMuiTheme({
   },
   typography: {
     fontFamily: "'Inter', 'Arial', sans-serif",
+    fontWeightBold: 600,
+    fontWeightLight: 300,
+    fontWeightMedium: 500,
+    fontWeightRegular: 400,
   }
 });
 
