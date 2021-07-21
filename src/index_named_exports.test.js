@@ -27,6 +27,8 @@ const EXPECTED_OBJ_EXPORTS = Set([
   'ExpansionPanelDetails',
   'ExpansionPanelSummary',
   'Fab',
+  'FolderTab',
+  'FolderTabs',
   'HeadCell',
   'Hooks',
   'IconButton',

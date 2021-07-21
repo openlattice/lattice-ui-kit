@@ -61,7 +61,7 @@ const Checkbox = ({
       </ChoiceInnerWrapper>
     </ChoiceWrapper>
     {
-      (mode !== 'button' && mode !== 'chip') && (
+      (mode !== 'button' && mode !== 'chip') && label && (
         <ChoiceText>
           {label}
         </ChoiceText>

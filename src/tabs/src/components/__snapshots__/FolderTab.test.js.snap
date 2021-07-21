@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FolderTab default should match snapshot 1`] = `
+.c0:before {
+  display: block;
+  content: "Tab";
+  font-weight: 600;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+<WithStyles(Component)
+  label="Tab"
+>
+  <Component
+    classes={
+      Object {
+        "root": "Component-root-1",
+        "selected": "Component-selected-2",
+      }
+    }
+    label="Tab"
+  >
+    <WithStyles(ForwardRef(Tab))
+      classes={
+        Object {
+          "root": "Component-root-1",
+          "selected": "Component-selected-2",
+        }
+      }
+      disableRipple={true}
+      label={
+        <styled.span
+          content="Tab"
+        >
+          Tab
+        </styled.span>
+      }
+    >
+      <ForwardRef(Tab)
+        classes={
+          Object {
+            "disabled": "Mui-disabled",
+            "fullWidth": "MuiTab-fullWidth",
+            "labelIcon": "MuiTab-labelIcon",
+            "root": "MuiTab-root Component-root-1",
+            "selected": "Mui-selected Component-selected-2",
+            "textColorInherit": "MuiTab-textColorInherit",
+            "textColorPrimary": "MuiTab-textColorPrimary",
+            "textColorSecondary": "MuiTab-textColorSecondary",
+            "wrapped": "MuiTab-wrapped",
+            "wrapper": "MuiTab-wrapper",
+          }
+        }
+        disableRipple={true}
+        label={
+          <styled.span
+            content="Tab"
+          >
+            Tab
+          </styled.span>
+        }
+      >
+        <WithStyles(ForwardRef(ButtonBase))
+          className="MuiTab-root Component-root-1 MuiTab-textColorInherit"
+          disableRipple={true}
+          disabled={false}
+          focusRipple={true}
+          onClick={[Function]}
+          onFocus={[Function]}
+          role="tab"
+          tabIndex={-1}
+        >
+          <ForwardRef(ButtonBase)
+            className="MuiTab-root Component-root-1 MuiTab-textColorInherit"
+            classes={
+              Object {
+                "disabled": "Mui-disabled",
+                "focusVisible": "Mui-focusVisible",
+                "root": "MuiButtonBase-root",
+              }
+            }
+            disableRipple={true}
+            disabled={false}
+            focusRipple={true}
+            onClick={[Function]}
+            onFocus={[Function]}
+            role="tab"
+            tabIndex={-1}
+          >
+            <button
+              className="MuiButtonBase-root MuiTab-root Component-root-1 MuiTab-textColorInherit"
+              disabled={false}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              role="tab"
+              tabIndex={-1}
+              type="button"
+            >
+              <span
+                className="MuiTab-wrapper"
+              >
+                <styled.span
+                  content="Tab"
+                >
+                  <span
+                    className="c0"
+                    content="Tab"
+                  >
+                    Tab
+                  </span>
+                </styled.span>
+              </span>
+            </button>
+          </ForwardRef(ButtonBase)>
+        </WithStyles(ForwardRef(ButtonBase))>
+      </ForwardRef(Tab)>
+    </WithStyles(ForwardRef(Tab))>
+  </Component>
+</WithStyles(Component)>
+`;

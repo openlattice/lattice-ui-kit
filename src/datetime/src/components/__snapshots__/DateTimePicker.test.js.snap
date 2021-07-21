@@ -613,7 +613,7 @@ exports[`DateTimePicker render matches snapshot 1`] = `
         },
         "fontFamily": "'Inter', 'Arial', sans-serif",
         "fontSize": 14,
-        "fontWeightBold": 700,
+        "fontWeightBold": 600,
         "fontWeightLight": 300,
         "fontWeightMedium": 500,
         "fontWeightRegular": 400,
