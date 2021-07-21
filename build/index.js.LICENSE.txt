@@ -6,7 +6,7 @@
 
 /*!
  * 
- * lattice-ui-kit - v0.45.1
+ * lattice-ui-kit - v0.46.0
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
  * Copyright (c) 2017-2021, OpenLattice, Inc. All rights reserved.
