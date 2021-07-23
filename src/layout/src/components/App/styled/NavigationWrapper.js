@@ -19,7 +19,7 @@ const NavigationWrapper = styled.nav`
   > a {
     align-items: center;
     border-bottom: 3px solid transparent;
-    color: ${NEUTRAL.N500};
+    color: ${NEUTRAL.N600};
     display: flex;
     font-size: 12px;
     font-weight: normal;
@@ -42,7 +42,7 @@ const NavigationWrapper = styled.nav`
     }
 
     &:hover {
-      border-bottom: 3px solid ${NEUTRAL.N500};
+      border-bottom: 3px solid ${NEUTRAL.N600};
       color: ${NEUTRAL.N700};
       cursor: pointer;
     }
