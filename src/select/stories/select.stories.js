@@ -89,3 +89,29 @@ export const DisabledOptions = () => (
         onChange={action('Single select changed')} />
   </>
 );
+
+const GROUPED_OPTIONS = [
+  {
+    label: 'group 1',
+    options: [
+      { label: 'group 1 item 1', value: 'group 1 item 1' },
+      { label: 'group 1 item 2', value: 'group 1 item 2' },
+      { label: 'group 1 item 3', value: 'group 1 item 3' },
+    ],
+  },
+  {
+    label: 'group 2',
+    options: [
+      { label: 'group 2 item 1', value: 'group 2 item 1' },
+      { label: 'group 2 item 2', value: 'group 2 item 2' },
+      { label: 'group 2 item 3', value: 'group 2 item 3' },
+    ],
+  },
+];
+
+export const GroupedOptions = () => (
+  <>
+    <h1>Grouped options</h1>
+    <Select options={GROUPED_OPTIONS} onChange={action('Group select changed')} />
+  </>
+);
