@@ -6,12 +6,13 @@ import { Component } from 'react';
 import type { Node } from 'react';
 
 import PropTypes from 'prop-types';
-import ScrollLock from 'react-scrolllock';
 import isFunction from 'lodash/isFunction';
+import { TouchScrollable } from 'react-scrolllock';
 import { CSSTransition } from 'react-transition-group';
 
-import Portal from '../../../portal';
 import { OverlayInnerContainer, OverlayOuterContainer } from './styled/StyledOverlayComponents';
+
+import Portal from '../../../portal';
 
 type Props = {
   children ? :Node;
@@ -80,13 +81,13 @@ export default class Overlay extends Component<Props> {
           timeout={200}
           classNames="luk-fade">
         <Portal>
-          <ScrollLock>
+          <TouchScrollable>
             <OverlayOuterContainer transparent={transparent}>
               <OverlayInnerContainer isScrollable={isScrollable} onClick={this.handleOnClick}>
                 { children }
               </OverlayInnerContainer>
             </OverlayOuterContainer>
-          </ScrollLock>
+          </TouchScrollable>
         </Portal>
       </CSSTransition>
     );

@@ -84,49 +84,29 @@ exports[`overlay snapshots should match snapshot when isVisible="true" 1`] = `
             </div>
           }
         >
-          <LockToggle
-            accountForScrollbars={true}
-            isActive={true}
-          >
-            <SheetProvider
-              accountForScrollbars={true}
-              isActive={true}
+          <TouchScrollable>
+            <OverlayOuterContainer
+              transparent={false}
             >
-              <TouchProvider
-                accountForScrollbars={true}
-                isActive={true}
+              <div
+                className="kcBBUu"
               >
-                <ScrollLock
-                  accountForScrollbars={true}
-                  isActive={true}
+                <OverlayInnerContainer
+                  isScrollable={false}
+                  onClick={[Function]}
                 >
-                  <TouchScrollable>
-                    <OverlayOuterContainer
-                      transparent={false}
-                    >
-                      <div
-                        className="kcBBUu"
-                      >
-                        <OverlayInnerContainer
-                          isScrollable={false}
-                          onClick={[Function]}
-                        >
-                          <div
-                            className="huVzSq"
-                            onClick={[Function]}
-                          >
-                            <span>
-                              hello
-                            </span>
-                          </div>
-                        </OverlayInnerContainer>
-                      </div>
-                    </OverlayOuterContainer>
-                  </TouchScrollable>
-                </ScrollLock>
-              </TouchProvider>
-            </SheetProvider>
-          </LockToggle>
+                  <div
+                    className="huVzSq"
+                    onClick={[Function]}
+                  >
+                    <span>
+                      hello
+                    </span>
+                  </div>
+                </OverlayInnerContainer>
+              </div>
+            </OverlayOuterContainer>
+          </TouchScrollable>
         </Portal>
       </Portal>
     </Transition>
