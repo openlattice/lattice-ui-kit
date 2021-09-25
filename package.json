@@ -1,6 +1,6 @@
 {
   "name": "lattice-ui-kit",
-  "version": "0.46.0",
+  "version": "0.46.1",
   "homepage": "https://github.com/openlattice/lattice-ui-kit",
   "description": "OpenLattice UI Kit for React",
   "author": {
@@ -40,7 +40,7 @@
     "prop-types": "~15.7.2",
     "react-markdown": "~6.0.2",
     "react-scrolllock": "~5.0.1",
-    "react-select": "~4.3.1",
+    "react-select": "~5.0.0",
     "react-transition-group": "~4.4.2",
     "rehype-highlight": "~4.1.0",
     "remark-gfm": "~1.0.0"
