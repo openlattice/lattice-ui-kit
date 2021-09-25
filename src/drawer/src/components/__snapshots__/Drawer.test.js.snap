@@ -283,45 +283,25 @@ exports[`Drawer snapshots isOpen = true 1`] = `
               </div>
             }
           >
-            <LockToggle
-              accountForScrollbars={true}
-              isActive={true}
-            >
-              <SheetProvider
-                accountForScrollbars={true}
-                isActive={true}
+            <TouchScrollable>
+              <OverlayOuterContainer
+                transparent={false}
               >
-                <TouchProvider
-                  accountForScrollbars={true}
-                  isActive={true}
+                <div
+                  className="c0"
                 >
-                  <ScrollLock
-                    accountForScrollbars={true}
-                    isActive={true}
+                  <OverlayInnerContainer
+                    isScrollable={true}
+                    onClick={[Function]}
                   >
-                    <TouchScrollable>
-                      <OverlayOuterContainer
-                        transparent={false}
-                      >
-                        <div
-                          className="c0"
-                        >
-                          <OverlayInnerContainer
-                            isScrollable={true}
-                            onClick={[Function]}
-                          >
-                            <div
-                              className="c1"
-                              onClick={[Function]}
-                            />
-                          </OverlayInnerContainer>
-                        </div>
-                      </OverlayOuterContainer>
-                    </TouchScrollable>
-                  </ScrollLock>
-                </TouchProvider>
-              </SheetProvider>
-            </LockToggle>
+                    <div
+                      className="c1"
+                      onClick={[Function]}
+                    />
+                  </OverlayInnerContainer>
+                </div>
+              </OverlayOuterContainer>
+            </TouchScrollable>
           </Portal>
         </Portal>
       </Transition>
