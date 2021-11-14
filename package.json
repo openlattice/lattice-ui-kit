@@ -86,7 +86,7 @@
     "eslint-plugin-jest": "~24.3.0",
     "eslint-plugin-jsx-a11y": "~6.4.1",
     "eslint-plugin-react": "~7.24.0",
-    "eslint-plugin-react-hooks": "~4.2.0",
+    "eslint-plugin-react-hooks": "~4.3.0",
     "flow-bin": "~0.131.0",
     "immutable": "4.0.0-rc.10",
     "import-sort-style-openlattice": "~0.1.0",
