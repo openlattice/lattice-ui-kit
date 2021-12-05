@@ -91,7 +91,7 @@
     "immutable": "4.0.0-rc.10",
     "import-sort-style-openlattice": "~0.1.0",
     "imports-loader": "~3.0.0",
-    "jest": "~27.0.6",
+    "jest": "~27.4.3",
     "jest-styled-components": "~7.0.4",
     "lodash": "~4.17.21",
     "luxon": "~1.27.0",
