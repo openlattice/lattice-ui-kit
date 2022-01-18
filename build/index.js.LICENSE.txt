@@ -6,20 +6,20 @@
 
 /*!
  * 
- * lattice-ui-kit - v0.46.1
+ * lattice-ui-kit - v0.47.0
  * OpenLattice UI Kit for React
  * https://github.com/openlattice/lattice-ui-kit
- * Copyright (c) 2017-2021, OpenLattice, Inc. All rights reserved.
+ * Copyright (c) 2017-2022, OpenLattice, Inc. All rights reserved.
  *
  */
 
 /*!
  * 
- * redux-reqseq - v0.6.1
+ * redux-reqseq - v0.7.0
  * JavaScript library for request sequence lifecycles in redux
  * https://github.com/openlattice/redux-reqseq
  *
- * Copyright (c) 2017-2021, OpenLattice, Inc. All rights reserved.
+ * Copyright (c) 2017-2022, OpenLattice, Inc. All rights reserved.
  *
  */
 
