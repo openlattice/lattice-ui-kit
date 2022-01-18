@@ -43,7 +43,7 @@
     "react-select": "~4.3.1",
     "react-transition-group": "~4.4.2",
     "rehype-highlight": "~4.1.0",
-    "remark-gfm": "~1.0.0"
+    "remark-gfm": "~3.0.1"
   },
   "devDependencies": {
     "@babel/cli": "~7.16.8",
